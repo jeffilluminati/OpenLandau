@@ -1,0 +1,58 @@
+\section{The Hamiltonian}
+
+\SourcePage{41}{44}
+In quantum mechanics the wave function $\Psi$ fully specifies the state of a
+physical system. This means that prescribing $\Psi$ at some instant not
+only describes all the properties of the system at that instant, but also
+determines its behavior at every later instant---of course, only to the degree
+of completeness that quantum mechanics permits at all. Mathematically, this
+means that at each instant the value of the time derivative
+$\partial\Psi/\partial t$ must be determined by the value of $\Psi$ itself at
+that same instant, and, by the superposition principle, this dependence must be
+linear. In the most general form we may write
+\begin{equation}
+  i\hbar\frac{\partial\Psi}{\partial t}=\hat H\Psi,
+  \tag{8.1}
+\end{equation}
+where $\hat H$ is a certain linear operator; the factor $i\hbar$ has been
+introduced here for a reason that will become clear below.
+
+Since the integral $\int\Psi^*\Psi\,dq$ is constant in time, we have
+\[
+  \frac{d}{dt}\int|\Psi|^2\,dq
+  =\int\frac{\partial\Psi^*}{\partial t}\Psi\,dq
+  +\int\Psi^*\frac{\partial\Psi}{\partial t}\,dq=0.
+\]
+Substituting (8.1) here and applying the definition of the transposed operator
+in the first integral, we obtain (after suppressing the common factor
+$i/\hbar$)
+\[
+  \begin{aligned}
+    \int\Psi\hat H^*\Psi^*\,dq-\int\Psi^*\hat H\Psi\,dq
+      &={}\int\Psi^*\tilde H^*\Psi\,dq
+        -\int\Psi^*\hat H\Psi\,dq\\
+      &=\int\Psi^*(\tilde H^*-\hat H)\Psi\,dq=0.
+  \end{aligned}
+\]
+Because this equality must hold for an arbitrary function $\Psi$, it follows
+that identically $\hat H^+=\hat H$; the operator $\hat H$ is therefore
+Hermitian.
+\SourcePage{42}{45}
+Let us determine the physical quantity to which it corresponds. We use the
+limiting expression (6.1) for the wave function and write
+\[
+  \frac{\partial\Psi}{\partial t}
+  =\frac{i}{\hbar}\frac{\partial S}{\partial t}\Psi
+\]
+(the slowly varying amplitude $a$ need not be differentiated). Comparing this
+equality with definition (8.1), we see that in the limiting case $\hat H$
+reduces to multiplication by $-\partial S/\partial t$. Thus this last quantity
+is the physical quantity into which the Hermitian operator $\hat H$ passes.
+
+But $-\partial S/\partial t$ is precisely the Hamilton function $H$ of the
+mechanical system. Hence $\hat H$ is the operator corresponding in quantum
+mechanics to the Hamilton function. This operator is termed the
+\textit{Hamiltonian operator}, or simply the \textit{Hamiltonian} of the
+system. Once the form of the Hamiltonian is known, equation (8.1) fixes the wave functions of the given
+physical system. This fundamental equation of quantum mechanics is called the
+\textit{wave equation}.

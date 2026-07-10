@@ -1,0 +1,227 @@
+\SourcePage{113}{116}
+\section{Eigenvalues of angular momentum}
+
+In finding the eigenvalues of a particle's angular-momentum projection
+onto a chosen direction, one may orient the polar axis along that direction
+and employ the spherical-coordinate form of the operator. Using (26.14), the equation
+$\hat l_z\psi=l_z\psi$ takes the form
+\begin{equation}
+  -i\frac{\partial\psi}{\partial\varphi}=l_z\psi.
+  \tag{27.1}
+\end{equation}
+\SourcePage{114}{117}
+Its solution is
+\[
+  \psi=f(r,\theta)e^{il_z\varphi},
+\]
+where $f(r,\theta)$ is an arbitrary function of $r$ and $\theta$. For
+$\psi$ to be single-valued, it must be periodic in $\varphi$, with period
+$2\pi$. Hence we find\footnote{The customary notation of the eigenvalues of
+the angular-momentum projection by the letter $m$---the same letter that also
+denotes the particle mass---cannot in practice lead to confusion.}
+\begin{equation}
+  l_z=m,\qquad m=0,\ \pm1,\ \pm2,\ldots
+  \tag{27.2}
+\end{equation}
+
+Thus the eigenvalues $l_z$ are the positive and negative integers, including
+zero. We denote the factor depending on $\varphi$ that is characteristic of
+the eigenfunctions of $\hat l_z$ by
+\begin{equation}
+  \Phi_m(\varphi)=\frac{1}{\sqrt{2\pi}}e^{im\varphi}.
+  \tag{27.3}
+\end{equation}
+These functions are normalized so that
+\begin{equation}
+  \int_0^{2\pi}\Phi_m^*(\varphi)\Phi_{m'}(\varphi)\,d\varphi
+  =\delta_{mm'}.
+  \tag{27.4}
+\end{equation}
+
+The eigenvalues of the $z$ component of the total angular momentum of a system
+are evidently likewise positive and negative integers:
+\begin{equation}
+  L_z=M,\qquad M=0,\ \pm1,\ \pm2,\ldots
+  \tag{27.5}
+\end{equation}
+(this follows because $\hat L_z$ is the sum of the mutually commuting
+operators $\hat l_z$ of the individual particles).
+
+Since the direction of the $z$ axis has not been distinguished in advance,
+the same result clearly holds for $L_x$, $L_y$, and, in general, for the
+component of angular momentum along any direction: each can take only integer
+values. At first sight this result may seem paradoxical, particularly if it
+is applied to two infinitely close directions. One must bear in mind,
+however, that the only common eigenfunction of the operators $\hat L_x$,
+$\hat L_y$, and $\hat L_z$ corresponds to the simultaneous values
+\[
+  L_x=L_y=L_z=0;
+\]
+in this case the angular-momentum vector, and therefore its projection on
+every direction, is zero. If at least one
+\SourcePage{115}{118}
+of the eigenvalues $L_x$, $L_y$, $L_z$ is nonzero, the corresponding
+operators have no common eigenfunctions. Put differently, no state exists in
+which definite nonzero values are possessed simultaneously by two or three
+angular-momentum components referred to distinct directions; one can therefore
+only discuss the integer nature of a single component at a time.
+
+Stationary states of a system that differ only in the value of $M$ have the
+same energy. This follows already from general considerations, since the
+direction of the $z$ axis has not been distinguished beforehand. Thus the
+energy levels of a system with conserved nonzero angular momentum are in any
+event degenerate\footnote{This circumstance is a special case of the general
+theorem stated in \secref{10} on the degeneracy of levels in the presence of at
+least two conserved quantities whose operators do not commute. Here those
+quantities are the components of angular momentum.}.
+
+We now turn to finding the eigenvalues of the square of angular momentum and
+show how they can be obtained solely from the commutation rules (26.8). Let
+$\psi_M$ denote the wave functions of stationary states having the same value
+of $\mathbf L^2$, belonging to one degenerate energy level, and differing in
+the value of $M$\footnote{Here it is understood that there is no additional
+degeneracy by which the same energy corresponds to different values of the
+square of angular momentum. This is true for the discrete spectrum (apart
+from the so-called “accidental degeneracy” in the Coulomb field; see
+\secref{36}), and is, generally speaking, not true for energy levels in the
+continuous spectrum. Even when there is additional degeneracy, however, the
+eigenfunctions can always be chosen to represent states with definite values
+of $\mathbf L^2$; from them one can then select states with the same values of
+$E$ and $\mathbf L^2$. The mathematical basis for this is that simultaneous
+diagonalization of the matrices of mutually commuting operators is always
+achievable. In analogous cases below, for brevity, we shall speak as if
+there were no additional degeneracy, with the understanding that, in view of
+what has just been said, the results obtained do not in fact depend on this
+assumption.}.
+
+First, since the two directions of the $z$ axis are physically equivalent,
+every possible positive value $M=|M|$ has a corresponding negative value
+$M=-|M|$. Let $L$ (a nonnegative integer) denote the largest possible value
+of $|M|$ for a given $\mathbf L^2$. The very existence of such an upper bound
+follows from the fact that the difference
+$\hat{\mathbf L}^{2}-\hat L_z^{2}=\hat L_x^{2}+\hat L_y^{2}$ is the operator
+of the necessarily nonnegative physical quantity $L_x^2+L_y^2$,
+\SourcePage{116}{119}
+and hence its eigenvalues cannot be negative.
+
+Applying the operator $\hat L_z\hat L_\pm$ to an eigenfunction $\psi_M$ of
+$\hat L_z$, and using the commutation rules (26.12), we obtain
+\begin{equation}
+  \hat L_z\hat L_\pm\psi_M=(M\pm1)\hat L_\pm\psi_M.
+  \tag{27.6}
+\end{equation}
+It follows that $\hat L_\pm\psi_M$ is, apart from a normalization constant,
+an eigenfunction corresponding to the value $M\pm1$ of $L_z$:
+\begin{equation}
+  \psi_{M+1}=\operatorname{const}\cdot\hat L_+\psi_M,
+  \qquad
+  \psi_{M-1}=\operatorname{const}\cdot\hat L_-\psi_M.
+  \tag{27.7}
+\end{equation}
+If $M=L$ is put in the first of these equalities, then we must have identically
+\begin{equation}
+  \hat L_+\psi_L=0,
+  \tag{27.8}
+\end{equation}
+since, by definition, there are no states with $M>L$. Applying $\hat L_-$ to
+this equality and using (26.13), we obtain
+\[
+  \hat L_-\hat L_+\psi_L
+  =\bigl(\hat{\mathbf L}^{2}-\hat L_z^{2}-\hat L_z\bigr)\psi_L=0.
+\]
+But since the $\psi_M$ are common eigenfunctions of
+$\hat{\mathbf L}^{2}$ and $\hat L_z$,
+\[
+  \hat{\mathbf L}^{2}\psi_L=\mathbf L^2\psi_L,
+  \qquad
+  \hat L_z^{2}\psi_L=L^2\psi_L,
+  \qquad
+  \hat L_z\psi_L=L\psi_L,
+\]
+so the resulting equation gives
+\begin{equation}
+  \mathbf L^2=L(L+1).
+  \tag{27.9}
+\end{equation}
+
+Formula (27.9) determines the required eigenvalues of the square of angular
+momentum; $L$ takes all nonnegative integer values. For a given value of $L$,
+the angular-momentum component $L_z=M$ can take the values
+\begin{equation}
+  M=L,L-1,\ldots,-L,
+  \tag{27.10}
+\end{equation}
+that is, $2L+1$ distinct values in all. An energy level corresponding to
+angular momentum $L$ is therefore $(2L+1)$-fold degenerate; this is usually
+called directional degeneracy of angular momentum. A state with zero angular
+momentum, $L=0$ (so that all three of its components vanish), is
+nondegenerate. We note that the wave function of such a state is spherically
+symmetric. This is already clear from the fact that its change under any
+infinitesimal rotation, given by $\hat{\mathbf L}\psi$, vanishes in this case.
+\SourcePage{117}{120}
+For brevity we shall often use the customary phrase “angular momentum $L$”
+of the system, meaning angular momentum whose square equals $L(L+1)$; the
+$z$ component of angular momentum is usually called simply its “projection.”
+
+We shall denote the angular momentum of one particle by the lowercase letter
+$l$; thus for it we write (27.9) as
+\begin{equation}
+  \mathbf l^2=l(l+1).
+  \tag{27.11}
+\end{equation}
+
+Let us calculate the matrix elements of $L_x$ and $L_y$ in the
+representation in which, together with the energy, $\mathbf L^2$ and $L_z$
+are diagonal (\emph{M.~Born, W.~Heisenberg, P.~Jordan}, 1926). We note that,
+since $\hat L_x$ and $\hat L_y$ commute with the Hamiltonian, their matrices
+are diagonal with respect to energy; that is, every matrix element for a
+transition between states of different energies (and different angular
+momenta $L$) is zero. It is therefore sufficient to consider matrix elements
+for transitions within the group of states with different values of $M$
+corresponding to a single degenerate energy level.
+
+From (27.7) one sees that the matrix of $\hat L_+$ has nonzero elements
+only for transitions $M-1\to M$, and that of $\hat L_-$ only for
+$M\to M-1$. With this in mind, equating the diagonal matrix elements of the
+two sides of (26.13) gives\footnote{In the notation for matrix elements, for brevity, we omit all
+indices with respect to which they are diagonal (including the index $L$).}
+\[
+  L(L+1)
+  =\langle M|L_+|M-1\rangle\langle M-1|L_-|M\rangle+M^2-M.
+\]
+Since the operators $\hat L_x$ and $\hat L_y$ are Hermitian,
+\[
+  \langle M-1|L_-|M\rangle=\langle M|L_+|M-1\rangle^*,
+\]
+we rewrite this equality as
+\[
+  \bigl|\langle M|L_+|M-1\rangle\bigr|^2
+  =L(L+1)-M(M-1)=(L-M+1)(L+M),
+\]
+whence\footnote{The choice of sign in this formula is consistent with the
+choice of phase factors in the angular-momentum eigenfunctions.}
+\begin{equation}
+  \langle M|L_+|M-1\rangle
+  =\langle M-1|L_-|M\rangle
+  =\sqrt{(L+M)(L-M+1)}.
+  \tag{27.12}
+\end{equation}
+For the nonzero matrix elements of $L_x$ and $L_y$ themselves, this gives
+\begin{equation}
+  \begin{aligned}
+    \langle M|L_x|M-1\rangle
+      &=\langle M-1|L_x|M\rangle
+        =\frac12\sqrt{(L+M)(L-M+1)},\\
+    \langle M|L_y|M-1\rangle
+      &=-\langle M-1|L_y|M\rangle
+        =-\frac{i}{2}\sqrt{(L+M)(L-M+1)}.
+  \end{aligned}
+  \tag{27.13}
+\end{equation}
+\SourcePage{118}{121}
+We draw attention to the absence of diagonal elements in the matrices of
+$L_x$ and $L_y$. Since a diagonal matrix element gives the mean value of a
+quantity in the corresponding state, this means that in states with definite
+values of $L_z$ the mean values are $\bar L_x=\bar L_y=0$. Thus, if the
+projection of angular momentum on some direction in space has a definite
+value, the whole vector $\bar{\mathbf L}$ lies along that same direction.

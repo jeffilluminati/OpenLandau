@@ -1,0 +1,157 @@
+\section{The density matrix}
+
+\SourcePage{58}{61}
+Describing a system by its wave function represents the fullest description
+that quantum mechanics allows, in the sense indicated at the end of \secref{1}.
+
+States not admitting such a description arise when the system considered is
+part of a larger closed system. Suppose the closed system as a whole is in a
+state described by $\Psi(q,x)$, where $x$ denotes the coordinates of the
+system considered and $q$ the remaining coordinates of the closed system. In
+general this function does not factor into functions of $x$ alone and $q$
+alone, so that
+\SourcePage{59}{62}
+the system has no wave function of its own\footnote{For $\Psi(q,x)$ to factor
+in this way at a given instant, the measurement that produced the state must
+describe completely and separately the system considered and the remainder of
+the closed system. For the factorization to persist, these two parts must also
+not interact (see \secref{2}). Neither condition is assumed here.}.
+
+Let $f$ be a physical quantity pertaining to our system. Its operator acts on
+the $x$ coordinates only, not on $q$. Its mean value is
+\begin{equation}
+ \bar f=\iint\Psi^*(q,x)\hat f\Psi(q,x)\,dq\,dx.
+ \tag{14.1}
+\end{equation}
+Introduce the function
+\begin{equation}
+ \rho(x,x')=\int\Psi(q,x)\Psi^*(q,x')\,dq,
+ \tag{14.2}
+\end{equation}
+where integration is only over $q$; it is called the system's \textit{density
+matrix}. From (14.2),
+\begin{equation}
+ \rho^*(x,x')=\rho(x',x).
+ \tag{14.3}
+\end{equation}
+The ``diagonal elements''
+\[
+ \rho(x,x)=\int|\Psi(q,x)|^2\,dq
+\]
+determine the coordinate probability distribution.
+
+In terms of the density matrix,
+\begin{equation}
+ \bar f=\int[\hat f\rho(x,x')]_{x'=x}\,dx.
+ \tag{14.4}
+\end{equation}
+Here $\hat f$ acts only on the variables $x$ in $\rho(x,x')$; after its action
+has been evaluated, one sets $x'=x$. Thus the density matrix determines the
+mean of every quantity characterizing the system and hence also the
+probabilities of its possible values. A state having no wave function can
+therefore be described by a density matrix. The density matrix contains none
+of the coordinates $q$ that do not belong
+\SourcePage{60}{63}
+to the system, although it naturally depends in substance on the state of the
+closed system as a whole.
+
+The density-matrix description is the most general form of
+quantum-mechanical description of systems. The wave-function description is the special
+case $\rho(x,x')=\Psi(x)\Psi^*(x')$. There is an important distinction. For a
+state possessing a wave function (a \textit{pure} state), there is always a
+complete system of measurements whose results can be predicted with certainty
+(mathematically, $\Psi$ is an eigenfunction of some operator). For states
+possessing only a density matrix (\textit{mixed} states), no complete system
+of measurements has uniquely predictable results.
+
+Suppose the system is closed, or became closed at some instant. We derive an
+equation governing the time dependence of its density matrix, analogous to the
+wave equation. The desired linear differential equation for $\rho(x,x',t)$
+must also hold in the special case
+\[
+ \rho(x,x',t)=\Psi(x,t)\Psi^*(x',t).
+\]
+Differentiating and using (8.1),
+\[
+ \begin{aligned}
+ i\hbar\frac{\partial\rho}{\partial t}
+ &=i\hbar\Psi^*(x',t)\frac{\partial\Psi(x,t)}{\partial t}
+ +i\hbar\Psi(x,t)\frac{\partial\Psi^*(x',t)}{\partial t}\\
+ &=\Psi^*(x',t)\hat H\Psi(x,t)
+ -\Psi(x,t)\hat H'^*\Psi^*(x',t).
+ \end{aligned}
+\]
+Here $\hat H$ acts on functions of $x$, while $\hat H'$ is the same operator
+acting on functions of $x'$. Bringing the other factors under the respective
+operator signs gives
+\begin{equation}
+ i\hbar\frac{\partial\rho(x,x',t)}{\partial t}
+ =(\hat H-\hat H'^*)\rho(x,x',t).
+ \tag{14.5}
+\end{equation}
+Let $\Psi_n(x,t)$ be the stationary-state wave functions. Expanding the density
+matrix in these functions gives
+\SourcePage{61}{64}
+the double series
+\begin{equation}
+ \rho(x,x',t)=\sum_m\sum_n a_{mn}\psi_n^*(x')\psi_m(x)
+ \exp\left[\frac{i}{\hbar}(E_n-E_m)t\right].
+ \tag{14.6}
+\end{equation}
+This plays the same role for the density matrix as (10.3) does for the wave
+function. In place of the single set $a_n$ there is the double set $a_{mn}$,
+which, like the density matrix, is Hermitian:
+\begin{equation}
+ a_{mn}=a_{nm}^*.
+ \tag{14.7}
+\end{equation}
+Substitution in (14.4) gives
+\[
+ \bar f=\sum_m\sum_n a_{mn}\int\Psi_n^*(x,t)\hat f\Psi_m(x,t)\,dx,
+\]
+or
+\begin{equation}
+ \bar f=\sum_m\sum_n a_{mn}f_{nm}(t)
+ =\sum_m\sum_n a_{mn}f_{nm}
+ \exp\left[\frac{i}{\hbar}(E_n-E_m)t\right].
+ \tag{14.8}
+\end{equation}
+This is analogous to (11.1)\footnote{The quantities $a_{mn}$ constitute the
+density matrix in the energy representation. Description of states by such a
+matrix was introduced independently by Landau and Bloch (\textit{F. Bloch}) in
+1927.}.
+
+The $a_{mn}$ must satisfy inequalities. Since the diagonal elements
+$\rho(x,x)$ are probabilities, they must be positive. Hence the quadratic form
+\[
+ \sum_n\sum_m a_{mn}\xi_m\xi_n^*
+\]
+must be positive definite for arbitrary complex $\xi_n$. The standard
+conditions for quadratic forms therefore apply; in particular,
+\begin{equation}
+ a_{nn}>0,
+ \tag{14.9}
+\end{equation}
+\SourcePage{62}{65}
+and for every $a_{mm}$, $a_{nn}$, $a_{mn}$,
+\begin{equation}
+ a_{mm}a_{nn}\geq|a_{mn}|^2.
+ \tag{14.10}
+\end{equation}
+The pure case, in which the density matrix is a product of functions,
+corresponds to
+\begin{equation}
+ a_{mn}=a_ma_n^*.
+ \tag{14.11}
+\end{equation}
+A simple criterion distinguishes a pure from a mixed state. In the pure case,
+\[
+ (a^2)_{mn}=\sum_k a_{mk}a_{kn}
+ =\sum_k a_ma_k^*a_ka_n^*=a_ma_n^*\sum_k|a_k|^2=a_ma_n^*,
+\]
+and therefore
+\begin{equation}
+ (a^2)_{mn}=a_{mn}.
+ \tag{14.12}
+\end{equation}
+Thus the square of the density matrix coincides with the matrix itself.

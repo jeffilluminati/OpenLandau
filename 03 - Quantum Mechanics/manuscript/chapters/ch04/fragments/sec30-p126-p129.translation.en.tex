@@ -1,0 +1,150 @@
+\SourcePage{126}{129}
+\section{Parity of a state}
+
+Besides translations and rotations of the coordinate system (invariance under
+which expresses, respectively, the homogeneity and isotropy of space),
+there is one more operation that preserves the Hamiltonian of a closed
+system: the \emph{inversion transformation}, which reverses the sign of
+every coordinate at once (equivalently, it flips the direction of all
+axes, turning a right-handed frame into a left-handed one and
+conversely). Invariance of the Hamiltonian under inversion is the
+mathematical expression of the mirror symmetry of space\footnote{Inversion
+likewise leaves invariant the Hamiltonian of particles moving in a centrally
+symmetric field (provided the coordinate origin coincides with the center of
+that field).}. In classical
+mechanics, the invariance of the Hamilton function under inversion gives no
+\SourcePage{127}{130}
+new conservation laws. In quantum mechanics, however, the situation is
+essentially different.
+
+Introduce the inversion operator $\hat P$\footnote{From the English word
+\emph{parity}.}, whose action on a wave function $\psi(\mathbf r)$ consists
+in reversing the signs of the coordinates:
+\begin{equation}
+  \hat P\psi(\mathbf r)=\psi(-\mathbf r).
+  \tag{30.1}
+\end{equation}
+The eigenvalues $P$ of this operator, defined by the equation
+\begin{equation}
+  \hat P\psi(\mathbf r)=P\psi(\mathbf r),
+  \tag{30.2}
+\end{equation}
+are easily found. Two successive applications of the inversion operator give
+the identity: the arguments of the function are left entirely unchanged. In
+other words, $\hat P^2\psi=P^2\psi=\psi$, so that $P^2=1$, whence
+\begin{equation}
+  P=\pm1.
+  \tag{30.3}
+\end{equation}
+
+An eigenfunction of the inversion operator is therefore either left entirely
+unaltered or acquires an overall sign change. Wave functions (and the
+corresponding states) of the first type are called \emph{even}, and those
+of the second type \emph{odd}.
+
+The invariance of the Hamiltonian under inversion (that is, the commutation of
+$\hat H$ and $\hat P$) therefore expresses the \emph{law of conservation of
+parity}: if a state of a closed system has definite parity (if it is even or
+odd), that parity is conserved in time\footnote{To avoid misunderstanding, we
+recall that the discussion concerns nonrelativistic theory. Interactions exist
+in nature, and are treated in relativistic theory, that violate parity
+conservation.}.
+
+The angular-momentum operator is likewise invariant under inversion:
+inversion reverses the signs both of the coordinates and of the operators for
+differentiation with respect to them, and hence the operator (26.2) remains
+unchanged. Put differently, inversion and angular momentum commute, so that
+a definite parity can coexist with definite values of $L$ and of the
+projection $M$. Moreover, all states that differ only in $M$ have the same
+parity. This is already evident from the independence of the properties of a
+closed system from its orientation in space; formally, it can be proved from
+the commutation relation $\hat L_+\hat P-\hat P\hat L_+=0$ by the same method
+used to obtain (29.3) from (29.2).
+\SourcePage{128}{131}
+There are definite \emph{parity selection rules} for the matrix elements of
+various physical quantities.
+
+Consider scalar quantities first. Here one must distinguish \emph{true
+scalars}, which remain entirely unchanged under inversion, from
+\emph{pseudoscalars}, which change sign under inversion (the scalar product of
+an axial vector and a polar vector is a pseudoscalar). The operator $\hat f$
+of a true scalar commutes with $\hat P$. It follows that if the matrix of $P$
+is diagonal, then $f$ is likewise diagonal with respect to parity: matrix
+elements vanish except for the $g\to g$ and $u\to u$ transitions (here $g$
+and $u$ label even and odd states).
+For the operator of a pseudoscalar quantity, on the other hand,
+$\hat P\hat f=-\hat f\hat P$; the operators $\hat P$ and $\hat f$
+“anticommute.” The matrix element of this equality for a transition
+$g\to g$ is
+\[
+  P_{gg}f_{gg}=-f_{gg}P_{gg},
+\]
+and since $P_{gg}=1$, we have $f_{gg}=0$; in the same way one finds
+$f_{uu}=0$. Thus the matrix of a pseudoscalar quantity has nonzero elements
+only for transitions in which the parity changes. The selection rules for
+matrix elements of scalar quantities are therefore
+\begin{equation}
+ \begin{aligned}
+  \text{true scalars:}&\qquad g\to g,\quad u\to u,\\
+  \text{pseudoscalars:}&\qquad g\to u,\quad u\to g.
+ \end{aligned}
+ \tag{30.4}
+\end{equation}
+
+These rules can also be obtained in another way, directly from the definition
+of matrix elements. Consider, for example, the integral
+$f_{ug}=\int\psi_u^*\hat f\psi_g\,dq$, where $\psi_g$ is even and $\psi_u$
+is odd. On reversing the signs of all coordinates, the integrand changes sign
+if $f$ is a true scalar. On the other hand, an integral over all space cannot
+change when the variables of integration are merely renamed. Hence
+$f_{ug}=-f_{ug}$, so that $f_{ug}=0$.
+
+The selection rules for vector quantities are obtained in the same way. One
+must remember that ordinary, polar vectors reverse sign under inversion,
+whereas axial vectors remain unchanged (an example is the angular-momentum
+vector, the cross product $\mathbf r\times\mathbf p$ of two polar vectors).
+Taking this into account, we find
+\begin{equation}
+ \begin{aligned}
+  \text{polar vectors:}&\qquad g\to u,\quad u\to g,\\
+  \text{axial vectors:}&\qquad g\to g,\quad u\to u.
+ \end{aligned}
+ \tag{30.5}
+\end{equation}
+Let us determine the parity of a one-particle state with angular momentum
+$l$. Inversion ($x\to-x$, $y\to-y$, $z\to-z$) consists,
+\SourcePage{129}{132}
+in spherical coordinates, of the transformation
+\begin{equation}
+  r\to r,\qquad \theta\to\pi-\theta,\qquad
+  \varphi\to\varphi+\pi.
+  \tag{30.6}
+\end{equation}
+The angular dependence of the particle's wave function is given by the
+spherical function $Y_{lm}$, which, apart from a constant immaterial here,
+has the form $P_l^m(\cos\theta)e^{im\varphi}$. When $\varphi$ is replaced by
+$\varphi+\pi$, the factor $e^{im\varphi}$ is multiplied by $(-1)^m$; when
+$\theta$ is replaced by $\pi-\theta$, $P_l^m(\cos\theta)$ becomes
+$P_l^m(-\cos\theta)=(-1)^{l-m}P_l^m(\cos\theta)$. Thus the entire function is
+multiplied by $(-1)^l$ (which is independent of $m$, in agreement with the
+statement above); hence the parity of a state with a given $l$ is
+\begin{equation}
+  P=(-1)^l.
+  \tag{30.7}
+\end{equation}
+Accordingly, even values of $l$ yield even states and odd values yield odd
+ones.
+
+For a vector physical quantity associated with a single particle, nonzero
+matrix elements can arise only in transitions with $l\to l,l\pm1$ (\secref{29}). Combining
+this fact with (30.7) and with the preceding statements concerning parity
+changes in vector matrix elements, we conclude that matrix elements of vector
+quantities belonging to an individual particle are nonzero only for the
+transitions
+\begin{equation}
+ \begin{aligned}
+  \text{polar vectors:}&\qquad l\to l\pm1,\\
+  \text{axial vectors:}&\qquad l\to l.
+ \end{aligned}
+ \tag{30.8}
+\end{equation}

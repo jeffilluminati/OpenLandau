@@ -1,0 +1,209 @@
+\SourcePage{71}{74}
+\section{The Schrödinger equation}
+
+The Hamiltonian determines the form of a physical system's wave equation and
+consequently acquires fundamental significance in the entire mathematical
+apparatus of quantum mechanics.
+
+For a free particle, the Hamiltonian is already established by the general
+requirements associated with the homogeneity and isotropy of space and with
+the Galilean relativity principle. In classical mechanics these requirements
+imply a quadratic dependence of the particle energy on its
+momentum: $E=p^2/2m$, where the constant $m$ is called the mass of the particle
+(see I, \S~4). In quantum mechanics the same requirements lead to the same
+relation for the eigenvalues of energy and momentum, quantities which for a
+free particle are conserved and can be measured simultaneously.
+
+For the relation $E=p^2/2m$ to hold for every eigenvalue of energy and
+momentum, however, it must also hold for their operators:
+\begin{equation}
+  \hat H=\frac{1}{2m}\left(\hat p_x^2+\hat p_y^2+\hat p_z^2\right).
+  \tag{17.1}
+\end{equation}
+Substitution of (15.2) here gives the Hamiltonian of a freely moving particle
+in the form
+\begin{equation}
+  \hat H=-\frac{\hbar^2}{2m}\Delta,
+  \tag{17.2}
+\end{equation}
+where $\Delta=\partial^2/\partial x^2+\partial^2/\partial y^2+
+\partial^2/\partial z^2$ is the Laplace operator. The Hamiltonian of a system
+of noninteracting particles is equal to the sum of the Hamiltonians of the
+individual particles:
+\begin{equation}
+  \hat H=-\frac{\hbar^2}{2}\sum_a\frac{\Delta_a}{m_a},
+  \tag{17.3}
+\end{equation}
+where the index $a$ numbers the particles; $\Delta_a$ is the Laplace operator
+in which differentiation is performed with respect to the coordinates of the
+$a$th particle.
+\SourcePage{72}{75}
+In classical (nonrelativistic) mechanics, particle interaction is described by
+an additive term in the Hamilton function, the potential energy of interaction
+$U(\mathbf r_1,\mathbf r_2,\ldots)$, which is a function of the particle
+coordinates. Particle interaction in quantum mechanics is likewise described
+by adding the same function to the Hamiltonian of the
+system\footnote{This assertion is not, of course, a logical consequence of the
+fundamental principles of quantum mechanics and must be regarded as a
+consequence of experimental data.}:
+\begin{equation}
+  \hat H=-\frac{\hbar^2}{2}\sum_a\frac{\Delta_a}{m_a}
+  +U(\mathbf r_1,\mathbf r_2,\ldots);
+  \tag{17.4}
+\end{equation}
+the first term may be regarded as the kinetic-energy operator and the second
+as the potential-energy operator. In particular, the Hamiltonian for one
+particle in an external field is
+\begin{equation}
+  \hat H=\frac{\hat{\mathbf p}^{2}}{2m}+U(x,y,z)
+  =-\frac{\hbar^2}{2m}\Delta+U(x,y,z),
+  \tag{17.5}
+\end{equation}
+where $U(x,y,z)$ is the potential energy of the particle in the external
+field.
+
+Substitution of expressions (17.2)--(17.5) in the general equation (8.1)
+yields the wave equations for the corresponding systems. Here we write out
+the wave equation for a particle in an external field:
+\begin{equation}
+  i\hbar\frac{\partial\Psi}{\partial t}
+  =-\frac{\hbar^2}{2m}\Delta\Psi+U(x,y,z)\Psi.
+  \tag{17.6}
+\end{equation}
+Equation (10.2), determining the stationary states, assumes the form
+\begin{equation}
+  \frac{\hbar^2}{2m}\Delta\psi+[E-U(x,y,z)]\psi=0.
+  \tag{17.7}
+\end{equation}
+
+Equations (17.6) and (17.7) were established by \emph{Schrödinger} in 1926 and
+are known as the \emph{Schrödinger equations}.
+
+For a free particle equation (17.7) becomes
+\begin{equation}
+  \frac{\hbar^2}{2m}\Delta\psi+E\psi=0.
+  \tag{17.8}
+\end{equation}
+This equation admits solutions that remain finite over all space for any positive value
+of the energy $E$. In states with definite directions of motion these
+solutions are the eigenfunctions of the momentum operator, with%
+\SourcePage{73}{76}
+\relax\ $E=p^2/2m$. The full (time-dependent) wave functions of these
+stationary states have the form
+\begin{equation}
+  \Psi=\operatorname{const}\cdot
+  \exp\left[-\frac{i}{\hbar}(Et-\mathbf p\cdot\mathbf r)\right].
+  \tag{17.9}
+\end{equation}
+Each of these functions, a \emph{plane wave}, describes a state in which the
+particle possesses definite energy $E$ and momentum $\mathbf p$. The frequency of
+this wave is $E/\hbar$, and its wave vector is
+$\mathbf k=\mathbf p/\hbar$; the associated wavelength
+$\lambda=2\pi\hbar/p$ is termed the \emph{de Broglie wavelength of the
+particle}\footnote{The concept of a wave associated with a particle was first
+introduced by \emph{de Broglie} (\emph{L.~de Broglie}) in 1924.}.
+
+The energy spectrum of a freely moving particle is therefore continuous,
+extending from zero to $+\infty$. Each of these eigenvalues, except only
+$E=0$, is degenerate, and the degeneracy is of infinite multiplicity. Indeed,
+every nonzero value of $E$ corresponds to an infinite set of eigenfunctions
+(17.9), differing in the directions of the vector $\mathbf p$ while its
+absolute magnitude remains the same.
+
+Let us trace how the limiting transition to classical mechanics occurs in the
+Schrödinger equation, considering for simplicity just one particle in an
+external field. Substitution in the Schrödinger equation (17.6) of the limiting
+expression (6.1), $\Psi=ae^{iS/\hbar}$, for the wave function gives, after the
+differentiations are performed,
+\[
+  a\frac{\partial S}{\partial t}
+  -i\hbar\frac{\partial a}{\partial t}
+  +\frac{a}{2m}{\left(\nabla S\right)}^2
+  -\frac{i\hbar}{2m}a\Delta S
+  -\frac{i\hbar}{m}\nabla S\cdot\nabla a
+  -\frac{\hbar^2}{2m}\Delta a+Ua=0.
+\]
+This equation contains purely real and purely imaginary terms (recall that $S$
+and $a$ are real); equating each group separately to zero gives two equations:
+\[
+  \frac{\partial S}{\partial t}
+  +\frac{1}{2m}{\left(\nabla S\right)}^2
+  +U-\frac{\hbar^2}{2ma}\Delta a=0,
+\]
+\[
+  \frac{\partial a}{\partial t}
+  +\frac{a}{2m}\Delta S+\frac{1}{m}\nabla S\cdot\nabla a=0.
+\]
+Neglecting the term containing $\hbar^2$ in the first of these equations, we
+obtain
+\begin{equation}
+  \frac{\partial S}{\partial t}
+  +\frac{1}{2m}{\left(\nabla S\right)}^2+U=0,
+  \tag{17.10}
+\end{equation}
+that is, as expected, the classical Hamilton--Jacobi equation for the action
+$S$ of the particle. We note in passing that, as $\hbar\to0$%
+\SourcePage{74}{77}
+\relax\ classical mechanics is accurate up to and including quantities of
+first order in $\hbar$ (rather than zeroth order).
+
+After multiplication by $2a$, the second equation obtained above can be
+rewritten as
+\begin{equation}
+  \frac{\partial a^2}{\partial t}
+  +\Div{\left(a^2\frac{\nabla S}{m}\right)}=0.
+  \tag{17.11}
+\end{equation}
+This equation has a transparent physical meaning: $a^2$ is the probability
+density for finding the particle at one or another place in space
+($|\Psi|^2=a^2$); $\nabla S/m=\mathbf p/m$ is the classical velocity
+$\mathbf v$ of the particle. Equation (17.11) is therefore nothing other than
+the continuity equation, showing that the probability density is
+``transported'' according to the laws of classical mechanics, with the
+classical velocity $\mathbf v$ at every point.
+
+\ProblemHeading
+Find the transformation law of the wave function under a Galilean
+transformation.
+
+\SolutionHeading
+Perform the transformation on the wave function for the free motion of a
+particle (a plane wave). Since every function $\Psi$ can be expanded in plane
+waves, this will also determine the transformation law for an arbitrary wave
+function.
+
+The plane waves in the reference frames $K$ and $K'$ (where $K'$ moves with
+velocity $\mathbf V$ relative to $K$) are
+\[
+  \Psi(\mathbf r,t)=\operatorname{const}\cdot
+  \exp[i(\mathbf p\cdot\mathbf r-Et)/\hbar],
+\]
+\[
+  \Psi'(\mathbf r',t)=\operatorname{const}\cdot
+  \exp[i(\mathbf p'\cdot\mathbf r'-E't)/\hbar],
+\]
+where $\mathbf r=\mathbf r'+\mathbf Vt$, while the particle's momenta and
+energies in the two frames are related by
+\[
+  \mathbf p=\mathbf p'+m\mathbf V,
+  \qquad
+  E=E'+\mathbf V\cdot\mathbf p'+\frac{mV^2}{2}
+\]
+(see I, \S~8). Substitution of these expressions in $\Psi$ gives
+\begin{equation}
+  \begin{aligned}
+    \Psi(\mathbf r,t)
+      &=\Psi'(\mathbf r',t)
+        \exp\left[\frac{i}{\hbar}
+          \left(m\mathbf V\cdot\mathbf r'+\frac{mV^2}{2}t\right)\right]\\
+      &=\Psi'(\mathbf r-\mathbf Vt,t)
+        \exp\left[\frac{i}{\hbar}
+          \left(m\mathbf V\cdot\mathbf r-\frac{mV^2}{2}t\right)\right].
+  \end{aligned}
+  \tag{1}
+\end{equation}
+Written this way, the formula no longer contains quantities characterizing
+the free motion of the particle; it therefore furnishes the sought-after
+general rule governing how the wave function of an arbitrary state of the
+particle transforms. For a system of particles, the exponent of the
+exponential in (1) must contain a summation over all the particles.

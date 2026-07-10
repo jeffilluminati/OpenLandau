@@ -1,0 +1,175 @@
+\SourcePage{36}{39}
+\section{The Wave Function and Measurements}
+
+Let us return to the measurement process, whose properties were discussed
+qualitatively in \secref{1}, and show how those properties are connected with the
+mathematical apparatus of quantum mechanics.
+
+Consider a system made up of two parts: a classical apparatus and an electron
+(treated as a quantum object). Measurement consists in bringing these two
+parts into interaction. The apparatus consequently passes from its initial
+state into some other state, and from this change we draw conclusions about
+the state of the electron. States of the apparatus are distinguished by the
+values of a physical quantity characterizing it (or%
+\SourcePage{37}{40}
+quantities)---the apparatus ``reading.'' Denote this quantity provisionally by
+$g$, and its eigenvalues by $g_n$. Because the apparatus is classical, these
+values generally range over a continuum; solely to simplify the notation in
+the formulas below, however, we shall suppose that the spectrum is discrete.
+The states of the apparatus are described by quasiclassical wave functions,
+which we denote by $\Phi_n(\xi)$; the index $n$ corresponds to the reading
+$g_n$, and $\xi$ stands collectively for its coordinates.
+That the apparatus is classical manifests itself in the circumstance that at
+each instant one can assert with certainty that it occupies one of the known states
+$\Phi_n$, with some definite value of $g$. Such a statement would of course
+be false for a quantum system.
+
+Let $\Phi_0(\xi)$ be the wave function of the apparatus in its initial state
+(before measurement), and let $\Psi(q)$ be an arbitrary normalized initial
+wave function of the electron ($q$ denotes its coordinates). These functions
+describe apparatus and electron independently, so the initial wave function
+of the complete system is the product
+\begin{equation}
+  \Psi(q)\Phi_0(\xi).
+  \tag{7.1}
+\end{equation}
+The apparatus and electron then interact. In principle, the equations of
+quantum mechanics allow the time variation of the system's wave function to
+be followed. After the measurement it will plainly no longer be a product of
+functions of $\xi$ and $q$. Expanding it in the eigenfunctions $\Phi_n$ of the
+apparatus (which form a complete system of functions), we obtain a sum of the
+form
+\begin{equation}
+  \sum_n A_n(q)\Phi_n(\xi),
+  \tag{7.2}
+\end{equation}
+where the $A_n(q)$ are certain functions of $q$.
+
+At this point the ``classical nature'' of the apparatus enters, together with
+the double role of classical mechanics as both a limiting case and a basis of
+quantum mechanics. As already noted, because the apparatus is classical, the
+quantity $g$ (its ``reading'') has a definite value at every instant. It
+follows that after measurement the actual state of apparatus plus electron is
+described not by the whole sum (7.2), but by only the one term corresponding
+to the apparatus reading $g_n$:
+\begin{equation}
+  A_n(q)\Phi_n(\xi).
+  \tag{7.3}
+\end{equation}
+\SourcePage{38}{41}
+Consequently, $A_n(q)$ is proportional to the electron's wave function after
+measurement. It is not itself that wave function, as is already evident from
+the fact that $A_n(q)$ is not normalized. It contains both information about
+the properties of the state produced and the probability, determined by the
+system's initial state, that the apparatus will give its $n$th reading.
+
+By the linearity of the equations of quantum mechanics, the relation between
+$A_n(q)$ and the initial electron wave function $\Psi(q)$ is in general given
+by a linear integral operator,
+\begin{equation}
+  A_n(q)=\int K_n(q,q')\Psi(q')\,dq',
+  \tag{7.4}
+\end{equation}
+whose kernel $K_n(q,q')$ characterizes the measurement process in question.
+
+We suppose that the measurement under consideration yields a complete
+description of the electron's state. In other words (see \secref{1}), in the state
+produced, the probabilities for all quantities must be independent of the
+electron's preceding state (before measurement). Mathematically, this means
+that the form of the functions $A_n(q)$ must be fixed by the measurement
+process itself and must not depend on the initial electron wave function
+$\Psi(q)$.
+
+The $A_n$ must therefore have the form
+\begin{equation}
+  A_n(q)=a_n\varphi_n(q),
+  \tag{7.5}
+\end{equation}
+where the $\varphi_n$ are certain functions that we shall take to be
+normalized, while only the constants $a_n$ depend on the initial state
+$\Psi(q)$. In the integral relation (7.4), this corresponds to a kernel
+$K_n(q,q')$ which factors into functions of $q$ and $q'$ separately:
+\begin{equation}
+  K_n(q,q')=\varphi_n(q)\Psi_n^*(q').
+  \tag{7.6}
+\end{equation}
+The linear dependence of the constants $a_n$ on $\Psi(q)$ is then expressed
+by formulas of the form
+\begin{equation}
+  a_n=\int\Psi(q)\Psi_n^*(q)\,dq,
+  \tag{7.7}
+\end{equation}
+where the $\Psi_n(q)$ are certain functions fixed by the measurement process.
+
+The functions $\varphi_n(q)$ are the normalized wave functions of the
+electron after measurement. We thus see how the theory's mathematical
+formalism represents the possibility of producing, by a measurement, an
+electron state described by a definite wave function.
+\SourcePage{39}{42}
+When a measurement is made on an electron having a specified wave function
+$\Psi(q)$, the constants $a_n$ have a simple physical meaning: by the general
+rules, $|a_n|^2$ is the probability that the measurement gives the $n$th
+result. The probabilities of all results sum to unity:
+\begin{equation}
+  \sum_n|a_n|^2=1.
+  \tag{7.8}
+\end{equation}
+For an arbitrary normalized function $\Psi(q)$, the validity of (7.7) and
+(7.8) is equivalent (compare \secref{3}) to the statement that $\Psi(q)$ can be
+expanded in the functions $\Psi_n(q)$. Hence the functions $\Psi_n(q)$ form
+a complete normalized and mutually orthogonal set.
+
+If the electron's initial wave function coincides with one of the functions
+$\Psi_n(q)$, the corresponding constant $a_n$ is plainly unity and all the
+others vanish. Put differently, if the measurement is performed on an electron
+in the state $\Psi_n(q)$, it will with certainty give a definite ($n$th) result.
+
+Taken together, these properties of the functions $\Psi_n(q)$ demonstrate
+that they are eigenfunctions of a certain physical quantity that characterizes the electron (call it
+$f$), and the measurement being considered may be called a measurement of
+that quantity.
+
+It is essential that, in general, the functions $\Psi_n(q)$ do not coincide
+with the functions $\varphi_n(q)$ (indeed, the latter need not even be
+mutually orthogonal or form an eigenfunction system of any operator). This
+fact expresses first of all the non-repeatability of measurement results in
+quantum mechanics. If the electron was in the state $\Psi_n(q)$, a measurement
+of $f$ made upon it will reveal the value $f_n$ with certainty. After the
+measurement, however, the electron is in a different state $\varphi_n(q)$, in
+which $f$ need no longer have any definite value. Thus, if a second
+measurement were made immediately after the first, the value found for $f$
+would not coincide with the result of the first
+measurement\footnote{There is, however, an important exception to the
+non-repeatability of measurements: coordinate is the one quantity whose
+measurement is repeatable. Two measurements of an electron's coordinate made
+at a sufficiently short interval must give nearby values; otherwise the
+electron would have infinite velocity. The mathematical origin of this
+exception lies in the commutativity of the coordinate with the
+electron--apparatus interaction energy operator, which (in the nonrelativistic
+theory) depends solely on
+coordinates.}. To predict (in the sense of%
+\SourcePage{40}{43}
+calculating the probability of) the result of a repeated measurement when the
+first result is known, one takes from the first measurement the wave function
+$\varphi_n(q)$ of the state it produced, and from the second the wave function
+$\Psi_m(q)$ of the state whose probability is sought. More explicitly, the
+equations of quantum mechanics determine a wave function
+$\varphi_n(q,t)$ which equals $\varphi_n(q)$ at the time of the first
+measurement. If the second measurement is made at time $t$, the probability
+of its $m$th result is the squared modulus of the integral
+$\int\varphi_n(q,t)\Psi_m^*(q)\,dq$.
+
+We see that measurement in quantum mechanics is ``two-faced'': its roles with
+respect to past and future do not coincide. Toward the past it ``verifies''
+the probabilities of the various possible results predicted from the state
+created by the preceding measurement. Toward the future it creates a new
+state (see also \secref{44}). A profound irreversibility is therefore inherent in
+the measurement process itself.
+
+This irreversibility has important consequences of principle. As will be seen
+later (see the end of \secref{18}), the fundamental equations of quantum mechanics
+by themselves are symmetric under reversal of the sign of time; in this
+respect quantum mechanics does not differ from classical mechanics. The
+irreversibility of measurement, however, makes the two directions of time
+physically inequivalent in quantum phenomena, and thus produces a distinction
+between future and past.

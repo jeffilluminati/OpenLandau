@@ -1,0 +1,126 @@
+\SourcePage{100}{103}
+\section{Motion in a Uniform Field}
+
+Consider the motion of a particle in a uniform external field. Choose the
+direction of the field as the $x$ axis, and let $F$ be the force exerted by
+the field on the particle; in an electric field of strength $E$, this force
+is $F=eE$, where $e$ is the particle's charge.
+
+The potential energy of the particle in a uniform field has the form
+$U=-Fx+\operatorname{const}$. Choosing the constant so that $U=0$ at $x=0$,
+we have $U=-Fx$. The Schrödinger equation for the problem is
+\begin{equation}
+  \frac{d^2\psi}{dx^2}+\frac{2m}{\hbar^2}(E+Fx)\psi=0.
+  \tag{24.1}
+\end{equation}
+
+Since $U$ tends to $+\infty$ as $x\to-\infty$ and to $-\infty$ as
+$x\to\infty$, it is evident in advance that the energy levels form a
+continuous spectrum filling the entire interval from $-\infty$ to $+\infty$.
+All these eigenvalues are nondegenerate and
+\SourcePage{101}{104}
+correspond to motion that is finite on the side $x=-\infty$ and infinite in
+the direction $x\to+\infty$.
+
+In place of the coordinate $x$, introduce the dimensionless variable
+\begin{equation}
+  \xi=\left(x+\frac{E}{F}\right)
+  \left(\frac{2mF}{\hbar^2}\right)^{1/3}.
+  \tag{24.2}
+\end{equation}
+Equation (24.1) then becomes
+\begin{equation}
+  \psi''+\xi\psi=0.
+  \tag{24.3}
+\end{equation}
+This equation contains no energy parameter at all. Consequently, once a
+solution satisfying the required finiteness conditions has been found, it
+provides an eigenfunction for every value of the energy.
+
+The solution of (24.3) that is finite for all $x$ is (see \S~b of the
+mathematical supplements)
+\begin{equation}
+  \psi(\xi)=A\Phi(-\xi),
+  \tag{24.4}
+\end{equation}
+where
+\[
+  \Phi(\xi)=\frac{1}{\sqrt{\pi}}\int_0^\infty
+  \cos\left(\frac{u^3}{3}+u\xi\right)du
+\]
+is the so-called Airy function, and $A$ is a normalization factor to be
+determined below.
+
+As $\xi\to-\infty$, the function $\psi(\xi)$ tends exponentially to zero.
+The asymptotic expression determining $\psi(\xi)$ for negative $\xi$ of large
+absolute magnitude is (see (b.4))
+\begin{equation}
+  \psi(\xi)\approx\frac{A}{2|\xi|^{1/4}}
+  \exp\left(-\frac{2}{3}|\xi|^{3/2}\right).
+  \tag{24.5}
+\end{equation}
+For large positive $\xi$, the asymptotic expression for $\psi(\xi)$ is instead
+(see (b.5)\footnote{We note in anticipation that the asymptotic expressions
+(24.5) and (24.6) correspond precisely to the quasiclassical forms of the wave
+function in classically forbidden and allowed regions, respectively
+(\secref{47}).}):
+\begin{equation}
+  \psi(\xi)=\frac{A}{\xi^{1/4}}
+  \sin\left(\frac{2}{3}\xi^{3/2}+\frac{\pi}{4}\right).
+  \tag{24.6}
+\end{equation}
+
+Following the general rule (5.4) for normalizing eigenfunctions of a
+continuous spectrum, put the functions (24.4) into a form normalized to a
+delta function of the energy:
+\begin{equation}
+  \int_{-\infty}^{+\infty}\psi(\xi)\psi(\xi')\,dx=\delta(E'-E).
+  \tag{24.7}
+\end{equation}
+\SourcePage{102}{105}
+In \secref{21} a simple method was given for determining the normalization
+coefficient from the asymptotic form of the wave functions. Following that
+method, write (24.6) as a sum of two traveling waves:
+\[
+  \psi(\xi)\approx\frac{A}{2\xi^{1/4}}
+  \left\{
+  \exp\left[i\left(\frac{2}{3}\xi^{3/2}-\frac{\pi}{4}\right)\right]
+  +\exp\left[-i\left(\frac{2}{3}\xi^{3/2}-\frac{\pi}{4}\right)\right]
+  \right\}.
+\]
+The flux density calculated for each of these two terms is
+\[
+  v\left(\frac{A}{2\xi^{1/4}}\right)^2
+  =\sqrt{\frac{2}{m}(E+Fx)}
+  \left(\frac{A}{2\xi^{1/4}}\right)^2
+  =A^2\frac{(2\hbar F)^{1/3}}{4m^{2/3}}.
+\]
+Equating it to $1/(2\pi\hbar)$, we find
+\begin{equation}
+  A=\frac{(2m)^{1/3}}{\pi^{1/2}F^{1/6}\hbar^{2/3}}.
+  \tag{24.8}
+\end{equation}
+
+\ProblemHeading
+Determine the momentum-representation wave functions for a particle in a
+uniform field.
+
+\SolutionHeading
+The Hamiltonian in the momentum representation is
+\[
+  \widehat H=\frac{p^2}{2m}-i\hbar F\frac{d}{dp},
+\]
+so the Schrödinger equation for the wave function $a(p)$ is
+\[
+  -i\hbar F\frac{da}{dp}+\left(\frac{p^2}{2m}-E\right)a=0.
+\]
+Solving this equation gives the required functions
+\[
+  a_E(p)=\frac{1}{\sqrt{2\pi\hbar F}}
+  \exp\left\{\frac{i}{\hbar F}
+  \left(Ep-\frac{p^3}{6m}\right)\right\}.
+\]
+These functions are normalized by the condition
+\[
+  \int_{-\infty}^{+\infty}a_E^*(p)a_{E'}(p)\,dp=\delta(E'-E).
+\]

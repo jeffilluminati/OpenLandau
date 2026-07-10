@@ -1,0 +1,159 @@
+\SourcePage{74}{77}
+\section{Fundamental properties of the Schrödinger equation}
+
+The conditions to be satisfied by solutions of the Schrödinger equation are
+quite general in nature. The wave function, to begin with, must be
+single-valued and continuous throughout%
+\SourcePage{75}{78}
+\relax\ all of space. The continuity requirement remains in force even when the
+field $U(x,y,z)$ itself has surfaces of discontinuity. On any such surface,
+the wave function together with its derivatives must still be continuous. The latter are
+not continuous, however, if the potential energy $U$ becomes infinite beyond
+some surface. A particle cannot enter at all a region of space where
+$U=\infty$, that is, $\psi=0$ must hold everywhere in that region. Continuity
+of $\psi$ requires it to vanish on the boundary of this region; in this case,
+however, the derivatives of $\psi$ generally undergo a jump.
+
+If the field $U(x,y,z)$ nowhere becomes infinite, the wave function must also
+be finite throughout space. The same condition must be observed when $U$
+becomes infinite at some point, provided it does not do so too rapidly, namely
+as $1/r^s$ with $s<2$ (see also \secref{35}).
+
+Let $U_{\min}$ be the minimum value of the function $U(x,y,z)$. Since the
+particle's Hamiltonian is the sum of two terms, the kinetic- and
+potential-energy operators $\hat T$ and $U$, the mean energy in an arbitrary
+state is the sum $\bar E=\bar T+\bar U$. But all eigenvalues of the operator
+$\hat T$ (which coincides with the Hamiltonian of a free particle) are
+positive, and therefore the mean value $\bar T>0$ as well. Taking account also
+of the evident inequality $\bar U>U_{\min}$, we find that
+$\bar E>U_{\min}$. Since this inequality holds for every state, it plainly
+holds for all energy eigenvalues as well:
+\begin{equation}
+  E_n>U_{\min}.
+  \tag{18.1}
+\end{equation}
+
+Suppose a particle moves through a force field that goes to zero at large
+distances; following standard convention, we fix $U(x,y,z)$ so that it too
+tends to zero at infinity. One readily verifies that the
+eigenvalue spectrum for negative energies is then discrete: every state with
+$E<0$ in a field that vanishes at infinity is a bound state. Indeed, in stationary states of the continuous spectrum,
+which correspond to infinite motion, the particle is at infinity (see
+\secref{10}). At sufficiently large distances the presence of the field may be
+neglected and the particle's motion may be regarded as free; in free motion,
+however, the energy can only be positive.
+
+Conversely, the positive eigenvalues form a continuous spectrum and
+correspond to infinite motion; for $E>0$ the Schrödinger equation generally
+does not have%
+\SourcePage{76}{79}
+\relax\ (in the field under consideration) solutions for which the integral
+$\int|\psi|^2\,dV$ converges\footnote{From a purely mathematical standpoint,
+however, it must be qualified that, for certain forms of the function
+$U(x,y,z)$ (having no physical significance), a discrete set of values may
+drop out of the continuous spectrum.}.
+
+We draw attention to the fact that, in quantum mechanics, a particle in finite
+motion may also be present in regions of space where $E<U$. Although the
+probability $|\psi|^2$ of finding the particle tends rapidly to zero deeper
+inside such a region, it nevertheless differs from zero at every finite
+distance. This represents a fundamental departure from classical
+mechanics, where a particle is altogether unable to penetrate a region with $U>E$. In
+classical mechanics, penetration into this region is impossible because, for
+$E<U$, the kinetic energy would become negative, meaning that the velocity
+would be imaginary. In quantum mechanics, too, the kinetic-energy eigenvalues are
+positive; nevertheless, no contradiction arises here, because if the
+measurement process localizes the particle at some definite point of space,
+that same process disturbs the particle's state in such a way that it ceases
+altogether to have any definite kinetic energy.
+
+If $U(x,y,z)>0$ throughout space (with $U\to0$ at infinity), inequality (18.1)
+gives $E_n>0$. On the other hand, since the spectrum must be continuous for
+$E>0$, it follows that in the case under consideration the discrete spectrum
+is absent altogether, that is, only infinite motion of the particle is
+possible.
+
+Suppose that at some point, chosen as the coordinate origin, $U$ tends to
+$-\infty$ according to the law
+\begin{equation}
+  U\approx-\alpha/r^s,
+  \qquad \alpha>0.
+  \tag{18.2}
+\end{equation}
+Consider a wave function that is finite in a certain small region of radius
+$r_0$ around the origin and zero outside it. The uncertainty in the particle's
+coordinate values in such a wave packet is of order $r_0$; the uncertainty in
+the momentum value is therefore $\sim\hbar/r_0$. The mean kinetic energy in
+this state is of order $\hbar^2/mr_0^2$, and the mean potential energy is of
+order $-\alpha/r_0^s$. Suppose first that $s>2$. Then, for sufficiently small
+$r_0$, the sum $\hbar^2/mr_0^2-\alpha/r_0^s$ takes negative values of
+arbitrarily large absolute magnitude. But if the mean energy can take such
+values, this means in any event that there exist negative energy eigenvalues%
+\SourcePage{77}{80}
+\relax\ of arbitrarily large absolute magnitude. Energy levels with large
+$|E|$ correspond to motion of the particle
+in a very small region of space around the origin. The ``normal'' state will
+correspond to the particle being located at the origin itself, that is, the
+particle will ``fall'' into the point $r=0$.
+
+If $s<2$, on the other hand, the energy cannot take negative values of
+arbitrarily large absolute magnitude. The diagonal spectrum starts from a certain
+finite negative value, and the particle does not fall to the center.
+We note that in classical mechanics a particle can in principle fall to the
+center in any attractive field (that is, for any positive $s$). The case
+$s=2$ will be considered separately in \secref{35}.
+
+Next, let us investigate the character of the energy spectrum as a function of
+the behaviour of the field at large distances. Suppose that as
+$r\to\infty$ the potential energy, while negative, tends to zero according to
+the power law (18.2) (in this formula $r$ is now large). Consider a wave packet
+``filling'' a spherical shell of large radius $r_0$ and thickness
+$\Delta r\ll r_0$. Then again the order of magnitude of the kinetic energy is
+$\hbar^2/m{\left(\Delta r\right)}^2$, and that of the potential energy is
+$-\alpha/r_0^s$. Let $r_0$ increase while $\Delta r$ is increased at the same
+time (so that $\Delta r$ grows in proportion to $r_0$). If $s<2$, then for
+sufficiently large $r_0$ the sum
+$\hbar^2/m{\left(\Delta r\right)}^2-\alpha/r_0^s$ becomes negative. It follows
+that stationary states with negative energy exist in which the particle may
+be found with appreciable probability at large distances from the origin. But
+this means that negative energy levels of arbitrarily small absolute magnitude
+exist (it must be remembered that wave functions decay rapidly in the region
+of space where $U>E$). Thus, in the case under consideration, the discrete
+spectrum contains an infinite set of levels which crowd together towards the
+level $E=0$.
+
+If, however, the field falls off at infinity as $-1/r^s$ with $s>2$, there
+are no negative levels of arbitrarily small absolute magnitude. The discrete
+spectrum ends at a level with nonzero absolute magnitude, so that the total
+number of levels is finite.
+
+The Schrödinger equation for the stationary-state wave functions $\psi$, together
+with the conditions placed on its solutions, is real. Its solutions can
+therefore always be chosen real\footnote{This is not true for systems in a
+magnetic field.}. The eigenfunctions of nonde%
+\SourcePageJoin{78}{81}
+generate energy values automatically prove to be real up to an immaterial
+phase factor. Indeed, $\psi^*$ satisfies the same equation as $\psi$ and is
+therefore also an eigenfunction for the same value of the energy; hence, if
+that value is nondegenerate, $\psi$ and $\psi^*$ must be essentially
+identical, that is, they may differ at most by a constant factor whose modulus
+equals unity. Wave functions that correspond to one and the same degenerate level need
+not be real, but a set of real functions can always be obtained by a suitable
+choice of their linear combinations.
+
+The full (time-dependent) wave functions $\Psi$, however, are determined by an
+equation whose coefficients contain $i$. This equation nevertheless retains
+its form if $t$ is replaced by $-t$ and complex conjugation is performed at
+the same time\footnote{It is assumed that the potential energy $U$ has no
+explicit dependence on time: the system is either closed or is in a constant
+(nonmagnetic) field.}. The functions $\Psi$ can therefore always be chosen so
+that $\Psi$ and $\Psi^*$ differ only in the sign of time.
+
+As is known, the equations of classical mechanics are unchanged under
+\emph{time reversal}, i.e.\ upon reversing the sign of time. In quantum
+mechanics, as we see, symmetry with respect to the two directions of time
+manifests itself in the invariance of the wave equation under reversal of
+the sign of $t$ accompanied by the replacement of $\Psi$ with $\Psi^*$. It must be
+remembered, however, that here this symmetry applies only to the equations and
+not to the concept of measurement itself, which has a fundamental role in
+quantum mechanics (as discussed in detail in \secref{7}).

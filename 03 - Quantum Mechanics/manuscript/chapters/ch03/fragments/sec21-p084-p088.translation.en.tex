@@ -1,0 +1,208 @@
+\SourcePage{84}{87}
+\section{General Properties of One-Dimensional Motion}
+
+When a particle's potential energy depends on just one coordinate $x$, the
+wave function may be sought as a product of a function of $y,z$ and a function
+of $x$ alone. The first is determined by the free-motion Schrödinger equation,
+and the second by the one-dimensional Schrödinger equation
+\begin{equation}
+  \frac{d^2\psi}{dx^2}+\frac{2m}{\hbar^2}[E-U(x)]\psi=0.
+  \tag{21.1}
+\end{equation}
+The problem of motion in a field with potential energy
+$U(x,y,z)=U_1(x)+U_2(y)+U_3(z)$, separated into a sum of functions each
+depending on only one coordinate, plainly reduces to the same kind of
+one-dimensional equations. In \secsref{22}{24} we shall consider several specific
+examples of such ``one-dimensional'' motion. First we establish some of its
+general properties.
+
+We begin by showing that every discrete-spectrum energy level in a
+one-dimensional problem is nondegenerate. Suppose the contrary, and let
+$\psi_1$ and $\psi_2$ be two different eigenfunctions belonging to the same
+energy value. Since both satisfy the same equation (21.1),
+\[
+  \frac{\psi_1''}{\psi_1}
+  =\frac{2m}{\hbar^2}(U-E)
+  =\frac{\psi_2''}{\psi_2},
+\]
+or $\psi_2\psi_1''-\psi_1\psi_2''=0$ (a prime denotes differentiation with
+respect to $x$). Integration gives
+\begin{equation}
+  \psi_1\psi_2'-\psi_2\psi_1'=\operatorname{const}.
+  \tag{21.2}
+\end{equation}
+\SourcePage{85}{88}
+Since $\psi_1=\psi_2=0$ at infinity, the constant must be zero, and hence
+\[
+  \psi_1\psi_2'-\psi_2\psi_1'=0,
+\]
+or $\psi_1'/\psi_1=\psi_2'/\psi_2$. A second integration gives
+$\psi_1=\operatorname{const}\cdot\psi_2$; the two functions are therefore
+essentially identical.
+
+For the discrete-spectrum wave functions $\psi_n(x)$, the following result,
+known as the \emph{oscillation theorem}, can be stated: the function
+$\psi_n(x)$ corresponding to the $(n+1)$th eigenvalue $E_n$ in increasing
+order vanishes $n$ times at finite $x$\footnote{If the particle can occupy
+only a bounded interval of the $x$ axis, the zeros of $\psi_n(x)$ inside that
+interval are to be counted.}.
+
+Suppose that $U(x)$ tends to finite limits as $x\to\pm\infty$ (it need not in
+any way be monotonic). Take $U(+\infty)$ as the zero of energy, so that
+$U(+\infty)=0$, and denote $U(-\infty)$ by $U_0$, with $U_0>0$. The discrete
+spectrum lies in the range of energies for which the particle cannot escape
+to infinity. The energy must therefore be less than both limiting values and,
+in particular, negative:
+\begin{equation}
+  E<0.
+  \tag{21.3}
+\end{equation}
+Of course $E>U_{\min}$ must also hold in every case, so $U(x)$ must possess at
+least one minimum with $U_{\min}<0$.
+
+Now consider the positive energies below $U_0$:
+\begin{equation}
+  0<E<U_0.
+  \tag{21.4}
+\end{equation}
+Here the spectrum is continuous and the particle motion in the corresponding
+stationary states is infinite, with the particle escaping toward
+$x=+\infty$. Every energy eigenvalue in this part of the spectrum is likewise
+nondegenerate. To see this, it suffices to observe that the proof given above
+for the discrete spectrum requires $\psi_1$ and $\psi_2$ to vanish at only
+one of the two infinities (here they vanish as $x\to-\infty$).
+
+At sufficiently large positive $x$, $U(x)$ can be neglected in the
+Schrödinger equation (21.1):
+\[
+  \psi''+\frac{2m}{\hbar^2}E\psi=0.
+\]
+\SourcePage{86}{89}
+This equation has real solutions in the form of a standing plane wave,
+\begin{equation}
+  \psi=a\cos(kx+\delta),
+  \tag{21.5}
+\end{equation}
+where $a$ and $\delta$ are constants, and the ``wave vector'' is
+$k=p/\hbar=\sqrt{2mE}/\hbar$. This formula gives the asymptotic form, as
+$x\to+\infty$, of the wave functions for the nondegenerate energy levels in
+the continuous-spectrum interval (21.4). At large negative $x$, the
+Schrödinger equation becomes
+\[
+  \psi''-\frac{2m}{\hbar^2}(U_0-E)\psi=0.
+\]
+The solution which does not become infinite as $x\to-\infty$ is
+\begin{equation}
+  \psi=be^{\kappa x},
+  \qquad
+  \kappa=\frac{1}{\hbar}\sqrt{2m(U_0-E)}.
+  \tag{21.6}
+\end{equation}
+This is the asymptotic wave function as $x\to-\infty$. The wave function thus
+decays exponentially into the region in which $E<U_0$.
+
+Finally, when
+\begin{equation}
+  E>U_0,
+  \tag{21.7}
+\end{equation}
+the spectrum is continuous and the motion is infinite in both directions.
+Every level in this part of the spectrum is doubly degenerate. The reason is
+that the corresponding wave functions are determined by the second-order
+equation (21.1), and both independent solutions meet the required conditions
+at infinity (whereas, for example, in the preceding case one solution became
+infinite as $x\to-\infty$ and had to be rejected). As $x\to+\infty$, the
+asymptotic wave function is
+\begin{equation}
+  \psi=a_1e^{ikx}+a_2e^{-ikx},
+  \tag{21.8}
+\end{equation}
+and similarly as $x\to-\infty$. The term containing $e^{ikx}$ corresponds to
+a particle moving to the right, and that containing $e^{-ikx}$ to a particle
+moving to the left.
+
+Suppose $U(x)$ is even, $U(-x)=U(x)$. The Schrödinger equation (21.1) is then
+unchanged on reversing the sign of the coordinate. Hence, if $\psi(x)$ is a
+solution, $\psi(-x)$ is also a solution and differs from $\psi(x)$ only by a
+constant factor: $\psi(-x)=c\psi(x)$. Reversing $x$ once more gives
+$\psi(x)=c^2\psi(x)$, so $c=\pm1$. Thus, for a potential energy symmetric
+about $x=0$, stationary-state wave functions may be either even,
+$\psi(-x)=\psi(x)$,%
+\SourcePage{87}{90}
+or odd, $\psi(-x)=-\psi(x)$\footnote{This argument assumes that the stationary
+state is nondegenerate, that is, that its motion is not infinite in both
+directions. Otherwise the two wave functions belonging to the given energy
+level may transform into one another when the sign of $x$ is reversed. Even
+then, the stationary-state wave functions are not necessarily
+even or odd, but definite parity can always be achieved by forming suitable
+linear combinations of the two solutions.}. In particular, the ground-state
+wave function is even: it cannot have a node, whereas an odd function
+necessarily vanishes at $x=0$, since $\psi(0)=-\psi(0)=0$.
+
+There is a simple method for normalizing one-dimensional-motion wave functions
+in the continuous spectrum, which determines the normalization coefficient
+directly from the asymptotic wave function at large $|x|$.
+
+Consider the wave function for motion infinite in one direction
+($x\to+\infty$). The normalization integral diverges as $x\to\infty$ (at
+$x\to-\infty$ the function decays exponentially, so the integral converges
+rapidly). To determine the normalization constant, one may therefore replace
+$\psi$ by its asymptotic value for large positive $x$ and take any finite
+value of $x$, say zero, as the lower limit of integration; this is equivalent
+to discarding a finite contribution beside a divergent one. We now
+show that a wave function normalized by
+\begin{equation}
+  \int\psi_p^*\psi_{p'}\,dx
+  =\delta\left(\frac{p-p'}{2\pi\hbar}\right)
+  =2\pi\hbar\delta(p-p')
+  \tag{21.9}
+\end{equation}
+(where $p$ is the particle momentum at infinity) must have the asymptotic form
+(21.5) with $a=2$:
+\begin{equation}
+  \psi_p\approx2\cos(kx+\delta)
+  =e^{i(kx+\delta)}+e^{-i(kx+\delta)}.
+  \tag{21.10}
+\end{equation}
+Since we are not seeking to verify mutual orthogonality of functions
+corresponding to different $p$, when substituting (21.10) into the
+normalization integral we take $p$ and $p'$ arbitrarily close and may put
+$\delta=\delta'$ (in general, $\delta$ is a function of $p$). We then retain
+in the integrand only the terms which diverge when $p=p'$; equivalently, we
+drop terms containing factors $e^{\pm i(k+k')x}$. We thus obtain
+\[
+  \int\psi_p^*\psi_{p'}\,dx
+  =\int_0^\infty e^{i(k'-k)x}\,dx
+  +\int_0^\infty e^{-i(k'-k)x}\,dx
+  =\int_{-\infty}^\infty e^{i(k'-k)x}\,dx,
+\]
+which, by (15.7), agrees with (21.9).
+\SourcePage{88}{91}
+According to (5.14), conversion to normalization by an energy delta function
+is effected by multiplying $\psi_p$ by
+\[
+  {\left(\frac{d(p/2\pi\hbar)}{dE}\right)}^{1/2}
+  =\frac{1}{\sqrt{2\pi\hbar v}},
+\]
+where $v$ is the particle's speed at infinity. Thus
+\begin{equation}
+  \psi_E=\frac{1}{\sqrt{2\pi\hbar v}}\psi_p
+  =\frac{1}{\sqrt{2\pi\hbar v}}
+  \left(e^{i(kx+\delta)}+e^{-i(kx+\delta)}\right).
+  \tag{21.11}
+\end{equation}
+Notice that each of the two traveling waves into which the standing wave
+(21.11) separates has flux density $1/(2\pi\hbar)$.
+
+We may therefore state the following rule for normalizing, to an energy delta
+function, the wave function of motion infinite in one direction: write its
+asymptotic expression as the sum of two plane waves traveling in opposite
+directions, and choose the normalization coefficient so that the flux density
+in the wave traveling toward the origin (or away from it) equals
+$1/(2\pi\hbar)$.
+
+The analogous argument gives the corresponding rule for wave functions of
+motion infinite in both directions. Such a wave function is normalized to an
+energy delta function when the sum of the fluxes in the waves traveling
+toward the origin from the positive and negative sides of the $x$ axis equals
+$1/(2\pi\hbar)$.

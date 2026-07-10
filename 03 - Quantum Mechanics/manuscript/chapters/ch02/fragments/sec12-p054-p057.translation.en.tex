@@ -1,0 +1,143 @@
+\section{Transformation of matrices}
+
+\SourcePage{54}{57}
+The matrix elements of one and the same physical quantity may be defined with
+respect to different sets of wave functions. These may be, for example, wave
+functions of stationary states described by different sets of physical
+quantities, or wave functions of stationary states of the same system placed
+in different external fields. The question therefore arises of transforming
+matrices from one representation to another.
+
+Let $\psi_n(q)$ and $\psi'_n(q)$ ($n=1,2,\ldots$) be two complete systems of
+orthonormal functions. They are related by a linear transformation
+\begin{equation}
+  \psi'_n=\sum_m S_{mn}\psi_m,
+  \tag{12.1}
+\end{equation}
+which is simply the expansion of the functions $\psi'_n$ in the complete
+system $\psi_m$. This transformation can be written in operator form as
+\begin{equation}
+  \psi'_n=\hat S\psi_n.
+  \tag{12.2}
+\end{equation}
+The operator $\hat S$ must satisfy a certain condition if the functions
+$\psi'_n$ are to be orthonormal whenever the functions $\psi_n$ are.
+Indeed, substituting (12.2) into
+$\int\psi_m'^*\psi'_n\,dq=\delta_{mn}$ and using the definition (3.14) of the
+transposed operator, we obtain
+\[
+  \int(\hat S\psi_m)^*\hat S\psi_n\,dq
+  =\int\psi_m^*\tilde{S^*}\hat S\psi_n\,dq=\delta_{mn}.
+\]
+\SourcePage{55}{58}
+For this equality to hold for every $m,n$, we must have
+$\tilde{S^*}\hat S=1$, or
+\begin{equation}
+  \tilde{S^*}\equiv\hat S^+=\hat S^{-1},
+  \tag{12.3}
+\end{equation}
+i.e. the inverse operator coincides with the adjoint. Operators having this
+property are called \textit{unitary}. By virtue of this property the
+transformation $\psi_n=\hat S^{-1}\psi'_n$, inverse to (12.1), is given by
+\begin{equation}
+  \psi_n=\sum_m S_{nm}^*\psi'_m.
+  \tag{12.4}
+\end{equation}
+Writing $\hat S^+\hat S=1$ or $\hat S\hat S^+=1$ in matrix form gives the
+unitarity conditions
+\begin{equation}
+  \sum_l S_{lm}^*S_{ln}=\delta_{mn}
+  \tag{12.5}
+\end{equation}
+or
+\begin{equation}
+  \sum_l S_{ml}^*S_{nl}=\delta_{mn}.
+  \tag{12.6}
+\end{equation}
+
+Now consider a physical quantity $f$ and write its matrix elements in the
+``new'' representation, i.e. with respect to the functions $\psi'_n$. They are
+given by
+\[
+ \int\psi_m'^*\hat f\psi'_n\,dq
+ =\int(\tilde{S^*}\psi_m^*)(\hat f\hat S\psi_n)\,dq
+ =\int\psi_m^*\hat S^{-1}\hat f\hat S\psi_n\,dq.
+\]
+It follows that the matrix of $\hat f$ in the new representation coincides
+with the matrix of the operator
+\begin{equation}
+  \hat f'=\hat S^{-1}\hat f\hat S
+  \tag{12.7}
+\end{equation}
+in the old representation\footnote{If
+$\{\hat f,\hat g\}=-i\hbar\hat c$ is the commutation rule for two operators,
+then after transformation (12.7) we obtain
+$\{\hat f',\hat g'\}=-i\hbar\hat c'$, so the rule is unchanged. It was noted
+in the note on p.~46 that $c$ is the quantum analogue of the classical Poisson
+bracket $[f,g]$. Poisson brackets in classical mechanics, however, are
+invariant under canonical variable transformations (see Vol.~I, \S~45).
+One may therefore say that unitary transformations in quantum mechanics
+serve as the counterpart of
+canonical transformations in classical mechanics.}.
+\SourcePage{56}{59}
+The \textit{trace} of a matrix is defined as the sum of its diagonal elements
+and is written $\Tr f$\footnote{The source's notation comes from the German
+\textit{Spur}, trace. The notation $\Tr$, from the English
+\textit{trace}, is also used. Consideration of a matrix trace of course assumes
+convergence of the sum over $n$.}:
+\begin{equation}
+  \Tr f=\sum_n f_{nn}.
+  \tag{12.8}
+\end{equation}
+First note that the trace of a product of two matrices does not depend on the
+order of the factors:
+\begin{equation}
+  \Tr(fg)=\Tr(gf).
+  \tag{12.9}
+\end{equation}
+Indeed, by the rule for matrix multiplication,
+\[
+ \Tr(fg)=\sum_n\sum_k f_{nk}g_{kn}
+ =\sum_k\sum_n g_{kn}f_{nk}=\Tr(gf).
+\]
+Similarly, the trace of a product of several matrices is unchanged by a cyclic
+permutation of the factors; thus
+\begin{equation}
+ \Tr(fgh)=\Tr(hfg)=\Tr(ghf).
+ \tag{12.10}
+\end{equation}
+The most important property of the trace is its independence of the system of
+functions relative to which the matrix elements are defined. Indeed,
+\begin{equation}
+ \Tr f'=\Tr(S^{-1}fS)=\Tr(SS^{-1}f)=\Tr f.
+ \tag{12.11}
+\end{equation}
+Also, a unitary transformation leaves invariant the sum of the squared moduli
+of the transformed functions. From (12.6),
+\begin{equation}
+ \sum_i|\psi'_i|^2
+ =\sum_{k,l,i}S_{ki}S_{li}^*\psi_k\psi_l^*
+ =\sum_{k,l}\delta_{kl}\psi_k\psi_l^*=\sum_k|\psi_k|^2.
+ \tag{12.12}
+\end{equation}
+
+Every unitary operator can be represented as
+\begin{equation}
+ \hat S=e^{i\hat R},
+ \tag{12.13}
+\end{equation}
+where $\hat R$ is Hermitian; indeed, $\hat R^+=\hat R$ gives
+$\hat S^+=e^{-i\hat R^+}=e^{-i\hat R}=\hat S^{-1}$.
+
+We also note the expansion
+\begin{equation}
+ \hat f'=\hat S^{-1}\hat f\hat S
+ =\hat f+\{\hat f,i\hat R\}
+ +\frac12\{\{\hat f,i\hat R\},i\hat R\}+\ldots,
+ \tag{12.14}
+\end{equation}
+\SourcePage{57}{60}
+which is readily verified directly by expanding the factors
+$\exp(\pm i\hat R)$ in powers of $\hat R$. This expansion can be useful when
+$\hat R$ is proportional to a small parameter, so that (12.14) becomes an
+expansion in powers of that parameter.

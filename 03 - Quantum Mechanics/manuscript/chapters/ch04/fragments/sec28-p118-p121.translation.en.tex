@@ -1,0 +1,182 @@
+\SourcePage{118}{121}
+\section{Angular-Momentum Eigenfunctions}
+
+Specifying the values of $l$ and $m$ does not determine a particle's wave
+function completely. Indeed, the expressions for the operators of these
+quantities in spherical coordinates contain only the angles $\theta$ and
+$\varphi$, so their eigenfunctions may include an arbitrary factor depending
+on $r$. Here we shall consider only the angular part of the wave function
+characteristic of angular-momentum eigenfunctions. Denote it by
+$Y_{lm}(\theta,\varphi)$ and impose the normalization condition
+\[
+  \int |Y_{lm}|^2\,do=1
+\]
+($do=\sin\theta\,d\theta\,d\varphi$ is the element of solid angle).
+
+The calculation below shows that the problem of finding the common
+eigenfunctions of $\hat{\mathbf l}^2$ and $\hat l_z$ permits separation of
+the variables $\theta$ and $\varphi$. These functions may therefore be
+sought in the form
+\begin{equation}
+  Y_{lm}=\Phi_m(\varphi)\Theta_{lm}(\theta),
+  \tag{28.1}
+\end{equation}
+where $\Phi_m(\varphi)$ are the eigenfunctions of $\hat l_z$ defined by
+(27.3). Since the functions $\Phi_m$ have already been normalized by (27.4),
+the functions $\Theta_{lm}$ must satisfy
+\begin{equation}
+  \int_0^\pi |\Theta_{lm}|^2\sin\theta\,d\theta=1.
+  \tag{28.2}
+\end{equation}
+Functions $Y_{lm}$ with different values of $l$ or $m$ are automatically
+mutually orthogonal:
+\begin{equation}
+  \int_0^{2\pi}\!\int_0^\pi
+  Y_{l'm'}^*Y_{lm}\sin\theta\,d\theta\,d\varphi
+  =\delta_{ll'}\delta_{mm'},
+  \tag{28.3}
+\end{equation}
+\SourcePage{119}{122}
+because they are eigenfunctions of angular-momentum operators belonging to
+different eigenvalues. The functions $\Phi_m(\varphi)$ are also separately
+orthogonal (see (27.4)), since they are eigenfunctions of $\hat l_z$
+belonging to its different eigenvalues $m$. The functions
+$\Theta_{lm}(\theta)$ by themselves, however, are not eigenfunctions of any
+angular-momentum operator; they are mutually orthogonal for different $l$,
+but not for different $m$.
+
+The most direct way to calculate the required functions is to solve the
+eigenfunction problem for $\hat{\mathbf l}^2$ written in spherical
+coordinates (formula (26.16)). The equation
+$\hat{\mathbf l}^2\psi=l^2\psi$ reads
+\[
+ \frac1{\sin\theta}\frac\partial{\partial\theta}
+ \left(\sin\theta\frac{\partial\psi}{\partial\theta}\right)
+ +\frac1{\sin^2\theta}\frac{\partial^2\psi}{\partial\varphi^2}
+ +l(l+1)\psi=0.
+\]
+Substitution of $\psi$ in the form (28.1) gives the following equation for
+$\Theta_{lm}$:
+\begin{equation}
+ \frac1{\sin\theta}\frac d{d\theta}
+ \left(\sin\theta\frac{d\Theta_{lm}}{d\theta}\right)
+ -\frac{m^2}{\sin^2\theta}\Theta_{lm}
+ +l(l+1)\Theta_{lm}=0.
+ \tag{28.4}
+\end{equation}
+This equation is well known from the theory of spherical harmonics. It has
+solutions satisfying the finiteness and single-valuedness conditions for
+nonnegative integral values $l\geq|m|$, in agreement with the
+angular-momentum eigenvalues obtained above by the matrix method. The
+corresponding solutions are the associated Legendre polynomials
+$P_l^m(\cos\theta)$ (see \S~c of the mathematical supplements). Normalizing
+the solution by (28.2), we obtain\footnote{The normalization condition does
+not, of course, determine the choice of phase factor. The convention used in
+this book is the one most natural from the standpoint of the general theory
+of angular-momentum addition; it differs from the convention usually adopted
+by a factor $i^l$. The advantages of this choice will be apparent from the
+notes on pp.~278, 527, and 533.}
+\begin{equation}
+ \Theta_{lm}=(-1)^mi^l
+ \sqrt{\frac{(2l+1)(l-m)!}{2(l+m)!}}P_l^m(\cos\theta).
+ \tag{28.5}
+\end{equation}
+Here $m\geq0$ is assumed. For negative $m$, define $\Theta_{lm}$ by
+\begin{equation}
+  \Theta_{l,-|m|}=(-1)^m\Theta_{l|m|},
+  \tag{28.6}
+\end{equation}
+that is, for $m<0$, $\Theta_{lm}$ is given by (28.5) with $|m|$ in place of
+$m$ and with the factor $(-1)^m$ omitted.
+\SourcePage{120}{123}
+Thus, from the mathematical point of view, the angular-momentum
+eigenfunctions are spherical harmonics with a particular normalization. For
+later reference, we write their complete expression, incorporating all the
+definitions just given:
+\begin{equation}
+ Y_{lm}(\theta,\varphi)=(-1)^{(m+|m|)/2}i^l
+ \left[\frac{2l+1}{4\pi}\frac{(l-|m|)!}{(l+|m|)!}\right]^{1/2}
+ P_l^{|m|}(\cos\theta)e^{im\varphi}.
+ \tag{28.7}
+\end{equation}
+In particular,
+\begin{equation}
+  Y_{l0}=i^l\sqrt{\frac{2l+1}{4\pi}}P_l(\cos\theta).
+  \tag{28.8}
+\end{equation}
+Functions differing only in the sign of $m$ are evidently related by
+\begin{equation}
+  (-1)^{l-m}Y_{l,-m}=Y_{lm}^*.
+  \tag{28.9}
+\end{equation}
+
+For $l=0$ (and consequently $m=0$), the spherical harmonic reduces to a
+constant. In other words, the wave functions of particle states with zero
+angular momentum depend only on $r$ and hence possess complete spherical
+symmetry, in accordance with the general statement made in \secref{27}.
+
+For a fixed $m$, the values of $l$ beginning with $|m|$ enumerate, in
+ascending order, the successive eigenvalues of $\mathbf l^2$. The general
+theorem on zeros of eigenfunctions (\secref{21}) therefore implies that
+$\Theta_{lm}$ vanishes at $l-|m|$ different values of $\theta$; in other
+words, its nodal lines are $l-|m|$ “circles of latitude” on the sphere.
+For the complete angular functions, if real factors $\cos m\varphi$ or
+$\sin m\varphi$ are chosen instead of
+$e^{\pm i|m|\varphi}$\footnote{Each such function represents a state in
+which $l_z$ has no definite value, but may take the values $\pm m$ with equal
+probability.}, they also have $|m|$ “meridian circles” as nodal lines. The
+total number of nodal lines is therefore $l$.
+
+Finally, let us show how the functions $\Theta_{lm}$ can be calculated by the
+matrix method. The procedure is analogous to the calculation of the
+oscillator wave functions in \secref{23}. We start from (27.8),
+$\hat l_+Y_{ll}=0$. Using (26.15) for the operator $\hat l_+$ and substituting
+\[
+  Y_{ll}=\frac1{\sqrt{2\pi}}e^{il\varphi}\Theta_{ll}(\theta),
+\]
+\SourcePage{121}{124}
+we obtain for $\Theta_{ll}$ the equation
+\[
+  \frac{d\Theta_{ll}}{d\theta}-l\cot\theta\cdot\Theta_{ll}=0,
+\]
+whence
+$\Theta_{ll}=\operatorname{const}\cdot\sin^l\theta$. Determining the constant
+from the normalization condition gives
+\begin{equation}
+ \Theta_{ll}=(-i)^l\sqrt{\frac{(2l+1)!}{2}}\frac1{2^ll!}\sin^l\theta.
+ \tag{28.10}
+\end{equation}
+Next, using (27.12), write
+\[
+ \hat l_-Y_{l,m+1}=(l_-)_{m,m+1}Y_{lm}
+ =\sqrt{(l-m)(l+m+1)}Y_{lm}.
+\]
+Repeated application of this formula gives
+\[
+ \sqrt{\frac{(l-m)!}{(l+m)!}}Y_{lm}
+ =\frac1{\sqrt{(2l)!}}\hat l_-^{l-m}Y_{ll}.
+\]
+The right-hand side is readily evaluated with the aid of (26.15) for
+$\hat l_-$, according to which
+\[
+ \hat l_-\left[f(\theta)e^{im\varphi}\right]
+ =e^{i(m-1)\varphi}\sin^{1-m}\theta\frac d{d\cos\theta}
+ \left(f\sin^m\theta\right).
+\]
+Repeated application of this formula gives
+\[
+ \hat l_-^{l-m}e^{il\varphi}\Theta_{ll}
+ =e^{im\varphi}\sin^{-m}\theta
+ \frac{d^{l-m}}{(d\cos\theta)^{l-m}}
+ \left(\sin^l\theta\cdot\Theta_{ll}\right).
+\]
+Finally, using these relations together with (28.10) for $\Theta_{ll}$, we
+obtain
+\begin{equation}
+ \Theta_{lm}(\theta)=(-i)^l
+ \sqrt{\frac{2l+1}{2}\frac{(l+m)!}{(l-m)!}}
+ \frac1{2^ll!\sin^m\theta}
+ \frac{d^{l-m}}{(d\cos\theta)^{l-m}}\sin^{2l}\theta,
+ \tag{28.11}
+\end{equation}
+which agrees with (28.5).

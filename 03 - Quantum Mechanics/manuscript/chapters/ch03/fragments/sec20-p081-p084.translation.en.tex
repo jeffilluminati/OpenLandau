@@ -1,0 +1,123 @@
+\SourcePage{81}{84}
+\section{The Variational Principle}
+
+The Schrödinger equation in its general form, $\hat H\psi=E\psi$, can be
+obtained from the variational principle
+\begin{equation}
+  \delta\int\psi^*(\hat H-E)\psi\,dq=0.
+  \tag{20.1}
+\end{equation}
+Since $\psi$ is complex, variations with respect to $\psi$ and $\psi^*$ may
+be made independently. Variation with respect to $\psi^*$ gives
+\[
+  \int\delta\psi^*(\hat H-E)\psi\,dq=0,
+\]
+and the arbitrariness of $\delta\psi^*$ then yields the required equation
+$\hat H\psi=E\psi$. Variation with respect to $\psi$ gives nothing new.
+Indeed, varying $\psi$ and using the Hermitian character%
+\SourcePage{82}{85}
+of $\hat H$, we have
+\[
+  \int\psi^*(\hat H-E)\delta\psi\,dq
+  =\int\delta\psi(\hat H^*-E)\psi^*\,dq=0,
+\]
+which yields the complex-conjugate equation
+$\hat H^*\psi^*=E\psi^*$.
+
+The variational principle (20.1) requires an unconstrained extremum of the
+integral. It may be put in another form by treating $E$ as a Lagrange
+multiplier in the problem of finding a constrained extremum of
+\begin{equation}
+  \delta\int\psi^*\hat H\psi\,dq=0
+  \tag{20.2}
+\end{equation}
+subject to the supplementary condition
+\begin{equation}
+  \int\psi\psi^*\,dq=1.
+  \tag{20.3}
+\end{equation}
+
+The minimum value of the integral (20.2), subject to (20.3), is the first
+energy eigenvalue, that is, the energy $E_0$ of the normal state. The function
+$\psi$ which realizes this minimum is correspondingly the normal-state wave
+function $\psi_0$\footnote{For the remainder of this section we take the wave
+functions $\psi$ to be real, as they can always be chosen when no magnetic
+field is present.}. The wave functions $\psi_n$ ($n>0$) of the succeeding
+stationary states correspond only to extrema, not to true minima of the
+integral.
+
+To obtain from the minimum condition for (20.2) the wave function $\psi_1$
+and energy $E_1$ of the state immediately above the normal state, the trial
+functions $\psi$ must be restricted not only by the normalization condition
+(20.3), but also by orthogonality to the normal-state wave function $\psi_0$:
+$\int\psi\psi_0\,dq=0$. In general, suppose that the wave functions
+$\psi_0,\psi_1,\ldots,\psi_{n-1}$ of the first $n$ states are known (the
+states being ordered by increasing energy). The wave function of the next
+state minimizes (20.2) under the supplementary conditions
+\begin{equation}
+  \int\psi^2\,dq=1,
+  \qquad
+  \int\psi\psi_m\,dq=0,
+  \qquad
+  m=0,1,2,\ldots,n-1.
+  \tag{20.4}
+\end{equation}
+\SourcePage{83}{86}
+We give here several general theorems which may be proved from the variational
+principle\footnote{Proofs of the theorems about zeros of eigenfunctions (see
+also the next section) may be found in: \emph{M.~A.~Lavrent'ev and
+L.~A.~Lyusternik}, Course of the Calculus of Variations, Moscow:
+Gostekhizdat, 1950, Ch.~IX; \emph{R.~Courant and D.~Hilbert}, Methods of
+Mathematical Physics, Moscow: Gostekhizdat, 1951, Vol.~I, Ch.~VI.}.
+
+The normal-state wave function $\psi_0$ does not vanish (or, as one says, has
+no nodes) at any finite values of the coordinates\footnote{This theorem (and
+the consequences drawn from it below) is not valid in general for wave
+functions of systems containing several identical particles; see the end of
+\secref{63}.}. In other words, it has the same sign throughout space. It follows
+that the wave functions $\psi_n$ ($n>0$) of the other stationary states,
+being orthogonal to $\psi_0$, necessarily have nodal points (if $\psi_n$ also
+had a constant sign, the integral $\int\psi_0\psi_n\,dq$ could not vanish).
+
+The absence of nodes in $\psi_0$ also implies that the normal energy level
+cannot be degenerate. Suppose otherwise, and let $\psi_0$ and $\psi'_0$ be
+two different eigenfunctions belonging to the level $E_0$. Every linear
+combination $c\psi_0+c'\psi'_0$ would also be an eigenfunction; but by a
+suitable choice of $c$ and $c'$, this function can always be made to vanish
+at any prescribed point of space, producing an eigenfunction with a node.
+
+If motion is confined to a bounded region of space, then $\psi=0$ on its
+boundary (see \secref{18}). To determine the energy levels one must use the
+variational principle to find the minimum of (20.2) with this boundary
+condition. In this case the theorem that the normal-state wave function has
+no nodes states that $\psi_0$ vanishes nowhere inside the region.
+
+Notice that increasing the size of the region of motion lowers every energy
+level $E_n$. This follows directly because enlarging the region enlarges the
+class of trial functions available for minimizing the integral, so its
+minimum value can only decrease. For discrete-spectrum states of a system of
+particles, the expression
+\[
+  \int\psi\hat H\psi\,dq
+  =\int\left[-\sum_a\frac{\hbar^2}{2m_a}\psi\Delta_a\psi
+  +U\psi^2\right]dq
+\]
+can be%
+\SourcePage{84}{87}
+transformed into a form more convenient for actual variation. In the first
+term of the integrand, write
+\[
+  \psi\Delta_a\psi
+  =\DivAt{a}{(\psi\GradAt{a}{\psi})}
+  -{\left(\GradAt{a}{\psi}\right)}^2.
+\]
+The integral of $\DivAt{a}{(\psi\GradAt{a}{\psi})}$ over $dV_a$ becomes an integral
+over a closed surface at infinity. Since discrete-spectrum wave functions
+vanish sufficiently rapidly at infinity, this integral disappears. Thus
+\begin{equation}
+  \int\psi\hat H\psi\,dq
+  =\int\left[\sum_a\frac{\hbar^2}{2m_a}
+  {\left(\GradAt{a}{\psi}\right)}^2
+  +U\psi^2\right]dq.
+  \tag{20.5}
+\end{equation}

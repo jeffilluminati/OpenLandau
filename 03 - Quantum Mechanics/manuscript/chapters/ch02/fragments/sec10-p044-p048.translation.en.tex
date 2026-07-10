@@ -1,0 +1,143 @@
+\section{Stationary states}
+
+\SourcePage{44}{47}
+The Hamiltonian of a closed system (and also of a system in a constant, but not
+a variable, external field) cannot contain time explicitly. This follows
+because all instants of time are equivalent for such a physical system. Since,
+on the other hand, every operator commutes with itself, we conclude that the
+Hamilton function is conserved for systems not situated in a variable external
+field. A conserved Hamilton function is called the energy. The meaning of
+energy conservation in quantum mechanics is that if the energy has a definite
+value in a given state, this value remains constant in time.
+
+States possessing definite energy values are called the \textit{stationary
+states} of the system. They are described by wave functions $\Psi_n$ that are
+eigenfunctions of the Hamiltonian operator, satisfying
+$\hat H\Psi_n=E_n\Psi_n$, where $E_n$ are the energy eigenvalues. Accordingly,
+the wave equation (8.1) for
+\SourcePage{45}{48}
+the function $\Psi_n$,
+\[
+  i\hbar\frac{\partial\Psi_n}{\partial t}=\hat H\Psi_n=E_n\Psi_n,
+\]
+can be integrated directly with respect to time, giving
+\begin{equation}
+  \Psi_n=\exp\left(-\frac{i}{\hbar}E_nt\right)\psi_n(q),
+  \tag{10.1}
+\end{equation}
+where $\psi_n$ is a function of the coordinates alone. This determines the
+time dependence of the wave functions of stationary states.
+
+We shall use the lower-case letter $\psi$ for stationary-state wave functions
+without the time factor. These functions and the energy eigenvalues themselves
+are determined by
+\begin{equation}
+  \hat H\psi=E\psi.
+  \tag{10.2}
+\end{equation}
+Among all stationary states, the one possessing the lowest energy is termed
+the \textit{normal}, or \textit{ground}, state of the system.
+
+The expansion of any wave function $\Psi$ over the stationary-state wave
+functions has the form
+\begin{equation}
+  \Psi=\sum_n a_n\exp\left(-\frac{i}{\hbar}E_n(t)\right)\psi_n(q).
+  \tag{10.3}
+\end{equation}
+As usual, the squares $|a_n|^2$ give the probabilities of the various energy
+values of the system.
+
+The coordinate probability distribution in a stationary state is determined
+by $|\Psi_n|^2=|\psi_n|^2$ and is therefore independent of time. The same is
+true of the mean value
+$\bar f=\int\Psi_n^*\hat f\Psi_n,dq=\int\psi_n^*\hat f\psi_n,dq$ of any
+physical quantity $f$ whose operator does not depend explicitly on time.
+
+As stated above, the operator of every conserved quantity commutes with the
+Hamiltonian. Thus every conserved physical quantity can be measured
+simultaneously with the energy.
+
+Among the stationary states there may be states corresponding to one and the
+same energy eigenvalue (or \textit{energy level}) but differing in the values
+of other physical quantities. A level to which several distinct stationary
+states correspond is said to be \textit{degenerate}. Physically, degeneracy is
+possible because the energy does not, in general, constitute by itself a
+complete set of physical quantities.
+\SourcePage{46}{49}
+The energy levels of a system are, in general, degenerate if there are two
+conserved quantities $f$ and $g$ whose operators do not commute. Let $\psi$ be
+the wave function of a stationary state in which $f$, as well as the energy,
+has a definite value. Then $\hat g\psi$ cannot coincide with $\psi$ up to a
+constant factor; otherwise $g$ too would have a definite value, which is
+impossible because $f$ and $g$ cannot be measured simultaneously. On the other
+hand, $\hat g\psi$ is a Hamiltonian eigenfunction with the same energy $E$ as
+$\psi$:
+\[
+  \hat H(\hat g\psi)=\hat g\hat H\psi=E(\hat g\psi).
+\]
+Thus more than one eigenfunction corresponds to $E$, and the level is
+degenerate.
+
+Any linear combination of wave functions belonging to the same degenerate
+energy level is also an eigenfunction with that energy. The choice of
+eigenfunctions for a degenerate eigenvalue is therefore not unique. Arbitrarily
+chosen eigenfunctions of a degenerate level are not in general mutually
+orthogonal, but suitable linear combinations can always be chosen to form a
+mutually orthogonal and normalized set\footnote{This can be done in infinitely
+many ways: a linear transformation of $n$ functions involves $n^2$ independent
+coefficients, but the normalization and orthogonality conditions number only
+$n(n+1)/2$, which is fewer than $n^2$.}.
+
+These statements apply not only to energy eigenfunctions but to the
+eigenfunctions of any operator. Only functions belonging to different
+eigenvalues are automatically orthogonal; functions belonging to the same
+degenerate eigenvalue are not in general orthogonal.
+
+If $\hat H=\hat H_1+\hat H_2$, where one part contains only coordinates $q_1$
+and the other only $q_2$, the eigenfunctions of $\hat H$ can be written as
+products of eigenfunctions of $\hat H_1$ and $\hat H_2$, and the energy
+eigenvalues are sums of the eigenvalues of these operators.
+\SourcePage{47}{50}
+The energy spectrum may be discrete or continuous. A stationary state in the
+discrete spectrum always corresponds to \textit{finite motion}: neither the
+system nor any part of it recedes to infinity. Indeed,
+$\int|\Psi|^2,dq$ is finite over all space for a discrete-spectrum
+eigenfunction. Thus $|\Psi|^2$ decreases sufficiently rapidly and vanishes at
+infinity. Equivalently, the probability of infinite coordinate values is zero;
+the system performs finite motion, or is in a \textit{bound} state.
+
+For continuous-spectrum wave functions, $\int|\Psi|^2,dq$ diverges.
+$|\Psi|^2$ then determines coordinate probabilities only up to
+proportionality. The divergence is always associated with $|\Psi|^2$ failing
+to vanish at infinity, or vanishing too slowly. The integral over the region
+outside any arbitrarily large but finite closed surface therefore still
+diverges: the system, or some part of it, is at infinity. A superposition of
+continuous-spectrum stationary states may have a convergent integral and be
+localized in a finite region, but this region spreads without bound with time,
+and ultimately the system recedes to infinity.
+
+Indeed, an arbitrary continuous-spectrum superposition is
+\[
+  \Psi=\int a_E\exp\left(-\frac{i}{\hbar}Et\right)\psi_E(q)\,dE,
+\]
+and
+\[
+  |\Psi|^2=\iint a_Ea_{E'}^*\exp\left(\frac{i}{\hbar}(E'-E)t\right)
+  \psi_E(q)\psi_{E'}^*(q)\,dE\,dE'.
+\]
+If this expression is averaged over an interval $T$ and then $T$ is allowed to
+tend to infinity, the oscillating factors average to zero, and with them
+\SourcePage{48}{51}
+the entire integral. Thus the time-averaged probability of finding the system
+at any specified point of configuration space vanishes; this is possible only
+if the motion occupies all infinite space\footnote{For a superposition of
+discrete-spectrum functions one would instead have
+\[
+  \overline{|\Psi|^2}=\overline{\sum_{n,m}a_na_m^*
+  \exp\left\{\frac{i}{\hbar}(E_m-E_n)t\right\}\psi_n\psi_m^*}
+  =\sum_n|a_n\psi_n(q)|^2,
+\]
+so the probability density remains finite under time averaging.}.
+
+Thus stationary states of the continuous spectrum correspond to infinite
+motion of the system.

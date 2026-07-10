@@ -1,0 +1,250 @@
+\section{Continuous spectrum}
+
+\SourcePage{29}{32}
+All the relations obtained in \secref{3}, \secref{4} for the properties of discrete-spectrum
+eigenfunctions extend without difficulty to a continuous spectrum of
+eigenvalues.
+
+Let $f$ be a physical quantity possessing a continuous spectrum. We shall
+denote its eigenvalues simply by the same letter $f$ without an index; the
+corresponding eigenfunctions will be written $\Psi_f$. In the same way that an
+arbitrary wave function $\Psi$ admits the series expansion (3.2) in
+eigenfunctions of a discrete-spectrum quantity, it can also be expanded --- this
+time as an integral --- over the complete system of eigenfunctions of a
+continuous-spectrum quantity. Such an expansion takes the form
+\begin{equation}
+  \Psi(q)=\int a_f\Psi_f(q)\,df,
+  \tag{5.1}
+\end{equation}
+where the integration is taken over the whole domain of values that the
+quantity $f$ can assume.
+
+More complicated than in the discrete-spectrum case is the question of
+normalizing the continuous-spectrum eigenfunctions. As we shall see below, the
+requirement that the integral of the squared modulus equal unity cannot be
+satisfied here. Instead, let us set ourselves
+the aim of normalizing the functions $\Psi_f$ in such a way that $|a_f|^2\,df$
+represents the probability for the physical quantity under consideration, in
+the state described by the wave function $\Psi$, to have a value in the given
+interval between $f$ and $f+df$.
+\SourcePage{30}{33}
+Since the sum of the probabilities of all possible
+values of $f$ must be equal to unity, we have
+\begin{equation}
+  \int |a_f|^2\,df=1
+  \tag{5.2}
+\end{equation}
+(analogously to relation (3.3) for the discrete spectrum).
+
+Proceeding exactly as we did in deriving formula (3.5), and using the same
+arguments, we write, on one hand,
+\[
+  \int\Psi\Psi^*\,dq=\int|a_f|^2\,df,
+\]
+and, on other hand,
+\[
+  \int\Psi\Psi^*\,dq
+  =\iint a_f^*\Psi_f^*\Psi\,df\,dq.
+\]
+By comparing the two expressions we find the formula that determines the
+expansion coefficients,
+\begin{equation}
+  a_f=\int\Psi(q)\Psi_f^*(q)\,dq,
+  \tag{5.3}
+\end{equation}
+exactly analogous to (3.5).
+
+To derive the normalization condition we now substitute (5.1) into (5.3):
+\[
+  a_f=\int a_{f'}\left(\int\Psi_{f'}\Psi_f^*\,dq\right)df'.
+\]
+This relation must hold for arbitrary $a_f$ and must therefore be satisfied
+identically. For this to be so it is first of all necessary that the
+coefficient of $a_{f'}$ under the integral sign (i.e. the integral
+$\int\Psi_{f'}\Psi_f^*\,dq$) vanish for all $f'\ne f$. For $f'=f$ this
+coefficient must become infinite (otherwise the integral over $df'$ would
+simply be equal to zero). Thus the integral $\int\Psi_{f'}\Psi_f^*\,dq$ is a
+function of the difference $f-f'$ which vanishes for non-zero values of the
+argument and becomes infinite when the argument is zero. We denote this function
+by $\delta(f'-f)$:
+\begin{equation}
+  \int\Psi_{f'}\Psi_f^*\,dq=\delta(f'-f).
+  \tag{5.4}
+\end{equation}
+
+The manner in which the function $\delta(f'-f)$ becomes infinite at
+$f'-f=0$ is determined by the requirement that there should be
+\[
+  \int\delta(f'-f)a_{f'}\,df'=a_f.
+\]
+\SourcePage{31}{34}
+Clearly, for this to hold it is necessary that
+\[
+  \int\delta(f'-f)\,df'=1.
+\]
+A function defined in this way is called the
+\textit{delta-function}\footnote{The delta-function was introduced into
+theoretical physics by \textit{Dirac} (\textit{P.~A.~M. Dirac}).}. Let us write
+out once more the formulas that define it. We have
+\begin{equation}
+  \delta(x)=0\quad\text{at }x\ne0,\qquad \delta(0)=\infty,
+  \tag{5.5}
+\end{equation}
+and moreover in such a way that
+\begin{equation}
+  \int_{-\infty}^{+\infty}\delta(x)\,dx=1.
+  \tag{5.6}
+\end{equation}
+As the limits of integration one may write any other pair between which the
+point $x=0$ lies. If $f(x)$ is a function continuous at $x=0$, then
+\begin{equation}
+  \int_{-\infty}^{+\infty}\delta(x)f(x)\,dx=f(0).
+  \tag{5.7}
+\end{equation}
+In more general form this formula can be written as
+\begin{equation}
+  \int\delta(x-a)f(x)\,dx=f(a),
+  \tag{5.8}
+\end{equation}
+where the region of integration includes the point $x=a$, and $f(x)$ is
+continuous at $x=a$. It is also obvious that the delta-function is even, i.e.
+\begin{equation}
+  \delta(-x)=\delta(x).
+  \tag{5.9}
+\end{equation}
+Finally, writing
+\[
+  \int_{-\infty}^{\infty}\delta(\alpha x)\,dx
+  =\int_{-\infty}^{\infty}\delta(y)\frac{dy}{|\alpha|}
+  =\frac{1}{|\alpha|},
+\]
+we arrive at the conclusion that
+\begin{equation}
+  \delta(\alpha x)=\frac{1}{|\alpha|}\delta(x),
+  \tag{5.10}
+\end{equation}
+where $\alpha$ is any constant.
+\SourcePage{32}{35}
+Formula (5.4) expresses the normalization rule for the eigenfunctions of the
+continuous spectrum; it replaces condition (3.6) of the discrete spectrum. We
+see that the functions $\Psi_f$ and $\Psi_{f'}$ with $f\ne f'$ remain
+orthogonal to each other. The integrals of the squares $|\Psi_f|^2$ of the
+functions of the continuous spectrum, however, diverge.
+
+The functions $\Psi_f(q)$ satisfy one further relation, similar to (5.4). To
+derive it we substitute (5.3) into (5.1), which gives
+\[
+  \Psi(q)=\int\Psi(q')
+  \left(\int\Psi_f^*(q')\Psi_f(q)\,df\right)dq',
+\]
+whence we immediately conclude that one must have
+\begin{equation}
+  \int\Psi_f^*(q')\Psi_f(q)\,df=\delta(q-q').
+  \tag{5.11}
+\end{equation}
+An analogous relation can, of course, be derived for the discrete spectrum,
+where it takes the form
+\begin{equation}
+  \sum_n\Psi_n^*(q')\Psi_n(q)=\delta(q'-q).
+  \tag{5.12}
+\end{equation}
+
+On comparing the pair of formulas (5.1) and (5.4) with the pair (5.3) and
+(5.11), we see that, on the one hand, the functions $\Psi_f(q)$ effect the
+expansion of the function $\Psi(q)$ with the expansion coefficients $a_f$, while,
+on the other hand, formula (5.3) can be regarded as a completely analogous
+expansion of the function $a_f\equiv a(f)$ in the functions $\Psi_f^*(q)$, with
+$\Psi(q)$ playing the role of the expansion coefficients. The function $a(f)$,
+like $\Psi(q)$, determines the state of the system completely; it is spoken of
+as the wave function in the \textit{$f$-representation} (and the function
+$\Psi(q)$ as the wave function in the \textit{$q$-representation}). Just as
+$|\Psi(q)|^2$ determines the probability for the system to have coordinates in
+a given interval $dq$, so $|a(f)|^2$ determines the probability of values of
+the quantity $f$ in a given interval $df$. The functions $\Psi_f(q)$, for their
+part, are, on the one hand, the eigenfunctions of the quantity $f$ in the
+$q$-representation, while their complex conjugates $\Psi_f^*(q)$ serve as
+eigenfunctions of the coordinate $q$ in the $f$-representation.
+
+Suppose $\varphi(f)$ is a function of the quantity $f$, with $\varphi$ and
+$f$ standing in one-to-one correspondence. Every function $\Psi_f(q)$ may then
+equally be viewed as an eigenfunction of the quantity
+$\varphi$. In doing so, however, the normalization of these functions must be
+changed. Indeed, the eigen-
+\SourcePage{33}{36}
+functions $\Psi_\varphi(q)$ of the quantity $\varphi$ must be normalized by the
+condition
+\[
+  \int\Psi_{\varphi(f')}\Psi_{\varphi(f)}^*\,dq
+  =\delta[\varphi(f')-\varphi(f)],
+\]
+whereas the functions $\Psi_f$ are normalized by condition (5.4). The argument
+of the delta-function vanishes at $f'=f$. For $f'$ close to $f$ we have
+\[
+  \varphi(f')-\varphi(f)=\frac{d\varphi(f)}{df}(f'-f).
+\]
+Making use of expression (5.10), one can write\footnote{In general, if
+$\varphi(x)$ is a single-valued function (its inverse, however, may be
+many-valued), then the formula
+\begin{equation}
+  \delta[\varphi(x)]
+  =\sum_i\frac{1}{|\varphi'(\alpha_i)|}\delta(x-\alpha_i),
+  \tag{5.13a}
+\end{equation}
+holds, where $\alpha_i$ are the roots of the equation $\varphi(x)=0$.}
+\begin{equation}
+  \delta[\varphi(f')-\varphi(f)]
+  =\frac{1}{|d\varphi(f)/df|}\delta(f'-f).
+  \tag{5.13}
+\end{equation}
+Comparison of (5.13) with (5.4) now shows that the functions $\Psi_\varphi$ and
+$\Psi_f$ are related to each other by the relation
+\begin{equation}
+  \Psi_{\varphi(f)}
+  =\frac{1}{\sqrt{|d\varphi(f)/df|}}\Psi_f.
+  \tag{5.14}
+\end{equation}
+
+There exist physical quantities which, over some domain of their values,
+possess a discrete spectrum, and over another possess a continuous one. For the
+eigenfunctions of such a quantity, of course, all the same relations that were
+derived in this and the preceding sections continue to hold. It need only be
+noted that the complete system of functions is formed by the collection of the
+eigenfunctions of both spectra together. Therefore the expansion of an
+arbitrary wave function in the eigenfunctions of such a quantity has the form
+\begin{equation}
+  \Psi(q)=\sum_n a_n\Psi_n(q)+\int a_f\Psi_f(q)\,df,
+  \tag{5.15}
+\end{equation}
+where the summation runs over the discrete spectrum, and the integration over
+the entire continuous spectrum.
+
+An example of a quantity possessing a continuous spectrum is the coordinate
+$q$ itself. One readily sees that the associated operator reduces to
+multiplication by $q$. Indeed,
+\SourcePage{34}{37}
+since the square $|\Psi(q)|^2$ governs the probability of different coordinate
+values, the mean value of the coordinate is
+\[
+  \bar q=\int q|\Psi|^2\,dq=\int\Psi^*q\Psi\,dq.
+\]
+Comparing this expression with the definition of operators according to (3.8),
+we see that\footnote{In what follows we shall agree, for simplicity of notation,
+to write operators that reduce to multiplication by some quantity everywhere
+simply as that quantity itself.}
+\begin{equation}
+  \hat q=q.
+  \tag{5.16}
+\end{equation}
+The eigenfunctions of this operator must be determined, according to the general
+rule, by the equation $q\Psi_{q_0}=q_0\Psi_{q_0}$, where $q_0$ is used
+temporarily to denote concrete values of the coordinate, in distinction from
+the variable $q$. Since this equality can be satisfied either when
+$\Psi_{q_0}=0$ or when $q=q_0$, it is clear that the normalized eigenfunctions
+are\footnote{The expansion coefficients of an arbitrary function $\Psi$ in these
+eigenfunctions are $a_{q_0}=\int\Psi(q)\delta(q-q_0)\,dq=\Psi(q_0)$. The
+probability of values of the coordinate in a given interval $dq_0$ is
+$|a_{q_0}|^2\,dq_0=|\Psi(q_0)|^2\,dq_0$, as it should be.}
+\begin{equation}
+  \Psi_{q_0}=\delta(q-q_0).
+  \tag{5.17}
+\end{equation}

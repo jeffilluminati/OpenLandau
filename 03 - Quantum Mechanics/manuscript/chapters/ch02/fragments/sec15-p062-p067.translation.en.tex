@@ -1,0 +1,201 @@
+\section{Momentum}
+
+\SourcePage{62}{65}
+Consider a closed system of particles in no external field. Since all
+positions of the system as a whole are equivalent, its Hamiltonian is unchanged
+by an arbitrary parallel displacement. It is enough to require this for every
+infinitesimal displacement; it then holds for finite displacements as well.
+
+Under an infinitesimal displacement $\delta\mathbf r$, every radius vector
+$\mathbf r_a$ acquires the same increment. Thus
+$\mathbf r_a\to\mathbf r_a+\delta\mathbf r$, and
+\[
+ \psi(\mathbf r_1+\delta\mathbf r,\mathbf r_2+\delta\mathbf r,\ldots)
+ =\left(1+\delta\mathbf r\cdot\sum_a\boldsymbol\nabla_a\right)
+ \psi(\mathbf r_1,\mathbf r_2,\ldots).
+\]
+Here $a$ labels the particles and $\boldsymbol\nabla_a$ differentiates with
+respect to $\mathbf r_a$. The expression in parentheses
+\SourcePage{63}{66}
+is the operator of an infinitesimal displacement.
+
+If a transformation does not change the Hamiltonian, transforming
+$\hat H\psi$ gives the same result as first transforming $\psi$ and then
+applying $\hat H$. If $\hat O$ produces the transformation, then
+$\hat O(\hat H\psi)=\hat H(\hat O\psi)$, so
+$\hat O\hat H-\hat H\hat O=0$: $\hat H$ commutes with $\hat O$.
+
+Here $\hat O$ is the infinitesimal-displacement operator. The unit operator
+commutes with every operator, and the constant $\delta\mathbf r$ may be taken
+outside $\hat H$; hence
+\begin{equation}
+ \left(\sum_a\boldsymbol\nabla_a\right)\hat H
+ -\hat H\left(\sum_a\boldsymbol\nabla_a\right)=0.
+ \tag{15.1}
+\end{equation}
+An explicitly time-independent operator commuting with the Hamiltonian
+corresponds to a conserved quantity. The quantity whose conservation follows
+from the homogeneity of space is momentum (cf. Vol.~I, \S~7). Thus (15.1)
+expresses momentum conservation; $\sum_a\boldsymbol\nabla_a$ corresponds, up
+to a constant factor, to the total momentum, and each term to the momentum of
+one particle.
+
+The factor relating the momentum operator to $\boldsymbol\nabla$ follows from
+the classical limit and equals $-i\hbar$:
+\begin{equation}
+ \hat{\mathbf p}=-i\hbar\boldsymbol\nabla,
+ \tag{15.2}
+\end{equation}
+or
+\[
+ \hat p_x=-i\hbar\frac{\partial}{\partial x},\qquad
+ \hat p_y=-i\hbar\frac{\partial}{\partial y},\qquad
+ \hat p_z=-i\hbar\frac{\partial}{\partial z}.
+\]
+Indeed, using (6.1),
+\[
+ \hat{\mathbf p}\Psi=-i\hbar\boldsymbol\nabla\Psi
+ =\Psi\boldsymbol\nabla S.
+\]
+\SourcePage{64}{67}
+Thus classically the operator acts by multiplication by
+$\boldsymbol\nabla S$, which is the classical momentum (see Vol.~I, \S~43).
+
+The operator (15.2) is Hermitian, as required. For functions $\psi(x)$ and
+$\varphi(x)$ vanishing at infinity, integration by parts gives
+\[
+ \int\varphi\hat p_x\psi\,dx
+ =-i\hbar\int\varphi\frac{\partial\psi}{\partial x}\,dx
+ =i\hbar\int\psi\frac{\partial\varphi}{\partial x}\,dx
+ =\int\psi\hat p_x^*\varphi\,dx,
+\]
+which is the Hermiticity condition.
+
+Since differentiations with respect to different variables commute,
+\begin{equation}
+ \hat p_x\hat p_y-\hat p_y\hat p_x=0,\quad
+ \hat p_x\hat p_z-\hat p_z\hat p_x=0,\quad
+ \hat p_y\hat p_z-\hat p_z\hat p_y=0.
+ \tag{15.3}
+\end{equation}
+Thus all three momentum components may have definite values simultaneously.
+
+Their eigenfunctions and eigenvalues satisfy
+\begin{equation}
+ -i\hbar\boldsymbol\nabla\psi=\mathbf p\psi,
+ \tag{15.4}
+\end{equation}
+with solutions
+\begin{equation}
+ \psi=\mathrm{const}\cdot e^{i\mathbf p\cdot\mathbf r/\hbar}.
+ \tag{15.5}
+\end{equation}
+The three components completely determine the wave function and form one
+possible complete set. Their eigenvalues form a continuous spectrum from
+$-\infty$ to $\infty$.
+
+By (5.4), $\int\psi_{\mathbf p'}^*\psi_{\mathbf p},dV$ over all space should
+equal $\delta(\mathbf p'-\mathbf p)$\footnote{For a vector argument,
+$\delta(\mathbf a)=\delta(a_x)\delta(a_y)\delta(a_z)$.}. For later applications
+it is more natural to normalize to the delta function of the momentum
+difference divided by $2\pi\hbar$:
+\[
+ \int\psi_{\mathbf p'}^*\psi_{\mathbf p},dV
+ =\delta\left(\frac{\mathbf p'-\mathbf p}{2\pi\hbar}\right),
+\]
+\SourcePage{65}{68}
+or equivalently
+\begin{equation}
+ \int\psi_{\mathbf p'}^*\psi_{\mathbf p},dV
+ =(2\pi\hbar)^3\delta(\mathbf p'-\mathbf p).
+ \tag{15.6}
+\end{equation}
+Each one-dimensional factor obeys, for example,
+$\delta[(p_x'-p_x)/(2\pi\hbar)]=2\pi\hbar\delta(p_x'-p_x)$.
+Integration uses\footnote{The formula means that its left-hand side has the
+defining property (5.8) of the delta function. Substitution in (5.8) gives the
+Fourier formula
+\[
+ f(a)=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}
+ f(x)e^{i\xi(x-a)}\,dx\,\frac{d\xi}{2\pi}.
+\]}
+\begin{equation}
+ \frac{1}{2\pi}\int_{-\infty}^{\infty}e^{i\alpha\xi}\,d\xi=\delta(\alpha).
+ \tag{15.7}
+\end{equation}
+It follows that $\mathrm{const}=1$ in (15.5)\footnote{With this normalization
+$|\psi|^2=1$: the function is normalized to ``one particle per unit volume.''
+This agreement is not accidental; cf. the note on p.~221.}:
+\begin{equation}
+ \psi_{\mathbf p}=e^{i\mathbf p\cdot\mathbf r/\hbar}.
+ \tag{15.8}
+\end{equation}
+
+Expansion of an arbitrary $\psi(\mathbf r)$ in momentum eigenfunctions is its
+Fourier integral:
+\begin{equation}
+ \psi(\mathbf r)=\int a(\mathbf p)\psi_{\mathbf p}(\mathbf r)
+ \frac{d^3p}{(2\pi\hbar)^3}
+ =\int a(\mathbf p)e^{i\mathbf p\cdot\mathbf r/\hbar}
+ \frac{d^3p}{(2\pi\hbar)^3}.
+ \tag{15.9}
+\end{equation}
+Here $d^3p=dp_xdp_ydp_z$, and
+\begin{equation}
+ a(\mathbf p)=\int\psi(\mathbf r)\psi_{\mathbf p}^*(\mathbf r)\,dV
+ =\int\psi(\mathbf r)e^{-i\mathbf p\cdot\mathbf r/\hbar}\,dV.
+ \tag{15.10}
+\end{equation}
+The function $a(\mathbf p)$ is the momentum-representation wave function;
+$|a(\mathbf p)|^2d^3p/(2\pi\hbar)^3$ is the probability that the momentum lies
+in $d^3p$.
+\SourcePage{66}{69}
+Just as $\hat{\mathbf p}$ represents momentum in coordinate space, introduce
+$\hat{\mathbf r}$ for the coordinates in momentum space, defined by
+\begin{equation}
+ \bar{\mathbf r}=\int a^*(\mathbf p)\hat{\mathbf r}a(\mathbf p)
+ \frac{d^3p}{(2\pi\hbar)^3}.
+ \tag{15.11}
+\end{equation}
+But also $\bar{\mathbf r}=\int\psi^*\mathbf r\psi,dV$. Substituting (15.9)
+and integrating by parts,
+\[
+ \mathbf r\psi(\mathbf r)
+ =\int i\hbar e^{i\mathbf p\cdot\mathbf r/\hbar}
+ \frac{\partial a(\mathbf p)}{\partial\mathbf p}
+ \frac{d^3p}{(2\pi\hbar)^3},
+\]
+and hence
+\[
+ \bar{\mathbf r}=\int i\hbar a^*(\mathbf p)
+ \frac{\partial a(\mathbf p)}{\partial\mathbf p}
+ \frac{d^3p}{(2\pi\hbar)^3}.
+\]
+Comparison with (15.11) gives
+\begin{equation}
+ \hat{\mathbf r}=i\hbar\frac{\partial}{\partial\mathbf p}.
+ \tag{15.12}
+\end{equation}
+In this representation momentum is simply multiplication by $\mathbf p$.
+
+Finally, express the operator of translation through an arbitrary finite
+distance $\mathbf a$ in terms of $\hat{\mathbf p}$. By definition,
+$\hat T_{\mathbf a}\psi(\mathbf r)=\psi(\mathbf r+\mathbf a)$. Expanding
+$\psi(\mathbf r+\mathbf a)$ in a Taylor series gives
+\[
+ \psi(\mathbf r+\mathbf a)=\psi(\mathbf r)
+ +\mathbf a\cdot\frac{\partial\psi(\mathbf r)}{\partial\mathbf r}+\ldots
+\]
+or, on introducing $\hat{\mathbf p}=-i\hbar\boldsymbol\nabla$,
+\[
+ \psi(\mathbf r+\mathbf a)=\left[1+\frac{i}{\hbar}\mathbf a\cdot\hat{\mathbf p}
+ +\frac12\left(\frac{i}{\hbar}\mathbf a\cdot\hat{\mathbf p}\right)^2
+ +\ldots\right]\psi(\mathbf r).
+\]
+Thus
+\begin{equation}
+ \hat T_{\mathbf a}=\exp\left(\frac{i}{\hbar}
+ \mathbf a\cdot\hat{\mathbf p}\right).
+ \tag{15.13}
+\end{equation}
+This is the required \textit{finite-displacement operator}.

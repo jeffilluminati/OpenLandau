@@ -1,0 +1,272 @@
+\SourcePage{88}{91}
+\enlargethispage{-2\baselineskip}
+\section{The Potential Well}
+
+As a simple example of one-dimensional motion, consider motion in a
+rectangular \emph{potential well}, that is, in a field with the function
+$U(x)$ shown in Fig.~1: $U(x)=0$ for $0<x<a$, and $U(x)=U_0$ for $x<0$ and
+$x>a$. It is evident in advance that the spectrum is discrete when $E<U_0$,
+whereas for $E>U_0$ there is a continuous spectrum of doubly degenerate
+levels.
+
+\begin{center}
+\begin{minipage}{0.62\linewidth}
+\centering
+\begin{tikzpicture}[x=1.0cm,y=0.75cm]
+  \draw[gray] (-2.0,0)--(3.0,0);
+  \draw[gray] (0,-0.35)--(0,2.65);
+  \draw[thick] (-1.7,1.35)--(0,1.35)--(0,0)--(1.65,0)--(1.65,1.35)--(3.0,1.35);
+  \node[above left] at (0,2.45) {$U(x)$};
+  \node[right] at (0,1.35) {$U_0$};
+  \node[below] at (1.65,0) {$a$};
+  \node[below] at (2.9,0) {$x$};
+\end{tikzpicture}
+
+\small Fig.~1
+\end{minipage}
+\end{center}
+
+In the region $0<x<a$, the Schrödinger equation is
+\begin{equation}
+  \psi''+\frac{2m}{\hbar^2}E\psi=0,
+  \tag{22.1}
+\end{equation}
+\SourcePage{89}{92}
+where a prime denotes differentiation with respect to $x$; outside the well it
+is
+\begin{equation}
+  \psi''+\frac{2m}{\hbar^2}(E-U_0)\psi=0.
+  \tag{22.2}
+\end{equation}
+At $x=0,a$, the solutions of these equations must pass continuously into one
+another, with continuous first derivative; at $x=\pm\infty$, the solution of
+(22.2) must remain finite (and for the discrete spectrum, $E<U_0$, it must
+vanish).
+
+For $E<U_0$, the solution of (22.2) that vanishes at infinity is
+$\psi=\operatorname{const}\cdot e^{\mp\kappa x}$, where
+\begin{equation}
+  \kappa=\frac{1}{\hbar}\sqrt{2m(U_0-E)}
+  \tag{22.3}
+\end{equation}
+(the minus and plus signs in the exponent refer respectively to the regions
+$x>a$ and $x<0$). The probability $|\psi|^2$ of finding the particle decays
+exponentially into the region where $E<U(x)$. Instead of requiring $\psi$ and
+$\psi'$ to be continuous at the boundary of the potential well, it is
+convenient to require continuity of $\psi$ and of the logarithmic derivative
+$\psi'/\psi$. With (22.3), the boundary condition becomes
+\begin{equation}
+  |\psi'|/\psi=\mp\kappa.
+  \tag{22.4}
+\end{equation}
+Determining the energy levels for a well of arbitrary
+depth $U_0$ is left aside here (see Problem~2); we analyze in full only the limiting case of
+infinitely high walls ($U_0\to\infty$).
+
+When $U_0=\infty$, motion occurs only on the interval bounded by $x=0,a$ and,
+as stated in \secref{18}, the boundary condition at these points is
+\begin{equation}
+  \psi=0.
+  \tag{22.5}
+\end{equation}
+(This condition also follows readily from the general condition (22.4).
+Indeed, when $U_0\to\infty$, we also have $\kappa\to\infty$, and hence
+$\psi'/\psi\to\infty$; since $\psi'$ cannot become infinite, it follows that
+$\psi=0$.) Seek a solution of (22.1) inside the well in the form
+\begin{equation}
+  \psi=c\sin(kx+\delta),
+  \qquad k=\frac{\sqrt{2mE}}{\hbar}.
+  \tag{22.6}
+\end{equation}
+The condition $\psi=0$ at $x=0$ gives $\delta=0$. The same condition at $x=a$
+then gives $\sin ka=0$, whence $ka=n\pi$ ($n$ takes the positive integral
+values beginning with unity\footnote{For $n=0$, one would obtain identically
+$\psi=0$.}), or
+\begin{equation}
+  E_n=\frac{\pi^2\hbar^2}{2ma^2}n^2,
+  \qquad n=1,2,3,\ldots
+  \tag{22.7}
+\end{equation}
+\SourcePage{90}{93}
+The energy levels of a particle inside the potential well are thus determined. After
+normalization, the stationary-state wave functions are
+\begin{equation}
+  \psi_n=\sqrt{\frac{2}{a}}\sin\left(\frac{\pi n}{a}x\right).
+  \tag{22.8}
+\end{equation}
+From these results one can write down directly the energy levels of a particle
+in a rectangular ``potential box,'' that is, for three-dimensional motion in
+a field whose potential energy is $U=0$ for $0<x<a$, $0<y<b$, $0<z<c$, and
+$U=\infty$ outside this region. Namely, the levels are the sums
+\begin{equation}
+  E_{n_1n_2n_3}=\frac{\pi^2\hbar^2}{2m}
+  \left(\frac{n_1^2}{a^2}+\frac{n_2^2}{b^2}+\frac{n_3^2}{c^2}\right),
+  \qquad n_1,n_2,n_3=1,2,3,\ldots,
+  \tag{22.9}
+\end{equation}
+and the corresponding wave functions are the products
+\begin{equation}
+  \psi_{n_1n_2n_3}=\sqrt{\frac{8}{abc}}
+  \sin\left(\frac{\pi n_1}{a}x\right)
+  \sin\left(\frac{\pi n_2}{b}y\right)
+  \sin\left(\frac{\pi n_3}{c}z\right).
+  \tag{22.10}
+\end{equation}
+
+Notice that, according to (22.7) or (22.9), the energy of the ground state is
+of order $E_0\sim\hbar^2/ml^2$, where $l$ denotes the linear dimensions of
+the region in which the particle moves. This result agrees with the
+uncertainty relations: for a coordinate uncertainty of order $l$, the
+momentum uncertainty, and with it the order of the momentum itself, is
+$\sim\hbar/l$; the corresponding energy is
+$\sim{\left(\hbar/l\right)}^2/m$.
+
+\ProblemHeading
+\noindent\textbf{1.} Determine the probability distribution of the possible
+momentum values for the normal state of a particle in an infinitely deep
+rectangular potential well.
+
+\SolutionHeading
+The coefficients $a(p)$ in the expansion of the function $\psi_1$ (22.8) in
+momentum eigenfunctions are
+\[
+  a(p)=\int\psi_p^*\psi_1\,dx
+  =\sqrt{\frac{2}{a}}\int_0^a
+  \sin\left(\frac{\pi}{a}x\right)
+  \exp\left(-i\frac{px}{\hbar}\right)dx.
+\]
+Evaluating the integral and taking the square of its modulus gives the
+required probability distribution
+\[
+  |a(p)|^2\frac{dp}{2\pi\hbar}
+  =\frac{4\pi\hbar^3a}{{\left(p^2a^2-\pi^2\hbar^2\right)}^2}
+  \cos^2\left(\frac{pa}{2\hbar}\right)dp.
+\]
+
+\ProblemHeading
+\noindent\textbf{2.} Determine the energy levels for the potential well shown
+in Fig.~2.
+
+\SolutionHeading
+The discrete part of the spectrum is the range $E<U_1$, which is the range we
+consider. In the region $x<0$, the wave function is
+\[
+  \psi=c_1e^{\kappa_1x},
+  \qquad \kappa_1=\frac{1}{\hbar}\sqrt{2m(U_1-E)},
+\]
+\SourcePage{91}{94}
+and in the region $x>a$ it is
+\[
+  \psi=c_2e^{-\kappa_2x},
+  \qquad \kappa_2=\frac{1}{\hbar}\sqrt{2m(U_2-E)}.
+\]
+Inside the well ($0<x<a$), seek $\psi$ in the form
+\[
+  \psi=c\sin(kx+\delta),
+  \qquad k=\sqrt{2mE}/\hbar.
+\]
+
+\begin{center}
+\begin{tikzpicture}[x=1.0cm,y=0.75cm]
+  \draw[gray] (-2.0,0)--(3.1,0);
+  \draw[gray] (0,-0.35)--(0,2.9);
+  \draw[thick] (-1.7,1.15)--(0,1.15)--(0,0)--(1.7,0)--(1.7,2.0)--(2.9,2.0);
+  \node[above left] at (0,2.7) {$U(x)$};
+  \node[right] at (0,1.15) {$U_1$};
+  \node[left] at (1.7,2.0) {$U_2$};
+  \node[below] at (1.7,0) {$a$};
+  \node[below] at (3.0,0) {$x$};
+\end{tikzpicture}
+
+\small Fig.~2
+\end{center}
+
+Continuity of $\psi'/\psi$ at the boundaries of the well gives
+\[
+  k\cot\delta=\kappa_1
+  =\sqrt{\frac{2m}{\hbar^2}U_1-k^2},
+\]
+\[
+  k\cot(ak+\delta)=-\kappa_2
+  =-\sqrt{\frac{2m}{\hbar^2}U_2-k^2},
+\]
+or
+\[
+  \sin\delta=\frac{k\hbar}{\sqrt{2mU_1}},
+  \qquad
+  \sin(ka+\delta)=-\frac{k\hbar}{\sqrt{2mU_2}}.
+\]
+Eliminating $\delta$, we obtain the transcendental equation
+\begin{equation}
+  ka=n\pi-\arcsin\frac{k\hbar}{\sqrt{2mU_1}}
+  -\arcsin\frac{k\hbar}{\sqrt{2mU_2}}
+  \tag{1}
+\end{equation}
+(where $n=1,2,3,\ldots$, and the values of $\arcsin$ are taken between $0$
+and $\pi/2$), whose roots determine the energy levels
+$E=k^2\hbar^2/2m$. In general there is one root for each $n$; the values of
+$n$ number the levels in increasing order.
+
+Since the argument of $\arcsin$ cannot exceed unity, it is clear that the
+values of $k$ can lie only in the interval from zero to
+$\sqrt{2mU_1}/\hbar$. The left-hand side of (1) is a monotonically increasing
+function of $k$, while the right-hand side is monotonically decreasing.
+Consequently, for a root of (1) to exist, its right-hand side at
+$k=\sqrt{2mU_1}/\hbar$ must be less than its left-hand side. In particular,
+the inequality
+\begin{equation}
+  a\frac{\sqrt{2mU_1}}{\hbar}
+  \geq\frac{\pi}{2}-\arcsin\sqrt{\frac{U_1}{U_2}},
+  \tag{2}
+\end{equation}
+obtained for $n=1$, is the condition for the well to contain at least one
+energy level. Thus, for given $U_1\ne U_2$, there always exist sufficiently
+small values of the width $a$ for which the well has no discrete energy level
+at all. When $U_1=U_2$, condition (2) is plainly always satisfied.
+
+When $U_1=U_2\equiv U_0$ (a symmetric well), equation (1) reduces to
+\begin{equation}
+  \arcsin\frac{\hbar k}{\sqrt{2mU_0}}=\frac{n\pi-ka}{2}.
+  \tag{3}
+\end{equation}
+Introducing the variable $\xi=ka/2$, for odd $n$ we obtain
+\begin{equation}
+  \cos\xi=\pm\gamma\xi,
+  \qquad \gamma=\frac{\hbar}{a}\sqrt{\frac{2}{mU_0}},
+  \tag{4}
+\end{equation}
+where the roots for which $\tan\xi>0$ must be selected. For even
+$n$ we obtain
+\begin{equation}
+  \sin\xi=\pm\gamma\xi,
+  \tag{5}
+\end{equation}
+\SourcePage{92}{95}
+where the roots for which $\tan\xi<0$ must be selected. The
+energy levels are found from the roots of these two equations as
+$E=2\xi^2\hbar^2/ma^2$; for $\gamma\ne0$ only finitely many levels exist.
+
+Consider as a special case a shallow well, in which
+$U_0\ll\hbar^2/ma^2$, we have $\gamma\gg1$, and equation (5) has no roots at all.
+Equation (4), however, has one root (with the upper sign on its right-hand
+side), equal to $\xi\approx(1/\gamma)(1-1/2\gamma^2)$. The well therefore
+contains only one energy level,
+\[
+  E_0\approx U_0-\frac{ma^2}{2\hbar^2}U_0^2,
+\]
+lying close to its ``top.''
+
+\ProblemHeading
+\noindent\textbf{3.} Determine the pressure exerted on the walls of a
+rectangular ``potential box'' by a particle inside it.
+
+\SolutionHeading
+On a wall normal to the $x$ axis, the force is given by the mean of
+the derivative $-\partial H/\partial a$ of the particle's Hamilton function
+with respect to the length of the box along the $x$ axis; division of this
+force by the wall area $bc$ gives the pressure. By (11.16), the required mean
+value is found by differentiating the energy eigenvalue (22.9). The resulting
+pressure is
+\[
+  p^{(x)}=\frac{\pi^2\hbar^2}{ma^3bc}n_1^2.
+\]

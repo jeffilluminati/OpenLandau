@@ -1,0 +1,169 @@
+\SourcePage{129}{132}
+\section{Addition of angular momenta}
+
+Consider a system consisting of two weakly interacting parts. When the
+interaction is entirely neglected, the conservation of angular momentum holds
+for each part independently, so that the angular momenta $\mathbf L_1$ and
+$\mathbf L_2$ of the two parts can be summed to give the total angular
+momentum $\mathbf L$ of the system. In the next approximation, once the weak interaction is included,
+the conservation laws for $\mathbf L_1$ and $\mathbf L_2$ cease to hold
+rigorously; nonetheless, the quantum numbers $L_1$ and $L_2$, which fix the
+squares of those angular momenta, remain “good” and can still serve for an
+approximate characterization of the system's state. In a pictorial, classical treatment of the angular momenta, one may
+say that in this approximation $\mathbf L_1$ and $\mathbf L_2$ precess about
+the direction of $\mathbf L$ while their magnitudes remain unchanged.
+
+The consideration of such systems raises the question of the
+\emph{rule for adding angular momenta}. What values of $L$ are possible for
+given $L_1$ and $L_2$? The addition rule for
+\SourcePage{130}{133}
+the angular-momentum projections is evident: from
+$\hat L_z=\hat L_{1z}+\hat L_{2z}$ it follows that
+\begin{equation}
+  M=M_1+M_2.
+  \tag{31.1}
+\end{equation}
+There is no equally simple relation for the operators of the squares of the
+angular momenta, and we derive their “addition rule” as follows.
+
+If the quantities $\mathbf L_1^2$, $\mathbf L_2^2$, $L_{1z}$, and $L_{2z}$
+are chosen as a complete set of physical quantities\footnote{Together with a
+number of other quantities which, along with the four stated here, make up a
+complete set. These remaining quantities play no part in the following
+argument; for conciseness we do not mention them at all and provisionally
+call the system of the four stated quantities complete.}, each state is
+specified by the numbers $L_1$, $L_2$, $M_1$, and $M_2$. For given $L_1$ and
+$L_2$, the numbers $M_1$ and $M_2$ take, respectively, $2L_1+1$ and
+$2L_2+1$ values, so there are altogether
+$(2L_1+1)(2L_2+1)$ different states with the same $L_1$ and $L_2$. We denote
+the wave functions of the states in this description by
+$\varphi_{L_1L_2M_1M_2}$.
+
+Instead of the four quantities just stated, one can choose the four quantities
+$\mathbf L_1^2$, $\mathbf L_2^2$, $\mathbf L^2$, and $L_z$ as a complete
+set. Each state is then characterized by the numbers $L_1$, $L_2$, $L$, and
+$M$ (we denote the corresponding wave functions by $\psi_{L_1L_2LM}$).
+For given $L_1$ and $L_2$ there must, of course, still be
+$(2L_1+1)(2L_2+1)$ different states; that is, for fixed $L_1$ and $L_2$, the
+pair $L,M$ can take $(2L_1+1)(2L_2+1)$ pairs of values. These values can be
+found by the following argument.
+
+Adding the different allowed values of $M_1$ and $M_2$ gives the corresponding
+values of $M$:
+\[
+\begin{array}{c@{\qquad}c@{\qquad}c}
+ M_1 & M_2 & M\\[2pt]
+ \hline
+ L_1 & L_2 & L_1+L_2\\[2pt]
+ \multicolumn{2}{c}{
+   \left.\begin{array}{cc}L_1&L_2-1\\L_1-1&L_2\end{array}\right\}}
+ &L_1+L_2-1\\[8pt]
+ \multicolumn{2}{c}{
+   \left.\begin{array}{cc}L_1-1&L_2-1\\L_1&L_2-2\\L_1-2&L_2\end{array}\right\}}
+ &L_1+L_2-2\\[-1pt]
+ \multicolumn{3}{c}{\dotfill}
+\end{array}
+\]
+The largest possible value of $M$ is evidently $M=L_1+L_2$, and it
+corresponds to one state $\varphi$ (one pair of values $M_1,M_2$).
+Consequently, the largest possible $M$ in the states $\psi$, and hence the
+largest $L$, is also $L_1+L_2$. Next, there are two states $\varphi$ with
+$M=L_1+L_2-1$. There must therefore also be two states $\psi$ with this value
+of $M$; one
+\SourcePage{131}{134}
+is a state with $L=L_1+L_2$ (and $M=L-1$), and the other has
+$L=L_1+L_2-1$ (with $M=L$). For $M=L_1+L_2-2$ there are three different
+states $\varphi$. This means that, in addition to $L=L_1+L_2$ and
+$L=L_1+L_2-1$, the value $L=L_1+L_2-2$ is also possible.
+
+This argument can be continued in the same way as long as decreasing $M$ by
+one increases by one the number of states with that value of $M$. It is easy
+to see that this continues until $M$ reaches $|L_1-L_2|$. As $M$ is reduced
+further, the number of states ceases to increase and remains equal to
+$2L_2+1$ (if $L_2\leq L_1$). Thus $|L_1-L_2|$ is the smallest possible
+value of $L$.
+
+We therefore obtain the result that, for given $L_1$ and $L_2$, $L$ can take
+the values
+\begin{equation}
+  L=L_1+L_2,L_1+L_2-1,\ldots,|L_1-L_2|,
+  \tag{31.2}
+\end{equation}
+altogether $2L_2+1$ different values when $L_2\leq L_1$. One readily checks
+that these indeed give $(2L_1+1)(2L_2+1)$ different pairs of values $M,L$.
+It is important to note that, apart from the $2L+1$ different values of $M$
+for a given $L$, each possible value of $L$ in (31.2) corresponds to just one
+state.
+
+This result can be represented pictorially by the so-called
+\emph{vector model}. Introduce two vectors $\mathbf L_1$ and $\mathbf L_2$
+of lengths $L_1$ and $L_2$. The values of $L$ are represented by the
+integer-valued lengths of vectors $\mathbf L$ obtained by vector addition of
+$\mathbf L_1$ and $\mathbf L_2$; the largest value, $L_1+L_2$, is obtained
+when $\mathbf L_1$ and $\mathbf L_2$ are parallel, and the smallest,
+$|L_1-L_2|$, when they are antiparallel.
+
+In states with definite angular momenta $L_1$, $L_2$, and definite total
+angular momentum $L$, the scalar products $\mathbf L_1\mathbf L_2$,
+$\mathbf L\mathbf L_1$, and $\mathbf L\mathbf L_2$ also have definite
+values. These values are readily found. To calculate
+$\mathbf L_1\mathbf L_2$, write
+$\hat{\mathbf L}=\hat{\mathbf L}_1+\hat{\mathbf L}_2$, or, on squaring and
+transposing terms,
+\[
+  2\hat{\mathbf L}_1\hat{\mathbf L}_2
+  =\hat{\mathbf L}^{2}-\hat{\mathbf L}_1^{2}-\hat{\mathbf L}_2^{2}.
+\]
+Replacing the operators on the right by their eigenvalues gives the
+eigenvalue of the operator on the left:
+\begin{equation}
+ \mathbf L_1\mathbf L_2=\frac12
+ \{L(L+1)-L_1(L_1+1)-L_2(L_2+1)\}.
+ \tag{31.3}
+\end{equation}
+Similarly, we find
+\begin{equation}
+ \mathbf L\mathbf L_1=\frac12
+ \{L(L+1)+L_1(L_1+1)-L_2(L_2+1)\}.
+ \tag{31.4}
+\end{equation}
+\SourcePage{132}{135}
+Let us now establish the \emph{rule for combining parities}. For a system
+that consists of two independent parts, the wave function $\Psi$ equals the
+product of the individual wave functions $\Psi_1$ and $\Psi_2$. Hence, if the latter two
+have the same parity (both change sign, or both remain unchanged, when all
+coordinates change sign), the wave function of the whole system is even. If,
+on the other hand, $\Psi_1$ and $\Psi_2$ have opposite parities, $\Psi$ is
+odd. These statements can be written as
+\begin{equation}
+  P=P_1P_2,
+  \tag{31.5}
+\end{equation}
+where $P$ is the parity of the whole system, and $P_1$ and $P_2$ are the
+parities of its parts. This rule plainly generalizes directly to a system
+consisting of any number of noninteracting parts.
+
+In particular, for a system of particles in a centrally symmetric field
+(with the interaction between the particles treated as weak), the parity of
+the state of the whole system is
+\begin{equation}
+  P=(-1)^{l_1+l_2+\ldots}
+  \tag{31.6}
+\end{equation}
+(see (30.7)). Note that the exponent involves the algebraic sum of the
+particle angular momenta, a quantity that, generally speaking, does not
+coincide with their “vector sum,” i.e., with the angular momentum $L$ of
+the system.
+
+If a closed system decays into parts under the action of forces within the
+system itself, its total angular momentum and parity must be conserved. This
+may make the decay impossible even when it is energetically possible.
+
+For example, consider an atom in an even state with angular momentum $L=0$,
+whose energy would permit it to break up into a free electron and an ion
+occupying an odd state, also with $L=0$. It is easy to show that this
+process is in fact impossible (one calls it \emph{forbidden}). Indeed, by
+conservation of angular momentum the free electron would also have to possess
+zero angular momentum and would therefore be in an even state
+($P=(-1)^0=+1$). But the state ion$+$free electron would then be odd, whereas
+the initial state of the atom was even.

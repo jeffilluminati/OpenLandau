@@ -1,0 +1,159 @@
+\SourcePage{78}{81}
+\section{Flux Density}
+
+In classical mechanics a particle's velocity $\mathbf v$ is related to its
+momentum by $\mathbf p=m\mathbf v$. As expected, quantum mechanics has the
+same relation between the corresponding operators. This follows at once by
+calculating $\hat{\mathbf v}=\hat{\dot{\mathbf r}}$ from the general rule
+(9.2) for differentiating operators with respect to time:
+\[
+  \hat{\mathbf v}=\frac{i}{\hbar}
+  \left(\hat H\mathbf r-\mathbf r\hat H\right).
+\]
+Using (17.5) for $\hat H$ together with (16.5),%
+\SourcePage{79}{82}
+we obtain
+\begin{equation}
+  \hat{\mathbf v}=\hat{\mathbf p}/m.
+  \tag{19.1}
+\end{equation}
+The same relations plainly hold between the eigenvalues of velocity and
+momentum, and between their mean values in any state.
+
+Like momentum, the velocity of a particle cannot have a definite value
+simultaneously with its coordinates. Velocity multiplied by an infinitesimal
+time element $dt$, however, determines the particle's displacement during
+$dt$. Thus the nonexistence of velocity simultaneously with coordinates means
+that if a particle occupies a definite point of space at one instant, it no
+longer has a definite position at the next, infinitesimally close instant.
+
+We record a useful formula for the operator $\hat{\dot f}$, the time
+derivative of a quantity $f(\mathbf r)$ which is a function of the particle's
+radius vector. Since $f$ commutes with $U(\mathbf r)$, we find
+\[
+  \hat{\dot f}=\frac{i}{\hbar}(\hat Hf-f\hat H)
+  =\frac{i}{2m\hbar}(\hat{\mathbf p}^{2}f-f\hat{\mathbf p}^{2}),
+\]
+while (16.4) gives
+\[
+  \hat{\mathbf p}^{2}f
+  =\hat{\mathbf p}\left(f\hat{\mathbf p}-i\hbar\Grad{f}\right),
+  \qquad
+  f\hat{\mathbf p}^{2}
+  =\left(\hat{\mathbf p}f+i\hbar\Grad{f}\right)\hat{\mathbf p}.
+\]
+Hence the desired expression is
+\begin{equation}
+  \hat{\dot f}=\frac{1}{2m}
+  \left(\hat{\mathbf p}\,\Grad{f}+\Grad{f}\cdot\hat{\mathbf p}\right).
+  \tag{19.2}
+\end{equation}
+
+Next, let us find the acceleration operator. We have
+\[
+  \hat{\dot{\mathbf v}}
+  =\frac{i}{\hbar}(\hat H\hat{\mathbf v}-\hat{\mathbf v}\hat H)
+  =\frac{i}{m\hbar}(\hat H\hat{\mathbf p}-\hat{\mathbf p}\hat H)
+  =\frac{i}{m\hbar}(U\hat{\mathbf p}-\hat{\mathbf p}U).
+\]
+Using (16.4), we find
+\begin{equation}
+  m\hat{\dot{\mathbf v}}=-\Grad{U}.
+  \tag{19.3}
+\end{equation}
+In form, this operator equation coincides exactly with the equation of motion
+(Newton's equation) of classical mechanics.
+
+The integral $\int_V|\Psi|^2\,dV$ over a finite volume $V$ is the probability
+of finding the particle in that volume. Let us calculate its time derivative:
+\[
+  \frac{d}{dt}\int_V|\Psi|^2\,dV
+  =\int_V\left(\Psi\frac{\partial\Psi^*}{\partial t}
+  +\Psi^*\frac{\partial\Psi}{\partial t}\right)dV
+  =\frac{i}{\hbar}\int_V
+  \left(\Psi\hat H^*\Psi^*-\Psi^*\hat H\Psi\right)dV.
+\]
+\SourcePage{80}{83}
+Substitution of
+\[
+  \hat H=\hat H^*=-\frac{\hbar^2}{2m}\Delta+U(x,y,z)
+\]
+and use of the identity
+\[
+  \Psi\Delta\Psi^*-\Psi^*\Delta\Psi
+  =\Div{(\Psi\Grad{\Psi^*}-\Psi^*\Grad{\Psi})}
+\]
+give
+\[
+  \frac{d}{dt}\int_V|\Psi|^2\,dV
+  =-\int_V\Div{\mathbf j}\,dV,
+\]
+where $\mathbf j$ denotes the vector\footnote{If $\psi$ is written as
+$|\psi|e^{i\alpha}$, then
+\begin{equation}
+  \mathbf j=\frac{\hbar}{m}|\psi|^2\Grad{\alpha}.
+  \tag{19.4a}
+\end{equation}}
+\begin{equation}
+  \mathbf j=\frac{i\hbar}{2m}
+  (\Psi\Grad{\Psi^*}-\Psi^*\Grad{\Psi})
+  =\frac{1}{2m}
+  (\Psi\hat{\mathbf p}^{*}\Psi^*+\Psi^*\hat{\mathbf p}\Psi).
+  \tag{19.4}
+\end{equation}
+By Gauss's theorem, the integral of $\Div{\mathbf j}$ can be transformed into
+an integral over the closed surface bounding $V$:
+\begin{equation}
+  \frac{d}{dt}\int_V|\Psi|^2\,dV
+  =-\oint\mathbf j\,d\mathbf f.
+  \tag{19.5}
+\end{equation}
+It follows that $\mathbf j$ may be called the \emph{probability-flux-density
+vector}, or simply the \emph{flux density}. Its surface integral is the
+probability that the particle crosses that surface per unit time. The vector
+$\mathbf j$ and the probability density $|\Psi|^2$ obey
+\begin{equation}
+  \frac{\partial|\Psi|^2}{\partial t}+\Div{\mathbf j}=0,
+  \tag{19.6}
+\end{equation}
+an equation analogous to the classical continuity equation.
+
+The free-motion wave function---the plane wave (17.9)---can be normalized so
+as to describe a particle flux of unit density (a flux in which, on average,
+one particle per unit time passes through a unit area of its cross-section).
+The function is
+\begin{equation}
+  \Psi=\frac{1}{\sqrt v}
+  \exp\left[-\frac{i}{\hbar}(Et-\mathbf p\cdot\mathbf r)\right],
+  \tag{19.7}
+\end{equation}
+where $v$ is the particle's speed. Indeed, substituting this function into
+(19.4) gives $\mathbf j=\mathbf p/mv$, the unit vector in the direction of
+motion.
+\SourcePage{81}{84}
+It is useful to show how the mutual orthogonality of wave functions of states
+with different energies follows directly from the Schrödinger equation. Let
+$\psi_m$ and $\psi_n$ be two such functions; they satisfy
+\[
+  -\frac{\hbar^2}{2m}\Delta\psi_m+U\psi_m=E_m\psi_m,
+\]
+\[
+  -\frac{\hbar^2}{2m}\Delta\psi_n^*+U\psi_n^*=E_n\psi_n^*.
+\]
+Multiply the first equation by $\psi_n^*$ and the second by $\psi_m$, and
+subtract them term by term. This gives
+\[
+  (E_m-E_n)\psi_m\psi_n^*
+  =\frac{\hbar^2}{2m}(\psi_m\Delta\psi_n^*-\psi_n^*\Delta\psi_m)
+  =\frac{\hbar^2}{2m}\Div{
+  (\psi_m\Grad{\psi_n^*}-\psi_n^*\Grad{\psi_m})}.
+\]
+Integrating both sides over all space, the right-hand side vanishes after
+application of Gauss's theorem, and we obtain
+\[
+  (E_m-E_n)\int\psi_m\psi_n^*\,dV=0.
+\]
+Since $E_m\ne E_n$ by assumption, the required orthogonality relation follows:
+\[
+  \int\psi_m\psi_n^*\,dV=0.
+\]

@@ -1,0 +1,119 @@
+\section{The superposition principle}
+
+\SourcePage{16}{19}
+The radical change in physical ideas about motion that quantum mechanics
+requires in comparison with classical mechanics naturally calls for an equally
+radical change in the theory's mathematical formalism. In this connection the
+first question that arises concerns the means of describing a state in quantum
+mechanics.
+
+Let $q$ stand for the totality of coordinates of a quantum
+system, and $dq$ for the product of their differentials (it
+is called a volume element of the system's \textit{configuration space}); for
+one particle, $dq$ coincides with the volume element $dV$ of ordinary space.
+
+The mathematical formalism of quantum mechanics rests on the assertion that a
+system's state may be described by a certain (generally complex) function of
+the coordinates $\Psi(q)$, and that the squared modulus of this function
+determines the probability distribution of the coordinate values:
+$|\Psi|^2\,dq$ is%
+\SourcePage{17}{20}
+the probability that a measurement made on the system will find coordinate
+values in the element $dq$ of configuration space. The function $\Psi$ is
+called the system's \textit{wave function}\footnote{It was first introduced
+into quantum mechanics by \textit{Schrödinger} (\textit{E.~Schrödinger},
+1926).}.
+
+Knowledge of the wave function makes it possible in principle to calculate
+the probabilities of the various outcomes of any measurement in general (not
+necessarily a coordinate measurement). Every one of these probabilities is
+given by an expression bilinear in $\Psi$ and $\Psi^*$. In full generality,
+such an expression has the form
+\begin{equation}
+  \iint \Psi(q)\Psi^*(q')\varphi(q,q')\,dq\,dq',
+  \tag{2.1}
+\end{equation}
+where the function $\varphi(q,q')$ depends on the kind and outcome of the
+measurement, and the integrations extend over the entire configuration space.
+The probability $\Psi\Psi^*$ itself for the different coordinate values is
+also an expression of this type\footnote{It is obtained from (2.1) by taking
+$\varphi(q,q')=\delta(q-q_0)\delta(q'-q_0)$, where $\delta$ denotes the
+so-called $\delta$-function defined below, in \secref{5}; $q_0$ denotes the
+coordinate value whose probability is sought.}.
+
+As time passes, the system's state, and with it the wave function, generally
+changes. In this sense the wave function may also be regarded as a function of
+time. If the wave function is known at some initial instant, then, by the very
+meaning of a complete description of a state, it is thereby determined in
+principle at every future instant. The actual time dependence of the wave
+function is specified by equations to be derived below.
+
+By definition, the sum of the probabilities of all possible values of the
+system's coordinates must equal unity. The integral of $|\Psi|^2$ over the
+whole configuration space must therefore equal unity:
+\begin{equation}
+  \int |\Psi|^2\,dq=1.
+  \tag{2.2}
+\end{equation}
+This equality constitutes what is known as the \textit{normalization condition}
+on wave functions. When the integral of $|\Psi|^2$ is convergent, by choosing a
+suitable constant coefficient, the function $\Psi$ can always be normalized,
+as it is said. We shall see below, however, that the integral of $|\Psi|^2$
+may diverge, in which case $\Psi$ cannot be normalized by condition (2.2).
+\SourcePage{18}{21}
+Here $|\Psi|^2$ naturally does not yield the absolute coordinate
+probabilities; the ratio of $|\Psi|^2$ between two distinct points of
+configuration space, however, does determine the relative probability of
+the coordinate values.
+
+Since all quantities with direct physical meaning that are calculated using
+the wave function have the form (2.1), in which $\Psi$ occurs multiplied by
+$\Psi^*$, it is clear that a normalized wave function is defined only up to a
+constant \textit{phase factor} of the form $e^{i\alpha}$, where $\alpha$ is
+any real number. This ambiguity is fundamental and cannot be removed; it is,
+however, immaterial, since it has no effect on any physical result.
+
+The positive content of quantum mechanics is founded on a number of assertions
+about the properties of the wave function, as follows.
+
+Suppose that in the state with wave function $\Psi_1(q)$ a certain measurement
+leads with certainty to a definite outcome, outcome 1, while in the state
+$\Psi_2(q)$ it leads to outcome 2. It is then postulated that every linear
+combination of $\Psi_1$ and $\Psi_2$, that is, every function of the form
+$c_1\Psi_1+c_2\Psi_2$ ($c_1$, $c_2$ being constants), describes a state in
+which the same measurement yields either outcome 1 or outcome 2. Moreover, if
+the time dependence of the states is known, being given in one case by the
+function $\Psi_1(q,t)$ and in the other by $\Psi_2(q,t)$, then any linear
+combination of them also gives a possible time dependence of a state.
+
+These assertions constitute the so-called \textit{superposition principle for
+states}, the fundamental positive principle of quantum mechanics. It follows
+from this principle, in particular, that every equation satisfied by wave
+functions must be linear in $\Psi$.
+
+Consider a system made up of two parts, and suppose its state is specified in
+such a way that each part is described completely\footnote{This, of course,
+also gives a complete description of the state of the system as a whole. We
+emphasize, however, that the converse statement is by no means valid: in
+general, a complete description of the state of the system as a whole does not
+yet describe the states of its separate parts completely (see also \secref{14}).}.
+One can then assert that the coordinate probabilities for $q_1$ in the
+first part are independent of those for the coordinates $q_2$
+of the second, and therefore that the probability distribution for the whole
+system must equal the product of the probability distributions for its parts.
+It follows that the system's wave function $\Psi_{12}(q_1,q_2)$ may be written
+as a product of the wave functions $\Psi_1(q_1)$ and
+$\Psi_2(q_2)$ of its%
+\SourcePage{19}{22}
+parts:
+\begin{equation}
+  \Psi_{12}(q_1,q_2)=\Psi_1(q_1)\Psi_2(q_2).
+  \tag{2.3}
+\end{equation}
+If the two parts do not interact with each other, this relation between the
+wave functions of the system and of its parts is preserved at future instants
+as well:
+\begin{equation}
+  \Psi_{12}(q_1,q_2,t)=\Psi_1(q_1,t)\Psi_2(q_2,t).
+  \tag{2.4}
+\end{equation}

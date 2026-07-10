@@ -1,0 +1,275 @@
+\section{Matrices}
+
+\SourcePage{48}{51}
+Assume for convenience that the system in question possesses a discrete
+energy spectrum (every relation derived below extends directly to the
+continuous-spectrum case as well). Let
+$\Psi=\sum_n a_n\Psi_n$ denote the expansion of an arbitrary wave function over
+the stationary-state wave functions $\Psi_n$. If this expansion is
+substituted into the definition (3.8) of the mean value of some quantity $f$, we
+obtain
+\begin{equation}
+  \bar f=\sum_n\sum_m a_n^*a_m f_{nm}(t),
+  \tag{11.1}
+\end{equation}
+where $f_{nm}(t)$ denote the integrals
+\begin{equation}
+  f_{nm}(t)=\int\Psi_n^*\hat f\Psi_m\,dq.
+  \tag{11.2}
+\end{equation}
+The set of quantities $f_{nm}(t)$ for all possible $n$, $m$ is called the
+\textit{matrix} of the quantity $f$, and each $f_{nm}(t)$ is spoken of as a
+\textit{matrix element}, corresponding to the transition from state $m$ to
+state $n$\footnote{The matrix representation of physical quantities was introduced
+by \textit{Heisenberg} (\textit{W. Heisenberg}) in 1925, even before
+Schr\"{o}dinger's discovery of the wave equation. ``Matrix mechanics''
+was subsequently developed by \textit{Born, Heisenberg and Jordan}
+(\textit{M. Born, P. Jordan}).}.
+
+The time dependence of the matrix elements $f_{nm}(t)$ is determined (if the
+operator $\hat f$ does not contain $t$ explicitly) by the time dependence of the
+functions $\Psi_n$. Substituting for them the expressions (10.1),
+\SourcePage{49}{52}
+we find that
+\begin{equation}
+  f_{nm}(t)=f_{nm}e^{i\omega_{nm}t},
+  \tag{11.3}
+\end{equation}
+where
+\begin{equation}
+  \omega_{nm}=\frac{E_n-E_m}{\hbar}
+  \tag{11.4}
+\end{equation}
+is the transition frequency between states $n$ and $m$, and the quantities
+\begin{equation}
+  f_{nm}=\int\psi_n^*\hat f\psi_m\,dq
+  \tag{11.5}
+\end{equation}
+constitute the time-independent matrix of the quantity $f$, which is what one
+ordinarily uses\footnote{In connection with the indeterminacy of the phase
+factor in the normalized wave functions (see \secref{2}), the matrix elements
+$f_{nm}$ (and $f_{nm}(t)$) are likewise defined only to within factors of the
+form $\exp[i(\alpha_m-\alpha_n)]$. Here too this indeterminacy does not affect
+the physical results.}.
+
+One obtains the matrix elements of the derivative $\dot f$ by differentiating
+those of the quantity $f$ with respect to time; this is an immediate consequence
+of the relation
+\begin{equation}
+  \bar{\dot f}=\dot{\bar f}
+  =\sum_n\sum_m a_n^*a_m\dot f_{nm}(t).
+  \tag{11.6}
+\end{equation}
+In view of (11.3) we thus have for the matrix elements of $\dot f$:
+\begin{equation}
+  \dot f_{nm}(t)=i\omega_{nm}f_{nm}(t)
+  \tag{11.7}
+\end{equation}
+or (cancelling the time factor $\exp(i\omega_{nm}t)$ on both sides) for the
+time-independent matrix elements:
+\begin{equation}
+  (\dot f)_{nm}=i\omega_{nm}f_{nm}
+  =\frac{i}{\hbar}(E_n-E_m)f_{nm}.
+  \tag{11.8}
+\end{equation}
+For simplicity of notation in the formulas, we derive below all relations for
+the time-independent matrix elements; exactly the same relations hold also for
+matrices that depend on time.
+
+For the matrix elements of the complex conjugate quantity $f^*$ of $f$, taking
+into account the definition of the adjoint operator, we obtain
+\[
+  (f^*)_{nm}=\int\psi_n^*\hat f^+\psi_m\,dq
+  =\int\psi_n^*\tilde{f^*}\psi_m\,dq
+  =\int\psi_m\hat f^*\psi_n^*\,dq,
+\]
+i.e.
+\begin{equation}
+  (f^*)_{nm}=(f_{mn})^*.
+  \tag{11.9}
+\end{equation}
+\SourcePage{50}{53}
+For real physical quantities, which are usually all that we
+consider, we therefore have
+\begin{equation}
+  f_{nm}=f_{mn}^*.
+  \tag{11.10}
+\end{equation}
+Such matrices, like the operators corresponding to them, are called
+\textit{Hermitian}.
+
+Matrix elements with $n=m$ are called \textit{diagonal}. These elements do not
+depend on time at all, and from (11.10) it is clear that they are real. The
+element $f_{nn}$ is the mean value of $f$ in the state $\Psi_n$.
+
+The rule of \textit{matrix multiplication} is readily derived. As a preliminary
+step, observe that the formula
+\begin{equation}
+  \hat f\psi_n=\sum_m f_{mn}\psi_m.
+  \tag{11.11}
+\end{equation}
+holds. This is nothing other than the expansion of the function $\hat f\psi_n$
+in the functions $\psi_m$ with coefficients determined according to the general
+rule (3.5). Bearing this formula in mind, we write
+\[
+  \hat f\hat g\psi_n=\hat f(\hat g\psi_n)
+  =\sum_k g_{kn}\hat f\psi_k=\sum_{k,m}g_{kn}f_{mk}\psi_m.
+\]
+Since, on the other hand, we must have
+$\hat f\hat g\psi_n=\sum_m(fg)_{mn}\psi_m$, we obtain
+\begin{equation}
+  (fg)_{mn}=\sum_k f_{mk}g_{kn}.
+  \tag{11.12}
+\end{equation}
+This rule matches the standard mathematical prescription for multiplying
+matrices: one multiplies the rows of the first factor by the columns of
+the second.
+
+Specifying a matrix is equivalent to specifying the operator itself. In
+particular, it makes it possible in principle to determine the eigenvalues of a
+given physical quantity and the eigenfunctions corresponding to them.
+
+Let us consider the values of all quantities at some definite instant of time
+and expand an arbitrary wave function $\Psi$ in the eigenfunctions of the
+Hamiltonian, i.e. in the time-independent wave functions $\psi_m$ of the
+stationary states:
+\begin{equation}
+  \Psi=\sum_m c_m\psi_m,
+  \tag{11.13}
+\end{equation}
+\SourcePage{51}{54}
+where the expansion coefficients are denoted by $c_m$. Let us substitute this
+expansion into the equation $\hat f\Psi=f\Psi$, which determines the
+eigenvalues and eigenfunctions of the quantity $f$. We have
+\[
+  \sum_m c_m\hat f\psi_m=f\sum_m c_m\psi_m.
+\]
+Multiply this equation on both sides by $\psi_n^*$ and integrate over $dq$.
+Each of the integrals $\int\psi_n^*\hat f\psi_m\,dq$ on the left-hand side of
+the equality is the corresponding matrix element $f_{nm}$. On the right-hand
+side, all integrals $\int\psi_n^*\psi_m\,dq$ with $m\ne n$ vanish by virtue of
+the orthogonality of the functions $\psi_m$, and
+$\int\psi_n^*\psi_n\,dq=1$ by virtue of their
+normalization\footnote{In accordance with the general rule (\secref{5}), the set of
+coefficients $c_n$ of the expansion (11.13) can be regarded as the wave function
+in the ``energy representation'' (the variable here being the index $n$,
+which enumerates the energy eigenvalues). The matrix $f_{nm}$ then plays the
+role of the operator $\hat f$ in this representation, whose action on the wave
+function is given by the expression on the left-hand side of equation (11.14).
+The formula $\bar f=\sum_n\sum_m c_n^*(f_{nm}c_m)$ then corresponds to the
+general formula for the mean value of a quantity expressed through its operator
+and the wave function of the state in question.}:
+\begin{equation}
+  \sum_m f_{nm}c_m=fc_n,
+  \tag{11.14}
+\end{equation}
+or $\sum_m(f_{nm}-f\delta_{nm})c_m=0$, where
+$\delta_{nm}=1$ for $n=m$ and $\delta_{nm}=0$ for $n\ne m$.
+
+Thus we have obtained a system of homogeneous linear algebraic equations (with
+unknowns $c_m$). As is well known, such a system has nonzero solutions only
+if the determinant formed from the coefficients in the equations vanishes, i.e.
+under the condition
+\begin{equation}
+  |f_{nm}-f\delta_{nm}|=0.
+  \tag{11.15}
+\end{equation}
+The roots of this equation (where $f$ plays the role of the unknown) give
+the possible values of the quantity $f$. The set of quantities $c_m$ satisfying
+equations (11.14) upon setting $f$ equal to one of these values yields the
+corresponding eigenfunction.
+\SourcePage{52}{55}
+Suppose that in the definition (11.5) for the matrix elements of $f$ we adopt,
+as the functions $\psi_n$, the eigenfunctions of this very quantity; owing to the
+equation $\hat f\psi_n=f_n\psi_n$ we obtain
+\[
+ f_{nm}=\int\psi_n^*\hat f\psi_m\,dq
+ =f_m\int\psi_n^*\psi_m\,dq.
+\]
+Since the functions $\psi_m$ are orthogonal and normalized,
+it follows that $f_{nm}=0$ for $n\ne m$ and $f_{mm}=f_m$. Thus only diagonal matrix
+elements turn out to be nonzero, each of them being equal to the corresponding
+eigenvalue of the quantity $f$; a matrix in which only these elements are
+nonzero is said to be reduced to \textit{diagonal form}. In particular, in the
+ordinary representation---where the stationary-state wave functions serve
+as the $\psi_n$---the energy matrix is diagonal (along with the matrices of
+all other physical quantities that have definite values in the stationary
+states). More broadly, when the matrix of a quantity $f$ is constructed using
+the eigenfunctions of an operator $g$, one speaks of it as the matrix of $f$ in the
+representation in which $g$ is diagonal. Everywhere where it is not otherwise
+specified, by the matrix of a physical quantity we shall henceforth understand
+the matrix in the ordinary representation, in which the energy is diagonal.
+All that has been said above concerning the time dependence of matrices refers,
+of course, only to this ordinary representation\footnote{Keeping in mind that
+the energy matrix is diagonal, one readily verifies that the equality (11.8) is
+the operator relation (9.2) written in matrix form.}.
+
+The matrix representation of operators makes it possible to prove the
+theorem cited in \secref{4}: if two operators commute, they possess
+a common complete system of eigenfunctions. Let $\hat f$ and $\hat g$ be two
+such operators. From $\hat f\hat g=\hat g\hat f$ and the rule of matrix
+multiplication (11.12) it follows that
+\[
+  \sum_k f_{mk}g_{kn}=\sum_k g_{mk}f_{kn}.
+\]
+Taking as the system of functions $\psi_n$, in terms of which the matrix
+elements are computed, the eigenfunctions of the operator $\hat f$, we have
+$f_{mk}=0$ for $m\ne k$, so that the written equality reduces to
+$f_mg_{mn}=g_{mn}f_n$, or $g_{mn}(f_m-f_n)=0$. If all the eigenvalues
+$f_n$ of the quantity $f$ are distinct, then for all $m\ne n$ we have
+$f_m-f_n\ne0$, so that we must have $g_{mn}=0$.
+\SourcePage{53}{56}
+Thus the matrix $g_{mn}$ likewise turns out to be diagonal, i.e. the functions
+$\psi_n$ are eigenfunctions also of the physical quantity $g$. If, however,
+among the values $f_n$ there are equal ones, then the matrix elements $g_{mn}$
+corresponding to each such group of functions $\psi_n$ will, in general, be
+nonzero. However, linear combinations of the functions $\psi_n$ corresponding
+to one eigenvalue of the quantity $f$ are likewise its eigenfunctions; one can
+always choose these combinations in such a way as to make the corresponding
+nondiagonal matrix elements $g_{mn}$ vanish, and thus in this case too we
+obtain a system of functions that are eigenfunctions simultaneously for the
+operators $\hat f$ and $\hat g$.
+
+Let us note a useful formula
+\begin{equation}
+  \left(\frac{\partial H}{\partial\lambda}\right)_{nn}
+  =\frac{\partial E_n}{\partial\lambda},
+  \tag{11.16}
+\end{equation}
+where $\lambda$~--- a parameter on which the Hamiltonian $\hat H$ depends
+(and with it the energy eigenvalues $E_n$). Indeed, differentiating the
+equation $(\hat H-E_n)\psi_n=0$ with respect to $\lambda$ and then multiplying
+it from the left by $\psi_n^*$, we obtain
+\[
+  \psi_n^*(\hat H-E_n)\frac{\partial\psi_n}{\partial\lambda}
+  =\psi_n^*\left(\frac{\partial E_n}{\partial\lambda}
+  -\frac{\partial\hat H}{\partial\lambda}\right)\psi_n.
+\]
+On integrating over $dq$, the left-hand side of this equality vanishes, since
+\[
+ \int\psi_n^*(\hat H-E_n)\frac{\partial\psi_n}{\partial\lambda}\,dq
+ =\int\frac{\partial\psi_n}{\partial\lambda}(\hat H-E_n)^*\psi_n^*\,dq
+\]
+by virtue of the Hermiticity of the operator $\hat H$. The right-hand side
+gives the desired equality.
+
+In the modern literature, a system of notation (introduced by
+\textit{Dirac}) is widely used, in which matrix elements are written as\footnote{We
+will use both ways of denoting matrix elements in this book. The notation
+(11.17) is especially convenient when each index has to be written as a
+combination of several letters.}
+\begin{equation}
+  \langle n|f|m\rangle.
+  \tag{11.17}
+\end{equation}
+This symbol is composed of the notation for the quantity $f$ and the symbols
+$|m\rangle$ and
+\SourcePage{54}{57}
+$|n\rangle$, denoting respectively the initial and final states. If
+there is a complete set of state functions $|n_1\rangle,|n_2\rangle,\ldots$, then
+the expansion coefficients of the wave function of the state $|m\rangle$ are
+denoted by $\langle n_i|m\rangle$:
+\begin{equation}
+  \langle n_i|m\rangle=\int\psi_{n_i}^*\psi_m\,dq.
+  \tag{11.18}
+\end{equation}

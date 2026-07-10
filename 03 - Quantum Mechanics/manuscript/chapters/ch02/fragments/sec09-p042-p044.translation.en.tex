@@ -1,0 +1,122 @@
+\section{Time Differentiation of Operators}
+
+\SourcePage{42}{45}
+In quantum mechanics, the concept of the time derivative of a physical
+quantity cannot be defined with the sense that it carries in classical
+mechanics. Indeed, the
+definition of the derivative in classical mechanics is connected with
+considering the values of the quantity at two close but different instants.
+But in quantum mechanics a quantity that has a definite value at some instant
+has no definite value at all at subsequent instants; this was discussed
+in more detail in \secref{1}.
+
+For this reason the concept of the time derivative has to be given a
+different definition in quantum mechanics. A natural course is to define the
+derivative $\dot f$ of a quantity $f$ as that quantity whose mean value
+equals the time derivative of the mean value $\bar f$. Thus, by definition,
+we have
+\begin{equation}
+  \bar{\dot f}=\dot{\bar f}.
+  \tag{9.1}
+\end{equation}
+Taking this definition as the starting point, it is not hard to derive an
+expression for the quantum-mechanical operator $\hat{\dot f}$ that
+corresponds to%
+\SourcePage{43}{46}
+the quantity $\dot f$:
+\[
+  \begin{aligned}
+    \bar{\dot f}=\dot{\bar f}
+      &=\frac{d}{dt}\int\Psi^*\hat f\Psi\,dq={}\\
+      &=\int\Psi^*\frac{\partial\hat f}{\partial t}\Psi\,dq
+       +\int\frac{\partial\Psi^*}{\partial t}\hat f\Psi\,dq
+       +\int\Psi^*\hat f\frac{\partial\Psi}{\partial t}\,dq.
+  \end{aligned}
+\]
+In this expression $\partial\hat f/\partial t$ stands for the operator that
+results from differentiating the operator $\hat f$ with respect to time, on
+which the latter may depend parametrically. Substituting for the derivatives $\partial\Psi/\partial t$,
+$\partial\Psi^*/\partial t$ their expressions according to (8.1), we obtain
+\[
+  \bar{\dot f}
+  =\int\Psi^*\frac{\partial\hat f}{\partial t}\Psi\,dq
+  +\frac{i}{\hbar}\int(\hat H^*\Psi^*)\hat f\Psi\,dq
+  -\frac{i}{\hbar}\int\Psi^*\hat f(\hat H\Psi)\,dq.
+\]
+Since the operator $\hat H$ is Hermitian,
+\[
+  \int(\hat H^*\Psi^*)(\hat f\Psi)\,dq
+  =\int\Psi^*\hat H\hat f\Psi\,dq;
+\]
+thus, we have
+\[
+  \bar{\dot f}
+  =\int\Psi^*\left(
+    \frac{\partial\hat f}{\partial t}
+    +\frac{i}{\hbar}\hat H\hat f
+    -\frac{i}{\hbar}\hat f\hat H
+  \right)\Psi\,dq.
+\]
+
+Since, on the other hand, by the definition of mean values we must have
+$\bar{\dot f}=\int\Psi^*\hat{\dot f}\Psi\,dq$, it is seen that the
+expression in parentheses under the integral is the required operator
+$\hat{\dot f}$\footnote{In classical mechanics, for the total time
+derivative of a quantity $f$ that is a function of the generalized coordinates
+$q_i$ and momenta $p_i$ of the system, we have
+\[
+  \frac{df}{dt}=\frac{\partial f}{\partial t}
+  +\sum_i\left(
+    \frac{\partial f}{\partial q_i}\dot q_i
+    +\frac{\partial f}{\partial p_i}\dot p_i
+  \right).
+\]
+Substituting, according to Hamilton's equations,
+$\dot q_i=\partial H/\partial p_i$, $\dot p_i=-\partial H/\partial q_i$, we
+obtain
+\[
+  \frac{df}{dt}=\frac{\partial f}{\partial t}+[H,f],\qquad
+  [H,f]\equiv\sum_i\left(
+    \frac{\partial f}{\partial q_i}\frac{\partial H}{\partial p_i}
+    -\frac{\partial f}{\partial p_i}\frac{\partial H}{\partial q_i}
+  \right);
+\]
+$[H,f]$ is the so-called \textit{Poisson bracket} for the quantities $f$ and
+$H$ (see I, \S~42). Comparing with expression (9.2), we see that in the
+transition to the classical limit the operator
+$i(\hat H\hat f-\hat f\hat H)$ becomes zero to the first approximation, as it
+should, and in the next approximation (in $\hbar$) becomes the quantity
+$\hbar[H,f]$.
+
+This result is also valid for any two quantities $f$ and $g$: in the limit the
+operator $i(\hat f\hat g-\hat g\hat f)$ becomes the quantity $\hbar[f,g]$,
+where $[f,g]$ is the Poisson bracket
+\[
+  [f,g]\equiv\sum_i\left(
+    \frac{\partial g}{\partial q_i}\frac{\partial f}{\partial p_i}
+    -\frac{\partial g}{\partial p_i}\frac{\partial f}{\partial q_i}
+  \right).
+\]
+This is a consequence of the fact that we can always, formally, conceive of a
+system whose Hamiltonian coincides with $\hat g$.}:
+\begin{equation}
+  \hat{\dot f}
+  =\frac{\partial\hat f}{\partial t}
+  +\frac{i}{\hbar}(\hat H\hat f-\hat f\hat H).
+  \tag{9.2}
+\end{equation}
+\SourcePage{44}{47}
+If the operator $\hat f$ does not depend explicitly on time, then, up to a
+factor, $\hat{\dot f}$ reduces to the commutator of the operator $\hat f$
+with the Hamiltonian.
+
+The physical quantities whose operators have no explicit dependence on time
+and which, moreover, commute with the Hamiltonian---so that
+$\hat{\dot f}=0$---form a very important category. Such quantities are called
+\textit{conserved}. For these,
+$\bar{\dot f}=\dot{\bar f}=0$, i.e.\ $\bar f=\mathrm{const}$. Put
+differently, the quantity's mean value stays constant in time. One can
+assert, moreover, that if the quantity $f$ has a definite value in a given
+state (i.e.\ if the wave function is an eigenfunction of the operator
+$\hat f$), then at later instants as well it will have a definite value---and
+the very same one.

@@ -1,0 +1,297 @@
+\SourcePage{109}{112}
+\section{Angular momentum}
+
+In deriving momentum conservation in \secref{15}, we used the homogeneity of space
+for a closed system of particles. Besides being homogeneous, space is also
+isotropic: every direction in it is equivalent. The Hamiltonian of a closed
+system must therefore remain unchanged when the system as a whole is rotated
+through an arbitrary angle about an arbitrary axis. It is enough to impose
+this requirement for an arbitrary infinitesimal rotation.
+
+Let $\delta\boldsymbol\varphi$ be the vector of an infinitesimal rotation. Its
+magnitude is the angle of rotation $\delta\varphi$, and its direction is the
+axis about which the rotation is made. Under such a rotation, the changes
+$\delta\mathbf r_a$ of the particles' radius vectors $\mathbf r_a$ are
+\[
+  \delta\mathbf r_a=\delta\boldsymbol\varphi\times\mathbf r_a.
+\]
+An arbitrary function $\psi(\mathbf r_1,\mathbf r_2,\ldots)$ is transformed
+into
+\[
+  \begin{aligned}
+  \psi(\mathbf r_1+\delta\mathbf r_1,
+       \mathbf r_2+\delta\mathbf r_2,\ldots)
+    &=\psi(\mathbf r_1,\mathbf r_2,\ldots)
+      +\sum_a\delta\mathbf r_a\boldsymbol\nabla_a\psi={}\\
+    &=\psi(\mathbf r_1,\mathbf r_2,\ldots)
+      +\sum_a(\delta\boldsymbol\varphi\times\mathbf r_a)
+      \!\cdot\boldsymbol\nabla_a\psi={}\\
+    &=\left(1+\delta\boldsymbol\varphi\!\cdot
+      \sum_a(\mathbf r_a\times\boldsymbol\nabla_a)\right)
+      \psi(\mathbf r_1,\mathbf r_2,\ldots).
+  \end{aligned}
+\]
+The expression
+\[
+  1+\delta\boldsymbol\varphi\!\cdot
+  \sum_a(\mathbf r_a\times\boldsymbol\nabla_a)
+\]
+is the operator of an infinitesimal rotation. The fact that such a rotation
+does not change the system's Hamiltonian is expressed (cf. \secref{15}) by the
+commutation of the rotation operator with $\hat H$. Since
+$\delta\boldsymbol\varphi$ is a constant vector, this%
+\SourcePage{110}{113}
+\relax\ condition reduces to
+\begin{equation}
+  \left(\sum_a(\mathbf r_a\times\boldsymbol\nabla_a)\right)\hat H
+  -\hat H\left(\sum_a(\mathbf r_a\times\boldsymbol\nabla_a)\right)=0,
+  \tag{26.1}
+\end{equation}
+which expresses a conservation law.
+
+The quantity conserved in a closed system as a consequence of the isotropy
+of space is the system's \emph{angular momentum} (cf. Vol.~I, \S~9). Thus,
+apart from a constant factor, the operator
+$\sum_a(\mathbf r_a\times\boldsymbol\nabla_a)$ must correspond to the total angular
+momentum of the system's motion, while each term
+$(\mathbf r_a\times\boldsymbol\nabla_a)$ must correspond to the angular momentum of
+one particle.
+
+The proportionality factor must be chosen as $-i\hbar$. The resulting
+particle angular-momentum operator
+$-i\hbar(\mathbf r\times\boldsymbol\nabla)=
+\mathbf r\times\hat{\mathbf p}$ then agrees
+exactly with the classical expression $\mathbf r\times\mathbf p$. Henceforth we
+shall always measure angular momentum in units of $\hbar$. We denote the
+operator of the angular momentum of one particle, defined in this way, by
+$\hat{\mathbf l}$, and that of the entire system by $\hat{\mathbf L}$. Thus
+the particle angular-momentum operator is
+\begin{equation}
+  \hbar\hat{\mathbf l}=\mathbf r\times\hat{\mathbf p}
+  =-i\hbar(\mathbf r\times\boldsymbol\nabla)
+  \tag{26.2}
+\end{equation}
+or, in components,
+\[
+  \hbar\hat l_x=y\hat p_z-z\hat p_y,\qquad
+  \hbar\hat l_y=z\hat p_x-x\hat p_z,\qquad
+  \hbar\hat l_z=x\hat p_y-y\hat p_x.
+\]
+
+For a system in an external field, angular momentum is not generally
+conserved. It may nevertheless be conserved when the field has a suitable
+symmetry. In a centrally symmetric field, for example, all spatial directions
+from the center are equivalent, so angular momentum about that center is
+conserved. When the field has axial symmetry, the same reasoning shows that
+what is conserved is the angular-momentum component directed along the symmetry
+axis. All these conservation laws of
+classical mechanics remain valid in quantum mechanics.
+
+If a system's angular momentum is not conserved, it has no definite value in
+a stationary state. In such cases the mean angular momentum in a given
+stationary state can sometimes be of interest. Its mean value is readily seen
+to vanish in every nondegenerate stationary state. Indeed, the energy is
+unchanged when the sign of time is reversed; and since only one stationary
+state corresponds to the given energy level, replacing $t$ by $-t$ must leave
+the state of the system unchanged%
+\SourcePage{111}{114}
+\relax. The mean values of all quantities, including angular momentum, must
+therefore also remain unchanged. But angular momentum reverses sign under
+time reversal, which would give
+$\bar{\mathbf L}=-\bar{\mathbf L}$; hence $\bar{\mathbf L}=0$. A direct
+calculation confirms this: the integral
+$\int\psi^*\hat{\mathbf L}\psi\,dq$, which by definition gives the mean
+$\bar{\mathbf L}$, can be evaluated using the fact that nondegenerate wave
+functions are real (see the end of \secref{18}). One then finds that
+\[
+  \bar{\mathbf L}=-i\hbar\int\psi^*
+  \left(\sum_a(\mathbf r_a\times\boldsymbol\nabla_a)\right)\psi\,dq
+\]
+is purely imaginary. Since $\bar{\mathbf L}$ must of course be real, it follows
+that $\bar{\mathbf L}=0$.
+
+We now determine the commutation rules between the angular-momentum operators
+and the coordinate and momentum operators. From (16.2) we readily obtain
+\begin{equation}
+  \begin{aligned}
+  \{\hat l_x,x\}&=0,&
+  \{\hat l_x,y\}&=iz,&
+  \{\hat l_x,z\}&=-iy,\\
+  \{\hat l_y,y\}&=0,&
+  \{\hat l_y,z\}&=ix,&
+  \{\hat l_y,x\}&=-iz,\\
+  \{\hat l_z,z\}&=0,&
+  \{\hat l_z,x\}&=iy,&
+  \{\hat l_z,y\}&=-ix.
+  \end{aligned}
+  \tag{26.3}
+\end{equation}
+For example,
+\[
+  \hat l_xy-y\hat l_x
+  =\frac1\hbar(y\hat p_z-z\hat p_y)y
+   -y(y\hat p_z-z\hat p_y)\frac1\hbar
+  =-\frac z\hbar\{\hat p_y,y\}=iz.
+\]
+
+All the relations (26.3) may be written in tensor form as
+\begin{equation}
+  \{\hat l_i,x_k\}=ie_{ikl}x_l,
+  \tag{26.4}
+\end{equation}
+where $e_{ikl}$ is the antisymmetric unit tensor of third
+rank\footnote{The antisymmetric unit tensor of third rank $e_{ikl}$ (also
+called the unit axial tensor) is defined to be antisymmetric in all three
+indices, with $e_{123}=1$. Evidently, of its 27 components, only the 6 for
+which $i,k,l$ form a permutation of the numbers 1, 2, 3 are nonzero. A
+component is $+1$ if the permutation $i,k,l$ is obtained from 1, 2, 3 by an
+even number of pairwise interchanges (transpositions), and is $-1$ for an odd
+number. Clearly,
+\[
+  e_{ikl}e_{ikm}=2\delta_{lm},\qquad e_{ikl}e_{ikl}=6.
+\]
+The components of the vector $\mathbf C=\mathbf A\times\mathbf B$, the vector
+product of $\mathbf A$ and $\mathbf B$, can be expressed through $e_{ikl}$ as
+\[
+  C_i=e_{ikl}A_kB_l.
+\]}
+, with summation understood over each pair of repeated ``dummy'' indices.
+\SourcePage{112}{115}
+The angular-momentum and momentum operators satisfy analogous commutation
+relations:
+\begin{equation}
+  \{\hat l_i,\hat p_k\}=ie_{ikl}\hat p_l.
+  \tag{26.5}
+\end{equation}
+These formulas make it easy to obtain the commutation rules among the
+operators for the components of angular momentum. We have
+\[
+  \begin{aligned}
+  \hbar(\hat l_x\hat l_y-\hat l_y\hat l_x)
+    &=\hat l_x(z\hat p_x-x\hat p_z)
+      -(z\hat p_x-x\hat p_z)\hat l_x={}\\
+    &=(\hat l_xz-z\hat l_x)\hat p_x
+      -x(\hat l_x\hat p_z-\hat p_z\hat l_x)
+      =-iy\hat p_x+ix\hat p_y=i\hbar\hat l_z.
+  \end{aligned}
+\]
+Thus
+\begin{equation}
+  \{\hat l_y,\hat l_z\}=i\hat l_x,\qquad
+  \{\hat l_z,\hat l_x\}=i\hat l_y,\qquad
+  \{\hat l_x,\hat l_y\}=i\hat l_z
+  \tag{26.6}
+\end{equation}
+or
+\begin{equation}
+  \{\hat l_i,\hat l_k\}=ie_{ikl}\hat l_l.
+  \tag{26.7}
+\end{equation}
+
+Exactly the same relations hold for the operators
+$\hat L_x$, $\hat L_y$, and $\hat L_z$ of the system's total angular
+momentum. Indeed, since the angular-momentum operators of different particles
+commute with one another, we have, for example,
+\[
+  \sum_a\hat l_{ay}\sum_a\hat l_{az}
+  -\sum_a\hat l_{az}\sum_a\hat l_{ay}
+  =\sum_a(\hat l_{ay}\hat l_{az}-\hat l_{az}\hat l_{ay})
+  =i\sum_a\hat l_{ax}.
+\]
+Therefore
+\begin{equation}
+  \{\hat L_y,\hat L_z\}=i\hat L_x,\qquad
+  \{\hat L_z,\hat L_x\}=i\hat L_y,\qquad
+  \{\hat L_x,\hat L_y\}=i\hat L_z.
+  \tag{26.8}
+\end{equation}
+Relations (26.8) show that the three components of angular momentum cannot
+have definite values simultaneously (except when all three components vanish
+at once; see below). In this respect angular momentum differs essentially
+from momentum, whose three components can be measured simultaneously.
+
+From $\hat L_x$, $\hat L_y$, and $\hat L_z$ we form the operator for the square
+of the magnitude of the angular-momentum vector:
+\begin{equation}
+  \hat{\mathbf L}^{2}=\hat L_x^2+\hat L_y^2+\hat L_z^2.
+  \tag{26.9}
+\end{equation}
+This operator commutes with each of $\hat L_x$, $\hat L_y$, and $\hat L_z$:
+\begin{equation}
+  \{\hat{\mathbf L}^{2},\hat L_x\}=0,\qquad
+  \{\hat{\mathbf L}^{2},\hat L_y\}=0,\qquad
+  \{\hat{\mathbf L}^{2},\hat L_z\}=0.
+  \tag{26.10}
+\end{equation}
+Indeed, using (26.8), we find, for example,
+\[
+  \begin{aligned}
+  \{\hat L_x^2,\hat L_z\}
+    &=\hat L_x\{\hat L_x,\hat L_z\}
+      +\{\hat L_x,\hat L_z\}\hat L_x
+      =-i(\hat L_x\hat L_y+\hat L_y\hat L_x),\\
+  \{\hat L_y^2,\hat L_z\}
+    &=i(\hat L_x\hat L_y+\hat L_y\hat L_x),\\
+  \{\hat L_z^2,\hat L_z\}&=0.
+  \end{aligned}
+\]
+\SourcePage{113}{116}
+Adding these equalities gives the last relation in (26.10).
+
+Physically, (26.10) means that the square of the angular momentum (that is,
+its magnitude) can have a definite value simultaneously with one of its
+components.
+
+Instead of $\hat L_x$ and $\hat L_y$, it is often convenient to use their
+complex combinations
+\begin{equation}
+  \hat L_+=\hat L_x+i\hat L_y,\qquad
+  \hat L_-=\hat L_x-i\hat L_y.
+  \tag{26.11}
+\end{equation}
+Direct calculation from (26.8) readily gives the following commutation rules
+for these combinations:
+\begin{equation}
+  \{\hat L_+,\hat L_-\}=2\hat L_z,\qquad
+  \{\hat L_z,\hat L_+\}=\hat L_+,
+  \qquad \{\hat L_z,\hat L_-\}=-\hat L_-.
+  \tag{26.12}
+\end{equation}
+It is also easy to verify that
+\begin{equation}
+  \hat{\mathbf L}^{2}
+  =\hat L_+\hat L_-+\hat L_z^2-\hat L_z
+  =\hat L_-\hat L_++\hat L_z^2+\hat L_z.
+  \tag{26.13}
+\end{equation}
+
+Finally, we give the frequently used expressions for the angular-momentum
+operator of one particle in spherical coordinates. Introducing these
+coordinates through the usual relations
+\[
+  x=r\sin\theta\cos\varphi,\qquad
+  y=r\sin\theta\sin\varphi,\qquad
+  z=r\cos\theta,
+\]
+a straightforward calculation gives
+\begin{equation}
+  \hat l_z=-i\frac{\partial}{\partial\varphi},
+  \tag{26.14}
+\end{equation}
+\begin{equation}
+  \hat l_\pm=e^{\pm i\varphi}
+  \left(\pm\frac{\partial}{\partial\theta}
+  +i\cot\theta\frac{\partial}{\partial\varphi}\right).
+  \tag{26.15}
+\end{equation}
+Substitution in (26.13) gives the square of the particle's angular-momentum
+operator in the form
+\begin{equation}
+  \hat{\mathbf l}^{2}=-\left[
+  \frac{1}{\sin^2\theta}\frac{\partial^2}{\partial\varphi^2}
+  +\frac{1}{\sin\theta}\frac{\partial}{\partial\theta}
+  \left(\sin\theta\frac{\partial}{\partial\theta}\right)\right].
+  \tag{26.16}
+\end{equation}
+Notice that, apart from a factor, this is the angular part of the Laplace
+operator.

@@ -1,0 +1,305 @@
+\SourcePage{19}{22}
+\section{Operators}
+
+Consider some physical quantity $f$ that characterizes the state of a quantum
+system. Strictly speaking, in what follows we ought to speak not of a single
+quantity but of an entire complete set of them at once. However, none of the
+reasoning is thereby essentially altered, and for the sake of brevity and
+simplicity we speak below of only a single physical quantity.
+
+Those values which a given physical quantity may assume are termed its
+\emph{eigenvalues} in quantum mechanics, and their aggregate is referred to as
+the eigenvalue \emph{spectrum} of that quantity. In classical mechanics,
+quantities range, in general, over a continuous series of values. In quantum
+mechanics too there exist physical quantities (for example, coordinates) whose
+eigenvalues fill a continuous range; in such cases one speaks of a
+\emph{continuous spectrum} of eigenvalues. Alongside these quantities, however,
+quantum mechanics also possesses quantities whose eigenvalues constitute a
+discrete set; one then speaks of a \emph{discrete spectrum}.
+
+For simplicity we shall first assume that the quantity $f$ under consideration
+has a discrete spectrum; the case of a continuous spectrum is considered in
+\secref{5}. We denote the eigenvalues of $f$ by $f_n$, where the index $n$ runs
+through the values $0, 1, 2, 3, \ldots$ We denote the wave function of the
+system in the state in which $f$ has the value $f_n$ by $\Psi_n$. The wave
+functions $\Psi_n$ bear the name \emph{eigenfunctions} of the physical
+quantity $f$. Every such function is taken to be normalized:
+\begin{equation}
+  \int |\Psi_n|^2\,dq = 1.
+  \tag{3.1}
+\end{equation}
+
+If the system is in some arbitrary state with wave function $\Psi$, then a
+measurement of $f$ performed on it will yield as a result one of the
+eigenvalues $f_n$.%
+\SourcePage{20}{23}
+By the superposition principle, the wave
+function $\Psi$ must be a linear combination of those eigenfunctions $\Psi_n$
+that correspond to the values $f_n$ which can be found with non-zero probability
+in a measurement performed on the system in the state under consideration.
+In the general case of an arbitrary state, $\Psi$ may accordingly be written as the series
+\begin{equation}
+  \Psi = \sum_n a_n\Psi_n,
+  \tag{3.2}
+\end{equation}
+where the summation is over all $n$, and $a_n$ are certain constant
+coefficients.
+
+Thus we arrive at the conclusion that every wave function can be, as one says,
+expanded in the eigenfunctions of any physical quantity. A system of functions
+in terms of which such an expansion can be carried out is spoken of as a
+\emph{complete system of functions}.
+
+The expansion (3.2) makes it possible to determine the probabilities of
+finding (by means of measurements) one or another value $f_n$ of $f$ for a
+system in the state with wave function $\Psi$. Indeed, according to what was
+said in the preceding section, these probabilities must be determined by certain
+expressions bilinear in $\Psi$ and $\Psi^*$ and must therefore be bilinear in
+$a_n$ and $a_n^*$. Moreover, positivity of these expressions is obviously
+required. As for the probability associated with a given $f_n$: it must
+become unity for a system in the state $\Psi=\Psi_n$ and must vanish whenever
+expansion (3.2) of $\Psi$ lacks a term containing the corresponding $\Psi_n$.
+The only essentially positive quantity satisfying this condition is the squared
+modulus of the coefficient $a_n$. Thus we arrive at the result that the squared
+modulus $|a_n|^2$ of every expansion coefficient in (3.2) gives the
+probability of the respective value $f_n$ of $f$ in the state with wave
+function $\Psi$. The sum of the probabilities of all possible values $f_n$ must
+equal unity; in other words, the relation
+\begin{equation}
+  \sum_n |a_n|^2 = 1.
+  \tag{3.3}
+\end{equation}
+must hold.
+
+If $\Psi$ were not normalized, then the relation (3.3) would also not hold. The
+sum $\sum_n |a_n|^2$ would then have to be determined by some expression
+bilinear in $\Psi$ and $\Psi^*$ and reducing to unity for normalized $\Psi$.
+\SourcePage{21}{24}
+The only such expression is the integral $\int\Psi\Psi^*\,dq$. Thus the
+equality
+\begin{equation}
+  \sum_n a_n a_n^* = \int \Psi\Psi^*\,dq.
+  \tag{3.4}
+\end{equation}
+must hold.
+
+On the other hand, multiplying the expansion
+$\Psi^*=\sum_n a_n^*\Psi_n^*$ of the complex conjugate function $\Psi^*$ by
+$\Psi$ and integrating, we obtain
+\[
+  \int \Psi\Psi^*\,dq
+  = \sum_n a_n^*\int \Psi_n^*\Psi\,dq.
+\]
+Comparing this with (3.4), we have
+\[
+  \sum_n a_n a_n^*
+  = \sum_n a_n^*\int \Psi_n^*\Psi\,dq,
+\]
+from which we find the following formula determining the coefficients $a_n$ of
+the expansion of $\Psi$ in the eigenfunctions $\Psi_n$:
+\begin{equation}
+  a_n = \int \Psi\Psi_n^*\,dq.
+  \tag{3.5}
+\end{equation}
+
+Substituting (3.2) here, we obtain
+\[
+  a_n = \sum_m a_m\int \Psi_m\Psi_n^*\,dq,
+\]
+whence it is seen that the eigenfunctions must satisfy the conditions
+\begin{equation}
+  \int \Psi_m\Psi_n^*\,dq = \delta_{nm},
+  \tag{3.6}
+\end{equation}
+where $\delta_{nm}=1$ for $n=m$ and $\delta_{nm}=0$ for $n\ne m$. The fact that
+the integrals of the products $\Psi_m\Psi_n^*$ with $m\ne n$ vanish is spoken of
+as the mutual \emph{orthogonality} of the functions $\Psi_n$. The collection of
+eigenfunctions $\Psi_n$ thus constitutes a complete system of normalized and mutually
+orthogonal (or, as one says for short,~\emph{orthonormal}) functions.
+
+We introduce the concept of the \emph{mean value} $\bar f$ of a quantity $f$ in
+a given state. Following the standard definition,
+$\bar f$ is the sum of every eigenvalue $f_n$ of the quantity in question, weighted by the respective%
+\SourcePage{22}{25}
+probability $|a_n|^2$:
+\begin{equation}
+  \bar f = \sum_n f_n|a_n|^2.
+  \tag{3.7}
+\end{equation}
+
+We write $\bar f$ in the form of an expression that involves not the expansion
+coefficients of $\Psi$ but the function itself. Since (3.7) contains the
+products $a_n a_n^*$, it is clear that the desired expression must be bilinear
+in $\Psi$ and $\Psi^*$. We introduce a certain mathematical \emph{operator},
+which we denote by $\hat f$\footnote{We shall everywhere denote operators by
+letters with a hat.}, and define as follows. Let $(\hat f\Psi)$ denote the
+result of the action of the operator $\hat f$ on the function $\Psi$. We define
+$\hat f$ by requiring that the integral of $(\hat f\Psi)$ multiplied by the
+conjugate $\Psi^*$ yield $\bar f$:
+\begin{equation}
+  \bar f = \int \Psi^*(\hat f\Psi)\,dq.
+  \tag{3.8}
+\end{equation}
+
+It is easy to see that in the general case the operator $\hat f$ is some linear
+integral operator.\footnote{A linear operator is one possessing the properties:
+$\hat f(\Psi_1+\Psi_2)=\hat f\Psi_1+\hat f\Psi_2$,
+$\hat f(a\Psi)=a\hat f\Psi$, where $\Psi_1$, $\Psi_2$ are arbitrary functions
+and $a$ is an arbitrary constant.} Indeed, using the expression (3.5) for
+$a_n$, the definition (3.7) of the mean value can be cast as
+\[
+  \bar f = \sum_n f_n a_n a_n^*
+  = \int \Psi^*\left(\sum_n a_n f_n\Psi_n\right)dq.
+\]
+Comparing with (3.8), we see that the result of the action of the operator
+$\hat f$ on the function $\Psi$ has the form
+\begin{equation}
+  (\hat f\Psi)=\sum_n a_n f_n\Psi_n.
+  \tag{3.9}
+\end{equation}
+Substituting here the expression (3.5) for $a_n$, we find that $\hat f$ is an
+integral operator of the form
+\begin{equation}
+  (\hat f\Psi)=\int K(q,q')\Psi(q')\,dq',
+  \tag{3.10}
+\end{equation}
+where the function $K(q,q')$ (the so-called kernel of the operator) is
+\begin{equation}
+  K(q,q')=\sum_n f_n\Psi_n^*(q')\Psi_n(q).
+  \tag{3.11}
+\end{equation}
+\SourcePage{23}{26}
+Thus, to each physical quantity in quantum mechanics there is assigned a
+definite linear operator.
+
+From (3.9) it is seen that if $\Psi$ is one of the eigenfunctions $\Psi_n$ (so
+that all $a_n$ except one are zero), then upon the action of the operator
+$\hat f$ on it, this function is simply multiplied by the eigenvalue
+$f_n$\footnote{Below, wherever it cannot lead to misunderstanding, we shall
+omit the parentheses in the expression $(\hat f\Psi)$, the operator being
+understood to act on the expression written after it.}:
+\begin{equation}
+  \hat f\Psi_n=f_n\Psi_n.
+  \tag{3.12}
+\end{equation}
+
+The eigenfunctions of a physical quantity $f$ are therefore solutions of the
+equation
+\[
+  \hat f\Psi=f\Psi,
+\]
+in this equation $f$ denotes a constant; the eigenvalues are those particular
+values of $f$ that yield solutions obeying the necessary conditions. As will be seen later, the explicit form of operators for the various
+physical quantities can be established on direct physical grounds, whereupon
+this operator property enables one to obtain eigenfunctions and
+eigenvalues by solving the equations $\hat f\Psi=f\Psi$.
+
+For a real physical quantity, both the eigenvalues themselves and their mean
+values in any state are real. This fact places a definite constraint on the
+properties of the associated operators. Setting the expression (3.8) equal to
+its own complex conjugate gives
+\begin{equation}
+  \int \Psi^*(\hat f\Psi)\,dq
+  = \int \Psi(\hat f^*\Psi^*)\,dq,
+  \tag{3.13}
+\end{equation}
+where $\hat f^*$ denotes the operator complex conjugate to
+$\hat f$\footnote{By definition, if for the operator $\hat f$ we have
+$\hat f\psi=\varphi$, then the complex-conjugate operator $\hat f^*$ is the
+operator for which $\hat f^*\psi^*=\varphi^*$.}. For an arbitrary linear
+operator such a relation does not, in general, hold, so that it represents a
+certain restriction imposed on the possible form of the operators $\hat f$. For
+an arbitrary operator $\hat f$ one can define, as one says, the
+\emph{transposed} operator $\tilde{\hat f}$, defined%
+\SourcePage{24}{27}
+so that
+\begin{equation}
+  \int \Phi(\hat f\Psi)\,dq
+  = \int \Psi(\tilde{\hat f}\Phi)\,dq,
+  \tag{3.14}
+\end{equation}
+where $\Psi$, $\Phi$ are two different functions. Choosing as
+$\Phi$ the conjugate function $\Psi^*$, comparison with (3.13)
+reveals that
+\begin{equation}
+  \tilde{\hat f}=\hat f^*.
+  \tag{3.15}
+\end{equation}
+An operator that satisfies this condition is called \emph{Hermitian}\footnote{For a
+linear integral operator of the form (3.10), Hermiticity requires
+that the kernel of the operator satisfy
+$K(q,q')=K^*(q',q)$.}. Operators representing real physical quantities within
+the mathematical apparatus of quantum mechanics must therefore be Hermitian.
+
+One may also formally consider complex physical quantities,
+i.e. quantities possessing complex eigenvalues. Suppose $f$ is one such
+quantity; one may then form the complex-conjugate quantity $f^*$, whose eigenvalues are the
+complex conjugates of the eigenvalues of $f$. The operator corresponding to the
+quantity $f^*$ will be denoted by $\hat f^+$. It is called the \emph{adjoint}
+operator to $\hat f$ and must, in general, be distinguished from the
+complex-conjugate operator $\hat f^*$. Indeed, by definition of the operator
+$\hat f^+$, the mean value of $f^*$ in some state $\Psi$ is
+\[
+  \overline{f^*}=\int \Psi^*\hat f^+\Psi\,dq.
+\]
+On the other hand, we have
+\[
+  {\left(\bar f\right)}^*
+  = {\left[\int \Psi^*\hat f\Psi\,dq\right]}^*
+  = \int \Psi\hat f^*\Psi^*\,dq
+  = \int \Psi^*\tilde{\hat f}^{\,*}\Psi\,dq.
+\]
+Equating the two expressions, we find that
+\begin{equation}
+  \hat f^+=\tilde{\hat f}^{\,*},
+  \tag{3.16}
+\end{equation}
+from which it is clear that $\hat f^+$ does not, in general, coincide with
+$\hat f^*$. The condition (3.15) can now be written in the form
+\begin{equation}
+  \hat f=\hat f^+,
+  \tag{3.17}
+\end{equation}
+\SourcePage{25}{28}
+i.e. the operator of a real physical quantity coincides with its adjoint
+(Hermitian operators are also called \emph{self-adjoint}).
+
+Let us show how one can directly prove the mutual orthogonality of the
+eigenfunctions of a Hermitian operator corresponding to different eigenvalues.
+Let $f_n$, $f_m$ be two different eigenvalues of the real quantity $f$, and
+$\Psi_n$, $\Psi_m$ the corresponding eigenfunctions:
+\[
+  \hat f\Psi_n=f_n\Psi_n,
+  \qquad
+  \hat f\Psi_m=f_m\Psi_m.
+\]
+Multiplying both sides of the first of these equalities by $\Psi_m^*$, and the
+complex conjugate of the second equality by $\Psi_n$, and subtracting these
+products termwise from each other, we obtain
+\[
+  \Psi_m^*\hat f\Psi_n-\Psi_n\hat f^*\Psi_m^*
+  =(f_n-f_m)\Psi_n\Psi_m^*.
+\]
+Integrate both sides of this equality over $dq$. Since
+$\hat f^*=\tilde{\hat f}$, by virtue of (3.14) the integral of the left-hand
+side of the equality vanishes, so that we obtain
+\[
+  (f_n-f_m)\int\Psi_n\Psi_m^*\,dq=0,
+\]
+whence, in view of $f_n\ne f_m$, the required orthogonality property of the
+functions $\Psi_n$ and $\Psi_m$ follows.
+
+We have been speaking here all along of only a single physical quantity $f$,
+whereas we ought to speak, as was noted at the beginning of the section, of a
+complete system of simultaneously measurable physical quantities. Then we would
+find that to each of these quantities $f$, $g$, $\ldots$ there corresponds its
+own operator $\hat f$, $\hat g$, $\ldots$ The eigenfunctions $\Psi_n$
+correspond to states in which all the quantities under consideration have
+definite values, i.e. correspond to definite sets of eigenvalues
+$f_n$, $g_n$, $\ldots$, and are joint solutions of the system of equations
+\[
+  \hat f\Psi=f\Psi,
+  \qquad
+  \hat g\Psi=g\Psi,
+  \ldots
+\]

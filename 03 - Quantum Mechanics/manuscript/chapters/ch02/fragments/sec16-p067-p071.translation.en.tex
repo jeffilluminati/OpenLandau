@@ -1,0 +1,221 @@
+\section{Uncertainty Relations}
+
+\SourcePage{67}{70}
+Let us derive the commutation rules for the momentum and coordinate operators.
+Successive differentiation with respect to one of the variables $x,y,z$ and
+multiplication by another of them gives a result independent of the order of
+these operations. Hence
+\begin{equation}
+  \hat p_xy-y\hat p_x=0,\qquad \hat p_xz-z\hat p_x=0,
+  \tag{16.1}
+\end{equation}
+and similarly for $\hat p_y$ and $\hat p_z$.
+
+To derive the commutation rule for $\hat p_x$ and $x$, write
+\[
+  (\hat p_xx-x\hat p_x)\psi
+  =-i\hbar\frac{\partial}{\partial x}(x\psi)
+  +i\hbar x\frac{\partial\psi}{\partial x}=-i\hbar\psi.
+\]
+We see that the action of $\hat p_xx-x\hat p_x$ reduces to multiplication of
+the function by $-i\hbar$; the same is of course true for the commutation of
+$\hat p_y$ with $y$ and of $\hat p_z$ with $z$. Thus\footnote{These
+relations, discovered in matrix form by \emph{Heisenberg} in 1925, served as
+the starting point in the creation of quantum mechanics.}
+\begin{equation}
+  \hat p_xx-x\hat p_x=-i\hbar,\qquad
+  \hat p_yy-y\hat p_y=-i\hbar,\qquad
+  \hat p_zz-z\hat p_z=-i\hbar.
+  \tag{16.2}
+\end{equation}
+Relations (16.1) and (16.2) can be written together as
+\begin{equation}
+  \hat p_i x_k-x_k\hat p_i=-i\hbar\delta_{ik},
+  \qquad i,k=x,y,z.
+  \tag{16.3}
+\end{equation}
+
+Before examining the physical meaning of these relations and their
+consequences, we give two formulas useful below. If $f(\mathbf r)$ is a
+function of the coordinates, then
+\begin{equation}
+  \hat{\mathbf p}f(\mathbf r)-f(\mathbf r)\hat{\mathbf p}
+  =-i\hbar\Grad{f}.
+  \tag{16.4}
+\end{equation}
+Indeed,
+\[
+  (\hat{\mathbf p}f-f\hat{\mathbf p})\psi
+  =-i\hbar[\Grad{(f\psi)}-f\Grad{\psi}]
+  =-i\hbar\psi\Grad{f}.
+\]
+An analogous relation holds for the commutator with a function of the momentum
+operator:
+\begin{equation}
+  f(\mathbf p)\hat{\mathbf r}-\hat{\mathbf r}f(\mathbf p)
+  =-i\hbar\frac{\partial f}{\partial\mathbf p}.
+  \tag{16.5}
+\end{equation}
+It may be derived in the same way as (16.4) by working in the momentum
+representation and using (15.12) for the coordinate operators.
+
+Relations (16.1) and (16.2) show that a particle coordinate along one axis can
+have a definite value simultaneously with the momentum components along the
+other two axes; a coordinate and the momentum component along that same axis%
+\SourcePage{68}{71}
+do not exist simultaneously. In particular, a particle cannot occupy a
+definite point in space while also having a definite momentum $\mathbf p$.
+
+Let the particle occupy a finite spatial region whose dimensions along the
+three axes are of order $\Delta x$, $\Delta y$, $\Delta z$. Let its mean
+momentum be $\mathbf p_0$. Mathematically, this means that the wave function
+has the form
+$\psi=u(\mathbf r)e^{i\mathbf p_0\cdot\mathbf r/\hbar}$, where
+$u(\mathbf r)$ is appreciably different from zero only within the specified
+region.
+
+Expand $\psi$ in eigenfunctions of the momentum operator, that is, as a
+Fourier integral. The coefficients $a(\mathbf p)$ in this expansion are given
+by (15.10) as integrals of functions of the form
+$u(\mathbf r)e^{i(\mathbf p_0-\mathbf p)\cdot\mathbf r/\hbar}$. For such an
+integral to be appreciably different from zero, the periods of the oscillating
+factor $e^{i(\mathbf p_0-\mathbf p)\cdot\mathbf r/\hbar}$ must not be small
+compared with the dimensions $\Delta x$, $\Delta y$, and $\Delta z$ of the
+region where $u(\mathbf r)$ differs from zero. Thus $a(\mathbf p)$ is
+appreciably different from zero only for values of $\mathbf p$ satisfying
+$(p_{0x}-p_x)\Delta x/\hbar\lesssim1,\ldots$ Since $|a(\mathbf p)|^2$
+determines the probabilities of the various momentum values, the intervals of
+$p_x,p_y,p_z$ in which $a(\mathbf p)$ is nonzero are precisely the intervals
+in which the particle's momentum components may lie in the state considered.
+Denoting these intervals by $\Delta p_x$, $\Delta p_y$, and $\Delta p_z$, we
+therefore have
+\begin{equation}
+  \Delta p_x\Delta x\sim\hbar,\qquad
+  \Delta p_y\Delta y\sim\hbar,\qquad
+  \Delta p_z\Delta z\sim\hbar.
+  \tag{16.6}
+\end{equation}
+These \emph{uncertainty relations} were established by \emph{Heisenberg} in
+1927.
+
+We see that the more accurately a particle coordinate is known (the smaller
+$\Delta x$ is), the greater is the uncertainty $\Delta p_x$ in the momentum
+component along the same axis, and conversely. In particular, if a particle
+occupies a strictly definite point of space
+($\Delta x=\Delta y=\Delta z=0$), then
+$\Delta p_x=\Delta p_y=\Delta p_z=\infty$. All momentum values are then
+equally probable. Conversely, if the particle has a strictly definite
+momentum $\mathbf p$, all its positions in space are equally probable (this
+also follows directly from the wave function (15.8), whose squared modulus is
+entirely independent of the coordinates).
+
+If the coordinate and momentum uncertainties are characterized by their
+root-mean-square fluctuations,
+\[
+  \delta x=\sqrt{\overline{(x-\bar x)^2}},\qquad
+  \delta p_x=\sqrt{\overline{(p_x-\bar p_x)^2}},
+\]
+\SourcePage{69}{72}
+an exact bound can be given for the least possible value of their product
+(\emph{H.~Weyl}).
+
+Consider the one-dimensional case, a packet with wave function $\psi(x)$
+depending on only one coordinate; for simplicity, suppose that the mean values
+of $x$ and $p_x$ in this state are zero. Begin with the evident inequality
+\[
+  \int_{-\infty}^{\infty}
+  \left|\alpha x\psi+\frac{d\psi}{dx}\right|^2dx\geq0,
+\]
+where $\alpha$ is an arbitrary real constant. In evaluating this integral,
+note that
+\[
+  \int x^2|\psi|^2\,dx=(\delta x)^2,
+\]
+\[
+  \int\left(x\frac{d\psi^*}{dx}\psi
+  +x\psi^*\frac{d\psi}{dx}\right)dx
+  =\int x\frac{d|\psi|^2}{dx}\,dx
+  =-\int|\psi|^2\,dx=-1,
+\]
+\[
+  \int\frac{d\psi^*}{dx}\frac{d\psi}{dx}\,dx
+  =-\int\psi^*\frac{d^2\psi}{dx^2}\,dx
+  =\frac{1}{\hbar^2}\int\psi^*\hat p_x^2\psi\,dx
+  =\frac{1}{\hbar^2}(\delta p_x)^2,
+\]
+and obtain
+\[
+  \alpha^2(\delta x)^2-\alpha
+  +\frac{(\delta p_x)^2}{\hbar^2}\geq0.
+\]
+For this quadratic trinomial in $\alpha$ to be nonnegative for every value of
+$\alpha$, its discriminant must be negative. It follows that
+\begin{equation}
+  \delta x\,\delta p_x\geq\hbar/2.
+  \tag{16.7}
+\end{equation}
+The least possible value of the product is $\hbar/2$.
+
+This value is attained by wave packets described by functions of the form
+\begin{equation}
+  \psi=\frac{1}{(2\pi)^{1/4}\sqrt{\delta x}}
+  \exp\left(\frac{i}{\hbar}p_0x-\frac{x^2}{4(\delta x)^2}\right),
+  \tag{16.8}
+\end{equation}
+where $p_0$ and $\delta x$ are constants. The probabilities of the various
+coordinate values in such a state are
+\[
+  |\psi|^2=\frac{1}{\sqrt{2\pi}\,\delta x}
+  \exp\left(-\frac{x^2}{2(\delta x)^2}\right),
+\]
+that is, they have a Gaussian distribution about the origin (mean value
+$\bar x=0$), with root-mean-square fluctuation $\delta x$. The wave function
+in the momentum representation is
+\[
+  a(p_x)=\int_{-\infty}^{\infty}\psi(x)
+  \exp\left(-i\frac{p_xx}{\hbar}\right)dx.
+\]
+\SourcePage{70}{73}
+Evaluation of the integral gives an expression of the form
+\[
+  a(p_x)=\mathrm{const}\cdot
+  \exp\left(-\frac{(\delta x)^2(p_x-p_0)^2}{\hbar^2}\right).
+\]
+The probability distribution of the momentum values, $|a(p_x)|^2$, is also
+Gaussian, about the mean $\bar p_x=p_0$, and has root-mean-square fluctuation
+$\delta p_x=\hbar/(2\delta x)$. Thus the product
+$\delta p_x\delta x$ is exactly $\hbar/2$.
+
+Finally, let us derive one more useful relation. Let $f$ and $g$ be two
+physical quantities whose operators obey the commutation rule
+\begin{equation}
+  \hat f\hat g-\hat g\hat f=-i\hbar\hat c,
+  \tag{16.9}
+\end{equation}
+where $\hat c$ is the operator of a physical quantity $c$. The factor $\hbar$
+has been introduced on the right because in the classical limit
+($\hbar\to0$) all operators of physical quantities reduce to multiplication
+by those quantities and commute with one another. Thus, in the
+``quasiclassical'' case, the right-hand side of (16.9) may be taken as zero in
+the first approximation. In the next approximation, $\hat c$ may be replaced
+by the operator of simple multiplication by $c$. We then have
+\[
+  \hat f\hat g-\hat g\hat f=-i\hbar c.
+\]
+This equation is exactly analogous to
+$\hat p_xx-x\hat p_x=-i\hbar$, except that the quantity $\hbar c$ occurs in
+place of the constant $\hbar$\footnote{The classical quantity $c$ is the
+Poisson bracket of $f$ and $g$ (see the note on p.~46).}. By analogy with
+$\Delta x\Delta p_x\sim\hbar$, we therefore conclude that in the
+quasiclassical case the quantities $f$ and $g$ obey the uncertainty relation
+\begin{equation}
+  \Delta f\Delta g\sim\hbar c.
+  \tag{16.10}
+\end{equation}
+In particular, if one of the quantities is the energy ($f\equiv H$) and the
+operator of the other ($g$) has no explicit time dependence, then by (9.2)
+$c=\dot g$, and the quasiclassical uncertainty relation is
+\begin{equation}
+  \Delta E\Delta g\sim\hbar\dot g.
+  \tag{16.11}
+\end{equation}

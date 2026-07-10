@@ -1,0 +1,159 @@
+\section{Addition and Multiplication of Operators}
+
+\SourcePage{25}{28}
+If $\hat f$ and $\hat g$ are the operators corresponding to two physical
+quantities $f$ and $g$, then $\hat f+\hat g$ corresponds to their sum $f+g$.
+In quantum mechanics, however, the meaning of adding different physical
+quantities differs essentially according as the quantities are or are not
+measurable simultaneously. If $f$ and $g$
+\SourcePage{26}{29}
+are simultaneously measurable, the operators $\hat f$ and $\hat g$ have
+common eigenfunctions. These are also eigenfunctions of $\hat f+\hat g$, whose
+eigenvalues are the sums $f_n+g_n$.
+
+If $f$ and $g$ cannot have definite values simultaneously, their sum $f+g$
+has a more restricted meaning. All that can be stated is that its mean value
+in an arbitrary state equals the sum of the separate mean values of the two
+terms:
+\begin{equation}
+  \overline{f+g}=\bar f+\bar g.
+  \tag{4.1}
+\end{equation}
+The eigenvalues and eigenfunctions of $\hat f+\hat g$, on the other hand, will
+in general have no relation to those of $f$ and $g$. Clearly, when $\hat f$
+and $\hat g$ are Hermitian, so is $\hat f+\hat g$; its eigenvalues are
+therefore real and are the eigenvalues of the new quantity $f+g$ defined in
+this way.
+
+We note the following theorem. Let $f_0$ and $g_0$ be the least eigenvalues of
+$f$ and $g$, and let $(f+g)_0$ denote the corresponding quantity for $f+g$.
+Then
+\begin{equation}
+  (f+g)_0\geq f_0+g_0.
+  \tag{4.2}
+\end{equation}
+The equality sign applies if $f$ and $g$ are simultaneously measurable. The
+proof follows from the evident fact that a quantity's mean value is always at
+least its least eigenvalue. In the state in which $(f+g)$ has the value
+$(f+g)_0$, we have $\overline{(f+g)}=(f+g)_0$; on the other hand,
+$\overline{(f+g)}=\bar f+\bar g\geq f_0+g_0$, which gives (4.2).
+
+Suppose again that $f$ and $g$ are simultaneously measurable. Besides their
+sum, we may introduce their product as a quantity whose eigenvalues are the
+products of the eigenvalues of $f$ and $g$. The corresponding operator is
+readily seen to act by applying one operator to a function and then the other.
+Mathematically it is written as the product of $\hat f$ and $\hat g$. Indeed,
+if $\Psi_n$ are common eigenfunctions of $\hat f$ and $\hat g$, then
+\[
+  \hat f\hat g\Psi_n=\hat f(\hat g\Psi_n)
+  =\hat f g_n\Psi_n=g_n\hat f\Psi_n=g_nf_n\Psi_n
+\]
+\SourcePage{27}{30}
+(the symbol $\hat f\hat g$ denotes the operator which acts on a function
+$\Psi$ first by applying $\hat g$ to $\Psi$, and then by applying $\hat f$ to
+the function $\hat g\Psi$). We could equally well have used $\hat g\hat f$,
+whose factors occur in the opposite order. Plainly, the actions of these two
+operators on the functions $\Psi_n$ give the same result. Since every wave
+function $\Psi$ is expandable in the functions $\Psi_n$, it follows that
+$\hat f\hat g$ and $\hat g\hat f$ yield the same result when acting on
+an arbitrary function. This fact may be written symbolically as
+$\hat f\hat g=\hat g\hat f$, or
+\begin{equation}
+  \hat f\hat g-\hat g\hat f=0.
+  \tag{4.3}
+\end{equation}
+
+Two such operators $\hat f$ and $\hat g$ are said to \emph{commute} with one
+another. We have therefore reached an important result: if two quantities $f$
+and $g$ can have definite values simultaneously, their operators commute.
+
+The converse theorem can also be proved (see \secref{11}): when $\hat f$ and
+$\hat g$ commute, all their eigenfunctions can be chosen in common, which
+physically means that the corresponding physical quantities are simultaneously
+measurable. Thus commutation of the operators is a necessary and sufficient
+condition for simultaneous measurability of physical quantities.
+
+Raising an operator to a power is a special case of multiplying operators. It
+follows from what has been said that the eigenvalues of $\hat f^p$ (where $p$
+is an integer) are the eigenvalues of $\hat f$ raised to the same $p$th power.
+More generally, any function of an operator, $\varphi(\hat f)$, may be defined
+as the operator whose eigenvalues are the same function $\varphi(f)$ of the
+eigenvalues of $\hat f$. When $\varphi(f)$ has a Taylor-series expansion, this
+expansion reduces the action of $\varphi(\hat f)$ to the actions of the
+various powers $\hat f^p$.
+
+In particular, $\hat f^{-1}$ is called the operator \emph{inverse} to
+$\hat f$. Clearly, successive application of $\hat f$ and $\hat f^{-1}$ to an
+arbitrary function leaves it unchanged; that is,
+$\hat f\hat f^{-1}=\hat f^{-1}\hat f=1$.
+\SourcePage{28}{31}
+When $f$ and $g$ are not simultaneously measurable, their product has no such
+direct meaning. This is already apparent because $\hat f\hat g$ is then not
+Hermitian and consequently cannot correspond to a real physical quantity.
+Indeed, by the definition of the transposed operator,
+\[
+  \int \Psi\hat f\hat g\Phi\,dq
+  =\int \Psi\hat f(\hat g\Phi)\,dq
+  =\int(\hat g\Phi)(\tilde f\Psi)\,dq.
+\]
+Here $\tilde f$ acts only on $\Psi$, while $\hat g$ acts on $\Phi$; the
+integrand is therefore simply the product of the two functions $\hat g\Phi$
+and $\tilde f\Psi$. Applying the definition of the transposed operator
+once more gives
+\[
+  \int \Psi\hat f\hat g\Phi\,dq
+  =\int(\tilde f\Psi)(\hat g\Phi)\,dq
+  =\int\Phi\tilde g\,\tilde f\Psi\,dq.
+\]
+We have thus obtained an integral in which $\Psi$ and $\Phi$ have exchanged
+places relative to the original one. In other words,
+$\tilde g\,\tilde f$ is the operator transposed to $\hat f\hat g$, so
+we may write
+\begin{equation}
+  \tilde{fg}=\tilde g\,\tilde f,
+  \tag{4.4}
+\end{equation}
+that is, the transpose of the product $\hat f\hat g$ is the product of the
+transposed factors written in reverse order. Taking the complex conjugate of
+both sides of (4.4), we find
+\begin{equation}
+  (\hat f\hat g)^+=\hat g^+\hat f^+.
+  \tag{4.5}
+\end{equation}
+If both $\hat f$ and $\hat g$ are Hermitian, then
+$(\hat f\hat g)^+=\hat g\hat f$. Hence $\hat f\hat g$ is Hermitian only when
+the factors $\hat f$ and $\hat g$ commute.
+
+From the products $\hat f\hat g$ and $\hat g\hat f$ of two noncommuting
+Hermitian operators one can nevertheless form another Hermitian operator,
+their \emph{symmetrized product}
+\begin{equation}
+  \frac{1}{2}(\hat f\hat g+\hat g\hat f).
+  \tag{4.6}
+\end{equation}
+
+It is also readily verified that the difference
+$\hat f\hat g-\hat g\hat f$ is an ``anti-Hermitian'' operator (that is, its
+transpose is equal to the negative of its complex
+\SourcePage{29}{32}
+conjugate). Multiplication by $i$ makes it Hermitian; hence
+\begin{equation}
+  i(\hat f\hat g-\hat g\hat f)
+  \tag{4.7}
+\end{equation}
+is likewise a Hermitian operator.
+
+For brevity, later on we shall sometimes use the notation
+\begin{equation}
+  \{\hat f,\hat g\}=\hat f\hat g-\hat g\hat f
+  \tag{4.8}
+\end{equation}
+for the so-called \emph{commutator} of the operators. It is easy to verify the
+relation
+\begin{equation}
+  \{\hat f\hat g,\hat h\}
+  =\{\hat f,\hat h\}\hat g+\hat f\{\hat g,\hat h\}.
+  \tag{4.9}
+\end{equation}
+Notice that $\{\hat f,\hat h\}=0$ and $\{\hat g,\hat h\}=0$ do not in general
+imply that $\hat f$ and $\hat g$ commute with each other.

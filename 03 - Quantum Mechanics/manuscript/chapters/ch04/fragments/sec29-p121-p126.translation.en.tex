@@ -1,0 +1,267 @@
+\SourcePage{121}{124}
+\section{Matrix elements of vectors}
+
+Return once more to a closed system of particles\footnote{Everything derived in
+this section applies equally to a particle in a centrally symmetric field (more
+broadly, to any situation in which the system's total angular momentum is
+conserved).}. Let $f$ stand for some scalar physical quantity of this system
+and $\hat f$ for its operator. Any
+\SourcePage{122}{125}
+scalar is invariant under a rotation of the coordinate system. Hence the
+scalar operator $\hat f$ is unchanged by a rotation; that is, it commutes with
+the rotation operator. We know, however, that the operator of an infinitesimal
+rotation coincides, apart from a constant factor, with the angular-momentum
+operator. Therefore
+\begin{equation}
+  \{\hat f,\hat{\mathbf L}\}=0.
+  \tag{29.1}
+\end{equation}
+
+It follows from the commutation of $\hat f$ with the angular-momentum operator
+that, for transitions between states with definite $L$ and $M$, the matrix of
+$f$ is diagonal in these indices. Moreover, specifying $M$ determines only
+the orientation of the system relative to the coordinate axes, while the
+value of a scalar quantity does not depend on this orientation at all.
+Consequently, the matrix elements $\langle n'LM|f|nLM\rangle$ do not depend
+on $M$ (the letter $n$ provisionally denotes the collection of all quantum
+numbers, other than $L$ and $M$, that specify the state of the system). A
+formal proof follows from the commutation of $\hat f$ and $\hat L_+$:
+\begin{equation}
+  \hat f\hat L_+-\hat L_+\hat f=0.
+  \tag{29.2}
+\end{equation}
+Take the matrix element of this equality for the transition
+$n,L,M\to n',L,M+1$. Since the matrix of $L_+$ has only elements for
+transitions $n,L,M\to n,L,M+1$, we find
+\begin{align*}
+ &\langle n',L,M+1|f|n,L,M+1\rangle
+ \langle n,L,M+1|L_+|n,L,M\rangle={}\\
+ &\qquad=\langle n',L,M+1|L_+|n',L,M\rangle
+ \langle n',L,M|f|n,L,M\rangle,
+\end{align*}
+and, since the matrix elements of $L_+$ do not depend on the index $n$,
+\begin{equation}
+ \langle n',L,M+1|f|n,L,M+1\rangle
+ =\langle n',L,M|f|n,L,M\rangle,
+ \tag{29.3}
+\end{equation}
+which shows that all the elements $\langle n',L,M|f|n,L,M\rangle$ with
+different $M$ (and identical remaining indices) are equal.
+
+Applied to the Hamiltonian itself, this result gives the already known
+independence of the stationary-state energy from $M$, that is, the
+$(2L+1)$-fold degeneracy of the energy levels.
+
+Next, let $\mathbf A$ be some vector physical quantity characterizing the
+closed system. Under a rotation of the coordinate system (in particular, an
+infinitesimal rotation, that is,
+\SourcePage{123}{126}
+under the action of the angular-momentum operator), the components of the
+vector transform into one another. The commutation of the operators
+$\hat L_i$ with the operators $\hat A_i$ must therefore again yield components
+of the same vector $\hat A_i$. Which components occur can be found by noting
+that, in the special case where $\mathbf A$ is the radius vector of a
+particle, the result must reduce to (26.4). We thus obtain the commutation
+rules
+\begin{equation}
+  \{\hat L_i,\hat A_k\}=ie_{ikl}\hat A_l.
+  \tag{29.4}
+\end{equation}
+
+From these relations one can derive a number of results about the structure
+of the component matrices of the vector $\mathbf A$
+(\emph{M.~Born, W.~Heisenberg, P.~Jordan}, 1926). First, they make it possible
+to find the \emph{selection rules}, which determine the transitions for which
+matrix elements may be nonzero. We shall not, however, give the corresponding
+rather cumbersome calculations here, since it will be shown below
+(\secref{107}) that these rules are in fact direct consequences of the general
+transformation properties of vector quantities and can be obtained from them
+essentially without calculation. Here we merely state the rules without
+derivation.
+
+Matrix elements of every component of a vector can be nonzero only for
+transitions in which the angular momentum $L$ changes by no more than one:
+\begin{equation}
+  L\to L,L\pm1.
+  \tag{29.5}
+\end{equation}
+There is also an additional selection rule forbidding transitions between
+any two states with $L=0$. This rule is an evident consequence of the complete
+spherical symmetry of states with zero angular momentum.
+
+The selection rules for the angular-momentum projection $M$ differ among the
+components of the vector. Specifically, matrix elements may be nonzero for
+transitions with the following changes of $M$:
+\begin{equation}
+ \begin{aligned}
+  M&\to M+1 &&\text{for } A_+=A_x+iA_y,\\
+  M&\to M-1 &&\text{for } A_-=A_x-iA_y,\\
+  M&\to M   &&\text{for } A_z.
+ \end{aligned}
+ \tag{29.6}
+\end{equation}
+It is also possible to determine in general form the dependence of the matrix
+elements of a vector on $M$. We again give these important and frequently
+used formulas without derivation, since they too are special cases of more
+general relations, applying to arbitrary tensor quantities, which will be
+derived in \secref{107}.
+\SourcePage{124}{127}
+The nonzero matrix elements of $A_z$ are given by
+\begin{equation}
+ \begin{aligned}
+ \langle n'LM|A_z|nLM\rangle
+ &=\frac{M}{\sqrt{L(L+1)(2L+1)}}\langle n'L\Vert A\Vert nL\rangle,\\
+ \langle n'LM|A_z|n,L-1,M\rangle
+ &=\sqrt{\frac{L^2-M^2}{L(2L-1)(2L+1)}}
+   \langle n'L\Vert A\Vert n,L-1\rangle,\\
+ \langle n',L-1,M|A_z|nLM\rangle
+ &=\sqrt{\frac{L^2-M^2}{L(2L-1)(2L+1)}}
+   \langle n',L-1\Vert A\Vert nL\rangle.
+ \end{aligned}
+ \tag{29.7}
+\end{equation}
+Here the symbol
+\[
+  \langle n'L'\Vert A\Vert nL\rangle
+\]
+denotes a so-called \emph{reduced matrix element}, a quantity independent of
+the quantum number $M$\footnote{The appearance in (29.7) and (29.9) of
+denominators depending on $L$ accords with the general notation introduced in
+\secref{107}. The usefulness of these denominators is seen, in particular, in the
+simple form taken by (29.12) for the matrix elements of the scalar product of
+two vectors.
+
+One should regard the notation for the reduced matrix element as an indivisible entity
+(in contrast to what was said about the matrix element notation (11.17)).}.
+They are related by
+\begin{equation}
+ \langle n'L'\Vert A\Vert nL\rangle
+ =\langle nL\Vert A\Vert n'L'\rangle^*,
+ \tag{29.8}
+\end{equation}
+which follows directly from the Hermiticity of $\hat A_z$.
+
+The matrix elements of $A_-$ and $A_+$ can be expressed through the same
+reduced elements. The nonzero matrix elements of $A_-$ are
+\begin{equation}
+ \begin{aligned}
+ \langle n',L,M-1|A_-|nLM\rangle
+ &=\sqrt{\frac{(L-M+1)(L+M)}{L(L+1)(2L+1)}}
+   \langle n'L\Vert A\Vert nL\rangle,\\
+ \langle n',L,M-1|A_-|n,L-1,M\rangle
+ &=\sqrt{\frac{(L-M+1)(L-M)}{L(2L-1)(2L+1)}}
+   \langle n'L\Vert A\Vert n,L-1\rangle,\\
+ \langle n',L-1,M-1|A_-|nLM\rangle
+ &=-\sqrt{\frac{(L+M-1)(L+M)}{L(2L-1)(2L+1)}}
+   \langle n',L-1\Vert A\Vert nL\rangle.
+ \end{aligned}
+ \tag{29.9}
+\end{equation}
+The matrix elements of $A_+$ need no separate formulas, since the reality of
+$A_x$ and $A_y$ gives
+\begin{equation}
+ \langle n'L'M'|A_+|nLM\rangle
+ =\langle nLM|A_-|n'L'M'\rangle^*.
+ \tag{29.10}
+\end{equation}
+\SourcePage{125}{128}
+Let us write out the formula that relates the matrix elements of the scalar
+$\mathbf{AB}$ to the reduced matrix elements of the two vectors
+$\mathbf A$ and $\mathbf B$. The calculation is conveniently made
+by writing the operator $\hat{\mathbf A}\hat{\mathbf B}$ as
+\begin{equation}
+ \hat{\mathbf A}\hat{\mathbf B}
+ =\frac12(\hat A_+\hat B_-+\hat A_-\hat B_+)+\hat A_z\hat B_z.
+ \tag{29.11}
+\end{equation}
+The matrix of $\mathbf{AB}$, like that of any scalar, is diagonal in $L$ and
+$M$. Calculation using (29.7)--(29.9) gives
+\begin{equation}
+ \langle n'LM|\mathbf{AB}|nLM\rangle
+ =\frac1{2L+1}\sum_{n'',L''}
+ \langle n'L\Vert A\Vert n''L''\rangle
+ \langle n''L''\Vert B\Vert nL\rangle,
+ \tag{29.12}
+\end{equation}
+where $L''$ takes the values $L,L\pm1$.
+
+For reference, we give the reduced matrix elements of the vector
+$\mathbf L$ itself. Comparing (29.9) and (27.12), we find
+\begin{equation}
+ \begin{gathered}
+  \langle L\Vert L\Vert L\rangle=\sqrt{L(L+1)(2L+1)},\\
+  \langle L-1\Vert L\Vert L\rangle
+  =\langle L\Vert L\Vert L-1\rangle=0.
+ \end{gathered}
+ \tag{29.13}
+\end{equation}
+
+A quantity frequently encountered in applications is the unit vector
+$\mathbf n$ along the radius vector of a particle. Let us find its reduced
+matrix elements. It is sufficient to calculate, for example, the matrix
+elements of $n_z=\cos\theta$ at zero angular-momentum projection, $m=0$. We
+have
+\[
+ \langle l-1,0|n_z|l0\rangle
+ =\int_0^\pi\Theta_{l-1,0}^*\cos\theta\cdot
+ \Theta_{l0}\sin\theta\,d\theta
+\]
+with the functions $\Theta_{l0}$ from (28.11). Evaluation of the integral
+gives\footnote{The calculation is performed by integrating by parts
+$(l-1)$ times with respect to $d\cos\theta$. For the general formula for
+integrals of this kind, see (107.14).}
+\[
+ \langle l-1,0|n_z|l0\rangle
+ =\frac{il}{\sqrt{(2l-1)(2l+1)}}.
+\]
+The matrix elements for transitions $l\to l$ are zero (as they are for any
+polar vector belonging to a single particle; see below, (30.8)). Comparison
+with (29.7) now gives
+\begin{equation}
+ \langle l-1\Vert n\Vert l\rangle
+ =-\langle l\Vert n\Vert l-1\rangle=i\sqrt l,
+ \qquad \langle l\Vert n\Vert l\rangle=0.
+ \tag{29.14}
+\end{equation}
+\SourcePage{126}{129}
+\ProblemHeading
+
+Average the tensor $n_in_k-(1/3)\delta_{ik}$ (where $\mathbf n$ is the unit
+vector along the particle's radius vector) over a state with a definite value
+of $|\mathbf l|$ but no preferred orientation (that is, $l_z$ is
+unspecified).
+
+\SolutionHeading The required mean value is an operator that can be expressed
+only in terms of $\hat{\mathbf l}$. We seek it in the form
+\[
+ \overline{n_in_k}-\frac13\delta_{ik}
+ =a\left[\hat l_i\hat l_k+\hat l_k\hat l_i
+ -\frac23\delta_{ik}l(l+1)\right];
+\]
+this is the most general form of a symmetric second-rank tensor with zero
+trace constructed from the components of $\hat{\mathbf l}$. To determine the
+constant $a$, multiply this equality on the left by $\hat l_i$ and on the
+right by $\hat l_k$, with summation over $i$ and $k$. Since the vector
+$\mathbf n$ is perpendicular to the vector
+$\hbar\hat{\mathbf l}=\hat{\mathbf r}\times\hat{\mathbf p}$, we have
+$n_i\hat l_i=0$. We replace the product
+$\hat l_i\hat l_i\hat l_k\hat l_k=(\hat{\mathbf l}^2)^2$ by its eigenvalue
+$l^2(l+1)^2$, and transform the product
+$\hat l_i\hat l_k\hat l_i\hat l_k$ using the commutation relations (26.7) as
+follows:
+\begin{align*}
+ \hat l_i\hat l_k\hat l_i\hat l_k
+ &=\hat l_i\hat l_i\hat l_k\hat l_k
+ -ie_{ikl}\hat l_i\hat l_l\hat l_k\\
+ &=(\hat{\mathbf l}^2)^2
+ -\frac i2e_{ikl}\hat l_i(\hat l_l\hat l_k-\hat l_k\hat l_l)\\
+ &=(\hat{\mathbf l}^2)^2
+ +\frac12e_{ikl}e_{lkm}\hat l_i\hat l_m
+ =(\hat{\mathbf l}^2)^2-\hat{\mathbf l}^2\\
+ &=l^2(l+1)^2-l(l+1)
+\end{align*}
+(we have used $e_{ikl}e_{mkl}=2\delta_{im}$). Straightforward simplification
+then gives
+\[
+  a=-\frac1{(2l-1)(2l+3)}.
+\]
