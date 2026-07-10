@@ -1,0 +1,10 @@
+\documentclass{openlandau-qm}
+\begin{document}
+\mainmatter
+\ifdefined\FragmentFile
+  \input{\FragmentFile}
+\else
+  \PackageError{OpenLandau}{FragmentFile is not defined}{Use the Makefile fragment-translation target.}
+\fi
+\end{document}
+
