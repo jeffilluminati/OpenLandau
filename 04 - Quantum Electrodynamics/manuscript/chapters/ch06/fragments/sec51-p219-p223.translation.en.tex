@@ -1,0 +1,109 @@
+\SourcePage{214}{219}
+\section{Radiation of atoms. Zeeman and Stark effects}
+
+In an external magnetic field $H$ (which we assume weak) each atomic level with total angular momentum $J$ splits into $2J + 1$ levels
+\begin{equation}
+E_M = E^{(0)} + \mu_0 gMH,
+\tag{51.1}
+\end{equation}
+where $E^{(0)}$ is the unperturbed level, $\mu_0$ is the Bohr magneton, $g$ is the Land\'e factor, $M$ is the projection of the angular momentum $J$ onto the direction of the field (see~III, \S\,113). The degeneracy with respect to the directions of the angular momentum is thus completely removed.
+
+\SourcePage{215}{220}
+Correspondingly, the spectral lines, arising from transitions between two split levels, also split. The number of components of the line is determined by the selection rule for the number $M$, according to which for dipole radiation it must be
+\begin{equation}
+m = M - M' = 0,\,\pm 1.
+\tag{51.2}
+\end{equation}
+Additionally the transitions with $M = M' = 0$ are forbidden if at the same time $J' = J$. This is seen directly from the general expressions~(29.7) (see~III) for the matrix elements of an arbitrary vector.
+
+The components arising from transitions with $m = 0$, $\pm 1$ are called respectively $\pi$- and $\sigma$-components. Their frequencies:
+\begin{equation}
+\hbar\omega_\pi = \hbar\omega^{(0)} + \mu_0 H(g - g')M,
+\tag{51.3}
+\end{equation}
+\[
+\hbar\omega_\sigma = \hbar\omega^{(0)} + \mu_0 H[gM - g'(M \pm 1)].
+\]
+
+In the particular case, when $g = g'$, we have
+\begin{equation}
+\hbar\omega_\pi = \hbar\omega^{(0)},\qquad \hbar\omega_\sigma = \hbar\omega^{(0)} \mp \mu_0 gH,
+\tag{51.4}
+\end{equation}
+independently of the value of $M$; in other words, in this case the line splits into a triplet with an undisplaced $\pi$-component and two $\sigma$-components symmetrically situated on either side of it (the so-called \textit{normal Zeeman effect}).
+
+The total (over all directions) probability of radiation is proportional to the square of the modulus $|\langle n'J'M'|\mathbf{d}_{-m}|nJM\rangle|^2$. Therefore, by virtue of formula~(46.19) with $j = 1$, the relative probability of emission of each of the Zeeman components of the spectral line is
+\begin{equation}
+\begin{pmatrix} J' & 1 & J \\ M' & m & -M\end{pmatrix}^{\!2}.
+\tag{51.5}
+\end{equation}
+
+In the particular case of the normal Zeeman effect there are in all just three components, each of which arises from transitions with all initial $M$ for a given $m$. Since
+\begin{equation}
+\sum_{MM'}\begin{pmatrix} J' & 1 & J \\ M' & m & -M\end{pmatrix}^{\!2} = \frac{1}{3}
+\tag{51.6}
+\end{equation}
+(see~III, (106.12)), in this case the radiation of all three components is equiprobable.
+
+Of much greater interest, however, are the relative intensities of the Zeeman components when observed in a definite direction (relative to the direction of the applied magnetic field). According to~(45.5) the probability of
+
+\SourcePage{216}{221}
+radiation (and with it the intensity of the line) in a given direction $\mathbf{n}$ is proportional to $\sum|\mathbf{e}^*\mathbf{d}_{fi}|^2$, where the summation is carried out over the two independent polarisations $\mathbf{e}$ possible for the given $\mathbf{n}$.
+
+In observation along the field (axis $z$) the sum is
+\[
+|(d_x)_{fi}|^2 + |(d_y)_{fi}|^2.
+\]
+Passing to the spherical components, we obtain
+\[
+|(d_1)_{fi}|^2 + |(d_{-1})_{fi}|^2.
+\]
+This means that in the longitudinal (along the field) direction only the two $\sigma$-components ($m = \pm 1$) are observed. Their intensities are proportional to
+\begin{equation}
+\begin{pmatrix} J' & 1 & J \\ M \mp 1 & \pm 1 & -M\end{pmatrix}^{\!2}.
+\tag{51.7}
+\end{equation}
+Possessing definite values of the angular momentum projection $m$ along the direction of propagation, these lines have right ($m = 1$) and left ($m = -1$) circular polarisations (see~\S\,8).
+
+In observation in the perpendicular-to-field direction (let this be the axis $x$) the intensity is proportional to the sum
+\[
+|(d_z)_{fi}|^2 + |(d_y)_{fi}|^2 = |(d_0)_{fi}|^2 + \tfrac{1}{2}\{|(d_1)_{fi}|^2 + |(d_{-1})_{fi}|^2\}.
+\]
+Thus, in the transverse direction two $\sigma$-components and a $\pi$-component are observed, with intensities proportional respectively to
+\begin{equation}
+\tfrac{1}{2}\begin{pmatrix} J' & 1 & J \\ M \mp 1 & \pm 1 & -M\end{pmatrix}^{\!2}\quad\text{and}\quad\begin{pmatrix} J' & 1 & J \\ M & 0 & -M\end{pmatrix}^{\!2}.
+\tag{51.8}
+\end{equation}
+(the intensities of the $\sigma$-components are half those in longitudinal observation). The $\pi$-component is polarised linearly along the axis~$z$, and the $\sigma$-components are observed in this direction polarised linearly along the axis~$y$.
+
+Let us note that the relative intensities of the Zeeman components are determined entirely by the initial and final values of $J$ and $M$ without any dependence on other characteristics of the levels.
+
+The selection rules forbid electric-dipole transitions between Zeeman components of one and the same level, since all of them have the same parity. For the same reason that was indicated at the end of the preceding paragraph for transitions between components of the hyperfine structure of a level, the indicated transitions are realised as magnetic-dipole ones. By virtue of the selection rule for the number $M$ the transitions occur only between adjacent components ($M' - M = \pm 1$)\,\footnote{These transitions usually have frequencies in the centimetre range and are observed in absorption and stimulated emission (electronic paramagnetic resonance): the absorbing atoms are placed in a strong static magnetic field (producing Zeeman splitting) and a weak radio-frequency field of the resonance frequency.}.
+
+\SourcePage{217}{222}
+The splitting of levels of an atom in a weak electric field (\textit{Stark effect}), unlike the splitting in a magnetic field, does not lead to complete removal of the degeneracy with respect to the directions of the angular momentum. All levels, with the exception of the level $M = 0$, remain doubly degenerate: to each belong two states with projections of the angular momentum $M$ and $-M$.
+
+The computation of the relative intensities of the Stark components of a spectral line is analogous to that presented above for the Zeeman effect. In this connection one must bear in mind that the $\pi$-component receives contributions (for $M \neq 0$) from the transitions $M \to M$ and $-M \to -M$, and the $\sigma$-component receives contributions from the transitions $M \to M \pm 1$ and $-M \to -(M \pm 1)$. Therefore, for example, upon transverse observation the intensities of the $\pi$-components are proportional to
+\[
+2\begin{pmatrix} J' & 1 & J \\ M & 0 & -M\end{pmatrix}^{\!2},
+\]
+and the intensities of the $\sigma$-components are proportional to the sums
+\[
+\frac{1}{2}\begin{pmatrix} J' & 1 & J \\ M \pm 1 & \mp 1 & -M\end{pmatrix}^{\!2} + \frac{1}{2}\begin{pmatrix} J' & 1 & J \\ -M \mp 1 & \pm 1 & M\end{pmatrix}^{\!2} = \begin{pmatrix} J' & 1 & J \\ M \pm 1 & \mp 1 & -M\end{pmatrix}^{\!2}
+\]
+(recall that on changing the sign of all numbers in the second row the $3j$-symbols can only change sign, while their squares do not change).
+
+In an external field, even a weak one, strictly speaking the total angular momentum $\mathbf{J}$ ceases to be conserved; in a uniform field only the conservation of the projection of the angular momentum $M$ is exactly preserved. Therefore upon radiative transitions in a weak field the conservation of angular momentum is no longer strictly obligatory, and in the spectrum of the atom lines may appear that are forbidden by the usual selection rules.
+
+The computation of the intensities of these lines reduces to the computation of corrections to the matrix of the dipole moment, which in turn requires the determination of corrections to the wave functions of stationary states. In the first approximation of perturbation theory (in the weak external field) the wave function acquires ``ad-
+
+\SourcePage{218}{223}
+mixtures'' of states connected with the original by non-zero matrix elements of perturbation ($-\mathbf{E}\mathbf{d}$ in an electric field): the admixture of a certain state $\psi_2$ to the state $\psi_1$ is
+\[
+\frac{-\mathbf{E}\mathbf{d}_{21}}{E_1 - E_2}\,\psi_2.
+\]
+As a result, in the matrix element of the ``forbidden'' transition there will appear a term
+\[
+\frac{-(\mathbf{E}\mathbf{d}_{21})\mathbf{d}_{32}}{E_1 - E_2},
+\]
+different from zero if the transitions from the ``intermediate'' state~2 into both the initial and final states~1 and~3 are allowed.

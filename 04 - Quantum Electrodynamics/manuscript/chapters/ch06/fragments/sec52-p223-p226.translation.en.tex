@@ -1,0 +1,205 @@
+\SourcePage{218}{223}
+\section{Radiation of atoms. Hydrogen atom}
+
+The hydrogen atom represents a unique case in which the computation of the matrix elements of the transition can be carried through to the end in analytical form (\textit{W.\,Gordon}, 1929).
+
+The parity of the state of the hydrogen atom is $(-1)^l$, i.e.\ it is unambiguously determined by the orbital angular momentum of the electron (recall that the number $l$ as the quantity determining the parity of the state retains its meaning also for the exact relativistic wave functions, i.e.\ when the spin--orbit interaction is taken into account). Therefore the selection rule for parity strictly forbids electric-dipole transitions without change of $l$; only transitions with $l \to l \pm 1$ are possible. Changes of the principal quantum number $n$, however, are not restricted.
+
+The dipole moment of the hydrogen atom reduces to the radius vector of the electron: $\mathbf{d} = e\mathbf{r}$. Since the wave function of the electron in the hydrogen atom is a product of the angular part and the radial function $R_{nl}$, the reduced matrix elements of the radius vector are also represented as a product
+\begin{equation}
+\langle n',\,l-1\|r\|nl\rangle = \langle l-1\|\nu\|l\rangle\int_0^\infty R_{n',l-1}\,r\,R_{nl}\,r^2\,dr,
+\tag{52.1}
+\end{equation}
+where $\langle l-1\|\nu\|l\rangle$ are the reduced matrix elements of the unit vector $\boldsymbol{\nu}$ in the direction of $\mathbf{r}$. The latter are
+\[
+\langle l-1\|\nu\|l\rangle = \langle l\|\nu\|l-1\rangle^* = i\sqrt{l}
+\]
+(see~III, (29.14)). Thus,
+\begin{equation}
+\langle n',\,l-1\|r\|nl\rangle = -\langle nl\|r\|n',\,l-1\rangle = i\sqrt{l}\int_0^\infty R_{n',l-1}\,R_{nl}\,r^3\,dr.
+\tag{52.1}
+\end{equation}
+
+\SourcePage{219}{224}
+The non-relativistic radial functions of the discrete spectrum of the hydrogen atom are given by formula~(36.13) (see~III)\,\footnote{In this paragraph we use atomic units. In ordinary units the expressions given below for matrix elements of coordinates should be multiplied by $\hbar^2/(me^2)$ (if a hydrogen-like ion with atomic number $Z$ is under consideration, then by $\hbar^2/(mZe^2)$).}:
+\begin{equation}
+R_{nl} = \frac{2}{n^{l+2}(2l+1)!}\sqrt{\frac{(n+l)!}{(n-l-1)!}}\;(2r)^l\,e^{-r/n}\times F(-n+l+1,\,2l+2,\,2r/n).
+\tag{52.2}
+\end{equation}
+
+The integral~(52.1) with the product of two hypergeometric functions is evaluated with the help of formulae in~III, \S\,f\,\footnote{The computation involves evaluating the integral $J^{l_2}_{l_2+2}(-n+l+1,\,-n'+l)$. It is carried out with the help of the formulae (f.\,12)~(f.\,16).}. The computation leads to the result
+\begin{align}
+\langle n',\,l-1\|r\|nl\rangle &={}\notag\\[4pt]
+&= i\sqrt{l}\;\frac{(-1)^{n'-l}}{4(2l-1)!}\sqrt{\frac{(n+l)!(n'+l-1)!}{(n-l-1)!(n'-l)!}}\;\frac{(4nn')^{l+1}(n-n')^{n+n'-2l-2}}{(n+n')^{n+n'}}\times{}\notag\\[4pt]
+&\qquad{}\times\biggl\{F(-n+l+1,\,-n'+l,\,2l,\,-\frac{4nn'}{(n-n')^2}) -{}\notag\\[4pt]
+&\qquad\qquad -\Bigl(\frac{n-n'}{n+n'}\Bigr)^{\!2}F(-n+l-1,\,-n'+l,\,2l,\,-\frac{4nn'}{(n-n')^2})\biggr\},
+\tag{52.3}
+\end{align}
+where $F(\alpha,\,\beta,\,\gamma,\,z)$ is the hypergeometric function. Since the parameters $\alpha$, $\beta$ in this case are negative integers (or zero), the functions reduce to polynomials\,\footnote{Numerical tables of matrix elements and transition probabilities for hydrogen can be found in the book: \textit{H.\,Bethe, E.\,Salpeter}, Quantum Mechanics of One- and Two-Electron Atoms. M.: IL, 1960.}.
+
+For reference we give the expressions obtained from~(52.3) in some particular cases (the value of $l$ is indicated by the spectroscopic symbol $s$, $p$, $d$, \ldots):
+\begin{align}
+|\langle 1s\|r\|np\rangle|^2 &= \frac{2^8n^7(n-1)^{2n-5}}{(n+1)^{2n+5}},\notag\\[6pt]
+|\langle 2s\|r\|np\rangle|^2 &= \frac{2^{17}n^7(n^2-1)(n-2)^{2n-6}}{(n+2)^{2n+6}},\notag\\[6pt]
+|\langle 2p\|r\|nd\rangle|^2 &= \frac{2^{19}n^9(n^2-1)(n-2)^{2n-7}}{3(n+2)^{2n+7}},
+\tag{52.4}\\[6pt]
+|\langle 2p\|r\|ns\rangle|^2 &= \frac{2^{15}n^5(n-2)^{2n-6}}{3(n+2)^{2n+6}}.\notag
+\end{align}
+
+\SourcePage{220}{225}
+Formula~(52.3) is inapplicable for transitions without change of the principal quantum number $n$ (transitions between fine-structure components of a level). In this case ($n = n'$) for carrying out the integration we start from the representation of the radial functions through the generalised Laguerre polynomials:
+\begin{equation}
+R_{nl} = -\frac{2}{n^2}\sqrt{\frac{(n-l-1)!}{[(n+l)!]^3}}\;e^{-r/n}\Bigl(\frac{2r}{n}\Bigr)^l\,L^{2l+1}_{n+l}\!\Bigl(\frac{2r}{n}\Bigr).
+\tag{52.5}
+\end{equation}
+
+In the integral
+\[
+\int_0^\infty R_{n,l-1}\,R_{nl}\,r^3\,dr \propto \int_0^\infty e^{-\rho}\rho^{2l+2}\,L^{2l+1}_{n+l}(\rho)\,L^{2l+1}_{n+l-1}(\rho)\,d\rho
+\]
+we replace one of the polynomials by its expression through the generating function (see~III, \S\,d):
+\[
+L^{2l+1}_{n+l}(\rho) = -\frac{(n+l)!}{(n-l-1)!}\;e^\rho\rho^{-2l-1}\Bigl(\frac{d}{d\rho}\Bigr)^{n-l-1}e^{-\rho}\rho^{n+l}.
+\]
+
+After $(n - l - 1)$-fold integration by parts we obtain an integral of the form
+\[
+\int_0^\infty e^{-\rho}\rho^{n+l}\Bigl(\frac{d}{d\rho}\Bigr)^{n-l-1}\rho L^{2l+1}_{n+l-1}(\rho)\,d\rho,
+\]
+in which we replace the Laguerre polynomial by its explicit expression according to the formula
+\[
+L^m_n(\rho) = (-1)^m n!\sum_{k=0}^{n-m}\binom{n}{m+k}\;\frac{(-\rho)^k}{k!}\,.
+\]
+After carrying out the differentiation only three terms remain in the sum, after which the integration is elementary. The computation leads to the simple result:
+\begin{equation}
+\langle n,\,l-1\|r\|nl\rangle = i\sqrt{l}\cdot\tfrac{3}{2}n\sqrt{n^2 - l^2}.
+\tag{52.6}
+\end{equation}
+
+The integral
+\[
+\int_0^\infty R_{n',l-1}\,R_{nl}\,r^3\,dr = \int_0^\infty\chi_{n',l-1}(r\chi_{nl})\,dr
+\]
+(where $\chi_{nl} = rR_{nl}$) is the coefficient of the expansion of the function $r\chi_{nl}$ in the system of orthogonal functions $\chi_{n',l-1}$ ($n' = 1$,
+
+\SourcePage{221}{226}
+$2$, \ldots). The sum of squares of the moduli of these coefficients equals the integral of the square of the function being expanded\,\footnote{The summation is over both discrete and continuous spectrum states.}. Therefore
+\begin{equation}
+\sum_{n'}|\langle n',\,l-1\|r\|nl\rangle|^2 = l\int_0^\infty r^2\chi^2_{nl}\,dr.
+\tag{52.7}
+\end{equation}
+
+Making use of the known expression for the mean value of $r^2$ in the state $nl$ (see~III, (36.16)), we find the following sum rule:
+\begin{equation}
+\sum_{n'}|\langle n',\,l-1\|r\|nl\rangle|^2 = l\,\frac{n^2}{2}\,[5n^2 + 1 - 3l(l+1)].
+\tag{52.8}
+\end{equation}
+
+For given values of $n$, $l$ and large values of $n'$ the matrix element of the transition $nl \to n'l'$ decreases according to the law
+\begin{equation}
+|\langle n'l'\|r\|nl\rangle|^2 \propto \frac{3}{n'^3},
+\tag{52.9}
+\end{equation}
+as one can verify both from the particular expressions~(52.4) and from the general formula~(52.3). This result is entirely natural: the Coulomb levels $E' = -1/2n'^2$ for large $n'$ are spaced quasi-continuously, and the probability of a transition to any level in the interval $dE'$ is proportional to the density of levels, which itself is $\propto n'^{-3}$.
+
+The Stark effect in hydrogen has, as is well known, a specific character (see~III, \S\,77)---the splitting is proportional to the first power of the electric field. At the same time it is assumed that the field is not strong (condition of applicability of perturbation theory), but at the same time such that the splitting of levels is large compared with the fine structure (i.e.\ large compared to the Lamb shift). Under these conditions the angular momentum is not conserved at all and the levels must be classified by the parabolic quantum numbers $n_1$, $n_2$, $m$. The last of these---the magnetic quantum number $m$---as before determines the projection of the orbital angular momentum onto the axis $z$ (direction of the field), which under the given conditions (neglect of the spin--orbit interaction) is conserved. Therefore the usual selection rule applies:
+\begin{equation}
+m' - m = 0,\,\pm 1.
+\tag{52.10}
+\end{equation}
+For the change of the numbers $n_1$, $n_2$ there are no restrictions.
+
+The matrix elements of the dipole moment in parabolic coordinates can also be computed analytically. The
+
+\SourcePage{222}{227}
+resulting formulae are, however, very cumbersome, and we shall not present them here\,\footnote{These formulae and corresponding numerical tables can be found in the book cited above by \textit{H.\,Bethe} and \textit{E.\,Salpeter}.}.
+
+\bigskip
+\begin{center}\textbf{Problems}\end{center}
+\smallskip
+\textbf{1.} Find the Stark splitting of the levels of hydrogen in the case when the splitting is small compared with the fine-structure intervals (but large compared with the Lamb shift).
+
+\textit{Solution.} Under the stated conditions the doubly degenerate levels with $l = j \pm \tfrac{1}{2}$ remain unperturbed, and the Stark splitting $\Delta$ is determined from the secular equation
+\[
+\begin{vmatrix} -\Delta & -E(d_z)_{12} \\ -E(d_z)_{21} & -\Delta\end{vmatrix} = 0,\qquad \Delta = \pm E|(d_z)_{12}|
+\]
+(indices 1, 2 refer to the states with $l = j \pm \tfrac{1}{2}$ and a given magnetic quantum number $m$; the perturbation $V = -Ed_z$ is diagonal in $m$ and does not have diagonal (in $l$) matrix elements). The matrix element of the orbital quantity $d_z$ is computed with the help of formulae~(29.7) and~(109.3) (see~III), according to which
+\[
+\langle j,\,l-1,\,m|d_z|jlm\rangle = \frac{m}{\sqrt{j(j+1)(2j+1)}}\,\langle j,\,l-1\|d\|jl\rangle,
+\]
+\[
+\langle j,\,l-1\|d\|jl\rangle = -(2j+1)\begin{Bmatrix} l-1 & j & \tfrac{1}{2} \\ j & l & 1\end{Bmatrix}\langle l-1\|d\|l\rangle,
+\]
+where one should put $l = j + \tfrac{1}{2}$; the quantity $\langle l-1\|d\|l\rangle$ is taken from~(52.6). As a result we obtain $\Delta = \pm\tfrac{3}{2}\sqrt{n^2 - (j+\tfrac{1}{2})^2}\;\frac{m}{j(j+1)}\,E$.
+
+\textbf{2.} Determine the probability of emission of a photon in the transition between the states $2\,s_{1/2} \to 1\,s_{1/2}$ of the hydrogen atom (\textit{G.\,Breit, E.\,Teller}, 1940).
+
+\textit{Solution.} The process under consideration is strictly forbidden for $E1$-radiation by parity, and for $E2$-radiation by the rule~(46.15). We should therefore compute the probability of $M1$-radiation, given by formula~(47.5). In the given case ($l = 0$), however, the magnetic moment is a purely spin quantity, and its matrix element in the neglect of the spin--orbit interaction vanishes by virtue of the mutual orthogonality of the orbital wave functions with different principal quantum numbers, so that one must start from the full Dirac equation.
+
+\SourcePage{223}{228}
+In the standard representation of the wave functions the transition current (see~\S\,35)
+\[
+j_{fi} = \psi^\dagger_f\boldsymbol{\alpha}\psi_i = \varphi^\dagger_f\boldsymbol{\sigma}\chi_i + \chi^\dagger_f\boldsymbol{\sigma}\varphi_i.
+\]
+According to~(35.1), (24.2), (24.8), for states with $l = 0$, $j = \tfrac{1}{2}$, the wave functions have the form
+\[
+\psi = \begin{pmatrix}\varphi\\\chi\end{pmatrix} = \frac{1}{4\pi}\begin{pmatrix}f(r)\,w(m)\\-ig(r)(\boldsymbol{\sigma}\mathbf{n})\,w(m)\end{pmatrix},
+\]
+where $\mathbf{n} = \mathbf{r}/r$, and $w(m)$ is a real unit 3-spinor corresponding to the spin projection $m$. Thus,
+\[
+j_{fi} = \frac{1}{4\pi}\bigl\{f_f g_i\,w_f\boldsymbol{\sigma}(\boldsymbol{\sigma}\mathbf{n})\,w_i - g_f f_i\,w_f(\boldsymbol{\sigma}\mathbf{n})\boldsymbol{\sigma}\,w_i\bigr\}.
+\]
+
+Substituting this expression into~(47.4) and integrating over directions $\mathbf{n}$, we get
+\[
+\mu_{fi} = -\frac{e}{6i}\,w_f[\boldsymbol{\sigma}\boldsymbol{\sigma}]w_i\,I = -\frac{e}{3}\,w_f\boldsymbol{\sigma}\,w_i\,I
+\]
+(by virtue of the commutation relations of the Pauli matrices $[\boldsymbol{\sigma}\boldsymbol{\sigma}] = 2i\boldsymbol{\sigma}$); here
+\begin{equation}
+I = \int_0^\infty (f_f g_i + f_i g_f)\,r^3\,dr.
+\tag*{(1)}
+\end{equation}
+
+The probability of emission of a photon~(47.5), summed over the values of $m_f$, is
+\begin{equation}
+w = \frac{4e^2\omega^3}{27}\,w_i\boldsymbol{\sigma}^2 w_i\,I^2 = \frac{4e^2\omega^3}{9}\,I^2.
+\tag*{(2)}
+\end{equation}
+
+From~(35.4) we have (taking $\varkappa = -1$)
+\[
+g = \frac{f'}{\varepsilon + m + \alpha/r} \approx \frac{f'}{2m} - \Bigl(\varepsilon - m + \frac{\alpha}{r} - \frac{R'}{4m^2}\Bigr),
+\]
+where in the second term the exact function $f$ is replaced by the non-relativistic radial function $R$. If we restrict ourselves to the approximation $g = R'/2m$, the integral
+\begin{equation}
+I = \frac{1}{2m}\int_0^\infty (R_f R'_i + R'_f R_i)\,r^3\,dr = -\frac{3}{2m}\int_0^\infty R_f R_i\,r^2\,dr = 0
+\tag*{(3)}
+\end{equation}
+by the orthogonality of the functions $R_f$ and $R_i$. In the next approximation, taking into account~(3),
+\begin{equation}
+I = \frac{1}{2m}\int_0^\infty (f_f f'_i)'\,r^3\,dr + \frac{1}{4m^2}\int_0^\infty\Bigl\{R'_f R_i(\varepsilon_i - \varepsilon_f) - \frac{\alpha}{r}\,(R_f R_i)'\Bigr\}\,r^3\,dr.
+\tag*{(4)}
+\end{equation}
+Noting that by the orthogonality of the exact functions $\psi_i$ and $\psi_f$ we have (for $\varkappa_i = \varkappa_f$)
+\[
+\int_0^\infty (f_i f_f + g_i g_f)\,r^2\,dr = 0,
+\]
+the first term in~(4) can be rewritten after integration by parts as
+\[
+-\frac{3}{2m}\int_0^\infty f_f f_i\,r^2\,dr \approx \frac{3}{8m^3}\int_0^\infty R'_f R'_i\,r^2\,dr,
+\]
+with account of~(3).
+
+The computation of the integral with the functions
+\[
+R_f = 2(m\alpha)^3\,e^{-m\alpha r},\qquad R_i = \frac{(m\alpha)^3}{\sqrt{2}}\Bigl(1 - \frac{m\alpha r}{2}\Bigr)e^{-m\alpha r/2}
+\]
+(see~III, \S\,36) and the difference of energies
+\[
+\omega = \varepsilon_i - \varepsilon_f = \frac{m\alpha^2}{2}\Bigl(1 - \frac{1}{2^2}\Bigr) = \frac{3}{8}\,m\alpha^2
+\]
+gives $I = 2^{3/2}\alpha^2/(9m)$. Whence the probability of the transition (ordinary units)
+\[
+w = \frac{2^5\alpha^7\hbar^2\omega^3}{3^5m^2c^4} = \frac{mc^2\alpha^{13}}{2^4 \cdot 3^5\hbar} = 5.6 \cdot 10^{-6}\,\text{s}^{-1}.
+\]
+The corresponding lifetime of the $2\,s_{1/2}$ state is very large, and in practice the decay occurs much more probably through the simultaneous emission of two photons (see the footnote on p.\,263).
