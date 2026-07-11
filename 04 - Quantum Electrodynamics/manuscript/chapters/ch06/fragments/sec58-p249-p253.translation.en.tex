@@ -1,0 +1,131 @@
+\SourcePage{244}{249}
+\section{Photodisintegration of the deuteron}
+
+A characteristic feature of the deuteron is the smallness of its binding energy (compared with the depth of the potential well). This circumstance allows one to describe the origin of the deuteron reaction without detailed knowledge of the course of the nuclear forces, using only the binding energy (see~III, \S\,133). It is assumed at the same time that the wavelengths of the colliding particles are large compared with the radius of action of the nuclear forces $a$.
+
+This also applies to the disintegration of the deuteron by $\gamma$-quanta, for which $ka \ll 1$. It is assumed also that $pa \ll 1$, where $\mathbf{p}$ is the momentum of relative motion of the freed neutron and proton (this condition is even stronger than the preceding\,\footnote{The photon energy for which $pa \approx 1$ ($a = 1.5 \cdot 10^{-13}$~cm) is about 15~MeV.}).
+
+Starting from the non-relativistic formula for the cross section of the photoeffect~(56.5), integrating it over the directions of the photon:
+\begin{equation}
+\sigma = \frac{e^2\,p}{3M\omega}\;\frac{M}{2}\;\frac{4\pi}{3}\;|\mathbf{v}_p)_{fi}|^2.
+\tag{58.1}
+\end{equation}
+Here $\mathbf{p}$ is the momentum of relative motion of the proton and neutron\,\footnote{In this paragraph $p$ denotes $|\mathbf{p}|$.}, and $m$ in~(56.5) is replaced by their reduced mass $M/2$ (where $M$ is the nucleon mass). The matrix element is taken from the velocity of the proton $\mathbf{v}_p$, since only the proton interacts with the photon. Expressing $\mathbf{v}_p$ through the momentum $\mathbf{p}$ ($\mathbf{v}_p = \mathbf{v}/2 = \mathbf{p}/M$), we have $e\mathbf{p}/M = e\mathbf{v}_p = \dot{\mathbf{d}}$, so that $e\mathbf{p}_{fi}/M = i\omega\mathbf{d}_{fi}$.
+
+The index ($\mathscr{E}$) indicates that this formula corresponds to electric-dipole transitions: $e\mathbf{p}/M = e\mathbf{v}_p = \dot{\mathbf{d}}$, so that $e\mathbf{p}_{fi}/M = i\omega\mathbf{d}_{fi}$.
+
+The normalised wave function of the initial (ground) state of the deuteron:
+\begin{equation}
+\psi = \sqrt{\frac{\varkappa}{2\pi}}\;\frac{e^{-\varkappa r}}{r},\qquad \varkappa = \sqrt{MI},
+\tag{58.2}
+\end{equation}
+where $I = 2.23$~MeV is the binding energy (see~III, \S\,133)\,\footnote{This function can be refined by introducing the correction connected with the finiteness of $a$. This is achieved by replacing the normalisation coefficient in~(58.2) by the coefficient
+\[
+\sqrt{\frac{\varkappa}{2\pi(1-a\varkappa)}}
+\]
+(see~III, (133.13)). Correspondingly there will appear a factor $1/(1-a\varkappa)$ in the formulae for cross sections. In practice this correction is not so small: for the ground state of the deuteron $a\varkappa \approx 0.4$.
+
+The ground state of the deuteron is the state $^3S_1$ with a small ``admixture'' of the state $^3D_1$, associated with the action of tensor nuclear forces (see~III, \S\,117). This admixture, and thereby the tensor forces, we shall neglect.}. As the wave function of the final state we can take the function of free motion, i.e.\ a plane wave
+\begin{equation}
+\psi' = e^{i\mathbf{p}\mathbf{r}}.
+\tag{58.3}
+\end{equation}
+
+\SourcePage{245}{250}
+The reason lies in the fact that in the theory under consideration the ``size of the deuteron'' $1/\varkappa$ is considered large compared with the effective radius of interaction $a$. Therefore the interaction between the proton and the neutron should be taken into account only in $S$-states, neglecting the wave functions in states with $l \neq 0$ at small distances. Meanwhile, according to the selection rules, the electric-dipole transitions between two $S$-states (the ground state and an $S$-state of the continuous spectrum) are forbidden. This gives us the possibility of neglecting the interaction of the nucleons in the final state as well.
+
+By integration by parts we find for the matrix element
+\[
+\mathbf{p}_{fi} = -i\sqrt{\frac{\varkappa}{2\pi}}\int e^{-i\mathbf{p}\mathbf{r}}\nabla\frac{e^{-\varkappa r}}{r}\,d^3x = \sqrt{\frac{\varkappa}{2\pi}}\;\mathbf{p}\left(\frac{e^{-\varkappa r}}{r}\right)_{\!\mathbf{p}} = \sqrt{\frac{\varkappa}{2\pi}}\;\frac{4\pi\mathbf{p}}{p^2+\varkappa^2}
+\]
+(see the footnote on p.\,246).
+
+Noting also the relation
+\[
+\frac{1}{M}\,(\varkappa^2 + \mathbf{p}^2) = I + \frac{\mathbf{p}^2}{M} = \omega,
+\]
+expressing conservation of energy, we finally obtain the cross section of photodisintegration (in ordinary units)
+\begin{equation}
+\sigma^{(\mathscr{E})} = \frac{8\pi}{3}\,\alpha\,\frac{\hbar^2}{M}\;\frac{\sqrt{I(\hbar\omega - I)}(\sqrt{I})^2}{(\hbar\omega)^3}
+\tag{58.4}
+\end{equation}
+(\textit{H.\,A.\,Bethe, R.\,Peierls}, 1935). It has a maximum at $\hbar\omega = 2I$ and vanishes at $\hbar\omega \to I$ and $\hbar\omega \to \infty$.
+
+The electric-dipole absorption described by formula~(58.4) does not, however, give the main contribution to the cross section near the threshold of the photoeffect ($\hbar\omega$ close to $I$). The point is that in this region the main effect must arise from transitions into an $S$-state, which in electric-dipole absorption are forbidden. There is no such restriction in electric-quadrupole absorption either. But in view of the very small magnitude of the intervals of the hyperfine structure the $E2$ emission is highly improbable in comparison with $M1$ (cf.~(50.1)), so that near the threshold of photodisintegration it is necessary to consider the magnetic-dipole absorption, whose selection rules permit transitions between $S$-states (\textit{E.\,Fermi}, 1935).
+
+Replacing in formula~(58.1) the electric moment by the magnetic one, we have
+\begin{equation}
+\sigma^{(\mathscr{M})} = \frac{1}{3}\,\omega Mp\,|\boldsymbol{\mu}_{fi}|^2.
+\tag{58.5}
+\end{equation}
+The magnetic moment of the orbital motion does not contribute to $\boldsymbol{\mu}_{fi}$, since the orbital angular momentum $\mathbf{L}$ has no matrix elements for transitions between $S$-states. The spin magnetic moment
+\[
+\boldsymbol{\mu} = 2\mu_p\mathbf{s}_p + 2\mu_n\mathbf{s}_n = 2(\mu_p - \mu_n)\mathbf{s}_p + 2\mu_n\mathbf{S},
+\]
+where $\mathbf{S} = \mathbf{s}_p + \mathbf{s}_n$, and $\mu_p$, $\mu_n$ are the magnetic moments of the proton and neutron. In the neglect of tensor nuclear forces the total spin is conserved, so that its operator does not give rise to transitions. Therefore
+\[
+\boldsymbol{\mu}_{fi} = 2(\mathbf{s}_p)_{fi}(\mu_p - \mu_n).
+\]
+
+\SourcePage{246}{251}
+In the same approximation (without tensor forces) the spin and coordinate variables separate. Together with the wave functions representing a product of the spin and coordinate parts, the matrix element also
+\[
+\boldsymbol{\mu}_{fi} = 2(\mu_p - \mu_n)\langle s_p\,S'M'|\mathbf{s}_p|s_p\,SM\rangle\int\psi'^*\psi\,d^3x.
+\]
+
+But the presence of spin--spin nuclear forces leads to the fact that the wave equation for the coordinate functions $\psi(r)$ contains
+
+\SourcePage{247}{252}
+as a parameter the value of the spin $S$. If $S' = S$, then $\psi'(r)$ and $\psi(r)$ are eigenfunctions of one and the same operator and are therefore orthogonal. Thus, from the initial state $^3S$ the photodisintegration will occur only to a state of the continuous spectrum $^1S$.
+
+The square $|\boldsymbol{\mu}_{fi}|^2$ in~(58.5) must, of course, be averaged over the projections $M$ of the spin $\mathbf{S}$ in the initial state. Thus, the problem reduces to the computation of the quantity
+\[
+\frac{1}{2S+1}\sum_M|\langle s_p\,S'M'|\mathbf{s}_p|s_p\,SM\rangle|^2,
+\]
+where $s_p = s_n = \tfrac{1}{2}$, $S = 1$, $S' = 0$. By the general formulae for matrix elements in the addition of angular momenta this quantity is
+\[
+\frac{1}{(2S+1)(2S'+1)}\begin{Bmatrix} s_p & S' & s_n \\ s_p & S & 1\end{Bmatrix}^{\!2}|\langle s_p\|s_p\|s_p\rangle|^2 = \frac{1}{6}\,|\langle s_p\|s_p\|s_p\rangle|^2
+\]
+(formulae~III, (107.11), (109.3) have been used). The reduced matrix element
+\[
+\langle s_p\|s_p\|s_p\rangle = \sqrt{s_p(s_p+1)(2s_p+1)} = \sqrt{3/2}.
+\]
+
+Formula~(58.5) takes as a result the form
+\begin{equation}
+\sigma^{(\mathscr{M})} = \frac{1}{3}\,\omega Mp(\mu_p - \mu_n)^2\left|\int\psi'^*\psi\,d^3x\right|^2.
+\tag{58.6}
+\end{equation}
+
+The initial function $\psi$ is given by~(58.2). The final function is
+\[
+\psi' = \frac{1}{2p}\,R_{p0}(r).
+\]
+This is the first ($l = 0$) term of the expansion~(56.7) of the function containing asymptotically a plane wave and a converging spherical wave; an inessential phase factor is omitted. Since the integration is carried out over the region outside the radius of action of the nuclear forces, the radial function
+\[
+R_{p0}(r) = 2\,\frac{\sin(pr + \delta)}{r}.
+\]
+The phase $\delta$ is related to the energy of the virtual level ($I_1 = 0.067$~MeV) of the system ``proton + neutron'' at $S = 0$:
+\[
+\mathrm{ctg}\,\delta = \frac{\varkappa_1}{p},\qquad \varkappa_1 = \sqrt{MI_1}
+\]
+
+\SourcePage{248}{253}
+(see~III, \S\,133). Now
+\[
+\int\psi'^*\psi\,d^3x = (2\pi)^{3/2}\,\frac{\sqrt{\varkappa}}{p\pi}\,\mathrm{Im}\int e^{-\varkappa r + ipr}\,e^{i\delta}\,dr = (2\pi)^{3/2}\,\frac{\sqrt{\varkappa}}{p\pi}\,\mathrm{Im}\,\frac{e^{i\delta}}{\varkappa - ip}.
+\]
+
+After simple algebraic transformations we obtain the following expression for the cross section of photodisintegration (in ordinary units):
+\begin{equation}
+\sigma^{(\mathscr{M})} = \frac{8\pi}{3\hbar c}\,(\mu_p - \mu_n)^2\;\frac{\sqrt{I(\hbar\omega - I)}(\sqrt{I} + \sqrt{I_1})^2}{\hbar\omega(\hbar\omega - I + I_1)}.
+\tag{58.7}
+\end{equation}
+
+At $\hbar\omega \to I$ this cross section vanishes as $\sqrt{\hbar\omega - I}$---in accordance with the general behaviour of cross sections near the threshold of a reaction (see~III, \S\,147).
+
+The process inverse to photodisintegration is the radiational capture of a proton by a neutron. The cross section of capture ($\sigma_3$) is found from the cross section of the photoeffect ($\sigma_\Phi$) with the help of the principle of detailed balance (cf.\ the derivation of~(56.15)). The spin statistical weight of the neutron and proton is $2 \cdot 2 = 4$. The statistical weight of the deuteron (in the state with $S = 1$) and the photon is $3 \cdot 2 = 6$. Therefore
+\begin{equation}
+\sigma_3 = \frac{3}{2}\,\frac{(\hbar\omega)^2}{c^2p^2}\,\sigma_\Phi = \frac{3(\hbar\omega)^2}{2Mc^2(\hbar\omega - I)}\,\sigma_\Phi.
+\tag{58.8}
+\end{equation}
