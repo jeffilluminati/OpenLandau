@@ -1,0 +1,49 @@
+\SourcePage{27}{32}
+\section{Angular momentum and parity of the photon}
+
+As with any particle, the photon can possess a definite angular momentum. In order to elucidate the properties of this quantity for the photon, let us begin by recalling how the angular momentum of a particle is connected with its wave function in the formalism of quantum mechanics.
+
+The total angular momentum~$\mathbf{j}$ of a particle consists of the orbital part~$\mathbf{l}$ and the intrinsic part --- the spin~$\mathbf{s}$. A particle of spin~$s$ is described by a symmetric spinor of rank~$2s$, i.e.\ a set of $2s + 1$ components that transform into one another under coordinate-system rotations according to a specific law. The orbital angular momentum is instead linked to how the wave functions depend on coordinates: states with orbital angular momentum~$l$ have wave-function components that are expressed (linearly) in terms of spherical harmonics of order~$l$.
+
+The ability to distinguish consistently between spin and orbital angular momentum therefore demands that the ``spin'' and ``coordinate'' properties of the wave functions be independent: the coordinate dependence of each spinor component (at a given instant of time) should not be constrained by any supplementary conditions.
+\SourcePage{28}{33}
+Passing to the momentum representation, coordinate dependence becomes dependence on~$\mathbf{k}$. In the three-dimensionally transverse gauge the photon wave function is the vector~$\mathbf{A}(\mathbf{k})$. Because a vector is equivalent to a rank-2 spinor, one could formally ascribe spin~1 to the photon. This vector wave function, however, must satisfy the transversality requirement $\mathbf{kA}(\mathbf{k}) = 0$, an extra constraint on the way~$\mathbf{A}(\mathbf{k})$ depends on momentum. It follows that the dependence on~$\mathbf{k}$ can no longer be chosen freely for every vector component at once, making it impossible to disentangle orbital angular momentum and spin.
+
+We note also that for the photon one cannot define spin as the angular momentum of the particle at rest, since for a photon traveling at the speed of light no rest frame exists at all.
+
+Thus, for a photon one can speak only of its total angular momentum. It is clear from the outset that the total angular momentum can assume only integer values. This is already evident from the fact that among the quantities characterizing the photon there are no spinors of odd rank.
+
+As for any particle, the state of a photon is further characterized by its parity, associated with the behavior of the wave function under spatial inversion (see Vol.~III, \S~30). In the momentum representation, a reversal of the sign of the coordinates corresponds to reversing the sign of every component of~$\mathbf{k}$. The action of the inversion operator~$\hat{P}$ on a scalar function~$\varphi(\mathbf{k})$ amounts simply to this sign change: $\hat{P}\varphi(\mathbf{k}) = \varphi(-\mathbf{k})$. When acting on the vector function~$\mathbf{A}(\mathbf{k})$, one must additionally take into account that reversing the axes also reverses the sign of every component of the vector; hence\footnote{We adopt the convention of defining the parity of a state by the action of the inversion operator on the polar vector~$\mathbf{A}$ (or, equivalently, the corresponding electric vector $\mathbf{E} = i\omega\mathbf{A}$). This differs in sign from the action on the axial vector $\mathbf{H} = i[\mathbf{kA}]$, since inversion does not reverse the direction of such a vector:
+\[
+\hat{P}\mathbf{H}(\mathbf{k}) = \mathbf{H}(-\mathbf{k}).
+\]}
+\begin{equation}
+\hat{P}\mathbf{A}(\mathbf{k}) = -\mathbf{A}(-\mathbf{k}).
+\tag{6.1}
+\end{equation}
+
+Although the decomposition of the photon's angular momentum into orbital and spin parts lacks physical meaning, it is nevertheless convenient to introduce ``spin''~$s$ and ``orbital'' angular momentum~$l$ in a formal sense as auxiliary concepts describing the transformation properties of the wave function with respect to rotations: the value $s = 1$ reflects the vectorial character of the wave function, while~$l$ is the order of the spherical harmonics entering it. Here we have in mind the wave functions of states with definite values of the photon's angular momentum, which for a free particle take the form of spherical waves. The number~$l$ determines, in particular, the parity of the photon state, equal to
+\begin{equation}
+P = (-1)^{l+1}
+\tag{6.2}
+\end{equation}
+
+In the same formal sense one can write the angular-momentum operator~$\hat{\mathbf{j}}$ as the sum $\hat{\mathbf{s}}+\hat{\mathbf{l}}$. As is well known, the angular-momentum operator is associated with infinitesimally small rotations of the coordinate system; here, with the action of such a rotation on a vector field. Within the decomposition $\hat{\mathbf{s}} + \hat{\mathbf{l}}$, the operator~$\hat{\mathbf{s}}$ acts on the vector index and intermixes the various components of the vector. The operator~$\hat{\mathbf{l}}$ acts on these same components viewed as functions of momentum (or of coordinates).
+\SourcePage{29}{34}
+Let us count the number of states (at a given energy) that are possible for a given value~$j$ of the photon's angular momentum (setting aside the trivial $(2j+1)$-fold degeneracy with respect to the direction of the angular momentum).
+
+For independent~$\mathbf{l}$ and~$\mathbf{s}$ this counting is carried out simply by enumerating the ways in which, according to the rules of the vector model, the angular momenta~$\hat{\mathbf{l}}$ and~$\mathbf{s}$ can be composed so as to yield the required value of~$j$. For a particle with spin $s = 1$ we would find in this way (for a given nonzero value of~$j$) three states with the following values of~$l$ and parity:
+\[
+l = j,\ P = (-1)^{l+1} = (-1)^{j+1}; \quad l = j\pm 1,\ P = (-1)^{l+1} = (-1)^j.
+\]
+If $j = 0$, there is only a single state (with $l = 1$) having parity $P = +1$.
+
+This counting, however, has not accounted for the transversality condition on~$\mathbf{A}$; all three components were regarded as independent. From the result obtained one must therefore subtract the number of states associated with a longitudinal vector. A longitudinal vector can be expressed as~$\mathbf{k}\varphi(\mathbf{k})$, and it is apparent that, owing to its transformation behavior (with respect to rotations), its three components reduce to a single scalar~$\varphi$\,\footnote{Indeed, when one speaks of the transformation character of a quantity under rotation, one means a transformation at a given point, i.e.\ at a given~$\mathbf{k}$. Under such a transformation $\mathbf{k}\varphi(\mathbf{k})$ does not change at all, i.e.\ it behaves as a scalar.}. The extra state that is excluded by transversality would therefore belong to a particle whose wave function is a scalar (a spinor of rank zero), that is, a particle with ``spin~0''\,\footnote{Let us emphasize once more that what is meant here is not the state of any real particle. The counting carried out here is purely formal and amounts, mathematically, to sorting the complete collection of quantities that mix under rotations into irreducible representations of the rotation group.}. For this state the angular momentum~$j$ equals the order of the spherical harmonics appearing in~$\varphi$. Its parity, viewed as a photon state, follows from how the inversion operator acts on the vector function~$\mathbf{k}\varphi$:
+\[
+\hat{P}(\mathbf{k}\varphi) = -(-\mathbf{k})\varphi(-\mathbf{k}) = (-1)^j\mathbf{k}\varphi(\mathbf{k}),
+\]
+i.e.\ it equals~$(-1)^j$. Thus, from the above count of states with parity~$(-1)^j$ (two for $j \neq 0$ and one for $j = 0$) one must subtract one.
+
+We arrive finally at the result that for nonzero photon angular momentum~$j$ there exist one even-parity and one odd-parity state. For $j = 0$ we obtain no states whatsoever. This means that the photon can never have zero angular momentum, so that~$j$ takes only the values $1, 2, 3, \ldots$\, The impossibility of $j = 0$ is, moreover, obvious: the wave function of a state with vanishing angular momentum would have to be spherically symmetric, which is manifestly impossible for a transverse wave.
+
+There is a standard nomenclature for the various photon states. When a photon carries angular momentum~$j$ with parity~$(-1)^j$ it is called an \emph{electric $2^j$-pole} (or $Ej$) photon; when its parity is $(-1)^{j+1}$ it is called a \emph{magnetic $2^j$-pole} (or $Mj$) photon. In particular, the electric dipole photon has odd parity and $j = 1$; the electric quadrupole photon has even parity and $j = 2$; the magnetic dipole photon has even parity and $j = 1$\,\footnote{This nomenclature mirrors the usage in the classical theory of radiation: as will be shown later (\secsref{46}{47}), the production of electric- and magnetic-type photons is controlled by the respective electric and magnetic multipole moments of the system of charges.}.
