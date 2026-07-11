@@ -1,31 +1,31 @@
 \SourcePage{367}{370}
 \section{Crossing of electronic terms}
 
-The electronic terms of a diatomic molecule, regarded as functions of the internuclear distance $r$, may be displayed graphically by plotting the energy against $r$. Whether curves representing different terms can cross is an important question.
+The electronic terms of a diatomic molecule may be represented graphically as functions of the distance $r$ between the nuclei, with the energy plotted against $r$. The question whether the curves representing different terms can cross is of considerable interest.
 
-Let $U_1(r)$ and $U_2(r)$ be two different electronic terms. If they intersect at some point, then near that point their values are close. It is convenient to formulate the question of whether such an intersection is possible as follows.
+Let $U_1(r)$ and $U_2(r)$ be two different electronic terms. If they cross at some point, then near that point the functions $U_1$ and $U_2$ must have close values. It is convenient to formulate the question of whether such a crossing is possible in the following way.
 
-Consider a point $r_0$ at which $U_1(r)$ and $U_2(r)$ have very close but unequal values, denoted by $E_1$ and $E_2$, and ask whether the two terms can be made equal by shifting the point through a small amount $\delta r$. The energies $E_1$ and $E_2$ are eigenvalues of the Hamiltonian $\widehat H_0$ for the electrons in the field of nuclei separated by $r_0$. If $r$ is increased by $\delta r$, the Hamiltonian becomes $\widehat H_0+\widehat V$, where $\widehat V=\delta r\,\partial\widehat H_0/\partial r$ is a small correction. The values of $U_1$ and $U_2$ at $r_0+\delta r$ may be treated as eigenvalues of this new Hamiltonian. Thus perturbation theory can be used to determine the two terms at $r_0+\delta r$, with $\widehat V$ regarded as a perturbation of $\widehat H_0$.
+Consider a point $r_0$ at which the values of $U_1(r)$ and $U_2(r)$ are very close but not equal; denote them by $E_1$ and $E_2$. We ask whether $U_1$ and $U_2$ can be made equal by shifting the point through a small amount $\delta r$. The energies $E_1$ and $E_2$ are eigenvalues of the Hamiltonian $\widehat H_0$ for the electrons in the field of nuclei separated by the distance $r_0$. If $r$ is increased by $\delta r$, the Hamiltonian becomes $\widehat H_0+\widehat V$, where $\widehat V=\delta r\,\partial\widehat H_0/\partial r$ is a small correction; the values of $U_1$ and $U_2$ at $r_0+\delta r$ may be regarded as eigenvalues of the new Hamiltonian. This formulation makes it possible to find the values of the terms $U_1(r)$ and $U_2(r)$ at $r_0+\delta r$ by perturbation theory, with $\widehat V$ treated as a perturbation of $\widehat H_0$.
 
-The ordinary perturbation method is not applicable here, since the unperturbed eigenvalues $E_1$ and $E_2$ lie very close together and their difference need not be large compared with the perturbation; condition (38.9) is not satisfied. As $E_2-E_1\to0$ the eigenvalues become degenerate, so for neighboring eigenvalues it is natural to use a method analogous to that developed in \S~39.
+The ordinary method of perturbation theory is not applicable here, however, because the energy eigenvalues $E_1$ and $E_2$ of the unperturbed problem lie very close to each other, and their difference need not be large compared with the perturbation (condition (38.9) is not fulfilled). As the limit $E_2-E_1=0$ gives the case of degenerate eigenvalues, it is natural to treat close eigenvalues by a method analogous to that developed in \S~39.
 
-Let $\psi_1$ and $\psi_2$ be eigenfunctions of the unperturbed operator $\widehat H_0$ belonging to $E_1$ and $E_2$. Instead of $\psi_1$ and $\psi_2$ themselves, take as the initial zeroth approximation their linear combinations
+Let $\psi_1$ and $\psi_2$ be eigenfunctions of the unperturbed operator $\widehat H_0$, belonging to the energies $E_1$ and $E_2$. As the initial zeroth approximation, instead of $\psi_1$ and $\psi_2$ themselves, take their linear combinations
 \begin{equation}
  \psi=c_1\psi_1+c_2\psi_2.
  \tag{79.1}
 \end{equation}
 
 \SourcePage{368}{371}
-Substitution in the perturbed equation
+Substitution of this expression into the perturbed equation
 \begin{equation}
- (\widehat H_0+\widehat V)\psi=E\psi
+ (\widehat H_0+\widehat V)\psi=E\psi,
  \tag{79.2}
 \end{equation}
 gives
 \[
  c_1(E_1+\widehat V-E)\psi_1+c_2(E_2+\widehat V-E)\psi_2=0.
 \]
-Multiplying this equation on the left in turn by $\psi_1^*$ and $\psi_2^*$ and integrating, we obtain two algebraic equations:
+Multiplying this equation on the left in turn by $\psi_1^*$ and $\psi_2^*$ and integrating, we obtain the two algebraic equations
 \begin{equation}
  \left.\begin{aligned}
  c_1(E_1+V_{11}-E)+c_2V_{12}&=0,\\
@@ -33,7 +33,7 @@ Multiplying this equation on the left in turn by $\psi_1^*$ and $\psi_2^*$ and i
  \end{aligned}\right\}
  \tag{79.3}
 \end{equation}
-Because $\widehat V$ is Hermitian, $V_{11}$ and $V_{22}$ are real and $V_{12}=V_{21}^*$. The compatibility condition is
+Since $\widehat V$ is Hermitian, the matrix elements $V_{11}$ and $V_{22}$ are real, while $V_{12}=V_{21}^*$. The compatibility condition for these equations is
 \[
  \begin{vmatrix}E_1+V_{11}-E&V_{12}\\V_{21}&E_2+V_{22}-E\end{vmatrix}=0,
 \]
@@ -43,32 +43,32 @@ and hence
  \sqrt{\frac14(E_1-E_2+V_{11}-V_{22})^2+|V_{12}|^2}.
  \tag{79.4}
 \end{equation}
-This formula gives the required energy eigenvalues to first approximation.
+This formula determines the required energy eigenvalues in the first approximation.
 
-If the energies of the two terms become equal at $r_0+\delta r$, the two values of $E$ in (79.4) must coincide. The expression under the radical must therefore vanish. Since it is a sum of two squares, the conditions for a crossing are
+If the energies of the two terms become equal at $r_0+\delta r$, so that the terms cross, the two values of $E$ given by (79.4) must coincide. The expression under the square root in (79.4) must therefore vanish. Since it is a sum of two squares, the conditions for a crossing point are
 \begin{equation}
  E_1-E_2+V_{11}-V_{22}=0,\qquad V_{12}=0.
  \tag{79.5}
 \end{equation}
-But there is only one arbitrary parameter specifying the perturbation $\widehat V$, namely the displacement $\delta r$. Consequently the two equations (79.5) cannot in general be satisfied simultaneously (we suppose that $\psi_1$ and $\psi_2$ have been chosen real, so that $V_{12}$ is real as well).
+But only one arbitrary parameter is available to specify the perturbation $\widehat V$, namely the displacement $\delta r$. Thus, in general, the two equations (79.5) cannot be fulfilled simultaneously. Here we assume that $\psi_1$ and $\psi_2$ have been chosen real, so that $V_{12}$ is real as well.
 
-It may happen, however, that $V_{12}$ vanishes identically. Only one
+It may happen, however, that the matrix element $V_{12}$ vanishes identically. Only one
 
 \SourcePage{369}{372}
-equation (79.5) then remains, and it can be satisfied by a suitable choice of $\delta r$. This occurs whenever the two terms have different symmetry. Here symmetry includes every possible kind: symmetry under rotations about the axis, reflections in planes, inversion, and permutations of electrons. For a diatomic molecule, the two terms may differ in $\Lambda$, parity, or multiplicity; two $\Sigma$ terms may also differ as $\Sigma^+$ and $\Sigma^-$.
+equation (79.5) then remains, and it can be fulfilled by a suitable choice of $\delta r$. This occurs whenever the two terms under consideration have different symmetries. Here symmetry includes every possible kind: symmetry with respect to rotations about the axis, reflections in planes, inversion, and permutations of electrons. For a diatomic molecule, therefore, the terms may differ in $\Lambda$, parity, or multiplicity; for $\Sigma$ terms they may also be $\Sigma^+$ and $\Sigma^-$.
 
-This statement follows because the perturbation operator, like the Hamiltonian itself, commutes with all the molecular symmetry operators: the angular-momentum operator about the axis, the reflection and inversion operators, and the electron-permutation operators. It was shown in \S\S~29 and 30 that a scalar quantity whose operator commutes with the angular-momentum and inversion operators can have nonzero matrix elements only between states of equal angular momentum and parity. Essentially the same proof applies to an arbitrary symmetry operator. We shall not repeat it here, particularly since \S~97 will give another general proof based on group theory.
+This statement follows from the fact that the perturbation operator, like the Hamiltonian itself, commutes with all the symmetry operators of the molecule: the operator of angular momentum about the axis, the reflection and inversion operators, and the electron-permutation operators. It was shown in \S\S~29 and 30 that, for a scalar quantity whose operator commutes with the angular-momentum and inversion operators, only matrix elements for transitions between states of equal angular momentum and parity can be nonzero. Essentially the same proof applies to an arbitrary symmetry operator. We shall not repeat it here, especially since another general proof, based on group theory, will be given in \S~97.
 
-We thus reach the conclusion that, in a diatomic molecule, only terms of different symmetry can cross; terms of the same symmetry cannot cross (E.~Wigner, J.~von Neumann, 1929). If an approximate calculation produced two crossing terms of the same symmetry, the next approximation would separate them, as shown by the solid curves in Fig.~27.
+We therefore reach the result that in a diatomic molecule only terms of different symmetry can cross; terms of the same symmetry cannot cross (E.~Wigner, J.~von Neumann, 1929). If some approximate calculation were to give two crossing terms of the same symmetry, the next approximation would separate them, as the solid curves in Fig.~27 show.
 
-This result is not restricted to diatomic molecules. It is in fact a general theorem of quantum mechanics, valid whenever the Hamiltonian contains a parameter and its eigenvalues are consequently functions of that parameter.
+It should be stressed that this result is not confined to a diatomic molecule. It is in fact a general theorem of quantum mechanics, valid whenever the Hamiltonian contains a parameter and its eigenvalues are consequently functions of that parameter.
 
-In group-theoretical language (see \S~96), the general requirement for terms to cross is that they belong to different irreducible representations of the symmetry group of the system's Hamiltonian\footnote{The electronic terms of the $\mathrm H_2^+$ ion appear to be an exception. They are characterized by the angular-momentum projection $\Lambda$ and two elliptic quantum numbers $n_\xi,n_\eta$ (see the problem in \S~78). Since these numbers belong to functions of different variables, there is in general no reason to prevent the crossing of terms $E(R)$ that have the same $\Lambda$ but different pairs $n_\xi,n_\eta$, although such terms have the same symmetry under rotations and reflections. In fact, however, separability of the variables in the Schrödinger equation means that the Hamiltonian has a higher symmetry than its geometric properties alone imply; with respect to this full symmetry group, states of different $n_\xi,n_\eta$ belong to different types.}.
+In the language of group theory (see \S~96), the general requirement for terms to be capable of crossing is that they belong to different irreducible representations of the symmetry group of the system's Hamiltonian\footnote{The electronic terms of the $\mathrm H_2^+$ ion appear to be an exception to this rule. These terms are characterized by the angular-momentum projection $\Lambda$ and by two elliptic quantum numbers $n_\xi$, $n_\eta$ (see the problem in \S~78). Since all these numbers are associated with functions of different variables, there is in general no reason to prevent terms $E(R)$ with different pairs $n_\xi$, $n_\eta$ but the same $\Lambda$ from crossing, although such terms have the same symmetry with respect to rotations and reflections. In reality, however, separability of the variables in the Schrödinger equation for this system means that its Hamiltonian has a higher symmetry than its geometrical properties alone suggest; relative to this full symmetry group, states with different values of $n_\xi$, $n_\eta$ belong to different types.}.
 
 \SourcePage{370}{373}
-For a polyatomic molecule, the electronic terms depend not on one parameter but on several---the distances between the various nuclei.
+In a polyatomic molecule the electronic terms depend not on one parameter but on several: the distances between the various nuclei.
 
-Let $s$ be the number of independent internuclear distances; for an $N$-atom molecule ($N>2$) with an arbitrary nuclear configuration, $s=3N-6$. Geometrically, every term $U_n(r_1,\ldots,r_s)$ is a surface in a space of $s+1$ dimensions. Intersections of these surfaces may occur along manifolds whose dimensionality ranges from 0 (an isolated point) to $s-1$.
+Let $s$ be the number of independent internuclear distances. In an $N$-atom molecule ($N>2$), with an arbitrary arrangement of the nuclei, this number is $s=3N-6$. Geometrically, each term $U_n(r_1,\ldots,r_s)$ is a surface in a space of $s+1$ dimensions. One may then speak of intersections of these surfaces along manifolds of various dimensions, from 0 (intersection at a point) to $s-1$.
 
 \begin{figure}[ht]
 \centering
@@ -83,9 +83,9 @@ Let $s$ be the number of independent internuclear distances; for an $N$-atom mol
 \caption*{Fig. 27}
 \end{figure}
 
-The foregoing argument remains fully valid, except that the perturbation $\widehat V$ is now specified not by one parameter but by $s$ of them, the displacements $\delta r_1,\ldots,\delta r_s$. With as few as two parameters, however, the two equations (79.5) can in general be satisfied. Thus, in polyatomic molecules any pair of terms can cross. If the terms have the same symmetry, their crossing is fixed by the two conditions (79.5), and the intersection manifold has dimension $s-2$. For terms of different symmetry only one condition remains, and the intersection manifold has dimension $s-1$.
+The foregoing derivation remains fully valid, except that the perturbation $\widehat V$ is now determined not by one parameter but by $s$ parameters, the displacements $\delta r_1,\ldots,\delta r_s$. With as few as two parameters, however, the two equations (79.5) can in general be fulfilled. We thus arrive at the result that any two terms in a polyatomic molecule can cross. For terms of the same symmetry, the crossing is specified by the two conditions (79.5), so the manifold along which the crossing occurs has dimension $s-2$. For terms of different symmetry only one condition remains, and the crossing occurs along a manifold of dimension $s-1$.
 
-For example, when $s=2$, the terms are surfaces in a three-dimensional coordinate system. If the terms have different symmetry, these surfaces intersect along lines ($s-1=1$); if their symmetry is the same, they intersect at points ($s-2=0$). The form of the surfaces near such an isolated intersection is easily found. The energies near a crossing point are given by (79.4). In that expression the matrix elements $V_{11}$, $V_{22}$, and $V_{12}$ are linear functions of $\delta r_1$, $\delta r_2$, and hence linear
+Thus, for $s=2$, the terms are represented by surfaces in a three-dimensional coordinate system. If the terms have different symmetries, these surfaces intersect along lines ($s-1=1$); if they have the same symmetry, they intersect at points ($s-2=0$). The shape of the surfaces near a crossing point in the latter case is readily found. The energy values near such points are given by (79.4). In this expression the matrix elements $V_{11}$, $V_{22}$, and $V_{12}$ are linear functions of the displacements $\delta r_1$, $\delta r_2$, and hence linear
 
 \begin{figure}[ht]
 \centering
@@ -103,4 +103,4 @@ For example, when $s=2$, the terms are surfaces in a three-dimensional coordinat
 \end{figure}
 
 \SourcePage{371}{374}
-functions of the distances $r_1$, $r_2$ themselves. As is known from analytic geometry, such an equation describes an elliptic cone. Near a crossing point, therefore, the terms form a two-napped elliptic cone of arbitrary orientation (Fig.~28).
+functions of the distances $r_1$, $r_2$ themselves. As is known from analytic geometry, an equation of this form describes an elliptic cone. Thus, near their crossing points the terms are represented by a two-napped elliptic cone of arbitrary orientation (Fig.~28).

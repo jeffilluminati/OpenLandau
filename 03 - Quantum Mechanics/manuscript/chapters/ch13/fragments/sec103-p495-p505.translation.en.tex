@@ -1,0 +1,334 @@
+\SourcePage{495}{498}
+\setcounter{section}{102}
+\section{Quantization of rigid-rotor rotation}
+
+The study of the rotational levels of a polyatomic molecule is often complicated by the need to consider rotation together with vibration. As a preliminary problem, we shall consider the rotation of a molecule as a rigid body, that is, with its atoms ``rigidly fixed'' (a \emph{rigid rotor}).
+
+Let $\xi\eta\zeta$ be a coordinate system whose axes are directed along the three principal axes of inertia of the rotor and which rotates with it. The corresponding Hamiltonian is obtained by replacing the components $J_\xi,J_\eta,J_\zeta$ of its angular momentum in the classical expression for the energy by the corresponding operators:
+\begin{equation}
+ \hat H=\frac{\hbar^2}{2}\left(\frac{\hat J_\xi^2}{I_A}+\frac{\hat J_\eta^2}{I_B}+\frac{\hat J_\zeta^2}{I_C}\right), \tag{103.1}
+\end{equation}
+where $I_A,I_B,I_C$ are the principal moments of inertia of the rotor.
+
+The commutation rules for the operators $\hat J_\xi,\hat J_\eta,\hat J_\zeta$, the components of angular momentum in the rotating coordinate system, are not evident, since the usual derivation of the commutation rule concerns the components $\hat J_x,\hat J_y,\hat J_z$ in a fixed coordinate system. They are readily obtained, however, from the formula
+\begin{equation}
+ (\hat{\mathbf J}\mathbf a)(\hat{\mathbf J}\mathbf b)-(\hat{\mathbf J}\mathbf b)(\hat{\mathbf J}\mathbf a)=-i\hat{\mathbf J}(\mathbf a\times\mathbf b), \tag{103.2}
+\end{equation}
+where $\mathbf a,\mathbf b$ are any two vectors characterizing the given body (and commuting with one another). This formula is easily
+
+\SourcePage{496}{499}
+verified by evaluating the left-hand side in the fixed coordinate system $xyz$, using the general commutation rules of the angular-momentum components with one another and with the components of an arbitrary vector.
+
+Let $\mathbf a$ and $\mathbf b$ be unit vectors along the $\xi$ and $\eta$ axes. Then $\mathbf a\times\mathbf b$ is a unit vector along the $\zeta$ axis, and (103.2) gives
+\begin{equation}
+ \hat J_\xi\hat J_\eta-\hat J_\eta\hat J_\xi=-i\hat J_\zeta. \tag{103.3}
+\end{equation}
+The other two relations follow similarly.
+
+Thus the commutation rules for the operators of the angular-momentum components in the rotating coordinate system differ from those in the fixed system only by the sign on the right-hand side\footnote{This circumstance expresses the fact that, as regards the action on the rotor wave function, a rotation of the $xyz$ system is equivalent to the opposite rotation of the $\xi\eta\zeta$ system.}. It follows that all the results previously derived from the commutation rules for eigenvalues and matrix elements also hold for $J_\xi,J_\eta,J_\zeta$, with the sole difference that every expression must be replaced by its complex conjugate. In particular, the eigenvalues of $J_\zeta$ (which in this section we denote by $k$, to distinguish them from the eigenvalues $J_z=M$) take the values $k=-J,\ldots,+J$, where $J$ (an integer!) is the magnitude of the rotor angular momentum.
+
+\textbf{Spherical rotor.} The energy eigenvalues of a rotating rotor are found most simply when all three principal moments of inertia are equal: $I_A=I_B=I_C=I$. For a molecule this occurs when it has the symmetry of one of the cubic point groups. The Hamiltonian (103.1) becomes
+\[
+ \hat H=\frac{\hbar^2}{2I}\hat{\mathbf J}^{2},
+\]
+and its eigenvalues are
+\begin{equation}
+ E=\frac{\hbar^2}{2I}J(J+1). \tag{103.4}
+\end{equation}
+Each of these energy levels is degenerate with respect to the $2J+1$ directions of the angular momentum relative to the rotor itself (that is, with respect to the values $J_\zeta=k$)\footnote{Here and below we disregard the always present, physically inessential $(2J+1)$-fold degeneracy with respect to the directions of the angular momentum relative to the fixed coordinate system. When it is included, the total degeneracy of the energy levels of a spherical rotor is $(2J+1)^2$.}.
+
+\SourcePage{497}{500}
+\textbf{Symmetric rotor.} The energy levels are also readily calculated when only two moments of inertia of the rotor coincide: $I_A=I_B\ne I_C$. This occurs for molecules having a single symmetry axis of order greater than two. The Hamiltonian (103.1) takes the form
+\begin{equation}
+ \hat H=\frac{\hbar^2}{2I_A}(\hat J_\xi^2+\hat J_\eta^2)+\frac{\hbar^2}{2I_C}\hat J_\zeta^2
+ =\frac{\hbar^2}{2I_A}\hat{\mathbf J}^{2}+\frac{\hbar^2}{2}\left(\frac1{I_C}-\frac1{I_A}\right)\hat J_\zeta^2. \tag{103.5}
+\end{equation}
+It follows that in a state with definite $J$ and $k$ the energy is
+\begin{equation}
+ E=\frac{\hbar^2}{2I_A}J(J+1)+\frac{\hbar^2}{2}\left(\frac1{I_C}-\frac1{I_A}\right)k^2, \tag{103.6}
+\end{equation}
+which determines the energy levels of a symmetric rotor.
+
+The degeneracy in $k$ present for the spherical rotor is partially removed here. The energies coincide only for values of $k$ differing in sign alone, corresponding to mutually opposite directions of the angular momentum relative to the rotor axis. Thus the levels of a symmetric rotor with $k\ne0$ are doubly degenerate.
+
+The stationary states of a symmetric rotor are therefore characterized by three quantum numbers: the angular momentum $J$ and its projections on the rotor axis ($J_\zeta=k$) and on the space-fixed $z$ axis ($J_z=M$); the rotor energy is independent of the last number. In this connection, the very fact that the magnitude of the angular momentum and its projections on a space-fixed axis and on an axis rigidly attached to the physical system are simultaneously measurable\footnote{These must not be confused with the projections (which are not simultaneously measurable) on two space-fixed axes!} follows because the operators $\hat{\mathbf J}^{2}$ and $\hat J_z$ commute not only with one another but also with $\hat J_\zeta=\hat{\mathbf J}\mathbf n$ ($\mathbf n$ is a unit vector along the $\zeta$ axis). This is readily checked by direct calculation, but is also evident beforehand. The angular-momentum operator reduces to the operator of an infinitesimal rotation, while the scalar product $\mathbf J\mathbf n$ of two vectors attached to the rotor is invariant under any rotation of the coordinate system.
+
+The problem of determining the stationary-state wave functions of a symmetric rotor is consequently reduced to finding the common eigenfunctions of $\hat{\mathbf J}^{2},\hat J_z,\hat J_\zeta$. This question, in turn, is mathematically closely connected with the transformation law of angular-momentum eigenfunctions under
+
+\SourcePage{498}{501}
+finite rotations. Changing the notation for the quantum numbers, we write this law (58.7) as
+\begin{equation}
+ \psi_{JM}=\sum_k D_{kM}^{(J)}(\alpha,\beta,\gamma)\psi_{Jk}. \tag{103.7}
+\end{equation}
+We understand $\psi_{JM}$ to be the wave function of a rotor state described relative to the fixed coordinate axes $xyz$, and $\psi_{Jk}$ to be the wave functions of states described relative to the rotor-fixed axes $\xi\eta\zeta$. In coordinates rigidly attached to the physical system (the rotor), however, the quantities $\psi_{Jk}$ have definite values independent of the orientation of the system in space; denote them by $\psi_{Jk}^{(0)}$. Formula (103.7) then gives the angular dependence of the functions $\psi_{JM}$. Suppose now that the state $|JM\rangle$ also has a definite value $k$ of the angular-momentum projection on the $\zeta$ axis. This means that only one of all the quantities $\psi_{Jk}^{(0)}$, the one with the specified $k$, is nonzero. The sum in (103.7) then reduces to one term:
+\[
+ \psi_{JMk}=\psi_{Jk}^{(0)}D_{kM}^{(J)}(\alpha,\beta,\gamma).
+\]
+
+We have thereby found the dependence of the wave functions of the states $|JMk\rangle$ on the Euler angles specifying the rotation of the rotor axes relative to the fixed axes. Normalizing the wave function by
+\[
+ \int|\psi_{JMk}|^2\sin\beta\,d\alpha\,d\beta\,d\gamma=1,
+\]
+we obtain
+\begin{equation}
+ \psi_{JMk}=i^J\sqrt{\frac{2J+1}{8\pi^2}}D_{kM}^{(J)}(\alpha,\beta,\gamma); \tag{103.8}
+\end{equation}
+the phase factor is chosen so that for $k=0$ the function (103.8) becomes the eigenfunction of a free integral angular momentum $J$ (not attached in any way to the $\zeta$ axis) with projection $M$, that is, the usual spherical function (cf. (58.25)\footnote{For a direct derivation of (103.8), without recourse to the theory of finite rotations, see Problem 1 of this section. For the calculation of matrix elements of various quantities with the wave functions (103.8), see \S~110, 87 (the corresponding formulas differ from those for a diatomic molecule without spin only in the notation for the quantum numbers; cf. the note on p.~389).}).
+
+\SourcePage{499}{502}
+\textbf{Asymmetric rotor.} When $I_A\ne I_B\ne I_C$, the energy levels cannot be calculated in general form. The degeneracy with respect to the directions of angular momentum relative to the rotor is completely removed, so that a given $J$ corresponds to $2J+1$ distinct nondegenerate levels. To calculate these levels (for a specified $J$), one must start from the Schrödinger equation written in matrix form (O.~Klein, 1929). This is done as follows.
+
+The wave functions $\psi_{Jk}$ of rotor states with definite $J$ and definite $\zeta$-component of the angular momentum are the functions (103.8) found above (the index $M$ of the $z$-component, on which the energy does not depend, will be omitted below for brevity); in these states the energy of the asymmetric rotor has no definite value. Conversely, in stationary states the projection $J_\zeta$ has no definite value, so definite values of $k$ cannot be assigned to the energy levels. We seek the wave functions of these states as linear combinations
+\begin{equation}
+ \psi_J=\sum_k c_k\psi_{Jk} \tag{103.9}
+\end{equation}
+(all the functions are understood to have some one value of $M$, the same for every term). Substitution in the Schrödinger equation $\hat H\psi_J=E_J\psi_J$ gives the system
+\begin{equation}
+ \sum_{k'}\bigl(\langle Jk|H|Jk'\rangle-E\delta_{kk'}\bigr)c_{k'}=0, \tag{103.10}
+\end{equation}
+and the solvability condition for this system gives the secular equation
+\begin{equation}
+ \left|\langle Jk|H|Jk'\rangle-E\delta_{kk'}\right|=0. \tag{103.11}
+\end{equation}
+The roots of this equation determine the rotor energy levels; the system (103.10) then gives the linear combinations (103.9) that diagonalize the Hamiltonian, that is, the stationary-state wave functions of the rotor for specified $J$ (and $M$). The calculation of matrix elements of any physical quantity with these wave functions is thus reduced to matrix elements for a symmetric rotor.
+
+The operators $\hat J_\xi,\hat J_\eta$ have matrix elements only for transitions in which $k$ changes by one, while $\hat J_\zeta$ has diagonal elements only (see formulas (27.13), with $J,k$ in place of $L,M$). Consequently $\hat J_\xi^2,\hat J_\eta^2,\hat J_\zeta^2$, and hence $\hat H$, have
+
+\SourcePage{500}{503}
+matrix elements only for transitions $k\to k,k\pm2$. The absence of matrix elements for transitions between states with even and odd $k$ causes the secular equation of degree $2J+1$ to separate at once into two independent equations of degrees $J$ and $J+1$. One is formed from matrix elements for transitions among states with even $k$, and the other from those among states with odd $k$.
+
+Each of these equations can in turn be reduced to two equations of lower degree. For this purpose one must use matrix elements defined not with the functions $\psi_{Jk}$ but with the functions
+\begin{equation}
+ \begin{aligned}
+ \psi_{Jk}^{+}&=\frac1{\sqrt2}(\psi_{Jk}+\psi_{J,-k}),\\
+ \psi_{Jk}^{-}&=\frac1{\sqrt2}(\psi_{Jk}-\psi_{J,-k})\quad(k\ne0),\\
+ \psi_{J0}^{+}&=\psi_{J0}.
+ \end{aligned} \tag{103.12}
+\end{equation}
+Functions distinguished by the indices $+$ and $-$ have different symmetry (with respect to reflection in a plane through the $\zeta$ axis, which changes the sign of $k$), and hence matrix elements for transitions between them vanish. Secular equations may therefore be formed separately for the $+$ and $-$ states.
+
+The Hamiltonian (103.1), together with the commutation rules (103.3), has a specific symmetry: it is invariant under simultaneous reversal of the signs of any two of the operators $\hat J_\xi,\hat J_\eta,\hat J_\zeta$. This symmetry formally corresponds to the group $D_2$. The levels of an asymmetric rotor may therefore be classified by the irreducible representations of this group. There are thus four types of nondegenerate levels, corresponding to the representations $A,B_1,B_2,B_3$ (see Table~7, p.~460).
+
+It is easy to establish which asymmetric-rotor states belong to each type. To do so, we must determine the symmetry properties of the functions $\psi_{Jk}$ and of the functions (103.12) formed from them. This could be done directly from (103.8). It is simpler, however, to start from the more familiar spherical functions, noting that, in their symmetry properties, wave functions of states with definite angular-momentum projection on the $\zeta$ axis coincide with angular-momentum eigenfunctions
+\begin{equation}
+ \psi_{Jk}\sim Y_{Jk}^*(\theta,\varphi)\sim e^{-ik\varphi}\Theta_{Jk}(\theta), \tag{103.13}
+\end{equation}
+
+\SourcePage{501}{504}
+where $\theta,\varphi$ are spherical angles in the $\xi\eta\zeta$ axes, and the sign $\sim$ here means ``transforms as''; the complex conjugation in (103.13) is connected with the reversed sign on the right-hand sides of the commutation relations (103.3).
+
+A rotation through $\pi$ about the $\zeta$ axis (that is, the symmetry operation $C_2^{(\zeta)}$) multiplies the function (103.13) by $(-1)^k$:
+\[
+ C_2^{(\zeta)}:\qquad \psi_{Jk}\to(-1)^k\psi_{Jk}.
+\]
+The operation $C_2^{(\eta)}$ may be regarded as a successive inversion and reflection in the $\xi\zeta$ plane; the first multiplies $\psi_{Jk}$ by $(-1)^J$, while the second (reversal of the sign of $\varphi$) is equivalent to reversing the sign of $k$. Taking account of the definition of $\Theta_{J,-k}$ (28.6), we therefore obtain
+\[
+ C_2^{(\eta)}:\qquad \psi_{Jk}\to(-1)^{J+k}\psi_{J,-k}.
+\]
+Finally, under $C_2^{(\xi)}=C_2^{(\eta)}C_2^{(\zeta)}$,
+\[
+ C_2^{(\xi)}:\qquad \psi_{Jk}\to(-1)^J\psi_{J,-k}.
+\]
+
+Using these transformation laws, we find that the states corresponding to the functions (103.12) have the following symmetry types:
+\begin{equation}
+\begin{array}{c@{\quad}c@{\quad}c}
+\psi_{Jk}^{+}\left\{\begin{array}{ll}
+\text{even }J,\ \text{even }k&-A,\\
+\text{even }J,\ \text{odd }k&-B_3,\\
+\text{odd }J,\ \text{even }k&-B_1,\\
+\text{odd }J,\ \text{odd }k&-B_2,
+\end{array}\right.\\[6pt]
+\psi_{Jk}^{-}\left\{\begin{array}{ll}
+\text{even }J,\ \text{even }k&-B_1,\\
+\text{even }J,\ \text{odd }k&-B_2,\\
+\text{odd }J,\ \text{even }k&-A,\\
+\text{odd }J,\ \text{odd }k&-B_3.
+\end{array}\right.
+\end{array} \tag{103.14}
+\end{equation}
+A simple count gives the number of states of each type for a specified $J$. Specifically, the numbers of states of type $A$ and of each type $B_1,B_2,B_3$ are
+\begin{equation}
+\begin{array}{c|c|c}
+&A&B_1,B_2,B_3\\ \hline
+\text{Even }J&J/2+1&J/2\\
+\text{Odd }J&(J-1)/2&(J+1)/2
+\end{array} \tag{103.15}
+\end{equation}
+
+\SourcePage{502}{505}
+For an asymmetric rotor there are selection rules for matrix elements governing transitions among states of types $A,B_1,B_2,B_3$; these follow in the usual way from symmetry. Thus, for the components of a vector physical quantity $\mathbf A$, the selection rules are
+\begin{equation}
+\begin{aligned}
+\text{for }A_\xi:&\quad A\leftrightarrow B_3^{(\xi)},\quad B_1^{(\zeta)}\leftrightarrow B_2^{(\eta)},\\
+\text{for }A_\eta:&\quad A\leftrightarrow B_2^{(\eta)},\quad B_1^{(\zeta)}\leftrightarrow B_3^{(\xi)},\\
+\text{for }A_\zeta:&\quad A\leftrightarrow B_1^{(\zeta)},\quad B_2^{(\eta)}\leftrightarrow B_3^{(\xi)}
+\end{aligned} \tag{103.16}
+\end{equation}
+(for clarity, an index on the representation symbol indicates the axis about which a rotation has character $+1$ in that representation).
+
+\subsection*{Problems}
+
+\ProblemHeading{1.} Find the wave functions of the states $|JMk\rangle$ of a symmetric rotor by direct calculation as common eigenfunctions of the operators $\hat{\mathbf J}^{2},\hat J_z,\hat J_\zeta$ (F.~Reiche, H.~Rademacher, 1926).
+
+\SolutionHeading. To obtain $\psi_{JMk}$ as a function of the Euler angles $\alpha,\beta,\gamma$, the operators of the angular-momentum projections on the fixed axes $x,y,z$ must be expressed in terms of these angles. Since the operator of the projection on any axis is $-i\partial/\partial\varphi$, where $\varphi$ is the angle of rotation about that axis, we may write
+\[
+ \hat J_x=-i\frac{\partial}{\partial\varphi_x},\qquad
+ \hat J_y=-i\frac{\partial}{\partial\varphi_y},\qquad
+ \hat J_z=-i\frac{\partial}{\partial\varphi_z},
+\]
+where $\varphi_x,\varphi_y,\varphi_z$ are the angles of rotation about the corresponding axes. Derivatives with respect to these angles can be expressed in terms of derivatives with respect to $\alpha,\beta,\gamma$ by recalling that infinitesimal rotations add as vectors (directed along the axes of rotation). The directions of the vectors $\delta\alpha,\delta\beta,\delta\gamma$ of the infinitesimal rotations described by the Euler angles are shown in Fig.~20 (p.~270). Projecting them on the fixed axes $xyz$, we find the rotation angles about these axes in the form
+\[
+\begin{aligned}
+ \delta\varphi_x&=-\sin\alpha\,\delta\beta+\cos\alpha\sin\beta\,\delta\gamma,\\
+ \delta\varphi_y&= \cos\alpha\,\delta\beta+\sin\alpha\sin\beta\,\delta\gamma,\\
+ \delta\varphi_z&=\delta\alpha+\cos\beta\,\delta\gamma.
+\end{aligned}
+\]
+Conversely,
+\[
+\begin{aligned}
+ \delta\alpha&=-\cot\beta\cos\alpha\,\delta\varphi_x-\cot\beta\sin\alpha\,\delta\varphi_y+\delta\varphi_z,\\
+ \delta\beta&=-\sin\alpha\,\delta\varphi_x+\cos\alpha\,\delta\varphi_y,\\
+ \delta\gamma&=\frac{\cos\alpha}{\sin\beta}\delta\varphi_x+\frac{\sin\alpha}{\sin\beta}\delta\varphi_y.
+\end{aligned}
+\]
+These expressions give
+\[
+\begin{aligned}
+ \hat J_x&=-i\left(-\cos\alpha\cot\beta\frac{\partial}{\partial\alpha}-\sin\alpha\frac{\partial}{\partial\beta}+\frac{\cos\alpha}{\sin\beta}\frac{\partial}{\partial\gamma}\right),\\
+ \hat J_y&=-i\left(-\sin\alpha\cot\beta\frac{\partial}{\partial\alpha}+\cos\alpha\frac{\partial}{\partial\beta}+\frac{\sin\alpha}{\sin\beta}\frac{\partial}{\partial\gamma}\right),\\
+ \hat J_z&=-i\frac{\partial}{\partial\alpha}.
+\end{aligned}
+\]
+
+\SourcePage{503}{506}
+When acting on $\psi_{JMk}$, the operators $\hat J_z=-i\partial/\partial\alpha$ and $\hat J_\zeta=-i\partial/\partial\gamma$ ($\gamma$ is the angle of rotation about the $\zeta$ axis!) may be replaced by $M$ and $k$ (the corresponding dependence of the wave function on the Euler angles $\alpha$ and $\gamma$ is given by the factor $\exp(i\alpha M+i\gamma k)$). We then have
+\[
+\begin{aligned}
+ \hat J_+&=\hat J_x+i\hat J_y=e^{i\alpha}\left(\frac{\partial}{\partial\beta}-M\cot\beta+\frac{k}{\sin\beta}\right),\\
+ \hat J_-&=\hat J_x-i\hat J_y=e^{-i\alpha}\left(-\frac{\partial}{\partial\beta}-M\cot\beta+\frac{k}{\sin\beta}\right).
+\end{aligned}
+\]
+The rest of the derivation is exactly analogous to that given at the end of \S~28. We begin with $\hat J_+\psi_{JJk}=0$, which holds for the wave function with $M=J$. Hence
+\[
+ \left(\frac{\partial}{\partial\beta}-J\cot\beta+\frac{k}{\sin\beta}\right)\psi_{JJk}=0.
+\]
+The normalized solution of this equation is
+\[
+ \psi_{JJk}=i^J(-1)^{J-k}\left[\frac{(2J+1)!}{2(J+k)!(J-k)!}\right]^{1/2}
+ \left(\cos\frac\beta2\right)^{J+k}\left(\sin\frac\beta2\right)^{J-k}
+ \frac{e^{i(J\alpha+k\gamma)}}{2\pi}
+\]
+(the normalization integral reduces to Euler's beta integral). This expression does indeed coincide, apart from a phase factor, with the function
+\[
+ \sqrt{\frac{2J+1}{8\pi^2}}D_{kJ}^{(J)}(\alpha,\beta,\gamma)
+\]
+(cf. (58.26)); the phase factor has been chosen in accordance with the definition in (103.7).
+
+The wave functions with $M<J$ are then calculated by repeated application to $\psi_{JJk}$ of the formula
+\[
+ \hat J_-\psi_{J,M+1,k}=\sqrt{(J-M)(J+M+1)}\psi_{JMk}.
+\]
+The final result coincides with (103.8), where the functions $D_{kM}^{(J)}$ are given by formulas (58.9)--(58.11), with the symmetry property (58.18) also taken into account.
+
+\ProblemHeading{2.} Calculate the matrix elements $\langle Jk'|H|Jk\rangle$ for an asymmetric rotor.
+
+\SolutionHeading. From formulas (27.13) we find
+\[
+ \langle k|J_\xi^2|k\rangle=\langle k|J_\eta^2|k\rangle=\frac12[J(J+1)-k^2],
+\]
+\[
+\begin{aligned}
+ \langle k|J_\xi^2|k+2\rangle=\langle k+2|J_\xi^2|k\rangle
+ &=-\langle k|J_\eta^2|k+2\rangle=-\langle k+2|J_\eta^2|k\rangle\\
+ &=\frac14\sqrt{(J-k)(J-k-1)(J+k+1)(J+k+2)}
+\end{aligned}
+\]
+(the diagonal indices $J,J$ on the matrix elements are omitted throughout for brevity). Hence the required matrix elements
+
+\SourcePage{504}{507}
+of the Hamiltonian are\footnote{In Problems 2--5, to simplify the notation in the formulas, we use $a=1/I_A$, $b=1/I_B$, $c=1/I_C$.}
+\begin{align}
+ \langle k|H|k\rangle&=\frac{\hbar^2}{4}(a+b)[J(J+1)-k^2]+\frac{\hbar^2}{2}ck^2,\notag\\
+ \langle k|H|k+2\rangle=\langle k+2|H|k\rangle&=\frac{\hbar^2}{8}(a-b)\sqrt{(J-k)(J-k-1)(J+k+1)(J+k+2)}. \tag{1}
+\end{align}
+The matrix elements with respect to the functions (103.12) are expressed in terms of the elements (1) by
+\begin{align}
+ \langle k\pm|H|k\pm\rangle&=\langle k|H|k\rangle,\quad k\ne1,\notag\\
+ \langle1\pm|H|1\pm\rangle&=\langle1|H|1\rangle\pm\langle1|H|-1\rangle,\notag\\
+ \langle k\pm|H|k+2,\pm\rangle&=\langle k|H|k+2\rangle,\quad k\ne0,\notag\\
+ \langle0+|H|2+\rangle&=\sqrt2\langle0|H|2\rangle. \tag{2}
+\end{align}
+
+\ProblemHeading{3.} Determine the energy levels of an asymmetric rotor for $J=1$.
+
+\SolutionHeading. The secular equation of third degree separates into three equations of first degree. One of them gives
+\begin{equation}
+ E_1=\langle0+|H|0+\rangle=\frac{\hbar^2}{2}(a+b). \tag{3}
+\end{equation}
+The other two energy levels can be written down at once, since it is evident beforehand that the three parameters $a,b,c$ enter the problem symmetrically. Thus
+\begin{equation}
+ E_2=\frac{\hbar^2}{2}(a+c),\qquad E_3=\frac{\hbar^2}{2}(b+c). \tag{4}
+\end{equation}
+The levels $E_1,E_2,E_3$ belong respectively to the symmetry types $B_1,B_2,B_3$\footnote{This follows directly from symmetry considerations. For example, the energy $E_1$ is symmetric in the parameters $a$ and $b$; this must be so for the energy of a state whose symmetry with respect to the $\xi$ and $\eta$ axes is the same (a state of type $B_1$).}. The wave functions of these states are
+\[
+ \psi_1=\psi_{10}^+,\qquad \psi_2=\psi_{11}^-,\qquad \psi_3=\psi_{11}^+.
+\]
+
+\ProblemHeading{4.} Do the same for $J=2$.
+
+\SolutionHeading. The secular equation of fifth degree separates into three equations of first degree and one of second degree. One of the first-degree equations gives
+\begin{equation}
+ E_1=\langle2-|H|2-\rangle=2\hbar^2c+\frac{\hbar^2}{2}(a+b) \tag{5}
+\end{equation}
+(a level of type $B_1$). We infer that there must be two further levels (of types $B_2$ and $B_3$):
+\[
+ E_2=2\hbar^2b+\frac{\hbar^2}{2}(a+c),\qquad E_3=2\hbar^2a+\frac{\hbar^2}{2}(b+c).
+\]
+
+\SourcePage{505}{508}
+The wave functions corresponding to these three levels are
+\[
+ \psi_1=\psi_{22}^-,\qquad \psi_2=\psi_{21}^-,\qquad \psi_3=\psi_{21}^+.
+\]
+The equation of second degree is
+\begin{equation}
+ \begin{vmatrix}
+ \langle0+|H|0+\rangle-E&\langle2+|H|0+\rangle\\
+ \langle2+|H|0+\rangle&\langle2+|H|2+\rangle-E
+ \end{vmatrix}=0. \tag{6}
+\end{equation}
+Solving it, we obtain
+\begin{equation}
+ E_{4,5}=\hbar^2(a+b+c)\pm\hbar^2[(a+b+c)^2-3(ab+bc+ac)]^{1/2}. \tag{7}
+\end{equation}
+These levels are of type $A$. Their wave functions are linear combinations of $\psi_{20}^+$ and $\psi_{22}^+$.
+
+\ProblemHeading{5.} Do the same for $J=3$.
+
+\SolutionHeading. The secular equation of seventh degree separates into one equation of first degree and three of second degree. The first-degree equation gives
+\begin{equation}
+ E_1=\langle2-|H|2-\rangle=2\hbar^2(a+b+c) \tag{8}
+\end{equation}
+(a level of type $A$). One of the second-degree equations is equation (6) of the preceding problem (with a different value of $J$). Its roots are
+\begin{equation}
+ E_{2,3}=\frac{5\hbar^2}{2}(a+b)+\hbar^2c\pm\hbar^2[4(a-b)^2+c^2+ab-ac-bc]^{1/2} \tag{9}
+\end{equation}
+(levels of type $B_1$). The remaining levels are obtained from these by permuting the parameters $a,b,c$.
+
+\ProblemHeading{6.} Determine the splitting of the levels of a system possessing a quadrupole moment in an arbitrary external electric field.
+
+\SolutionHeading. Choosing the principal axes of the tensor $\partial^2\varphi/\partial x_i\partial x_k$ as coordinate axes (cf. Problem 3 of \S~76), we reduce the quadrupole part of the Hamiltonian of the system to the form
+\[
+ \hat H=A\hat J_x^2+B\hat J_y^2+C\hat J_z^2,\qquad A+B+C=0.
+\]
+Because this expression is completely analogous in form to the Hamiltonian (103.1), the stated problem is equivalent to finding the energy levels of an asymmetric rotor, except that the sum of the coefficients is now $A+B+C=0$ and the angular momentum may also take half-integral values. For the latter, the calculations must be carried out anew by the same method; for integral $J$, the results of Problems 3--5 may be used. We finally obtain the following energy shifts $\Delta E$ for the first few values of $J$:
+\[
+\begin{array}{c@{\qquad}l}
+J=1:&\Delta E=-A,-B,-C,\\
+J=3/2:&\Delta E=\pm\sqrt{(3/2)(A^2+B^2+C^2)},\\
+J=2:&\Delta E=3A,3B,3C,\ \pm\sqrt{6(A^2+B^2+C^2)}.
+\end{array}
+\]
+For $J=3/2$ the energy levels remain doubly degenerate, in accordance with Kramers' theorem (\S~60).

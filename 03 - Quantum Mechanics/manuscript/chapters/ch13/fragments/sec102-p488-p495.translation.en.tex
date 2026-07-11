@@ -1,0 +1,84 @@
+\SourcePage{488}{491}
+\section{Stability of symmetric molecular configurations}
+
+For a symmetric arrangement of the nuclei, a molecular electronic term can be degenerate if the symmetry group has irreducible representations of dimension greater than one.
+
+We ask whether such a symmetric configuration can be a stable equilibrium configuration
+
+\SourcePage{489}{492}
+of the molecule. We shall neglect the effect of spin (if there is any), which is generally negligible in polyatomic molecules. The degeneracy of electronic terms discussed below is therefore purely orbital and unrelated to spin.
+
+For the configuration to be stable, the molecular energy, regarded as a function of the internuclear distances, must have a minimum at this arrangement of the nuclei. This means that the change of energy under a small displacement of the nuclei must contain no term linear in the displacements.
+
+Let $\widehat H$ be the Hamiltonian of the molecule's electronic state, with the internuclear distances regarded as parameters. Denote by $\widehat H_0$ this Hamiltonian at the specified symmetric configuration. The normal vibrational coordinates $Q_{\alpha i}$ may be used as quantities describing small nuclear displacements. The expansion of $\widehat H$ in powers of $Q_{\alpha i}$ is
+\begin{equation}
+ \widehat H=\widehat H_0+\sum_{\alpha,i}V_{\alpha i}Q_{\alpha i}
+ +\sum_{\alpha,\beta,i,k}W_{\alpha i,\beta k}Q_{\alpha i}Q_{\beta k}+\ldots
+ \tag{102.1}
+\end{equation}
+The expansion coefficients $V,W,\ldots$ are functions only of the electron coordinates. Under a symmetry transformation, the quantities $Q_{\alpha i}$ transform among themselves, and the sums in (102.1) thereby pass into other sums of the same form. We may therefore regard a symmetry operation formally as transforming the coefficients in these sums while leaving the $Q_{\alpha i}$ fixed. In particular, for each fixed $\alpha$, the coefficients $V_{\alpha i}$ then transform according to the same representation of the symmetry group as the corresponding coordinates $Q_{\alpha i}$. This follows at once from the invariance of the Hamiltonian under every symmetry operation: the collection of terms of each fixed order in its expansion, and in particular the linear terms, must possess the same invariance\footnote{Strictly, the quantities $V_{\alpha i}$ should transform according to the representation complex-conjugate to that of the $Q_{\alpha i}$. As noted earlier, however, if two complex-conjugate representations do not coincide, physically they must in any event be considered together as a single representation of twice the dimension. The qualification is therefore immaterial.}.
+
+\SourcePage{490}{493}
+
+Consider an electronic term $E_0$ that is degenerate at the symmetric configuration. A displacement of the nuclei that breaks the molecular symmetry will generally split the term. To first order in the nuclear displacements, the splitting is determined by the secular equation formed from matrix elements of the linear part of (102.1),
+\begin{equation}
+ V_{\rho\sigma}=\sum_{\alpha,i}Q_{\alpha i}\int\psi_\rho V_{\alpha i}\psi_\sigma\,dq,
+ \tag{102.2}
+\end{equation}
+where $\psi_\rho$, $\psi_\sigma$ are wave functions of electronic states belonging to this degenerate term (chosen to be real). Stability of the symmetric configuration requires the absence of splitting linear in $Q$: all roots of the secular equation must vanish identically, which means that the entire matrix $V_{\rho\sigma}$ must vanish. Naturally, only normal vibrations that break the molecular symmetry are to be considered; the totally symmetric vibrations (corresponding to the unit representation of the group) must be omitted.
+
+Since the $Q_{\alpha i}$ are arbitrary, the matrix elements (102.2) vanish only if all the integrals
+\begin{equation}
+ \int\psi_\rho V_{\alpha i}\psi_\sigma\,dq
+ \tag{102.3}
+\end{equation}
+vanish.
+
+Let $D^{(el)}$ be the irreducible representation according to which the electronic wave functions $\psi_\rho$ transform, and let $D_\alpha$ denote the corresponding representation for the quantities $V_{\alpha i}$; as already stated, the representations $D_\alpha$ are those according to which the corresponding normal coordinates $Q_{\alpha i}$ transform. From the results of \S~97, the integrals (102.3) can be nonzero if the product $[D^{(el)2}]\times D_\alpha$ contains the unit representation, or equivalently if $[D^{(el)2}]$ contains $D_\alpha$. Otherwise every integral vanishes.
+
+Thus the symmetric configuration is stable if $[D^{(el)2}]$ contains none of the irreducible representations $D_\alpha$ characterizing the molecular vibrations, apart from the unit representation. For a nondegenerate electronic state this condition is always satisfied, since the symmetric square of a one-dimensional representation is the unit representation.
+
+As an example, consider a molecule of the $\mathrm{CH}_4$ type, with one atom (C) at the center and four atoms (H) at the vertices of a tetrahedron. This configuration has symmetry $T_d$. Its degenerate electronic terms correspond to the representations $E,F_1,F_2$ of this group. The molecule has one normal vibration of type $A_1$ (a totally symmetric vibration), one double vibration $E$,
+
+\SourcePage{491}{494}
+and two triple vibrations $F_2$ (see Problem~4 of \S~100). The symmetric squares of $E,F_1,F_2$ are
+\[
+ [E^2]=A_1+E,\qquad [F_1^2]=[F_2^2]=A_1+E+F_2.
+\]
+Each contains at least one of the representations $E,F_2$; hence the tetrahedral configuration under consideration is unstable for a degenerate electronic state.
+
+This result is a general rule known as the \emph{Jahn--Teller theorem} (H.~A.~Jahn, E.~Teller, 1937): for a degenerate electronic state, every symmetric arrangement of nuclei is unstable, with the sole exception of an arrangement on one straight line. Owing to this instability, the nuclei move in such a way that the symmetry of their configuration is broken sufficiently to remove the term's degeneracy completely. In particular, the normal electronic term of a symmetric nonlinear molecule can only be nondegenerate\footnote{The physical idea that symmetry is destroyed in an electronic state whose degeneracy is due to that very symmetry was put forward by Landau (1934). Jahn and Teller (1937) proved the theorem by enumerating all possible types of symmetric nuclear arrangements in a molecule and examining each by the method given above.}.
+
+As already mentioned, only linear molecules form an exception. This can easily be seen without group theory. A displacement by which a nucleus leaves the molecular axis is an ordinary vector with $\xi$- and $\eta$-components (the $\zeta$-axis is directed along the molecular axis). We saw in \S~87 that such vectors have matrix elements only for transitions in which the angular momentum $\Lambda$ about the axis changes by one. A degenerate term of a linear molecule, however, corresponds to states with angular momenta $\Lambda$ and $-\Lambda$ about the axis, where $\Lambda\geqslant1$. A transition between them entails a change in angular momentum of at least 2, and the matrix elements must therefore vanish. Thus a linear arrangement of nuclei in a molecule may be stable even for a degenerate electronic state.
+
+A constructive general proof of the theorem rests on the following observation (E.~Ruch, 1957).
+
+Degeneracy of electronic states due to the symmetry of the nuclear arrangement can occur only for molecular point groups containing at least one rotation axis ($C_n$) or rotation--reflection axis ($S_n$) of order $n>2$. Among the wave functions
+
+\SourcePage{492}{495}
+of the mutually degenerate states (that is, among the basis functions of the corresponding representation $D^{(el)}$), there is then at least one whose electron density $\rho=|\psi|^2=\psi^2$ is not invariant under rotations about this axis; the electric field created by the electrons is likewise not symmetric about the axis. At the same time, a nonlinear molecule contains equivalent nuclei away from the axis---nuclei carried into one another by the rotations $C_n$ (or $S_n$). Equivalent nuclei thus lie at inequivalent points of the electric field. Yet equilibrium positions of charged particles in a field cannot possess an equivalence not required by the field's symmetry, except through an exceedingly improbable accident.
+
+The full proof gives a concrete mathematical embodiment of this physical situation. We show how such a proof is constructed (E.~Ruch, A.~Schönhofer, 1965)\footnote{For details see E.~Ruch, A.~Schönhofer // Theoret. chim. acta (Berl.). 1965. Bd.~3. S.~291.}.
+
+In a nonlinear molecule, consider a nucleus (call it $a$) that lies outside the ``center'' of the molecule (that is, outside the fixed point of the transformations of its symmetry group) and is not on the principal symmetry axis, if one exists\footnote{In noncubic and nonicosahedral symmetry groups, the principal axis means an axis $C_n$ or $S_n$ of order $n>2$.}. Let $H$ be the set of symmetry operations of the molecule that leave nucleus $a$ fixed. It is a subgroup of the full molecular symmetry group $G$ and may be one of the point groups $C_1,C_s,C_n,C_{nv}$. The operations in $G$ that are not in $H$ carry nucleus $a$ into other equivalent nuclei $a',a'',\ldots$; let $s$ be the number of nuclei in this set. Clearly, the order of $H$ is $g/s$, where $g$ is the order of the full group $G$ (that is, $s$ is the index of $H$ in $G$)\footnote{All elements of the group $G$ can be partitioned into $s$ cosets $H,G'H,G''H,\ldots$, where $G',G''$ are elements of the group carrying nucleus $a$ into $a',a'',\ldots$}.
+
+Certainly $s\geqslant3$, since the presumed existence of a multidimensional irreducible representation $D^{(el)}$ requires, as noted above, at least one symmetry axis of order higher than 2, while by assumption nucleus $a$ does not lie on it.
+
+\SourcePage{493}{496}
+When restricted from the group $G$ to the lower-symmetry group $H$, the representation $D^{(el)}$ is generally reducible. Suppose that its decomposition into irreducible representations of $H$ contains a one-dimensional representation; denote it by $d^{(el)}$. It is realized by an electronic wave function $\psi$, one of the basis functions of $D^{(el)}$. Because $d^{(el)}$ is one-dimensional, the square $\rho=\psi^2$ is invariant under all operations in $H$, and hence realizes the unit irreducible representation of this group.
+
+The same unit representation of $H$ can be realized by choosing as a basis one of the displacements $Q_a$ of atom $a$---the displacement along the radius vector drawn from the molecular center to nucleus $a$.
+
+Applying every operation of $G$ to this displacement gives a basis for a certain representation of $G$, generally reducible; call it $D_Q$. Every transformation in $G$ but not in $H$ carries $Q_a$ into a displacement of one of the other $s-1$ equivalent nuclei $a',a'',\ldots$, and displacements of different nuclei are plainly linearly independent. The dimension of $D_Q$ is therefore $s$. Moreover, the displacements $Q_a,Q_{a'},\ldots$ forming the basis of $D_Q$ cannot correspond either to a pure translation or to a pure rotation of the molecule as a whole: with three or more equivalent nuclei, no such motion can be composed from their radial displacements.
+
+A representation of $G$ can likewise be obtained by applying all its operations to the function $\rho=\psi^2$; call it $D_\rho$. The dimension of $D_\rho$ may equal $s$, but it may also be smaller, since there is no prior reason for all $s$ functions $\rho,G'\rho,G''\rho,\ldots$ to be linearly independent. Nevertheless, one may assert that $D_\rho$, if it does not coincide with $D_Q$, is in any case contained wholly in it\footnote{The general assertion is as follows. Suppose that the same representation (of dimension $f$) of a subgroup $H$ is realized by different sets of basis functions, and that applying every transformation of $G$ to one of these sets generates a representation of $G$ of dimension $sf$, where $s$ is the index of $H$ in $G$. Then the representation of $G$ generated in the same manner from any other such set either coincides with the first or is contained wholly in it. A rigorous proof is given in the paper cited on the preceding page.}. Furthermore, $D_\rho$ is not the unit representation, since $\psi^2$ is certainly not invariant under the whole group $G$ (only the sum of the squares of all basis functions of the multidimensional irreducible representation $D^{(el)}$ is invariant).
+
+\SourcePage{494}{497}
+The properties of $D_Q$ and $D_\rho$ just established immediately give the desired result. Indeed, $D_Q$ is part of the complete vibrational representation, while $D_\rho$ is a part of $[D^{(el)2}]$ that does not contain the unit representation. Since $D_\rho$ is contained in $D_Q$, it follows that $[D^{(el)2}]$ contains at least one nonunit vibrational representation $D_\alpha$, as was to be proved.
+
+The preceding argument still assumed, however, that the decomposition of $D^{(el)}$ into irreducible representations of the subgroup $H$ contains a one-dimensional representation. This assumption holds in the overwhelming majority of cases. It is certainly true for $H=C_1,C_s,C_2,C_{2v}$, since all irreducible representations of these groups are one-dimensional. It is also certainly true for $H=C_n,C_{nv}$ with $n>2$ when the dimension of $D^{(el)}$ is odd, because the groups $C_n,C_{nv}$ have only one- and two-dimensional irreducible representations. Inspection of the character tables for irreducible representations of the point groups shows that the exceptions are two-dimensional representations of the cubic groups $G=O,T_d,O_h$ relative to the subgroups $H=C_3,C_{3v}$.
+
+For definiteness, take $G=O$ and $H=C_3$; this choice affects only the notation for the representations. The two electronic functions $\psi_1,\psi_2$ realize the representation $D^{(el)}=E$ of $O$, and also the representation $d^{(el)}=E$ of $C_3$. The representation of $C_3$ realized by the products $\psi_1^2,\psi_2^2,\psi_1\psi_2$ is $[E^2]=A+E$. The three components of the vector of an arbitrary displacement $\mathbf Q_a$ of nucleus $a$ realize the same representation of $C_3$. In this case the representation $D_\rho$ of $O$ is $D_\rho=[D^{(el)2}]=A_1+E$; it does not contain the representation $F_2$ corresponding to a vector of translation or rotation of the molecule as a whole, and, besides the unit representation, it contains a nonunit one. Therefore the inclusion of $D_\rho$ in $D_Q$ (for the same reasons as above), which here has dimension $3s$, proves the instability of the molecule in this case as well\footnote{Four-dimensional representations of the icosahedral groups constitute one further exceptional case. It is treated analogously and leads to the same result.}.
+
+\SourcePage{495}{498}
+In keeping with the qualification at the beginning of this section, the degeneracy of the electronic states was understood throughout the preceding discussion to have a purely orbital origin. The Jahn--Teller theorem nevertheless remains valid when spin--orbit and spin--spin interactions are included, with the single difference that, in nonlinear molecules with half-integral spin, twofold Kramers degeneracy does not cause instability, in accordance with the general theorem proved in \S~60. This case corresponds to two-dimensional double-valued irreducible representations of the double point groups. The absence of instability here can already be seen by the following formal argument. To determine the selection rules for the matrix elements (102.3) when $D^{(el)}$ is double-valued, one must consider not symmetric but antisymmetric products $\{D^{(el)2}\}$ (see \S~99). For every two-dimensional double-valued irreducible representation, however, these products coincide with the unit representation, and therefore cannot contain representations corresponding to any molecular vibrations that are not totally symmetric.

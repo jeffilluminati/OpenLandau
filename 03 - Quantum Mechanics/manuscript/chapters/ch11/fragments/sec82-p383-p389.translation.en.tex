@@ -86,7 +86,7 @@ Terms independent of $v$ and $K$ have been included in $E^{el}$.
 
 \ProblemHeading Estimate the accuracy of the approximation that separates electronic and nuclear motion in a diatomic molecule.
 
-\SolutionHeading Write the complete molecular Hamiltonian as $\widehat H=\widehat T_r+\widehat H_{el}$, where $\widehat T_r=\widehat{\mathbf p}^{,2}/2M$ is the kinetic-energy operator for the relative nuclear motion, $\widehat{\mathbf p}=-i\hbar\partial/\partial\mathbf r$, $\mathbf r$ is the internuclear vector, and $M$ the reduced mass. The Hamiltonian $\widehat H_{el}$ includes the electronic kinetic-energy operators, the potential energy of their Coulomb interactions with one another and with the nuclei, and the Coulomb interaction energy of the nuclei\footnote{The Hamiltonian $\widehat H$ refers to the frame in which the center of mass of the entire molecule is at rest: $\mathbf P_n+\mathbf P_e=0$, where $\mathbf P_n$ is the total momentum of the two nuclei and $\mathbf P_e$ the total electronic momentum. The term representing the kinetic energy of the nuclear center of mass, $\widehat{\mathbf P}_n^{,2}/2(M_1+M_2)=\mathbf P_e^2/2(M_1+M_2)$, has already been omitted. It is certainly smaller than the electronic kinetic energy by the ratio $m/M$.}. We seek a solution of
+\SolutionHeading Write the complete molecular Hamiltonian as $\widehat H=\widehat T_r+\widehat H_{el}$, where $\widehat T_r=\widehat{\mathbf p}^{2}/2M$ is the kinetic-energy operator for the relative nuclear motion, $\widehat{\mathbf p}=-i\hbar\partial/\partial\mathbf r$, $\mathbf r$ is the internuclear vector, and $M$ the reduced mass. The Hamiltonian $\widehat H_{el}$ includes the electronic kinetic-energy operators, the potential energy of their Coulomb interactions with one another and with the nuclei, and the Coulomb interaction energy of the nuclei\footnote{The Hamiltonian $\widehat H$ refers to the frame in which the center of mass of the entire molecule is at rest: $\mathbf P_n+\mathbf P_e=0$, where $\mathbf P_n$ is the total momentum of the two nuclei and $\mathbf P_e$ the total electronic momentum. The term representing the kinetic energy of the nuclear center of mass, $\widehat{\mathbf P}_n^{2}/2(M_1+M_2)=\mathbf P_e^2/2(M_1+M_2)$, has already been omitted. It is certainly smaller than the electronic kinetic energy by the ratio $m/M$.}. We seek a solution of
 \begin{equation}\widehat H\psi=(\widehat T_r+\widehat H_{el})\psi=E\psi\tag{1}\end{equation}
 in the form
 \begin{equation}\psi=\sum_m\chi_m(\mathbf r)\varphi_m(q,\mathbf r),\tag{2}\end{equation}
@@ -95,7 +95,7 @@ in the form
 where $\varphi_m(q,\mathbf r)$ are orthonormal solutions of
 \begin{equation}\widehat H_{el}\varphi_m(q,\mathbf r)=U_m(r)\varphi_m(q,\mathbf r),\tag{3}\end{equation}
 and $q$ denotes all electronic coordinates. The $U_m(r)$ are eigenvalues of $\widehat H_{el}$ with $r$ as a parameter. Substituting (2) in (1), multiplying on the left by $\varphi_n^*(q,\mathbf r)$, and integrating over $dq$, we obtain
-\begin{equation}\left[\frac{\widehat{\mathbf p}^{,2}}{2M}+V_{nn}''+U_n(r)-E\right]\chi_n(\mathbf r)=-\sum_m'(\widehat V_{nm}'+V_{nm}'')\chi_m(\mathbf r),\tag{4}\end{equation}
+\begin{equation}\left[\frac{\widehat{\mathbf p}^{2}}{2M}+V_{nn}''+U_n(r)-E\right]\chi_n(\mathbf r)=-\sum_m'(\widehat V_{nm}'+V_{nm}'')\chi_m(\mathbf r),\tag{4}\end{equation}
 where
 \[
 \widehat V_{nm}'=\frac1M\mathbf p_{nm}\widehat{\mathbf p},\qquad V_{nm}''=\frac1{2M}(\mathbf p^2)_{nm},
@@ -103,7 +103,7 @@ where
 and $\mathbf p_{nm}=\int\varphi_n^*\widehat{\mathbf p}\varphi_m\,dq$ and $(\mathbf p^2)_{nm}$ are matrix elements with respect to the electronic wave functions. The diagonal element $\mathbf p_{nn}$ vanishes by symmetry.
 
 The electronic functions $\varphi_n$ vary appreciably only over atomic distances; differentiating them with respect to $\mathbf r$ therefore introduces no large parameter $M/m$, where $m$ is the electron mass. Thus $V_{nn}''$ is smaller than $U_n(r)$ by $m/M$ and may be omitted. If the terms on the right of (4) are regarded as a small perturbation, the zeroth-order functions $\chi_n(\mathbf R)$ are solutions of
-\begin{equation}\left[\frac{\widehat{\mathbf p}^{,2}}{2M}+U_n(r)\right]\chi_{nv}=E_{nv}\chi_{nv},\tag{5}\end{equation}
+\begin{equation}\left[\frac{\widehat{\mathbf p}^{2}}{2M}+U_n(r)\right]\chi_{nv}=E_{nv}\chi_{nv},\tag{5}\end{equation}
 describing nuclear motion in the field $U_n(r)$; $v$ denotes the quantum numbers of this motion. Perturbation theory is applicable if
 \[
 |\langle nv'|\widehat V_{nm}'+V_{nm}''|mv\rangle|\ll|E_{nv'}-E_{mv}|.

@@ -1,0 +1,121 @@
+\SourcePage{543}{546}
+\section{Matrix elements in axially symmetric systems}
+
+The integral of a product of three $D$-functions is the starting point for calculating matrix elements of quantities that characterize systems of the symmetric-top type.
+
+To derive the required expression, consider again expansion (106.11),
+\[
+ \psi_{j_1m_1}\psi_{j_2m_2}=\sum_j\langle jm|m_1m_2\rangle\psi_{jm},
+ \qquad m=m_1+m_2,
+\]
+and subject both sides to a finite rotation of the coordinate system. Each $\psi$-function transforms by (58.7), and hence
+\[
+ \sum_{m'_1m'_2}D^{(j_1)}_{m'_1m_1}D^{(j_2)}_{m'_2m_2}
+ \psi_{j_1m'_1}\psi_{j_2m'_2}
+ =\sum_j\sum_{m'}\langle jm|m_1m_2\rangle D^{(j)}_{m'm}\psi_{jm'}.
+\]
+We now expand the functions $\psi_{jm'}$ on the right by means of (106.9). Comparing the coefficients of corresponding products $\psi_{j_1m_1}$, $\psi_{j_2m_2}$ then gives
+\begin{equation}
+ D^{(j_1)}_{m'_1m_1}(\omega)D^{(j_2)}_{m'_2m_2}(\omega)
+ =\sum_j\langle m'_1m'_2|jm'\rangle D^{(j)}_{m'm}(\omega)
+ \langle m_1m_2|jm\rangle
+ \tag{110.1}
+\end{equation}
+with $m=m_1+m_2$ and $m'=m'_1+m'_2$; here $\omega$ collectively denotes the three Euler angles $\alpha$, $\beta$, and $\gamma$. In terms of $3j$-symbols, the same result reads
+\begin{equation}
+ \begin{aligned}
+ D^{(j_1)}_{m'_1m_1}(\omega)D^{(j_2)}_{m'_2m_2}(\omega)
+ ={}&\sum_j(2j+1)
+ \begin{pmatrix}j_1&j_2&j\\m'_1&m'_2&-m'\end{pmatrix}\times\\
+ &\times\begin{pmatrix}j_1&j_2&j\\m_1&m_2&-m\end{pmatrix}
+ D^{(j)*}_{-m',-m}(\omega),
+ \end{aligned}
+ \tag{110.2}
+\end{equation}
+where property (58.19) of the $D$-functions has also been used.
+
+\SourcePage{544}{547}
+Multiply the two sides of (110.2) by $D^{(j)}_{-m',-m}(\omega)$ and integrate over $d\omega$, applying the orthogonality relation (58.20). The outcome is
+\begin{equation}
+ \begin{aligned}
+ &\int D^{(j_1)}_{m'_1m_1}(\omega)D^{(j_2)}_{m'_2m_2}(\omega)
+ D^{(j_3)}_{m'_3m_3}(\omega)\frac{d\omega}{8\pi^2}={}\\
+ &\hspace{35mm}=
+ \begin{pmatrix}j_1&j_2&j_3\\m'_1&m'_2&m'_3\end{pmatrix}
+ \begin{pmatrix}j_1&j_2&j_3\\m_1&m_2&m_3\end{pmatrix}.
+ \end{aligned}
+ \tag{110.3}
+\end{equation}
+An evident relabelling of the indices has been made here to display the symmetry more fully. Equation (110.3) is the desired formula\footnote{For integral values $j_1=l_1$, $j_2=l_2$, $j_3=l_3$ and for $m'_1=m'_2=m'_3=0$, the functions $D^{(l)}_{0m}$ reduce, by (58.25), to spherical functions. Formula (110.3) then supplies the expression for the integral of three spherical functions (107.14).}.
+
+Let $f_{kq'}$ be a spherical tensor of rank $k$ describing the top in the body-fixed coordinate axes $x'y'z'\equiv\xi\eta\zeta$, with the $\zeta$-axis directed along the top axis. An electric or magnetic multipole-moment tensor is one possible example. Denote by $f_{kq}$ the components of this same tensor referred to the fixed coordinate axes $xyz$. The matrix of finite rotations relates the two sets of components according to
+\begin{equation}
+ f_{kq}=\sum_{q'}D^{(k)}_{q'q}(\omega)f_{kq'}.
+ \tag{110.4}
+\end{equation}
+
+The wave functions for rotation of the system as a whole differ from $D$-functions only through their normalization:
+\begin{equation}
+ \psi_{jm\mu}=i^j\sqrt{\frac{2j+1}{8\pi^2}}D^{(j)}_{\mu m}(\omega).
+ \tag{110.5}
+\end{equation}
+Here $j$ is the system's total angular momentum, $m$ is its projection on the fixed $z$-axis, and $\mu$ is its projection on the system axis. The phase factor is chosen so that, when $j$ is integral and $\mu=0$, (110.5) becomes an eigenfunction of free angular momentum (compare (103.8)). Evaluation, between these functions, of the matrix element of (110.4), with (110.3) and the representation (58.19) for the complex-conjugate $D$-function, yields
+\begin{equation}
+ \begin{aligned}
+ \langle j'\mu'm'|f_{kq}|j\mu m\rangle={}&i^{j-j'}(-1)^{\mu'-m'}
+ \sqrt{(2j+1)(2j'+1)}\times\\
+ &\times\begin{pmatrix}j'&k&j\\-\mu'&q'&\mu\end{pmatrix}
+ \begin{pmatrix}j'&k&j\\-m'&q&m\end{pmatrix}
+ \langle\mu'|f_{kq'}|\mu\rangle,
+ \end{aligned}
+ \tag{110.6}
+\end{equation}
+where $q'=\mu'-\mu$ and $q=m'-m$.
+
+\SourcePage{545}{548}
+Formula (110.6) answers the question posed. It fixes the dependence of the matrix elements on $j$, $j'$ and on their projections $m$, $m'$. Their dependence on the quantum numbers $\mu$, $\mu'$ necessarily remains unspecified: the possible values of these numbers are determined by the system's ``internal'' states, between which the ``internal'' matrix element $\langle\mu'|f_{kq'}|\mu\rangle$ is taken.
+
+The $m$, $m'$ dependence of the matrix elements in (110.6) is the one common to every system of specified total angular momentum. Separating it by introducing reduced matrix elements as in (107.6), we obtain
+\begin{equation}
+ \begin{aligned}
+ \langle j'\mu'\|f_k\|j\mu\rangle={}&i^{j-j'-k}(-1)^{j_{\max}-\mu'}
+ \sqrt{(2j+1)(2j'+1)}\times\\
+ &\times\begin{pmatrix}j'&k&j\\-\mu'&q'&\mu\end{pmatrix}
+ \langle\mu'|f_{kq'}|\mu\rangle.
+ \end{aligned}
+ \tag{110.7}
+\end{equation}
+
+For fixed $m$, sum the squared modulus of (110.6) over every value of the final quantum number $m'$ (and over $q=m'-m$). The result is independent of $m$ and, by the general rule (107.11), is
+\begin{equation}
+ \begin{aligned}
+ \sum_{qm'}|\langle j'\mu'm'|f_{kq}|j\mu m\rangle|^2
+ &={1\over 2j+1}|\langle j'\mu'\|f_k\|j\mu\rangle|^2={}\\
+ &=(2j'+1)\begin{pmatrix}j'&k&j\\-\mu'&q'&\mu\end{pmatrix}^{\!2}
+ |\langle\mu'|f_{kq'}|\mu\rangle|^2.
+ \end{aligned}
+ \tag{110.8}
+\end{equation}
+
+As they must be, the Hermiticity relations (107.9) for the reduced matrix elements (110.7) in the $xyz$ coordinates agree with relations (107.8),
+\[
+ \langle\mu|f_{kq'}|\mu'\rangle
+ =(-1)^{k-q'}\langle\mu'|f_{k,-q'}|\mu\rangle^*,
+\]
+for the matrix elements in the $\xi\eta\zeta$ coordinates.
+
+The rotation of an axially symmetric system such as a diatomic molecule (or an axial nucleus) is specified by only two angles, $\alpha\equiv\varphi$ and $\beta\equiv\theta$, which determine the direction of the system axis. Its rotational wave function differs from (110.5) by the omission of the factor $e^{i\mu\gamma}/\sqrt{2\pi}$ (compare the note on p.~389). This difference nevertheless leaves the matrix elements unchanged. Indeed, since the entire $\gamma$ dependence of $D^{(j)}_{m'm}(\alpha,\beta,\gamma)$ is contained in the factor $e^{im'\gamma}$, relation (110.3) may be written
+
+\SourcePage{546}{549}
+in the form
+\[
+ \begin{aligned}
+ &\delta_{m',0}\int D^{(j_1)}_{m'_1m_1}(\alpha,\beta,0)
+ D^{(j_2)}_{m'_2m_2}(\alpha,\beta,0)
+ D^{(j_3)}_{m'_3m_3}(\alpha,\beta,0)\frac{\sin\alpha\,d\alpha\,d\beta}{4\pi}={}\\
+ &\hspace{35mm}=
+ \begin{pmatrix}j_1&j_2&j_3\\m_1&m_2&m_3\end{pmatrix}
+ \begin{pmatrix}j_1&j_2&j_3\\m'_1&m'_2&m'_3\end{pmatrix},
+ \end{aligned}
+\]
+where $m'=m'_1+m'_2+m'_3$, and the value of the integral is unaltered. The selection rule for the projection of angular momentum on the system axis likewise retains its former form, $\mu'-\mu=q'$. It now follows from the orthogonality of the electronic wave functions, as a consequence of the molecule's symmetry about the $\zeta$-axis. In (110.6) and (110.7), $\langle\mu'|f_{kq'}|\mu\rangle$ must in this case be understood as a matrix element between electronic states with the nuclei held fixed.

@@ -1,0 +1,273 @@
+\SourcePage{556}{559}
+\section{The atom in a magnetic field}
+
+Consider an atom placed in a uniform magnetic field $\mathbf H$. Its Hamiltonian is
+\begin{equation}
+ \hat H=\frac1{2m}\sum_a\left[\hat{\mathbf p}_a+\frac{|e|}{c}\mathbf A(\mathbf r_a)\right]^2+U+\frac{|e|\hbar}{mc}\mathbf H\hat{\mathbf S},
+ \tag{113.1}
+\end{equation}
+where the sum extends over all electrons (the electron charge is written as $-|e|$); $U$ is the energy of interaction of the electrons with the nucleus and with one another; $\hat{\mathbf S}=\sum_a\hat{\mathbf s}_a$ is the operator of the atom's total (electronic) spin.
+
+If the vector potential of the field is chosen in the form (111.7), then, as already noted, the operator $\hat{\mathbf p}$ commutes with $\mathbf A$. Using this fact when expanding the square in (113.1), and denoting the Hamiltonian of the atom in the absence of a field by $\hat H_0$, we
+
+\SourcePage{557}{560}
+find
+\[
+ \hat H=\hat H_0+\frac{|e|}{mc}\sum_a\mathbf A_a\hat{\mathbf p}_a+\frac{e^2}{2mc^2}\sum_a\mathbf A_a^2+\frac{|e|\hbar}{mc}\mathbf H\hat{\mathbf S}.
+\]
+On substituting $\mathbf A$ from (111.7), this becomes
+\[
+ \hat H=\hat H_0+\frac{|e|}{2mc}\mathbf H\sum_a(\mathbf r_a\times\hat{\mathbf p}_a)+\frac{e^2}{8mc^2}\sum_a(\mathbf H\times\mathbf r_a)^2+\frac{|e|\hbar}{mc}\mathbf H\hat{\mathbf S}.
+\]
+But the vector product $\mathbf r_a\times\hat{\mathbf p}_a$ is the operator of the electron's orbital angular momentum, and summation over all the electrons gives the operator $\hbar\hat{\mathbf L}$ of the atom's total orbital angular momentum. Hence
+\begin{equation}
+ \hat H=\hat H_0+\mu_B(\hat{\mathbf L}+2\hat{\mathbf S})\mathbf H+\frac{e^2}{8mc^2}\sum_a(\mathbf H\times\mathbf r_a)^2
+ \tag{113.2}
+\end{equation}
+($\mu_B$ is the Bohr magneton). The operator
+\begin{equation}
+ \hat{\boldsymbol\mu}_{\text{at}}=-\mu_B(\hat{\mathbf L}+2\hat{\mathbf S})
+ \tag{113.3}
+\end{equation}
+may be regarded as the operator of the atom's ``intrinsic'' magnetic moment, which it possesses in the absence of a field.
+
+An external magnetic field splits the atomic levels by removing their degeneracy with respect to the directions of the total angular momentum (the \emph{Zeeman effect}). Let us determine the splitting energy for atomic levels characterized by definite values of the quantum numbers $J$, $L$, and $S$ (that is, assuming $LS$ coupling for the levels; see §~72).
+
+We shall suppose that the magnetic field is so weak that $\mu_BH$ is small compared with the separations between the atom's energy levels, including the fine-structure intervals. The second and third terms in (113.2) may then be treated as a perturbation, the unperturbed levels being the individual components of the multiplets. In first approximation, the third term, which is quadratic in the field, may be neglected in comparison with the linear second term.
+
+In this approximation the splitting energy $\Delta E$ is determined by the mean values of the perturbation in the (unperturbed) states differing in the value of the projection of the total angular momentum along the field. Taking this direction as the $z$ axis, we have
+\begin{equation}
+ \Delta E=\mu_BH(\overline L_z+2\overline S_z)=\mu_BH(\overline J_z+\overline S_z).
+ \tag{113.4}
+\end{equation}
+The mean value $\overline J_z$ is simply the specified eigenvalue $J_z=M_J$. The mean value $\overline S_z$ can be found as follows by means of averaging in stages (cf. §~72).
+
+\SourcePage{558}{561}
+First average the operator $\hat{\mathbf S}$ over a state of the atom with specified $S$, $L$, and $J$, but not $M_J$. The operator $\overline{\mathbf S}$ obtained by this averaging can be ``directed'' only along $\hat{\mathbf J}$, the sole conserved ``vector'' characterizing the free atom. We may therefore write
+\[
+ \overline{\mathbf S}=\mathrm{const}\cdot\mathbf J.
+\]
+In this form, however, the equality has only a conditional meaning, since the three components of $\mathbf J$ cannot simultaneously have definite values. Its $z$ projection does have a literal meaning:
+\[
+ \overline S_z=\mathrm{const}\cdot J_z=\mathrm{const}\cdot M_J,
+\]
+as does the equality
+\[
+ \overline{\mathbf S\mathbf J}=\mathrm{const}\cdot\mathbf J^2=\mathrm{const}\cdot J(J+1),
+\]
+obtained by multiplying both sides by $\mathbf J$. Bringing the conserved vector $\mathbf J$ under the averaging sign, we write $\overline{\mathbf S}\mathbf J=\overline{\mathbf S\mathbf J}$. The mean value $\overline{\mathbf S\mathbf J}$ is equal to the eigenvalue
+\[
+ \mathbf S\mathbf J=\frac12[J(J+1)-L(L+1)+S(S+1)],
+\]
+which it has in a state with definite values of $\mathbf L^2$, $\mathbf S^2$, and $\mathbf J^2$ (cf. (31.4)). Determining the constant from the second equality and substituting it in the first, we thus obtain
+\begin{equation}
+ \overline S_z=M_J\frac{\mathbf J\mathbf S}{\mathbf J^2}.
+ \tag{113.5}
+\end{equation}
+
+Combining these results and substituting them in (113.4), we find the following final expression for the splitting energy:
+\begin{equation}
+ \Delta E=\mu_BgM_JH,
+ \tag{113.6}
+\end{equation}
+where
+\begin{equation}
+ g=1+\frac{J(J+1)-L(L+1)+S(S+1)}{2J(J+1)}
+ \tag{113.7}
+\end{equation}
+is called the \emph{Landé factor}, or \emph{gyromagnetic factor}. Notice that $g=1$ when there is no spin ($S=0$, and hence $J=L$), while $g=2$ when $L=0$ (and hence $J=S$)\footnote{The splitting described by the general formulas (113.6), (113.7) is sometimes called the anomalous Zeeman effect. This infelicitous name arose historically because, before the discovery of electron spin, the effect described by (113.6) with $g=1$ was regarded as normal.}.
+
+\SourcePage{559}{562}
+Formula (113.6) gives different energies for all $2J+1$ values $M_J=-J,-J+1,\ldots,J$. In other words, the magnetic field removes completely the degeneracy of the levels with respect to angular-momentum directions, unlike an electric field, which left the levels with $M_J=\pm|M_J|$ unsplit (§~76)\footnote{The reasoning used in this connection for the electric case in §~76 does not apply to a magnetic field. Indeed, $\mathbf H$ is an axial vector and therefore changes sign under reflection in a plane containing its direction. Consequently, states transformed into one another by this operation actually refer to an atom in different fields.}. The linear splitting given by (113.6) is nevertheless absent if $g=0$ (which is possible even for $J\ne0$, for example in the state ${}^4D_{1/2}$).
+
+We saw in §~76 that the displacement of an atomic energy level in an electric field is related to its mean electric dipole moment. A corresponding relation exists in the magnetic case. In classical theory the potential energy of a system of charges is $-\boldsymbol\mu\mathbf H$, where $\boldsymbol\mu$ is the system's magnetic moment. In quantum theory this is replaced by the corresponding operator, so the system's Hamiltonian is
+\[
+ \hat H=\hat H_0-\hat{\boldsymbol\mu}\mathbf H=\hat H_0-\hat\mu_zH.
+\]
+Applying formula (11.16), with the field $H$ as the parameter $\lambda$, we find for the mean magnetic moment
+\begin{equation}
+ \overline\mu_z=-\frac{\partial\Delta E}{\partial H},
+ \tag{113.8}
+\end{equation}
+where $\Delta E$ is the displacement of the energy level of the atomic state in question. Substitution of (113.6) shows that an atom in a state having a definite value $M_J$ of the angular-momentum projection along some direction $z$ has a mean magnetic moment along that same direction:
+\begin{equation}
+ \overline\mu_z=-\mu_BgM_J.
+ \tag{113.9}
+\end{equation}
+
+If the atom has neither spin nor orbital angular momentum ($S=L=0$), the second term in (113.2) produces no level displacement in first or any higher approximation (since all matrix elements of $\mathbf L$ and $\mathbf S$ vanish). The whole effect in this case is therefore due to the third term in (113.2), and in first-order perturbation theory the level displacement is the mean value
+\begin{equation}
+ \Delta E=\frac{e^2}{8mc^2}\sum_a\overline{(\mathbf H\times\mathbf r_a)^2}.
+ \tag{113.10}
+\end{equation}
+
+\SourcePage{560}{563}
+Writing $(\mathbf H\times\mathbf r_a)^2=H^2r_a^2\sin^2\theta$, where $\theta$ is the angle between $\mathbf r_a$ and $\mathbf H$, and averaging over the directions of $\mathbf r_a$, we obtain $\overline{\sin^2\theta}=1-\overline{\cos^2\theta}=2/3$ (the wave function of a state with $L=S=0$ is spherically symmetric, so averaging over directions is performed independently of averaging over the distances $r_a$). Thus
+\begin{equation}
+ \Delta E=\frac{e^2}{12mc^2}H^2\sum_a\overline{r_a^2}.
+ \tag{113.11}
+\end{equation}
+
+The magnetic moment calculated from (113.8) is now proportional to the magnitude of the field (an atom with $L=S=0$ naturally has no magnetic moment in the absence of a field). Writing it as $\chi H$, we may regard the coefficient $\chi$ as the magnetic susceptibility of the atom. For it we obtain the following \emph{Langevin formula} (P.~Langevin, 1905):
+\begin{equation}
+ \chi=-\frac{e^2}{6mc^2}\sum_a\overline{r_a^2}.
+ \tag{113.12}
+\end{equation}
+This quantity is negative; that is, the atom is diamagnetic\footnote{We mention that the Thomas--Fermi model cannot be used to calculate the mean square distance of the electrons from the nucleus. Although the integral $\int nr^2\,dr$ with the Thomas--Fermi density $n(r)$ does converge, it converges too slowly, with the result that the values obtained differ greatly from empirical ones.}.
+
+If $J=0$ but $S=L\ne0$, the level displacement linear in the field is likewise absent, but the quadratic second-order effect from the perturbation $-\hat{\boldsymbol\mu}_{\text{at}}\mathbf H$ exceeds the effect (113.11)\footnote{For $S=L\ne0$, the off-diagonal matrix elements of $L_z$, $S_z$ for the transitions $S,L,J\to S,L,J\pm1$ are, in general, nonzero.}. This is because, according to the general formula (38.10), the second-order correction to an energy eigenvalue is determined by a sum of expressions whose denominators contain differences of unperturbed energy levels---in this case the fine-structure intervals of the level, which are small quantities. It was noted in §~38 that the second-order correction to a normal level is always negative. The magnetic moment in the normal state will therefore be positive; that is, an atom in the normal state with $J=0$, $L=S\ne0$ is paramagnetic (J.~H.~van Vleck, 1928).
+
+In strong magnetic fields, when $\mu_BH$ is comparable to or greater than the fine-structure intervals, the level splitting departs from that predicted by (113.6), (113.7); this phenomenon is called the \emph{Paschen--Back effect}.
+
+\SourcePage{561}{564}
+The splitting energy is particularly easy to calculate when the Zeeman splitting is large compared with the fine-structure intervals but remains, of course, small compared with the separations between different multiplets (so that the third term in the Hamiltonian (113.2) may still be neglected in comparison with the second). In other words, the energy in the magnetic field greatly exceeds the spin--orbit interaction\footnote{For intermediate cases, in which the influence of the magnetic field is comparable to the spin--orbit interaction, the splitting cannot be calculated in general form (the case $S=1/2$ is worked out in Problem 1).}. This interaction may therefore be neglected in first approximation. Then not only the projection of the total angular momentum but also the projections $M_L$ and $M_S$ of the orbital angular momentum and spin are conserved, and the splitting is given by
+\begin{equation}
+ \Delta E=\mu_BH(M_L+2M_S).
+ \tag{113.13}
+\end{equation}
+
+The multiplet splitting is superposed on the magnetic-field splitting. It is determined by the mean value of the operator $A\hat{\mathbf L}\hat{\mathbf S}$ (72.4) in a state with given $M_L$, $M_S$ (we are considering the multiplet splitting associated with the spin--orbit interaction). For a specified value of one angular-momentum component, the mean values of the other two vanish. Hence $\overline{\mathbf L\mathbf S}=M_LM_S$, and in the next approximation the level energies are given by
+\begin{equation}
+ \Delta E=\mu_BH(M_L+2M_S)+AM_LM_S.
+ \tag{113.14}
+\end{equation}
+
+The Zeeman splitting cannot be calculated in general for an arbitrary coupling scheme (not $LS$ coupling). One can assert only that the splitting in a weak field is linear in the field and proportional to the projection $M_J$ of the total angular momentum, that is, that it has the form
+\begin{equation}
+ \Delta E=\mu_Bg_{nJ}HM_J,
+ \tag{113.15}
+\end{equation}
+where $g_{nJ}$ are coefficients characteristic of the term in question (the letter $n$ denotes the set of quantum numbers, apart from $J$, that characterize the term). Although these coefficients cannot be calculated individually, it is possible to derive a useful formula for their sum over all possible states of the atom with the given electron configuration and total angular momentum.
+
+By definition,
+\[
+ g_{nJ}M_J=\langle nJM_J|L_z+2S_z|nJM_J\rangle.
+\]
+
+\SourcePage{562}{565}
+The quantities $g_{SLJ}M_J$ (where $g_{SLJ}$ is the Landé factor (113.7) corresponding to $LS$ coupling) are the diagonal matrix elements
+\[
+ g_{SLJ}M_J=\langle SLJM_J|L_z+2S_z|SLM_J\rangle,
+\]
+calculated in another complete system of wave functions. The functions of either system are obtained from those of the other by a linear unitary transformation. Such a transformation, however, leaves the sum of the diagonal matrix elements unchanged (§~12). It follows that
+\[
+ \sum_n g_{nJ}M_J=\sum_{SL}g_{SLJ}M_J,
+\]
+or, since $g_{nJ}$ and $g_{SLJ}$ do not depend on $M_J$,
+\begin{equation}
+ \sum_n g_{nJ}=\sum_{SL}g_{SLJ}.
+ \tag{113.16}
+\end{equation}
+The summation is over all states with the given value of $J$ that are possible for the specified electron configuration. This is the required relation.
+
+\subsection*{Problems}
+
+\ProblemHeading{1.} Determine the splitting of a term with $S=1/2$ in the Paschen--Back effect.
+
+\SolutionHeading The magnetic field and the spin--orbit interaction must be included simultaneously in perturbation theory; thus the perturbation operator has the form\footnote{We do not write in $\hat V$ a term proportional to $(\hat{\mathbf L}\hat{\mathbf S})^2$ (spin--spin interaction). It must be kept in mind, however, that for spin $S=1/2$ the expression $(\hat{\mathbf L}\hat{\mathbf S})^2$, by virtue of the special properties of the Pauli matrices (see §~55), reduces to an expression in $\hat{\mathbf L}\hat{\mathbf S}$ and is therefore included in the formula displayed.}
+\[
+ \hat V=A\hat{\mathbf L}\hat{\mathbf S}+\mu_B(\hat L_z+2\hat S_z)H.
+\]
+As the initial zeroth-approximation wave functions we choose functions corresponding to states with definite values of $L$, $S=1/2$, $M_L$, and $M_S$ ($L$ is specified, $M_L=-L,\ldots,L$; $M_S=\pm1/2$). In the perturbed states only the sum $M\equiv M_J=M_L+M_S$ is conserved ($\hat V$ commutes with $\hat J_z$), so definite values of $M$ can be assigned to the components of the split term.
+
+The values $M=\pm(L+1/2)$ can be realized in only one way: respectively with $|M_LM_S\rangle=|L,1/2\rangle$ and $|-L,-1/2\rangle$. The energy corrections for states with these values of $M$ are therefore simply the diagonal matrix elements $\langle M_LM_S|\hat V|M_LM_S\rangle$ at the indicated values of $|M_LM_S\rangle$. The remaining values of $M$ can be realized in two ways, $|M-1/2,1/2\rangle$ and $|M+1/2,-1/2\rangle$. Each $M$ then corresponds to two different energy values, found from the secular equation formed from the matrix elements for transitions between these two states.
+
+\SourcePage{563}{566}
+The matrix elements of $\mathbf L\mathbf S$ are obtained by directly multiplying the matrices $\langle M_L|\mathbf L|M_L'\rangle$ and $\langle M_S|\mathbf S|M_S'\rangle$, and are
+\[
+ \langle M_LM_S|\mathbf L\mathbf S|M_LM_S\rangle=M_LM_S,
+\]
+\[
+ \begin{split}
+ \langle M+1/2,-1/2|\mathbf L\mathbf S|M-1/2,1/2\rangle
+ &=\langle M-1/2,1/2|\mathbf L\mathbf S|M+1/2,-1/2\rangle\\
+ &=\frac12\sqrt{(L+M+1/2)(L-M+1/2)}.
+ \end{split}
+\]
+In the absence of a magnetic field the term is a doublet whose components are separated by $\epsilon=A(L+1/2)$ (see (72.6)). Choose the lower of these levels as the energy origin. The final formulas for the levels in a magnetic field are then
+\[
+ E=\epsilon\pm\mu_BH(L+1)\quad\text{for }M=\pm(L+1/2),
+\]
+\[
+ E^{\pm}=\frac\epsilon2+\mu_BHM\pm\left[\frac14(\epsilon^2+\mu_B^2H^2)+\frac{\mu_BHM\epsilon}{2L+1}\right]^{1/2}
+\]
+for $M=L-1/2,\ldots,-(L-1/2)$.
+
+For $\mu_BH/\epsilon\ll1$, we obtain
+\[
+ E^+=\epsilon+\mu_BHM\frac{2(L+1)}{2L+1},\qquad E^-=\mu_BHM\frac{2L}{2L+1},
+\]
+in agreement with (113.6), (113.7), in which $S=1/2$, $J=L\pm1/2$ are to be substituted. For $\mu_BH/\epsilon\gg1$,
+\[
+ E^\pm=\mu_BH(M\pm1/2)+\frac\epsilon2\pm\frac{M\epsilon}{2L+1},
+\]
+in agreement with (113.14).
+
+\ProblemHeading{2.} Determine the Zeeman splitting of the terms of a diatomic molecule in case $a$.
+
+\SolutionHeading The magnetic moment due to the motion of the nuclei is very small compared with the magnetic moment of the electrons. The magnetic-field perturbation for the molecule must therefore be written as for a system of electrons, that is, still in the form $\hat V=\mu_B\mathbf H(\hat{\mathbf L}+2\hat{\mathbf S})$, where $\mathbf L$, $\mathbf S$ are the electronic orbital and spin angular momenta.
+
+Averaging the perturbation over the electronic state, we obtain in case $a$
+\[
+ \mu_BHn_z(\Lambda+2\Sigma)=\mu_BHn_z(2\Omega-\Lambda).
+\]
+The mean value of $n_z$ over the molecular rotation is the diagonal matrix element
+\[
+ \langle JM|n_z|JM\rangle=\frac{\Omega M}{J(J+1)},
+\]
+where $M\equiv M_J$ (the matrix element is calculated from the reduced matrix element given by (87.4), with $K,\Lambda\to J,\Omega$).
+
+Thus the required splitting is
+\[
+ \Delta E=\mu_BHM\frac{\Omega(2\Omega-\Lambda)}{J(J+1)}.
+\]
+
+\ProblemHeading{3.} The same for case $b$.
+
+\SolutionHeading The diagonal matrix elements $\langle\Lambda KJ|V|\Lambda KJ\rangle$ that determine the required splitting could be calculated by the general rules set out in §~87. It is simpler, however, to carry out the calculation in a more direct form. Averaging the perturbation operator over the orbital and electronic states gives
+\[
+ \mu_BH(\Lambda n_z+2\hat S_z)
+\]
+
+\SourcePage{564}{567}
+(the spin operator is unaffected by this averaging). Next average over the molecular rotation (the mean value of $n_z$ is found with (87.4)):
+\[
+ \mu_BH\left(\frac{\Lambda^2}{K(K+1)}\hat K_z+2\hat S_z\right).
+\]
+Finally, we average over the spin wave function. After the complete averaging, the mean vectors can be directed only along the sole conserved vector, the total angular momentum $\mathbf J$. We therefore obtain (cf. (113.5))
+\[
+ \frac{\mu_BH}{J(J+1)}\left[\frac{\Lambda^2}{K(K+1)}(\mathbf K\mathbf J)+2(\mathbf S\mathbf J)\right]M
+\]
+($M\equiv M_J$), or, finally,
+\[
+ \begin{split}
+ \Delta E={}&\frac{\mu_B}{J(J+1)}\left\{\frac{\Lambda^2}{2K(K+1)}
+ [J(J+1)+K(K+1)-S(S+1)]\right.\\
+ &\left.{}+[J(J+1)-K(K+1)+S(S+1)]\right\}HM.
+ \end{split}
+\]
+
+\ProblemHeading{4.} A diamagnetic atom is in an external magnetic field. Determine the strength of the induced magnetic field at the center of the atom.
+
+\SolutionHeading For $S=L=0$, the Hamiltonian contains no perturbation linear in the field at all, and consequently the atomic wave function has no first-order correction in the magnetic field. The change $\mathbf j'$ in the electron current in the atom induced by the external magnetic field is associated (in the same first approximation in $H$) only with the addition of the term $(|e|/mc)\mathbf A$ to the electron velocity operators. Hence\footnote{This expression corresponds to the Larmor precession of the atom's electron shell about the direction of the external magnetic field (see II, §~45).}
+\begin{equation}
+ \mathbf j'=-\rho\frac{e^2}{mc}\mathbf A=-\rho\frac{e^2}{2mc}(\mathbf H\times\mathbf r),
+ \tag{1}
+\end{equation}
+where $\rho$ is the electron density in the atom. The strength of the magnetic field produced at the center of the atom by this additional current is
+\[
+ \mathbf H_{\text{ind}}=\frac1c\int\frac{\mathbf r\times\mathbf j'}{r^3}\,dV
+\]
+(cf. (121.8) below). Substituting (1) here and averaging over the directions of $\mathbf r$ under the integral, we obtain
+\begin{equation}
+ \mathbf H_{\text{ind}}=-\frac{e^2}{3mc^2}\mathbf H\int\frac\rho r\,dV=\frac{e}{3mc^2}\varphi_e(0)\mathbf H,
+ \tag{2}
+\end{equation}
+where $\varphi_e(0)$ is the potential of the field produced at its center by the atom's electron shell.
+
+In the Thomas--Fermi model $\varphi_e(0)=-1{,}80Z^{4/3}me^3/\hbar^2$ (see (70.8)), and hence
+\[
+ \mathbf H_{\text{ind}}=-0{,}60\left(\frac{e^2}{\hbar c}\right)^2Z^{4/3}\mathbf H=-3{,}2\cdot10^{-5}Z^{4/3}\mathbf H.
+\]
+
+\SourcePage{565}{568}

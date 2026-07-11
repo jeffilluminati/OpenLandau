@@ -1,0 +1,121 @@
+\SourcePage{565}{568}
+\section{Spin in a time-dependent magnetic field}
+
+Consider an electrically neutral particle with a magnetic moment, placed in a
+uniform magnetic field which varies with time. The particle may be elementary
+(a neutron, for example) or composite (an atom). We suppose the field to be so
+weak that the particle's magnetic energy in it is small compared with the
+separations between its energy levels. The motion of the particle as a whole
+may then be considered for a specified internal state.
+
+Let $\hat{\mathbf s}$ denote the operator of the particle's ``intrinsic''
+angular momentum: its spin for an elementary particle, or the total angular
+momentum $\mathbf J$ for an atom. Write the magnetic-moment operator in the
+form (111.1). The Hamiltonian governing the motion of the neutral particle as
+a whole is
+\begin{equation}
+ \widehat H=-\frac{\mu}{s}\hat{\mathbf s}\mathbf H
+ \tag{114.1}
+\end{equation}
+(only the spin-dependent part of the Hamiltonian has been displayed).
+
+In a uniform field this operator contains no explicit coordinates\footnote{The
+same reasoning also applies when a particle (including a charged one) moves
+through a nonuniform magnetic field and its motion can be treated
+semiclassically. The magnetic field encountered as the particle advances
+along its trajectory may then simply be regarded as a function of time, and
+the same equations may be used for the change of the spin wave function.}.
+The particle's wave function therefore separates into coordinate and spin
+factors. The former is merely the wave function for free motion; below we are
+concerned only with the spin factor. We shall show that the problem for a
+particle of arbitrary angular momentum $s$ reduces to the simpler problem of
+the motion of a spin-$1/2$ particle (E.~Majorana). For this purpose we use the
+device already employed in §~57. In place of one particle with spin $s$, we
+formally introduce a system of $2s$ spin-$1/2$ ``particles.'' The operator
+$\hat{\mathbf s}$ is then represented by the sum
+$\sum_a\hat{\mathbf s}_a$ of their spin operators, while the wave function is
+represented by a product of $2s$ spinors of rank one. The Hamiltonian (114.1)
+accordingly separates into a sum of $2s$ independent Hamiltonians:
+\begin{equation}
+ \widehat H=\sum_a\widehat H_a,\qquad
+ \widehat H_a=-\frac{\mu}{s}\mathbf H\hat{\mathbf s}_a,
+ \tag{114.2}
+\end{equation}
+
+\SourcePage{566}{569}
+so that each of the $2s$ ``particles'' moves independently of all the others.
+Once this has been done, the products of components of the $2s$ rank-one
+spinors need only be replaced again by the components of an arbitrary
+symmetric spinor of rank $2s$.
+
+\begin{center}\textbf{Problems}\end{center}
+
+\ProblemHeading{1.} Find the spin wave function of a neutral spin-$1/2$
+particle in a uniform magnetic field whose direction is fixed but whose
+magnitude follows an arbitrary function $H(t)$.
+
+\SolutionHeading The wave function is a spinor $\psi^\nu$ satisfying the wave
+equation
+\begin{equation}
+ i\hbar\dot\psi^\nu=-2\mu\mathbf H\hat{\mathbf s}\psi^\nu.
+ \tag{1}
+\end{equation}
+Choose the field direction as the $z$ axis. In spinor components, this equation
+then becomes
+\[
+ i\hbar\dot\psi^1=-\mu H\psi^1,\qquad
+ i\hbar\dot\psi^2=\mu H\psi^2.
+\]
+It follows that
+\[
+ \psi^1=c_1\exp\left(\frac{i\mu}{\hbar}\int H\,dt\right),
+ \qquad
+ \psi^2=c_2\exp\left(-\frac{i\mu}{\hbar}\int H\,dt\right).
+\]
+The constants $c_1$, $c_2$ are fixed by the initial conditions and the
+normalization condition $|\psi^1|^2+|\psi^2|^2=1$.
+
+\ProblemHeading{2.} Solve the same problem for a uniform magnetic field of
+constant magnitude whose direction rotates uniformly (with angular velocity
+$\omega$) about the $z$ axis, maintaining an angle $\theta$ with it.
+
+\SolutionHeading The components of the magnetic field are
+\[
+ H_x=H\sin\theta\cos\omega t,\qquad
+ H_y=H\sin\theta\sin\omega t,\qquad
+ H_z=H\cos\theta,
+\]
+and (1) gives the system
+\[
+ \dot\psi^1=i\omega_H(\cos\theta\cdot\psi^1
+  +\sin\theta\cdot e^{-i\omega t}\psi^2),
+\]
+\[
+ \dot\psi^2=i\omega_H(\sin\theta\cdot e^{i\omega t}\psi^1
+  -\cos\theta\cdot\psi^2),
+\]
+where $\omega_H=\mu H/\hbar$. The substitution
+\[
+ \psi^1=e^{-i\omega t/2}\varphi^1,\qquad
+ \psi^2=e^{i\omega t/2}\varphi^2
+\]
+reduces these equations to a system of linear equations with constant
+coefficients. Solving it gives
+\[
+ \psi^1=e^{-i\omega t/2}
+   \left(c_1e^{i\Omega t/2}+c_2e^{-i\Omega t/2}\right),
+\]
+\[
+ \psi^2=2\omega_H\sin\theta\,e^{i\omega t/2}
+ \left[
+  \frac{c_1}{\Omega+\omega+2\omega_H\cos\theta}e^{i\Omega t/2}
+  -\frac{c_2}{\Omega-\omega-2\omega_H\cos\theta}e^{-i\Omega t/2}
+ \right],
+\]
+where
+\[
+ \Omega=\sqrt{(\omega+2\omega_H\cos\theta)^2
+              +4\omega_H^2\sin^2\theta}.
+\]
+
+\SourcePage{567}{570}

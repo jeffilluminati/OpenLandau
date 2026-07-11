@@ -23,7 +23,7 @@ By the general second-order formula (38.10),
 \begin{equation}\alpha_{ik}^{(n)}=-2\sum_m'\frac{(d_i)_{nm}(d_k)_{mn}}{E_n-E_m}.\tag{76.5}\end{equation}
 
 The polarizability depends on the unperturbed state, including $M_J$. Its dependence on $M_J$ follows generally by regarding the values $\alpha_{ik}^{(n)}$ as eigenvalues of
-\begin{equation}\widehat\alpha_{ik}^{(n)}=\alpha_n\delta_{ik}+\beta_n(\widehat J_i\widehat J_k+\widehat J_k\widehat J_i-\tfrac23\delta_{ik}\widehat{\mathbf J}^{,2}).\tag{76.6}\end{equation}
+\begin{equation}\widehat\alpha_{ik}^{(n)}=\alpha_n\delta_{ik}+\beta_n(\widehat J_i\widehat J_k+\widehat J_k\widehat J_i-\tfrac23\delta_{ik}\widehat{\mathbf J}^{2}).\tag{76.6}\end{equation}
 
 \SourcePage{349}{352}
 This is the general symmetric rank-two tensor depending on $\widehat{\mathbf J}$ (cf. \S~75). Thus
@@ -37,7 +37,7 @@ where $\varphi$ is the electric potential and the derivatives are evaluated at t
 \ProblemHeading{1.} Determine how the Stark splitting of the components of a multiplet level depends on $J$.
 
 \SolutionHeading Reverse the order in which the perturbations are introduced: first consider Stark splitting without fine structure, then introduce spin--orbit interaction. Since spin does not interact with the external electric field, a level of orbital angular momentum $L$ splits according to (76.2), with
-\[\widehat\alpha_{ik}=a\delta_{ik}+b(\widehat L_i\widehat L_k+\widehat L_k\widehat L_i-\tfrac23\delta_{ik}\widehat{\mathbf L}^{,2}).\]
+\[\widehat\alpha_{ik}=a\delta_{ik}+b(\widehat L_i\widehat L_k+\widehat L_k\widehat L_i-\tfrac23\delta_{ik}\widehat{\mathbf L}^{2}).\]
 After spin--orbit interaction is introduced, average this operator over states of specified $J$ but unspecified $M_J$, exactly as in problem 1 of \S~75. Equations (76.6), (76.7) result, with
 \[\alpha=a,\qquad \beta=b\frac{3(\mathbf{JL})[2(\mathbf{JL})-1]-2J(J+1)L(L+1)}{J(J+1)(2J-1)(2J+3)}.\]
 This determines the $J$ dependence, though not the $L,S$ dependence of $a,b$.
@@ -67,7 +67,7 @@ Terms common to the doublet have been omitted. Both signs apply for $|M|\leqslan
 
 \SourcePage{351}{354}
 and the other second derivatives vanish. Equation (76.8) becomes
-\[\frac a6(\widehat Q_{xx}+\widehat Q_{yy}-2\widehat Q_{zz})=\frac{Qa}{2J(2J-1)}(\widehat{\mathbf J}^{,2}-3\widehat J_z^2),\]
+\[\frac a6(\widehat Q_{xx}+\widehat Q_{yy}-2\widehat Q_{zz})=\frac{Qa}{2J(2J-1)}(\widehat{\mathbf J}^{2}-3\widehat J_z^2),\]
 and therefore
 \[\Delta E=a\frac{Q}{2J(2J-1)}[J(J+1)-3M_J^2].\]
 
@@ -85,11 +85,11 @@ The solution must keep $f\psi_0$ finite at zero and infinity. For hydrogen's gro
 \[\alpha=\frac{2i}{a_B}(rf\cos^2\theta)_{00}=\frac{2i}{3a_B}(rf)_{00}=\frac92a_B^3.\]
 
 \SourcePage{352}{355}
-\ProblemHeading{5.} Calculate the polarizability of an electron in a bound $s$ state in a potential well of range $a$, where $a\varkappa\ll1$, $\varkappa=\sqrt{2m|E_0|}/\hbar$, and $|E_0|$ is the binding energy.
+\ProblemHeading{5.} Calculate the polarizability of an electron in a bound $s$ state in a potential well of range $a$, where $a\kappa\ll1$, $\kappa=\sqrt{2m|E_0|}/\hbar$, and $|E_0|$ is the binding energy.
 
 \SolutionHeading The region inside the well may be neglected in $(z\widehat b)_{00}$, and throughout space one may use
-\[\psi_0=\sqrt{\frac{\varkappa}{2\pi}}\frac{e^{-\varkappa r}}r.\]
+\[\psi_0=\sqrt{\frac{\kappa}{2\pi}}\frac{e^{-\kappa r}}r.\]
 Equation (2) becomes
-\[\frac{f''}{2}-\varkappa f'-\frac f{r^2}=ir,\]
-whose boundary-condition solution is $f=-ir^2/2\varkappa$. Equation (1) then gives
-\[\alpha=\frac{me^2}{4\hbar^2\varkappa^4}.\]
+\[\frac{f''}{2}-\kappa f'-\frac f{r^2}=ir,\]
+whose boundary-condition solution is $f=-ir^2/2\kappa$. Equation (1) then gives
+\[\alpha=\frac{me^2}{4\hbar^2\kappa^4}.\]

@@ -1,0 +1,190 @@
+\SourcePage{551}{554}
+\section{Motion in a uniform magnetic field}
+
+We shall determine the energy levels of a particle in a constant uniform magnetic field (L.~D.~Landau, 1930).
+
+For a uniform field it is convenient here to choose the vector potential not in the form (111.7), but as follows:
+\begin{equation}
+ A_x=-Hy,\qquad A_y=A_z=0.
+ \tag{112.1}
+\end{equation}
+(the $z$ axis is chosen along the field). The Hamiltonian then takes the form
+\begin{equation}
+ \hat H=\frac1{2m}\left(\hat p_x+\frac{eH}{c}y\right)^2+\frac{\hat p_y^2}{2m}+\frac{\hat p_z^2}{2m}-\frac\mu s\hat s_zH.
+ \tag{112.2}
+\end{equation}
+
+First, we note that the operator $\hat s_z$ commutes with the Hamiltonian (since the latter contains no operators for the other spin components). Thus the $z$ projection of the spin is conserved, and $\hat s_z$ may consequently be replaced by its eigenvalue $s_z=\sigma$. The spin dependence of the wave function then ceases to be relevant, and $\psi$ in the Schrödinger equation may be understood as an ordinary coordinate function. For this function we have
+\begin{equation}
+ \frac1{2m}\left[\left(\hat p_x+\frac{eH}{c}y\right)^2+\hat p_y^2+\hat p_z^2\right]\psi-\frac\mu s\sigma H\psi=E\psi.
+ \tag{112.3}
+\end{equation}
+
+The Hamiltonian in this equation contains neither $x$ nor $z$ explicitly. Hence the operators $\hat p_x$ and $\hat p_z$ (differentiation with respect to $x$ and $z$) also commute with it; that is, the $x$ and $z$ components of the generalized momentum are conserved. Accordingly, we seek $\psi$ in the form
+\begin{equation}
+ \psi=\exp\left[\frac i\hbar(p_xx+p_zz)\right]\chi(y).
+ \tag{112.4}
+\end{equation}
+
+The eigenvalues $p_x$ and $p_z$ range over all values from $-\infty$ to $\infty$. Since $A_z=0$, the $z$ component of the generalized momentum is identical with the component $mv_z$ of the ordinary momentum. Thus the particle velocity along the field may have any value; one may say that motion along the field is ``not quantized.''
+
+Substitution of (112.4) into (112.3) gives the following equation for $\chi(y)$:
+\begin{equation}
+ \chi''+\frac{2m}{\hbar^2}\left[\left(E+\frac{\mu\sigma}{s}H-\frac{p_z^2}{2m}\right)-\frac m2\omega_H^2(y-y_0)^2\right]\chi=0,
+ \tag{112.5}
+\end{equation}
+
+\SourcePage{552}{555}
+where we have introduced $y_0=-cp_x/eH$ and
+\begin{equation}
+ \omega_H=\frac{|e|H}{mc}.
+ \tag{112.6}
+\end{equation}
+
+Equation (112.5) has the same form as the Schrödinger equation (23.6) for a linear oscillator of frequency $\omega_H$. We can therefore conclude at once that the expression in parentheses in (112.5), which plays the part of the oscillator energy, can take the values $(n+1/2)\hbar\omega_H$, where $n=0,1,2,\ldots$
+
+We thus obtain the following expression for the energy levels of a particle in a uniform magnetic field:
+\begin{equation}
+ E=\left(n+\frac12\right)\hbar\omega_H+\frac{p_z^2}{2m}-\frac{\mu\sigma}{s}H.
+ \tag{112.7}
+\end{equation}
+The first term in this expression gives the discrete energy values associated with motion in the plane perpendicular to the field; they are called \emph{Landau levels}. For an electron, $\mu/s=-|e|\hbar/mc$, and (112.7) becomes
+\begin{equation}
+ E=\left(n+\frac12+\sigma\right)\hbar\omega_H+\frac{p_z^2}{2m}.
+ \tag{112.8}
+\end{equation}
+
+The eigenfunctions $\chi_n(y)$ belonging to the energy levels (112.7) are given by (23.12), with the corresponding change of notation ($a_H=\sqrt{\hbar/m\omega_H}$):
+\begin{equation}
+ \chi_n(y)=\frac1{\pi^{1/4}a_H^{1/2}\sqrt{2^nn!}}\exp\left(-\frac{(y-y_0)^2}{2a_H^2}\right)H_n\left(\frac{y-y_0}{a_H}\right).
+ \tag{112.9}
+\end{equation}
+
+In classical mechanics, particles move in a circle with a fixed center in the plane perpendicular to the field $\mathbf H$ (the $xy$ plane). The quantity $y_0$, which is conserved in the quantum case, corresponds to the classical $y$ coordinate of the center of the circle. Along with it, the quantity $x_0=(cp_y/eH)+x$ is also conserved (it is readily verified that its operator commutes with the Hamiltonian (112.2)). This quantity corresponds to the classical $x$ coordinate of the center of the circle\footnote{Indeed, for classical motion in a circle of radius $cmv_t/eH$ ($v_t$ is the projection of the velocity onto the $xy$ plane; see II, \S~21), we have
+\[
+ y_0=-cp_x/eH=-(cm/eH)v_x+y.
+\]
+It is evident from this expression that $y$ is the coordinate of the center of the circle. Its other coordinate is
+\[
+ x_0=(cm/eH)v_y+x=cp_y/eH+x.
+\]}. 
+
+\SourcePage{553}{556}
+The operators $\hat x_0$ and $\hat y_0$, however, do not commute with each other, and hence the coordinates $x_0$ and $y_0$ cannot simultaneously have definite values.
+
+Since (112.7) does not contain $p_x$, which ranges continuously, the energy levels have a continuous degeneracy. The degeneracy becomes finite, however, if motion in the $xy$ plane is restricted to a large but finite area $S=L_xL_y$. The number of distinct (now discrete) values of $p_x$ in an interval $\Delta p_x$ is $(L_x/2\pi\hbar)\Delta p_x$. All values of $p_x$ for which the orbit center lies within $S$ are allowed (we neglect the orbit radius in comparison with the large length $L_y$). From the conditions $0<y_0<L_y$, we have $\Delta p_x=eHL_y/c$. The number of states (for given $n$ and $p_z$) is therefore $eHS/2\pi\hbar c$. If the region of motion is also bounded along the $z$ axis (with length $L_z$), the number of possible values of $p_z$ in an interval $\Delta p_z$ is $(L_z/2\pi\hbar)\Delta p_z$, and the number of states in that interval is
+\begin{equation}
+ \frac{eHS}{2\pi\hbar c}\frac{L_z}{2\pi\hbar}\Delta p_z=\frac{eHV}{4\pi^2\hbar^2c}\Delta p_z.
+ \tag{112.10}
+\end{equation}
+
+For an electron there is a further degeneracy: the energy levels (112.8) coincide for states with quantum numbers $n$, $\sigma=1/2$ and $n+1$, $\sigma=-1/2$.
+
+\subsection*{Problems}
+
+\ProblemHeading{1.} Find the wave functions of an electron in a uniform magnetic field for states in which it has definite values of the momentum and angular momentum along the direction of the field.
+
+\SolutionHeading In cylindrical coordinates $\rho$, $\varphi$, $z$, with the $z$ axis directed along the field, the vector potential in the gauge (111.7) has components $A_\varphi=H\rho/2$, $A_z=A_\rho=0$, and the Schrödinger equation is\footnote{We write the electron charge as $e=-|e|$, and denote its mass here by $M$ in order to distinguish it from the angular momentum $m$. The particle-spin term, which is immaterial for this problem, is omitted.}
+\begin{equation}
+ -\frac{\hbar^2}{2M}\left[\frac1\rho\frac\partial{\partial\rho}\left(\rho\frac{\partial\psi}{\partial\rho}\right)+\frac{\partial^2\psi}{\partial z^2}+\frac1{\rho^2}\frac{\partial^2\psi}{\partial\varphi^2}\right]-\frac{i\hbar\omega_H}{2}\frac{\partial\psi}{\partial\varphi}+\frac{M\omega_H^2}{8}\rho^2\psi=E\psi.
+ \tag{1}
+\end{equation}
+We seek a solution in the form
+\[
+ \psi=\frac{e^{im\varphi}}{\sqrt{2\pi}}e^{ip_zz/\hbar}R(\rho),
+\]
+and obtain for the radial function the equation
+\[
+ \frac{\hbar^2}{2M}\left(R''+\frac1\rho R'-\frac{m^2}{\rho^2}R\right)+\left[E-\frac{p_z^2}{2M}-\frac{M\omega_H^2}{8}\rho^2-\frac{\hbar\omega_Hm}{2}\right]R=0.
+\]
+
+\SourcePage{554}{557}
+Introducing the new independent variable $\xi=(M\omega_H/2\hbar)\rho^2$, we rewrite this equation as
+\[
+ \xi R''+R'+\left(-\frac\xi4+\beta-\frac{m^2}{4\xi}\right)R=0,\qquad
+ \beta=\frac1{\hbar\omega_H}\left(E-\frac{p_z^2}{2M}\right)-\frac m2.
+\]
+As $\xi\to\infty$, the required function behaves as $e^{-\xi/2}$, while as $\xi\to0$ it behaves as $\xi^{|m|/2}$. We therefore seek a solution in the form
+\[
+ R(\xi)=e^{-\xi/2}\xi^{|m|/2}w(\xi),
+\]
+and for $w(\xi)$ obtain the confluent hypergeometric function equation:
+\[
+ w=F\left\{-\left(\beta-\frac{|m|+1}{2}\right),|m|+1,\xi\right\}.
+\]
+For the wave function to be finite everywhere, $\beta-(|m|+1)/2$ must be a nonnegative integer $n_\rho$. The energy levels are then
+\[
+ E=\hbar\omega_H\left(n_\rho+\frac{|m|+m+1}{2}\right)+\frac{p_z^2}{2M},
+\]
+which is equivalent to (112.7). The radial wave functions belonging to these levels are
+\begin{equation}
+ R_{n_\rho m}(\rho)=\frac1{a_H^{1+|m|}}\left[\frac{(|m|+n_\rho)!}{2^{|m|}n_\rho!|m|!^2}\right]^{1/2}\exp\left(-\frac{\rho^2}{4a_H^2}\right)\rho^{|m|}F\left(-n_\rho,|m|+1,\frac{\rho^2}{2a_H^2}\right),
+ \tag{2}
+\end{equation}
+where $a_H=\sqrt{\hbar/M\omega_H}$; the functions are normalized by $\int_0^\infty R^2\rho\,d\rho=1$. Here the hypergeometric function is a generalized Laguerre polynomial.
+
+\ProblemHeading{2.} Determine the lowest energy level corresponding to a bound state of an electron in a shallow potential well $U(r)$ ($|U|\ll\hbar^2/ma^2$, where $a$ is the range of the forces in the well), in the additional presence of a uniform magnetic field (Yu.~A.~Bychkov, 1960).
+
+\SolutionHeading The condition imposed on the field $U(r)$ ensures that, in the absence of the magnetic field, perturbation theory is applicable to it; there are then no bound states in the well (see \S~45). When the magnetic field is also present, $U(r)$ may be treated as a perturbation only for the motion in the plane transverse to $\mathbf H$, whose (discrete) energy-spectrum character is not changed by adding $U$. The character of the motion along $\mathbf H$, however, does change: as will become clear, infinite motion becomes finite, and the spectrum correspondingly changes from continuous to discrete. The well field therefore cannot be treated by perturbation theory for this motion.
+
+Accordingly, on separating variables in the Schrödinger equation (equation (1) of the preceding problem, with the term $U\psi$ added on the left), we retain the radial functions $R(\rho)$ in their former form (2); the lowest level corresponds to the quantum numbers $n_\rho=m=0$. Substituting $\psi=R_{00}(\rho)\chi(z)$ into the Schrödinger equation, then multiplying it by $R_{00}(\rho)$ and integrating over $\rho\,d\rho$, we obtain for $\chi(z)$ the equation
+\begin{equation}
+ -\frac{\hbar^2}{2m}\chi''+\overline U(z)\chi=\varepsilon\chi,
+ \tag{3}
+\end{equation}
+
+\SourcePage{555}{558}
+where $\varepsilon=E-\hbar\omega_H/2$ and
+\[
+ \overline U(z)=\int_0^\infty U\left(\sqrt{z^2+\rho^2}\right)R_{00}^2(\rho)\rho\,d\rho
+\]
+($m$ again denotes the particle mass). This equation has the form of the Schrödinger equation for one-dimensional motion in the potential well $\overline U(z)$, with $\varepsilon$ as the energy of that motion. We may therefore use directly the result of Problem 1 in \S~45, according to which the discrete energy level is
+\begin{equation}
+ \varepsilon=-\frac m{2\hbar^2}\left[\int_{-\infty}^{\infty}\overline U(z)\,dz\right]^2=-\frac m{2\hbar^2}\left[\int_{-\infty}^{\infty}\int_0^\infty U\left(\sqrt{z^2+\rho^2}\right)R_{00}^2(\rho)\rho\,d\rho\,dz\right]^2.
+ \tag{4}
+\end{equation}
+
+The wave function $R_{00}(\rho)$ decays over distances $\rho\sim a_H$. If the magnetic field is so weak that $a_H\gg a$, the integral over $d\rho$ is determined by the region $\rho\lesssim a$, where we may put $R_{00}(\rho)\approx R_{00}(0)=1/a_H$. Then
+\begin{equation}
+ \varepsilon=-\frac{me^2H^2}{8\pi^2\hbar^4c^2}\left(\int U(r)\,dV\right)^2
+ \tag{5}
+\end{equation}
+($dV=2\pi\rho\,d\rho\,dz\to4\pi r^2\,dr$). In the opposite case of a strong magnetic field, when $a_H\ll a$, the integral in (4) is determined by the region $\rho\lesssim a_H$, where we may put $U(\sqrt{\rho^2+z^2})\approx U(z)$. The integral over $d\rho$ then reduces to the normalization integral for $R_{00}$ and is equal to 1, so that
+\begin{equation}
+ \varepsilon=-\frac{2m}{\hbar^2}\left(\int_0^\infty U(z)\,dz\right)^2.
+ \tag{6}
+\end{equation}
+In both cases, estimation of the integrals shows that $\varepsilon\ll\hbar\omega_H$.
+
+\ProblemHeading{3.} Determine the energy levels of the hydrogen atom in a magnetic field so strong that $a_H\ll a_B$, where $a_B$ is the Bohr radius (R.~J.~Elliott, R.~Loudon, 1960).
+
+\SolutionHeading Under the stated condition, $\hbar\omega_H\gg me^4/\hbar^2$, the effect of the nuclear Coulomb field on the electron's motion in the plane transverse to $\mathbf H$ may be treated as a small perturbation. We therefore return to the situation considered in Problem 2 and may use equation (3), with
+\begin{equation}
+ \overline U(z)=-e^2\int_0^\infty\frac{R_{00}^2(\rho)\rho}{\sqrt{\rho^2+z^2}}\,d\rho.
+ \tag{7}
+\end{equation}
+Having inserted the radial function $R_{00}$ in this expression, below we restrict ourselves to the energy levels of the longitudinal motion associated with the lowest Landau level ($\hbar\omega_H/2$) of the transverse motion.
+
+The ground-state wave function $\chi_0(z)$ extends over distances $|z|\lesssim a_B$ and varies slowly across them (having no nodes, it does not vanish at $z=0$). The conditions used in the solution of Problem 1 in \S~45 therefore hold for the ground level, and we can use formula (6), which was based on that solution. The logarithmically divergent integral is cut off at the upper end at distances $|z|\sim a_B$, and at the lower end at distances $|z|\sim a_H$ (where $|z|\sim\rho$ and the replacement of $\sqrt{\rho^2+z^2}$ by $|z|$ in (7) is not
+
+\SourcePage{556}{559}
+permissible). We thereby find
+\begin{equation}
+ \varepsilon_0=-\frac{2me^4}{\hbar^2}\ln^2\frac{a_B}{a_H}=-\frac{me^4}{2\hbar^2}\ln^2\frac{\hbar^3H}{m^2c|e|^3}.
+ \tag{8}
+\end{equation}
+This formula is said to have logarithmic accuracy: it is assumed that not only the ratio $a_B/a_H$ itself but also its logarithm is large; the numerical factor in the logarithm's argument then remains undetermined.
+
+The excited states of the discrete spectrum are obtained as solutions of the Schrödinger equation (3) with the field $\overline U(z)\approx-e^2/z$ (which follows from (7) when $z\sim a_B\gg\rho$). But by the substitution $\chi=z\varphi(z)$ this equation is reduced to
+\begin{equation}
+ -\frac{\hbar^2}{2m}\frac1{z^2}\frac d{dz}\left(z^2\frac{d\varphi}{dz}\right)-\frac{e^2}{z}\varphi=\varepsilon\varphi,
+ \tag{9}
+\end{equation}
+which has the same form as the equation for the radial wave functions of $s$ states in the three-dimensional Coulomb problem. The required levels are therefore given by (36.10):
+\begin{equation}
+ \varepsilon_n=-\frac{me^4}{2\hbar^2n^2},
+ \tag{10}
+\end{equation}
+where $n=1,2,3,\ldots$ This expression too has only logarithmic accuracy: the next correction would be small relative to the leading term only by the ratio $1/\ln(a_B/a_H)$.
+
+Equation (9) determines the wave function only for $z>0$; it may be continued into $z<0$ either as $\chi(-z)=\chi(z)$ or as $\chi(-z)=-\chi(z)$. Accordingly, in the approximation considered, the levels (10) are twofold degenerate. This degeneracy is, however, lifted in higher orders in $a_H/a_B$.
