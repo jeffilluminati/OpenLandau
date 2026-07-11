@@ -33,6 +33,7 @@
 \RequirePackage{enumitem}
 \RequirePackage{needspace}
 \RequirePackage{chngcntr}
+\RequirePackage{physics}
 \RequirePackage{fancyhdr}
 \RequirePackage{titlesec}
 \RequirePackage{tocloft}
@@ -133,7 +134,7 @@
   \ignorespaces
 }
 \newcommand{\TranscriptionUnclear}[1]{\textbf{[UNCLEAR: #1]}}
-\newcommand{\Tr}{\operatorname{Tr}}
+\providecommand{\Tr}{\operatorname{Tr}}
 \newcommand{\Grad}[1]{\nabla #1}
 \newcommand{\Div}[1]{\nabla\!\cdot #1}
 \newcommand{\Curl}[1]{\nabla\!\times #1}
