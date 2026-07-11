@@ -1,0 +1,131 @@
+\SourcePage{206}{211}
+\section{Radiation of atoms. Electric type\protect\footnote{In \S\S\,49, 51, 53--55 we use ordinary units.}}
+
+The energies of the outer electrons of an atom (participating in optical radiative transitions) are in rough estimate of the order of $E \sim me^4/\hbar^2$, so that the wavelengths radiated are $\lambda \sim \hbar c/E \sim \hbar^2/(\alpha me^2)$. The dimensions of the atom are $a \sim \hbar^2/me^2$. Therefore in optical spectra of atoms, as a rule, the inequality $a/\lambda \sim \alpha \ll 1$ is satisfied. The same order of magnitude is the ratio $v/c \sim \alpha$, where $v$ is the speed of the optical electrons.
+
+Thus, in optical spectra of atoms the condition is fulfilled by virtue of which the probability of electric dipole radiation (if it is allowed by selection rules) substantially exceeds the probability of multipole transitions\,\footnote{Typical values of the probability of dipole transitions in the optical region of atomic spectra are of the order $10^8\,\text{s}^{-1}$.}. In connection with this, in the spectroscopy of atoms the most important role is played by precisely the electric dipole transitions.
+
+\SourcePage{207}{212}
+As has already been indicated, such transitions are subject to strict selection rules for the total angular momentum $J$ of the atom and for parity $P$\,\footnote{The selection rule for parity was established by \textit{Laporte} (\textit{O.\,Laporte}, 1924).}:
+\begin{equation}
+|J' - J| \leqslant 1 \leqslant J + J',
+\tag{49.1}
+\end{equation}
+\begin{equation}
+PP' = -1.
+\tag{49.2}
+\end{equation}
+The inequality $|J' - J| \leqslant 1$ means that the angular momentum $J$ can change only by $0$, $\pm 1$; by virtue of the inequality $J + J' \geqslant 1$ the transition $0 \to 0$ is additionally forbidden. The parities of the initial and final states must be opposite.
+
+The probability of radiation with the transition $nJM \to n'J'M'$ is determined by the corresponding matrix element of the dipole moment of the atom according to
+\begin{equation}
+w(nJM \to n'J'M') = \frac{4\omega^3}{3\hbar c^3}\,|\langle n'J'M'|\mathbf{d}_{-m}|nJM\rangle|^2,
+\tag{49.3}
+\end{equation}
+\[
+\omega = \omega(nJ \to n'J').
+\]
+
+Summing~(49.3) over all values $M' = M - m$ (for a given $M$), we obtain the total probability of emission of radiation of a given frequency from the atomic level $nJ$. The summation is carried out with the help of~(46.20) and gives
+\begin{equation}
+w(nJ \to n'J') = \frac{4\omega^3}{3\hbar c^3}\;\frac{1}{2J+1}\;|\langle n'J'\|d\|nJ\rangle|^2.
+\tag{49.4}
+\end{equation}
+The square of the modulus of the reduced matrix element standing here is sometimes called the \textit{line strength of the transition}; this quantity is symmetric with respect to the initial and final states.
+
+The observed intensity of emission is obtained by multiplying $w$ by $\hbar\omega$ and by the number of atoms in the source found on the given excited level ($N_{n,J}$). Thus, in a gas with temperature $T$ the number $N_{n,J} \propto (2J+1)\exp(-E_{nJ}/T)$; the factor $(2J+1)$ is the statistical weight of the level with angular momentum~$J$.
+
+Further conclusions about the probabilities of transitions in atomic spectra can be made only on specifying the character of the states of the atom. We shall not dwell here on the methods of computing matrix elements, the degree of approximation of which does not have a sharp theoretical character. We shall derive only certain relations for a fairly broad (and especially in light
+
+\SourcePage{208}{213}
+atoms) category of states, constructed according to the $LS$-coupling scheme (see~III, \S\,72). Such states are characterised, besides the total angular momentum, also by definite conserved values of the orbital angular momentum $L$ and the spin $S$ in this case.
+
+Since the dipole moment is a purely orbital quantity, its operator commutes with the spin operator, i.e.\ its matrix is diagonal in the number $S$. By the number $L$ for the dipole moment the same selection rules apply as for any orbital vector (see~III, \S\,29). Thus, transitions between states constructed according to the $LS$-scheme are subject to additional (besides~(49.1), (49.2)) selection rules:
+\begin{equation}
+S' - S = 0,
+\tag{49.5}
+\end{equation}
+\begin{equation}
+|L' - L| \leqslant 1 \leqslant L + L'.
+\tag{49.6}
+\end{equation}
+
+Let us emphasise once more that these rules are approximate and break down when the spin--orbit interaction is taken into account. Let us note that the rule~(49.5) (the forbiddenness of transitions between terms of different multiplicity) holds not only for dipole but for all transitions of the electric type: the electric multipole moments of all orders are orbital tensors, so that their matrices are diagonal in spin. Thus, for electric quadrupole transitions, besides the general rules
+\begin{equation}
+|J' - J| \leqslant 2 \leqslant J + J',\qquad PP' = 1,
+\tag{49.7}
+\end{equation}
+in the case of $LS$-coupling the additional selection rules hold:
+\begin{equation}
+S' - S = 0,\qquad |L' - L| \leqslant 2 \leqslant L + L'.
+\tag{49.8}
+\end{equation}
+
+The dependence of the probability of radiation on the numbers $S$, $J$, $J'$ can be determined in explicit form. This question is solved directly with the help of general formulae for matrix elements of spherical tensors in the addition of angular momenta. According to formula~(109.3) (see~III) we have\,\footnote{In the formulae of vol.\ III, \S\,109 under ``angular momenta of subsystems 1 and 2'' one should now understand the orbital angular momentum and the spin of the atom, the interaction between which we neglect. The role of the quantity $f^{(1)}_q$ is played by the orbital vector $d_q$.}:
+\begin{equation}
+|\langle n'L'S J'\|d\|nLSJ\rangle|^2 = (2J+1)(2J'+1)\begin{Bmatrix} L' & J' & S \\ J & L & 1\end{Bmatrix}^{\!2}|\langle n'L'\|d\|nL\rangle|^2.
+\tag{49.9}
+\end{equation}
+
+\SourcePage{209}{214}
+Substituting this into~(49.4), we get
+\begin{equation}
+w(nLSJ \to n'L'SJ') = \frac{4\omega^3}{3\hbar c^3}\,(2J'+1)\begin{Bmatrix} L' & J' & S \\ J & L & 1\end{Bmatrix}^{\!2}|\langle n'L'\|d\|nL\rangle|^2,
+\tag{49.10}
+\end{equation}
+where $\omega = \omega(nLS \to n'L'S)$\,\footnote{Neglecting the spin--orbit interaction in the computation of matrix elements, we neglect also the dependence of frequencies on $J$ and $J'$, i.e.\ the fine structure of the initial and final levels of the atom.}.
+
+For these probabilities one can obtain a definite sum rule. For the squares of the $6j$-symbols the summation formula holds (see~III, (108.7)):
+\begin{equation}
+\sum_{J'}(2J'+1)\begin{Bmatrix} L' & J' & S \\ J & L & 1\end{Bmatrix}^{\!2} = \frac{1}{2L+1}.
+\tag{49.11}
+\end{equation}
+With its help we find from~(49.10)
+\begin{equation}
+\sum_{J'}w(nLSJ \to n'L'SJ') = \frac{4\omega^3}{3\hbar c^3}\;\frac{1}{2L+1}\;|\langle n'L'\|d\|nL\rangle|^2.
+\tag{49.12}
+\end{equation}
+Let us note that this quantity turns out to be independent of the initial value of $J$.
+
+If we are dealing with the radiation of a gas with temperature $T$, much larger than the intervals of the fine structure of the atomic term $nSL$, then the states with different $J$ are populated uniformly, i.e.\ all values of $J$ are equally probable. The probability that the atom is on a level with a certain definite value of $J$ in such a case is
+\begin{equation}
+\frac{2J+1}{(2L+1)(2S+1)},
+\tag{49.13}
+\end{equation}
+i.e.\ the ratio of the statistical weight of this level to the full statistical weight of the term $nSL$. The averaging of the expressions~(49.10) or their sums~(49.12) over these probabilities reduces to multiplication by the factor~(49.13); we shall denote this averaging by a bar over the letter.
+The total probability of radiation from all lines of the spectral multiplet (formed by all possible transitions between the fine-structure components of the two terms $nSL$ and $n'SL'$) is the sum:
+\begin{equation}
+\overline{w}(nLS \to n'L'S) = \sum_J\sum_{J'}\overline{w}(nLSJ \to n'L'SJ').
+\tag{49.14}
+\end{equation}
+Since, of course, $\sum_J(2J+1) = (2S+1)(2L+1)$, for the full probability we obtain an expression coinciding with~(49.12).
+
+\SourcePage{210}{215}
+Therefore for the relative probability (or, which is the same, the relative intensity) of an individual line we obtain
+\begin{equation}
+\frac{\overline{w}(nLSJ \to n'L'SJ')}{\overline{w}(nLS \to n'L'S)} = \frac{(2J+1)(2J'+1)}{(2S+1)}\begin{Bmatrix} L' & J' & S \\ J & L & 1\end{Bmatrix}^{\!2}.
+\tag{49.15}
+\end{equation}
+
+Analysis of the numerical values given by this formula reveals that among the lines of the multiplet the most intense are those for which $\Delta J = \Delta L$ (they are called \textit{principal lines}, as distinct from the remaining components of the multiplet, called \textit{satellites}). The intensity of the principal lines is the greater the larger the initial value of $J$.
+
+Summing~(49.15) over $J$ or over $J'$ gives
+\begin{equation}
+\frac{\sum_{J'}\overline{w}(nLSJ \to n'L'SJ')}{\sum_J\overline{w}(nLSJ \to n'L'SJ')} = \frac{2J+1}{(2L+1)(2S+1)},
+\tag{49.16}
+\end{equation}
+\[
+\frac{\sum_J\overline{w}(nLSJ \to n'L'SJ')}{\sum_{J'}\overline{w}(nLSJ \to n'L'SJ')} = \frac{2J'+1}{(2L+1)(2S+1)}.
+\]
+Thus, the sum of intensities of all lines of a spectral multiplet having one and the same initial (or final) level is proportional to the statistical weight of the initial (or final) level.
+
+Let us dwell also on the hyperfine structure of spectral lines of the atom. Recall that the hyperfine splitting of atomic levels arises as a result of the interaction of the electrons with the spin of the nucleus, if the latter is different from zero (see~III, \S\,122). The total angular momentum of the atom (including the nucleus) $\mathbf{F}$ is composed of the total angular momentum of the electrons $\mathbf{J}$ and the moment of the nucleus $\mathbf{I}$. Each component of the hyperfine structure of the level $nJ$ is characterised by its value of the quantum number~$F$.
+
+The strict law of conservation of angular momentum leads now to a strict selection rule for the total angular momentum~$F$; for electric dipole radiation
+\begin{equation}
+|F' - F| \leqslant 1 \leqslant F + F'.
+\tag{49.17}
+\end{equation}
+But by virtue of the extreme weakness of the interaction of the electrons with the spin of the nucleus it can be entirely neglected in the computation of the matrix elements of the electric (and magnetic) moments of the electron shell of the atom. Therefore the previous selection rules for the electronic angular momentum $J$ and for the electronic parity also remain valid. In particular, by virtue of the latter, electric dipole transitions between components of the hyperfine structure of one and the same term are impossible: all these levels have the same parity, whereas the indicated transitions are possible only between states of different parity.
+
+Since the operator of the dipole moment commutes with the spin of the nucleus, the dependence of the matrix elements on the numbers $I$ and $F$

@@ -1,0 +1,295 @@
+\SourcePage{197}{202}
+\section{Angular distribution and polarisation of radiation}
+
+The formulae derived in~\S\S\,46 and~47 referred to the emission of a photon with definite values of the angular momentum $j$ and its projection $m$. Correspondingly, it was assumed that the radiating system (say, a nucleus) both before and after emission possesses not only definite values of the angular momentum $J$, but also definite polarisations, i.e.\ values of~$M$.
+
+\SourcePage{198}{203}
+Let us now consider the more general case of radiation by a partially polarised nucleus (whose dimensions, as before, are assumed small compared with the wavelength). The emitted photon still possesses a definite angular momentum $j$, but may be partially polarised. We shall find the probability of emission as a function of the direction $\mathbf{n}$ of the photon. It must be expressed through the density matrices describing the polarisation states of the nucleus and the photon.
+
+To this end let us first write the emission probability as a function of the direction $\mathbf{n}$ and the helicity $\lambda$ of the photon ($\lambda = \pm 1$) for the case when both the initial and final nuclei have definite values: $J_i M_i$ and $J_f M_f$.
+
+The matrix element of emission of a photon with definite $jm$ is proportional to the matrix element of the $2^j$-pole (electric or magnetic) moment of the nucleus:
+\begin{equation}
+\langle J_f M_f;\,jm|V|J_i M_i\rangle \propto (-1)^m\,\langle J_f M_f|Q_{j,-m}|J_i M_i\rangle.
+\tag{48.1}
+\end{equation}
+The wave function of the emitted photon (in the momentum representation) is proportional to $\mathbf{Y}^{(\mathscr{E})}_{jm}(\mathbf{n})$ or $\mathbf{Y}^{(M)}_{jm}(\mathbf{n})$. The wave function of a photon with momentum in the direction $\mathbf{n}$ and helicity $\lambda$ is proportional to the polarisation vector $\mathbf{e}^{(\lambda)}$. The matrix element of emission of a photon $\mathbf{n}\lambda$ is obtained by multiplying~(48.1) with the projection of the wave function of the state $|jm\rangle$ onto the wave function of the state $|\mathbf{n}\lambda\rangle$:
+\[
+\langle J_f M_f;\,\mathbf{n}\lambda|V|J_i M_i\rangle \propto (-1)^m\,\langle J_f M_f|Q_{j,-m}|J_i M_i\rangle(\mathbf{e}^{(\lambda)*}\mathbf{Y}_{jm}).
+\]
+According to~(16.23) for photons of both types
+\begin{equation}
+\mathbf{e}^{(\lambda)*}\mathbf{Y}_{jm}(\mathbf{n}) \propto D^{(j)}_{\lambda m}(\mathbf{n}).
+\tag{48.2}
+\end{equation}
+The matrix element of the multipole moment is expressed in the usual way through the reduced element. As a result we obtain for the transition amplitude the form
+\begin{equation}
+\langle J_f M_f;\,\mathbf{n}\lambda|V|J_i M_i\rangle \propto (-1)^{J_f - M_f + m}\begin{pmatrix} J_f & j & J_i \\ -M_f & -m & M_i\end{pmatrix}Q\,D^{(j)}_{\lambda m}(\mathbf{n}),
+\tag{48.3}
+\end{equation}
+where $Q$ denotes $\langle J_f\|Q\|J_i\rangle$.
+
+\SourcePage{199}{204}
+Now we can proceed to the general case of mixed polarisation states. According to the general rules of quantum mechanics the transition probability will be proportional to the expression\,\footnote{If the initial and final states of the system are described by superpositions
+\[
+\psi^{(i)} = \sum_n a_n\psi^{(i)}_n, \qquad \psi^{(f)} = \sum_m b_m\psi^{(f)}_m,
+\]
+then the matrix element
+\[
+\langle f|V|i\rangle = \sum_{mn} b^*_m a_n V_{mn},
+\]
+and its square
+\[
+|\langle f|V|i\rangle|^2 = \sum_{nn'mm'} V_{mn}V^*_{m'n'}\,a_n a^*_{n'}\,b^*_m b_{m'}.
+\]
+The transition to mixed states is effected by the replacements
+\[
+a_n a^*_{n'} \to \rho^{(i)}_{nn'},\qquad b_{m'}b^*_m \to \rho^{(f)}_{m'm},
+\]
+so that
+\[
+|\langle f|V|i\rangle|^2 \to \sum_{nn'mm'} V_{mn}V^*_{m'n'}\,\rho^{(i)}_{nn'}\rho^{(f)}_{m'm}.
+\]}
+\begin{align}
+&\sum_{(m)}(-1)^{2J_i - M_i - M'_i}\,D^{(j)}_{\lambda m}\,D^{(j)*}_{\lambda'm'}\times{}\notag\\[4pt]
+{}\times{}&\begin{pmatrix} J_f & j & J_i \\ -M_f & -m & M_i\end{pmatrix}
+\begin{pmatrix} J_f & j & J_i \\ -M'_f & -m' & M'_i\end{pmatrix}
+\langle M_i|\rho^{(i)}|M'_i\rangle\times{}\notag\\[4pt]
+{}\times{}&\langle M'_f|\rho^{(f)}|M_f\rangle\langle\lambda'|\rho^{(\gamma)}|\lambda\rangle,
+\tag{48.4}
+\end{align}
+where $\rho^{(i)}$, $\rho^{(f)}$, $\rho^{(\gamma)}$ are the density matrices of the initial nucleus, the final nucleus and the emitted photon; the symbol $(m)$ under the summation sign means that the summation is taken over all doubly repeated $m$-indices ($M_i M'_i M_f M'_f\lambda\lambda'$). In~(48.4) one must substitute~(48.3)\,\footnote{In the transformations of sign factors one may use the fact that the numbers $2J_i$, $2J_f$, $2M_i$, $2M_f$ are of the same parity. Recall also that the numbers $j$, $m$ are integers, while $\lambda = \pm 1$.}.
+
+Let us denote the probability of emission of a photon into the solid angle $do$ by $w(\mathbf{n})do$. The total probability of emission over all directions and over all polarisations of the photon and the recoil nucleus does not depend, obviously, on the initial polarisation state of the nucleus. It is given by formulae already known to us and does not interest us here. We shall therefore normalise the probability $w(\mathbf{n})$ to~1. For this we obtain\,\footnote[2]{In the transformations of sign factors one may use the fact that the numbers $2J_i$, $2J_f$, $2M_i$, $2M_f$ are of the same parity. Recall also that the numbers $j$, $m$ are integers, while $\lambda = \pm 1$.}
+\begin{align}
+w(\mathbf{n}) &= \frac{(2j+1)(2J_i+1)}{8\pi}\sum_L\sum_{(m)}(-1)^{2J_i - M_i - M'_i}\,D^{(j)}_{\lambda m}\,D^{(j)*}_{\lambda'm'}\times{}\notag\\[4pt]
+{}\times{}&\begin{pmatrix} J_f & j & J_i \\ -M_f & -m & M_i\end{pmatrix}
+\begin{pmatrix} J_f & j & J_i \\ -M'_f & -m' & M'_i\end{pmatrix}
+\langle M_i|\rho^{(i)}|M'_i\rangle\times{}\notag\\[4pt]
+{}\times{}&\langle M'_f|\rho^{(f)}|M_f\rangle\langle\lambda'|\rho^{(\gamma)}|\lambda\rangle
+\tag{48.5}
+\end{align}
+
+\SourcePage{200}{205}
+(we shall verify the correctness of the normalisation below). We transform this formula by expanding the product of two $D$-functions into a series (110.2) (see~III):
+\[
+D^{(j)}_{\lambda m}\,D^{(j)*}_{\lambda'm'} = (-1)^{\lambda'+m'}\,D^{(j)}_{\lambda m}\,D^{(j)}_{-\lambda',-m'} =
+\]
+\begin{equation}
+= (-1)^{\lambda+m}\sum_L(2L+1)\begin{pmatrix} j & j & L \\ \lambda & -\lambda' & -\Lambda\end{pmatrix}\begin{pmatrix} j & j & L \\ m & -m' & -\mu\end{pmatrix}D^{(L)}_{\Lambda\mu}
+\end{equation}
+(indices $\Lambda = \lambda - \lambda'$, $\mu = m - m'$; $L$ are integers, $L \geqslant 2j$). Thus, we obtain finally
+\begin{align}
+w(\mathbf{n}) &= \frac{(2j+1)(2J_i+1)}{8\pi}\sum_L\sum_{(m)}(-1)^{2J_i - M_i - M'_i + m + 1}\,(2L+1)\times{}\notag\\[4pt]
+{}\times{}&\begin{pmatrix} j & j & L \\ \lambda & -\lambda' & -\Lambda\end{pmatrix}\begin{pmatrix} j & j & L \\ m & -m' & -\mu\end{pmatrix}\begin{pmatrix} J_f & j & J_i \\ -M_f & -m & M_i\end{pmatrix}\times{}\notag\\[4pt]
+{}\times{}&\begin{pmatrix} J_f & j & J_i \\ -M'_f & -m' & M'_i\end{pmatrix}D^{(L)}_{\Lambda\mu}(\mathbf{n})\,\langle M_i|\rho^{(i)}|M'_i\rangle\langle M'_f|\rho^{(f)}|M_f\rangle\langle\lambda'|\rho^{(\gamma)}|\lambda\rangle.
+\tag{48.5}
+\end{align}
+As before, $\sum_{(m)}$ denotes summation over all (doubly repeated) $m$-indices. In this connection it should be recalled that, unlike the indices $\lambda$, $\lambda'$, the remaining $m$-indices are summed not over all $2j + 1$ possible (for a given $j$-index) values, but only over two values: $\lambda$, $\lambda' = \pm 1$, corresponding to the two polarisation states of the photon.
+
+Formula~(48.5) contains all the necessary information about the angular distribution of the emitted photons and their polarisation, as well as about the polarisation of the secondary (i.e.\ the ones that have emitted photons) nuclei. It is assumed that the initial density matrix is given.
+
+\textbf{Angular distribution.} The angular distribution of photons is obtained by summation over all polarisations of the photon and the recoil nucleus. The averaging over polarisations is effected by substituting the density matrices of unpolarised states:
+\begin{equation}
+\langle\lambda|\rho^{(\gamma)}|\lambda'\rangle = \tfrac{1}{2}\,\delta_{\lambda\lambda'},\qquad \langle M_f|\rho^{(f)}|M'_f\rangle = \frac{1}{2J_f + 1}\,\delta_{M_f M'_f},
+\tag{48.6}
+\end{equation}
+after which the summation reduces to multiplication by 2 (for the photon) or by $2J_f + 1$ (for the nucleus). In other words, the summation is effected simply by the replacement
+\begin{equation}
+\langle\lambda|\rho^{(\gamma)}|\lambda'\rangle \to \delta_{\lambda\lambda'},\qquad \langle M_f|\rho^{(f)}|M'_f\rangle \to \delta_{M_f M'_f}.
+\tag{48.7}
+\end{equation}
+
+\SourcePage{201}{206}
+Thus, the angular distribution
+\begin{align}
+\overline{w}(\mathbf{n}) &= \frac{(2j+1)(2J_i+1)}{8\pi}\sum_L\sum_{(m)}(-1)^{m'+1}\,(2L+1)\,D^{(L)}_{0\mu}(\mathbf{n})\times{}\notag\\[4pt]
+{}\times{}&\begin{pmatrix} j & j & L \\ \lambda & -\lambda & 0\end{pmatrix}\begin{pmatrix} j & j & L \\ m & -m' & -\mu\end{pmatrix}\begin{pmatrix} J_f & j & J_i \\ -M_f & -m & M_i\end{pmatrix}\times{}\notag\\[4pt]
+{}\times{}&\begin{pmatrix} J_f & j & J_i \\ -M'_f & -m' & M'_i\end{pmatrix}\langle M_i|\rho^{(i)}|M'_i\rangle.
+\end{align}
+This formula can be substantially simplified by carrying out the summation over the $m$-indices.
+
+First of all we note that
+\begin{equation}
+\begin{pmatrix} j & j & L \\ \lambda & -\lambda & 0\end{pmatrix} = (-1)^L\begin{pmatrix} j & j & L \\ -\lambda & \lambda & 0\end{pmatrix},
+\tag{48.8}
+\end{equation}
+and therefore
+\[
+\sum_{\lambda = \pm 1}\begin{pmatrix} j & j & L \\ \lambda & -\lambda & 0\end{pmatrix} = \begin{cases} 2\begin{pmatrix} j & j & L \\ 1 & -1 & 0\end{pmatrix} & \text{for even } L,\\[6pt] 0 & \text{for odd } L.\end{cases}
+\]
+Thus, in the sum over $L$ only terms with even $L$ remain, i.e.\ it contains spherical functions ($D^{(L)}_{0\mu}$) of only even orders. This result could have been anticipated: by virtue of parity conservation the probability distribution must be invariant under inversion, i.e.\ under the replacement $\mathbf{n} \to -\mathbf{n}$.
+
+Thus,
+\begin{align}
+\overline{w}(\mathbf{n}) &= \frac{(2j+1)(2J_i+1)}{8\pi}\sum_L(2L+1)\begin{pmatrix} j & j & L \\ 1 & -1 & 0\end{pmatrix}D^{(L)}_{0\mu}(\mathbf{n})\times{}\notag\\[4pt]
+{}\times{}&\sum_{(m)}(-1)^{m'+1}\begin{pmatrix} j & j & L \\ m & -m' & -\mu\end{pmatrix}\begin{pmatrix} J_f & j & J_i \\ -M_f & -m & M_i\end{pmatrix}\times{}\notag\\[4pt]
+{}\times{}&\begin{pmatrix} J_f & j & J_i \\ -M'_f & -m' & M'_i\end{pmatrix}\langle M_i|\rho^{(i)}|M'_i\rangle.
+\end{align}
+
+Let us note that it is easy here to verify the normalisation: by virtue of the formula
+\[
+\int D^{(L)}_{0\mu}(\mathbf{n})\,\frac{do}{4\pi} = \delta_{L0}\,\delta_{\mu 0}
+\]
+after integration over directions only the term with $L = \mu = 0$ remains; and with the help of the formulae
+\[
+\begin{pmatrix} j & j & 0 \\ m & -m & 0\end{pmatrix} = (-1)^{j-m}\,\frac{1}{\sqrt{2j+1}},
+\]
+\[
+\sum_{M_f m}\begin{pmatrix} J_f & j & J_i \\ -M_f & -m & M_i\end{pmatrix}^{\!2} = \frac{1}{2J_i + 1},\qquad \mathrm{Sp}\,\rho^{(i)} = 1
+\]
+we verify that the integral equals~1.
+
+\SourcePage{202}{207}
+The further summation over $mm'M_f$ in the inner sum in $\overline{w}(\mathbf{n})$ is carried out with the help of formula~(108.4) (see~III). As a result we obtain for the angular distribution of photons the following final formula:
+\begin{align}
+\overline{w}(\mathbf{n}) &= (-1)^{1+J_i+J_f}\,\frac{(2j+1)\sqrt{2J_i+1}}{4\pi}\sum_{\text{even }L}(-i)^L\,\sqrt{2L+1}\times{}\notag\\[4pt]
+{}\times{}&\begin{pmatrix} j & j & L \\ 1 & -1 & 0\end{pmatrix}\begin{Bmatrix} J_i & J_i & L \\ j & j & J_f\end{Bmatrix}\sum_\mu\mathcal{P}^{(i)}_{L\mu}\,D^{(L)}_{0\mu}(\mathbf{n}),
+\tag{48.9}
+\end{align}
+where we have introduced the notation
+\begin{equation}
+\mathcal{P}^{(i)}_{L\mu} = i^L\sqrt{(2L+1)(2J_i+1)}\sum_{M_i M'_i}(-1)^{J_i - M'_i}\begin{pmatrix} J_i & L & J_i \\ -M'_i & \mu & M_i\end{pmatrix}\langle M_i|\rho^{(i)}|M'_i\rangle,
+\tag{48.10}
+\end{equation}
+\[
+\mathcal{P}^{(i)*}_{L\mu} = (-1)^{L-\mu}\mathcal{P}^{(i)}_{L,-\mu}.
+\]
+The inner sum in~(48.9) is taken over all $|\mu| \leqslant L$, and the outer sum over all even values of $L$ satisfying the conditions
+\begin{equation}
+L \leqslant 2j,\qquad L \leqslant 2J_i
+\tag{48.11}
+\end{equation}
+(these conditions are the triangle rules which the $j$-indices in the $3j$-symbols appearing in~(48.9), (48.10) must satisfy). By virtue of these conditions the number of terms in the sum is usually not large. Thus, for $J_i = 0$ or $\tfrac{1}{2}$ only the term with $L = 0$ remains, i.e.\ the radiation is isotropic (it is easy to verify that the term with $L = 0$ equals $1/4$, as it should be by the normalisation condition). For $J_i = 1$, $\tfrac{3}{2}$ or for $j = 1$ two terms remain in the sum over $L$: $L = 0$,~$2$. Let us also note that if the density matrix $\rho^{(i)}$ is diagonal ($M_i = M'_i$), then $\mu = 0$, and the distribution function~(48.9) takes the form of an expansion in Legendre polynomials (according to~(16.5) and~(58.23) (see~III) the functions $D^{(L)}_{00}$ reduce to the polynomials $P_L(\cos\theta)$).
+Finally, if
+\[
+\langle M_i|\rho^{(i)}|M'_i\rangle = 1/(2J_i + 1)\,\delta_{M_i M'_i},
+\]
+i.e.\ the initial nucleus is unpolarised, then all the $\mathcal{P}^{(i)}_{L\mu} = 0$ except $\mathcal{P}^{(i)}_{00} = 1$\,\footnote{Indeed, noting that
+\[
+\begin{pmatrix} J \\ -M' & 0 & \frac{J}{M}\end{pmatrix} = (-1)^{J-M}\,\frac{1}{\sqrt{2J+1}}\,\delta_{MM'},
+\]
+we have
+\[
+\sum_{MM'}(-1)^{J-M'}\begin{pmatrix} J & L & J \\ -M' & \mu & M\end{pmatrix}\delta_{MM'} =
+\]
+\[
+= \sqrt{2J+1}\sum_{MM'}\begin{pmatrix} J & L & J \\ -M' & \mu & M\end{pmatrix}\begin{pmatrix} J & 0 & J \\ -M' & 0 & M\end{pmatrix} = \sqrt{2J+1}\,\delta_{L0}\,\delta_{\mu 0},
+\]
+from which using the definition~(48.10) we find the stated result.}.
+
+\SourcePage{203}{208}
+The quantities $\mathcal{P}_{L\mu}$ are convenient characteristics of the polarisation state of the nucleus; we shall call them \textit{polarisation moments}. Formula~(48.10) determines these quantities through the density matrix elements $\rho_{MM'}$. By direct verification one can easily establish the validity of the inverse formula, expressing the density matrix through the polarisation moments:
+\begin{equation}
+\rho_{MM'} = \sum_{L\mu}\sqrt{\frac{2L+1}{2J+1}}\,i^{-L}(-1)^{J-M'}\begin{pmatrix} J & L & J \\ -M' & \mu & M\end{pmatrix}\mathcal{P}_{L\mu}.
+\tag{48.12}
+\end{equation}
+
+Let $f_{L\mu}$ be some spherical tensor of rank $L$ depending on the polarisation state of the nucleus. According to the general rules (see~III, (14.8)) its mean value in a state with density matrix $\rho_{MM'}$ equals
+\begin{equation}
+\overline{f}_{L\mu} = \sum_{MM'}\rho_{MM'}\,\langle JM'|f_{L\mu}|JM\rangle.
+\tag{48.13}
+\end{equation}
+Expressing the matrix elements of the quantity $f_{L\mu}$ through the reduced element $\langle J\|f_L\|J\rangle$ according to
+\[
+\langle JM'|f_{L\mu}|JM\rangle = i^L(-1)^{J-M'}\begin{pmatrix} J & L & J \\ -M' & \mu & M\end{pmatrix}\langle J\|f_L\|J\rangle
+\]
+and introducing the polarisation moments according to the definition~(48.10), we obtain
+\begin{equation}
+\overline{f}_{L\mu} = \frac{\langle J\|f_L\|J\rangle}{\sqrt{(2L+1)(2J+1)}}\,\mathcal{P}_{L\mu}.
+\tag{48.14}
+\end{equation}
+
+\textbf{Polarisation of the photon.} With given (along with $\rho^{(i)}$) matrices $\rho^{(\gamma)}$ and $\rho^{(f)}$ formula~(48.5) determines the probability of a transition in which the emitted photon and the nucleus are found in definite polarisation states. These states are essentially not a characteristic of the emission process as such, but rather of those detectors which register the photon and the nucleus, selecting from the emitted radiation definite polarisations. A more natural formulation of the problem is the other one, in which the final state of the system ``nucleus + photon'' is not fixed in advance, and it is required to determine the polarisation density matrix of this state for a given direction of emission of the photon.
+
+The answer to this question is given by the same formula~(48.5). If we represent it in the form
+\begin{equation}
+w = \overline{w}(\mathbf{n})\sum_{(m)}\langle M_f;\,\mathbf{n}\lambda|\rho|M'_f;\,\mathbf{n}\lambda'\rangle\langle\lambda'|\rho^{(\gamma)}|\lambda\rangle\langle M'_f|\rho^{(f)}|M_f\rangle,
+\tag{48.15}
+\end{equation}
+
+\SourcePage{204}{209}
+then the expression $\langle M_f;\,\mathbf{n}\lambda|\rho|M'_f;\,\mathbf{n}\lambda'\rangle$ will be the required density matrix, being the ``projection'' onto the given $\rho^{(\gamma)}\rho^{(f)}$. The factor $\overline{w}(\mathbf{n})$ is separated out in~(48.15) in order that this matrix should be normalised by the usual condition
+\[
+\sum_{\lambda M_f}\langle M_f;\,\mathbf{n}\lambda|\rho|M_f;\,\mathbf{n}\lambda\rangle = 1.
+\]
+
+If we are interested in the polarisation of only the photon, we must sum over $M_f = M'_f$:
+\[
+\langle\mathbf{n}\lambda|\rho|\mathbf{n}\lambda'\rangle = \sum_{M_f}\langle M_f;\,\mathbf{n}\lambda|\rho|M_f;\,\mathbf{n}\lambda'\rangle.
+\]
+
+Quite analogously to the derivation of formula~(48.9) we obtain
+\begin{align}
+\langle\mathbf{n}\lambda|\rho|\mathbf{n}\lambda'\rangle &= (-1)^{1+J_i+J_f}\,\frac{(2j+1)\sqrt{2J_i+1}}{8\pi\overline{w}(\mathbf{n})}\times{}\notag\\[4pt]
+{}\times{}&\sum_L(-i)^L\,\sqrt{2L+1}\begin{pmatrix} j & j & L \\ \lambda & -\lambda' & -\Lambda\end{pmatrix}\begin{Bmatrix} J_i & J_i & L \\ j & j & J_f\end{Bmatrix}\sum_\mu\mathcal{P}^{(i)*}_{L\mu}\,D^{(L)}_{\Lambda\mu}(\mathbf{n})
+\tag{48.16}
+\end{align}
+($\Lambda = \lambda - \lambda'$), where the summation is taken over all integer values of $L$ satisfying conditions~(48.11).
+
+In particular, the circular polarisation is determined by the Stokes parameter
+\[
+\xi_2 = \langle\mathbf{n}1|\rho|\mathbf{n}1\rangle - \langle\mathbf{n},-1|\rho|\mathbf{n},-1\rangle
+\]
+(see the problem to~\S\,8). By virtue of the relations~(48.8) in this difference all terms with even $L$ drop out, and for $\xi_2$ one obtains a formula differing from the expression~(48.9) only in that the summation is carried out over odd (instead of even) values of~$L$.
+
+\textbf{Polarisation of recoil nuclei.} Finally, if we are interested only in the final polarisation of the nuclei, we must put $\rho^{(\gamma)} \to \delta$. If we also integrate over the directions of the photon, then the density matrix of the recoil nucleus will be
+\begin{align}
+\langle M_f|\rho|M'_f;\,\mathbf{n}\rangle &= \int\overline{w}(\mathbf{n})\,\langle M_f;\,\mathbf{n}|\rho|M'_f;\,\mathbf{n}\rangle\,do ={}\notag\\[4pt]
+&= (2J_i + 1)\sum_{mM_i M'_i}\begin{pmatrix} J_f & j & J_i \\ -M_f & -m & M_i\end{pmatrix}\times{}\notag\\[4pt]
+{}\times{}&\begin{pmatrix} J_f & j & J_i \\ -M'_f & -m & M'_i\end{pmatrix}\langle M_i|\rho^{(i)}|M'_i\rangle.
+\end{align}
+
+\SourcePage{205}{210}
+The polarisation moments computed from this density matrix are
+\begin{equation}
+\mathcal{P}^{(f)}_{L\mu} = (-1)^{J_i+J_f+L+j}\sqrt{(2J_i+1)(2J_f+1)}\begin{Bmatrix} J_i & J_i & L \\ J_f & J_f & j\end{Bmatrix}\mathcal{P}^{(i)}_{L\mu}.
+\tag{48.17}
+\end{equation}
+
+If the initial nucleus is unpolarised, then the final nucleus will also be unpolarised. However, even in this case there will exist a correlation polarisation, i.e.\ the polarisation of the nucleus after emission of radiation in a given direction. Setting $\rho^{(i)} \to \delta/(2J_i + 1)$ (and correspondingly $\overline{w}(\mathbf{n}) = 1/(4\pi)$) and carrying out a calculation analogous to the derivation of~(48.9), we obtain for the density matrix describing this polarisation
+\begin{align}
+\langle M_f;\,\mathbf{n}|\rho|M'_f;\,\mathbf{n}\rangle &= (2j+1)(-1)^{J_i+M'_f+1}\sum_{\text{even }L}(2L+1)\begin{pmatrix} j & j & L \\ 1 & -1 & 0\end{pmatrix}\begin{pmatrix} J_f & L & J_f \\ -M'_f & \mu & M_f\end{pmatrix}\times{}\notag\\[4pt]
+{}\times{}&\begin{Bmatrix} J_f & J_f & L \\ j & j & J_i\end{Bmatrix}D^{(L)}_{0\mu}(\mathbf{n}).
+\tag{48.18}
+\end{align}
+The polarisation moments corresponding to this density matrix are
+\begin{equation}
+\mathcal{P}^{(f)}_{L\mu} = i^L(-1)^{1+J_i+J_f}(2j+1)\sqrt{(2L+1)(2J_f+1)}\begin{pmatrix} j & j & L \\ 1 & -1 & 0\end{pmatrix}\begin{Bmatrix} J_f & J_f & L \\ j & j & J_i\end{Bmatrix}D^{(L)}_{0\mu}(\mathbf{n}).
+\tag{48.19}
+\end{equation}
+Only moments of even order arise (which is again a consequence of parity conservation).
+
+If the secondary nucleus in turn radiates, then, being polarised, it gives a non-isotropic distribution of photons. Since the polarisation moments~(48.19) depend on the direction $\mathbf{n}$ of the photon emitted in the first decay, there arises a definite angular correlation between the directions of successively emitted photons (with an unpolarised primary nucleus). In an analogous way one can consider other correlation phenomena in cascade emissions (correlation of polarisations, etc.)\,\footnote{A detailed exposition of these questions can be found in a paper by A.\,Z.\,Dolginov in the book ``Gamma Rays'' (Izd.\ AN SSSR, 1961).}.
+
+\bigskip
+\begin{center}\textbf{Problem}\end{center}
+\smallskip
+Express the polarisation moments $\mathcal{P}_{1\mu}$ and $\mathcal{P}_{2\mu}$ through the mean values of the angular momentum vector $\mathbf{J}$ and the quadrupole moment tensor $Q_{ik}$.
+
+\textit{Solution.} The reduced elements of the vector $\mathbf{J}$ and the tensor $Q_{ik}$ are determined from the equalities (cf.~III, (107.10), (107.11)). The operator $\widehat{Q}_{ik}$ is expressed through the angular momentum operators by formula~(75.2) (see~III):
+\[
+\widehat{Q}_{ik} = \frac{3Q}{2J(2J-1)}\Bigl(\widehat{J}_i\widehat{J}_k + \widehat{J}_k\widehat{J}_i - \tfrac{2}{3}\,J^2\delta_{ik}\Bigr).
+\]
+
+\SourcePage{206}{211}
+From this we find the mean value
+\[
+\overline{Q^2_{ik}} = \frac{3Q^2}{2J^2(2J-1)^2}\,J^2(4J^2 - 3) = Q^2\,\frac{3(J+1)(2J+3)}{2J(2J-1)}.
+\]
+The reduced matrix elements:
+\[
+\langle J\|J\|J\rangle = \sqrt{J(J+1)(2J+1)},
+\]
+\[
+\langle J\|Q\|J\rangle = Q\sqrt{\frac{3(2J+1)(J+1)(2J+3)}{2J(2J-1)}}.
+\]
+
+From~(48.14) we now see that the polarisation moments $\mathcal{P}_{1\mu}$ coincide with the spherical components of the vector
+\[
+\sqrt{\frac{3}{J(J+1)}}\;\overline{\mathbf{J}},
+\]
+and the moments $\mathcal{P}_{2\mu}$ with the spherical components of the tensor
+\[
+\sqrt{\frac{10J(2J-1)}{3(J+1)(2J+3)}}\;\frac{\overline{Q}_{ik}}{Q}.
+\]
