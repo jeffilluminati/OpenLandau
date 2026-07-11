@@ -1,0 +1,101 @@
+\SourcePage{55}{60}
+\section{Strictly neutral particles}
+
+When carrying out the second quantization of the $\psi$-function~(11.1), the coefficients~$a^{(+)}_\mathbf{p}$ and~$a^{(-)}_\mathbf{p}$ were treated as operators pertaining to different particles. This is, however, not obligatory: as a special case, the annihilation and creation operators appearing in~$\hat{\psi}$ may refer to one and the same type of particle (as was the case for photons---cf.~(2.17)). Denoting these operators~$\hat{c}_\mathbf{p}$ and~$\hat{c}^+_\mathbf{p}$ in this case, we write the $\psi$-operator as
+\begin{equation}
+\hat{\psi} = \sum_\mathbf{p} \frac{1}{\sqrt{2\varepsilon}} (\hat{c}_\mathbf{p} e^{-ipx} + \hat{c}^+_\mathbf{p} e^{ipx}).
+\tag{12.1}
+\end{equation}
+The field described by such an operator corresponds to a system of identical particles that can be said to ``coincide with their own antiparticles.''
+
+The operator~(12.1) is Hermitian ($\hat{\psi}^+ = \hat{\psi}$); in this sense such a field has half as many ``degrees of freedom'' as a complex field, for which the operators~$\hat{\psi}$ and~$\hat{\psi}^+$ do not coincide.
+
+In connection with this, the Lagrangian of the field, when expressed through the Hermitian operator~$\hat{\psi}$, must contain an extra factor of~$1/2$ (compared with~(10.9))\,\footnote{This is analogous to the extra factor~$1/2$ in the operator~(2.10) for the electromagnetic field energy density (expressed via the Hermitian operators~$\hat{\mathbf{E}}$ and~$\hat{\mathbf{H}}$), as compared to the photon energy density~(3.2) expressed through the photon's complex wave function; cf.\ the remark on p.~26.}
+\begin{equation}
+\hat{L} = (1/2)(\partial_\mu\hat{\psi} \cdot \partial^\mu\hat{\psi} - m^2\hat{\psi}^2).
+\tag{12.2}
+\end{equation}
+The corresponding energy--momentum tensor is
+\begin{equation}
+\hat{T}_{\mu\nu} = \partial_\mu\hat{\psi} \cdot \partial_\nu\hat{\psi} - \hat{L}g_{\mu\nu},
+\tag{12.3}
+\end{equation}
+so that the energy-density operator reads
+\begin{equation}
+\hat{T}_{00} = \left(\frac{\partial\hat{\psi}}{\partial t}\right)^2 - \hat{L} = \frac{1}{2}\left[\left(\frac{\partial\hat{\psi}}{\partial t}\right)^2 + (\boldsymbol{\nabla}\hat{\psi})^2 + m^2\hat{\psi}^2\right].
+\tag{12.4}
+\end{equation}
+\SourcePage{56}{61}
+
+Inserting~(12.1) into the integral~$\int\hat{T}_{00}\,d^3x$, we obtain the field Hamiltonian
+\begin{equation}
+\hat{H} = \frac{1}{2}\sum_\mathbf{p} \varepsilon(\hat{c}^+_\mathbf{p}\hat{c}_\mathbf{p} + \hat{c}_\mathbf{p}\hat{c}^+_\mathbf{p}).
+\tag{12.5}
+\end{equation}
+This again reveals the necessity of Bose quantization:
+\begin{equation}
+\{\hat{c}_\mathbf{p},\; \hat{c}^+_\mathbf{p}\}_- = 1,
+\tag{12.6}
+\end{equation}
+and the energy eigenvalues (once more dropping the additive constant) are
+\begin{equation}
+E = \sum_\mathbf{p} \varepsilon_\mathbf{p} N_\mathbf{p}.
+\tag{12.7}
+\end{equation}
+
+Fermi quantization, on the other hand, would yield a meaningless result---a value of~$E$ independent of~$N_\mathbf{p}$.
+
+The ``charge''~$Q$ of the field under consideration vanishes. This is already clear from the fact that the charge~$Q$ must change sign when particles are replaced by antiparticles, and here the two coincide. Correspondingly, no 4-vector current density exists either. Indeed, the expression
+\begin{equation}
+\hat{j}_\mu = i[\hat{\psi}^+\partial_\mu\hat{\psi} - (\partial_\mu\hat{\psi}^+)\hat{\psi}\,]
+\tag{12.8}
+\end{equation}
+for the operator of the conserved 4-current~$\hat{j}$ vanishes when~$\hat{\psi} = \hat{\psi}^+$ (and the vector~$\hat{\psi}\partial_\mu\hat{\psi}$ is not by itself conserved). This in turn signifies the absence of any special conservation law that would restrict the possible changes of the particle number. It is evident that such particles are, in any case, electrically neutral.
+
+Particles of this kind are called \emph{strictly neutral}, as distinct from electrically neutral particles that possess an antiparticle. While the latter can annihilate (converting into photons) only in pairs, strictly neutral particles can annihilate singly.
+
+The structure of the $\psi$-operator~(12.1) is the same as that of the operators~(2.17)--(2.20) of the electromagnetic field. In this sense one can say that photons themselves are strictly neutral particles. In the case of the electromagnetic field, the Hermiticity of the operators was linked to the reality of the field strengths as measurable (in the classical limit) physical quantities. For the $\psi$-operators of particles, however, no such link exists, since they do not correspond to any directly measurable quantities at all.
+
+The absence of a conserved 4-vector current is a general property of strictly neutral particles and is not connected with zero spin (it holds for photons as well). Physically it
+\SourcePage{57}{62}
+expresses the absence of the corresponding prohibitions on changes in particle number. From a formal standpoint there is a direct connection between the absence of a conserved current and the reality of the field---the Hermiticity of the operator~$\hat{\psi}$.
+
+The Lagrangian of a complex field
+\begin{equation}
+\hat{L} = \partial_\mu\hat{\psi}^+ \cdot \partial^\mu\hat{\psi} - m^2\hat{\psi}^+\hat{\psi}
+\tag{12.9}
+\end{equation}
+is invariant under multiplication of the $\psi$-operator by an arbitrary phase factor, i.e.\ under transformations of the form
+\begin{equation}
+\hat{\psi} \to e^{i\alpha}\hat{\psi}, \qquad \hat{\psi}^+ \to e^{-i\alpha}\hat{\psi}^+
+\tag{12.10}
+\end{equation}
+(these are termed \emph{gauge} transformations). In particular, the Lagrangian remains unchanged under an infinitesimally small gauge transformation
+\begin{equation}
+\hat{\psi} \to \hat{\psi} + i\delta\alpha \cdot \hat{\psi}, \qquad \hat{\psi}^+ \to \hat{\psi}^+ - i\delta\alpha \cdot \hat{\psi}^+.
+\tag{12.11}
+\end{equation}
+Under an infinitesimally small variation of the ``generalized coordinates''~$q$, the Lagrangian undergoes the change
+\[
+\delta\hat{L} = \sum\left(\frac{\partial\hat{L}}{\partial q}\delta q + \frac{\partial\hat{L}}{\partial q_{,\mu}}\delta q_{,\mu}\right) =
+\]
+\[
+= \sum\left(\frac{\partial\hat{L}}{\partial q} - \frac{\partial}{\partial x^\mu}\frac{\partial\hat{L}}{\partial q_{,\mu}}\right)\delta q + \sum\frac{\partial}{\partial x^\mu}\left(\frac{\partial\hat{L}}{\partial q_{,\mu}}\delta q\right)
+\]
+(summation over all~$q$). The first term vanishes by virtue of the ``equations of motion'' (Lagrange's equations). Taking~$\hat{\psi}$ and~$\hat{\psi}^+$ as the ``coordinates''~$q$ and setting
+\[
+\delta\hat{\psi} = i\delta\alpha \cdot \hat{\psi}, \quad \delta\hat{\psi}^+ = -i\delta\alpha \cdot \hat{\psi}^+,
+\]
+we get
+\[
+\delta\hat{L} = i\delta\alpha\frac{\partial}{\partial x^\mu}\left(\hat{\psi}\frac{\partial\hat{L}}{\partial\hat{\psi}_{,\mu}} - \hat{\psi}^+\frac{\partial\hat{L}}{\partial\hat{\psi}^+_{,\mu}}\right).
+\]
+It is apparent that the condition of invariance of the Lagrangian ($\delta\hat{L} = 0$) is equivalent to the continuity equation ($\partial_\mu\hat{j}^\mu{=}0$) for the 4-vector
+\begin{equation}
+\hat{j}^\mu = i\left(\hat{\psi}^+\frac{\partial\hat{L}}{\partial\hat{\psi}^+_{,\mu}} - \hat{\psi}\frac{\partial\hat{L}}{\partial\hat{\psi}_{,\mu}}\right).
+\tag{12.12}
+\end{equation}
+It is readily verified that for the Lagrangian~(12.9) this formula yields the current~(12.8).
+
+We see, therefore, that in the mathematical framework of the theory the existence of a conserved current is tied to gauge invariance of the Lagrangian (\emph{W.~Pauli}, 1941). The Lagrangian~(12.2) of a strictly neutral field, however, lacks this symmetry.
+
