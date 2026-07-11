@@ -1,0 +1,130 @@
+\SourcePage{271}{276}
+\section{Natural width of spectral lines}
+
+Up to now in the study of emission and scattering of light we have considered all energy levels of the system (of the atom, say) as strictly discrete. Among the excited levels, however, having a finite lifetime, there is a probability of de-excitation. In accordance with the general principles of quantum mechanics this leads to the fact that the levels become quasidiscrete, acquiring a finite (small) width (see~III, \S\,134); they are written in the form $E - i\Gamma/2$, where $\Gamma$ ($= \Gamma/\hbar$) is the total probability (in 1~s) of all possible ``decay'' processes of the given state.
+
+Let us consider the question of how this circumstance affects the process of emission (\textit{V.\,Weisskopf, E.\,Wigner}, 1930). It is clear in advance that because of the finite width of the emitting level the emitted light will not be strictly monochromatic: the frequencies will be scattered in an interval $\Delta\omega \sim \Gamma$ ($= \Gamma/\hbar$). At the same time, on account of the finiteness of the lifetime of the initial state of the emitting system, the more natural formulation is that of finding the total probability of emission of a photon of given frequency, rather than the probability of emission per unit time. We compute this probability first of all for the case of the transition of the atom from some excited level
+
+\[
+E_1 - \frac{i}{2}\,\Gamma_1
+\]
+
+\SourcePage{272}{277}
+to the ground level~$E_2$, which has an infinite lifetime and is therefore strictly discrete.
+
+Let $\Psi$ be the wave function of the atom and the photon field, $\hat{H} = \hat{H}^{(0)} + \hat{V}$ the Hamiltonian of this system, where $\hat{V}$ is the operator of the interaction of the atom with the photon field. We seek the solution of the Schr\"odinger equation
+\begin{equation}
+i\,\frac{\partial\Psi}{\partial t} = (\hat{H}^{(0)} + \hat{V})\Psi
+\tag{62.1}
+\end{equation}
+in the form of an expansion over wave functions of the unperturbed states of the system
+\begin{equation}
+\Psi = \sum_\nu a_\nu(t)\,\Psi^{(0)}_\nu = \sum_\nu a_\nu(t)\,e^{-i\mathcal{E}_\nu t}\,\psi^{(0)}_\nu.
+\tag{62.2}
+\end{equation}
+For the coefficients $a_\nu(t)$ we obtain the system of equations
+\begin{equation}
+i\,\frac{\partial a_\nu}{\partial t} = \sum_{\nu'}\langle\nu|V|\nu'\rangle a_{\nu'}\,\exp\{i(\mathcal{E}_\nu - \mathcal{E}_{\nu'})t\}.
+\tag{62.3}
+\end{equation}
+
+Let $|\nu\rangle$ denote the state with energy $\mathcal{E}_\nu = E_2 + \omega$, in which the atom is in the ground level~$E_2$ and there is one quantum with a definite frequency~$\omega$; let us denote this state by the symbol $|\omega 2\rangle$. At the initial moment of time the system is in the state $|1\rangle$, in which the atom is excited on the level~$E_1$ and there are no photons. In other words, at $t = 0$ it must be
+\begin{equation}
+a_1 = 1,\qquad a_\nu = 0\quad\text{for}\quad |\nu\rangle \neq |1\rangle.
+\tag{62.4}
+\end{equation}
+
+The solution found with this initial condition of the equation~(62.3) will give (with the proper normalisation of the wave functions) the probability at the moment~$t$ of the transition of the atom $1 \to 2$ with emission of a photon in the frequency interval $d\omega$:
+\begin{equation}
+|a_{\omega 2}(t)|^2\,d\omega.
+\tag{62.5}
+\end{equation}
+We shall be interested in the probability at $t \to \infty$:
+\begin{equation}
+dw = |a_{\omega 2}(\infty)|^2\,d\omega.
+\tag{62.5}
+\end{equation}
+
+For a better understanding of the formulation of the question let us recall that when finding the usual probability of emission (in 1~s) with transition $1 \to 2$ (without taking into account the level width), one must solve equation~(62.3) replacing in the right-hand side in the first approximation all $a_\nu(t)$ by the values~(62.4). The solution obtained is then considered at large $t$ (cf.~III, \S\,42). We can now clarify the meaning of this procedure: it refers to times that are small compared with $1/\Gamma_1$, but still
+
+\SourcePage{273}{278}
+large compared with the period $1/(E_1 - E_2)$ of oscillation of the excited level.
+
+In our case, however, times comparable with $1/\Gamma_1$ are being considered, and the function $a_1(t)$ decreases with time according to the law
+\begin{equation}
+a_1(t) = e^{-\Gamma_1 t/2}.
+\tag{62.6}
+\end{equation}
+The functions $a_\nu(t)$ for the states $|\nu'\rangle$, which can arise during de-excitation of the atom, increase with time. If the de-excitation from the level~$E_1$ is possible to various (in addition to $E_2$) levels of the atom, then there will be many growing functions $a_\nu(t)$; each of them corresponds to a state in which the atom is on one of its levels and there is one photon of the corresponding energy. But the right-hand side of equation~(62.3) will nonetheless contain only one term---that for $|\nu'\rangle = |1\rangle$. Indeed, since the matrix elements of the perturbation may differ from zero only for transitions with a change of 1 in the number of photons of some given energy, they are zero for transitions between states each containing one photon of different energies.
+
+Thus, for $a_{\omega 2}(t)$ we have the equation
+\begin{equation}
+i\,\frac{da_{\omega 2}}{dt} = \langle\omega 2|V|1\rangle\,e^{i(E_2+\omega-E_1)t}\,a_1 =
+\langle\omega 2|V|1\rangle\,\exp\left\{i(\omega - \omega_{12})t - \frac{\Gamma_1}{2}\,t\right\},
+\tag{62.7}
+\end{equation}
+where $\omega_{12} = E_1 - E_2$. Integrating with the condition $a_{\omega 2}(0) = 0$, we find
+\begin{equation}
+a_{\omega 2} = \langle\omega 2|V|1\rangle\,\frac{1 - \exp\{i(\omega - \omega_{12})t - \Gamma_1 t/2\}}{\omega - \omega_{12} + i\Gamma_1/2}.
+\tag{62.8}
+\end{equation}
+
+\SourcePage{274}{279}
+
+The sum
+\begin{equation}
+\Gamma_{1\to 2} = 2\pi\sum|\langle\omega 2|V|1\rangle|^2,
+\tag{62.9}
+\end{equation}
+taken over the polarisations and directions of motion of the photon, is the total usual probability of emission. This is at the same time a part of the width of the level~$E_1$ (the partial width), associated with the transition $1 \to 2$, in contrast to the total width~$\Gamma_1$, constituted of contributions from all possible decay modes of the given quasistationary state\,\footnote{Formulae~(62.6), (62.9) can be obtained, of course, by solving equation~(62.7) also analytically for $a_1(t)$.}.
+
+Having carried out also the summation of the probability~$dw$, we obtain the following definitive formula for the frequency distribution of the emitted light:
+\begin{equation}
+dw = w_t\,\frac{\Gamma_1}{2\pi}\;\frac{d\omega}{(\omega - \omega_{12})^2 + \Gamma^2_1/4},
+\tag{62.10}
+\end{equation}
+where $w_t = \Gamma_{1\to 2}/\Gamma_1$ is the total relative probability of the transition $1 \to 2$. This is a distribution of dispersion type. The shape of the spectral line~(62.10) is characteristic of an isolated stationary atom; it is called \textit{natural}\,\footnote{In contrast to the broadening connected with the interaction of an atom with other atoms (broadening by collisions) or with the presence in the source of atoms moving with different velocities (Doppler broadening).}.
+
+Let now the $E_2$ level of the atom be also excited, with finite width~$\Gamma_2$. For simplicity we shall assume that this width is associated with the transition of the atom to the ground state~$E_0$ accompanied by emission of one photon (the final answer---formula~(62.12) below---does not depend on this assumption). Then the process of the decay of state~1 can be treated as the process of emission of two photons, studied in~\S\,59. The matrix element of this process---so long as the finiteness of the lifetime of state~2 is not taken into account---is given by formula~(59.2)
+\begin{equation}
+\langle\omega\omega'0|V^{(2)}|1\rangle = \frac{\langle\omega'0|V|\omega 2\rangle\langle\omega 2|V|1\rangle}{E_0 - E_2 + \omega' + i0},
+\tag{62.11}
+\end{equation}
+(in formula~(59.2) the labelling of states $2 \to 0$ has been changed, and in the sum over~$n$ only the one term, corresponding to finding the atom in state~2, that is resonantly large at values of $\omega'$ close to $E_2 - E_0$, has been retained). Now taking into account the finite lifetime of
+
+\SourcePage{275}{280}
+state~2, this will lead to~(62.11) only the replacement $E_2 \to E_2 - i\Gamma_2/2$, so that
+\[
+\langle\omega\omega'0|V^{(2)}|1\rangle = \frac{\langle\omega'0|V|\omega 2\rangle\langle\omega 2|V|1\rangle}{E_0 - E_2 + \omega' + i\Gamma_2/2}.
+\]
+
+Substituting this value of the matrix element into the equation for $a_{\omega\omega'2}(t)$ (differing from~(62.7) only in notation) and proceeding after the derivation quite analogously to~(62.8):
+\[
+a_{\omega\omega'0}(\infty) = \frac{\langle\omega\omega'0|V|\omega 2\rangle\langle\omega 2|V|1\rangle}{(\omega' - \omega_{20} + i\Gamma_2/2)(\omega + \omega' - \omega_{10} + i\Gamma_1/2)}.
+\]
+
+The probability of emission of photons $\omega$ and $\omega'$ is
+\[
+dw = |a_{\omega\omega'0}(\infty)|^2\,d\omega\,d\omega' =
+\]
+\begin{equation}
+= \frac{\Gamma_{1\to 2}}{2\pi}\;\frac{\Gamma_{2\to 0}}{2\pi}\;\frac{d\omega\,d\omega'}{[(\omega' - \omega_{20})^2 + \Gamma^2_2/4][(\omega + \omega' - \omega_{10})^2 + \Gamma^2_1/4]}.
+\tag{62.12}
+\end{equation}
+As it should be, this expression has sharp maxima at $\omega' \approx \omega_{20}$ and $\omega \approx \omega_{12}$.
+
+The desired shape of the spectral line, corresponding to the transition $1 \to 2$, is obtained by integrating~(62.12) over $d\omega'$ (which can range over the whole interval from $-\infty$ to $+\infty$). The integral is most simply computed by closing the path of integration with a remote semicircle in the upper half-plane of the complex variable $\omega'$, and is given by the sum of residues at the poles
+\[
+\omega' = \omega_{20} + i\Gamma_2/2\quad\text{and}\quad \omega' = \omega_{10} - \omega + i\Gamma_1/2.
+\]
+
+As a result we obtain
+\begin{equation}
+dw = w_t\,\frac{\Gamma_1 + \Gamma_2}{2\pi}\;\frac{d\omega}{(\omega - \omega_{12})^2 + (\Gamma_1 + \Gamma_2)^2/4},
+\tag{62.13}
+\end{equation}
+where $w_t = \Gamma_{1\to 2}\Gamma_{2\to 0}/(\Gamma_1\Gamma_2)$ is the total probability of the double transition $1 \to 2 \to 0$\,\footnote{In more complex cases $w_t$ is the total probability of all cascades, beginning with the transition $1 \to 2$ and ending at level~0.}.
+
+The shape of the line~(62.13) differs from~(62.10) only by the replacement of $\Gamma_1$ by $\Gamma_1 + \Gamma_2$---the width of the line equals the sum of the widths of the initial and final states.
+
+Let us note that the line width turns out to be, generally speaking, not proportional to the probability $\Gamma_{1\to 2}$ of the transition $1 \to 2$ itself, i.e.\ not proportional to the intensity of the line (as it would be in classical theory). Since $\Gamma_1 + \Gamma_2 > \Gamma_{1\to 2}$, the line can have a large width at comparatively small intensity.
