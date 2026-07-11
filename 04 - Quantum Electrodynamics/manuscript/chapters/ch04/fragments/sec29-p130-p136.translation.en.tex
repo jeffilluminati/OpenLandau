@@ -1,0 +1,211 @@
+\SourcePage{130}{135}
+\section{Polarisation density matrix}
+
+The coordinate dependence of the wave function $\psi$ describing free motion with momentum $\mathbf{p}$ (a plane wave) reduces to the common factor $e^{i\mathbf{p}\mathbf{r}}$, while the amplitude $u_p$ plays the role of a spin wave function. In such a (pure) state the particle is fully polarised (see III, \S\,59). In the non-relativistic theory
+
+\SourcePage{131}{136}
+this means that the particle's spin has a definite spatial direction (more precisely, there exists a direction along which the spin projection takes the definite value $+1/2$). In a relativistic theory such a characterisation of the state is impossible in an arbitrary reference frame, owing to the non-conservation of the spin vector (already noted in \S\,23). Purity of the state signifies only that the spin has a definite direction in the particle's rest frame.
+
+In a state of partial polarisation no definite amplitude exists; there is only a \emph{polarisation density matrix} $\rho_{ik}$ ($i, k = 1, 2, 3, 4$ being bispinor indices). We define this matrix so that in a pure state it reduces to the product
+\begin{equation}
+\rho_{ik} = u_{pi}\bar u_{pk}.
+\tag{29.1}
+\end{equation}
+The corresponding normalisation condition for $\rho$ is
+\begin{equation}
+\operatorname{Sp}\rho = 2m
+\tag{29.2}
+\end{equation}
+(cf.~(23.4)).
+
+In a pure state the mean value of the spin is given by
+\begin{equation}
+\mathbf{s} = \frac{1}{2}\int\psi^*\boldsymbol{\Sigma}\psi\,d^3x = \frac{1}{4\varepsilon}u^+_p\boldsymbol{\Sigma}u_p = \frac{1}{4\varepsilon}\bar u_p\gamma^0\boldsymbol{\Sigma}u_p.
+\tag{29.3}
+\end{equation}
+The corresponding expression for a partially polarised state is
+\begin{equation}
+\mathbf{s} = \frac{1}{4\varepsilon}\operatorname{Sp}(\rho\gamma^0\boldsymbol{\Sigma}) = \frac{1}{4\varepsilon}\operatorname{Sp}(\rho\gamma^5\gamma).
+\tag{29.4}
+\end{equation}
+
+The amplitudes $u_p$ and $\bar u_p$ satisfy the algebraic equations
+\[
+(\gamma p - m)u_p = 0,\qquad \bar u_p(\gamma p - m) = 0.
+\]
+The matrix~(29.1) therefore obeys
+\begin{equation}
+(\gamma p - m)\rho = 0,\qquad \rho(\gamma p - m) = 0.
+\tag{29.5}
+\end{equation}
+The density matrix must satisfy the same linear equations in the general case of a mixed (in spin) state as well (cf.\ the analogous argument in III, \S\,14).
+
+When a free particle is considered in its rest frame, the non-relativistic theory applies. In that theory the state of partial polarisation is completely specified by three parameters---the components of the mean spin vector $\mathbf{s}$ (see III, \S\,59). It is therefore clear that the same parameters will determine the polarisation state after any Lorentz boost, i.e.\ for a moving particle.
+
+\SourcePage{132}{137}
+Denote the doubled mean spin vector in the rest frame by $\boldsymbol{\zeta}$ (in a pure state $|\boldsymbol{\zeta}| = 1$; in a mixed state $|\boldsymbol{\zeta}| < 1$). For a four-dimensional description of the polarisation state it is convenient to introduce a 4-vector $a^\mu$ that coincides in the rest frame with the three-vector $\boldsymbol{\zeta}$; since $\boldsymbol{\zeta}$ is an axial vector, $a^\mu$ is a 4-pseudovector. This 4-vector is orthogonal to the 4-momentum in the rest frame (where $a^\mu = (0,\boldsymbol{\zeta})$ and $p^\mu = (m,0)$), and hence in every frame:
+\begin{equation}
+a_\mu p^\mu = 0.
+\tag{29.6}
+\end{equation}
+
+In an arbitrary frame one also has
+\begin{equation}
+a_\mu a^\mu = -\zeta^2.
+\tag{29.7}
+\end{equation}
+
+The components of $a^\mu$ in a frame where the particle moves with velocity $\mathbf{v} = \mathbf{p}/\varepsilon$ are obtained by Lorentz-boosting from the rest frame:
+\begin{equation}
+a^0 = \frac{|\mathbf{p}|}{m}\zeta_\|,\qquad \mathbf{a}_\perp = \zeta_\perp,\quad a_\| = \frac{\varepsilon}{m}\zeta_\|,
+\tag{29.8}
+\end{equation}
+where the subscripts $\|$ and $\perp$ denote the components of $\boldsymbol{\zeta}$ and $\mathbf{a}$ parallel and perpendicular to $\mathbf{p}$\,\footnote{By their transformation properties, the components of the mean spin vector $\mathbf{s}$ (like those of any angular momentum) are, in relativistic mechanics, the spatial components of an antisymmetric tensor $S^{\lambda\mu}$. The 4-vector $a^\lambda$ is related to this tensor by
+\[
+S^{\lambda\mu} = \frac{1}{2m}\epsilon^{\lambda\mu\nu\rho}a_\nu p_\rho,\qquad a^\lambda = -\frac{2}{m}\epsilon^{\lambda\mu\nu\rho}S_{\mu\nu}p_\rho.
+\]
+Note that in an arbitrary frame the spatial part of $a^\lambda$ does not coincide with $2\mathbf{s}$. One easily finds
+$2\mathbf{s}_\| = \frac{1}{m}(a_\|\varepsilon - a^0|\mathbf{p}|) = \zeta_\|$, $2\mathbf{s}_\perp = \frac{\varepsilon}{m}\mathbf{a}_\perp = \frac{\varepsilon}{m}\boldsymbol{\zeta}_\perp$.}. These formulae can be written in vector form:
+\begin{equation}
+\mathbf{a} = \boldsymbol{\zeta} + \frac{\mathbf{p}(\boldsymbol{\zeta}\cdot\mathbf{p})}{m(\varepsilon + m)},\qquad a^0 = \frac{\mathbf{a}\cdot\mathbf{p}}{\varepsilon} = \frac{\mathbf{p}\cdot\boldsymbol{\zeta}}{m},\qquad \mathbf{a}^2 = \boldsymbol{\zeta}^2 + \frac{(\mathbf{p}\cdot\boldsymbol{\zeta})^2}{m^2}.
+\tag{29.9}
+\end{equation}
+
+Consider first the unpolarised state ($\boldsymbol{\zeta} = 0$). The density matrix can then depend only on the 4-momentum $p$. The unique matrix of this kind satisfying the equations~(29.5) is
+\begin{equation}
+\rho = \frac{1}{2}(\gamma p + m)
+\tag{29.10}
+\end{equation}
+(\emph{I.\,E.~Tamm}, 1930; \emph{H.\,B.\,G.~Casimir}, 1933). The numerical coefficient is fixed by the normalisation condition~(29.2).
+
+\SourcePage{133}{138}
+
+In the general case of partial polarisation ($\boldsymbol{\zeta} \neq 0$) we seek the density matrix in the form
+\begin{equation}
+\rho = \frac{1}{4m}(\gamma p + m)\rho'(\gamma p + m),
+\tag{29.11}
+\end{equation}
+which automatically satisfies~(29.5). When $\boldsymbol{\zeta} \neq 0$ the auxiliary matrix $\rho'$ must reduce to the identity; since
+\[
+(\gamma p + m)^2 = 2m(\gamma p + m),
+\]
+equation~(29.11) then coincides with~(29.10). Furthermore, $\rho'$ must contain the 4-vector $a$ linearly as a parameter, i.e.\ it must have the form
+\begin{equation}
+\rho' = 1 - A\gamma^5(\gamma a);
+\tag{29.12}
+\end{equation}
+the second term involves the scalar product of the pseudovector $a$ with the ``matrix 4-pseudovector'' $\gamma^5\gamma$. To fix the coefficient $A$, write the density matrix in the rest frame:
+\[
+\rho = \frac{m}{4}(1 + \gamma^0)(1 + A\gamma^5\boldsymbol{\gamma}\cdot\boldsymbol{\zeta})(1 + \gamma^0) = \frac{m}{2}(1 + \gamma^0)(1 + A\gamma^5\boldsymbol{\gamma}\cdot\boldsymbol{\zeta}),
+\]
+and compute the mean spin via~(29.4). Using the trace rules listed in \S\,22, one readily finds that the only non-vanishing contribution to the required trace is
+\[
+2\mathbf{s} = \frac{1}{2m}\operatorname{Sp}(\rho\gamma^5\gamma) = -\frac{A}{4}\operatorname{Sp}\bigl((\boldsymbol{\gamma}\cdot\boldsymbol{\zeta})\gamma\bigr) = A\boldsymbol{\zeta}.
+\]
+Setting this equal to $\boldsymbol{\zeta}$ gives $A = 1$. To obtain the final expression for $\rho$, substitute~(29.12) into~(29.11) and commute $\rho'$ past $(\gamma p + m)$; because $a$ and $p$ are orthogonal, $\gamma p$ anticommutes with $\gamma a$:
+\[
+(\gamma a)(\gamma p) = 2a\!\cdot\!p - (\gamma p)(\gamma a) = -(\gamma p)(\gamma a),
+\]
+and therefore commutes with $\gamma^5(\gamma a)$.
+
+The density matrix of a partially polarised electron is thus
+\begin{equation}
+\rho = \frac{1}{2}(\gamma p + m)[1 - \gamma^5(\gamma a)]
+\tag{29.13}
+\end{equation}
+(\emph{L.~Michel, A.\,S.~Wightman}, 1955). If $\rho$ is known, the 4-vector $a$ characterising the state (and with it the vector $\boldsymbol{\zeta}$) can be recovered from
+\begin{equation}
+a^\mu = \frac{1}{2m}\operatorname{Sp}\bigl(\rho\gamma^5\gamma^\mu\bigr).
+\tag{29.14}
+\end{equation}
+
+The formulae for the positron density matrix are analogous to those for the electron. Had we described a positron (with
+
+\SourcePage{134}{139}
+4-momentum $p$) by a positron amplitude $u_p^{(\text{pos})}$ and a correspondingly defined density matrix $\rho^{(\text{pos})}$, there would be no difference from the electron case and $\rho^{(\text{pos})}$ would be given by the same formula~(29.13). In actual calculations of scattering cross sections involving positrons, however, one deals (as we shall see later) not with $u_p^{(\text{pos})}$ but with the ``negative-frequency'' amplitudes $u_{-p}$. Accordingly, the polarisation density matrix (which we denote $\rho^{(-)}$) should be defined so that for a pure state it reduces to $u_{-p\,i}\bar u_{-p\,k}$.
+
+By~(26.1) the positron amplitude $u_p^{(\text{pos})} = U_C\bar u_{-p}$. Inversely:
+\[
+u_{-p} = U_C u_p^{(\text{pos})},\qquad \bar u_{-p} = U_C^+ u_p^{(\text{pos})} = u_p^{(\text{pos})}U_C^*
+\]
+(cf.~(28.3)). If
+\[
+\rho^{(-)}_{ik} = u_{-p\,i}\bar u_{-p\,k},\qquad \rho^{(\text{pos})}_{ik} = u^{(\text{pos})}_{pi}\bar u^{(\text{pos})}_{pk},
+\]
+then these relations give
+\begin{equation}
+\rho^{(-)} = U_C\widetilde\rho^{(\text{pos})}U_C^*.
+\tag{29.15}
+\end{equation}
+Substituting~(29.13) for $\rho^{(\text{pos})}$ and carrying out straightforward algebra (using~(26.3) and~(26.21)), we obtain
+\begin{equation}
+\rho^{(-)} = \frac{1}{2}(\gamma p - m)[1 - \gamma^5(\gamma a)].
+\tag{29.16}
+\end{equation}
+In particular, for an unpolarised state
+\begin{equation}
+\rho^{(-)} = \frac{1}{2}(\gamma p - m).
+\tag{29.17}
+\end{equation}
+
+Henceforth, when speaking of the positron density matrix we shall mean $\rho^{(-)}$ and drop the superscript $(-)$ (the matrix $\rho^{(\text{pos})}$ is in practice never needed).
+
+In various calculations one frequently has to average over spin states expressions of the form $\bar u Fu(\equiv \bar u_i F_{ik} u_k)$, where $F$ is some ($4 \times 4$) matrix and $u$ is the bispinor amplitude for a state with definite 4-momentum $p$. Such averaging is equivalent to replacing the products $u_k\bar u_i$ by the density matrix $\rho_{ik}$ of a partially polarised state.
+
+In particular, a complete average over the two independent spin states amounts to passing to the unpolarised state; by~(29.10) we then have
+\begin{equation}
+\frac{1}{2}\sum_{\text{pol}}\bar u_p Fu_p = \frac{1}{2}\operatorname{Sp}(\gamma p + m)F.
+\tag{29.18}
+\end{equation}
+
+\SourcePage{135}{140}
+Similarly, for the negative-frequency wave functions
+\begin{equation}
+\frac{1}{2}\sum_{\text{pol}}\bar u_{-p}Fu_{-p} = \frac{1}{2}\operatorname{Sp}(\gamma p - m)F.
+\tag{29.19}
+\end{equation}
+
+If one is summing over spin states rather than averaging, the result is twice as large.
+
+Let us trace how the density matrix~(29.13) passes to its non-relativistic limit. To this end we go to the electron rest frame. In the standard representation the amplitudes $u_p$ become two-component in this frame, and the density matrix must correspondingly become a $2 \times 2$ matrix. Indeed, in the rest frame
+\[
+\rho = \frac{m}{2}(\gamma^0 + 1)(1 + \gamma^5\boldsymbol{\gamma}\cdot\boldsymbol{\zeta}),
+\]
+and using the explicit forms of the $\gamma$ matrices~(21.20) and~(22.18) we find
+\begin{equation}
+\rho = \begin{pmatrix} \rho_{\text{nr}} & 0\\ 0 & 0 \end{pmatrix},\qquad \rho_{\text{nr}} = m(1 + \boldsymbol{\sigma}\cdot\boldsymbol{\zeta})
+\tag{29.20}
+\end{equation}
+(the zeros denote $2 \times 2$ null matrices). Adopting the normalisation $\operatorname{Sp}\rho_{\text{nr}} = 1$ conventional in the non-relativistic theory (instead of $2m$), one must divide this expression by $2m$, yielding
+\[
+\frac{1}{2}(1 + \boldsymbol{\sigma}\cdot\boldsymbol{\zeta}),
+\]
+in agreement with formula (59.6) (see~III).
+
+The non-relativistic limit of the positron density matrix is obtained in a similar way:
+\[
+\rho = \begin{pmatrix} 0 & 0\\ 0 & \rho_{\text{nr}} \end{pmatrix},\qquad \rho_{\text{nr}} = -m(1 + \boldsymbol{\sigma}\cdot\boldsymbol{\zeta}).
+\]
+
+Finally, let us write down a simplified expression for the density matrix in the ultrarelativistic case. Setting $|\mathbf{p}| \approx \varepsilon$ in~(29.8) (thereby neglecting quantities of relative order $(m/\varepsilon)^2$), substituting into~(29.13) or~(29.16), and choosing the direction of $\mathbf{p}$ as the $x$-axis, we have
+\[
+\rho = \frac{1}{2}[\varepsilon(\gamma^0 - \gamma^1) \pm m]\left[1 - \gamma^5\left(\frac{\varepsilon}{m}(\gamma^0 - \gamma^1)\zeta_\| - \zeta_\perp\gamma_\perp\right)\right],
+\]
+where the upper sign refers to the electron and the lower to the positron. On expanding the product the leading terms cancel, and the next-order terms give
+\[
+\rho = \frac{1}{2}\varepsilon(\gamma^0 - \gamma^1)[1 + \gamma^5(\pm\zeta_\| + \zeta_\perp\gamma_\perp)]
+\]
+
+\SourcePage{136}{141}
+or, writing $\varepsilon(\gamma^0 - \gamma^1)$ as $\gamma p$:
+\begin{equation}
+\rho = \frac{1}{2}(\gamma p)[1 + \gamma^5(\pm\zeta_\| + \boldsymbol{\zeta}_\perp\cdot\boldsymbol{\gamma}_\perp)].
+\tag{29.21}
+\end{equation}
+
+This is the desired ultrarelativistic density matrix. Note that all components of the polarisation vector $\boldsymbol{\zeta}$ enter on an equal footing, as terms of the same order. Recall that $\zeta_\|$ is the component of this vector parallel ($\zeta_\| > 0$) or antiparallel ($\zeta_\| < 0$) to the particle's momentum. In particular, for a helicity eigenstate $\zeta_\| = 2\lambda = \pm 1$; the density matrix then takes the especially simple form
+\begin{equation}
+\rho = \frac{1}{2}(\gamma p)(1 \pm 2\lambda\gamma^5),
+\tag{29.22}
+\end{equation}
+which coincides, as it should, with the density matrix of a neutrino or antineutrino---a particle with zero mass and definite helicity (see \S\,30).
