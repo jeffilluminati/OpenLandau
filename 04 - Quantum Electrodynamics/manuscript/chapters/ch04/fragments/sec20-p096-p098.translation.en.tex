@@ -1,0 +1,99 @@
+\SourcePage{96}{101}
+\section{The Dirac equation in spinor representation}
+
+In its own rest frame a particle of spin~$1/2$ is described by a two-component wave function---a 3-spinor. From the ``four-dimensional'' standpoint this quantity may originate as either an undotted or a dotted 4-spinor. To describe the particle in an arbitrary frame of reference one needs both kinds of 4-spinor; let us label them $\xi^\alpha$ and $\eta_{\dot\alpha}$\,\footnote{A three-dimensional first-rank spinor can also ``descend'' from 4-spinors of higher odd rank that become antisymmetric in one or several index pairs in the rest frame. Such variants, however, would lead to equations of higher order (cf.\ the footnote on p.~52).}.
+
+In the case of a free particle the sole operator entering the wave equation can be (as was noted already in \S\,10) the 4-momentum $\widehat p_\mu = i\partial_\mu$. Expressed through spinor indices, this 4-vector corresponds to an operator spinor $\widehat p_{\alpha\dot\beta}$ with components
+\begin{equation}
+\begin{aligned}
+\widehat p^{1\dot 1} &= \widehat p_{2\dot 2} = \widehat p_0 + \widehat p_z, &\qquad \widehat p^{2\dot 2} &= \widehat p_{1\dot 1} = \widehat p_0 - \widehat p_z,\\
+\widehat p^{1\dot 2} &= -\widehat p_{2\dot 1} = \widehat p_x - i\widehat p_y, &\qquad \widehat p^{2\dot 1} &= -\widehat p_{1\dot 2} = \widehat p_x + i\widehat p_y.
+\end{aligned}
+\tag{20.1}
+\end{equation}
+
+The wave equation is a linear differential relation linking the components of the spinors through the operator $\widehat p_{\alpha\dot\beta}$. The demand of relativistic invariance singles out the following system of equations:
+\begin{equation}
+\widehat p^{\alpha\dot\beta}\eta_{\dot\beta} = m\xi^\alpha,\qquad \widehat p_{\dot\beta\alpha}\xi^\alpha = m\eta_{\dot\beta},
+\tag{20.2}
+\end{equation}
+where $m$ is a dimensional constant. Introducing different constants $m_1$ and $m_2$ into these two equations (or reversing the sign in front of $m$) would be pointless, since by a suitable redefinition of $\xi^\alpha$ or $\eta_{\dot\alpha}$ the equations could always be brought back to the form given above.
+
+Eliminating one of the two spinors from equations~(20.2) by substituting $\eta_{\dot\beta}$ from the second equation into the first, we obtain:
+\[
+\widehat p^{\alpha\dot\beta}\eta_{\dot\beta} = \frac{1}{m}\widehat p^{\alpha\dot\beta}\widehat p_{\gamma\dot\beta}\xi^\gamma = m\xi^\alpha.
+\]
+But by~(18.4) $\widehat p^{\alpha\dot\beta}\widehat p_{\gamma\dot\beta} = \widehat p^2\delta^\alpha_\gamma$, so that we arrive at
+\begin{equation}
+(\widehat p^2 - m^2)\,\xi^\gamma = 0,
+\tag{20.3}
+\end{equation}
+from which it is clear that $m$ is the mass of the particle.
+
+We draw attention to the fact that the necessity of introducing a mass into the wave equation requires the simultaneous treatment of
+\SourcePage{97}{102}
+a pair of spinors ($\xi^\alpha$ and $\eta_{\dot\alpha}$): from only one of them it is impossible to compose a relativistically invariant equation that would contain any dimensional parameter. By the same token the wave equation turns out to be automatically invariant with respect to spatial inversion, provided one defines the transformation of the wave function as
+\begin{equation}
+P:\quad \xi^\alpha \to i\eta_{\dot\alpha},\qquad \eta_{\dot\alpha} \to i\xi^\alpha.
+\tag{20.4}
+\end{equation}
+One readily checks that this substitution (accompanied by the replacement $\widehat p^{\dot\alpha\beta} \to \widehat p_{\alpha\dot\beta}$, obvious from~(20.1)) causes the two equations~(20.2) to interchange. A pair of spinors that transform into one another under inversion make up a four-component object---a bispinor.
+
+The relativistic wave equation embodied in the system~(20.2) bears the name of the \emph{Dirac equation} (it was derived by \emph{Dirac} in 1928). To pursue the further study and application of this equation we shall now examine the different representations in which it can be written.
+
+With the aid of formula~(18.6) we rewrite equations~(20.2) as
+\begin{equation}
+(\widehat p_0 + \widehat{\mathbf{p}}\boldsymbol{\sigma})\eta = m\xi,\qquad (\widehat p_0 - \widehat{\mathbf{p}}\boldsymbol{\sigma})\xi = m\eta.
+\tag{20.5}
+\end{equation}
+Here the symbols $\xi$ and $\eta$ stand for two-component quantities---spinors
+\begin{equation}
+\xi = \begin{pmatrix} \xi^1\\ \xi^2 \end{pmatrix},\qquad \eta = \begin{pmatrix} \eta_{\dot 1}\\ \eta_{\dot 2} \end{pmatrix}
+\tag{20.6}
+\end{equation}
+(the first carrying upper, the second lower indices), and when the matrices $\sigma$ are multiplied by any two-component quantity $f$ the ordinary rule of matrix multiplication is always understood here and below:
+\begin{equation}
+(\sigma f)_\alpha = \sigma_{\alpha\beta}f_\beta.
+\tag{20.7}
+\end{equation}
+
+For ease of subsequent reference we write out the Pauli matrices once more:
+\begin{equation}
+\sigma_x = \begin{pmatrix} 0 & 1\\ 1 & 0 \end{pmatrix},\quad
+\sigma_y = \begin{pmatrix} 0 & -i\\ i & 0 \end{pmatrix},\quad
+\sigma_z = \begin{pmatrix} 1 & 0\\ 0 & -1 \end{pmatrix}
+\tag{20.8}
+\end{equation}
+and recall their principal properties:
+\begin{equation}
+\sigma_i\sigma_k + \sigma_k\sigma_i = 2\delta_{ik},\qquad \sigma_i\sigma_k = ie_{ikl}\sigma_l + \delta_{ik}
+\tag{20.9}
+\end{equation}
+(see~III, \S\,55).
+
+\SourcePage{98}{103}
+Let us also write down the wave equation obeyed by the complex-conjugate wave function, which is built from the spinors
+\begin{equation}
+\xi^* = \bigl(\xi^{1*}, \xi^{2*}\bigr),\qquad \eta^* = \bigl(\eta^*_{\dot 1}, \eta^*_{\dot 2}\bigr).
+\tag{20.10}
+\end{equation}
+Since every operator $\widehat p_\mu$ contains the factor~$i$, one has $\widehat p^*_\mu = -\widehat p_\mu$. In taking the complex conjugate of both sides of equations~(20.5) one must also take into account that, by the Hermiticity of the matrices $\sigma$ ($\sigma^* = \widetilde\sigma$),
+\[
+(\sigma f)^*_\alpha = \sigma^*_{\alpha\beta}f^*_\beta = f^*_\beta\sigma_{\beta\alpha} = (f^*\sigma)_\alpha,
+\]
+and one obtains equations of the form
+\begin{equation}
+\eta^*(\widehat p_0 + \widehat{\mathbf{p}}\boldsymbol{\sigma}) = -m\xi^*,\qquad \xi^*(\widehat p_0 - \widehat{\mathbf{p}}\boldsymbol{\sigma}) = -m\eta^*.
+\tag{20.11}
+\end{equation}
+In this way of writing it is tacitly assumed that the operator $\widehat p_\mu$ acts on the function placed to its left. The display of $\xi^*$ and $\eta^*$ as horizontal rows reflects the matrix multiplication convention adopted in these equations: the row~$f$ is contracted with the columns of the $\sigma$ matrices:
+\begin{equation}
+(f^*\sigma)_\alpha = f^*_\beta\sigma_{\beta\alpha}.
+\tag{20.12}
+\end{equation}
+
+The inversion transformation for $\xi^*$, $\eta^*$ is defined as the complex conjugate of the transformation~(20.4):
+\begin{equation}
+P:\quad \xi^{\alpha*} \to -i\eta^*_{\dot\alpha},\qquad \eta^*_{\dot\alpha} \to -i\xi^{\alpha*}.
+\tag{20.13}
+\end{equation}
