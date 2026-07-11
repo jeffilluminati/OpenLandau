@@ -1,0 +1,231 @@
+\SourcePage{118}{123}
+\section{Charge conjugation and time reversal of spinors}
+
+The factors $\psi_{p\sigma} = u_{p\sigma}e^{-ipx}$ that multiply the operators $\widehat a_{\mathbf{p}\sigma}$ in~(25.1) are the wave functions of free particles (which we shall call ``electrons'') carrying momentum $\mathbf{p}$ and polarisation $\sigma$:
+\[
+\psi^{(\text{e})}_{p\sigma} = \psi_{p\sigma}.
+\]
+
+The factors $\bar\psi_{-p\,-\sigma}$ accompanying the operators $\widehat b_{p\sigma}$, on the other hand, should be regarded as positron wave functions for the same $\mathbf{p}$ and $\sigma$. It turns out, however, that the electron and positron functions are expressed in different bispinor representations. This is apparent from the fact that $\psi$ and $\bar\psi$ have distinct transformation properties, their components obeying different systems of equations. To eliminate this drawback one must carry out a specific unitary transformation of the components of $\bar\psi_{-p\,-\sigma}$---one that ensures the resulting four-component function satisfies the same equation as $\psi_{p\sigma}$\,\footnote{For spin-0 particles this question did not arise, since the scalar functions $\psi$ and $\psi^*$ both satisfy the same equation, and $\psi^*_{-p}$ simply coincides with $\psi_p$.}. It is precisely such a function that we shall call the positron wave function (with momentum $\mathbf{p}$ and polarisation $\sigma$). Denoting the matrix of the required unitary
+
+\SourcePage{119}{124}
+transformation by $U_C$, we write
+\begin{equation}
+\psi^{(\text{p})}_{p\sigma} = U_C\bar\psi_{-p\,-\sigma}.
+\tag{26.1}
+\end{equation}
+
+The operation $C$ by which this function is constructed from $\psi_{-p\,-\sigma}$ is called the \emph{charge conjugation} of the wave function (\emph{H.\,A.~Kramers}, 1937). This notion is by no means limited to plane waves. For any function $\psi$ whatsoever there exists a ``charge-conjugate'' function
+\begin{equation}
+\widehat C\psi(t,\mathbf{r}) = U_C\bar\psi(t,\mathbf{r}),
+\tag{26.2}
+\end{equation}
+which transforms in the same way as $\psi$ and obeys the same equation.
+
+The properties of $U_C$ follow from this definition. If $\psi$ solves the Dirac equation $(\gamma\widehat p - m)\psi = 0$, then $\bar\psi$ satisfies
+\[
+\bar\psi(\gamma\widehat p + m) = 0,\qquad \text{i.e.}\quad (\widetilde\gamma\widehat p + m)\widetilde{\bar\psi} = 0.
+\]
+Multiplying this equation on the left by $U_C$:
+\[
+U_C\widetilde\gamma\widehat p\,\widetilde{\bar\psi} + mU_C\widetilde{\bar\psi} = 0,
+\]
+and demanding that $U_C\widetilde{\bar\psi}$ obey the same equation as $\psi$:
+\[
+(\gamma\widehat p - m)U_C\widetilde{\bar\psi} = 0,
+\]
+we compare the two equations and obtain the following ``commutation relation'' between $U_C$ and the matrices $\gamma^{\mu\,-1)}$:
+\begin{equation}
+U_C\widetilde\gamma^\mu = -\gamma^\mu U_C.
+\tag{26.3}
+\end{equation}
+
+We shall henceforth assume that the wave functions are given in the spinor or standard representation (the case of an arbitrary representation will be discussed only at the end of this section). In these representations
+\[
+\gamma^{0,2} = \widetilde\gamma^{0,2},\qquad \gamma^{1,3} = -\widetilde\gamma^{1,3},
+\]
+\begin{equation}
+\bigl(\gamma^{0,1,3}\bigr)^* = \gamma^{0,1,3},\qquad \gamma^{2*} = -\gamma^2.
+\tag{26.4}
+\end{equation}
+The conditions~(26.3) are then met by the matrix $U_C = \eta_C\gamma^2\gamma^0$ with an arbitrary constant $\eta_C$. The requirement $\widehat C^2 = 1$ implies $|\eta_C|^2 = 1$, so $U_C$ is fixed up to
+
+\SourcePage{120}{125}
+a phase factor. We shall set $\eta_C = 1$, giving
+\begin{equation}
+U_C = \gamma^2\gamma^0 = -\alpha_y.
+\tag{26.5}
+\end{equation}
+Noting further that $\bar\psi = \psi^*\gamma^0 = \widetilde\gamma^0\psi^* = \gamma^0\psi^*$, one can write the action of $\widehat C$ as
+\begin{equation}
+\widehat C\psi = \gamma^2\gamma^0\widetilde{\bar\psi} = \gamma^2\psi^*.
+\tag{26.6}
+\end{equation}
+
+Written out explicitly, the transformation~(26.6) reads in the spinor representation
+\begin{equation}
+\begin{aligned}
+C&:\quad \xi^\alpha \to -i\eta^{\dot\alpha*},\quad \eta_{\dot\alpha} \to -i\xi^*_\alpha,\\
+C&:\quad \xi_\alpha \to i\xi^{\alpha*},\qquad \eta^\alpha \to -i\eta^*_{\dot\alpha}.
+\end{aligned}
+\tag{26.7a,\,b}
+\end{equation}
+
+The charge-conjugation transformation for the plane waves $\psi_{\pm p\sigma}$ is easily carried out using their explicit forms~(23.9) together with the matrix $U_C$ in the standard representation:
+\begin{equation}
+U_C = \begin{pmatrix} 0 & -\sigma_y\\ -\sigma_y & 0 \end{pmatrix}.
+\tag{26.8}
+\end{equation}
+Noting that
+\[
+\sigma_y\sigma^* = -\boldsymbol{\sigma}\sigma_y,
+\]
+and using the definition of $w^{(\sigma)\prime}$ from~(23.16), we obtain
+\begin{equation}
+U_C\bar u_{-p\,-\sigma} = u_{p\sigma},\qquad U_C u_{-p\,-\sigma} = \bar u_{p\sigma}.
+\tag{26.9}
+\end{equation}
+Consequently,
+\begin{equation}
+\widehat C\psi_{-p\,-\sigma} = \psi_{p\sigma},
+\tag{26.10}
+\end{equation}
+confirming that the functions $\psi_{-p\,-\sigma}$ appearing in the $\psi$-operators~(25.1) alongside $\widehat b_{p\sigma}$ do indeed describe states of a particle with momentum $\mathbf{p}$ and polarisation $\sigma$. We also see that the electron and positron states are described by the same functions:
+\[
+\psi^{(\text{e})}_{p\sigma} = \psi^{(\text{p})}_{p\sigma} = \psi_{p\sigma}.
+\]
+
+This is entirely natural, since the functions $\psi_{p\sigma}$ encode only the momentum and polarisation of the particle.
+
+The operation of time reversal can be treated in an analogous manner. Reversing the sign of time must be accompanied by complex conjugation of the wave function. In order for the resulting ``time-reversed'' wave function $(\widehat T\psi)$ to belong to the same representation as the original $\psi$, one must
+
+\SourcePage{121}{126}
+perform a further unitary transformation on the components of $\psi^*$ (or $\bar\psi$). Proceeding in analogy with~(26.2), we represent the action of $\widehat T$ on $\psi$ as
+\begin{equation}
+\widehat T\psi(t,\mathbf{r}) = U_T\bar\psi(-t,\mathbf{r}),
+\tag{26.11}
+\end{equation}
+where $U_T$ is a unitary matrix.
+
+Writing once more the Dirac equation for $\psi$:
+\[
+\Bigl(i\gamma^0\frac{\partial}{\partial t} + i\boldsymbol{\gamma}\boldsymbol{\nabla} - m\Bigr)\psi(t,\mathbf{r}) = 0,
+\]
+and the corresponding equation for $\bar\psi$:
+\[
+\Bigl(i\widetilde\gamma^0\frac{\partial}{\partial t} + i\widetilde{\boldsymbol{\gamma}}\boldsymbol{\nabla} + m\Bigr)\widetilde{\bar\psi}(t,\mathbf{r}) = 0.
+\]
+Replacing $t \to -t$ in the latter and multiplying on the left by $-U_T$:
+\[
+\Bigl(iU_T\widetilde\gamma^0\frac{\partial}{\partial t} - iU_T\widetilde{\boldsymbol{\gamma}}\boldsymbol{\nabla}\Bigr)\widetilde{\bar\psi}(-t,\mathbf{r}) - mU_T\widetilde{\bar\psi}(-t,\mathbf{r}) = 0.
+\]
+We require $U_T\widetilde{\bar\psi}(-t,\mathbf{r})$ to satisfy the same equation as $\psi(t,\mathbf{r})$:
+\[
+\Bigl(i\gamma^0\frac{\partial}{\partial t} + i\boldsymbol{\gamma}\boldsymbol{\nabla}\Bigr)U_T\widetilde{\bar\psi}(-t,\mathbf{r}) - mU_T\widetilde{\bar\psi}(-t,\mathbf{r}) = 0.
+\]
+Comparison yields the conditions
+\begin{equation}
+U_T\widetilde\gamma^0 = \gamma^0 U_T,\qquad U_T\widetilde{\boldsymbol{\gamma}} = -\boldsymbol{\gamma}U_T.
+\tag{26.12}
+\end{equation}
+In the spinor and standard representations, these conditions are satisfied by the matrix\,\footnote{The choice of phase factor in~(26.13) is tied to the choice made in~(26.5) by considerations discussed below in the footnote on p.~124.}
+\begin{equation}
+U_T = i\gamma^3\gamma^1\gamma^0.
+\tag{26.13}
+\end{equation}
+
+The action of $\widehat T$ is therefore given by
+\begin{equation}
+\widehat T\psi(t,\mathbf{r}) = i\gamma^3\gamma^1\gamma^0\widetilde{\bar\psi}(-t,\mathbf{r}) = i\gamma^3\gamma^1\psi^*(-t,\mathbf{r}).
+\tag{26.14}
+\end{equation}
+Explicitly, in the spinor representation this transformation reads
+\begin{equation}
+T:\quad \xi^\alpha \to -i\xi^*_\alpha,\qquad \eta_{\dot\alpha} \to i\eta^{\dot\alpha*}
+\tag{26.15\,a}
+\end{equation}
+or
+\begin{equation}
+T:\quad \xi_\alpha \to i\xi^{\alpha*},\qquad \eta^\alpha \to -i\eta^*_{\dot\alpha}.
+\tag{26.15\,b}
+\end{equation}
+
+In the standard representation
+\begin{equation}
+U_T = \begin{pmatrix} \sigma_y & 0\\ 0 & -\sigma_y \end{pmatrix}.
+\tag{26.16}
+\end{equation}
+
+\SourcePage{122}{127}
+Let us now find the result of applying all three operations $P$, $T$, and $C$ to $\psi$. Writing them out in succession:
+\[
+\widehat T\psi(t,\mathbf{r}) = -i\gamma^1\gamma^3\psi^*(-t,\mathbf{r}),
+\]
+\[
+\widehat P\widehat T\psi(t,\mathbf{r}) = i\gamma^0(\widehat T\psi) = \gamma^0\gamma^1\gamma^3\psi^*(-t,-\mathbf{r}),
+\]
+\[
+\widehat C\widehat P\widehat T\psi(t,\mathbf{r}) = \gamma^2(\gamma^0\gamma^1\gamma^3\psi^*)^* = \gamma^2\gamma^0\gamma^1\gamma^3\psi(-t,-\mathbf{r}),
+\]
+which gives
+\begin{equation}
+\widehat C\widehat P\widehat T\psi(t,\mathbf{r}) = i\gamma^5\psi(-t,-\mathbf{r}).
+\tag{26.17}
+\end{equation}
+
+In the spinor representation
+\begin{equation}
+CPT:\quad \xi^\alpha \to -i\xi^\alpha,\qquad \eta_{\dot\alpha} \to i\eta_{\dot\alpha},
+\tag{26.18}
+\end{equation}
+as can also be verified directly from the transformation rules~(20.4), (26.7), (26.15)\,\footnote{The notation $\widehat C\widehat P\widehat T$ implies that the operators act from right to left. The overall sign in~(26.17), (26.18) depends on this ordering because $\widehat T$ does not commute with $\widehat C$ and $\widehat P$ (in their action on a bispinor).}.
+
+The expressions for the matrices $U_C$ and $U_T$ written above assumed the spinor or standard representation of $\psi$. Let us finally clarify which properties of these expressions remain valid for an arbitrary representation.
+
+If $\psi$ undergoes a unitary transformation:
+\begin{equation}
+\psi' = U\psi,\quad \gamma' = U\gamma U^{-1},\quad \bar\psi' = \psi'^*\gamma^{0\prime} = \bar\psi U^+ = \bar\psi\widetilde U^{-1},
+\tag{26.19}
+\end{equation}
+then in the new representation
+\[
+(\widehat C\psi)' = U(\widehat C\psi) = UU_C\widetilde{\bar\psi} = UU_C(\widetilde{\bar\psi'U}) = UU_C\widetilde U\widetilde{\bar\psi'}.
+\]
+Comparing with the definition of $U'_C$ in the new representation $((\widehat C\psi)' = U'_C\widetilde{\bar\psi'})$, we find
+\begin{equation}
+U'_C = UU_C\widetilde U.
+\tag{26.20}
+\end{equation}
+The transformation~(26.20) coincides with the transformation law of the $\gamma$ matrices only when $U$ is real. For this reason the expression~(26.5) holds only in representations obtainable from the spinor or standard representation by a real transformation.
+
+The matrix~(26.5) is unitary, and transposition reverses its sign:
+\begin{equation}
+U_CU^+_C = 1,\qquad \widetilde U_C = -U_C.
+\tag{26.21}
+\end{equation}
+These properties are invariant under the transformation~(26.20) and hence hold in every representation. The matrix~(26.5) is also Hermitian ($U_C = U^+_C$), but this property is in general not preserved by~(26.20).
+
+\SourcePage{123}{128}
+Everything just said (including~(26.21)) applies equally to the properties of the matrix $U_T$.
+
+Within the second-quantisation formalism, the transformations $C$, $P$, $T$ for $\psi$-operators must be formulated as transformation rules for the creation and annihilation operators of the particles. These rules can be established (similarly to how it was done in \S\,13 for spin-0 particles) by requiring that the transformed $\psi$-operators admit a representation of the form
+\begin{equation}
+\begin{aligned}
+\widehat\psi^C(t,\mathbf{r}) &= U_C\widetilde{\widehat{\bar\psi}}(t,\mathbf{r}),\\
+\widehat\psi^P(t,\mathbf{r}) &= i\gamma^0\widehat\psi(t,-\mathbf{r}),\\
+\widehat\psi^T(t,\mathbf{r}) &= U_T\widetilde{\widehat{\bar\psi}}(-t,\mathbf{r}).
+\end{aligned}
+\tag{26.22}
+\end{equation}
+
+\begin{center}
+\textbf{Problem}
+\end{center}
+
+Find the charge-conjugation operator in the Majorana representation (see Problem~2, \S\,21).
+
+\textbf{Solution.} The matrix $U'_C$ in the Majorana representation is obtained from $U_C = -\alpha_y$ in the standard representation via the transformation~(26.20) with $U = (\alpha_y + \beta)/\sqrt{2}$, and equals $U'_C = \alpha_y$ ($\alpha_y$ and $\beta$ denote the standard-representation matrices). Denoting quantities in the Majorana representation by a prime, we have $\widehat C\psi' = U'_C(\psi'^*\beta')$, and since $\beta' = \alpha_y$,
+\[
+\widehat C\psi' = \alpha_y(\psi'^*\alpha_y) = \alpha_y\widetilde\alpha_y\psi'^* = \psi'^*,
+\]
+i.e.\ charge conjugation reduces to complex conjugation.
