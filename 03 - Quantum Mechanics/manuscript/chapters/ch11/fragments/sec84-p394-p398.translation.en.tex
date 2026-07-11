@@ -1,0 +1,156 @@
+\SourcePage{394}{397}
+\section{Multiplet terms. Case $b$}
+
+We now turn to case $b$. Here the effect of molecular rotation predominates over the multiplet splitting. We must therefore consider the rotational effect first, neglecting the spin--axis interaction, and then include the latter as a perturbation.
+
+For a molecule with ``free'' spin, not only the total angular momentum $\mathbf J$ but also the sum $\mathbf K$ of the electronic orbital angular momentum and the angular momentum of nuclear rotation is conserved; it is related to $\mathbf J$ by
+\begin{equation}
+ \mathbf J=\mathbf K+\mathbf S.
+ \tag{84.1}
+\end{equation}
+The quantum number $K$ distinguishes the different states of a rotating molecule with free spin that arise from a given electronic term. The effective potential energy $U_K(r)$ in a state with a specified $K$ is plainly given by the same formula (82.5) as for terms with $S=0$:
+\begin{equation}
+ U_K(r)=U(r)+B(r)K(K+1),
+ \tag{84.2}
+\end{equation}
+where $K$ takes the values $\Lambda,\Lambda+1,\ldots$
+
+Including the spin--axis interaction generally splits each term into $2S+1$ terms (or $2K+1$ if $K<S$), distinguished by their values of the total angular momentum $J$\footnote{In case $b$, the projection $\mathbf n\mathbf S$ of the spin on the molecular axis has no definite value, so the quantum numbers $\Sigma$ (and $\Omega$) do not exist.}. By the general rule for addition of angular momenta, for a given $K$ the number $J$ takes the values from $K+S$ to $|K-S|$:
+\begin{equation}
+ |K-S|\leqslant J\leqslant K+S.
+ \tag{84.3}
+\end{equation}
+
+To calculate the splitting energy in first-order perturbation theory, the mean value of the spin--axis interaction-energy operator must be found in the zero-order state with respect to this interaction. In the present case this means averaging both over the electronic state and over molecular rotation (at a fixed $r$). The first averaging gives an operator of the form $A(r)\mathbf n\widehat{\mathbf S}$, proportional to the projection of the spin operator on the molecular axis.
+
+\SourcePage{395}{398}
+We next average this operator over molecular rotation, regarding the direction of the spin vector as arbitrary. Then
+\[
+ \overline{\mathbf n\mathbf S}=\overline{\mathbf n}\mathbf S.
+\]
+The mean value $\overline{\mathbf n}$ is a vector which, by symmetry, must have the same direction as the ``vector'' $\mathbf K$, the only vector characterizing the molecular rotation. We may therefore write
+\[
+ \overline{\mathbf n}=\operatorname{const}\cdot\mathbf K.
+\]
+The proportionality coefficient is readily determined by multiplying both sides by $\mathbf K$ and noting that the eigenvalues are $\mathbf n\mathbf K=\Lambda$ (see (82.4)) and $\mathbf K^2=K(K+1)$. Thus
+\[
+ \overline{\mathbf n\mathbf S}=\frac{\Lambda}{K(K+1)}\mathbf K\mathbf S.
+\]
+Finally, by the general formula (31.3), the eigenvalue of the product $\mathbf K\mathbf S$ is
+\begin{equation}
+ \mathbf K\mathbf S=\frac12[J(J+1)-K(K+1)-S(S+1)].
+ \tag{84.4}
+\end{equation}
+
+We consequently obtain the following expression for the required mean spin--axis interaction energy:
+\[
+ \frac{A(r)\Lambda}{2K(K+1)}[J(J+1)-S(S+1)-K(K+1)]
+ =\frac{A(r)\Lambda}{2K(K+1)}(J-S)(J+S+1)-\frac12A(r)\Lambda.
+\]
+This expression must be added to the energy (84.2). The term $\frac12A(r)\Lambda$, being independent of $K$ and $J$, can be included in $U(r)$; the final expression for the effective potential energy is therefore
+\begin{equation}
+ U_K(r)=U(r)+B(r)K(K+1)+A(r)\Lambda\frac{(J-S)(J+S+1)}{2K(K+1)}.
+ \tag{84.5}
+\end{equation}
+Expansion in powers of $\xi=r-r_e$ gives, in the usual way, the following expression for the molecular energy levels in case $b$:
+\begin{equation}
+ E=U_e+\hbar\omega_e(v+1/2)+B_eK(K+1)+A_e\Lambda\frac{(J-S)(J+S+1)}{2K(K+1)}.
+ \tag{84.6}
+\end{equation}
+
+As already stated in the preceding section, for $\Sigma$-terms the spin--orbit interaction produces no multiplet splitting in first order. To determine the fine structure, the spin--spin interaction must be included; its operator
+
+\SourcePage{396}{399}
+is quadratic in the electron spins. What interests us here is not this operator itself, but the result of averaging it over the electronic state of the molecule, just as was done for the spin--orbit interaction operator. Symmetry makes it clear that the averaged operator must be proportional to the square of the projection of the total molecular spin on the axis, and can therefore be written
+\begin{equation}
+ a(r)(\mathbf S\mathbf n)^2,
+ \tag{84.7}
+\end{equation}
+where $a(r)$ is again a function of the distance $r$ characteristic of the electronic term in question (symmetry also permits a term proportional to $\mathbf S^2$, but it is of no interest because the magnitude of the spin is simply a constant). We shall not give here the cumbersome general formula for the splitting produced by the operator (84.7); Problem 1 below derives the formula for triplet $\Sigma$-terms.
+
+Doublet $\Sigma$-terms are a special case. By Kramers' theorem (\S~60), in a system of particles with total spin $S=1/2$ a twofold degeneracy necessarily remains even when all internal relativistic interactions in the system are fully included. Hence ${}^2\Sigma$-terms remain unsplit when both spin--orbit and spin--spin interactions are included to any order.
+
+A splitting would occur here only if the relativistic interaction of the spin with molecular rotation were included; this effect is very small. The averaged operator of this interaction must evidently have the form $\gamma\mathbf K\mathbf S$, and its eigenvalues follow from (84.4) on setting $S=1/2$, $J=K\pm1/2$. Thus, for ${}^2\Sigma$-terms,
+\begin{equation}
+ E=U_e+\hbar\omega_e(v+1/2)+B_eK(K+1)\pm(\gamma/2)(K+1/2)
+ \tag{84.8}
+\end{equation}
+(the constant $-\gamma/4$ has been included in $U_e$).
+
+\ProblemHeading[1] Determine the multiplet splitting of a ${}^3\Sigma$ term in case $b$ (H.~Kramers, 1929).
+
+\SolutionHeading The required splitting is determined by the operator (84.7), which must be averaged over molecular rotation. Write it as $a_en_in_kS_iS_k$, where $a_e=a(r_0)$. Since $\mathbf S$ is a conserved vector, only the product $n_in_k$ is to be averaged. By the analogous formula obtained in the problem to \S~29,
+\[
+ \overline{n_in_k}=-\frac{\widehat K_i\widehat K_k+\widehat K_k\widehat K_i}{(2K-1)(2K+3)}+\cdots;
+\]
+terms proportional to $\delta_{ik}$ have not been displayed, since they would give an energy contribution independent of $J$ and hence would not produce the splitting of interest. Thus the splitting is determined by the operator
+\[
+ -a_e\frac{S_iS_k(\widehat K_i\widehat K_k+\widehat K_k\widehat K_i)}{(2K-1)(2K+3)}.
+\]
+
+\SourcePage{397}{400}
+Since $\mathbf S$ commutes with $\mathbf K$,
+\[
+ S_iS_k\widehat K_i\widehat K_k=S_i\widehat K_iS_k\widehat K_k=(\mathbf S\mathbf K)^2,
+\]
+where the eigenvalue of $\mathbf S\mathbf K$ is given by (84.4). Further,
+\begin{align*}
+ S_iS_k\widehat K_k\widehat K_i
+ &=S_iS_k\widehat K_i\widehat K_k+iS_iS_k e_{kil}\widehat K_l\\
+ &=(\mathbf S\mathbf K)^2-\frac12(S_iS_k-S_kS_i)i e_{ikl}\widehat K_l\\
+ &=(\mathbf S\mathbf K)^2+\frac12e_{ikl}e_{ikm}S_mK_l
+  =(\mathbf S\mathbf K)^2+\mathbf S\mathbf K.
+\end{align*}
+The three components $E_K$ of the ${}^3\Sigma$ triplet ($S=1$) correspond to $J=K,K\pm1$. The intervals between these components are
+\[
+ E_{K+1}-E_K=-a_e\frac{K+1}{2K+3},\qquad
+ E_{K-1}-E_K=-a_e\frac{K}{2K-1}.
+\]
+
+\ProblemHeading[2] Determine the energy of a doublet term (with $\Lambda\ne0$) for cases intermediate between $a$ and $b$ (E.~Hill, J.~van Vleck, 1928).
+
+\SolutionHeading Since the rotational energy and the spin--axis interaction energy are assumed to be of the same order, they must be treated simultaneously in perturbation theory, so that the perturbation operator is\footnote{The averaging over vibrations must be carried out before the averaging over rotation. We have therefore replaced the functions $B(r)$ and $A(r)$ by the values $B_e$, $A_e$, retaining only the first terms of the expansion in $\xi$. The unperturbed energy levels are $E^{(0)}=U_e+\hbar\omega_e(v+1/2)$.}
+\[
+ \widehat V=B_e\widehat{\mathbf K}^{,2}+A_e\mathbf n\widehat{\mathbf S}.
+\]
+For the zero-order wave functions it is convenient to use the wave functions of states in which $K$ and $J$ have definite values (that is, the case-$b$ functions). Since a doublet term has $S=1/2$, at a given $J$ the quantum number $K$ can have the values $K=J\pm1/2$. To form the secular equation we must calculate the matrix elements $(nSKJ|V|nSK'J)$ ($n$ denotes the set of quantum numbers specifying the electronic term), where $K,K'$ take these values. The matrix of $\mathbf K^2$ is diagonal, with diagonal elements $K(K+1)$. The matrix elements of $\mathbf n\mathbf S$ are calculated from the general formula (109.5), in which $S,K,J$ play the parts of $j_1,j_2,J$; the reduced matrix elements of $\mathbf n$ are given by (87.4). The resulting secular equation is
+\[
+\begin{vmatrix}
+B_e(J+1/2)(J+3/2)-\dfrac{A_e\Lambda}{2J+1}-E^{(1)} & \dfrac{A_e}{2J+1}\sqrt{(J+1/2)^2-\Lambda^2}\\[6pt]
+\dfrac{A_e}{2J+1}\sqrt{(J+1/2)^2-\Lambda^2} & B_e(J+1/2)(J-1/2)+\dfrac{A_e\Lambda}{2J+1}-E^{(1)}
+\end{vmatrix}=0.
+\]
+
+\SourcePage{398}{401}
+Solving this equation and adding $E^{(1)}$ to the unperturbed energy, we obtain
+\[
+ E=U_e+\hbar\omega_e(v+1/2)+B_eJ(J+1)
+ \pm\sqrt{B_e^2(J+1/2)^2-A_eB_e\Lambda+A_e^2/4}
+\]
+(the constant $B_e/4$ has been included in $U_e$). Case $a$ corresponds to $A_e\gg B_eJ$, and case $b$ to the reverse inequality.
+
+\ProblemHeading[3] Determine the intervals between the components of a triplet ${}^3\Sigma$ level in a case intermediate between $a$ and $b$.
+
+\SolutionHeading As in Problem 2, the rotational energy and the spin--spin interaction energy are treated simultaneously in perturbation theory. The perturbation operator is
+\[
+ \widehat V=B_e\widehat{\mathbf K}^{,2}+a_e(\mathbf n\widehat{\mathbf S})^2.
+\]
+We use the case-$b$ functions as the zero-order wave functions. The matrix elements $(K|\mathbf n\mathbf S|K')$ (all indices with respect to which the matrix is diagonal are omitted) are again calculated from (109.5) and (87.4), now with $\Lambda=0$, $S=1$. The nonzero elements are
+\[
+ (J|\mathbf n\mathbf S|J-1)=\sqrt{\frac{J+1}{2J+1}},\qquad
+ (J|\mathbf n\mathbf S|J+1)=\sqrt{\frac{J}{2J+1}}.
+\]
+For a given $J$, $K$ can have the values $K=J,J\pm1$. The matrix elements $(K|V|K')$ are
+\begin{align*}
+ (J|V|J)&=B_eJ(J+1)+a_e,\\
+ (J-1|V|J-1)&=B_e(J-1)J+a_e\frac{J+1}{2J+1},\\
+ (J+1|V|J+1)&=B_e(J+1)(J+2)+a_e\frac{J}{2J+1},\\
+ (J-1|V|J+1)&=(J+1|V|J-1)=a_e\frac{J(J+1)}{2J+1}.
+\end{align*}
+There are no transitions between the state with $K=J$ and the states with $K=J\pm1$. One of the levels is therefore simply $E_1=(J|V|J)$. The other two, $E_2,E_3$, are obtained by solving the quadratic secular equation formed from the matrix elements for transitions between the states $J\pm1$. Since only the relative positions of the triplet components are of interest, subtract the constant $a_e$ from all three energies $E_{1,2,3}$. We then obtain
+\[
+ E_1=B_eJ(J+1),\qquad
+ E_{2,3}=B_e(J^2+J+1)-\frac{a_e}{2}
+ \pm\sqrt{B_e^2(2J+1)^2-a_eB_e+\frac{a_e^2}{4}}.
+\]
+In case $b$ ($a_e$ small), consideration of the three levels with equal $K$ and different $J$ ($J=K,K\pm1$) again gives the formulas found in Problem 1.

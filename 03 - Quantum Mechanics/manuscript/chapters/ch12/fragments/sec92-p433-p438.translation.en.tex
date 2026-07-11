@@ -1,0 +1,62 @@
+\SourcePage{433}{436}
+\section{Transformation groups}
+
+The collection of all symmetry transformations of a given body is called its group of symmetry transformations, or simply its \emph{symmetry group}. Above we treated these transformations as geometrical motions of the body. In quantum-mechanical applications, however, it is more convenient to regard symmetry transfor\SourcePageJoin{434}{437}mations as coordinate transformations that leave the Hamiltonian of the system invariant. Clearly, if a system coincides with itself after a rotation or reflection, the corresponding coordinate transformation leaves its Schrödinger equation unchanged. We shall therefore speak of the group of transformations under which the given Schrödinger equation is invariant\footnote{This viewpoint makes it possible to include not only the groups of rotations and reflections considered here, but also other types of transformations that leave the Schrödinger equation unchanged. Among these are permutations of the coordinates of identical particles belonging to the system (a molecule or atom). The collection of all possible permutations of identical particles in a given system is called its \emph{permutation group} (we encountered these already in \S~63). The general properties of groups developed below apply to permutation groups as well; we shall not pursue a more detailed study of this kind of group.
+
+The notation used in this chapter calls for the following remark. Symmetry transformations are essentially operators of the same kind as those used throughout this book and ought therefore to be marked with hats. We omit them in deference to standard notation and because no ambiguity can result in the present chapter. For the same reason we use the conventional symbol $E$, rather than 1 as in the remaining chapters, for the identity transformation. Finally, in this chapter the inversion operator is denoted by $I$ rather than by the symbol $P$ used in \S~30 and customary in modern quantum-mechanical literature.}.
+
+Symmetry groups can conveniently be studied with the general mathematical apparatus known as \emph{group theory}, whose foundations are set out below. We begin with groups containing a finite number of distinct transformations (the so-called \emph{finite groups}). Each transformation belonging to a group is called an \emph{element of the group}.
+
+Symmetry groups have the following evident properties. Every group contains the identity transformation $E$ (called the \emph{identity element of the group}). Elements of a group can be \emph{multiplied}; the product of two (or more) transformations means the result of applying them successively. The product of any two elements of a group is clearly an element of that same group. Multiplication of elements obeys the associative law $(AB)C=A(BC)$, where $A,B,C$ are elements of the group. The commutative law, however, does not hold in general; generally $AB\ne BA$. For every group element $A$, the same group contains an \emph{inverse element} $A^{-1}$ (the inverse transformation) such that $AA^{-1}=E$. In some
+
+\SourcePage{435}{438}
+cases an element may coincide with its inverse; in particular, $E^{-1}=E$. Mutually inverse elements $A$ and $A^{-1}$ evidently commute.
+
+The element inverse to a product $AB$ is
+\[
+(AB)^{-1}=B^{-1}A^{-1},
+\]
+and similarly for a product of more elements; this is readily verified by multiplication and use of associativity.
+
+If all elements of a group commute, the group is called \emph{Abelian}. A special class of Abelian groups consists of the so-called \emph{cyclic groups}. A cyclic group is one whose elements can all be obtained as successive powers of a single element, i.e. a group consisting of
+\[
+A,A^2,A^3,\ldots,A^n=E,
+\]
+where $n$ is an integer.
+
+Let $\boldsymbol{G}$ be a group\footnote{Groups will be denoted by italic bold letters.}. If a collection of its elements $\boldsymbol{H}$ can be selected which itself forms a group, then $\boldsymbol{H}$ is called a \emph{subgroup} of $\boldsymbol{G}$. The same group element may belong to several of its subgroups.
+
+Starting with any element $A$ and taking successive powers, we eventually obtain the identity element (since the group has only finitely many elements). If $n$ is the smallest number for which $A^n=E$, then $n$ is called the \emph{order of the element} $A$, and the collection $A,A^2,\ldots,A^n=E$ is called the \emph{period} of $A$. The period is denoted by $\{A\}$; it forms a group in its own right, and hence is a cyclic subgroup of the original group.
+
+To check whether a given collection of group elements is a subgroup, it is enough to verify that the product of any two of its elements is again contained in the collection. Indeed, all powers of every element $A$ will then be present, including $A^{n-1}$ ($n$ being the order of the element), which serves as its inverse since $A^{n-1}A=A^n=E$; the identity element is plainly present as well.
+
+The total number of elements in a group is called its \emph{order}. It is easy to see that the order of a subgroup divides the order of the whole
+
+\SourcePage{436}{439}
+group. Consider a subgroup $\boldsymbol{H}$ of $\boldsymbol{G}$, and let $G_1$ be an element of $\boldsymbol{G}$ not belonging to $\boldsymbol{H}$. Multiplying all elements of $\boldsymbol{H}$ by $G_1$ (on the right, for example), we obtain a set (or, as it is called, a complex) of elements denoted by $\boldsymbol{H}G_1$. All elements of this complex clearly belong to $\boldsymbol{G}$, but none belongs to $\boldsymbol{H}$. For if $H_aG_1=H_b$ for some two $H_a,H_b$ in $\boldsymbol{H}$, then $G_1=H_a^{-1}H_b$ would follow, so that $G_1$ too would belong to $\boldsymbol{H}$, contrary to the assumption. Similarly, if $G_2$ belongs neither to $\boldsymbol{H}$ nor to $\boldsymbol{H}G_1$, all elements of $\boldsymbol{H}G_2$ belong to neither $\boldsymbol{H}$ nor $\boldsymbol{H}G_1$. Continuing in this way, we eventually exhaust all elements of the finite group $\boldsymbol{G}$. Thus they are partitioned into sets (called \emph{cosets} of $\boldsymbol{H}$ in $\boldsymbol{G}$)
+\[
+\boldsymbol{H},\ \boldsymbol{H}G_1,\ \boldsymbol{H}G_2,\ldots,\boldsymbol{H}G_m,
+\]
+each containing $h$ elements, where $h$ is the order of $\boldsymbol{H}$. It follows that the order of $\boldsymbol{G}$ is $g=hm$, proving the assertion. The integer $m=g/h$ is called the \emph{index} of $\boldsymbol{H}$ in $\boldsymbol{G}$.
+
+If the order of a group is prime, the result just proved immediately shows that the group has no subgroups apart from $E$ and itself. The converse is also true: every group without subgroups must have prime order and must moreover be cyclic (otherwise it would contain elements whose periods formed subgroups).
+
+We introduce the important notion of \emph{conjugate elements}. Two elements $A$ and $B$ are called conjugate if
+\[
+A=CBC^{-1},
+\]
+where $C$ is also an element of the group (multiplying this equality on the right by $C$ and on the left by $C^{-1}$ gives the inverse relation $B=C^{-1}AC$). An essential property of conjugacy is that if $A$ is conjugate to $B$, and $B$ to $C$, then $A$ is conjugate to $C$. Indeed, from $B=P^{-1}AP$ and $C=Q^{-1}BQ$ (where $P,Q$ are group elements), it follows that $C=(PQ)^{-1}A(PQ)$. We may therefore speak of sets of mutually conjugate group elements. Such sets are called \emph{classes of conjugate elements}, or simply classes of the group. Each class is completely determined by any one of its elements $A$: once $A$ is given, the entire
+
+\SourcePage{437}{440}
+class is obtained by forming the products $GAG^{-1}$ as $G$ runs through all elements of the group (each element of the class may, of course, occur more than once). The whole group can thus be partitioned into classes; every group element plainly belongs to only one class. The identity element forms a class by itself, since $GEG^{-1}=E$ for every group element. In an Abelian group the same is true of every element: because all elements commute by definition, each element is conjugate only to itself and therefore constitutes a class on its own. We emphasize that a class of a group (unless it is $E$) is by no means a subgroup; this is already evident because it does not contain the identity element.
+
+All elements of a given class have the same order. Indeed, if $n$ is the order of $A$ (so that $A^n=E$), then for an element $B=CAC^{-1}$ conjugate to it we likewise have $(CAC^{-1})^n=CA^nC^{-1}=E$.
+
+Let $\boldsymbol{H}$ be a subgroup of $\boldsymbol{G}$, and let $G_1$ be an element of $\boldsymbol{G}$ not in $\boldsymbol{H}$. It is readily verified that the collection $G_1\boldsymbol{H}G_1^{-1}$ satisfies all the requirements for a group and is therefore another subgroup of $\boldsymbol{G}$. The subgroups $\boldsymbol{H}$ and $G_1\boldsymbol{H}G_1^{-1}$ are called conjugate; every element of one is conjugate to an element of the other. Assigning different values to $G_1$ gives a series of conjugate subgroups, some of which may coincide. It may happen that all subgroups conjugate to $\boldsymbol{H}$ coincide with $\boldsymbol{H}$. In that event $\boldsymbol{H}$ is called a \emph{normal divisor} (or \emph{invariant subgroup}) of $\boldsymbol{G}$. Every subgroup of an Abelian group, for example, is evidently a normal divisor.
+
+Consider a group $\boldsymbol{A}$ with $n$ elements $A,A',A'',\ldots$ and a group $\boldsymbol{B}$ with $m$ elements $B,B',B'',\ldots$, and suppose that all elements of $\boldsymbol{A}$ (apart from the identity $E$) differ from and commute with the elements of $\boldsymbol{B}$. Multiplying each element of $\boldsymbol{A}$ by each element of $\boldsymbol{B}$ gives a collection of $nm$ elements which also forms a group. Indeed, for any two elements of this collection, $AB\cdot A'B'=AA'\cdot BB'=A''B''$, again an element of the same collection. The resulting group of order $nm$ is denoted by $\boldsymbol{A}\times\boldsymbol{B}$ and is called the \emph{direct product} of $\boldsymbol{A}$ and $\boldsymbol{B}$.
+
+Finally, we introduce the notion of \emph{isomorphism} of groups. Two groups $\boldsymbol{A}$ and $\boldsymbol{B}$ of the same order are called isomorphic if a one-to-one correspondence can be set up between their elements such that, if $A$ corresponds to $B$
+
+\SourcePage{438}{441}
+and $A'$ to $B'$, then $A''=AA'$ corresponds to $B''=BB'$. Considered abstractly, two such groups plainly have identical properties, although the concrete meaning of their elements differs.

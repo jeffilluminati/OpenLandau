@@ -1,0 +1,98 @@
+\SourcePage{473}{476}
+\section{Double-valued representations of finite point groups}
+
+States of a system with half-integral spin (and therefore half-integral total angular momentum) correspond to double-valued representations of the point symmetry group of the system. This is a general property of spinors and hence applies to continuous and finite point groups alike. It is therefore necessary to determine the \emph{double-valued} irreducible representations of finite point groups.
+
+As already noted, double-valued representations are not, strictly speaking, true representations of a group at all. In particular, the relations discussed in \S~94 do not apply to them. Thus, whenever those relations referred to all irreducible representations (for example, relation (94.17) for the sum of the squares of their dimensions), only true, single-valued representations were understood to be included.
+
+The following formal device is convenient for finding double-valued representations (H.~A.~Bethe, 1929). We introduce, in a purely formal manner, a new group element $Q$: rotation through $2\pi$ about an arbitrary axis. It is regarded as distinct from the identity, but as becoming identical with $E$ when applied twice, so that $Q^2=E$. Accordingly, rotations $C_n$ about $n$-fold symmetry axes give the identity only after $2n$ applications, rather than $n$:
+\begin{equation}
+ C_n^n=Q,\qquad C_n^{2n}=E. \tag{99.1}
+\end{equation}
+
+Inversion $I$, as an element commuting with every rotation, must still give $E$ when applied twice. Two successive reflections in a plane, however, now give $Q$, not $E$:
+\begin{equation}
+ \sigma^2=Q,\qquad \sigma^4=E \tag{99.2}
+\end{equation}
+(this follows because a reflection can be written $\sigma=IC_2$). We thus obtain a collection of elements forming a fictitious point symmetry group whose order is twice that of the original group; such groups will be called \emph{double point groups}. The double-valued representations of the actual point group are plainly single-valued, true representations of the corresponding double group, and can therefore be found by ordinary methods.
+
+\SourcePage{474}{477}
+The number of classes in a double group is greater than in the original group (though not generally twice as great). The element $Q$ commutes with all other group elements\footnote{This is evident for rotations and inversion; for reflection in a plane it follows by representing the reflection as the product of inversion and a rotation.} and therefore always constitutes a class by itself. If a symmetry axis is two-sided, this means in the double group that $C_n^k$ and $C_n^{2n-k}=QC_n^{n-k}$ are conjugate. Consequently, when twofold axes are present, the division of the elements into classes also depends on whether these axes are two-sided (this is immaterial in ordinary point groups, since $C_2$ coincides with the inverse rotation $C_2^{-1}$).
+
+In the group $T$, for example, the twofold axes are equivalent and each is two-sided, while the threefold axes are equivalent but not two-sided. The 24 elements of the double group $T'$\footnote{A prime on the symbol of an ordinary group will distinguish its double group.} are therefore divided among seven classes: $E$, $Q$, a class containing the three rotations $C_2$ and the three $C_2Q$, and the classes $4C_3$, $4C_3^2$, $4C_3Q$, $4C_3^2Q$.
+
+All irreducible representations of a double point group include, first, representations identical with the single-valued representations of the ordinary group (where $Q$, like $E$, is represented by the unit matrix), and, second, the double-valued representations of the ordinary group, where $Q$ is represented by the negative unit matrix. It is the latter that concern us here.
+
+The double groups $C_n'$ ($n=1,2,3,4,6$) and $S_4'$, like their corresponding ordinary groups, are cyclic\footnote{The groups $S_2'\equiv C_i'$ and $S_6'\equiv C_{3i}'$, which contain inversion $I$, are Abelian but not cyclic.}. All their irreducible representations are one-dimensional and can be found immediately, as explained in \S~95.
+
+The irreducible representations of $D_n'$ (or of the groups $C_{nv}'$ isomorphic to them) can be found in the same way as for the corresponding ordinary groups. They are realized by functions $e^{\pm ik\varphi}$, where $\varphi$ is the angle of rotation about the $n$-fold axis and $k$ takes half-integral values (integral values correspond to the ordinary single-valued representations). Rotations about the horizontal twofold axes interchange these functions, while $C_n$ multiplies them by $e^{\pm2\pi ik/n}$.
+
+The representations of the double cubic groups are somewhat harder to find. The 24 elements of $T'$ are divided among seven
+
+\SourcePage{475}{478}
+classes. There are consequently seven irreducible representations in all, four of which coincide with those of the ordinary group $T$. The sum of the squares of the dimensions of the remaining three must be 12, showing that all three are two-dimensional. Since $C_2$ and $C_2Q$ belong to the same class, $\chi(C_2)=\chi(C_2Q)=-\chi(C_2)$, and hence $\chi(C_2)=0$ in all three representations. Further, at least one of the three representations must be real, since complex representations can occur only in mutually conjugate pairs. Consider this representation and suppose that the matrix of $C_3$ has been reduced to diagonal form, with diagonal elements $a_1,a_2$. Since $C_3^3=Q$, we have $a_1^3=a_2^3=-1$. For $\chi(C_3)=a_1+a_2$ to be real, we must take $a_1=e^{\pi i/3}$ and $a_2=e^{-\pi i/3}$. We then find $\chi(C_3)=1$ and $\chi(C_3^2)=a_1^2+a_2^2=-1$. One of the required representations has thus been found. Its direct products with the two mutually complex-conjugate one-dimensional representations of $T$ give the other two.
+
+Similar arguments, which we shall not give here, determine the representations of $O'$. Table~8 summarizes the characters of the representations of the double groups just listed (only the representations corresponding to double-valued representations of the ordinary groups are included). Double groups isomorphic to these have the same representations.
+
+The remaining point groups are either isomorphic to those considered or are obtained by taking their direct products with $C_i$, so their representations require no separate calculation.
+
+For the same reasons as with ordinary representations, two mutually complex-conjugate double-valued representations must be treated as one physically irreducible representation of twice the dimension. One-dimensional double-valued representations must be doubled even when their characters are real. The reason is that (see \S~60) complex-conjugate wave functions are linearly independent in systems of half-integral spin. Thus, if a double-valued one-dimensional representation has real characters\footnote{Such representations occur for the groups $C_n'$ with odd $n$; their characters are $\chi(C_n^k)=(-1)^k$.} and is realized by a function $\psi$, then although the complex-conjugate function $\psi^*$ transforms according to an equivalent representation, $\psi$ and $\psi^*$ are nevertheless linearly independent. Since,
+
+\SourcePage{476}{479}
+\clearpage
+\setcounter{table}{7}
+\begin{table}[p]
+\centering
+\caption{Double-valued representations of point groups}
+\scriptsize
+\setlength{\tabcolsep}{3.2pt}
+\renewcommand{\arraystretch}{1.18}
+\begin{tabular}{c|*{10}{c}}
+\hline
+$D_2'$&$E$&$Q$&$C_2^{(x)}$&$C_2^{(y)}$&$C_2^{(z)}Q$\\
+&&&$C_2^{(x)}Q$&$C_2^{(y)}Q$&$C_2^{(z)}Q$\\ \hline
+$E'$&2&$-2$&0&0&0\\ \hline
+$D_3'$&$E$&$Q$&$C_3$&$C_3^2$&$3U_2$&$3U_2Q$\\
+&&&$C_3^2Q$&$C_3Q$&&\\ \hline
+$E_1'$&1&$-1$&$-1$&1&$i$&$-i$\\
+&1&$-1$&$-1$&1&$-i$&$i$\\
+$E_2'$&2&$-2$&1&$-1$&0&0\\ \hline
+$D_6'$&$E$&$Q$&$C_2$&$C_3$&$C_3^2$&$C_6$&$C_6^5$&$3U_2$&$3U_2'$\\
+&&&$C_2Q$&$C_3^2Q$&$C_3Q$&$C_6^5Q$&$C_6Q$&$3U_2Q$&$3U_2'Q$\\ \hline
+$E_1'$&2&$-2$&0&1&$-1$&$\sqrt3$&$-\sqrt3$&0&0\\
+$E_2'$&2&$-2$&0&1&$-1$&$-\sqrt3$&$\sqrt3$&0&0\\
+$E_3'$&2&$-2$&0&$-2$&2&0&0&0&0\\ \hline
+$D_4'$&$E$&$Q$&$C_2$&$C_4$&$C_4^3$&$2U_2$&$2U_2'$\\
+&&&$C_2Q$&$C_4^3Q$&$C_4Q$&$2U_2Q$&$2U_2'Q$\\ \hline
+$E_1'$&2&$-2$&0&$\sqrt2$&$-\sqrt2$&0&0\\
+$E_2'$&2&$-2$&0&$-\sqrt2$&$\sqrt2$&0&0\\ \hline
+$T'$&$E$&$Q$&$4C_3$&$4C_3^2$&$4C_3Q$&$4C_3^2Q$&$3C_2$\\
+&&&&&&&$3C_2Q$\\ \hline
+$E'$&2&$-2$&1&$-1$&$-1$&1&0\\
+$G'$&2&$-2$&$\epsilon$&$-\epsilon^2$&$-\epsilon$&$\epsilon^2$&0\\
+&2&$-2$&$\epsilon^2$&$-\epsilon$&$-\epsilon^2$&$\epsilon$&0\\ \hline
+$O'$&$E$&$Q$&$4C_3$&$4C_3^2$&$3C_4^2$&$3C_4$&$3C_4^3$&$6C_2$\\
+&&&$4C_3^2Q$&$4C_3Q$&$3C_4^2Q$&$3C_4^3Q$&$3C_4Q$&$6C_2Q$\\ \hline
+$E_1'$&2&$-2$&1&$-1$&0&$\sqrt2$&$-\sqrt2$&0\\
+$E_2'$&2&$-2$&1&$-1$&0&$-\sqrt2$&$\sqrt2$&0\\
+$G'$&4&$-4$&$-1$&1&0&0&0&0\\ \hline
+\end{tabular}
+\end{table}
+\clearpage
+
+\SourcePage{477}{480}
+on the other hand, complex-conjugate wave functions must belong to the same energy level, we see that such a representation must be doubled in physical applications.
+
+Everything said in \S~97 about finding selection rules for matrix elements of physical quantities $f$ remains valid for states of a system with half-integral spin, with a change only for matrix elements diagonal in energy. Repeating the argument at the end of \S~97, now taking formulas (60.2) and (60.3) into account, we find that if $f$ is even or odd under time reversal, the selection rules are obtained by considering, respectively, the antisymmetric product $\{D^{(\alpha)2}\}$ or symmetric product $[D^{(\alpha)2}]$ of $D^{(\alpha)}$ with itself. This is the reverse of the rule stated in \S~97 for systems with integral spin\footnote{For application of these rules, note that with double-valued representations the identity representation is contained not in the symmetric but in the antisymmetric product of a representation with itself. For a two-dimensional double-valued representation, $\{D^{(\alpha)2}\}$ is simply the identity representation.}.
+
+\ProblemHeading Determine how the levels of an atom (with specified values of the total angular momentum $J$) split when the atom is placed in a field of cubic symmetry $O$\footnote{One example is an atom in a crystal lattice. Notice also that whether the symmetry group of the external field has a center of symmetry is immaterial here, since the behavior of the wave function under inversion (the evenness or oddness of the level) is unrelated to $J$.}.
+
+\SolutionHeading The wave functions of the atomic states with angular momentum $J$ and different values of $M_J$ realize a $(2J+1)$-dimensional reducible representation of $O$, with characters given by (98.3). Decomposing this representation into irreducible parts (single-valued for integral $J$ and double-valued for half-integral $J$) determines the required splitting (cf. \S~96). The irreducible parts for the first several values of $J$ are
+\[
+\begin{array}{c|c|c|c|c|c|c|c}
+J=0&1/2&1&3/2&2&5/2&3\\ \hline
+A_1&E_1'&F_1&G'&E+F_2&E_2'+G'&A_2+F_1+F_2
+\end{array}.
+\]
+
+% PDF page 478 (printed page 481) begins Chapter XIII; §99 ends on PDF page 477.

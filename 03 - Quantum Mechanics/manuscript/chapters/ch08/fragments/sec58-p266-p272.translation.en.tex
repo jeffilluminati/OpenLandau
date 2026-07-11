@@ -1,161 +1,142 @@
 \SourcePage{266}{269}
 \section{The finite-rotation operator}
 
-We return to the transformation of spinors and show how its coefficients can
-be expressed explicitly in terms of the angles through which the coordinate
-axes are rotated.
+We return to spinor transformations and show how their coefficients can be expressed in terms of the angles through which the coordinate axes are rotated.
 
-By the definition of the angular-momentum operator (here, the spin operator),
-$1+i\delta\varphi\,\mathbf n\hat{\mathbf s}$ is the operator for a rotation
-through $\delta\varphi$ about the direction specified by the unit vector
-$\mathbf n$. For the wave function of a spin-$1/2$ particle, that is, a
-first-rank spinor, one must set
-$\hat{\mathbf s}=\hat{\boldsymbol\sigma}/2$. The operator for a finite
-rotation through $\varphi$ about the same direction is therefore
+By the definition of the angular-momentum operator (here, spin), $1+i\delta\varphi\,\mathbf n\hat{\mathbf s}$ is the operator for a rotation through $\delta\varphi$ about the direction of the unit vector $\mathbf n$. For a spin-$1/2$ wave function, a spinor of rank 1, one sets $\hat{\mathbf s}=\hat{\boldsymbol\sigma}/2$. A finite rotation through $\varphi$ about the same direction is therefore represented by
 \begin{equation}
- \hat U_{\mathbf n}=\exp(i\varphi\,\mathbf n\hat{\boldsymbol\sigma}/2)
+ \hat U_{\mathbf n}=\exp(i\varphi\,\mathbf n\hat{\boldsymbol\sigma}/2).
  \tag{58.1}
 \end{equation}
-(cf. (15.13)). Like any function of the Pauli matrices (see problem 1,
-\secref{55}), it reduces to an expression linear in those matrices:
+(Compare (15.13).) Like every function of the Pauli matrices (see Problem 1, §~55), this reduces to an expression linear in them:
 \begin{equation}
- \hat U_{\mathbf n}=\cos(\varphi/2)
- +i\mathbf n\hat{\boldsymbol\sigma}\sin(\varphi/2).
+ \hat U_{\mathbf n}=\cos(\varphi/2)+i\mathbf n\hat{\boldsymbol\sigma}\sin(\varphi/2).
  \tag{58.2}
 \end{equation}
-Thus, for a rotation about the $z$ axis,
+For a rotation about $z$,
 \begin{equation}
  \hat U_z(\varphi)=\cos\frac\varphi2+i\hat\sigma_z\sin\frac\varphi2
  =\begin{pmatrix}e^{i\varphi/2}&0\\0&e^{-i\varphi/2}\end{pmatrix}.
  \tag{58.3}
 \end{equation}
-The spinor components consequently transform as
+Thus the spinor components transform as
 \[
- \psi^{1'}=\psi^1e^{i\varphi/2},\qquad
- \psi^{2'}=\psi^2e^{-i\varphi/2}.
+ \psi^{1'}=\psi^1e^{i\varphi/2},\qquad \psi^{2'}=\psi^2e^{-i\varphi/2}.
 \]
-In particular, a rotation through $2\pi$ reverses the signs of the spinor
-components; spinors of every odd rank therefore have the same property (cf.
-the end of \secref{55}).
+In particular, a rotation through $2\pi$ changes the sign of the spinor components; every spinor of odd rank consequently has the same property (compare the end of §~55).
 
-Similarly, the matrices for rotations through $\varphi$ about the $x$ and $y$
-axes are
+Similarly, rotations through $\varphi$ about $x$ or $y$ have the matrices
 \begin{equation}
- \hat U_x(\varphi)=\begin{pmatrix}
- \cos(\varphi/2)&i\sin(\varphi/2)\\i\sin(\varphi/2)&\cos(\varphi/2)
- \end{pmatrix},\qquad
- \hat U_y(\varphi)=\begin{pmatrix}
- \cos(\varphi/2)&\sin(\varphi/2)\\-\sin(\varphi/2)&\cos(\varphi/2)
- \end{pmatrix}.
+ \hat U_x(\varphi)=\begin{pmatrix}\cos(\varphi/2)&i\sin(\varphi/2)\\i\sin(\varphi/2)&\cos(\varphi/2)\end{pmatrix},\qquad
+ \hat U_y(\varphi)=\begin{pmatrix}\cos(\varphi/2)&\sin(\varphi/2)\\-\sin(\varphi/2)&\cos(\varphi/2)\end{pmatrix}.
  \tag{58.4}
 \end{equation}
+
 \SourcePage{267}{270}
-For the special case of a rotation through $\pi$ about the $y$ axis,
+For the special case of a rotation through $\pi$ about $y$,
 \begin{equation}
  \psi^{1'}=\psi^2,\qquad \psi^{2'}=-\psi^1,
  \qquad\text{i.e.}\qquad \psi^{\lambda'}=\psi_\lambda.
  \tag{58.5}
 \end{equation}
 
-The transformation matrix for an arbitrary rotation can now readily be
-written in terms of the Euler angles that specify it.
+We can now write the transformation matrix for an arbitrary rotation in terms of its Euler angles.
 
-A rotation of the axes specified by Euler angles $\alpha,\beta,\gamma$ is
-performed in three steps: 1) a rotation through $\alpha$
-($0\leqslant\alpha\leqslant2\pi$) about the $z$ axis; 2) a rotation through
-$\beta$ ($0\leqslant\beta\leqslant\pi$) about the new position of the $y$
-axis ($ON$ in Fig.~20, the so-called \emph{line of nodes}); 3) a rotation
-through $\gamma$ ($0\leqslant\gamma\leqslant2\pi$) about the resulting final
-position $z'$ of the $z$ axis\footnote{The systems $xyz$ and $x'y'z'$ are, as
-always, right-handed, and the positive sense of the angles is the direction of
-a right-handed screw advancing along the positive direction of the rotation
-axis.
+A rotation of the axes specified by Euler angles $\alpha,\beta,\gamma$ is performed in three stages: (1) rotation through $\alpha$ ($0\leqslant\alpha\leqslant2\pi$) about $z$; (2) rotation through $\beta$ ($0\leqslant\beta\leqslant\pi$) about the new position of $y$ ($ON$ in Fig.~20, the \emph{line of nodes}); and (3) rotation through $\gamma$ ($0\leqslant\gamma\leqslant2\pi$) about the final position $z'$ of the $z$ axis\footnote{The systems $xyz$ and $x'y'z'$ are, as always, right-handed; positive angles follow the direction of a right-handed screw advancing along the positive rotation axis.
 
-The definition of Euler angles used here (customary in quantum-mechanical
-applications) differs from that in \secref{35} (see vol.~I) in that the second
-rotation is made about the $y$ axis rather than the $x$ axis. The angles
-$\alpha,\beta,\gamma$ are related to the angles $\varphi,\theta,\psi$ of
-vol.~I (not to be confused with the spherical angles $\varphi,\theta$) by
-$\psi=\gamma-\pi/2$.}.
+This definition of the Euler angles, customary in quantum-mechanical applications, differs from that in §~35 (Volume I) because the second rotation is about $y$, not $x$. The angles $\alpha,\beta,\gamma$ are related to the angles $\varphi,\theta,\psi$ of Volume I (not to be confused with the spherical angles $\varphi,\theta$) by $\psi=\gamma-\pi/2$.}.
 
 \begin{figure}[ht]
 \centering
-\begin{tikzpicture}[scale=0.85,>=stealth]
- \coordinate (O) at (0,0);
- \draw[->] (-2.4,0)--(2.6,0) node[right] {$y$};
- \draw[->] (O)--(0,3.1) node[above] {$z$};
- \draw[->] (O)--(-1.65,-1.65) node[below left] {$x$};
- \draw[->] (O)--(1.0,2.55) node[above right] {$z'$};
- \draw[->] (O)--(2.0,-1.45) node[below right] {$x'$};
- \draw[->] (O)--(-2.0,1.0) node[left] {$y'$};
- \draw[thick] (O)--(2.35,0.65) node[right] {$N$};
- \draw[dashed] (0,2.15) arc[start angle=90,end angle=69,radius=2.15];
- \node at (0.35,2.05) {$\beta$};
- \draw[->] (0.72,0.2) arc[start angle=16,end angle=54,radius=0.75];
- \node at (0.73,0.75) {$\alpha$};
- \draw[->] (1.02,2.2) arc[start angle=70,end angle=20,radius=0.45];
- \node at (1.48,2.25) {$\gamma$};
- \fill (O) circle (1.2pt) node[below left] {$O$};
+\begin{tikzpicture}[scale=2.7,line cap=round,line join=round,
+  ax/.style ={-{Stealth[length=2.8mm]},line width=0.75pt},
+  bax/.style={-{Stealth[length=2.8mm]},line width=0.75pt,dashed},
+  ang/.style={-{Stealth[length=2.1mm]},line width=0.6pt},
+  ring/.style={line width=0.9pt},
+  every node/.style={font=\normalsize}]
+\def\al{55}
+\def\be{34}
+\def\ga{18}
+\def\uyx{-0.36}\def\uyy{-0.66}
+\def\R{1.30}
+\pgfmathsetmacro\nx{sin(\al) + \uyx*cos(\al)}
+\pgfmathsetmacro\ny{\uyy*cos(\al)}
+\pgfmathsetmacro\mx{cos(\be)*cos(\al) - \uyx*cos(\be)*sin(\al)}
+\pgfmathsetmacro\my{-\uyy*cos(\be)*sin(\al) + sin(\be)}
+\pgfmathsetmacro\zpx{-sin(\be)*cos(\al) + \uyx*sin(\be)*sin(\al)}
+\pgfmathsetmacro\zpy{\uyy*sin(\be)*sin(\al) + cos(\be)}
+\pgfmathsetmacro\ypx{cos(\ga)*\nx + sin(\ga)*\mx}
+\pgfmathsetmacro\ypy{cos(\ga)*\ny + sin(\ga)*\my}
+\pgfmathsetmacro\xpx{sin(\ga)*\nx - cos(\ga)*\mx}
+\pgfmathsetmacro\xpy{sin(\ga)*\ny - cos(\ga)*\my}
+\draw[ring,fixedC] plot[domain=\al-84:\al+270,samples=200,smooth]
+  ({\R*(-cos(\x) + \uyx*sin(\x))}, {\R*\uyy*sin(\x)});
+\draw[ring,bodyC] plot[domain=240-\ga:270-\ga,samples=30,smooth]
+  ({\R*(cos(\x)*\xpx + sin(\x)*\ypx)}, {\R*(cos(\x)*\xpy + sin(\x)*\ypy)});
+\draw[ring,dashed,bodyC] plot[domain=270-\ga:600-\ga,samples=220,smooth]
+  ({\R*(cos(\x)*\xpx + sin(\x)*\ypx)}, {\R*(cos(\x)*\xpy + sin(\x)*\ypy)});
+\draw[fixedC,line width=0.75pt] (0,0) -- (1.85,0);
+\draw[ax,fixedC] (0,0) -- (-1.85,0) node[left=2pt] {$X$};
+\draw[ax,fixedC] (0,0) -- ({1.75*\uyx},{1.75*\uyy}) node[below=2pt] {$Y$};
+\draw[ax,fixedC] (0,0) -- (0,1.90) node[above=1pt] {$Z$};
+\node[right=2pt,fixedC] at (0.03,1.73) {$\boldsymbol{\delta\alpha}$};
+\draw[bax,bodyC] (0,0) -- ({1.60*\xpx},{1.60*\xpy}) node[below=2pt] {$x'$};
+\draw[bax,bodyC] (0,0) -- ({1.85*\ypx},{1.85*\ypy}) node[right=2pt] {$y'$};
+\draw[dash dot,bodyC,line width=0.7pt] (0,0) -- (-0.6381,0.6935);
+\draw[bax,bodyC] (-0.6381,0.6935) -- ({2.10*\zpx},{2.10*\zpy}) node[above left=0pt] {$z'$};
+\node[bodyC] at ($({2.10*\zpx},{2.10*\zpy}) + (0.32,-0.05)$) {$\boldsymbol{\delta\gamma}$};
+\draw[nodeC,-{Stealth[length=2.6mm]},line width=0.7pt]
+  ({-\R*\nx},{-\R*\ny}) -- ({1.22*\R*\nx},{1.22*\R*\ny});
+\node[nodeC] at ($({1.22*\R*\nx},{1.22*\R*\ny}) + (0.26,0.06)$) {$\boldsymbol{\delta\beta}$};
+\node[nodeC] at ($({1.22*\R*\nx},{1.22*\R*\ny}) + (0.02,-0.17)$) {$N$};
+\draw[ang] plot[domain=0:\al,samples=40,smooth]
+  ({0.50*(sin(\x) + \uyx*cos(\x))}, {0.50*\uyy*cos(\x)});
+\node at ($({0.50*(sin(\al/2) + \uyx*cos(\al/2))}, {0.50*\uyy*cos(\al/2)})
+          + (-0.02,-0.13)$) {$\alpha$};
+\draw[ang] plot[domain=0:\ga,samples=30,smooth]
+  ({0.60*(cos(\x)*\nx + sin(\x)*\mx)}, {0.60*(cos(\x)*\ny + sin(\x)*\my)});
+\node at ({0.76*(cos(\ga/2)*\nx + sin(\ga/2)*\mx)},
+          {0.76*(cos(\ga/2)*\ny + sin(\ga/2)*\my)}) {$\gamma$};
+\draw[line width=0.6pt] plot[domain=0:\be,samples=30,smooth]
+  ({0.62*sin(\x)*(-cos(\al) + \uyx*sin(\al))}, {0.62*(\uyy*sin(\x)*sin(\al) + cos(\x))});
+\node at ($({0.62*sin(\be/2)*(-cos(\al) + \uyx*sin(\al))},
+           {0.62*(\uyy*sin(\be/2)*sin(\al) + cos(\be/2))}) + (0.06,0.11)$) {$\beta$};
+\draw[bodyC,line width=0.55pt] (-0.5635,0.6126) -- (-0.6354,0.5294) -- (-0.7100,0.6103);
+\node at (-0.13,-0.14) {$O$};
 \end{tikzpicture}
-\caption{Definition of the Euler angles.}
+\par\smallskip {\small Fig.~20. Definition of the Euler angles.}
 \end{figure}
 
-Clearly, $\alpha$ and $\beta$ coincide with the spherical angles $\varphi$
-and $\theta$ of the new $z'$ axis relative to the $xyz$ axes:
-$\alpha=\varphi$, $\beta=\theta$.
+The angles $\alpha,\beta$ evidently coincide with the spherical angles $\varphi,\theta$ of the new $z'$ axis relative to $xyz$: $\alpha=\varphi$, $\beta=\theta$.
 
-For this sequence of rotations the matrix of the complete transformation is
-the product of three matrices (58.3), (58.4):
+For this sequence of rotations, the complete transformation matrix is
 \[
- \hat U(\alpha,\beta,\gamma)=
- \hat U_z(\gamma)\hat U_y(\beta)\hat U_z(\alpha).
+ \hat U(\alpha,\beta,\gamma)=\hat U_z(\gamma)\hat U_y(\beta)\hat U_z(\alpha).
 \]
 Direct multiplication gives
 \begin{equation}
  \hat U(\alpha,\beta,\gamma)=
  \begin{pmatrix}
- \cos(\beta/2)e^{i(\alpha+\gamma)/2}&
- \sin(\beta/2)e^{-i(\alpha-\gamma)/2}\\
- -\sin(\beta/2)e^{i(\alpha-\gamma)/2}&
- \cos(\beta/2)e^{-i(\alpha+\gamma)/2}
+ \cos(\beta/2)e^{i(\alpha+\gamma)/2}&\sin(\beta/2)e^{-i(\alpha-\gamma)/2}\\
+ -\sin(\beta/2)e^{i(\alpha-\gamma)/2}&\cos(\beta/2)e^{-i(\alpha+\gamma)/2}
  \end{pmatrix}.
  \tag{58.6}
 \end{equation}
-By definition, higher-rank spinors transform as products of first-rank spinor
-components. In physical applications, however, it is generally not the
-\SourcePage{268}{271}
-transformation laws of the spinors themselves that are of principal interest,
-but those of the corresponding wave functions $\psi_{jm}$.
+By definition, higher-rank spinors transform as products of rank-1 spinor components. In physical applications, however, the transformation laws of the corresponding wave functions $\psi_{jm}$ are of greater interest than those of the spinors themselves.
 
-Let $\psi_{jm}$, with $m=j,j-1,\ldots,-j$, describe in the coordinate system
-$xyz$ a state with a definite angular momentum $j$, and let $\psi_{jm'}$
-describe the same state relative to the axes $x'y'z'$. In the first case $m$
-is the value of $J_z$, while in the second $m'$ is that of $J_{z'}$. The two
-sets of functions are related linearly; write
+\SourcePage{268}{271}
+Let $\psi_{jm}$, $m=j,j-1,\ldots,-j$, describe in the system $xyz$ a state with specified angular momentum $j$, and let $\psi_{jm'}$ describe the same state relative to $x'y'z'$. Thus $m$ is the value of $J_z$ and $m'$ that of $J_{z'}$. The two sets are related linearly; write
 \begin{equation}
  \psi_{jm}=\sum_{m'}D^{(j)}_{m'm}\psi_{jm'}.
  \tag{58.7}
 \end{equation}
-The coefficients $D^{(j)}_{m'm}$ form, in the indices $m',m$, a matrix of
-order $2j+1$, the \emph{finite-rotation matrix} $\hat D^{(j)}$. Its elements
-are functions of the angles $\alpha,\beta,\gamma$ through which the system
-$x'y'z'$ is rotated relative to $xyz$.
+The coefficients $D^{(j)}_{m'm}$ form, in the indices $m',m$, a matrix of order $2j+1$: the \emph{finite-rotation matrix} $\hat D^{(j)}$. Its elements depend on the rotation angles $\alpha,\beta,\gamma$ of $x'y'z'$ relative to $xyz$.
 
-The finite-rotation matrix can be constructed using the spinor representation
-of the functions $\psi_{jm}$.
+The finite-rotation matrix can be constructed using the spinor representation of $\psi_{jm}$.
 
-For $j=1/2$, the two functions $\psi_{1/2,m}$, $m=\pm1/2$, form a covariant
-first-rank spinor. According to (56.13), its transformation from $x'y'z'$ to
-$xyz$ is effected by the matrix $\hat U$ of (58.6), so that
-$\hat D^{(1/2)}=\hat U$\footnote{Notice that the matrix indices in (58.7) are
-ordered precisely as required for multiplication of the columns of
-$\hat D^{(j)}$ by the functions $\psi_{jm'}$ arranged in a row. Symbolically,
-(58.7) would be written
-$\psi_{jm}=(\boldsymbol\psi_j\hat D^{(j)})_m$, in accordance with (56.13).}.
-Write its elements as
+For $j=1/2$, the two functions $\psi_{1/2,m}$ form a covariant spinor of rank 1. By (56.13), its transformation from $x'y'z'$ to $xyz$ is effected by $\hat U$ in (58.6), so $\hat D^{(1/2)}=\hat U$\footnote{The matrix indices in (58.7) are ordered precisely as required for multiplying the columns of $\hat D^{(j)}$ by the functions $\psi_{jm'}$ arranged in a row. Symbolically, (58.7) would read $\psi_{jm}=(\boldsymbol\psi_j\hat D^{(j)})_m$, consistently with (56.13).}. Write its elements as
 \[
- D^{(1/2)}_{m'm}(\alpha,\beta,\gamma)
- =e^{im'\gamma}d^{(1/2)}_{m'm}(\beta)e^{im\alpha},
+ D^{(1/2)}_{m'm}(\alpha,\beta,\gamma)=e^{im'\gamma}d^{(1/2)}_{m'm}(\beta)e^{im\alpha},
 \]
 where
 \begin{equation}
@@ -167,23 +148,14 @@ where
  \tag{58.8}
 \end{equation}
 
-For arbitrary $j$, the functions $\psi_{jm}$ are related by (57.6) to the
-components of a symmetric covariant spinor of rank $2j$. Its transformation
-matrix is a product of $2j$ matrices $\hat D^{(1/2)}$, each acting on one
-spinor index. Multiplication and return to the functions $\psi_{jm}$ gives
+For arbitrary $j$, (57.6) relates $\psi_{jm}$ to a symmetric covariant spinor of rank $2j$. Its transformation matrix is a product of $2j$ matrices $\hat D^{(1/2)}$, one acting on each spinor index. Multiplying and returning to $\psi_{jm}$ gives
+
 \SourcePage{269}{272}
 \begin{equation}
- D^{(j)}_{m'm}(\alpha,\beta,\gamma)
- =e^{im'\gamma}d^{(j)}_{m'm}(\beta)e^{im\alpha},
+ D^{(j)}_{m'm}(\alpha,\beta,\gamma)=e^{im'\gamma}d^{(j)}_{m'm}(\beta)e^{im\alpha},
  \tag{58.9}
 \end{equation}
-where\footnote{Details of the calculation may be found in A.~R.~Edmonds,
-\emph{Angular Momentum in Quantum Mechanics}, Princeton, 1957 (see also the
-Russian translation of an article by the same author in the collection
-\emph{Deformation of Atomic Nuclei}, Moscow: IL, 1958). The definition of
-$D^{(j)}_{m'm}$ in (58.9), (58.10) differs from Edmonds's book by interchange
-of $\alpha$ and $\gamma$ (which is more natural in the present approach), and
-from the article also by reversal of the signs of all angles.}
+where\footnote{The calculation is given in A.~R.~Edmonds, \emph{Angular Momentum in Quantum Mechanics}, Princeton, 1957 (see also the Russian translation of his article in \emph{Deformation of Atomic Nuclei}, Moscow, 1958). The definition of $D^{(j)}_{m'm}$ in (58.9), (58.10) differs from Edmonds's book by interchanging $\alpha$ and $\gamma$ (the more natural convention here), and from the article also by reversing the signs of all angles.}
 \begin{equation}
  \begin{aligned}
  d^{(j)}_{m'm}(\beta)&=
@@ -204,27 +176,22 @@ and
  \end{aligned}
  \tag{58.11}
 \end{equation}
-are the so-called Jacobi polynomials\footnote{For the relation of these
-polynomials to the hypergeometric series, see \S~e, formula (e.11).}. Note
-that
+are the Jacobi polynomials\footnote{For their relation to the hypergeometric series, see §~e, formula (e.11).}. Notice that
 \begin{equation}
  d^{(j)}_{m'm}(\beta)=0\quad\text{if }|m|>j\text{ or }|m'|>j.
  \tag{58.12}
 \end{equation}
 
-The functions $d^{(j)}_{m'm}$ have several symmetry properties. They could be
-read from (58.11) and (58.12), but follow more simply from their definition as
-coefficients of a rotational transformation.
+The functions $d^{(j)}_{m'm}$ have several symmetry properties. Although these can be read from (58.11), (58.12), it is simpler to derive them directly from their definition as rotation coefficients.
 
-As a rotational-transformation matrix, $\hat D^{(j)}$ is unitary. The inverse
-of the rotation $(\alpha,\beta,\gamma)$ is the rotation
-$(-\gamma,-\beta,-\alpha)$; since $\hat d$ is real, it follows that
+The rotation matrix $\hat D^{(j)}$ is unitary. The inverse of the rotation $(\alpha,\beta,\gamma)$ is $(-\gamma,-\beta,-\alpha)$; since $\hat d$ is real, this gives
 \begin{equation}
  d^{(j)}_{m'm}(-\beta)=d^{(j)}_{mm'}(\beta).
  \tag{58.13}
 \end{equation}
+
 \SourcePage{270}{273}
-Further,
+We also have
 \begin{equation}
  d^{(j)}_{m'm}(\beta)=d^{(j)}_{-m,-m'}(\beta),
  \tag{58.14}
@@ -236,24 +203,19 @@ and
  d^{(j)}_{m'm}(0)=\delta_{m'm}.
  \tag{58.15}
 \end{equation}
-For $j=1/2$ these relations are immediate from (58.8), and their extension to
-arbitrary $j$ follows directly from the construction of the transformation
-matrix described above.
+For $j=1/2$ these follow directly from (58.8), and for arbitrary $j$ from the construction of the transformation matrix given above.
 
-Represent a rotation through $\pi-\beta$ as successive rotations through
-$\pi$ and $-\beta$:
+Perform a rotation through $\pi-\beta$ as successive rotations through $\pi$ and $-\beta$:
 \[
- d^{(j)}_{m'm}(\pi-\beta)=\sum_{m''}d^{(j)}_{m'm''}(\pi)
- d^{(j)}_{m''m}(-\beta)=(-1)^{j-m'}d^{(j)}_{-m',m}(-\beta),
+ d^{(j)}_{m'm}(\pi-\beta)=\sum_{m''}d^{(j)}_{m'm''}(\pi)d^{(j)}_{m''m}(-\beta)
+ =(-1)^{j-m'}d^{(j)}_{-m',m}(-\beta),
 \]
 or, using (58.13),
 \begin{equation}
  d^{(j)}_{m'm}(\pi-\beta)=(-1)^{j-m'}d^{(j)}_{m,-m'}(\beta).
  \tag{58.16}
 \end{equation}
-The result of two rotations about the same axis is independent of their order.
-Thus the same result must follow if the rotations $-\beta$ and $\pi$ are made
-in the reverse order. Doing this and comparing with (58.16) gives
+Two rotations about the same axis give the same result in either order. Reversing the order of the rotations $-\beta$ and $\pi$ and comparing with (58.16), we obtain
 \begin{equation}
  d^{(j)}_{m'm}(\beta)=(-1)^{m'-m}d^{(j)}_{-m',-m}(\beta).
  \tag{58.17}
@@ -264,17 +226,13 @@ Equations (58.17), (58.14), and (58.13) imply
  =(-1)^{m'-m}d^{(j)}_{m'm}(-\beta).
  \tag{58.18}
 \end{equation}
-Various symmetry properties of the full functions $D^{(j)}_{m'm}$ follow
-from (58.13)--(58.18). In particular, their complex conjugates are
+These relations give corresponding symmetries of the complete functions $D^{(j)}_{m'm}$. In particular,
 \begin{equation}
- D^{(j)*}_{m'm}(\alpha,\beta,\gamma)
- =D^{(j)}_{m'm}(-\alpha,\beta,-\gamma)
+ D^{(j)*}_{m'm}(\alpha,\beta,\gamma)=D^{(j)}_{m'm}(-\alpha,\beta,-\gamma)
  =(-1)^{m'-m}D^{(j)}_{-m',-m}(\alpha,\beta,\gamma).
  \tag{58.19}
 \end{equation}
-Mathematically, the matrices $\hat D^{(j)}$ realize unitary irreducible
-representations of the rotation group of dimension $2j+1$ (see \secref{98} below).
-The orthogonality and normalization relation follows at once:
+Mathematically, the matrices $\hat D^{(j)}$ furnish unitary irreducible representations of the rotation group of dimension $2j+1$ (see §~98). Hence the orthogonality and normalization relation is
 \begin{equation}
  \int D^{(j_1)*}_{m'_1m_1}(\alpha,\beta,\gamma)
  D^{(j_2)}_{m'_2m_2}(\alpha,\beta,\gamma)\frac{d\omega}{8\pi^2}
@@ -282,54 +240,44 @@ The orthogonality and normalization relation follows at once:
  \tag{58.20}
 \end{equation}
 where $d\omega=\sin\beta\,d\alpha\,d\beta\,d\gamma$.
+
 \SourcePage{271}{274}
-Orthogonality in the indices $m$ and $m'$ is ensured by the factor
-$\exp\{i(m\alpha+m'\gamma)\}$. Orthogonality in $j$ is associated with the
-functions $d^{(j)}_{m'm}$, for which
+Orthogonality in $m$ and $m'$ is supplied by the factor $\exp\{i(m\alpha+m'\gamma)\}$. Orthogonality in $j$ belongs to the functions $d^{(j)}_{m'm}$:
 \begin{equation}
  \int_0^\pi d^{(j_1)}_{m'm}(\beta)d^{(j_2)}_{m'm}(\beta)
  \sin\beta\,d\beta=\frac2{2j_1+1}\delta_{j_1j_2}.
  \tag{58.21}
 \end{equation}
 
-For reference, we finally give the functions $d^{(j)}_{m'm}$ for several
-special parameter values. For $j=1$,
+For reference, we finally list the functions $d^{(j)}_{m'm}$ for several special values of their parameters. For $j=1$,
 \begin{equation}
 \begin{array}{c|ccc}
  d^{(1)}_{m'm}(\beta)&1&0&-1\\ \hline
- 1&\frac12(1+\cos\beta)&\frac1{\sqrt2}\sin\beta&
-    \frac12(1-\cos\beta)\\
+ 1&\frac12(1+\cos\beta)&\frac1{\sqrt2}\sin\beta&\frac12(1-\cos\beta)\\
  0&-\frac1{\sqrt2}\sin\beta&\cos\beta&\frac1{\sqrt2}\sin\beta\\
- -1&\frac12(1-\cos\beta)&-\frac1{\sqrt2}\sin\beta&
-    \frac12(1+\cos\beta)
+ -1&\frac12(1-\cos\beta)&-\frac1{\sqrt2}\sin\beta&\frac12(1+\cos\beta)
 \end{array}
 \tag{58.22}
 \end{equation}
-For integer $j=l$ and $m'=0$, equations (58.10), (58.11) give
+For integral $j=l$ and $m'=0$, (58.10), (58.11) give
 \begin{equation}
- d^{(l)}_{0m}(\beta)=\left[\frac{(l-m)!}{(l+m)!}\right]^{1/2}
- P_l^m(\cos\beta).
+ d^{(l)}_{0m}(\beta)=\left[\frac{(l-m)!}{(l+m)!}\right]^{1/2}P_l^m(\cos\beta).
  \tag{58.23}
 \end{equation}
-The origin of this formula is readily traced from the initial definition
-(58.7). Refer the functions $\psi_{jm'}$ on the right of (58.7) to the $z'$
-axis, on which, for $j=l$,
+The origin of this formula is immediate from (58.7). Refer the functions $\psi_{jm'}$ on its right-hand side to the $z'$ axis. For $j=l$,
 \begin{equation}
  \psi_{lm'}(\mathbf n_{z'})=i^l\sqrt{\frac{2l+1}{4\pi}}\delta_{m'0}.
  \tag{58.24}
 \end{equation}
-The function $\psi_{jm}$ on the left is then the spherical function
-$Y_{lm}(\beta,\alpha)$ of the spherical angles $\varphi=\alpha$,
-$\theta=\beta$ of the $z'$ direction. Substitution of (58.24) into (58.7)
-gives
+The function $\psi_{jm}$ on the left is then the spherical harmonic $Y_{lm}(\beta,\alpha)$ of the spherical angles $\varphi=\alpha$, $\theta=\beta$ of $z'$. Substitution of (58.24) in (58.7) gives
 \begin{equation}
- Y_{lm}(\beta,\alpha)=i^l\sqrt{\frac{2l+1}{4\pi}}
- D^{(l)}_{0m}(\alpha,\beta,\gamma),
+ Y_{lm}(\beta,\alpha)=i^l\sqrt{\frac{2l+1}{4\pi}}D^{(l)}_{0m}(\alpha,\beta,\gamma),
  \tag{58.25}
 \end{equation}
 which is equivalent to (58.23).
+
 \SourcePage{272}{275}
-Finally, when one of the indices $m,m'$ has its largest possible value,
+Finally, when one index $m$ or $m'$ has its largest possible value,
 \begin{equation}
  d^{(j)}_{jm}(\beta)=(-1)^{j-m}d^{(j)}_{-j,m}(\beta)
  =\left[\frac{(2j)!}{(j+m)!(j-m)!}\right]^{1/2}

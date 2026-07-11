@@ -1,0 +1,73 @@
+\ProblemHeading
+
+\textbf{1.} Determine the number of energy levels having different values of the total spin $S$ for a system of $N$ particles of spin $1/2$ (F.~Bloch, 1929).
+
+\SolutionHeading A specified value of the projection of the system's total spin, $M_S=\sum\sigma$, can be realized in
+\[
+ f(M_S)=\frac{N!}{(N/2+M_S)!(N/2-M_S)!}
+\]
+
+\SourcePage{294}{297}
+ways ($N/2+M_S$ particles are assigned $\sigma=1/2$, and the rest $\sigma=-1/2$). Each energy level with a specified value of $S$ corresponds to $2S+1$ states with the values $M_S=S,S-1,\ldots,-S$. It follows at once that the number of distinct levels with a specified value of $S$ is
+\[
+ n(S)=f(S)-f(S+1)=\frac{N!(2S+1)}{(N/2+S+1)!(N/2-S)!}.
+\]
+The total number $n=\sum_S n(S)$ of distinct energy levels is
+\[
+ n=f(0)=\frac{N!}{[(N/2)!]^2}
+\]
+for even $N$, or
+\[
+ n=f(1/2)=\frac{N!}{[(N+1)/2]![(N-1)/2]!}
+\]
+for odd $N$.
+
+\textbf{2.} Find the values of the total spin $S$ that occur for the different symmetry types of the spin functions of a system of two, three, or four particles of spin 1.
+
+\SolutionHeading For two particles, the correspondence is established by requiring that the factor by which the spin function is multiplied under interchange of the particles equal $(-1)^{2s-S}$ (see the end of §~62). For particles of spin $s=1$, this gives the correspondence
+\begin{center}
+\begin{tikzpicture}[x=5mm,y=5mm,line width=.35pt]
+\node at (-.5,.5) {$a$}; \draw (0,0) rectangle (2,-1); \draw (1,0)--(1,-1); \node at (1,-1.6) {$S=0,2$};
+\node at (4-.5,.5) {$b$}; \draw (4,0) rectangle (5,-2); \draw (4,-1)--(5,-1); \node at (4.5,-2.6) {$S=1$}; \node at (8,0) {(1)};
+\end{tikzpicture}
+\end{center}
+
+The Young diagrams for a system of three particles are obtained by adding one cell, in every possible way, to the diagrams (1). This may be written as the symbolic equalities
+\begin{center}
+\begin{tikzpicture}[x=4mm,y=4mm,line width=.35pt]
+\draw (0,0) rectangle (2,-1);\draw (1,0)--(1,-1);\node at (1,-1.6){$0,2$};\node at (3,-.5){$\times$};\draw (4,0) rectangle (5,-1);\node at (4.5,-1.6){$1$};\node at (6,-.5){$=$};
+\draw (7,0) rectangle (10,-1);\draw (8,0)--(8,-1);\draw (9,0)--(9,-1);\node at (8.5,-1.6){$1,1,2,3$};\node at (10.7,-.5){$+$};
+\draw (12,0) rectangle (14,-1);\draw (13,0)--(13,-1);\draw (12,-1) rectangle (13,-2);
+\draw (0,-4) rectangle (1,-6);\draw (0,-5)--(1,-5);\node at (.5,-6.6){$1$};\node at (3,-4.5){$\times$};\draw (4,-4) rectangle (5,-5);\node at (4.5,-5.6){$1$};\node at (6,-4.5){$=$};
+\draw (7,-4) rectangle (9,-5);\draw (8,-4)--(8,-5);\draw (7,-5) rectangle (8,-6);\node at (8,-6.6){$0,1,2$};\node at (10,-4.5){$+$};\draw (12,-4) rectangle (13,-7);\draw (12,-5)--(13,-5);\draw (12,-6)--(13,-6);
+\end{tikzpicture}
+\end{center}
+The values of $S$ are indicated beneath the diagrams; the total-spin values for the three-particle system (the diagrams on the right) are obtained from the spins of the two- and one-particle systems (the diagrams on the left) by the rule for addition of angular momenta\footnote{The value 1 is repeated twice beneath the diagrams on the right because this angular-momentum value arises once from adding angular momenta 0 and 1, and once from adding angular momenta 2 and 1.}. The allocation
+
+\SourcePage{295}{298}
+of the resulting values of $S$ among the individual diagrams on the right can be found by noting that diagram $c$ (a column of three cells) corresponds to $S=0$. Diagram $b$ therefore corresponds to the remaining values 1 and 2 in the second equality, while diagram $a$ corresponds to the values 1 and 3 left after $b$ in the first equality:
+\begin{center}
+\begin{tikzpicture}[x=5mm,y=5mm,line width=.35pt]
+\node at (-.5,.5){$a$};\draw (0,0) rectangle (3,-1);\draw (1,0)--(1,-1);\draw (2,0)--(2,-1);\node at (1.5,-1.6){$S=1,3$};
+\node at (4.5,.5){$b$};\draw (5,0) rectangle (7,-1);\draw (6,0)--(6,-1);\draw (5,-1) rectangle (6,-2);\node at (6,-2.6){$S=1,2$};
+\node at (9.5,.5){$c$};\draw (10,0) rectangle (11,-3);\draw (10,-1)--(11,-1);\draw (10,-2)--(11,-2);\node at (10.5,-3.6){$S=0$};
+\end{tikzpicture}
+\end{center}
+
+The Young diagrams for a system of four particles are obtained by adding one cell to the diagrams (2) (subject to the condition that no column contain more than three cells):
+\begin{center}
+\begin{tikzpicture}[x=3.8mm,y=3.8mm,line width=.35pt]
+\draw (0,0) rectangle (3,-1);\draw (1,0)--(1,-1);\draw (2,0)--(2,-1);\node at (1.5,-1.5){$1,3$};\node at (4,-.5){$\times$};\draw (5,0) rectangle (6,-1);\node at (5.5,-1.5){$1$};\node at (7,-.5){$=$};\draw (8,0) rectangle (12,-1);\foreach \x in {9,10,11}\draw (\x,0)--(\x,-1);\node at (12.8,-.5){$+$};\draw (14,0) rectangle (17,-1);\draw (15,0)--(15,-1);\draw (16,0)--(16,-1);\draw (14,-1) rectangle (15,-2);\node at (12,-2.6){$0,1,2,2,3,4$};
+\draw (0,-4) rectangle (2,-5);\draw (1,-4)--(1,-5);\draw (0,-5) rectangle (1,-6);\node at (1,-6.5){$1,2$};\node at (4,-4.5){$\times$};\draw (5,-4) rectangle (6,-5);\node at (5.5,-5.5){$1$};\node at (7,-4.5){$=$};\draw (8,-4) rectangle (11,-5);\draw (9,-4)--(9,-5);\draw (10,-4)--(10,-5);\draw (8,-5) rectangle (9,-6);\node at (11.8,-4.5){$+$};\draw (13,-4) rectangle (15,-6);\draw (14,-4)--(14,-6);\draw (13,-5)--(15,-5);\node at (15.8,-4.5){$+$};\draw (17,-4) rectangle (19,-5);\draw (18,-4)--(18,-5);\draw (17,-5) rectangle (18,-7);\draw (17,-6)--(18,-6);\node at (13,-7.6){$0,1,1,2,2,3$};
+\draw (0,-9) rectangle (1,-12);\draw (0,-10)--(1,-10);\draw (0,-11)--(1,-11);\node at (.5,-12.5){$0$};\node at (4,-9.5){$\times$};\draw (5,-9) rectangle (6,-10);\node at (5.5,-10.5){$1$};\node at (7,-9.5){$=$};\draw (8,-9) rectangle (10,-10);\draw (9,-9)--(9,-10);\draw (8,-10) rectangle (9,-12);\draw (8,-11)--(9,-11);\node at (9,-12.5){$1$};
+\end{tikzpicture}
+\end{center}
+Diagram $c$ combines with diagram 1$a$ to form a rectangle whose columns have three cells; it therefore corresponds to the same values $S=0,2$ as 1$a$. The values of $S$ for diagram $b$ are determined by what remains in the second equality, and those for diagram $a$ then by what remains in the first; the spin value for diagram $d$ is determined uniquely by the third equality:
+\begin{center}
+\begin{tikzpicture}[x=4mm,y=4mm,line width=.35pt]
+\node at (-.5,.5){$a$};\draw (0,0) rectangle (4,-1);\foreach \x in {1,2,3}\draw (\x,0)--(\x,-1);\node at (2,-1.6){$S=0,2,4$};
+\node at (5.5,.5){$b$};\draw (6,0) rectangle (9,-1);\draw (7,0)--(7,-1);\draw (8,0)--(8,-1);\draw (6,-1) rectangle (7,-2);\node at (7.5,-2.6){$S=1,2,3$};
+\node at (10.5,.5){$c$};\draw (11,0) rectangle (13,-2);\draw (12,0)--(12,-2);\draw (11,-1)--(13,-1);\node at (12,-2.6){$S=0,2$};
+\node at (14.5,.5){$d$};\draw (15,0) rectangle (17,-1);\draw (16,0)--(16,-1);\draw (15,-1) rectangle (16,-3);\draw (15,-2)--(16,-2);\node at (16,-3.6){$S=1$};
+\end{tikzpicture}
+\end{center}

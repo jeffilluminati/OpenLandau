@@ -1,0 +1,161 @@
+\SourcePage{302}{305}
+\section{Second quantization: Fermi statistics}
+
+The essential basis of the method of second quantization remains unchanged
+for systems of identical fermions. The specific formulas for matrix elements
+of quantities and for the operators $\hat a_i$, however, naturally change.
+
+\SourcePage{303}{306}
+The wave function $\psi_{N_1N_2\ldots}$ now has the form (61.5). Its
+antisymmetry first raises the question of choosing its sign. No such question
+arose with Bose statistics: because the wave function was symmetric, a sign
+once chosen was retained under every permutation of the particles.
+
+To fix the sign of (61.5), adopt the following convention. Number all the
+states $\psi_i$ once and for all in sequence. The rows of the determinant
+(61.5) are then always filled so that
+\begin{equation}
+ p_1<p_2<p_3<\cdots<p_N,
+ \tag{65.1}
+\end{equation}
+while its columns contain functions of the different variables in the order
+$\xi_1,\xi_2,\ldots,\xi_N$. No two of $p_1,p_2,\ldots$ can be equal, since
+the determinant would otherwise vanish. Equivalently, every occupation number
+$N_i$ can have only the value 0 or 1.
+
+Consider again an operator of the form (64.1),
+$\hat F^{(1)}=\sum_a\hat f_a^{(1)}$. For the same reasons as in \S~64, its
+matrix elements can be nonzero only for transitions in which all occupation
+numbers remain unchanged, or in which one of them, $N_i$, decreases by one
+(from unity to zero) while another, $N_k$, increases by one (from zero to
+unity). For $i<k$ one readily finds
+\begin{equation}
+ \langle1_i,0_k|\hat F^{(1)}|0_i,1_k\rangle
+ =f_{ik}^{(1)}(-1)^{\sum(i+1,k-1)}.
+ \tag{65.2}
+\end{equation}
+Here $0_i,1_i$ denote $N_i=0,N_i=1$, and $\sum(k,l)$ denotes the sum of the
+occupation numbers of all states from $k$ through $l$.\footnote{For $i>k$,
+the exponent in (65.2) must be $\sum(k+1,i-1)$. For $i=k\pm1$, these sums are
+to be replaced by zero.}
+\[
+ \sum(k,l)=\sum_{n=k}^lN_n.
+\]
+The diagonal elements are still given by (64.4):
+\begin{equation}
+ \overline{F^{(1)}}=\sum_i f_{ii}^{(1)}N_i.
+ \tag{65.3}
+\end{equation}
+
+For $\hat F^{(1)}$ to be representable in the form (64.13), the annihilation
+operators $\hat a_i$ must be defined as matrices
+
+\SourcePage{304}{307}
+with elements
+\begin{equation}
+ \langle0_i|\hat a_i|1_i\rangle
+ =\langle1_i|\hat a_i^+|0_i\rangle=(-1)^{\sum(1,i-1)}.
+ \tag{65.4}
+\end{equation}
+Multiplication of these matrices gives, for $k>i$,
+\[
+ \begin{aligned}
+ \langle1_i,0_k|\hat a_i^+\hat a_k|0_i,1_k\rangle
+ &=\langle1_i,0_k|\hat a_i^+|0_i,0_k\rangle
+   \langle0_i,0_k|\hat a_k|0_i,1_k\rangle\\
+ &=(-1)^{\sum(1,i-1)}
+   (-1)^{\sum(1,i-1)+\sum(i+1,k-1)},
+ \end{aligned}
+\]
+or
+\begin{equation}
+ \langle1_i,0_k|\hat a_i^+\hat a_k|0_i,1_k\rangle
+ =(-1)^{\sum(i+1,k-1)}.
+ \tag{65.5}
+\end{equation}
+For $i=k$, the matrix $\hat a_i^+\hat a_i$ is diagonal, with element unity
+when $N_i=1$ and zero when $N_i=0$. Thus
+\begin{equation}
+ \hat a_i^+\hat a_i=N_i.
+ \tag{65.6}
+\end{equation}
+Substitution of these expressions in (64.13) indeed gives (65.2), (65.3).
+
+Multiplying $\hat a_i^+$ and $\hat a_k$ in the opposite order gives
+\[
+ \begin{aligned}
+ \langle1_i,0_k|\hat a_k\hat a_i^+|0_i,1_k\rangle
+ &=\langle1_i,0_k|\hat a_k|1_i,1_k\rangle
+   \langle1_i,1_k|\hat a_i^+|0_i,1_k\rangle\\
+ &=(-1)^{\sum(1,i-1)+\sum(i+1,k-1)+\sum(1,i-1)+1},
+ \end{aligned}
+\]
+or
+\begin{equation}
+ \langle1_i,0_k|\hat a_k\hat a_i^+|0_i,1_k\rangle
+ =-(-1)^{\sum(i+1,k-1)}.
+ \tag{65.7}
+\end{equation}
+Comparison of (65.7) with (65.5) shows that these quantities have opposite
+signs, and hence
+\[
+ \hat a_i^+\hat a_k+\hat a_k\hat a_i^+=0,\qquad i\ne k.
+\]
+For the diagonal matrix $\hat a_i\hat a_i^+$ we find
+\begin{equation}
+ \hat a_i\hat a_i^+=1-N_i.
+ \tag{65.8}
+\end{equation}
+Adding (65.6) gives
+\[
+ \hat a_i\hat a_i^++\hat a_i^+\hat a_i=1.
+\]
+Both relations can be written together as
+\begin{equation}
+ \hat a_i\hat a_k^++\hat a_k^+\hat a_i=\delta_{ik}.
+ \tag{65.9}
+\end{equation}
+An analogous calculation for products of $\hat a_i$ and $\hat a_k$ yields
+\begin{equation}
+ \hat a_i\hat a_k+\hat a_k\hat a_i=0
+ \tag{65.10}
+\end{equation}
+(in particular, $\hat a_i\hat a_i=0$).
+
+\SourcePage{305}{308}
+Thus operators $\hat a_i$ and $\hat a_k$ (or $\hat a_k^+$) with $i\ne k$
+anticommute, whereas under Bose statistics they commuted. This distinction is
+natural. In the Bose case, $\hat a_i$ and $\hat a_k$ were completely
+independent: each $\hat a_i$ acted only on the single variable $N_i$, and its
+action did not depend on the other occupation numbers. Under Fermi statistics,
+by contrast, the action of $\hat a_i$ depends both on $N_i$ itself and, as
+(65.4) shows, on the occupation numbers of all preceding states. The actions
+of different $\hat a_i,\hat a_k$ therefore cannot be regarded as independent.
+
+Once the properties of $\hat a_i,\hat a_i^+$ have been defined, all the other
+formulas (64.13)--(64.18) remain fully valid. So do (64.23)--(64.25), which
+express operators of physical quantities through the field operators defined
+by (64.20). The commutation rules (64.21), (64.22), however, are replaced by
+the anticommutation relations
+\begin{equation}
+ \hat\psi^+(\xi')\hat\psi(\xi)+\hat\psi(\xi)\hat\psi^+(\xi')
+ =\delta(\xi-\xi'),
+ \tag{65.11}
+\end{equation}
+\begin{equation}
+ \hat\psi(\xi')\hat\psi(\xi)+\hat\psi(\xi)\hat\psi(\xi')=0.
+ \tag{65.12}
+\end{equation}
+
+If a system contains different kinds of particles, separate second-quantized
+operators must be introduced for each kind, as mentioned at the end of the
+preceding section. Operators belonging to bosons commute with those belonging
+to fermions. Within nonrelativistic theory, operators belonging to different
+fermions may formally be taken either to commute or to anticommute; the method
+of second quantization gives the same results under either convention.
+
+With a view to later use in relativistic theory, which permits transformations
+between different particles, the creation and annihilation operators of
+different fermions must nevertheless be taken to anticommute. This becomes
+clear if two different internal states of the same composite particle are
+regarded as different particles.

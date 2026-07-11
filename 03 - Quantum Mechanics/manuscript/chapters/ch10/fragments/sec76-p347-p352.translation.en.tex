@@ -1,0 +1,95 @@
+\SourcePage{347}{350}
+\section{Atom in an electric field}
+
+When an atom is placed in an external electric field, its energy levels change; this is the \emph{Stark effect}.
+
+In a uniform external electric field the electrons move in an axially symmetric field, formed by the nucleus and the external field. Strictly, the total angular momentum is no longer conserved; only its projection $M_J$ on the field direction remains conserved. States with different $M_J$ have different energies, so the field removes the directional degeneracy. The removal is incomplete: states differing only in the sign of $M_J$ still have equal energies. Indeed, the atom is symmetric under reflection in any plane through the symmetry axis, chosen below as $z$. States related by such a reflection must have equal energies, while reflection in a plane through an axis reverses the angular momentum about that axis.
+
+Assume the field is weak enough that its additional energy is small compared with separations of neighbouring atomic levels, including fine-structure intervals. The shifts may then be calculated by perturbation theory (\S~38, 39). The perturbation is the energy of the electron system in the uniform field $\boldsymbol{\mathcal E}$:
+\begin{equation}\widehat V=-\mathbf d\boldsymbol{\mathcal E}=-\mathcal E d_z,\tag{76.1}\end{equation}
+where $\mathbf d$ is the dipole moment. Zeroth-order levels are directionally degenerate, but this degeneracy is immaterial here, and perturbation theory may be applied as for nondegenerate levels. Only matrix elements of $d_z$ for transitions with unchanged $M_J$ can be nonzero (\S~29), so states with different $M_J$ behave independently.
+
+\SourcePage{348}{351}
+The first-order shift is given by diagonal elements of the perturbation, but diagonal dipole-moment elements vanish (\S~75). Hence the electric-field splitting is second order in the field.\footnote{Hydrogen is an exception: its Stark effect is linear in the field (see the next section). Other atoms in highly excited, and therefore hydrogen-like, states (\S~68) behave similarly in sufficiently strong fields.} Being quadratic in the field, the shift of level $E_n$ has the form
+\begin{equation}\Delta E_n=-\frac12\alpha_{ik}^{(n)}\mathcal E_i\mathcal E_k,\tag{76.2}\end{equation}
+where $\alpha_{ik}^{(n)}$ is symmetric. With $z$ along the field,
+\begin{equation}\Delta E_n=-\frac12\alpha_{zz}^{(n)}\mathcal E^2.\tag{76.3}\end{equation}
+
+The tensor $\alpha_{ik}^{(n)}$ is also the \emph{polarizability} of the atom. In (11.16), take the parameters $\lambda$ as the components $\mathcal E_i$ and put $\widehat H=\widehat H_0-\mathcal E_i\widehat d_i$. Then the induced mean dipole moment is
+\[\overline d_i^{(n)}=-\frac{\partial\Delta E_n}{\partial\mathcal E_i},\]
+so that
+\begin{equation}\overline d_i^{(n)}=\alpha_{ik}^{(n)}\mathcal E_k.\tag{76.4}\end{equation}
+By the general second-order formula (38.10),
+\begin{equation}\alpha_{ik}^{(n)}=-2\sum_m'\frac{(d_i)_{nm}(d_k)_{mn}}{E_n-E_m}.\tag{76.5}\end{equation}
+
+The polarizability depends on the unperturbed state, including $M_J$. Its dependence on $M_J$ follows generally by regarding the values $\alpha_{ik}^{(n)}$ as eigenvalues of
+\begin{equation}\widehat\alpha_{ik}^{(n)}=\alpha_n\delta_{ik}+\beta_n(\widehat J_i\widehat J_k+\widehat J_k\widehat J_i-\tfrac23\delta_{ik}\widehat{\mathbf J}^{,2}).\tag{76.6}\end{equation}
+
+\SourcePage{349}{352}
+This is the general symmetric rank-two tensor depending on $\widehat{\mathbf J}$ (cf. \S~75). Thus
+\begin{equation}\Delta E_n=-\frac{\mathcal E^2}{2}\{\alpha_n+2\beta_n[M_J^2-\tfrac13J(J+1)]\}.\tag{76.7}\end{equation}
+Summing over all $M_J$ makes the second term vanish; the first therefore shifts the centre of gravity of the split level. For $J=1/2$ the level remains unsplit, consistently with Kramers' theorem (\S~60).
+
+In a nonuniform external field that varies little across the atom, a splitting linear in the field may also arise from the atomic quadrupole moment. The quadrupole interaction operator has the classical form (see II, \S~42)
+\begin{equation}\widehat V=\frac16\frac{\partial^2\varphi}{\partial x_i\partial x_k}\widehat Q_{ik},\tag{76.8}\end{equation}
+where $\varphi$ is the electric potential and the derivatives are evaluated at the atom.
+
+\ProblemHeading{1.} Determine how the Stark splitting of the components of a multiplet level depends on $J$.
+
+\SolutionHeading Reverse the order in which the perturbations are introduced: first consider Stark splitting without fine structure, then introduce spin--orbit interaction. Since spin does not interact with the external electric field, a level of orbital angular momentum $L$ splits according to (76.2), with
+\[\widehat\alpha_{ik}=a\delta_{ik}+b(\widehat L_i\widehat L_k+\widehat L_k\widehat L_i-\tfrac23\delta_{ik}\widehat{\mathbf L}^{,2}).\]
+After spin--orbit interaction is introduced, average this operator over states of specified $J$ but unspecified $M_J$, exactly as in problem 1 of \S~75. Equations (76.6), (76.7) result, with
+\[\alpha=a,\qquad \beta=b\frac{3(\mathbf{JL})[2(\mathbf{JL})-1]-2J(J+1)L(L+1)}{J(J+1)(2J-1)(2J+3)}.\]
+This determines the $J$ dependence, though not the $L,S$ dependence of $a,b$.
+
+\SourcePage{350}{353}
+\ProblemHeading{2.} Determine the splitting of a doublet level ($S=1/2$) in an arbitrary, not necessarily weak, electric field.
+
+\SolutionHeading If the splitting is not small relative to the doublet interval, the electric-field perturbation and spin--orbit interaction must be included together:
+\[\widehat V=A\widehat{\mathbf S}\widehat{\mathbf L}-\tfrac12\mathcal E^2\{a+2b[\widehat L_z^2-\tfrac13L(L+1)]\}.\]
+Dropping terms common to all components,
+\[\widehat V=\frac A2[\widehat S_+\widehat L_-+\widehat S_-\widehat L_++2\widehat S_z\widehat L_z]-b\mathcal E^2\widehat L_z^2.\]
+For fixed $M=M_J$, form the secular equation in the states $|M_LM_S\rangle=|M\mp1/2,\,\pm1/2\rangle$. Its elements are
+\begin{align*}
+\langle M-1/2,1/2|V|M-1/2,1/2\rangle&=\frac A2(M-\tfrac12)-b\mathcal E^2(M-\tfrac12)^2,\\
+\langle M+1/2,-1/2|V|M+1/2,-1/2\rangle&=-\frac A2(M+\tfrac12)-b\mathcal E^2(M+\tfrac12)^2,\\
+\langle M-1/2,1/2|V|M+1/2,-1/2\rangle&=\frac A2[(L+M+\tfrac12)(L-M+\tfrac12)]^{1/2}.
+\end{align*}
+Hence (problem 1, \S~39)
+\begin{equation}\Delta E=-b\mathcal E^2M^2\pm\sqrt{\frac{A^2}{4}(L+\tfrac12)^2+b\mathcal E^2(b\mathcal E^2+A)M^2}.\tag{1}\end{equation}
+Terms common to the doublet have been omitted. Both signs apply for $|M|\leqslant L-1/2$. For $|M|=L+1/2$ only one state exists, and with the same additive constant
+\begin{equation}\Delta E=(\tfrac A2+b\mathcal E^2)(L+\tfrac12)-b\mathcal E^2(L+\tfrac12)^2.\tag{2}\end{equation}
+
+\ProblemHeading{3.} Determine the quadrupole splitting in an axially symmetric electric field.\footnote{For an arbitrary field see problem 6, \S~103.}
+
+\SolutionHeading Here
+\[\varphi_{xx}=\varphi_{yy}=a,\qquad \varphi_{zz}=-2a,\]
+
+\SourcePage{351}{354}
+and the other second derivatives vanish. Equation (76.8) becomes
+\[\frac a6(\widehat Q_{xx}+\widehat Q_{yy}-2\widehat Q_{zz})=\frac{Qa}{2J(2J-1)}(\widehat{\mathbf J}^{,2}-3\widehat J_z^2),\]
+and therefore
+\[\Delta E=a\frac{Q}{2J(2J-1)}[J(J+1)-3M_J^2].\]
+
+\ProblemHeading{4.} Calculate the polarizability of hydrogen in its ground state.
+
+\SolutionHeading Spherical symmetry makes $\alpha_{ik}=\alpha\delta_{ik}$, with
+\[\alpha=-2e^2\sum_k'\frac{|z_{0k}|^2}{E_0-E_k}.\]
+Introduce $\widehat b$ by $z=(m/\hbar)d\widehat b/dt$. Then $z_{0k}=(im/\hbar^2)(E_0-E_k)b_{0k}$ and
+\begin{equation}\alpha=\frac{2ime^2}{\hbar^2}\sum_kz_{0k}b_{k0}=\frac{2ime^2}{\hbar^2}(zb)_{00}.\tag{1}\end{equation}
+It suffices to know $\widehat b\psi_0$. From (9.2), writing $\widehat b\psi_0=b(\mathbf r)\psi_0$ and using $\widehat H=-\hbar^2\Delta/2m+U(r)$,
+\[\tfrac12\psi_0\Delta b+\nabla b\nabla\psi_0=iz\psi_0.\]
+With $b=\cos\theta f(r)$ this becomes
+\begin{equation}\frac{f''}{2}+\frac{f'}r-\frac f{r^2}+\frac{\psi_0'}{\psi_0}f'=ir.\tag{2}\end{equation}
+The solution must keep $f\psi_0$ finite at zero and infinity. For hydrogen's ground state $\psi_0=e^{-r/a_B}/\sqrt\pi$, $a_B=\hbar^2/me^2$, the solution is $f=-ira_B(a_B+r/2)$. Therefore\footnote{The next section obtains this result by another method.}
+\[\alpha=\frac{2i}{a_B}(rf\cos^2\theta)_{00}=\frac{2i}{3a_B}(rf)_{00}=\frac92a_B^3.\]
+
+\SourcePage{352}{355}
+\ProblemHeading{5.} Calculate the polarizability of an electron in a bound $s$ state in a potential well of range $a$, where $a\varkappa\ll1$, $\varkappa=\sqrt{2m|E_0|}/\hbar$, and $|E_0|$ is the binding energy.
+
+\SolutionHeading The region inside the well may be neglected in $(z\widehat b)_{00}$, and throughout space one may use
+\[\psi_0=\sqrt{\frac{\varkappa}{2\pi}}\frac{e^{-\varkappa r}}r.\]
+Equation (2) becomes
+\[\frac{f''}{2}-\varkappa f'-\frac f{r^2}=ir,\]
+whose boundary-condition solution is $f=-ir^2/2\varkappa$. Equation (1) then gives
+\[\alpha=\frac{me^2}{4\hbar^2\varkappa^4}.\]

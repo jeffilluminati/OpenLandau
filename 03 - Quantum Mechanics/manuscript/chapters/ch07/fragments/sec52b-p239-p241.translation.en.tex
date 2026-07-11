@@ -1,0 +1,157 @@
+\SourcePage{239}{242}
+\begin{center}\textbf{P r o b l e m s}\end{center}
+
+\ProblemHeading{1.} In the quasiclassical approximation, to exponential
+accuracy, determine the probability of deuteron breakup in a collision with a
+heavy nucleus treated as a fixed centre of a Coulomb field (E.~M. Lifshitz,
+1939).
+
+\SolutionHeading{Solution.} Collisions with zero orbital angular momentum
+make the largest contribution to the reaction probability. In the
+quasiclassical approximation these are ``head-on'' collisions, in which the
+motion of the particles reduces to one-dimensional motion.
+
+Let $E$ be the deuteron energy measured in units of $\varepsilon$, its
+proton--neutron binding energy, and let $E_n$ and $E_p$ be the energies of the
+released neutron and proton (in the same units). Introduce also the
+dimensionless coordinate $q=r/(Ze^2/\varepsilon)$ (where $Ze$ is the nuclear
+charge), and denote its generally complex value at the ``transition point,''
+that is, at the ``instant of breakup'' of the deuteron, by $q_0$. Write
+$E_n$, $E_p$, and $E$ in the form
+\begin{equation}
+ E_n=v_n^2/2,\qquad E_p=v_p^2/2+1/q_0,\qquad E=v_d^2+1/q_0;
+ \tag{1}
+\end{equation}
+$v_n$, $v_p$, and $v_d$ are the particle ``velocities'' at the instant of
+breakup, measured in units of $\sqrt{\varepsilon/m}$ (where $m$ is the nucleon
+mass). Here $v_n$ is real and equals the velocity of the released neutron,
+whereas $v_p$ and $v_d$ are complex. Conservation of energy and momentum at
+the transition point gives
+\begin{equation}
+ E_p+E_n=E-1,\qquad v_p+v_n=2v_d,
+ \tag{2}
+\end{equation}
+whence
+\[
+ v_p=2i+v_n,\qquad v_d=i+v_n,\qquad
+ 1/q_0=E+1-v_n^2+2iv_n.
+\]
+Before the transition, the action of the system corresponds to motion of the
+deuteron in the nuclear field up to the breakup point; its imaginary part is
+\begin{equation}
+ \begin{aligned}
+ \operatorname{Im}S_1
+ &=Ze^2\sqrt{\frac m\varepsilon}\operatorname{Im}
+   \int_\infty^{q_0}\sqrt{4\left(E-\frac1q\right)}\,dq={}\\
+ &=Ze^2\sqrt{\frac m\varepsilon}\operatorname{Im}
+ \left\{2q_0v_d-\frac2{\sqrt E}\operatorname{Arch}\sqrt{q_0E}\right\}.
+ \end{aligned}
+ \tag{3}
+\end{equation}
+After the transition, the action corresponds to motion of the neutron and
+proton away from the breakup point:
+
+\SourcePage{240}{243}
+\begin{equation}
+ \begin{aligned}
+ \operatorname{Im}S_2
+ &=Ze^2\sqrt{\frac m\varepsilon}\operatorname{Im}
+ \left\{\int_{q_0}^\infty v_n\,dq+
+ \int_{q_0}^\infty\sqrt{2\left(E_p-\frac1q\right)}\,dq\right\}={}\\
+ &=Ze^2\sqrt{\frac m\varepsilon}\operatorname{Im}
+ \left\{-v_nq_0-v_pq_0+\sqrt{\frac2{E_p}}
+ \operatorname{Arch}\sqrt{q_0E_p}\right\}.
+ \end{aligned}
+ \tag{4}
+\end{equation}
+According to (52.1), the probability of the process is
+\begin{equation}
+ w\sim\exp\left\{-\frac{2Ze^2}\hbar\sqrt{\frac m\varepsilon}
+ \operatorname{Im}\left[
+ \sqrt{\frac2{E_p}}\operatorname{Arch}\sqrt{q_0E_p}
+ -\frac2{\sqrt E}\operatorname{Arch}\sqrt{q_0E}\right]\right\}.
+ \tag{5}
+\end{equation}
+In accordance with the origin of the first and second $\operatorname{Arch}$
+terms in the square brackets from expressions (4) and (3), the signs of their
+imaginary parts must agree with the signs of $\operatorname{Im}v_p$ and
+$\operatorname{Im}v_d$, respectively (the signs of the latter quantities in
+solving equations (2) were chosen so that
+$\operatorname{Im}(S_1+S_2)>0$ results).
+
+Because $w$ depends exponentially on $E_n$, the total breakup probability
+(including all values of $E_n$ and $E_p=E-1-E_n$) is determined by the
+smallest absolute value of the exponent as a function of $E_n$. Analysis shows
+that this value is attained as $E_n\to0$. Then $q_0=1/(E+1)$, and (5) gives
+\[
+ w\sim\exp\left\{-\frac{2Ze^2}\hbar\sqrt{\frac m\varepsilon}
+ \left[\sqrt{\frac2{E-1}}\arccos\sqrt{\frac{E-1}{E+1}}
+ -\frac2{\sqrt E}\arccos\sqrt{\frac E{E+1}}\right]\right\}.
+\]
+The condition for this formula to apply is that the exponent be large compared
+with unity.
+
+By calculating the imaginary part of the action $S=S_1+S_2$ at nonzero values
+of $E_n$, one can find the energy distribution of the released particles. Near
+$E_n=0$ we have\footnote{At $E_n=0$ the function
+$\operatorname{Im}S(E_n)$ has a cusp, from which it increases in both
+directions---for positive and negative $E_n$ (values $E_n<0$ would correspond
+to capture of the neutron by the nucleus).}
+\[
+ \operatorname{Im}S(E_n)-\operatorname{Im}S(0)\approx
+ E_n\left(\frac{d\operatorname{Im}S}{dE_n}\right)_{E_n=0}.
+\]
+Evaluation of the derivative gives
+\[
+ \frac{dw}{dE_n}\sim\exp\left\{-\frac{2Ze^2}\hbar
+ \sqrt{\frac m\varepsilon}E_n\left[
+ \frac{3-E}{(E-1)(E+1)^2}+
+ \frac1{\sqrt{2(E-1)^3}}\arccos\sqrt{\frac{E-1}{E+1}}
+ \right]\right\}.
+\]
+
+\ProblemHeading{2.} Determine the coefficient of over-barrier reflection at
+particle energies for which perturbation theory is applicable.
+
+\SolutionHeading{Solution.} The result follows from formula (43.1), in which
+the initial and final wave functions are plane waves propagating in opposite
+directions and normalized, respectively, to unit flux density and to a delta
+function of momentum divided by $2\pi\hbar$. Here $d\nu=dp'/2\pi\hbar$, where
+$p'$ is the momentum after reflection. Carrying out the integration over
+$dp'$ in (43.1), with the delta function taken into account, gives
+
+\SourcePage{241}{244}
+\begin{equation}
+ R=\frac{m^2}{\hbar^2p^2}
+ \left|\int_{-\infty}^{\infty}U(x)e^{2ipx/\hbar}\,dx\right|^2.
+ \tag{1}
+\end{equation}
+This formula is valid when the condition for applicability of perturbation
+theory is satisfied: $Ua/\hbar v\ll1$, where $a$ is the width of the barrier
+(see the note on p.~205), and at the same time $pa/\hbar\lesssim1$. The latter
+condition ensures that the dependence $R(p)$ is not exponential; otherwise,
+the applicability of formula (1) requires further investigation.
+
+\ProblemHeading{3.} Determine the coefficient of over-barrier reflection from
+a quasiclassical barrier when the function $U(x)$ has a kink at $x=x_0$.
+
+\SolutionHeading{Solution.} If $U(x)$ has a singular feature at a real value
+of $x$, the reflection coefficient is determined mainly by the field near
+that point. To calculate it, perturbation theory may formally be applied
+without requiring its applicability condition to hold for every $x$; it is
+enough that the quasiclassical condition be satisfied. We thus arrive at
+formula (1) of Problem~2, with the sole difference that the momentum of the
+incident particle in it must be replaced by the value of $p(x)$ at $x=x_0$.
+
+Choosing the kink as the point $x=0$, we have near it
+\[
+ U=-F_1x\quad\text{for }x>0,\qquad
+ U=-F_2x\quad\text{for }x<0,
+\]
+with different values of $F_1$ and $F_2$. The integration over $dx$ is
+performed by introducing the damping factor $e^{\pm\lambda x}$ into the
+integrand (after which $\lambda\to0$ is taken). The result is
+\[
+ R=\frac{m^2\hbar^2}{16p_0^6}(F_2-F_1)^2,
+\]
+where $p_0=p(0)$.

@@ -1,193 +1,218 @@
 \SourcePage{219}{222}
 \section{Semiclassical motion in a centrally symmetric field}
 
-In a centrally symmetric field, the particle's wave function separates, as
-we know, into angular and radial parts. We first consider the former.
+For motion in a centrally symmetric field, the particle's wave function
+separates, as we know, into angular and radial parts. We first consider the
+angular part.
 
-The dependence of the angular wave function on the angle $\varphi$ (fixed by
-the quantum number $m$) is so simple that no question of finding approximate
-formulas for it arises. Its dependence on the polar angle $\theta$, however,
-is semiclassical by the general rule when the corresponding quantum number
-$l$ is large (a more precise statement of this condition is given below).
+The dependence of the angular wave function on the angle $\varphi$ (specified
+by the quantum number $m$) is so simple that there is no question of seeking
+approximate formulas for it. Its dependence on the polar angle $\theta$, on
+the other hand, is semiclassical according to the general rule if the
+corresponding quantum number $l$ is large (a more precise statement of this
+condition is given below).
 
-We restrict the derivation of a semiclassical angular function to the case
-most important in applications, namely states with zero magnetic quantum
-number ($m=0$)\footnote{The opposite case, $m=l$, must in the limit correspond
-to motion along a classical orbit lying in the equatorial plane
+Here we shall derive a semiclassical expression for the angular function only
+in the case of greatest practical importance, namely states with zero magnetic
+quantum number ($m=0$)\footnote{The opposite case, $m=l$, must in the limit
+correspond to motion in a classical orbit lying in the equatorial plane
 $\theta=\pi/2$. Indeed,
 \[
- P_l^l(\cos\theta)=\operatorname{const}\cdot\sin^l\theta;
+  P_l^l(\cos\theta)=\operatorname{const}\cdot\sin^l\theta;
 \]
-as $l\to\infty$, this function (and hence also $|\psi|^2$) tends to zero at
-every $\theta\ne\pi/2$.}. Apart from a constant factor, this function is the
-Legendre polynomial $P_l(\cos\theta)$ (see (28.8)) and obeys
+as $l\to\infty$, this function (and with it $|\psi|^2$) tends to zero for all
+$\theta\ne\pi/2$.}. Apart from a constant factor, this function is the
+Legendre polynomial $P_l(\cos\theta)$ (see (28.8)) and satisfies the
+differential equation
 \begin{equation}
- \frac{d^2P_l}{d\theta^2}+\cot\theta\frac{dP_l}{d\theta}
- +l(l+1)P_l=0. \tag{49.1}
+  \frac{d^2P_l}{d\theta^2}+\cot\theta\frac{dP_l}{d\theta}
+  +l(l+1)P_l=0.
+  \tag{49.1}
 \end{equation}
 The substitution
 \begin{equation}
- P_l=\frac{\chi}{\sqrt{\sin\theta}} \tag{49.2}
+  P_l=\frac{\chi}{\sqrt{\sin\theta}}
+  \tag{49.2}
 \end{equation}
 reduces it to the equation
 \begin{equation}
- \chi''+\left[\left(l+\frac12\right)^2+
- \frac{1}{4\sin^2\theta}\right]\chi=0, \tag{49.3}
+  \chi''+\left[\left(l+\frac12\right)^2+
+  \frac{1}{4\sin^2\theta}\right]\chi=0,
+  \tag{49.3}
 \end{equation}
 which contains no first derivative and has the form of a one-dimensional
 Schrödinger equation.
 
 In (49.3), the role of the ``de Broglie wavelength'' is played by
 $\lambda\sim1/l$.
-\SourcePage{220}{223}
-The requirement that $d\lambda/dx$ be small (condition (46.6)) gives
-\begin{equation}
- \theta l\gg1,\qquad(\pi-\theta)l\gg1, \tag{49.4}
-\end{equation}
-which are the semiclassical conditions for the angular part of the wave
-function. For large $l$ they hold through nearly the entire range of
-$\theta$, failing only for angles very close to zero or to $\pi$.
 
-When (49.4) holds, the second term in the square brackets in (49.3) may be
-neglected against the first:
-\[
- \chi''+\left(l+\frac12\right)^2\chi=0.
-\]
-The solution is
+\SourcePage{220}{223}
+The requirement that the derivative $d\lambda/dx$ be small (condition (46.6))
+gives the inequalities
 \begin{equation}
- \chi=\sqrt{\sin\theta}\,P_l(\cos\theta)
- =A\sin\left[\left(l+\frac12\right)\theta+\alpha\right] \tag{49.5}
+  \theta l\gg1,\qquad(\pi-\theta)l\gg1
+  \tag{49.4}
+\end{equation}
+(the semiclassical conditions for the angular part of the wave function). For
+large $l$ these conditions hold over almost the whole interval of values of
+$\theta$, except only for angles very close to zero or to $\pi$.
+
+When condition (49.4) holds, the second term in the square brackets in (49.3)
+may be neglected in comparison with the first:
+\[
+  \chi''+\left(l+\frac12\right)^2\chi=0.
+\]
+The solution of this equation is
+\begin{equation}
+  \chi=\sqrt{\sin\theta}\,P_l(\cos\theta)
+  =A\sin\left[\left(l+\frac12\right)\theta+\alpha\right]
+  \tag{49.5}
 \end{equation}
 ($A$ and $\alpha$ are constants).
 
-For $\theta\ll1$, we may put $\cot\theta\approx1/\theta$ in (49.1); also
-replacing $l(l+1)$ approximately by $(l+1/2)^2$, we obtain
+For angles $\theta\ll1$, we may set $\cot\theta\approx1/\theta$ in (49.1).
+Also replacing $l(l+1)$ approximately by $(l+1/2)^2$, we obtain
 \[
- \frac{d^2P_l}{d\theta^2}+\frac1\theta\frac{dP_l}{d\theta}
- +\left(l+\frac12\right)^2P_l=0,
+  \frac{d^2P_l}{d\theta^2}+\frac1\theta\frac{dP_l}{d\theta}
+  +\left(l+\frac12\right)^2P_l=0,
 \]
-whose solution is a Bessel function of order zero:
+whose solution is the Bessel function of order zero,
 \begin{equation}
- P_l(\cos\theta)=J_0\left[\left(l+\frac12\right)\theta\right],
- \qquad\theta\ll1. \tag{49.6}
+  P_l(\cos\theta)=J_0\left[\left(l+\frac12\right)\theta\right],
+  \qquad\theta\ll1.
+  \tag{49.6}
 \end{equation}
-The constant factor has been set equal to unity because $P_l=1$ at
-$\theta=0$. Approximation (49.6) is valid for all $\theta\ll1$. In
-particular, it applies in the region $1/l\ll\theta\ll1$, where it must match
-(49.5), valid for every $\theta\gg1/l$. When $\theta l\gg1$, the Bessel
-function may be replaced by its large-argument asymptotic form, giving
+The constant factor has been set equal to unity because $P_l$ must equal one
+at $\theta=0$. The approximate expression (49.6) for $P_l$ is valid for all
+angles $\theta\ll1$. In particular, it may be used in the region
+$1/l\ll\theta\ll1$, where it must agree with (49.5), which is valid whenever
+$\theta\gg1/l$. When $\theta l\gg1$, the Bessel function may be replaced by
+its asymptotic expression for large argument, giving
 \[
- P_l\approx\sqrt{\frac{2}{\pi l\theta}}
- \sin\left[\left(l+\frac12\right)\theta+\frac\pi4\right]
+  P_l\approx\sqrt{\frac{2}{\pi l\theta}}
+  \sin\left[\left(l+\frac12\right)\theta+\frac\pi4\right]
 \]
-(the $1/2$ may be neglected against $l$ in the coefficient). Comparison with
-(49.5) gives $A=\sqrt{2/\pi l}$ and $\alpha=\pi/4$. We therefore obtain the
-following final expression for $P_l(\cos\theta)$,
+(in the coefficient, $1/2$ may be neglected in comparison with $l$).
+Comparison with (49.5) gives $A=\sqrt{2/\pi l}$ and $\alpha=\pi/4$. We thus
+arrive at the following expression for $P_l(\cos\theta)$,
+
 \SourcePage{221}{224}
 applicable in the semiclassical case\footnote{Notice that it is precisely the
-replacement of $l(l+1)$ by $(l+1/2)^2$ that has produced an expression
-multiplied by $(-1)^l$ when $\theta$ is replaced by $\pi-\theta$, as required
-for $P_l(\cos\theta)$.}:
+replacement of $l(l+1)$ by $(l+1/2)^2$ that has yielded an expression which
+is multiplied by $(-1)^l$ when $\theta$ is replaced by $\pi-\theta$, as the
+function $P_l(\cos\theta)$ must be.}:
 \begin{equation}
- P_l(\cos\theta)=\sqrt{\frac{2}{\pi l\sin\theta}}
- \sin\left[\left(l+\frac12\right)\theta+\frac\pi4\right]. \tag{49.7}
+  P_l(\cos\theta)=\sqrt{\frac{2}{\pi l\sin\theta}}
+  \sin\left[\left(l+\frac12\right)\theta+\frac\pi4\right].
+  \tag{49.7}
 \end{equation}
-The normalized spherical function $Y_{l0}$ is consequently (cf. (28.8))
+The normalized spherical function $Y_{l0}$ therefore takes the form (compare
+(28.8))
 \begin{equation}
- Y_{l0}=\frac{1}{\pi\sqrt{\sin\theta}}
- \sin\left[\left(l+\frac12\right)\theta+\frac\pi4\right]. \tag{49.8}
+  Y_{l0}=\frac{1}{\pi\sqrt{\sin\theta}}
+  \sin\left[\left(l+\frac12\right)\theta+\frac\pi4\right].
+  \tag{49.8}
 \end{equation}
 
-We now turn to the radial part of the wave function. It was shown in \secref{32}
-that $\chi(r)=rR(r)$ obeys an equation identical to the one-dimensional
-Schrödinger equation with potential energy
+We now turn to the radial part of the wave function. It was shown in §~32 that
+the function $\chi(r)=rR(r)$ satisfies an equation identical with the
+one-dimensional Schrödinger equation having potential energy
 \[
- U_l(r)=U(r)+\frac{\hbar^2}{2mr^2}l(l+1).
+  U_l(r)=U(r)+\frac{\hbar^2}{2mr^2}l(l+1).
 \]
-We may therefore use the results of the preceding sections, taking the
-potential energy there to mean $U_l(r)$.
+We may therefore apply the results of the preceding sections, with the
+function $U_l(r)$ understood as the potential energy.
 
-The case $l=0$ is simplest. There is no centrifugal energy, and if $U(r)$
-satisfies the necessary condition (46.6), the radial wave function is
-semiclassical throughout space. At $r=0$ we must have $\chi=0$, so the
-semiclassical function $\chi(r)$ is determined in accordance with (47.6).
+The case $l=0$ is the simplest. The centrifugal energy is absent, and if the
+field $U(r)$ satisfies the required condition (46.6), the radial wave function
+is semiclassical throughout space. At $r=0$ we must have $\chi=0$, and hence
+the semiclassical function $\chi(r)$ is determined in accordance with formulas
+(47.6).
 
-If $l\ne0$, the centrifugal energy must also satisfy (46.6). In the region of
-small $r$ where the centrifugal energy has the order of the total energy,
-$\lambda=\hbar/p\sim r/l$, and (46.6) gives $l\gg1$. Thus, when $l$ is not
-large, the centrifugal energy violates the semiclassical condition in the
-region of small $r$. It is readily verified that the correct phase of the
-semiclassical wave function $\chi(r)$ is obtained by using the formulas for
-one-dimensional motion with $l(l+1)$ in $U_l(r)$ replaced
+If $l\ne0$, the centrifugal energy must also satisfy condition (46.6). In the
+region of small $r$, where the centrifugal energy is of the order of the total
+energy, the wavelength is $\lambda=\hbar/p\sim r/l$, and condition (46.6)
+gives $l\gg1$. Thus, when $l$ is not large, the centrifugal energy violates
+the semiclassical condition in the region of small $r$. It is readily verified
+that the correct phase of the semiclassical wave function $\chi(r)$ is
+obtained by using the formulas for one-dimensional motion and replacing the
+coefficient $l(l+1)$ in the potential energy $U_l(r)$
+
 \SourcePage{222}{225}
-by $(l+1/2)^2$\footnote{Thus, in the simplest case of free motion ($U=0$),
-the phase calculated from (48.1) with $U_l$ from (49.9) agrees at large $r$,
-as it should, with the phase of (33.12).}:
+by $(l+1/2)^2$\footnote{Thus, in the simplest case of free motion ($U=0$), the
+phase of the function calculated from (48.1), with $U_l$ from (49.9), agrees
+at large $r$, as it should, with the phase of the function (33.12).}:
 \begin{equation}
- U_l(r)=U(r)+\frac{\hbar^2}{2mr^2}\left(l+\frac12\right)^2. \tag{49.9}
+  U_l(r)=U(r)+\frac{\hbar^2}{2mr^2}\left(l+\frac12\right)^2.
+  \tag{49.9}
 \end{equation}
 
 The applicability of the semiclassical approximation to a Coulomb field
 $U=\pm\alpha/r$ requires separate consideration. Of the entire region of
-motion, the most significant part corresponds to distances at which
-$|U|\sim|E|$, that is, $r\sim\alpha/|E|$. Semiclassical motion in this region
-requires the reduced wavelength
-$\lambdabar\sim\hbar/\sqrt{2m|E|}$ to be small compared with the size
+motion, the most important part corresponds to distances $r$ for which
+$|U|\sim|E|$, that is, $r\sim\alpha/|E|$. The semiclassical condition for
+motion in this region reduces to requiring that the wavelength
+$\lambdabar\sim\hbar/\sqrt{2m|E|}$ be small compared with the size
 $\alpha/|E|$ of the region. This gives
 \begin{equation}
- |E|\ll\frac{m\alpha^2}{\hbar^2}, \tag{49.10}
+  |E|\ll\frac{m\alpha^2}{\hbar^2},
+  \tag{49.10}
 \end{equation}
-so the absolute value of the energy must be small compared with the particle's
-energy in the first Bohr orbit. Condition (49.10) may also be written
+that is, the absolute value of the energy must be small compared with the
+particle's energy in the first Bohr orbit. Condition (49.10) may also be
+written
 \begin{equation}
- \frac{\hbar v}{\alpha}\gg1, \tag{49.11}
+  \frac{\hbar v}{\alpha}\gg1,
+  \tag{49.11}
 \end{equation}
-where $v\sim\sqrt{|E|/m}$ is the particle's speed. Notice that this is the
-reverse of condition (45.7) for applicability of perturbation theory to the
-Coulomb field.
+where $v\sim\sqrt{|E|/m}$ is the particle velocity. Notice that this condition
+is the reverse of condition (45.7) for the applicability of perturbation
+theory to the Coulomb field.
 
-The region of small distances ($|U(r)|\gg E$) is of no interest in a
-repulsive Coulomb field, since the semiclassical wave functions decay
-exponentially when $U>E$. In an attractive field and for small $l$, however,
-the particle can enter a region where $|U|\gg|E|$, raising the question of
-the range of validity of the semiclassical approximation there. We use the
-general condition (46.7), setting
+As for the region of small distances ($|U(r)|\gg E$), in a repulsive Coulomb
+field it is of no interest at all, since for $U>E$ the semiclassical wave
+functions decay exponentially. In an attractive field with small $l$, however,
+the particle may penetrate into a region where $|U|\gg|E|$, and the limits of
+applicability of the semiclassical approximation there must be determined. We
+use the general condition (46.7), putting
 \[
- F=-\frac{dU}{dr}=\frac{\alpha}{r^2},\qquad
- p\approx\sqrt{2m|U|}\sim\sqrt{\frac{m\alpha}{r}}.
+  F=-\frac{dU}{dr}=\frac{\alpha}{r^2},\qquad
+  p\approx\sqrt{2m|U|}\sim\sqrt{\frac{m\alpha}{r}}.
 \]
-It follows that the range of validity is restricted to distances
+We then find that the region of applicability of the semiclassical
+approximation is restricted to distances
 \begin{equation}
- r\gg\frac{\hbar^2}{m\alpha}, \tag{49.12}
+  r\gg\frac{\hbar^2}{m\alpha},
+  \tag{49.12}
 \end{equation}
-that is, distances large compared with the ``radius'' of the first Bohr
-orbit.
-\SourcePage{223}{226}
-\begin{center}\ProblemHeading\end{center}
+that is, distances large compared with the ``radius'' of the first Bohr orbit.
 
-Determine the behavior of the wave function near the origin if, as $r\to0$,
-the field tends to infinity as $\pm\alpha/r^s$, with $s>2$.
+\SourcePage{223}{226}
+\ProblemHeading
+
+Find the behavior of the wave function near the origin if, as $r\to0$, the
+field tends to infinity as $\pm\alpha/r^s$, where $s>2$.
 
 \SolutionHeading For sufficiently small $r$, the wavelength is
 \[
- \lambdabar\sim\frac{\hbar}{\sqrt{m|U|}}
- \sim\frac{\hbar r^{s/2}}{\sqrt{m\alpha}},
+  \lambdabar\sim\frac{\hbar}{\sqrt{m|U|}}
+  \sim\frac{\hbar r^{s/2}}{\sqrt{m\alpha}},
 \]
-and hence
+and therefore
 \[
- \frac{d\lambdabar}{dr}\sim
- \frac{\hbar r^{s/2-1}}{\sqrt{m\alpha}}\ll1;
+  \frac{d\lambdabar}{dr}\sim
+  \frac{\hbar r^{s/2-1}}{\sqrt{m\alpha}}\ll1;
 \]
-thus the semiclassical condition is satisfied. In an attractive field,
+thus the semiclassical condition is fulfilled. In an attractive field,
 $U\to-\infty$ as $r\to0$. The region near the origin is then classically
 accessible, and the radial wave function $\chi\sim1/\sqrt p$, whence
 \[
- \psi\sim r^{s/4-1}.
+  \psi\sim r^{s/4-1}.
 \]
 In a repulsive field the region of small $r$ is classically inaccessible. The
-wave function then tends exponentially to zero as $r\to0$. Omitting the
-factor multiplying the exponential, we have
+wave function then tends exponentially to zero as $r\to0$. Omitting the factor
+multiplying the exponential function, we have
 \[
- \psi\sim\exp\left[-\frac{2\sqrt{m\alpha}}{(s-2)\hbar}
- r^{-(s/2-1)}\right].
+  \psi\sim\exp\left[-\frac{2\sqrt{m\alpha}}{(s-2)\hbar}
+  r^{-(s/2-1)}\right].
 \]

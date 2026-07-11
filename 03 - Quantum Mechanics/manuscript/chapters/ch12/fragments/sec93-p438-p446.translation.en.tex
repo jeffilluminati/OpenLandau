@@ -1,0 +1,230 @@
+\SourcePage{438}{441}
+\section{Point groups}
+
+The transformations belonging to the symmetry group of a body of finite dimensions (in particular, a molecule) must leave at least one point of the body fixed under every transformation. In other words, all symmetry axes and planes of a molecule must have at least one common point of intersection. Indeed, successive rotations about two nonintersecting axes, or reflections in nonintersecting planes, produce a translation of the body, which clearly cannot bring it into coincidence with itself. Symmetry groups having this property are called \emph{point groups}.
+
+Before constructing the possible kinds of point groups, we describe a simple geometrical method for distributing the group elements among classes. Let $Oa$ be an axis, and let the group element $A$ be rotation through a definite angle about it. Further, let $G$ be a transformation in the same group (a rotation or reflection) which carries the axis $Oa$ itself into the position $Ob$. We shall show that $B=GAG^{-1}$ is then rotation about $Ob$ through the same angle as $A$ rotates about $Oa$. Consider the action of $GAG^{-1}$ on the axis $Ob$. The inverse transformation $G^{-1}$ carries $Ob$ into $Oa$, so the subsequent rotation $A$ leaves it there; finally, $G$ returns it to its initial position. Thus $Ob$ remains fixed, and $B$ is a rotation about this axis. Since $A$ and $B$ belong to the same class, they have the same order, and hence rotate through the same angle.
+
+Thus two rotations through the same angle belong to one class if the group contains a transformation that brings one rotation axis into coincidence with the other. In exactly the same way, two reflections in different planes belong to one class if some group transformation carries one plane into the other. Symmetry axes or planes whose directions can be brought into coincidence are called
+
+\SourcePage{439}{442}
+\emph{equivalent}.
+
+Some further remarks are needed when both rotations are about the same axis. The inverse of $C_n^k$ ($k=1,2,\ldots,n-1$) is $C_n^{-k}=C_n^{n-k}$, i.e. rotation through $(n-k)(2\pi/n)$ in the same sense, or equivalently through $2k\pi/n$ in the opposite sense. If the group contains rotation through $\pi$ about a perpendicular axis (which reverses the direction of the axis under consideration), then the general rule just proved shows that $C_n^k$ and $C_n^{-k}$ belong to one class. Reflection $\sigma_h$ in a plane perpendicular to the axis also reverses its direction, but reflection reverses the sense of rotation as well. Thus the presence of $\sigma_h$ does not make $C_n^k$ and $C_n^{-k}$ conjugate. Reflection $\sigma_v$ in a plane containing the axis does not reverse the axis, but does reverse the sense of rotation; hence $C_n^{-k}=\sigma_vC_n^k\sigma_v$, and in the presence of such a plane $C_n^k$ and $C_n^{-k}$ belong to one class. If rotations about an axis through the same angle in opposite senses are conjugate, we shall call the axis \emph{two-sided}.
+
+The classes of a point group can often be found more easily by the following rule. Let $\boldsymbol{G}$ be a group not containing inversion $I$, and let $\boldsymbol{C}_i$ be the two-element group consisting of $I$ and $E$. Then $\boldsymbol{G}\times\boldsymbol{C}_i$ has twice as many elements as $\boldsymbol{G}$; half coincide with the elements of $\boldsymbol{G}$, while the others are obtained by multiplying them by $I$. Since $I$ commutes with every point-group transformation, $\boldsymbol{G}\times\boldsymbol{C}_i$ plainly has twice as many classes as $\boldsymbol{G}$: each class $A$ of $\boldsymbol{G}$ corresponds to two classes, $A$ and $AI$. In particular, inversion $I$ always constitutes a class by itself.
+
+We now enumerate all possible point groups, constructing them from the simplest by adjoining new symmetry elements. Point groups will be denoted by bold Latin letters with the appropriate subscripts.
+
+\medskip
+\noindent I. T h e  g r o u p $\boldsymbol{C}_n$
+
+The simplest type of symmetry contains only one $n$-fold axis. The group $\boldsymbol{C}_n$ consists of rotations about this axis and is evidently cyclic. Each of its $n$ elements is a class by itself. The group $\boldsymbol{C}_1$
+
+\SourcePage{440}{443}
+contains only the identity transformation $E$ and corresponds to the absence of any symmetry.
+
+\medskip
+\noindent II. T h e  g r o u p $\boldsymbol{S}_{2n}$
+
+This is the group of transformations about an even-order rotation--reflection axis $2n$. It contains $2n$ elements and is evidently cyclic. In particular, $\boldsymbol{S}_2$ contains only $E$ and $I$ and is also denoted by $\boldsymbol{C}_i$. If the group order has the form $2n=4p+2$, its elements include inversion, since $(S_{4p+2})^{2p+1}=C_2\sigma_h=I$. Such a group can be written $\boldsymbol{S}_{4p+2}=\boldsymbol{C}_{2p+1}\times\boldsymbol{C}_i$ and is also denoted by $\boldsymbol{C}_{2p+1,i}$.
+
+\medskip
+\noindent III. T h e  g r o u p $\boldsymbol{C}_{nh}$
+
+This group is obtained by adjoining to an $n$-fold axis a plane of symmetry perpendicular to it. It contains $2n$ elements: the $n$ rotations of $\boldsymbol{C}_n$ and the $n$ rotation--reflection transformations $C_n^k\sigma_h$ ($k=1,2,3,\ldots,n$), including $C_n^n\sigma_h=\sigma_h$. All its elements commute, so it is Abelian and has as many classes as elements. If $n=2p$ is even, the group contains a center of symmetry, since $C_{2p}^p\sigma_h=C_2\sigma_h=I$. The simplest group $\boldsymbol{C}_{1h}$ contains only $E$ and $\sigma_h$ and is also denoted by $\boldsymbol{C}_s$.
+
+\medskip
+\noindent IV. T h e  g r o u p $\boldsymbol{C}_{nv}$
+
+Adjoining to an $n$-fold axis a plane of symmetry through it automatically produces another $n-1$ planes intersecting along the axis at angles $\pi/n$ (this follows directly from (91.7)\footnote{A finite group cannot contain two planes of symmetry meeting at an angle that is not a rational part of $2\pi$. The presence of two such planes would imply infinitely many others, all meeting along the same line and obtained by reflecting one plane in the other without limit. Thus two such planes immediately imply complete axial symmetry.}). The resulting group $\boldsymbol{C}_{nv}$ therefore has $2n$ elements: $n$ rotations about the $n$-fold axis and $n$ reflections $\sigma_v$ in vertical planes. Figure~34 shows, as examples, the axes and planes of $\boldsymbol{C}_{3v}$ and $\boldsymbol{C}_{4v}$.
+
+The planes through the symmetry axis make it two-sided. The actual distribution into classes differs for even and odd $n$.
+
+\SourcePage{441}{444}
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[scale=.72,line width=.4pt]
+\foreach \x/\n/\lab in {0/3/$C_{3v}$,3.2/4/$C_{4v}$}{
+ \draw (\x,0)--(\x,2.5);
+ \foreach \a in {0,...,\n} {\draw[rotate around={360*\a/\n:(\x,1.25)}] (\x-.9,.45)--(\x+.9,.45)--(\x+.9,2.05)--(\x-.9,2.05)--cycle;}
+ \node at (\x,-.35) {\lab};}
+\foreach \x/\n/\lab in {6.3/3/$D_3$,9.4/4/$D_4$}{
+ \draw (\x,0)--(\x,2.5);
+ \foreach \a in {0,...,\n} {\draw[rotate around={180*\a/\n:(\x,1.25)}] (\x-1,1.25)--(\x+1,1.25);}
+ \node at (\x,-.35) {\lab};}
+\end{tikzpicture}
+\caption{}
+\label{fig:93-34}
+\end{figure}
+
+If $n=2p+1$ is odd, successive rotations $C_{2p+1}$ carry each plane into all the other $2p$ planes, so all symmetry planes are equivalent and their reflections form one class. The $2p$ nonidentity rotations are conjugate in pairs, forming $p$ two-element classes ($C_{2p+1}^k$ and $C_{2p+1}^{-k}$, $k=1,2,\ldots,p$); $E$ is one further class. There are therefore $p+2$ classes.
+
+If $n=2p$ is even, successive rotations $C_{2p}$ can bring only alternate planes into coincidence; adjacent planes cannot be so matched. Thus there are two sets of $p$ equivalent planes and correspondingly two classes of $p$ reflections each. Among the rotations, $C_{2p}^{2p}=E$ and $C_{2p}^p=C_2$ each form a class, while the other $2p-2$ rotations are conjugate in pairs and give $p-1$ further two-element classes. Hence $\boldsymbol{C}_{2p,v}$ has $p+3$ classes.
+
+\medskip
+\noindent V. T h e  g r o u p $\boldsymbol{D}_n$
+
+Adjoining to an $n$-fold axis a perpendicular twofold axis produces another $n-1$ such axes, giving $n$ horizontal twofold axes meeting at angles $\pi/n$. The group $\boldsymbol{D}_n$ has $2n$ elements: $n$ rotations about the $n$-fold axis and $n$ rotations through $\pi$ about the horizontal axes (we denote the latter by $U_2$, reserving $C_2$ for rotation through $\pi$ about the vertical
+
+\SourcePage{442}{445}
+axis). Figure~34 shows the axes of $\boldsymbol{D}_3$ and $\boldsymbol{D}_4$.
+
+As before, the $n$-fold axis is two-sided; the horizontal twofold axes are all equivalent when $n$ is odd and form two inequivalent sets when $n$ is even. Thus $\boldsymbol{D}_{2p}$ has $p+3$ classes: $E$, two classes of $p$ rotations $U_2$, the rotation $C_2$, and $p-1$ classes of two rotations about the vertical axis. The group $\boldsymbol{D}_{2p+1}$ has $p+2$ classes: $E$, a class of $2p+1$ rotations $U_2$, and $p$ classes of two rotations about the vertical axis.
+
+An important special case is $\boldsymbol{D}_2$, whose axes are three mutually perpendicular twofold axes. This group is also denoted by $\boldsymbol{V}$.
+
+\medskip
+\noindent VI. T h e  g r o u p $\boldsymbol{D}_{nh}$
+
+If a horizontal symmetry plane containing the $n$ twofold axes is added to $\boldsymbol{D}_n$, then $n$ vertical planes automatically appear, each containing the vertical axis and one horizontal axis. The resulting group $\boldsymbol{D}_{nh}$ contains $4n$ elements: in addition to the $2n$ elements of $\boldsymbol{D}_n$, it has $n$ reflections $\sigma_v$ and $n$ rotation--reflection transformations $C_n^k\sigma_h$. Figure~35 shows the axes and planes of $\boldsymbol{D}_{3h}$.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[scale=.68,line width=.4pt]
+\foreach \x/\n/\lab in {0/3/$D_{3h}$,4/2/$D_{2d}$,8/3/$D_{3d}$}{
+ \draw (\x,0)--(\x,3);
+ \foreach \a in {0,...,\n} {\draw[rotate around={180*\a/\n:(\x,1.5)}] (\x-1.1,1.5)--(\x+1.1,1.5);}
+ \foreach \a in {0,...,\n} {\draw[rotate around={180*(\a+.5)/\n:(\x,1.5)}] (\x-.8,.45)--(\x+.8,.45)--(\x+.8,2.55)--(\x-.8,2.55)--cycle;}
+ \node at (\x,-.35) {\lab};}
+\end{tikzpicture}
+\caption{}
+\label{fig:93-35}
+\end{figure}
+
+Reflection $\sigma_h$ commutes with all other group elements; hence $\boldsymbol{D}_{nh}=\boldsymbol{D}_n\times\boldsymbol{C}_s$, where $\boldsymbol{C}_s$ consists of $E$ and $\sigma_h$. For even $n$ the group contains inversion, and we may also write $\boldsymbol{D}_{2p,h}=\boldsymbol{D}_{2p}\times\boldsymbol{C}_i$.
+
+Consequently, $\boldsymbol{D}_{nh}$ has twice as many classes as $\boldsymbol{D}_n$. Half coincide
+
+\SourcePage{443}{446}
+with the classes of $\boldsymbol{D}_n$ (rotations about axes), while the rest are obtained by multiplication by $\sigma_h$. The vertical reflections $\sigma_v$ form one class for odd $n$ and two classes for even $n$. The rotation--reflection transformations $\sigma_hC_n^k$ and $\sigma_hC_n^{-k}$ are conjugate in pairs.
+
+\medskip
+\noindent VII. T h e  g r o u p $\boldsymbol{D}_{nd}$
+
+Planes of symmetry can be adjoined to the axes of $\boldsymbol{D}_n$ in another way: vertically through the $n$-fold axis, midway between each pair of adjacent horizontal twofold axes. Again, adjoining one plane entails another $n-1$. The resulting system defines $\boldsymbol{D}_{nd}$ (Fig.~35 shows $\boldsymbol{D}_{2d}$ and $\boldsymbol{D}_{3d}$).
+
+The group contains $4n$ elements. To the $2n$ elements of $\boldsymbol{D}_n$ are added $n$ reflections in vertical planes (denoted $\sigma_d$, “diagonal” planes) and $n$ transformations $G=U_2\sigma_d$. To determine the latter, write $U_2=\sigma_h\sigma_v$ by (91.6), where $\sigma_v$ is reflection in a vertical plane through the given twofold axis. Then $G=\sigma_h\sigma_v\sigma_d$ (neither $\sigma_v$ nor $\sigma_h$ separately belongs to the group). The planes $\sigma_v$ and $\sigma_d$ meet along the $n$-fold axis at an angle $(\pi/2n)(2k+1)$, $k=1,\ldots,n-1$, since adjacent planes here are separated by $\pi/2n$. By (91.6), $\sigma_v\sigma_d=C_{2n}^{2k+1}$. Hence $G=\sigma_hC_{2n}^{2k+1}=S_{2n}^{2k+1}$: these elements are rotation--reflection transformations about the vertical axis, which is therefore not merely an $n$-fold symmetry axis but a $2n$-fold rotation--reflection axis.
+
+Diagonal planes reflect adjacent horizontal twofold axes into one another, so all twofold axes are equivalent for both even and odd $n$; likewise all diagonal planes are equivalent. The transformations $S_{2n}^{2k+1}$ and $S_{2n}^{-2k-1}$ are conjugate in pairs\footnote{Indeed,
+\[
+\sigma_dS_{2n}^{2k+1}\sigma_d=\sigma_d\sigma_hC_{2n}^{2k+1}\sigma_d=\sigma_h\sigma_dC_{2n}^{2k+1}\sigma_d=\sigma_hC_{2n}^{-2k-1}=S_{2n}^{-2k-1}.
+\]}.
+
+\SourcePage{444}{447}
+Applying these results to $\boldsymbol{D}_{2p,d}$, we find $2p+3$ classes: $E$; the rotation $C_2$ about the $n$-fold axis; $p-1$ classes of two conjugate rotations about that axis; a class of $2p$ rotations $U_2$; a class of $2p$ reflections $\sigma_d$; and $p$ classes of two rotation--reflection transformations.
+
+For odd $n=2p+1$, the elements include inversion (one horizontal axis is then perpendicular to a vertical plane). Thus $\boldsymbol{D}_{2p+1,d}=\boldsymbol{D}_{2p+1}\times\boldsymbol{C}_i$, and its $2p+4$ classes follow directly from the $p+2$ classes of $\boldsymbol{D}_{2p+1}$.
+
+\medskip
+\noindent VIII. T h e  g r o u p $\boldsymbol{T}$ (t e t r a h e d r a l  g r o u p)
+
+Its axes are the symmetry axes of a tetrahedron. They may be obtained by adding to the axes of $\boldsymbol{V}$ four inclined threefold axes, rotations about which permute the three twofold axes. It is convenient to picture the three twofold axes as passing through centers of opposite faces of a cube, and the threefold axes as its body diagonals. Figure~36 shows one axis of each kind in the cube and tetrahedron.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[scale=.8,line width=.4pt]
+\draw (0,0)--(1.8,.5)--(.9,2)--cycle; \draw[dashed] (0,0)--(.9,.8)--(1.8,.5) (.9,.8)--(.9,2);
+\draw[thick] (.35,.2)--(1.45,1.55) node[above] {$C_3$}; \draw[thick] (.25,.35)--(1.5,1.15) node[right] {$C_2$};
+\begin{scope}[xshift=4cm]
+\draw (0,0) rectangle (1.8,1.8); \draw[dashed] (.55,.55) rectangle (2.35,2.35); \draw (0,0)--(.55,.55) (1.8,0)--(2.35,.55) (1.8,1.8)--(2.35,2.35);
+\draw[thick] (.15,.15)--(2.2,2.2) node[above] {$C_3$}; \draw[thick] (1.1,-.15)--(1.1,2.2) node[above] {$C_2$};
+\end{scope}
+\end{tikzpicture}
+\caption{}
+\label{fig:93-36}
+\end{figure}
+
+The three twofold axes are equivalent. The threefold axes are likewise equivalent, being carried into one another by $C_2$ rotations, but are not two-sided. Thus the 12 elements of $\boldsymbol{T}$ form four classes: $E$, three rotations $C_2$, four rotations $C_3$, and four rotations $C_3^2$.
+
+\medskip
+\noindent IX. T h e  g r o u p $\boldsymbol{T}_d$
+
+This group contains every symmetry transformation of a tetrahedron. Its axes and planes are obtained by adding to $\boldsymbol{T}$ symmetry planes each containing one twofold and two threefold axes. The twofold axes thereby become fourfold rotation--reflection axes (as in $\boldsymbol{D}_{2d}$). It is convenient to picture the three rotation--reflection axes through centers of opposite cube faces, the four threefold axes as its body diagonals, and the six symmetry planes
+
+\SourcePage{445}{448}
+through pairs of opposite edges (Fig.~37 shows one of each kind).
+
+Because the symmetry planes are vertical relative to the threefold axes, those axes are two-sided. All axes and planes of each kind are equivalent. The 24 elements therefore form five classes: $E$; eight rotations $C_3$ and $C_3^2$; six plane reflections; six rotation--reflection transformations $S_4$ and $S_4^3$; and three rotations $C_2=S_4^2$.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[scale=.72,line width=.4pt]
+\draw[dashed] (0,0) rectangle (2.2,2.2); \draw[fill=gray!18] (.5,.1)--(1.8,.5)--(1.7,2.1)--(.4,1.7)--cycle;
+\draw[thick] (.45,.1)--(1.75,2.15) node[above] {$C_3$}; \draw[thick] (1.8,.15)--(.45,2.05) node[above] {$S_4$}; \node at (1.9,1.35) {$\sigma$};
+\begin{scope}[xshift=4cm]
+\draw[dashed] (0,0)--(2.2,.25)--(1.1,2.25)--cycle; \draw[fill=gray!18] (.25,.2)--(1.85,.4)--(1.1,2.0)--cycle;
+\draw[thick] (.25,.15)--(1.15,2.2) node[above] {$C_3$}; \draw[thick] (1.9,.3)--(.55,1.75) node[left] {$S_4$}; \node at (1.75,1.1) {$\sigma$};
+\end{scope}
+\end{tikzpicture}
+\caption{}
+\label{fig:93-37}
+\end{figure}
+
+\medskip
+\noindent X. T h e  g r o u p $\boldsymbol{T}_h$
+
+This group is obtained from $\boldsymbol{T}$ by adding a center of symmetry: $\boldsymbol{T}_h=\boldsymbol{T}\times\boldsymbol{C}_i$. Three mutually perpendicular symmetry planes appear, each containing two twofold axes, and the threefold axes become sixfold rotation--reflection axes (Fig.~38 shows one such axis and plane).
+
+The group has 24 elements in eight classes obtained directly from those of $\boldsymbol{T}$.
+
+\medskip
+\noindent XI. T h e  g r o u p $\boldsymbol{O}$ (o c t a h e d r a l  g r o u p)
+
+Its axes are the symmetry axes of a cube: three fourfold axes through centers of opposite faces, four threefold axes through opposite vertices, and six twofold axes through midpoints of opposite edges (Fig.~39).
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[scale=.62,line width=.4pt]
+\draw[dashed] (0,0) rectangle (2,2); \draw[dashed] (.5,.5) rectangle (2.5,2.5);
+\draw (0,0)--(.5,.5) (2,0)--(2.5,.5) (2,2)--(2.5,2.5);
+\draw[fill=gray!20] (.8,.1)--(1.7,.45)--(1.7,2.35)--(.8,2)--cycle;
+\draw[thick] (.8,.2)--(1.8,2.2) node[above] {$S_6$};
+\node at (1.85,1.3) {$\sigma$}; \node at (1.2,-.45) {$T_h$};
+\end{tikzpicture}
+\caption{}
+\label{fig:93-38}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[scale=.62,line width=.4pt]
+\draw[dashed] (0,0) rectangle (2,2); \draw[dashed] (.5,.5) rectangle (2.5,2.5);
+\draw (0,0)--(.5,.5) (2,0)--(2.5,.5) (2,2)--(2.5,2.5);
+\draw[thick] (1,0)--(1,2.5) node[above] {$C_4$};
+\draw[thick] (.25,.25)--(2.25,2.25) node[above] {$C_3$};
+\draw[thick] (.1,1.9)--(2.3,.6) node[right] {$C_2$};
+\node at (1.2,-.45) {$O$};
+\end{tikzpicture}
+\caption{}
+\label{fig:93-39}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[scale=.62,line width=.4pt]
+\draw[dashed] (0,0) rectangle (2,2); \draw[dashed] (.5,.5) rectangle (2.5,2.5);
+\draw (0,0)--(.5,.5) (2,0)--(2.5,.5) (2,2)--(2.5,2.5);
+\draw[fill=gray!18] (.5,.1)--(1.3,.5)--(1.3,2.4)--(.5,2)--cycle;
+\draw[fill=gray!12] (1.3,.5)--(2.4,.2)--(2.4,2.1)--(1.3,2.4)--cycle;
+\node at (2.1,1.55) {$\sigma$}; \node at (.65,1.6) {$\sigma$};
+\node at (1.2,-.45) {$O_h$};
+\end{tikzpicture}
+\caption{}
+\label{fig:93-40}
+\end{figure}
+
+All axes of a given order are equivalent and two-sided. Thus the 24 elements form five classes: $E$; eight rotations $C_3$ and $C_3^2$; six rotations $C_4$ and $C_4^3$; three rotations $C_4^2$; and six rotations $C_2$.
+
+\SourcePage{446}{449}
+\medskip
+\noindent XII. T h e  g r o u p $\boldsymbol{O}_h$
+
+This is the group of all symmetry transformations of a cube\footnote{The groups $\boldsymbol{T}$, $\boldsymbol{T}_d$, $\boldsymbol{T}_h$, $\boldsymbol{O}$, and $\boldsymbol{O}_h$ are called \emph{cubic}.}. It is obtained by adding a center of symmetry to $\boldsymbol{O}$: $\boldsymbol{O}_h=\boldsymbol{O}\times\boldsymbol{C}_i$. The threefold axes become sixfold rotation--reflection axes (the body diagonals of the cube); there also appear six symmetry planes through pairs of opposite edges and three planes parallel to the cube faces (Fig.~40). The group has 48 elements in ten classes obtained directly from those of $\boldsymbol{O}$. Five coincide with the classes of $\boldsymbol{O}$; the others are: $I$; eight rotation--reflection transformations $S_6$ and $S_6^5$; six transformations $C_4\sigma_h$, $C_4^3\sigma_h$ about the fourfold axes; three reflections $\sigma_h$ in planes horizontal relative to those axes; and six reflections $\sigma_v$ in planes vertical relative to them.
+
+\medskip
+\noindent XIII, XIV. T h e  g r o u p s $\boldsymbol{Y}$, $\boldsymbol{Y}_h$ (i c o s a h e d r a l  g r o u p s)
+
+Only exceptionally do these groups occur in nature as molecular symmetry groups. We therefore merely note that $\boldsymbol{Y}$ is the group of 60 rotations about the symmetry axes of an icosahedron (a regular 20-faced polyhedron with triangular faces) or a pentagonal dodecahedron (a regular 12-faced polyhedron with pentagonal faces): there are six fivefold, ten threefold, and fifteen twofold axes. Adding a center of symmetry gives $\boldsymbol{Y}_h=\boldsymbol{Y}\times\boldsymbol{C}_i$, the complete symmetry group of these polyhedra.
+
+This exhausts all possible types of point groups with finitely many elements. They must be supplemented by the so-called continuous point groups, containing infinitely many elements; these will be considered in \S~98.

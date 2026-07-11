@@ -1,0 +1,59 @@
+\SourcePage{364}{367}
+\section{Electronic terms of a diatomic molecule}
+
+Molecular theory rests crucially on the fact that atomic nuclei are much heavier than electrons. Because of this mass difference, nuclei move much more slowly in a molecule than electrons do. The electronic motion may therefore be considered with the nuclei fixed at prescribed separations. The energy levels $U_n$ of this system are called the molecule's \emph{electronic terms}. Unlike the energy levels of an atom, which are definite numbers, the electronic terms here are functions of parameters---the separations between the nuclei. The electrostatic interaction energy of the nuclei is also included in $U_n$, so that $U_n$ is, in essence, the total energy of the molecule for a specified arrangement of stationary nuclei.
+
+We begin the study of molecules with the simplest type, the \emph{diatomic} molecule, for which the theoretical analysis can be carried furthest. Its electronic terms depend on only one parameter, the internuclear distance $r$.
+
+One of the main principles used to classify atomic terms was classification by the total orbital angular momentum $L$. In a molecule, however, the total orbital angular momentum of the electrons is not in general conserved, since the electric field of several nuclei is not centrally symmetric.
+
+In a diatomic molecule the field does possess axial symmetry about the line through the two nuclei. The projection of the orbital angular momentum on this axis is therefore conserved, and the molecular electronic terms can be classified by its values. The magnitude of this projection is conventionally denoted by $\Lambda$, with values $0,1,2,\ldots$ Terms of different $\Lambda$ are denoted by capital Greek letters corresponding to the Latin symbols for atomic
+
+\SourcePage{365}{368}
+terms of different $L$. Thus, for $\Lambda=0,1,2$, the terms are called respectively $\Sigma$, $\Pi$, and $\Delta$ terms; larger values of $\Lambda$ seldom need be considered.
+
+Every electronic state of the molecule is further characterized by the total spin $S$ of all its electrons. If $S$ is nonzero, there is a $(2S+1)$-fold degeneracy with respect to the direction of the total spin\footnote{We disregard here the fine structure associated with relativistic interactions (see \S\S~83 and 84 below).}. As in atoms, the number $2S+1$ is called the \emph{multiplicity} of the term and is written at the upper left of the term symbol; for example, ${}^3\Pi$ denotes a term with $\Lambda=1$, $S=1$.
+
+Besides arbitrary rotations about the axis, the symmetry of the molecule permits reflection in any plane containing that axis. Such a reflection leaves the molecular energy unchanged, but the resulting state is not necessarily identical with the initial one. In fact, reflection in a plane containing the molecular axis reverses the component of angular momentum (an axial vector) along that axis. Hence every electronic term with $\Lambda\ne0$ is doubly degenerate: each energy corresponds to two states distinguished by the direction of the orbital-angular-momentum projection on the molecular axis. For $\Lambda=0$, reflection does not change the molecular state, and a $\Sigma$ term is not degenerate. Its wave function can only acquire a constant factor under reflection. Two successive reflections in the same plane give the identity transformation, so this factor must be $\pm1$. We must therefore distinguish $\Sigma$ terms whose wave functions are unchanged by reflection from those whose wave functions change sign. They are denoted by $\Sigma^+$ and $\Sigma^-$, respectively.
+
+For a molecule composed of two identical atoms there is a further symmetry and hence an additional characteristic of its electronic terms. A diatomic molecule with identical nuclei has a center of symmetry at the midpoint of the line joining the nuclei (we choose this point as the origin)\footnote{It also has a symmetry plane perpendicular to the molecular axis and bisecting it. There is no need to treat this symmetry element separately, since the presence of such a plane follows automatically from the existence of both a center and an axis of symmetry.}. The Hamiltonian is consequently invariant under a simultaneous reversal of the coordinates of all electrons in the molecule, while the nuclear coordinates remain un-
+
+\SourcePage{366}{369}
+changed. The operator of this transformation\footnote{It must not be confused with inversion of the coordinates of all particles in the system (cf. \S~86).} also commutes with the orbital-angular-momentum operator. Terms with a definite $\Lambda$ can therefore be classified by parity as well: the wave function of an \emph{even} ($g$) state is unchanged when the signs of the electronic coordinates are reversed, whereas that of an \emph{odd} ($u$) state changes sign. The parity suffixes $u,g$ are written below the term symbol, as in $\Pi_u$, $\Pi_g$, and so forth.
+
+Empirically, the normal electronic state of the overwhelming majority of chemically stable diatomic molecules is completely symmetric: the electronic wave function is invariant under every symmetry transformation of the molecule. In most cases the total spin $S$ is also zero in the normal state. In other words, the ground term of a molecule is ${}^1\Sigma^+$, and for a molecule of identical atoms it is ${}^1\Sigma_g^+$. Familiar exceptions are $\mathrm O_2$, whose normal term is ${}^3\Sigma_g^-$, and $\mathrm{NO}$, whose normal term is ${}^2\Pi$.
+
+\ProblemHeading Separate the variables in the Schrödinger equation for the electronic terms of the $\mathrm H_2^+$ ion, using elliptic coordinates.
+
+\SolutionHeading The Schrödinger equation for an electron in the field of two fixed protons is
+\[
+ \frac{\Delta\psi}{2}+\left(E+\frac1{r_1}+\frac1{r_2}\right)\psi=0
+\]
+(atomic units are used). The elliptic coordinates are defined by
+\[
+ \xi=\frac{r_1+r_2}{R},\qquad \eta=\frac{r_2-r_1}{R},\qquad
+1\leqslant\xi<\infty,\quad -1\leqslant\eta\leqslant1,
+\]
+and the third coordinate is the angle $\varphi$ of rotation about the axis through the two nuclei, whose separation is $R$ (see I, \S~48). In these coordinates the Laplace operator is
+\[
+ \Delta=\frac4{R^2(\xi^2-\eta^2)}\left[
+ \frac{\partial}{\partial\xi}\left[(\xi^2-1)\frac{\partial}{\partial\xi}\right]
+ +\frac{\partial}{\partial\eta}\left[(1-\eta^2)\frac{\partial}{\partial\eta}\right]
+ \right]+\frac1{R^2(\xi^2-1)(1-\eta^2)}\frac{\partial^2}{\partial\varphi^2}.
+\]
+Putting
+\[
+ \psi=X(\xi)Y(\eta)e^{i\Lambda\varphi},
+\]
+we obtain the following equations for $X$ and $Y$:
+\[
+ \frac d{d\xi}\left[(\xi^2-1)\frac{dX}{d\xi}\right]
+ +\left(\frac{ER^2\xi^2}{2}+2R\xi+A-\frac{\Lambda^2}{\xi^2-1}\right)X=0,
+\]
+\[
+ \frac d{d\eta}\left[(1-\eta^2)\frac{dY}{d\eta}\right]
+ +\left(-\frac{ER^2\eta^2}{2}-A-\frac{\Lambda^2}{1-\eta^2}\right)Y=0,
+\]
+
+\SourcePage{367}{370}
+where $A$ is the separation parameter. Each electronic term $E(R)$ is characterized by three quantum numbers: $\Lambda$ and two ``elliptic quantum numbers'' $n_\xi$, $n_\eta$, which specify the numbers of zeros of $X(\xi)$ and $Y(\eta)$.

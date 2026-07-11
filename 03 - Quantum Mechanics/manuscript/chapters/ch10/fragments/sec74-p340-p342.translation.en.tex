@@ -1,0 +1,41 @@
+\SourcePage{340}{343}
+\section{X-ray terms}
+
+The binding energy of the inner electrons in an atom is so large that, if such an electron passes into an unfilled outer shell (or is removed from the atom altogether), the excited atom (or ion) is mechanically unstable against ionization accompanied by rearrangement of the electron shell and formation of a stable ion. Nevertheless, because electron interactions in the atom are relatively weak, the probability of this transition is rather small, and the lifetime $\tau$ of the excited state is long. The level ``width'' $\hbar/\tau$ (see \S~44) is consequently small enough for the energies of an atom with an excited inner electron to be regarded as discrete energy levels of quasistationary atomic states. These levels are called \emph{X-ray terms}\footnote{The name reflects the fact that transitions between these levels cause the atom to emit X-rays.}.
+
+X-ray terms are classified first by specifying the shell from which the electron has been removed, or in which, as one says, a hole has been formed. The electron's destination has almost no effect on the atomic energy and is therefore immaterial.
+
+The total angular momentum of the electrons filling a shell is zero. Removal of one electron leaves the shell with an angular momentum $j$. For a shell $(n,l)$, $j$ can take the values $l\pm1/2$. The resulting levels could thus be denoted $1s_{1/2}$, $2s_{1/2}$, $2p_{1/2}$, $2p_{3/2}$,~\ldots, with $j$ written as a subscript on the symbol specifying the hole's location. Special symbols are, however, conventionally used, with the correspondence
+\[
+\begin{array}{ccccccccc}
+1s_{1/2}&2s_{1/2}&2p_{1/2}&2p_{3/2}&3s_{1/2}&3p_{1/2}&3p_{3/2}&3d_{3/2}&3d_{5/2}\\
+K&L_{\mathrm I}&L_{\mathrm{II}}&L_{\mathrm{III}}&M_{\mathrm I}&M_{\mathrm{II}}&M_{\mathrm{III}}&M_{\mathrm{IV}}&M_{\mathrm V}
+\end{array}
+\]
+Levels with $n=4,5,6$ are similarly denoted by the letters $N,O,P$.
+
+Levels with the same $n$, denoted by the same capital letter, lie close together and far from levels having other values of $n$. This is because the relative proximity of the inner electrons to the nucleus makes their field nearly the unscreened nuclear field. Their states are therefore hydrogen-like, and
+
+\SourcePage{341}{344}
+to first approximation their energy is $-Z^2/2n^2$ (in atomic units), so it depends only on $n$.
+
+Allowance for relativistic effects separates terms having different $j$ (compare the discussion of the fine structure of hydrogen levels in \S~72), for example $L_{\mathrm I}$ and $L_{\mathrm{II}}$ from $L_{\mathrm{III}}$, and $M_{\mathrm I}$ and $M_{\mathrm{II}}$ from $M_{\mathrm{III}}$ and $M_{\mathrm{IV}}$. Such pairs are called \emph{relativistic doublets}.
+
+The separation of terms with different $l$ but the same $j$ (for example, $L_{\mathrm I}$ from $L_{\mathrm{II}}$, or $M_{\mathrm I}$ from $M_{\mathrm{II}}$) is due to the departure of the inner-electron field from the Coulomb field of the nucleus, i.e. to the electron's interaction with the other electrons. These doublets are called \emph{screening doublets}. The leading correction to the electron's hydrogen-like energy comes from the potential produced by the other electrons near the nucleus; it is proportional to $Z^{4/3}$ (see (70.8)). Since this correction depends on neither $n$ nor $l$, however, it does not affect the intervals between levels. The leading corrections to level differences are therefore associated with the interaction of one electron with those nearest to it. The distances between inner electrons are $r\sim1/Z$ (the Bohr radius in a field of charge $Z$), so this interaction energy is $\sim1/r\sim Z$. To this accuracy an X-ray term energy may thus be written $-(Z-\delta)^2/2n^2$, where $\delta=\delta(n,l)$ is small compared with $Z$ and may be regarded as a measure of screening of the nuclear charge.
+
+Besides X-ray terms with one hole in the electron shells, terms with two and three holes may also exist. Since the spin--orbit interaction is strong for inner electrons, the holes are coupled to one another according to $jj$ coupling.
+
+The width of an X-ray term is determined by the total probability of all possible electron-shell rearrangements that fill the given hole. In heavy atoms the principal processes are transitions of the hole from the given shell to a higher one (that is, reverse electron transitions), accompanied by emission of an X-ray quantum. The probabilities of these radiative transitions, and hence the corresponding part of the level width, increase very rapidly, as $Z^4$, with atomic number, but at fixed $Z$ decrease in passing from deeper to less deep levels.
+
+For lighter atoms, and for higher levels, an important or even predominant part is played by
+
+\SourcePage{342}{345}
+nonradiative transitions, in which the energy released when the hole is filled by an electron from a higher level is used to eject another inner electron from the atom (the \emph{Auger effect}); the atom is then left with two holes. To first approximation in $1/Z$, the probabilities of these processes and their contribution to the level width do not depend on atomic number (see the problem)\footnote{For example, the Auger width of the $K$ level is about 1 eV, while for higher levels it reaches values of about 10 eV.}.
+
+\ProblemHeading Find the limiting dependence of the Auger width of X-ray terms on atomic number when the latter is sufficiently large.
+
+\SolutionHeading The probability of an Auger transition is proportional to the square of a matrix element of the form
+\[
+ M=\iint\psi_1'^*\psi_2'^*V\psi_1\psi_2\,dV_1dV_2,
+\]
+where $\psi_1$, $\psi_2$ and $\psi'_1$, $\psi'_2$ are the initial and final wave functions of the two electrons taking part in the transition, and $V=e^2/r_{12}$ is their interaction energy. For sufficiently large $Z$, the wave functions of the inner electrons may be treated as hydrogen-like and the screening of the nuclear field by the other electrons neglected (the wave function of the ionized electron is likewise hydrogen-like in the region deep inside the atom that is important for the integral $M$). If the calculation is made with all quantities expressed in Coulomb units (see \S~36), the only $Z$-dependent quantity in $M$ is $V=e^2/r_{12}=1/Zr_{12}$, and hence $M\sim1/Z$. The transition probability, and with it the Auger width $\Delta E$, is proportional to $Z^{-2}$. Returning to ordinary units (the Coulomb unit of energy is $Z^2me^4/\hbar^2$), we find that $\Delta E$ is independent of $Z$.

@@ -1,0 +1,87 @@
+\SourcePage{468}{471}
+\section{Continuous groups}
+
+Besides the finite point groups listed in \S~93, there are \emph{continuous point groups} having infinitely many elements. These are the groups of \emph{axial} and \emph{spherical} symmetry.
+
+The simplest axial-symmetry group is $C_\infty$, which contains rotations $C(\varphi)$ through an arbitrary angle $\varphi$ about the symmetry axis (it is called the \emph{two-dimensional rotation group}). It can be regarded as the limiting case of the groups $C_n$ as $n\to\infty$. In the same way, the continuous groups $C_{\infty h}$, $C_{\infty v}$, $D_\infty$, and $D_{\infty h}$ arise as limiting cases of $C_{nh}$, $C_{nv}$, $D_n$, and $D_{nh}$.
+
+A molecule has axial symmetry only when all its atoms lie on one straight line. If it is not symmetric with respect to its midpoint, its point group is $C_{\infty v}$; in addition to rotations about the axis, this group contains reflections $\sigma_v$ in every plane through the axis. If the molecule is symmetric with respect to its midpoint, its point group is $D_{\infty h}=C_{\infty v}\times C_i$. The groups $C_\infty$, $C_{\infty h}$, and $D_\infty$, on the other hand, cannot be realized at all as molecular symmetry groups.
+
+The group of full spherical symmetry contains rotations through arbitrary angles about every axis through the center, and reflections in every plane through the same point. This group, denoted by $K_h$, is the symmetry group of an isolated atom. As a subgroup it contains $K$, the group of all spatial rotations (called the three-dimensional rotation group, or simply the \emph{rotation group}). The group $K_h$ is obtained by adjoining a center of symmetry to $K$ ($K_h=K\times C_i$).
+
+The elements of a continuous point group can be distinguished by one or more parameters ranging continuously over their possible values. For the rotation group, for example, three Euler angles specifying a rotation of the coordinate system may be used as parameters.
+
+The general properties of finite groups described in \S~92, and the associated concepts (subgroups, conjugate elements, classes, and so forth), extend directly to continuous groups. Statements tied directly to the order of a group naturally cease to apply; one example is the assertion that the order of a subgroup divides the order of the group.
+
+In $C_{\infty v}$ all symmetry planes are equivalent, so all reflections $\sigma_v$ form a single class containing a continuous
+
+\SourcePage{469}{472}
+set of elements. The symmetry axis is two-sided, and there is consequently a continuous set of classes, each containing the two elements $C(\pm\varphi)$. Since $D_{\infty h}=C_{\infty v}\times C_i$, the classes of $D_{\infty h}$ follow directly from those of $C_{\infty v}$.
+
+In the rotation group $K$ all axes are equivalent and two-sided. Its classes therefore consist of rotations through a prescribed absolute angle $|\varphi|$ about any axis. The classes of $K_h$ follow directly from those of $K$.
+
+The concept of representations, reducible and irreducible, likewise extends directly to continuous groups. Each irreducible representation contains a continuous set of matrices, whereas the number of basis functions transformed into one another (the dimension of the representation) is finite. These functions can always be chosen so that the representation is unitary. A continuous group has infinitely many different irreducible representations, but they form a discrete sequence and can therefore be enumerated consecutively. Orthogonality relations hold for their matrix elements and characters, generalizing the corresponding relations for finite groups. In place of (94.9) we now have
+\begin{equation}
+ \int G_{ik}^{(\alpha)}G_{lm}^{(\beta)*}\,d\tau_G
+ =\frac1{f_\alpha}\delta_{\alpha\beta}\delta_{il}\delta_{km}\int d\tau_G,
+ \tag{98.1}
+\end{equation}
+and in place of (94.10),
+\begin{equation}
+ \int\chi^{(\alpha)}(G)\chi^{(\beta)}(G)^*\,d\tau_G
+ =\delta_{\alpha\beta}\int d\tau_G.
+ \tag{98.2}
+\end{equation}
+The integration in these formulas is the so-called invariant integration over the group. The integration element $d\tau_G$ is expressed in terms of the group parameters and their differentials in such a way that every group transformation carries it back into the same integration element\footnote{The stated properties of irreducible representations of continuous groups require convergence of the integrals (98.1) and (98.2); in particular, the ``group volume'' $\int d\tau_G$ must be finite. This condition holds for continuous point groups. It does not hold, for example, for the so-called Lorentz group, which will occur in relativistic theory.}. For the rotation group one may take $d\tau_G=\sin\beta\,d\alpha\,d\beta\,d\gamma$, where $\alpha$, $\beta$, and $\gamma$ are the Euler angles defining the rotation of the coordinate system (\S~58); then $\int d\tau_G=8\pi^2$.
+
+We have in substance already found the irreducible representations of the three-dimensional rotation group (without using group-theoretical
+
+\SourcePage{470}{473}
+terminology), when determining the eigenvalues and eigenfunctions of the total angular momentum. The angular-momentum component operators coincide, apart from a constant factor, with the operators of infinitesimal rotations\footnote{In mathematical terminology these operators are called the \emph{generators} of the rotation group.}, and the angular-momentum eigenvalues characterize the behavior of the wave functions under spatial rotations. An angular-momentum value $j$ has $2j+1$ distinct eigenfunctions $\psi_{jm}$, distinguished by the values $m$ of the angular-momentum projection and belonging to one $(2j+1)$-fold degenerate energy level. Rotations of the coordinate system transform these functions into one another, so that they realize an irreducible representation of the rotation group. In group-theoretical terms, therefore, the numbers $j$ enumerate the irreducible representations of the rotation group, with one $(2j+1)$-dimensional representation for every $j$. Since $j$ takes integral and half-integral values, the representation dimension $2j+1$ takes all positive integral values $1,2,3,\ldots$
+
+The basis functions of these representations were already examined in substance in \S\S~56 and 57 (and the representation matrices were found in \S~58). A basis for the representation with given $j$ is formed by the $2j+1$ independent components of a symmetric spinor of rank $2j$ (equivalently, by the set of $2j+1$ functions $\psi_{jm}$).
+
+The irreducible representations of the rotation group associated with half-integral $j$ have an essential special feature. Under a rotation through $2\pi$, their basis functions (the components of a spinor of odd rank) change sign. A $2\pi$ rotation, however, is the identity element of the group. It follows that the representations with half-integral $j$ are, as one says, \emph{double-valued}: in such a representation every group element (a rotation through an angle $\varphi$, $0\leqslant\varphi\leqslant2\pi$, about some axis) corresponds not to one matrix but to two matrices whose characters have opposite signs\footnote{Strictly, double-valued representations are not representations of a group in the true sense, since they are realized by multivalued basis functions; see also \S~99.}.
+
+As noted already, an isolated atom has the symmetry $K_h=K\times C_i$. In group-theoretical terms, each atomic term is therefore associated with an irreducible representation of the rotation group $K$ (which specifies the value
+
+\SourcePage{471}{474}
+of the total atomic angular momentum $J$) and with an irreducible representation of $C_i$ (which specifies the parity of the state)\footnote{The atomic Hamiltonian is also invariant under permutations of the electrons. In the nonrelativistic approximation the coordinate and spin wave functions separate, and one can speak of representations of the permutation group realized by the coordinate functions. Specification of an irreducible representation of the permutation group determines the total atomic spin $S$ (see \S~63). When relativistic interactions are included, the wave function cannot be separated into coordinate and spin parts. Symmetry under simultaneous permutations of the particle coordinates and spins supplies no characteristic of a term, because the Pauli principle permits only total wave functions antisymmetric in all electrons. Correspondingly, when relativistic interactions are included, spin is not, strictly speaking, conserved (only the total angular momentum $J$ is conserved).}.
+
+When an atom is placed in an external electric field, its energy levels split. The number of distinct resulting levels and the symmetry of their states can be determined by the method of \S~96. For this purpose, the reducible $(2J+1)$-dimensional representation of the symmetry group of the external field, realized by the functions $\psi_{JM}$, must be decomposed into irreducible representations of that group. This requires the characters of the representation realized by $\psi_{JM}$. Since the characters of elements in the same class are equal, it is enough to consider rotations about one axis, chosen as the $z$ axis. Under a rotation through $\varphi$ about $z$, the wave functions $\psi_{JM}$ are multiplied by $e^{iM\varphi}$, where $M$ is the angular-momentum projection on that axis. Hence the transformation matrix of the functions $\psi_{JM}$ is diagonal, with character
+\[
+ \chi^{(J)}(\varphi)=\sum_{M=-J}^{J}e^{iM\varphi}
+ =\frac{e^{i(J+1)\varphi}-e^{-iJ\varphi}}{e^{i\varphi}-1},
+\]
+or\footnote{To avoid misunderstanding, we emphasize that this formula uses a parametrization of the group elements different from parametrization by Euler angles: a transformation is specified by the direction of the rotation axis and the angle $\varphi$ about it. It can be shown that with this parametrization, integration in (98.2), for example, must use $2(1-\cos\varphi)\,d\varphi\,do$, where $do$ is the solid-angle element for the direction of the rotation axis.}
+\begin{equation}
+ \chi^{(J)}(\varphi)=\frac{\sin(J+1/2)\varphi}{\sin(\varphi/2)}.
+ \tag{98.3}
+\end{equation}
+Under inversion $I$, however, all functions $\psi_{JM}$ with different $M$ behave alike: they are multiplied by $+1$ or $-1$ according as the atomic state is even or odd.
+
+\SourcePage{472}{475}
+Consequently,
+\begin{equation}
+ \chi^{(J)}(I)=\pm(2J+1).
+ \tag{98.4}
+\end{equation}
+Finally, the characters for reflection in a plane $\sigma$ and for a rotation-reflection through an angle $\varphi$ are calculated by expressing these symmetry operations as
+\[
+ \sigma=IC_2,\qquad S(\varphi)=IC(\pi+\varphi).
+\]
+
+We shall also consider the irreducible representations of the axial-symmetry group $C_{\infty v}$. This question was in substance already answered when we classified the electronic terms of a diatomic molecule, whose symmetry is precisely $C_{\infty v}$ when the two atoms differ. The $0^+$ and $0^-$ terms (terms with $\Omega=0$) correspond to two one-dimensional representations: the identity representation $A_1$, and $A_2$, in which the basis function is invariant under all rotations and changes sign under reflection in the planes $\sigma_v$. The doubly degenerate terms with $\Omega=1,2,\ldots$ correspond to two-dimensional representations denoted by $E_1,E_2,\ldots$ Under a rotation through $\varphi$ about the axis their basis functions are multiplied by $e^{\pm i\Omega\varphi}$, while reflection in a plane $\sigma_v$ interchanges them. The characters of all these representations are
+\begin{equation}
+\begin{array}{c|ccc}
+ C_{\infty v}&E&2C(\varphi)&\infty\sigma_v\\ \hline
+ A_1&1&1&1\\
+ A_2&1&1&-1\\
+ E_k&2&2\cos k\varphi&0
+\end{array}
+\tag{98.5}
+\end{equation}
+The irreducible representations of $D_{\infty h}=C_{\infty v}\times C_i$ follow directly from those of $C_{\infty v}$ (and correspond to the classification of the terms of a diatomic molecule with identical nuclei).
+
+If half-integral values are taken for $\Omega$, the functions $e^{\pm i\Omega\varphi}$ realize double-valued irreducible representations of $C_{\infty v}$, corresponding to molecular terms with half-integral spin\footnote{Unlike the three-dimensional rotation group, here one could obtain not only single- and double-valued representations but also triple-valued and higher representations by a suitable choice of fractional $\Omega$. The physically possible eigenvalues of angular momentum, as the operator of a three-dimensional infinitesimal rotation, are determined by representations of the three-dimensional rotation group itself. Thus triple-valued and higher representations of the two-dimensional rotation group (and of any finite symmetry group), although they can be defined mathematically, have no physical meaning.}.
+

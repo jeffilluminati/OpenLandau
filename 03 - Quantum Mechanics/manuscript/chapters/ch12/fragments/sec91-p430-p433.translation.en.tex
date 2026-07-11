@@ -1,0 +1,108 @@
+\SourcePage{430}{433}
+\section{Symmetry transformations}
+
+As in the diatomic case, the classification of the terms of a polyatomic molecule is closely connected with its symmetry. We therefore begin by studying the kinds of symmetry a molecule may possess.
+
+The symmetry of a body is specified by the collection of motions that bring the body into coincidence with itself; these motions are called \emph{symmetry transformations}. Every possible symmetry transformation can be represented as a combination of one or more of three basic types. These three essentially distinct types are: a \emph{rotation} of the body through a definite angle about an axis, a \emph{reflection} in a plane, and a \emph{translation} of the body through some distance. Of these, the last type can clearly occur only for an unbounded medium (a crystal lattice). A body of finite dimensions (in particular, a molecule) can be symmetric only under rotations and reflections.
+
+If a body coincides with itself after a rotation through $2\pi/n$ about an axis, that axis is called an \emph{$n$-fold symmetry axis}. The number $n$ may have any integral value $n=2,3,\ldots$; $n=1$ corresponds to a rotation through $2\pi$, or equivalently through zero, and hence to the identity transformation. We denote the operation of rotation through $2\pi/n$ about the given axis by $C_n$. Repeating this operation two, three, \ldots times gives rotations through $2(2\pi/n),3(2\pi/n),\ldots$, which likewise bring the body into coincidence with itself; these rotations may be denoted by $C_n^2,C_n^3,\ldots$ Clearly, if $n$ is divisible by $p$, then
+\begin{equation}
+C_n^p=C_{n/p}.
+\tag{91.1}
+\end{equation}
+In particular, after performing the rotation $n$ times we return to the initial position, i.e. carry out the \emph{identity transformation}; the latter is conventionally denoted by $E$, so that
+\begin{equation}
+C_n^n=E.
+\tag{91.2}
+\end{equation}
+
+\SourcePage{431}{434}
+If a body coincides with itself after reflection in a plane, that plane is called a \emph{plane of symmetry}. We denote the operation of reflection in a plane by $\sigma$. Evidently, two successive reflections in the same plane give the identity transformation,
+\begin{equation}
+\sigma^2=E.
+\tag{91.3}
+\end{equation}
+
+The combined application of a rotation and a reflection leads to the so-called \emph{rotation--reflection axes}. A body has an $n$-fold rotation--reflection axis if it coincides with itself after rotation through $2\pi/n$ about this axis followed by reflection in a plane perpendicular to the axis (Fig.~32). It is readily seen that this is a new kind of symmetry only when $n$ is even. Indeed, if $n$ is odd, repeating the rotation--reflection transformation $n$ times is equivalent simply to reflection in the plane perpendicular to the axis (the total angle of rotation is $2\pi$, while an odd number of reflections in the same plane is a single reflection). Repeating the transformation a further $n$ times shows that the rotation--reflection axis reduces to the simultaneous presence of an independent $n$-fold symmetry axis and a plane of symmetry perpendicular to it. If $n$ is even, however, $n$ repetitions of the rotation--reflection transformation return the body to its initial position.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[line width=.45pt,scale=.85]
+ \draw (-2.0,0)--(1.4,0)--(2.3,.75)--(-1.1,.75)--cycle;
+ \draw (0,-2.1)--(0,2.0);
+ \draw[dashed] (0,-2.1)--(0,-.05) (0,.75)--(0,2.0);
+ \fill (0,.38) circle (1.1pt) node[left] {$O$};
+ \filldraw[fill=white] (0,1.55) circle (1.4pt) node[right] {$P$};
+ \filldraw[fill=white] (0,-1.7) circle (1.4pt) node[right] {$P'$};
+ \draw[dashed] (0,1.55) arc[start angle=90,end angle=15,radius=.7];
+ \node at (.72,1.25) {$2\pi/n$};
+ \draw (.05,-1.25)--(.4,-1.45);
+\end{tikzpicture}
+\caption{}
+\label{fig:91-32}
+\end{figure}
+
+We denote a rotation--reflection transformation by $S_n$. Denoting reflection in the plane perpendicular to the given axis by $\sigma_h$, we may write, by definition,
+\begin{equation}
+S_n=C_n\sigma_h=\sigma_hC_n
+\tag{91.4}
+\end{equation}
+(the order in which $C_n$ and $\sigma_h$ are performed clearly does not affect the result).
+
+An important special case is a twofold rotation--reflection axis. A rotation through $\pi$ followed by reflection in a plane perpendicular to the rotation axis is readily seen to constitute the transformation of \emph{inversion}: a point $P$ of the body is carried into a point $P'$ on the continuation of the line joining $P$ to the point $O$ where the axis meets the plane, with $OP=OP'$.
+
+\SourcePage{432}{435}
+A body symmetric under this transformation is said to possess a center of symmetry (we denote inversion by $I$):
+\begin{equation}
+I\equiv S_2=C_2\sigma_h.
+\tag{91.5}
+\end{equation}
+It is also evident that $I\sigma_h=C_2$ and $IC_2=\sigma_h$; in other words, a twofold axis, a plane of symmetry perpendicular to it, and a center of symmetry at their intersection are mutually dependent: the presence of any two automatically entails the third.
+
+We now state several purely geometrical properties of rotations and reflections that are useful in studying the symmetry of bodies.
+
+The product of two rotations about axes intersecting at a point is a rotation about a third axis through the same point. The product of two reflections in intersecting planes is equivalent to a rotation; its axis clearly coincides with the line in which the planes intersect, and a simple geometrical construction shows that its angle is twice the angle between them. Denote rotation through an angle $\varphi$ about the axis by $C(\varphi)$ and reflections in two planes containing the axis by $\sigma_v$ and $\sigma'_v$\footnote{The subscript $v$ conventionally distinguishes reflection in a plane containing the given axis (a ``vertical'' plane), while $h$ denotes reflection in a plane perpendicular to the axis (a ``horizontal'' plane).}. The statement can then be written
+\begin{equation}
+\sigma_v\sigma'_v=C(2\varphi),
+\tag{91.6}
+\end{equation}
+where $\varphi$ is the angle between the two planes. The order of the two reflections is important: $\sigma_v\sigma'_v$ gives a rotation directed from the plane $\sigma'_v$ toward $\sigma_v$, whereas interchanging the factors gives rotation in the opposite direction. Multiplying (91.6) from the left by $\sigma_v$, we obtain
+\begin{equation}
+\sigma'_v=\sigma_vC(2\varphi);
+\tag{91.7}
+\end{equation}
+thus, the product of a rotation and reflection in a plane containing its axis is equivalent to reflection in another plane meeting the first at an angle equal to half the angle of rotation. It follows in particular that a twofold symmetry axis and two mutually perpendicular planes of symmetry containing it are mutually dependent: the presence of two requires the third.
+
+\SourcePage{433}{436}
+We shall show that the product of rotations through $\pi$ about two axes meeting at an angle $\varphi$ ($Oa$ and $Ob$ in Fig.~33) is a rotation through $2\varphi$ about an axis perpendicular to both ($PP'$ in Fig.~33). It is clear in advance that the resulting transformation is also a rotation. After the first rotation (about $Oa$), the point $P$ goes to $P'$, and after the second (about $Ob$) it returns to its initial position. The line $PP'$ therefore remains fixed and is consequently the rotation axis. To determine the angle of rotation, it suffices to note that the axis $Oa$ remains fixed during the first rotation and is carried by the second into the position $Oa'$, which makes an angle $2\varphi$ with $Oa$. The same argument shows that reversing the order of the two transformations gives a rotation in the opposite direction.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[line width=.45pt,scale=.9]
+ \draw (-2,0)--(1.7,0)--(2.5,.8)--(-1.2,.8)--cycle;
+ \draw (0,-1.6)--(0,2.0);
+ \filldraw[fill=white] (0,1.75) circle (1.3pt) node[right] {$P$};
+ \filldraw[fill=white] (0,-1.4) circle (1.3pt) node[right] {$P'$};
+ \fill (0,.4) circle (1pt) node[left] {$O$};
+ \draw (0,.4)--(1.2,.65) node[right] {$b$};
+ \draw (0,.4)--(.95,.12) node[right] {$a$};
+ \draw (0,.4)--(.65,.9) node[above] {$a'$};
+ \draw (.42,.5) arc[start angle=14,end angle=40,radius=.42];
+ \draw (.43,.49) arc[start angle=40,end angle=72,radius=.43];
+ \node at (.63,.43) {$\varphi$}; \node at (.42,.72) {$\varphi$};
+\end{tikzpicture}
+\caption{}
+\label{fig:91-33}
+\end{figure}
+
+Although the result of two successive transformations generally depends on their order, in a number of cases the order is immaterial: the transformations commute. This occurs for the following transformations:
+
+1) two rotations about the same axis;
+
+2) two reflections in mutually perpendicular planes (they are equivalent to a rotation through $\pi$ about the line in which the planes intersect);
+
+3) two rotations through $\pi$ about mutually perpendicular axes (they are equivalent to a rotation through the same angle about the third perpendicular axis);
+
+4) a rotation and reflection in a plane perpendicular to the rotation axis;
+
+5) any rotation (or reflection) and inversion in a point lying on the rotation axis (or in the reflection plane); this follows from 1) and 4).

@@ -1,0 +1,102 @@
+\SourcePage{308}{311}
+\section{Electron states in atoms}
+
+An atom with more than one electron is a complicated system of mutually interacting electrons moving in the field of the nucleus. Strictly speaking, only states of the system as a whole can be considered. Nevertheless, the state of each electron separately can be defined to good accuracy as a stationary state of electron motion in an effective centrally symmetric field produced by the nucleus together with all the other electrons. These fields are generally different for different electrons in the atom. They must all be determined simultaneously, since each depends on the states of all the others. Such a field is called \emph{self-consistent}.
+
+Because the self-consistent field is centrally symmetric, each electron state is characterized by a definite orbital angular momentum $l$. The states of an individual electron for fixed $l$ are numbered, in order of increasing energy, by the \emph{principal quantum number} $n$, whose values are $n=l+1,l+2,\ldots$; this numbering follows the convention for hydrogen. In many-electron atoms, however, levels with different $l$ do not generally occur in the same energy order as in hydrogen. In hydrogen the energy is independent of $l$, so states with larger $n$ always have higher energy. In a many-electron atom, by contrast, the level $n=5$, $l=0$, for example, lies below the level $n=4$, $l=2$ (see \S~73 for further discussion).
+
+States of individual electrons with different $n$ and $l$ are conventionally denoted by a symbol consisting of a numeral giving the principal quantum number and a letter giving $l$.\footnote{Another common terminology describes electrons with principal quantum numbers $n=1,2,3,\ldots$ as electrons of the $K$, $L$, $M$, \ldots shells, respectively (see \S~74).} Thus $4d$ denotes the state $n=4$, $l=2$. A complete specification of an atomic state requires both the total $L,S,J$ and a listing of the states of all its electrons. Thus $1s\,2p\,{}^3P_0$ denotes a helium state with $L=1$, $S=1$, $J=0$, in which the two electrons occupy
+
+\SourcePage{309}{312}
+the $1s$ and $2p$ states. If several electrons have the same $l$ and $n$, this is indicated compactly by an exponent; thus $3p^2$ denotes two electrons in $3p$ states. The distribution of the electrons of an atom among states with different $l,n$ is called its \emph{electron configuration}.
+
+For given $n$ and $l$, an electron may have different projections of orbital angular momentum, $m$, and spin, $\sigma$, on the $z$ axis. For fixed $l$, $m$ takes $2l+1$ values, while $\sigma$ is restricted to the two values $\pm1/2$. There are consequently $2(2l+1)$ different states with the same $n,l$; these states are called \emph{equivalent}. By the Pauli principle, each can contain one electron. Thus no more than $2(2l+1)$ electrons in an atom can simultaneously have the same $n,l$. A set of electrons occupying all the states with specified $n,l$ is called a \emph{closed shell} of that type.
+
+The differences between the energies of atomic levels having different $L,S$ but the same electron configuration\footnote{The fine structure of each multiplet level is disregarded here.} arise from the electrostatic interaction of the electrons. Usually these energy differences are relatively small, several times smaller than the separations of levels belonging to different configurations. The ordering of levels with the same configuration but different $L,S$ is described by the following empirically established \emph{Hund rule} (F.~Hund, 1925):
+
+\emph{The term of lowest energy is the one with the greatest value of $S$ permitted by the electron configuration and the greatest value of $L$ permitted for that $S$.}\footnote{The requirement that $S$ be maximal may be justified as follows. Consider, for example, a system of two electrons. Here $S$ may be 0 or 1, and spin 1 corresponds to an antisymmetric coordinate wave function $\varphi(\mathbf r_1,\mathbf r_2)$. This function vanishes when $\mathbf r_1=\mathbf r_2$; in other words, in the $S=1$ state the probability of finding the two electrons near one another is small. Their electrostatic repulsion, and hence their energy, is therefore relatively smaller. Similarly, for a system of several electrons, the greatest spin corresponds to the ``most antisymmetric'' coordinate wave function.}
+
+We now show how to find the atomic terms allowed for a given electron configuration. If the electrons are inequivalent, the possible $L,S$ follow directly from the rule for addition of angular momenta. Thus for the configuration $np,n'p$, with $n\ne n'$, the total $L$ can be 2, 1, or 0 and the total spin $S$ can be 0 or 1; combination of these values gives the terms ${}^{1/3}S$, ${}^{1/3}P$, and ${}^{1/3}D$.
+
+\SourcePage{310}{313}
+For equivalent electrons, however, the Pauli principle imposes restrictions. Consider a configuration of three equivalent $p$ electrons. For $l=1$ (a $p$ state), the orbital projection $m$ may be $1,0,-1$, giving six states with the following pairs $m,\sigma$:
+\[
+\begin{array}{lll}
+\mathrm a)&1,,1/2,&\mathrm b)\ 0,,1/2\qquad \mathrm c)\ -1,,1/2,\\
+\mathrm a')&1,,-1/2,&\mathrm b')\ 0,,-1/2\qquad \mathrm c')\ -1,,-1/2.
+\end{array}
+\]
+The three electrons can be placed one apiece in any three of these states. The resulting atomic states have the following projections $M_L=\sum m$ and $M_S=\sum\sigma$ of the total orbital angular momentum and spin:
+\[
+\begin{array}{lll}
+\mathrm a+\mathrm a'+\mathrm b)&2,,1/2,&
+\mathrm a+\mathrm a'+\mathrm c)\ 1,,1/2,
+\quad \mathrm a+\mathrm b+\mathrm c)\ 0,,3/2,\\
+&&\mathrm a+\mathrm b+\mathrm b')\ 1,,1/2,
+\quad \mathrm a+\mathrm b+\mathrm c')\ 0,,1/2,\\
+&&\mathrm a+\mathrm b'+\mathrm c)\ 0,,1/2,\\
+&&\mathrm a'+\mathrm b+\mathrm c)\ 0,,1/2.
+\end{array}
+\]
+(States with negative $M_L,M_S$ need not be written, since they add nothing new.) The existence of a state with $M_L=2$, $M_S=1/2$ shows that a ${}^2D$ term must occur; one state of each of $(1,1/2)$ and $(0,1/2)$ must also belong to this term. One state $(1,1/2)$ then remains, so there must be a ${}^2P$ term; one of the $(0,1/2)$ states also belongs to it. Finally, the remaining states $(0,3/2)$ and $(0,1/2)$ belong to a ${}^4S$ term. Thus a configuration of three equivalent $p$ electrons permits exactly one term of each type ${}^2D$, ${}^2P$, and ${}^4S$.
+
+Table~1 lists the possible terms for various configurations of equivalent $p$ and $d$ electrons. A number beneath a term symbol gives the number of terms of that type when it exceeds one. A configuration containing the greatest possible number of equivalent electrons ($s^2,p^6,d^{10},\ldots$) always has the single term ${}^1S$. Notice that the sets of terms are identical for two configurations when the number of electrons in one equals the number lacking from the other to complete the shell. This follows directly because the absence of an electron from a shell can be treated as a \emph{hole}, whose state is specified by the same quantum numbers as the state of the missing electron.
+
+\SourcePage{311}{314}
+In applying Hund's rule to determine the normal term of an atom from its known electron configuration, only the unfilled shell need be considered, since the angular momenta of electrons in filled shells cancel. Suppose, for example, that an atom has four $d$ electrons outside its closed shells. The magnetic quantum number of a $d$ electron can take the five values $0,\pm1,\pm2$. All four electrons can therefore have the same spin projection $\sigma=1/2$, making the greatest possible total spin $S=2$. The electrons must then be assigned distinct values of $m$ that give the greatest $M_L=\sum m$, namely $2,1,0,-1$, so that $M_L=2$. Hence the greatest value of $L$ possible with $S=2$ is also 2 (the term ${}^5D$).
+
+\begin{table}[ht]
+\centering
+\caption{All possible terms for configurations of equivalent electrons}
+\begin{tabular}{c@{,\quad}c|lll}
+$p$&$p^5$&${}^2P$&&\\
+$p^2$&$p^4$&${}^1SD$&${}^3P$&\\
+$p^3$&&${}^2PD$&${}^4S$&\\ \hline
+$d$&$d^9$&${}^2D$&&\\
+$d^2$&$d^8$&${}^1SDG$&${}^3PF$&\\
+$d^3$&$d^7$&${}^2P\underset{2}{D}FGH$&${}^4PF$&\\
+$d^4$&$d^6$&$\underset{2}{{}^1S}\underset{2}{D}F\underset{2}{G}I$
+&$\underset{2}{{}^3P}D\underset{2}{F}GH$&${}^5D$\\
+$d^5$&&${}^2SP\underset{3}{D}\underset{2}{F}\underset{2}{G}HI$
+&${}^4P\underset{2}{D}\underset{2}{F}G$&${}^6S$
+\end{tabular}
+\end{table}
+
+\ProblemHeading Find the orbital wave functions of the possible states of a system of three equivalent $p$ electrons.
+
+\SolutionHeading In the ${}^4S$ state the spin projections $\sigma$ of all electrons are the same, and hence their $m$ values are distinct. The wave function is the determinant of the form (61.5) constructed from $\psi_0$, $\psi_1$, and $\psi_{-1}$ (the subscript specifies $m$).
+
+For the ${}^2D$ term, consider the state with the greatest possible $M_L=2$. Two of the $m$ projections must then equal 1 and the other 0. Let electrons 2 and 3 have $\sigma=+1/2$ and electron 1 have $\sigma=-1/2$, in accordance with the total spin $S=1/2$. The corresponding orbital wave function with the required symmetry is
+\[
+\psi=\frac1{\sqrt2}\psi_1(1)
+[\psi_0(2)\psi_1(3)-\psi_0(3)\psi_1(2)]
+\]
+(the numeral in the argument specifies the electron to which the function refers).
+
+For the ${}^2P$ term, consider the state with $M_L=1$ and the same electron spin projections as above. This state can be formed with
+
+\SourcePage{312}{315}
+two different sets of $m$ values, so its orbital wave function is the linear combination
+\[
+\begin{gathered}
+\psi=a\psi_{-111}+b\psi_{100},\\
+\psi_{-111}=\psi_1(1)[\psi_{-1}(2)\psi_1(3)-\psi_{-1}(3)\psi_1(2)],\\
+\psi_{100}=\psi_0(1)[\psi_1(2)\psi_0(3)-\psi_1(3)\psi_0(2)].
+\end{gathered}
+\]
+To determine the coefficients, use the relation
+\[
+\hat L_+\psi=(\hat l_+^{(1)}+\hat l_+^{(2)}+\hat l_+^{(3)})\psi=0,
+\]
+which a wave function with $M_L=L$ must satisfy (see (27.8)). From the matrix elements (27.12),
+\[
+\hat l_+\psi_1=0,\qquad \hat l_+\psi_{-1}=\sqrt2\psi_0,\qquad
+\hat l_+\psi_0=\sqrt2\psi_1,
+\]
+and hence
+\[
+\hat L_+\psi=\sqrt2(a-b)\psi_{011}=0.
+\]
+Thus $a-b=0$; including normalization gives $a=b=1/2$.
+
+The wave functions of states with $M_L<L$ are obtained from those found above by applying the operator $\hat L_-$.

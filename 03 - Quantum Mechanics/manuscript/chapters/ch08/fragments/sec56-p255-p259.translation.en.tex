@@ -1,15 +1,15 @@
 \SourcePage{255}{258}
 \section{Spinors}
 
-For zero spin the wave function has only one component, $\psi(0)$. Application
-of the spin operator gives zero: $\hat{\mathbf s}\psi=0$. Since $\mathbf s$
-is connected with the operator of infinitesimal rotations, this means that
-the wave function of a spin-zero particle is unchanged by rotations of the
-coordinate system; it is therefore a scalar.
+For zero spin the wave function has a single component, $\psi(0)$. The spin
+operator annihilates it: $\hat{\mathbf s}\psi=0$. Since $\mathbf s$ is
+connected with the operator of infinitesimal rotations, this means that the
+wave function of a spin-zero particle is unchanged by rotations of the
+coordinate system; it is a scalar.
 
 The wave function of a spin-$1/2$ particle has two components, $\psi(1/2)$
-and $\psi(-1/2)$. For convenience in later generalizations, distinguish them
-by the upper indices 1 and 2, respectively. The two-component quantity
+and $\psi(-1/2)$. For convenience in later generalizations, label these by
+upper indices 1 and 2. The two-component quantity
 \begin{equation}
  \psi=\binom{\psi^1}{\psi^2}=
  \binom{\psi(1/2)}{\psi(-1/2)}
@@ -17,8 +17,8 @@ by the upper indices 1 and 2, respectively. The two-component quantity
 \end{equation}
 is called a \emph{spinor}.
 
-Under an arbitrary rotation of the coordinate system, the spinor components
-undergo the linear transformation
+Under an arbitrary rotation of the coordinate system, its components undergo
+the linear transformation
 \begin{equation}
  \psi^{1'}=a\psi^1+b\psi^2,\qquad
  \psi^{2'}=c\psi^1+d\psi^2.
@@ -30,130 +30,125 @@ This can be written
  \hat U=\begin{pmatrix}a&b\\c&d\end{pmatrix},
  \tag{56.3}
 \end{equation}
-where $\hat U$ is the transformation matrix.\footnote{The notation
+where $\hat U$ is the transformation matrix\footnote{The notation
 $\hat U\psi$ means multiplication of the rows of $\hat U$ by the column
-$\psi$.} In general, the elements of this matrix are complex functions of the
-angles through which the coordinate axes are rotated. Relations among them
-follow directly from the physical requirements imposed on a spinor as a
-particle's wave function.
+$\psi$.}. Its elements are generally complex functions of the rotation angles
+of the coordinate axes. Relations among them follow directly from the
+physical requirements on a spinor as a particle wave function.
 
 Consider the bilinear form
 \begin{equation}
  \psi^1\varphi^2-\psi^2\varphi^1,
  \tag{56.4}
 \end{equation}
-where $\psi$ and $\varphi$ are two spinors. A direct calculation gives
+where $\psi$ and $\varphi$ are two spinors. Direct calculation gives
 \[
  \psi^{1'}\varphi^{2'}-\psi^{2'}\varphi^{1'}
- =(ad-bc)(\psi^1\varphi^2-\psi^2\varphi^1).
+ =(ad-bc)(\psi^1\varphi^2-\psi^2\varphi^1),
 \]
-Thus (56.4) transforms into itself under a rotation of the coordinate system.
-If there is only one function transforming into itself, it can be regarded as
-corresponding to zero spin and must consequently be a scalar, remaining
-unchanged under every rotation. We therefore obtain
-\SourcePage{256}{259}
+so (56.4) transforms into itself under a coordinate rotation. A single
+function that transforms into itself can be regarded
+\SourcePage{256}{259}as belonging to spin zero; it must consequently be a
+scalar and remain altogether unchanged by a
+rotation. Hence
 \begin{equation}
  ad-bc=1;
  \tag{56.5}
 \end{equation}
-the determinant of the transformation matrix is unity.\footnote{Such a
-transformation of two quantities is called \emph{binary}.}
+the determinant of the transformation matrix is unity\footnote{Such a
+transformation of two quantities is called \emph{binary}.}.
 
-Further relations arise from the requirement that
+Further relations follow from requiring the expression
 \begin{equation}
- \psi^1\psi^{1*}+\psi^2\psi^{2*}
+ \psi^1\psi^{1*}+\psi^2\psi^{2*},
  \tag{56.6}
 \end{equation}
-be a scalar. This expression determines the probability of finding the
-particle at a given point in space. A transformation that leaves invariant
-the sum of the squared moduli of the transformed quantities is unitary, so
-$\hat U^+=\hat U^{-1}$ (see \secref{12}). Subject to (56.5), the inverse matrix is
+which gives the probability of finding the particle at a given point, to be a
+scalar. A transformation preserving the sum of squared moduli is unitary, so
+$\hat U^+=\hat U^{-1}$ (see \S~12). Subject to (56.5),
 \[
  \hat U^{-1}=\begin{pmatrix}d&-b\\-c&a\end{pmatrix}.
 \]
-Equating it to the adjoint matrix
+Equating this to the conjugate matrix
 \[
- \hat U^+=\begin{pmatrix}a^*&c^*\\b^*&d^*\end{pmatrix},
+ \hat U^+=\begin{pmatrix}a^*&c^*\\b^*&d^*\end{pmatrix}
 \]
-we find
+gives
 \begin{equation}
  a=d^*,\qquad b=-c^*.
  \tag{56.7}
 \end{equation}
 
-By (56.5) and (56.7), the four complex quantities $a,b,c,d$ actually contain
-only three independent real parameters, corresponding to the three angles
-that specify a rotation of a three-dimensional coordinate system.
+By (56.5) and (56.7), the four complex quantities $a,b,c,d$ contain only
+three independent real parameters, corresponding to the three angles that
+specify a rotation of a three-dimensional coordinate system.
 
-Comparison of the scalar expressions (56.4) and (56.6) shows that
-$\psi^{1*},\psi^{2*}$ must transform like $\psi^2,-\psi^1$. It is readily
-verified from (56.5) and (56.7) that they do.\footnote{This property is closely
+Comparing the scalar expressions (56.4) and (56.6), we see that
+$\psi^{1*},\psi^{2*}$ must transform as $\psi^2,-\psi^1$. Relations (56.5)
+and (56.7) make this easy to verify\footnote{This property is closely
 connected with time-reversal symmetry. Time reversal corresponds (see
-\secref{18}) to replacing the wave function by its complex conjugate, but it also
-reverses the signs of angular-momentum projections. Functions complex
-conjugate to the components $\psi^1=\psi(1/2)$ and
-$\psi^2=\psi(-1/2)$ must therefore be equivalent in their properties to the
-components corresponding to spin projections $-1/2$ and $1/2$, respectively.}
+\S~18) to replacing a wave function by its complex conjugate, while also
+reversing angular-momentum projections. Thus the functions complex conjugate
+to $\psi^1=\psi(1/2)$ and $\psi^2=\psi(-1/2)$ must have the same properties
+as the components belonging respectively to spin projections $-1/2$ and
+$1/2$.}.
 
-Spinor algebra can be cast in a form analogous to tensor algebra. Alongside
-the contravariant components $\psi^1,\psi^2$, bearing upper indices, introduce
-\SourcePage{257}{260}the \emph{covariant} components, bearing lower indices,
-by the definition
+Spinor algebra can be put into a form analogous to tensor algebra. Alongside
+the contravariant components $\psi^1,\psi^2$, with upper indices, introduce
+\SourcePage{257}{260}\emph{covariant} components, with lower indices, by
 \begin{equation}
  \psi_1=\psi^2,\qquad \psi_2=-\psi^1.
  \tag{56.8}
 \end{equation}
-The invariant combination (56.4) of two spinors then takes the form of the
-scalar product
+The invariant combination (56.4) of two spinors then becomes the scalar
+product
 \begin{equation}
  \psi_\lambda\varphi^\lambda
  =\psi_1\varphi^1+\psi_2\varphi^2.
  \tag{56.9}
 \end{equation}
-Here and below, as in tensor algebra, summation is understood over any twice
-repeated (dummy) index. The following rule must be kept in mind in spinor
-algebra. We have
+Here and below, repeated dummy indices are summed as in tensor algebra. One
+rule specific to spinor algebra must be kept in mind. Since
 $\psi^\lambda\varphi_\lambda=\psi^1\varphi_1+\psi^2\varphi_2
-=-\psi^2\varphi^1-\psi^1\varphi^2$, and therefore
+=-\psi^2\varphi^1-\psi^1\varphi^2$, we have
 \begin{equation}
  \psi^\lambda\varphi_\lambda=-\psi_\lambda\varphi^\lambda.
  \tag{56.10}
 \end{equation}
-It follows at once that the scalar product of any spinor with itself is zero:
+It follows at once that the scalar product of any spinor with itself vanishes:
 \begin{equation}
  \psi_\lambda\psi^\lambda=0.
  \tag{56.11}
 \end{equation}
 
-As stated above, $\psi_1,\psi_2$ transform like
-$\psi^{1*},\psi^{2*}$; hence
+As explained above, $\psi_1,\psi_2$ transform as
+$\psi^{1*},\psi^{2*}$, that is,
 \begin{equation}
  \psi'_{\lambda}=(\hat U^*\psi)_\lambda.
  \tag{56.12}
 \end{equation}
-The product $\hat U^*\psi$ may also be written $\psi\hat U^*$ with the
-transposed matrix $\hat U^*$. Since $\hat U$ is unitary,
-$\hat U^*=\widetilde{\hat U}^{-1}$, so
+The product $\hat U^*\psi$ may equally be written $\psi\hat U^*$ using the
+transpose of $\hat U^*$. Unitarity gives
+$\hat U^*=\widetilde{\hat U}^{-1}$, so that
 $\widetilde\psi'=(\widetilde\psi\hat U^{-1})$, or\footnote{Notation of the
-form $\psi\hat U$, with $\psi$ to the left of $\hat U$, means multiplication
-of the row of components $(\psi_1,\psi_2)$ by the columns of $\hat U$.}
+form $\psi\hat U$, with $\psi$ to the left, means multiplying the row of
+components $(\psi_1,\psi_2)$ by the columns of $\hat U$.}
 \begin{equation}
  \psi'_\lambda=\psi_\mu(U^{-1})^\mu{}_{\lambda}.
  \tag{56.13}
 \end{equation}
 
-Just as tensors are introduced from vectors in ordinary tensor algebra, one
-can introduce \emph{spinors of higher rank}. A second-rank spinor, for
-example, is a four-component quantity $\psi^{\lambda\mu}$ whose components
-transform like the products $\psi^\lambda\varphi^\mu$ of components of two
-first-rank spinors. Along with the contravariant components
-$\psi^{\lambda\mu}$, one may consider the covariant components
-$\psi_{\lambda\mu}$ and mixed components $\psi_\lambda{}^\mu$, transforming
+Just as vectors lead to tensors in ordinary tensor algebra, one can introduce
+\emph{spinors of higher rank}. A second-rank spinor is a four-component
+quantity $\psi^{\lambda\mu}$ whose components transform like the products
+$\psi^\lambda\varphi^\mu$ of components of two first-rank spinors. Alongside
+the contravariant components $\psi^{\lambda\mu}$ one may consider covariant
+$\psi_{\lambda\mu}$ and mixed $\psi_\lambda{}^\mu$ components, transforming
 respectively like $\psi_\lambda\varphi_\mu$ and
-$\psi_\lambda\varphi^\mu$. Spinors of any rank are defined similarly.
+$\psi_\lambda\varphi^\mu$. Spinors of any rank are defined analogously.
+
 \SourcePage{258}{261}
-Passage from contravariant to covariant spinor components and back can be
-written
+The passage from contravariant to covariant components and back can be written
 \begin{equation}
  \psi_\lambda=g_{\lambda\mu}\psi^\mu,\qquad
  \psi^\lambda=g^{\mu\lambda}\psi_\mu,
@@ -164,8 +159,8 @@ where
  g_{11}=g_{22}=0,\qquad g_{12}=-g_{21}=1
  \tag{56.15}
 \end{equation}
-is the \emph{metric spinor} in a two-dimensional vector space.\footnote{The
-matrix (56.15) coincides with $i\hat\sigma_y$.} Similarly, for example,
+is the \emph{metric spinor} in a two-dimensional vector space\footnote{The
+matrix (56.15) coincides with $i\hat\sigma_y$.}. Similarly, for example,
 \[
  \psi_\lambda{}^\mu=g_{\lambda\nu}\psi^{\nu\mu},\qquad
  \psi_{\lambda\mu}=g_{\lambda\nu}g_{\mu\rho}\psi^{\nu\rho},
@@ -173,9 +168,9 @@ matrix (56.15) coincides with $i\hat\sigma_y$.} Similarly, for example,
 so that $\psi_1{}^2=-\psi^{11}$, $\psi_2{}^1=-\psi^{21}$,
 $\psi_{11}=\psi^{22}$, and so forth.
 
-The $g_{\lambda\mu}$ themselves form the antisymmetric unit spinor of second
-rank. It is readily verified that their components remain unchanged under
-coordinate transformations and that
+The components $g_{\lambda\mu}$ themselves form the antisymmetric unit
+spinor of rank two. Their values are unchanged under coordinate
+transformations, and one readily verifies
 \begin{equation}
  g_{\lambda\nu}g^{\mu\nu}=\delta_\lambda^\mu,
  \tag{56.16}
@@ -183,56 +178,53 @@ coordinate transformations and that
 where $\delta_1^1=\delta_2^2=1$ and
 $\delta_1^2=\delta_2^1=0$.
 
-As in ordinary tensor algebra, spinor algebra has two fundamental operations:
-multiplication and simplification (or contraction) over a pair of indices.
-The product of two spinors is a spinor of higher rank. Thus the second- and
-third-rank spinors $\psi_{\lambda\mu}$ and
-$\varphi^{\nu\rho\sigma}$ form the fifth-rank spinor
-$\psi_{\lambda\mu}\varphi^{\nu\rho\sigma}$. Simplification over a pair of
-indices, that is, summation of components over equal values of one covariant
-and one contravariant index, lowers the rank by two. For example, simplifying
+As in ordinary tensor algebra, spinor algebra has two basic operations:
+multiplication and contraction over a pair of indices. Multiplication of two
+spinors gives one of higher rank; for example, second- and third-rank spinors
+$\psi_{\lambda\mu}$ and $\varphi^{\nu\rho\sigma}$ give the fifth-rank
+spinor $\psi_{\lambda\mu}\varphi^{\nu\rho\sigma}$. Contraction over a pair
+of indices, meaning summation over equal values of one covariant and one
+contravariant index, lowers the rank by two. Thus contraction of
 $\psi_{\lambda\mu}{}^{\nu\rho\sigma}$ over $\mu$ and $\nu$ gives the
-third-rank spinor $\psi_{\lambda\mu}{}^{\mu\rho\sigma}$; simplifying
+third-rank spinor $\psi_{\lambda\mu}{}^{\mu\rho\sigma}$; contraction of
 $\varphi_\lambda{}^\mu$ gives the scalar
-$\varphi_\lambda{}^\lambda$. A rule analogous to (56.10) applies: interchanging
-the upper and lower positions of the indices over which simplification is
-performed changes the sign, so
-$\varphi_\lambda{}^\lambda=-\varphi^\lambda{}_{\lambda}$. In particular, if
-a spinor is symmetric in any two of its indices, simplification over those
-indices gives zero. Thus a symmetric second-rank spinor
-$\varphi_\lambda{}^\mu$ has $\varphi_\lambda{}^\lambda=0$.
+$\varphi_\lambda{}^\lambda$. A rule analogous to (56.10) holds: interchanging
+the upper and lower positions of the contracted indices changes the sign,
+so $\varphi_\lambda{}^\lambda=-\varphi^\lambda{}_{\lambda}$. In particular,
+contracting two indices over which a spinor is symmetric gives zero. Thus for
+a symmetric second-rank spinor $\varphi_\lambda{}^\mu$, one has
+$\varphi_\lambda{}^\lambda=0$.
 
-A \emph{symmetric spinor} of rank $n$ is one symmetric in all its indices. A
-symmetric spinor can be constructed from an asymmetric one by symmetrization,
-that is, by summing the components obtained from all possible permutations of
-the indices. It follows from the foregoing that the components of a
-\SourcePage{259}{262}symmetric spinor cannot be contracted to form a spinor
-of lower rank.
+A \emph{symmetric spinor} of rank $n$ is symmetric in all its indices. A
+nonsymmetric spinor can be symmetrized by summing the components obtained from
+all possible permutations of its indices. From the preceding result, no
+spinor of lower rank can be formed by contracting components of a symmetric
+spinor.
 
-A spinor antisymmetric in all its indices, on the other hand, can only have
-rank two. Indeed, because every index takes only two values, with three or more
-indices at least two must have equal values, and the spinor components then
-vanish identically. Every antisymmetric second-rank spinor reduces to a scalar
-multiplied by the unit spinor $g_{\lambda\mu}$. We record the following
-consequence:
+\SourcePage{259}{262}
+A spinor antisymmetric in all its indices can only have rank two. Indeed, each
+index has only two possible values; with three or more indices at least two
+must have equal values, and every component then vanishes identically. Every
+antisymmetric second-rank spinor is a scalar multiple of the unit spinor
+$g_{\lambda\mu}$. One consequence is
 \begin{equation}
  g_{\lambda\mu}\psi_\nu+g_{\mu\nu}\psi_\lambda
  +g_{\nu\lambda}\psi_\mu=0,
  \tag{56.17}
 \end{equation}
-where $\psi_\lambda$ is an arbitrary spinor. This rule follows simply because
-the expression on the left is, as can readily be verified, an antisymmetric
-third-rank spinor.
+where $\psi_\lambda$ is arbitrary. The left-hand side is simply, as can be
+checked directly, an antisymmetric third-rank spinor and must therefore
+vanish.
 
 The spinor formed by multiplying $\psi_{\lambda\mu}$ by itself and
-contracting one pair of indices is antisymmetric in the other pair; indeed,
+contracting one pair of indices is antisymmetric in the other pair, since
 \[
  \psi_{\lambda\nu}\psi_\mu{}^\nu
  =-\psi_\lambda{}^\nu\psi_{\mu\nu}.
 \]
-It must therefore reduce to $g_{\lambda\mu}$ multiplied by a scalar. Fixing
-the latter so that contraction over the second pair gives the correct result,
-we find
+It must consequently reduce to $g_{\lambda\mu}$ times a scalar. Determining
+that scalar by requiring contraction over the second pair to give the proper
+result, we obtain
 \begin{equation}
  \psi_{\lambda\nu}\psi_\mu{}^\nu
  =-\frac12\psi_{\rho\sigma}\psi^{\rho\sigma}g_{\lambda\mu}.
@@ -240,6 +232,6 @@ we find
 \end{equation}
 
 The components of the spinor $\varphi^{\lambda\mu\ldots}$ complex conjugate
-to $\psi_{\lambda\mu\ldots}$ transform as components of a contravariant
-spinor, and conversely. The sum of the squared moduli of the components of any
-spinor is therefore invariant.
+to $\psi_{\lambda\mu\ldots}$ transform as those of a contravariant spinor,
+and conversely. The sum of the squared moduli of the components of any spinor
+is therefore invariant.

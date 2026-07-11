@@ -1,0 +1,130 @@
+\SourcePage{314}{317}
+\section{The self-consistent field}
+
+The Schrödinger equation for atoms containing more than one electron cannot be solved analytically. Approximate methods for calculating the energies and wave functions of stationary atomic states are therefore important. Foremost among them is the method known as the self-consistent-field method. Its idea is to regard each electron in an atom as moving in a \emph{self-consistent field} produced jointly by the nucleus and all the other electrons.
+
+As an example, consider the helium atom, restricting attention to terms in which both electrons are in $s$ states (with equal or different $n$); the states of the whole atom are then $S$ states. Let $\psi_1(r_1)$ and $\psi_2(r_2)$ be the electron wave functions; in $s$ states they depend only on the respective distances $r_1,r_2$ from the nucleus. The wave function $\psi(r_1,r_2)$ of the atom as a whole is the symmetrized product
+\begin{equation}
+ \psi=\psi_1(r_1)\psi_2(r_2)+\psi_1(r_2)\psi_2(r_1)
+ \tag{69.1}
+\end{equation}
+or the antisymmetrized product
+\begin{equation}
+ \psi=\psi_1(r_1)\psi_2(r_2)-\psi_1(r_2)\psi_2(r_1),
+ \tag{69.2}
+\end{equation}
+according as the state has total spin $S=0$ or $S=1$\footnote{A helium-atom state with $S=0$ is conventionally called a \emph{parahelium} state, and one with $S=1$ an \emph{orthohelium} state.}. We shall consider the latter case; the functions $\psi_1$ and $\psi_2$ may then be taken to be mutually orthogonal\footnote{The wave functions $\psi_1,\psi_2,\ldots$ for different electron states obtained by the self-consistent-field method are not in general mutually orthogonal, since they solve different equations rather than one and the same equation. In (69.2), however, $\psi_2$ may be replaced by $\psi'_2+\mathrm{const}\cdot\psi_1$ without changing the wave function $\psi$ of the atom; the constant can always be chosen so that $\psi_1$ and $\psi'_2$ are mutually orthogonal.}.
+
+Our aim is to determine the function of the form (69.2) that gives the best approximation to the true atomic wave function. It is natural to use
+
+\SourcePage{315}{318}
+the variational principle for this purpose, admitting only functions of the form (69.2) as trial functions (the method described here was proposed by V.~A.~Fock, 1930).
+
+As we know, the Schrödinger equation can be obtained from the variational principle
+\[
+ \iint\psi^*\hat H\psi\,dV_1dV_2=\min
+\]
+with the supplementary condition
+\[
+ \iint|\psi|^2dV_1dV_2=1
+\]
+(the integration is over the coordinates of both electrons in the helium atom). Variation gives
+\begin{equation}
+ \iint\delta\psi^*(\hat H-E)\psi\,dV_1dV_2=0,
+ \tag{69.3}
+\end{equation}
+from which the ordinary Schrödinger equation follows when the variation of $\psi$ is arbitrary. In the self-consistent-field method, however, (69.2) is substituted for $\psi$ in (69.3), and $\psi_1$ and $\psi_2$ are varied separately.
+
+In other words, the extremum of the integral is sought among functions $\psi$ of the form (69.2). The resulting energy eigenvalue and wave function are of course inexact, but the wave function is the best of all those representable in this form.
+
+The Hamiltonian of the helium atom is\footnote{Atomic units are used in this section and in its problems.}
+\begin{equation}
+ \hat H=\hat H_1+\hat H_2+\frac1{r_{12}},\qquad \hat H_1=-\frac12\Delta_1-\frac2{r_1}
+ \tag{69.4}
+\end{equation}
+($r_{12}$ is the distance between the electrons). Substituting (69.2) in (69.3), carrying out the variation, and setting equal to zero the coefficients of $\delta\psi_1$ and $\delta\psi_2$ in the integrand, we obtain
+\begin{equation}
+\begin{split}
+ [\tfrac12\Delta+\tfrac2r+E-H_{22}-G_{22}(r)]\psi_1(r)+[H_{12}+G_{12}(r)]\psi_2(r)&=0,\\
+ [\tfrac12\Delta+\tfrac2r+E-H_{11}-G_{11}(r)]\psi_2(r)+[H_{12}+G_{12}(r)]\psi_1(r)&=0,
+\end{split}\tag{69.5}
+\end{equation}
+
+\SourcePage{316}{319}
+where
+\begin{equation}
+ G_{ab}(r_1)=\int\frac{\psi_a(r_2)\psi_b(r_2)}{r_{12}}\,dV_2,\qquad
+ H_{ab}=\int\psi_a\left(-\frac12\Delta-\frac2r\right)\psi_b\,dV,\quad a,b=1,2.
+ \tag{69.6}
+\end{equation}
+These are the final equations furnished by the self-consistent-field method; naturally, they can be solved only numerically\footnote{Comparison of energy levels calculated by the self-consistent-field method for light atoms with spectroscopic data indicates an accuracy of roughly 5\% (and in some cases even better). For complex atoms, however, the error may be comparable with the intervals between neighboring levels and may therefore give an incorrect level sequence.}.
+
+The equations for more complicated cases must be derived in an analogous way. The atomic wave function to be inserted in the variational integral is formed as a linear combination of products of the wave functions of individual electrons. This combination must be chosen so that, first, its permutation symmetry corresponds to the total spin $S$ of the atomic state under consideration and, second, it corresponds to the specified total orbital angular momentum $L$ of the atom\footnote{General methods for constructing wave functions of a system of electrons in a central field are described in the book by I.~G.~Kaplan cited on p.~291.}.
+
+By using in the variational principle a wave function with the proper permutation symmetry, we thereby allow for the exchange interaction of the electrons. Simpler equations (though they give less accurate results) are obtained if the exchange interaction and the dependence of the atomic energy on $L$ for a given electron configuration are both neglected (D.~R.~Hartree, 1928). Again taking the helium atom as an example, we may then write the equations for the electron wave functions directly as ordinary Schrödinger equations
+\begin{equation}
+ [\tfrac12\Delta_a+E_a-V_a(r_a)]\psi_a(r_a)=0,\qquad a=1,2,
+ \tag{69.7}
+\end{equation}
+in which $V_a$ is the potential energy of one electron moving in the field of the nucleus and in that of the distributed charge of the other electron:
+\begin{equation}
+ V_1(r_1)=-\frac2{r_1}+\int\frac1{r_{12}}\psi_2^2(r_2)\,dV_2
+ \tag{69.8}
+\end{equation}
+
+\SourcePage{317}{320}
+(and similarly for $V_2$). To find the total energy $E$ of the atom, note that the sum $E_1+E_2$ counts the electrostatic interaction of the two electrons twice, since it enters the potential energy of the first electron, $V_1(r_1)$, and also that of the second, $V_2(r_2)$. Thus $E$ is obtained from $E_1+E_2$ by subtracting the mean value of this interaction once:
+\begin{equation}
+ E=E_1+E_2-\iint\frac1{r_{12}}\psi_1^2(r_1)\psi_2^2(r_2)\,dV_1dV_2.
+ \tag{69.9}
+\end{equation}
+To refine the results of this simplified method, the exchange interaction and the dependence of the energy on $L$ can subsequently be included as perturbations.
+
+\subsection*{Problems}
+\ProblemHeading{1.} Estimate the energy of the ground level of the helium atom and of helium-like ions (a nucleus of charge $Z$ and two electrons), treating the interaction between the electrons as a perturbation.
+
+\SolutionHeading In the ground state of the ion, both electrons are in $S$ states. The unperturbed energy is twice the ground-level energy of a hydrogen-like ion:
+\[
+ E^{(0)}=2(-Z^2/2)=-Z^2.
+\]
+The first-order correction is the mean electron--electron interaction energy evaluated in the state with wave function
+\begin{equation}
+ \psi=\psi_1(r_1)\psi_2(r_2)=\frac{Z^2}{\pi}e^{-Z(r_1+r_2)}
+ \tag{1}
+\end{equation}
+(the product of two hydrogenic functions with $l=0$). The integral
+\[
+ E^{(1)}=\iint\psi^2\frac1{r_{12}}\,dV_1dV_2
+\]
+is most readily calculated as
+\[
+ E^{(1)}=2\int_0^\infty dV_2\,\rho_2\frac1{r_2}\int_0^{r_2}\rho_1\,dV_1,\qquad dV_1=4\pi r_1^2dr_1,\quad dV_2=4\pi r_2^2dr_2
+\]
+(the energy of the charge distribution $\rho_2=|\psi_2|^2$ in the field of the spherically symmetric distribution $\rho_1=|\psi_1|^2$; the integrand of the $dV_2$ integral is the energy of the charge $\rho_2(r_2)$ in the field of the sphere $r_1<r_2$; the factor 2 before the integral accounts for configurations with $r_1>r_2$). We thus obtain $E^{(1)}=5Z/8$, and finally
+\[
+ E=E^{(0)}+E^{(1)}=-Z^2+\frac58Z.
+\]
+For helium this gives $-E=11/4=2.75$ (the actual ground-state energy is $-E=2.90$ atomic units $=78.9$ eV).
+
+\ProblemHeading{2.} Do the same by the variational principle, approximating the wave function by the product of two hydrogenic functions with an effective nuclear charge.
+
+\SourcePage{318}{321}
+\SolutionHeading Evaluate
+\[
+ \iint\psi\hat H\psi\,dV_1dV_2,\qquad \hat H=-\frac12(\Delta_1+\Delta_2)-\frac Z{r_1}-\frac Z{r_2}+\frac1{r_{12}}
+\]
+with the function $\psi$ in equation (1) of the preceding problem, replacing $Z$ there by $Z_{\mathrm{eff}}$. The integral of $\psi^2/r_{12}$ is evaluated as in Problem 1; the integral of $\psi\Delta_1\psi$ can be reduced to that of $\psi^2/r_1$ by noting that the Schrödinger equation gives
+\[
+ \left(-\frac12\Delta_1-\frac{Z_{\mathrm{eff}}}{r_1}\right)\psi_1=-\frac12Z_{\mathrm{eff}}^2\psi_1.
+\]
+The result is
+\[
+ \iint\psi\hat H\psi\,dV_1dV_2=Z_{\mathrm{eff}}^2-2ZZ_{\mathrm{eff}}+\frac58Z_{\mathrm{eff}}.
+\]
+As a function of $Z_{\mathrm{eff}}$, this expression has its minimum at $Z_{\mathrm{eff}}=Z-5/16$. The corresponding energy is
+\[
+ E=-\left(Z-\frac5{16}\right)^2.
+\]
+For the helium atom this gives $-E=2.85$.
+
+Notice that equation (1), with the value of $Z_{\mathrm{eff}}$ just found, is actually the best not only among functions of the form (1), but among all functions depending only on the sum $r_1+r_2$.

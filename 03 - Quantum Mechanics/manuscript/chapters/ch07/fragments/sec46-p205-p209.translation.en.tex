@@ -1,15 +1,15 @@
 \SourcePage{205}{208}
-\chapter{The semiclassical case}
-\section{The wave function in the semiclassical case}
+\chapter{The Semiclassical Case}
+\section{The Wave Function in the Semiclassical Case}
 
-When the de Broglie wavelengths of the particles are small in comparison with
-the characteristic dimensions $L$ that determine the conditions of a given
-problem, the system has nearly classical properties. (This is analogous to
-the passage from wave optics to geometrical optics as the wavelength tends to
+When the de Broglie wavelengths of the particles are small compared with the
+characteristic dimensions $L$ that determine the conditions of the particular
+problem, the system behaves nearly classically. (This is analogous to the
+passage from wave optics to geometrical optics as the wavelength tends to
 zero.)
 
 We shall now examine the properties of semiclassical systems in greater
-detail. In the Schrödinger equation
+detail. In the Schr\"odinger equation
 \[
   \sum_a\frac{\hbar^2}{2m_a}\Delta_a\psi+(E-U)\psi=0
 \]
@@ -20,104 +20,108 @@ make the formal substitution
 \end{equation}
 The resulting equation for $\sigma$ is
 \begin{equation}
-  \sum_a\frac1{2m_a}(\GradAt{a}{\sigma})^2
+  \sum_a\frac1{2m_a}(\nabla_a\sigma)^2
   -\sum_a\frac{i\hbar}{2m_a}\Delta_a\sigma=E-U.
   \tag{46.2}
 \end{equation}
-In keeping with the assumption that the properties of the system are nearly
-classical, seek $\sigma$ as the series
+Since the system is assumed to have almost classical properties, we seek
+$\sigma$ as a series
 \begin{equation}
   \sigma=\sigma_0+\frac\hbar i\sigma_1+
   \left(\frac\hbar i\right)^2\sigma_2+\cdots,
   \tag{46.3}
 \end{equation}
-arranged in powers of $\hbar$.
+in powers of $\hbar$.
 
-Begin with the simplest case, one-dimensional motion of a single particle.
-Equation (46.2) then reduces to
+We begin with the simplest situation: one-dimensional motion of a single
+particle. Equation (46.2) then reduces to
 \begin{equation}
   \frac1{2m}\sigma'^2-\frac{i\hbar}{2m}\sigma''=E-U(x)
   \tag{46.4}
 \end{equation}
-(a prime denotes differentiation with respect to the coordinate $x$).
+(a prime denotes differentiation with respect to $x$).
 
-In the first approximation put $\sigma=\sigma_0$ and omit the term containing
+In the first approximation, put $\sigma=\sigma_0$ and omit the term containing
 $\hbar$ from the equation:
 \[
   \frac1{2m}\sigma_0'^2=E-U(x).
 \]
+
 \SourcePage{206}{209}
 It follows that
 \[
   \sigma_0=\pm\int\sqrt{2m[E-U(x)]}\,dx.
 \]
 The integrand is precisely the classical momentum $p(x)$ of the particle,
-expressed as a function of the coordinate. Defining $p(x)$ with the positive
-sign before the square root, we have
+expressed as a function of position. Defining $p(x)$ by taking the positive
+sign of the square root, we have
 \begin{equation}
   \sigma_0=\pm\int p\,dx,
   \qquad p=\sqrt{2m(E-U)},
   \tag{46.5}
 \end{equation}
-as expected from the limiting expression (6.1) for the wave
-function.\footnote{As is well known, $\int p\,dx$ is the time-independent part
+as is to be expected from the limiting expression (6.1) for the wave
+function\footnote{As is well known, $\int p\,dx$ is the time-independent part
 of the action. The complete mechanical action of the particle is
 $S=-Et\pm\int p\,dx$. The term $Et$ is absent from $\sigma$ because we are
-considering the time-independent wave function $\psi$.}
+considering a time-independent wave function $\psi$.}.
 
-The neglect made in (46.4) is justified only when the second term on the
-left-hand side is small compared with the first. Thus
+The neglect made in (46.4) is justified only when the second term on the left
+is small compared with the first. Thus
 $\hbar|\sigma''/\sigma'^2|\ll1$, or
 \[
   \left|\frac d{dx}\left(\frac\hbar{\sigma'}\right)\right|\ll1.
 \]
-To first order, (46.5) gives $\sigma'=p$, so this condition can be written
+To the first approximation, (46.5) gives $\sigma'=p$, and hence this condition
+may be written
 \begin{equation}
   \left|\frac{d\lambdabar}{dx}\right|\ll1,
   \tag{46.6}
 \end{equation}
 where $\lambdabar=\lambda/2\pi$, while
 $\lambda(x)=2\pi\hbar/p(x)$ is the particle's de Broglie wavelength expressed
-as a function of $x$ through the classical function $p(x)$. We have thereby
-obtained a quantitative semiclassical condition: over a distance comparable
-with the wavelength itself, that wavelength must vary only slightly. The
-approximation fails in regions of space where this condition is not met.
+as a function of $x$ through the classical function $p(x)$. We have therefore
+obtained a quantitative criterion for the semiclassical approximation: over a
+distance of the order of the wavelength itself, the wavelength must vary only
+slightly. The approximation ceases to apply in regions where this condition
+is not fulfilled.
 
-Condition (46.6) may also be put in another form. Since
+Condition (46.6) can also be put into another form. Since
 \[
   \frac{dp}{dx}=\frac d{dx}\sqrt{2m(E-U)}=-\frac mp\frac{dU}{dx}=\frac{mF}{p},
 \]
-where $F=-dU/dx$ is the classical force acting on the particle in the external
-field, introduction of this force gives
+where $F=-dU/dx$ is the classical force exerted on the particle by the
+external field, introducing this force gives
 \begin{equation}
   \frac{m\hbar|F|}{p^3}\ll1.
   \tag{46.7}
 \end{equation}
+
 \SourcePage{207}{210}
 This shows that the semiclassical approximation fails when the particle's
-momentum is too small. In particular, it certainly fails near turning points,
-namely points at which classical mechanics would have the particle stop and
-then begin moving in the opposite direction. Such points are determined by
-$p(x)=0$, or $E=U(x)$. As $p\to0$, the de Broglie wavelength tends to infinity
-and plainly cannot be regarded as small.
+momentum becomes too small. In particular, it necessarily fails near turning
+points, that is, near points at which classical mechanics would have the
+particle stop and then reverse its direction of motion. Such points are
+determined by $p(x)=0$, or $E=U(x)$. As $p\to0$, the de Broglie wavelength
+tends to infinity and plainly cannot be regarded as small.
 
 It should be stressed, however, that condition (46.6) or (46.7) may by itself
 be insufficient to justify the semiclassical approximation. It was obtained
-by estimating different terms in the differential equation (46.4), and the
+by estimating the different terms of the differential equation (46.4), whose
 discarded term contains the highest derivative. What must actually be small
-are successive terms in the expansion of the solution of this equation; the
+are successive terms in the expansion of the solution of this equation, and
 smallness of the discarded term in the equation need not ensure this. For
-example, suppose the solution for $\sigma(x)$ contains a term whose growth
-with $x$ is nearly linear. The smallness of its second derivative does not
-prevent that term from accumulating a large value over a sufficiently great
-distance. Such a situation generally arises when the field extends over
+example, suppose that the solution for $\sigma(x)$ contains a term that grows
+with $x$ in an almost linear fashion. The smallness of its second derivative
+does not prevent that term from accumulating a large value over a sufficiently
+long distance. This situation generally arises when the field extends over
 distances large compared with the characteristic length $L$ on which it
 changes appreciably (see the remark below concerning (46.11)). The
-semiclassical approximation then cannot follow the wave function over large
-distances.
+semiclassical approximation then cannot be used to follow the wave function
+over large distances.
 
-We proceed to calculate the next term of (46.3). Terms of first order in
-$\hbar$ in (46.4) give
+We proceed to calculate the next term of expansion (46.3). Terms of first
+order in $\hbar$ in (46.4) give
 \[
   \sigma_0'\sigma_1'+\frac12\sigma_0''=0,
   \qquad
@@ -130,52 +134,53 @@ Integration yields
 \end{equation}
 (the integration constant is omitted).
 
-Substitution of this expression in (46.1) and (46.3) gives the wave function
+Substitution into (46.1) and (46.3) gives the wave function
 \begin{equation}
   \psi=\frac C{\sqrt p}\exp\left(\frac i\hbar\int p\,dx\right)
   +\frac{C'}{\sqrt p}\exp\left(-\frac i\hbar\int p\,dx\right).
   \tag{46.9}
 \end{equation}
 The factor $1/\sqrt p$ has a simple interpretation. The probability of finding
-the particle between $x$ and $x+dx$ is determined by $|\psi|^2$, and hence is
-\SourcePage{208}{211}
-principally proportional to $1/p$. This is just what one expects for a
-``semiclassical particle,'' since in classical motion the time spent by a
-particle in an interval $dx$ is inversely proportional to its velocity (or
-momentum).
+the particle between $x$ and $x+dx$ is determined by $|\psi|^2$ and is
 
-In classically inaccessible regions, where $E<U(x)$, the function $p(x)$ is
+\SourcePage{208}{211}
+therefore, in the main, proportional to $1/p$. This is just what one expects
+for a ``semiclassical particle,'' since in classical motion the time spent by
+the particle in an interval $dx$ is inversely proportional to its velocity
+(or momentum).
+
+In classically forbidden regions, where $E<U(x)$, the function $p(x)$ is
 purely imaginary and the exponential arguments are real. The general form of
-the wave-equation solution in such regions is
+the wave-equation solution in these regions is
 \begin{equation}
   \psi=\frac C{\sqrt{|p|}}\exp\left(-\frac1\hbar\int|p|\,dx\right)
   +\frac{C'}{\sqrt{|p|}}\exp\left(\frac1\hbar\int|p|\,dx\right).
   \tag{46.10}
 \end{equation}
-It must nevertheless be remembered that the accuracy of the semiclassical
-approximation does not permit exponentially small terms to be retained in a
-wave function against a background of exponentially large terms. In this
-sense, retaining both terms in (46.10) simultaneously is generally
-inadmissible.
+One must bear in mind, however, that the accuracy of the semiclassical
+approximation does not permit exponentially small terms in the wave function
+to be retained against a background of exponentially large ones. In this
+sense, keeping both terms of (46.10) at once is generally inadmissible.
 
-Although higher-order terms in the wave function are usually unnecessary, we
-shall also obtain the next term in (46.3), in order to point out certain
-features concerning the accuracy of the semiclassical approximation.
+Higher-order terms in the wave function are ordinarily unnecessary. We shall
+nevertheless find one further term of expansion (46.3), in order to point out
+some features concerning the accuracy of the semiclassical approximation.
 
 The terms of order $\hbar^2$ in (46.4) give
 \[
   \sigma_0'\sigma_2'+\frac12\sigma_1'^2+\frac12\sigma_1''=0,
 \]
-whence, on substituting (46.5) and (46.8) for $\sigma_0$ and $\sigma_1$,
+and therefore, on substituting (46.5) and (46.8) for $\sigma_0$ and
+$\sigma_1$,
 \[
   \sigma_2'=\frac{p''}{4p^2}-\frac{3p'^2}{8p^3}.
 \]
-On integrating (the first term being integrated by parts) and introducing the
-force $F=pp'/m$, we find
+Integrating (the first term being integrated by parts) and introducing the
+force $F=pp'/m$, we obtain
 \[
   \sigma_2=\frac{mF}{4p^3}+\frac{m^2}{8}\int\frac{F^2}{p^5}\,dx.
 \]
-In the approximation under consideration the wave function is
+In this approximation the wave function is
 \[
   \psi=\exp[(i/\hbar)\sigma]
   =\exp[(i/\hbar)\sigma_0+\sigma_1](1-i\hbar\sigma_2),
@@ -188,13 +193,15 @@ or
   \exp\left(\frac i\hbar\int p\,dx\right).
   \tag{46.11}
 \end{equation}
-The imaginary correction terms in the prefactor are equivalent to a real
-correction in the phase of the wave function (that is, an addition to the
+The appearance of imaginary correction terms in the prefactor is equivalent
+to a real correction to the phase of the wave function (that is, an addition
+to the integral
+
 \SourcePage{209}{212}
-integral $\hbar^{-1}\int p\,dx$ in its exponent). This correction is
-proportional to $\hbar$, and is therefore of order $\lambda/L$.
+$\hbar^{-1}\int p\,dx$ in its exponential). This correction is proportional
+to $\hbar$, and thus has order $\lambda/L$.
 
 The second and third terms in the square brackets in (46.11) must be small
-compared with unity. For the former this requirement is identical to (46.7),
-whereas for the latter an estimate of the integral leads to (46.7) only if
-$F^2$ tends to zero sufficiently rapidly over distances of order $L$.
+compared with 1. For the former this requirement is the same as (46.7); for
+the latter, estimating the integral leads to (46.7) only if $F^2$ tends to
+zero sufficiently rapidly over distances $\sim L$.

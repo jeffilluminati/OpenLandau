@@ -2,94 +2,92 @@
 \section{Partial polarization of particles}
 
 For any given spinor $\psi^\lambda$, the wave function of a spin-$1/2$
-particle, the direction of the $z$ axis can always be chosen so that one of
-its components, say $\psi^2$, vanishes. This is already clear because a
-direction in space is specified by two quantities (angles): the number of
-parameters at our disposal is exactly equal to the number of quantities, the
-real and imaginary parts of the complex $\psi^2$, that are to be made zero.
+particle, one component (say $\psi^2$) can always be made zero by a suitable
+choice of the $z$ direction. This is already clear because a spatial direction
+is specified by two quantities (angles), exactly the number of quantities---
+the real and imaginary parts of the complex $\psi^2$---that are to vanish.
 
-Physically, this means that if a spin-$1/2$ particle---for definiteness, an
-electron---is in a state described by a certain spin wave function, there is
-a direction in space along which its spin projection has the definite value
-$\sigma=1/2$. The electron in such a state may be said to be \emph{fully
-polarized}.
+Physically, if a spin-$1/2$ particle (for definiteness, an electron) is in a
+state described by a spin wave function, there is a direction along which its
+spin projection has the definite value $\sigma=1/2$. In this state the
+electron is said to be \emph{fully polarized}.
 
-There are, however, electron states that may be called \emph{partially
+There are also electron states which may be called \emph{partially
 polarized}. They are described not by wave functions but only by density
-matrices; that is, they are mixed states with respect to spin (see \secref{14}).
+matrices; they are mixed states with respect to spin (see \S~14).
 
-The spin (or \emph{polarization}) density matrix of the electron is a
-second-rank spinor $\rho^\lambda{}_mu$, normalized by
+The spin, or \emph{polarization}, density matrix of an electron is the rank-2
+spinor $\rho^\lambda{}_{\mu}$, normalized by
 \begin{equation}
- \rho^\lambda{}_lambda=\rho^1{}_1+\rho^2{}_2=1
+ \rho^\lambda{}_{\lambda}=\rho^1{}_1+\rho^2{}_2=1
  \tag{59.1}
 \end{equation}
-and satisfying the ``Hermiticity'' condition
+and satisfying the Hermiticity condition
 \begin{equation}
- (\rho^\lambda{}_mu)^*=\rho^\mu{}_lambda.
+ (\rho^\lambda{}_{\mu})^*=\rho^\mu{}_{\lambda}.
  \tag{59.2}
 \end{equation}
-For a pure, that is fully polarized, electron spin state, the spinor
-$\rho^\lambda{}_mu$ reduces to a product of wave-function components:
+For a pure (fully polarized) electron spin state,
+$\rho^\lambda{}_{\mu}$ reduces to a product of wave-function components:
 \begin{equation}
- \rho^\lambda{}_mu=\psi^\lambda\psi_\mu^*.
+ \rho^\lambda{}_{\mu}=\psi^\lambda\psi_{\mu}^*.
  \tag{59.3}
 \end{equation}
+
 \SourcePage{273}{276}
-The diagonal components of the density matrix give the probabilities of the
-values $+1/2$ and $-1/2$ of the electron's spin projection on the $z$ axis.
-The mean value of this projection is therefore
+The diagonal components give the probabilities of spin projections $+1/2$
+and $-1/2$ on $z$. Hence
 \[
  \bar s_z=\frac12(\rho^1{}_1-\rho^2{}_2),
 \]
-or, on using (59.1),
+and, using (59.1),
 \begin{equation}
  \rho^1{}_1=\frac12+\bar s_z,\qquad
  \rho^2{}_2=\frac12-\bar s_z.
  \tag{59.4}
 \end{equation}
-In a pure state, the mean values of $s_\pm=s_x\pm is_y$ are calculated as
+In a pure state, the mean values of $s_\pm=s_x\pm is_y$ are
 \[
  \bar s_\pm=\psi_\lambda^*\hat s_\pm\psi^\lambda.
 \]
-Since, by (55.6) and (55.7), the operators $\hat s_\pm$ have the matrices
+By (55.6) and (55.7),
 \[
  \hat s_+=\begin{pmatrix}0&1\\0&0\end{pmatrix},\qquad
  \hat s_-=\begin{pmatrix}0&0\\1&0\end{pmatrix},
 \]
-we find
+and therefore
 \[
  \bar s_+=\psi_1^*\psi^2,\qquad \bar s_-=\psi_2^*\psi^1.
 \]
-Accordingly, in a mixed state,
+Correspondingly, in a mixed state,
 \begin{equation}
  \rho^1{}_2=\bar s_-,\qquad \rho^2{}_1=\bar s_+.
  \tag{59.5}
 \end{equation}
-With the Pauli matrices, (59.4) and (59.5) can be combined as
+Equations (59.4) and (59.5) combine, using the Pauli matrices, into
 \begin{equation}
- \rho^\lambda{}_mu=\frac12
- (\delta^\lambda{}_mu+2\hat{\boldsymbol\sigma}^\lambda{}_mu\bar{\mathbf s}).
+ \rho^\lambda{}_{\mu}=\frac12
+ (\delta^\lambda{}_{\mu}+2\hat{\boldsymbol\sigma}^\lambda{}_{\mu}
+ \bar{\mathbf s}).
  \tag{59.6}
 \end{equation}
 
-Thus every component of the electron's polarization density matrix is
-expressed in terms of the mean components of its spin vector. In other words,
-the real vector $\bar{\mathbf s}$ completely determines the polarization
-properties of a spin-$1/2$ particle. In the limiting case of full
-polarization, one component of this vector, with a suitable choice of axes,
-equals $1/2$, while the other two vanish. In the opposite, unpolarized case,
-all three components vanish. For arbitrary partial polarization and an
-arbitrary choice of coordinate system, in general $0\leqslant p\leqslant1$,
-where
+Thus every component of the electron polarization density matrix is expressed
+through the mean components of its spin vector. The real vector
+$\bar{\mathbf s}$ completely specifies the polarization of a spin-$1/2$
+particle. At full polarization, with suitable axes, one component is $1/2$
+and the other two vanish. In an unpolarized state all three vanish. For an
+arbitrary partially polarized state in arbitrary coordinates,
+$0\leqslant p\leqslant1$, where
 \[
  p=2(\bar s_x^2+\bar s_y^2+\bar s_z^2)^{1/2}
 \]
-may be called the electron's \emph{degree of polarization}.
+is the electron's \emph{degree of polarization}.
+
 \SourcePage{274}{277}
 For a particle of arbitrary spin $s$, the density matrix is the rank-$4s$
-spinor $\rho^{\lambda\mu\ldots}{}_{\rho\sigma\ldots}$, symmetric in its
-first $2s$ and its last $2s$ indices, and satisfying
+spinor $\rho^{\lambda\mu\ldots}{}_{\rho\sigma\ldots}$, symmetric separately
+in the first $2s$ and last $2s$ indices, and satisfying
 \begin{equation}
  \rho^{\lambda\mu\ldots}{}_{\lambda\mu\ldots}=1,
  \tag{59.7}
@@ -99,28 +97,23 @@ first $2s$ and its last $2s$ indices, and satisfying
  =\rho^{\rho\sigma\ldots}{}_{\lambda\mu\ldots}.
  \tag{59.8}
 \end{equation}
-To count the independent density-matrix components, note that among the
-possible sets of values of $\lambda,\mu,\ldots$ (or of
-$\rho,\sigma,\ldots$) only $2s+1$ are essentially different. Since the
-components of $\rho^{\lambda\mu\ldots}{}_{\rho\sigma\ldots}$ are also related
-by the single condition (59.7), their number is
-$(2s+1)^2-1=4s(s+1)$. Although these components are complex, (59.8) ensures
-that this does not increase the total number of independent quantities
-characterizing a partially polarized state; that number is therefore
-$4s(s+1)$.\footnote{Specifying these quantities is equivalent to specifying
+To count its independent components, note that only $2s+1$ essentially
+different sets of values occur among either group of indices. The one
+relation (59.7) then leaves $(2s+1)^2-1=4s(s+1)$ different components.
+Although these components are complex, (59.8) leaves the total number of
+independent quantities describing partial polarization equal to
+$4s(s+1)$\footnote{Specifying these quantities is equivalent to specifying
 the mean values of the components of $\mathbf s$ and all their powers and
-products of degrees 2, 3, \ldots, $2s$ which cannot be reduced to still lower
-degrees (see Problem 3 of \secref{55}).} For comparison, a fully polarized state is
-described by only $4s$ quantities: the $2s+1$ complex components of
-$\psi^{\lambda\mu\ldots}$, subject to one normalization condition and
-containing one common phase irrelevant to the description of the state.
+products of degrees $2,3,\ldots,2s$ which cannot be reduced to lower powers
+(see Problem 3 of \S~55).}. By comparison, full polarization requires only
+$4s$ quantities: the $2s+1$ complex components of
+$\psi^{\lambda\mu\ldots}$, subject to one normalization condition and one
+overall phase irrelevant to the state.
 
-Like any spinor of rank $4s$, the spinor
+Like every rank-$4s$ spinor,
 $\rho^{\lambda\mu\ldots}{}_{\rho\sigma\ldots}$ is equivalent to a set of
-irreducible tensors of ranks $4s$, $4s-2$, \ldots, 0. Here there is exactly
-one tensor of each rank. Indeed, by the symmetry properties of
-$\rho^{\lambda\mu\ldots}{}_{\rho\sigma\ldots}$, each contraction can be
-performed in only one way: over any one of the indices
-$\lambda,\mu,\ldots$ and any one of $\rho,\sigma,\ldots$. Moreover, the
-scalar (rank-zero tensor) is absent altogether, since condition (59.7)
+irreducible tensors of ranks $4s,4s-2,\ldots,0$. Here there is just one tensor
+of each rank, because the symmetry permits each contraction in only one way:
+between any one index from the first group and any one from the second. The
+scalar (rank-0 tensor) is absent as an independent quantity, since (59.7)
 reduces it to unity.

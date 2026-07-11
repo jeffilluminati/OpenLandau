@@ -1,0 +1,162 @@
+\section{Hydrogen atom in an electric field}
+
+Unlike the levels of other atoms, hydrogen levels in a uniform electric field undergo a splitting proportional to the first power of the field, the \emph{linear Stark effect}. This follows from the accidental degeneracy of hydrogenic terms: states of different $l$ have equal energies for fixed $n$. Dipole-moment matrix elements between these states need not vanish, and the secular equation therefore gives a nonzero first-order shift.\footnote{The following calculation neglects the fine structure of hydrogen levels. The field must be weak enough for perturbation theory, but strong enough that the Stark splitting exceeds the fine structure. For the opposite case see problem 1 in vol.~IV, \S~52.}
+
+Choose the unperturbed wave functions so that the perturbation matrix is diagonal within each degenerate group. This is accomplished by quantizing hydrogen in parabolic coordinates; the functions $\psi_{n_1n_2m}$ are given by (37.15), (37.16).
+
+\SourcePage{353}{356}
+The perturbation is $\mathcal Ez=\mathcal E(\xi-\eta)/2$ (the field points along positive $z$, while the force on the electron points along negative $z$).\footnote{Atomic units are used in this section.} Among transitions $n_1n_2m\to n'_1n'_2m'$ with unchanged energy, only diagonal elements are nonzero:
+\begin{equation}\begin{split}
+\int|\psi_{n_1n_2m}|^2\mathcal Ez\,dV&=\frac{\mathcal E}{8}\iiint(\xi^2-\eta^2)|\psi|^2\,d\varphi\,d\xi\,d\eta\\
+&=\frac{\mathcal En}{4}\iint f_{n_1m}^2(\rho_1)f_{n_2m}^2(\rho_2)(\rho_1^2-\rho_2^2)\,d\rho_1d\rho_2.
+\end{split}\tag{77.1}\end{equation}
+Here $\xi=n\rho_1$, $\eta=n\rho_2$. Diagonality in $m$ is evident, and that in $n_1,n_2$ follows from orthogonality of the $f_{n_im}$. Using integral (f.6) gives\footnote{Schwarzschild and Epstein (K.~Schwarzschild, P.~Epstein, 1916) obtained this result from the old quantum theory, and Pauli and Schrödinger (1926) from quantum mechanics.}
+\begin{equation}E^{(1)}=\frac32\mathcal En(n_1-n_2),\tag{77.2}\end{equation}
+or in ordinary units
+\[E^{(1)}=\frac32n(n_1-n_2)|e|\mathcal E\frac{\hbar^2}{me^2}.\]
+The extreme components have $(n_1,n_2)=(n-1,0)$ and $(0,n-1)$; their separation is $3\mathcal En(n-1)$. Thus the total splitting is approximately proportional to $n^2$, naturally increasing as the electron lies farther from the nucleus and the atomic dipole moment grows.
+
+\SourcePage{354}{357}
+The linear effect means that the unperturbed atom has mean dipole moment
+\begin{equation}\overline d_z=-\frac32n(n_1-n_2).\tag{77.3}\end{equation}
+This agrees with the asymmetry of a parabolic-coordinate state about $z=0$ (\S~37). For $n_1>n_2$ the electron lies mainly at positive $z$, so the atomic dipole moment opposes the field.
+
+A uniform field cannot remove the degeneracy between states with projections $\pm m$. Equation (77.2) shows that the linear effect leaves still more degeneracy, since the shift is independent of $m$. Second order removes it further and is especially relevant when $n_1=n_2$, for which the linear effect vanishes.
+
+Rather than evaluating infinite complicated sums, use a modified method. The Schrödinger equation
+\[\frac12\Delta\psi+(E+1/r-\mathcal Ez)\psi=0\]
+separates in parabolic coordinates. The substitution (37.7) gives
+\begin{align}
+\frac d{d\xi}(\xi f_1')+(\tfrac12E\xi-\tfrac{m^2}{4\xi}-\tfrac14\mathcal E\xi^2)f_1&=-\beta_1f_1,\nonumber\\
+\frac d{d\eta}(\eta f_2')+(\tfrac12E\eta-\tfrac{m^2}{4\eta}+\tfrac14\mathcal E\eta^2)f_2&=-\beta_2f_2,\qquad\beta_1+\beta_2=1.
+\tag{77.4}\end{align}
+Treat $E$ as fixed and $\beta_1,\beta_2$ as eigenvalues of the corresponding self-adjoint operators. Their dependence on $E,\mathcal E$, together with $\beta_1+\beta_2=1$, determines the energy.
+
+\SourcePage{355}{358}
+For $\mathcal E=0$,
+\begin{equation}f_1=f_{n_1m}(s\xi),\qquad f_2=f_{n_2m}(s\eta),\tag{77.5}\end{equation}
+where
+\begin{equation}s=\sqrt{-2E},\tag{77.6}\end{equation}
+and
+\begin{equation}\beta_1^{(0)}=(n_1+\tfrac{|m|+1}{2})s,\qquad\beta_2^{(0)}=(n_2+\tfrac{|m|+1}{2})s.\tag{77.7}\end{equation}
+The $f_i$ are normalized to unity and orthogonal for different $n_i$. First order gives
+\[\beta_1^{(1)}=\frac{\mathcal E}{4s^2}(6n_1^2+6n_1|m|+m^2+6n_1+3|m|+2),\]
+and $\beta_2^{(1)}$ follows by $n_1\to n_2$ and reversal of sign. In second order,
+\[\beta_1^{(2)}=-\frac{\mathcal E^2}{16}\sum_{n'_1\ne n_1}\frac{|(\xi^2)_{n_1n'_1}|^2}{\beta_1^{(0)}(n_1)-\beta_1^{(0)}(n'_1)}.\]
+
+\SourcePage{356}{359}
+Only
+\begin{align*}
+(\xi^2)_{n_1,n_1-1}&=-\frac4{s^2}(2n_1+|m|)\sqrt{n_1(n_1+|m|)},\\
+(\xi^2)_{n_1,n_1-2}&=\frac2{s^2}\sqrt{n_1(n_1-1)(n_1+|m|)(n_1+|m|-1)}
+\end{align*}
+and their transposes are nonzero, while the denominators equal $s(n_1-n'_1)$. Hence
+\[\beta_1^{(2)}=-\frac{\mathcal E^2}{16s^5}(|m|+2n_1+1)[4m^2+17(2|m|n_1+2n_1^2+|m|+2n_1)+18],\]
+with $n_1\to n_2$ for $\beta_2^{(2)}$. Substitution in $\beta_1+\beta_2=1$ yields
+\[sn-\frac{\mathcal E^2n}{16s^5}[17n^2+5(n_1-n_2)^2-9m^2+19]+\frac{3\mathcal En}{2s^2}(n_1-n_2)=1,\]
+and successive solution gives
+\begin{equation}E=-\frac1{2n^2}+\frac32\mathcal En(n_1-n_2)-\frac{\mathcal E^2n^4}{16}[17n^2-3(n_1-n_2)^2-9m^2+19].\tag{77.8}\end{equation}
+The third term is the quadratic Stark effect and is always negative. Differentiation gives, for $n_1=n_2$,
+\begin{equation}\overline d_z=\frac{n^4}{8}(17n^2-9m^2+19)\mathcal E.\tag{77.9}\end{equation}
+For $n=1,m=0$ the polarizability is $9/2$.
+
+At large $n$ the binding energy decreases rapidly while Stark splitting grows. Fields for which the splitting is comparable with the level energy require a semiclassical treatment.\footnote{For high levels, perturbation theory requires the perturbation to be small relative to the level's binding energy, not the spacing between levels. In the semiclassical case this is equivalent to requiring the perturbing force to be small relative to the unperturbed forces.}
+
+\SourcePage{357}{360}
+Put
+\begin{equation}f_1=\chi_1/\sqrt\xi,\qquad f_2=\chi_2/\sqrt\eta.\tag{77.10}\end{equation}
+Then
+\begin{align}
+\chi_1''+(\tfrac E2+\tfrac{\beta_1}\xi-\tfrac{m^2-1}{4\xi^2}-\tfrac{\mathcal E}{4}\xi)\chi_1&=0,\nonumber\\
+\chi_2''+(\tfrac E2+\tfrac{\beta_2}\eta-\tfrac{m^2-1}{4\eta^2}+\tfrac{\mathcal E}{4}\eta)\chi_2&=0.
+\tag{77.11}\end{align}
+These are one-dimensional Schrödinger equations of energy $E/4$ and potentials
+\begin{align}U_1(\xi)&=-\frac{\beta_1}{2\xi}+\frac{m^2-1}{8\xi^2}+\frac{\mathcal E}{8}\xi,\nonumber\\U_2(\eta)&=-\frac{\beta_2}{2\eta}+\frac{m^2-1}{8\eta^2}-\frac{\mathcal E}{8}\eta.\tag{77.12}\end{align}
+Figures 25 and 26 show their approximate forms for $m>1$. Bohr--Sommerfeld quantization gives
+\begin{align}\int_{\xi_1}^{\xi_2}\sqrt{2[E/4-U_1]}\,d\xi&=(n_1+1/2)\pi,\nonumber\\\int_{\eta_1}^{\eta_2}\sqrt{2[E/4-U_2]}\,d\eta&=(n_2+1/2)\pi.\tag{77.13}\end{align}
+\footnote{A more detailed analysis shows that replacing $m^2-1$ by $m^2$ in $U_1,U_2$ is more accurate; $n_1,n_2$ then coincide with the parabolic quantum numbers.} Together with $\beta_1+\beta_2=1$, these equations determine the shifted levels numerically.
+
+\SourcePage{358}{361}
+Strong-field Stark splitting is accompanied by field ionization (C.~Lanczos, 1931). Since $\mathcal Ez\to-\infty$ as $z\to-\infty$, the allowed region includes both the atomic interior and large distances toward the anode.
+
+\setcounter{figure}{24}
+\begin{figure}[ht]\centering
+\begin{minipage}{.43\linewidth}\centering
+\begin{tikzpicture}[x=.75cm,y=.75cm]
+\draw[->] (0,0)--(4.1,0) node[right]{$\xi$}; \draw[->] (0,-1.25)--(0,2.2) node[above]{$U_1$};
+\draw[dashed] (0,-.62)--(3.5,-.62) node[left,pos=0]{$E/4$};
+\draw[domain=.18:3.8,smooth,samples=80] plot (\x,{1.05/\x-1.5+0.36*\x});
+\node at (1.15,.25){$\xi_1$}; \node at (2.3,.25){$\xi_2$};
+\end{tikzpicture}\caption{ }\label{fig:25}\end{minipage}\hfill
+\begin{minipage}{.43\linewidth}\centering
+\begin{tikzpicture}[x=.75cm,y=.75cm]
+\draw[->] (0,0)--(4.1,0) node[right]{$\eta$}; \draw[->] (0,-1.55)--(0,2.2) node[above]{$U_2$};
+\draw[dashed] (0,-.62)--(3.5,-.62) node[left,pos=0]{$E/4$};
+\draw[domain=.18:3.8,smooth,samples=80] plot (\x,{1.05/\x-1.7+1.15*exp(-((\x-2.3)^2)/.45)-.18*\x});
+\node at (1.05,.25){$\eta_1$}; \node at (1.75,.25){$\eta_2$};
+\end{tikzpicture}\caption{ }\label{fig:26}\end{minipage}
+\end{figure}
+
+The regions are separated by a barrier whose width decreases with field. Tunnelling through it is ionization. The probability is negligible in weak fields but grows exponentially.\footnote{This illustrates how a small perturbation can alter the character of the energy spectrum. Any nonzero field creates a barrier and makes the remote region accessible, rendering the motion strictly infinite and the spectrum continuous. Perturbation theory nevertheless gives physically meaningful energies of almost stationary states, but its series is asymptotic rather than convergent.}
+
+\ProblemHeading{1.} Determine the ionization probability per unit time for ground-state hydrogen when $\mathcal E\ll1$.
+
+\SourcePage{359}{362}
+\SolutionHeading\footnote{Atomic units are used in this problem.} The barrier lies along $\eta$. Without the field,
+\begin{equation}\psi=\pi^{-1/2}\exp[-(\xi+\eta)/2].\tag{1}\end{equation}
+The $\xi$ dependence may be retained, while $\chi=\sqrt\eta\psi$ obeys
+\begin{equation}\chi''+(-\tfrac14+\tfrac1{2\eta}+\tfrac1{4\eta^2}+\tfrac14\mathcal E\eta)\chi=0.\tag{2}\end{equation}
+Matching semiclassically at $1\ll\eta_0\ll1/\mathcal E$ gives, beyond the barrier,
+\[\chi=(\eta_0|p_0|/\pi p)^{1/2}\exp[-(\xi+\eta_0)/2+i\int_{\eta_0}^{\eta}p\,d\eta+i\pi/4],\]
+where $p=[-1/4+1/(2\eta)+1/(4\eta^2)+\mathcal E\eta/4]^{1/2}$. If $p(\eta_1)=0$,
+\begin{equation}|\chi|^2=\frac{\eta_0|p_0|}{\pi p}\exp[-\xi-2\int_{\eta_0}^{\eta_1}|p|d\eta-\eta_0].\tag{3}\end{equation}
+Keeping the next exponential term yields
+\begin{equation}|\chi|^2=\frac4{\pi\mathcal E\sqrt{\mathcal E\eta-1}}\exp(-\xi-2/3\mathcal E).\tag{4}\end{equation}
+
+\SourcePage{360}{363}
+The outward probability flux gives
+\begin{equation}w=\frac4{\mathcal E}\exp(-2/3\mathcal E),\tag{5}\end{equation}
+or
+\[w=\frac{4m^3|e|^9}{\mathcal E\hbar^7}\exp\left(-\frac{2m^2|e|^5}{3\mathcal E\hbar^4}\right).\]
+
+\ProblemHeading{2.} Determine the probability of removing an electron by an electric field from a short-range potential well in which it occupies a bound $s$ state, assuming $|e|\mathcal E\ll\hbar^2\varkappa^3/m$, with $\varkappa=\sqrt{2m|E|}/\hbar$ (Yu.~N.~Demkov, G.~F.~Drukarev, 1964).
+
+\SolutionHeading At large distances
+\[\psi=A\sqrt\varkappa\,e^{-\varkappa r}/r,\]
+where $A$ depends on the well.\footnote{If $a\varkappa\ll1$, then $A=(2\pi)^{-1/2}$; see \S~133.} For $\eta\gg\xi$,
+\begin{equation}\psi\approx\frac{2A\sqrt\varkappa}{\eta}\exp[-\varkappa(\xi+\eta)/2].\tag{6}\end{equation}
+
+\SourcePage{361}{364}
+Measure mass, length, and time in units $m$, $1/\varkappa$, and $m/\hbar\varkappa^2$. Separation gives the second of (77.11) with $E=-1/2$, $m=0$, $\beta_1=1/2$, $\beta_2=-1/2$. Repeating problem 1 gives
+\[w=\pi A^2\mathcal E\exp(-2/3\mathcal E),\]
+or
+\[w=\frac{\pi|e|\mathcal EA^2}{\hbar\varkappa}\exp\left(-\frac{2\hbar^2\varkappa^3}{3m|e|\mathcal E}\right).\]
+
+\ProblemHeading{3.} Estimate to exponential accuracy the probability of removing an electron from a potential well by the uniform alternating field $\mathcal E=\mathcal E_0\cos\omega t$, assuming $\hbar\omega\ll|E|$ and $|e|\mathcal E_0\ll\hbar^2\varkappa^3/m$ (L.~V.~Keldysh, 1964).\footnote{For example, this may describe ionization of a singly charged negative ion by a strong light wave; the well is produced by interaction with the neutral ionic core. The first condition permits classical treatment of the wave field.}
+
+\SourcePage{362}{365}
+\SolutionHeading To exponential accuracy the motion may be treated as one-dimensional along $z$. Use $A_z=-(c\mathcal E_0/\omega)\sin\omega t$ and
+\[\widehat H=\frac1{2m}\left(-i\hbar\partial_z+\frac{|e|\mathcal E_0}{\omega}\sin\omega t\right)^2.\]
+With
+\[\tau=\frac{\hbar\varkappa^2}{2m}t,\quad\eta=2\varkappa z,\quad\Omega=\frac{2m\omega}{\hbar\varkappa^2},\quad F=\frac{|e|m\mathcal E_0}{\hbar^2\varkappa^3},\]
+the equation is
+\[\frac i4\Psi_\tau=-\left(\partial_\eta+\frac{iF}{\Omega}\sin\Omega\tau\right)^2\Psi,\]
+with
+\begin{equation}\Psi\to e^{i\tau}\quad(\eta\to0).\tag{7}\end{equation}
+Seek $\Psi=e^{iS}$, where
+\begin{equation}S=-\int_{\tau_0}^{\tau}H(p,\tau')d\tau'+\eta p+A,\qquad H=4(p+F\sin\Omega\tau/\Omega)^2,\tag{8}\end{equation}
+and
+\begin{equation}\eta=\int_{\tau_0}^{\tau}\frac{\partial H}{\partial p}d\tau'.\tag{9}\end{equation}
+Taking $A(\tau_0)=\tau_0$ and imposing
+\begin{equation}\partial S/\partial\tau_0=0\tag{10}\end{equation}
+gives
+\begin{equation}H(p,\tau_0)+1=0.\tag{11}\end{equation}
+
+\SourcePage{363}{366}
+At emergence into the classically allowed region $p=0$, so
+\[\Omega\tau_0=i\operatorname{arsinh}\gamma,\qquad\gamma=\frac\Omega{2F}=\frac{\sqrt{2m|E|}}{|e|\mathcal E_0}\omega.\]
+Evaluation of the imaginary action gives
+\begin{equation}w\sim\exp\left[-\frac{2|E|}{\hbar\omega}f(\gamma)\right],\qquad f(\gamma)=\left(1+\frac1{2\gamma^2}\right)\operatorname{arsinh}\gamma-\frac{\sqrt{1+\gamma^2}}{2\gamma}.\tag{12}\end{equation}
+The limiting forms are
+\[f(\gamma)\approx2\gamma/3\quad(\gamma\ll1),\qquad f(\gamma)\approx\ln2\gamma-1/2\quad(\gamma\gg1).\]
+The first corresponds to a constant field. Formula (12) applies when its exponent is large; in particular, $\hbar\omega\ll|E|$ is required.

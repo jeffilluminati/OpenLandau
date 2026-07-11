@@ -1,0 +1,42 @@
+\SourcePage{312}{315}
+\section{Hydrogen-like energy levels}
+
+The only atom for which the Schrödinger equation can be solved exactly is the simplest of all atoms, hydrogen. The energy levels of hydrogen and of the ions $\mathrm{He}^+$, $\mathrm{Li}^{++}$, \ldots, each containing just one electron, are given by the Bohr formula (36.10):
+\begin{equation}
+E=-\frac{mZ^2e^4}{2\hbar^2(1+m/M)}\frac1{n^2}.
+\tag{68.1}
+\end{equation}
+Here $Ze$ is the nuclear charge, $M$ the nuclear mass, and $m$ the electron mass. The dependence on the nuclear mass is very weak.
+
+Formula (68.1) includes no relativistic effects. In this approximation hydrogen has the additional, \emph{accidental}, degeneracy discussed in \S~36: for fixed principal quantum number $n$, the energy is independent of the orbital angular momentum $l$.
+
+Other atoms possess states whose properties resemble those of hydrogen. These are highly excited states in which one electron has a large principal quantum number and therefore spends most of its time far from the nucleus. To some approximation, the motion of this electron can be regarded as taking place in the Coulomb field of the \emph{ionic core}, whose effective charge is unity. The energy levels obtained in this way are, however, too inaccurate; they require a correction for the departure of the field at small distances from a pure Coulomb field. The form of this correction follows readily from the following argument.
+
+\SourcePage{313}{316}
+Since states with large quantum numbers are semiclassical, their energy levels may be determined from the Bohr--Sommerfeld quantization rules (48.6). The departure from a Coulomb field at distances small compared with the ``orbital radius'' may be represented formally as a change in the boundary condition imposed on the wave function at $r=0$. This changes the constant $\gamma$ in the radial quantization condition. Since the rest of that condition is unchanged, the energy-level expression must differ from the hydrogenic one through the replacement of the radial quantum number, or equivalently the principal quantum number $n$, by $n+\Delta_l$, where $\Delta_l$ is a constant known as the \emph{Rydberg correction}:
+\begin{equation}
+E=-\frac{me^4}{2\hbar^2}\frac1{(n+\Delta_l)^2}.
+\tag{68.2}
+\end{equation}
+
+By its definition the Rydberg correction is independent of $n$, but it is of course a function of the azimuthal quantum number $l$ of the excited electron (written as a subscript on $\Delta$), and also of the angular momenta $L$ and $S$ of the atom as a whole. For fixed $L$ and $S$, $\Delta_l$ decreases rapidly as $l$ increases. The larger $l$ is, the less time the electron spends near the nucleus, and the closer the energy levels must therefore approach the hydrogenic levels.\footnote{As an illustration, consider the empirical Rydberg corrections for highly excited states of helium. The total spin of helium may be $S=0$ or 1, while in the states under consideration the total orbital angular momentum equals the angular momentum $l$ of the excited electron (the other electron is in the $1s$ state). The Rydberg corrections are, for $S=0$,
+\[
+\Delta_0=-0{,}140,\qquad \Delta_1=+0{,}012,\qquad \Delta_2=-0{,}0022,
+\]
+and, for $S=1$,
+\[
+\Delta_0=-0{,}296,\qquad \Delta_1=-0{,}068,\qquad \Delta_2=-0{,}0029.
+\] }
+
+\ProblemHeading Find the asymptotic form, at large distances from the ionic core, of the wave function of a hydrogen-like electron in an $s$ state.
+
+\SolutionHeading At large distances, where $U=-1/r$ in atomic units, the required function $\psi(r)$ obeys the Schrödinger equation
+\[
+\psi''+\frac2r\psi'-\varkappa^2\psi+\frac2r\psi=0,
+\]
+
+\SourcePage{314}{317}
+where $\varkappa=\sqrt{2|E|}$. Seek a solution in the form $\psi=\operatorname{const}\cdot r^\nu e^{-\varkappa r}$. Neglecting terms in the equation that decrease faster than $\psi/r$, we find
+\[
+\psi=\operatorname{const}\cdot r^{1/\varkappa-1}e^{-\varkappa r}.
+\]

@@ -2,92 +2,86 @@
 \section{Time reversal and Kramers' theorem}
 
 In quantum mechanics, symmetry of motion under reversal of the sign of time
-means the following: if $\psi$ is the wave function of some stationary state
-of a system, then the ``time-reversed'' wave function, denoted by
-$\psi^{\text{rev}}$, also describes a possible state with
-\SourcePage{275}{278}
-the same energy. It was stated at the end of \secref{18} that
-$\psi^{\text{rev}}$ coincides with the complex-conjugate function $\psi^*$.
-In this simple form, the statement applies to wave functions when particle
-spin is disregarded. With spin present, it requires qualification.
+means that if $\psi$ is the wave function of a stationary state, the
+time-reversed wave function, denoted by $\psi^{\text{rev}}$, also describes a
+possible state of the same energy. At the end of \S~18 it was stated that
+$\psi^{\text{rev}}$ is the complex conjugate $\psi^*$. In this simple form the
+statement applies when particle spin is disregarded; spin requires a
+qualification.
 
-Represent the wave function of a spin-$s$ particle by the contravariant
-spinor $\psi^{\lambda\mu\ldots}$ of rank $2s$. On passing to the
-complex-conjugate functions $\psi^{\lambda\mu\ldots*}$, however, we obtain
-quantities that transform as components of a covariant spinor. Time reversal
-therefore replaces $\psi^{\lambda\mu\ldots}$ by a new wave function whose
-covariant components are defined by
+\SourcePage{275}{278}
+Represent the wave function of a spin-$s$ particle as a contravariant spinor
+$\psi^{\lambda\mu\ldots}$ of rank $2s$. Its complex conjugates
+$\psi^{\lambda\mu\ldots*}$ transform as the components of a covariant spinor.
+Time reversal therefore takes $\psi^{\lambda\mu\ldots}$ into a new wave
+function whose covariant components are
 \begin{equation}
  \psi^{\text{rev}}_{\lambda\mu\ldots}=\psi_{\lambda\mu\ldots}^*.
  \tag{60.1}
 \end{equation}
-For a specified set of index values $\lambda,\mu,\ldots$, the covariant and
-contravariant spinor components correspond to angular-momentum projections of
-opposite sign. In terms of the functions $\psi_{s\sigma}$, time reversal thus
-replaces $\psi_{s\sigma}$ by $\psi_{s,-\sigma}$, as it must, since reversing
-time reverses the direction of angular momentum. The precise correspondence
-following from (60.1) is
+For a fixed set of index values, covariant and contravariant components
+correspond to opposite angular-momentum projections. Thus, in terms of
+$\psi_{s\sigma}$, time reversal interchanges $\psi_{s\sigma}$ and
+$\psi_{s,-\sigma}$, as expected because reversing time reverses angular
+momentum. Equation (60.1) fixes the precise relation:
 \begin{equation}
  \psi^{\text{rev}}_{s,-\sigma}=\psi_{s\sigma}^*(-1)^{s-\sigma}.
  \tag{60.2}
 \end{equation}
 In other words, the replacement
 $\psi_{s\sigma}\longrightarrow\psi_{s\sigma}^*$ required by time reversal
-means the replacement\footnote{Notice the agreement of the complex-conjugation
-rule for a spherical function, (28.9), with the general rule (60.3).}
+amounts to\footnote{Notice the agreement between the complex-conjugation rule
+for a spherical function, (28.9), and the general rule (60.3).}
 \begin{equation}
  \psi_{s\sigma}\longrightarrow\psi_{s,-\sigma}(-1)^{s-\sigma}.
  \tag{60.3}
 \end{equation}
-Applying this operation twice gives
+Applying the operation twice gives
 \[
  \psi_{s\sigma}\longrightarrow\psi_{s,-\sigma}(-1)^{s-\sigma}
  \longrightarrow\psi_{s\sigma}(-1)^{s-\sigma}(-1)^{s+\sigma}
  =\psi_{s\sigma}(-1)^{2s}.
 \]
-Thus two successive time reversals restore the original wave function only
-for integral spin; for half-integral spin they change its sign.
+Thus two time reversals restore the wave function for integral spin, but
+change its sign for half-integral spin.
 
 Consider an arbitrary system of interacting particles. When relativistic
-interactions are included, the orbital and spin angular momenta of such a
-system are not in general conserved separately; only the total angular
-momentum $J$ is conserved. In the absence of an external field, each energy
-level of the system is $(2j+1)$-fold degenerate. An external field generally
-removes this degeneracy. The question is whether the degeneracy can be removed
-completely, leaving the system with only nondegenerate levels. This question
-is closely connected with time-reversal symmetry.
-\SourcePage{276}{279}
-Classical electrodynamics is invariant under reversal of the sign of time if
-the electric field is left unchanged and the sign of the magnetic field is
-reversed.\footnote{See II, \S~17; see also the remark at the end of \secref{111}.}
-This fundamental property of motion must persist in quantum mechanics.
-Time-reversal symmetry therefore holds not only for a closed system, but also
-in any external electric field, provided no magnetic field is present.
+interactions are included, its orbital and spin angular momenta are generally
+not conserved separately; only the total $J$ is conserved. With no external
+field, every energy level is $(2j+1)$-fold degenerate. An external field
+generally removes this degeneracy. Can it remove it completely, leaving only
+simple levels? The answer is closely tied to time-reversal symmetry.
 
-The wave functions of the system are spinors $\psi^{\lambda\mu\ldots}$ of
-rank $n$ equal to twice the sum of the spins of all particles,
-$n=2\sum s_a$; this sum need not coincide with the total spin $S$ of the
-system. From the foregoing, in an arbitrary electric field a wave function
-and its time reverse must correspond to states of equal energy. A necessary
-condition for a level to be nondegenerate is that these states be identical,
-so their wave functions must agree apart from a constant factor. Both must,
-of course, be expressed as spinors of the same kind, covariant or
-contravariant.
+\SourcePage{276}{279}
+The equations of classical electrodynamics are invariant under reversal of
+time if the electric field is left unchanged and the magnetic field changes
+sign\footnote{See II, \S~17; also the remark at the end of \S~111.}. This
+fundamental property must persist in quantum mechanics. Time-reversal symmetry
+therefore holds not only for a closed system but also in any external electric
+field, provided no magnetic field is present.
+
+The system's wave functions are spinors $\psi^{\lambda\mu\ldots}$ of rank
+$n=2\sum s_a$, twice the sum of the spins of all particles; this sum need not
+equal the total spin $S$ of the system. In an arbitrary electric field, a wave
+function and its time reverse must describe states of equal energy. A
+nondegenerate level requires these states to be identical, so their wave
+functions must agree up to a constant factor, both being expressed in the
+same covariant or contravariant form.
 
 Write $\psi^{\text{rev}}_{\lambda\mu\ldots}
-=C\psi_{\lambda\mu\ldots}$, or, by (60.1),
+=C\psi_{\lambda\mu\ldots}$ or, by (60.1),
 \begin{equation}
  \psi_{\lambda\mu\ldots}^*=C\psi_{\lambda\mu\ldots},
  \tag{60.4}
 \end{equation}
-where $C$ is constant. Complex conjugation of the two sides gives
+where $C$ is constant. Complex conjugation gives
 \[
  \psi^{\lambda\mu\ldots}=C^*\psi^{\lambda\mu\ldots*}.
 \]
-Lower the indices on the left and correspondingly raise those on the right.
-This means multiplying both sides by
-$g_{\alpha\lambda}g_{\beta\mu}\ldots$ and summing over
-$\lambda,\mu,\ldots$; on the right one must use
+Lower the indices on the left and correspondingly raise them on the right.
+That is, multiply both sides by
+$g_{\alpha\lambda}g_{\beta\mu}\ldots$ and sum over
+$\lambda,\mu,\ldots$; on the right use
 \[
  g_{\alpha\lambda}g_{\beta\mu}\ldots
  =(-1)^n g_{\lambda\alpha}g_{\mu\beta}\ldots.
@@ -96,38 +90,36 @@ The result is
 \[
  \psi_{\lambda\mu\ldots}=C^*(-1)^n\psi_{\lambda\mu\ldots}^*.
 \]
-Substituting $\psi_{\lambda\mu\ldots}^*$ from (60.4), we find
+Substitution from (60.4) gives
 \[
  \psi_{\lambda\mu\ldots}=(-1)^nCC^*\psi_{\lambda\mu\ldots}.
 \]
+
 \SourcePage{277}{280}
-This equality must hold identically, so $(-1)^nCC^*=1$. But $|C|^2$ is
-necessarily positive; the condition is therefore possible only for even $n$,
-that is, for an integral value of $\sum s_a$. For odd $n$, or half-integral
-$\sum s_a$,\footnote{When $\sum s_a$ is integral (half-integral), all possible
-values of the total spin $S$ of the system are likewise integral
-(half-integral).} condition (60.4) cannot be satisfied.
+This identity requires $(-1)^nCC^*=1$. Since $|C|^2$ is positive, this is
+possible only for even $n$, that is, integral $\sum s_a$. For odd $n$, or
+half-integral $\sum s_a$\footnote{When $\sum s_a$ is integral
+(half-integral), all possible values of the total spin $S$ are likewise
+integral (half-integral).}, condition (60.4) cannot hold.
 
-We thus reach the result that an electric field can remove the degeneracy
-completely only in a system with an integral sum of particle spins. In a
-system with a half-integral spin sum, every level in an arbitrary electric
-field must be doubly degenerate; the two distinct states of equal energy
-correspond to complex-conjugate spinors.\footnote{If the electric field has
-high (cubic) symmetry, fourfold degeneracy may also occur (see \secref{99} and its
-problem).} (H.~A. Kramers, 1930).
+An electric field can therefore remove degeneracy completely only for a
+system whose particle spins have an integral sum. For a half-integral sum,
+every level in an arbitrary electric field must be at least doubly degenerate;
+the two distinct states of equal energy correspond to complex-conjugate
+spinors\footnote{If the electric field has high (cubic) symmetry, fourfold
+degeneracy may also occur; see \S~99 and its problem.} (H.~A.~Kramers, 1930).
 
-We add one mathematical remark. A relation of the form (60.4), with real
-$C$, is mathematically the condition that some set of real quantities can be
-put in correspondence with the spinor components; it may be called a
-``reality'' condition for the spinor.\footnote{It is meaningless to speak of
-a spinor as literally real, since complex-conjugate spinors have different
-transformation laws.} The impossibility of (60.4) for odd $n$ means that no
-real quantity can correspond to a spinor of odd rank. For even $n$, by
-contrast, (60.4) can hold, and $C$ can be real. In particular, a real vector
-can be put in correspondence with a symmetric second-rank spinor when (60.4)
-holds with $C=1$:
+One further mathematical remark is useful. A relation of the form (60.4) with
+real $C$ is the condition that the spinor components can be associated with a
+set of real quantities; call it a ``reality'' condition for the
+spinor\footnote{It is meaningless to call a spinor literally real, since
+complex-conjugate spinors have different transformation laws.}. The
+impossibility of (60.4) for odd $n$ says that no real quantity can correspond
+to an odd-rank spinor. For even $n$, by contrast, (60.4) can hold with real
+$C$. In particular, a symmetric rank-2 spinor corresponds to a real vector
+when (60.4) holds with $C=1$:
 \[
  \psi^{\lambda\mu*}=\psi_{\lambda\mu}
 \]
-(as is easily verified from (57.8), (57.9)). In general, (60.4) with $C=1$
-is the ``reality'' condition for a symmetric spinor of any even rank.
+(as follows directly from (57.8), (57.9)). More generally, (60.4) with $C=1$
+is the reality condition for a symmetric spinor of any even rank.
