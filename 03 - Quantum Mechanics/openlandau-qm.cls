@@ -51,6 +51,7 @@
   bookmarksnumbered,
   bookmarksopen,
   bookmarksopenlevel=1,
+  hypertexnames=false,
   colorlinks,
   linkcolor=SpringerBlue,
   citecolor=SpringerBlue,
@@ -160,8 +161,15 @@
   {\S\,\thesection.}
   {0.6em}
   {}[\label{sec:\thesection}]
-\newcommand{\secref}[1]{\hyperref[sec:#1]{\S\,#1}}
-\newcommand{\secsref}[2]{\S\S\,\hyperref[sec:#1]{#1}--\hyperref[sec:#2]{#2}}
+\makeatletter
+\newcommand{\OpenLandauSectionLink}[1]{%
+  \@ifundefined{r@sec:#1}{#1}{\hyperref[sec:#1]{#1}}% 
+}
+\newcommand{\secref}[1]{\S\,\OpenLandauSectionLink{#1}}
+\newcommand{\secsref}[2]{%
+  \S\S\,\OpenLandauSectionLink{#1}--\OpenLandauSectionLink{#2}%
+}
+\makeatother
 \titlespacing*{\section}{0pt}{3ex plus .8ex minus .2ex}{1.2ex}
 
 \renewcommand{\cftchapfont}{\sffamily\bfseries}
