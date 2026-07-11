@@ -1,0 +1,148 @@
+\SourcePage{166}{171}
+\section{System of wave functions of the continuous spectrum for scattering in a Coulomb field}
+
+Later on (see~\S\S\,95, 96) various inelastic processes will be considered that occur in the scattering of ultra-relativistic electrons in the field of a heavy ($Z\alpha \sim 1$) nucleus. For the computation of the corresponding matrix elements we shall need the wave functions, whose asymptotic form (as $r\to\infty$) consists of a plane wave and a spherical wave.
+
+We saw that in the ultra-relativistic case (energy of the electron $\varepsilon \gg m$) the main role in the scattering is played by momentum transfers (from the electron to the nucleus) $q = |\mathbf{p}' - \mathbf{p}| \sim m$. These values of $q$ correspond to ``impact parameters'' $\rho \sim 1/q \sim 1/m$, and the electron is deflected through angles\,\footnote{This is clear directly from equations~(38.1), since for the Coulomb field the energy $\varepsilon$ can be altogether eliminated from the equations by the substitution $\mathbf{r}\to\mathbf{r}'/\varepsilon$.}\textsuperscript{,}\,\footnote{In this section $p$ denotes $|\mathbf{p}|$.}
+\begin{equation}
+\theta \sim \frac{q}{p} \sim \frac{m}{\varepsilon}.
+\tag{39.1}
+\end{equation}
+In terms of the coordinates $r$ (distance from the centre) and $z = r\cos\theta$ this means the region
+\begin{equation}
+\rho \equiv r\sin\theta \sim 1/m,\qquad p(r - z) = pr(1 - \cos\theta) \sim 1.
+\tag{39.2}
+\end{equation}
+Since $r \sim \varepsilon/m^2$, i.e.\ we are dealing with the region of large distances.
+
+Let us write the Dirac equation in the form
+\begin{equation}
+(\varepsilon - U - m\beta + i\boldsymbol{\alpha}\nabla)\psi = 0,\qquad U = -Z\alpha/r.
+\tag{39.3}
+\end{equation}
+We convert it into a second-order equation by applying to~(39.3) the operator $(\varepsilon - U + m\beta - i\boldsymbol{\alpha}\nabla)$:
+\begin{equation}
+(\Delta + p^2 - 2\varepsilon U)\psi = (-i\boldsymbol{\alpha}\,\nabla U - U^2)\psi.
+\tag{39.4}
+\end{equation}
+
+\SourcePage{167}{172}
+Since in the region under consideration $r \gg Z\alpha/\varepsilon$, we have $U \ll \varepsilon$. In the first approximation one may neglect the right-hand side of~(39.4). The remaining equation
+\begin{equation}
+\left(\Delta + p^2 + \frac{2\varepsilon Z\alpha}{r}\right)\psi = 0
+\tag{39.5}
+\end{equation}
+coincides in form with the non-relativistic Schr\"odinger equation in the Coulomb field
+\begin{equation}
+\left(\frac{1}{2m}\,\Delta + \frac{p^2}{2m} + \frac{Z\alpha}{r}\right)\psi = 0,
+\tag{39.5a}
+\end{equation}
+differing from it only by an obvious change in the notation of the parameters (the ``potential energy'' has a superfluous factor $\varepsilon/m$). We can therefore immediately write its solution, which has the required asymptotic form (see~III, \S\,136).
+
+Thus, the wave function containing asymptotically a plane wave (${\propto}\,e^{i\mathbf{p}\mathbf{r}}$) and a diverging spherical wave has the form
+\begin{equation}
+\psi^{(+)}_{\varepsilon\mathbf{p}} = C\,\frac{u_{\varepsilon\mathbf{p}}}{\sqrt{2\varepsilon}}\,e^{i\mathbf{p}\mathbf{r}}F\!\left(\frac{iZ\alpha\varepsilon}{p},\,1,\,i(pr - \mathbf{p}\mathbf{r})\right),
+\tag{39.6}
+\end{equation}
+\[
+C = e^{\pi Z\alpha\varepsilon/(2p)}\,\Gamma\!\left(1 - i\,\frac{Z\alpha\varepsilon}{p}\right),
+\]
+where $F$ is the confluent hypergeometric function, and $u_{\varepsilon\mathbf{p}}$ is a constant bispinor amplitude of the plane wave, normalised by the condition we have adopted~(23.4)
+\begin{equation}
+\bar u_{\varepsilon\mathbf{p}}\,u_{\varepsilon\mathbf{p}} = 2m.
+\tag{39.7}
+\end{equation}
+
+The wave function~(39.6) is normalised in such a way that the plane wave in its asymptotic expression has the usual form
+\[
+\frac{u_{\varepsilon\mathbf{p}}}{\sqrt{2\varepsilon}}\,e^{i\mathbf{p}\mathbf{r}},
+\]
+corresponding to one particle in a unit volume. In the ultra-relativistic case $p \approx \varepsilon$, and in~(39.6) one can set $Z\alpha\varepsilon/p \approx Z\alpha$:
+\begin{equation}
+\psi^{(+)}_{\varepsilon\mathbf{p}} = C\,\frac{u_{\varepsilon\mathbf{p}}}{\sqrt{2\varepsilon}}\,e^{i\mathbf{p}\mathbf{r}}F\bigl(iZ\alpha,\,1,\,i(pr - \mathbf{p}\mathbf{r})\bigr),
+\tag{39.8}
+\end{equation}
+\[
+C = e^{\pi Z\alpha/2}\,\Gamma(1 - iZ\alpha).
+\]
+
+Let us draw attention to the fact that although the distances we consider are so large that $pr \gg 1$, one cannot replace the hypergeometric function in~(39.8) by its asymptotic expression: the argument of the function $F$ is not $pr$, but $pr(1-\cos\theta)$, a quantity that is not assumed to be large\,\footnote{In~III, \S\,135 we were interested in arbitrarily large~$r$, and therefore such a replacement was possible for all angles $\theta$.}.
+
+\SourcePage{168}{173}
+In the applications it turns out to be necessary also to include the next approximation in~$\psi$, which has a spinor structure different from~(39.8) (reducing to the factor $u_{\varepsilon\mathbf{p}}$). For this computation we write $\psi$ in the form
+\[
+\psi = \frac{C}{\sqrt{2\varepsilon}}\,e^{i\mathbf{p}\mathbf{r}}(u_{\varepsilon\mathbf{p}}F + \varphi).
+\]
+On the right-hand side of equation~(39.4) we keep the term linear in~$U$, and for the function $\varphi$ we obtain the equation
+\begin{equation}
+(\Delta + 2i\mathbf{p}\nabla - 2\varepsilon U)\varphi = -iu_{\varepsilon\mathbf{p}}(\boldsymbol{\alpha}\nabla U)F.
+\tag{39.9}
+\end{equation}
+Its solution can be found by noting that the function $F$ satisfies the equation
+\[
+(\Delta + 2i\mathbf{p}\nabla - 2\varepsilon U)F = 0
+\]
+(as can be verified by substituting~(39.6) into~(39.5)). Applying to this equation the operation $\nabla$, we get
+\[
+(\Delta + 2i\mathbf{p}\nabla - 2\varepsilon U)\nabla F = 2\varepsilon F\,\nabla U.
+\]
+Comparing with equation~(39.9), we find
+\[
+\varphi = -\frac{i}{2\varepsilon}\,(\boldsymbol{\alpha}\nabla)\,u_{\varepsilon\mathbf{p}}\,F.
+\]
+
+Let us write the final expression for $\psi^{(+)}$ and for a similar function $\psi^{(-)}$, which contains in its asymptotic expression a converging spherical wave:
+\begin{equation}
+\begin{aligned}
+\psi^{(+)}_{\varepsilon\mathbf{p}} &= \frac{C}{\sqrt{2\varepsilon}}\,e^{i\mathbf{p}\mathbf{r}}\!\left(1 - \frac{i\boldsymbol{\alpha}}{2\varepsilon}\nabla\right)\!F\bigl(iZ\alpha,\,1,\,i(pr - \mathbf{p}\mathbf{r})\bigr)\,u_{\varepsilon\mathbf{p}},\\[6pt]
+\psi^{(-)}_{\varepsilon\mathbf{p}} &= \frac{C^*}{\sqrt{2\varepsilon}}\,e^{i\mathbf{p}\mathbf{r}}\!\left(1 - \frac{i\boldsymbol{\alpha}}{2\varepsilon}\nabla\right)\!F\bigl(-iZ\alpha,\,1,\,-i(pr - \mathbf{p}\mathbf{r})\bigr)\,u_{\varepsilon\mathbf{p}},
+\end{aligned}
+\tag{39.10}
+\end{equation}
+\[
+C = e^{\pi Z\alpha/2}\,\Gamma(1 - iZ\alpha)
+\]
+(\textit{W.\,H.\,Furry}, 1934). Let us write also analogous functions $\psi_{-\varepsilon,-\mathbf{p}}$ with ``negative frequency'', which will be needed in considering processes involving positrons. They can be obtained from the functions $\psi_{\varepsilon\mathbf{p}}$ by the substitution $\mathbf{p}\to-\mathbf{p}$, $\varepsilon\to-\varepsilon$, where $p = |\mathbf{p}|$ does not change (and by virtue of the last circumstance the parameter $iZ\alpha$ of the hypergeometric function changes sign, as is clear from the original expression~(39.6), in which this parameter appears in the form $iZ\alpha\varepsilon/p$). Thus,
+\[
+\psi^{(+)}_{-\varepsilon,-\mathbf{p}} = \frac{C}{\sqrt{2\varepsilon}}\,e^{-i\mathbf{p}\mathbf{r}}\!\left(1 + \frac{i\boldsymbol{\alpha}}{2\varepsilon}\nabla\right)\!F\bigl(-iZ\alpha,\,1,\,i(pr + \mathbf{p}\mathbf{r})\bigr)\,u_{-\varepsilon,-\mathbf{p}},
+\]
+\begin{equation}
+\psi^{(-)}_{-\varepsilon,-\mathbf{p}} = \frac{C^*}{\sqrt{2\varepsilon}}\,e^{-i\mathbf{p}\mathbf{r}}\!\left(1 + \frac{i\boldsymbol{\alpha}}{2\varepsilon}\nabla\right)\!F\bigl(iZ\alpha,\,1,\,-i(pr + \mathbf{p}\mathbf{r})\bigr)\,u_{-\varepsilon,-\mathbf{p}},
+\tag{39.11}
+\end{equation}
+\[
+C = e^{-\pi Z\alpha/2}\,\Gamma(1 + iZ\alpha).
+\]
+
+\SourcePage{169}{174}
+Regarding the calculations performed, one further remark is in order. The asymptotic condition that we imposed is by itself certainly not sufficient to determine the solution of the wave equation uniquely (this is clear already from the fact that one can always add to $\psi$, without violating this condition, any Coulomb diverging spherical wave). In writing the solution of equation~(39.5) in the form~(39.6), we thereby tacitly assumed the choice of a solution finite at $r = 0$. Such a requirement was necessary in~III, \S\S\,135, 136, where the exact Schr\"odinger equation was considered, valid everywhere in space\,\footnote{As explained in~III, \S\,135, this condition was ensured by the choice of a partial integral of the type~(135.1), instead of the sum of integrals over the general contour with different values of $\beta_1$, $\beta_2$.}. In the present case, however, equation~(39.5) applies only to large distances, and therefore the selection of solutions performed requires additional justification.
+
+This is provided by the fact that for large ``impact parameters'' $\rho = r\sin\theta$ large orbital angular momenta $l$ and small scattering angles $\theta$ are relevant: at $\rho \sim 1/m$ we have
+\[
+l \sim \rho p \sim \rho\varepsilon \sim \varepsilon/m \gg 1,
+\]
+and the angle $\theta$ can be estimated quasiclassically:
+\[
+\theta \sim \frac{1}{p}\int\!\frac{dU}{dr}\,dt \sim \frac{U'(\rho)\rho}{p} \sim \frac{m}{\varepsilon} \ll 1.
+\]
+This means that in the decomposition of $\psi$ into spherical waves the dominant waves (in the region of $r$ and $\theta$ being considered) are precisely those with the indicated large values of~$l$. But a spherical wave with large $l$ is necessarily small in approaching the origin of coordinates at the ``classically inaccessible'' (thanks to the centrifugal barrier) distances $r \ll l/\varepsilon$. Therefore, in ``sewing together'' the solution of equation~(39.5) with the solution of the exact equation~(39.4) at small distances at $r \sim r_1$, where $l/\varepsilon \gg r_1 \gg Z\alpha/\varepsilon$, the boundary condition for the solution of equation~(39.5) will consist in requiring its smallness, and the selection made is justified.
+
+\begin{center}
+\textbf{Problem}
+\end{center}
+
+For the Coulomb field of attraction with $Z\alpha \ll 1$ find the correction (of relative order $Z\alpha$) to the non-relativistic wave function of the discrete spectrum.
+
+\SourcePage{170}{175}
+\textbf{Solution.} The velocity of the electron in a bound state $v \sim Z\alpha$, so that for $Z\alpha \ll 1$ the wave function is non-relativistic in the zeroth approximation, i.e.\
+\[
+\psi = u\psi_{\mathrm{nr}},
+\]
+where $\psi_{\mathrm{nr}}$ is a function satisfying the non-relativistic Schr\"odinger equation, and $u$ is a bispinor of the form $u = \binom{w}{0}$, where $w$ is a spinor describing the polarisation state of the electron. In the next approximation we write: $\psi = u\psi_{\mathrm{nr}} + \psi^{(1)}$ and, substituting into~(39.4), find for $\psi^{(1)}$ the equation
+\[
+\left(\frac{1}{2m}\,\Delta + |\varepsilon_n| + \frac{Z\alpha}{r}\right)\psi^{(1)} = i\,\frac{Z\alpha}{2m}\!\left(\nabla\frac{1}{r}\right)(\boldsymbol{\alpha}\,u)\,\psi_{\mathrm{nr}},
+\]
+where $\varepsilon_n$ is the non-relativistic discrete energy level. Here the terms of relative order $(Z\alpha)^2$ have been dropped (one should bear in mind that in the non-relativistic case the essential distances are of the order of the Bohr radius: $r \sim 1/mZ\alpha$). The solution of this equation: $\psi^{(1)} = -\frac{i}{2m}\boldsymbol{\alpha}\,u\,\nabla\psi_{\mathrm{nr}}$, so that
+\[
+\psi = \left(1 - \frac{i}{2m}\,\boldsymbol{\alpha}\nabla\right)u\,\psi_{\mathrm{nr}}.
+\]

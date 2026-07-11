@@ -1,0 +1,57 @@
+\SourcePage{180}{185}
+\section{Scattering of neutrons in an electric field}
+
+In collisions of neutrons with nuclei, scattering at large angles is determined by the principal interaction---nuclear forces. At scattering to small angles, however, the electromagnetic interaction of the magnetic moment of the neutron with the electric field of the nucleus becomes significant (\textit{J.\,Schwinger}, 1948).
+
+We shall assume the neutron non-relativistic, so that the interaction to be considered is described by the approximate Hamiltonian~(41.13). The entire magnetic moment of an electrically neutral particle is ``anomalous'', and the operator $\widehat H'$ reduces in this case to the operator of kinetic energy\,\footnote{In this section we use ordinary units, and the letter $m$ denotes the neutron mass.}:
+\begin{equation}
+\widehat H = -\frac{\hbar^2}{2m}\,\Delta + i\,\frac{\mu\hbar}{mc}\,\boldsymbol{\sigma}[\mathbf{E}\nabla].
+\tag{42.1}
+\end{equation}
+
+In view of the smallness of the electromagnetic interaction of the neutron, the scattering amplitude $f_{\mathrm{em}}$ caused by it can be computed in the Born approximation:
+\begin{equation}
+f_{\mathrm{em}} = -\frac{m}{2\pi\hbar^2}\int e^{-i\mathbf{p}'\cdot\mathbf{r}/\hbar}\!\left(i\,\frac{\mu\hbar}{mc}\,\boldsymbol{\sigma}[\mathbf{E}\nabla]\right)e^{i\mathbf{p}\cdot\mathbf{r}/\hbar}\,d^3x
+\tag{42.2}
+\end{equation}
+(see~III, \S\,126), or
+\[
+f_{\mathrm{em}} = \frac{\mu}{qc\hbar^3}\,\boldsymbol{\sigma}[\mathbf{E}_\mathbf{q}\,\mathbf{p}],\qquad \mathbf{E}_\mathbf{q} = \int\mathbf{E}(\mathbf{r})\,e^{-i\mathbf{q}\cdot\mathbf{r}}\,d^3x
+\]
+($\mathbf{p}$, $\mathbf{p}'$ are the momenta of the neutron before and after the scattering, $\hbar\mathbf{q} = \mathbf{p}' - \mathbf{p}$). In the notation written, the scattering amplitude $f_{\mathrm{em}}$ is an operator with respect to the spin variable.
+
+Before proceeding with the further calculation, let us make the following remark. Formula~(42.1) was derived in the preceding section for slowly varying fields (which in fact meant the neglect of derivatives of the field in the Hamiltonian, terms containing them). In applications to the Coulomb field of a nucleus this means that the wavelength $\hbar/p$ must be small compared with the distances essential in the integral $\mathbf{E}_\mathbf{q}$, i.e.\ with the
+
+\SourcePage{181}{186}
+distances $r \sim 1/q$. Hence $\hbar q \ll p$, so that the scattering angle $\theta \sim \hbar q/p \ll 1$. Thus, the required condition is indeed satisfied precisely for scattering at small angles.
+
+For the Coulomb field with potential $\Phi = Ze/r$ the Fourier component of the field strength
+\[
+\mathbf{E}_\mathbf{q} = -i\mathbf{q}\Phi_q = -\mathbf{i}\mathbf{q}\cdot 4\pi Ze/q^2
+\]
+(see~II, (51.5)). Substitution into~(42.2) gives
+\[
+f_{\mathrm{em}} = i\,\frac{2Ze\mu}{q^2c\hbar^3}\,(\boldsymbol{\sigma}[\mathbf{p}\,\mathbf{p}']).
+\]
+At small scattering angles $\hbar q \approx p\theta$, $[\mathbf{p}\,\mathbf{p}'] \approx p^2\theta\boldsymbol{\nu}$, where $\boldsymbol{\nu}$ is the unit vector in the direction $[\mathbf{p}\,\mathbf{p}']$. Thus,
+\[
+f_{\mathrm{em}} = i\,\frac{2Ze\mu}{\theta\hbar c}\,\boldsymbol{\sigma}\boldsymbol{\nu}.
+\]
+
+To this expression one should add the amplitude of nuclear scattering. Owing to the rapid fall-off of the nuclear forces with distance, this amplitude tends at small angles to a finite (depending on the energy) complex value, which we denote by $a$. Therefore the total scattering amplitude
+\begin{equation}
+f = a + i\,\frac{b}{\theta}\,\boldsymbol{\sigma}\boldsymbol{\nu},\qquad b = \frac{2Ze\mu}{\hbar c} = 2Z\alpha\,\frac{\mu}{e}.
+\tag{42.3}
+\end{equation}
+
+We see that the electromagnetic scattering indeed becomes dominant at sufficiently small angles. The form of expression~(42.3) coincides with that considered in~III, \S\,140. We can therefore directly use the formulae derived there. The cross section, summed over all possible final polarisation states:
+\begin{equation}
+\frac{d\sigma}{do} = |a|^2 + \frac{b^2}{\theta^2} + 2b\,\mathrm{Im}\,a\cdot\boldsymbol{\nu}\boldsymbol{\zeta},
+\tag{42.4}
+\end{equation}
+where $\boldsymbol{\zeta}$ is the initial polarisation of the neutron beam (P see~III, \S\,140). If the initial state is non-polarised ($\boldsymbol{\zeta} = 0$), the polarisation after scattering is
+\begin{equation}
+\boldsymbol{\zeta}' = \frac{2b\,\mathrm{Im}\,a\cdot\theta}{|a|^2\theta^2 + b^2}\,\boldsymbol{\nu}.
+\tag{42.5}
+\end{equation}
+This polarisation is maximal at $\theta = b/|a|$, with $\zeta'_{\max} = \mathrm{Im}\,a/|a|$.
