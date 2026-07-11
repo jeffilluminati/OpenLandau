@@ -1,0 +1,60 @@
+\SourcePage{164}{169}
+\section{Scattering in the ultra-relativistic case}
+
+Let us consider in more detail the scattering in the ultra-relativistic case ($\varepsilon \gg m$). In the first approximation we completely neglect in the wave equation the mass $m$. It is then convenient to use the spinor representation for $\psi = \binom{\xi}{\eta}$, since the equations for $\xi$ and $\eta$ at $m = 0$ separate:
+\begin{equation}
+-i\boldsymbol{\sigma}\nabla\xi = (\varepsilon - U)\xi,\qquad -i\boldsymbol{\sigma}\nabla\eta = -(\varepsilon - U)\eta
+\tag{38.1}
+\end{equation}
+(acquiring a ``neutrinolike'' form, see~\S\,30).
+
+A helical state of the electron, polarised in the direction $\mathbf{p}$, is described by the wave function $\psi = \binom{\xi}{0}$, and one polarised against $\mathbf{p}$: $\psi = \binom{0}{\eta}$. By virtue of the independence of the equations for $\xi$ and $\eta$ it is clear that this property is preserved under scattering. In other words, in ultra-relativistic scattering of electrons helicity is conserved. From considerations of symmetry (longitudinal polarisation) it is obvious that in the scattering of helical particles there is no azimuthal asymmetry. One can also assert that the scattering cross section for helical electrons does not depend on the sign of the helicity; this follows from the fact that the central field is invariant under inversion, and the sign of helicity reverses under inversion.
+
+In the ultra-relativistic case the formulae~(37.3)--(37.5) can be significantly simplified (\textit{D.\,R.\,Yennie, D.\,G.\,Ravenhall, R.\,N.\,Wilson}, 1954).
+
+Let the incident electron be polarised, say, along the direction of motion~$\mathbf{n}$. For a plane wave with the helicity value $\mathbf{n}\boldsymbol{\sigma}$ the spinor $\zeta(= (\varphi + \chi)/\sqrt{2})$ is proportional to the same 3-spinor $w$ that appeared in the standard representation of the wave. Therefore the relation between the spinor amplitudes of the incident and scattered waves is given by the same operator $\widehat f$.
+
+As a result of scattering the polarisation vector rotates together with the momentum, acquiring the direction $\mathbf{n}'$. The action of the operator $\widehat f$ on the spinor wave function of the electron therefore reduces to a rotation of the spin through the angle $\theta$ (the angle between $\mathbf{n}$ and $\mathbf{n}'$) about the axis $\boldsymbol{\nu}$. A rotation by $-\theta$ is in turn equivalent to a rotation of the coordinate system about the same axis in the opposite direction, i.e.\ to the replacement $\theta \to -\theta$. It follows that the operator $\widehat f$ must coincide (up to a coefficient) with the operator effecting the transformation of the wave function under the indicated change of coordinates, i.e.\ with the operator~(18.17) with the substitution $\theta \to -\theta$.
+
+\SourcePage{165}{170}
+Comparing~(37.3) with~(18.17), we find that it should be
+\begin{equation}
+\frac{B}{A} = -i\tan\frac{\theta}{2}.
+\tag{38.2}
+\end{equation}
+Thus, in the ultra-relativistic limit,
+\begin{equation}
+\widehat f = A(\theta)\!\left[1 - i\tan\frac{\theta}{2}\;\boldsymbol{\nu}\cdot\boldsymbol{\sigma}\right].
+\tag{38.3}
+\end{equation}
+
+The expression for $A(\theta)$~(37.4) can also be simplified, exploiting the relation between the phases $\delta_\varkappa$ and $\delta_{-\varkappa}$ that arises in the same limit. For its derivation we note that the equations~(35.4) for the functions $f$ and $g$, after striking out the terms containing $m$, become invariant with respect to the substitution
+\[
+\varkappa \to -\varkappa,\qquad f \to g,\qquad g \to -f,
+\]
+not affecting the parameters of the particle or of the field. It should therefore be that $f_\varkappa/g_\varkappa = -g_{-\varkappa}/f_{-\varkappa}$, and after substitution of the asymptotic expressions we find
+\[
+\tan\!\left(pr - \frac{l\pi}{2} + \delta_\varkappa\right) = -\cot\!\left(pr - \frac{l'\pi}{2} + \delta_{-\varkappa}\right),
+\]
+\[
+\delta_\varkappa = \delta_{-\varkappa} - (l' - l)\,\frac{\pi}{2} + \left(n + \tfrac{1}{2}\right)\pi,
+\]
+whence
+\begin{equation}
+e^{2i\delta_l} = e^{2i\delta_{-l}}.
+\tag{38.4}
+\end{equation}
+
+Using this relation (and replacing in the first term of the sum in~(37.4) the summation index $l$ by $l-1$), we obtain
+\begin{equation}
+A(\theta) = \frac{1}{2ip}\sum_{l=1}^{\infty}l\,(e^{2i\delta_l} - 1)\bigl[P_l(\cos\theta) + P_{l-1}(\cos\theta)\bigr].
+\tag{38.5}
+\end{equation}
+
+From~(38.2) it follows that $\mathrm{Re}(AB^*) = 0$. This means that in the approximation being considered the cross section does not depend on the initial polarisation of the particle, and a non-polarised beam remains non-polarised after scattering (see the formulae~III, (140.8)--(140.10)). We note also that as $\theta \to \pi$ the expression $A(\theta)$~(38.5) tends to zero as $(\pi - \theta)^2$ (recall that $P_l(-1) = (-1)^l$). Together with it, $B$ also tends to zero, and so does the cross section
+\begin{equation}
+\frac{d\sigma}{do} = |A|^2 + |B|^2 = \frac{|A(\theta)|^2}{\cos^2(\theta/2)}.
+\tag{38.6}
+\end{equation}
+
+The listed properties disappear, of course, in the subsequent approximations in the small quantity $m/\varepsilon$. In particular, the analysis shows that as $\theta \to \pi$ the cross section tends to a limit proportional to $(m/\varepsilon)^2$.
