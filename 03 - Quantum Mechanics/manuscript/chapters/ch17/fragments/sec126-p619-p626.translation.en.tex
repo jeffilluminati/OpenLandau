@@ -1,0 +1,381 @@
+\SourcePage{619}{622}
+\section{Born's formula}
+
+The scattering cross-section can be calculated in general form in the very
+important case where the scattering field may be treated as a
+perturbation\footnote{In the general theory developed in \S~123, this
+approximation corresponds to all the phases $\delta_l$ being small; in
+addition, these phases must be calculable from the Schrödinger equation with
+the potential energy treated as a perturbation (see Problem 4).}. Section 45
+showed that this is possible if at least one of the two conditions
+\begin{equation}
+ |U|\ll\frac{\hbar^2}{ma^2}
+ \tag{126.1}
+\end{equation}
+or
+\begin{equation}
+ |U|\ll\frac{\hbar v}{a}=\frac{\hbar^2ka}{ma^2}
+ \tag{126.2}
+\end{equation}
+is satisfied. Here $a$ is the range of the field $U(r)$, and $U$ denotes its
+order of magnitude in the principal region where it is present. When the first
+
+\SourcePage{620}{623}
+condition holds, the approximation applies at every velocity. The second
+condition shows that it applies in any event to sufficiently fast particles.
+
+Following \S~45, write the wave function as
+$\psi=\psi^{(0)}+\psi^{(1)}$, where $\psi^{(0)}=e^{i\mathbf{kr}}$ describes the
+incident particle with wave vector $\mathbf k=\mathbf p/\hbar$. Formula (45.3)
+gives
+\begin{equation}
+ \psi^{(1)}(x,y,z)=-\frac{m}{2\pi\hbar^2}\int
+ \frac{U(x',y',z')e^{i(\mathbf{kr'}+kR)}}{R}\,dV'.
+ \tag{126.3}
+\end{equation}
+Choose the scattering center as origin, introduce the radius vector
+$\mathbf R_0$ to the observation point of $\psi^{(1)}$, and let $\mathbf n'$
+be the unit vector along $\mathbf R_0$. If the radius vector of the volume
+element $dV'$ is $\mathbf r'$, then $\mathbf R=\mathbf R_0-\mathbf r'$. Far
+from the center, $R_0\gg r'$, and hence
+\[
+ R=|\mathbf R_0-\mathbf r'|\approx R_0-\mathbf r'\mathbf n'.
+\]
+Insertion in (126.3) yields the asymptotic expression
+\[
+ \psi^{(1)}\approx-\frac{m}{2\pi\hbar^2}\frac{e^{ikR_0}}{R_0}
+ \int U(\mathbf r')e^{i(\mathbf k-\mathbf k')\mathbf r'}dV',
+\]
+where $\mathbf k'=k\mathbf n'$ is the wave vector after scattering. Comparison
+with the definition (123.3) gives the scattering amplitude
+\begin{equation}
+ f=-\frac{m}{2\pi\hbar^2}\int Ue^{-i\mathbf{qr}}dV,
+ \tag{126.4}
+\end{equation}
+after relabeling the integration variables and introducing
+\begin{equation}
+ \mathbf q=\mathbf k'-\mathbf k,
+ \tag{126.5}
+\end{equation}
+whose magnitude is
+\begin{equation}
+ q=2k\sin\frac\theta2,
+ \tag{126.6}
+\end{equation}
+with $\theta$ the angle between $\mathbf k$ and $\mathbf k'$, that is, the
+scattering angle.
+
+Finally, taking the squared modulus of the amplitude gives the cross-section
+into the solid-angle element $do$:
+\begin{equation}
+ d\sigma=\frac{m^2}{4\pi^2\hbar^4}
+ \left|\int Ue^{-i\mathbf{qr}}dV\right|^2do.
+ \tag{126.7}
+\end{equation}
+
+\SourcePage{621}{624}
+Thus scattering with momentum change $\hbar\mathbf q$ is determined by the
+squared modulus of the corresponding Fourier component of $U$. Formula
+(126.7) was first obtained by \emph{Born} (M.~Born, 1926); this approximation
+in collision theory is commonly called the \emph{Born approximation}.
+
+In this approximation the relation
+\begin{equation}
+ f(\mathbf k,\mathbf k')=f^*(\mathbf k',\mathbf k)
+ \tag{126.8}
+\end{equation}
+holds between the amplitudes of the direct and reverse scattering processes in
+the literal sense: the initial and final momenta are interchanged, without
+reversal of their signs as under time reversal. Scattering therefore has an
+additional symmetry besides the reciprocity theorem (125.12). This symmetry is
+closely connected with the small scattering amplitudes of perturbation theory
+and follows directly from the unitarity condition (125.8) if its integral term,
+quadratic in $f$, is neglected\footnote{It follows that this property already
+disappears in the second approximation of perturbation theory. We shall verify
+this directly in \S~130 in connection with (130.13).}.
+
+Formula (126.7) can also be obtained in another way, though this leaves the
+phase of the scattering amplitude undetermined. Start from the general formula
+(43.1) for the transition probability between continuous-spectrum states,
+\[
+ dw_{fi}=\frac{2\pi}{\hbar}|U_{fi}|^2\delta(E_f-E_i)d\nu_f.
+\]
+Here it is applied to the transition from an incident free-particle state of
+momentum $\mathbf p$ to a state of momentum $\mathbf p'$ scattered into the
+solid-angle element $do'$. Choose $d^3p'/(2\pi\hbar)^3$ as the state interval
+$d\nu_f$. With $E_f-E_i=(p'^2-p^2)/2m$, we find
+\begin{equation}
+ dw_{\mathbf p'\mathbf p}=\frac{4\pi m}{\hbar}|U_{\mathbf p'\mathbf p}|^2
+ \delta(p'^2-p^2)\frac{d^3p'}{(2\pi\hbar)^3}.
+ \tag{126.9}
+\end{equation}
+
+The incident and scattered wave functions are plane waves. Since the state
+interval was chosen as an element of $\mathbf p'/(2\pi\hbar)$ space, the final
+wave function must be normalized to a delta-function of
+$\mathbf p'/(2\pi\hbar)$:
+\begin{equation}
+ \psi_{\mathbf p'}=e^{i\mathbf p'\mathbf r/\hbar}.
+ \tag{126.10}
+\end{equation}
+
+\SourcePage{622}{625}
+Normalize the initial wave function to unit current density:
+\begin{equation}
+ \psi_{\mathbf p}=\sqrt{\frac mp}\,e^{i\mathbf p\mathbf r/\hbar}.
+ \tag{126.11}
+\end{equation}
+Then (126.9) has the dimension of area and is the differential scattering
+cross-section.
+
+The delta-function in (126.9) means that $p'=p$, as required for elastic
+scattering. It may be eliminated by using spherical coordinates in momentum
+space, replacing $d^3p'$ by
+$p'^2dp' do'=(1/2)p'd(p'^2)do'$, and integrating over $d(p'^2)$. This amounts
+to replacing $p'$ by $p$ in the integrand and gives
+\[
+ d\sigma=\frac{4\pi^2}{\hbar^4}p^2
+ \left|\int\psi_{\mathbf p'}^*U\psi_{\mathbf p}dV\right|^2do'.
+\]
+Substitution of (126.10) and (126.11) returns (126.7).
+
+In the form (126.7), the formula applies to a field $U(x,y,z)$ depending on
+coordinates in any combination, not merely on $r$. For a central field $U(r)$,
+however, it can be transformed further.
+
+In the integral
+\[
+ \int U(r)e^{-i\mathbf{qr}}dV
+\]
+use spherical coordinates $r,\vartheta,\varphi$, taking the polar axis along
+$\mathbf q$; $\vartheta$ distinguishes the polar angle from the scattering
+angle $\theta$. Integration over $\vartheta$ and $\varphi$ gives
+\[
+ \int_0^\infty\!\int_0^\pi\!\int_0^{2\pi}
+ U(r)e^{iqr\cos\vartheta}r^2\sin\vartheta\,d\varphi\,d\vartheta\,dr
+ =4\pi\int_0^\infty U(r)\frac{\sin qr}{qr}r^2dr.
+\]
+Thus the scattering amplitude in a central field is
+\begin{equation}
+ f=-\frac{2m}{\hbar^2}\int_0^\infty U(r)\frac{\sin qr}{q}r\,dr.
+ \tag{126.12}
+\end{equation}
+
+\SourcePage{623}{626}
+At $\theta=0$, and hence $q=0$, this integral diverges if $U(r)$ decreases at
+infinity as $1/r^3$ or more slowly, in agreement with the general results of
+\S~124.
+
+Notice an interesting point. The momentum $p$ and scattering angle $\theta$
+enter (126.12) only through $q$. In the Born approximation the cross-section
+therefore depends on $p$ and $\theta$ only in the combination
+$p\sin(\theta/2)$.
+
+Returning to arbitrary fields $U(x,y,z)$, consider the limiting cases of small
+($ka\ll1$) and large ($ka\gg1$) velocities.
+
+At small velocities one may put $e^{-i\mathbf{qr}}\approx1$ in (126.4), so
+that
+\begin{equation}
+ f=-\frac{m}{2\pi\hbar^2}\int U\,dV,
+ \tag{126.13}
+\end{equation}
+and, for $U=U(r)$,
+\begin{equation}
+ f=-\frac{2m}{\hbar^2}\int_0^\infty U(r)r^2dr.
+ \tag{126.14}
+\end{equation}
+The scattering is isotropic and independent of velocity, consistently with
+the general results of \S~132.
+
+In the opposite, high-velocity limit the scattering is strongly anisotropic
+and directed forward, within a narrow cone of aperture
+$\Delta\theta\sim1/ka$. Outside this cone $q$ is large, the factor
+$e^{-i\mathbf{qr}}$ oscillates rapidly, and its integral multiplied by the
+slowly varying function $U$ is nearly zero.
+
+The decrease of the cross-section at large $q$ is not universal, but depends
+on the particular field. If $U(r)$ has a singularity at $r=0$ or at some other
+real value of $r$, the neighborhood of that point dominates the integral in
+(126.12), and the decrease follows a power law. The same holds when $U(r)$ is
+nonsingular but not even: the neighborhood of $r=0$ then gives the main
+contribution. If $U(r)$ is even, the integration may formally be extended to
+negative $r$, along the entire real axis. Provided $U(r)$ has no singularities
+on that axis, the contour can then be shifted into the complex plane until it
+is caught by the nearest complex singularity. The integral consequently
+decreases exponentially at large $q$.
+
+\SourcePage{624}{627}
+It must be remembered, however, that the Born approximation is generally
+unsuitable for calculating this exponentially small quantity (see also
+\S~131).
+
+Although the differential cross-section inside the cone
+$\Delta\theta\sim1/ka$ is essentially independent of velocity, the shrinking
+aperture makes the total cross-section decrease at high energies, if
+$\int d\sigma$ converges at all. It decreases with the solid angle cut out by
+the cone, proportionally to $(\Delta\theta)^2\sim1/k^2a^2$, and hence
+inversely with energy.
+
+In many applications of collision theory, scattering is characterized by
+\begin{equation}
+ \sigma_{\mathrm{tr}}=\int(1-\cos\theta)d\sigma,
+ \tag{126.15}
+\end{equation}
+often called the \emph{transport cross-section}. Arguments like those above
+show that at high velocities it is inversely proportional to the square of the
+energy.
+
+\subsection*{Problems}
+
+\ProblemHeading{1.} Find in the Born approximation the scattering
+cross-section of a spherical potential well: $U=-U_0$ for $r<a$, and $U=0$ for
+$r>a$.
+
+\SolutionHeading The integral in (126.12) gives
+\[
+ d\sigma=4a^2\left(\frac{mU_0a^2}{\hbar^2}\right)^2
+ \frac{(\sin qa-qa\cos qa)^2}{(qa)^6}\,do.
+\]
+Integration over all angles, conveniently performed with
+$q=2k\sin(\theta/2)$ and $do=2\pi q\,dq/k^2$, gives
+\[
+ \sigma=\frac{2\pi}{k^2}\left(\frac{mU_0a^2}{\hbar^2}\right)^2
+ \left[1-\frac1{(2ka)^2}+\frac{\sin4ka}{(2ka)^3}
+ -\frac{\sin^22ka}{(2ka)^4}\right].
+\]
+In the limiting cases,
+\[
+ \sigma=\begin{cases}
+ \displaystyle\frac{16\pi a^2}{9}
+ \left(\frac{mU_0a^2}{\hbar^2}\right)^2,&ka\ll1,\\[4pt]
+ \displaystyle\frac{2\pi}{k^2}
+ \left(\frac{mU_0a^2}{\hbar^2}\right)^2,&ka\gg1.
+ \end{cases}
+\]
+
+\ProblemHeading{2.} The same for the field $U=U_0e^{-r^2/a^2}$.
+
+\SolutionHeading It is convenient to use (126.7), taking $\mathbf q$ along
+one coordinate axis. The result is
+
+\SourcePage{625}{628}
+\[
+ d\sigma=\frac{\pi a^2}{4}\left(\frac{mU_0a^2}{\hbar^2}\right)^2
+ e^{-q^2a^2/2}do,
+\]
+and the total cross-section is
+\[
+ \sigma=\frac{\pi^2}{2k^2}\left(\frac{mU_0a^2}{\hbar^2}\right)^2
+ (1-e^{-2k^2a^2}).
+\]
+The applicability conditions are (126.1), (126.2), with $U_0$ for $U$.
+Moreover, the formula for $d\sigma$ is invalid when the magnitude of the
+exponent is large\footnote{This failure of perturbation theory is readily seen
+by calculating the second-approximation amplitude (see (130.13) below): its
+pre-exponential factor is small compared with the first-approximation
+coefficient, but the magnitude of its negative exponent is only half as
+large.}.
+
+\ProblemHeading{3.} The same for $U=(\alpha/r)e^{-r/a}$.
+
+\SolutionHeading Evaluation of (126.12) gives
+\[
+ d\sigma=4a^2\left(\frac{\alpha ma}{\hbar^2}\right)^2
+ \frac{do}{(q^2a^2+1)^2}.
+\]
+The total cross-section is
+\[
+ \sigma=16\pi a^2\left(\frac{\alpha ma}{\hbar^2}\right)^2
+ \frac1{4k^2a^2+1}.
+\]
+Using $\alpha/a$ for $U$ in (126.1), (126.2), the applicability condition is
+$\alpha ma/\hbar^2\ll1$ or $\alpha/\hbar v\ll1$.
+
+\ProblemHeading{4.} Determine the phases $\delta_l$ for scattering in a
+central field in the case corresponding to the Born approximation.
+
+\SolutionHeading For the radial wave function $\chi=rR$ in the field $U(r)$
+and the free-motion function $\chi^{(0)}$, the equations are (see (32.10))
+\[
+ \chi''+\left[k^2-\frac{l(l+1)}{r^2}-\frac{2m}{\hbar^2}U\right]\chi=0,
+ \qquad
+ \chi^{(0)''}+\left[k^2-\frac{l(l+1)}{r^2}\right]\chi^{(0)}=0.
+\]
+Multiply the first by $\chi^{(0)}$ and the second by $\chi$, subtract, and
+integrate over $dr$, using $\chi=0$ at $r=0$. This gives
+\[
+ \chi'(r)\chi^{(0)}(r)-\chi(r)\chi^{(0)'}(r)
+ =\frac{2m}{\hbar^2}\int_0^rU\chi\chi^{(0)}dr.
+\]
+Treating $U$ as a perturbation, put $\chi\approx\chi^{(0)}$ on the right. At
+$r\to\infty$ use (33.12), (33.20) on the left and insert the exact expression
+(33.10) in the integral. The result is
+\[
+ \sin\delta_l\approx\delta_l=-\frac{\pi m}{\hbar^2}
+ \int_0^\infty U(r)[J_{l+1/2}(kr)]^2r\,dr.
+\]
+
+\SourcePage{626}{629}
+The same formula could also be obtained by directly expanding the Born
+amplitude (126.4) in Legendre polynomials according to (123.11), for small
+$\delta_l$.
+
+\ProblemHeading{5.} In the Born approximation, find the total cross-section
+for fast particles ($ka\gg1$) in the field
+$U=\alpha/(r^2+a^2)^{n/2}$, where $n>2$.
+
+\SolutionHeading As will emerge, partial amplitudes with large $l$ dominate.
+We may therefore use (123.11), replacing the sum over $l$ by an integral. Since
+all $\delta_l\ll1$ in the Born approximation,
+\begin{equation}
+ \sigma\approx\frac{4\pi}{k^2}\int_0^\infty2l\delta_l^2dl.
+ \tag{1}
+\end{equation}
+For large $l$, (124.1) gives
+\[
+ \delta_l=-\frac{\alpha m}{\hbar^2}\int_{l/k}^\infty
+ \frac{dr}{(r^2+a^2)^{n/2}(k^2-l^2/r^2)^{1/2}}.
+\]
+With $r^2+a^2=(a^2+l^2/k^2)/t$, this reduces to Euler's integral and gives
+\begin{equation}
+ \delta_l=-\frac{\alpha m}{2\hbar^2k(a^2+l^2/k^2)^{(n-1)/2}}
+ \frac{\Gamma(1/2)\Gamma((n-1)/2)}{\Gamma(n/2)}.
+ \tag{2}
+\end{equation}
+The integral (1) is governed by $l\sim ak\gg1$, justifying the assumption.
+Evaluation gives
+\begin{equation}
+ \sigma=\frac{\pi^2}{n-2}
+ \left[\frac{\Gamma((n-1)/2)}{\Gamma(n/2)}\right]^2
+ \left(\frac{\alpha m}{k\hbar^2a^{n-2}}\right)^2.
+ \tag{3}
+\end{equation}
+By (126.2), the condition for the Born approximation is
+$\alpha m/(\hbar^2ka^{n-1})\ll1$. Notice the dependence
+$\sigma\sim k^{-2}$, as anticipated by the general statements in the text.
+
+\ProblemHeading{6.} Find the Born-approximation scattering amplitude in two
+dimensions, for $U=U(x,z)$ and a particle beam incident along the $z$ axis.
+
+\SolutionHeading Using the note on p.~204 and the familiar asymptotic form of
+the Hankel function
+\begin{equation}
+ H_0^{(1)}(u)\approx\sqrt{\frac2{\pi u}}e^{i(u-\pi/4)}
+ \quad\text{as }u\to\infty,
+ \tag{4}
+\end{equation}
+we find, at large distance $\rho_0$ from the field axis (the $y$ axis),
+\[
+ \psi^{(1)}\sim\frac{f(\varphi)}{\sqrt{\rho_0}}e^{ik\rho_0},
+\]
+where
+\[
+ f(\varphi)=-\frac{m}{\hbar^2}\sqrt{\frac{i}{2\pi k}}
+ \int U(\boldsymbol\rho)e^{-i\mathbf q\boldsymbol\rho}d^2\rho
+\]
+is the scattering amplitude. Here $\boldsymbol\rho=(x,z)$ is the
+two-dimensional radius vector, $d^2\rho=dx\,dz$, and $\varphi$ is the
+scattering angle in the $xz$ plane. In two dimensions the amplitude has the
+dimension of the square root of length, while the scattering cross-section
+$d\sigma=|f|^2d\varphi$ has the dimension of length.

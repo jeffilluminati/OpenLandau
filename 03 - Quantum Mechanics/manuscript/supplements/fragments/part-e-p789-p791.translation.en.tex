@@ -1,0 +1,178 @@
+\SourcePage{789}{792}
+\renewcommand{\thesection}{\alph{section}}
+\setcounter{section}{4}
+\section{The hypergeometric function}
+
+Within the circle $|z|<1$, the \emph{hypergeometric function} is defined by
+the series
+\begin{equation}
+ F(\alpha,\beta,\gamma,z)=1+\frac{\alpha\beta}{\gamma}\frac z{1!}
+ +\frac{\alpha(\alpha+1)\beta(\beta+1)}{\gamma(\gamma+1)}
+ \frac{z^2}{2!}+\ldots,
+ \tag{e.1}
+\end{equation}
+and for $|z|>1$ it is obtained by analytic continuation of this series (see
+(e.6)). The hypergeometric function is one particular integral of the
+differential equation
+\begin{equation}
+ z(1-z)u''+[\gamma-(\alpha+\beta+1)z]u'-\alpha\beta u=0.
+ \tag{e.2}
+\end{equation}
+The parameters $\alpha$ and $\beta$ are arbitrary, while
+$\gamma\ne0,-1,-2,\ldots$. Evidently, $F(\alpha,\beta,\gamma,z)$ is symmetric
+in the parameters $\alpha$ and $\beta$\footnote{The confluent hypergeometric
+function is obtained from $F(\alpha,\beta,\gamma,z)$ by the limiting
+transition
+$F(\alpha,\gamma,z)=\lim_{\beta\to\infty}
+F(\alpha,\beta,\gamma,z/\beta)$. The notations
+${}_2F_1(\alpha,\beta,\gamma,z)$ and ${}_1F_1(\alpha,\gamma,z)$ are also used
+in the literature for the hypergeometric and confluent hypergeometric
+functions, respectively. The indices to the left and right of $F$ give the
+numbers of parameters appearing in the numerators and denominators,
+respectively, of the terms of the series.}.
+
+A second independent solution of (e.2) is
+\[
+ z^{1-\gamma}F(\beta-\gamma+1,\alpha-\gamma+1,2-\gamma,z);
+\]
+it has a singular point at $z=0$.
+
+For reference, we give here a number of relations satisfied by the
+hypergeometric function.
+
+For all $z$, provided $\operatorname{Re}(\gamma-\alpha)>0$, the function
+$F(\alpha,\beta,\gamma,z)$ can be represented by the integral
+\begin{equation}
+ \begin{split}
+ F(\alpha,\beta,\gamma,z)
+ &=-\frac1{2\pi i}
+ \frac{\Gamma(1-\alpha)\Gamma(\gamma)}{\Gamma(\gamma-\alpha)}\\
+ &\hspace{1.5em}\times\oint_{C'}(-t)^{\alpha-1}
+ (1-t)^{\gamma-\alpha-1}(1-tz)^{-\beta}\,dt,
+ \end{split}
+ \tag{e.3}
+\end{equation}
+taken over the contour $C'$ shown in Fig.~57. Direct substitution readily
+verifies that this integral does indeed satisfy (e.2); the constant factor has
+been chosen so that its value at $z=0$ is unity.
+
+The substitution
+\[
+ u=(1-z)^{\gamma-\alpha-\beta}u_1
+\]
+
+\SourcePage{790}{793}
+in (e.2) gives an equation of the same form, with the parameters
+$\gamma-\alpha$, $\gamma-\beta$, $\gamma$ in place of $\alpha$, $\beta$,
+$\gamma$, respectively. It follows that
+\begin{equation}
+ F(\alpha,\beta,\gamma,z)=(1-z)^{\gamma-\alpha-\beta}
+ F(\gamma-\alpha,\gamma-\beta,\gamma,z)
+ \tag{e.4}
+\end{equation}
+(both sides obey the same equation and have equal values at $z=0$).
+
+Making the substitution $t\to t/(1-z+zt)$ in the integral (e.3) gives the
+following relation between hypergeometric functions of the variables $z$ and
+$z/(z-1)$:
+\begin{equation}
+ F(\alpha,\beta,\gamma,z)=(1-z)^{-\alpha}
+ F\left(\alpha,\gamma-\beta,\gamma,\frac z{z-1}\right).
+ \tag{e.5}
+\end{equation}
+The value of the multivalued expression $(1-z)^{-\alpha}$ in this formula (and
+of analogous expressions in all the formulas below) is fixed by requiring the
+complex quantity being raised to a power to be taken with the argument of
+smallest absolute value.
+
+We next state, without proof, an important formula relating hypergeometric
+functions of the variables $z$ and $1/z$:
+\begin{equation}
+ \begin{split}
+ F(\alpha,\beta,\gamma,z)
+ &=\frac{\Gamma(\gamma)\Gamma(\beta-\alpha)}
+ {\Gamma(\beta)\Gamma(\gamma-\alpha)}(-z)^{-\alpha}
+ F\left(\alpha,\alpha+1-\gamma,\alpha+1-\beta,\frac1z\right)\\
+ &\hspace{1em}+\frac{\Gamma(\gamma)\Gamma(\alpha-\beta)}
+ {\Gamma(\alpha)\Gamma(\gamma-\beta)}(-z)^{-\beta}
+ F\left(\beta,\beta+1-\gamma,\beta+1-\alpha,\frac1z\right).
+ \end{split}
+ \tag{e.6}
+\end{equation}
+This formula expresses $F(\alpha,\beta,\gamma,z)$ as a series convergent for
+$|z|>1$; it therefore supplies the analytic continuation of the original
+series (e.1).
+
+The formula
+\begin{equation}
+ \begin{split}
+ F(\alpha,\beta,\gamma,z)
+ &=\frac{\Gamma(\gamma)\Gamma(\gamma-\alpha-\beta)}
+ {\Gamma(\gamma-\alpha)\Gamma(\gamma-\beta)}
+ F(\alpha,\beta,\alpha+\beta+1-\gamma,1-z)\\
+ &\hspace{1em}+\frac{\Gamma(\gamma)\Gamma(\alpha+\beta-\gamma)}
+ {\Gamma(\alpha)\Gamma(\beta)}(1-z)^{\gamma-\alpha-\beta}\\
+ &\hspace{3em}\times
+ F(\gamma-\alpha,\gamma-\beta,\gamma+1-\alpha-\beta,1-z)
+ \end{split}
+ \tag{e.7}
+\end{equation}
+relates hypergeometric functions of $z$ and $1-z$ (we give this relation also
+without proof). Combining (e.7) with (e.6), we obtain
+
+\SourcePage{791}{794}
+the relations
+\begin{equation}
+ \begin{split}
+ F(\alpha,\beta,\gamma,z)
+ &=\frac{\Gamma(\gamma)\Gamma(\beta-\alpha)}
+ {\Gamma(\beta)\Gamma(\gamma-\alpha)}(1-z)^{-\alpha}
+ F\left(\alpha,\gamma-\beta,\alpha+1-\beta,\frac1{1-z}\right)\\
+ &\hspace{1em}+\frac{\Gamma(\gamma)\Gamma(\alpha-\beta)}
+ {\Gamma(\alpha)\Gamma(\gamma-\beta)}(1-z)^{-\beta}
+ F\left(\beta,\gamma-\alpha,\beta+1-\alpha,\frac1{1-z}\right),
+ \end{split}
+ \tag{e.8}
+\end{equation}
+\begin{equation}
+ \begin{split}
+ F(\alpha,\beta,\gamma,z)
+ &=\frac{\Gamma(\gamma)\Gamma(\gamma-\alpha-\beta)}
+ {\Gamma(\gamma-\beta)\Gamma(\gamma-\alpha)}z^{-\alpha}
+ F\left(\alpha,\alpha+1-\gamma,\alpha+\beta+1-\gamma,
+ \frac{z-1}{z}\right)\\
+ &\hspace{1em}+\frac{\Gamma(\gamma)\Gamma(\alpha+\beta-\gamma)}
+ {\Gamma(\alpha)\Gamma(\beta)}(1-z)^{\gamma-\alpha-\beta}z^{\beta-\gamma}\\
+ &\hspace{3em}\times
+ F\left(1-\beta,\gamma-\beta,\gamma+1-\alpha-\beta,
+ \frac{z-1}{z}\right).
+ \end{split}
+ \tag{e.9}
+\end{equation}
+Each term in the sums on the right-hand sides of (e.6)--(e.9) is itself a
+solution of the hypergeometric equation.
+
+If $\alpha$ (or $\beta$) is a negative integer (or zero), $\alpha=-n$, the
+hypergeometric function becomes a polynomial of degree $n$ and may be written
+as
+\begin{equation}
+ F(-n,\beta,\gamma,z)=
+ \frac{z^{1-\gamma}(1-z)^{\gamma+n-\beta}}
+ {\gamma(\gamma+1)\cdots(\gamma+n-1)}
+ \frac{d^n}{dz^n}\left[z^{\gamma+n-1}(1-z)^{\beta-\gamma}\right].
+ \tag{e.10}
+\end{equation}
+Apart from a constant factor, these polynomials are the \emph{Jacobi
+polynomials}, defined by
+\begin{equation}
+ \begin{split}
+ P_n^{(a,b)}(z)
+ &=\frac{(a+1)(a+2)\cdots(a+n)}{n!}
+ F\left(-n,a+b+n+1,a+1,\frac{1-z}{2}\right)\\
+ &=\frac{(-1)^n}{2^nn!}(1-z)^{-a}(1+z)^{-b}
+ \frac{d^n}{dz^n}\left[(1-z)^{a+n}(1+z)^{b+n}\right].
+ \end{split}
+ \tag{e.11}
+\end{equation}
+For $a=b=0$, the Jacobi polynomials coincide with the Legendre polynomials.
+For $n=0$, $P_0^{(a,b)}=1$.

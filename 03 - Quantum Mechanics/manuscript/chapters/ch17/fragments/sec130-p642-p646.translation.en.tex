@@ -1,0 +1,206 @@
+\SourcePage{642}{645}
+\section{The scattering amplitude in the momentum representation}
+
+The concept of a scattering amplitude involves only the directions of the
+initial and final momenta of the scattered particle. It is therefore natural
+that this concept can also be
+
+\SourcePage{643}{646}
+reached by formulating the scattering problem in the momentum representation,
+where the spatial distribution of the entire process is not considered at
+all. We shall show how this is done.
+
+First transform the original Schrödinger equation
+\begin{equation}
+ -\frac{\hbar^2}{2m}\Delta\psi(\mathbf r)+[U(\mathbf r)-E]\psi(\mathbf r)=0
+ \tag{130.1}
+\end{equation}
+to the momentum representation, passing from coordinate wave functions to
+their Fourier components
+\begin{equation}
+ a(\mathbf q)=\int\psi(\mathbf r)e^{-i\mathbf{qr}}dV.
+ \tag{130.2}
+\end{equation}
+Conversely,
+\begin{equation}
+ \psi(\mathbf r)=\int a(\mathbf q)e^{i\mathbf{qr}}
+ \frac{d^3q}{(2\pi)^3}.
+ \tag{130.3}
+\end{equation}
+
+Multiply (130.1) by $e^{-i\mathbf{qr}}$ and integrate over $dV$. Two
+integrations by parts in the first term give
+\[
+ \int e^{-i\mathbf{qr}}\Delta\psi(\mathbf r)dV
+ =\int\psi(\mathbf r)\Delta e^{-i\mathbf{qr}}dV=-q^2a(\mathbf q).
+\]
+In the second term, inserting (130.3), we find
+\[
+ \begin{aligned}
+ \int U(\mathbf r)\psi(\mathbf r)e^{-i\mathbf{qr}}dV
+ &=\iint U(\mathbf r)e^{-i\mathbf{qr}}a(\mathbf q')
+ e^{i\mathbf q'\mathbf r}dV\frac{d^3q'}{(2\pi)^3}\\
+ &=\int U(\mathbf q-\mathbf q')a(\mathbf q')\frac{d^3q'}{(2\pi)^3},
+ \end{aligned}
+\]
+where $U(\mathbf q)$ denotes the Fourier component of $U(\mathbf r)$
+\footnote{For notational convenience, $\mathbf q$ is written as an argument
+of the Fourier component rather than as a subscript.}:
+\[
+ U(\mathbf q)=\int U(\mathbf r)e^{-i\mathbf{qr}}dV.
+\]
+Thus the Schrödinger equation in the momentum representation is
+\begin{equation}
+ \left(\frac{\hbar^2q^2}{2m}-E\right)a(\mathbf q)
+ +\int U(\mathbf q-\mathbf q')a(\mathbf q')\frac{d^3q'}{(2\pi)^3}=0.
+ \tag{130.4}
+\end{equation}
+
+\SourcePage{644}{647}
+Notice that this is an integral equation, not a differential equation.
+
+Write the wave function describing the scattering of particles with momentum
+$\hbar\mathbf k$ as
+\begin{equation}
+ \psi_{\mathbf k}(\mathbf r)=e^{i\mathbf{kr}}+\chi_{\mathbf k}(\mathbf r),
+ \tag{130.5}
+\end{equation}
+where $\chi_{\mathbf k}(\mathbf r)$ has asymptotically, as $r\to\infty$, the
+form of an outgoing spherical wave. Its Fourier component is
+\begin{equation}
+ a_{\mathbf k}(\mathbf q)=(2\pi)^3\delta(\mathbf q-\mathbf k)
+ +\chi_{\mathbf k}(\mathbf q),
+ \tag{130.6}
+\end{equation}
+and substitution in (130.4) gives the following equation for
+$\chi_{\mathbf k}(\mathbf q)$\footnote{By the properties of the
+delta-function, the product $(q^2-k^2)\delta(\mathbf q-\mathbf k)$ gives zero
+when multiplied by an arbitrary function $f(\mathbf q)$ nonsingular at
+$\mathbf q=\mathbf k$ and integrated over $d^3q$. In this sense,
+$(q^2-k^2)\delta(\mathbf q-\mathbf k)=0$.}:
+\begin{equation}
+ -\frac{\hbar^2}{2m}(k^2-q^2)\chi_{\mathbf k}(\mathbf q)
+ =U(\mathbf q-\mathbf k)+\int U(\mathbf q-\mathbf q')
+ \chi_{\mathbf k}(\mathbf q')\frac{d^3q'}{(2\pi)^3}.
+ \tag{130.7}
+\end{equation}
+
+It is useful to transform this equation by introducing a new unknown function
+in place of $\chi_{\mathbf k}(\mathbf q)$, defined by
+\begin{equation}
+ \chi_{\mathbf k}(\mathbf q)=-\frac{2m}{\hbar^2}
+ \frac{F(\mathbf k,\mathbf q)}{q^2-k^2-i0}.
+ \tag{130.8}
+\end{equation}
+This removes the singularity at $q^2=k^2$ from the coefficients in (130.7),
+which becomes
+\begin{equation}
+ F(\mathbf k,\mathbf q)=U(\mathbf q-\mathbf k)-\frac{2m}{\hbar^2}
+ \int\frac{U(\mathbf q-\mathbf q')F(\mathbf k,\mathbf q')}
+ {q'^2-k^2-i0}\frac{d^3q'}{(2\pi)^3}.
+ \tag{130.9}
+\end{equation}
+The term $i0$, meaning the limit $i\varepsilon$ as $\varepsilon\to+0$, has
+been included in (130.8) to assign a definite meaning to the integral in
+(130.9): it specifies how the pole $q'^2=k^2$ is bypassed (compare \S~43). We
+shall show that this prescription gives the required asymptotic form of
+\begin{equation}
+ \chi_{\mathbf k}(\mathbf r)=-\frac{2m}{\hbar^2}\int
+ \frac{F(\mathbf k,\mathbf q)e^{i\mathbf{qr}}}{q^2-k^2-i0}
+ \frac{d^3q}{(2\pi)^3}.
+ \tag{130.10}
+\end{equation}
+
+Write $d^3q=q^2dq\,do_q$ and first integrate over $do_q$, the directions of
+$\mathbf q$ relative to $\mathbf r$. An integration of this kind was already
+carried out in transforming the first term of (125.2); at large $r$ it gives
+
+\SourcePage{645}{648}
+\[
+ \chi_{\mathbf k}(\mathbf r)=-\frac{2m}{\hbar^2}\frac{2\pi i}{r}
+ \int_0^\infty
+ \frac{F(\mathbf k,q\mathbf n')e^{iqr}-F(\mathbf k,-q\mathbf n')e^{-iqr}}
+ {q^2-k^2-i0}\,q\,dq\frac1{(2\pi)^3},
+\]
+where $\mathbf n'=\mathbf r/r$, or
+\[
+ \chi_{\mathbf k}(\mathbf r)=-\frac{im}{2\pi^2\hbar^2r}
+ \int_{-\infty}^{\infty}
+ \frac{F(\mathbf k,q\mathbf n')e^{iqr}q\,dq}{q^2-k^2-i0}.
+\]
+
+The integrand has poles at $q=k+i0$ and $q=-k-i0$, bypassed below and above,
+respectively, in integration through the complex $q$ plane (Fig.~48a). Shift
+the contour slightly into the upper half-plane, replacing it by a straight
+line parallel to the real axis and a closed loop enclosing the pole $q=k$
+(Fig.~48b). As $r\to\infty$, the integral along the straight line vanishes
+because the integrand contains $\exp(-r\mathop{\rm Im}q)$. The closed-loop
+integral is the residue at $q=k$ multiplied by $2\pi i$. We finally obtain
+\begin{equation}
+ \chi_{\mathbf k}(\mathbf r)=-\frac{m}{2\pi\hbar^2}
+ \frac{e^{ikr}}rF(k\mathbf n,k\mathbf n'),
+ \tag{130.11}
+\end{equation}
+where $\mathbf n$ is the unit vector along $\mathbf k$. Thus the required
+asymptotic form is obtained, and the scattering amplitude is
+\begin{equation}
+ f(\mathbf n,\mathbf n')=-\frac{m}{2\pi\hbar^2}
+ F(k\mathbf n,k\mathbf n').
+ \tag{130.12}
+\end{equation}
+The scattering amplitude is therefore determined by the value at $q=k$ of the
+function $F(\mathbf k,\mathbf q)$ satisfying (130.9).
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,line width=.5pt,font=\small]
+ \begin{scope}[shift={(-2.5,0)}]
+  \draw[->] (-1.7,0)--(-.45,0); \draw (-.45,0) arc[start angle=180,end angle=0,radius=.25];
+  \draw[->] (.05,0)--(1.05,0); \draw (1.05,0) arc[start angle=180,end angle=360,radius=.25];
+  \draw[->] (1.55,0)--(1.85,0);
+  \fill (-.2,0) circle (1.3pt); \fill (1.3,0) circle (1.3pt);
+  \node[circle,draw,inner sep=2pt] at (-1.55,.8) {$q$}; \node[below] at (0,-.55) {(a)};
+ \end{scope}
+ \begin{scope}[shift={(2.3,0)}]
+  \draw (-1.5,0)--(1.5,0); \fill (0,0) circle (2pt);
+  \draw[->] (-1.5,.55)--(-.65,.55); \draw (-.65,.55)--(.2,.55);
+  \draw[->] (.2,.55)--(.95,.55); \draw (.95,.55)--(1.5,.55);
+  \draw[->] (.2,.55) arc[start angle=90,end angle=-270,radius=.28];
+  \node[below] at (0,-.55) {(b)};
+ \end{scope}
+\end{tikzpicture}
+\caption{}
+\label{fig:48}
+\end{figure}
+
+When perturbation theory applies, (130.9) is readily solved by successive
+iteration. In the first approximation, omitting the integral term altogether,
+
+\SourcePage{646}{649}
+one has $F(\mathbf k,\mathbf q)=U(\mathbf q-\mathbf k)$. In the next
+approximation, insert this first-order expression for $F$ in the integral term.
+After a slight change of variables, (130.12) then gives
+\begin{equation}
+ \begin{split}
+ f(\mathbf n,\mathbf n')=-\frac{m}{2\pi\hbar^2}\Bigg\{
+ &U(\mathbf k'-\mathbf k)\\
+ &+\frac{2m}{\hbar^2}\int
+ \frac{U(\mathbf k'-\mathbf k'')U(\mathbf k''-\mathbf k)}
+ {k^2-k''^2+i0}\frac{d^3k''}{(2\pi)^3}\Bigg\},
+ \end{split}
+ \tag{130.13}
+\end{equation}
+where $\mathbf k=k\mathbf n$ and $\mathbf k'=k\mathbf n'$. The first term is
+the first-Born-approximation formula (126.4); the second is the contribution of
+the second approximation to the scattering amplitude\footnote{This result can
+of course also be obtained without passing to the momentum representation.
+Comparison of (43.1) and (43.6) makes it evident that the second-approximation
+formula differs from the first by replacing $U(\mathbf k'-\mathbf k)$ with the
+expression in braces in (130.13).}.
+
+Formula (130.13) demonstrates the fact mentioned in \S~126: already in the
+second approximation the scattering amplitude loses the symmetry (126.8). At
+first sight the integral term in (130.13) might also seem symmetric under
+interchange of the initial and final states. It is not, because complex
+conjugation changes the integration contour, namely the direction in which the
+pole is bypassed.

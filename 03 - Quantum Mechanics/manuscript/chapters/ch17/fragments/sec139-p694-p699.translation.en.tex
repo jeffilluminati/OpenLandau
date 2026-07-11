@@ -1,0 +1,258 @@
+\SourcePage{694}{697}
+\section{Elastic collisions of fast electrons with atoms}
+
+Elastic collisions of fast electrons with atoms can be treated in the Born
+approximation if the speed of the incident electron is large compared with
+the speeds of the atomic electrons.
+
+Because the mass of an atom is much greater than that of an electron, the
+atom may be regarded as stationary during the collision. The coordinate
+system in which the center of mass is at rest then coincides with that in
+which the atom is at rest. Thus $\mathbf p$ and $\mathbf p'$ in (126.7) are
+the electron momenta before and after the collision, $m$ is the electron mass,
+and $\theta$ coincides with the electron deflection angle $\vartheta$. The
+potential energy $U(r)$ in (126.7), however, requires a proper definition.
+
+In \S~126 we calculated the matrix element $U_{\mathbf p'\mathbf p}$ of the
+interaction energy with respect to the free-particle wave functions before
+and after the collision. For a collision with an atom, the wave functions
+describing the atom's internal state must also be included. In elastic
+scattering the atomic state does not change. Hence
+$U_{\mathbf p'\mathbf p}$ must be defined as a matrix element with respect to
+the electron wave functions $\psi_{\mathbf p}$ and $\psi_{\mathbf p'}$ which
+is diagonal with respect to the atomic wave function. In other words, $U$ in
+(126.7) is the potential energy of interaction between the electron and atom,
+averaged over the latter's wave function. It equals $e\varphi(r)$, where
+$\varphi(r)$ is the potential of the field produced at $r$ by the mean charge
+distribution in the atom.
+
+Denoting the atomic charge density by $\rho(r)$, the potential $\varphi$
+satisfies Poisson's equation
+\[
+ \Delta\varphi=-4\pi\rho(r).
+\]
+
+\SourcePage{695}{698}
+The required matrix element $U_{\mathbf p'\mathbf p}$ is essentially the
+Fourier component of $U$, and hence of $\varphi$, corresponding to the wave
+vector $\mathbf q=\mathbf k'-\mathbf k$. Applying Poisson's equation to each
+Fourier component separately gives
+\[
+ \Delta(\varphi_{\mathbf q}e^{i\mathbf{qr}})=-q^2\varphi_{\mathbf q}e^{i\mathbf{qr}}
+ =-4\pi\rho_{\mathbf q}e^{i\mathbf{qr}},
+\]
+so that $\varphi_{\mathbf q}=4\pi\rho_{\mathbf q}/q^2$, or
+\begin{equation}
+ \int\varphi e^{-i\mathbf{qr}}dV=\frac{4\pi}{q^2}\int\rho e^{-i\mathbf{qr}}dV.
+ \tag{139.1}
+\end{equation}
+The charge density $\rho(r)$ consists of the electronic charge and the nuclear
+charge:
+\[
+ \rho=-en(r)+Ze\delta(r),
+\]
+where $en(r)$ is the electronic charge density in the atom. Multiplication by
+$e^{-i\mathbf{qr}}$ and integration give
+\[
+ \int\rho e^{-i\mathbf{qr}}dV=-e\int ne^{-i\mathbf{qr}}dV+Ze.
+\]
+The integral of interest is therefore
+\begin{equation}
+ \int Ue^{-i\mathbf{qr}}dV=\frac{4\pi e^2}{q^2}[Z-F(q)],
+ \tag{139.2}
+\end{equation}
+where
+\begin{equation}
+ F(q)=\int ne^{-i\mathbf{qr}}dV
+ \tag{139.3}
+\end{equation}
+is called the \emph{atomic form factor}. It is a function of the scattering
+angle and of the speed of the incident electron.
+
+Finally, substituting (139.2) in (126.7), we obtain the following expression
+for the elastic scattering cross-section of fast electrons by an
+atom\footnote{We neglect exchange effects between the scattered fast electron
+and the atomic electrons; that is, we do not symmetrize the wave function of
+the system. The validity of this neglect is evident beforehand: interference
+between the rapidly oscillating wave function of the free particle and the
+wave function of the atomic electrons in the ``exchange integral'' makes the
+associated contribution to the scattering amplitude small.}:
+\begin{equation}
+ d\sigma=\frac{4m^2e^4}{\hbar^4q^4}[Z-F(q)]^2d\Omega,\qquad
+ q=\frac{2mv}{\hbar}\sin\frac\vartheta2.
+ \tag{139.4}
+\end{equation}
+Consider the limiting case $qa_0\ll1$, where $a_0$ is of the order of the
+atomic size. Small $q$ correspond to small
+
+\SourcePage{696}{699}
+scattering angles: $\vartheta\ll v_0/v$, where
+$v_0\sim\hbar/ma_0$ is of the order of the atomic-electron speeds.
+
+Expand $F(q)$ in powers of $q$. The zeroth-order term is $\int n\,dV$, the
+total number $Z$ of electrons in the atom. The first-order term is
+proportional to $\int\mathbf r n(r)dV$, the mean dipole moment of the atom,
+which vanishes identically (see \S~75). The expansion must therefore be
+carried through the second-order term, giving
+\[
+ Z-F(q)=\frac{q^2}{6}\int nr^2dV.
+\]
+Substitution in (139.4) gives
+\begin{equation}
+ d\sigma=\left|\frac{me^2}{3\hbar^2}\int nr^2dV\right|^2d\Omega.
+ \tag{139.5}
+\end{equation}
+Thus, in the small-angle region the cross-section is independent of the
+scattering angle and is determined by the mean square distance of the atomic
+electrons from the nucleus.
+
+In the opposite limiting case of large $q$ ($qa_0\gg1$,
+$\vartheta\gg v_0/v$), the factor $e^{-i\mathbf{qr}}$ in the integrand of
+(139.3) oscillates rapidly, and the integral is consequently close to zero.
+Thus $F(q)$ may be neglected in comparison with $Z$, leaving
+\begin{equation}
+ d\sigma=\left(\frac{Ze^2}{2mv^2}\right)^2
+ \frac{d\Omega}{\sin^4(\vartheta/2)},
+ \tag{139.6}
+\end{equation}
+the Rutherford cross-section for scattering by the atomic nucleus.
+
+Let us also calculate the transport cross-section
+\begin{equation}
+ \sigma_{\mathrm{tr}}=\int(1-\cos\vartheta)d\sigma.
+ \tag{139.7}
+\end{equation}
+In the region $\vartheta\ll v_0/v$, (139.5) gives
+\[
+ d\sigma=\mathrm{const}\cdot\sin\vartheta\,d\vartheta
+ \approx\mathrm{const}\cdot\vartheta\,d\vartheta,
+\]
+where the constant is independent of $\vartheta$. The integrand in this region
+is therefore proportional to $\vartheta^3d\vartheta$, and the integral
+converges rapidly at its lower limit. In the region
+$1\gg\vartheta\gg v_0/v$, however,
+\[
+ d\sigma\approx\mathrm{const}\cdot(d\vartheta/\vartheta^3),
+\]
+so the integrand is proportional to $d\vartheta/\vartheta$ and (139.7)
+diverges logarithmically.
+
+\SourcePage{697}{700}
+It follows that this very angular region makes the principal contribution to
+the integral, and integration may be restricted to it. The lower limit should
+be of order $v_0/v$; write it as $e^2/(\gamma\hbar v)$, where $\gamma$ is a
+dimensionless constant. The result is
+\begin{equation}
+ \sigma_{\mathrm{tr}}=4\pi\left(\frac{Ze^2}{mv^2}\right)^2
+ \ln\frac{\gamma\hbar v}{e^2}.
+ \tag{139.8}
+\end{equation}
+An exact calculation of $\gamma$ requires consideration of scattering through
+angles $\vartheta>v_0/v$ and cannot be performed in general. The transport
+cross-section depends only weakly on this constant, since it occurs under a
+logarithm multiplied by the large quantity $\hbar v/e^2$.
+
+For numerical calculation of the form factor of heavy atoms, the
+Thomas--Fermi distribution of the density $n(r)$ may be used. We saw that in
+the Thomas--Fermi model
+\[
+ n(r)=Z^2f(rZ^{1/3}/b)
+\]
+(all quantities in this and the following formulas are measured in atomic
+units). It is readily seen that (139.3), calculated with this $n(r)$, contains
+$q$ only in a specified combination with $Z$:
+\begin{equation}
+ F(q)=Z\varphi(bqZ^{-1/3}).
+ \tag{139.9}
+\end{equation}
+Table~11 gives the values of the function $\varphi(x)$, which is universal for
+all atoms\footnote{It must be kept in mind that this formula is inapplicable
+at small $q$, consistently with the fact that the integral of $nr^2$ cannot
+actually be calculated by the Thomas--Fermi method (see the note on p.~563).
+It should also be remembered that the Thomas--Fermi model does not reproduce
+the individual properties of atoms that disturb their systematic variation
+with atomic number.}.
+
+\setcounter{table}{10}
+\begin{table}[htbp]
+\centering
+\caption{Thomas--Fermi atomic factor}
+\begin{tabular}{@{}rr|rr|rr@{}}
+\toprule
+$x$ & $\varphi(x)$ & $x$ & $\varphi(x)$ & $x$ & $\varphi(x)$\\
+\midrule
+0    & 1.000 & 1.08 & 0.422 & 2.17 & 0.224\\
+0.15 & 0.922 & 1.24 & 0.378 & 2.32 & 0.205\\
+0.31 & 0.796 & 1.39 & 0.342 & 2.48 & 0.189\\
+0.46 & 0.684 & 1.55 & 0.309 & 2.64 & 0.175\\
+0.62 & 0.589 & 1.70 & 0.284 & 2.79 & 0.167\\
+0.77 & 0.522 & 1.86 & 0.264 & 2.94 & 0.156\\
+0.93 & 0.469 & 2.02 & 0.240 &      &      \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+With the atomic form factor (139.9), (139.4) becomes
+\begin{equation}
+ d\sigma=\frac{4Z^2}{q^4}[1-\varphi(bqZ^{-1/3})]^2d\Omega
+ =Z^{2/3}\Phi\left(Z^{-1/3}v\sin\frac\vartheta2\right)d\Omega,
+ \tag{139.10}
+\end{equation}
+
+\SourcePage{698}{701}
+where $\Phi(x)$ is another universal function. The total cross-section can be
+obtained by integration. Small $\vartheta$ make the main contribution to the
+integral. We may therefore write
+\[
+ d\sigma\approx Z^{2/3}\Phi(Z^{-1/3}v\vartheta/2)\cdot2\pi\vartheta\,d\vartheta
+\]
+and extend the integration over $d\vartheta$ to infinity:
+\[
+ \sigma=2\pi Z^{2/3}\int_0^\infty\Phi\left(Z^{-1/3}\frac{v\vartheta}{2}\right)
+ \vartheta\,d\vartheta
+ =\frac{8\pi}{v^2}Z^{4/3}\int_0^\infty x\Phi(x)dx.
+\]
+Thus
+\begin{equation}
+ \sigma=\mathrm{const}\cdot\frac{Z^{4/3}}{v^2}.
+ \tag{139.11}
+\end{equation}
+It is similarly easy to verify that the constant $\gamma$ in (139.8) is
+proportional to $Z^{-1/3}$.
+
+\subsection*{Problem}
+
+\ProblemHeading Calculate the elastic scattering cross-section of fast
+electrons by a hydrogen atom in its ground state.
+
+\SolutionHeading The ground-state wave function of the hydrogen atom is
+$\psi=e^{-r}/\sqrt\pi$ in atomic units, so $n=e^{-2r}/\pi$. The angular
+integration in (139.3), performed as in the derivation of (126.12), gives
+\[
+ F=\frac{4\pi}{q}\int_0^\infty n(r)\sin qr\,dr
+ =\left(1+\frac{q^2}{4}\right)^{-2}.
+\]
+Substitution in (139.4) gives
+\[
+ d\sigma=\frac{4(8+q^2)^2}{(4+q^2)^4}d\Omega,
+\]
+where $q=2v\sin(\vartheta/2)$. To calculate the total cross-section, write
+\[
+ d\Omega=2\pi\sin\vartheta\,d\vartheta=\frac{2\pi}{v^2}q\,dq
+\]
+and integrate with respect to $q$ from zero to $2v$. Since $v$ is assumed
+large and the integral converges, however, the upper limit may be replaced by
+infinity. The result is
+\[
+ \sigma=\frac{7\pi}{3v^2}.
+\]
+The transport cross-section is calculated as
+\[
+ \sigma_{\mathrm{tr}}=\frac1{2v^2}\int q^2d\sigma.
+\]
+Changing the integration variable by $4+q^2=u$ and replacing the upper limit
+by infinity everywhere except in the term $du/u$, we obtain
+\[
+ \sigma_{\mathrm{tr}}=\frac{4\pi}{v^2}\left(\ln v+\frac1{12}\right),
+\]
+in agreement with (139.8).

@@ -1,0 +1,164 @@
+\SourcePage{686}{689}
+\section{Collisions of identical particles}
+
+The collision of two identical particles requires special consideration. In
+quantum mechanics, the identity of the particles gives rise to a distinctive
+exchange interaction between them. This interaction also has an essential
+effect on scattering (N.~Mott, 1930)\footnote{The direct spin--orbit
+interaction is still not considered here.}.
+
+The orbital wave function of a two-particle system must be symmetric or
+antisymmetric with respect to the particles according as their total spin is
+even or odd (see \S~62). The wave function describing the scattering, obtained
+by solving the ordinary Schrödinger equation, must therefore be symmetrized or
+antisymmetrized in the particles. Interchanging the particles is equivalent
+to reversing the direction of the radius vector joining them. In the
+coordinate system in which the center of mass is at rest, this means that $r$
+is unchanged while $\theta$ is replaced by $\pi-\theta$ (and consequently
+$z=r\cos\theta$ becomes $-z$). Thus, instead of the asymptotic expression
+(123.3), we must write
+\begin{equation}
+ \psi=e^{ikz}\pm e^{-ikz}+\frac1r e^{ikr}[f(\theta)\pm(\pi-\theta)].
+ \tag{137.1}
+\end{equation}
+Because the particles are identical, one cannot, of course, say which is the
+scattered particle and which is the scattering particle. In the center-of-mass
+system there are two identical incident waves propagating toward each other,
+$e^{ikz}$ and $e^{-ikz}$. The outgoing spherical wave in (137.1) accounts for
+the scattering of both particles, and the current calculated from it gives
+the probability that either particle is scattered into a specified element
+$d\Omega$ of solid angle. The scattering cross-section is the ratio of this
+current to the current density in each incident
+
+\SourcePage{687}{690}
+plane wave; hence, as before, it is determined by the squared modulus of the
+coefficient of $e^{ikr}/r$ in (137.1).
+
+Thus, if the total spin of the colliding particles is even, the scattering
+cross-section is
+\begin{equation}
+ d\sigma_s=|f(\theta)+f(\pi-\theta)|^2d\Omega,
+ \tag{137.2}
+\end{equation}
+while if it is odd,
+\begin{equation}
+ d\sigma_a=|f(\theta)-f(\pi-\theta)|^2d\Omega.
+ \tag{137.3}
+\end{equation}
+The appearance of the interference term
+$f(\theta)f^*(\pi-\theta)+f^*(\theta)f(\pi-\theta)$ is characteristic of the
+exchange interaction. If the particles were distinguishable, as in ordinary
+classical mechanics, the probability that either is scattered into the given
+solid-angle element $d\Omega$ would simply be the sum of the probabilities
+that one is deflected through $\theta$ and the oppositely moving one through
+$\pi-\theta$. In other words, the cross-section would be
+\[
+ \{|f(\theta)|^2+|f(\pi-\theta)|^2\}d\Omega.
+\]
+
+In the limiting case of low velocities, the scattering amplitude, for an
+interaction decreasing sufficiently rapidly with distance, tends to a
+constant limit independent of angle (\S~132). Equation (137.3) shows that
+$d\sigma_a$ then vanishes; only particles with even total spin scatter from
+one another.
+
+Equations (137.2), (137.3) assume that the total spin of the colliding
+particles has a specified value. If the particles are not in specified spin
+states, the cross-section must be found by averaging with all spin states
+taken as equally probable.
+
+It was shown in \S~62 that, among the $(2s+1)^2$ different spin states of a
+system of two particles of spin $s$, $s(2s+1)$ states correspond to even total
+spin and $(s+1)(2s+1)$ to odd total spin if $s$ is half-integral, while the
+reverse holds if $s$ is integral. First suppose that the particle spin $s$ is
+half-integral. The probability that the two-particle system has even $S$ is
+then $s(2s+1)/(2s+1)^2=s/(2s+1)$, and the probability of odd $S$ is
+$(s+1)/(2s+1)$. The scattering cross-section is therefore
+\begin{equation}
+ d\sigma=\frac{s}{2s+1}d\sigma_s+\frac{s+1}{2s+1}d\sigma_a.
+ \tag{137.4}
+\end{equation}
+
+\SourcePage{688}{691}
+Substitution of (137.2), (137.3) gives
+\begin{equation}
+ d\sigma\left\{|f(\theta)|^2+|f(\pi-\theta)|^2
+ -\frac1{2s+1}[f(\theta)f(\pi-\theta)^*+f(\theta)^*f(\pi-\theta)]\right\}d\Omega.
+ \tag{137.5}
+\end{equation}
+Similarly, for integral $s$,
+\begin{equation}
+ d\sigma=\left\{|f(\theta)|^2+|f(\pi-\theta)|^2
+ +\frac1{2s+1}[f(\theta)f(\pi-\theta)^*+f(\theta)^*f(\pi-\theta)]\right\}d\Omega.
+ \tag{137.6}
+\end{equation}
+
+As an example, write the formulas for the collision of two electrons
+interacting by the Coulomb law, $U=e^2/r$. Substitution of (135.9) in (137.5)
+with $s=1/2$ gives, after a simple calculation and in ordinary units,
+\begin{align}
+ d\sigma={}&\left(\frac{e^2}{m_0v^2}\right)^2
+ \left[\frac1{\sin^4(\theta/2)}+\frac1{\cos^4(\theta/2)}\right.\notag\\
+ &\left.-\frac1{\sin^2(\theta/2)\cos^2(\theta/2)}
+ \cos\left(\frac{e^2}{\hbar v}\ln\tan^2\frac\theta2\right)\right]d\Omega
+ \tag{137.7}
+\end{align}
+(the electron mass $m_0$ has been introduced in place of the reduced mass
+$m=m_0/2$). This formula is considerably simplified when the speed is so high
+that $e^2\ll v\hbar$; note that this is precisely the condition under which
+perturbation theory applies to the Coulomb field. The cosine in the third term
+may then be replaced by unity, giving
+\begin{equation}
+ d\sigma=\left(\frac{2e^2}{m_0v^2}\right)^2
+ \frac{4-3\sin^2\theta}{\sin^4\theta}\,d\Omega.
+ \tag{137.8}
+\end{equation}
+The opposite limiting case, $e^2\gg v\hbar$, corresponds to the transition to
+classical mechanics (see the end of \S~127). This transition occurs in a
+rather peculiar way in (137.7). When $e^2\gg v\hbar$, the cosine in the third
+term in square brackets is a rapidly oscillating function. At each specified
+$\theta$, (137.7) gives a scattering cross-section which in general differs
+appreciably from the Rutherford value. But averaging over even a small
+interval of $\theta$ makes the oscillating term in (137.7) disappear, and the
+classical formula is recovered.
+
+All the formulas above refer to the coordinate system in which the center of
+mass is at rest. Passage to the system in which one particle was at rest
+before the collision is made, according to (123.2), simply by replacing
+$\theta$ with $2\vartheta$. Thus, for electron collisions, (137.7) gives
+
+\SourcePage{689}{692}
+\begin{align}
+ d\sigma={}&\left(\frac{2e^2}{m_0v^2}\right)^2
+ \left[\frac1{\sin^4\vartheta}+\frac1{\cos^4\vartheta}
+ -\frac1{\sin^2\vartheta\cos^2\vartheta}\right.\notag\\
+ &\left.\times\cos\left(\frac{e^2}{\hbar v}\ln\tan^2\vartheta\right)\right]
+ \cos\vartheta\,d\Omega,
+ \tag{137.9}
+\end{align}
+where $d\Omega$ is the solid-angle element in the new coordinate system. When
+$\theta$ is replaced by $2\vartheta$, the solid-angle element $d\Omega$ must
+be replaced by $4\cos\vartheta\,d\Omega$, since
+$\sin\theta\,d\theta\,d\varphi=4\cos\vartheta\sin\vartheta\,d\vartheta\,d\varphi$.
+
+\subsection*{Problem}
+
+\ProblemHeading Determine the scattering cross-section of two identical
+spin-$1/2$ particles having specified mean spin values
+$\bar{\mathbf s}_1$ and $\bar{\mathbf s}_2$.
+
+\SolutionHeading The dependence of the cross-section on the particle
+polarizations must be expressed by a term proportional to the scalar
+$\bar{\mathbf s}_1\bar{\mathbf s}_2$. Seek $d\sigma$ in the form
+$a+b\bar{\mathbf s}_1\bar{\mathbf s}_2$. For unpolarized particles
+($\bar{\mathbf s}_1=\bar{\mathbf s}_2=0$), the second term is absent and,
+according to (137.4),
+$d\sigma=a=(d\sigma_s+3d\sigma_a)/4$. If both particles are fully polarized
+in the same direction ($\bar{\mathbf s}_1\bar{\mathbf s}_2=1/4$), the system
+is certainly in a state with $S=1$; hence
+$d\sigma=a+b/4=d\sigma_a$. Determining $a$ and $b$ from these two equalities,
+we find
+\[
+ d\sigma=\frac14(d\sigma_s+3d\sigma_a)
+ +(d\sigma_a-d\sigma_s)\bar{\mathbf s}_1\bar{\mathbf s}_2.
+\]

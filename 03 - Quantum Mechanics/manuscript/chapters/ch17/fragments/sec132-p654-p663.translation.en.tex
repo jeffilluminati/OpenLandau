@@ -1,0 +1,326 @@
+\SourcePage{654}{657}
+\section{Scattering of slow particles}
+
+Consider elastic scattering in the limiting case of low particle velocities.
+The wavelength is assumed large compared with the range $a$ of $U(r)$
+($ka\ll1$), and the energy small compared with the field within that range.
+We must determine the limiting dependence of the phases $\delta_l$ on small
+$k$.
+
+\SourcePage{655}{658}
+For $r\lesssim a$, only the $k^2$ term may be neglected in the exact
+Schrödinger equation (123.7):
+\begin{equation}
+ R_l''+\frac2rR_l'-\frac{l(l+1)}{r^2}R_l
+ =\frac{2m}{\hbar^2}U(r)R_l. \tag{132.1}
+\end{equation}
+For $a\ll r\ll1/k$, the $U(r)$ term may also be omitted:
+\begin{equation}
+ R_l''+\frac2rR_l'-\frac{l(l+1)}{r^2}R_l=0. \tag{132.2}
+\end{equation}
+Its general solution is
+\begin{equation}
+ R_l=c_1r^l+\frac{c_2}{r^{l+1}}. \tag{132.3}
+\end{equation}
+The constants $c_1,c_2$, different for each $l$, can in principle be found
+only by solving (132.1) for the specified $U(r)$.
+
+At $r\sim1/k$, $U(r)$ may be omitted but $k^2$ may not:
+\begin{equation}
+ R_l''+\frac2rR_l'+\left[k^2-\frac{l(l+1)}{r^2}\right]R_l=0. \tag{132.4}
+\end{equation}
+The free-motion solution is
+\begin{equation}
+ R_l=c_1\frac{(-1)^l(2l+1)!!}{k^{2l+1}}r^l
+ \left(\frac1r\frac d{dr}\right)^l\frac{\sin kr}{r}
+ +c_2\frac{k^l}{(2l-1)!!}
+ \left(\frac1r\frac d{dr}\right)^l\frac{\cos kr}{r}. \tag{132.5}
+\end{equation}
+The coefficients make this reduce to (132.3) for $r\ll1/k$, matching the
+solutions in the regions $kr\ll1$ and $kr\sim1$.
+
+For $kr\gg1$ it becomes
+\[
+ R_l\sim\frac{c_1(2l+1)!!}{rk^{l+1}}\sin\left(kr-\frac{\pi l}2\right)
+ +\frac{c_2k^l}{r(2l-1)!!}\cos\left(kr-\frac{\pi l}2\right),
+\]
+or
+\begin{equation}
+ R_l\sim\mathrm{const}\cdot\frac1r
+ \sin\left(kr-\frac{\pi l}2+\delta_l\right). \tag{132.6}
+\end{equation}
+
+\SourcePage{656}{659}
+Here
+\begin{equation}
+ \tan\delta_l=\frac{c_2}{c_1(2l-1)!!(2l+1)!!}k^{2l+1}; \tag{132.7}
+\end{equation}
+all phases are small at small $k$. By (123.15),
+$f_l=(e^{2i\delta_l}-1)/(2ik)\approx\delta_l/k$, and hence
+\begin{equation}
+ f_l\sim k^{2l}. \tag{132.8}
+\end{equation}
+All $l\ne0$ amplitudes are therefore small compared with the $l=0$ or
+$s$-wave amplitude. Neglecting them,
+\begin{equation}
+ f(\theta)\approx f_0=\frac{\delta_0}{k}=\frac{c_2}{c_1}=-a, \tag{132.9}
+\end{equation}
+so $d\sigma=a^2do$ and
+\begin{equation}
+ \sigma=4\pi a^2. \tag{132.10}
+\end{equation}
+Slow-particle scattering is isotropic and energy-independent\footnote{For
+electron scattering by atoms, the length compared with $1/k$ is the atomic
+radius, which in complex atoms reaches several Bohr radii. Its large value
+restricts constant cross-sections to energies of fractions of an electron
+volt. At higher energies the cross-section depends strongly on energy (the
+Ramsauer effect).}. The constant $a$, positive or negative, is the
+\emph{scattering length}.
+
+These arguments assume sufficiently rapid decrease of $U(r)$. At large $r$,
+the second term of (132.3) is small. Retaining it is legitimate only if the
+terms $\sim c_2/r^{l+1}r^2$ kept in (132.2) exceed the omitted term
+$UR_l\sim Uc_1r^l$. Thus $U(r)$ must
+
+\SourcePage{657}{660}
+decrease faster than $1/r^{2l+3}$ for (132.8) to hold. In particular, (132.9)
+and energy-independent isotropic scattering require decrease faster than
+$1/r^3$.
+
+If $U$ decreases exponentially, further terms in the power expansion of
+$f_l$ can be characterized. Section 128 showed that $f_l(E)$ is real for real
+negative $E$\footnote{At small $E$, (128.6) already holds for decrease as
+$e^{-r/a}$.}. The same is true of $g_l(E)$ in $f_l=1/(g_l-ik)$, since $ik$ is
+real for $E<0$; by definition $g_l$ is also real for $E>0$. Hence $g_l$ has an
+expansion in integral powers of $E$, or even powers of $k$. Consequently
+$f_l(k)$ expands in integral powers of $ik$: even powers have real
+coefficients and odd powers imaginary ones. By (132.8), $f_l$ begins with
+$k^{2l}$, and $g_l$ begins with $k^{-2l}$.
+
+For a power-law tail $U\sim\beta r^{-n}$ with $n\leq3$, the constant-amplitude
+result fails. For $n<1$, at sufficiently low velocity and practically every
+impact parameter $\rho$,
+\begin{equation}
+ \rho|U(\rho)|\gtrsim\hbar v, \tag{132.11}
+\end{equation}
+so scattering is classical. For $1<n<2$, this holds over a substantial range
+of moderate $\rho$, giving classical scattering through appreciable angles,
+while another range satisfies
+
+\SourcePage{658}{661}
+\begin{equation}
+ \rho|U(\rho)|\ll\hbar v, \tag{132.12}
+\end{equation}
+the perturbative condition. For $n>2$, at large distances
+\begin{equation}
+ |U|\ll\frac{\hbar^2}{mr^2}, \tag{132.13}
+\end{equation}
+so the distant contribution is perturbative even if the nearer region is
+not\footnote{Low-velocity scattering never becomes semiclassical here,
+because (132.11) is incompatible with the simultaneous condition
+$|U(\rho)|\gtrsim E$.}. Choose $r_0\ll1/k$ so that (132.13) holds for
+$r\gg r_0$. By (126.12), the contribution from this region is
+\begin{equation}
+ -\frac{2m\beta}{\hbar^2q}\int_{r_0}^{\infty}\frac{\sin qr}{r^{n-1}}dr
+ =-\frac{2m\beta}{\hbar^2}q^{n-3}
+ \int_{qr_0}^{\infty}\frac{\sin x}{x^{n-1}}dx. \tag{132.14}
+\end{equation}
+For $2<n<3$ the lower limit is convergent and may be replaced by zero at
+$kr_0\ll1$, making this the dominant contribution:
+\begin{equation}
+ f\sim q^{-(3-n)},\qquad2<n<3. \tag{132.15}
+\end{equation}
+For $n=3$ the lower-limit divergence is logarithmic and again dominant:
+\begin{equation}
+ f\sim\ln\frac{\mathrm{const}}q,\qquad n=3. \tag{132.16}
+\end{equation}
+For $n>3$ the distant contribution vanishes as $k\to0$ and (132.9) governs.
+Nevertheless (132.14) is anomalous: repeated integration by parts separates
+even powers of $k$, leaving a convergent term proportional to $k^{n-3}$,
+which is not generally even.
+
+\SourcePage{659}{662}
+\footnote{If $n=2p+1$ is an odd integer, $n-3=2p-2$ is even, but (132.14)
+still has an anomalous part proportional to $q^{2p-2}\ln q$.}
+
+\subsection*{Problems}
+
+\ProblemHeading{1.} Find the slow-particle cross-section for a spherical square
+well of depth $U_0$ and radius $a$.
+
+\SolutionHeading Assume $ka\ll1$ and $k\ll\varkappa$, where
+$\varkappa=\sqrt{2mU_0}/\hbar$. Only $\delta_0$ matters. With $l=0$, (132.1)
+for $\chi=rR_0$ gives $\chi''+\varkappa^2\chi=0$ inside, whose regular solution
+is $\chi=A\sin\varkappa r$. Outside,
+$\chi=B\sin(kr+\delta_0)$. Continuity of $\chi'/\chi$ at $a$ gives
+\[
+ \varkappa\cot a\varkappa=k\cot(ka+\delta_0)
+ \approx\frac{k}{ka+\delta_0},
+\]
+and hence\footnote{This formula fails when $\varkappa a$ is close to an odd
+multiple of $\pi/2$. Then the discrete spectrum has a negative-energy level
+near zero (see Problem 1 of \S~33), and the formulas of the next section are
+required.}
+\[
+ f=\frac{\tan\varkappa a-\varkappa a}{\varkappa}.
+\]
+For $\varkappa a\ll1$, it gives
+$\sigma=(4/9)\pi a^2(\varkappa a)^4$, agreeing with Born approximation.
+
+\ProblemHeading{2.} The same for a spherical square potential barrier of
+height $U_0$.
+
+\SolutionHeading Replace $U_0$ by $-U_0$, and hence $\varkappa$ by
+$i\varkappa$:
+\[
+ f=\frac{\tanh\varkappa a-\varkappa a}{\varkappa}.
+\]
+
+\SourcePage{660}{663}
+For $\varkappa a\gg1$, $f=-a$ and $\sigma=4\pi a^2$. This is scattering by an
+impenetrable sphere; classical mechanics would give one quarter of this value,
+$\pi a^2$.
+
+\ProblemHeading{3.} Find the low-energy cross-section in
+$U=\alpha/r^n$, where $\alpha>0$, $n>3$.
+
+\SolutionHeading For $l=0$, (132.1) is
+\[
+ \chi''-\gamma^2\frac{\chi}{r^n}=0,\qquad
+ \gamma^2=\frac{2m\alpha}{\hbar^2}.
+\]
+With
+\[
+ r=\left(\frac{2\gamma}{(n-2)x}\right)^{2/(n-2)},\qquad
+ \chi=\sqrt r\,\varphi,
+\]
+it becomes
+\[
+ \varphi''+\frac1x\varphi'-\left[1+\frac1{(n-2)^2x^2}\right]\varphi=0.
+\]
+The solution vanishing at $r=0$ is, up to a factor,
+\[
+ \chi=\sqrt r\,H_{1/(n-2)}^{(1)}
+ \left(\frac{2i\gamma}{n-2}r^{-(n-2)/2}\right).
+\]
+Using the small-argument formulas for $H_p^{(1)}$, at
+$\gamma\ll r\ll1/k$ one finds $\chi=\mathrm{const}(c_1r+c_2)$ and
+\[
+ f=-\left(\frac{\gamma}{n-2}\right)^{2/(n-2)}
+ \frac{\Gamma[(n-3)/(n-2)]}{\Gamma[(n-1)/(n-2)]}.
+\]
+
+\ProblemHeading{4.} Find the slow-particle amplitude for a field with tail
+$U=\beta r^{-n}$, $2<n\leq3$.
+
+\SolutionHeading The leading term is (132.14) with lower limit zero:
+\begin{equation}
+ f=-\frac{\pi m\beta}{\hbar^2\Gamma(n-1)\cos(\pi n/2)}q^{n-3},
+ \qquad2<n<3, \tag{1}
+\end{equation}
+and for $n=3$,
+\begin{equation}
+ f=-\frac{2m\beta}{\hbar^2}\ln\frac{\mathrm{const}}q. \tag{2}
+\end{equation}
+Expansion of (1) in Legendre polynomials gives
+\begin{equation}
+ f_l=-\frac{m\beta}{2\hbar^2}
+ \frac{\Gamma[(n-1)/2]\Gamma[l-(n-3)/2]}
+ {\Gamma(n/2)\Gamma[(n+1)/2+l]}k^{n-3}. \tag{3}
+\end{equation}
+
+\SourcePage{661}{664}
+For $n>3$, (1) gives the anomalous part. In partial amplitudes, (3) is always
+dominant when $2l>n-3$; then $f_l\sim k^{n-3}$ replaces (132.8).
+
+\ProblemHeading{5.} Find the slow-particle amplitude in
+$U(r)=-U_0e^{-r/a}$, $U_0>0$.
+
+\SolutionHeading Put
+\[
+ x=2a\varkappa e^{-r/2a},\qquad \varkappa=\sqrt{2mU_0}/\hbar.
+\]
+Equation (132.1) for $\chi=rR_0$ becomes
+$\chi_{xx}+x^{-1}\chi_x+\chi=0$, with solution
+$\chi=AJ_0(x)+BN_0(x)$. The condition $\chi(0)=0$ at $r=0$ gives
+\[
+ A/B=-N_0(2\varkappa a)/J_0(2\varkappa a).
+\]
+For $a\ll r\ll1/k$, $x\ll1$ (with, of course,
+$a\varkappa\exp(-1/ak)\ll1$), and
+\[
+ \chi\approx A+B\frac2\pi\ln\frac{\gamma x}2
+ =A+B\frac2\pi\ln(a\varkappa\gamma)-\frac B{\pi a}r,
+\]
+where $\gamma=e^C=1{,}78\ldots$. Comparison with (132.3) gives
+\[
+ f=-a\left[\frac{\pi A}{B}+2\ln(a\varkappa\gamma)\right]
+ =a\left[\frac{\pi N_0(2\varkappa a)}{J_0(2\varkappa a)}
+ -2\ln(a\varkappa\gamma)\right].
+\]
+For $\varkappa a\ll1$, $f=2a^3\varkappa^2$; for
+$\varkappa a\gg1$, $f=-2a\ln(\varkappa a\gamma)$.
+
+\ProblemHeading{6.} Find the low-energy amplitude in second-order perturbation
+theory (I.~Ya.~Pomeranchuk, 1948).
+
+\SolutionHeading As $k\to0$, the integral in the second term of (130.13) is
+\[
+ -\int U(\mathbf k'-\mathbf k'')\frac{U(\mathbf k''-\mathbf k)}{k''^2}d^3k''
+ =-2\pi^2\iint\frac{U(\mathbf r)U(\mathbf r')}{|\mathbf r-\mathbf r'|}dV\,dV',
+\]
+using
+\[
+ \int e^{i\mathbf k(\mathbf r-\mathbf r')}\frac{4\pi}{k^2}
+ \frac{d^3k}{(2\pi)^3}=\frac1{|\mathbf r-\mathbf r'|}.
+\]
+Thus
+\begin{equation}
+ f=-\frac{m}{2\pi\hbar^2}\int U\,dV
+ +\left(\frac{m}{2\pi\hbar^2}\right)^2
+ \iint\frac{U(\mathbf r)U(\mathbf r')}{|\mathbf r-\mathbf r'|}dV\,dV'. \tag{1}
+\end{equation}
+
+\SourcePage{662}{665}
+For a central field,
+\[
+ f=-\frac{2m}{\hbar^2}\int Ur^2dr+\frac{8m^2}{\hbar^4}
+ \iint_{r'>r}U(r)U(r')r^2dr\,r'dr'.
+\]
+The second term in (1) is always positive. Hence for repulsion the first Born
+approximation overestimates, and for attraction underestimates, the
+low-energy cross-section.
+
+\ProblemHeading{7.} Determine the energy dependence of the slow-particle
+scattering amplitude in two dimensions.
+
+\SolutionHeading At large distances the wave function is given by Problem 1
+of \S~124. As in three dimensions, the $m=0$ state dominates, so $f$ is
+angle-independent. Replacing $e^{ik\rho}/\sqrt\rho$ by the exact free solution
+with this asymptotic form gives, for all $\rho\gg a$,
+\begin{equation}
+ \psi=e^{ikz}+\frac f2\sqrt{\pi k}\,H_0^{(1)}(k\rho). \tag{1}
+\end{equation}
+At $\rho\ll1/k$, use
+$H_0^{(1)}(x)\approx(2i/\pi)\ln[2i/(\gamma x)]$ to obtain
+\begin{equation}
+ \psi\approx\left(1+f\sqrt{\frac{k}{\pi}}
+ \ln\frac{2i}{\gamma k}\right)
+ -f\sqrt{\frac{k}{\pi}}\ln\rho. \tag{2}
+\end{equation}
+This is the general free solution $C_1+C_2\ln\rho$ for
+$1/k\gg\rho\gg a$. The real, energy-independent ratio fixed by the zero-energy
+equation at $\rho\sim a$ is written
+\begin{equation}
+ C_1/C_2=-\ln r_0, \tag{3}
+\end{equation}
+where $r_0$ has dimensions of length. Comparison gives
+\begin{equation}
+ f=-\left[\sqrt{\frac{k}{\pi}}
+ \ln\frac{2i}{\gamma kr_0}\right]^{-1}. \tag{4}
+\end{equation}
+
+\SourcePage{663}{666}
+Thus, unlike the three-dimensional case, the two-dimensional cross-section
+increases as the energy decreases. For scattering by an infinitely high
+cylindrical barrier of radius $a$, the constant $r_0$ equals $a$.

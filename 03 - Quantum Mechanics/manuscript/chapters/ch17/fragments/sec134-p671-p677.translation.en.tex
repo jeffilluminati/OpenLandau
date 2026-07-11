@@ -1,0 +1,163 @@
+\SourcePage{671}{674}
+\section{Resonance at a quasidiscrete level}
+
+A system capable of decay has, strictly speaking, no discrete energy spectrum:
+the emitted particle escapes to infinity, so the motion is infinite and the
+spectrum continuous. The decay probability may nevertheless be very small,
+as for a particle enclosed by a high, broad potential barrier, or when decay
+requires a spin change produced by weak spin--orbit interaction.
+
+Such systems admit \emph{quasistationary} states in which particles remain
+``inside'' for a long lifetime $\tau\sim1/w$, leaving only after decay. Their
+spectrum is \emph{quasidiscrete}: broadened levels of width $\Gamma\sim
+\hbar/\tau$, small compared with their separations.
+
+Formally, replace the usual condition of finiteness at infinity by the
+condition of an outgoing spherical wave, representing a particle ultimately
+leaving the system. This complex boundary condition no longer requires real
+energy eigenvalues; instead they have the form
+
+\SourcePage{672}{675}
+\begin{equation} E=E_0-i\Gamma/2, \tag{134.1}\end{equation}
+with $E_0,\Gamma>0$. The time factor is
+\[
+ e^{-iEt/\hbar}=e^{-iE_0t/\hbar-\Gamma t/2\hbar},
+\]
+so probabilities decrease as $e^{-\Gamma t/\hbar}$\footnote{This shows why
+$\Gamma$ must be positive. The outgoing-wave condition, or the equivalent
+pole-bypass rule of \S~130, ensures this. For a constant perturbation $V$
+coupling a discrete level $n$ to continuum states $\nu$,
+\[
+ E_n^{(2)}=\int\frac{|V_{n\nu}|^2d\nu}{E_n^{(0)}-E_\nu+i0},\qquad
+ \Gamma=-2\Im E_n^{(2)}=2\pi\int|V_{n\nu}|^2
+ \delta(E_n^{(0)}-E_\nu)d\nu,
+\]
+in agreement with (43.1).}. Thus
+\begin{equation} w=\Gamma/\hbar. \tag{134.2}\end{equation}
+
+At large distance the outgoing wave contains
+$\exp[ir\sqrt{2m(E_0-i\Gamma/2)}/\hbar]$ and grows exponentially, so its
+normalization integral diverges. This resolves the apparent conflict between
+temporal decay of $|\psi|^2$ and conservation of the normalization integral.
+
+\SourcePage{673}{676}
+To describe energies near a quasidiscrete level, write as in \S~128
+\begin{equation}
+ R_l=\frac1r\left[A_l(E)e^{-\sqrt{-2mE}r/\hbar}
+ +B_l(E)e^{\sqrt{-2mE}r/\hbar}\right]. \tag{134.3}
+\end{equation}
+For real positive $E$,
+\begin{equation}
+ R_l=\frac1r[A_l(E)e^{ikr}+B_l(E)e^{-ikr}],\qquad
+ k=\frac{\sqrt{2mE}}{\hbar}, \tag{134.4}
+\end{equation}
+with $A_l=B_l^*$, and $B_l$ taken on the upper edge of the positive-axis cut.
+Absence of the incoming wave requires
+\begin{equation} B_l(E_0-i\Gamma/2)=0. \tag{134.5}\end{equation}
+Thus quasidiscrete levels, like true discrete levels, are zeros of $B_l$, but
+they lie on the unphysical sheet. Reaching the point below the positive axis
+on the physical sheet by circling $E=0$ reverses $\sqrt{-E}$ and turns the
+outgoing wave into an incoming one; retaining its outgoing character requires
+continuation directly downward through the cut.
+
+For real positive $E$ near a narrow level, expand
+
+\SourcePage{674}{677}
+\begin{equation} B_l(E)=(E-E_0+i\Gamma/2)b_l. \tag{134.6}\end{equation}
+Then
+\begin{equation}
+ R_l=\frac1r[(E-E_0-i\Gamma/2)b_l^*e^{ikr}
+ +(E-E_0+i\Gamma/2)b_le^{-ikr}], \tag{134.7}
+\end{equation}
+and
+\begin{align}
+ e^{2i\delta_l}&=\frac{E-E_0-i\Gamma/2}{E-E_0+i\Gamma/2}
+ e^{2i\delta_l^{(0)}}\notag\\
+ &=\left[1-\frac{i\Gamma}{E-E_0+i\Gamma/2}\right]
+ e^{2i\delta_l^{(0)}}, \tag{134.8}
+\end{align}
+where
+\begin{equation}e^{2i\delta_l^{(0)}}=(-1)^{l+1}b_l^*/b_l.\tag{134.9}\end{equation}
+Far from resonance $\delta_l=\delta_l^{(0)}$. Using
+$e^{2i\arctan\lambda}=(1+i\lambda)/(1-i\lambda)$,
+\begin{equation}
+ \delta_l=\delta_l^{(0)}-\arctan\frac{\Gamma}{2(E-E_0)}, \tag{134.10}
+\end{equation}
+so the phase changes by $\pi$ across the resonance.
+
+At $E=E_0-i\Gamma/2$, $R_l=-i\Gamma b_l^*e^{ikr}/r$. If the probability
+inside is normalized to unity, its outgoing flux $v|i\Gamma b_l^*|^2$ equals
+(134.2), giving
+\begin{equation}|b_l|^2=1/(\hbar v\Gamma).\tag{134.11}\end{equation}
+
+\SourcePage{675}{678}
+For elastic scattering near a quasidiscrete level of the compound system,
+insert (134.8) into the corresponding term of (123.11):
+\begin{equation}
+ f(\theta)=f^{(0)}(\theta)-\frac{2l+1}{k}
+ \frac{\Gamma/2}{E-E_0+i\Gamma/2}e^{2i\delta_l^{(0)}}P_l(\cos\theta).
+ \tag{134.12}
+\end{equation}
+Here $f^{(0)}$ is the nonresonant \emph{potential-scattering} amplitude; the
+second term is the \emph{resonance-scattering} amplitude\footnote{For charged
+particles, use (135.11) for $\delta_l^{(0)}$.}\footnote{Formula (133.15) near
+a positive slow-particle level with $l\ne0$ has precisely this resonance form,
+with $E_0,\Gamma$ from (133.16) and $e^{2i\delta_l^{(0)}}\approx1$.}. Its pole
+is on the unphysical sheet. Validity requires
+\begin{equation}|E-E_0|\ll D,\tag{134.13}\end{equation}
+where $D$ is the distance to neighboring quasidiscrete levels.
+
+For slow particles only $s$ scattering matters. If $E_0$ belongs to $l=0$,
+$f^{(0)}=-\alpha$\footnote{The field is assumed to decrease sufficiently
+rapidly. Section 145 applies these results to slow-neutron scattering by
+nuclei.}, and $e^{2i\delta_0^{(0)}}$ may be replaced by unity.
+
+\SourcePage{676}{679}
+Hence
+\begin{equation}
+ f(\theta)=-\alpha-\frac{\Gamma/2}{k(E-E_0+i\Gamma/2)}. \tag{134.14}
+\end{equation}
+Within $|E-E_0|\sim\Gamma$ the resonance term dominates, though farther away
+the two terms may be comparable.
+
+This derivation assumes $E_0$ is not close to the branch point $E=0$. For the
+first quasidiscrete level with $E_0\ll D$, (134.6) may fail, as is already
+shown by (134.14), which lacks the constant $E\to0$ limit required for
+$s$ scattering.
+
+Near zero, expand $B_0$ in powers of $\sqrt{-E}$, whose sign changes on passing
+between the edges of the cut. For real positive $E$, write
+\begin{equation}
+ B_0(E)=(E-\varepsilon_0+i\gamma\sqrt E)b_0(E), \tag{134.15}
+\end{equation}
+where $\varepsilon_0,\gamma$ are real and $b_0$ has no nearby zeros
+\footnote{It determines the potential-scattering phase. For slow particles,
+$b_0(E)=\mathrm{const}\cdot i(1+i\alpha k)+\cdots$.}. The level condition is
+\begin{equation}
+ E_0-i\Gamma/2-\varepsilon_0+i\gamma\sqrt{E_0-i\Gamma/2}=0. \tag{134.16}
+\end{equation}
+
+\SourcePage{677}{680}
+Positive $E_0,\Gamma$ require positive $\varepsilon_0,\gamma$. When
+$\varepsilon_0\gg\gamma^2$, one has
+$E_0=\varepsilon_0$ and $\Gamma=2\gamma\sqrt{\varepsilon_0}$.
+
+Replacing $E_0$ by $\varepsilon_0$ and $\Gamma$ by $2\gamma\sqrt E$ in the
+subsequent formulas gives
+\begin{equation}
+ f=-\alpha-\frac{\hbar\gamma}
+ {\sqrt{2m}(E-\varepsilon_0+i\gamma\sqrt E)}. \tag{134.17}
+\end{equation}
+Here $m$ is the reduced mass. The amplitude now has the required constant
+limit at $E\to0$.
+
+Expression (134.17) also covers a true discrete level near zero. If
+$|\varepsilon_0|\ll\gamma^2$ and $E\ll\gamma^2$, neglect $E$ in the resonance
+denominator and also neglect $\alpha$:
+\[
+ f=-[ik-\sqrt{2m}\,\varepsilon_0/(\hbar\gamma)]^{-1}.
+\]
+This is (133.7), with
+$\varkappa=-\sqrt{2m}\,\varepsilon_0/(\hbar\gamma)$, and describes a resonance
+at $E=\varepsilon_0^2/\gamma^2$, a true or virtual discrete level according as
+$\varkappa$ is positive or negative.
