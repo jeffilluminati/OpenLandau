@@ -1,0 +1,328 @@
+\SourcePage{168}{171}
+\section{Time-independent perturbations}
+
+An exact solution of the Schrödinger equation can be found in only a
+comparatively small number of the simplest cases. Most problems in quantum
+mechanics lead to equations too complicated for exact solution. Frequently,
+however, a problem contains quantities of different orders of magnitude,
+including small quantities whose omission simplifies the problem enough to
+make an exact solution possible. The first step is then to solve this
+simplified problem exactly; the second is to calculate approximately the
+corrections due to the small terms that were omitted. The general method for
+calculating these corrections is called \emph{perturbation theory}.
+
+Suppose that the Hamiltonian of the physical system is
+\[
+  \hat H=\hat H_0+\hat V,
+\]
+where $\hat V$ is a small correction, the \emph{perturbation}, to the
+``unperturbed'' operator $\hat H_0$. In \secref{38} and \secref{39} we consider
+perturbations $\hat V$ with no explicit time dependence; the same is assumed
+for $\hat H_0$. The conditions under which $\hat V$ may be regarded as small
+in comparison with $\hat H_0$ will be established below.
+
+For the discrete spectrum, the problem may be stated as follows. The
+eigenfunctions $\psi^{(0)}$ and eigenvalues of $\hat H_0$ are assumed known;
+that is, the exact solutions of
+\begin{equation}
+  \hat H_0\psi^{(0)}=E^{(0)}\psi^{(0)}
+  \tag{38.1}
+\end{equation}
+are known. Approximate solutions are required for
+\begin{equation}
+  \hat H\psi=(\hat H_0+\hat V)\psi=E\psi,
+  \tag{38.2}
+\end{equation}
+\SourcePage{169}{172}
+namely approximate expressions for the eigenfunctions $\psi_n$ and
+eigenvalues $E_n$ of the perturbed operator $\hat H$.
+
+Throughout this section all eigenvalues of $\hat H_0$ will be assumed
+nondegenerate. To simplify the derivation, we first suppose that the energy
+levels form a discrete spectrum only.
+
+It is convenient to use matrix form from the outset. Expand the required
+function $\psi$ in the functions $\psi_m^{(0)}$:
+\begin{equation}
+  \psi=\sum_m c_m\psi_m^{(0)}.
+  \tag{38.3}
+\end{equation}
+Substitution in (38.2) gives
+\[
+  \sum_m c_m(E_m^{(0)}+\hat V)\psi_m^{(0)}
+  =\sum_m c_mE\psi_m^{(0)}.
+\]
+Multiplying by $\psi_k^{(0)*}$ and integrating, we find
+\begin{equation}
+  (E-E_k^{(0)})c_k=\sum_mV_{km}c_m.
+  \tag{38.4}
+\end{equation}
+Here $V_{km}$ is the matrix of $\hat V$ in the unperturbed functions:
+\begin{equation}
+  V_{km}=\int\psi_k^{(0)*}\hat V\psi_m^{(0)}\,dq.
+  \tag{38.5}
+\end{equation}
+Seek the coefficients and energy as series
+\[
+  E=E^{(0)}+E^{(1)}+E^{(2)}+\ldots,\qquad
+  c_m=c_m^{(0)}+c_m^{(1)}+c_m^{(2)}+\ldots,
+\]
+where $E^{(1)},c_m^{(1)}$ have the same order of smallness as $\hat V$,
+$E^{(2)},c_m^{(2)}$ are of second order, and so forth.
+
+To calculate the corrections to the $n$th eigenvalue and eigenfunction, set
+$c_n^{(0)}=1$ and $c_m^{(0)}=0$ for $m\ne n$. For the first approximation,
+put $E=E_n^{(0)}+E_n^{(1)}$ and
+$c_k=c_k^{(0)}+c_k^{(1)}$ in (38.4), retaining first-order terms only. The
+equation with $k=n$ gives
+\begin{equation}
+  E_n^{(1)}=V_{nn}=\int\psi_n^{(0)*}\hat V\psi_n^{(0)}\,dq.
+  \tag{38.6}
+\end{equation}
+\SourcePage{170}{173}
+Thus the first-order correction to $E_n^{(0)}$ is the mean value of the
+perturbation in the state $\psi_n^{(0)}$.
+
+For $k\ne n$, equation (38.4) gives
+\begin{equation}
+  c_k^{(1)}=\frac{V_{kn}}{E_n^{(0)}-E_k^{(0)}},\qquad k\ne n.
+  \tag{38.7}
+\end{equation}
+The coefficient $c_n^{(1)}$ remains arbitrary and must be chosen so that
+$\psi_n=\psi_n^{(0)}+\psi_n^{(1)}$ is normalized through first order. This
+requires $c_n^{(1)}=0$. Indeed,
+\begin{equation}
+  \psi_n^{(1)}=\sum_m'\frac{V_{mn}}{E_n^{(0)}-E_m^{(0)}}\psi_m^{(0)}
+  \tag{38.8}
+\end{equation}
+(the prime means that $m=n$ is omitted) is orthogonal to $\psi_n^{(0)}$;
+hence the integral of $|\psi_n^{(0)}+\psi_n^{(1)}|^2$ differs from unity only
+by a second-order quantity.
+
+Formula (38.8) gives the first-order correction to the wave functions. It also
+shows the condition for applicability of the method:
+\begin{equation}
+  |V_{mn}|\ll|E_n^{(0)}-E_m^{(0)}|.
+  \tag{38.9}
+\end{equation}
+Thus perturbation matrix elements must be small compared with the
+corresponding separations between unperturbed energy levels.
+
+To find the second-order correction to $E_n^{(0)}$, substitute
+$E=E_n^{(0)}+E_n^{(1)}+E_n^{(2)}$ and
+$c_k=c_k^{(0)}+c_k^{(1)}+c_k^{(2)}$ in (38.4), and retain second-order terms.
+The equation with $k=n$ gives
+\[
+  E_n^{(2)}c_n^0=\sum_m'V_{nm}c_m^{(1)},
+\]
+and consequently
+\begin{equation}
+  E_n^{(2)}=\sum_m'\frac{|V_{mn}|^2}{E_n^{(0)}-E_m^{(0)}}.
+  \tag{38.10}
+\end{equation}
+Here (38.7) was used, together with Hermiticity,
+$V_{mn}=V_{nm}^*$.
+\SourcePage{171}{174}
+The second-order correction to the ground-state energy is always negative:
+if $E_n^{(0)}$ is the lowest eigenvalue, every term in (38.10) is negative.
+Higher approximations may be calculated in the same manner.
+
+These results extend directly to an operator $\hat H_0$ that also has a
+continuous spectrum, while the perturbed state itself still belongs to the
+discrete spectrum. The appropriate continuous-spectrum integrals are simply
+added to the discrete sums. Denote continuous-spectrum states by an index
+$\nu$ ranging continuously; $\nu$ stands for the complete set of quantities
+needed to specify a state. If these states are degenerate, as they nearly
+always are, energy alone does not specify one.\footnote{The wave functions
+$\psi_\nu^{(0)}$ must then be normalized to delta functions of the quantities
+$\nu$.} For example, (38.8) becomes
+\begin{equation}
+  \psi_n^{(1)}=\sum_m'\frac{V_{mn}}{E_n^{(0)}-E_m^{(0)}}\psi_m^{(0)}
+  +\int\frac{V_{\nu n}}{E_n^{(0)}-E_\nu^{(0)}}\psi_\nu^{(0)}\,d\nu.
+  \tag{38.11}
+\end{equation}
+
+It is also useful to give the perturbed matrix elements of a physical
+quantity $f$, calculated through first order with
+$\psi_n=\psi_n^{(0)}+\psi_n^{(1)}$ and (38.8):
+\begin{equation}
+  f_{nm}=f_{nm}^{(0)}
+  +\sum_k'\frac{V_{nk}f_{km}^{(0)}}{E_n^{(0)}-E_k^{(0)}}
+  +\sum_k'\frac{V_{km}f_{nk}^{(0)}}{E_m^{(0)}-E_k^{(0)}}.
+  \tag{38.12}
+\end{equation}
+In the first sum $k\ne n$, and in the second $k\ne m$.
+
+\begin{center}\ProblemHeading\end{center}
+
+\textbf{1.} Find the second-order correction to the eigenfunctions.
+
+\SolutionHeading The coefficients $c_k^{(2)}$ for $k\ne n$ are obtained from
+(38.4) with $k\ne n$, written through second order; $c_n^{(2)}$ is chosen so
+that $\psi_n=\psi_n^{(0)}+\psi_n^{(1)}+\psi_n^{(2)}$ is
+\SourcePage{172}{175}
+normalized through second order. The result is
+\[
+ \begin{aligned}
+  \psi_n^{(2)}={}&
+  \sum_m'\sum_k'\frac{V_{mk}V_{kn}}{\hbar^2\omega_{nk}\omega_{nm}}
+      \psi_m^{(0)}
+  -\sum_m'\frac{V_{nn}V_{mn}}{\hbar^2\omega_{nm}^2}\psi_m^{(0)}\\
+  &-\frac{\psi_n^{(0)}}2
+  \sum_m'\frac{|V_{mn}|^2}{\hbar^2\omega_{nm}^2},
+ \end{aligned}
+\]
+where
+\[
+  \omega_{nm}=\frac1\hbar(E_n^{(0)}-E_m^{(0)}).
+\]
+
+\textbf{2.} Find the third-order correction to the energy eigenvalues.
+
+\SolutionHeading Retaining the third-order terms in (38.4) with $k=n$ gives
+\[
+  E_n^{(3)}=\sum_k'\sum_m'
+  \frac{V_{nm}V_{mk}V_{kn}}{\hbar^2\omega_{mn}\omega_{kn}}
+  -V_{nn}\sum_m'\frac{|V_{nm}|^2}{\hbar^2\omega_{mn}^2}.
+\]
+
+\textbf{3.} Find the energy levels of the anharmonic linear oscillator with
+Hamiltonian
+\[
+  \hat H=\frac{\hat p^2}{2m}+\frac{m\omega^2x^2}{2}+\alpha x^3+\beta x^4.
+\]
+
+\SolutionHeading Matrix elements of $x^3$ and $x^4$ follow directly from the
+rule for matrix multiplication and the elements of $x$ in (23.4). The nonzero
+elements of $x^3$ are
+\[
+  (x^3)_{n-3,n}=(x^3)_{n,n-3}
+  =\left(\frac\hbar{m\omega}\right)^{3/2}
+   \sqrt{\frac{n(n-1)(n-2)}8},
+\]
+\[
+  (x^3)_{n-1,n}=(x^3)_{n,n-1}
+  =\left(\frac\hbar{m\omega}\right)^{3/2}
+   \sqrt{\frac{9n^3}{8}}.
+\]
+There are no diagonal elements in this matrix, so the term $\alpha x^3$
+gives no first-order correction when regarded as a perturbation of the
+harmonic oscillator. Its second-order correction has the same order as the
+first-order correction from $\beta x^4$. The diagonal elements of $x^4$ are
+\[
+  (x^4)_{n,n}=\left(\frac\hbar{m\omega}\right)^2
+  \frac34(2n^2+2n+1).
+\]
+Equations (38.6) and (38.10) then give
+\[
+ \begin{aligned}
+  E_n={}&\hbar\omega\left(n+\frac12\right)
+  -\frac{15}{4}\frac{\alpha^2}{\hbar\omega}
+   \left(\frac\hbar{m\omega}\right)^3
+   \left(n^2+n+\frac{11}{30}\right)\\
+  &+\frac32\beta\left(\frac\hbar{m\omega}\right)^2
+   \left(n^2+n+\frac12\right).
+ \end{aligned}
+\]
+
+\textbf{4.} An infinite spherical potential well undergoes a small
+volume-preserving deformation into a slightly prolate or oblate ellipsoid of
+revolution with semiaxes $a=b$ and $c$. Find the splitting of its particle
+energy levels (\emph{A.~B. Migdal}, 1959).
+\SourcePage{173}{176}
+\SolutionHeading The boundary equation
+\[
+  \frac{x^2+y^2}{a^2}+\frac{z^2}{c^2}=1
+\]
+becomes the sphere $x^2+y^2+z^2=R^2$ under
+$x\to ax/R$, $y\to ay/R$, $z\to cz/R$. The particle Hamiltonian
+$\hat H=\hat{\mathbf p}^2/2M=-\hbar^2\Delta/2M$ ($M$ is the mass; energy is
+measured from the bottom of the well) becomes $\hat H=\hat H_0+\hat V$, with
+\[
+  \hat H_0=-\frac{\hbar^2}{2M}\Delta,\qquad
+  \hat V=-\frac{\hbar^2}{2M}\left[
+   \left(\frac{R^2}{a^2}-1\right)
+      \left(\frac{\partial^2}{\partial x^2}+\frac{\partial^2}{\partial y^2}\right)
+   +\left(\frac{R^2}{c^2}-1\right)\frac{\partial^2}{\partial z^2}
+  \right].
+\]
+The ellipsoidal-well problem is thereby reduced to the spherical-well
+problem. If the ellipsoid differs only slightly from a sphere of radius
+$R=(a^2c)^{1/3}$, $\hat V$ is a small perturbation. Introducing the
+``ellipticity'' $\beta$, $|\beta|\ll1$, by
+\[
+  a\approx R\left(1-\frac\beta3\right),\qquad
+  c\approx R\left(1+\frac{2\beta}3\right),
+\]
+we obtain
+\[
+  \hat V=\frac\beta{3M}(\hat{\mathbf p}^2-3\hat p_z^2).
+\]
+In first order, the change from the spherical-well levels is
+\[
+  \Delta E_{nlm}=E_{nlm}-E_{nl}^{(0)}=\langle nlm|V|nlm\rangle.
+\]
+Here $l,m$ are the angular momentum and its projection on the ellipsoid axis,
+and $n$ numbers the spherical-well levels for fixed $l$, which do not depend
+on $m$. The expression $\mathbf p^2-3p_z^2$ is the $zz$ component of the
+traceless irreducible tensor $\delta_{ik}\mathbf p^2-3p_ip_k$. By (107.2)
+and (107.6), $\langle nlm|V|nlm\rangle$ is proportional to
+$(-1)^m\begin{pmatrix}l&2&l\\-m&0&m\end{pmatrix}$, and hence
+\[
+  \langle nlm|V|nlm\rangle
+  =\left(1-\frac{3m^2}{l(l+1)}\right)\langle nl0|V|nl0\rangle.
+\]
+(The table of $3j$ symbols is on p.~530.) We next write
+\[
+ \begin{aligned}
+  \langle nl0|V|nl0\rangle
+  &=\frac23\beta E_{nl}^{(0)}
+    +\beta\frac{\hbar^2}{M}
+      \left\langle nl0\left|\frac{\partial^2}{\partial z^2}\right|nl0\right\rangle\\
+  &=\frac23\beta E_{nl}^{(0)}
+    -\frac{\beta\hbar^2}{M}\int
+      \left|\frac{\partial\psi_{nl0}}{\partial z}\right|^2r^2\,dr\,do.
+ \end{aligned}
+\]
+The Schrödinger equation
+$\hat H_0\psi_{nlm}=E_{nl}^{(0)}\psi_{nlm}$ was used in the first term, and
+the second was integrated by parts.
+\SourcePage{174}{177}
+Using (28.11) for $Y_{l0}$, the derivative of
+$\psi_{nl0}=R_{nl}(r)Y_{l0}(\theta,\varphi)$ is
+\[
+ \begin{aligned}
+  \frac\partial{\partial z}\psi_{nl0}
+  &=\left(\cos\theta\frac\partial{\partial r}
+    -\frac{\sin\theta}{r}\frac\partial{\partial\theta}\right)\psi_{nl0}\\
+  &=-\frac{i(l+1)}{[4(l+1)^2-1]^{1/2}}
+    \left(R_{nl}'-\frac lrR_{nl}\right)Y_{l+1,0}\\
+  &\quad+\frac{il}{[4l^2-1]^{1/2}}
+    \left(R_{nl}'+\frac{l+1}{r}R_{nl}\right)Y_{l-1,0}.
+ \end{aligned}
+\]
+The radial integrals are evaluated from
+\[
+  \int_0^\infty R_{nl}R_{nl}'r\,dr
+  =-\frac12\int_0^\infty R_{nl}^2\,dr,
+\]
+\[
+  \int_0^\infty R_{nl}'^{,2}r^2\,dr
+  =\frac{2M}{\hbar^2}E_{nl}^{(0)}
+   -l(l+1)\int_0^\infty R_{nl}^2\,dr,
+\]
+by integration by parts and the radial Schrödinger equation (33.3),
+\[
+  R_{nl}''+\frac2rR_{nl}'-\frac{l(l+1)}{r^2}R_{nl}
+  =-\frac{2M}{\hbar^2}E_{nl}^{(0)}.
+\]
+Terms containing integrals of $R_{nl}^2$ cancel, leaving
+\[
+  \Delta E_{nlm}=4\beta\frac{l(l+1)}{(2l-1)(2l+3)}
+  \left[\frac{m^2}{l(l+1)}-\frac13\right]E_{nl}^{(0)}.
+\]
+Finally,
+\[
+  \frac1{2l+1}\sum_{m=-l}^lE_{nlm}=E_{nl}^{(0)},
+\]
+so the centre of gravity of the multiplet is unchanged.

@@ -1,0 +1,134 @@
+\SourcePage{133}{136}
+\section{Motion in a central field}
+
+As in classical mechanics, the quantum-mechanical problem of two interacting
+particles can be reduced to a one-particle problem. For masses $m_1,m_2$
+interacting through $U(r)$, where $r$ is their separation,
+\begin{equation}
+ \hat H=-\frac{\hbar^2}{2m_1}\Delta_1-\frac{\hbar^2}{2m_2}\Delta_2+U(r).
+ \tag{32.1}
+\end{equation}
+Here $\Delta_1,\Delta_2$ are the Laplace operators in the particle
+coordinates. Replace $\mathbf r_1,\mathbf r_2$ by
+\begin{equation}
+ \mathbf r=\mathbf r_2-\mathbf r_1,\qquad
+ \mathbf R=\frac{m_1\mathbf r_1+m_2\mathbf r_2}{m_1+m_2}.
+ \tag{32.2}
+\end{equation}
+Thus $\mathbf r$ is the relative radius vector and $\mathbf R$ the
+center-of-mass radius vector. Direct calculation gives
+\begin{equation}
+ \hat H=-\frac{\hbar^2}{2(m_1+m_2)}\Delta_R-\frac{\hbar^2}{2m}\Delta+U(r),
+ \tag{32.3}
+\end{equation}
+where $m=m_1m_2/(m_1+m_2)$ is the reduced mass. The Hamiltonian separates
+into two independent parts. Accordingly,
+$\psi(\mathbf r_1,\mathbf r_2)=\varphi(\mathbf R)\psi(\mathbf r)$: the first
+factor describes free motion of the center of mass, of mass $m_1+m_2$, and
+the second describes relative motion as that of mass $m$ in $U(r)$.
+
+The Schrödinger equation in a central field is
+\begin{equation}
+ \Delta\psi+\frac{2m}{\hbar^2}[E-U(r)]\psi=0.\tag{32.4}
+\end{equation}
+\SourcePage{134}{137}
+In spherical coordinates this becomes
+\begin{equation}
+ \frac1{r^2}\frac\partial{\partial r}\left(r^2\frac{\partial\psi}{\partial r}\right)
+ +\frac1{r^2}\left[\frac1{\sin\theta}\frac\partial{\partial\theta}
+ (\sin\theta\frac{\partial\psi}{\partial\theta})
+ +\frac1{\sin^2\theta}\frac{\partial^2\psi}{\partial\varphi^2}\right]
+ +\frac{2m}{\hbar^2}[E-U(r)]\psi=0.\tag{32.5}
+\end{equation}
+Introducing the squared-angular-momentum operator (26.16),\footnote{If the
+radial momentum operator is defined by
+\[
+ \hat p_r\psi=-i\hbar\frac1r\frac\partial{\partial r}(r\psi)
+ =-i\hbar(\frac\partial{\partial r}+\frac1r)\psi,
+\]
+then
+\[
+ \hat H=\frac1{2m}(\hat p_r^2+\frac{\hbar^2\hat{\mathbf l}^2}{r^2})+U(r),
+\]
+formally the same as the classical Hamilton function in spherical
+coordinates.}
+\begin{equation}
+ \frac{\hbar^2}{2m}\left[-\frac1{r^2}\frac\partial{\partial r}
+ (r^2\frac{\partial\psi}{\partial r})+\frac{\hat{\mathbf l}^2}{r^2}\psi\right]
+ +U(r)\psi=E\psi.\tag{32.6}
+\end{equation}
+
+Angular momentum is conserved in a central field. For stationary states with
+definite $l,m$, these values fix the angular dependence. Seek
+\begin{equation}\psi=R(r)Y_{lm}(\theta,\varphi),\tag{32.7}\end{equation}
+where $Y_{lm}$ are spherical functions. Since
+$\hat{\mathbf l}^2Y_{lm}=l(l+1)Y_{lm}$, the radial function obeys
+\begin{equation}
+ \frac1{r^2}\frac d{dr}(r^2\frac{dR}{dr})-\frac{l(l+1)}{r^2}R
+ +\frac{2m}{\hbar^2}[E-U(r)]R=0.\tag{32.8}
+\end{equation}
+This contains no $l_z=m$, consistently with the $(2l+1)$-fold directional
+degeneracy. Put
+\begin{equation}R(r)=\frac{\chi(r)}r.\tag{32.9}\end{equation}
+\SourcePage{135}{138}
+Then
+\begin{equation}
+ \frac{d^2\chi}{dr^2}+[\frac{2m}{\hbar^2}(E-U)-\frac{l(l+1)}{r^2}]\chi=0.
+ \tag{32.10}
+\end{equation}
+If $U(r)$ is finite everywhere, $\psi$ and hence $R$ must remain finite at
+the origin, so
+\begin{equation}\chi(0)=0.\tag{32.11}\end{equation}
+This condition in fact also holds for fields diverging at the origin (\secref{35}).
+
+Equation (32.10) is formally the one-dimensional Schrödinger equation with
+\begin{equation}
+ U_l(r)=U(r)+\frac{\hbar^2}{2m}\frac{l(l+1)}{r^2},\tag{32.12}
+\end{equation}
+the sum of $U(r)$ and the centrifugal energy
+\[\frac{\hbar^2l(l+1)}{2mr^2}=\frac{\hbar^2\hat{\mathbf l}^2}{2mr^2}.\]
+Thus the central-field problem reduces to one-dimensional motion on a region
+bounded on one side by the condition at $r=0$. The normalization is likewise
+one-dimensional:
+\[\int_0^\infty|R|^2r^2dr=\int_0^\infty|\chi|^2dr.\]
+
+Energy levels for one-dimensional motion in such a region are nondegenerate
+(\secref{21}), so $E$ completely determines the radial solution of (32.10). The
+angular part is fixed by $l,m$. Hence $E,l,m$ completely determine the wave
+function: energy, squared angular momentum, and its projection form a
+complete set of physical quantities.
+\SourcePage{136}{139}
+The one-dimensional reduction permits use of the oscillation theorem
+(\secref{21}). At fixed $l$, order the discrete energy eigenvalues increasingly and
+number them $n_r=0,1,\ldots$. Then $n_r$ is the number of finite-$r$ nodes of
+the radial function, excluding $r=0$, and is called the \emph{radial quantum
+number}. The numbers $l$ and $m$ are also called the \emph{azimuthal} and
+\emph{magnetic quantum numbers}.
+
+States with different $l$ are conventionally denoted by
+\begin{equation}
+ \begin{array}{c|cccccccc|c}
+ l&0&1&2&3&4&5&6&7&\ldots\\
+  &s&p&d&f&g&h&i&k&\ldots
+ \end{array}\tag{32.13}
+\end{equation}
+
+The normal state in a central field is always an $s$ state: for $l\ne0$ the
+angular wave function necessarily has nodes, whereas the normal-state wave
+function has none. The lowest possible eigenvalue at fixed $l$ also rises
+with $l$, since angular momentum adds the positive term
+$\hbar^2l(l+1)/(2mr^2)$ to the Hamiltonian.
+
+To find the radial function near the origin, assume
+\begin{equation}\lim_{r\to0}U(r)r^2=0.\tag{32.14}\end{equation}
+Take the leading term as $R=\operatorname{const}\cdot r^s$. From (32.8),
+after multiplication by $r^2$ and passage to $r\to0$,
+\[\frac d{dr}(r^2\frac{dR}{dr})-l(l+1)R=0,\]
+so $s(s+1)=l(l+1)$ and
+\[s=l\quad\text{or}\quad s=-(l+1).\]
+\SourcePage{137}{140}
+The latter solution is inadmissible, since it diverges at $r=0$. Therefore
+\begin{equation}R_l\approx\operatorname{const}\cdot r^l.\tag{32.15}\end{equation}
+The probability of finding the particle between $r$ and $r+dr$ is determined
+by $r^2|R|^2$ and is proportional to $r^{2(l+1)}$; it vanishes at the origin
+more rapidly for larger $l$.

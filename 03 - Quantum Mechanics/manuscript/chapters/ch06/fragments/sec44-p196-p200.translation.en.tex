@@ -1,0 +1,153 @@
+\SourcePage{196}{199}
+\section{The uncertainty relation for energy}
+
+Consider a system made up of two weakly interacting parts. Suppose that at a
+certain instant these parts are known to have definite energies, denoted by
+$E$ and $\varepsilon$. After an interval $\Delta t$, the energies are measured
+again, giving values $E'$ and $\varepsilon'$ which generally differ from $E$
+and $\varepsilon$. We can readily determine the order of magnitude of the
+most probable value of $E'+\varepsilon'-E-\varepsilon$ found by the
+measurement.
+
+According to (42.3), with $\omega=0$, the probability that a time-independent
+perturbation transfers the system during time $t$ from energy $E$ to energy
+$E'$ is proportional to
+\[
+  \frac{\sin^2\left(\dfrac{E'-E}{2\hbar}t\right)}{(E'-E)^2}.
+\]
+\SourcePage{197}{200}
+It follows that the most probable difference $E'-E$ is of order $\hbar/t$.
+
+Applying this result to the present case, with the interaction between the
+two parts as the perturbation, gives
+\begin{equation}
+  |E+\varepsilon-E'-\varepsilon'|\Delta t\sim\hbar.
+  \tag{44.1}
+\end{equation}
+Thus the shorter the interval $\Delta t$, the larger the observed energy
+change. Its order of magnitude, $\hbar/\Delta t$, is importantly independent
+of the strength of the perturbation.
+
+The energy change specified by (44.1) will be observed however weak the
+interaction between the two parts may be. This is a purely quantum result
+with a profound physical meaning. It shows that in quantum mechanics two
+measurements can test energy conservation only to an accuracy of order
+$\hbar/\Delta t$, where $\Delta t$ is the time between them.
+
+Relation (44.1) is often called the uncertainty relation for energy. It must,
+however, be emphasized that its meaning is essentially different from that
+of the coordinate--momentum relation $\Delta p\Delta x\sim\hbar$. In the
+latter, $\Delta p$ and $\Delta x$ are the uncertainties in momentum and
+coordinate at one and the same instant; the relation says that these two
+quantities cannot have strictly definite values simultaneously.
+
+The energies $E$ and $\varepsilon$, by contrast, can be measured at each
+given instant with arbitrary precision. The quantity
+$(E+\varepsilon)-(E'+\varepsilon')$ in (44.1) is the difference between two
+exactly measured energy values at two different times, not an uncertainty in
+the energy at a particular instant.
+
+If $E$ is regarded as the energy of a system and $\varepsilon$ as the energy
+of a ``measuring apparatus,'' their interaction energy can be taken into
+account only to an accuracy $\hbar/\Delta t$. Denote the errors in the
+measurements of the corresponding quantities by
+$\Delta E,\Delta\varepsilon,\ldots$. In the favorable case where
+$\varepsilon$ and $\varepsilon'$ are known exactly
+($\Delta\varepsilon=\Delta\varepsilon'=0$),
+\begin{equation}
+  \Delta(E-E')\sim\frac{\hbar}{\Delta t}.
+  \tag{44.2}
+\end{equation}
+
+This relation has important consequences for momentum measurement. Measuring
+the momen%
+\SourcePageJoin{198}{201}
+tum of a particle (take an electron for definiteness) involves a
+collision with another, ``measuring,'' particle whose momenta before and
+after the collision may be regarded as known
+exactly.\footnote{For the present argument, how the energy of the
+``measuring'' particle becomes known is immaterial.} Applying momentum
+conservation to this collision gives three equations, the components of one
+vector equation, for six unknowns: the components of the electron momentum
+before and after the collision. More equations might be sought by arranging
+a sequence of collisions with measuring particles and applying momentum
+conservation to each. But the number of unknowns also grows, since it includes
+the electron momenta between collisions; for any number of collisions there
+are plainly three more unknowns than equations. Momentum measurement must
+therefore use energy conservation at each collision in addition to momentum
+conservation. As we have seen, the energy law can be applied only to an
+accuracy of order $\hbar/\Delta t$, with $\Delta t$ the interval between the
+beginning and end of the process under consideration.
+
+For simplicity, consider an idealized thought experiment in which the
+``measuring particle'' is a perfectly reflecting plane mirror. Only the
+momentum component normal to the mirror then matters. Momentum and energy
+conservation give, for determining the particle momentum $P$,
+\begin{equation}
+  p'+P'-p-P=0,
+  \tag{44.3}
+\end{equation}
+\begin{equation}
+  |\varepsilon'+E'-\varepsilon-E|\sim\frac{\hbar}{\Delta t}
+  \tag{44.4}
+\end{equation}
+($P,E$ are the particle's momentum and energy; $p,\varepsilon$ are those of
+the mirror; unprimed and primed quantities refer respectively to times before
+and after the collision). The quantities $p,p',\varepsilon,\varepsilon'$ of
+the ``measuring particle'' may be treated as known exactly, so their errors
+vanish. The equations above then give
+\[
+  \Delta P=\Delta P',
+  \qquad
+  |\Delta E'-\Delta E|\sim\frac{\hbar}{\Delta t}.
+\]
+But
+\[
+  \Delta E=\frac{\partial E}{\partial P}\Delta P=v\Delta P,
+\]
+\SourcePage{199}{202}
+and similarly
+\[
+  \Delta E'=v'\Delta P'=v'\Delta P.
+\]
+Hence
+\begin{equation}
+  |(v_x'-v_x)\Delta P_x|\sim\frac{\hbar}{\Delta t}.
+  \tag{44.5}
+\end{equation}
+The suffix $x$ has been attached to the velocities and momentum to stress
+that the relation applies separately to each component.
+
+This is the required relation. It shows that measuring an electron's momentum
+to a specified accuracy $\Delta P$ is unavoidably accompanied by a change in
+its velocity, and therefore in the momentum itself.
+
+The shorter the measurement process, the greater this change. The velocity
+change can be made arbitrarily small only as $\Delta t\to\infty$, but a
+momentum measurement extending over a long time can in general have meaning
+only for a free particle. Here the nonrepeatability of momentum measurements
+at short intervals, and the two-sided nature of measurement in quantum
+mechanics, are especially clear: one must distinguish the measured value of
+a quantity from the value produced by the measuring process.\footnote{Relation
+(44.5), as well as the clarification of the physical meaning of the energy
+uncertainty relation, is due to N.~Bohr (1928).}
+
+The argument at the beginning of this section, based on perturbation theory,
+can also be approached through the decay of a system under some perturbation.
+Let $E_0$ be an energy level calculated while entirely neglecting the
+possibility of decay. Denote by $\tau$ the \emph{lifetime} of this state, the
+reciprocal of its decay probability per unit time. The same method gives
+\begin{equation}
+  |E_0-E-\varepsilon|\sim\hbar/\tau,
+  \tag{44.6}
+\end{equation}
+where $E$ and $\varepsilon$ are the energies of the two parts into which the
+system has decayed. Their sum $E+\varepsilon$ provides a measure of the
+system's energy before decay. The relation therefore shows that the energy of
+a decaying system in a \emph{quasistationary} state can be defined only to an
+accuracy of order $\hbar/\tau$. This quantity is customarily called the level
+\emph{width} $\Gamma$. Thus
+\begin{equation}
+  \Gamma\sim\hbar/\tau.
+  \tag{44.7}
+\end{equation}

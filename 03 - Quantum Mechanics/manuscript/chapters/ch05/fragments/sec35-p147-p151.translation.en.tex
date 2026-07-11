@@ -1,0 +1,151 @@
+\SourcePage{147}{150}
+\section{Fall of a particle to the center}
+
+To clarify certain features of quantum-mechanical motion, it is useful to
+study a case which, although it has no immediate physical realization,
+involves a particle moving in a field whose potential energy becomes infinite
+at a point, the origin, according to $U(r)\approx-\beta/r^2$ with $\beta>0$.
+The form of the field far from the origin will not matter. We saw in \secref{18}
+that this case lies precisely between those admitting ordinary stationary
+\SourcePage{148}{151}
+states and those in which the particle falls to the origin.
+
+Near the origin the Schrödinger equation is
+\begin{equation}
+  R''+\frac2rR'+\frac\gamma{r^2}R=0,
+  \tag{35.1}
+\end{equation}
+where $R(r)$ is the radial wave function and
+\begin{equation}
+  \gamma=\frac{2m\beta}{\hbar^2}-l(l+1).
+  \tag{35.2}
+\end{equation}
+All terms of lower order in $1/r$ have been omitted. The energy $E$ is
+assumed finite, so its term has likewise been dropped.
+
+Put $R\sim r^s$. Then $s$ satisfies
+\[
+  s(s+1)+\gamma=0,
+\]
+with roots
+\begin{equation}
+  s_1=-\frac12+\sqrt{\frac14-\gamma},\qquad
+  s_2=-\frac12-\sqrt{\frac14-\gamma}.
+  \tag{35.3}
+\end{equation}
+
+For the subsequent analysis, isolate a small region of radius $r_0$ about the
+origin and replace $-\gamma/r^2$ inside it by the constant
+$-\gamma/r_0^2$. After determining the wave functions in this cut-off field,
+we shall examine the limit $r_0\to0$.
+
+First suppose $\gamma<1/4$. Then $s_1$ and $s_2$ are real negative numbers,
+with $s_1>s_2$. For $r>r_0$, the general small-$r$ solution is
+\begin{equation}
+  R=Ar^{s_1}+Br^{s_2},
+  \tag{35.4}
+\end{equation}
+where $A$ and $B$ are constants. For $r<r_0$, the solution finite at the
+origin of
+\[
+  R''+\frac2rR'+\frac\gamma{r_0^2}R=0
+\]
+is
+\begin{equation}
+  R=C\frac{\sin kr}{r},\qquad k=\frac{\sqrt\gamma}{r_0}.
+  \tag{35.5}
+\end{equation}
+At $r=r_0$, both $R$ and $R'$ must be continuous. One condition may
+conveniently be written as continuity of the logarithmic derivative of $rR$,
+\SourcePage{149}{152}
+which gives
+\[
+  \frac{A(s_1+1)r_0^{s_1}+B(s_2+1)r_0^{s_2}}
+       {Ar_0^{s_1+1}+Br_0^{s_2+1}}=k\cot kr_0,
+\]
+or
+\[
+  \frac{A(s_1+1)r_0^{s_1}+B(s_2+1)r_0^{s_2}}
+       {Ar_0^{s_1}+Br_0^{s_2}}
+  =\sqrt\gamma\cot\sqrt\gamma.
+\]
+Solving for $B/A$ yields an expression of the form
+\begin{equation}
+  \frac BA=\operatorname{const}\cdot r_0^{s_1-s_2}.
+  \tag{35.6}
+\end{equation}
+
+As $r_0\to0$, $B/A\to0$ because $s_1>s_2$. Of the two solutions of (35.1)
+that diverge at the origin, one must therefore choose the less rapidly
+divergent:
+\begin{equation}
+  R=A\frac1{r^{|s_1|}}.
+  \tag{35.7}
+\end{equation}
+
+Now let $\gamma>1/4$. The roots are complex:
+\[
+  s_1=-\frac12+i\sqrt{\gamma-\frac14},\qquad s_2=s_1^*.
+\]
+Repeating the argument again gives (35.6), which now becomes
+\begin{equation}
+  \frac BA=\operatorname{const}\cdot r_0^{i\sqrt{4\gamma-1}}.
+  \tag{35.8}
+\end{equation}
+This expression has no definite limit as $r_0\to0$, so a direct limiting
+procedure is impossible. Taking (35.8) into account, a real solution has the
+general form
+\begin{equation}
+  R=\operatorname{const}\cdot\frac1{\sqrt r}
+  \cos\left(\sqrt{\gamma-\frac14}\ln\frac r{r_0}
+  +\operatorname{const}\right).
+  \tag{35.9}
+\end{equation}
+The number of zeros of this function grows without bound as $r_0$ decreases.
+On the one hand, (35.9) applies at sufficiently small $r$ for every finite
+particle energy $E$; on the other, the ground-state wave function must have
+no zeros. We therefore conclude that
+\SourcePage{150}{153}
+the ground state in this field corresponds to $E=-\infty$. In every
+discrete-spectrum state the particle is found mainly where $E>U$. Thus as
+$E\to-\infty$ it is confined to an infinitesimal region about the origin:
+the particle falls to the center.
+
+The critical field $U_{\mathrm{cr}}$ at which fall to the center becomes
+possible corresponds to $\gamma=1/4$. The smallest coefficient of $-1/r^2$
+occurs for $l=0$, and hence
+\begin{equation}
+  U_{\mathrm{cr}}=-\frac{\hbar^2}{8mr^2}.
+  \tag{35.10}
+\end{equation}
+
+Formula (35.3), with $s_1$, shows that the admissible Schrödinger solution
+near a point where $U\sim1/r^2$ diverges no faster than $1/\sqrt r$ as
+$r\to0$. If the field becomes infinite more slowly than $1/r^2$, then near
+the origin $U(r)$ may be neglected relative to the remaining terms. The
+free-motion solutions result, namely $\psi\sim r^l$ (\secref{33}). If instead the
+field diverges faster than $1/r^2$, as does $-1/r^s$ with $s>2$, the wave
+function near the origin is proportional to $r^{s/4-1}$; see the problem in
+\secref{49}. In every such case $r\psi$ vanishes at $r=0$.
+
+Next consider a field that at large distances decreases as
+$U\approx-\beta/r^2$ but is arbitrary at small distances. Suppose first that
+$\gamma<1/4$. Only finitely many negative-energy levels can then
+exist\footnote{At small $r$ the field is assumed such that the particle does
+not fall to the center.}. Indeed, at $E=0$ the large-distance Schrödinger
+equation is (35.1), with general solution (35.4). This function has no zeros
+for $r\ne0$. All zeros of the required radial wave function therefore lie at
+finite distances from the origin, and their number is finite. In other
+words, the ordinal number of the level $E=0$ that closes the discrete
+spectrum is finite.
+
+For $\gamma>1/4$, by contrast, the discrete spectrum contains infinitely
+many negative-energy levels. At $E=0$ the large-distance wave function has
+the form (35.9), with infinitely many zeros, so its ordinal number is
+infinite.
+\SourcePage{151}{154}
+Finally, let $U=-\beta/r^2$ throughout space. If $\gamma>1/4$, the particle
+falls to the center. If $\gamma<1/4$, there are no negative-energy levels at
+all. The $E=0$ wave function is then of the form (35.7) everywhere and has no
+zeros at finite distances; it therefore corresponds to the lowest level for
+the specified $l$.

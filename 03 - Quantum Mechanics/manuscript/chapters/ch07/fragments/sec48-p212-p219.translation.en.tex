@@ -1,0 +1,265 @@
+\SourcePage{212}{215}
+\section{The Bohr--Sommerfeld quantization rule}
+
+States in the discrete energy spectrum are semiclassical at large values of
+the quantum number $n$, the ordinal number of the state. Indeed, this number
+determines the number of nodes of the eigenfunction (see \secref{21}). The distance
+between adjacent nodes, however, is of the same order as the de Broglie
+wavelength. At large $n$ this distance is small, so the wavelength is small
+compared with the dimensions of the region of motion.
+
+We derive the condition determining the quantum energy levels in the
+semiclassical case. Consider finite one-dimensional motion of a particle in a
+potential well; the classically accessible region $b\leq x\leq a$ is bounded
+by two turning points\footnote{In classical mechanics a particle in such a
+field would execute periodic motion with period (the time for motion from $b$
+to $a$ and back)
+\[
+ T=2\int_b^a\frac{dx}{v}
+\]
+($v$ is the particle's speed).}.
+\SourcePage{213}{216}
+By rule (47.5), the boundary condition at $x=b$ gives, in the region to its
+right,
+\begin{equation}
+ \psi=\frac C{\sqrt p}\cos\left(\frac1\hbar\int_b^x p\,dx-\frac\pi4\right).
+ \tag{48.1}
+\end{equation}
+Applying the same rule to the region to the left of $x=a$, we obtain the same
+wave function as
+\[
+ \psi=\frac{C'}{\sqrt p}\cos\left(\frac1\hbar\int_x^a p\,dx-\frac\pi4\right).
+\]
+For these expressions to agree throughout the region, the sum of their phases
+(a constant) must be an integral multiple of $\pi$:
+\[
+ \frac1\hbar\int_b^a p\,dx-\frac\pi2=n\pi
+\]
+(with $C'=(-1)^nC$). Hence
+\begin{equation}
+ \frac1{2\pi\hbar}\oint p\,dx=n+\frac12, \tag{48.2}
+\end{equation}
+where $\oint p\,dx=2\int_b^a p\,dx$ is taken over a complete period of the
+particle's classical motion. This condition determines the particle's
+stationary states in the semiclassical case. It corresponds to the
+Bohr--Sommerfeld quantization rule of the old quantum theory.
+
+The quantity $I=(1/2\pi)\oint p\,dx$ is called the adiabatic invariant (see
+I, \S~49), so (48.2) may be written
+\[
+ I(E)=\hbar(n+1/2).
+\]
+It was mentioned in \secref{41} that under a sufficiently slow, ``adiabatic''
+change of the parameters, a system remains in the same quantum state, here a
+state with a certain $n$. In the semiclassical limit this statement is thus
+the classical theorem that the adiabatic invariant remains constant under a
+slow change of the parameters.
+\SourcePage{214}{217}
+It is readily seen that the integer $n$ equals the number of zeros of the wave
+function and is therefore the ordinal number of the stationary state. Indeed,
+the phase in (48.1) grows from $-\pi/4$ at $x=b$ to $(n+1/4)\pi$ at $x=a$,
+so the cosine vanishes $n$ times in this interval (outside the interval
+$b\ll x\ll a$, the wave function decays monotonically and has no zeros at
+finite distances)\footnote{Strictly, the zeros should be counted using the
+exact form of the wave function near the turning points. Such an analysis
+confirms the stated result.}.
+
+As noted above, $n$ is large in the semiclassical case. Nevertheless, it is
+legitimate to retain the $1/2$ beside $n$ in (48.2): the next correction terms
+in the phase would add to its right-hand side only terms
+$\sim\lambda/L$, small compared with unity (see the remark at the end of
+\secref{46})\footnote{In some cases the exact expression for the energy levels
+$E(n)$ obtained from the exact Schrödinger equation retains its form as
+$n\to\infty$; examples are the levels in a Coulomb field and those of the
+harmonic oscillator. Naturally, in these cases the quantization rule (48.2),
+valid at large $n$, gives an expression for $E(n)$ that agrees with the exact
+one.}.
+
+To normalize the wave function it is enough to integrate $|\psi|^2$ over
+$b\leq x\leq a$, since $\psi(x)$ decays exponentially outside it. The
+argument of the cosine in (48.1) varies rapidly, so the square of the cosine
+may be replaced, to sufficient accuracy, by its mean value $1/2$. Then
+\[
+ \int|\psi|^2dx\approx\frac{C^2}{2}\int_b^a\frac{dx}{p(x)}
+ =\frac{\pi C^2}{2m\omega}=1,
+\]
+where $\omega=2\pi/T$ is the frequency of the classical periodic motion.
+Thus the normalized semiclassical function is
+\begin{equation}
+ \psi=2\sqrt{\frac{m\omega}{\pi p}}
+ \cos\left(\frac1\hbar\int_b^x p\,dx-\frac\pi4\right). \tag{48.3}
+\end{equation}
+The frequency $\omega$ is a function of energy and is generally different
+for different levels.
+
+Relation (48.2) also has another interpretation. The integral
+$\oint p\,dx$ is the area enclosed by the closed
+\SourcePage{215}{218}
+classical phase trajectory (the curve in the $p,x$ plane, the particle's
+phase space). Dividing this area into cells of area $2\pi\hbar$ gives $n$
+cells. But $n$ is the number of quantum states whose energies do not exceed
+the specified value corresponding to the phase trajectory. Thus, in the
+semiclassical case, each quantum state corresponds to a phase-space cell of
+area $2\pi\hbar$. Equivalently, the number of states belonging to a
+phase-space volume element $\Delta p\Delta x$ is
+\begin{equation}
+ \frac{\Delta p\Delta x}{2\pi\hbar}. \tag{48.4}
+\end{equation}
+If the wave vector $k=p/\hbar$ is used instead of momentum, this number is
+$\Delta k\Delta x/2\pi$. As expected, it agrees with the familiar expression
+for the number of normal modes of a wave field (see II, \S~52).
+
+The general distribution of levels in the energy spectrum can be inferred
+from (48.2). Let $\Delta E$ be the separation of two adjacent levels, whose
+quantum numbers differ by one. Since $\Delta E$ is small at large $n$
+compared with the level energy itself, (48.2) gives
+\[
+ \Delta E\oint\frac{\partial p}{\partial E}\,dx=2\pi\hbar.
+\]
+But $\partial E/\partial p=v$, and hence
+\[
+ \oint\frac{\partial p}{\partial E}\,dx=\oint\frac{dx}{v}=T.
+\]
+Therefore
+\begin{equation}
+ \Delta E=\frac{2\pi\hbar}{T}=\hbar\omega. \tag{48.5}
+\end{equation}
+
+Thus adjacent levels are separated by $\hbar\omega$. For a sequence of
+neighboring levels (whose differences in $n$ are small compared with $n$
+itself), the corresponding frequencies $\omega$ may be treated as
+approximately equal. Hence, within every small interval of the semiclassical
+part of the spectrum, the levels are equidistant, with common spacing
+$\hbar\omega$. This could also have been anticipated, since in the
+semiclassical case the frequencies corresponding to transitions between
+different energy levels must be integral multiples of the classical
+frequency $\omega$.
+\SourcePage{216}{219}
+It is useful to follow what becomes, in the classical limit, of the matrix
+elements of a physical quantity $f$. We start from the fact that the mean
+value of $f$ in a quantum state must tend simply to its classical value,
+provided that the limiting state itself describes motion along a definite
+trajectory. Such a state is represented by a wave packet (see \secref{6}), formed
+by superposing stationary states with nearby energies. Its wave function is
+\[
+ \psi=\sum_n a_n\psi_n,
+\]
+where the $a_n$ differ appreciably from zero only in an interval $\Delta n$
+such that $1\ll\Delta n\ll n$; the $n$ are large, as required for the
+stationary states to be semiclassical. By definition, the mean value is
+\[
+ \bar f=\int\psi^*f\psi\,dx
+ =\sum_n\sum_m a_m^*a_nf_{mn}e^{i\omega_{mn}t},
+\]
+or, replacing the sums over $n,m$ by sums over $n$ and $s=m-n$,
+\[
+ \bar f=\sum_n\sum_s a_{n+s}^*a_nf_{n+s,n}e^{i\omega_st},
+\]
+where $\omega_{mn}=\omega s$ by (48.5).
+
+Matrix elements $f_{mn}$ calculated with semiclassical wave functions fall
+rapidly as $m-n$ increases, while varying slowly with $n$ itself for fixed
+$m-n$. We may therefore write approximately
+\[
+ \bar f=\sum_n\sum_s a_n^*a_nf_se^{i\omega st}
+ =\sum_n|a_n|^2\sum_sf_se^{i\omega st},
+\]
+where $f_s=f_{n+s,n}$ and $n$ denotes a mean quantum number in $\Delta n$.
+Since $\sum_n|a_n|^2=1$,
+\[
+ \bar f=\sum_sf_se^{i\omega st}.
+\]
+\SourcePage{217}{220}
+This sum is an ordinary Fourier series. Since $\bar f$ must tend to the
+classical quantity $f(t)$, it follows that the matrix elements $f_{mn}$ tend
+to the components $f_{m-n}$ in the Fourier-series expansion of the classical
+function $f(t)$.
+
+Similarly, matrix elements for transitions between continuous-spectrum states
+tend to the components in the Fourier-integral expansion of $f(t)$. The wave
+functions of the stationary states must here be normalized to a
+$\delta$-function of energy divided by $\hbar$.
+
+All these results extend directly to systems with many degrees of freedom
+executing finite motion for which the mechanical (classical) problem permits
+complete separation of variables in the Hamilton--Jacobi method (so-called
+conditionally periodic motion; see I, \S~52). After separation, the problem
+for each degree of freedom is one-dimensional, and the corresponding
+quantization conditions are
+\begin{equation}
+ \oint p_i\,dq_i=2\pi\hbar(n_i+\gamma_i), \tag{48.6}
+\end{equation}
+where the integral is over a period of the generalized coordinate $q_i$, and
+$\gamma_i$ is a number of order unity depending on the boundary conditions
+for that degree of freedom\footnote{For motion in a centrally symmetric field,
+\[
+ \oint p_r\,dr=2\pi\hbar(n_r+1/2),\qquad
+ \oint p_\theta\,d\theta=2\pi\hbar(l-m+1/2),\qquad
+ \oint p_\varphi\,d\varphi=2\pi\hbar m
+\]
+(where $n_r=n-l-1$ is the radial quantum number). The last equality simply
+reflects that $p_\varphi$ is the $z$ component of angular momentum and equals
+$\hbar m$.}.
+
+For general arbitrary (not conditionally periodic) multidimensional motion,
+formulating semiclassical quantization conditions requires deeper
+arguments\footnote{See $J.,B.~Keller$ // Ann. Phys. 1958. V.~4. P.~180.}.
+The concept of phase-space ``cells,'' however, applies in the same form in the
+semiclassical approximation. This is clear from its connection, noted above,
+with the number of normal modes of a wave field in a prescribed spatial
+volume. In the general case of a system with $s$ degrees of freedom, a
+\SourcePage{218}{221}
+phase-space volume element contains
+\begin{equation}
+ \Delta N=\frac{\Delta q_1\cdots\Delta q_s\,
+ \Delta p_1\cdots\Delta p_s}{(2\pi\hbar)^s} \tag{48.7}
+\end{equation}
+quantum states\footnote{In particular, for one particle
+$d^3p/(2\pi\hbar)^3$ is the number of states belonging to a momentum interval
+$d^3p$ per unit volume of space. This explains the agreement of the two
+interpretations of the plane-wave normalization (15.8) noted in the footnote
+on p.~68.}.
+
+\begin{center}\ProblemHeading\end{center}
+
+\textbf{1.} Determine approximately the number of discrete energy levels of a
+particle moving in a field $U(r)$ that satisfies the semiclassical condition.
+
+\SolutionHeading The number of states ``belonging'' to the
+phase-space volume corresponding to momenta $0\leq p\leq p_{\max}$ and to
+particle coordinates in the volume element $dV$ is
+\[
+ \frac{(4\pi/3)p_{\max}^3dV}{(2\pi\hbar)^3}.
+\]
+At a given $r$, the particle's classical momentum can satisfy
+$E=(p^2/2m)+U(r)\leq0$. Substitution of
+$p_{\max}=\sqrt{-2mU(r)}$ gives the total number of discrete-spectrum states
+\[
+ \frac{\sqrt2m^{3/2}}{3\pi^2\hbar^3}\int(-U)^{3/2}\,dV,
+\]
+where the integration is over the region in which $U<0$. This integral
+diverges (the number of levels is infinite) if $U$ decreases at infinity as
+$r^{-s}$ with $s<2$, in agreement with \secref{18}.
+
+\textbf{2.} The same question for a semiclassical centrally symmetric field
+$U(r)$ (V.~L.~Pokrovskii).
+
+\SolutionHeading In a centrally symmetric field, the number of
+states does not equal the number of energy levels, because the latter are
+degenerate with respect to directions of angular momentum. The desired number
+can be found by noting that the number of levels for a specified angular
+momentum $M$ equals the number of (nondegenerate) levels for one-dimensional
+motion in the effective potential
+$U_{\mathrm{eff}}=U(r)+M^2/(2mr^2)$. At given $r$ and $E\leq0$, the greatest
+possible $p_r$ is $p_{r\max}=\sqrt{-2mU_{\mathrm{eff}}}$. Hence the number of
+states (that is, levels) is
+\[
+ \frac1{2\pi\hbar}\oint dr\,dp_r
+ =\frac{\sqrt{2m}}{\pi\hbar}\int
+ \sqrt{-U-\frac{M^2}{2mr^2}}\,dr.
+\]
+The total number of discrete levels is obtained by integrating this over
+$dM/\hbar$ (which replaces summation over $l$ in the semiclassical case):
+\[
+ \frac{\sqrt{2m}}{4\hbar^2}\int(-U)r\,dr.
+\]

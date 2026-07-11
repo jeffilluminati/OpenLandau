@@ -1,0 +1,227 @@
+\SourcePage{163}{166}
+\section{Motion in a Coulomb field (parabolic coordinates)}
+
+For motion in any centrally symmetric field, the Schrödinger equation can
+always be separated in spherical coordinates. In a Coulomb field, separation
+is also possible in the so-called parabolic coordinates. The solution of the
+Coulomb-field problem in these coordinates is useful in studying a number of
+problems in which a particular direction in space is singled out, for example
+by an external electric field in addition to the Coulomb field (\secref{77}).
+\SourcePage{164}{167}
+The parabolic coordinates $\xi$, $\eta$, and $\varphi$ are defined by
+\begin{equation}
+ \begin{aligned}
+  x&=\sqrt{\xi\eta}\cos\varphi,\qquad
+  y=\sqrt{\xi\eta}\sin\varphi,\qquad
+  z=\frac12(\xi-\eta),\\
+  r&=\sqrt{x^2+y^2+z^2}=\frac12(\xi+\eta)
+ \end{aligned}
+ \tag{37.1}
+\end{equation}
+or, conversely,
+\begin{equation}
+  \xi=r+z,\qquad \eta=r-z,\qquad
+  \varphi=\arctan\frac yx;
+  \tag{37.2}
+\end{equation}
+$\xi$ and $\eta$ range from 0 to $\infty$, while $\varphi$ ranges from 0 to
+$2\pi$. The surfaces $\xi=\operatorname{const}$ and
+$\eta=\operatorname{const}$ are paraboloids of revolution whose axis is the
+$z$ axis and whose focus is at the origin. This coordinate system is
+orthogonal. The line element is
+\begin{equation}
+  dl^2=\frac{\xi+\eta}{4\xi}\,d\xi^2
+       +\frac{\xi+\eta}{4\eta}\,d\eta^2
+       +\xi\eta\,d\varphi^2,
+  \tag{37.3}
+\end{equation}
+and the volume element is
+\begin{equation}
+  dV=\frac14(\xi+\eta)\,d\xi\,d\eta\,d\varphi.
+  \tag{37.4}
+\end{equation}
+Equation (37.3) gives the following expression for the Laplace operator:
+\begin{equation}
+  \Delta=\frac4{\xi+\eta}\left[
+    \frac\partial{\partial\xi}\left(\xi\frac\partial{\partial\xi}\right)
+   +\frac\partial{\partial\eta}\left(\eta\frac\partial{\partial\eta}\right)
+  \right]
+  +\frac1{\xi\eta}\frac{\partial^2}{\partial\varphi^2}.
+  \tag{37.5}
+\end{equation}
+
+For a particle in the attractive Coulomb field
+\[
+  U=-\frac1r=-\frac2{\xi+\eta},
+\]
+the Schrödinger equation becomes
+\begin{equation}
+  \frac4{\xi+\eta}\left[
+    \frac\partial{\partial\xi}\left(\xi\frac{\partial\psi}{\partial\xi}\right)
+   +\frac\partial{\partial\eta}\left(\eta\frac{\partial\psi}{\partial\eta}\right)
+  \right]
+  +\frac1{\xi\eta}\frac{\partial^2\psi}{\partial\varphi^2}
+  +2\left(E+\frac2{\xi+\eta}\right)\psi=0.
+  \tag{37.6}
+\end{equation}
+We seek the eigenfunctions $\psi$ in the form
+\begin{equation}
+  \psi=f_1(\xi)f_2(\eta)e^{im\varphi},
+  \tag{37.7}
+\end{equation}
+where $m$ is the magnetic quantum number. Substitute this expression into
+(37.6), after multiplying that equation by $(\xi+\eta)/4$, and separate the
+variables $\xi$ and $\eta$. The resulting equations for $f_1$ and $f_2$ are
+\begin{equation}
+ \begin{aligned}
+  \frac d{d\xi}\left(\xi\frac{df_1}{d\xi}\right)
+  +\left[\frac E2\xi-\frac{m^2}{4\xi}+\beta_1\right]f_1&=0,\\
+  \frac d{d\eta}\left(\eta\frac{df_2}{d\eta}\right)
+  +\left[\frac E2\eta-\frac{m^2}{4\eta}+\beta_2\right]f_2&=0,
+ \end{aligned}
+ \tag{37.8}
+\end{equation}
+\SourcePage{165}{168}
+where the ``separation parameters'' $\beta_1$ and $\beta_2$ are related by
+\begin{equation}
+  \beta_1+\beta_2=1.
+  \tag{37.9}
+\end{equation}
+
+Consider the discrete energy spectrum ($E<0$). In place of $E$, $\xi$, and
+$\eta$, introduce the quantities
+\begin{equation}
+  n=\frac1{\sqrt{-2E}},\qquad
+  \rho_1=\xi\sqrt{-2E}=\frac\xi n,\qquad
+  \rho_2=\frac\eta n,
+  \tag{37.10}
+\end{equation}
+after which the equation for $f_1$ takes the form
+\begin{equation}
+  \frac{d^2f_1}{d\rho_1^2}+\frac1{\rho_1}\frac{df_1}{d\rho_1}
+  +\left[-\frac14+\frac1{\rho_1}
+    \left(\frac{|m|+1}{2}+n_1\right)-\frac{m^2}{4\rho_1^2}\right]f_1=0,
+  \tag{37.11}
+\end{equation}
+with an identical equation for $f_2$; here we have also introduced the
+notation
+\begin{equation}
+  n_1=-\frac{|m|+1}{2}+n\beta_1,\qquad
+  n_2=-\frac{|m|+1}{2}+n\beta_2.
+  \tag{37.12}
+\end{equation}
+
+Proceeding as for equation (36.4), we find that at large $\rho_1$, $f_1$
+behaves as $e^{-\rho_1/2}$, and at small $\rho_1$ as
+$\rho_1^{|m|/2}$. We therefore seek a solution of (37.11) in the form
+\[
+  f_1(\rho_1)=e^{-\rho_1/2}\rho_1^{|m|/2}w_1(\rho_1)
+\]
+(and analogously for $f_2$), obtaining for $w_1$ the equation
+\[
+  \rho_1w_1''+(|m|+1-\rho_1)w_1'+n_1w_1=0.
+\]
+This is again the confluent hypergeometric equation. The solution satisfying
+the finiteness conditions is
+\[
+  w_1=F(-n_1,|m|+1,\rho_1),
+\]
+and $n_1$ must be a nonnegative integer.
+
+Thus, in parabolic coordinates every stationary state of the discrete
+spectrum is specified by three integers: the ``parabolic quantum numbers''
+$n_1$ and $n_2$, and the magnetic quantum number $m$. From (37.9) and
+(37.12), the number $n$ (the ``principal quantum number'') is
+\begin{equation}
+  n=n_1+n_2+|m|+1.
+  \tag{37.13}
+\end{equation}
+The energy levels are, of course, the same as in (36.9).
+
+For a given $n$, the number $|m|$ can take the $n$ values from 0 through
+$n-1$. With $n$ and $|m|$ fixed, $n_1$ takes
+\SourcePage{166}{169}
+the $n-|m|$ values from 0 through $n-|m|-1$. For each prescribed $|m|$,
+functions with $m=\pm|m|$ may also be chosen. Hence the total number of
+distinct states for a given $n$ is
+\[
+  2\sum_{m=1}^{n-1}(n-m)+(n-0)=n^2,
+\]
+in agreement with the result obtained in \secref{36}.
+
+The discrete-spectrum wave functions $\psi_{n_1n_2m}$ must obey the
+normalization condition
+\begin{equation}
+  \int|\psi_{n_1n_2m}|^2\,dV
+  =\frac14\int_0^\infty\!\int_0^\infty\!\int_0^{2\pi}
+   |\psi_{n_1n_2m}|^2(\xi+\eta)\,d\varphi\,d\xi\,d\eta=1.
+  \tag{37.14}
+\end{equation}
+The normalized functions are
+\begin{equation}
+  \psi_{n_1n_2m}=\frac{\sqrt2}{n^2}
+  f_{n_1m}\left(\frac\xi n\right)
+  f_{n_2m}\left(\frac\eta n\right)
+  \frac{e^{im\varphi}}{\sqrt{2\pi}},
+  \tag{37.15}
+\end{equation}
+\begin{equation}
+  f_{pm}(\rho)=\frac1{|m|!}\sqrt{\frac{(p+|m|)!}{p!}}
+  F(-p,|m|+1,\rho)e^{-\rho/2}\rho^{|m|/2}.
+  \tag{37.16}
+\end{equation}
+
+Unlike the wave functions in spherical coordinates, those in parabolic
+coordinates are not symmetric about the plane $z=0$. When $n_1>n_2$, the
+particle is more likely to be found on the $z>0$ side than on the $z<0$
+side; for $n_1<n_2$, the reverse holds.
+
+The continuous spectrum ($E>0$) corresponds to a continuous spectrum of real
+values of the parameters $\beta_1$, $\beta_2$ in equations (37.8) (still, of
+course, related by (37.9)); we shall not write the corresponding wave
+functions here. Regarded as equations for the ``eigenvalues'' $\beta_1$ and
+$\beta_2$, equations (37.8) also possess, when $E>0$, a spectrum of complex
+values. The associated wave functions will be given in \secref{135}, where they
+will be used to solve the problem of scattering in a Coulomb field.
+
+The existence of the stationary states $|n_1n_2m\rangle$ is tied to the
+additional conservation law (36.29). In these states, besides the energy, the
+quantities $l_z=m$ and $A_z$ have definite values. Evaluation of the diagonal
+matrix elements of the operator $\hat A_z$ gives
+\begin{equation}
+  A_z=\frac{n_1-n_2}{n}.
+  \tag{37.17}
+\end{equation}
+\SourcePage{167}{170}
+Here $u_z=n_1-n_2$, while the projections of the ``angular momenta''
+$\mathbf j_1$ and $\mathbf j_2$ are
+\begin{equation}
+  j_{1z}=\frac{m+n_1-n_2}{2}\equiv\mu_1,\qquad
+  j_{2z}=\frac{m-n_1+n_2}{2}\equiv\mu_2.
+  \tag{37.18}
+\end{equation}
+
+These properties of the states $|n_1n_2m\rangle$ (or, equivalently,
+$|n\mu_1\mu_2\rangle$) make it easy to relate their wave functions to those
+of the states $|nlm\rangle$. Since $\mathbf l=\mathbf j_1+\mathbf j_2$, a
+change between the two descriptions reduces to constructing wave functions
+for the addition of two angular momenta (considered below in \secref{106}). In terms
+of the ``angular momenta'' $\mathbf j_1$ and $\mathbf j_2$, the states
+$|nlm\rangle$ and $|n_1n_2m\rangle$ are written as
+$|j_1j_2lm\rangle$ and $|j_1j_2\mu_1\mu_2\rangle$, where, by (36.35) and
+(37.13),
+\begin{equation}
+  j_1=j_2=\frac{n-1}{2}=\frac{n_1+n_2+|m|}{2}.
+  \tag{37.19}
+\end{equation}
+The general formulas (106.9)--(106.11) give
+\begin{equation}
+ \begin{aligned}
+  \psi_{nlm}&=\sum_{\mu_1+\mu_2=m}
+   \langle lm|\mu_1\mu_2\rangle\psi_{n\mu_1\mu_2},\\
+  \psi_{n\mu_1\mu_2}&=\sum_{l=0}^{n-1}
+   \langle l,\mu_1+\mu_2|\mu_1\mu_2\rangle\psi_{nlm}
+ \end{aligned}
+ \tag{37.20}
+\end{equation}
+(\emph{D. Park}, 1960).

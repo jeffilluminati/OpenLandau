@@ -1,0 +1,249 @@
+\SourcePage{179}{182}
+\section{Time-dependent perturbations}
+
+We now turn to perturbations with an explicit dependence on time. In this case
+there can be no question at all of corrections to the energy eigenvalues:
+when the Hamiltonian depends on time (as does the perturbed operator
+$\hat H=\hat H_0+\hat V(t)$), energy is not conserved, and stationary states
+therefore do not exist. The problem is instead to calculate approximate wave
+functions from the wave functions of the unperturbed system's stationary
+states.
+
+For this purpose we use the analogue of the familiar variation-of-constants
+method for solving linear differential equations ($P.\,A.\,M.\,Dirac$, 1926).
+Let $\Psi_k^{(0)}$ be the wave functions (including the time factor) of the
+unperturbed system's stationary states. An arbitrary solution of the
+unperturbed wave equation can then be written as
+$\Psi=\sum_k a_k\Psi_k^{(0)}$. We seek a solution of the perturbed equation
+\begin{equation}
+  i\hbar\frac{\partial\Psi}{\partial t}=(\hat H_0+\hat V)\Psi
+  \tag{40.1}
+\end{equation}
+in the form
+\begin{equation}
+  \Psi=\sum_k a_k(t)\Psi_k^{(0)},
+  \tag{40.2}
+\end{equation}
+where the expansion coefficients are functions of time. Substitution of
+(40.2) into (40.1), with
+\[
+  i\hbar\frac{\partial\Psi_k^{(0)}}{\partial t}=\hat H_0\Psi_k^{(0)},
+\]
+gives
+\[
+  i\hbar\sum_k\Psi_k^{(0)}\frac{da_k}{dt}
+  =\sum_k a_k\hat V\Psi_k^{(0)}.
+\]
+\SourcePage{180}{183}
+Multiplying both sides on the left by $\Psi_m^{(0)*}$ and integrating, we find
+\begin{equation}
+  i\hbar\frac{da_m}{dt}=\sum_k V_{mk}(t)a_k,
+  \tag{40.3}
+\end{equation}
+where
+\[
+  V_{mk}(t)=\int\Psi_m^{(0)*}\hat V\Psi_k^{(0)}\,dq
+  =V_{mk}e^{i\omega_{mk}t},
+  \qquad
+  \omega_{mk}=\frac{E_m^{(0)}-E_k^{(0)}}{\hbar}
+\]
+are the perturbation matrix elements including their time factor. If $V$
+itself depends explicitly on time, the quantities $V_{mk}$ must of course
+also be regarded as functions of time.
+
+Choose the wave function of the $n$th stationary state as the unperturbed
+wave function. The corresponding coefficients in (40.2) are
+$a_n^{(0)}=1$ and $a_k^{(0)}=0$ for $k\ne n$. To obtain the first
+approximation, write $a_k=a_k^{(0)}+a_k^{(1)}$ and put
+$a_k=a_k^{(0)}$ on the right-hand side of (40.3), which already contains the
+small quantities $V_{mk}$. Thus
+\begin{equation}
+  i\hbar\frac{da_k^{(1)}}{dt}=V_{kn}(t).
+  \tag{40.4}
+\end{equation}
+To indicate the unperturbed function for which the correction is being
+calculated, introduce a second index on $a_k$ and write
+\[
+  \Psi_n=\sum_k a_{kn}(t)\Psi_k^{(0)}.
+\]
+The integrated form of (40.4) is accordingly
+\begin{equation}
+  a_{kn}^{(1)}=-\frac{i}{\hbar}\int V_{kn}(t)\,dt
+  =-\frac{i}{\hbar}\int V_{kn}e^{i\omega_{kn}t}\,dt.
+  \tag{40.5}
+\end{equation}
+This determines the wave functions in the first approximation.
+
+Consider more closely the important case of a time-periodic perturbation
+\begin{equation}
+  \hat V=\hat F e^{-i\omega t}+\hat G e^{i\omega t},
+  \tag{40.6}
+\end{equation}
+where $\hat F$ and $\hat G$ do not depend on time. Hermiticity of $V$ requires
+\[
+  \hat F e^{-i\omega t}+\hat G e^{i\omega t}
+  =\hat F^{+}e^{i\omega t}+\hat G^{+}e^{-i\omega t},
+\]
+\SourcePage{181}{184}
+whence $\hat G=\hat F^{+}$, or
+\begin{equation}
+  G_{nm}=F_{mn}^{*}.
+  \tag{40.7}
+\end{equation}
+Using this relation, we have
+\begin{equation}
+  V_{kn}(t)=V_{kn}e^{i\omega_{kn}t}
+  =F_{kn}e^{i(\omega_{kn}-\omega)t}
+  +F_{nk}^{*}e^{i(\omega_{kn}+\omega)t}.
+  \tag{40.8}
+\end{equation}
+Substitution in (40.5) and integration yield
+\begin{equation}
+  a_{kn}^{(1)}
+  =-\frac{F_{kn}e^{i(\omega_{kn}-\omega)t}}
+           {\hbar(\omega_{kn}-\omega)}
+   -\frac{F_{nk}^{*}e^{i(\omega_{kn}+\omega)t}}
+           {\hbar(\omega_{kn}+\omega)}.
+  \tag{40.9}
+\end{equation}
+These expressions apply provided neither denominator vanishes\footnote{More
+precisely, neither may be so small that $a_{kn}^{(1)}$ ceases to be small in
+comparison with unity.}; that is, for every $k$ (at fixed $n$),
+\begin{equation}
+  E_k^{(0)}-E_n^{(0)}\ne\pm\hbar\omega.
+  \tag{40.10}
+\end{equation}
+
+For a number of applications it is useful to know the matrix elements of an
+arbitrary quantity $f$, defined using the perturbed wave functions. To first
+order,
+\[
+  f_{nm}(t)=f_{nm}^{(0)}(t)+f_{nm}^{(1)}(t),
+\]
+where
+\[
+  f_{nm}^{(0)}(t)=\int\Psi_n^{(0)*}\hat f\Psi_m^{(0)}\,dq
+  =f_{nm}^{(0)}e^{i\omega_{nm}t},
+\]
+\[
+  f_{nm}^{(1)}(t)=\int
+  \bigl(\Psi_n^{(0)*}\hat f\Psi_m^{(1)}
+       +\Psi_n^{(1)*}\hat f\Psi_m^{(0)}\bigr)\,dq.
+\]
+Inserting
+\[
+  \Psi_n^{(1)}=\sum_k a_{kn}^{(1)}\Psi_k^{(0)}
+\]
+with the coefficients from (40.9), we obtain
+\begin{equation}
+\begin{aligned}
+  f_{nm}^{(1)}(t)=-e^{i\omega_{nm}t}\sum_k\Bigg\{&
+  \left[
+    \frac{f_{nk}^{(0)}F_{km}}{\hbar(\omega_{km}-\omega)}
+    +\frac{f_{km}^{(0)}F_{nk}}{\hbar(\omega_{kn}+\omega)}
+  \right]e^{-i\omega t} \\
+  {}+&\left[
+    \frac{f_{nk}^{(0)}F_{mk}^{*}}{\hbar(\omega_{km}+\omega)}
+    +\frac{f_{km}^{(0)}F_{kn}^{*}}{\hbar(\omega_{kn}-\omega)}
+  \right]e^{i\omega t}\Bigg\}.
+\end{aligned}
+  \tag{40.11}
+\end{equation}
+This formula applies if none of its terms becomes large, hence if all the
+frequencies $\omega_{kn}$ and $\omega_{km}$ remain sufficiently far from
+$\omega$. At $\omega=0$ it reduces to (38.12).
+\SourcePage{182}{185}
+The formulas above assume that the unperturbed energy levels form only a
+discrete spectrum. They extend immediately to the presence of a continuous
+spectrum as well (the states being perturbed still belonging to the discrete
+spectrum): one simply adds the corresponding integrals over the continuous
+spectrum to the sums over discrete levels. The denominators
+$\omega_{kn}\pm\omega$ in (40.9) and (40.11) must then remain nonzero as
+$E_k^{(0)}$ ranges through both the discrete and continuous spectra. If, as
+is usual, the continuous spectrum lies above all discrete levels, condition
+(40.10), for example, must be supplemented by
+\begin{equation}
+  E_{\min}^{(0)}-E_n^{(0)}>\hbar\omega,
+  \tag{40.12}
+\end{equation}
+where $E_{\min}^{(0)}$ is the energy at the lower edge of the continuous
+spectrum.
+
+\ProblemHeading
+
+\textbf{1.} Determine how the $n$th and $m$th solutions of the Schrödinger
+equation change under a periodic perturbation of the form (40.6), whose
+frequency $\omega$ satisfies
+$E_m^{(0)}-E_n^{(0)}=\hbar(\omega+\varepsilon)$, where $\varepsilon$ is
+small.
+
+\SolutionHeading The method developed above does not apply, since the
+coefficient $a_{mn}^{(1)}$ in (40.9) becomes large. Return to the exact
+equations (40.3), with $V_{mk}(t)$ given by (40.8). Evidently, the principal
+effect comes from terms on their right-hand sides whose time dependence is
+governed by the small frequency $\omega_{mn}-\omega$. Dropping all other
+terms gives
+\[
+  i\hbar\frac{da_m}{dt}=F_{mn}e^{i\varepsilon t}a_n,
+  \qquad
+  i\hbar\frac{da_n}{dt}=F_{mn}^{*}e^{-i\varepsilon t}a_m.
+\]
+Put $a_ne^{i\varepsilon t}=b_n$. Then
+\[
+  i\hbar\dot a_m=F_{mn}b_n,
+  \qquad
+  i\hbar(\dot b_n-i\varepsilon b_n)=F_{mn}^{*}a_m,
+\]
+and elimination of $a_m$ gives
+\[
+  \ddot b_n-i\varepsilon\dot b_n+(1/\hbar^2)|F_{mn}|^2b_n=0.
+\]
+Two independent solutions may be chosen as
+\begin{equation}
+  a_n=Ae^{i\alpha_1t},\qquad
+  a_m=-A\frac{\hbar\alpha_1}{F_{mn}}e^{i\alpha_2t}
+  \tag{1}
+\end{equation}
+and
+\begin{equation}
+  a_n=Be^{-i\alpha_2t},\qquad
+  a_m=B\frac{\hbar\alpha_2}{F_{mn}^{*}}e^{-i\alpha_1t},
+  \tag{2}
+\end{equation}
+where $A$ and $B$ are constants (to be fixed by normalization), and
+\SourcePage{183}{186}
+\[
+  \alpha_1=-\varepsilon/2+\Omega,\quad
+  \alpha_2=\varepsilon/2+\Omega,\quad
+  \Omega=\sqrt{\varepsilon^2/4+|\eta|^2},\quad
+  \eta=F_{mn}/\hbar.
+\]
+Thus the perturbation transforms $\Psi_n^{(0)}$ and $\Psi_m^{(0)}$ into
+$a_n\Psi_n^{(0)}+a_m\Psi_m^{(0)}$, with $a_n,a_m$ taken from (1) or (2).
+
+Suppose that at $t=0$ the system was in the state $\Psi_m^{(0)}$. At later
+times its state is the linear combination of the two solutions just found
+which reduces to $\Psi_m^{(0)}$ at $t=0$:
+\begin{equation}
+  \Psi=e^{i\varepsilon t/2}
+  \left(\cos\Omega t-\frac{i\varepsilon}{2\Omega}\sin\Omega t\right)
+  \Psi_m^{(0)}
+  -\frac{i\eta^{*}}{\Omega}e^{-i\varepsilon t/2}\sin\Omega t\cdot
+  \Psi_n^{(0)}.
+  \tag{3}
+\end{equation}
+The squared modulus of the coefficient of $\Psi_n^{(0)}$ is
+\begin{equation}
+  \frac{|\eta|^2}{2\Omega^2}\,[1-\cos(2\Omega t)].
+  \tag{4}
+\end{equation}
+It is the probability that the system is in $\Psi_n^{(0)}$ at time $t$.
+This probability is periodic, with frequency $2\Omega$, and varies from zero
+to $|\eta|^2/\Omega^2$.
+
+At exact resonance, $\varepsilon=0$, (4) becomes
+\[
+  (1/2)[1-\cos(2|\eta|t)].
+\]
+It varies periodically between zero and unity: the system passes periodically
+from $\Psi_m^{(0)}$ to $\Psi_n^{(0)}$.

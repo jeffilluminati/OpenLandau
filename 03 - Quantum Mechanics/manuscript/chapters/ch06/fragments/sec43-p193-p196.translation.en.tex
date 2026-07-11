@@ -1,0 +1,166 @@
+\SourcePage{193}{196}
+\section{Transitions within the continuous spectrum}
+
+One of the most important uses of perturbation theory is the calculation of
+transition probabilities within the continuous spectrum under a constant
+(time-independent) perturbation. As already noted, continuous-spectrum states
+are almost always degenerate. After choosing a definite set of unperturbed
+wave functions for a given energy level, the question can be posed as follows.
+The system is known to have occupied one of these states initially; we seek
+the probability that it passes into another state of the same energy. For
+transitions from an initial state $i$ into states between $\nu_f$ and
+$\nu_f+d\nu_f$, (42.5), with $\omega=0$ and a change of notation, gives
+directly
+\begin{equation}
+  dw_{fi}=\frac{2\pi}{\hbar}|V_{fi}|^2
+  \delta(E_f-E_i)\,d\nu_f.
+  \tag{43.1}
+\end{equation}
+As expected, this is nonzero only when $E_f=E_i$: a constant perturbation
+causes transitions solely between states of equal energy. For transitions
+from continuous-spectrum states, however, $dw_{fi}$ cannot itself be treated
+as a transition probability. It does not even have the corresponding
+dimension, but has dimension $1/\mathrm{s}$. Expression (43.1) gives the
+number of transitions per unit time, and its dimension depends on the chosen
+normalization of the continuous-spectrum wave functions.\footnote{Phenomena
+covered by this theory include, for example, various collisions. In their
+initial and final states the system is an assemblage of free particles, while
+their mutual interaction serves as the perturbation. With a suitable wave-
+function normalization, (43.1) can then become a collision cross-section
+(see \secref{126}).}
+
+We shall calculate the perturbed wave function which, before the perturbation
+begins to act, coincides with the original unperturbed
+\SourcePage{194}{197}
+function $\psi_i^{(0)}$. Following the procedure stated at the end of the
+preceding section, take the perturbation to be switched on adiabatically as
+$e^{\lambda t}$, with $\lambda\to0$. Formula (42.7), after setting
+$\omega=0$ and changing notation, gives
+\begin{equation}
+  a_{fi}^{(1)}=V_{fi}
+  \frac{\exp\left\{\dfrac{i}{\hbar}(E_f-E_i)t+\lambda t\right\}}
+       {E_i-E_f+i\lambda}.
+  \tag{43.2}
+\end{equation}
+The perturbed wave function is
+\[
+  \Psi_i=\Psi_i^{(0)}+\int a_{fi}^{(1)}\Psi_f^{(0)}\,d\nu_f,
+\]
+where the integration extends over the entire continuous
+spectrum.\footnote{If a discrete spectrum is also present, the corresponding
+sum over its states must be added to the integral here and in the formulas
+below.} Substitution of (43.2) yields
+\begin{equation}
+  \Psi_i=\left[\psi_i^{(0)}+\int
+  V_{fi}\psi_f^{(0)}\frac{d\nu_f}{E_i-E_f+i0}\right]
+  \exp\left(-\frac{i}{\hbar}E_it\right).
+  \tag{43.3}
+\end{equation}
+In the limit $\lambda\to0$, the factor $e^{\lambda t}$ has been replaced by
+unity. The term $+i0$, meaning the limit of $i\lambda$ as the positive
+quantity $\lambda$ tends to zero, specifies the integration prescription for
+$E_f$. Its differential occurs as a factor in $d\nu_f$, together with those
+of the other quantities characterizing continuous-spectrum states. Without
+$i\lambda$, the integrand in (43.3) would have a pole at $E_f=E_i$, and the
+integral would diverge near it. The term $i\lambda$ displaces this pole into
+the upper half-plane of the complex variable $E_f$. When $\lambda\to0$, the
+pole returns to the real axis, but the integration path is now known to pass
+below it:
+\begin{equation}
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,baseline=-0.35ex]
+  \draw[->] (-2.8,0) -- (-1.25,0);
+  \draw (-1.25,0) -- (-0.48,0)
+        arc[start angle=180,end angle=360,radius=0.48]
+        -- (1.25,0);
+  \draw[->] (1.25,0) -- (2.8,0);
+  \fill (0,0) circle (1.5pt);
+  \node[above=2pt] at (0,0) {$E_i$};
+  \node[below=2pt] at (2.45,0) {$E_f$};
+\end{tikzpicture}
+  \tag{43.4}
+\end{equation}
+The time factor in (43.3) shows, as it should, that this function belongs to
+the same energy $E_i$ as the original unperturbed function. Equivalently,
+\begin{equation}
+  \psi_i=\psi_i^{(0)}+\int
+  \frac{V_{fi}}{E_i-E_f+i0}\psi_f^{(0)}\,d\nu_f
+  \tag{43.5}
+\end{equation}
+\SourcePage{195}{198}
+satisfies the Schrödinger equation
+\[
+  (\hat H_0+\hat V)\psi_i=E_i\psi_i.
+\]
+It is consequently natural that this expression agrees exactly with (38.8).\footnote{The integration prescription in (43.5) can also be fixed by
+requiring the large-distance asymptotic form of $\psi_i$ to contain only an
+outgoing wave, and no incoming wave (see \secref{136}).}
+
+The preceding calculation is the first approximation of perturbation theory.
+The second approximation is also readily obtained. One derives the next
+approximation for $\Psi_i$ by the method of \secref{38}, now knowing how the
+``divergent'' integrals are to be taken. A direct calculation gives
+\[
+  \Psi_i=\left\{\psi_i^{(0)}+\int\left[
+  V_{fi}+\int\frac{V_{f\nu}V_{\nu i}}{E_i-E_\nu+i0}\,d\nu
+  \right]\frac{\psi_f^{(0)}\,d\nu_f}{E_i-E_f+i0}\right\}
+  \exp\left(-\frac{i}{\hbar}E_it\right).
+\]
+
+Comparison with (43.3) lets us write the corresponding probability formula
+(more precisely, the number of transitions) by direct analogy with (43.1):
+\begin{equation}
+  dw_{fi}=\frac{2\pi}{\hbar}
+  \left|V_{fi}+\int\frac{V_{f\nu}V_{\nu i}}
+  {E_i-E_\nu+i0}\,d\nu\right|^2
+  \delta(E_i-E_f)\,d\nu_f.
+  \tag{43.6}
+\end{equation}
+The matrix element $V_{fi}$ may vanish for the transition in question. The
+first-order effect is then absent altogether, and (43.6) becomes
+\begin{equation}
+  dw_{fi}=\frac{2\pi}{\hbar}
+  \left|\int\frac{V_{f\nu}V_{\nu i}}{E_i-E_\nu}\,d\nu\right|^2
+  \delta(E_f-E_i)\,d\nu_f.
+  \tag{43.7}
+\end{equation}
+In applications of this formula, $E_\nu=E_i$ is usually not a pole of the
+integrand. The prescription for integration over $dE_\nu$ is then immaterial,
+and the path may be taken directly along the real axis.
+
+States $\nu$ for which $V_{f\nu}$ and $V_{\nu i}$ are nonzero are often
+called \emph{intermediate} states for the transition $i\to f$. In a pictorial
+description, the transition appears to take place in two stages,
+$i\to\nu$ and $\nu\to f$; this description must not, of course, be understood
+literally. A transition $i\to f$ may require not one but several successive
+intermediate states. Formula (43.7)
+\SourcePage{196}{199}
+extends directly to such cases. If two intermediate states are needed, then
+\begin{equation}
+  dw_{fi}=\frac{2\pi}{\hbar}
+  \left|\int\frac{V_{f\nu'}V_{\nu'\nu}V_{\nu i}}
+  {(E_i-E_{\nu'})(E_i-E_\nu)}\,d\nu\,d\nu'\right|^2
+  \delta(E_f-E_i)\,d\nu_f.
+  \tag{43.8}
+\end{equation}
+
+Finally, the mathematical meaning of integrals taken along a path such as
+(43.4) is expressed by
+\begin{equation}
+  \int\frac{f(x)\,dx}{x-a-i0}
+  =\operatorname{P}\!\int\frac{f(x)\,dx}{x-a}+i\pi f(a),
+  \tag{43.9}
+\end{equation}
+where the interval of integration on the real axis contains $x=a$. Indeed,
+detouring around the pole $x=a$ on a semicircle of radius $\rho$, the full
+integral is the sum of the real-axis integrals from the lower limit to
+$a-\rho$ and from $a+\rho$ to the upper limit, plus $i\pi$ times the residue
+at the pole. As $\rho\to0$, the real-axis pieces combine into the integral
+over the full interval understood as a principal value, as indicated by the
+marked integral sign, and (43.9) follows. The same formula is also written
+symbolically as
+\begin{equation}
+  \frac1{x-a-i0}=P\frac1{x-a}+i\pi\delta(x-a);
+  \tag{43.10}
+\end{equation}
+the symbol $P$ means that the principal value is to be taken when
+$f(x)/(x-a)$ is integrated.

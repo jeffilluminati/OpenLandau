@@ -1,0 +1,235 @@
+\SourcePage{174}{177}
+\section{The secular equation}
+
+We now turn to the case in which the unperturbed operator $\hat H_0$ has
+degenerate eigenvalues. Let $\psi_n^{(0)}$, $\psi_{n'}^{(0)}$,~\ldots denote
+eigenfunctions belonging to the same energy eigenvalue $E_n^{(0)}$. As we
+know, the choice of these functions is not unique: they may be replaced by
+any $s$ independent linear combinations of the same functions, where $s$ is
+the degeneracy of the level $E_n^{(0)}$. This freedom disappears, however,
+when the wave functions are required to change only slightly under the
+applied small perturbation.
+\SourcePage{175}{178}
+For the moment, let $\psi_n^{(0)}$, $\psi_{n'}^{(0)}$,~\ldots denote
+arbitrarily chosen unperturbed eigenfunctions. The correct zeroth-order
+functions are linear combinations of the form
+\[
+  c_n^{(0)}\psi_n^{(0)}+c_{n'}^{(0)}\psi_{n'}^{(0)}+\ldots
+\]
+The coefficients in these combinations and the first-order corrections to
+the eigenvalues are determined as follows.
+
+Write equations (38.4) for $k=n,n',\ldots$, substituting in first order
+$E=E_n^{(0)}+E^{(1)}$. For the $c_k$ it is sufficient to retain their
+zeroth-order values $c_n=c_n^{(0)}$, $c_{n'}=c_{n'}^{(0)},\ldots$, while
+$c_m=0$ for $m\ne n,n',\ldots$. We then obtain
+\[
+  E^{(1)}c_n^{(0)}=\sum_{n'}V_{nn'}c_{n'}^{(0)},
+\]
+or
+\begin{equation}
+  \sum_{n'}(V_{nn'}-E^{(1)}\delta_{nn'})c_{n'}^{(0)}=0,
+  \tag{39.1}
+\end{equation}
+where $n$ and $n'$ run over all values labeling states that belong to the
+given unperturbed eigenvalue $E_n^{(0)}$. This homogeneous system of linear
+equations for the $c_n^{(0)}$ has nonzero solutions if the determinant of its
+coefficients vanishes. Thus
+\begin{equation}
+  |V_{nn'}-E^{(1)}\delta_{nn'}|=0.
+  \tag{39.2}
+\end{equation}
+This equation has degree $s$ in $E^{(1)}$ and, in general, has $s$ distinct
+real roots. These roots are the required first-order corrections to the
+eigenvalues. Equation (39.2) is called the \emph{secular
+equation}\footnote{Also called the age equation (the French word
+\emph{siècle} means an age); the name was borrowed from celestial
+mechanics.}. The sum of its roots is the sum of the diagonal matrix elements
+$V_{nn}$, $V_{n'n'},\ldots$; it is the coefficient of $E^{(1)s-1}$ in the
+equation.
+
+Substituting the roots of (39.2) one by one into (39.1) and solving the
+resulting systems gives the coefficients $c_n^{(0)}$ and hence the correct
+zeroth-order eigenfunctions.
+\SourcePage{176}{179}
+As a result of the perturbation, the initially degenerate energy level is in
+general no longer degenerate, since the roots of (39.2) are in general
+different. The perturbation is said to lift the degeneracy. The lifting may
+be complete or partial; in the latter case the perturbed level remains
+degenerate, but with a lower multiplicity than before.
+
+It may happen that, for some reason, all matrix elements for transitions
+within one group of mutually degenerate states $n,n',\ldots$ are especially
+small, or even vanish. It may then be useful, while retaining $V_{nn'}$ in
+first order, also to include in higher orders the matrix elements $V_{nm}$,
+with $m\ne n,n',\ldots$, for transitions to states of other energies. We
+shall do this by including $V_{mn}$ through second order.
+
+In (38.4) with $k=n$, set $E=E_n^{(0)}+E^{(1)}$ on the left-hand side; we
+retain the notation $E^{(1)}$ for the energy correction in the approximation
+now considered. Replace $c_n$ by $c_n^{(0)}$. Since $c_m^{(0)}=0$ for every
+$m\ne n,n',\ldots$, we have
+\begin{equation}
+  E^{(1)}c_n^{(0)}=\sum_mV_{nm}c_m^{(1)}
+  +\sum_{n'}V_{nn'}c_{n'}^{(0)}.
+  \tag{39.3}
+\end{equation}
+Equations (38.4) with $k=m\ne n,n',\ldots$, through first order, give
+\[
+  (E_n^{(0)}-E_m^{(0)})c_m^{(1)}
+  =\sum_{n'}V_{mn'}c_{n'}^{(0)},
+\]
+and hence
+\[
+  c_m^{(1)}=\sum_{n'}\frac{V_{mn'}}{E_n^{(0)}-E_m^{(0)}}c_{n'}^{(0)}.
+\]
+Substitution in (39.3) gives
+\[
+  E^{(1)}c_n^{(0)}=\sum_{n'}c_{n'}^{(0)}
+  \left(V_{nn'}+\sum_m\frac{V_{nm}V_{mn'}}{E_n^{(0)}-E_m^{(0)}}\right).
+\]
+This system now replaces (39.1). Its compatibility condition again gives a
+secular equation, differing from (39.2) by the replacement
+\begin{equation}
+  V_{nn'}\longrightarrow V_{nn'}
+  +\sum_m\frac{V_{nm}V_{mn'}}{E_n^{(0)}-E_m^{(0)}}.
+  \tag{39.4}
+\end{equation}
+\SourcePage{177}{180}
+\ProblemHeading
+\textbf{1.} Find the first-order corrections to the eigenvalue and the
+correct zeroth-order functions for a doubly degenerate level.
+
+\SolutionHeading Equation (39.2) now has the form
+\[
+  \begin{vmatrix}
+   V_{11}-E^{(1)}&V_{21}\\
+   V_{12}&V_{22}-E^{(1)}
+  \end{vmatrix}=0
+\]
+(the indices 1 and 2 refer to two arbitrarily chosen unperturbed
+eigenfunctions $\psi_1^{(0)}$ and $\psi_2^{(0)}$ of the degenerate level).
+Solving it, we find
+\begin{equation}
+  E^{(1)}=\frac12[V_{11}+V_{22}\pm\hbar\omega^{(1)}],
+  \tag{1}
+\end{equation}
+where
+\[
+  \hbar\omega^{(1)}=\sqrt{(V_{11}-V_{22})^2+4|V_{12}|^2}
+\]
+denotes the difference between the two values of the correction $E^{(1)}$.
+Solving (39.1) with these values of $E^{(1)}$, we obtain the coefficients in
+the normalized correct zeroth-order functions
+$\psi^{(0)}=c_1^{(0)}\psi_1^{(0)}+c_2^{(0)}\psi_2^{(0)}$:
+\begin{equation}
+ \begin{aligned}
+  c_1^{(0)}&=\left\{\frac{V_{12}}{2|V_{12}|}
+    \left[1\pm\frac{V_{11}-V_{22}}{\hbar\omega^{(1)}}\right]\right\}^{1/2},\\
+  c_2^{(0)}&=\pm\left\{\frac{V_{21}}{2|V_{12}|}
+    \left[1\mp\frac{V_{11}-V_{22}}{\hbar\omega^{(1)}}\right]\right\}^{1/2}.
+ \end{aligned}
+ \tag{2}
+\end{equation}
+
+\ProblemHeading
+\textbf{2.} Derive formulas for the first-order corrections to the
+eigenfunctions and the second-order corrections to the eigenvalues.
+
+\SolutionHeading Let the functions $\psi_n^{(0)}$ be chosen as the correct
+zeroth-order functions. The matrix $V_{nn'}$ defined with these functions is
+evidently diagonal in the indices $n,n'$ belonging to the same group of
+functions of a degenerate level. Its diagonal elements $V_{nn}$,
+$V_{n'n'},\ldots$ equal the corresponding first-order corrections
+$E_n^{(1)}$, $E_{n'}^{(1)},\ldots$.
+
+Consider the perturbation of the eigenfunction $\psi_n^{(0)}$. In zeroth
+order, $E=E_n^{(0)}$, $c_n^{(0)}=1$, and $c_m^{(0)}=0$ for $m\ne n$. In
+first order, $E=E_n^{(0)}+V_{nn}$, $c_n=1+c_n^{(1)}$, and
+$c_m=c_m^{(1)}$. From the general system (38.4), take the equation with
+$k\ne n,n',\ldots$ and retain its first-order terms:
+\[
+  (E_n^{(0)}-E_k^{(0)})c_k^{(1)}=V_{kn}c_n^{(0)}=V_{kn},
+\]
+whence
+\begin{equation}
+  c_k^{(1)}=\frac{V_{kn}}{E_n^{(0)}-E_k^{(0)}}
+  \quad\text{for}\quad k\ne n,n',\ldots
+  \tag{1}
+\end{equation}
+Next write the equation with $k=n'$, retaining its second-order terms:
+\[
+  E_n^{(1)}c_{n'}^{(1)}=V_{n'n'}c_{n'}^{(1)}
+  +\sum_m'V_{n'm}c_m^{(1)}.
+\]
+\SourcePage{178}{181}
+In the sum over $m$, the terms with $m=n,n',\ldots$ are omitted. Substituting
+$E_n^{(1)}=V_{nn}$ and (1) for $c_m^{(1)}$, we obtain, for $n'\ne n$,
+\begin{equation}
+  c_{n'}^{(1)}=\frac1{V_{nn}-V_{n'n'}}
+  \sum_m'\frac{V_{n'm}V_{mn}}{E_n^{(0)}-E_m^{(0)}}.
+  \tag{2}
+\end{equation}
+The coefficient $c_n^{(1)}$ is zero in this approximation. Formulas (1) and
+(2) determine the first-order correction
+$\psi_n^{(1)}=\sum_m c_m^{(1)}\psi_m^{(0)}$ to the
+eigenfunctions\footnote{Notice that the requirement that the quantities (1)
+and (2) be small, and hence the condition for applicability of this
+perturbation method, still requires (38.9) only for transitions between
+states belonging to different energy levels. Transitions between states of
+the same degenerate level are accounted for by the secular equation in a
+certain sense exactly.}.
+
+Finally, retaining the second-order terms in (38.4) with $k=n$, we obtain
+the second-order energy correction
+\begin{equation}
+  E_n^{(2)}=\sum_m'\frac{V_{nm}V_{mn}}{E_n^{(0)}-E_m^{(0)}},
+  \tag{3}
+\end{equation}
+which has the same formal appearance as (38.10).
+
+\ProblemHeading
+\textbf{3.} At the initial time $t=0$, a system is in a state
+$\psi_1^{(0)}$ belonging to a doubly degenerate level. Find the probability
+that at a later time $t$ the system is in the other state $\psi_2^{(0)}$ of
+the same energy, when the transition is caused by a constant perturbation.
+
+\SolutionHeading Construct the correct zeroth-order functions:
+\[
+  \psi=c_1\psi_1+c_2\psi_2,\qquad
+  \psi'=c_1'\psi_1+c_2'\psi_2,
+\]
+where $c_1,c_2$ and $c_1',c_2'$ are the two pairs of coefficients given by
+(2) of Problem 1. Superscripts $(0)$ have been omitted from all quantities
+for brevity. Conversely,
+\[
+  \psi_1=\frac{c_2'\psi-c_2\psi'}{c_1c_2'-c_1'c_2}.
+\]
+The functions $\psi$ and $\psi'$ belong to states with perturbed energies
+$E+E^{(1)}$ and $E+E^{(1)'}$, where $E^{(1)}$ and $E^{(1)'}$ are the two
+values of correction (1) in Problem 1. Introducing the time factors gives
+the time-dependent wave function
+\[
+  \Psi_1=\frac{\exp[-(i/\hbar)Et]}{c_1c_2'-c_1'c_2}
+  \left[c_2'\psi\exp\left(-\frac i\hbar E^{(1)}t\right)
+       -c_2\psi'\exp\left(-\frac i\hbar E^{(1)'}t\right)\right].
+\]
+At $t=0$, $\Psi_1=\psi_1$. Expressing $\psi$ and $\psi'$ once more in terms
+of $\psi_1$ and $\psi_2$, we write $\Psi_1$ as a linear combination of
+$\psi_1$ and $\psi_2$ with time-dependent coefficients. The squared modulus
+of the coefficient of $\psi_2$ is the required transition probability
+$w_{21}$. Using (1) and (2) of Problem 1 gives
+\[
+  w_{21}=2\frac{|V_{12}|^2}{(\hbar\omega^{(1)})^2}
+  [1-\cos(\omega^{(1)}t)].
+\]
+Thus the probability oscillates periodically with frequency
+$\omega^{(1)}$. For times $t$ small compared with the corresponding period,
+the expression in
+\SourcePage{179}{182}
+square brackets, and hence $w_{21}$ itself, is proportional to $t^2$:
+\[
+  w_{21}=\frac1{\hbar^2}|V_{12}|^2t^2.
+\]
+This formula follows very simply by the method developed in the next section,
+using (40.4).

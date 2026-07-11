@@ -1,0 +1,255 @@
+\SourcePage{200}{203}
+\section{Potential energy treated as a perturbation}
+
+The case in which the particle's entire potential energy in an external field
+can be treated as the perturbation calls for separate consideration. The
+unperturbed Schrödinger equation is then the equation for free motion,
+\begin{equation}
+  \Delta\psi^{(0)}+k^2\psi^{(0)}=0,
+  \qquad
+  k=\frac{\sqrt{2mE}}{\hbar}=\frac p\hbar
+  \tag{45.1}
+\end{equation}
+whose solutions are plane waves. Since the energy spectrum of free motion is
+continuous, this is a special instance of perturbation theory in a continuous
+spectrum. Here it is more convenient to obtain the solution directly, without
+using the general formulas.
+
+The equation for the first-order correction $\psi^{(1)}$ to the wave function
+is
+\begin{equation}
+  \Delta\psi^{(1)}+k^2\psi^{(1)}=\frac{2mU}{\hbar^2}\psi^{(0)}
+  \tag{45.2}
+\end{equation}
+($U$ is the potential energy). As is known from electrodynamics, its solution
+may be written in the form of ``retarded potentials,'' namely\footnote{This is
+a particular integral of equation (45.2). Any solution of the equation with
+no right-hand side (that is, of the unperturbed equation (45.1)) may still be
+added to it.}
+\begin{equation}
+  \psi^{(1)}(x,y,z)=-\frac{m}{2\pi\hbar^2}
+  \int\psi^{(0)}U(x',y',z')e^{ikr}\frac{dV'}r,
+  \tag{45.3}
+\end{equation}
+\[
+  dV'=dx'\,dy'\,dz',
+  \qquad
+  r^2=(x-x')^2+(y-y')^2+(z-z')^2.
+\]
+
+Let us determine the conditions under which the field $U$ may be regarded as
+a perturbation. Perturbation theory is applicable when
+$\psi^{(1)}\ll\psi^{(0)}$. Let $a$ give the order of magnitude of the size of
+the region in which the field differs appreciably from zero. Suppose first
+that the particle's energy is so low that $ak$ is at most of order unity. For
+an order-of-magnitude estimate the factor $e^{ikr}$ in the integrand of
+(45.3) is then immaterial, and the whole integral is of order
+$\psi^{(0)}|U|a^2$. Thus
+$\psi^{(1)}\sim(ma^2|U|/\hbar^2)\psi^{(0)}$, and the condition becomes
+\begin{equation}
+  |U|\ll\frac{\hbar^2}{ma^2}
+  \quad\text{when}\quad ka\lesssim1.
+  \tag{45.4}
+\end{equation}
+\SourcePage{201}{204}
+Notice that $\hbar^2/ma^2$ has a simple physical meaning: it gives the order
+of magnitude of the kinetic energy that a particle confined to a volume of
+linear dimensions $a$ would have (for its momentum would be
+$\sim\hbar/a$ by the uncertainty relation).
+
+As a particular example, consider a potential well so shallow that (45.4) is
+satisfied. Such a well has no negative energy levels ($R.\,Peierls$, 1929),
+as was already seen in the problem to \secref{33} for the special case of a
+spherically symmetric well. Indeed, at $E=0$ the unperturbed wave function
+reduces to a constant, which may conventionally be set equal to unity:
+$\psi^{(0)}=1$. Since $\psi^{(1)}\ll\psi^{(0)}$, the wave function for motion
+in the well, $\psi=1+\psi^{(1)}$, plainly vanishes nowhere. An eigenfunction
+without nodes belongs to the normal state, so $E=0$ remains the lowest
+possible energy of the particle.
+
+Thus, if a well is not sufficiently deep, only infinite motion of the
+particle is possible: the well cannot ``capture'' it. This result is
+specifically quantum-mechanical. In classical mechanics a particle can
+undergo finite motion in any potential well.
+
+It must be stressed that everything just said applies only to a
+three-dimensional well. A one- or two-dimensional well (that is, one whose
+field depends on only one or two coordinates) always has negative energy
+levels (see the problems to this section). The reason is that in one and two
+dimensions the perturbation theory under consideration is wholly inapplicable
+at zero (or very small) energy $E$.
+\footnote{In two dimensions, $\psi^{(1)}$ is expressed (as follows from the
+theory of the two-dimensional wave equation) by an integral analogous to
+(45.3), with $i\pi H_0^{(1)}(kr)dx'\,dy'$ in place of
+$e^{ikr}dx'\,dy'\,dz'/r$ ($H_0^{(1)}$ is a Hankel function), and
+$r=\sqrt{(x'-x)^2+(y'-y)^2}$. As $k\to0$, the Hankel function, and with it
+the entire integral, tends logarithmically to infinity.
+
+Similarly, in one dimension the integrand defining $\psi^{(1)}$ contains
+$2\pi i e^{ikr}dx'/k$ (where $r=|x'-x|$), and as $k\to0$,
+$\psi^{(1)}$ tends to infinity as $1/k$.}
+
+At high energies, where $ka\gg1$, the factor $e^{ikr}$ in the integrand is
+essential and greatly reduces the magnitude of the integral. In this case
+solution (45.3) can be
+\SourcePage{202}{205}
+put into another form. For its derivation, however, it is simpler to return
+directly to equation (45.2). Choose the direction of unperturbed motion as the
+$x$ axis. The unperturbed wave function is then $\psi^{(0)}=e^{ikx}$ (the
+constant factor is conventionally set to unity). Seek a solution of
+\[
+  \Delta\psi^{(1)}+k^2\psi^{(1)}=\frac{2m}{\hbar^2}Ue^{ikx}
+\]
+in the form $\psi^{(1)}=e^{ikx}f$. Since $k$ is assumed large, in
+$\Delta\psi^{(1)}$ it suffices to retain only terms in which the factor
+$e^{ikx}$ is differentiated at least once. The equation for $f$ is then
+\[
+  2ik\frac{\partial f}{\partial x}=\frac{2mU}{\hbar^2},
+\]
+and hence
+\begin{equation}
+  \psi^{(1)}=e^{ikx}f=-\frac{im}{\hbar^2k}e^{ikx}\int U\,dx.
+  \tag{45.5}
+\end{equation}
+
+The integral is of order
+$|\psi^{(1)}|\sim m|U|a/\hbar^2k$, so in this case perturbation theory is
+applicable under the condition
+\begin{equation}
+  |U|\ll\frac{\hbar^2}{ma^2}ka=\frac{\hbar v}{a},
+  \qquad ka\gg1
+  \tag{45.6}
+\end{equation}
+($v=k\hbar/m$ is the particle's velocity). This condition is weaker than
+(45.4). Consequently, if the field may be treated as a perturbation at low
+particle energies, it certainly may be so treated at high energies; the
+converse, generally speaking, does not hold.
+\footnote{In one dimension the condition for applicability of perturbation
+theory is the inequality (45.6) for all $ka$. The derivation of (45.4) given
+above for three dimensions cannot be carried out in one dimension because of
+the divergence, noted in the footnote on p.~204, of the function
+$\psi^{(1)}$ constructed in that manner.}
+
+The applicability of the perturbation theory developed here to the Coulomb
+field requires separate consideration. In the field $U=\alpha/r$ there is no
+finite region of space outside which $U$ is substantially smaller than inside
+it. The required condition follows by replacing the parameter $a$ in (45.6)
+with the variable distance $r$; this gives
+\begin{equation}
+  \frac\alpha{\hbar v}\ll1.
+  \tag{45.7}
+\end{equation}
+\SourcePage{203}{206}
+Thus the Coulomb field may be treated as a perturbation at high particle
+energies.
+\footnote{It should be borne in mind that the integral (45.5) with
+$U=\alpha/r$ diverges logarithmically at large
+$x/\sqrt{y^2+z^2}$. The Coulomb-field wave function obtained by perturbation
+theory is therefore inapplicable inside a narrow cone about the $x$ axis.}
+
+Finally, let us derive a formula giving an approximate wave function for a
+particle whose energy $E$ is everywhere much greater than the potential
+energy $U$ (no other conditions are required). To the first approximation,
+the coordinate dependence of the wave function is the same as in free motion,
+whose direction we choose as the $x$ axis. Accordingly, write
+$\psi=e^{ikx}F$, where $F$ is a function of the coordinates that varies slowly
+in comparison with the factor $e^{ikx}$ (although in general it cannot be
+said to be close to unity). Substitution in the Schrödinger equation gives
+\begin{equation}
+  2ik\frac{\partial F}{\partial x}=\frac{2m}{\hbar^2}UF,
+  \tag{45.8}
+\end{equation}
+whence
+\begin{equation}
+  \psi=e^{ikx}F=\operatorname{const}\cdot e^{ikx}
+  \exp\left(-\frac{i}{\hbar v}\int U\,dx\right).
+  \tag{45.9}
+\end{equation}
+This is the required expression. It must be remembered, however, that it is
+not valid at excessively large distances. In (45.8) the term $\Delta F$,
+which contains second derivatives of $F$, was omitted. At large distances
+$\partial^2F/\partial x^2$ tends to zero together with
+$\partial F/\partial x$. The derivatives with respect to the transverse
+coordinates $y,z$, on the other hand, do not tend to zero, and they may be
+neglected only if $x\ll ka^2$.
+
+\begin{center}\textbf{Problems}\end{center}
+
+\ProblemHeading
+\textbf{1.} Determine the energy level in a shallow one-dimensional
+potential well; condition (45.4) is assumed to hold.
+
+\SolutionHeading Make the assumption, confirmed by the result,
+that $|E|\ll|U|$. Then $E$ may be neglected on the right-hand side of the
+Schrödinger equation within the well,
+\[
+  \frac{d^2\psi}{dx^2}=\frac{2m}{\hbar^2}(U(x)-E)\psi,
+\]
+and $\psi$ may also be treated as a constant, which can be set equal to unity
+without loss of generality:
+\[
+  \frac{d^2\psi}{dx^2}=\frac{2m}{\hbar^2}U.
+\]
+\SourcePage{204}{207}
+Integrate this equality with respect to $x$ between two points $\pm x_1$ such
+that $a\ll x_1\ll1/\kappa$, where $a$ is the width of the well and
+$\kappa=\sqrt{2m|E|}/\hbar$. Since the integral of $U(x)$ converges, the
+integration on the right may be extended over the whole interval from
+$-\infty$ to $+\infty$:
+\begin{equation}
+  \left.\frac{d\psi}{dx}\right|_{-x_1}^{x_1}
+  =\frac{2m}{\hbar^2}\int_{-\infty}^{+\infty}U\,dx.
+  \tag{1}
+\end{equation}
+Far from the well the wave function has the form $\psi=e^{\mp\kappa x}$.
+Substitution in (1) gives
+\[
+  -2\kappa=\frac{2m}{\hbar^2}\int_{-\infty}^{+\infty}U\,dx
+  \qquad\text{or}\qquad
+  |E|=\frac{m}{2\hbar^2}
+  \left(\int_{-\infty}^{+\infty}U\,dx\right)^2.
+\]
+In accord with the assumption made, the magnitude of the level is thus a
+small quantity of higher (second) order than the depth of the well.
+
+\ProblemHeading
+\textbf{2.} Determine the energy level in a shallow two-dimensional
+potential well $U(r)$ ($r$ is the polar coordinate in the plane); the integral
+$\int_0^\infty rU\,dr$ is assumed to converge.
+
+\SolutionHeading Proceeding as in the preceding problem, within
+the well we obtain
+\[
+  \frac1r\frac d{dr}\left(r\frac{d\psi}{dr}\right)
+  =\frac{2m}{\hbar^2}U.
+\]
+Integrating with respect to $r$ from 0 to $r_1$ (where
+$a\ll r_1\ll1/\kappa$), we find
+\begin{equation}
+  \left.\frac{d\psi}{dr}\right|_{r=r_1}
+  =\frac{2m}{\hbar^2r_1}\int_0^\infty rU(r)\,dr.
+  \tag{1}
+\end{equation}
+Far from the well, the two-dimensional free-motion equation
+\[
+  \frac1r\frac d{dr}\left(r\frac{d\psi}{dr}\right)
+  +\frac{2m}{\hbar^2}E\psi=0
+\]
+has the solution (vanishing at infinity)
+$\psi=\operatorname{const}\cdot H_0^{(1)}(i\kappa r)$. At small values of
+the argument, the leading term of this function is proportional to
+$\ln\kappa r$. Bearing this in mind, at $r\sim a$ equate the logarithmic
+derivatives of $\psi$ evaluated inside the well (the right-hand side of (1))
+and outside it. This gives
+\[
+  -\frac1{a\ln\kappa a}\approx
+  \frac{2m}{\hbar^2a}\int_0^\infty U(r)r\,dr,
+\]
+and hence
+\[
+  |E|\sim\frac{\hbar^2}{ma^2}
+  \exp\left[-\frac{\hbar^2}{m}
+  \left|\int_0^\infty Ur\,dr\right|^{-1}\right].
+\]
+Thus the energy level is exponentially small in comparison with the depth of
+the well.

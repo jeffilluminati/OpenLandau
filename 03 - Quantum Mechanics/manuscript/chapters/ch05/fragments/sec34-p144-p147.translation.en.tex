@@ -1,0 +1,124 @@
+\SourcePage{144}{147}
+\section{Expansion of a plane wave}
+
+Consider a free particle moving with definite momentum $p=k\hbar$ along the
+positive $z$ axis. Its wave function is
+\[
+ \psi=\operatorname{const}\cdot e^{ikz}.
+\]
+Expand it in the free-motion functions $\psi_{klm}$ with definite angular
+momentum. Since $E=k^2\hbar^2/2m$ is definite, only functions with the same
+$k$ enter. Since $e^{ikz}$ is axially symmetric about $z$, only functions
+independent of $\varphi$, with $m=0$, can occur. Thus
+\SourcePage{145}{148}
+\[
+ e^{ikz}=\sum_{l=0}^{\infty}a_l\psi_{kl0}
+ =\sum_{l=0}^{\infty}a_lR_{kl}Y_{l0}.
+\]
+Substitution of (28.8) and (33.9) gives
+\[
+ e^{ikz}=\sum_{l=0}^{\infty}C_lP_l(\cos\theta)
+ \left(\frac rk\right)^l
+ \left(\frac1r\frac d{dr}\right)^l\frac{\sin kr}{kr}
+ \qquad(z=r\cos\theta).
+\]
+Determine $C_l$ by comparing coefficients of $(r\cos\theta)^n$ in the
+power-series expansions. On the right this term occurs only in the $n$th
+summand: for $l>n$ the radial expansion begins with higher powers of $r$,
+while for $n>l$, $P_l(\cos\theta)$ has lower powers of $\cos\theta$. The
+coefficient of $\cos^l\theta$ in $P_l(\cos\theta)$ is
+$(2l)!/2^l(l!)^2$ (see (c.1)). By (33.13), the relevant term is
+\[
+ (-1)^lC_l\frac{(2l)!(kr\cos\theta)^l}
+ {2^l(l!)^2\,1\cdot3\ldots(2l+1)}.
+\]
+The corresponding term in $\exp(ikr\cos\theta)$ is
+\[
+ \frac{(ikr\cos\theta)^l}{l!}.
+\]
+Hence $C_l=(-i)^l(2l+1)$, and
+\begin{equation}
+ e^{ikz}=\sum_{l=0}^{\infty}(-i)^l(2l+1)P_l(\cos\theta)
+ \left(\frac rk\right)^l
+ \left(\frac1r\frac d{dr}\right)^l\frac{\sin kr}{kr}.
+ \tag{34.1}
+\end{equation}
+At large distances,
+\begin{equation}
+ e^{ikz}\approx\frac1{kr}\sum_{l=0}^{\infty}i^l(2l+1)
+ P_l(\cos\theta)\sin\left(kr-\frac{l\pi}{2}\right).
+ \tag{34.2}
+\end{equation}
+In (34.1), $z$ is along the wave vector $\mathbf k$. The expansion also has a
+\SourcePage{146}{149}
+coordinate-independent form. The addition theorem for spherical functions
+(c.11) expresses $P_l(\cos\theta)$ through spherical functions of the
+directions of $\mathbf k$ and $\mathbf r$:
+\begin{equation}
+ e^{i\mathbf k\mathbf r}=4\pi\sum_{l=0}^{\infty}\sum_{m=-l}^{l}
+ i^lj_l(kr)Y_{lm}^*\left(\frac{\mathbf k}{k}\right)
+ Y_{lm}\left(\frac{\mathbf r}{r}\right).
+ \tag{34.3}
+\end{equation}
+Since $j_l(kr)$ depends only on $kr$, the symmetry in $\mathbf k$ and
+$\mathbf r$ is explicit; which spherical function is conjugated is immaterial.
+
+Normalize $e^{ikz}$ to unit probability-current density: one particle crosses
+unit area per unit time. The function is
+\begin{equation}
+ \psi=\frac1{\sqrt v}e^{ikz}=\sqrt{\frac m{k\hbar}}e^{ikz}
+ \tag{34.4}
+\end{equation}
+($v$ is the speed; see (19.7)). Multiplying (34.1) by $\sqrt{m/k\hbar}$ and
+using $\psi_{klm}^{\pm}=R_{kl}^{\pm}Y_{lm}$ gives
+\[
+ \psi=\sum_{l=0}^{\infty}\sqrt{\pi(2l+1)}\,
+ \frac1{ik\hbar}(\psi_{kl0}^{+}-\psi_{kl0}^{-}).
+\]
+The squared coefficient of $\psi_{kl0}^{-}$ (or $\psi_{kl0}^{+}$) gives the
+probability that a particle incident on the center (or leaving it) has angular
+momentum $l$. Since the incident flux density is unity, this probability has
+dimensions of area and can be interpreted as the target area in the $xy$
+plane for particles with angular momentum $l$. Denoting it by $\sigma_l$,
+\begin{equation}
+ \sigma_l=\frac\pi{k^2}(2l+1).
+ \tag{34.5}
+\end{equation}
+\SourcePage{147}{150}
+For large $l$, summing over a range $\Delta l$, where
+$1\ll\Delta l\ll l$, gives
+\[
+ \sum_{\Delta l}\sigma_l\approx\frac\pi{k^2}\cdot2l\Delta l
+ =2\pi\frac{l\hbar^2}{p^2}\Delta l.
+\]
+With the classical relation $\hbar l=\rho p$, where $\rho$ is the impact
+parameter, this becomes
+\[
+ 2\pi\rho\Delta\rho,
+\]
+the classical result. This is not accidental: for large $l$ the motion is
+semiclassical (\secref{49}).
+
+\begin{center}\textbf{Problem}\end{center}
+
+\ProblemHeading{} Expand a plane wave in wave functions with definite
+projection $m$ of angular momentum on the $y$ axis and definite momentum
+projection $p_y$ on that axis.
+
+\SolutionHeading{} Introduce cylindrical coordinates $y,\rho,\varphi$ with
+axis $y$. The functions have the form
+$Q_m(\rho)e^{im\varphi}e^{ip_yy/\hbar}$. Measuring $\varphi$ from $z$,
+\[
+ e^{ikz}=e^{ik\rho\cos\varphi}
+ =\sum_{m=-\infty}^{\infty}Q_m(\rho)e^{im\varphi}
+\]
+(here $p_y=0$), whence
+\[
+ Q_m(\rho)=\frac1{2\pi}\int_0^{2\pi}
+ \exp[i(k\rho\cos\varphi-m\varphi)]\,d\varphi=i^mJ_m(k\rho),
+\]
+where $J_m$ is a Bessel function. For $k\rho\gg1$,
+\[
+ Q_m(\rho)\approx i^m\sqrt{\frac2{\pi k\rho}}
+ \sin\left[k\rho-\frac\pi2\left(m-\frac12\right)\right].
+\]

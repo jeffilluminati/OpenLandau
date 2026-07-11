@@ -1,0 +1,359 @@
+\SourcePage{183}{186}
+\section[Transitions produced by a perturbation]{Transitions produced by a perturbation
+acting for a finite time}
+
+Suppose that the perturbation $V(t)$ acts only during some finite time interval
+(or, alternatively, that $V(t)$ decreases sufficiently rapidly as
+$t\to\pm\infty$). Before the perturbation begins to act (or in the limit
+$t\to-\infty$), let the system be in the $n$th stationary state of the
+discrete spectrum. At any later instant its state is described by
+\[
+  \Psi=\sum_k a_{kn}\Psi_k^{(0)},
+\]
+where, to first order,
+\begin{equation}
+ \begin{aligned}
+  a_{kn}=a_{kn}^{(1)}&=-\frac i\hbar\int_{-\infty}^t
+    V_{kn}e^{i\omega_{kn}t}\,dt,\qquad k\ne n,\\
+  a_{nn}=1+a_{nn}^{(1)}&=1-\frac i\hbar\int_{-\infty}^tV_{nn}\,dt.
+ \end{aligned}
+ \tag{41.1}
+\end{equation}
+\SourcePage{184}{187}
+The integration limits in (40.5) have been selected so that every
+$a_{kn}^{(1)}$ vanishes as $t\to-\infty$. Once the action of the perturbation
+has ended (or as $t\to\infty$), the coefficients $a_{kn}$ acquire constant
+values $a_{kn}(\infty)$, and the system is in the state whose wave function is
+\[
+  \Psi=\sum_k a_{kn}(\infty)\Psi_k^{(0)}.
+\]
+This function again satisfies the unperturbed wave equation, though it differs
+from the original function $\Psi_n^{(0)}$. By the general rules, the squared
+modulus of $a_{kn}(\infty)$ gives the probability that the system has energy
+$E_k^{(0)}$, that is, that it is in the $k$th stationary state.
+
+Thus a perturbation can carry the system from its original stationary state
+into any other one. The probability of a transition from the initial ($i$th)
+stationary state to the final ($f$th) stationary state is\footnote{For
+uniformity, whenever transition probabilities are discussed below, we shall
+denote the initial and final states by the indices $i$ and $f$, respectively.
+We shall also write the indices of transition probabilities specifically in
+the order $fi$, consistently with the convention for matrix-element indices.}
+\begin{equation}
+  w_{fi}=\frac1{\hbar^2}\left|
+    \int_{-\infty}^{+\infty}V_{fi}e^{i\omega_{fi}t}\,dt
+  \right|^2.
+  \tag{41.2}
+\end{equation}
+
+Now consider a perturbation which, once it has arisen, continues to act
+indefinitely (while remaining small throughout). In other words, $V(t)$ tends
+to zero as $t\to-\infty$ and to a finite nonzero limit as $t\to\infty$.
+Formula (41.2) cannot be used directly here, since its integral diverges. From
+the physical standpoint, however, this divergence is immaterial and is easily
+removed. Integration by parts gives
+\[
+ \begin{aligned}
+  a_{fi}&=-\frac i\hbar\int_{-\infty}^tV_{fi}e^{i\omega_{fi}t}\,dt\\
+  &=-\left.\frac{V_{fi}e^{i\omega_{fi}t}}{\hbar\omega_{fi}}
+    \right|_{-\infty}^t
+  +\int_{-\infty}^t\frac{\partial V_{fi}}{\partial t}
+    \frac{e^{i\omega_{fi}t}}{\hbar\omega_{fi}}\,dt.
+ \end{aligned}
+\]
+The first term vanishes at the lower limit; at the upper limit it formally
+coincides with the expansion coefficients in (38.8). (The extra periodic
+factor occurs simply because $a_{fi}$ are expansion coefficients of the full
+wave function $\Psi$, whereas the $c_{fi}$ of \secref{38} are expansion coefficients
+\SourcePage{185}{188}
+of the time-independent function $\psi$.) It is consequently clear that the
+limit of this term as $t\to\infty$ describes only the change of the original
+wave function $\Psi_i^{(0)}$ caused by the ``constant part'' $V(+\infty)$ of
+the perturbation, and therefore has nothing to do with transitions into other
+states. The transition probability is instead given by the square of the
+second term:
+\begin{equation}
+  w_{fi}=\frac1{\hbar^2\omega_{fi}^2}\left|
+    \int_{-\infty}^{+\infty}\frac{\partial V_{fi}}{\partial t}
+    e^{i\omega_{fi}t}\,dt
+  \right|^2.
+  \tag{41.3}
+\end{equation}
+
+The formulas obtained also apply when a transition proceeds from a discrete
+state to a continuous-spectrum state. The only difference is that one then
+speaks of the probability of transition from the specified ($i$th) state into
+states for which the quantities $\nu_f$ (see the end of \secref{38}) lie between
+$\nu_f$ and $\nu_f+d\nu_f$. Thus, for example, (41.2) must be written as
+\begin{equation}
+  dw_{if}=\frac1{\hbar^2}\left|
+    \int_{-\infty}^{\infty}V_{fi}e^{i\omega_{fi}t}\,dt
+  \right|^2d\nu_f.
+  \tag{41.4}
+\end{equation}
+
+If $V(t)$ varies little over time intervals of order $1/\omega_{fi}$, the
+integral in (41.2) or (41.3) is very small. In the limit of arbitrarily slow
+variation of the applied perturbation, the probability of every transition
+that changes the energy (that is, with nonzero $\omega_{fi}$) tends to zero.
+Hence, when an applied perturbation changes sufficiently slowly
+(\emph{adiabatically}), a system initially in a particular nondegenerate
+stationary state continues to remain in that same state (see also \secref{53}).
+
+In the opposite limit, when a perturbation is switched on very rapidly---that
+is, \emph{suddenly}---the derivatives $\partial V_{fi}/\partial t$ become
+infinite at the ``switching instant.'' In the integral of
+$(\partial V_{fi}/\partial t)e^{i\omega_{fi}t}$, the comparatively slow factor
+$e^{i\omega_{fi}t}$ may then be taken outside the integral at its value at
+that instant. The remaining integration is immediate and gives
+\begin{equation}
+  w_{fi}=\frac{|V_{fi}|^2}{\hbar^2\omega_{fi}^2}.
+  \tag{41.5}
+\end{equation}
+Transition probabilities for sudden perturbations can also be found when the
+perturbation is not small.
+\SourcePage{186}{189}
+Let the system initially be in a state described by an eigenfunction
+$\psi_i^{(0)}$ of the original Hamiltonian $\hat H_0$. If the Hamiltonian
+changes suddenly (in a time short compared with the periods $1/\omega_{fi}$
+of transitions from the given state $i$ to other states), the wave function
+has no time to change and remains what it was before the perturbation. It is
+no longer, however, an eigenfunction of the system's new Hamiltonian $\hat H$;
+the state $\psi_i^{(0)}$ is therefore not stationary. By the general rules of
+quantum mechanics, the probabilities $w_{fi}$ for transition into any of the
+new stationary states are determined by expanding $\psi_i^{(0)}$ in the
+eigenfunctions $\psi_f$ of $\hat H$:
+\begin{equation}
+  w_{fi}=\left|\int\psi_i^{(0)}\psi_f^*\,dq\right|^2.
+  \tag{41.6}
+\end{equation}
+
+We now show how this general formula reduces to (41.5) when the change
+$\hat V=\hat H-\hat H_0$ of the Hamiltonian is small. Multiply the equations
+\[
+  \hat H_0\psi_i^{(0)}=E_i^{(0)}\psi_i^{(0)},\qquad
+  \hat H^*\psi_f^*=E_f\psi_f^*
+\]
+by $\psi_f^*$ and $\psi_i^{(0)}$, respectively, integrate over $dq$, and
+subtract the two results term by term. Using also the self-adjointness of
+$\hat H$, we obtain
+\[
+  (E_f-E_i^{(0)})\int\psi_f^*\psi_i^{(0)}\,dq
+  =\int\psi_f^*\hat V\psi_i^{(0)}\,dq.
+\]
+If $\hat V$ is small, then to first order $E_f$ may be replaced by the nearby
+unperturbed level $E_f^{(0)}$, and $\psi_f$ on the right-hand side by the
+corresponding function $\psi_f^{(0)}$. It follows that
+\[
+  \int\psi_f^*\psi_i^{(0)}\,dq
+  =\frac1{\hbar\omega_{fi}}
+   \int\psi_f^{(0)*}\hat V\psi_i^{(0)}\,dq,
+\]
+so that (41.6) becomes (41.5).
+
+\begin{center}\textbf{Problems}\end{center}
+
+\ProblemHeading{1.} A uniform electric field is suddenly applied to a charged
+oscillator in its ground state. Find the probabilities for the perturbation to
+transfer the oscillator into its excited states.
+\SourcePage{187}{190}
+\SolutionHeading Potential energy of an oscillator in a uniform field exerting
+force $F$ upon it is
+\[
+  U(x)=\frac{m\omega^2}{2}x^2-Fx
+  =\frac{m\omega^2}{2}(x-x_0)^2+\operatorname{const},
+\]
+where $x_0=F/m\omega^2$. Thus it again has a purely oscillator form, but with
+its equilibrium position displaced. Consequently, the stationary-state wave
+functions of the perturbed oscillator are $\psi_k(x-x_0)$, where $\psi_k(x)$
+are the oscillator functions (23.12), while the initial wave function is
+$\psi_0(x)$ from (23.13). Using these functions and expression (23.11) for the
+Hermite polynomials, we find
+\[
+  \int_{-\infty}^{+\infty}\psi_0^{(0)}\psi_k\,dx
+  =\frac{(-1)^k}{\sqrt{2^k\pi k!}}e^{-\xi_0^2/2}
+   \int_{-\infty}^{\infty}e^{-\xi\xi_0}
+   \frac{d^k}{d\xi^k}e^{-\xi^2+2\xi\xi_0}\,d\xi,
+\]
+where $\xi_0=x_0\sqrt{m\omega/\hbar}$. Integrating by parts $k$ times
+reduces the integral here to
+\[
+  \xi_0^k\int_{-\infty}^{\infty}\exp(-\xi^2+\xi\xi_0)\,d\xi
+  =\xi_0^k\sqrt\pi\exp\frac{\xi_0^2}{4}.
+\]
+Formula (41.6) therefore gives the required transition probability as
+\[
+  w_{k0}=\frac{\bar k^k}{k!}e^{-\bar k},\qquad
+  \bar k=\frac{\xi_0^2}{2}=\frac{F^2}{2m\hbar\omega^3}.
+\]
+As a function of the integer $k$, this is a Poisson distribution with mean
+$\bar k$.
+
+The perturbative regime corresponds to small $F$ such that $\bar k\ll1$.
+The excitation probabilities are then small and fall rapidly as $k$
+increases; the largest is $w_{10}\approx\bar k$.
+
+Conversely, when $F$ is large ($\bar k\gg1$), excitation occurs with
+overwhelming probability: the chance that the oscillator remains in its
+normal state is $w_{00}=e^{-\bar k}$.
+
+\ProblemHeading{2.} The nucleus of an atom in its normal state receives a
+sudden impulse and thereby acquires velocity $\mathbf v$. Assume that the
+duration $\tau$ of the impulse is short both in comparison with the electronic
+periods and with $a/v$, where $a$ is an atomic dimension. Determine the
+probability that this ``shaking'' excites the atom (\emph{A.~B. Migdal}, 1939).
+
+\SolutionHeading Pass to the reference frame $K'$ that moves with the nucleus
+after the impact. Because $\tau\ll a/v$, the nucleus may be treated as having
+hardly moved during the impact, and the electron coordinates in $K'$ and in
+the original frame $K$ therefore coincide immediately after the perturbation.
+The initial wave function in $K'$ is
+\[
+  \psi_0'=\psi_0\exp\left(-i\mathbf q\sum_a\mathbf r_a\right),
+  \qquad \mathbf q=\frac{m\mathbf v}{\hbar},
+\]
+where $\psi_0$ is the normal-state wave function for a stationary nucleus and
+the sum in the exponential extends over all $Z$ electrons of the atom.
+\SourcePage{188}{191}
+According to (41.6), the probability sought for transition into the $k$th
+excited state is now
+\[
+  w_{k0}=\left|\left\langle k\left|
+   \exp\left(-i\mathbf q\sum_a\mathbf r_a\right)\right|0\right\rangle\right|^2.
+\]
+In particular, for $qa\ll1$, expand the exponential under the integral. The
+integral of $\psi_k^*\psi_0$ vanishes by orthogonality, and hence
+\[
+  w_{k0}=\left|\left\langle k\left|
+    \mathbf q\sum_a\mathbf r_a\right|0\right\rangle\right|^2.
+\]
+
+\ProblemHeading{3.} Find the total probability of excitation and ionization
+of a hydrogen atom subjected to a sudden ``shaking'' (see the preceding
+problem).
+
+\SolutionHeading The required probability can be evaluated as the difference
+\[
+  1-w_{00}=1-\left|\int\psi_0^2e^{-i\mathbf q\mathbf r}\,dV\right|^2,
+\]
+where $w_{00}$ is the probability that the atom remains in the ground state;
+$\psi_0=(\pi a^3)^{-1/2}e^{-r/a}$ is the hydrogen ground-state wave function,
+and $a$ is the Bohr radius. Evaluation of the integral gives
+\[
+  1-w_{00}=1-\frac1{(1+\tfrac14q^2a^2)^4}.
+\]
+In the limiting case $qa\ll1$, this probability tends to zero as
+$1-w_{00}\approx q^2a^2$; for $qa\gg1$, it approaches unity as
+$1-w_{00}\approx1-(2/qa)^8$.
+
+\ProblemHeading{4.} Determine the probability that an electron is ejected
+from the $K$ shell of an atom with large atomic number $Z$ during nuclear
+$\beta$ decay. Assume the $\beta$-particle velocity to be large relative to
+the velocity of a $K$ electron (\emph{A.~B. Migdal}, 1941;
+\emph{E.~L. Feinberg}, 1939).
+
+\SolutionHeading\footnote{Atomic units are used in Problems 4 and 5.} Under
+the stated conditions, the time taken by the $\beta$ particle to cross the
+$K$ shell is short compared with the electron's orbital period; the change in
+nuclear charge may therefore be regarded as instantaneous. The perturbation
+is the change $V=1/r$ in the nuclear field when its charge changes by an
+amount small compared with $Z$ (namely, by 1). According to (41.5), the
+probability for either of the two $K$-shell electrons, whose energy is
+$E_0=-Z^2/2$,\footnote{Here and below the $K$-electron states are treated as
+hydrogen-like (see \secref{74}).} to enter a continuous-spectrum state of energy
+$E=k^2/2$ in the interval $dE=k\,dk$ is
+\[
+  dw=2\frac{4|V_{0k}|^2}{(k^2+Z^2)^2}\,dk.
+\]
+The integral defining $V_{0k}$ receives its essential contribution from
+distances of order $1/Z$ near the nucleus. In this region a hydrogen-like
+expression may also be used for the continuous-spectrum wave function. The
+electron's final state must have $l=0$, the same angular momentum as the
+initial state. From the function $R_{10}$ and the function $R_{k0}$ normalized
+on the $k/2\pi$ scale, obtained in \secref{36},
+\SourcePage{189}{192}
+together with formula (f.3) of the Mathematical Appendices, we find\footnote{It
+is convenient during the calculation to use Coulomb units, returning to
+atomic units in the final result.}
+\[
+  \left(\frac1r\right)_{0k}
+  =\frac{4\sqrt{2\pi k}}{1-e^{-2\pi Z/k}}
+   \frac{(1+ik/Z)^{iZ/k}(1-ik/Z)^{-iZ/k}}{1+k^2/Z^2},
+\]
+and, since
+\[
+  |(1+i\alpha)^{i/\alpha}|^2
+  =\exp\left(-2\frac{\arctan\alpha}{\alpha}\right),
+\]
+we finally obtain
+\[
+  dw=\frac{2^7}{Z^4(1+k^2/Z^2)^4}f\left(\frac kZ\right)k\,dk,
+\]
+where
+\[
+  f(\alpha)=\frac1{1-e^{-2\pi/\alpha}}
+  \exp\left(-4\frac{\arctan\alpha}{\alpha}\right).
+\]
+The limiting values of $f(\alpha)$ are
+\[
+  f=e^{-4}\quad\text{for }\alpha\ll1,\qquad
+  f=\alpha/2\pi\quad\text{for }\alpha\gg1.
+\]
+The total probability of ionizing the $K$ shell follows by integrating $dw$
+over all energies of the emitted electron. Numerical evaluation yields
+$w=0.65Z^{-2}$.
+
+\ProblemHeading{5.} Determine the probability that an electron is ejected
+from the $K$ shell of a large-$Z$ atom during nuclear $\alpha$ decay. The
+$\alpha$ particle moves slowly compared with a $K$ electron, although its
+time of emergence from the nucleus is short compared with the electron's
+orbital period (\emph{A.~B. Migdal}, 1941; \emph{J. Levinger}, 1953).
+
+\SolutionHeading After the $\alpha$ particle has emerged, the perturbation
+acting upon the electron is adiabatic. The effect sought is therefore
+determined chiefly by times close to the nonadiabatic ``switching instant,''
+when the $\alpha$ particle, already outside the nucleus and moving freely, is
+still at distances small compared with the radius of the $K$ orbit. The
+ionizing perturbation $V$ is then the departure of the combined nuclear and
+$\alpha$-particle field from the pure Coulomb field $Z/r$. For particles of
+atomic weights 4 and $A-4$, charges 2 and $Z-2$, and separation $vt$ (where
+$v$ is the relative speed of the nucleus and $\alpha$ particle), the dipole
+moment is
+\[
+  \frac{2(A-4)-(Z-2)4}{A}vt=\frac{2(A-2Z)}A\,vt.
+\]
+Thus the dipole term in the field of the nucleus and the $\alpha$ particle is
+\footnote{When the difference $A-2Z$ is small, it may also be necessary to
+include the next, quadrupole term.}
+\[
+  V=\frac{2(A-2Z)}A\,vt\frac z{r^3},
+\]
+where the $z$ axis points along $\mathbf v$. The matrix element of this
+perturbation can be reduced to that of $z$. Taking the matrix element of the
+electron's equation of motion $\ddot z=-Zz/r^3$, we obtain
+\[
+  \left(\frac z{r^3}\right)_{0k}=\frac{(E-E_0)^2}{Z}z_{0k}.
+\]
+\SourcePage{190}{193}
+By (41.2), the transition probability sought for either of the two $K$-shell
+electrons is
+\[
+  dw=2\left|\int_0^\infty V_{0k}e^{i(E_0-E)t}\,dt\right|^2dk
+  =\frac{8(A-2Z)^2v^2}{A^2Z^2}|z_{0k}|^2\frac{dk}{2\pi}.
+\]
+To evaluate the integral, an additional damping factor $e^{-\lambda t}$,
+$\lambda>0$, is inserted in the integrand, and $\lambda\to0$ is then taken in
+the result. For the matrix element of $z=r\cos\theta$, note that the initial
+orbital angular momentum is $l=0$, so $\cos\theta$ has a nonzero matrix
+element only for transition to a state with $l=1$. In that case
+\[
+  |(\cos\theta)_{01}|^2=\frac13,\qquad
+  |z_{0k}|^2=\frac13|r_{0k}|^2.
+\]
+Evaluation of $r_{0k}$ using the radial functions $R_{00}$ and $R_{k1}$ then
+gives
+\[
+  dw=\frac{2^{11}(A-2Z)^2v^2}{3A^2Z^6(1+k^2/Z^2)^5}
+  f\left(\frac kZ\right)k\,dk,
+\]
+where $f$ is the function defined in Problem 4.

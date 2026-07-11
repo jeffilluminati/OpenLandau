@@ -1,0 +1,218 @@
+\SourcePage{251}{254}
+\section{The spin operator}
+
+In the remainder of this chapter we shall not be concerned with the coordinate
+dependence of wave functions. When discussing, for example, the behavior of
+$\psi(x,y,z;\sigma)$ under a rotation of the coordinate system, one may
+suppose the particle to be at the origin. Its coordinates then remain
+unchanged by the rotation, and the results characterize specifically the
+dependence of $\psi$ on the spin variable $\sigma$.
+
+The variable $\sigma$ differs from ordinary variables (coordinates) in being
+discrete. The most general linear operator acting on functions of a discrete
+variable $\sigma$ may be written
+\begin{equation}
+ (\hat f\psi)(\sigma)=\sum_{\sigma'}f_{\sigma\sigma'}\psi(\sigma'),
+ \tag{55.1}
+\end{equation}
+where $f_{\sigma\sigma'}$ are constants. The parentheses around $\hat f\psi$
+emphasize that the following spin argument belongs not to the original
+function $\psi$, but to the function produced by $\hat f$. It is readily seen
+that the $f_{\sigma\sigma'}$ coincide with the matrix elements of the
+operator, defined by the usual rule (11.5).\footnote{Notice that the indices
+of the matrix elements on the right-hand side of (55.1) occur in an order
+which is, in a certain sense, the reverse of the usual order in (11.11).}
+Integration over the coordinates in (11.5) is now replaced by summation over
+the discrete variable, so the matrix element is defined by
+\begin{equation}
+ f_{\sigma_2\sigma_1}=\sum_\sigma
+ \psi_{\sigma_2}^*(\sigma)[\hat f\psi_{\sigma_1}(\sigma)].
+ \tag{55.2}
+\end{equation}
+\SourcePage{252}{255}
+Here $\psi_{\sigma_1}(\sigma)$ and $\psi_{\sigma_2}(\sigma)$ are
+eigenfunctions of $\hat s_z$ with eigenvalues $s_z=\sigma_1$ and
+$s_z=\sigma_2$. Each function describes a state in which the particle has a
+definite $s_z$; only one component of the wave function is nonzero.\footnote{More
+precisely, one should write
+$\psi_{\sigma_1}(\sigma)=\psi(x,y,z)\delta_{\sigma_1\sigma}$; coordinate
+factors irrelevant here have been omitted in (55.3).
+
+We emphasize once again the need to distinguish the specified eigenvalue
+$s_z$ ($\sigma_1$ or $\sigma_2$) from the independent variable $\sigma$.
+This is the reason for the difference between the notation in (11.11) and
+(55.1).}
+\begin{equation}
+ \psi_{\sigma_1}(\sigma)=\delta_{\sigma\sigma_1},\qquad
+ \psi_{\sigma_2}(\sigma)=\delta_{\sigma\sigma_2}.
+ \tag{55.3}
+\end{equation}
+According to (55.1),
+\[
+ (\hat f\psi_{\sigma_1})(\sigma)=
+ \sum_{\sigma'}f_{\sigma\sigma'}\psi_{\sigma_1}(\sigma')=
+ \sum_{\sigma'}f_{\sigma\sigma'}\delta_{\sigma'\sigma_1}
+ =f_{\sigma\sigma_1}.
+\]
+Substitution of this result and $\psi_{\sigma_2}(\sigma)$ in (55.2) makes
+that equation an identity, proving the assertion.
+
+Operators acting on functions of $\sigma$ can thus be represented by matrices
+of order $2s+1$. This applies in particular to the spin operator itself,
+whose action on a wave function is, by (55.1),
+\begin{equation}
+ (\hat{\mathbf s}\psi)(\sigma)=
+ \sum_{\sigma'}\mathbf s_{\sigma\sigma'}\psi(\sigma').
+ \tag{55.4}
+\end{equation}
+As stated above (at the end of \secref{54}), the matrices $\hat s_x$, $\hat s_y$,
+$\hat s_z$ coincide with the matrices $L_x$, $L_y$, $L_z$ obtained in
+\secref{27}, with $L,M$ replaced by $s,\sigma$:
+\begin{equation}
+ \begin{aligned}
+ (s_x)_{\sigma,\sigma-1}&=(s_x)_{\sigma-1,\sigma}
+   =\frac12\sqrt{(s+\sigma)(s-\sigma+1)},\\
+ (s_y)_{\sigma,\sigma-1}&=-(s_y)_{\sigma-1,\sigma}
+   =-\frac i2\sqrt{(s+\sigma)(s-\sigma+1)},\\
+ (s_z)_{\sigma\sigma}&=\sigma.
+ \end{aligned}
+ \tag{55.5}
+\end{equation}
+This defines the spin operator.
+
+In the most important case of spin $1/2$ ($s=1/2$, $\sigma=\pm1/2$), these
+are matrices of order two. They are written
+\begin{equation}
+ \hat{\mathbf s}=\frac12\hat{\boldsymbol\sigma},
+ \tag{55.6}
+\end{equation}
+\SourcePage{253}{256}
+where\footnote{When the matrices are written as in (55.7), their rows and
+columns are numbered by the values of $\sigma$, the row number corresponding
+to the first matrix-element index and the column number to the second. Here
+these numbers are $+1/2,-1/2$. According to (55.4), the operator acts by
+multiplying row $\sigma$ of the matrix by the wave-function components
+arranged as the column
+$\displaystyle\psi=\binom{\psi(1/2)}{\psi(-1/2)}$.}
+\begin{equation}
+ \hat\sigma_x=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
+ \hat\sigma_y=\begin{pmatrix}0&-i\\i&0\end{pmatrix},\qquad
+ \hat\sigma_z=\begin{pmatrix}1&0\\0&-1\end{pmatrix}.
+ \tag{55.7}
+\end{equation}
+The matrices (55.7) are called the \emph{Pauli matrices}. The matrix
+$\hat s_z=\frac12\hat\sigma_z$ is diagonal, as it must be when defined with
+respect to the eigenfunctions of $s_z$ itself.\footnote{Using the same letter
+for the spin projection and the Pauli matrices causes no ambiguity: the Pauli
+matrices carry a hat.}
+
+We note several special properties of the Pauli matrices. Direct
+multiplication of (55.7) gives
+\begin{equation}
+ \hat\sigma_y\hat\sigma_z=i\hat\sigma_x,\qquad
+ \hat\sigma_z\hat\sigma_x=i\hat\sigma_y,\qquad
+ \hat\sigma_x\hat\sigma_y=i\hat\sigma_z.
+ \tag{55.8}
+\end{equation}
+Combining these equalities with the general commutation rules (54.1), we find
+\begin{equation}
+ \hat\sigma_i\hat\sigma_k+\hat\sigma_k\hat\sigma_i=0\quad(i\ne k),
+ \tag{55.9}
+\end{equation}
+so the Pauli matrices anticommute. These relations readily give the useful
+formulas
+\begin{equation}
+ \hat{\boldsymbol\sigma}^{,2}=3,\qquad
+ (\hat{\boldsymbol\sigma}\mathbf a)
+ (\hat{\boldsymbol\sigma}\mathbf b)=
+ \mathbf a\mathbf b+i\hat{\boldsymbol\sigma}(\mathbf a\times\mathbf b),
+ \tag{55.10}
+\end{equation}
+where $\mathbf a$ and $\mathbf b$ are arbitrary vectors.\footnote{Terms on the
+right-hand sides of (55.8)--(55.10) that do not depend on
+$\hat{\boldsymbol\sigma}$ are, of course, to be understood as constants
+multiplied by the unit matrix of order two.} It follows from these relations
+that any scalar polynomial expression in the matrices $\hat\sigma_i$ reduces
+to terms independent of $\hat{\boldsymbol\sigma}$ and terms of first degree
+in $\hat{\boldsymbol\sigma}$. Hence any scalar function whatsoever of the
+operator $\hat{\boldsymbol\sigma}$ reduces to a linear function (see Problem
+1). Finally, the traces (sums of diagonal elements) of the Pauli matrices and
+their products are
+\begin{equation}
+ \Tr\hat\sigma_i=0,\qquad \Tr(\hat\sigma_i\hat\sigma_k)=2\delta_{ik}.
+ \tag{55.11}
+\end{equation}
+\SourcePage{254}{257}
+The following sections of this chapter give a detailed study of the spin
+properties of wave functions, including their behavior under arbitrary
+rotations of the coordinate system. Here we immediately note one important
+property: their behavior under rotations about the $z$ axis.
+
+Perform an infinitesimal rotation through $\delta\varphi$ about the $z$ axis.
+The operator of this rotation is expressed through the angular-momentum
+operator, here the spin, as $1+i\delta\varphi\hat s_z$. The functions
+$\psi(\sigma)$ therefore become $\psi(\sigma)+\delta\psi(\sigma)$, where
+\[
+ \delta\psi(\sigma)=i\delta\varphi\hat s_z\psi(\sigma)
+ =i\sigma\psi(\sigma)\delta\varphi.
+\]
+Writing this as $d\psi/d\varphi=i\sigma\psi(\sigma)$ and integrating, we find
+that a finite rotation through $\varphi$ transforms $\psi(\sigma)$ into
+\begin{equation}
+ \psi'(\sigma)=e^{i\sigma\varphi}\psi(\sigma).
+ \tag{55.12}
+\end{equation}
+In particular, a rotation through $2\pi$ multiplies the functions by
+$e^{2\pi i\sigma}$, the same factor for every $\sigma$, equal to
+$(-1)^{2s}$ (the integer $2\sigma$ always has the same parity as $2s$).
+Thus a complete rotation of the coordinate system about the $z$ axis restores
+the original wave functions of a particle with integral spin, whereas those
+of a particle with half-integral spin change sign.
+
+\ProblemHeading
+
+1. Reduce an arbitrary function of the scalar
+$a+\mathbf b\hat{\boldsymbol\sigma}$, which is linear in the Pauli matrices,
+to a linear function.
+
+\SolutionHeading
+
+To determine the coefficients in
+\[
+ f(a+\mathbf b\hat{\boldsymbol\sigma})=A+B\mathbf b\hat{\boldsymbol\sigma},
+\]
+choose the $z$ axis along $\mathbf b$. The eigenvalues of
+$a+\mathbf b\hat{\boldsymbol\sigma}$ are then $a\pm b$, and the corresponding
+eigenvalues of $f(a+\mathbf b\hat{\boldsymbol\sigma})$ are $f(a\pm b)$.
+Hence
+\[
+ A=\frac12[f(a+b)+f(a-b)],\qquad
+ B=\frac1{2b}[f(a+b)-f(a-b)].
+\]
+
+2. Determine the values of the scalar product $\mathbf s_1\mathbf s_2$ of
+the spins ($1/2$) of two particles in states where their resultant spin
+$\mathbf S=\mathbf s_1+\mathbf s_2$ has a definite value, 0 or 1.
+
+\SolutionHeading
+
+The general formula (31.3), valid for the addition of any two angular
+momenta, gives
+\[
+ \mathbf s_1\mathbf s_2=1/4\quad\text{for }S=1,\qquad
+ \mathbf s_1\mathbf s_2=-3/4\quad\text{for }S=0.
+\]
+
+3. Which powers of the operator $s_z$ for arbitrary spin $s$ are independent?
+
+\SolutionHeading
+
+The operator
+\[
+ (\hat s_z-s)(\hat s_z-s+1)\cdots(\hat s_z+s),
+\]
+formed from the differences between $\hat s_z$ and all its possible
+eigenvalues, gives zero when applied to any wave function and is therefore
+itself \SourcePageJoin{255}{258}zero. It follows that $(\hat s_z)^{2s+1}$
+can be expressed in terms of lower powers of $\hat s_z$, so only its powers
+from 1 through $2s$ are independent.

@@ -1,0 +1,148 @@
+\SourcePage{209}{212}
+\section{Boundary conditions in the semiclassical case}
+
+Let $x=a$ be a turning point, so that $U(a)=E$, and suppose $U>E$ for every
+$x>a$; the region to the right of the turning point is then classically
+inaccessible. The wave function must decay into the interior of this region.
+At a sufficient distance from the turning point it has the form
+\begin{equation}
+  \psi=\frac{C}{2\sqrt{|p|}}
+  \exp\left(-\frac1\hbar\int_a^x|p|\,dx\right),\qquad x>a,
+  \tag{47.1}
+\end{equation}
+corresponding to the first term of (46.10). To the left of the turning point,
+the wave function must instead be represented by a real combination of the
+two semiclassical solutions (46.9) of the Schrödinger equation:
+\begin{equation}
+  \psi=\frac{C_1}{\sqrt p}\exp\left(\frac i\hbar\int_a^x p\,dx\right)
+  +\frac{C_2}{\sqrt p}\exp\left(-\frac i\hbar\int_a^x p\,dx\right),
+  \qquad x<a.
+  \tag{47.2}
+\end{equation}
+
+To determine the coefficients in this combination, one must trace the change
+in the wave function from positive to negative values of $x-a$, beginning in
+the region where (47.1) applies. This path, however, passes through the
+neighborhood of the turning point, where the semiclassical approximation
+fails and the exact solution of the Schrödinger equation must be considered.
+For small $|x-a|$,
+\begin{equation}
+  E-U(x)\approx F_0(x-a),\qquad
+  F_0=-\left.\frac{dU}{dx}\right|_{x=a}<0;
+  \tag{47.3}
+\end{equation}
+in other words, this region presents the problem of motion in a constant
+field. The exact solution of the Schrödinger equation for that problem was
+found in §~24. The relation between the coefficients in (47.1) and (47.2) can
+be found by comparing with the asymptotic expressions (24.5) and (24.6) of
+that exact solution on the two sides of the turning point. It should be noted
+that (47.3) gives $p(x)=\sqrt{2mF_0(x-a)}$, and therefore
+\SourcePage{210}{213}
+\[
+  \frac1\hbar\int_a^x p\,dx
+  =\frac{2}{3\hbar}\sqrt{2mF_0}(x-a)^{3/2};
+\]
+this coincides with the expression in the argument of the exponential or sine
+in (24.5) or (24.6). The essential point in this reasoning is that the ranges
+of validity of expansion (47.3) and of the semiclassical approximation partly
+overlap. If the motion is semiclassical in almost the entire field region, as
+has been assumed, there are values of $|x-a|$ small enough for (47.3) to be
+valid and at the same time large enough to satisfy the semiclassical condition
+and permit the asymptotic forms (24.5), (24.6).\footnote{Indeed, expansion
+(47.3) applies for $|x-a|\ll L$, where $L$ is the characteristic distance over
+which the field $U(x)$ changes. The semiclassical condition (46.7), on the
+other hand, requires
+$|x-a|^{3/2}\gg\hbar/\sqrt{m|F_0|}$. These requirements are compatible because
+semiclassical motion far from the turning point (that is, for $|x-a|\sim L$)
+means that $L^{3/2}\gg\hbar/\sqrt{m|F_0|}$.}
+
+There is, however, another and methodically more instructive procedure that
+avoids any need to invoke the exact solution. Formally regard $\psi(x)$ as a
+function of the complex variable $x$, and pass from positive to negative
+$x-a$ along a path lying wholly far from $x=a$, so that the semiclassical
+condition is formally satisfied everywhere on the path (A.~Zwaan, 1929). We
+again consider values of $|x-a|$ for which (47.3) is valid as well. The wave
+function (47.1) then becomes
+\begin{equation}
+  \psi(x)=\frac{C}{2(2m|F_0|)^{1/4}(x-a)^{1/4}}
+  \exp\left\{-\frac1\hbar\sqrt{2m|F_0|}
+  \int_a^x\sqrt{x-a}\,dx\right\}.
+  \tag{47.4}
+\end{equation}
+
+First trace how this function changes when the point $x=a$ is passed from
+right to left along a semicircle of radius $\rho$ in the upper half of the
+complex $x$ plane. On this semicircle
+\[
+  x-a=\rho e^{i\varphi},\qquad
+  \int_a^x\sqrt{x-a}\,dx=\frac23\rho^{3/2}
+  \left(\cos\frac{3\varphi}{2}+i\sin\frac{3\varphi}{2}\right),
+\]
+where the phase $\varphi$ changes from 0 to $\pi$. The modulus of the
+exponential factor in (47.4) first increases (for
+$0<\varphi<2\pi/3$), and then decreases to unity. At the end of the passage,
+the exponent becomes purely imaginary and is equal to
+\[
+  -\frac i\hbar\int_a^x\sqrt{2m|F_0|(a-x)}\,dx
+  =-\frac i\hbar\int_a^x p(x)\,dx.
+\]
+\SourcePage{211}{214}
+Meanwhile, the prefactor in (47.4) changes under the continuation according to
+\[
+  (x-a)^{-1/4}\longrightarrow(a-x)^{-1/4}e^{-i\pi/4}.
+\]
+Thus the whole function (47.4) becomes the second term of (47.2), with
+$C_2=(1/2)Ce^{-i\pi/4}$.
+
+There is a simple explanation for why continuation through the upper half
+plane determines only $C_2$ in (47.2). If the change of (47.2) is followed
+along the same semicircle in the reverse direction, from left to right, its
+first term rapidly becomes exponentially small compared with the second at
+the beginning of the path. The semiclassical approximation cannot detect
+exponentially small terms in $\psi$ against a large principal term; this is
+why the first term in (47.2) is ``lost'' during this continuation.
+
+To determine $C_1$, the point must instead be passed from right to left along
+a semicircle in the lower half of the complex $x$ plane. The same reasoning
+shows that (47.4) then becomes the first term in (47.2), with
+$C_1=(1/2)Ce^{i\pi/4}$.
+
+Consequently, the wave function (47.1) for $x>a$ corresponds for $x<a$ to
+\[
+  \psi=\frac C{\sqrt p}\cos\left(\frac1\hbar\int_a^x p\,dx+\frac\pi4\right).
+\]
+The resulting connection rule may be written in a form independent of which
+side of the turning point contains the classically inaccessible region:
+\begin{equation}
+  \frac{2C}{\sqrt{|p|}}\exp\left\{-\frac1\hbar\int_a^x|p|\,dx\right\}
+  \longrightarrow
+  \frac C{\sqrt p}\cos\left\{\frac1\hbar\int_a^x p\,dx-\frac\pi4\right\}
+  \quad
+  \substack{U(x)>E\qquad U(x)<E}
+  \tag{47.5}
+\end{equation}
+(H.~A. Kramers, 1926).
+\SourcePage{212}{215}
+We emphasize once more a point already evident from the derivation: this rule
+is tied to a definite boundary condition imposed on one side of the turning
+point, and in this sense it is to be used only in one direction. Specifically,
+(47.5) was derived with the boundary condition $\psi\to0$ into the interior of
+the classically inaccessible region; it must be applied in passing from that
+region to the classically allowed region, as indicated by the arrow in
+(47.5).\footnote{A passage in the reverse direction loses its meaning in the
+sense that even a small change of the wave function on the right-hand side of
+(47.5) may produce an exponentially growing term in the function on the
+left-hand side.}
+
+If the classically accessible region is bounded at $x=a$ by an infinitely
+high potential wall, the boundary condition on the wave function at $x=a$ is
+$\psi=0$ (see §~18). The semiclassical approximation then remains valid right
+up to the wall, and the wave function is
+\begin{equation}
+  \begin{aligned}
+    \psi&=\frac C{\sqrt p}\sin\left(\frac1\hbar\int_a^x p\,dx\right),
+      &&x<a,\\
+    \psi&=0,&&x>a.
+  \end{aligned}
+  \tag{47.6}
+\end{equation}

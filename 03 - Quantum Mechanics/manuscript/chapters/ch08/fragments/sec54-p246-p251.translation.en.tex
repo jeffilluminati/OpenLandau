@@ -1,0 +1,220 @@
+\SourcePage{246}{249}
+\section{Spin}
+
+In both classical and quantum mechanics, conservation of angular momentum
+follows from the isotropy of space with respect to a closed system. This
+already reveals the connection between angular momentum and rotational
+symmetry. In quantum mechanics, however, that connection is especially deep:
+it becomes essentially the principal content of the concept of angular
+momentum. Moreover, the classical definition of a particle's angular momentum
+as the product $\mathbf r\times\mathbf p$ loses its direct meaning here,
+because the radius vector and momentum cannot be measured simultaneously.
+
+We saw in \secref{28} that specifying $l$ and $m$ determines the angular dependence
+of a particle's wave function, and hence all its symmetry properties under
+rotations. In its most general form, the statement of these properties amounts
+to giving the transformation law of wave functions when the coordinate system
+is rotated.
+
+The wave function $\psi_{LM}$ of a system of particles, with specified angular
+momentum $L$ and projection $M$, remains unchanged\footnote{Apart from an
+inessential phase factor.} only when the coordinate system is rotated about
+the $z$ axis. Any rotation that changes the direction of the $z$ axis makes
+the projection of the angular momentum on that axis cease to have a definite
+value. Thus, in the new coordinate axes, the wave function generally becomes
+a superposition (linear combination) of the $2L+1$ functions corresponding to
+the possible values of $M$ for the given $L$. One may say that rotations of
+the coordinate system transform these $2L+1$ functions $\psi_{LM}$ into one
+another.\footnote{In mathematical terminology, these functions realize the
+so-called \emph{irreducible representations} of the rotation group. The number
+of functions transformed into one another is called the \emph{dimension of
+the representation}; it is understood that no choice of other linear
+combinations of the functions can reduce this number.} The transformation
+law---the superposition coefficients as functions of the rotation angles of
+the coordi\SourcePageJoin{247}{250}nate axes---is completely fixed by the
+value of $L$. Angular momentum thereby acquires the meaning of a quantum
+number that classifies the states of a system by their transformation
+properties under rotations of the coordinate system. This aspect of angular
+momentum in quantum mechanics is particularly important because it is not
+directly tied to an explicit angular dependence of the wave functions: their
+law of transformation into one another can be stated independently, without
+reference to such a dependence.
+
+Consider a composite particle (an atomic nucleus, for example) that is at rest
+as a whole and is in a definite internal state. Besides a definite internal
+energy, it has angular momentum of definite magnitude $L$, associated with the
+motion of the particles within it; this angular momentum may have $2L+1$
+different spatial orientations. In other words, when treating the motion of a
+composite particle as a whole, we must assign to it, in addition to its
+coordinates, one discrete variable: the projection of its internal angular
+momentum on some selected direction in space.
+
+With the meaning of angular momentum understood as above, however, its origin
+becomes immaterial. We are led naturally to the idea of an ``intrinsic''
+angular momentum that must be assigned to a particle irrespective of whether
+it is ``composite'' or ``elementary.''
+
+Thus quantum mechanics requires an elementary particle to possess an
+``intrinsic'' angular momentum unrelated to its motion through space. This is
+a specifically quantum property of elementary particles (it disappears in
+the limit $\hbar\to0$) and therefore admits no classical interpretation in
+principle.\footnote{In particular, it would be entirely meaningless to picture
+the ``intrinsic'' angular momentum of an elementary particle as arising from
+rotation ``about its own axis.''}
+
+The intrinsic angular momentum of a particle is called its \emph{spin}, in
+distinction to the angular momentum associated with its motion in space,
+which is called \emph{orbital angular momentum}.\footnote{The physical idea
+that the electron possesses intrinsic angular momentum was proposed by
+Uhlenbeck and Goudsmit (G.~Uhlenbeck, S.~Goudsmit, 1925). Spin was introduced
+into quantum mechanics by Pauli (W.~Pauli, 1927).} This may refer either to an
+elementary particle or to a particle which, though composite, behaves as an
+elementary one in the range of phenomena under consideration (an atomic
+nucleus, for example). We denote a particle's spin, measured like orbital
+angular momentum in units of $\hbar$, by $s$.
+\SourcePage{248}{251}
+For a particle with spin, a wave-function description of the state must
+determine not only the probabilities of its various positions in space but
+also those of the possible orientations of its spin. Thus the wave function
+must depend not only on three continuous variables, the particle's
+coordinates, but also on a discrete \emph{spin variable}. This variable gives
+the spin projection on a selected direction in space (the $z$ axis) and takes
+a finite set of discrete values, denoted below by $\sigma$.
+
+Let $\psi(x,y,z;\sigma)$ be such a wave function. It is, in essence, a set of
+several coordinate functions, one for each value of $\sigma$; these functions
+will be called the \emph{spin components} of the wave function. The integral
+\[
+ \int |\psi(x,y,z;\sigma)|^2\,dV
+\]
+gives the probability that the particle has a specified value of $\sigma$.
+The probability that it is in the volume element $dV$, with arbitrary
+$\sigma$, is
+\[
+ dV\sum_\sigma |\psi(x,y,z;\sigma)|^2.
+\]
+
+When applied to the wave function, the quantum-mechanical spin operator acts
+on the spin variable $\sigma$. In other words, it transforms the components
+of the wave function into one another in a certain way. The form of this
+operator will be established below. From quite general considerations,
+however, it is already easy to see that $\hat s_x$, $\hat s_y$, and
+$\hat s_z$ obey the same commutation relations as the orbital-angular-momentum
+operators.
+
+The angular-momentum operator essentially coincides with the operator of an
+infinitesimal rotation. In deriving the orbital-angular-momentum operator in
+\secref{26}, we considered the result of applying a rotation to a function of the
+coordinates. Such a derivation is meaningless for spin angular momentum,
+since its operator acts on the spin variable rather than on the coordinates.
+To obtain the required commutation relations, we must therefore consider an
+infinitesimal rotation in general, as a rotation of the coordinate system.
+Carry out successive infinitesimal rotations about the $x$ and $y$ axes, and
+then about the same axes in the reverse order. Direct calculation readily
+shows that the difference between the two resulting operations is equivalent
+to an infinitesimal \SourcePage{249}{252}rotation about the $z$ axis, through
+an angle equal to the product of the angles about $x$ and $y$. We shall not
+give this simple calculation here. It again yields the usual commutation
+relations between the component operators of angular momentum, which must
+therefore hold also for the spin operators:
+\begin{equation}
+ \{\hat s_x,\hat s_y\}=i\hat s_z
+ \tag{54.1}
+\end{equation}
+with all their physical consequences.
+
+The commutation relations (54.1) determine the possible magnitudes and
+components of spin. The entire derivation in \secref{27}, formulas (27.7)--(27.9),
+used only the commutation relations and applies here without change, with $s$
+substituted for $L$. Formulas (27.7) show that the eigenvalues of the spin
+projection form a sequence differing by unity. We can no longer assert,
+however, that these values themselves must be integers, as they were for the
+orbital projection $L_z$. The derivation at the beginning of \secref{27} does not
+apply, since it uses (26.14), the expression for $\hat l_z$ specific to
+orbital angular momentum.
+
+The sequence of eigenvalues $s_z$ is bounded above and below by values equal
+in magnitude and opposite in sign; denote them by $\pm s$. The difference
+$2s$ between the largest and smallest values of $s_z$ must be an integer or
+zero. Hence $s$ may have the values $0$, $1/2$, $1$, $3/2$,~\dots
+
+Thus the eigenvalues of the square of the spin are
+\begin{equation}
+ s^2=s(s+1),
+ \tag{54.2}
+\end{equation}
+where $s$ may be either an integer, including zero, or a half-integer. For a
+given $s$, the spin component $s_z$ may take the $2s+1$ values
+$s,s-1,\ldots,-s$. Correspondingly, the wave function of a particle of spin
+$s$ has $2s+1$ components.\footnote{Since $s$ is a fixed number for each kind
+of particle, the spin angular momentum $\hbar s$ tends to zero in the
+classical limit $\hbar\to0$. This reasoning does not apply to orbital angular
+momentum, because $l$ may take arbitrary values. The classical limit requires
+$\hbar$ to tend to zero and $l$ simultaneously to infinity, while $\hbar l$
+remains finite.}
+\SourcePage{250}{253}
+Experiment shows that most elementary particles---electrons, positrons,
+protons, neutrons, $\mu$ mesons, and all hyperons ($\Lambda$, $\Sigma$,
+$\Xi$)---have spin $1/2$. There are also elementary particles, the $\pi$
+mesons and $K$ mesons, whose spin is zero.
+
+The total angular momentum of a particle is the sum of its orbital angular
+momentum $\mathbf l$ and spin $\mathbf s$. Their operators act on functions
+of entirely different variables and therefore commute with each other.
+
+The eigenvalues of the total angular momentum
+\begin{equation}
+ \mathbf j=\mathbf l+\mathbf s
+ \tag{54.3}
+\end{equation}
+are determined by the same ``vector-model'' rule as the sum of the orbital
+angular momenta of two different particles (\secref{31}). For specified $l$ and
+$s$, the total angular momentum may have the values
+$l+s,l+s-1,\ldots,|l-s|$. Thus an electron of spin $1/2$ with nonzero orbital
+angular momentum $l$ may have total angular momentum $j=l\pm1/2$; for $l=0$,
+of course, $j$ has only the single value $j=1/2$.
+
+The operator $\mathbf J$ of the total angular momentum of a system of
+particles is the sum of their individual $\mathbf j$ operators, so its values
+are again determined by the vector-model rules. It may be written
+\begin{equation}
+ \mathbf J=\sum_a\mathbf j_a=\mathbf L+\mathbf S,
+ \qquad \mathbf L=\sum_a\mathbf l_a,\quad
+ \mathbf S=\sum_a\mathbf s_a,
+ \tag{54.4}
+\end{equation}
+where $\mathbf S$ may be called the total spin and $\mathbf L$ the total
+orbital angular momentum of the system.
+
+If the total spin of a system is half-integral (or integral), the same is true
+of its total angular momentum, since orbital angular momentum is always
+integral. In particular, a system of an even number of identical particles
+necessarily has integral total spin, and therefore integral total angular
+momentum as well.
+
+The total-angular-momentum operators $\mathbf j$ of a particle (or
+$\mathbf J$ of a system) obey the same commutation rules as the orbital- or
+spin-angular-momentum operators, since these are the general commutation rules
+for any angular momentum. Formulas (27.13) for the matrix elements of angular
+momentum, which follow from these rules, likewise apply to any angular
+momentum, provided the matrix elements are defined with respect to the
+eigenfunctions of that same angular momentum. With the appropriate changes of
+notation, formulas (29.7)--(29.10) for matrix elements of arbitrary vector
+quantities also remain valid.
+\SourcePage{251}{254}
+\ProblemHeading
+
+A particle of spin $1/2$ is in a state with the definite value $s_z=1/2$.
+Find the probabilities of the possible values of the spin projection on an
+axis $z'$ inclined at angle $\theta$ to the $z$ axis.
+
+\SolutionHeading
+
+The mean spin vector $\bar{\mathbf s}$ is plainly directed along the $z$ axis
+and has magnitude $1/2$. Its projection on the $z'$ axis gives the mean spin
+in that direction as $\bar s_{z'}=(1/2)\cos\theta$. On the other hand,
+$\bar s_{z'}=(1/2)(w_+-w_-)$, where $w_\pm$ are the probabilities of the
+values $s_{z'}=\pm1/2$. Together with $w_++w_-=1$, this gives
+\[
+ w_+=\cos^2(\theta/2),\qquad w_-=\sin^2(\theta/2).
+\]

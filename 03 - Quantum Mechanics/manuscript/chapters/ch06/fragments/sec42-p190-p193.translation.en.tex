@@ -1,0 +1,135 @@
+\SourcePage{190}{193}
+\section{Transitions under a periodic perturbation}
+
+A different type of result is obtained for the probability of transition to
+continuous-spectrum states under a periodic perturbation. Suppose that at an
+initial time $t=0$ the system is in the $i$th stationary state of the discrete
+spectrum. Let the frequency $\omega$ of the periodic perturbation satisfy
+\begin{equation}
+  \hbar\omega>E_{\min}-E_i^{(0)},
+  \tag{42.1}
+\end{equation}
+where $E_{\min}$ is the energy at which the continuous spectrum begins.
+
+It follows at once from the results of \secref{40} that the principal role is played
+by continuous-spectrum states whose energies $E_f$ lie close to the
+``resonant'' energy $E_i^{(0)}+\hbar\omega$, that is, states for which
+$\omega_{fi}-\omega$ is small. For the same reason, only the first term in the
+perturbation matrix element (40.8), whose frequency
+$\omega_{fi}-\omega$ is close to zero, need be retained. Substituting this
+term in (40.5) and integrating gives
+\begin{equation}
+  a_{fi}=-\frac{i}{\hbar}\int_0^t V_{fi}(t)\,dt
+  =-F_{fi}\frac{\exp[i(\omega_{fi}-\omega)t]-1}
+                  {\hbar(\omega_{fi}-\omega)}.
+  \tag{42.2}
+\end{equation}
+\SourcePage{191}{194}
+The lower integration limit has been chosen so that $a_{fi}=0$ at $t=0$, in
+accordance with the initial condition.
+
+The squared modulus of $a_{fi}$ is
+\begin{equation}
+  |a_{fi}|^2=|F_{fi}|^2
+  \frac{4\sin^2\dfrac{\omega_{fi}-\omega}{2}t}
+       {\hbar^2(\omega_{fi}-\omega)^2}.
+  \tag{42.3}
+\end{equation}
+It is readily seen that, at large $t$, the function appearing here may be
+represented as proportional to $t$.
+
+To see this, use the formula
+\begin{equation}
+  \lim_{t\to\infty}\frac{\sin^2\alpha t}{\pi t\alpha^2}=\delta(\alpha).
+  \tag{42.4}
+\end{equation}
+For $\alpha\ne0$ the displayed limit is zero, while for $\alpha=0$,
+\[
+  \frac{\sin^2\alpha t}{t\alpha^2}=t,
+\]
+so the limit is infinite. On integrating over $d\alpha$ from $-\infty$ to
+$+\infty$ and making the substitution $\alpha t=\xi$, we obtain
+\[
+  \frac1\pi\int_{-\infty}^{+\infty}
+  \frac{\sin^2\alpha t}{t\alpha^2}\,d\alpha
+  =\frac1\pi\int_{-\infty}^{+\infty}
+  \frac{\sin^2\xi}{\xi^2}\,d\xi=1.
+\]
+Thus the function on the left-hand side of (42.4) satisfies all the
+requirements defining the delta function.
+
+Accordingly, for large $t$ we may write
+\[
+  |a_{fi}|^2=\frac1{\hbar^2}|F_{fi}|^2\pi t\,
+  \delta\left(\frac{\omega_{fi}-\omega}{2}\right),
+\]
+or, substituting $\hbar\omega_{fi}=E_f-E_i^{(0)}$ and using
+$\delta(ax)=\delta(x)/a$,
+\[
+  |a_{fi}|^2=\frac{2\pi}{\hbar}|F_{fi}|^2
+  \delta(E_f-E_i^{(0)}-\hbar\omega)t.
+\]
+
+The quantity $|a_{fi}|^2d\nu_f$ is the probability of transition from the
+initial state to states in a specified interval $d\nu_f$. At large $t$ it is
+proportional to the interval of
+\SourcePage{192}{195}
+time elapsed since $t=0$. The transition probability $dw_{fi}$ per unit time
+is therefore\footnote{It is readily verified that retaining the omitted
+second term in (40.8) would give additional expressions which, after division
+by $t$, tend to zero as $t\to+\infty$.}
+\begin{equation}
+  dw_{fi}=\frac{2\pi}{\hbar}|F_{fi}|^2
+  \delta(E_f-E_i^{(0)}-\hbar\omega)\,d\nu_f.
+  \tag{42.5}
+\end{equation}
+
+As expected, it is nonzero only for transitions to states with energy
+$E_f=E_i^{(0)}+\hbar\omega$. If the continuous-spectrum energy levels are
+nondegenerate, so that $\nu_f$ may be taken to mean the energy alone, the
+whole ``interval'' $d\nu_f$ reduces to a single state of energy
+$E=E_i^{(0)}+\hbar\omega$, and the probability of transition to this state is
+\begin{equation}
+  w_{Ei}=\frac{2\pi}{\hbar}|F_{Ei}|^2.
+  \tag{42.6}
+\end{equation}
+
+It is also instructive to derive (42.5) in another way. Instead of switching
+the periodic perturbation on at the definite instant $t=0$, let it grow
+slowly from $t=-\infty$ according to the exponential law $e^{\lambda t}$,
+where $\lambda$ is positive and is ultimately allowed to tend to zero
+(\emph{adiabatic switching}). The initial condition $a_{fi}=0$ is then imposed
+at $t=-\infty$. The perturbation matrix element is now
+\[
+  V_{fi}=F_{fi}e^{i(\omega_{fi}-\omega)t+\lambda t},
+\]
+and in place of (42.2) we write
+\begin{equation}
+  a_{fi}=-\frac{i}{\hbar}\int_{-\infty}^{t}V_{fi}(t)\,dt
+  =-F_{fi}\frac{\exp[i(\omega_{fi}-\omega)t+\lambda t]}
+                  {\hbar(\omega_{fi}-\omega-i\lambda)}.
+  \tag{42.7}
+\end{equation}
+Hence
+\[
+  |a_{fi}|^2=\frac1{\hbar^2}|F_{fi}|^2
+  \frac{e^{2\lambda t}}{(\omega_{fi}-\omega)^2+\lambda^2}.
+\]
+The transition probability per unit time is determined by
+\[
+  \frac d{dt}|a_{fi}|^2=2\lambda|a_{fi}|^2.
+\]
+Now use the formula
+\begin{equation}
+  \lim_{\lambda\to0}\frac{\lambda}
+  {\pi(\alpha^2+\lambda^2)}=\delta(\alpha),
+  \tag{42.8}
+\end{equation}
+\SourcePage{193}{196}
+which is valid in the same sense as (42.4). Taking the limit
+$\lambda\to0$ gives
+\[
+  \frac d{dt}|a_{fi}|^2\longrightarrow
+  \frac{2\pi}{\hbar^2}|F_{fi}|^2\delta(\omega_{fi}-\omega),
+\]
+and we return once more to (42.5).

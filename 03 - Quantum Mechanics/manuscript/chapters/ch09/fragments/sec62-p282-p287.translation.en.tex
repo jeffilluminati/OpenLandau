@@ -1,0 +1,251 @@
+\SourcePage{282}{285}
+\section{Exchange interaction}
+
+The fact that the Schrödinger equation does not take account of particle spin
+does not diminish the value of either the equation or the results obtained
+from it. The reason is that the electric interaction of particles is
+independent of their spins\footnote{This statement holds only in the
+nonrelativistic approximation. When relativistic effects are included, the
+interaction of charged particles depends on spin.}.
+
+Mathematically, the Hamiltonian of a system of electrically interacting
+particles (in the absence of a magnetic field) contains no spin operators and
+therefore does not act on the spin variables when applied to the wave
+function. The Schrödinger equation is thus satisfied by each component of the
+wave function separately. In other words, the system's wave function can be
+written as a product
+\[
+ \psi(\xi_1,\xi_2)=\chi(\sigma_1,\sigma_2,\ldots)
+ \varphi(\mathbf r_1,\mathbf r_2,\ldots),
+\]
+where $\varphi$ depends only on the particle coordinates and $\chi$ only on
+their spins. We shall call the former the \emph{coordinate} or
+\emph{orbital} wave function, and the latter the \emph{spin} wave function.
+
+The Schrödinger equation essentially determines only the coordinate function
+$\varphi$, leaving $\chi$ arbitrary. Whenever the spins themselves are not of
+interest, the Schrödinger equation may therefore be used with the coordinate
+function alone as the wave function, as was done in the preceding chapters.
+
+Despite this independence of the electric interaction from spin, however, the
+energy of a system has a distinctive dependence on its total spin, arising
+ultimately from the indistinguishability principle for identical particles.
+
+Consider a system consisting of two identical particles. Solving the
+Schrödinger equation gives a series of energy levels, each associated with a
+definite symmetric or antisymmetric coordinate wave function
+$\varphi(\mathbf r_1,\mathbf r_2)$.
+
+Indeed, because the particles are identical, the system's Hamiltonian, and
+hence its Schrödinger equation, is invariant under their interchange. If the
+energy levels are nondegenerate, interchanging $\mathbf r_1$ and $\mathbf r_2$
+can change $\varphi(\mathbf r_1,\mathbf r_2)$ only by a constant factor;
+\SourcePage{283}{286}
+performing the interchange again shows that this factor can only be
+$\pm1$\footnote{If degeneracy is present, linear combinations of the
+functions belonging to the level can always be chosen to satisfy the same
+condition.}.
+
+Suppose first that the particles have zero spin. There is then no spin factor,
+and the wave function is simply $\varphi(\mathbf r_1,\mathbf r_2)$, which must
+be symmetric because zero-spin particles obey Bose statistics. Consequently,
+not all the energy levels obtained by formally solving the Schrödinger
+equation can actually occur: those associated with antisymmetric $\varphi$
+are impossible for this system.
+
+Interchanging two identical particles is equivalent to inversion of the
+coordinate system, whose origin is chosen at the midpoint of the line joining
+them. Under inversion, on the other hand, $\varphi$ is multiplied by
+$(-1)^l$, where $l$ is the orbital angular momentum of their relative motion
+(see \secref{30}). It follows that a system of two identical zero-spin particles can
+have only even orbital angular momentum.
+
+Next let the system contain two spin-$1/2$ particles, say electrons. Its
+complete wave function, the product of $\varphi(\mathbf r_1,\mathbf r_2)$ and
+$\chi(\sigma_1,\sigma_2)$, must be antisymmetric under interchange of the two
+particles. A symmetric coordinate function must therefore be accompanied by
+an antisymmetric spin function, and conversely. Write the spin function as a
+second-rank spinor $\chi^{\lambda\mu}$, with each index referring to the spin
+of one electron. A function symmetric in the two spins corresponds to a
+symmetric spinor, $\chi^{\lambda\mu}=\chi^{\mu\lambda}$, and an antisymmetric
+function to an antisymmetric spinor,
+$\chi^{\lambda\mu}=-\chi^{\mu\lambda}$. A symmetric second-rank spinor
+describes a system of total spin one, whereas an antisymmetric spinor reduces
+to a scalar and corresponds to zero spin.
+
+We thus obtain the following result. Energy levels associated with symmetric
+solutions $\varphi(\mathbf r_1,\mathbf r_2)$ of the Schrödinger equation can
+actually occur
+\SourcePage{284}{287}
+when the system's total spin is zero, that is, when the two electron spins are
+``antiparallel'' and add to zero. Energy values associated with antisymmetric
+$\varphi(\mathbf r_1,\mathbf r_2)$ require total spin one, so that the two
+electron spins are ``parallel.''
+
+In other words, the possible energies of an electron system depend on its
+total spin. This permits one to speak of a distinctive interaction of the
+particles that produces this dependence. It is called the \emph{exchange
+interaction}. It is a purely quantum effect and disappears completely, like
+spin itself, in the limiting transition to classical mechanics.
+
+For the two-electron system just considered, each energy level corresponds to
+one definite value of total spin, either 0 or 1. As will be seen below
+(\secref{63}), this one-to-one correspondence between spin and energy levels remains
+valid for systems containing any number of electrons. It does not, however,
+hold for systems of particles whose spin exceeds $1/2$.
+
+Consider two particles of arbitrary spin $s$. Their spin wave function is a
+spinor of rank $4s$,
+\[
+ \chi^{\overbrace{\lambda\mu\ldots}^{2s}
+       \overbrace{\rho\sigma\ldots}^{2s}},
+\]
+half of whose indices, $2s$, refer to one particle, while the other half refer
+to the second. The spinor is symmetric in the indices within each group.
+Interchanging the particles interchanges every index $\lambda,\mu,\ldots$ in
+the first group with the indices $\rho,\sigma,\ldots$ in the second. To obtain
+the spin function of a state with total spin $S$, contract this spinor over
+$2s-S$ pairs of indices (each pair containing one index from each group) and
+symmetrize over the remaining indices. The result is a symmetric spinor of
+rank $2S$.
+
+Contraction over a pair of spinor indices, however, means forming a
+combination antisymmetric in those indices. On interchanging the particles,
+the spin wave function is therefore multiplied by $(-1)^{2s-S}$.
+
+The complete wave function of the two-particle system must, under their
+interchange, be multiplied by $(-1)^{2s}$, which is $+1$ for integer $s$ and
+$-1$ for half-integer $s$. Hence the symmetry of the coordinate wave function
+under interchange is determined by the factor $(-1)^S$, which depends only on
+$S$.
+\SourcePage{285}{288}
+Thus the coordinate wave function of two identical particles is symmetric for
+even total spin and antisymmetric for odd total spin.
+
+Recalling the connection between interchange and inversion, we also conclude
+that for even (odd) spin $S$ the system can have only even (odd) orbital
+angular momentum.
+
+Here too there is a dependence between the possible energies and the total
+spin, but it is not one-to-one. Levels associated with symmetric
+(antisymmetric) coordinate wave functions can occur for every even (odd)
+value of $S$.
+
+Let us count all the states of two particles with even and odd values of $S$.
+The quantity $S$ takes $2s+1$ values, $2s,2s-1,\ldots,0$. For each $S$ there
+are $2S+1$ states distinguished by the $z$ component of spin, making
+$(2s+1)^2$ states altogether. Let $s$ be an integer. Among the $2s+1$ values
+of $S$, $s+1$ are even and $s$ are odd. The total number of even-$S$ states is
+\[
+ \sum_{S=0,2,\ldots,2s}(2S+1)=(2s+1)(s+1);
+\]
+the remaining $s(2s+1)$ states have odd $S$. Similarly, for half-integer $s$
+there are $s(2s+1)$ states with even $S$ and $(s+1)(2s+1)$ with odd $S$.
+
+\ProblemHeading
+
+\textbf{1.} Determine the exchange splitting of the energy levels of a
+two-electron system, treating the electron interaction as a perturbation.
+
+\SolutionHeading Let the particles, when their interaction is neglected,
+occupy states with orbital wave functions $\varphi_1(\mathbf r_1)$ and
+$\varphi_2(\mathbf r_2)$. States of the system with total spin $S=0$ and
+$S=1$ correspond respectively to the symmetrized and antisymmetrized products
+\[
+ \varphi=\frac1{\sqrt2}[\varphi_1(\mathbf r_1)\varphi_2(\mathbf r_2)
+ \pm\varphi_1(\mathbf r_2)\varphi_2(\mathbf r_1)].
+\]
+The mean values of the particle-interaction operator
+$U(\mathbf r_2-\mathbf r_1)$ in these states are $A\pm J$, where
+\[
+ A=\iint U|\varphi_1(\mathbf r_1)|^2|\varphi_2(\mathbf r_2)|^2\,dV_1dV_2,
+\]
+\[
+ J=\iint U\varphi_1(\mathbf r_1)\varphi_1^*(\mathbf r_2)
+ \varphi_2(\mathbf r_2)\varphi_2^*(\mathbf r_1)\,dV_1dV_2.
+\]
+The integral $J$ is called the \emph{exchange integral}. Dropping the additive
+constant $A$, which is not of exchange character, gives the level shifts
+$\Delta E_0=J$, $\Delta E_1=-J$, where the subscript is $S$. These quantities
+\SourcePage{286}{289}
+can be represented as eigenvalues of the spin \emph{exchange
+operator}\footnote{This operator was introduced by Dirac.}
+\begin{equation}
+ \widehat V_{\mathrm{ex}}=-\frac12J(1+4\hat{\mathbf s}_1\hat{\mathbf s}_2)
+ \tag{1}
+\end{equation}
+(for the eigenvalues of $\mathbf s_1\mathbf s_2$, see problem 2 of \secref{55}).
+
+If, for example, the electrons belong to different atoms, the exchange
+integral decreases exponentially as the distance $R$ between the atoms
+increases. Its integrand shows that the integral is determined by the
+``overlap'' of the wave functions $\varphi_1(\mathbf r_1)$ and
+$\varphi_2(\mathbf r_2)$. Using the asymptotic decrease of discrete-spectrum
+wave functions (cf. (21.6)), one finds
+\[
+ J\sim\exp[-(\varkappa_1+\varkappa_2)R],\qquad
+ \varkappa_1=\frac1\hbar\sqrt{2m|E_1|},\qquad
+ \varkappa_2=\frac1\hbar\sqrt{2m|E_2|},
+\]
+where $E_1,E_2$ are the electron energy levels in the two atoms.
+
+\textbf{2.} Do the same for a system of three electrons.
+
+\SolutionHeading Using formula (1) of problem 1, write the operator for the
+pairwise exchange interaction of three electrons as
+\begin{equation}
+ \widehat V_{\mathrm{ex}}=-\sum J_{ab}(1/2+2\hat{\mathbf s}_a\hat{\mathbf s}_b),
+ \tag{1}
+\end{equation}
+where the sum is over the particle pairs 12, 13, and 23. From (55.6), the
+matrix elements of $\hat{\mathbf s}_a\hat{\mathbf s}_b$ between states with
+different pairs $\sigma_a,\sigma_b$ are
+\[
+ \langle1/2,1/2|\mathbf s_a\mathbf s_b|1/2,1/2\rangle=1/4,
+ \quad \langle1/2,-1/2|\mathbf s_a\mathbf s_b|1/2,-1/2\rangle=-1/4,
+\]
+\[
+ \langle1/2,-1/2|\mathbf s_a\mathbf s_b|-1/2,1/2\rangle=1/2.
+\]
+First determine the energy for the largest possible projection of the total
+spin, $M_S=\sigma_1+\sigma_2+\sigma_3=3/2$; this also determines the energy of
+the state with $S=3/2$. The corresponding diagonal matrix element of (1) is
+\[
+ \Delta E_{3/2}=-(J_{12}+J_{13}+J_{23}).
+\]
+
+Now pass to states with $M_S=1/2$. This value can occur in three ways,
+according to which one of $\sigma_1,\sigma_2,\sigma_3$ equals $-1/2$ (the other
+two being $1/2$). A cubic secular equation would therefore result. The
+calculation can be simplified at once by observing that one root must be the
+energy already found for $S=3/2$; hence the secular equation must be divisible
+by $\Delta E-\Delta E_{3/2}$. In this case this observation avoids calculation
+of the constant term of the cubic\footnote{This device is especially useful
+in analogous calculations for systems with larger numbers of particles.}.
+
+The leading terms of the equation are
+\[
+ \begin{aligned}
+ (\Delta E)^3&+(J_{12}+J_{13}+J_{23})(\Delta E)^2\\
+ &+[J_{12}J_{13}+J_{12}J_{23}+J_{13}J_{23}
+ -(J_{12}^2+J_{13}^2+J_{23}^2)]\Delta E+\ldots=0,
+ \end{aligned}
+\]
+and division by $\Delta E+J_{12}+J_{13}+J_{23}$ gives the two energy levels
+\SourcePage{287}{290}
+belonging to states of spin $S=1/2$:
+\[
+ \Delta E_{1/2}=\pm[J_{12}^2+J_{13}^2+J_{23}^2-J_{12}J_{13}
+ -J_{12}J_{23}-J_{13}J_{23}]^{1/2}.
+\]
+There are thus three energy levels in all, in agreement with the count made
+in problem 1 of \secref{63}.
+
+\textbf{3.} From which states can a ${}^{8}\mathrm{Be}$ nucleus decay into
+two $\alpha$ particles?
+
+\SolutionHeading Since an $\alpha$ particle has no spin, a system of two
+$\alpha$ particles can have only even orbital angular momentum (equal to its
+total angular momentum), and its states have even parity. The stated decay is
+therefore possible only from even-parity states of ${}^{8}\mathrm{Be}$ with
+even total angular momentum.
