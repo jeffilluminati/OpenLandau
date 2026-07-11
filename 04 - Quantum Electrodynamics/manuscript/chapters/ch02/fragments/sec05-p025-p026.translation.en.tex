@@ -1,0 +1,33 @@
+\SourcePage{25}{30}
+\section{The electromagnetic field in quantum theory}
+
+Treating the field as a collection of photons is the sole description that fully captures the physical meaning of the electromagnetic field within quantum theory. It replaces the classical characterization through field strengths. The field strengths themselves enter the mathematical apparatus of the photon picture as operators of second quantization.
+
+It is well known that a quantum system behaves classically when the quantum numbers characterizing its stationary states become large. For the free electromagnetic field (within a given volume) this requires that the oscillator quantum numbers --- that is, the photon occupation numbers~$N_{\mathbf{k}\alpha}$ --- be large. The fact that photons obey Bose statistics is of profound importance in this context. In the mathematical formalism, the link between Bose statistics and classical field behavior is encoded in the commutation rules for $\hat{c}_{\mathbf{k}\alpha}$ and $\hat{c}^+_{\mathbf{k}\alpha}$. When~$N_{\mathbf{k}\alpha}$ is large, so that the matrix elements of these operators are also large, the unity appearing on the right-hand side of the commutation relation~(2.16) may be dropped, giving
+\[
+\hat{c}_{\mathbf{k}\alpha}\hat{c}^+_{\mathbf{k}\alpha} \simeq \hat{c}^+_{\mathbf{k}\alpha}\hat{c}_{\mathbf{k}\alpha},
+\]
+i.e.\ the operators go over into mutually commuting classical quantities $c_{\mathbf{k}\alpha}$, $c^*_{\mathbf{k}\alpha}$ that determine the classical field strengths.
+
+The quasi-classicality condition for the field requires, however, a further refinement. The point is that if all the numbers~$N_{\mathbf{k}\alpha}$ are large, then upon summing over every state~$\mathbf{k}\alpha$ the field energy is in any case infinite, rendering the condition meaningless.
+
+A physically sensible formulation of the quasi-classicality criterion rests on examining values of the field averaged over some small time interval~$\Delta t$. If one writes the classical electric field~$\bar{\mathbf{E}}$ (or the magnetic field~$\bar{\mathbf{H}}$) as a Fourier integral over time, then upon time-averaging over an interval~$\Delta t$ only those Fourier components whose frequencies satisfy $\omega\Delta t \lesssim 1$ contribute appreciably to the mean value of~$\bar{\mathbf{E}}$; in the opposite limit the oscillating factor $e^{-i\omega t}$ nearly averages to zero. Consequently, in establishing the quasi-classicality condition for the time-averaged field, one need consider only those quantum oscillators whose frequencies satisfy $\omega \lesssim 1/\Delta t$. It suffices to require that the quantum numbers of these oscillators be large.
+\SourcePage{26}{31}
+The number of oscillators with frequencies between zero and $\omega \sim 1/\Delta t$ (referred to the volume $V = 1$) is of order\footnote{In this section we use ordinary units.}
+\begin{equation}
+\left(\frac{\omega}{c}\right)^3 \sim \frac{1}{(c\Delta t)^3}.
+\tag{5.1}
+\end{equation}
+The total energy of the field per unit volume is of order $\bar{\mathbf{E}}^2$. Dividing this quantity by the number of oscillators and by a characteristic energy of one photon ($\sim \hbar\omega$), one obtains an estimate for the photon occupation numbers
+\[
+N_\mathbf{k} \sim \frac{\bar{\mathbf{E}}^2 c^3}{\hbar\omega^4}.
+\]
+Demanding that this number be large, we arrive at the inequality
+\begin{equation}
+|\mathbf{E}| \gg \frac{\sqrt{\hbar c}}{(c\Delta t)^2}.
+\tag{5.2}
+\end{equation}
+
+This is the sought-after condition permitting a classical treatment of the time-averaged (over intervals~$\Delta t$) field. We see that the field must be sufficiently strong --- all the stronger, the shorter the averaging interval~$\Delta t$. For time-varying fields this interval must not, of course, exceed the characteristic periods over which the field changes appreciably. Consequently, sufficiently weak time-varying fields can under no circumstances be quasi-classical. Only for static (time-independent) fields may one set $\Delta t \to \infty$, so that the right-hand side of the inequality~(5.2) vanishes. This means that a static field is always classical.
+
+It has already been noted that the classical expressions for the electromagnetic field in the form of a superposition of plane waves must be treated as operator-valued in the quantum theory. The physical meaning of these operators is, however, rather limited. Indeed, a physically meaningful field operator ought to yield vanishing field values in the photon-vacuum state. Yet the expectation value of the squared-field operator~$\hat{\mathbf{E}}^2$ in the ground state, which coincides up to a factor with the zero-point energy of the field, turns out to be infinite (by ``expectation value'' we mean the quantum-mechanical average, i.e.\ the corresponding diagonal matrix element of the operator). This divergence cannot be circumvented even by any formal subtraction procedure (as can be done for the field energy), since in the present case we would need to carry out the subtraction through some sensible modification of the operators~$\hat{\mathbf{E}}$, $\hat{\mathbf{H}}$ themselves (rather than their squares), which proves to be impossible.
