@@ -1,0 +1,152 @@
+\SourcePage{285}{290}
+\section{Reactions with polarised particles}
+
+In this paragraph we shall show on simple examples how the polarisation state of the particles participating in the reaction is taken into account in the computation of the cross section of scattering.
+
+Let there be in the initial and in the final state one electron each. Then the amplitude of scattering has the form
+\begin{equation}
+M_{fi} = \bar{u}'Au(\equiv \bar{u}'_i A_{ik} u_k),
+\tag{65.1}
+\end{equation}
+where $u$ and $u'$ are the bispinor amplitudes of the initial and the final electrons, $A$ is a certain matrix (depending on the momenta and polarisations of the remaining particles participating in the reaction, if there are any).
+
+The cross section is proportional to $|M_{fi}|^2$. We have
+\[
+(\bar{u}Au)^* = u'^+\gamma^{0*}A^*u^* = u^*A^+\gamma^{0+}u',
+\]
+or
+\begin{equation}
+(\bar{u}'Au)^* = \bar{u}\bar{A}u',
+\tag{65.2}
+\end{equation}
+where\,\footnote{In connection with the necessity to form the matrix $\bar{A}$ let us note for future reference the following easily verified equalities:
+\begin{equation}
+\bar{\gamma}^\mu = \gamma^\mu,\quad \overline{\gamma^\mu\gamma^\nu\ldots\gamma^\rho} = \gamma^\rho\ldots\gamma^\nu\gamma^\mu,\quad \bar{\gamma}^5 = -\gamma^5,\quad \overline{\gamma^5\gamma^\mu} = \gamma^5\gamma^\mu.
+\tag{65.2a}
+\end{equation}}
+\[
+\bar{A} = \gamma^0 A^+\gamma^0.
+\]
+Thus,
+\begin{equation}
+|M_{fi}|^2 = (\bar{u}'Au)(\bar{u}\bar{A}u') \equiv \bar{u}'_i\bar{u}_k A_{kl}\bar{A}_{mi}\,u_l\bar{u}_m.
+\tag{65.3}
+\end{equation}
+
+If the initial electron was in a mixed (partially polarised) state with the density matrix~$\rho$ and if we are interested in the cross section of the process with the formation of the final electron in a definite predetermined polarisation state~$\rho'$, then we should replace the products of the bispinor components of the amplitudes
+\[
+u'_i\bar{u}'_k \to \rho'_{ik},\qquad u_l\bar{u}_m \to \rho_{lm}.
+\]
+Then
+\begin{equation}
+|M_{fi}|^2 = \mathrm{Sp}\,(\rho'A\rho\bar{A}).
+\tag{65.4}
+\end{equation}
+The density matrices $\rho$ and $\rho'$ are given by formula~(29.13)
+\begin{equation}
+\rho = \tfrac{1}{2}(\gamma p + m)[1 - \gamma^5(\gamma a)]
+\tag{65.5}
+\end{equation}
+(and analogously for $\rho'$).
+
+If the initial electron is not polarised, then
+\begin{equation}
+\rho = \tfrac{1}{2}(\gamma p + m).
+\tag{65.6}
+\end{equation}
+
+\SourcePage{286}{291}
+The substitution of this expression is equivalent to averaging over polarisations of the electron. If it is required to determine the cross section of scattering with arbitrary polarisation of the final electron, then one should also put $\rho' = (\gamma p' + m)/2$ and double the result; this operation is equivalent to summation over polarisations of the electron. Thus, we obtain
+\begin{equation}
+\frac{1}{2}\sum_\mathrm{polar}|M_{fi}|^2 = \frac{1}{2}\,\mathrm{Sp}\,\{(\gamma p' + m)A(\gamma p + m)\bar{A}\},
+\tag{65.7}
+\end{equation}
+where $\sum_\mathrm{polar}$ denotes summation over the initial and final polarisations, and the factor~$1/2$ converts one of the summations into an averaging.
+
+The density matrix $\rho'$ in~(65.4) is an auxiliary concept, characterising, in essence, the properties of the detector (selecting this or that polarisation of the final electron), and not the process of scattering as such. There arises the question of the polarisation state of the electron that is produced by the process of scattering itself. If $\rho^{(f)}$ is the density matrix of this state, then the probability of detecting the electron in state~$\rho'$ is obtained by projecting $\rho^{(f)}$ onto $\rho'$, i.e.\ by forming the trace $\mathrm{Sp}(\rho^{(f)}\rho')$. This quantity will also be proportional to the corresponding cross section, i.e.\ to $|M_{fi}|^2$. Comparing with~(65.4), we conclude that
+\begin{equation}
+\rho^{(f)} \sim A\rho\bar{A}.
+\tag{65.8}
+\end{equation}
+
+Since it is known in advance that $\rho^{(f)}$ must have the form~(65.5) with some 4-vector $a^{(f)}$, the matter reduces to the determination of the latter. This could be done from formula~(29.14), but it is even simpler to proceed as will be indicated below.
+
+We saw in~\S\,29 that the components of the 4-vector~$a$ are expressed through the components of the 3-vector $\boldsymbol{\zeta}$---the mean (doubled) value of the spin of the electron in its rest frame. The polarisation states of electrons are completely determined by these vectors, and it is natural to express through them also the cross section.
+
+Obviously, the square $|M_{fi}|^2$ will be linear in each of the vectors $\boldsymbol{\zeta}$ and $\boldsymbol{\zeta}'$, pertaining to the initial and final electrons. As a function of $\boldsymbol{\zeta}'$ it will have the form
+\begin{equation}
+|M_{fi}|^2 = \alpha + \boldsymbol{\beta}\boldsymbol{\zeta}',
+\tag{65.9}
+\end{equation}
+where $\alpha$ and $\boldsymbol{\beta}$ are themselves linear functions of~$\boldsymbol{\zeta}$. The vector $\boldsymbol{\zeta}'$ in~(65.9) is the given polarisation of the final electron, selected by the detector. The vector $\boldsymbol{\zeta}^{(f)}$, corresponding to the density matrix~$\rho^{(f)}$, is easy to find as follows. According to what was said above
+\[
+|M_{fi}|^2 \sim \mathrm{Sp}\,(\rho'\rho^{(f)}).
+\]
+
+\SourcePage{287}{292}
+By virtue of the relativistic invariance of this quantity it can be computed in any system of reference. In the rest frame of the final electron, according to~(29.20)
+\[
+\rho'\rho^{(f)} \sim (1 + \boldsymbol{\sigma}\boldsymbol{\zeta}')(1 + \boldsymbol{\sigma}\boldsymbol{\zeta}^{(f)}).
+\]
+Therefore
+\[
+|M_{fi}|^2 \sim 1 + \boldsymbol{\zeta}'\boldsymbol{\zeta}^{(f)}
+\]
+and, comparing with~(65.9), we find that
+\begin{equation}
+\boldsymbol{\zeta}^{(f)} = \boldsymbol{\beta}/\alpha.
+\tag{65.10}
+\end{equation}
+Thus, having computed the cross section as a function of the parameter~$\boldsymbol{\zeta}'$, we thereby also determine the polarisation $\boldsymbol{\zeta}^{(f)}$.
+
+In more complex cases (more than one electron both in the initial and final state) the computations are carried out according to the scheme described analogously.
+
+Thus, if in the beginning and end there are two electrons each, the amplitude of scattering acquires the form
+\[
+M_{fi} = (\bar{u}'_1 Au_1)(\bar{u}'_2 Bu_2) + (\bar{u}'_2 Cu_1)(\bar{u}'_1 Du_2),
+\]
+where $u_1$, $u_2$ are the bispinor amplitudes of the initial, and $u'_1$, $u'_2$ those of the final electrons. In forming the square $|M_{fi}|^2$ there will appear terms of the type
+\[
+|\bar{u}'_1 Au_1|^2\,|\bar{u}'_2 Bu_2|^2
+\]
+and of the type
+\[
+(\bar{u}'_1 Au_1)(\bar{u}'_2 Bu_2)(\bar{u}'_2 Cu_1)^*(\bar{u}'_1 Du_2)^*.
+\]
+The first ones reduce to products of two traces of the type~(65.4), and the second to traces of the type
+\[
+\mathrm{Sp}\,(\rho'_1 A\rho_1 C\rho'_2 B\rho_2 D).
+\]
+
+Positrons are described by amplitudes of ``negative frequency'' $u(-p)$. For reactions with the participation of positrons the difference from what was said above reduces to the fact that as density matrices one should use expressions differing from~(65.5), (65.6) only by a change of sign in front of~$m$ (cf.~(29.16), (29.17)).
+
+Let us now turn to the polarisation states of photons participating in the reaction.
+
+The polarisation of each initial photon enters the amplitude of scattering linearly in the form of the 4-vector~$e$, and of each final photon in the form $e^*$. In both cases in the cross section (i.e.\ in the square $|M^2_{fi}|$) the 4-tensor $e_\mu e^*_\nu$ enters. For the transition to the case of an arbitrary partially polarised state this tensor should
+
+\SourcePage{288}{293}
+be replaced by the four-dimensional density matrix---a 4-tensor $\rho_{\mu\nu}$:
+\begin{equation}
+e_\mu e^*_\nu \to \rho_{\mu\nu}.
+\tag{65.11}
+\end{equation}
+In particular, for an unpolarised photon, according to~(8.15),
+\begin{equation}
+\rho_{\mu\nu} = -g_{\mu\nu}/2.
+\tag{65.12}
+\end{equation}
+Thus, averaging over polarisations of a photon reduces to the tensor contraction over the corresponding two tensor indices $\mu\nu$ in $|M^2_{fi}|$\,\footnote{Expression~(65.12) as it were reduces averaging over two really possible polarisations of the photon to averaging over four independent directions of the 4-vector~$e$.}.
+
+If it is required to perform not averaging, but a summation over polarisations of the photon, one should replace $e_\mu e^*_\nu$ by a quantity twice as large:
+\begin{equation}
+e_\mu e^*_\nu \to -g_{\mu\nu}.
+\tag{65.13}
+\end{equation}
+
+The density matrix of a polarised photon is given by formula~(8.17). The choice of the 4-vectors $e^{(1)}$, $e^{(2)}$ appearing in this expression is dictated usually by the specific conditions of the problem. In some cases these vectors may be connected with definite spatial directions in a given system of reference. In others it is more convenient to connect them with the characteristic 4-vectors of the problem---the 4-momenta of the particles.
+
+In~(8.17) the polarisation of the photon is described by the Stokes parameters, constituting the ``vector'' $\boldsymbol{\xi} = (\xi_1, \xi_2, \xi_3)$. As for the electron, it is necessary to distinguish the polarisation $\boldsymbol{\xi}^{(f)}$ of the final photon as such from the polarisation $\boldsymbol{\xi}'$ of it selected by the detector. If the square of the amplitude of scattering is known as a function of the parameter $\boldsymbol{\xi}'$:
+\begin{equation}
+|M_{fi}|^2 = \alpha + \boldsymbol{\beta}\boldsymbol{\xi}',
+\end{equation}
+then the polarisation $\boldsymbol{\xi}^{(f)} = \boldsymbol{\beta}/\alpha$, analogously to formula~(65.10).

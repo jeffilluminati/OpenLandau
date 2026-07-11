@@ -1,0 +1,186 @@
+\SourcePage{300}{305}
+\section{Symmetry of helicity amplitudes}
+
+The requirements imposed by symmetry with respect to the transformations $P$, $C$, $T$ (if, of course, the given process of particle interaction possesses this symmetry), lead to the appearance of definite relations between different helicity amplitudes and thereby reduce the number of independent amplitudes\,\footnote{The number of independent amplitudes itself does not depend, of course, on the concrete form of the representation of the matrix $S^J$ and remains the same for any choice of spin variables.}.
+
+To establish these relations we shall first clarify the symmetry properties of the helicity states of two particles. Let us consider the particles in the system of their centre of inertia. One has momentum $\mathbf{p}_1 \equiv \mathbf{p}$ and helicity $\lambda_1$ relative to the direction $\mathbf{p}$, and the other has momentum $\mathbf{p}_2 = -\mathbf{p}$ and helicity $\lambda_2$ relative to the direction $-\mathbf{p}$. If we define the helicities of both particles relative to one and the same direction $\mathbf{p}$, they will be $\lambda_1$ and $-\lambda_2$. Correspondingly they will be described by plane waves with amplitudes $u^{(\lambda_1)}_\mathbf{p}$ and $u^{(-\lambda_2)}_\mathbf{p}$. The system of both particles is described by a function (multicomponent) $u^{(\lambda_1\lambda_2)}_\mathbf{p}$, composed of products of $u^{(\lambda_1)}_\mathbf{p}$ and $u^{(-\lambda_2)}_\mathbf{p}$.
+
+Regarding now the system as one particle with helicity $\Lambda$ in the direction $\mathbf{n} = \mathbf{p}/|\mathbf{p}|$, we may write the wave function (in the momentum representation), i.e.\ as a function of the direction $\mathbf{n}$ for states with definite values of $J$, $M$, $\lambda_1$, $\lambda_2$ (and also the total energy $\varepsilon$):
+\begin{equation}
+\psi_{JM\lambda_1\lambda_2} = u^{(\lambda_1\lambda_2)}_\mathbf{p}\,D^{(J)}_{\Lambda M}(\mathbf{n})\sqrt{\frac{2J+1}{4\pi}},\qquad \Lambda = \lambda_1 - \lambda_2
+\tag{69.1}
+\end{equation}
+(cf.~(68.8)). Since $\Lambda$ is the projection of the total angular momentum on $\mathbf{p}$, it must be
+\begin{equation}
+|\Lambda| \leqslant J.
+\tag{69.2}
+\end{equation}
+
+\SourcePage{301}{306}
+According to~(16.14) under inversion
+\begin{equation}
+\hat{P}u^{(\lambda_1\lambda_2)}(\mathbf{n}) = \eta_1\eta_2(-1)^{s_1 + s_2 - \lambda_1 + \lambda_2}\,u^{(-\lambda_1 - \lambda_2)}(\mathbf{n}),
+\tag{69.3}
+\end{equation}
+where $\eta_1$, $\eta_2$ are the intrinsic parities of the particles. Using also~(16.10), we find the transformation law of the functions~(69.1):
+\begin{equation}
+\hat{P}\psi_{JM\lambda_1\lambda_2} = \eta_1\eta_2(-1)^{s_1 + s_2 - J}\,\psi_{JM\lambda_2\lambda_1},
+\tag{69.4}
+\end{equation}
+where $\Lambda = \lambda_1 - \lambda_2$.
+
+For identical particles only symmetric (for bosons) or only antisymmetric (for fermions) states with respect to permutation are admissible. Since the first case occurs for integer and the second for half-integer spin of the particle~$s$, in both cases the helicity states of two identical particles can be written in the form of linear combinations
+\[
+[1 + (-1)^{2s}\hat{P}_{12}]\psi_{JM\lambda_1\lambda_2},
+\]
+or, according to~(69.5)
+\begin{equation}
+\psi_{JM\lambda_1\lambda_2} + (-1)^J\,\psi_{JM\lambda_2\lambda_1}.
+\tag{69.6}
+\end{equation}
+It is noteworthy that this combination has a single form for both bosons and fermions.
+
+For a system of particle and antiparticle the result of the permutation is expressed by the same formula~(69.5). However, unlike the case of identical particles, here both permutational symmetries are admissible, i.e.\ both combinations
+\begin{equation}
+\psi^\pm = \psi_{JM\lambda_1\lambda_2} \pm (-1)^J\,\psi_{JM\lambda_2\lambda_1}.
+\tag{69.7}
+\end{equation}
+These states possess definite charge parities. The charge conjugation operation $C$ can be represented as the result of a full permutation of all variables of the two particles (spinor and charge), with a subsequent inverse permutation of spin variables (helicities). The result of the first operation must coincide with the result of the permutation in the system of two identical particles. From this it is clear that with the upper sign in~(69.7) (coinciding with the permutational sign) the system will be charge-even, and with the lower charge-odd:
+\[
+\hat{C}\psi^\pm = \pm\psi^\pm.
+\]
+
+\SourcePage{302}{307}
+Finally, let us consider the time-reversal operation. The wave function of a particle at rest with spin $s$ and its projection $\sigma$ is transformed according to
+\[
+\hat{T}\psi_{s\sigma} = (-1)^{s - \sigma}\,\psi_{s,-\sigma}
+\]
+(see~III, (60.2)). The wave function of two particles in the centre of inertia system can also be treated (with respect to its transformation properties) as the wave function of a ``particle at rest'' with angular momentum $J$ and its projection $M$. As for the helicities $\lambda_1$, $\lambda_2$, they do not change: time reversal changes the signs of the vectors of momentum and angular momentum, and the product $\mathbf{jp}$ therefore does not change. Thus,
+\begin{equation}
+\hat{T}\psi_{JM\lambda_1\lambda_2} = (-1)^{J - M}\,\psi_{JM\lambda_1\lambda_2}.
+\tag{69.8}
+\end{equation}
+
+Now we can directly write down the symmetry relations for the helicity amplitudes.
+
+If the interaction is $P$-invariant, then for the reaction
+\[
+a + b \to c + d
+\]
+the amplitudes of the transitions
+\[
+|\lambda_a\lambda_b\rangle \to |\lambda_c\lambda_d\rangle\quad\text{and}\quad \hat{P}|\lambda_a\lambda_b\rangle \to \hat{P}|\lambda_c\lambda_d\rangle
+\]
+should coincide (at given $J$ and $\varepsilon$).
+
+Using~(69.4), we find therefore
+\begin{equation}
+\langle\lambda_c\lambda_d|S^J|\lambda_a\lambda_b\rangle =
+\frac{\eta_1\eta_c}{\eta_a\eta_b}\,(-1)^{s_a - s_b - s_c - s_d}\,\langle -\lambda_c, -\lambda_d|S^J| -\lambda_a, -\lambda_b\rangle.
+\tag{69.9}
+\end{equation}
+
+If, instead of states with definite helicities, we choose states with definite parities, i.e.\ combinations
+\[
+\frac{1}{\sqrt{2}}\,(\psi_{JM\lambda_1\lambda_2} \pm \hat{P}\psi_{JM\lambda_1\lambda_2})
+\]
+(where $\lambda_1\lambda_2 = \lambda_a\lambda_b$ or $\lambda_c\lambda_d$), then the amplitudes of transitions not conserving parity vanish.
+
+Time reversal interchanges initial and final states. Therefore $T$-invariance leads to the relations
+\begin{equation}
+\langle\lambda_c\lambda_d|S^J(\varepsilon)|\lambda_a\lambda_b\rangle = \langle\lambda_a\lambda_b|S^J(\varepsilon)|\lambda_c\lambda_d\rangle.
+\tag{69.10}
+\end{equation}
+
+\SourcePage{303}{308}
+These two amplitudes, however, refer to different processes (direct and inverse reactions). Only in the case of elastic scattering both processes of scattering coincide, and~(69.10) represents a definite connection between the helicity amplitudes of one and the same reaction.
+
+At elastic scattering of two identical particles the number of distinct amplitudes is further reduced also by virtue of the permutation symmetry. We saw that for given $J$ only either symmetric or only antisymmetric states with respect to $\lambda_1$, $\lambda_2$ are realised. Thereby conservation of angular momentum also automatically implies conservation of symmetry with respect to permutation of helicities.
+
+An analogous situation occurs also at elastic scattering of a particle on an antiparticle (or upon conversion of such a pair into another pair, i.e.\ at a reaction of the type $a + \bar{a} \to b + \bar{b}$). For given $J$ there exist both symmetric and antisymmetric states with respect to $\lambda_1$, $\lambda_2$, but these states correspond to different charge parities of the system.
+
+\SourcePage{304}{309}
+$P$-invariance upon decay is expressed by the relation
+\begin{equation}
+\langle\lambda_b\lambda_c|S^J|\lambda_a\rangle = \frac{\eta_b\eta_c}{\eta_a}\,(-1)^{s_a - s_b - s_c}\,\langle -\lambda_b, -\lambda_c|S^J| -\lambda_a\rangle
+\tag{69.13}
+\end{equation}
+(here~(69.4) has been used alongside~(69.3), and also the law of transformation of the wave function of one particle~(16.16)).
+
+When the primary particle is truly neutral, further restrictions arise if $C$-parity is conserved. Here one must distinguish three cases. If the products of the decay are also truly neutral, then $C_a = C_b C_c$; this condition either forbids the decay entirely, or is satisfied, leading to no new restrictions. If particles $b$ and $c$ are different, then $C$-invariance establishes a relation between the amplitudes of different processes: $a \to b + c$ and $a \to \bar{b} + \bar{c}$. Finally, for the decay $a \to b + \bar{b}$ there arises a restriction connected with the fact that at given charge parity $C$ and given total angular momentum $J = s_a$ the system may be only in states either symmetric or antisymmetric with respect to helicity---in dependence on the parity of the number $J$ and the sign of~$C$.
+
+By virtue of the universal $CPT$-invariance the existence of $T$-invariance implies also $CP$-invariance. The latter leads to the equality of the amplitudes of two reactions, of which one is obtained from the other by replacing all particles by antiparticles (and changing the sign of the helicities), with $\lambda_{\bar{\pi}} = -\lambda_a, \ldots$\,\footnote{Since these two amplitudes refer to different reactions, the interference between which is impossible, the phase factor in~(69.11) is meaningless and one may put it equal to~1. The real content is only the following from~(69.11) equality of cross sections.}:
+\begin{equation}
+\langle\lambda_c\lambda_d|S^J|\lambda_a\lambda_b\rangle = \langle\bar{\lambda}_c\bar{\lambda}_d|S^J|\bar{\lambda}_a\bar{\lambda}_b\rangle.
+\tag{69.11}
+\end{equation}
+
+The number of independent amplitudes is the same for all cross-channels of one and the same generalised reaction; therefore for the determination of this number one can consider any one of the channels. Thus, the same number of independent amplitudes describes elastic scattering $a + b \to a + b$ and annihilation $a + \bar{a} \to b + \bar{b}$. The restrictions imposed in the first case by $T$-invariance are equivalent to the restrictions imposed in the second case by $C$-invariance.
+
+Let us dwell also on the reaction of decay of one particle into two: $a \to b + c$. In the centre of inertia system (the rest system of particle $a$) we have $\mathbf{p}_b = -\mathbf{p}_c$. Multiplying $\mathbf{p}_b$ by the equality $\mathbf{j}_a = \mathbf{j}_b + \mathbf{j}_c$, we obtain
+\begin{equation}
+\lambda_a = \lambda_b - \lambda_c
+\tag{69.12}
+\end{equation}
+(the helicity $\lambda_a$ of the primary particle is defined as the projection of its spin onto the direction of the momentum of one of the secondary particles). This relation is, one could say, a consequence of the additional symmetry that the given process possesses: axial symmetry around $\mathbf{p}_b$ and $\mathbf{p}_c$. If the spin of the primary particle $s_a < s_b + s_c$, then the relation~(69.12) restricts the admissible sets of values $\lambda_a$, $\lambda_b$, $\lambda_c$ and thereby the number of independent helicity amplitudes of the decay. The total angular momentum $J$ in this case coincides with the spin of the primary particle $s_a$, and so is a fixed quantity.
+
+\SourcePage{305}{310}
+$CP$-invariance leads to the equality of the amplitudes of decays $a \to b + c$ and $\bar{a} \to \bar{b} + \bar{c}$:
+\begin{equation}
+\langle\lambda_b\lambda_c|S^J|\lambda_a\rangle = \langle\bar{\lambda}_b\bar{\lambda}_c|S^J|\bar{\lambda}_a\rangle
+\tag{69.14}
+\end{equation}
+where $\lambda_{\bar{\pi}} = -\lambda_a, \ldots$, i.e.\ to the equality of probabilities of the decay of the particle and antiparticle. However, this result presupposes the fulfilment of $CP$-invariance, which is not a universal property of nature. The universal character is borne by $CPT$-invariance; this requirement alone would lead to only the equality
+\[
+\langle\lambda_b\lambda_c|S^J|\lambda_a\rangle = \langle\bar{\lambda}_b\bar{\lambda}_c|S^J|\bar{\lambda}_a\bar{\lambda}_b\rangle,
+\]
+the right-hand side of which refers to the process inverse to the decay. We shall see below (see~\S\,71) that the condition of $CPT$-invariance together with the requirements of unitarity does nevertheless lead to a certain, though more restricted, relation between the probabilities of decay of a particle and antiparticle.
+
+\bigskip
+\begin{center}\textbf{Problems}\end{center}
+\smallskip
+\textbf{1.} With the help of~(69.6) obtain the classification of possible states of a system of two photons.
+
+\textit{Solution.} In this case $\lambda_1$, $\lambda_2 = \pm 1$. For even $J$ ($J > 0$), according to~(69.6), the three symmetric in $\lambda_1\lambda_2$ states are admissible:
+\[
+\text{a)}\;\psi_{JM11}\qquad \text{b)}\;\psi_{JM{-1}{-1}'}\qquad \text{c)}\;\psi_{JM1{-1}} + \psi_{JM{-1}1}.
+\]
+For odd $J$ ($J > 1$) one antisymmetric state is admissible:
+\[
+\text{d)}\;\psi_{JM1{-1}} - \psi_{JM{-1}1}.
+\]
+States~c) and d) possess in the same time definite ($+1$) parity: according to~(69.4)
+\[
+\hat{P}(\psi_{JM1{-1}} \pm \psi_{JM{-1}1}) = \pm(-1)^J(\psi_{JM1{-1}} \pm \psi_{JM{-1}1});
+\]
+the multiplier $\pm(-1)^J = 1$, since the upper sign corresponds to even and the lower to odd values of $J$. States a) and b) themselves do not possess definite parity, but composed of them combinations
+
+\SourcePage{306}{311}
+\[
+\text{a')}\;\psi_{JM11} + \psi_{JM{-1}{-1}},\qquad \text{b')}\;\psi_{JM11} - \psi_{JM{-1}{-1}}
+\]
+we get even and odd states. For $J = 0$ there is only the condition $|\lambda_1 - \lambda_2| \leqslant J$, so that only state~c) survives, and there remains only one even and one odd state from combinations~a') and b'). Finally, for $J = 1$ the only admissible state at odd $J$ is d), which is forbidden, since for it $\lambda = 2 > J$. Thus we arrive at the table of admissible states~(9.5).
+
+\textbf{2.} In the non-relativistic approximation the total angular momentum $J$ of the system is the resultant of the spin $S$ and the orbital angular momentum $L$. For the system of two particles find the connection between the states $|JLSM\rangle$ and $|JM\lambda_1\lambda_2\rangle$.
+
+\textit{Solution.} According to the rule of composition of wave functions at the addition of angular momenta we have
+\[
+\psi_{JLSM} = \sum\{\psi_{s_1\sigma_1}\psi_{s_2\sigma_2}\langle\sigma_1\sigma_2|SMS_j\rangle\}\psi_{LM_L}\langle M_L M_S|JM\rangle.\tag{1}
+\]
+Here $\psi_{s\sigma}$ are the eigenfunctions of spin $s$ with projection $\sigma$ (onto a fixed axis $z$), $\psi_{LM_L}$ are the same for the orbital angular momentum $L$ with projection $M_L$; the expressions in brackets correspond to the addition of $s_1$ and $s_2$ into $S$, after which $S$ is added with $L$ into $J$; the summation is over all $m$-indices. Let us express all functions in the momentum representation (the momentum $\mathbf{p} \equiv \mathbf{p}_1$), and the spin functions $\psi_{s\sigma}$ through the functions of helicity states $\psi_{s\lambda}$, using formula~(58.7) (see~III) for the $D$-functions; then we get the coefficients
+\[
+\langle JM\lambda_1\lambda_2|JLSM\rangle,\tag{3}
+\]
+where
+\[
+\psi_{JM\lambda_1\lambda_2} = \psi_{s_1\lambda_1}\psi_{s_2,-\lambda_2}\,D^{(J)}_{\Lambda M}(\mathbf{n})\sqrt{\frac{2J+1}{4\pi}},\qquad \Lambda = \lambda_1 - \lambda_2,
+\]
+and the coefficients
+\[
+\langle JM\lambda_1\lambda_2|JLSM\rangle =
+(-i)^L(-1)^{s_1 - s_2 + S}\sqrt{(2L+1)(2S+1)}\begin{pmatrix}s_1 & s_2 & S\\ \lambda_1 & -\lambda_2 & -\Lambda\end{pmatrix}\begin{pmatrix}L & S & J\\ 0 & \Lambda & -\Lambda\end{pmatrix}.\tag{3}
+\]
+By virtue of the unitarity of the transformation (2)
+\[
+\langle JLSM|JM\lambda_1\lambda_2\rangle = \langle JM\lambda_1\lambda_2|JLSM\rangle^*.
+\]

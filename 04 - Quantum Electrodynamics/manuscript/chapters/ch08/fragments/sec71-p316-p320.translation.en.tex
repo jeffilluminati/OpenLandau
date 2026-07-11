@@ -1,0 +1,164 @@
+\SourcePage{311}{316}
+\section{Unitarity condition}
+
+The scattering matrix must be unitary: $\hat{S}\hat{S}^+ = 1$, or in matrix elements:
+\begin{equation}
+(SS^+)_{fi} = \sum_n S_{fn}\,S^*_{in} = \delta_{fi},
+\tag{71.1}
+\end{equation}
+where the index $n$ enumerates all possible intermediate states\,\footnote{The meaning of the symbol $\delta_{fi}$ in~(71.1) depends, of course, on the concrete choice of quantum numbers and on the normalisation of wave functions of the system. It must be defined so that $\sum_f \delta_{if} = 1$.}. This is the most general property of the $S$-matrix, which
+
+\SourcePage{312}{317}
+ensures the conservation of normalisation and orthogonality of the states in the reaction (cf.~III, \S\S\,125, 144). In particular, the diagonal elements of the equality~(71.1) express simply the fact that the sum of probabilities of transition from a given initial state to any final state equals unity:
+\[
+\sum_n|S_{ni}|^2 = 1.
+\]
+
+Substituting in~(71.1) the matrix elements in the form~(64.2), we get
+\[
+T_{fi} - T^*_{if} = i(2\pi)^4\sum_n\delta^{(4)}(P_f - P_n)\,T_{fn}\,T^*_{in} =
+\]
+\begin{equation}
+= i(2\pi)^4\sum_n\delta^{(4)}(P_f - P_n)\,T^*_{nf}\,T_{ni}.
+\tag{71.2}
+\end{equation}
+The two equivalent forms of the right-hand side of the equality are obtained when writing the condition of unitarity correspondingly in the form $\hat{S}\hat{S}^+ = 1$ or $\hat{S}^+\hat{S} = 1$, with different orderings of the factors $\hat{S}$ and $\hat{S}^+$.
+
+Let us note that the left-hand side of this equality is linear, while the right-hand side is quadratic in the matrix elements~$T$. Therefore if the interaction (like, for example, the electromagnetic) contains a small parameter, then the left-hand side will be of the first order, and the right-hand side of the second order of smallness. In the first approximation the latter can therefore be neglected, and then
+\begin{equation}
+T_{fi} = T^*_{if},
+\tag{71.3}
+\end{equation}
+i.e.\ the matrix $T$ is Hermitian.
+
+To lend the condition of unitarity~(71.2) a more concrete form it is necessary to specify what precisely is meant by the summation over~$n$. Let us do this for the collision of two particles, assuming that the laws of conservation permit only elastic scattering; then we will also assume that in~(71.2) the intermediate states are also two-particle (the so-called ``two-particle'' condition of unitarity). Making it for the collision of two particles, we find after summing over~$n$:
+\[
+\sum_n \to \int\frac{V^2 d^3p''_1 d^3p''_2}{(2\pi)^6}\sum_{\lambda''}.
+\]
+
+Eliminating the $\delta$-functions in the same way as was done in~\S\,64, we obtain the ``two-particle'' condition of unitarity in the form
+\begin{equation}
+M_{fi} - M^*_{if} = \frac{i}{(4\pi)^2}\sum_{\lambda''}\frac{|\mathbf{p}|}{\varepsilon}\int M_{fn}\,M^*_{in}\,do'',
+\tag{71.4}
+\end{equation}
+
+\SourcePage{313}{318}
+where $\mathbf{p}$ is the momentum, $\varepsilon$ is the total energy in the system of the centre of inertia. The normalisation volume disappears from this relation after the transition from the amplitudes $T_{fi}$ to the amplitudes $M_{fi}$, according to~(64.10):
+\[
+M_{fi} - M^*_{if} = \frac{i}{(4\pi)^2}\sum_{\lambda''}\frac{|\mathbf{p}|}{\varepsilon}\int M_{fn}\,M^*_{in}\,do''.
+\]
+
+Let us define the amplitude of elastic scattering so that it would be
+\begin{equation}
+d\sigma = |\langle\mathbf{n}'\lambda'|f|\mathbf{n}\lambda\rangle|^2\,do'
+\tag{71.5}
+\end{equation}
+($\mathbf{n}$, $\mathbf{n}'$ are the directions of the initial and final momenta; $\lambda$, $\lambda'$ are the initial and final spin quantum numbers). Comparison with~(64.19) shows that
+\begin{equation}
+\langle\mathbf{n}'\lambda'|f|\mathbf{n}\lambda\rangle = \frac{1}{8\pi\varepsilon}\,M_{fi},
+\tag{71.6}
+\end{equation}
+and the condition of unitarity~(71.4) takes the form
+\begin{equation}
+\langle\mathbf{n}'\lambda'|f|\mathbf{n}\lambda\rangle - \langle\mathbf{n}\lambda|f|\mathbf{n}'\lambda'\rangle^* =
+\frac{i|\mathbf{p}|}{2\pi}\sum_{\lambda''}\int\langle\mathbf{n}'\lambda'|f|\mathbf{n}''\lambda''\rangle\langle\mathbf{n}\lambda|f|\mathbf{n}''\lambda''\rangle^*\,do'',
+\tag{71.7}
+\end{equation}
+generalising the familiar formula of non-relativistic theory (see~III, (125.8)).
+
+The amplitude of elastic scattering at zero angle is called the diagonal matrix element $T_{ii}$, in which the final state coincides with the initial\,\footnote{Let us emphasise that this refers to elements of the matrix $T$, not $S$, i.e.\ the diagonal element is taken after the exclusion from $S$ of the unit matrix.}. For this amplitude the condition of unitarity~(71.2) takes the form
+\begin{equation}
+2\,\mathrm{Im}\,T_{ii} = (2\pi)^4\sum_n|T_{in}|^2\delta^{(4)}(P_i - P_n).
+\tag{71.8}
+\end{equation}
+
+The right-hand side of this equality differs only by the multiplier from the total cross section of all possible scattering processes from the given initial state~$i$; let us denote this cross section through $\sigma_t$. Indeed, summing the probability~(64.5) over the states~$f$ and dividing by the flux density $j$, we find
+\[
+\sigma_t = \frac{(2\pi)^4 V}{j}\sum_n|T_{in}|^2\delta^{(4)}(P_i - P_n),
+\]
+so that
+\[
+\frac{2V}{j}\,\mathrm{Im}\,T_{ii} = \sigma_t.
+\]
+
+The normalisation volume disappears from here after the replacement $T_{ii} = M_{ii}/(2\varepsilon_1 V \cdot 2\varepsilon_2 V)$ ($\varepsilon_1$, $\varepsilon_2$ are the energies of the particles in the system of the centre of inertia) and the substitution of $j$ from~(64.17):
+\begin{equation}
+\mathrm{Im}\,M_{ii} = 2|\mathbf{p}|\varepsilon\sigma_t.
+\tag{71.9}
+\end{equation}
+
+\SourcePage{314}{319}
+This formula constitutes the content of the so-called \textit{optical theorem}. If we introduce the amplitude of elastic scattering, it assumes its usual form
+\begin{equation}
+\mathrm{Im}\langle\mathbf{n}\lambda|f|\mathbf{n}\lambda\rangle = \frac{|\mathbf{p}|}{4\pi}\,\sigma_t
+\tag{71.10}
+\end{equation}
+(cf.~III, (142.10)).
+
+If the $S$-matrix is given in the angular-momentum representation (partial amplitudes), then by virtue of its diagonality with respect to $J$ the condition of unitarity is written for each value of $J$ separately.
+
+Thus, if only elastic scattering is possible, the condition of unitarity has the form
+\begin{equation}
+\sum_{\lambda''}\langle\lambda'|S^J|\lambda''\rangle\langle\lambda|S^J|\lambda''\rangle^* = \delta_{\lambda\lambda'}.
+\tag{71.11}
+\end{equation}
+By virtue of the $T$-invariance the matrix of elastic scattering is symmetric (see~(69.10)) and therefore can be reduced to diagonal form. After this the condition of unitarity simply requires the equality of the moduli of the diagonal elements to unity; it is customary in such a case to write
+\begin{equation}
+S^J_{Jn} = \exp(2i\delta_{Jn}),
+\tag{71.12}
+\end{equation}
+where $\delta_{Jn}$ are real constants---the scattering phases (the index $n$ labels the diagonal elements at given~$J$). In the general case, when the number $N$ of independent amplitudes exceeds the rank of the (square) matrix $S^J$, the coefficients of the transformation effecting the diagonalisation of~$S^J$ depend on $J$ and $E$ (in these coefficients, alongside the principal values of the matrix, are also contained $N$ independent quantities, equivalent to the original $N$ independent helicity amplitudes). But if $N$ coincides with the rank of the matrix $S^J$ (and thereby with the number of its principal values), then the coefficients of diagonalisation are universal. In this case the diagonalising states are states with definite parities (since, of course, the determination has no definite helicities).
+
+Condition~(71.11), expressed with the help of partial amplitudes $\langle\lambda'|f^J|\lambda\rangle$, has the form
+\begin{equation}
+\langle\lambda'|f^J|\lambda\rangle - \langle\lambda|f^J|\lambda'\rangle^* = 2i|\mathbf{p}|\sum_{\lambda''}\langle\lambda'|f^J|\lambda''\rangle\langle\lambda|f^J|\lambda''\rangle^*,
+\tag{71.13}
+\end{equation}
+as is easy to verify by substituting in~(71.7) the expansion~(68.13) and using the orthonormality of the $D$-functions. For $T$-invariance the matrix $\langle\lambda'|f^J|\lambda\rangle$ is symmetric, and~(71.13) takes the form
+\begin{equation}
+\mathrm{Im}\langle\lambda'|f^J|\lambda\rangle = |\mathbf{p}|\langle\lambda'|f^J f^{J+}|\lambda\rangle.
+\tag{71.14}
+\end{equation}
+
+If the matrix is diagonalised, then its diagonal elements
+\begin{equation}
+f^J_n = \frac{1}{2i|\mathbf{p}|}\,(\exp(2i\delta_{Jn}) - 1) = \frac{1}{|\mathbf{p}|}\,\exp(i\delta_{Jn})\sin\delta_{Jn}.
+\tag{71.15}
+\end{equation}
+
+\SourcePage{315}{320}
+Finally, let us indicate some consequences arising from the condition of unitarity together with the requirement of $CPT$-invariance. By virtue of the latter
+\begin{equation}
+T_{fi} = T_{\bar{i}\bar{f}},
+\tag{71.16}
+\end{equation}
+where $\bar{i}$ and $\bar{f}$ are the states differing from $i$ and $f$ by the replacement of all particles by antiparticles (and also by the change of sign of the momentum vectors of all particles at unchanged momenta).
+
+In particular, for diagonal elements
+\[
+T_{ii} = T_{\bar{i}\bar{i}}.
+\]
+
+From~(71.8) or~(71.9) it follows therefore that the total cross section of all possible processes (with a given initial state) is the same for reactions between particles and antiparticles. In particular, the total probabilities of decay (i.e.\ the lifetimes) of a particle and antiparticle are equal. These results (alongside the equality of masses of particle and antiparticle---\S\,11) are the most important consequences of $CPT$-invariance of the interactions. Let us recall that this also applies to every individual decay channel separately, and requires also the fulfilment of $CP$-invariance.
+
+\bigskip
+\textbf{Problem}
+
+Starting from the condition of unitarity, find the connection between the phases of the partial amplitudes of photoproduction of pions on nucleons ($\gamma + N \to \pi + N$) and of elastic scattering of pions on nucleons; it is assumed in this that $\pi N$-scattering is connected with strong interactions, and photoproduction and $\gamma N$-scattering with electromagnetic interaction.
+
+\textit{Solution.} Let us denote the partial amplitudes: $\langle\pi N|S|\gamma N\rangle = S_{\pi\gamma}$, $\langle\gamma N|S|\gamma N\rangle = S_{\gamma\gamma}$, $\langle\pi N|S|\pi N\rangle = S_{\pi\pi}$ (indices $J$ and helicities are omitted). Photoproduction is a first-order process with respect to charge $e$, and $S_{\pi\gamma} \sim e$. Pion scattering on the nucleon $S_{\pi\pi}$ does not contain $e$. The amplitude $S_{\gamma\gamma}$ is of second order by charge. With an accuracy up to $\sim e$ from the condition~(71.1) we get
+\[
+S_{\pi\gamma}S^*_{\pi\gamma} + S_{\pi\pi}S^*_{\pi\gamma} \approx S_{\pi\gamma} + S_{\pi\pi}S^*_{\pi\gamma} = 0,\tag{1}
+\]
+\[
+S_{\pi\gamma}S^*_{\gamma\gamma} + S_{\pi\pi}S^*_{\pi\gamma} \approx S_{\pi\pi}S^*_{\pi\gamma} = 1\tag{2}
+\]
+(in the right-hand side of equation~(2) one should understand~1 as the unit matrix in the spin indices). By virtue of $T$-invariance the matrix $S_{\pi\pi}$ is symmetric, and $S_{\pi\gamma} = S_{\gamma\pi}$. Let us choose the matrix $S_{\pi\pi}$ in diagonal form, i.e.\ with respect to states of the pion with definite parities; then from~(2) it follows that the diagonal elements have the form $e^{2i\delta_\pi}$ with different scattering constants $\delta_\pi$. From~(1) we then find for each of the elements of the matrix $S_{\pi\gamma}$:
+\[
+S_{\pi\gamma}/S^*_{\pi\gamma} = -e^{2i\delta_\pi},
+\]
+whence
+\[
+S_{\pi\gamma} = \pm |S_{\pi\gamma}|\,ie^{i\delta_\pi}.
+\]
+Thus, the phase of the partial amplitude of photoproduction (in a state with definite parity) is determined by the phase of elastic $\pi N$-scattering.

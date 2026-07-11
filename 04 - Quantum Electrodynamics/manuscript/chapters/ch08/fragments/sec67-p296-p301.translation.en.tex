@@ -1,0 +1,179 @@
+\SourcePage{291}{296}
+\section{Physical regions}
+
+Considering the amplitudes of scattering as functions of the independent variables $s$, $t$, $u$ (connected by the relation $s + t + u = h$), we encounter the necessity of distinguishing the physically admissible and inadmissible regions of their values. Values which can correspond to a physical scattering process must satisfy certain conditions which follow from the law of conservation of 4-momentum and from the fact that the square of each of the 4-vectors $q_a$ is a given quantity $q^2_a = m^2_a$.
+
+\SourcePage{292}{297}
+The product of two 4-momenta
+\begin{equation}
+p_a p_b \geqslant m_a m_b.
+\tag{67.1}
+\end{equation}
+Therefore\quad $(q_a + q_b)^2 = (p_a + p_b)^2 \geqslant (m_a + m_b)^2$,\\
+if $q_a = p_a$, $q_b = p_b$ (or $q_a = -p_a$, $q_b = -p_b$),\\
+or\quad $(q_a + q_b)^2 = (p_a - p_b)^2 \leqslant (m_a - m_b)^2$,\\
+if $q_a = p_a$, $q_b = -p_b$.
+
+From here it follows that for the reaction in the $s$-channel:
+\begin{equation}
+\begin{aligned}
+(m_1 + m_2)^2 &\leqslant s \geqslant (m_3 + m_4)^2,\\[3pt]
+(m_1 - m_3)^2 &\geqslant t \leqslant (m_2 - m_4)^2,\\[3pt]
+(m_1 - m_4)^2 &\geqslant u \leqslant (m_2 - m_3)^2
+\end{aligned}
+\tag{67.2}
+\end{equation}
+(analogous inequalities hold in the $t$- and $u$-channels).
+
+To find the remaining conditions, let us form the 4-vector $L$, dual to the product of any three of the 4-vectors $q_a$, say
+\begin{equation}
+L_\lambda = e_{\lambda\mu\nu\rho}\,q^\mu_1 q^\nu_2 q^\rho_3.
+\tag{67.3}
+\end{equation}
+
+In the rest frame of one of the particles (for example, particle~1) $q_1 = (q^0_1, 0)$. Here $L$ has only spatial components: $L_i = e_{i0kl}q^k_1 q^l_2 q^0_3$. In other words, $L$ is a spacelike vector, and in every system of reference $L^2 \leqslant 0$. Expanding the square $L^2$, we obtain the condition
+\begin{equation}
+\begin{vmatrix}q^2_1 & q_1 q_2 & q_1 q_3\\ q_2 q_1 & q^2_2 & q_2 q_3\\ q_3 q_1 & q_3 q_2 & q^2_3\end{vmatrix} \geqslant 0.
+\tag{67.4}
+\end{equation}
+
+It can be expressed through the invariants $s$, $t$, $u$ and in a unified form for all channels in the form
+\begin{equation}
+stu \geqslant as + bt + cu,
+\tag{67.5}
+\end{equation}
+where
+\begin{equation}
+\begin{aligned}
+ah &= (m^2_1 m^2_2 - m^2_3 m^2_4)(m^2_1 + m^2_2 - m^2_3 - m^2_4),\\[3pt]
+bh &= (m^2_1 m^2_3 - m^2_2 m^2_4)(m^2_1 + m^2_3 - m^2_2 - m^2_4),\\[3pt]
+ch &= (m^2_1 m^2_4 - m^2_2 m^2_3)(m^2_1 + m^2_4 - m^2_2 - m^2_3)
+\end{aligned}
+\tag{67.6}
+\end{equation}
+(\textit{T.\,W.\,B.\,Kibble}, 1960).
+
+For a graphical representation of the regions of variation of the variables $s$, $t$, $u$ it is convenient to use the so-called triangular coordinates in the plane (the Mandelstam plane; \textit{S.\,Mandelstam}, 1958). The coordinate axes in it are three straight lines, forming at their intersection an equilateral triangle. The coordinates $s$, $t$, $u$ are measured along directions perpendicular to these three lines. (We take the positive directions to point inside the triangle, as indicated in Fig.\,5 by arrows.) In other words, to every point of the plane there correspond values of $s$, $t$, $u$, represented (with appropriate signs) by the lengths of the perpendiculars dropped onto the three axes. The condition $s + t + u = h$ is ensured by a well-known geometrical theorem (if the height of the equilateral triangle is~$h$)\,\footnote{Connecting, for example, the point $P$ (Fig.\,5) with the three vertices of the triangle $ABC$, we decompose it into three triangles with heights $s$, $t$, $u$; equating the sum of the areas of these triangles to the area of the triangle $ABC$, we find the required equality. Analogously it is proved also in the case when the point $P$ lies outside the triangle $ABC$.}.
+
+\SourcePage{293}{298}
+Let us consider an important case when the basic ($s$) channel corresponds to elastic scattering; the masses of the particles are pairwise identical:
+\begin{equation}
+m_1 = m_3 \equiv m,\qquad m_2 = m_4 \equiv \mu.
+\tag{67.7}
+\end{equation}
+Let $m > \mu$. From the condition~(67.5) we have
+\[
+h = 2(m^2 + \mu^2),\quad a = c = 0,\quad b = (m^2 - \mu^2)^2,
+\]
+so that
+\begin{equation}
+sut \geqslant (m^2 - \mu^2)^2\,t.
+\tag{67.8}
+\end{equation}
+
+The boundary of the region, determined by this inequality, consists of the line $t = 0$ and of the hyperbola
+\begin{equation}
+su = (m^2 - \mu^2)^2,
+\tag{67.9}
+\end{equation}
+two branches of which lie in the sectors $u < 0$, $s < 0$ and $s > 0$, $u > 0$; the axes $s = 0$ and $u = 0$ are asymptotes of the hyperbola. Instead of~(67.8) one can write\\
+$t > 0$,\quad $su > (m^2 - \mu^2)^2$\\
+or\\
+$t < 0$,\quad $su < (m^2 - \mu^2)^2$.
+
+Besides the conditions~(67.2) one must additionally take into account the inequality $s > (m + \mu)^2$ in the $s$-channel and $u > (m + \mu)^2$ in the $u$-channel; the remaining inequalities are satisfied after this automatically. As a result we find that channels~I, II, III ($s$, $t$, $u$) correspond to the \textit{physical regions}, indicated by hatching in Fig.\,6.
+
+\SourcePage{294}{299}
+If $m = \mu$, then the boundaries of the region~(67.8) degenerate into the coordinate axes and the physical regions are the three sectors shown in Fig.\,8.
+
+In the general case of four different masses the equation
+\begin{equation}
+stu = as + bt + cu
+\tag{67.10}
+\end{equation}
+determines a curve of third order, whose branches delimit the physical regions of three channels, as shown in Fig.\,9.
+
+Let
+\[
+m_1 \geqslant m_2 \geqslant m_3 \geqslant m_4.
+\]
+Then
+\[
+a \geqslant b \geqslant c,\qquad a > 0,\quad b > 0.
+\]
+The curve~(67.10) intersects the coordinate axes in points lying on the line
+\[
+as + bt + cu = 0
+\]
+(see the dashed lines in Fig.\,9). Depending on the sign of $c$ it passes as shown in Fig.\,9. For $c < 0$ the physical region of the
+
+\SourcePage{295}{300}
+$u$-channel covers part of the area of the coordinate triangle; in other words, in this case the quantities $s$, $t$, $u$ can be simultaneously positive. All three branches of the boundary curve have as asymptotes the corresponding coordinate axes (in this it is easy to verify by eliminating from the equation~(67.10) one of the variables with the help of the relation $s + t + u = h$ and sending one of the remaining variables to infinity). The conditions~(67.2) introduce nothing essentially new compared with the boundaries established by the equation~(67.10). The straight lines, corresponding to the signs of equality in~(67.2), intersect the hatched physical regions in Fig.\,9; some of them are tangent to the boundaries of these regions, corresponding to the extremal values of the variables $s$, $t$, or $u$ in the corresponding channel.
+
+In the case when the mass of one of the particles is larger than the sum of the three remaining masses ($m_1 > m_2 + m_3 + m_4$), alongside the channels~I, II, III there is possible also a fourth channel of the reaction, corresponding to the decay:
+\begin{equation}
+\text{IV.}\quad 1 \to \bar{2} + 3 + 4,
+\tag{67.11}
+\end{equation}
+For this channel in the rest system of the decaying particle
+\[
+q_1 = (m_1, 0),\quad q_2 = (-\varepsilon_2, -\mathbf{p}_2),\quad q_3 = (-\varepsilon_3, -\mathbf{p}_3),\quad q_4 = (-\varepsilon_4, -\mathbf{p}_4),
+\]
+\[
+\varepsilon_2 + \varepsilon_3 + \varepsilon_4 = m_1,\qquad \mathbf{p}_2 + \mathbf{p}_3 + \mathbf{p}_4 = 0.
+\]
+The invariants:
+\begin{equation}
+\begin{aligned}
+s &= m^2_1 + m^2_2 - 2m_1\varepsilon_2,\\[3pt]
+t &= m^2_1 + m^2_3 - 2m_1\varepsilon_3,\\[3pt]
+u &= m^2_1 + m^2_4 - 2m_1\varepsilon_4.
+\end{aligned}
+\tag{67.12}
+\end{equation}
+
+From~(67.1) we now get:
+\begin{equation}
+\begin{aligned}
+(m_3 + m_4)^2 &\leqslant s \leqslant (m_1 - m_2)^2,\\[3pt]
+(m_2 + m_4)^2 &\leqslant t \leqslant (m_1 - m_3)^2,\\[3pt]
+(m_2 + m_3)^2 &\leqslant u \leqslant (m_1 - m_4)^2.
+\end{aligned}
+\tag{67.13}
+\end{equation}
+Thus all three invariants are positive, i.e.\ the physical region of the decay channel is located inside the coordinate triangle.
+
+\bigskip
+\begin{center}\textbf{Problems}\end{center}
+\smallskip
+\textbf{1.} Find the physical regions in the case of three identical masses: $m_1 \equiv m$, $m_2 = m_3 = m_4 \equiv \mu$ (for example, reaction $K + \pi \to \pi + \pi$).
+
+\SourcePage{296}{301}
+\textit{Solution.} The equation~(67.10) takes the form
+\[
+stu = \mu^2(m^2 - \mu^2)^2,\tag{1}
+\]
+with $s + t + u = 3\mu^2 + m^2$.
+
+The physical regions are bounded by identical in form curves (for I: $s > 0$, $t < 0$, $u < 0$, and analogously for~II and~III). If $m > 3\mu$, then~(1) also has a branch (closed curve) with $s > 0$, $t > 0$, $u > 0$, bounding the region of channel~IV (Fig.\,10).
+
+\textbf{2.} The same in the case $m_1 \equiv m$, $m_2 = \mu$, $m_3 = m_4 = 0$, $m > \mu$ (for example, reaction $\mu + \nu \to e + \nu$).
+
+\textit{Solution.} The condition~(67.5) takes the form $stu \geqslant m^2\mu^2 s$, with $s + t + u = m^2 + \mu^2$. The physical regions are bounded by the axes $s = 0$ and by two branches of the hyperbola $tu = m^2\mu^2$ (Fig.\,11).
+
+\textbf{3.} The same in the case $m_1 = m_3 \equiv m$, $m_2 = 0$, $m_4 \equiv \mu$, with $m > 2\mu$ (for example, reaction $p + \gamma \to p + \pi^0$).
+
+\textit{Solution.} The boundary equation~(67.10) takes the form
+\[
+stu = a(s + u) + bt,\quad ah = m^2\mu^4,
+\]
+\[
+bh = m^4(2m^2 - \mu^2),\quad h = 2m^2 + \mu^2.
+\]
+Eliminating $u$, we obtain
+\[
+t^2 + \left(\frac{b - a}{s} + s - h\right)t + \frac{ah}{s} = 0.
+\]
+For a given $s$ this is a quadratic equation for~$t$. For $s > (m + \mu)^2$ (region of the $s$-channel) to each value of $s$ there correspond two negative values of $t$. At $s = (m + \mu)^2$ the two roots of the quadratic equation merge into one: $t = -m\mu^2/(m + \mu)$. The boundary of the region of the $s$-channel has the form shown in Fig.\,12. The lower branch of the boundary curve asymptotically approaches the axis $u = 0$, and the upper branch intersects this axis at the point $t = \mu^4/(\mu^2 - m^2)$.
+
+The region of the $u$-channel is symmetric to the region of the $s$-channel, and the region of the $t$-channel is located as shown in the figure.

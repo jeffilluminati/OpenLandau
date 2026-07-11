@@ -1,0 +1,212 @@
+\SourcePage{279}{284}
+\section{Scattering amplitude}
+
+The general formulation of the problem of collisions consists in finding, for a given initial state of the system (a certain collection of free particles), the probabilities of various possible final states (other collections of free particles). If the symbol $|i\rangle$ denotes the initial state, then the result of the collision can be represented as the superposition
+\begin{equation}
+\sum_f|f\rangle\langle f|S|i\rangle,
+\tag{64.1}
+\end{equation}
+where the summation is carried out over all possible final states $|f\rangle$. The coefficients of this expansion (or in abbreviated notation $S_{fi}$) constitute the \textit{scattering matrix}, or \textit{$S$-matrix}\,\footnote{From the English word ``scattering'' or the German ``Streuung''.}. The squares $|S_{fi}|^2$ give the probabilities of transitions to definite states $|f\rangle$.
+
+In the absence of interaction between the particles the state of the system would not change, which would correspond to the $S$-matrix being the unit matrix (absence of scattering). It is convenient to always separate out this unit matrix, representing the scattering matrix in the form
+\begin{equation}
+S_{fi} = \delta_{fi} + i(2\pi)^4\delta^{(4)}(P_f - P_i)\,T_{fi},
+\tag{64.2}
+\end{equation}
+where $T_{fi}$ is a new matrix. In the second term a four-dimensional $\delta$-function is separated out, expressing the law of conservation of 4-momentum ($P_i$ and $P_f$ are the sums of the 4-momenta of all particles in the initial and final states); the remaining factors are introduced for convenience in what follows. In non-diagonal matrix elements the first term in~(64.2) drops out, so that for the transition $i \to f$ the elements of the matrices $S$ and $T$ are related to each other by the simple relation
+\begin{equation}
+S_{fi} = i(2\pi)^4\delta^{(4)}(P_f - P_i)\,T_{fi}.
+\tag{64.3}
+\end{equation}
+
+The matrix elements $T_{fi}$, remaining after the separation of the $\delta$-function, we shall call the \textit{scattering amplitudes}.
+
+\SourcePage{280}{285}
+When squaring the modulus $|S_{fi}|$ the square of the $\delta$-function will appear. It should be understood as follows. The $\delta$-function
+\begin{equation}
+\delta^{(4)}(P_f - P_i) = \frac{1}{(2\pi)^4}\int e^{i(P_f - P_i)x}\,d^4x.
+\tag{64.4}
+\end{equation}
+If we compute another such integral at $P_f = P_i$ (by virtue of the already present $\delta$-function), extending the integration over a large volume $V$ and time interval~$t$, then we obtain $Vt/(2\pi)^4$\,\footnote{This can also be shown otherwise: compute the integral at $P_f = P_i$, extending the integration in~(64.4) to each of the coordinates over a large volume $V$ and time interval $t$, then $Vt/(2\pi)^4$.}. Therefore one may write
+\[
+|S_{fi}|^2 = (2\pi)^4\delta^{(4)}(P_f - P_i)\,|T_{fi}|^2\,Vt.
+\]
+Dividing by $t$, we obtain the probability of transition per unit time
+\begin{equation}
+w_{i\to f} = (2\pi)^4\delta^{(4)}(P_f - P_i)\,|T_{fi}|^2\,V.
+\tag{64.5}
+\end{equation}
+
+Each of the free particles (both initial and final) is described by its own wave function---a plane wave with some amplitude $u$ (for an electron this is a bispinor, for a photon a 4-vector, and so on). The amplitude of scattering $T_{fi}$ has the structure of a product
+\begin{equation}
+T_{fi} = u'^*_1 u'^*_2 \ldots Q u_1 u_2\ldots,
+\tag{64.6}
+\end{equation}
+where on the left stand the amplitudes of the wave functions of the final particles, on the right those of the initial particles; $Q$ is a certain matrix (with respect to the indices of the components of the amplitudes of all particles).
+
+Most important are the cases when in the initial state there are only one or two particles. In the first case it is a question of decay, in the second of the collision of two particles.
+
+Let us consider first the decay into an arbitrary number of other particles with momenta $\mathbf{p}'_a$ in the element of momentum space $\prod d^3p'_a$ (the index $a$ labels the particles in the final state). The number of states, falling within this element (on the normalisation volume $V$\,\footnote{For greater clarity of the computations in this paragraph we shall not set the normalisation volume equal to unity.}), is
+\[
+\prod_a\frac{Vd^3p'_a}{(2\pi)^3}.
+\]
+To this quantity we should multiply expression~(64.5):
+\begin{equation}
+dw = (2\pi)^4\delta^{(4)}(P_f - P_i)\,|M_{fi}|^2\,\frac{1}{2\varepsilon}\prod_a\frac{d^3p'_a}{(2\pi)^3 2\varepsilon'_a}.
+\tag{64.11}
+\end{equation}
+
+\SourcePage{281}{286}
+At the same time the wave functions of all particles, used in the computation of the matrix element, should be normalised to one particle in the volume $V$. Thus, for the electron the plane wave will be
+\begin{equation}
+\psi = ue^{-ipx},\qquad \bar{u}u = 2m,
+\tag{64.8}
+\end{equation}
+and the photon wave
+\begin{equation}
+A = \sqrt{4\pi}\,ee^{-ikx},\qquad ee^* = -1,\qquad ek = 0.
+\tag{64.9}
+\end{equation}
+All these functions contain the factor $1/\sqrt{2\varepsilon V}$, where $\varepsilon$ is the energy of the particle. However in the sequel it will be convenient to agree to write in all computations the wave functions of the particles without these factors (which we include into the expression for the probability). Thus, the electron plane wave will be
+\[
+\psi = ue^{-ipx},\qquad \bar{u}u = 2m,
+\]
+and the scattering amplitude calculated with such wave functions we denote (in contrast to $T_{fi}$) by $M_{fi}$. Obviously,
+\begin{equation}
+T_{fi} = \frac{M_{fi}}{(2\varepsilon_1 V\cdot 2\varepsilon_2 V\ldots)^{1/2}};
+\tag{64.10}
+\end{equation}
+in the denominator stands one multiplier $\sqrt{2\varepsilon V}$ for each initial or final particle.
+
+In particular, for the probability of decay (64.11) we get a more definitive form by eliminating the $\delta$-function for the case when the decay is into two particles (with momenta $\mathbf{p}'_1$, $\mathbf{p}'_2$ and energies $\varepsilon'_1$, $\varepsilon'_2$). In the rest system of the decaying particle $\mathbf{p}'_1 = -\mathbf{p}'_2 \equiv \mathbf{p}'$, so that we have
+\[
+dw = \frac{1}{(2\pi)^2}\,|M_{fi}|^2\,\frac{1}{2m}\,\frac{1}{4\varepsilon'_1\varepsilon'_2}\,\delta(\mathbf{p}'_1 + \mathbf{p}'_2)\,\delta(\varepsilon'_1 + \varepsilon'_2 - m)\,d^3p'_1\,d^3p'_2.
+\]
+
+The first $\delta$-function is eliminated by integration over $d^3p'_2$; writing $d^3p' \to \mathbf{p}'^2 d|\mathbf{p}'|\,do$
+\begin{equation}
+d^3p' = |\mathbf{p}'|^2 d|\mathbf{p}'|\,do = |\mathbf{p}'|\,do\,\frac{\varepsilon'_1\varepsilon'_2\,d(\varepsilon'_1 + \varepsilon'_2)}{\varepsilon'_1 + \varepsilon'_2},
+\tag{64.12}
+\end{equation}
+and eliminating the second $\delta$-function, we get
+\begin{equation}
+dw = \frac{1}{32\pi^2 m^2}\,|M_{fi}|^2\,|\mathbf{p}'|\,do'.
+\tag{64.13}
+\end{equation}
+
+Let us consider now the collision of two particles (with momenta $\mathbf{p}_1$ and $\mathbf{p}_2$ and energies $\varepsilon_1$ and $\varepsilon_2$) with transformation into an arbitrary collection of particles with momenta $\mathbf{p}'_a$. Instead of~(64.11) we now get
+\begin{equation}
+dw = (2\pi)^4\delta^{(4)}(P_f - P_i)\,|M_{fi}|^2\,\frac{1}{4\varepsilon_1\varepsilon_2\,V}\prod_a\frac{d^3p'_a}{(2\pi)^3\,2\varepsilon'_a}.
+\tag{64.14}
+\end{equation}
+
+\SourcePage{282}{287}
+(it is easy to verify, noting that $\varepsilon'^2_1 - m'^2_1 = \varepsilon'^2_2 - m'^2_2 = \mathbf{p}'^2$). Integration over $d(\varepsilon'_1 + \varepsilon'_2)$ eliminates the second $\delta$-function, and we get
+\[
+dw = \frac{1}{32\pi^2 m^2}\,|M_{fi}|^2\,|\mathbf{p}'|\,do'.
+\]
+
+The interesting quantity in this case is, however, not the probability, but the cross section $d\sigma$. The invariant (with respect to Lorentz transformations) cross section is obtained from $dw$ by dividing by the quantity
+\begin{equation}
+j = \frac{I}{V\varepsilon_1\varepsilon_2},
+\tag{64.14}
+\end{equation}
+where $I$ denotes the 4-scalar
+\begin{equation}
+I = \sqrt{(p_1 p_2)^2 - m^2_1 m^2_2}
+\tag{64.15}
+\end{equation}
+(see~II, \S\,12)\,\footnote{For future reference we also write another expression for $I$ in the form
+\begin{equation}
+I^2 = \tfrac{1}{4}[s - (m_1 + m_2)^2][s - (m_1 - m_2)^2],
+\tag{64.15a}
+\end{equation}
+where $s = (p_1 + p_2)^2$.}. In the centre of inertia system ($\mathbf{p}_1 = -\mathbf{p}_2 \equiv \mathbf{p}$)
+\begin{equation}
+I = |\mathbf{p}|(\varepsilon_1 + \varepsilon_2),
+\tag{64.16}
+\end{equation}
+so that
+\begin{equation}
+j = \frac{|\mathbf{p}|}{V}\left(\frac{1}{\varepsilon_1} + \frac{1}{\varepsilon_2}\right) = \frac{v_1 + v_2}{V},
+\tag{64.17}
+\end{equation}
+which coincides with the usual definition of the flux density of the colliding particles ($v_1$, $v_2$ are their velocities)\,\footnote{In an arbitrary system of reference
+\[
+j = (1/V)\sqrt{(\mathbf{v}_1 - \mathbf{v}_2)^2 - [\mathbf{v}_1\mathbf{v}_2]^2}.
+\]
+This expression reduces to the usual flux density in all cases when $\mathbf{v}_1 \| \mathbf{v}_2$: $j = |\mathbf{v}_1 - \mathbf{v}_2|/V$.}. Thus, we find for the cross section the formula
+\begin{equation}
+d\sigma = (2\pi)^4\delta^{(4)}(P_f - P_i)\,|M_{fi}|^2\,\frac{1}{4I}\prod_a\frac{d^3p'_a}{(2\pi)^3\,2\varepsilon'_a}.
+\tag{64.18}
+\end{equation}
+
+\SourcePage{283}{288}
+Let us bring this formula to its definitive form, eliminating the $\delta$-function for the case when in the final state there are also just two particles. We shall consider the process in the centre of inertia system. Let $\varepsilon = \varepsilon_1 + \varepsilon_2 = \varepsilon'_1 + \varepsilon'_2$ be the total energy; $\mathbf{p}_1 = -\mathbf{p}_2 \equiv \mathbf{p}$ and $\mathbf{p}'_1 = -\mathbf{p}'_2 \equiv \mathbf{p}'$ the initial and the final momenta. The elimination of the $\delta$-functions is carried out in the same way as for the decay~(64.13), and we get
+\begin{equation}
+d\sigma = \frac{1}{64\pi^2}\,|M_{fi}|^2\,\frac{|\mathbf{p}'|}{|\mathbf{p}|\varepsilon^2}\,do'
+\tag{64.19}
+\end{equation}
+(in the particular case of elastic scattering, when the type of particles is unchanged in the collision, $|\mathbf{p}'| = |\mathbf{p}|$).
+
+Let us rewrite this formula also in another form, introducing the invariant quantity
+\begin{equation}
+t \equiv (p_1 - p'_1)^2 = m^2_1 + m'^2_1 - 2(p_1 p'_1) =
+m^2_1 + m'^2_1 - 2\varepsilon_1\varepsilon'_1 + 2|\mathbf{p}|\,|\mathbf{p}'|\cos\theta,
+\tag{64.20}
+\end{equation}
+where $\theta$ is the angle between $\mathbf{p}_1$ and $\mathbf{p}'_1$. In the centre of inertia system the momenta $|\mathbf{p}_1| \equiv |\mathbf{p}|$ and $|\mathbf{p}'_1| \equiv |\mathbf{p}'|$ are determined by the total energy~$\varepsilon$ alone, and for given~$\varepsilon$
+\begin{equation}
+dt = 2|\mathbf{p}|\,|\mathbf{p}'|\,d\cos\theta.
+\tag{64.21}
+\end{equation}
+Therefore in~(64.19) one can replace
+\[
+do' = -d\varphi\,d\cos\theta = \frac{d\varphi\,d(-t)}{2|\mathbf{p}|\,|\mathbf{p}'|},
+\]
+where ($\varphi$ is the azimuth of $\mathbf{p}'_1$ relative to $\mathbf{p}_1$)\,\footnote{Since the correct sign of the differential is obvious in such cases, we shall below for simplicity write $dt$ in place of $d(-t)$, etc.}. Thus,
+\begin{equation}
+d\sigma = \frac{1}{64\pi}\,|M_{fi}|^2\,\frac{dt\,d\varphi}{I^2\,2\pi},
+\tag{64.22}
+\end{equation}
+(we have again introduced the invariant $I$ from~(64.16)). The azimuth $\varphi$, and with it the cross section in the form~(64.22), are invariant with respect to Lorentz transformations not changing the direction of relative motion of the particles. If the cross section does not depend on the azimuth, formula~(64.22) takes the especially simple form
+\begin{equation}
+d\sigma = \frac{1}{64\pi}\,|M_{fi}|^2\,\frac{dt}{I^2}.
+\tag{64.23}
+\end{equation}
+
+If one of the colliding particles is sufficiently heavy (and its state is unchanged in the collision), then its role
+
+\SourcePage{284}{289}
+in the process reduces to that of a stationary source of a constant field, in which the other particle is scattered. In accordance with the fact that in a constant field energy (but not momentum!) of the system is conserved, in this treatment the elements of the $S$-matrix should be represented in the form
+\begin{equation}
+S_{fi} = i \cdot 2\pi\delta(E_f - E_i)\,T_{fi}.
+\tag{64.24}
+\end{equation}
+In the expression for $|S_{fi}|^2$ the square of the one-dimensional $\delta$-function should be understood as
+\[
+[\delta(E_f - E_i)]^2 \to \frac{1}{2\pi}\,\delta(E_f - E_i)\,t.
+\]
+
+Proceeding then (as in the derivation of~(64.11)) to the amplitudes $M_{fi}$ instead of $T_{fi}$, we obtain the following expression for the probability of the process in which one particle, scattered in a constant field, creates in the final state some number of other particles:
+\begin{equation}
+dw = 2\pi\delta(E_f - \varepsilon)\,|M_{fi}|^2\,\frac{1}{2\varepsilon V}\prod_a\frac{d^3p'_a}{(2\pi)^3\,2\varepsilon'_a}.
+\tag{64.25}
+\end{equation}
+Here again $\varepsilon$ ($= E_i$) is the energy of the initial particle, $\mathbf{p}'_a$ and $\varepsilon'_a$ are the momenta and energies of the final particles. The cross section of scattering is obtained by dividing $dw$ by the flux density $j = v/V$, where $v = |\mathbf{p}|/\varepsilon$ is the velocity of the scattered particle. As a result the normalisation volume drops out of the answer and we get
+\begin{equation}
+d\sigma = 2\pi\delta(E_f - \varepsilon)\,|M_{fi}|^2\,\frac{1}{2|\mathbf{p}|}\prod_a\frac{d^3p'_a}{(2\pi)^3\,2\varepsilon'_a}.
+\tag{64.25}
+\end{equation}
+
+In the particular case of elastic scattering there is also just one particle in the final state with the same (in magnitude) momentum and energy. Replacing $d^3p' \to \mathbf{p}'^2\,d|\mathbf{p}'|\,do' = |\mathbf{p}'|\varepsilon'\,d\varepsilon'\,do'$ and eliminating $\delta(\varepsilon' - \varepsilon)$ by integration over $d\varepsilon'$, we obtain the cross section in the form
+\begin{equation}
+d\sigma = \frac{1}{16\pi^2}\,|M_{fi}|^2\,do'.
+\tag{64.26}
+\end{equation}
+
+Finally, if the external field depends on time (say, the field of a system of particles performing a given motion), then in the $S$-matrix $S_{fi} = iT_{fi}$ and, after going from $T_{fi}$ to $M_{fi}$ according to~(64.10), the probability of the process in which the field creates a definite collection of particles will be given by the formula
+\begin{equation}
+dw = |M_{fi}|^2\prod_a\frac{d^3p'_a}{(2\pi)^3\,2\varepsilon'_a}.
+\tag{64.27}
+\end{equation}
