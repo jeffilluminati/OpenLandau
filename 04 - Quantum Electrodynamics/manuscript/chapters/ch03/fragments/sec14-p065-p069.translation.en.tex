@@ -1,0 +1,149 @@
+\SourcePage{65}{70}
+\section{Wave equation for spin-1 particles}
+
+In its rest frame a particle of spin~1 is characterized by a wave function with three components---a three-dimensional vector (one therefore often speaks of a \emph{vector} particle). Viewed four-dimensionally, these three components can be either the spatial part of a (spacelike) 4-vector~$\psi^\mu$, or the mixed components of an antisymmetric 4-tensor of rank two,~$\psi^{\mu\nu}$, for which the time~($\psi^0$) and purely spatial~($\psi^{ik}$) components vanish in the rest frame\,\footnote{Looking ahead, let us mention that the set consisting of the 4-vector~$\psi_\mu$ and the 4-tensor~$\psi^{\nu\mu}$ corresponds to the set of four-dimensional second-rank spinors~$\xi^{\alpha\beta}$, $\eta_{\dot\alpha\dot\beta}$, $\zeta^{\alpha\dot\beta}$, where~$\xi^{\alpha\beta}$ and~$\eta_{\dot\alpha\dot\beta}$ are symmetric spinors that transform into each other under inversion (see~\S\,19).}.
+
+The wave equation---a differential relation between the quantities~$\psi^\mu$ and~$\psi^{\mu\nu}$---is established by the relations that we write as
+\begin{equation}
+i\psi_{\mu\nu} = \hat{p}_\mu\psi_\nu - \hat{p}_\nu\psi_\mu,
+\tag{14.1}
+\end{equation}
+\begin{equation}
+im^2\psi_\mu = \hat{p}^\nu\psi_{\mu\nu},
+\tag{14.2}
+\end{equation}
+\SourcePage{66}{71}
+where~$\hat{p} = i\partial$ (\emph{A.~Proca}, 1936). Applying the operator~$\hat{p}^\mu$ to both sides of equation~(14.2), we obtain (on account of the antisymmetry of~$\psi_{\mu\nu}$)
+\begin{equation}
+\hat{p}^\mu\psi_\mu = 0.
+\tag{14.3}
+\end{equation}
+From~(14.1, 14.2) one can eliminate~$\psi_{\mu\nu}$ by inserting the first equation into the second. With the aid of~(14.3) this yields
+\begin{equation}
+(\hat{p}^2 - m^2)\psi_\mu = 0,
+\tag{14.4}
+\end{equation}
+from which it is again apparent (cf.~\S\,10) that~$m$ is the particle mass. A free spin-1 particle can therefore be described entirely by a single 4-vector~$\psi^\mu$ whose components satisfy the second-order equation~(14.4) together with the supplementary condition~(14.3), which removes from~$\psi^\mu$ the part belonging to spin~0.
+
+In the rest frame, where~$\psi_\mu$ is independent of the spatial coordinates, we find that~$\hat{p}^0\psi_0 = 0$. Since at the same time~$\hat{p}^0\psi_0 = m\psi_0$, it follows that~$\psi_0 = 0$ in the rest frame, as required. Together with~$\psi_0$ the quantities~$\psi_{ik}$ also vanish.
+
+A spin-1 particle can possess different intrinsic parities, depending on whether~$\psi^\mu$ is a true vector or a pseudovector. In the first case
+\[
+\hat{P}\psi^\mu = \left(\psi^0, -\psi^i\right),
+\]
+and in the second
+\[
+\hat{P}\psi^\mu = \left(-\psi^0, \psi^i\right).
+\]
+Equations~(14.1),(14.2) can be derived from a variational principle with the Lagrangian
+\begin{multline}
+L = (1/2)\,\psi_{\mu\nu}\psi^{\mu\nu*} - (1/2)\psi^{\mu\nu*}(\partial_\mu\psi_\nu - \partial_\nu\psi_\mu) -{}\\
+{}- (1/2)\psi^{\mu\nu}(\partial_\mu\psi^*_\nu - \partial_\nu\psi^*_\mu) + m^2\psi_\mu\psi^{\mu*}.
+\tag{14.5}
+\end{multline}
+The independent generalized coordinates here are~$\psi_\mu$, $\psi^*_\mu$, $\psi_{\mu\nu}$, $\psi^*_{\mu\nu}$\,\footnote{Had we carried out the variation with respect to~$\psi_\mu$ alone (assuming from the outset that~$\psi_{\mu\nu}$ is expressed through~$\psi_\mu$ via~(14.1)), equation~(14.3) would have to be imposed as an auxiliary condition unrelated to the variational principle.}.
+
+For obtaining the energy--momentum tensor, formula~(10.11) is not entirely convenient in the present case, since it would lead to a non-symmetric tensor requiring additional symmetrization. One may instead use the formula
+\begin{equation}
+\frac{1}{2}\,T_{\mu\nu}\sqrt{-g} = -\frac{\partial}{\partial x^\lambda}\frac{\partial\sqrt{-g}\,L}{\partial g^{\mu\nu}_{,\lambda}} + \frac{\partial\sqrt{-g}\,L}{\partial g^{\mu\nu}},
+\tag{14.6}
+\end{equation}
+\SourcePage{67}{72}
+in which it is assumed that~$L$ is written in a form valid for arbitrary curvilinear coordinates (see~II, \S\,94). If~$L$ involves only the components of the metric tensor~$g_{\mu\nu}$ itself (but not their coordinate derivatives), the formula simplifies to
+\[
+T_{\mu\nu} = \frac{2}{\sqrt{-g}}\frac{\partial\sqrt{-g}\,L}{\partial g^{\mu\nu}} = 2\frac{\partial L}{\partial g^{\mu\nu}} - g_{\mu\nu}L
+\]
+(recall that~$d\ln g = -g_{\mu\nu}dg^{\mu\nu}$).
+
+Since the differentiation in formula~(14.6) is not performed with respect to~$\psi_\mu$ or~$\psi_{\mu\nu}$, when applying it there is no need to treat these quantities as independent; one may directly use relation~(14.1) and rewrite the Lagrangian~(14.5) as
+\begin{equation}
+L = (-1/2)\,\psi_{\mu\nu}\psi^*_{\lambda\rho}g^{\mu\lambda}g^{\nu\rho} + m^2\psi_\mu\psi^*_\nu g^{\mu\nu}.
+\tag{14.7}
+\end{equation}
+Then
+\begin{multline}
+T_{\mu\nu} = -\psi_{\mu\lambda}\psi_\nu{}^{\lambda*} - \psi^*_{\mu\lambda}\psi_\nu{}^\lambda + m^2\left(\psi^*_\mu\psi_\nu + \psi^*_\nu\psi_\mu\right) +{}\\
+{}+ g_{\mu\nu}\left((1/2)\,\psi_{\lambda\rho}\psi^{\lambda\rho*} - m^2\psi^*_\lambda\psi^\lambda\right).
+\tag{14.8}
+\end{multline}
+
+In particular, the energy density is given by a manifestly positive expression
+\begin{equation}
+T_{00} = (1/2)\,\psi_{ik}\psi^*_{ik} + \psi_{0i}\psi^*_{0i} + m^2\left(\psi_0\psi^*_0 + \psi_i\psi^*_i\right).
+\tag{14.9}
+\end{equation}
+The conserved 4-vector of the current density reads
+\begin{equation}
+j^\mu = i\left(\psi^{\mu\nu*}\psi_\nu - \psi^{\mu\nu}\psi^*_\nu\right).
+\tag{14.10}
+\end{equation}
+It can be obtained from formula~(12.12) by differentiating the Lagrangian~(14.5) with respect to the derivatives~$\partial_\mu\psi_\nu$. In particular,
+\begin{equation}
+j^0 = i\left(\psi^{0k*}\psi_k - \psi^{0k}\psi^*_k\right)
+\tag{14.11}
+\end{equation}
+and is not a positive-definite quantity.
+
+A plane wave normalized to one particle in volume~$V = 1$:
+\begin{equation}
+\psi_\mu = \frac{1}{\sqrt{2\varepsilon}}\,u_\mu e^{-ipx}, \quad u_\mu u^{\mu*} = -1,
+\tag{14.12}
+\end{equation}
+where~$u_\mu$ is a unit polarization 4-vector obeying (by virtue of~(14.3)) the four-dimensional transversality condition
+\begin{equation}
+u_\mu p^\mu = 0.
+\tag{14.13}
+\end{equation}
+Indeed, substituting the function~(14.12) into~(14.9) and~(14.11) gives
+\[
+T_{00} = -2\varepsilon^2\psi_\mu\psi^{\mu*} = \varepsilon, \qquad j^0 = 1.
+\]
+In contrast to the photon, a vector particle of nonzero mass possesses three independent polarization directions. For the corresponding amplitudes see~(16.21).
+\SourcePage{68}{73}
+
+For partially polarized vector particles the polarization density matrix is introduced in such a way that for a pure state it becomes simply the product
+\[
+\rho_{\mu\nu} = u_\mu u^*_\nu
+\]
+(analogously to expression~(8.7) for photons). According to~(14.12), (14.13) it satisfies the conditions
+\begin{equation}
+p^\mu\rho_{\mu\nu} = 0, \qquad \rho^\mu_\mu = -1.
+\tag{14.14}
+\end{equation}
+For unpolarized particles the matrix~$\rho_{\mu\nu}$ must have the form~$ag_{\mu\nu} + bp_\mu p_\nu$. Fixing the coefficients~$a$ and~$b$ from~(14.14), one finds
+\begin{equation}
+\rho_{\mu\nu} = -\frac{1}{3}\left(g_{\mu\nu} - \frac{p_\mu p_\nu}{m^2}\right).
+\tag{14.15}
+\end{equation}
+
+Quantization of the vector-particle field proceeds in the same way as for the scalar case, and there is no need to repeat the whole argument anew. The $\psi$-operators of the vector field take the form
+\begin{equation}
+\begin{aligned}
+\hat{\psi}_\mu &= \sum_{\mathbf{p}\alpha} \frac{1}{\sqrt{2\varepsilon}} \left(\hat{a}_{\mathbf{p}\alpha} u^{(\alpha)}_\mu e^{-ipx} + \hat{b}^+_{\mathbf{p}\alpha} u^{(\alpha)*}_\mu e^{ipx}\right),\\[6pt]
+\hat{\psi}^+_\mu &= \sum_{\mathbf{p}\alpha} \frac{1}{\sqrt{2\varepsilon}} \left(\hat{a}^+_{\mathbf{p}\alpha} u^{(\alpha)*}_\mu e^{ipx} + \hat{b}_{\mathbf{p}\alpha} u^{(\alpha)}_\mu e^{-ipx}\right),
+\end{aligned}
+\tag{14.16}
+\end{equation}
+where the index~$\alpha$ labels the three independent polarizations.
+
+The positive definiteness of expression~(14.9) for~$T_{00}$ and the indefiniteness of~$j^0$~(14.11) lead, just as in the scalar case, to the requirement of Bose quantization.
+
+There exists a close connection between the properties of the strictly neutral vector field and the electromagnetic field. A neutral vector field is described by a Hermitian $\psi$-operator:
+\begin{equation}
+\hat{\psi}_\mu = \sum_{\mathbf{p}\alpha} \frac{1}{\sqrt{2\varepsilon}} \left(\hat{c}_{\mathbf{p}\alpha} u^{(\alpha)}_\mu e^{-ipx} + \hat{c}^+_{\mathbf{p}\alpha} u^{(\alpha)*}_\mu e^{ipx}\right).
+\tag{14.17}
+\end{equation}
+The Lagrangian of this field is
+\begin{equation}
+\hat{L} = \frac{1}{4}\hat{\psi}_{\mu\nu}\hat{\psi}^{\mu\nu} - \frac{1}{2}\hat{\psi}^{\mu\nu}(\partial_\mu\hat{\psi}_\nu - \partial_\nu\hat{\psi}_\mu) + \frac{1}{2}m^2\hat{\psi}_\mu\hat{\psi}^\mu.
+\tag{14.18}
+\end{equation}
+
+The electromagnetic field corresponds to the case~$m = 0$. The 4-vector~$\psi^\mu$ then becomes the 4-potential~$A^\mu$, and the 4-tensor~$\psi^{\mu\nu}$ becomes the field tensor~$F^{\mu\nu}$, related to the potential through definition~(14.1). Equation~(14.2) turns into~$\partial^\nu\psi_{\mu\nu} = 0$, which corresponds to the second pair of Maxwell's equations. Condition~(14.3) no longer follows from it and thus ceases to be obligatory. In the absence of the supplementary condition there is no need to treat~$\hat{\psi}_\mu$ and~$\hat{\psi}_{\mu\nu}$ as independent
+\SourcePage{69}{74}
+``coordinates'' in the Lagrangian, and~(14.18) reduces to
+\begin{equation}
+\hat{L} = -(1/4)\hat{\psi}_{\mu\nu}\hat{\psi}^{\mu\nu}
+\tag{14.19}
+\end{equation}
+in agreement with the familiar classical expression for the electromagnetic-field Lagrangian. This Lagrangian, together with the tensor~$\hat{\psi}_{\mu\nu}$, is invariant under an arbitrary gauge transformation of the ``potentials''~$\hat{\psi}_\mu$. The connection between this circumstance and the vanishing mass is clearly visible: the Lagrangian~(14.18) lacks this property on account of the term~$m^2\hat{\psi}_\mu\hat{\psi}^\mu$.
