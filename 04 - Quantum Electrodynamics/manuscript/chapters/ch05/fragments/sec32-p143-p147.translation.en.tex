@@ -1,0 +1,143 @@
+\SourcePage{143}{148}
+\section{The Dirac equation for an electron in an external field}
+
+The wave equations for free particles express, in essence, only those properties that follow from the general requirements of space--time symmetry. The physical processes that occur with particles depend on the nature of their interactions.
+
+A description of the electromagnetic interactions of particles in a relativistic quantum theory turns out to be possible by generalising the method employed for this purpose in both classical and non-relativistic quantum theories.
+
+This method is, however, applicable only to the electromagnetic interactions of particles that are incapable of strong interactions. Electrons (and positrons) belong to this class, and thus the entire vast domain of quantum electrodynamics of electrons becomes accessible to the present theory. Muons are likewise incapable of strong interactions; they too are described by quantum electrodynamics in the regime of phenomena whose time scales are short compared with the muon lifetime (which is governed by weak interactions).
+
+In this chapter we consider the class of problems in quantum electrodynamics that fall within the framework of the single-particle theory, where the number of particles is fixed and the interaction can be described in terms of an external electromagnetic field. Besides the conditions that permit the external field to be treated as given, the range of applicability of such a theory is further restricted by considerations connected with the so-called radiative corrections.
+
+The wave equation of an electron in a given external field is obtained in the same way as in the non-relativistic theory (see III, \S\,111). Let $A^\mu = (\Phi, \mathbf{A})$ be the 4-potential of the external electromagnetic field ($\mathbf{A}$ is the vector potential, $\Phi$ the scalar potential). The desired equation is obtained by replacing in the Dirac equation the 4-momentum operator $\widehat p$ with the difference $\widehat p - eA$, where $e$ is
+
+\SourcePage{144}{149}
+the charge of the particle\,\footnote{The charge is understood together with its sign, so that for the electron $e = -|e|$.}:
+\begin{equation}
+[\gamma(\widehat p - eA) - m]\psi = 0.
+\tag{32.1}
+\end{equation}
+The Hamiltonian corresponding to this equation is obtained from~(21.13) by the same substitution:
+\begin{equation}
+\widehat H = \boldsymbol{\alpha}(\widehat{\mathbf{p}} - e\mathbf{A}) + \beta m + e\Phi.
+\tag{32.2}
+\end{equation}
+
+The invariance of the Dirac equation under a gauge transformation of the electromagnetic potentials is expressed by the fact that its form remains unchanged when the transformation $A \to A + i\widehat p\chi$ (where $\chi$ is an arbitrary function) is accompanied by the transformation of the wave function\,\footnote{The transformation~(32.3) with a function $\chi(t,\mathbf{r})$ is sometimes called a ``local gauge transformation'', as distinct from the ``global gauge transformation''~(12.10) with a constant phase $\alpha$.}
+\begin{equation}
+\psi \to \psi e^{ie\chi}
+\tag{32.3}
+\end{equation}
+(cf.\ the analogous transformation for the Schr\"odinger equation in III, \S\,111).
+
+The current density, expressed in terms of the wave function, is given by the same formula~(21.11) $j = \bar\psi\gamma\psi$ as in the absence of an external field. It is easily verified that, on substituting~(32.1) (together with equation~(32.4) below) into the same calculation that was used to derive~(21.11), the external field drops out and the continuity equation remains valid in its previous form.
+
+Let us apply to equation~(32.1) the operation of charge conjugation. To this end, write the equation as
+\begin{equation}
+\bar\psi[\gamma(\widehat p + eA) + m] = 0,
+\tag{32.4}
+\end{equation}
+which is obtained by complex conjugation from~(32.1) in the same way as was done previously for equation~(19.9) (bearing in mind that the 4-vector $A$ is real). Rewriting this equation as
+\[
+[\widetilde\gamma(\widehat p + eA) + m]\widetilde{\bar\psi} = 0,
+\]
+multiplying on the left by the matrix $U_C$ and using the relations~(26.3), we find
+\begin{equation}
+[\gamma(\widehat p + eA) - m](\widehat C\psi) = 0.
+\tag{32.5}
+\end{equation}
+
+Thus the charge-conjugate wave function satisfies an equation differing from the original one only by a
+
+\SourcePage{145}{150}
+reversal of the sign of the charge. On the other hand, the operation of charge conjugation signifies a transition from particles to antiparticles. We see, therefore, that if the particles carry an electric charge, the charges of electron and positron are automatically opposite.
+
+The first-order equation~(32.1) can be converted into a second-order equation by applying the operator $\gamma(\widehat p - eA) + m$:
+\[
+[\gamma^\mu\gamma^\nu(\widehat p_\mu - eA_\mu)(\widehat p_\nu - eA_\nu) - m^2]\psi = 0.
+\]
+Replacing $\gamma^\mu\gamma^\nu$ by
+\[
+\gamma^\mu\gamma^\nu = \tfrac{1}{2}(\gamma^\mu\gamma^\nu + \gamma^\nu\gamma^\mu) + \tfrac{1}{2}(\gamma^\mu\gamma^\nu - \gamma^\nu\gamma^\mu) = g^{\mu\nu} + \sigma^{\mu\nu},
+\]
+where $\sigma^{\mu\nu}$ is the antisymmetric ``matrix 4-tensor''~(28.2). On multiplying by $\sigma^{\mu\nu}$ one may antisymmetrise, i.e.
+\[
+(\widehat p_\mu - eA_\mu)(\widehat p_\nu - eA_\nu) \to \tfrac{1}{2}\{(\widehat p_\mu - eA_\mu),(\widehat p_\nu - eA_\nu)\}_- =
+\]
+\[
+= \tfrac{1}{2}e(-A_\mu\widehat p_\nu + \widehat p_\nu A_\mu - \widehat p_\mu A_\nu + A_\nu\widehat p_\mu) =
+\]
+\[
+= \tfrac{1}{2}ie(\partial_\nu A_\mu - \partial_\mu A_\nu) = -\tfrac{ie}{2}F_{\mu\nu}
+\]
+($F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ being the electromagnetic field tensor). The resulting second-order equation is
+\begin{equation}
+\left[(\widehat p - eA)^2 - m^2 - \frac{i}{2}eF_{\mu\nu}\sigma^{\mu\nu}\right]\psi = 0.
+\tag{32.6}
+\end{equation}
+
+The product $F_{\mu\nu}\sigma^{\mu\nu}$ can be written in three-dimensional form by expressing it in terms of its components:
+\[
+\sigma^{\mu\nu} = (\boldsymbol{\alpha},i\boldsymbol{\Sigma}),\qquad F^{\mu\nu} = (-\mathbf{E},\mathbf{H}).
+\]
+We then obtain the second-order equation as
+\begin{equation}
+[(\widehat p - eA)^2 - m^2 + e\boldsymbol{\Sigma}\cdot\mathbf{H} - ie\boldsymbol{\alpha}\cdot\mathbf{E}]\psi = 0,
+\tag{32.7}
+\end{equation}
+or, in ordinary units,
+\begin{equation}
+\left[\left(\frac{i\hbar}{c}\frac{\partial}{\partial t} - \frac{e}{c}\Phi\right)^2 - \left(i\hbar\nabla + \frac{e}{c}\mathbf{A}\right)^2 - m^2c^2 + \frac{e\hbar}{c}\boldsymbol{\Sigma}\cdot\mathbf{H} - i\frac{e\hbar}{c}\boldsymbol{\alpha}\cdot\mathbf{E}\right]\psi = 0.
+\tag{32.7a}
+\end{equation}
+The appearance in these equations of the terms containing $\mathbf{E}$ and $\mathbf{H}$ is connected with the spin of the particle; we shall return to their discussion in the next section.
+
+Among the solutions of the second-order equation there are, of course, ``spurious'' ones---solutions that do not satisfy the original first-order equation~(32.1) (they represent solutions
+
+\SourcePage{146}{151}
+of equation~(32.1) with the opposite sign in front of $m$). Selecting the correct solutions in specific cases is usually straightforward. A systematic selection procedure is the following: if $\varphi$ is an arbitrary solution of the second-order equation, the correct solution of the first-order equation is
+\begin{equation}
+\psi = [\gamma(\widehat p - eA) + m]\varphi.
+\tag{32.8}
+\end{equation}
+Indeed, multiplying this relation by $\gamma(\widehat p - eA) - m$, one sees that the right-hand side vanishes if $\varphi$ satisfies equation~(32.6).
+
+It should be emphasised that the method of introducing an external field into the relativistic wave equation---by replacing $\widehat p$ with $\widehat p - eA$---is not entirely self-evident. In carrying it out we essentially relied on an additional principle: the indicated replacement should be performed in the first-order equation. It is precisely for this reason that in equation~(32.6) there appeared extra terms that would not have arisen had the substitution been made directly in the second-order equation.
+
+Among the stationary solutions of the Dirac equation in an external field there may exist states belonging to both the continuous and the discrete spectrum. As in the non-relativistic theory, the continuous spectrum corresponds to infinite motion, in which the particle can be found at arbitrarily large distances where it may be regarded as free. Since the eigenvalues of the free-particle Hamiltonian are $\pm\sqrt{\mathbf{p}^2 + m^2}$, it is clear that the continuous spectrum of eigenvalues lies at $\varepsilon > m$ and at $\varepsilon \leq -m$. For $-m < \varepsilon < m$ the particle cannot escape to infinity, so that the motion is finite and the state belongs to the discrete spectrum.
+
+As for free particles, so also for particles in an external field the wave functions with ``positive frequency'' ($\varepsilon > 0$) and ``negative frequency'' ($\varepsilon < 0$) enter the scheme of second quantisation in a definite way. For a particle in an external field this scheme is naturally generalised by replacing the plane waves in the formulae~(25.1) with the correspondingly normalised eigenfunctions of the Dirac equation $\psi_n^{(+)}$ and $\psi_n^{(-)}$, belonging to the positive ($\varepsilon_n^{(+)}$) and negative ($-\varepsilon_n^{(-)}$) frequencies:
+\begin{equation}
+\begin{aligned}
+\widehat\psi &= \sum_n\{\widehat a_n\psi^{(+)}_n\exp(-i\varepsilon^{(+)}_n t) + \widehat b^+_n\psi^{(-)}_n\exp(i\varepsilon^{(-)}_n t)\},\\
+\widehat{\bar\psi} &= \sum_n\{\widehat a^+_n\bar\psi^{(+)}_n\exp(i\varepsilon^{(+)}_n t) + \widehat b_n\bar\psi^{(-)}_n\exp(-i\varepsilon^{(-)}_n t)\}.
+\end{aligned}
+\tag{32.9}
+\end{equation}
+
+One must bear in mind here that, as the potential well deepens, the energy levels may cross the boundary $\varepsilon = 0$, i.e.\ the energies that were
+
+\SourcePage{147}{152}
+positive may become negative (or, for a potential of the opposite sign, initially negative energies may become positive). Nonetheless, on grounds of continuity one must continue to regard these levels as electronic (rather than positronic). In other words, an electron includes all states which, in the limit of an infinitely slow removal of the field, tend to the positive boundary of the continuous spectrum ($\varepsilon = m$).
+
+Although the Dirac equation for an electron in an external field does, as stated above, permit the solution of a wide class of quantum-electrodynamic problems, one must at the same time stress that the applicability of the external-field concept in relativistic theory is itself limited. This limitation is connected with the spontaneous creation of electron--positron pairs that arises in sufficiently strong fields (see below, \S\S\,35, 36).
+
+We shall not consider in this book the introduction of an external field into the wave equations of particles with spin other than $1/2$, since this has no direct physical relevance---the real particles with such spins are hadrons, and their electromagnetic interactions cannot be described by wave equations. In this connection it should be noted that for spin-0 particles the wave equation has complex eigenvalues (with imaginary parts of both signs) in a sufficiently deep potential well. The wave equation for a spin-$3/2$ particle leads to a violation of causality, manifested in the appearance of solutions that propagate faster than light.
+
+\begin{center}
+\textbf{Problem}
+\end{center}
+
+Determine the energy levels of an electron in a constant magnetic field.
+
+\textbf{Solution.} Vector potential: $A_x = A_z = 0$, $A_y = Hx$ (the field $H$ directed along the $z$-axis). The quantities that are conserved (along with the energy) are the components $p_y$ and $p_z$ of the generalised momentum.
+
+We use the second-order equation for the auxiliary function $\varphi$ (see~(32.8)) and assume that $\varphi$ is an eigenfunction of the operator $\Sigma_z$ (with eigenvalue $\sigma = \pm 1$), as well as of the operators $\widehat p_y$ and $\widehat p_z$. The equation for $\varphi$ then takes the form
+\[
+\left\{-\frac{d^2}{dx^2} + (eHx - p_y)^2 - eH\sigma\right\}\varphi = (\varepsilon^2 - m^2 - p_z^2)\varphi.
+\]
+This equation is identical in form to the Schr\"odinger equation for a linear harmonic oscillator. Its eigenvalues are given by the formula
+\[
+\varepsilon^2 - m^2 - p_z^2 = |e|H(2n+1) - eH\sigma,\qquad n = 0, 1, 2,\ldots
+\]
+(cf.\ III, \S\,112). Note that the wave function $\psi$, which should be determined from $\varphi$ by formula~(32.8), is not an eigenfunction of the operator $\Sigma_z$, in accordance with the fact that for a moving particle the spin is not a conserved quantity.
