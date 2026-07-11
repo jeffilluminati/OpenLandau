@@ -38,11 +38,15 @@
 \RequirePackage{tocloft}
 \RequirePackage{emptypage}
 \RequirePackage{tikz}
+\usetikzlibrary{arrows.meta,calc}
 \RequirePackage{pgfplots}
 \pgfplotsset{compat=1.18}
 \RequirePackage{xcolor}
 \definecolor{SpringerBlue}{RGB}{0,71,187}
 \definecolor{ShadeBg}{RGB}{240,240,240}
+\definecolor{fixedC}{RGB}{0,115,200}
+\definecolor{bodyC}{RGB}{227,25,35}
+\definecolor{nodeC}{RGB}{0,150,70}
 \RequirePackage[
   unicode,
   pdfencoding=auto,
@@ -148,6 +152,8 @@
 
 \renewcommand{\thechapter}{\Roman{chapter}}
 \counterwithout{section}{chapter}
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
 \renewcommand{\thesection}{\arabic{section}}
 \setcounter{secnumdepth}{1}
 \titleformat{\chapter}[display]
