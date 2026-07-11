@@ -1,0 +1,147 @@
+\SourcePage{81}{86}
+\section{Relation of spinors to 4-vectors}
+
+A spinor $\zeta^{\alpha\dot\beta}$ carrying one dotted and one undotted index possesses $2\cdot 2 = 4$ independent components---precisely the number of components belonging to a 4-vector. It is therefore evident that both objects furnish one and the same irreducible representation of the proper Lorentz group, and a definite correspondence must hold between their respective components.
+
+To establish this correspondence we turn first of all to the analogous correspondence in the three-dimensional case, bearing in mind that with respect to purely spatial rotations the behavior of 3- and 4-spinors must be identical.
+
+For a three-dimensional spinor $\psi^{\alpha\beta}$ the correspondence formulas hold (see~III, \S\,57), which we write here in the form
+\begin{align}
+a_x &= \tfrac{1}{2}(\psi^{22} - \psi^{11}) = \tfrac{1}{2}(\psi^2_1 + \psi^1_2), \notag\\
+a_y &= -\tfrac{i}{2}(\psi^{22} + \psi^{11}) = \tfrac{i}{2}(\psi^1_2 - \psi^2_1), \notag\\
+a_z &= \tfrac{1}{2}(\psi^{12} + \psi^{21}) = \tfrac{1}{2}(\psi^1_1 - \psi^2_2),
+\end{align}
+where $a_x$, $a_y$, $a_z$ are the components of a certain three-dimensional vector~$\mathbf{a}$. In passing to the four-dimensional case one must replace the components $\psi^\alpha_\beta$ by $\zeta^{\alpha\dot\beta}$, and interpret $a_x$, $a_y$, $a_z$ as the contravariant components $a^1$, $a^2$, $a^3$ of a 4-vector. As for the expression for the fourth component, $a^0$, its form is already clear from the
+\SourcePage{82}{87}
+circumstance noted in \S\,17: the quantity~(17.6) must transform as~$a^0$. Hence $a^0 \sim \zeta^{1\dot 1} + \zeta^{2\dot 2}$; the proportionality coefficient is fixed by requiring that the scalar $\zeta_{\alpha\dot\beta}\zeta^{\alpha\dot\beta}$ coincide with $2a_\mu a^\mu \equiv 2a^2$.
+
+We thus arrive at the following correspondence formulas:
+\begin{equation}
+\begin{aligned}
+a^1 &= \tfrac{1}{2}(\zeta^{1\dot 2} + \zeta^{2\dot 1}), &\quad a^2 &= \tfrac{i}{2}(\zeta^{1\dot 2} - \zeta^{2\dot 1}),\\
+a^3 &= \tfrac{1}{2}(\zeta^{1\dot 1} - \zeta^{2\dot 2}), &\quad a^0 &= \tfrac{1}{2}(\zeta^{1\dot 1} + \zeta^{2\dot 2}).
+\end{aligned}
+\tag{18.1}
+\end{equation}
+The inverse formulas are:
+\begin{equation}
+\begin{aligned}
+\zeta^{1\dot 1} &= \zeta_{2\dot 2} = a^3 + a^0, &\qquad \zeta^{2\dot 2} &= \zeta_{1\dot 1} = a^0 - a^3,\\
+\zeta^{1\dot 2} &= -\zeta_{2\dot 1} = a^1 - ia^2, &\qquad \zeta^{2\dot 1} &= -\zeta_{1\dot 2} = a^1 + ia^2.
+\end{aligned}
+\tag{18.2}
+\end{equation}
+Here
+\begin{equation}
+\zeta_{\alpha\dot\beta}\zeta^{\alpha\dot\beta} = 2a^2.
+\tag{18.3}
+\end{equation}
+We note also that
+\begin{equation}
+\zeta_{\alpha\dot\beta}\zeta^{\gamma\dot\beta} = \delta^\gamma_\alpha\, a^2.
+\tag{18.4}
+\end{equation}
+
+To see why this last relation holds, observe that the quantity $\zeta_{\alpha\dot\beta}\zeta^{\dot\beta}_\gamma$, viewed as a second-rank spinor in the indices $\alpha$ and $\gamma$, is antisymmetric and hence must be proportional to the metric spinor.
+
+The link between $\zeta^{\alpha\dot\beta}$ and a 4-vector is actually one instance of a broader principle: any symmetric spinor of rank $(k, k)$ can be placed in one-to-one correspondence with an irreducible symmetric 4-tensor of rank~$k$ (irreducibility meaning that contraction over every index pair gives zero).
+
+The relationship linking a spinor to a 4-vector can be written compactly with the aid of the two-by-two Pauli matrices\,\footnote{For brevity of notation, operators (matrices) that act on spin variables will be denoted by letters without carets.}:
+\begin{equation}
+\sigma_x = \begin{pmatrix} 0 & 1\\ 1 & 0 \end{pmatrix},\quad
+\sigma_y = \begin{pmatrix} 0 & -i\\ i & 0 \end{pmatrix},\quad
+\sigma_z = \begin{pmatrix} 1 & 0\\ 0 & -1 \end{pmatrix}.
+\tag{18.5}
+\end{equation}
+Denoting symbolically by $\zeta$ the matrix of the quantities $\zeta^{\alpha\dot\beta}$ with upper indices (the first being undotted), formulas~(18.2) take the form
+\begin{equation}
+\zeta = \mathbf{a}\boldsymbol{\sigma} + a^0
+\tag{18.6}
+\end{equation}
+\SourcePage{83}{88}
+(in the second term one understands, of course, the product of $a^0$ with the unit matrix). The inverse relations are:
+\begin{equation}
+\mathbf{a} = \tfrac{1}{2}\operatorname{Sp}(\zeta\boldsymbol{\sigma}),\qquad a^0 = \tfrac{1}{2}\operatorname{Sp}\zeta.
+\tag{18.7}
+\end{equation}
+
+With the help of formulas~(18.6), (18.7) one can establish the connection between the transformation laws for the 4-vector and the spinor, thereby expressing the spinor transformation law through the parameters of rotations of the 4-coordinate system.
+
+Let us write the transformation of the spinor $\xi^\alpha$ in the form
+\begin{equation}
+{\xi^{\alpha}}' = (B\xi)^\alpha,\qquad B = \begin{pmatrix} \alpha & \beta\\ \gamma & \delta \end{pmatrix},
+\tag{18.8}
+\end{equation}
+where $B$ is a two-by-two matrix assembled from the coefficients of the binary transformation. The transformation of the dotted spinor is then:
+\begin{equation}
+{\eta^{\dot\beta}}' = (B^*\eta)^{\dot\beta} = (\eta B^+)^{\dot\beta},
+\tag{18.9}
+\end{equation}
+and the transformation of the second-rank spinor $\zeta^{\alpha\dot\beta} \sim \xi^\alpha\eta^{\dot\beta}$ can be written symbolically as $\zeta' = B\zeta B^{+\,1}$). For an infinitesimally small transformation $B = 1 + \lambda$, where $\lambda$ is a small matrix, and to first-order accuracy
+\begin{equation}
+\zeta' = \zeta + (\lambda\zeta + \zeta\lambda^+).
+\tag{18.10}
+\end{equation}
+
+Consider first the Lorentz transformation to a reference frame moving with an infinitesimally small velocity $\delta\mathbf{V}$ (without altering the orientation of the spatial axes). Under this transformation the 4-vector $a^\mu = (a^0, \mathbf{a})$ changes according to
+\begin{equation}
+\mathbf{a}' = \mathbf{a} - a^0\delta\mathbf{V},\qquad {a^0}' = a^0 - \mathbf{a}\delta\mathbf{V}.
+\tag{18.11}
+\end{equation}
+Let us now make use of formulas~(18.7). The transformation of $a^0$ can be expressed, on the one hand, as
+\[
+{a^0}' = a^0 - \mathbf{a}\delta\mathbf{V} = a^0 - \tfrac{1}{2}\operatorname{Sp}(\zeta\boldsymbol{\sigma}\,\delta\mathbf{V}),
+\]
+and on the other hand as
+\[
+{a^0}' = \tfrac{1}{2}\operatorname{Sp}\zeta' = a^0 + \tfrac{1}{2}\operatorname{Sp}\zeta\,(\lambda + \lambda^+).
+\]
+\SourcePage{84}{89}
+These expressions must coincide identically (i.e.\ for arbitrary $\zeta$). From this we obtain the equality:
+\[
+\lambda + \lambda^+ = -\boldsymbol{\sigma}\,\delta\mathbf{V}.
+\]
+By the same method, examining the transformation of $\mathbf{a}$, we find
+\[
+\boldsymbol{\sigma}\lambda + \lambda^+\boldsymbol{\sigma} = -\delta\mathbf{V}.
+\]
+These equalities, regarded as equations for $\lambda$, yield the solution:
+\[
+\lambda = \lambda^+ = -\tfrac{1}{2}\boldsymbol{\sigma}\,\delta\mathbf{V}.
+\]
+
+Thus the infinitesimally small Lorentz transformation of the spinor $\xi^\alpha$ is effected by the matrix
+\begin{equation}
+B = 1 - \tfrac{1}{2}(\boldsymbol{\sigma}\mathbf{n})\,\delta V,
+\tag{18.12}
+\end{equation}
+where $\mathbf{n}$ is a unit vector along the velocity $\delta\mathbf{V}$. From this it is straightforward to obtain the transformation for a finite velocity $\mathbf{V}$. To do so, recall that the Lorentz transformation amounts (geometrically) to a rotation of the 4-coordinate system in the $t\,\mathbf{n}$ plane through an angle $\varphi$ related to the velocity $\mathbf{V}$ by $\operatorname{th}\varphi = V$\,\footnote{We recall that in planes containing the time axis the metric is pseudo-Euclidean.}). An infinitesimally small transformation corresponds to the angle $\delta\varphi = \delta V$, while a rotation through a finite angle $\varphi$ is achieved by repeating the rotation through $\delta\varphi$ a total of $\varphi/\delta\varphi$ times. Raising the operator~(18.12) to the power $\varphi/\delta\varphi$ and passing to the limit $\delta\varphi \to 0$, we obtain
+\begin{equation}
+B = e^{-\frac{\varphi}{2}\,\mathbf{n}\boldsymbol{\sigma}}.
+\tag{18.13}
+\end{equation}
+
+The mathematical meaning of this operator becomes transparent once one observes that, by the properties of the Pauli matrices, all even powers of $\mathbf{n}\boldsymbol{\sigma}$ equal~1 while all odd powers equal $\mathbf{n}\boldsymbol{\sigma}$. Noting that $\operatorname{ch}$ decomposes into even powers and $\operatorname{sh}$ into odd powers of its argument, we arrive at the final result
+\begin{equation}
+B = \operatorname{ch}\frac{\varphi}{2} - \mathbf{n}\boldsymbol{\sigma}\operatorname{sh}\frac{\varphi}{2},\qquad \operatorname{th}\varphi = V.
+\tag{18.14}
+\end{equation}
+We note that the Lorentz-transformation matrices $B$ turn out to be Hermitian: $B = B^+$.
+
+\SourcePage{85}{90}
+Consider now an infinitesimally small rotation of the spatial coordinate system. Under such a rotation the three-dimensional vector $\mathbf{a}$ transforms according to
+\begin{equation}
+\mathbf{a}' = \mathbf{a} - [\delta\theta\,\mathbf{a}],
+\tag{18.15}
+\end{equation}
+where $\delta\boldsymbol\theta$ is the vector of the infinitesimally small rotation angle. The corresponding spinor transformation could be found in an analogous manner. There is no need for this, however, since under spatial rotations the behavior of 4-spinors coincides with that of 3-spinors, and for the latter the transformation is known beforehand from the general connection between the spin operator and the operator of an infinitesimally small rotation:
+\begin{equation}
+B = 1 + \tfrac{i}{2}\boldsymbol{\sigma}\,\delta\boldsymbol\theta.
+\tag{18.16}
+\end{equation}
+The passage to a rotation through a finite angle $\theta$ is carried out in the same way as the passage from~(18.12) to~(18.14):
+\begin{equation}
+B = \exp\Bigl(\frac{i\theta}{2}\,\mathbf{n}\boldsymbol{\sigma}\Bigr) = \cos\frac{\theta}{2} + i\mathbf{n}\boldsymbol{\sigma}\sin\frac{\theta}{2},
+\tag{18.17}
+\end{equation}
+where $\mathbf{n}$ is the unit vector along the rotation axis. This matrix is unitary ($B^+ = B^{-1}$), as must be the case for a spatial rotation.
