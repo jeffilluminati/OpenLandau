@@ -1,0 +1,63 @@
+\SourcePage{19}{24}
+\section{Photons}
+
+Let us now turn to a discussion of the quantization formulae derived above.
+
+To begin with, formula~(2.12) for the energy of the field exposes the following difficulty. At the lowest energy level,\SourcePage{20}{25}
+all oscillator quantum numbers $N_{\mathbf{k}\alpha}$ vanish (this state is known as the \emph{electromagnetic field vacuum}). Yet even in this state every oscillator retains a nonzero ``zero-point energy'' $\omega/2$. Summing over the entire infinite set of oscillators then produces an infinite result. One is thus confronted with one of the ``divergences'' stemming from the absence of full logical self-consistency in the existing theory.
+
+As long as one is concerned only with the eigenvalues of the field energy, this difficulty can be eliminated by simply subtracting away the zero-point oscillation energy, i.e.\ by writing for the energy and momentum of the field\footnote{This subtraction can be carried out in a formally consistent manner by agreeing to interpret the operator products in~(2.10) as ``normal-ordered'', i.e.\ arranged so that the operators $\hat{c}^+$ always stand to the left of the operators~$\hat{c}$. Formula~(2.23) then takes the form
+\[
+\hat{H} = \sum_{\mathbf{k}\alpha} \bigl(\omega\,\hat{c}^+_{\mathbf{k}\alpha}\hat{c}_{\mathbf{k}\alpha}\bigr).
+\]}
+\begin{equation}
+E = \sum_{\mathbf{k}\alpha} N_{\mathbf{k}\alpha}\omega, \qquad
+\mathbf{P} = \sum_{\mathbf{k}\alpha} N_{\mathbf{k}\alpha}\mathbf{k}.
+\tag{3.1}
+\end{equation}
+
+These formulae make it possible to introduce the concept fundamental to all of quantum electrodynamics: that of \emph{light quanta}, or \emph{photons}\footnote{The photon concept was first put forward by \emph{Einstein} (A.~Einstein, 1905).}. Namely, the free electromagnetic field can be regarded as a collection of particles, each carrying energy $\omega\,(= \hbar\omega)$ and momentum $\mathbf{k}\,(= \mathbf{n}\hbar\omega/c)$. The relationship between a photon's energy and momentum is precisely what relativistic mechanics requires for particles of zero rest mass that propagate at the speed of light. The occupation numbers $N_{\mathbf{k}\alpha}$ acquire the meaning of the number of photons with given momenta~$\mathbf{k}$ and polarizations~$\mathbf{e}^{(\alpha)}$. The polarization property of a photon is analogous to the notion of spin for other particles (the specific features of the photon in this regard will be examined below, in~\secref{6}).
+
+It is easy to see that the mathematical formalism developed in the preceding section is fully consistent with the picture of the electromagnetic field as an assembly of photons; it is nothing other than the apparatus of so-called second quantization as applied to a system of photons\footnote{The method of second quantization as applied to radiation theory was developed by \emph{Dirac} (P.~A.~M.~Dirac, 1927).}. In this method (see Vol.~III, \S~64) the occupation numbers serve as the independent variables, and the operators act on functions of those numbers. The central role is played by the ``annihilation'' and ``creation''\SourcePage{21}{26}
+operators for particles, which respectively decrease or increase an occupation number by one. Exactly such operators are $\hat{c}_{\mathbf{k}\alpha}$ and $\hat{c}^+_{\mathbf{k}\alpha}$: the operator~$\hat{c}_{\mathbf{k}\alpha}$ destroys a photon in the state~$\mathbf{k}\alpha$, while $\hat{c}^+_{\mathbf{k}\alpha}$ creates one in that state.
+
+The commutation rule~(2.16) corresponds to particles obeying Bose statistics. Photons are therefore bosons, as one might have anticipated: the number of photons occupying any given state can be arbitrary (we shall return to the significance of this fact in~\secref{5}).
+
+The plane waves $\mathbf{A}_{\mathbf{k}\alpha}$~(2.26), which appear in the operator~$\hat{\mathbf{A}}$~(2.17) as coefficients multiplying the photon annihilation operators, can be interpreted as the wave functions of photons possessing definite momenta~$\mathbf{k}$ and polarizations~$\mathbf{e}^{(\alpha)}$. This interpretation corresponds to expanding the $\psi$-operator as a series in the stationary-state wave functions of the particle within the non-relativistic second-quantization framework (unlike the non-relativistic case, however, the expansion~(2.17) involves both annihilation and creation operators; the significance of this distinction will become clear later, see~\secref{12}).
+
+The wave function~(2.26) is normalized by the condition
+\begin{equation}
+\int \frac{1}{4\pi}\bigl(|\mathbf{E}_{\mathbf{k}\alpha}|^2 + |\mathbf{H}_{\mathbf{k}\alpha}|^2\bigr)\,d^3x = \omega
+\tag{3.2}
+\end{equation}
+This amounts to normalizing to one photon in a volume $V = 1$. Indeed, the integral on the left-hand side of the equation represents the quantum-mechanical expectation value of the photon's energy in a state described by the given wave function\footnote{Note that the coefficient $1/(4\pi)$ in the integral~(3.2) is twice the usual coefficient $1/(8\pi)$ in~(2.10). This difference is ultimately connected with the complex character of the vectors $\mathbf{E}_{\mathbf{k}\alpha}$, $\mathbf{H}_{\mathbf{k}\alpha}$, as opposed to the Hermitian field operators~$\hat{\mathbf{E}}$,~$\hat{\mathbf{H}}$.}. On the right-hand side of~(3.2) stands the energy of a single photon.
+
+The role of the ``Schr\"odinger equation'' for the photon is played by Maxwell's equations. In the present case (for the potential $\mathbf{A}(\mathbf{r},t)$ satisfying condition~(2.1)) this is the wave equation
+\[
+\frac{\partial^2 \mathbf{A}}{\partial t^2} - \Delta\mathbf{A} = 0.
+\]
+In the general case of arbitrary stationary states, the photon ``wave functions'' are complex solutions of this equation whose time dependence enters through the factor $e^{-i\omega t}$.
+
+Speaking of the photon wave function, let us emphasize once more that it cannot by any means be treated as a probability amplitude for the\SourcePage{22}{27}
+spatial localization of a photon --- in contrast to the basic meaning of the wave function in non-relativistic quantum mechanics. This is linked to the fact that (as noted in~\secref{1}) the notion of photon coordinates has no physical meaning at all. We shall revisit the mathematical side of this issue at the end of the next section.
+
+The Fourier-transform components of $\mathbf{A}(\mathbf{r},t)$ with respect to the coordinates constitute the photon wave function in the momentum representation; we denote it $\mathbf{A}(\mathbf{k},t) = \mathbf{A}(\mathbf{k})e^{-i\omega t}$. Thus, for a state with a definite momentum~$\mathbf{k}$ and polarization~$\mathbf{e}^{(\alpha)}$ the momentum-representation wave function is given simply by the coefficient of the exponential factor in~(2.26):
+\begin{equation}
+\mathbf{A}_{\mathbf{k}\alpha}(\mathbf{k}',\alpha') = \sqrt{4\pi}\,\frac{\mathbf{e}^{(\alpha)}}{\sqrt{2\omega}}\,\delta_{\mathbf{k}'\mathbf{k}}\delta_{\alpha\alpha'}.
+\tag{3.3}
+\end{equation}
+
+In keeping with the measurability of the momentum of a free particle, the momentum-representation wave function carries deeper physical content than its coordinate-space counterpart: it provides a way to compute the probabilities $w_{\mathbf{k}\alpha}$ of the various values of momentum and polarization for a photon in a given state. According to the general rules of quantum mechanics, $w_{\mathbf{k}\alpha}$ is given by the squared modulus of the expansion coefficients of $\mathbf{A}(\mathbf{k}')$ in the wave functions of states with definite~$\mathbf{k}$ and~$\mathbf{e}^{(\alpha)}$:
+\[
+w_{\mathbf{k}\alpha} \propto \left|\sum_{\mathbf{k}'\alpha'} \mathbf{A}^*_{\mathbf{k}\alpha}(\mathbf{k}',\alpha')\mathbf{A}(\mathbf{k}')\right|^2
+\]
+(the proportionality coefficient depends on the choice of normalization for the functions). Substituting~(3.3), we obtain
+\begin{equation}
+w_{\mathbf{k}\alpha} \propto |\mathbf{e}^{(\alpha)}\mathbf{A}(\mathbf{k})|^2.
+\tag{3.4}
+\end{equation}
+Summing over the two polarizations, we find the probability that a photon has momentum~$\mathbf{k}$:
+\begin{equation}
+w_{\mathbf{k}} \propto |\mathbf{A}(\mathbf{k})|^2.
+\tag{3.5}
+\end{equation}
