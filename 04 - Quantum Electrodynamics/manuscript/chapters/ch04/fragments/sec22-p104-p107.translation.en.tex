@@ -1,0 +1,174 @@
+\SourcePage{104}{109}
+\section{Algebra of Dirac matrices}
+
+Calculations involving the Dirac equation make extensive use of the $\gamma$ matrices without reference to their explicit form in any particular representation. All the algebraic rules governing these matrices follow entirely from the anticommutation relations
+\begin{equation}
+\gamma^\mu\gamma^\nu + \gamma^\nu\gamma^\mu = 2g^{\mu\nu},\qquad \mu, \nu = 0, 1, 2, 3,
+\tag{22.1}
+\end{equation}
+which encode every general property that the $\gamma$ matrices possess.
+
+In this section we collect a number of formulae and algebraic identities for the $\gamma$ matrices that prove useful in various computations.
+
+The ``scalar square'' of $\gamma$ with itself is $g_{\mu\nu}\gamma^\mu\gamma^\nu = 4$. For compact notation we introduce, in analogy with the covariant components of a 4-vector, the symbol $\gamma_\mu = g_{\mu\nu}\gamma^\nu$. Then
+\begin{equation}
+\gamma_\mu\gamma^\mu = 4.
+\tag{22.2}
+\end{equation}
+When $\gamma_\mu$ and $\gamma^\mu$ are separated by one or more $\gamma$-factors, one can bring them next to each other by applying the commutation rule~(22.1) one or more times, after which the contraction over $\mu$ is performed using~(22.2). In this way one obtains the identities
+\begin{equation}
+\begin{gathered}
+\gamma_\mu\gamma^\nu\gamma^\mu = -2\gamma^\nu,\\
+\gamma_\mu\gamma^\lambda\gamma^\nu\gamma^\mu = 4g^{\lambda\nu},\\
+\gamma_\mu\gamma^\lambda\gamma^\nu\gamma^\rho\gamma^\mu = -2\gamma^\rho\gamma^\nu\gamma^\lambda,\\
+\gamma_\mu\gamma^\lambda\gamma^\nu\gamma^\rho\gamma^\sigma\gamma^\mu = 2(\gamma^\sigma\gamma^\lambda\gamma^\nu\gamma^\rho + \gamma^\rho\gamma^\nu\gamma^\lambda\gamma^\sigma).
+\end{gathered}
+\tag{22.3}
+\end{equation}
+
+The $\gamma^\mu$ factors usually appear contracted with various 4-vectors, forming ``scalar products''\,\footnote{In this edition we do not use any special notation for such a product. The literature frequently employs letters with a hat or with a slash (Feynman slash notation).}
+\begin{equation}
+\gamma a \equiv \gamma^\mu a_\mu.
+\tag{22.4}
+\end{equation}
+For products of this kind the relations~(22.1) become
+\begin{equation}
+(a\gamma)(b\gamma) + (b\gamma)(a\gamma) = 2(ab),\qquad (a\gamma)(a\gamma) = a^2
+\tag{22.5}
+\end{equation}
+and the identities~(22.3) take the form
+\begin{equation}
+\begin{gathered}
+\gamma_\mu(a\gamma)\gamma^\mu = -2(a\gamma),\\
+\gamma_\mu(a\gamma)(b\gamma)\gamma^\mu = 4(ab),\\
+\gamma_\mu(a\gamma)(b\gamma)(c\gamma)\gamma^\mu = -2(c\gamma)(b\gamma)(a\gamma),\\
+\gamma_\mu(a\gamma)(b\gamma)(c\gamma)(d\gamma)\gamma^\mu = 2[(d\gamma)(a\gamma)(b\gamma)(c\gamma) + (c\gamma)(b\gamma)(a\gamma)(d\gamma)].
+\end{gathered}
+\tag{22.6}
+\end{equation}
+
+\SourcePage{105}{110}
+A widely used operation is the evaluation of the trace of a product of several $\gamma$ matrices. Consider the quantities
+\begin{equation}
+T^{\mu_1\mu_2\ldots\mu_n} \equiv \tfrac{1}{4}\operatorname{Sp}\bigl(\gamma^{\mu_1}\gamma^{\mu_2}\ldots\gamma^{\mu_n}\bigr).
+\tag{22.7}
+\end{equation}
+By the well-known cyclic property of the matrix trace, the tensor $T$ is symmetric under cyclic permutations of the indices $\mu_1\mu_2\ldots\mu_n$.
+
+Because the $\gamma$ matrices take the same form in every reference frame, the quantities $T$ are likewise frame-independent. They therefore constitute a tensor expressible solely through the metric tensor $g_{\mu\nu}$, which is the only tensor sharing this property.
+
+From the rank-2 tensor $g_{\mu\nu}$ one can build only tensors of even rank. It follows at once that the trace of any product containing an odd number of $\gamma$ factors vanishes. In particular, the trace of each individual $\gamma$ is zero\,\footnote{The trace is invariant under similarity transformations $\gamma = U\gamma U^{-1}$. Hence~(22.8) is also obvious from the explicit matrices~(21.3).}:
+\begin{equation}
+\operatorname{Sp}\gamma^\mu = 0.
+\tag{22.8}
+\end{equation}
+
+The trace of the $4\times 4$ unit matrix (which is implicitly present on the right-hand side of the anticommutation relation~(22.1)) equals~4. Taking the trace of both sides of~(22.1) therefore gives
+\begin{equation}
+T^{\mu\nu} = g^{\mu\nu}.
+\tag{22.9}
+\end{equation}
+
+The trace of a product of four matrices is
+\begin{equation}
+T^{\lambda\mu\nu\rho} = g^{\lambda\mu}g^{\nu\rho} - g^{\lambda\nu}g^{\mu\rho} + g^{\lambda\rho}g^{\mu\nu}.
+\tag{22.10}
+\end{equation}
+This formula can be derived, for instance, by ``dragging'' $\gamma^\lambda$ to the right through $\operatorname{Sp}(\gamma^\lambda\gamma^\mu\gamma^\nu\gamma^\rho)$ with the help of the anticommutation relation~(22.1); each commutation produces one of the terms appearing in~(22.10):
+\begin{equation}
+\begin{aligned}
+T^{\lambda\mu\nu\rho} &= 2g^{\lambda\mu}T^{\nu\rho} - T^{\mu\lambda\nu\rho} = 2g^{\lambda\mu}g^{\nu\rho} - T^{\mu\lambda\nu\rho},\\
+T^{\mu\lambda\nu\rho} &= 2g^{\lambda\nu}T^{\mu\rho} - T^{\mu\nu\lambda\rho} = 2g^{\lambda\nu}g^{\mu\rho} - T^{\mu\nu\lambda\rho},\\
+T^{\mu\nu\lambda\rho} &= 2g^{\lambda\rho}T^{\mu\nu} - T^{\mu\nu\rho\lambda}
+\end{aligned}
+\tag{22.11}
+\end{equation}
+and so on. After all permutations the right-hand side contains $-T^{\mu\rho\lambda} = -T^{\lambda\mu\nu\rho}$, which is brought to the left. By the same method the trace of a product of six $\gamma$'s reduces to traces of products of four, etc. Thus,
+\begin{multline}
+T^{\lambda\mu\nu\rho\sigma\tau} = g^{\lambda\mu}T^{\nu\rho\sigma\tau} - g^{\lambda\nu}T^{\mu\rho\sigma\tau} + g^{\lambda\rho}T^{\mu\nu\sigma\tau} -{}\\
+{}- g^{\lambda\sigma}T^{\mu\nu\rho\tau} + g^{\lambda\tau}T^{\mu\nu\rho\sigma}.
+\tag{22.11}
+\end{multline}
+
+We remark that every trace $T^{\lambda\mu\ldots}$ is real, and that it is non-vanishing only when each of the matrices $\gamma^0, \gamma^1, \ldots$
+
+\SourcePage{106}{111}
+occurs an even number of times in the product; both statements are plain from the formulae just obtained. From this one easily deduces that the trace is unchanged when the order of all factors is reversed:
+\begin{equation}
+T^{\lambda\mu\ldots\rho\sigma} = T^{\sigma\rho\ldots\mu\lambda}.
+\tag{22.12}
+\end{equation}
+
+As already noted, the $\gamma$ factors usually appear as scalar products with various 4-vectors. In that case formulae~(22.9) and~(22.10), for example, read
+\begin{equation}
+\begin{gathered}
+\tfrac{1}{4}\operatorname{Sp}(a\gamma)(b\gamma) = ab,\\
+\tfrac{1}{4}\operatorname{Sp}(a\gamma)(b\gamma)(c\gamma)(d\gamma) = (ab)(cd) - (ac)(bd) + (ad)(bc).
+\end{gathered}
+\tag{22.13}
+\end{equation}
+
+A special role is played by the product $\gamma^0\gamma^1\gamma^2\gamma^3$, for which the standard notation is
+\begin{equation}
+\gamma^5 = -i\gamma^0\gamma^1\gamma^2\gamma^3.
+\tag{22.14}
+\end{equation}
+
+One readily verifies that
+\begin{equation}
+\gamma^5\gamma^\mu + \gamma^\mu\gamma^5 = 0,\qquad (\gamma^5)^2 = 1,
+\tag{22.15}
+\end{equation}
+so that $\gamma^5$ anticommutes with every $\gamma^\mu$. With respect to the matrices $\boldsymbol{\alpha}$ and $\beta$ the rules are
+\begin{equation}
+\boldsymbol{\alpha}\gamma^5 - \gamma^5\boldsymbol{\alpha} = 0,\qquad \beta\gamma^5 + \gamma^5\beta = 0
+\tag{22.16}
+\end{equation}
+(the commutativity with $\boldsymbol{\alpha}$ follows from the fact that $\boldsymbol{\alpha} = \gamma^0\boldsymbol{\gamma}$ is a product of two $\gamma^\mu$ matrices).
+
+The matrix $\gamma^5$ is Hermitian; indeed,
+\[
+\gamma^{5+} = i\gamma^{3+}\gamma^{2+}\gamma^{1+}\gamma^{0+} = -i\gamma^3\gamma^2\gamma^1\gamma^0,
+\]
+and because the sequence 3210 is obtained from 0123 by an even number of transpositions,
+\begin{equation}
+\gamma^{5+} = \gamma^5.
+\tag{22.17}
+\end{equation}
+
+We also give the explicit form of this matrix in the two concrete representations:
+\begin{equation}
+\begin{aligned}
+\text{spinor}\quad &\gamma^5 = \begin{pmatrix} -1 & 0\\ 0 & 1 \end{pmatrix};\\
+\text{standard}\quad &\gamma^5 = \begin{pmatrix} 0 & -1\\ -1 & 0 \end{pmatrix}.
+\end{aligned}
+\tag{22.18}
+\end{equation}
+
+The trace of $\gamma^5$ vanishes:
+\begin{equation}
+\operatorname{Sp}\gamma^5 = 0
+\tag{22.19}
+\end{equation}
+(as is also directly apparent from~(22.18)). Likewise zero are the traces of $\gamma^5\gamma^\mu\gamma^\nu$. For the product of $\gamma^5$ with four $\gamma^\mu$ factors, however, one has
+\begin{equation}
+\tfrac{1}{4}\operatorname{Sp}\,\gamma^5\gamma^\lambda\gamma^\mu\gamma^\nu\gamma^\rho = ie^{\lambda\mu\nu\rho}.
+\tag{22.20}
+\end{equation}
+
+\SourcePage{107}{112}
+We note one further identity:
+\begin{equation}
+\gamma N = i\gamma^5(\gamma a)(\gamma b)(\gamma c),\qquad N^\lambda = e^{\lambda\mu\nu\rho}a_\mu b_\nu c_\rho,
+\tag{22.21}
+\end{equation}
+valid for mutually orthogonal 4-vectors $a$, $b$, $c$: $ab = ac = bc = 0$.
+
+There are situations (problems with non-relativistic particles) where one must compute traces of products containing $\gamma^0$ and the spatial ``vector'' $\boldsymbol{\gamma}$ as separate entities. A non-vanishing trace requires that $\gamma^0$ as well as $\boldsymbol{\gamma}$ each enter an even number of times. Every $\gamma^0$ factor then simplifies to the identity, and for products carrying two or four $\boldsymbol{\gamma}$ factors the traces read
+\begin{equation}
+\begin{gathered}
+\tfrac{1}{4}\operatorname{Sp}(\mathbf{a}\boldsymbol{\gamma})(\mathbf{b}\boldsymbol{\gamma}) = -\mathbf{ab},\\
+\tfrac{1}{4}\operatorname{Sp}(\mathbf{a}\boldsymbol{\gamma})(\mathbf{b}\boldsymbol{\gamma})(\mathbf{c}\boldsymbol{\gamma})(\mathbf{d}\boldsymbol{\gamma}) = (\mathbf{ab})(\mathbf{cd}) - (\mathbf{ac})(\mathbf{bd}) + (\mathbf{ad})(\mathbf{bc}).
+\end{gathered}
+\tag{22.22}
+\end{equation}
