@@ -1,0 +1,96 @@
+\SourcePage{182}{187}
+\section{The operator of electromagnetic interaction}
+
+The interaction of electrons with the electromagnetic field can, as a rule, be treated by perturbation theory. This circumstance is connected with the comparative weakness of the electromagnetic interaction, expressed in the smallness of the corresponding dimensionless ``coupling constant''---the fine-structure constant $\alpha = e^2/\hbar c = 1/137$. This smallness plays a fundamental role in quantum electrodynamics.
+
+In classical electrodynamics (see~II, \S\S\,16, 28) the electromagnetic interaction is described by the term
+\begin{equation}
+-ej^\mu A_\mu
+\tag{43.1}
+\end{equation}
+in the Lagrangian density of the system ``field${}+{}$charges'' ($A$ is the 4-potential of the field, $j$ the 4-vector of current density of the particles). The current density satisfies the continuity equation
+\begin{equation}
+\partial_\mu j^\mu = 0,
+\tag{43.2}
+\end{equation}
+expressing the law of conservation of charge. Recall (see~II, \S\,29) that the gauge invariance of the theory is closely connected with this law. Indeed, under the replacement $A_\mu \to A_\mu + \partial_\mu\chi$~(4.1) the quantity $-ej^\mu\partial_\mu\chi$ is added to the Lagrangian density~(43.1), which by virtue of~(43.2) can be written in the form of a 4-divergence
+\[
+-e\partial_\mu(\chi j^\mu)
+\]
+and therefore drops out upon integration over $d^4x$ in the action $S = \int L\,d^4x$.
+
+In quantum electrodynamics the 4-vectors $j$ and $A$ are replaced by the corresponding secondarily quantised operators. The operator of the current is expressed through the $\psi$-operators according to $\widehat\jmath = \widehat{\bar\psi}\gamma\widehat\psi$. The role of the generalised ``coordinates'' $q$ in the Lagrangian
+\[
+\int\widehat L_{\mathrm{int}}\,d^3x = -e\int(\widehat\jmath\,\widehat A)\,d^3x
+\]
+
+\SourcePage{183}{188}
+is played by the values of $\widehat\psi$, $\widehat{\bar\psi}$, $\widehat A$ at each point of space. Since the Lagrangian density turns out to depend only on the ``coordinates'' $q$ themselves (and not on their derivatives with respect to $x$), the transition from the Lagrangian density to the Hamiltonian density according to formula~(10.11) reduces merely to a change of sign of the Lagrangian density\,\footnote{Independently of these arguments we note that if one is speaking only of a first-order correction, then any small perturbation enters the Hamiltonian with the same sign as the Lagrangian (see~I, \S\,40).}. Thus, the operator of electromagnetic interaction (the integral over space of the Hamiltonian density of the interaction) has the form
+\begin{equation}
+\widehat V = e\int(\widehat\jmath\,\widehat A)\,d^3x.
+\tag{43.3}
+\end{equation}
+
+The operator of the free electromagnetic field is a sum
+\begin{equation}
+\widehat A = \sum_n[\widehat c_n\,A_n(x) + \widehat c^+_n\,A^*_n(x)],
+\tag{43.4}
+\end{equation}
+containing the creation and annihilation operators of photons in various states (labelled by the index $n$). Each of them has matrix elements only for increasing or decreasing the corresponding occupation number $N_n$ by~1 (with all remaining occupation numbers unchanged). Therefore the operator $\widehat A$ also has matrix elements only for transitions with a change in the number of photons by~1. In other words, in the first approximation of perturbation theory only processes of single emission or absorption of a photon arise.
+
+According to~(2.15) the matrix elements
+\begin{equation}
+\langle N_n - 1|\widehat c_n|N_n\rangle = \langle N_n|\widehat c^+_n|N_n - 1\rangle = \sqrt{N_n}.
+\tag{43.5}
+\end{equation}
+If in the initial state of the field photons (of sort $n$) are absent, then $\langle 1|\widehat c^+_n|0\rangle = 1$. The matrix element of the operator~(43.3) for the emission of a photon is
+\begin{equation}
+V_{fi}(t) = e\int(j_{fi}A^*_n)\,d^3x,
+\tag{43.6}
+\end{equation}
+where $A_n(x)$ is the wave function of the emitted photon, and $j_{fi}$ is the matrix element of the operator $\widehat\jmath$ for the transition of the emitter from the initial state $i$ to the final state $f$\,\footnote{The notation in~(43.6) contains a certain inconsistency: the indices of $V_{fi}$ refer to the states of the entire system ``emitter${}+{}$field'', while those of $j_{fi}$ refer to the states of the emitter alone.}. The 4-vector $j^\mu_{fi} = (\rho_{fi},\,\mathbf{j}_{fi})$ is called the \textit{transition current}.
+
+Analogously, the matrix element for the absorption of a photon is
+\begin{equation}
+V_{fi}(t) = e\int(j_{fi}A_n)\,d^3x.
+\tag{43.7}
+\end{equation}
+It differs from~(43.6) only in that $A^*_n(x)$ is replaced by $A_n(x)$.
+
+\SourcePage{184}{189}
+By indicating the argument $t$ in $V_{fi}$ we emphasise that the time-dependent matrix element is meant. Separating in the wave functions the time factors, one can pass in the usual way to the time-independent matrix elements:
+\begin{equation}
+V_{fi}(t) = V_{fi}\,e^{-i(E_i - E_f \mp \omega)t},
+\tag{43.8}
+\end{equation}
+($E_i$, $E_f$ are the initial and final energies of the emitting system; the signs $\mp$ correspond to emission and absorption of the photon $\omega$).
+
+The wave function of a photon with a definite momentum $\mathbf{k}$ and definite polarisation is
+\begin{equation}
+A^\mu = \sqrt{4\pi}\,\sqrt{\frac{1}{2\omega}}\;e^\mu e^{i\mathbf{k}\mathbf{r}}
+\tag{43.9}
+\end{equation}
+(see~(4.3); the time factor is omitted). Substituting in~(43.6), we find the matrix element for the emission of such a photon in the form
+\begin{equation}
+V_{fi} = e\sqrt{4\pi}\,\sqrt{\frac{1}{2\omega}}\;e^*_\mu\,j^\mu_{fi}(\mathbf{k}),
+\tag{43.10}
+\end{equation}
+where $j_{fi}(\mathbf{k})$ is the transition current in the momentum representation, i.e.\ the Fourier components
+\begin{equation}
+j_{fi}(\mathbf{k}) = \int j_{fi}(\mathbf{r})\,e^{-i\mathbf{k}\mathbf{r}}\,d^3x.
+\tag{43.11}
+\end{equation}
+
+The analogous formula for the absorption of a photon:
+\begin{equation}
+V_{fi} = e\sqrt{4\pi}\,\sqrt{\frac{1}{2\omega}}\;e_\mu\,j^\mu_{fi}(-\mathbf{k}).
+\tag{43.12}
+\end{equation}
+
+The law of conservation of current in the momentum representation is written as the condition of 4-transversality of the transition currents:
+\begin{equation}
+k_\mu\,j^\mu_{fi}(\mathbf{k}) = \omega\rho_{fi}(\mathbf{k}) - \mathbf{k}\cdot\mathbf{j}_{fi}(\mathbf{k}) = 0.
+\tag{43.13}
+\end{equation}
+
+The formulae written in this section, in which the form of the current operator is not specified, have a general character and are valid for electromagnetic processes involving any charged particles. The existing theory provides the means of establishing the form of the current operator (and thereby of computing in principle its matrix elements) only for electrons. In application to strongly interacting particle systems (including nuclei) we shall confine ourselves to a phenomenological theory, in which the transition currents appear as quantities taken from experiment, satisfying only the general requirements of space--time symmetry and the continuity equation.

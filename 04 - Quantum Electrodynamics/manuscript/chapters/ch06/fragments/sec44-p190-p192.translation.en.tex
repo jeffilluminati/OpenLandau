@@ -1,0 +1,84 @@
+\SourcePage{185}{190}
+\section{Emission and absorption}
+
+The probability of a transition under the influence of a perturbation $\widehat V$ in the first approximation is given by known formulae of perturbation theory (III, \S\,42). Let the initial and final states of the emitting system belong to the discrete spectrum\,\footnote{By this we mean, in any event, neglect of the recoil: the emitter as a whole remains stationary.}. Then the probability (per unit time) of the transition $i\to f$ with emission of a photon is
+\begin{equation}
+dw = 2\pi|V_{fi}|^2\delta(E_i - E_f - \omega)\,d\nu,
+\tag{44.1}
+\end{equation}
+where $\nu$ conventionally denotes the set of quantities characterising the state of the photon and spanning a continuous range of values (the wave function of the photon being normalised to a $\delta$-function ``on the $\nu$ scale''). If a photon with a definite value of the angular momentum is emitted, the only continuously varying quantity is the frequency $\omega$. Integration of formula~(44.1) over $d\nu \equiv d\omega$ eliminates the $\delta$-function (replacing $\omega$ by $E_i - E_f$), and the transition probability becomes
+\begin{equation}
+w = 2\pi|V_{fi}|^2.
+\tag{44.2}
+\end{equation}
+
+If instead the emission of a photon with a given momentum $\mathbf{k}$ is considered, then $d\nu = d^3k/(2\pi)^3 = \omega^2\,d\omega\,do/(2\pi)^3$. It is assumed that the wave function of the photon (a plane wave) is normalised to one photon in a volume $V = 1$, as is always adopted in this book; $d\nu$ is the number of states in the phase-space volume $V\,d^3k$. Thus, the probability of emission of a photon with a given momentum is
+\begin{equation}
+dw = 2\pi|V_{fi}|^2\,\delta(E_i - E_f - \omega)\;\frac{d^3k}{(2\pi)^3},
+\tag{44.3}
+\end{equation}
+or after integrating over $d\omega$:
+\begin{equation}
+dw = \frac{1}{4\pi^2}\,|V_{fi}|^2\,\omega^2\,do.
+\tag{44.4}
+\end{equation}
+Here the matrix element $V_{fi}$ from~(43.10) should be substituted.
+
+In the following sections we shall use these formulae for computing the probability of radiation in various concrete cases. Here we shall consider some general relations among different kinds of radiative processes.
+
+\SourcePage{186}{191}
+If in the initial state of the field there already existed a non-zero number $N_n$ of the given photons, the matrix element of the transition is multiplied further by
+\begin{equation}
+\langle N_n + 1|\widehat c^+_n|N_n\rangle = \sqrt{N_n + 1},
+\tag{44.5}
+\end{equation}
+i.e.\ the probability of the transition increases by a factor of $N_n + 1$. The unity in this factor corresponds to \textit{spontaneous} emission, occurring also when $N_n = 0$. The term $N_n$ gives rise to \textit{stimulated} (or \textit{induced}) emission: we see that the presence of photons in the initial state of the field stimulates additional emission of photons of the same kind.
+
+The matrix element $V_{if}$ for the reverse transition of the system ($f\to i$) differs from the element $V_{fi}$ by the replacement of~(43.5) by
+\[
+\langle N_n - 1|\widehat c_n|N_n\rangle = \sqrt{N_n}
+\]
+(and the replacement of all remaining quantities by their complex conjugates). This reverse transition represents the absorption of a photon by the system, going from level $E_f$ to level $E_i$. Between the probabilities of emission and absorption of a photon (for a given pair of states $i$, $f$) the following important relation therefore holds\,\footnote{By this we mean, in any event, neglect of the recoil: the emitter as a whole remains stationary.}:
+\begin{equation}
+\frac{w^{(\mathrm{emis})}}{w^{(\mathrm{abs})}} = \frac{N_n + 1}{N_n}
+\tag{44.6}
+\end{equation}
+(first pointed out by \textit{A.\,Einstein} in 1916).
+
+Let us relate the number of photons to the intensity of the radiation incident on the system from outside. Let
+\begin{equation}
+I_{\mathbf{k}\mathbf{e}}\,d\omega\,do
+\tag{44.7}
+\end{equation}
+be the energy of radiation falling per unit area per unit time, with polarisation $\mathbf{e}$, in the frequency interval $d\omega$ and in the direction of the wave vector within the solid angle $do$.
+
+\SourcePage{187}{192}
+Let us note the analogous probabilities for induced emission and absorption. According to~(44.6) and~(44.8) these probabilities are related to each other by the following equations:
+\begin{equation}
+dw^{(\mathrm{abs})}_{\mathbf{k}\mathbf{e}} = dw^{(\mathrm{ind})}_{\mathbf{k}\mathbf{e}} = dw^{(\mathrm{sp})}_{\mathbf{k}\mathbf{e}}\;\frac{8\pi^2c^2}{\hbar\omega^3}\;I_{\mathbf{k}\mathbf{e}}.
+\tag{44.9}
+\end{equation}
+
+If the incident radiation is isotropic and unpolarised ($I_{\mathbf{k}\mathbf{e}}$ does not depend on the directions of $\mathbf{k}$ and $\mathbf{e}$), integrating~(44.9) over $do$ and summing over $\mathbf{e}$ yield analogous relations between total probabilities of radiative transitions (between given states $i$ and $f$ of the system):
+\begin{equation}
+w^{(\mathrm{abs})} = w^{(\mathrm{ind})} = w^{(\mathrm{sp})}\;\frac{\pi^2c^2}{\hbar\omega^3}\;I,
+\tag{44.10}
+\end{equation}
+where $I = 2\cdot 4\pi I_{\mathbf{k}\mathbf{e}}$ is the total spectral intensity of the incident radiation.
+
+If the states $i$ and $f$ of the emitting (or absorbing) system are degenerate, the total probability of emission (or absorption) of given photons is obtained by summation over all mutually degenerate final states and averaging over all possible initial states. Denoting the multiplicities of degeneracy (statistical weights) of the states $i$ and $f$ by $g_i$ and $g_f$ respectively, for the processes of spontaneous and induced emission the initial states are the states $i$, and for absorption the states $f$. Assuming in each case that all $g_i$ or $g_f$ initial states are equally probable, we obtain, obviously, instead of~(44.10), the following relations:
+\begin{equation}
+g_f\,w^{(\mathrm{abs})} = g_i\,w^{(\mathrm{ind})} = g_i\,w^{(\mathrm{sp})}\;\frac{\pi^2c^2}{\hbar\omega^3}\;I.
+\tag{44.11}
+\end{equation}
+
+In the literature the so-called \textit{Einstein coefficients} are frequently used, defined as
+\begin{equation}
+A_{if} = w^{(\mathrm{sp})},\qquad B_{if} = w^{(\mathrm{ind})}\;\frac{c}{I},\qquad B_{fi} = w^{(\mathrm{abs})}\;\frac{c}{I}
+\tag{44.12}
+\end{equation}
+(the quantity $I/c$ is the spatial spectral density of the energy of the radiation). They are related to each other by the equations
+\begin{equation}
+g_f\,B_{fi} = g_i\,B_{if} = g_i\,A_{if}\;\frac{\pi^2c^3}{\hbar\omega^3}.
+\tag{44.13}
+\end{equation}

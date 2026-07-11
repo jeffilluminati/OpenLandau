@@ -1,0 +1,169 @@
+\SourcePage{190}{195}
+\section{Electric multipole radiation}
+
+Instead of considering the emission of a photon in a given direction (i.e.\ with a given momentum), let us now consider the emission of a photon with definite values of the angular momentum $j$ and its projection $m$ onto some chosen direction $z$. We saw in~\S\,6 that such photons can be of two types---electric and magnetic; we begin with the emission of photons of the electric type.
+
+It is convenient here to carry out the calculations using the wave functions of the photon in the momentum representation, i.e.\ representing the 4-vector $A^\mu(\mathbf{r})$ in the form of a Fourier integral. Then the matrix element
+\begin{equation}
+V_{fi} = e\int d^3x\cdot j^\mu_{fi}(\mathbf{r})\int\frac{d^3k}{(2\pi)^3}\,A^*(\mathbf{k})\,e^{-i\mathbf{k}\mathbf{r}}.
+\tag{46.1}
+\end{equation}
+(to simplify the notation we omit the indices $\omega jm$ of the wave functions of the photon).
+
+For an $Ej$-photon we take the wave function from~(7.10), choosing the arbitrary constant $C$ to be
+\[
+C = -\sqrt{\frac{j+1}{j}}.
+\]
+
+\SourcePage{191}{196}
+The purpose of this choice is so that in the spatial components of the wave function ($\mathbf{A}$) the terms containing spherical functions of order $j - 1$ cancel out (as can be seen from formulae~(7.16)). The vector $\mathbf{A}$ will then contain only spherical functions of order $j + 1$, as a result of which the corresponding contribution to $V_{fi}$ turns out (as will be clear from the subsequent calculation) to be of higher order of smallness (in $a/\lambda$) than the contribution from the component $A^0 \equiv \Phi$, containing spherical functions of lower order~$j$.
+
+Thus, we put
+\[
+A^\mu = (\Phi,\,0),\qquad \Phi = -\sqrt{\frac{j+1}{j}}\;\frac{4\pi^2}{\omega^{3/2}}\,\delta(|\mathbf{k}| - \omega)\,Y_{jm}(\mathbf{n})
+\]
+($\mathbf{n} = \mathbf{k}/\omega$). Substituting this into~(46.1) and integrating over $|\mathbf{k}|$, we get
+\begin{equation}
+V_{fi} = -e\sqrt{\frac{j+1}{j}}\;\frac{\sqrt{\omega}}{2\pi}\int d^3x\cdot\rho_{fi}(\mathbf{r})\int do_\mathbf{n}\,e^{-i\mathbf{k}\mathbf{r}}\,Y^*_{jm}(\mathbf{n}).
+\tag{46.2}
+\end{equation}
+
+For computing the inner integral we use the expansion~(24.12), writing it in the form
+\begin{equation}
+e^{i\mathbf{p}\mathbf{r}} = 4\pi\sum_{l=0}^{\infty}\sum_{m=-l}^{l}i^l\,g_l(kr)\,Y^*_{lm}\!\left(\frac{\mathbf{k}}{k}\right)Y_{lm}\!\left(\frac{\mathbf{r}}{r}\right),
+\tag{46.3}
+\end{equation}
+where
+\begin{equation}
+g_l(kr) = \sqrt{\pi/(2kr)}\,J_{l+1/2}(kr)
+\tag{46.4}
+\end{equation}
+(see~III, (33.3))\,\footnote{The normalisation of the functions $g_l$ is such that their asymptotic form at $kr\to\infty$ is:
+\begin{equation}
+g_l(kr) \approx \frac{\sin(kr - \pi l/2)}{kr}.
+\tag{46.4a}
+\end{equation}}. Substituting this expansion into~(46.2), we get
+\[
+\int e^{-i\mathbf{k}\mathbf{r}}\,Y^*_{jm}(\mathbf{n})\,do_\mathbf{n} = 4\pi i^{-j}\,g_j(kr)\,Y^*_{jm}\!\left(\frac{\mathbf{r}}{r}\right),
+\]
+(the remaining terms vanish by the orthogonality of the spherical functions). In view of the condition $a/\lambda \ll 1$ the integral in~(46.2) is restricted to distances $r$ for which $kr \ll 1$. We can therefore replace the functions $g_j(kr)$ by the first terms of their expansions in powers of~$kr$\,\footnote{The power of $kr$ coincides with the order of the spherical function $Y_{jm}$ in the product with which $g_j$ appears, which justifies the neglect of the terms in $\mathbf{A}$ containing spherical functions of higher order.}:
+\begin{equation}
+g_j(kr) \approx \frac{(kr)^j}{(2j+1)!!}.
+\tag{46.5}
+\end{equation}
+
+\SourcePage{192}{197}
+As a result we obtain
+\begin{equation}
+V_{fi} = (-1)^{m+1}i^j\sqrt{\frac{(2j+1)(j+1)}{\pi j}}\;\frac{\omega^{j+1/2}}{(2j+1)!!}\;e(Q^{(\mathscr{E})}_{j,-m})_{fi},
+\tag{46.6}
+\end{equation}
+where we have introduced the quantities
+\begin{equation}
+(Q^{(\mathscr{E})}_{jm})_{fi} = \sqrt{\frac{4\pi}{2j+1}}\int\rho_{fi}(\mathbf{r})\,r^j\,Y_{jm}\!\left(\frac{\mathbf{r}}{r}\right)d^3x
+\tag{46.7}
+\end{equation}
+(recall that $Y_{j,-m} = (-1)^{j-m}Y^*_{jm}$). The quantities~(46.7) are called the $2^j$-\textit{pole electric moments of the transition} of the system, by analogy with the corresponding classical quantities (II, \S\,41)\,\footnote{We define the multipole moments without the factor $e$, in correspondence with the fact that in this book the current is also defined without the charge factor.}.
+
+For an electron in an external field $\rho_{fi} = \psi^*_f\psi_i$, and the quantities~(46.7) are then computed as matrix elements of the classical quantity
+\[
+Q^{(\mathscr{E})}_{jm} = \sqrt{\frac{4\pi}{2j+1}}\;r^j\,Y_{jm}.
+\]
+
+In the non-relativistic (in terms of particle velocity) case, the transition moment can in principle be computed analogously for any system of $N$ interacting particles. The transition charge density is then expressed through the wave functions of the system in the form
+\begin{equation}
+\rho_{fi}(\mathbf{r}) = \int\psi^*_f(\mathbf{r}_1,\ldots,\mathbf{r}_N)\,\psi_i(\mathbf{r}_1,\ldots,\mathbf{r}_N)\sum_{n=1}^{N}\delta(\mathbf{r} - \mathbf{r}_n)\cdot d^3x_1\ldots d^3x_N,
+\tag{46.8}
+\end{equation}
+where the integral is taken over the entire configuration space\,\footnote{A situation is possible when the transition probability given by approximate selection rules vanishes; in such a case, to obtain a result different from zero one must use wave functions with a relativistic correction that takes into account the spin--orbit interaction.}.
+
+The wave function of the photon we have used corresponds (in the coordinate representation) to normalisation on a $\delta$-function on the $\omega$-scale, as assumed in formula~(44.2). Substituting into it~(46.6), we obtain the probability of $Ej$-radiation\,\footnote{At first glance it might appear that by virtue of the spatial isotropy the total probability of emission of a photon should not depend on the value of $m$. This is not so, as is easy to see from the fact that for emission of photons with different values of $m$ the final states of the system must be different (for a given initial state); cf.\ selection rule~(46.16) below.}
+\begin{equation}
+w^{(\mathscr{E})}_{jm} = \frac{2(2j+1)(j+1)}{j[(2j+1)!!]^2}\,\omega^{2j+1}\,e^2\,|(Q^{(\mathscr{E})}_{j,-m})_{fi}|^2.
+\tag{46.9}
+\end{equation}
+
+\SourcePage{193}{198}
+In particular, for $j = 1$ we have
+\begin{equation}
+w^{(\mathscr{E})}_{1m} = \frac{4\omega^3}{3}\,e^2\,|(Q^{(\mathscr{E})}_{1,-m})_{fi}|^2.
+\tag{46.10}
+\end{equation}
+The quantities $Q^{(\mathscr{E})}_{1m}$ are related to the components of the vector of the electric dipole moment by the formulae
+\begin{equation}
+eQ^{(\mathscr{E})}_{10} = id_z,\qquad eQ^{(\mathscr{E})}_{1,\pm 1} = \mp\frac{i}{\sqrt{2}}\,(d_x \pm id_y).
+\tag{46.11}
+\end{equation}
+Summing~(46.10) over the values of $m$, we return, as expected, to the already known formula~(45.7) for the total probability of dipole radiation.
+
+The angular distribution of multipole radiation is determined by formula~(7.11). Normalising it to the total probability of emission $w_{jm}$, we have
+\begin{equation}
+dw_{jm} = |\mathbf{Y}^{(\mathscr{E})}_{jm}(\mathbf{n})|^2\,w_{jm}\,do = \frac{w_{jm}}{j(j+1)}\,|\nabla_\mathbf{n} Y_{jm}|^2\,do.
+\tag{46.12}
+\end{equation}
+In particular, for $j = 1$
+\[
+Y_{10} = i\sqrt{\frac{3}{4\pi}}\cos\theta,\qquad Y_{1,\pm 1} = \mp i\sqrt{\frac{3}{8\pi}}\sin\theta\cdot e^{\pm i\varphi},
+\]
+where $\theta$, $\varphi$ are the polar angle and the azimuth of the direction $\mathbf{n}$ relative to the $z$-axis. Computing the gradient, we find that the angular distribution of dipole radiation with definite values of $m$ is given by the expressions
+\begin{equation}
+dw_{10} = w_{10}\,\frac{3}{8\pi}\sin^2\theta\,d\theta,\qquad dw_{1,\pm 1} = w_{1,\pm 1}\,\frac{3}{8\pi}\;\frac{1+\cos^2\theta}{2}\,do.
+\tag{46.13}
+\end{equation}
+These could, of course, also be obtained directly from formula~(45.6), setting in it once (for $m = 0$): $d_x = d_y = 0$, $d_z = d$, and another time ($m = \pm 1$): $d_y = \mp id_x = d/\sqrt{2}$, $d_z = 0$.
+
+If the order of magnitude of the dimensions of the system (atom or nucleus) is $a$, then the order of magnitude of the electric multipole moments is, generally speaking, $Q^{\mathscr{E}}_{jm} \sim a^j$. The probability of multipole radiation is therefore
+\begin{equation}
+w^2_{jm} \sim \alpha k(ka)^{2j}.
+\tag{46.14}
+\end{equation}
+Increasing the multipole order by 1 diminishes the probability of radiation by a factor ${\sim}\,(ka)^2$.
+
+The laws of conservation of angular momentum and parity lead to definite \textit{selection rules}, restricting the possible changes in the state of the radiating system. If the initial angular momentum of the system equals $J_i$, then after emission of a photon with angular momentum $j$ the angular momentum
+
+\SourcePage{194}{199}
+of the system can take only the values $J_f$ determined by the rule of addition of angular momenta ($\mathbf{J}_i - \mathbf{J}_f = \mathbf{j}$):
+\begin{equation}
+|J_i - J_f| \leqslant j \leqslant J_i + J_f.
+\tag{46.15}
+\end{equation}
+For given values of $J_i$ and $J_f$ the same rule~(46.15) determines the possible values of the photon angular momentum $j$. But since the probability of radiation rapidly diminishes with increasing $j$, the radiation occurs predominantly with the lowest possible multipole order.
+
+The projections $M_i$ and $M_f$ of the angular momenta $\mathbf{J}_i$ and $\mathbf{J}_f$ together with the projection $m$ of the photon angular momentum satisfy the obvious (from the same law of addition of angular momenta) rule
+\begin{equation}
+M_i - M_f = m.
+\tag{46.16}
+\end{equation}
+
+The parities $P_i$ and $P_f$ of the initial and final states of the radiating system must satisfy the condition $P_f P_\Phi = P_i$, where $P_\Phi$ is the parity of the emitted photon; since the parities can only take the values $\pm 1$, this condition can also be written in the form
+\begin{equation}
+P_i P_f = P_\Phi.
+\tag{46.17}
+\end{equation}
+For a photon of the electric type $P_\Phi = (-1)^j$, so that the parity selection rule for electric multipole radiation is:
+\begin{equation}
+P_i P_f = (-1)^j.
+\tag{46.18}
+\end{equation}
+
+The selection rules for angular momentum and parity are completely rigorous and must be obeyed in radiation by any systems. Alongside these rules there may exist other, more restrictive ones, connected with specific structural features of particular radiating systems. Such rules inevitably have a more or less approximate character; we shall consider them in subsequent sections of this chapter.
+
+The dependence of the probability of emission on the quantum numbers $m$, $M_i$, $M_f$ is determined entirely by the tensor character of the multipole moments. The quantities $Q_{jm}$ with a given $j$ constitute a spherical tensor of rank~$j$. The dependence of their matrix elements on the indicated quantum numbers is given by the formula
+\begin{equation}
+|\langle n_f J_f M_f|Q_{j,-m}|n_i J_i M_i\rangle|^2 = \begin{pmatrix} J_f & j & J_i \\ M_f & m & -M_i \end{pmatrix}^{\!2}|\langle n_f J_f\|Q_j\|n_i J_i\rangle|^2
+\tag{46.19}
+\end{equation}
+
+\SourcePage{195}{200}
+(see~III, (107.6)), where the letter $n$ conventionally denotes the set of remaining quantum numbers, besides $J$ and $M$, of the state of the system. The reduced matrix elements standing on the right-hand side of~(46.19) do not depend on the numbers $m$, $M_i$, $M_f$. Substituting into~(46.9) this formula, we determine the desired dependence, which turns out to be proportional to
+\[
+\begin{pmatrix} J_f & j & J_i \\ M_f & m & -M_i \end{pmatrix}^{\!2}
+\]
+(it is assumed, of course, that the emitter is not located in an external field; then the transition frequency $\omega$ does not depend on the numbers $M_i$ and $M_f$).
+
+Summing the probability over all values $M_f$ (for given $M_i$), we obtain the total probability of emission of a photon of given frequency from the initial level $n_i J_i$. By virtue of the spatial isotropy it is obvious that this quantity will not depend also on the initial value of $M_i$. The summation is carried out using the formula
+\begin{equation}
+\sum_{M_f}|\langle n_f J_f M_f|Q_{j,-m}|n_i J_i M_i\rangle|^2 = \frac{1}{2J_i + 1}\,|\langle n_f J_f\|Q_j\|n_i J_i\rangle|^2
+\tag{46.20}
+\end{equation}
+(see~III, (107.11)).

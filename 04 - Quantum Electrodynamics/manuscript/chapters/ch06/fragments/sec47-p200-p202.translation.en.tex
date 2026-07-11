@@ -1,0 +1,97 @@
+\SourcePage{195}{200}
+\section{Magnetic multipole radiation}
+
+The wave function of a photon of the magnetic type $A^\mu = (0,\,\mathbf{A})$, where $\mathbf{A}$ is given by formula~(7.6). Substituting it into~(46.1), we obtain for the matrix element of the transition
+\begin{equation}
+V_{fi} = -e\,\frac{\sqrt{\omega}}{2\pi}\int d^3x\cdot\mathbf{j}_{fi}(\mathbf{r})\int do_\mathbf{n}\cdot e^{-i\mathbf{k}\mathbf{r}}\,\mathbf{Y}^{(M)*}_{jm}(\mathbf{n}).
+\tag{47.1}
+\end{equation}
+
+The components of the vector $\mathbf{Y}^{(M)}_{jm}$ are expressed according to~(7.16) through spherical functions of order~$j$. Substituting the expansion~(46.3) into~(46.2) and integrating over $do_\mathbf{n}$, we get
+\[
+\int e^{-i\mathbf{k}\mathbf{r}}\,\mathbf{Y}^{(M)*}_{jm}(\mathbf{n})\,do_\mathbf{n} = 4\pi i^{-j}\,g_j(kr)\,\mathbf{Y}^{(M)*}_{jm}\!\left(\frac{\mathbf{r}}{r}\right),
+\]
+and after substituting $g_j$ from~(46.5)\,\footnote{Do not confuse the current $\mathbf{j}$ with the angular momentum $j$!}
+\begin{equation}
+V_{fi} = -ei^{-j}\,\frac{2\omega^{j+1/2}}{(2j+1)!!}\int\mathbf{j}_{fi}(\mathbf{r})\,r^j\,\mathbf{Y}^{(M)*}_{jm}\!\left(\frac{\mathbf{r}}{r}\right)d^3x.
+\end{equation}
+
+We transform under the integral sign
+\[
+r^j\,\mathbf{j}_{fi}\cdot[\mathbf{r}\nabla Y^*_{jm}] = -[\mathbf{r}\,\mathbf{j}_{fi}]\nabla(r^j Y^*_{jm})
+\]
+
+\SourcePage{196}{201}
+and obtain
+\begin{equation}
+V_{fi} = (-1)^m i^j\sqrt{\frac{(2j+1)(j+1)}{\pi j}}\;\frac{\omega^{j+1/2}}{(2j+1)!!}\;e(Q^{(M)}_{j,-m})_{fi},
+\tag{47.2}
+\end{equation}
+where we have introduced the quantities
+\begin{equation}
+(Q^{(M)}_{jm})_{fi} = \frac{1}{j+1}\sqrt{\frac{4\pi}{2j+1}}\int[\mathbf{r}\,\mathbf{j}_{fi}]\nabla(r^j Y_{jm})\,d^3x.
+\tag{47.3}
+\end{equation}
+They are called the $2^j$-\textit{pole magnetic moments of the transition}. In view of the analogy between expressions~(47.2) and~(46.6), the formula for the probability of emission is obtained from~(46.9) merely by replacing the electric moments by magnetic ones. The angular distribution formula~(46.12) also remains in force (as was already noted in connection with~(7.11)).
+
+Let us examine the structure of expression~(47.3) for $j = 1$. In this case the functions
+\[
+\sqrt{\frac{4\pi}{3}}\,rY_{10} = iz,\qquad \sqrt{\frac{4\pi}{3}}\,rY_{1,\pm 1} = \mp\frac{i}{\sqrt{2}}\,(x\pm iy),
+\]
+and their gradients are simply the circular unit vectors $\mathbf{e}^{(0)}$, $\mathbf{e}^{(\pm 1)}$~(7.14). The quantities $e(Q^{(M)}_{1m})_{fi}$ therefore represent the spherical components of the vector
+\begin{equation}
+\boldsymbol{\mu}_{fi} = \frac{e}{2}\int[\mathbf{r}\,\mathbf{j}_{fi}]\,d^3x,
+\tag{47.4}
+\end{equation}
+which by its structure is analogous to the classical magnetic moment (see~II, \S\,44). The total probability of $M1$-radiation (in ordinary units) is
+\begin{equation}
+w = \frac{4\omega^3}{3\hbar c^3}\,|\boldsymbol{\mu}_{fi}|^2.
+\tag{47.5}
+\end{equation}
+
+Let us show how formula~(47.4) is connected with the usual non-relativistic expression for the operator of magnetic moment.
+
+The expression for the transition current (see~III, \S\,115):
+\begin{equation}
+\mathbf{j}_{fi} = -\frac{i}{2m}\,(\psi^*_f\nabla\psi_i - \psi_i\nabla\psi^*_f) + \frac{\mu}{es}\,\mathrm{rot}(\psi^*_f\,\widehat{\mathbf{s}}\,\psi_i),
+\tag{47.6}
+\end{equation}
+where $\mu$ is the magnetic moment of the particle, $s$ its spin. Therefore
+\begin{equation}
+\boldsymbol{\mu}_{fi} = -\frac{ie}{4m}\int\psi^*_f[\mathbf{r}\nabla]\psi_i\,d^3x + \frac{ie}{4m}\int\psi_i[\mathbf{r}\nabla]\psi^*_f\,d^3x +
+{} + \frac{\mu}{2s}\int[\mathbf{r}\,\mathrm{rot}(\psi^*_f\,\widehat{\mathbf{s}}\,\psi_i)]\,d^3x.
+\tag{47.7}
+\end{equation}
+
+\SourcePage{197}{202}
+In the second term we write
+\[
+\int\psi_i[\mathbf{r}\nabla]\psi^*_f\,d^3x = -\int\psi^*_f[\mathbf{r}\nabla]\psi_i\,d^3x + \int\mathrm{rot}(\mathbf{r}\,\psi^*_f\psi_i)\,d^3x.
+\]
+The last integral transforms into an integral over an infinitely remote surface and vanishes. Thus, the first two terms in~(47.7) are the same. In the third term we transform the integral as follows (temporarily denoting $\mathbf{F} = \psi^*_f\widehat{\mathbf{s}}\psi_i$):
+\[
+\int[\mathbf{r}[\nabla\mathbf{F}]]\,d^3x = \oint[\mathbf{r}[d\mathbf{f}\cdot\mathbf{F}]] - \int[[\mathbf{F}\nabla]\mathbf{r}]\,d^3x.
+\]
+The integral over the surface vanishes, and in the last integral we have: $[[\mathbf{F}\nabla]\mathbf{r}] = -\mathbf{F}\,\mathrm{div}\,\mathbf{r} + \mathbf{F} = -2\mathbf{F}$. Thus,
+\[
+\int[\mathbf{r}\,\mathrm{rot}\,\mathbf{F}]\,d^3x = 2\int\mathbf{F}\,d^3x.
+\]
+
+As a result the expression for $\boldsymbol{\mu}_{fi}$ takes the form
+\begin{equation}
+\boldsymbol{\mu}_{fi} = \int\psi^*_f\!\left(\frac{e}{2m}\,\widehat{\mathbf{L}} + \frac{\mu}{s}\,\widehat{\mathbf{s}}\right)\psi_i\,d^3x,
+\tag{47.8}
+\end{equation}
+where $\widehat{\mathbf{L}} = -i[\mathbf{r}\nabla]$ is the orbital angular momentum operator of the particle. As it should be, $\boldsymbol{\mu}_{fi}$ turns out to be the matrix element of the operator
+\begin{equation}
+\widehat{\boldsymbol{\mu}} = \frac{e}{2m}\,\widehat{\mathbf{L}} + \frac{\mu}{s}\,\widehat{\mathbf{s}},
+\tag{47.9}
+\end{equation}
+composed of the operators of the orbital and intrinsic magnetic moments of the particle.
+
+The selection rules for magnetic multipole radiation are analogous to those for the electric case: for the total angular momentum the same rules~(46.15),~(46.16) hold, and for parity the rule is
+\begin{equation}
+P_i P_f = (-1)^{j+1},
+\tag{47.10}
+\end{equation}
+obtained by substituting into~(46.17) the parity of the $Mj$-photon: $P_\Phi = (-1)^{j+1}$.

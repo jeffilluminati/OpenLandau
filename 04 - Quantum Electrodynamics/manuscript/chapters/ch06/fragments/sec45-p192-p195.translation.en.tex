@@ -1,0 +1,88 @@
+\SourcePage{187}{192}
+\section{Dipole radiation}
+
+Let us apply the formulae obtained to the emission of a photon by a relativistic electron in a given external field. The transition current in this case is the matrix element of the operator
+\[
+\widehat\jmath = \widehat{\bar\psi}\gamma\widehat\psi,
+\]
+
+\SourcePage{188}{193}
+in which the $\psi$-operators are assumed to be expanded over the system of wave functions of stationary states of the electron in the given field (see~\S\,32). The transition of the electron from state $i$ to state $f$ is described by the matrix element $\langle 0_i1_f|j|1_i0_f\rangle$. The change in the occupation numbers is effected by the operator $\widehat a^+_f\widehat a_i$, and for the transition current we obtain
+\begin{equation}
+j^\mu_{fi} = \bar\psi_f\gamma^\mu\psi_i = (\psi^*_f\psi_i,\;\psi^*_f\boldsymbol{\alpha}\psi_i),
+\tag{45.1}
+\end{equation}
+where $\psi_i$ and $\psi_f$ are the wave functions of the initial and final states of the electron.
+
+We choose the wave function of the photon in the three-dimensionally transverse gauge (4-vector of polarisation $e = (0,\mathbf{e})$). Then from~(43.10) the product $j_{fi}\,e^* = -\mathbf{j}_{fi}\cdot\mathbf{e}^*$. Substituting $V_{fi}$ from~(44.4), we obtain the following formula for the probability of radiation (per unit time) into the element of solid angle $do$ of a photon with polarisation~$\mathbf{e}$:
+\begin{equation}
+dw_{\mathbf{en}} = e^2\,\frac{\omega}{2\pi}\,|\mathbf{e}^*\cdot\mathbf{j}_{fi}(\mathbf{k})|^2\,do,
+\tag{45.2}
+\end{equation}
+where
+\begin{equation}
+\mathbf{j}_{fi}(\mathbf{k}) = \int\psi^*_f\,\boldsymbol{\alpha}\,\psi_i\,e^{-i\mathbf{k}\mathbf{r}}\,d^3x.
+\tag{45.3}
+\end{equation}
+
+Summation over the polarisations of the photon is carried out by averaging over the directions of $\mathbf{e}$ (in the plane perpendicular to the given direction $\mathbf{n} = \mathbf{k}/\omega$), after which the result is multiplied by 2 to account for the two independent possibilities for transverse polarisation of the photon\,\footnote{For the averaging one uses the formula
+\begin{equation}
+\overline{e_i e^*_k} = \tfrac{1}{2}(\delta_{ik} - n_i n_k)
+\tag{45.4a}
+\end{equation}
+or
+\begin{equation}
+(\mathbf{a}\mathbf{e})(\mathbf{b}\mathbf{e}^*) = \tfrac{1}{2}\{\mathbf{a}\mathbf{b} - (\mathbf{a}\mathbf{n})(\mathbf{b}\mathbf{n})\} = \tfrac{1}{2}[\mathbf{a}\mathbf{n}][\mathbf{b}\mathbf{n}],
+\tag{45.4b}
+\end{equation}
+where $\mathbf{a}$, $\mathbf{b}$ are constant vectors.}. Thus we obtain the formula
+\begin{equation}
+dw_\mathbf{n} = e^2\,\frac{\omega}{2\pi}\,|[\mathbf{n}\,\mathbf{j}_{fi}(\mathbf{k})]|^2\,do.
+\tag{45.4}
+\end{equation}
+
+\SourcePage{189}{194}
+A very important case is when the wavelength of the photon $\lambda$ is large compared with the dimensions of the radiating system~$a$. This situation is usually connected with the smallness of the velocities of particles compared with the speed of light. In the first approximation in $a/\lambda$ (corresponding to \textit{dipole radiation}---cf.~II, \S\,67) in the transition current~(45.3) one can replace the slowly varying factor $e^{-i\mathbf{k}\mathbf{r}}$ by unity in the region where $\psi_i$ or $\psi_f$ are appreciably different from zero. This replacement means, in other words, the neglect of the momentum of the photon compared with the momenta of the particles in the system. In the same approximation the integral $\mathbf{j}_{fi}(0)$ may be replaced by its non-relativistic expression, i.e.\ simply by the matrix element $\mathbf{v}_{fi}$ of the velocity of the electron with respect to the eigenfunction wave functions. In turn this element $\mathbf{v}_{fi} = -i\omega\mathbf{r}_{fi} = \mathbf{d}_{fi}$, where $\mathbf{d}$ is the dipole moment of the electron (in its orbital motion). Thus, we find the following formula for the probability of dipole radiation:
+\begin{equation}
+dw_{\mathbf{en}} = \frac{\omega^3}{2\pi}\,|\mathbf{e}^*\cdot\mathbf{d}_{fi}|^2\,do
+\tag{45.5}
+\end{equation}
+(the direction $\mathbf{n}$ appears here in an implicit form: the vector $\mathbf{e}$ must be perpendicular to $\mathbf{n}$). Summing over polarisations, we get
+\begin{equation}
+dw_\mathbf{n} = \frac{\omega^3}{2\pi}\,|[\mathbf{n}\,\mathbf{d}_{fi}]|^2\,do.
+\tag{45.6}
+\end{equation}
+
+In view of the non-relativistic (with respect to the electron) character of these formulae, their generalisation to arbitrary electronic systems is obvious: under $\mathbf{d}_{fi}$ one should understand the matrix element of the total dipole moment of the system.
+
+Integrating formula~(45.6) over all directions, we find the total probability of radiation:
+\begin{equation}
+w = \frac{4\omega^3}{3}\,|\mathbf{d}_{fi}|^2,
+\tag{45.7}
+\end{equation}
+or in ordinary units:
+\begin{equation}
+w = \frac{4\omega^3}{3\hbar c^3}\,|\mathbf{d}_{fi}|^2.
+\tag{45.7a}
+\end{equation}
+
+The intensity $I$ of the radiation is obtained by multiplying the probability by $\hbar\omega$:
+\begin{equation}
+I = \frac{4\omega^4}{3c^3}\,|\mathbf{d}_{fi}|^2.
+\tag{45.8}
+\end{equation}
+
+This formula reveals a direct analogy with the classical formula (see~II, (67.11)) for the intensity of dipole radiation by a system of periodically moving particles: the radiation has the frequency $\omega_s = s\omega$ (where $\omega$ is the frequency of the motion of the particles, $s$ an integer), and the intensity is
+\begin{equation}
+I_s = \frac{4\omega_s^4}{3c^3}\,|\mathbf{d}_s|^2,
+\tag{45.9}
+\end{equation}
+
+\SourcePage{190}{195}
+where $\mathbf{d}_s$ are the Fourier components of the dipole moment, i.e.\ the coefficients of the expansion
+\begin{equation}
+\mathbf{d}(t) = \sum_{s=-\infty}^{\infty}\mathbf{d}_s\,e^{-is\omega t}.
+\tag{45.10}
+\end{equation}
+
+The quantum formula~(45.8) is obtained from~(45.9) by replacing these Fourier components by the matrix elements of the corresponding transitions. This rule (expressing the \textit{correspondence principle} of Bohr) is a special case of the general correspondence between Fourier components of classical quantities and quantum matrix elements of the corresponding transitions (see~III, \S\,48). The radiation is quasiclassical for transitions between states with large quantum numbers; the frequency $\hbar\omega = E_i - E_f$ is then small compared with the energies $E_i$ and $E_f$. This circumstance, however, does not lead to any changes in the form of formula~(45.8), valid for any transitions. By this is explained the (in a certain sense accidental) fact that the correspondence principle for the intensity of radiation turns out to be valid not only in the quasiclassical, but also in the general quantum case.
