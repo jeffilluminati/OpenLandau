@@ -1,0 +1,113 @@
+
+\section{Analytic properties of the photon propagator}
+
+\SourcePage{544}{549}
+
+The investigation of the analytic properties of the photon propagator is conveniently begun by studying the properties of the function~$\Pi(k^2)$. Direct use of the definition~(103.1) is complicated by the gauge ambiguity of the operators~$\hat{A}^\mu(x)$.
+
+Starting from the expression for the photon self-energy function in terms of matrix elements of the gauge-invariant current operator, the integral representation of~$\Pi(k^2)$~(104.11) was obtained in~\S\,104. Denoting~$k^2$ by~$t$,\footnote{Not to be confused with the time designation!} consider the properties of~$\Pi(t)$ in the complex~$t$-plane. From the integral representation:
+\begin{equation}
+\Pi(t) = \int_0^\infty \frac{\rho(t')\,dt'}{t - t' + i0}.
+\label{eq:111.1}
+\end{equation}
+
+On the negative real half-axis, $\Pi(t)$ is real, and on the entire remaining plane satisfies:
+\begin{equation}
+\Pi(t^*) = \Pi^*(t).
+\label{eq:111.2}
+\end{equation}
+
+$\Pi(t)$ can have singularities only at points of the function~$\rho(t)$. These lie at values~$t = k^2$ which are thresholds for production of various collections of real particles by the virtual photon. At these values new types of intermediate states ``come into play'' in the sum~(104.9). The contribution of these states is zero below threshold and nonzero above, leading to singularities at the threshold points. These threshold values are real and non-negative.\footnote{For example, $k^2 = 0$ is the threshold for three (or more odd number of) real photons, $k^2 = 4m^2$ is the threshold for one electron--positron pair, etc.}
+
+\SourcePage{545}{550}
+
+Therefore the singular points of~$\Pi(t)$ lie on the positive real half-axis of~$t$. Making a cut along this half-axis, $\Pi(t)$ is analytic on the entire cut plane.
+
+The~$+i0$ in the denominator of~(\ref{eq:111.1}) shows that the pole~$t' = t$ must be bypassed from below. Thus by the ``value of~$\Pi(t)$'' on the real axis we mean its value on the upper edge of the cut. Using the rule~(75.18):
+\begin{equation}
+\frac{1}{x \pm i0} = \mathcal{P}\frac{1}{x} \mp i\pi\delta(x),
+\label{eq:111.3}
+\end{equation}
+we find for real~$t$:
+\begin{equation}
+\operatorname{Im}\Pi(t) \equiv \operatorname{Im}\Pi(t + i0) = -\pi\rho(t).
+\label{eq:111.4}
+\end{equation}
+
+On the lower edge of the cut the imaginary part has opposite sign, while~$\operatorname{Re}\Pi$ is the same. Hence the jump across the cut:
+\begin{equation}
+\Pi(t + i0) - \Pi(t - i0) = -2\pi i\,\rho(t).
+\label{eq:111.5}
+\end{equation}
+
+The integral representation~(\ref{eq:111.1}) can itself be viewed as a Cauchy formula for the analytic function~$\Pi(t)$. Indeed, applying the Cauchy formula:
+\begin{equation}
+\Pi(t) = \frac{1}{2\pi i}\oint_C \frac{\Pi(t')\,dt'}{t' - t}
+\label{eq:111.6}
+\end{equation}
+to the contour
+
+% [Diagram (111.7): contour C in the complex t-plane --- encircles the point t, wraps around the cut on the positive real axis from 0 to infinity, with a large circle at infinity]
+\begin{equation}
+\label{eq:111.7}
+\end{equation}
+
+\noindent wrapping around the cut. Under the assumption of sufficiently fast decrease of~$\Pi(t)$ at infinity, the integral over the large circle vanishes, and the integrals along the edges of the cut give the \emph{dispersion relation}:
+\begin{equation}
+\Pi(t) = \frac{1}{\pi}\int_0^\infty \frac{\operatorname{Im}\Pi(t' + i0)}{t' - t}\,dt' = \frac{1}{\pi}\int_0^\infty \frac{\operatorname{Im}\Pi(t')}{t' - t - i0}\,dt'.
+\label{eq:111.8}
+\end{equation}
+Substituting~(\ref{eq:111.4}), we recover~(\ref{eq:111.1}).\footnote{Dispersion relations were introduced into quantum field theory by M.\,Gell-Mann, M.\,L.\,Goldberger, and W.\,E.\,Thirring (1954).}
+
+\SourcePage{546}{551}
+
+The analytic properties of~$\mathcal{P}(t)$ and~$\mathcal{D}(t)$ coincide with those of~$\Pi(t)$, through which they are expressed by simple formulas~(104.2) and~(103.21). For~$\mathcal{D}(t)$:
+\begin{equation}
+\mathcal{D}(t) = \frac{4\pi}{t\bigl(1 + \Pi(t)/t\bigr)}.
+\label{eq:111.9}
+\end{equation}
+
+On the positive real half-axis ($t > 0$), $t$ should be understood as~$t + i0$. The imaginary part of~$\mathcal{D}(t)$ can be computed using~(\ref{eq:111.3}) and~(\ref{eq:111.4}), taking into account that according to~(\ref{eq:110.6})~$\Pi(t)/t \to 0$ as~$t \to 0$. Then:
+\begin{equation}
+\operatorname{Im}\mathcal{D}(t) = -4\pi^2\delta(t) + \frac{4\pi}{t^2}\,\operatorname{Im}\Pi(t) = -4\pi^2\delta(t) - \frac{4\pi^2}{t^2}\,\rho(t).
+\label{eq:111.10}
+\end{equation}
+
+Applying the dispersion relation of type~(\ref{eq:111.8}) to~$\mathcal{D}(t)$:
+\begin{equation}
+\mathcal{D}(t) = \frac{4\pi}{t + i0} + 4\pi\int_0^\infty \frac{\rho(t')}{t'^2}\,\frac{dt'}{t - t' + i0}.
+\label{eq:111.11}
+\end{equation}
+This formula is called the \emph{K\"all\'en--Lehmann representation} (G.\,K\"all\'en, 1952; H.\,Lehmann, 1954).
+
+There is a close connection between the position of the cut for~$\mathcal{D}(t)$ (and its imaginary part on the cut) and the unitarity condition for the amplitude of the process~$a + b \to c + d$ depicted by diagram~(110.4).
+
+The unitarity condition~(71.2):
+\begin{equation}
+T_{fi} - T^*_{if} = i(2\pi)^4 \sum_n T_{fn}\,T^*_{in}\,\delta^{(4)}(P_f - P_i).\footnote{Recall that amplitudes~$T_{fi}$ differ from~$M_{fi}$ only by factors (see~(64.10)).}
+\label{eq:111.12}
+\end{equation}
+
+\SourcePage{547}{552}
+
+The summation on the right is over all physical intermediate states~$n$, which are evidently the states of systems of real pairs and photons --- the same states that appear in the matrix elements in the definition of~$\rho(k^2)$~(104.9). The amplitudes~$M_{fi}$ and~$M_{if}$ contain factors~$\mathcal{D}(k^2)$ and~$\mathcal{D}^*(k^2)$ respectively, and their difference contains the imaginary part~$\operatorname{Im}\mathcal{D}(k^2)$. We see that the connection (from~(\ref{eq:111.4})) between~$\operatorname{Im}\mathcal{D}$ and the existence of the indicated intermediate states is a consequence of the necessary requirements of unitarity.
+
+In subsequent work we shall see that in actual perturbation-theory computations of~$\mathcal{D}(t)$ (or equivalently~$\mathcal{P}(t)$) it is convenient to begin by computing~$\operatorname{Im}\mathcal{P}$, which involves no divergent expressions; the real part is then obtained from the dispersion formula of type~(\ref{eq:111.8}), and the integral may turn out to be divergent, requiring additional subtraction operations to satisfy the conditions~$\mathcal{P}(0) = 0$ and~$\mathcal{P}'(0) = 0$. This subtraction can be performed without explicit manipulation of divergent integrals. To do this, one applies the dispersion relation~(\ref{eq:111.8}) not to~$\mathcal{P}(t)$ itself but to~$\mathcal{P}(t)/t^2$. Then~$\mathcal{P}(t)$ takes the form:
+\begin{equation}
+\mathcal{P}(t) = \frac{t^2}{\pi}\int_0^\infty \frac{\operatorname{Im}\mathcal{P}(t')}{t'^2(t' - t - i0)}\,dt'.
+\label{eq:111.13}
+\end{equation}
+This integral converges, and the function~$\mathcal{P}(t)$ obtained automatically satisfies the required conditions.
+
+Equation~(\ref{eq:111.13}) is called a dispersion relation ``with two subtractions.'' The meaning of the passage to~$\mathcal{P}(t)/t^2$ becomes particularly clear if one writes~(\ref{eq:111.13}) in the form:
+
+\SourcePage{548}{553}
+
+\begin{equation}
+\mathcal{P}(t) = \frac{1}{\pi}\int_0^\infty \frac{\operatorname{Im}\mathcal{P}(t')}{t' - t - i0}\,dt' - \frac{1}{\pi}\int_0^\infty \frac{\operatorname{Im}\mathcal{P}(t')}{t'}\,dt' - \frac{t}{\pi}\int_0^\infty \frac{\operatorname{Im}\mathcal{P}(t')}{t'^2}\,dt'.
+\label{eq:111.14}
+\end{equation}
+If one denotes the first (``unregularised'') integral as~$\tilde{\mathcal{P}}(t)$, then the entire expression on the right equals
+\[
+\tilde{\mathcal{P}}(t) - \tilde{\mathcal{P}}(0) - t\,\tilde{\mathcal{P}}'(0).
+\]
