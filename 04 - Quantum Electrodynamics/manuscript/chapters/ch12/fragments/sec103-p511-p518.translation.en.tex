@@ -1,0 +1,219 @@
+
+\section{The exact photon propagator}
+
+\SourcePage{506}{511}
+
+The main role in the exact theory apparatus (without expansion in powers of~$e^2$) is played by the concepts of exact propagators.
+
+The exact photon propagator (which we shall denote by the script letter~$\mathcal{D}$) is defined by the formula:
+\begin{equation}
+\mathcal{D}_{\mu\nu}(x - x') = i\langle 0|\,T\hat{A}_\mu(x)\,\hat{A}_\nu(x')\,|0\rangle,
+\label{eq:103.1}
+\end{equation}
+where $\hat{A}_\mu(x)$ are Heisenberg operators, in contrast to the definition~(\ref{eq:76.1}):
+\begin{equation}
+D_{\mu\nu}(x - x') = i\langle 0|\,T\hat{A}_{\mu}^{\mathrm{int}}(x)\,\hat{A}_{\nu}^{\mathrm{int}}(x')\,|0\rangle,
+\label{eq:103.2}
+\end{equation}
+in which operators in the interaction representation figured. In contrast to the exact propagator~(\ref{eq:103.1}), function~(\ref{eq:103.2}) can be called the propagator of free photons.
+
+In view of the impossibility of exact computation of the vacuum mean value~(\ref{eq:103.1}), the definition allows one to establish some
+
+\SourcePage{507}{512}
+
+\noindent general properties of this function. This will be the topic of~\S\,111, and for now we shall concern ourselves with the computation of~$\mathcal{D}_{\mu\nu}$ by perturbation theory with the help of diagrammatic technique. For this it is necessary to express~$\mathcal{D}_{\mu\nu}$ through operators in the interaction representation.
+
+Let first $t > t'$. Using the connection between $\hat{A}(x)$ and $\hat{A}_{\mathrm{int}}(x)$ (cf.~(\ref{eq:102.14})), we write:
+\begin{equation}
+\begin{split}
+\mathcal{D}_{\mu\nu}(x - x') &= i\langle 0|\,\hat{A}_\mu(x)\,\hat{A}_\nu(x')\,|0\rangle \\
+&= i\langle 0|\,\hat{S}(-\infty, t)\,\hat{A}_{\mu}^{\mathrm{int}}(x)\,\hat{S}(t, t')\,\hat{A}_{\nu}^{\mathrm{int}}(x')\,\hat{S}(t', -\infty)\,|0\rangle.
+\end{split}
+\label{eq:103.3}
+\end{equation}
+where for brevity it is denoted:
+\begin{equation}
+\hat{S} \equiv \hat{S}(+\infty, -\infty).
+\label{eq:103.4}
+\end{equation}
+According to~(\ref{eq:102.12}):
+\[
+\hat{S}(t, -\infty)\,\hat{S}(-\infty, t') = \hat{S}(t, t'),\qquad
+\hat{S}(-\infty, t) = \hat{S}(-\infty, +\infty)\,\hat{S}(+\infty, t) = \hat{S}^{-1}\hat{S}(\infty, t).
+\]
+Then:
+\[
+\mathcal{D}_{\mu\nu} = i\langle 0|\,\hat{S}^{-1}\bigl[\hat{S}(\infty, t)\,\hat{A}_{\mu}^{\mathrm{int}}(x)\,\hat{S}(t, t')\,\hat{A}_{\nu}^{\mathrm{int}}(x')\,\hat{S}(t', -\infty)\bigr]\,|0\rangle.
+\]
+Since according to the definition~(\ref{eq:102.11}) $\hat{S}(t_2, t_1)$ contains only operators at times between~$t_1$ and~$t_2$, arranged in chronological order, it is obvious that altogether all operator factors in square brackets are arranged in order of decreasing times from left to right. Placing before the bracket the sign of chronologisation~$T$, we can then arbitrarily rearrange the order of factors, since the operator~$T$ automatically establishes them in the needed order. Using this, we rewrite the expression in brackets in the form:
+\[
+[\ldots] = T\bigl[\hat{A}_{\mu}^{\mathrm{int}}(x)\,\hat{A}_{\nu}^{\mathrm{int}}(x')\,\hat{S}(\infty, t)\,\hat{S}(t, t')\,\hat{S}(t', -\infty)\bigr] = T\bigl[\hat{A}_{\mu}^{\mathrm{int}}(x)\,\hat{A}_{\nu}^{\mathrm{int}}(x')\,\hat{S}\bigr].
+\]
+Thus:
+\begin{equation}
+\mathcal{D}_{\mu\nu}(x - x') = i\langle 0|\,\hat{S}^{-1}\,T\bigl[\hat{A}_{\mu}^{\mathrm{int}}(x)\,\hat{A}_{\nu}^{\mathrm{int}}(x')\,\hat{S}\bigr]\,|0\rangle,
+\label{eq:103.5}
+\end{equation}
+and it is easy to verify analogously that this formula is valid also for $t < t'$.
+
+\SourcePage{508}{513}
+
+We now show that the factor $\hat{S}^{-1}$ can be taken out from under the vacuum averaging sign in the form of some phase factor. For this we recall that the Heisenberg wave function of the vacuum~$\Phi$ coincides with the value $\Phi_{\mathrm{int}}(-\infty)$ of the wave function of this same state in the interaction representation (see~(\ref{eq:102.9})). But the vacuum is a strictly stationary state; in it no spontaneous processes of particle production are possible; with the passage of time the vacuum remains vacuum; this means that $\Phi_{\mathrm{int}}(+\infty)$ can differ from $\Phi_{\mathrm{int}}(-\infty)$ only by some phase factor~$e^{i\alpha}$. According to~(\ref{eq:72.8}) we have:
+\begin{equation}
+\hat{S}\,\Phi_{\mathrm{int}}(-\infty) = e^{i\alpha}\,\Phi_{\mathrm{int}}(-\infty) = \langle 0|S|0\rangle\,\Phi_{\mathrm{int}}(-\infty).
+\label{eq:103.6}
+\end{equation}
+Taking the complex conjugate and using the unitarity of operator~$\hat{S}$, we obtain:
+\[
+\Phi_{\mathrm{int}}^*(-\infty)\,\hat{S}^{-1} = \langle 0|S|0\rangle^{-1}\,\Phi_{\mathrm{int}}^*(-\infty).
+\]
+From this it is clear that expression~(\ref{eq:103.5}) can be rewritten in the form:
+\begin{equation}
+\mathcal{D}_{\mu\nu}(x - x') = \frac{i\langle 0|\,T\hat{A}_{\mu}^{\mathrm{int}}(x)\,\hat{A}_{\nu}^{\mathrm{int}}(x')\,S\,|0\rangle}{\langle 0|S|0\rangle}.
+\label{eq:103.7}
+\end{equation}
+Substituting here (in both numerator and denominator) the expansion~(\ref{eq:72.10}) for~$\hat{S}$ and performing the averaging with the help of Wick's theorem (see~\S\,77), we obtain an expansion of~$\mathcal{D}_{\mu\nu}$ in powers of~$e^2$.
+
+In the numerator of~(\ref{eq:103.7}) the averaged expressions differ from the matrix elements of the type~(\ref{eq:77.1}) considered in~\S\,77, only in that instead of ``external'' operators of creation or annihilation of photons, there stand the operators $\hat{A}_{\mu}^{\mathrm{int}}(x)$ and $\hat{A}_{\nu}^{\mathrm{int}}(x')$. Since all factors in the averaged products stand under the chronologisation sign, the pairwise contractions of these operators with ``internal'' operators of creation or annihilation of photons will give photon propagators~$D_{\mu\nu}$. Thus the results of the averaging will be expressed as sets of diagrams with two external ends, constructed according to the rules described in~\S\,77, with the only difference that external photon lines, like internal ones, will now correspond to propagators~$D_{\mu\nu}$ (instead of amplitudes~$e$ of real photons). In the zeroth approximation, setting $\hat{S} = 1$, the numerator of~(\ref{eq:103.7}) coincides simply with $D_{\mu\nu}(x - x')$. The next non-vanishing terms will be of order~$\sim e^2$. They are represented by a set of diagrams containing two external ends and two vertices:
+
+% [Feynman diagrams (103.8): (a) self-energy insertion on photon line (bubble/loop diagram with electron loop between two photon propagators); (b) disconnected diagram consisting of a free photon line and a separate closed vacuum loop]
+\begin{equation}
+\label{eq:103.8}
+\end{equation}
+
+The second of these diagrams consists of two unconnected parts: a dashed line (which corresponds to $-iD_{\mu\nu}$) and
+
+\SourcePage{509}{514}
+
+\noindent a closed loop. Such a decomposition of the diagram means decomposition of the corresponding analytic expression into two independent factors. Adding to diagrams~(\ref{eq:103.8}) the diagram (dashed line) of the zeroth approximation and ``taking it outside the bracket'', we find that as a result, to the accuracy of terms of second order, the numerator in~(\ref{eq:103.7}) equals:
+
+% [Feynman diagram: dashed photon line multiplied by curly bracket containing: 1 + (connected bubble diagram) + (disconnected vacuum loop)]
+
+The expression $\langle 0|S|0\rangle$ in the denominator of~(\ref{eq:103.7}) represents the amplitude of the ``transition'' from vacuum to vacuum. Its expansion therefore contains only diagrams without external ends. In the zeroth approximation $\langle 0|S|0\rangle = 1$, and to accuracy of terms of second order we get:
+
+% [Feynman diagram: curly bracket containing 1 + (closed vacuum loop)]
+
+Dividing numerator by denominator to this accuracy, we find that the curly bracket cancels and there remains:
+
+% [Feynman diagram: free photon propagator + photon propagator with connected bubble (self-energy) insertion]
+
+Thus the diagram with the disconnected loop drops out of the answer. This result has a general character. Thinking about the way diagrams are constructed for the numerator and denominator in~(\ref{eq:103.7}), it is not difficult to understand that the role of the denominator $\langle 0|S|0\rangle$ reduces to the fact that in any order of perturbation theory the exact propagator~$\mathcal{D}_{\mu\nu}$ will be represented only by diagrams not containing disconnected parts.
+
+We note that diagrams without external ends (closed loops) have no physical significance whatsoever and should not be taken into account even independently of the fact that they drop out in the formation of propagator~$\mathcal{D}$. Indeed, such loops represent radiative corrections to a diagonal matrix element of the $S$-matrix for the vacuum-to-vacuum transition. But according to~(\ref{eq:103.6}) the sum of all these loops (together with unity of the zeroth approximation) gives only an insignificant phase factor, which cannot affect any physical results.
+
+The transition from coordinate to momentum representation occurs in the usual way. Thus in the second approximation of perturbation theory the propagator $-i\mathcal{D}_{\mu\nu}(k)$ (which we will depict by a bold dashed line) is given by the sum:
+
+% [Feynman diagrams (103.9): bold dashed line = thin dashed line + thin dashed line with electron-loop (bubble) insertion, with momentum k labeling external lines]
+\begin{equation}
+\label{eq:103.9}
+\end{equation}
+
+\SourcePage{510}{515}
+
+\noindent where all diagrams are computed by the usual rules (enumerated in~\S\,77), with the only difference that external photon lines, like internal ones, are also assigned factors $-iD_{\mu\nu}(k)$.
+
+The analytic expression of this formula gives therefore:
+\begin{equation}
+\mathcal{D}_{\mu\nu}(k) = D_{\mu\nu}(k) + ie^2\,D_{\mu\lambda}(k)\int \mathrm{Sp}\,\gamma^\lambda G(p+k)\,\gamma^\rho G(p)\,\frac{d^4p}{(2\pi)^4}\;D_{\rho\nu}(k)
+\label{eq:103.10}
+\end{equation}
+(bispinor indices on matrices~$\gamma$ and~$G$, as usual, are not written out).
+
+The terms of the following approximations are constructed analogously; they are represented by sets of diagrams with two external photon ends and the needed number of vertices. Thus, terms~$\sim e^4$ correspond to the following diagrams with four vertices:
+
+% [Feynman diagrams (103.11): six diagrams showing fourth-order corrections to the photon propagator, including: nested bubble (bubble within bubble), two sequential bubbles, vertex correction on one side of the bubble, vertex correction on the other side, crossed electron lines in the loop, and ladder-type insertion]
+\begin{equation}
+\label{eq:103.11}
+\end{equation}
+
+Four vertices also has the diagram
+
+% [Feynman diagram: photon self-energy with a single electron line closed on itself forming a tadpole-like loop]
+
+\noindent the upper part of which constitutes a loop formed by a single ``closed on itself'' electron line. Such a loop corresponds to the convolution $\hat{\bar{\psi}}(x)\gamma\hat{\psi}(x)$, i.e.\ simply to the vacuum-average value of the current: $\langle 0|\,j(x)\,|0\rangle$. But by the very definition of the vacuum, this quantity must identically vanish, and this identity cannot, of course, be altered by any further radiative corrections to such a loop.\footnote{Although direct computation of the diagrams would lead to divergent integrals.}
+
+Therefore altogether no diagrams with ``closed on themselves'' electron lines should be taken into account in any approximation.\footnote{In determining the signs one should not forget about the factor $-1$ contributed by a closed electron loop!}
+
+\SourcePage{511}{516}
+
+The part of the diagram (``block'') enclosed between two photon lines (external or internal) is called the \emph{photon self-energy part}. In the general case such a block itself can be further subdivided into parts connected pairwise by one photon line, i.e.\ has the structure of the form:
+
+% [Feynman diagram: chain of compact self-energy parts connected by internal photon propagators, with external momentum k entering and leaving]
+
+\noindent where circles denote blocks that can no longer be further subdivided in such a way; these parts are called \emph{compact} (for example, of the four self-energy parts of fourth order~(\ref{eq:103.11}) the first three are compact).
+
+Denote by the symbol $i\mathcal{P}_{\mu\nu}/4\pi$ the sum of all (infinite number of) compact self-energy parts; the function $\mathcal{P}_{\mu\nu}(k)$ is called the \emph{polarisation operator}. Classifying the diagrams by the number of compact parts they contain, one can represent the exact propagator~$\mathcal{D}_{\mu\nu}$ in the form of a series:
+
+% [Feynman diagram: Dyson series showing bold dashed line = thin dashed + thin dashed with one hatched circle + thin dashed with two hatched circles + ..., where hatched circles represent compact self-energy parts i P_{mu nu}/4pi]
+
+\noindent Analytically this series is written as:
+\begin{equation}
+\begin{split}
+\mathcal{D} &= D + D\,\frac{\mathcal{P}}{4\pi}\,D + D\,\frac{\mathcal{P}}{4\pi}\,D\,\frac{\mathcal{P}}{4\pi}\,D + \cdots \\
+&= D\biggl\{1 + \frac{\mathcal{P}}{4\pi}\Bigl[D + D\,\frac{\mathcal{P}}{4\pi}\,D + \cdots\Bigr]\biggr\}
+\end{split}
+\label{eq:103.12}
+\end{equation}
+(tensor indices omitted for brevity). But the series in square brackets again coincides with the series for~$\mathcal{D}$. Therefore we have:
+\begin{equation}
+\mathcal{D}_{\mu\nu}(k) = D_{\mu\nu}(k) + D_{\mu\lambda}(k)\,\frac{\mathcal{P}^{\lambda\rho}(k)}{4\pi}\,\mathcal{D}_{\rho\nu}(k).
+\label{eq:103.13}
+\end{equation}
+Multiplying this equality on the left by the inverse tensor $(D^{-1})^{\tau\mu}$ and on the right by $(\mathcal{D}^{-1})^{\nu\sigma}$ (and changing the notation of indices), we obtain its equivalent form:
+\begin{equation}
+\mathcal{D}^{-1}_{\mu\nu} = D^{-1}_{\mu\nu} - \frac{\mathcal{P}_{\mu\nu}}{4\pi}.
+\label{eq:103.14}
+\end{equation}
+
+We emphasise that the representation of~$\mathcal{D}$ in the form~(\ref{eq:103.12}) implies that from diagrams one can extract simpler blocks, which are computed by the general rules of diagrammatic technique. Combining such blocks with each other, we obtain correct expressions for the diagrams as a whole. The admissibility of such a decomposition constitutes an important (and by no means trivial) feature of
+
+\SourcePage{512}{517}
+
+\noindent diagrammatic technique. It is connected with the fact that the total numerical coefficient in a diagram does not depend on its order.
+
+This same property allows one to use the function~$\mathcal{D}$ (if it is known) for simplification of computations of radiative corrections to amplitudes of various scattering processes: instead of each time considering diagrams with corrections to internal photon lines, we can simply replace these lines by bold ones, i.e.\ assign to them propagators~$\mathcal{D}$ (instead of~$D$).
+
+If the photon line corresponds to a real (not virtual) photon, i.e.\ if it is an external end of the diagram as a whole, then after including in it all self-energy corrections we get what is called an \emph{effective external line}. It corresponds, in distinction from~(\ref{eq:103.13}), to replacing the multiplier~$D$ by the polarisation amplitude of the real photon:
+\begin{equation}
+e_\mu + D_{\mu\rho}(k)\,\frac{\mathcal{P}^{\rho\lambda}(k)}{4\pi}\,e_\lambda.
+\label{eq:103.15}
+\end{equation}
+If we are talking about a line of an external field, then instead of~$e_\mu$ here one should write $A^{(e)}_\mu$.
+
+Everything said in~\S\,76 about the tensor structure and gauge ambiguity of the approximate propagator~$D_{\mu\nu}$ also applies to the exact function~$\mathcal{D}_{\mu\nu}$. Remaining within the framework of relativistically invariant representations of this function, let us write its general form:
+\begin{equation}
+\mathcal{D}_{\mu\nu}(k) = \mathcal{D}(k^2)\biggl(g_{\mu\nu} - \frac{k_\mu k_\nu}{k^2}\biggr) + \mathcal{D}^{(l)}(k^2)\,\frac{k_\mu k_\nu}{k^2};
+\label{eq:103.16}
+\end{equation}
+the first term corresponds to the Landau gauge, and in the second term $\mathcal{D}^{(l)}$ is a gauge-arbitrary function. An analogous representation for the approximate propagator:
+\begin{equation}
+D_{\mu\nu}(k) = D(k^2)\biggl(g_{\mu\nu} - \frac{k_\mu k_\nu}{k^2}\biggr) + D^{(l)}(k^2)\,\frac{k_\mu k_\nu}{k^2}.
+\label{eq:103.17}
+\end{equation}
+
+\SourcePage{513}{518}
+
+The polarisation operator, in accordance with its definition, is also a transverse tensor:\footnote{The definition of $D^{(l)}$ in this formula does not coincide with the definition in~(\ref{eq:76.3}).}
+\begin{equation}
+\mathcal{P}_{\mu\nu} = \mathcal{P}(k^2)\biggl(g_{\mu\nu} - \frac{k_\mu k_\nu}{k^2}\biggr).
+\label{eq:103.18}
+\end{equation}
+
+For the direct tensors~(\ref{eq:103.16}) and~(\ref{eq:103.17}) the inverse tensors have the form:
+\begin{equation}
+\mathcal{D}^{-1}_{\mu\nu}(k) = \frac{1}{\mathcal{D}}\biggl(g_{\mu\nu} - \frac{k_\mu k_\nu}{k^2}\biggr) + \frac{1}{\mathcal{D}^{(l)}}\,\frac{k_\mu k_\nu}{k^2},\qquad
+D^{-1}_{\mu\nu}(k) = \frac{1}{D}\biggl(g_{\mu\nu} - \frac{k_\mu k_\nu}{k^2}\biggr) + \frac{1}{D^{(l)}}\,\frac{k_\mu k_\nu}{k^2}.
+\label{eq:103.19}
+\end{equation}
+
+Substituting~(\ref{eq:103.18}) and~(\ref{eq:103.19}) into~(\ref{eq:103.14}) and comparing the transverse parts, we find:
+\begin{equation}
+\frac{1}{\mathcal{D}} = \frac{1}{D} - \frac{\mathcal{P}}{4\pi},
+\label{eq:103.20}
+\end{equation}
+where $\mathcal{P} = \mathcal{P}(k^2)$, $D = D(k^2) = 4\pi/k^2$, or:
+\begin{equation}
+\mathcal{D}(k^2) = \frac{4\pi}{k^2\bigl(1 - \mathcal{P}(k^2)/k^2\bigr)}.
+\label{eq:103.21}
+\end{equation}
+Thus the polarisation operator is (in contrast to the photon propagator itself) a gauge-invariant quantity.

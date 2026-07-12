@@ -1,0 +1,109 @@
+
+\section{Field operators in the Heisenberg representation}
+
+\SourcePage{503}{508}
+
+Up to now when considering various concrete electrodynamical processes we limited ourselves to the first non-vanishing approximation of perturbation theory. We now turn to the study of effects arising when higher-order approximations are taken into account. These effects are called \emph{radiative corrections}.
+
+A deeper understanding of the structure of higher approximations can be achieved on the basis of a preliminary investigation of general properties possessed by the exact (i.e.\ not expanded in powers of~$e^2$) scattering amplitudes. We saw (see~\S\,72) that successive terms of the perturbation theory series are expressed through field operators in the interaction representation---operators whose time dependence is determined by the Hamiltonian of the system of free particles~$\hat{H}_0$. The exact scattering amplitudes are more conveniently expressed through operators of the field not in this, but in the Heisenberg representation, in which the time dependence is determined directly by the exact Hamiltonian of the system of interacting particles $\hat{H} = \hat{H}_0 + \hat{V}$.
+
+By the general rule for constructing Heisenberg operators we have:\footnote{In this chapter operators with a time argument will refer to the Heisenberg representation, and operators in the interaction representation will be marked with the additional index ``int''.}
+\begin{equation}
+\hat{\psi}(x) \equiv \hat{\psi}(t, \mathbf{r}) = e^{i\hat{H}t}\,\hat{\psi}(\mathbf{r})\,e^{-i\hat{H}t}
+\label{eq:102.1}
+\end{equation}
+and similarly for $\hat{\bar{\psi}}(x)$ and $\hat{A}(x)$, where $\hat{\psi}(\mathbf{r}), \ldots$ are time-independent (Schr\"odinger, or pre-interaction) operators.
+
+We immediately note that Heisenberg operators taken at equal times satisfy the same commutation rules as operators in the Schr\"odinger representation or in the interaction representation. Indeed, we have, for example,
+\begin{equation}
+\bigl\{\hat{\psi}_i(t, \mathbf{r}),\, \hat{\psi}_k^\dagger(t, \mathbf{r}')\bigr\}_+ = e^{i\hat{H}t}\bigl\{\hat{\psi}_i(\mathbf{r}),\, \hat{\psi}_k^\dagger(\mathbf{r}')\bigr\}_+ e^{-i\hat{H}t} = \gamma^0_{ik}\,\delta(\mathbf{r} - \mathbf{r}')
+\label{eq:102.2}
+\end{equation}
+
+\SourcePage{504}{509}
+
+\noindent (cf.~(75.6)). Analogously the operators $\hat{\psi}(t, \mathbf{r})$ and $\hat{A}(t, \mathbf{r}')$ are commutative:
+\[
+\bigl\{\hat{\psi}_i(t, \mathbf{r}),\, \hat{A}(t, \mathbf{r}')\bigr\}_- = 0
+\]
+(at different times this is no longer so!).
+
+The ``equation of motion'' satisfied by the Heisenberg $\psi$-operator can be obtained from the general formula (13.7) (see~III):
+\begin{equation}
+-i\,\frac{\partial\hat{\psi}(x)}{\partial t} = \hat{H}\hat{\psi}(x) - \hat{\psi}(x)\hat{H}.
+\label{eq:102.3}
+\end{equation}
+For the Hamiltonians the Schr\"odinger and Heisenberg representations are identical, and the Hamiltonian is expressed identically through field operators in both representations. In this case, when computing the right side of~(\ref{eq:102.3}), one can omit the part depending only on the operator~$\hat{A}(x)$ (the Hamiltonian of the free electromagnetic field), since this part is commutative with~$\hat{\psi}(x)$. According to (21.13) and (43.3) we have:
+\begin{equation}
+\begin{split}
+\hat{H} &= \int \hat{\psi}^*(t, \mathbf{r})\,(\boldsymbol{\alpha}\hat{\mathbf{p}} + \beta m)\,\hat{\psi}(t, \mathbf{r})\,d^3x \\
+&\quad + e\int \hat{\bar{\psi}}(t, \mathbf{r})\,(\gamma\hat{A}(t, \mathbf{r}))\,\hat{\psi}(t, \mathbf{r})\,d^3x \\
+&= \int \hat{\bar{\psi}}(t, \mathbf{r})\bigl\{\gamma\hat{p} + m + e(\gamma\hat{A}(t, \mathbf{r}))\bigr\}\hat{\psi}(t, \mathbf{r})\,d^3x.
+\end{split}
+\label{eq:102.4}
+\end{equation}
+Computing the commutator $\{\hat{H},\, \hat{\psi}(t, \mathbf{r})\}_-$ with the help of~(\ref{eq:102.2}) and eliminating the $\delta$-function by integration over~$d^3x$, we obtain:
+\begin{equation}
+(\gamma\hat{p} - e\gamma\hat{A} - m)\,\hat{\psi}(t, \mathbf{r}) = 0.
+\label{eq:102.5}
+\end{equation}
+As expected, the operator $\hat{\psi}(t, \mathbf{r})$ satisfies the equation formally coinciding with the Dirac equation.
+
+The equation for the operator of the electromagnetic field $\hat{A}(t, \mathbf{r})$ is obviously obtained from correspondence with the classical case. In this case (large occupation numbers---see~\S\,5) after averaging over the field state the operator equation should go over into the classical Maxwell equation for potentials (30.2) (see~II). Therefore it is clear that the equation for the operator simply coincides in form with the Maxwell equation, i.e.\ (in arbitrary gauge):
+\begin{equation}
+\partial_\nu \partial^\nu \hat{A}^\mu(x) - \partial^\mu \partial_\nu \hat{A}^\nu(x) = -4\pi e\,\hat{j}^\mu(x),
+\label{eq:102.6}
+\end{equation}
+where $\hat{j}^\mu = \hat{\bar{\psi}}(x)\gamma^\mu\hat{\psi}(x)$ is the current operator, identically satisfying the continuity equation:
+\begin{equation}
+\partial_\mu \hat{j}^\mu(x) = 0.
+\label{eq:102.7}
+\end{equation}
+
+\SourcePage{505}{510}
+
+It is essential that equations~(\ref{eq:102.6}) are linear in $\hat{A}^\mu$ and $\hat{j}^\mu$, and therefore no question arises about the ordering of these operators.
+
+Like the equations for wave functions, the system of operator equations (\ref{eq:102.6}),~(\ref{eq:102.7}) is invariant with respect to gauge transformation:\footnote{We emphasise that here it is precisely about Heisenberg $\psi$-operators. In the interaction representation the gauge transformation of electromagnetic potentials does not at all affect the $\psi$-operators.}
+\begin{equation}
+\hat{A}^\mu(x) \to \hat{A}^\mu(x) - \partial^\mu\hat{\chi}(x), \quad \hat{\psi}(x) \to \hat{\psi}(x)\,e^{ie\hat{\chi}}, \quad \hat{\bar{\psi}}(x) \to e^{-ie\hat{\chi}}\,\hat{\bar{\psi}}(x),
+\label{eq:102.8}
+\end{equation}
+where $\hat{\chi}(x)$ is an arbitrary Hermitian operator, commuting (at one and the same moment of time) with~$\hat{\psi}$.
+
+Now let us establish the connection between operators in the Heisenberg representation and in the interaction representation. To simplify the reasoning it is convenient to make the formal assumption (not affecting the final result) that the interaction $\hat{V}(t)$ is adiabatically ``switched on'' from $t = -\infty$ to finite times. Then when $t \to -\infty$ both representations---the Heisenberg representation and the interaction representation---simply coincide. The corresponding wave functions of the system $\Phi$ and $\Phi_{\mathrm{int}}$ also coincide:
+\begin{equation}
+\Phi_{\mathrm{int}}(t = -\infty) = \Phi.
+\label{eq:102.9}
+\end{equation}
+On the other hand, the wave function in the Heisenberg representation does not depend on time at all (all time dependence is transferred to the operators), while in the interaction representation the dependence of the wave function on time is given, according to (72.7):
+\begin{equation}
+\Phi_{\mathrm{int}}(t) = \hat{S}(t, -\infty)\,\Phi_{\mathrm{int}}(-\infty),
+\label{eq:102.10}
+\end{equation}
+where the operator is introduced:
+\begin{equation}
+\hat{S}(t_2, t_1) = T\exp\!\left\{-i\int_{t_1}^{t_2}\hat{V}(t')\,dt'\right\}
+\label{eq:102.11}
+\end{equation}
+with the obvious properties:
+\begin{equation}
+\hat{S}(t, t_1)\,\hat{S}(t_1, t_0) = \hat{S}(t, t_0), \qquad \hat{S}^{-1}(t, t_1) = \hat{S}(t_1, t).
+\label{eq:102.12}
+\end{equation}
+Comparing formulas~(\ref{eq:102.10}) and~(\ref{eq:102.9}), we find the relation:
+\begin{equation}
+\Phi_{\mathrm{int}}(t) = \hat{S}(t, -\infty)\,\Phi,
+\label{eq:102.13}
+\end{equation}
+
+\SourcePage{506}{511}
+
+\noindent establishing the connection between the wave functions in both representations. Correspondingly the operator transformation formula:
+\begin{equation}
+\hat{\psi}(t, \mathbf{r}) = \hat{S}^{-1}(t, -\infty)\,\hat{\psi}_{\mathrm{int}}(t, \mathbf{r})\,\hat{S}(t, -\infty) = \hat{S}(-\infty, t)\,\hat{\psi}_{\mathrm{int}}(t, \mathbf{r})\,\hat{S}(t, -\infty)
+\label{eq:102.14}
+\end{equation}
+(the same for $\hat{\bar{\psi}}$ and $\hat{A}$).
+
+In conclusion let us make one more general remark. We have already repeatedly indicated that in relativistic quantum field theory the physical meaning of field operators is very limited due to the infinity of zero-point fluctuations. This applies even more to operators in the Heisenberg representation, which actually contain in themselves also divergences associated with the interaction. In this chapter, \S\S\,102,~109 are devoted to the exposition of formal theory, in which questions of removal of these infinities are not discussed and operations with all quantities are carried out as if they were finite. The results obtained in this way have primarily heuristic value: they allow one to more deeply understand the meaning of the expansion of perturbation theory; it is also possible that they are preserved in some form in a future theory free of the present difficulties.

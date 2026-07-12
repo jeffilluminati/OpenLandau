@@ -1,0 +1,121 @@
+
+\section{The photon self-energy function}
+
+\SourcePage{513}{518}
+
+For further investigation of the analytic properties of the photon propagator it will be useful to introduce, alongside the polarisation operator, one more auxiliary quantity~$\Pi_{\mu\nu}(k)$, which is called the \emph{photon self-energy function}. Namely, $i\Pi_{\mu\nu}/(4\pi)$ is defined as the sum of all (not only compact) self-energy photon parts. Depicting this sum as a square on the diagrams, we represent the exact propagator as the sum:
+
+% [Feynman diagram: \mathcal{D} = D + D \cdot [\Pi] \cdot D, with momentum label k]
+
+\noindent i.e.:
+\begin{equation}
+\mathcal{D}_{\mu\nu} = D_{\mu\nu} + D_{\mu\lambda}\,\frac{\Pi^{\lambda\rho}}{4\pi}\,D_{\rho\nu}.
+\label{eq:104.1}
+\end{equation}
+Expressing from this $\Pi_{\mu\nu}$ in the form:
+\[
+\frac{1}{4\pi}\,\Pi_{\mu\nu} = D^{-1}_{\mu\lambda}\,\mathcal{D}^{\lambda\rho}\,D^{-1}_{\rho\nu} - D^{-1}_{\mu\nu}
+\]
+and substituting into this equation~(103.16), (103.19), and then~(103.21), we get:
+\begin{equation}
+\Pi_{\mu\nu} = \Pi(k^2)\biggl(g_{\mu\nu} - \frac{k_\mu k_\nu}{k^2}\biggr), \qquad \Pi = \frac{\mathcal{P}}{1 - \mathcal{P}/k^2}.
+\label{eq:104.2}
+\end{equation}
+We see that $\Pi_{\mu\nu}$ (like~$\mathcal{P}_{\mu\nu}$) is a gauge-invariant tensor.
+
+\SourcePage{514}{519}
+
+The usefulness of the quantity~$\Pi_{\mu\nu}$ is connected with its expression in the coordinate representation. It is easy to find, noting that the equality
+\[
+\frac{1}{4\pi}\,\Pi_{\mu\nu}(k) = D^{-1}_{\mu\lambda}\,\mathcal{D}^{\lambda\rho}\,D^{-1}_{\rho\nu},
+\]
+taking into account from~(103.18) the transverse tensor $\mathcal{D}^{\lambda\rho} - D^{\lambda\rho}$, in the coordinate representation can be written in the form:
+\[
+\Pi_{\mu\nu}(x - x') = \frac{1}{4\pi}\bigl(\partial_\mu\partial_\lambda - g_{\mu\lambda}\,\partial_\sigma\partial^\sigma\bigr)\bigl(\partial'_\nu\partial'_\rho - g_{\nu\rho}\,\partial'_\sigma\partial'^\sigma\bigr)\bigl\{\mathcal{D}^{\lambda\rho}(x - x') - D^{\lambda\rho}(x - x')\bigr\}.
+\]
+For carrying out differentiation it is necessary to substitute here:
+\begin{equation}
+\mathcal{D}^{\lambda\rho}(x - x') - D^{\lambda\rho}(x - x') = i\langle 0|T\hat{A}^\lambda(x)\hat{A}^\rho(x') - T\hat{A}^{\mathrm{int},\lambda}(x)\hat{A}^{\mathrm{int},\rho}(x')|0\rangle.
+\label{eq:104.3}
+\end{equation}
+We saw in~\S\,75 that differentiation of $T$-products requires, generally speaking, caution due to their discontinuous character. But the averaged expression in~(\ref{eq:104.3}) is continuous, since the commutation rules for components of operators $\hat{A}^\lambda(x)$ and $\hat{A}^{\mathrm{int}}(x)$ (taken at one and the same moment of time) are identical and the corresponding jumps cancel (cf.~\S\,75). Therefore differentiation of the difference~(\ref{eq:104.3}) can be carried out under the $T$~sign. According to~(\ref{eq:102.6}) (and similarly to the equation without the right-hand part for operators of the free electromagnetic field $\hat{A}^{\mathrm{int}}_\mu(x)$) we get in the result the expression:
+\begin{equation}
+\Pi_{\mu\nu}(x - x') = 4\pi i e^2\langle 0|T\hat{j}_\mu(x)\,\hat{j}_\nu(x')|0\rangle.
+\label{eq:104.4}
+\end{equation}
+This manifestly reveals the gauge invariance of~$\Pi_{\mu\nu}$, since such are the current operators.
+
+From~(\ref{eq:104.4}) one can obtain an important integral representation of this function.
+
+In view of~(\ref{eq:104.2}) it is sufficient to consider the scalar function $\Pi = \Pi^\mu{}_\mu/3$. In the coordinate representation:
+\begin{equation}
+\Pi(x - x') = \frac{4\pi}{3}\,ie^2\,\langle 0|T\hat{j}_\mu(x)\,\hat{j}^\mu(x')|0\rangle = \frac{4\pi}{3}\,ie^2 \begin{cases} \displaystyle\sum_n \langle 0|\hat{j}_\mu(x)|n\rangle\langle n|\hat{j}^\mu(x')|0\rangle, & t > t', \\[6pt] \displaystyle\sum_n \langle 0|\hat{j}_\mu(x')|n\rangle\langle n|\hat{j}^\mu(x)|0\rangle, & t < t',
+\end{cases}
+\label{eq:104.5}
+\end{equation}
+
+\SourcePage{515}{520}
+
+\noindent where the symbol~$n$ numbers the states of the system ``electromagnetic $+$ electron-positron field''.\footnote{The current operator conserves charge, therefore the states~$|n\rangle$ in~(\ref{eq:104.5}) can contain only equal numbers of electrons and positrons.}
+
+Since the current operator $\hat{j}(x)$ depends on $x^\mu = (t,\,\mathbf{r})$, also the matrix elements depend on~$x$. This dependence can be established explicitly, if one chooses as states~$|n\rangle$ the states with definite values of total 4-momentum of the system (see~III,~(15.13)). The operator of such a translation is $e^{i\mathbf{r}\hat{\mathbf{P}}}$, where $\hat{\mathbf{P}}$ is the operator of total momentum of the system (see~III,~(15.13)). Bearing in mind the general rule for transformation of matrix elements (see~III,~(12.7)), we find:
+\begin{equation}
+\langle n|\hat{j}^\mu(t,\,\mathbf{r})|m\rangle = \langle n|\hat{j}^\mu(0)|m\rangle\,e^{-i(P_m - P_n)\cdot x}.
+\label{eq:104.6}
+\end{equation}
+We also note that the matrix $\langle n|\hat{j}_\mu(0)|m\rangle$ is Hermitian (like the matrix~(\ref{eq:104.6}) of the operator $\hat{j}^\mu(t,\,\mathbf{r})$ as a whole), and by virtue of the continuity equation~(\ref{eq:102.7}) satisfies the transversality condition:
+\begin{equation}
+(P_n - P_m)^\mu\,\langle n|\hat{j}_\mu(0)|m\rangle = 0.
+\label{eq:104.7}
+\end{equation}
+
+Let us return to the computation of the function $\Pi(x - x')$. Substituting~(\ref{eq:104.6}) into~(\ref{eq:104.5}), we get:
+\begin{equation}
+\Pi(\xi) = \frac{4\pi i e^2}{3}\sum_n \langle 0|\hat{j}_\mu(0)|n\rangle\langle n|\hat{j}^\mu(0)|0\rangle\,e^{\mp i P_n \cdot \xi}, \qquad \tau \gtrless 0,
+\label{eq:104.8}
+\end{equation}
+where $x - x' = \xi = (\tau,\,\boldsymbol{\xi})$. Denote:
+\begin{equation}
+\rho(k^2) = -\frac{4\pi e^2}{3}\,(2\pi)^3 \sum_n \langle 0|\hat{j}_\mu(0)|n\rangle\langle 0|\hat{j}^\mu(0)|n\rangle^*\,\delta^{(4)}(k - P_n).
+\label{eq:104.9}
+\end{equation}
+
+\SourcePage{516}{521}
+
+The summation is over all systems of real electron pairs and photons that can be produced by a virtual photon with 4-momentum $k = (\omega,\,\mathbf{k})$ ($k^2 > 0$), and for each of such systems---also over its internal variables (polarisations and momenta of particles in the centre-of-inertia system).\footnote{This definition of states~$|n\rangle$ is obviously identical with identifying them as states for which the matrix elements $\langle 0|\hat{j}|n\rangle$ of the charge-odd operator are non-zero.}
+
+As a result of such summation the function~$\rho$ can depend only on~$k$, and by virtue of its scalar nature---only on~$k^2$. In particular, $\rho$ does not depend on the direction of~$\mathbf{k}$. Having in mind these properties of the function~$\rho$, we rewrite~(\ref{eq:104.8}) in the form:
+\[
+\Pi(\xi) = -i\int_0^\infty d\omega \int \frac{d^3k}{(2\pi)^3}\,\rho(k^2)\,e^{i\mathbf{k}\cdot\boldsymbol{\xi} - i\omega|\tau|} = -i\int \frac{d^3k}{(2\pi)^3}\int_0^\infty d\omega\,d(\mu^2)\,\delta(\mu^2 - k^2)\,\rho(\mu^2)\,e^{i\mathbf{k}\cdot\boldsymbol{\xi} - i\omega|\tau|}.
+\]
+The transition to the momentum representation is effected by substitution of the formula:
+\begin{equation}
+e^{-i\omega|\tau|} = 2i\omega \int_{-\infty}^{\infty} \frac{dk_0}{2\pi}\,\frac{e^{-ik_0\tau}}{k_0^2 - \omega^2 + i0}
+\label{eq:104.10}
+\end{equation}
+(already used in~\S\,76) and gives:
+\[
+\Pi(k^2) = \int d(\mu^2)\int d(\omega^2)\,\delta(\mu^2 - k^2 - \omega^2)\,\frac{\rho(\mu^2)}{k_0^2 - \omega^2 + i0},
+\]
+or finally:\footnote{Formal calculations, analogous to those carried out above, require caution in view of the presence of the already-mentioned divergences. This leads, in particular, to the appearance on the right-hand side of~(\ref{eq:104.11}) of additional divergent terms that do not have a relativistically invariant form (so-called Schwinger terms). We do not write them out, since they are eliminated in renormalisation (see~\S\,110) and do not affect the further results.}
+\begin{equation}
+\Pi(k^2) = \int_0^\infty \frac{\rho(\mu^2)\,d(\mu^2)}{k^2 - \mu^2 + i0}.
+\label{eq:104.11}
+\end{equation}
+
+\SourcePage{517}{522}
+
+The coefficient~$\rho$ in this integral representation is called the \emph{spectral density} of the function~$\Pi(k^2)$. It possesses the properties:
+\begin{equation}
+\rho(k^2) = 0 \quad \text{for } k^2 < 0, \qquad \rho(k^2) > 0 \quad \text{for } k^2 > 0.
+\label{eq:104.12}
+\end{equation}
+Indeed, the 4-momentum~$k$ of a virtual photon that can produce a system of real particles is necessarily timelike ($k^2$ coincides with the square of the total energy of the particles in their centre-of-inertia system). By virtue of the transversality condition~(\ref{eq:104.7}) we have:
+\[
+P_n^\mu\,\langle 0|\hat{j}_\mu|n\rangle = 0.
+\]
+But the 4-vector $\langle 0|\hat{j}|n\rangle$, orthogonal to a timelike 4-vector~($P_n$), is spacelike, i.e.:
+\[
+\langle 0|\hat{j}_\mu|n\rangle\,\langle 0|\hat{j}^\mu|n\rangle^* < 0,
+\]
+and therefore, according to definition~(\ref{eq:104.9}), $\rho > 0$.

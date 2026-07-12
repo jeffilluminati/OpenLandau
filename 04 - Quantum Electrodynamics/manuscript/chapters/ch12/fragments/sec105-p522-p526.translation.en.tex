@@ -1,0 +1,117 @@
+
+\section{The exact electron propagator}
+
+\SourcePage{517}{522}
+
+Similarly to the photon, the exact electron propagator is defined by the formula:
+\begin{equation}
+\mathcal{G}_{ik}(x - x') = -i\langle 0|\,T\hat{\psi}_i(x)\,\hat{\bar{\psi}}_k(x')\,|0\rangle
+\label{eq:105.1}
+\end{equation}
+($i$, $k$ are bispinor indices), differing from the definition~(\ref{eq:75.1}) of the propagator of free particles:
+\begin{equation}
+G_{ik}(x - x') = -i\langle 0|\,T\hat{\psi}^{\mathrm{int}}_i(x)\,\hat{\bar{\psi}}^{\mathrm{int}}_k(x')\,|0\rangle,
+\label{eq:105.2}
+\end{equation}
+by the replacement of $\hat{\psi}$-operators in the interaction representation by Heisenberg ones.
+
+The same reasoning as in deriving~(\ref{eq:103.7}) allows one to transform the propagator~$\mathcal{G}$ to the form:
+\begin{equation}
+\mathcal{G}_{ik}(x - x') = \frac{\langle 0|\,T\hat{\psi}^{\mathrm{int}}_i(x)\,\hat{\bar{\psi}}^{\mathrm{int}}_k(x')\,S\,|0\rangle}{\langle 0|S|0\rangle}.
+\label{eq:105.3}
+\end{equation}
+Its expansion in powers of~$e^2$ leads to the representation of the $\mathcal{G}$-function as a set of diagrams with two external electron lines and various numbers of vertices. Here the role of the denominator in~(\ref{eq:105.3}) again reduces to the necessity of including only diagrams without isolated ``vacuum loops''. Thus, to terms~$\sim e^2$ we have:\footnote{As was already explained in~\S\,103, one should also not include here diagrams with electron lines ``closed on themselves'', which would appear already in second order.}
+
+% [Feynman diagrams (105.4): bold solid line = thin solid line + thin solid line with self-energy bubble (electron loop with internal photon) + higher-order corrections]
+\begin{equation}
+\label{eq:105.4}
+\end{equation}
+
+The bold solid line corresponds (in the momentum representation) to the function~$i\mathcal{G}(p)$, and all thin solid and dashed lines in the diagrams on the right side of the equality correspond to the propagators of free particles~$iG$ and~$-iD$ respectively.
+
+\SourcePage{518}{523}
+
+The block enclosed between two electron lines is called the \emph{electron self-energy part}. As in the photon case, a self-energy part is called \emph{compact} if it cannot be further subdivided into two self-energy parts by cutting one electron line. The sum of all possible compact parts we denote by~$-i\mathcal{M}_{ik}$; the function~$\mathcal{M}_{ik}(p)$ is called the \emph{mass operator}. Thus, to accuracy~$\sim e^4$ we have:
+
+% [Feynman diagrams (105.5): -iM depicted as various compact self-energy diagrams: basic self-energy (second order), vertex correction, nested self-energy, rainbow diagram, and other fourth-order compact insertions]
+\begin{equation}
+\label{eq:105.5}
+\end{equation}
+
+By summation, in exact analogy with the derivation of~(\ref{eq:103.13}), we get:
+\begin{equation}
+\mathcal{G}(p) = G(p) + G(p)\,\mathcal{M}(p)\,\mathcal{G}(p)
+\label{eq:105.6}
+\end{equation}
+(bispinor indices omitted), or for inverse matrices:
+\begin{equation}
+\mathcal{G}^{-1}(p) = G^{-1}(p) - \mathcal{M}(p) = \gamma p - m - \mathcal{M}(p).
+\label{eq:105.7}
+\end{equation}
+
+In~\S\,102 it was already noted that the Heisenberg $\hat{\psi}$-operators (in contradistinction to $\hat{\psi}$-operators in the interaction representation) change under gauge transformation of electromagnetic potentials. Together with them also turns out to be gauge-non-invariant the exact electron propagator~$\mathcal{G}$. Let us clarify the law of its gauge transformation (\emph{L.~D.~Landau, I.~M.~Khalatnikov}, 1952).
+
+It is clear in advance that the change of~$\mathcal{G}$ under gauge transformation must be expressible through the very same quantity~$\mathcal{D}^{(l)}$ that is added to the photon propagator under this transformation. This will become obvious if one notes that in computing~$\mathcal{G}$ from the diagrams of perturbation theory each term of the series is expressed through the functions~$D$ and no other electromagnetic quantities appear in it. This circumstance can be used to simplify the derivation: one can make any particular assumptions about the properties of the arbitrary operator~$\hat{\chi}$ in the transformation~(\ref{eq:102.8}), as long as the answer is expressed through~$\mathcal{D}^{(l)}$.
+
+As a result of the transformation~(\ref{eq:102.8}) the propagators~$\mathcal{D}$~(\ref{eq:103.1}) and~$\mathcal{G}$~(\ref{eq:105.1}) go over to:
+\begin{align}
+\mathcal{D}_{\mu\nu} &\to i\langle 0|\,T\bigl[\hat{A}_\mu(x) - \partial_\mu\hat{\chi}(x)\bigr]\bigl[\hat{A}_\nu(x') - \partial'_\nu\hat{\chi}(x')\bigr]\,|0\rangle, \label{eq:105.8} \\
+\mathcal{G}_{ik} &\to -i\langle 0|\,T\hat{\psi}_i(x)\,e^{ie\hat{\chi}(x)}\,e^{-ie\hat{\chi}(x')}\,\hat{\bar{\psi}}_k(x')\,|0\rangle. \notag
+\end{align}
+
+\SourcePage{519}{524}
+
+We assume now that the operators~$\hat{\chi}$ are averaged independently of all remaining operator factors in the $T$-product; this assumption is quite natural, since by virtue of gauge invariance the ``field''~$\hat{\chi}$ takes no part in the interaction. We also assume that the vacuum average of~$\hat{\chi}$ itself vanishes: $\langle 0|\hat{\chi}|0\rangle = 0$. Then in~(\ref{eq:105.8}) the terms containing~$\hat{\chi}$ separate out and we get:
+\begin{align}
+\mathcal{D}_{\mu\nu} &\to \mathcal{D}_{\mu\nu} + i\langle 0|\,T\,\partial_\mu\hat{\chi}(x)\cdot\partial'_\nu\hat{\chi}(x')\,|0\rangle, \label{eq:105.9} \\
+\mathcal{G}_{ik} &\to \mathcal{G}_{ik}\,\langle 0|\,T\,e^{ie\hat{\chi}(x)}\,e^{-ie\hat{\chi}(x')}\,|0\rangle. \label{eq:105.10}
+\end{align}
+
+The further derivation is carried out for an infinitesimally small transformation; to emphasise this smallness we shall write~$\delta\hat{\chi}$ instead of~$\hat{\chi}$.
+
+The transformation~(\ref{eq:105.9}) can (independently of the smallness of~$\delta\hat{\chi}$) be written as:
+\begin{equation}
+\mathcal{D}_{\mu\nu} \to \mathcal{D}_{\mu\nu} + \delta\mathcal{D}_{\mu\nu}, \qquad \delta\mathcal{D}_{\mu\nu} = \partial_\mu\partial'_\nu\,d^{(l)}(x - x'),
+\label{eq:105.11}
+\end{equation}
+where
+\begin{equation}
+d^{(l)}(x - x') = i\langle 0|\,T\,\delta\hat{\chi}(x)\,\delta\hat{\chi}(x')\,|0\rangle.
+\label{eq:105.12}
+\end{equation}
+From this it is clear that the function~$d^{(l)}$ determines the change under gauge transformation of the longitudinal part of the photon propagator~$\mathcal{D}^{(l)}$.\footnote{The transition from~(\ref{eq:105.9}) to~(\ref{eq:105.11}) is possible if the function~$d^{(l)}$ and its derivative with respect to~$t$ are continuous at $t = t'$. In the opposite case the right-hand sides of these expressions would differ by $\delta$-functional terms (cf.\ the derivation of formula~(75.2)). In the momentum representation this condition is equivalent to the assumption that $d^{(l)}(q)$ decreases at $|q^2| \to \infty$ faster than~$1/q^2$.}
+
+The assumption about the dependence of this function only on the difference $x - x'$ means, of course, a definite restriction on the properties of the operator~$\delta\hat{\chi}$; in the general case a fully arbitrary gauge transformation can violate the space-time homogeneity of the propagator.
+
+\SourcePage{520}{525}
+
+In~(\ref{eq:105.10}) we expand the exponential factors in powers of~$\delta\hat{\chi}$ to the accuracy of quadratic terms:\footnote{If the function $f(x) = f_1(x)\,f_2(x)$, then its Fourier components $f(p) = \int f(x)\,e^{ipx}\,d^4x = \int\!\!\int\!\!\int d^4x\,\frac{d^4q_1\,d^4q_2}{(2\pi)^8}\,e^{ix(p - q_1 - q_2)}\,f_1(q_1)\,f_2(q_2) = \int\!\!\int \frac{d^4q_1\,d^4q_2}{(2\pi)^4}\,\delta^{(4)}(p - q_1 - q_2)\,f_1(q_1)\,f_2(q_2) = \int \frac{d^4q}{(2\pi)^4}\,f_1(q)\,f_2(p - q)$. In the transition from~(\ref{eq:105.13}) to~(\ref{eq:105.14}) it was also taken into account that $f(x = 0) = \int f(q)\,d^4q/(2\pi)^4$.}
+\[
+\langle 0|\,T\,e^{ie\delta\hat{\chi}(x)}\,e^{-ie\delta\hat{\chi}(x')}\,|0\rangle \approx 1 - \tfrac{1}{2}e^2\langle 0|\,\delta\hat{\chi}^2(x) + \delta\hat{\chi}^2(x') - 2\,T\,\delta\hat{\chi}(x)\,\delta\hat{\chi}(x')\,|0\rangle.
+\]
+Taking into account definition~(\ref{eq:105.12}), we find therefore the following law of transformation of the electron propagator:
+\begin{equation}
+\mathcal{G} \to \mathcal{G} + \delta\mathcal{G}, \qquad \delta\mathcal{G} = ie^2\,\mathcal{G}(x - x')\bigl[d^{(l)}(0) - d^{(l)}(x - x')\bigr].
+\label{eq:105.13}
+\end{equation}
+In the momentum representation:
+\begin{equation}
+\delta\mathcal{G}(p) = ie^2 \int d^{(l)}(q)\bigl[\mathcal{G}(p) - \mathcal{G}(p - q)\bigr]\,\frac{d^4q}{(2\pi)^4}.
+\label{eq:105.14}
+\end{equation}
+Moreover the function~$d^{(l)}(q)$ is connected with the change of the function~$\mathcal{D}^{(l)}$ by:
+\begin{equation}
+\delta\mathcal{D}^{(l)}(q) = q^2\,d^{(l)}(q).
+\label{eq:105.15}
+\end{equation}
+
+For the electron propagator one could also obtain an integral representation analogous to formula~(104.11). Its derivation is based on the expressions
+\begin{equation}
+\psi_{nm}(x) = \psi_{nm}(0)\,e^{-i(P_m - P_n)x}
+\label{eq:105.16}
+\end{equation}
+for matrix elements of the $\hat{\psi}$-operator, similar to those used in~\S\,104 expressions~(104.6) for matrix elements of the current. In contradistinction to the current, however, the $\hat{\psi}$-operators themselves are gauge-non-invariant. Therefore the coordinate dependence of the form
+
+\SourcePage{521}{526}
+
+\noindent (\ref{eq:105.16}) does not have a general character, and relates only to a particular gauge, and the integral representation of the propagator based on~(\ref{eq:105.16}) has no general character. The deep physical reason for this situation is the equality to zero of the photon mass, and the resulting infrared catastrophe (see~\S\,98). Because of this an electron in the process of interaction emits an infinite number of soft quanta, which to a considerable extent deprives the ``single-particle'' propagator~(\ref{eq:105.1}) of direct physical meaning.
