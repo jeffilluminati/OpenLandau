@@ -1,0 +1,159 @@
+
+\section{Two-photon annihilation of an electron-positron pair}
+
+\SourcePage{410}{415}
+
+The annihilation of an electron and a positron (4-momenta $p_-$ and $p_+$) with the production of two photons ($k_1$ and $k_2$) corresponds to the two diagrams:
+% [Feynman diagram: two diagrams for e⁻e⁺ → γγ annihilation related by crossing of photon lines. Left: electron line from p₋ through vertex emitting k₁, then propagator, then vertex emitting k₂, with positron line from p₊. Right: same but with k₁ and k₂ exchanged]
+\setcounter{equation}{1}
+
+They differ from the diagrams for scattering of a photon by an electron by the substitutions
+\begin{equation}
+p \to p_-, \quad p' \to -p_+, \quad k \to -k_1, \quad k' \to k_2.
+\label{eq:88.2}
+\end{equation}
+
+Both processes are two crossed channels of one and the same (generalised) reaction. After the substitutions (88.2) the kinematic invariants (86.2) acquire the following meaning:
+\begin{equation}
+\begin{aligned}
+s &= (p_- - k_1)^2, \\
+t &= (p_- + p_+)^2 = (k_1 + k_2)^2, \\
+u &= (p_- - k_2)^2.
+\end{aligned}
+\label{eq:88.3}
+\end{equation}
+If the scattering of the photon was the $s$-channel, then annihilation is the $t$-channel.
+
+The square $|M_{fi}|^2$ for annihilation (averaged over polarisations of the electrons and summed over polarisations of the photons) will, when expressed through the invariants $s$, $u$, coincide with the analogous quantity for scattering with a change only of the meaning of the invariants\footnote{Here it is taken into account that the photons and electrons have the same number (two) of independent polarisations, and therefore the inessential factor by which $|M_{fi}|^2$ is averaged is the same.}. In the formula for the cross section (64.23), one must now replace $s \leftrightarrow t$, and for the quantity $I$ we now have, according to (64.15a),
+\[
+I^2 = \frac{1}{4}t(t - 4m^2).
+\]
+
+Performing the corresponding changes in formula (86.6), we obtain the annihilation cross section:
+\begin{equation}
+\begin{split}
+d\sigma &= 8\pi r_\mathrm{e}^2\,\frac{m^2\,ds}{t(t-4m^2)}\biggl\{\biggl(\frac{m^2}{s-m^2} + \frac{m^2}{u-m^2}\biggr)^{\!2} + {} \\
+&\quad {} + \biggl(\frac{m^2}{s-m^2} + \frac{m^2}{u-m^2}\biggr) - \frac{1}{4}\biggl(\frac{s-m^2}{u-m^2} + \frac{u-m^2}{s-m^2}\biggr)\biggr\}.
+\end{split}
+\label{eq:88.4}
+\end{equation}
+The physical region of the annihilation channel is region~II in Fig.~7 (see p.~299). At given $t$ (given energy in the centre
+
+\SourcePage{411}{416}
+
+of inertia) the interval of variation of $s$ is determined by the equation of the boundary $su = m^4$. Together with the relation $s + t + u = 2m^2$ this gives
+\begin{equation}
+\frac{t}{2} - \frac{1}{2}\sqrt{t(t-4m^2)} \leqslant s - m^2 \leqslant -\frac{t}{2} + \frac{1}{2}\sqrt{t(t-4m^2)}.
+\label{eq:88.5}
+\end{equation}
+
+Integration of expression (88.4) is elementary; the result must be divided by 2 as well, taking into account the identity of the two final-state particles (photons). Thus we obtain
+\begin{equation}
+\sigma = \frac{\pi r_\mathrm{e}^2}{2\tau^2(\tau - 1)}\left[\left(\tau^2 + \tau - \frac{1}{2}\right)\ln\frac{\sqrt{\tau}+\sqrt{\tau-1}}{\sqrt{\tau}-\sqrt{\tau-1}} - (\tau+1)\sqrt{\tau(\tau-1)}\right],
+\label{eq:88.6}
+\end{equation}
+where $\tau = t/4m^2$ (\emph{P.~A.~M.~Dirac}, 1930).
+
+In the non-relativistic limit ($\tau \to 1$) we find
+\begin{equation}
+\sigma = \frac{\pi r_\mathrm{e}^2}{2\sqrt{\tau-1}} \quad \text{(n.r.)}.
+\label{eq:88.7}
+\end{equation}
+In the ultrarelativistic case ($\tau \to \infty$)
+\begin{equation}
+\sigma = \frac{\pi r_\mathrm{e}^2}{2\tau}(\ln 4\tau - 1) \quad \text{(u.r.)}.
+\label{eq:88.8}
+\end{equation}
+
+In the laboratory frame, in which one of the particles (say, the electron) before the collision is at rest, the invariant $\tau$ is
+\begin{equation}
+\tau = \frac{1}{2}(1 + \gamma), \quad \gamma = \frac{\varepsilon_+}{m}.
+\label{eq:88.9}
+\end{equation}
+
+Formulas (88.6)--(88.8) give the dependence of the total cross section on the energy of the positron in flight:
+\begin{equation}
+\sigma = \frac{\pi r_\mathrm{e}^2}{4}\left[\frac{\gamma^2 + 4\gamma + 1}{\gamma^2 - 1}\ln(\gamma + \sqrt{\gamma^2 - 1}) - \frac{\gamma + 3}{\sqrt{\gamma^2 - 1}}\right].
+\label{eq:88.10}
+\end{equation}
+In particular, in the non-relativistic limit\footnote{This formula is, however, inapplicable when $v_+ \lesssim \alpha$, and one cannot neglect the Coulomb interaction of the pair components (cf.\ the end of \S\,94).}
+\begin{equation}
+\sigma = \pi r_\mathrm{e}^2/v_+ \quad \text{(n.r.)},
+\label{eq:88.11}
+\end{equation}
+where $v_+$ is the velocity of the positron.
+
+In the centre-of-inertia frame, electron, positron, and both photons have equal energies $\varepsilon = \omega$. The invariants:
+\begin{equation}
+\begin{aligned}
+m^2 - s &= 2\varepsilon(\varepsilon - |\mathbf{p}|\cos\theta), \quad m^2 - u = 2\varepsilon(\varepsilon + |\mathbf{p}|\cos\theta), \\
+t &= 4\varepsilon^2,
+\end{aligned}
+\label{eq:88.12}
+\end{equation}
+where $\theta$ is the angle between the momenta of the electron and one of the photons.
+
+\SourcePage{412}{417}
+
+Substituting (88.12) into (88.4), we obtain the angular distribution of the annihilation photons:
+\begin{equation}
+d\sigma = \frac{r_\mathrm{e}^2 m^2}{4\varepsilon|\mathbf{p}|}\left[\frac{\varepsilon^2 + \mathbf{p}^2(1 + \sin^2\theta)}{\varepsilon^2 - \mathbf{p}^2\cos^2\theta} - \frac{2\mathbf{p}^4\sin^4\theta}{(\varepsilon^2 - \mathbf{p}^2\cos^2\theta)^2}\right]do.
+\label{eq:88.13}
+\end{equation}
+
+In the ultrarelativistic case it has symmetric maxima in the directions $\theta = 0$ and $\theta = \pi$. Near $\theta = 0$
+\begin{equation}
+d\sigma \approx \frac{r_\mathrm{e}^2 m^2\,do}{2\varepsilon^2(\theta^2 + m^2/\varepsilon^2)}\quad\text{(u.r.)}.
+\label{eq:88.14}
+\end{equation}
+
+The total cross section is obtained from (88.6):
+\begin{equation}
+\sigma = \pi r_\mathrm{e}^2\,\frac{1 - v^2}{4v}\left[\frac{3 - v^4}{v}\ln\frac{1+v}{1-v} - 2(2 - v^2)\right],
+\label{eq:88.15}
+\end{equation}
+where $v = |\mathbf{p}|/\varepsilon = \sqrt{\varepsilon^2 - m^2}/\varepsilon$ is the velocity of the colliding particles.
+
+We shall not consider here the details of the polarisation effects in the annihilation. Let us note only a few qualitative properties for large and small velocities $v$ of the colliding particles. We shall consider the process in the centre-of-inertia frame.
+
+In the limit $v \to 0$ only the state with orbital angular momentum $l = 0$ contributes to the cross section. But the $S$-state of the system ``electron $+$ positron'' has negative parity (see the problem to \S\,27). In odd states of the two-photon system their polarisations are mutually orthogonal (see \S\,9). The two-photon system must therefore possess the same property, and the annihilation photons must be polarised perpendicular to each other in the non-relativistic case.
+
+If the electron and positron are polarised, and also in the non-relativistic case, one can assert that their annihilation is possible only for anti-parallel spins. Indeed, since the annihilation occurs from the $S$-state, the total angular momentum of the system coincides with the total spin, which equals 1 for parallel spins. But a system of two photons cannot have a total angular momentum equal to~1 (see \S\,9).
+
+In the ultrarelativistic limit ($v \to 1$) the annihilation of a longitudinally polarised (helical) electron and positron is possible only for different signs of their helicities\footnote{Since the directions of the momenta of the particles in the centre-of-inertia frame are opposite, different signs of the helicities correspond to parallel spins.}. In this limit the helical particles behave like neutrinos (see the end of \S\,80), and therefore the annihilating electron and positron must be analogous to the neutrino and antineutrino, whence the statement made follows.
+
+\SourcePage{413}{418}
+
+The annihilation of an electron and a positron with equal helicities arises in the ultrarelativistic case only upon taking into account terms containing $m$. In order of magnitude the amplitude of this process differs from the amplitude of annihilation of the pair with anti-parallel spins by a factor $m/\varepsilon$; the cross section differs by the factor $(m/\varepsilon)^2$.
+
+\bigskip
+
+\begin{flushleft}\textbf{Problem}\end{flushleft}
+
+Find the cross section of electron-pair production upon collision of two photons (\emph{G.~Breit, J.~A.~Wheeler}, 1934).
+
+\emph{Solution.} This process is the reverse of two-photon annihilation of an electron-positron pair. The squared amplitudes of both processes are the same, and their relation to the cross section differs only in that now $I^2 = (k_1 k_2)^2 = t^2/4$. Therefore
+\[
+d\sigma_\text{pr} = v^2 d\sigma_\text{ann}.
+\]
+In the centre-of-inertia frame ($t = 4\varepsilon^2 = 4\omega^2$),
+\[
+v = \text{velocity of the pair components},
+\]
+\[
+d\sigma_\text{pr} = v^2 d\sigma_\text{ann},
+\]
+where the total cross section in the centre of inertia is
+\begin{equation}
+\sigma_\text{pr} = \frac{\pi r_\mathrm{e}^2}{2}(1 - v^2)\left\{(3 - v^4)\ln\frac{1+v}{1-v} - 2v(2 - v^2)\right\}. \tag{1}
+\end{equation}
+
+In an arbitrary reference frame $K$, in which the two photons $k_1$ and $k_2$ are directed towards each other, we have (from the invariance of $k_1 k_2$)
+\[
+\omega_1\omega_2 = \omega^2.
+\]
+Since the photon energies and the pair component energies coincide in the centre-of-inertia frame, $\omega = \varepsilon = m/\sqrt{1 - v^2}$. Therefore for the transition to the frame $K$ one must put in (1)
+\[
+v = \sqrt{1 - \frac{m^2}{\omega_1\omega_2}}.
+\]
+\setcounter{equation}{15}

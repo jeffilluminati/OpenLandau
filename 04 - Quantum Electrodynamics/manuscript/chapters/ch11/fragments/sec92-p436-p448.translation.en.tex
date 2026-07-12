@@ -1,0 +1,508 @@
+
+\section{Bremsstrahlung of an electron on a nucleus. Non-relativistic case}
+
+\SourcePage{431}{436}
+
+This and several of the following sections are devoted to the important phenomenon of \emph{bremsstrahlung}, the radiation accompanying the collision of particles. We begin with the non-relativistic case, i.e.\ we consider the radiation produced during scattering of an electron in the Coulomb field of a stationary centre (\emph{A.~Sommerfeld}, 1931).
+
+We start from formula (45.5) for the probability of dipole radiation
+\begin{equation}
+dw = \frac{\omega^3}{2\pi}|\mathbf{e}^*\mathbf{d}_{fi}|^2\,do_\mathbf{k}.
+\label{eq:92.1}
+\end{equation}
+In the present case the initial and final states of the electron belong to the continuous spectrum, and the photon frequency is
+\begin{equation}
+\omega = \frac{1}{2m}(\mathbf{p}^2 - \mathbf{p}'^2),
+\label{eq:92.2}
+\end{equation}
+where $\mathbf{p} = m\mathbf{v}$ and $\mathbf{p}' = m\mathbf{v}'$ are the initial and final momenta of the electron. If the initial and final electron wave functions are normalised to one particle in a volume $V = 1$, then expression
+
+\SourcePage{432}{437}
+
+(92.1), multiplied by $d^3p'/(2\pi)^3$ and divided by the density of the incident flux $v/V = v$, gives the cross section $d\sigma_{\mathbf{kp}'}$ of the radiation of a photon $\mathbf{k}$ in the solid angle $do_\mathbf{k}$ with the scattering of the electron into the interval of final-state momenta $d^3p'$. Replacing the matrix element of the dipole moment $\mathbf{d} = e\mathbf{r}$ by the matrix element of momentum according to
+\[
+\mathbf{d}_{fi} = -\frac{1}{i\omega}\,\frac{e}{m}\,\mathbf{p}_{fi},
+\]
+we write the expression for the cross section in the form
+\begin{equation}
+d\sigma_{\mathbf{kp}'} = \frac{\omega e^2}{(2\pi)^4 mp}\,|\mathbf{e}^*\mathbf{p}_{fi}|^2\,do_\mathbf{k}\,d^3p',
+\label{eq:92.3}
+\end{equation}
+where
+\begin{equation}
+\mathbf{p}_{fi} = \int \psi_f^*\hat{\mathbf{p}}\,\psi_i\,d^3x = -i\int\psi_f^*\nabla\psi_i\,d^3x.
+\label{eq:92.4}
+\end{equation}
+
+The functions $\psi_i$ and $\psi_f$ must be taken as exact wave functions in the Coulomb field of attraction, those functions which asymptotically contain a plane wave and a spherical wave; in $\psi_f$ the spherical wave must be converging, and in $\psi_i$---diverging (see III, \S\,136). These functions have the form
+\begin{equation}
+\begin{aligned}
+\psi_i &= A_i\,e^{i\mathbf{pr}}\,F(i\nu,\,1,\,i(pr - \mathbf{pr})), \quad &\nu &= \frac{Ze^2 m}{p}, \\
+\psi_f &= A_f\,e^{i\mathbf{p}'\mathbf{r}}\,F(-i\nu',\,1,\,-i(p'r + \mathbf{p}'\mathbf{r})), \quad &\nu' &= \frac{Ze^2 m}{p'},
+\end{aligned}
+\label{eq:92.5}
+\end{equation}
+with the normalisation coefficients
+\begin{equation}
+A_i = e^{\pi\nu/2}\Gamma(1 - i\nu), \quad A_f = e^{\pi\nu'/2}\Gamma(1 + i\nu').
+\label{eq:92.6}
+\end{equation}
+Noting that
+\[
+\nabla F(i\nu,\,1,\,i(pr - \mathbf{pr})) = i\left(p\frac{\mathbf{r}}{r} - \mathbf{p}\right)F' = -\left(\frac{\partial F}{\partial\mathbf{p}}\right),
+\]
+we write $\nabla\psi_i$ in the form
+\[
+\nabla\psi_i = i\mathbf{p}\psi_i - A_i e^{i\mathbf{pr}}\frac{p}{r}\left(\frac{\partial F}{\partial\mathbf{p}}\right).
+\]
+
+Upon multiplying by $\psi_f^*$ and integrating, the first term vanishes by virtue of the orthogonality of $\psi_i$ and $\psi_f$. Therefore for the matrix element of momentum we have
+\begin{equation}
+\mathbf{p}_{fi} = iA_iA_f\,p\frac{\partial J}{\partial\mathbf{p}},
+\label{eq:92.7}
+\end{equation}
+where
+\begin{equation}
+J = \int \frac{e^{-i\mathbf{qr}}}{r}\,F(i\nu',\,1,\,i(p'r + \mathbf{p}'\mathbf{r}))\,F(i\nu,\,1,\,i(pr - \mathbf{pr}))\,d^3x, \quad \mathbf{q} = \mathbf{p}' - \mathbf{p}.
+\label{eq:92.8a}
+\end{equation}
+
+\SourcePage{433}{438}
+
+We have taken $\partial/\partial\mathbf{p}$ out from under the integral sign, bearing in mind that upon differentiating $J$ the quantities $\nu$, $\nu'$, $\mathbf{q}$ must be treated as independent parameters and only after the differentiation should one express $\nu$ and $\mathbf{q}$ through $\mathbf{p}$.
+
+The integral is computed by replacing each of the degenerate hypergeometric functions by its expression in the form of a contour integral. We give here only the result:
+\begin{equation}
+\begin{aligned}
+J &= BF(i\nu',\,i\nu,\,1,\,z), \\
+B &= 4\pi e^{-\pi\nu}(-\mathbf{q}^2 - 2\mathbf{qp})^{-i\nu}(\mathbf{q}^2 - 2\mathbf{qp}')^{-i\nu'}(\mathbf{q}^2)^{i\nu+i\nu'-1}, \\
+z &= 2\frac{\mathbf{q}^2(pp' + \mathbf{pp}') - 2(\mathbf{qp})(\mathbf{qp}')}{(\mathbf{q}^2 - 2\mathbf{qp}')(\mathbf{q}^2 + 2\mathbf{qp})}.
+\end{aligned}
+\label{eq:92.8}
+\end{equation}
+Here $F(i\nu',\,i\nu,\,1,\,z)$ is the complete hypergeometric function.
+
+After the differentiation in (92.7) one can set $\mathbf{q} = \mathbf{p}' - \mathbf{p}$; then
+\begin{equation}
+z = -2\frac{pp' - \mathbf{pp}'}{(p - p')^2}, \quad \mathbf{q}^2 = (p - p')^2(1 - z)
+\label{eq:92.9}
+\end{equation}
+($z < 0$). We note also that
+\[
+-\mathbf{q}^2 - 2\mathbf{qp} = \mathbf{q}^2 - 2\mathbf{qp}' = \mathbf{p}^2 - \mathbf{p}'^2 > 0.
+\]
+
+As a result we find for the matrix element the following final expression:
+\begin{equation}
+\begin{split}
+\mathbf{p}_{fi} &= A_iA_f\,\frac{8\pi i e^{-\pi\nu}}{(p-p')^3(p+p')}\left(\frac{p+p'}{p-p'}\right)^{\!-i(\nu+\nu')} \times {} \\
+&\quad \times (1-z)^{i(\nu+\nu')-1}[i\nu p\mathbf{q} F'(z) + (1-z)F'(z)(p'\mathbf{p} - p\mathbf{p}')],
+\end{split}
+\label{eq:92.10}
+\end{equation}
+where for brevity we have denoted
+\begin{equation}
+F(z) = F(i\nu',\,i\nu,\,1,\,z).
+\label{eq:92.11}
+\end{equation}
+
+The cross section is obtained by substitution of (92.10) into (92.3), but the general formula is very cumbersome and difficult to survey. Therefore we proceed directly to computing the spectral distribution of the radiation, i.e.\ we integrate the cross section over the directions of the photon and the final electron.
+
+Integration over $do_\mathbf{k}$ and summation over the polarisations of the photon reduces to averaging over all directions of $\mathbf{e}$ and multiplication by $2 \cdot 4\pi$, i.e.\ to the replacement
+\[
+e_i e_k^* do_\mathbf{k} \to \frac{8\pi}{3}\delta_{ik}.
+\]
+After this the cross section becomes
+\begin{equation}
+d\sigma_{\mathbf{p}'} = \frac{\omega e^2 p'}{6\pi^3 p}\,|\mathbf{p}_{fi}|^2\,d\omega\,do_{\mathbf{p}'}.
+\label{eq:92.12}
+\end{equation}
+
+\SourcePage{434}{439}
+
+The square $|\mathbf{p}_{fi}|^2$ is computed using (92.9)--(92.11), and taking into account that
+\[
+|\Gamma(1 - i\nu)|^2 = \frac{\pi\nu}{\sinh\pi\nu}.
+\]
+We obtain
+\begin{equation}
+\begin{split}
+|\mathbf{p}_{fi}|^2 &= \frac{2^8\pi^4(Ze^2)^2m^2}{(p+p')^2(p-p')^4(1-e^{-2\pi\nu'})(e^{2\pi\nu}-1)} \times {} \\
+&\quad \times \left\{\frac{\nu\nu'}{1-z}|F|^2 - z|F'|^2 + i\frac{\nu+\nu'}{2}\,\frac{z}{1-z}(FF'^* - F^*F')\right\}.
+\end{split}
+\label{eq:92.13}
+\end{equation}
+
+For integrating the cross section (92.12), $do_{\mathbf{p}'} = 2\pi\sin\vartheta\,d\vartheta$ where $\vartheta$ is the scattering angle, we pass from $\vartheta$ to the variable
+\[
+z = -\frac{2pp'}{(p-p')^2}(1-\cos\vartheta), \quad do_{\mathbf{p}'} \to \frac{\pi(p-p')^2}{pp'}\,dz.
+\]
+To take the integral over $dz$, we transform the expression in curly brackets in (92.13). According to the differential equation for hypergeometric functions (see III, (e.~2)) we have
+\begin{gather*}
+z(1-z)F'' + [1 - (1+i\nu+i\nu')z]F' + \nu\nu' F = 0, \\
+z(1-z)F''^* + [1 - (1-i\nu-i\nu')z]F'^* + \nu\nu' F^* = 0.
+\end{gather*}
+Multiplying these two equations by $F^*$ and $F$ respectively and adding, we obtain
+\[
+(1-z)\left[\frac{d}{dz}z(F'F^* + F'^*F) - 2z|F'|^2 + \frac{i(\nu+\nu')z}{1-z}(F'^*F + F^*F') + \frac{2\nu\nu'}{1-z}|F|^2\right] = 0.
+\]
+From this one sees that the expression in curly brackets in (92.13) equals
+\begin{equation}
+\{\ldots\} = -\frac{1}{2}\frac{d}{dz}z(F'F^* + F'^*F)
+\label{eq:92.14a}
+\end{equation}
+and integrates directly.
+
+\SourcePage{435}{440}
+
+Collecting the obtained formulas, we find the final expression for the cross section of bremsstrahlung radiation in the frequency interval $d\omega$\footnote{Formulas (92.15) and (92.25) are written in ordinary units.}:
+\begin{equation}
+\begin{split}
+d\sigma_\omega &= \frac{64\pi^2}{3}\,Z^2\alpha r_\mathrm{e}^2\,\frac{m^2c^2}{(p-p')^2}\,\frac{p'}{p}\,\frac{1}{(1-e^{-2\pi\nu'})(e^{2\pi\nu}-1)} \times {} \\
+&\quad \times \left(-\frac{d}{d\xi}\,|F(\xi)|^2\right)\frac{d\omega}{\omega},
+\end{split}
+\label{eq:92.15}
+\end{equation}
+where
+\[
+\nu = \frac{Z\alpha mc}{p} = \frac{Ze^2}{\hbar v}, \quad \nu' = \frac{Ze^2}{\hbar v'}, \quad p' = \sqrt{p^2 - 2m\hbar\omega},
+\]
+\[
+F(\xi) = F(i\nu',\,i\nu,\,1,\,\xi), \quad \xi = -\frac{4pp'}{(p-p')^2}.
+\]
+
+Let us consider the limiting case when both velocities $v$ and $v'$ are so large that $\nu \ll 1$, $\nu' \ll 1$ (but still, of course, $v \ll 1$, so that $Z\alpha \ll \nu \ll 1$; this is possible only for small $Z$). For computing the derivative $F'(\xi)$ in this case we use the formula
+\[
+\frac{d}{dz}F(\alpha,\,\beta,\,\gamma,\,z) = \frac{\alpha\beta}{\gamma}F(\alpha+1,\,\beta+1,\,\gamma+1,\,z),
+\]
+which is easily obtained by direct differentiation of the hypergeometric series. We have
+\[
+F'(\xi) = i\nu\cdot i\nu' F(1,\,1,\,2,\,\xi) = \frac{i\nu\nu'}{\xi}\ln(1-\xi)
+\]
+(the last equality follows from direct comparison of the corresponding series). For the function $F(\xi)$ itself we have simply
+\[
+F(\xi) \approx F(0,\,0,\,1,\,\xi) = 1.
+\]
+
+As a result, from (92.15) we find
+\begin{equation}
+d\sigma_\omega = \frac{16}{3}\,Z^2\alpha r_\mathrm{e}^2\,\frac{c^2}{\nu^2}\ln\frac{v+v'}{v-v'}\,\frac{d\omega}{\omega}, \quad \frac{Ze^2}{\hbar v} \ll 1, \quad \frac{Ze^2}{\hbar v'} \ll 1.
+\label{eq:92.16}
+\end{equation}
+The smallness of $\nu$ and $\nu'$ is precisely the condition for applicability of the Born approximation in the case of Coulomb interaction. Therefore formula (92.16) itself can be more simply obtained directly with the aid of perturbation theory (see Problem~1).
+
+Now let the fast ($\nu \ll 1$) electron lose a considerable fraction of its energy to radiation, so that $v' \ll v$ and $\nu'$ may not be small. Then
+\[
+-\xi \approx 4p'/p = 4\nu/\nu' \ll 1, \quad F(\xi) \approx F(i\nu',\,0,\,1,\,\xi) = 1,
+\]
+\[
+F'(\xi) = -\nu\nu'F(1+i\nu',\,1,\,2,\,\xi) \approx -\nu\nu',
+\]
+and the cross section
+\begin{equation}
+d\sigma_\omega = \frac{64\pi^3}{3}\,Z^3\alpha^2 r_\mathrm{e}^2\left(\frac{c}{v}\right)^{\!3}\frac{1}{1-\exp(-2\pi Ze^2/\hbar v')}\,\frac{d\omega}{\omega},
+\label{eq:92.17}
+\end{equation}
+\[
+\frac{Ze^2}{\hbar v} \ll 1, \quad \frac{Ze^2}{\hbar v'} \gtrsim 1.
+\]
+
+When $\nu' \ll 1$ this formula gives the same limiting expression
+\begin{equation}
+d\sigma_\omega = \frac{32}{3}\,Z^2\alpha r_\mathrm{e}^2\,\frac{c^2 v'}{v^3}\,\frac{d\omega}{\omega}
+\end{equation}
+as formula (92.16) when $v' \ll v$. Therefore formulas (92.16) and (92.17) together cover (for $\nu \ll 1$) the entire range of values of $\nu'$.
+
+\SourcePage{436}{441}
+
+When $\omega \to \omega_0$ (where $\hbar\omega_0 = mv^2/2$) the velocity $v' \to 0$ and $\nu' \to \infty$. In this limit (92.17) gives
+\begin{equation}
+d\sigma_\omega = \frac{128\pi}{3}\,Z^3\alpha^2 r_\mathrm{e}^2\left(\frac{c}{v}\right)^{\!3}\frac{\hbar\,d\omega}{mv^2}.
+\label{eq:92.18}
+\end{equation}
+Thus, $d\sigma_\omega/d\omega$ tends to a finite limit as $\omega \to \omega_0$. This circumstance can be justified in general terms by arguments analogous to those set out in vol.~III, \S\,147. Physically it is related to the fact that the frequency $\omega = \omega_0$ is the boundary of a continuous bremsstrahlung spectrum only. The electron can also radiate at the frequency $\omega > \omega_0$, passing into a bound state. But strongly excited bound states in the Coulomb field are so similar in their properties to states near the boundary of the free spectrum that the continuous spectrum boundary is not a physically distinguished point.
+
+Let us pass to the case when both parameters $\nu$, $\nu' \gg 1$. In this case the motion of both the initial and the final electrons is quasi-classical. We shall assume that $p^2/(2m) \sim \hbar\omega$; then we shall need the asymptotic expression for the function $F(\xi)$ when $\nu$, $\nu' \to \infty$ and $\xi \sim 1$ (the more precise condition will be formulated below, see (92.24)).
+
+For obtaining this expression we start from the integral representation of the hypergeometric function (e.~3) (see III), which we write in the form
+\begin{equation}
+F(i\eta\nu',\,i\nu',\,1,\,\xi) = \frac{e^{-\pi\eta\nu'}}{2\pi i}\oint e^{\nu' f(t)}\frac{dt}{t},
+\label{eq:92.19}
+\end{equation}
+where we have introduced the notation
+\begin{equation}
+\eta = \nu/\nu', \quad 0 < \eta < 1,
+\label{eq:92.19a}
+\end{equation}
+so that
+\begin{equation}
+\xi = -\frac{4\eta}{(1-\eta)^2}.
+\label{eq:92.20}
+\end{equation}
+As integration contour we choose the path shown in Fig.~17, passing along a segment of the real axis and going around the points $t = 0$ and $t = 1$\footnote{For the hypergeometric function $F(\alpha,\,\beta,\,\gamma,\,\xi)$ the contour must be chosen so that upon going around it the function $V(t) = e^t t^{\gamma-\beta-1}(t-1)^{1-\alpha}$ returns to its original value. When $\gamma$ is integer (in the present case $\gamma = 1$) the indicated contour satisfies this condition.}.
+
+% [Figure 17: Integration contour in the complex t-plane, going around t=0 and t=1 along the real axis]
+
+\SourcePage{437}{442}
+
+When $\nu$, $\nu' \gg 1$ the value of the sub-integral expression on the lower part of this contour is small and can be neglected: upon going around the point $t = 0$ from above downwards the sub-integral expression is multiplied by the small factor $\exp(-2\pi\eta\nu')$, while upon going around the point $t = 1$ from below upwards it is multiplied by $\exp(2\pi\eta\nu')$. The integral
+\[
+E = \frac{e^{-\pi\eta\nu'}}{2\pi i}\int e^{\nu' f(t)}\frac{dt}{t}, \quad f(t) = i\ln\frac{t^\eta}{(1-t)^\eta(1-t\xi)^{i\nu'}},
+\label{eq:92.21}
+\]
+is evaluated by the saddle-point method. The saddle point $t_0$ is determined by the condition $f'(t_0) = 0$, whence $t_0 = (1-\eta)/2$. At this point, however, $f''$ also vanishes, as does the derivative $f'''(t_0)$, so that one must write
+\[
+f(t) \approx f(t_0) + \frac{ia}{3}\tau^3, \quad \tau = t - t_0,
+\]
+where
+\[
+f(t_0) = 2\pi\eta i + i(1+\eta)\ln\frac{1-\eta}{1+\eta}, \quad a = \frac{1}{2}f'''(t_0) = \frac{16\eta}{(1-\eta^2)^2}.
+\]
+
+The pre-exponential factor $1/t$ in the sub-integral expression is written as
+\[
+\frac{1}{t} \approx \frac{1}{t_0} - \frac{\tau}{t_0^2}
+\]
+(one cannot restrict oneself to the term $1/t_0$ alone, as this would lead to the vanishing of the derivative $d|F(\xi)|^2/d\xi$ appearing in (92.15)). Thus, we find, after an obvious substitution, in the integrals,
+\begin{equation}
+\begin{split}
+F &\approx \frac{1}{2\pi i t_0(\alpha\nu')^{1/3}}\exp\!\left\{-\pi\eta\nu' + \nu' f(t_0)\right\} \times {} \\
+&\quad \times \left[-\int_{-\infty}^{\infty}e^{ix^3/3}\,dx + \frac{i}{t_0(\alpha\nu')^{1/3}}\int_{-\infty}^{\infty} x\,e^{ix^3/3}\,dx\right].
+\end{split}
+\label{eq:92.22}
+\end{equation}
+
+The integrals here are respectively
+\[
+2\int_0^\infty \cos\frac{x^3}{3}\,dx = \frac{2\pi}{3^{2/3}\Gamma(2/3)}, \quad 2\int_0^\infty x\sin\frac{x^3}{3}\,dx = 3^{1/6}\Gamma(2/3).
+\]
+
+In an analogous fashion the derivative $F'(\xi)$ is computed; according to (92.19) it is given by an integral differing from (92.21) only by the
+
+\SourcePage{438}{443}
+
+replacement of the pre-exponential factor $1/it$ by $\nu'/(l-\xi t)$. After this straightforward calculation we arrive at the result
+\[
+-\frac{d}{d\xi}|F(\xi)|^2 = \frac{(1-\eta)^2 e^{2\pi\nu}}{4\sqrt{3}\pi\nu}.
+\]
+
+Finally, substituting this expression into formula (92.15), we find, to the required accuracy, the following simple result:
+\begin{equation}
+d\sigma_\omega = \frac{16\pi}{3^{3/2}}\,Z^2\alpha r_\mathrm{e}^2\,\frac{m^2c^2}{p^2}\,\frac{d\omega}{\omega}.
+\label{eq:92.23}
+\end{equation}
+
+The condition for applicability of this formula, i.e.\ the condition for applicability of the asymptotic expression (92.23), consists in requiring the smallness of the second term in comparison with the first: $(1-\eta)\nu \gg 1$, or, after expressing the parameters of the hypergeometric function through the physical quantities:
+\begin{equation}
+\omega \gg \frac{v}{Ze^2}\,\frac{mv^2}{2}.
+\label{eq:92.24}
+\end{equation}
+
+Condition (92.24) coincides with that defining the ``high-frequency limit'' in the classical radiation in the Coulomb field of attraction, and the quantity $\hbar\omega\,d\sigma_\omega$ from (92.23) coincides with the expression (70.22) (see II) for the ``effective retardation'' in this limit. This result needs some discussion. It might seem that for the applicability of the classical radiation formula one needs, besides the quasi-classicality of the motion, also the smallness of the energy of the quantum compared to the energy of the electron, i.e.\ the condition $\hbar\omega \ll mv^2/2$, which was not assumed in the derivation of (92.23). In reality, however, the value $\hbar\omega$ need not be small compared with the energy of the electron at infinity, but rather compared with its kinetic energy on that segment of the trajectory where the radiation occurs in the main. This energy is much larger than the initial one, because of the acceleration of the electron by the field of the ion.
+
+Indeed, the radiation of high frequencies occurs mainly at small distances from the ion, where
+\begin{equation}
+v(r)/r \sim \omega.
+\label{eq:92.25}
+\end{equation}
+(We have denoted by $v(r)$ the velocity of the electron at distance $r$ from the ion, in contrast to the velocity $v$ at infinity.) Taking into account that here $Ze^2/r \sim mv^2(r)$, we find that the kinetic energy on the segment where the radiation is produced is
+\[
+\frac{mv^2(r)}{2} \sim \frac{m}{2}\left(\frac{\omega Ze^2}{m}\right)^{\!2/3} \gg \frac{mv^2}{2}.
+\]
+Therefore the radiation of a quantum with energy of order $mv^2/2$ does not change the motion on the radiation segment, and no additional condition of smallness of $\hbar\omega$ is required.
+
+\SourcePage{439}{444}
+
+We note also that the motion on the segment (92.25) for given angular momentum $\hbar l$ does not depend on the initial energy. Correspondingly, the energy and $d\sigma_\omega$ from (92.23) can be obtained by multiplying the probability of radiation $d\mathcal{E}_\omega/\hbar\omega$ by $2\pi\rho\,d\rho$ ($\rho$ is the impact parameter) and integrating over all $\rho$. Since in the quasi-classical case
+\[
+\rho\,d\rho = \hbar^2 l\,dl/(m^2v^2),
+\]
+this leads to the dependence $d\sigma_\omega = 1/v^2$, i.e.\ to (92.23). The above argument clarifies why it is the initial (and not the final) velocity of the electron that enters this formula.
+
+In order to go over to the classical formulas in the entire region $(1-\eta)\nu \sim 1$, $\nu \gg 1$, one would have to find the asymptotics of the hypergeometric function near the saddle point $t_0$ at closer range; we shall not pursue this here in view of the evident nature of the final result.
+
+All the formulas written above refer to the Coulomb field of attraction. The cross section for radiation in the field of repulsion is obtained from (92.15) by the substitution: $\nu \to -\nu$, $\nu' \to -\nu'$. In this case, in particular, the limiting Born formula (92.16) does not change at all. In the limit $\nu \ll 1$, $\nu' \to \infty$ we obtain instead of (92.18)
+\begin{equation}
+d\sigma_\omega = \frac{128\pi}{3}\,Z^3\alpha^2 r_\mathrm{e}^2\left(\frac{c}{v}\right)^{\!3}\exp\!\left(-\frac{\sqrt{2mc^2}\,\pi Z\alpha}{\sqrt{\hbar(\omega_0-\omega)}}\right)\frac{\hbar\,d\omega}{mv^2},
+\label{eq:92.26}
+\end{equation}
+i.e.\ the differential cross section tends to zero exponentially as $\omega \to \omega_0$. This result is again natural, since in the field of repulsion there are no bound states and the frequency $\omega = \omega_0$ is the true boundary of the radiation spectrum.
+
+\bigskip
+
+\begin{flushleft}\textbf{Problems}\end{flushleft}
+
+\textbf{1.} Find in the Born approximation the cross section of bremsstrahlung radiation in the non-relativistic collision of two particles with different ratios $e/m$.
+
+\emph{Solution.} The dipole moment of two particles with charges $e_1$, $e_2$ and masses $m_1$, $m_2$ in the system of their centre of inertia is
+\[
+\mathbf{d} = \mu\left(\frac{e_1}{m_1} - \frac{e_2}{m_2}\right)\mathbf{r},
+\]
+where $\mu = m_1 m_2/(m_1+m_2)$, $\mathbf{r} = \mathbf{r}_1 - \mathbf{r}_2$. Hence
+\[
+\dot{\mathbf{d}} = \left(\frac{e_1}{m_1} - \frac{e_2}{m_2}\right)\dot{\mu\mathbf{r}} = -\left(\frac{e_1}{m_1} - \frac{e_2}{m_2}\right)\frac{e_1 e_2}{r}\nabla\frac{1}{r}.
+\]
+
+The matrix element
+\[
+\mathbf{d}_{\mathbf{p}'\mathbf{p}} = -\frac{1}{i\omega^2}(\dot{\mathbf{d}})_{\mathbf{p}'\mathbf{p}}, \quad \omega = \frac{p^2 - p'^2}{2\mu}
+\]
+($\mathbf{p} = \mu\mathbf{v}$, $\mathbf{p}' = \mu\mathbf{v}'$ are the momenta of relative motion) is computed using plane waves\footnote{The replacement of two particles with the reduced mass is admissible, of course, only in the non-relativistic case.}
+\[
+\psi_\mathbf{p} = e^{i\mathbf{pr}}, \quad \psi_{\mathbf{p}'} = e^{i\mathbf{p}'\mathbf{r}}
+\]
+with the aid of the formula
+\[
+\left(\nabla\frac{1}{r}\right)_{\mathbf{p}'\mathbf{p}} = \frac{4\pi i\mathbf{q}}{q^2}, \quad \mathbf{q} = \mathbf{p}' - \mathbf{p}.
+\]
+
+As a result we find
+\[
+d\sigma_{\mathbf{kp}'} = \frac{e_1^2 e_2^2}{\pi^2}\left(\frac{e_1}{m_1} - \frac{e_2}{m_2}\right)^{\!2}\frac{v'}{v}\,\frac{\mu^2}{q^4}\,(\mathbf{eq})(\mathbf{e}^*\mathbf{q})\,\frac{d\omega}{\omega}\,do_\mathbf{k}\,do_{\mathbf{p}'}.
+\]
+
+After summation over the polarisations, the angular distribution of the radiation is described by a factor $\sin^2\Theta$, where $\Theta$ is the angle between the photon $\mathbf{k}$ and the vector $\mathbf{q}$, lying in the scattering plane (see (45.4a)). After integration over the photon directions
+\[
+d\sigma_{\vartheta\omega} = \frac{16}{3}\,e_1^2 e_2^2\left(\frac{e_1}{m_1} - \frac{e_2}{m_2}\right)^{\!2}\frac{v'}{v}\,\frac{d\omega}{\omega}\,\frac{\sin\theta\,d\theta}{v^2 + v'^2 - 2vv'\cos\theta'},
+\]
+where $\theta$ is the scattering angle. Finally, integrating over $\theta$,
+\[
+d\sigma_\omega = \frac{16}{3}\,e_1^2 e_2^2\left(\frac{e_1}{m_1} - \frac{e_2}{m_2}\right)^{\!2}\frac{1}{v^2}\ln\frac{v+v'}{v-v'}\,\frac{d\omega}{\omega}.
+\]
+For radiation in the field of a stationary Coulomb centre this formula coincides with (92.16).
+
+\SourcePage{440}{445}
+
+\textbf{2.} Find in the Born approximation the cross section of bremsstrahlung radiation in the non-relativistic collision of two electrons\footnote{The velocity of the collision satisfies the condition $\alpha \ll e^2/(\hbar v) \ll 1$.}.
+
+\emph{Solution.} Dipole radiation in this case is absent, and one must consider quadrupole radiation. In classical theory the spectral distribution of the total intensity of quadrupole radiation is given by the formula
+\[
+I_\omega = (1/90)|\hat{D}_{ik})_\omega|^2,
+\]
+where $D_{ik} = \sum e(3x_i x_k - r^2\delta_{ik})$ is the tensor of the quadrupole moment of the system of charges\footnote{This formula is obtained from (71.5) (see II), just as (67.11) (see II) is obtained from (67.8) (see II).}. For two electrons in the system of their centre of inertia
+\[
+D_{ik} = e(3x_i x_k - r^2\delta_{ik}), \quad \mathbf{r} = \mathbf{r}_1 - \mathbf{r}_2.
+\]
+
+In the transition to quantum theory the Fourier components must be replaced by matrix elements (cf.\ what was said in \S\,45 on dipole radiation), and with the appropriate normalisation of the wave functions (plane waves) one obtains, after division by the photon energy $\omega$, the cross section of radiation with the scattering of the electrons into the interval of final states $d^3p'$:
+\[
+d\sigma_{\mathbf{p}'} = \frac{1}{90\omega}|(\hat{D}_{ik})_{\mathbf{p}'\mathbf{p}}|^2\,\frac{d^3p'}{v(2\pi)^3}.
+\]
+
+\SourcePage{441}{446}
+
+$v = 2p/m$ is the initial velocity of relative motion; the emitted frequency $\omega = (p^2 - p'^2)/m$.
+
+The operator $\hat{D}_{ik}$ is computed by threefold commutation of $D_{ik}$ with the Hamiltonian
+\[
+\hat{H} = \frac{\hat{\mathbf{p}}^2}{m} + \frac{e^2}{r}
+\]
+and is\footnote{This expression is analogous to the classical formula
+$\dddot{D}_{ik} = \frac{4e^3}{m}\left[6\frac{x_i x_k}{r^3}\hat{p}_k + 6\frac{x_k}{r^3}\hat{p}_i - 9\frac{x_i x_k}{r^5}\mathbf{pr} - \frac{l}{r^3}\delta_{ik}\mathbf{pr}\right],$
+which would be obtained by differentiating $D_{ik}$ using the classical equation of motion $\frac{m}{2}\ddot{\mathbf{r}} = \frac{e^2}{r^3}\mathbf{r}$.}
+\[
+\hat{\dddot{D}}_{ik} = \frac{2e^3}{m}\left[6\left(\frac{x_i}{r^3}\hat{p}_k + \hat{p}_k\frac{x_i}{r^3}\right) + 6\left(\frac{x_k}{r^3}\hat{p}_i + \hat{p}_i\frac{x_k}{r^3}\right) - 9\left(\frac{x_i x_k x_l}{r^5}\hat{p}_l + \hat{p}_l\frac{x_i x_k x_l}{r^5}\right) - \delta_{ik}\left(\frac{x_l}{r^3}\hat{p}_l + \hat{p}_l\frac{x_l}{r^3}\right)\right].
+\]
+
+Taking into account the identity of both particles (electrons) the matrix elements are computed using the wave functions
+\[
+\psi_\mathbf{p} = \frac{1}{\sqrt{2}}(e^{i\mathbf{pr}} \pm e^{-i\mathbf{pr}}), \quad \psi_{\mathbf{p}'} = \frac{1}{\sqrt{2}}(e^{i\mathbf{p}'\mathbf{r}} \pm e^{-i\mathbf{p}'\mathbf{r}}),
+\]
+where the signs ``$+$'' and ``$-$'' correspond respectively to total spins of the electrons 0 and 1 (the permutation of the electrons corresponds to the substitution $\mathbf{r} \to -\mathbf{r}$).
+
+The cumbersome calculation leads to the following formula for the spectral distribution of the radiation:
+\begin{align*}
+d\sigma_\omega &= \frac{4}{10}\alpha r_\mathrm{e}^2\biggl\{17 - \frac{3x^2}{(2-x)^2} + {} \\
+&\quad {} + \frac{12(2-x)^4 - 7(2-x)^2 x^2 - 3x^4}{(2-x)^3\sqrt{1-x}}\,\operatorname{Arcth}\frac{1}{\sqrt{x}}\biggr\}\sqrt{1-x}\,dx,
+\end{align*}
+where $x = \omega/\varepsilon$, and $\varepsilon = p^2/m$ is the initial energy of relative motion of the electrons; the cross section is averaged over the values of the total spin. The effective retardation is
+\[
+\varkappa_\text{eff} = \hbar\int_0^\varepsilon \omega\,d\sigma_\omega = 8.1\alpha r_\mathrm{e}^2\varepsilon
+\]
+(\emph{B.~K.~Fedyushin}, 1952).
+
+\SourcePage{442}{447}
+
+\textbf{3.} Determine the energy of radiation arising upon emission of a non-relativistic electron by a nucleus in the $s$-state.
+
+\emph{Solution.} The wave function of the emitted electron---a diverging spherical $s$-wave, normalised to unit full flux:
+\[
+\psi_i = \frac{1}{\sqrt{4\pi v}}\,\frac{e^{ipr}}{r}
+\]
+(see III, (33.14)). As the wave function of the final (after emission of the photon) state of the electron we take a plane wave
+\[
+\psi_f = e^{i\mathbf{p}'\mathbf{r}}.
+\]
+
+The matrix element of the transition
+\[
+\mathbf{p}_{fi} = (\mathbf{p}_{fi})^* = \left(\int \psi_f^*\hat{\mathbf{p}}\psi_i\,d^3x\right)^{\!*} = \frac{\mathbf{p}'}{\sqrt{4\pi v}}\int e^{-i\mathbf{p}'\mathbf{r} + ipr}\frac{d^3x}{r}
+\]
+\[
+= \sqrt{\frac{\pi}{v}}\,\frac{\mathbf{p}'}{p^2 - p'^2} = \sqrt{\frac{\pi}{v}}\,\frac{v'}{v\,\omega}
+\]
+(the integral is evaluated according to (57.6a)). The energy of the radiation is obtained from formula (45.8), multiplied by $d^3p'/(2\pi)^3$ and integrated over the directions of $\mathbf{p}'$. As a result we obtain the spectral distribution of the radiated energy
+\[
+dE_\omega = \frac{2e^2 v'^3}{3\pi v}\,d\omega.
+\]
+
+When $\omega \to 0$ the final velocity of the electron $v' \to v$, and this formula coincides, as it should, with the non-relativistic limit of the classical result (see the problem in II, \S\,69). The total radiated energy (in ordinary units)
+\[
+E = \frac{4}{15\pi}\alpha\left(\frac{v}{c}\right)^{\!2}\varepsilon,
+\]
+where $\varepsilon = mv^2/2$ is the initial energy of the electron.
+
+\textbf{4.} Determine the energy of radiation arising upon the reflection of a non-relativistic electron from an infinitely high ``potential wall''.
+
+\emph{Solution.} Let the electron move normally to the wall. Although the photon may be emitted in any direction, in the non-relativistic case the photon impulse is small in comparison with the electron impulse, and one can consider that the reflected electron also moves normally to the plane.
+
+Let the wall be at $x = 0$, and the electron be on the side $x > 0$. The wave functions of the stationary states of one-dimensional motion, normalised to $\delta(p/2\pi)$ (see III, \S\,21):
+\[
+\psi_i = 2\sin px, \quad \psi_f = 2\sin p'x.
+\]
+
+The matrix element of the operator $\hat{p} = \hat{p}_x$:
+\[
+p_{fi} = -4i\int_0^\infty \sin p'x\,\frac{d}{dx}\sin px\,dx = -\frac{4ipp'}{p^2 - p'^2},
+\]
+(the integrals of this kind are to be understood as the limit when $\delta \to +0$ of the value obtained by introducing in the sub-integral expression the factor $e^{-\delta x}$).
+
+The energy radiated upon single reflection of the electron is obtained from (45.8) by multiplication by $d\omega/v'$ and division by $v/2$ (the flux density of the running wave in the initial wave function $\psi_i$):
+\[
+dE_\omega = \frac{4\omega^2 e^2}{3m^2}|p_{fi}|^2\,\frac{2\pi\,d\omega}{vv'} = \frac{8}{3\pi}\,e^2 vv'\,d\omega. \eqno{(1)}
+\]
+
+\SourcePage{443}{448}
+
+At small frequencies ($\omega \ll \varepsilon = mv^2/2$) we have $v' \approx v$ and (1) goes over into the classical formula (69.5) (see II), which must be integrated over angles and divided by the change in velocity $\Delta v = 2v$ upon reflection; and it should be, since from the reflection from the wall the condition of smallness of the collision time (69.1) (see II) is always satisfied.
+
+The quantum formula (1) allows, however, also to find the total radiated energy:
+\[
+E = \int \frac{dE_\omega}{d\omega}\,d\omega = \frac{16}{9\pi}\alpha\varepsilon\frac{v^2}{c^2}
+\]
+(in ordinary units).
+
+\textbf{5.} Determine the energy of bremsstrahlung radiation arising upon scattering of a slow electron on an atom.
+
+\emph{Solution.} When the condition $pa \ll 1$ (where $a$ is the atomic dimensions) is satisfied, the scattering on the atom is isotropic and does not depend on the energy of the electron (see III, \S\,132). The wave functions of the initial and final states of the electron are written in the form
+\[
+\psi_i = e^{i\mathbf{pr}} + f\frac{e^{ipr}}{r}, \quad \psi_f = e^{i\mathbf{p}'\mathbf{r}} + f\frac{e^{-ip'r}}{r},
+\]
+where $f$ is a real constant scattering amplitude. These expressions refer to the asymptotic region of distances $r \gg a$, which in the present case are just the essential ones: $r \sim 1/p \gg a$. The computed matrix element from these functions is
+\[
+\mathbf{p}_{fi} = \frac{2\pi f}{\omega}(\mathbf{v} - \mathbf{v}')
+\]
+(the integrals are evaluated as in Problem~3). Substituting this expression into (92.12), we obtain the cross section of radiation with scattering of the electron in the direction $\mathbf{p}'$ (ordinary units):
+\[
+d\sigma_{\omega\mathbf{p}'} = \frac{2\alpha p'}{3\pi pc^2}(\mathbf{v} - \mathbf{v}')^2 d\sigma_\text{el}\,\frac{d\omega}{\omega}, \eqno{(1)}
+\]
+where $d\sigma_\text{el} = f^2\,do_{\mathbf{p}'}$ is the differential cross section of elastic scattering. When $\hbar\omega \ll p^2/(2m)$ one can set $p \approx p'$, and then this formula goes over, in the non-relativistic limit, into the formula for radiation of soft photons (see \S\,98)\footnote{The fact that ``factorisation'' of the cross section (i.e.\ the extraction of the factor $\sigma_\text{el}$) has occurred in the present case for arbitrary $\omega$ is, in a certain sense, accidental and is related to the independence of the scattering amplitude from energy.}.
+
+Integrating (1) over the directions of $\mathbf{p}'$, we get
+\[
+d\sigma_\omega = \frac{2\alpha p'}{3\pi pc^2}(v^2 + v'^2)\sigma_\text{el}\,\frac{d\omega}{\omega}. \eqno{(2)}
+\]
+where $\sigma_\text{el} = 4\pi f^2$ is the total elastic scattering cross section. Finally, multiplying by $\hbar\omega$ and integrating over $\omega$ from 0 to $p^2/(2m) = \varepsilon$, we obtain the ``effective retardation''
+\[
+\varkappa_\text{eff} = \int \hbar\omega\,d\sigma_\omega = \frac{32}{45\pi}\alpha\sigma_\text{el}\varepsilon\left(\frac{v}{c}\right)^{\!2}. \eqno{(3)}
+\]

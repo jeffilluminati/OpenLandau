@@ -1,0 +1,331 @@
+
+\section{Magnetobremsstrahlung}
+
+\SourcePage{418}{423}
+
+According to classical theory (see II, \S\,74) an ultrarelativistic electron moving in a constant magnetic field $H$ emits a quasi-continuous spectrum with maximum at a frequency of order
+\begin{equation}
+\omega \sim \omega_0\left(\frac{\varepsilon}{m}\right)^{\!3},
+\label{eq:90.1}
+\end{equation}
+where
+\begin{equation}
+\omega_0 = \frac{v|e|H}{|\mathbf{p}|} \approx \frac{|e|H}{\varepsilon}
+\label{eq:90.2}
+\end{equation}
+is the frequency of revolution of an electron with energy $\varepsilon$ in a circular orbit (in the plane perpendicular to the field)\footnote{In this section we set $c = 1$, but retain the factors $\hbar$.}. We shall assume that the longitudinal (along $\mathbf{H}$) component of the electron velocity is zero; this can always be achieved by choosing the appropriate reference frame.
+
+Quantum effects in magnetobremsstrahlung radiation have a twofold origin: quantisation of the motion of the electron and quantum recoil upon emission of a photon. The latter is determined by the ratio $\hbar\omega_0/\varepsilon$, and the condition for applicability of classical theory requires its smallness. Since
+\begin{equation}
+\frac{\hbar\omega_0}{\varepsilon} = \frac{H}{H_0}\left(\frac{m}{\varepsilon}\right)^{\!2},
+\label{eq:90.3}
+\end{equation}
+where $H_0 = m^2/(|e|\hbar)\ (= m^2c^3/(|e|\hbar)) = 4.4\cdot 10^{13}$~G. In the classical region $\chi \sim \hbar\omega/\varepsilon \ll 1$. When $\chi \gtrsim 1$ the energy of the emitted photon $\hbar\omega \sim \varepsilon$, and moreover when $\chi \gg 1$ (as we shall see below) the essential region of the spectrum extends to frequencies at which the energy of the electron after emission is
+\begin{equation}
+\varepsilon' \sim m\,\frac{H_0}{H} \ll \varepsilon.
+\label{eq:90.4}
+\end{equation}
+
+\SourcePage{419}{424}
+
+In order for the electron to remain ultrarelativistic, the field must satisfy the condition
+\begin{equation}
+\frac{H}{H_0} \ll 1.
+\label{eq:90.5}
+\end{equation}
+
+As regards the quantisation of the motion itself, it is characterised by the ratio $\hbar\omega_0/\varepsilon$. Since
+\[
+\frac{\hbar\omega_0}{\varepsilon} = \frac{H}{H_0}\left(\frac{m}{\varepsilon}\right)^{\!2},
+\]
+by virtue of (90.5) $\hbar\omega_0 \ll \varepsilon$, i.e.\ the motion of the electron is quasi-classical irrespective of the value of $\chi$. In other words, one can neglect the non-commutativity of the operators of dynamic variables of the electron with one another (quantities $\approx \hbar\omega_0/\varepsilon$), while at the same time taking into account their non-commutativity with the operators of the photon field (quantities $\sim \hbar\omega/\varepsilon$)\footnote{The complete solution of the quantum problem of magnetobremsstrahlung radiation was given by \emph{N.~P.~Klepikov} (1954), and the first quantum correction to the classical formula by \emph{A.~A.~Sokolov, N.~P.~Klepikov} and \emph{I.~M.~Ternov} (1952). The derivation presented in this section, which makes explicit use of quasi-classicality of the motion, is due to \emph{V.~N.~Baier} and \emph{V.~M.~Katkov} (1967). An analogous method was used earlier by \emph{Schwinger} (\emph{J.~Schwinger}, 1967) to obtain the first quantum correction to the intensity of radiation.}.
+
+The quasi-classical wave functions of the stationary states of an electron in the external field can be symbolically represented in the form
+\begin{equation}
+\psi = (2\hat{H})^{-1/2}\,u(\hat{p})\exp\!\left(-\frac{i}{\hbar}\hat{H}t\right)\varphi(\mathbf{r}),
+\label{eq:90.6}
+\end{equation}
+where $\varphi(\mathbf{r}) \sim \exp(iS/\hbar)$ are the quasi-classical wave functions of a spinless particle ($S(\mathbf{r})$ is its classical action); $u(\hat{p})$ is an operator bispinor
+\[
+u(\hat{p}) = \begin{pmatrix} (\hat{H}+m)^{1/2}w \\ (\hat{H}+m)^{-1/2}(\boldsymbol{\sigma}\hat{\mathbf{p}})w \end{pmatrix},
+\]
+obtained from the bispinor amplitude of the plane wave $u(p)$ (23.9) by the replacement of $\mathbf{p}$ and $\varepsilon$ by operators\footnote{In this section (in contrast to Ch.~IV) the generalised momentum is denoted by the capital letter $\mathbf{P}$; the symbol $\mathbf{p}$ is used for the ordinary (kinetic) momentum.}
+\[
+\hat{\mathbf{p}} = \hat{\mathbf{P}} - e\mathbf{A} = -i\hbar\nabla - e\mathbf{A}, \quad \hat{H} = (\hat{\mathbf{p}}^2 + m^2)^{1/2},
+\]
+$\mathbf{P}$ being the generalised momentum of the particle in the field with vector potential $\mathbf{A}(\mathbf{r})$; the ordering of operator factors in $\psi$ is inessential, since their non-commutativity is neglected; the spin state of the electron is determined by the 3-spinor $w$.
+
+\SourcePage{420}{425}
+
+For computing the probability of emission of a photon it is convenient in the quasi-classical case to start not from the final formula of perturbation theory (44.3), but from the formula in which the integration over time has not yet been performed. For the complete (over all time) differential probability we have\footnote{Substituting
+$V_{fi}(t) = V_{fi}\exp(i\omega_{fi}t)$,
+we obtain $a_{fi} = 2\pi V_{fi}\delta(\omega_{fi})$. Bearing in mind that the square of the $\delta$-function must be understood as
+$|\delta(\omega)|^2 \to (t/2\pi)\delta(\omega)$,
+where $t$ is the total observation time (cf.\ the derivation of formula (64.5)), we obtain from (90.7) the probability per unit time (44.3).}
+\begin{equation}
+dw = \sum_f |a_{fi}|^2\frac{d^3k}{(2\pi)^3}, \quad a_{fi} = \int_{-\infty}^{\infty} V_{fi}(t)\,dt
+\label{eq:90.7}
+\end{equation}
+(cf.\ III, (41.2)); the summation is over the final states of the electron.
+
+Using (90.6), we write the matrix element for the emission of a photon $\omega$, $\mathbf{k}$ in the form
+\begin{align*}
+V_{fi}(t) &= -\frac{e\sqrt{4\pi}}{\sqrt{2\hbar\omega}}\int \varphi_f^*\exp\!\left(\frac{i}{\hbar}\hat{H}t\right)\frac{u^\dagger(\hat{p}')}{(2\hat{H}')^{1/2}}\,(\mathbf{e}^*\boldsymbol{\alpha})\,\frac{u(\hat{p})}{(2\hat{H})^{1/2}} \times {} \\
+&\quad \times e^{i\omega t - i\mathbf{kr}}\exp\!\left(-\frac{i}{\hbar}\hat{H}t\right)\varphi_i\,d^3x,
+\end{align*}
+where the operators in the square brackets act to the left; the field of the photon is chosen in three-dimensional transverse gauge. The factors $\exp(\pm i\hat{H}t/\hbar)$ convert the operators standing between them into operators that are explicitly time-dependent, in the Heisenberg representation. We write $V_{fi}(t)$ in the form
+\begin{equation}
+V_{fi}(t) = e\sqrt{\frac{2\pi}{\hbar\omega}}\,\langle f|Q(t)|i\rangle e^{i\omega t},
+\label{eq:90.8}
+\end{equation}
+where $Q(t)$ denotes the Heisenberg operator
+\begin{equation}
+\hat{Q}(t) = \frac{u_f^\dagger(\hat{p}')}{(2H')^{1/2}}\,(\boldsymbol{\alpha}\mathbf{e}^*)\,e^{-i\mathbf{k}\hat{\mathbf{r}}(t)}\,\frac{u_i(\hat{p})}{(2H)^{1/2}},
+\label{eq:90.9}
+\end{equation}
+and the matrix element is taken with respect to the functions $\varphi_i$, $\varphi_f$.
+
+\SourcePage{421}{426}
+
+The summation in (90.7) is over all final wave functions $\varphi_f$; it is carried out with the aid of the completeness relation
+\[
+\sum_f \varphi_f^*(\mathbf{r}')\varphi_f(\mathbf{r}) = \delta(\mathbf{r}' - \mathbf{r}),
+\]
+expressing the completeness of the system of functions $\varphi_f$. As a result,
+\begin{equation}
+dw = \frac{e^2}{\hbar\omega}\,\frac{d^3k}{4\pi^2}\iint dt_1\,dt_2\cdot e^{i\omega(t_1-t_2)}\langle i|Q^+(t_2)Q(t_1)|i\rangle.
+\label{eq:90.9a}
+\end{equation}
+
+If the integration is over a sufficiently large time interval, one can introduce instead of $t_1$, $t_2$ the new variables
+\[
+\tau = t_2 - t_1, \quad t = \frac{t_1 + t_2}{2}
+\]
+and in the integral over $dt$ regard the sub-integral expression as the probability of emission per unit time. Multiplying it by $\hbar\omega$, we obtain the intensity
+\begin{equation}
+dI = \frac{e^2}{4\pi^2}\,d^3k \int e^{-i\omega\tau}\langle i|Q^+\!\left(t+\frac{\tau}{2}\right)Q\!\left(t-\frac{\tau}{2}\right)|i\rangle d\tau.
+\label{eq:90.10}
+\end{equation}
+
+An ultrarelativistic electron radiates into a narrow cone at angles $\vartheta \sim m/\varepsilon$ about the direction of its velocity $\mathbf{v}$. Therefore radiation in a given direction $\mathbf{n} = \mathbf{k}/\omega$ is formed on that segment of the trajectory on which $\mathbf{v}$ turns through an angle $\sim m/\varepsilon$. This segment is traversed in a time $\tau$ such that $\tau|\dot{\mathbf{v}}| \approx \tau\omega_0 \sim m/\varepsilon \ll 1$. It is precisely this region that gives the principal contribution to the integral over $\tau$. Therefore in the further calculations we shall systematically expand all quantities in powers of $\omega_0\tau$. In doing this, however, it may be necessary to retain more than just the leading term of the expansion because of cancellations resulting from the fact that $1 - \mathbf{nv} \sim \vartheta^2 \sim (m/\varepsilon)^2$.
+
+If we bring the operator $\hat{Q}^+\hat{Q}$ to the form of a product of commutative (to the required accuracy) operators, then taking the diagonal matrix element $\langle i|\ldots|i\rangle$ reduces to replacing these operators by the classical values (functions of time) of the corresponding quantities. This goal is achieved as follows.
+
+\SourcePage{422}{427}
+
+In the expression for $\hat{Q}(t)$ (90.8) we factor out the operator $\exp(-i\mathbf{k}\hat{\mathbf{r}}(t))$ to the left and rewrite $\hat{Q}(t)$ in the form
+\begin{equation}
+\hat{Q}(t) = \exp\!\left[-i\mathbf{k}\hat{\mathbf{r}}(t)\right]\hat{R}(t), \quad \hat{R}(t) = \frac{u_f^\dagger(\hat{p}')}{(2H')^{1/2}}\,(\boldsymbol{\alpha}\mathbf{e}^*)\,\frac{u_i(\hat{p})}{(2H)^{1/2}},
+\label{eq:90.12}
+\end{equation}
+where $\hat{H}' = \hat{H} - \hbar\omega$, $\hat{\mathbf{p}}' = \hat{\mathbf{p}} - \hbar\mathbf{k}$.
+
+Now,
+\begin{equation}
+\hat{Q}_2^+\hat{Q}_1 = \hat{R}_2\exp(i\mathbf{k}\hat{\mathbf{r}}_2)\exp(-i\mathbf{k}\hat{\mathbf{r}}_1)\hat{R}_1
+\label{eq:90.13}
+\end{equation}
+(here and below the subscripts 1 and 2 label values of the quantities at the times $t_1 = t - \tau/2$ and $t_2 = t + \tau/2$). It remains to compute the product of the two non-commutative operators $\exp(i\mathbf{k}\hat{\mathbf{r}}_2)$ and $\exp(-i\mathbf{k}\hat{\mathbf{r}}_1)$. This product can itself already be considered commutative with the remaining factors. Denoting
+\begin{equation}
+\hat{L}(\tau) = \exp(-i\omega\tau)\exp(i\mathbf{k}\hat{\mathbf{r}}_2)\exp(-i\mathbf{k}\hat{\mathbf{r}}_1);
+\label{eq:90.14}
+\end{equation}
+this is precisely the combination of operators that enters (90.10). By the meaning of the operator $\exp\!\left(i\hat{H}\tau/\hbar\right)$ as the time-shift operator we have
+\[
+\exp(i\mathbf{k}\hat{\mathbf{r}}_2) = \exp\!\left(i\hat{H}\frac{\tau}{\hbar}\right)\exp(i\mathbf{k}\hat{\mathbf{r}}_1)\exp\!\left(-i\hat{H}\frac{\tau}{\hbar}\right).
+\]
+Substituting this expression into (90.14) and noting that $\exp(i\mathbf{k}\hat{\mathbf{r}}_1)$ is the operator of momentum-space shift, we transform $L$ to the form
+\begin{equation}
+\hat{L}(\tau) = \exp\!\left\{i[\hat{H} - \hbar\omega]\frac{\tau}{\hbar}\right\}\exp\!\left\{-i\hat{H}(\hat{\mathbf{p}}_1 - \hbar\mathbf{k})\frac{\tau}{\hbar}\right\}.
+\label{eq:90.15}
+\end{equation}
+
+Differentiating (90.15) with respect to $\tau$ and noting that $\exp(i\mathbf{k}\hat{\mathbf{r}}_1)$ is the momentum-space shift operator, we transform $L$ to the form\footnote{By virtue of energy conservation the Heisenberg energy operators $\hat{H}(\hat{\mathbf{p}}_1)$ and $\hat{H}(\hat{\mathbf{p}}_2)$ coincide, and therefore in such cases we write the argument of $\hat{H}$ without a subscript. But, of course, $\hat{H}(\hat{\mathbf{p}}_1 - \hbar\mathbf{k})$ does not coincide with $\hat{H}(\hat{\mathbf{p}}_2 - \hbar\mathbf{k})$.}
+\begin{equation}
+i\hbar\frac{d\hat{L}}{d\tau} = \frac{\varepsilon}{\varepsilon'}\hbar(\omega - \mathbf{v}_2\mathbf{k})L.
+\label{eq:90.17}
+\end{equation}
+This equation must be solved with the obvious initial condition $L(0) = 1$. Noting that
+\[
+\int_0^\tau \mathbf{v}_2\,d\tau = \mathbf{r}_2 - \mathbf{r}_1,
+\]
+we obtain
+\begin{equation}
+L(\tau) = \exp\!\left\{i\frac{\varepsilon}{\varepsilon'}(\mathbf{kr}_2 - \mathbf{kr}_1 - \omega\tau)\right\}.
+\label{eq:90.18}
+\end{equation}
+
+\SourcePage{423}{428}
+
+Up to this point we have not used the specific form of the electron trajectory. Let us now express $\mathbf{r}_2 - \mathbf{r}_1$ through $\mathbf{p}_1$ with the aid of the equations of motion of the electron in the plane perpendicular to the magnetic field $\mathbf{H}$ (see II, \S\,21):
+\[
+\mathbf{r}_2 - \mathbf{r}_1 = \frac{\mathbf{p}_1}{eH}\sin\frac{eH\tau}{\varepsilon} + \frac{[\mathbf{p}_1,\mathbf{H}]}{|eH|}\left(1 - \cos\frac{eH\tau}{\varepsilon}\right).
+\]
+
+Expanding in powers of $\omega_0\tau$ and retaining terms up to the third order, and noting that $1 - \mathbf{nv} \sim \vartheta^2 \sim (m/\varepsilon)^2$, we obtain
+\begin{equation}
+\mathbf{k}(\mathbf{r}_2 - \mathbf{r}_1) - \omega\tau \approx \omega\tau\left\{-\frac{i\omega\tau\varepsilon}{\varepsilon'}\left(1 - \mathbf{vn} + \frac{\tau^2}{24}\omega_0^2\right)\right\}.
+\label{eq:90.19}
+\end{equation}
+(In the last term we have set $\mathbf{nv}_1 \approx 1$.)
+
+Let us now transform the remaining factors in (90.13). By direct expansion of the products in $R(t)$ (with the matrix $\boldsymbol{\alpha}$ from (21.20)) we find
+\[
+R(t) = w_f^\dagger\mathbf{e}^*(A + i[\mathbf{B}\boldsymbol{\sigma}])w_i,
+\]
+\begin{equation}
+\mathbf{A} = \frac{\mathbf{p}}{2}\left(\frac{1}{\varepsilon} + \frac{1}{\varepsilon'}\right) = \frac{\varepsilon+\varepsilon'}{2\varepsilon'}\mathbf{v},
+\label{eq:90.20}
+\end{equation}
+\[
+\mathbf{B} = \frac{1}{2}\left(\frac{\mathbf{p}}{\varepsilon+m} - \frac{\mathbf{p}'}{\varepsilon'+m}\right) \approx \frac{\hbar\omega}{2\varepsilon'}\left(\mathbf{n} - \mathbf{v} + \mathbf{v}\frac{m}{\varepsilon}\right),
+\]
+
+\SourcePage{424}{429}
+
+where $p'(t) = p(t) - \hbar\mathbf{k}$; terms of higher orders in $m/\varepsilon$ are omitted. Thus, finally we have
+\begin{equation}
+\exp(-i\omega\tau)\langle i|Q_2^+Q_1|i\rangle = R_2^* R_1 L(\tau),
+\label{eq:90.21}
+\end{equation}
+\[
+R_2^*R_1 = \operatorname{Sp}\frac{1+\boldsymbol{\zeta\sigma}}{2}((\mathbf{A}_2 - i[\mathbf{B}_2\boldsymbol{\sigma}])\mathbf{e})\frac{1+\boldsymbol{\zeta}'\boldsymbol{\sigma}}{2}((\mathbf{A}_1 - i[\mathbf{B}_1\boldsymbol{\sigma}])\mathbf{e}^*).
+\]
+The factors $(1+\boldsymbol{\zeta\sigma})/2$ are the two-row polarisation density matrices of the initial and final electrons.
+
+Let us consider the intensity of the radiation, summed over polarisations of the photon and the final electron and averaged over polarisations of the initial electron. As a result of the indicated operations we obtain after a simple calculation\footnote{Here we have also used the following circumstance. Upon summation over $\mathbf{e}$:
+$\sum_\mathbf{e} = (\mathbf{v}_1\mathbf{e})(\mathbf{v}_2\mathbf{e}^*) = \mathbf{v}_1\mathbf{v}_2 - (\mathbf{v}_1\mathbf{n})(\mathbf{v}_2\mathbf{n})$.
+But upon substitution of (90.21) into (90.10) one can integrate by parts, noting that
+$(\mathbf{v}_1\mathbf{n})\exp\!\left(-\frac{i\varepsilon}{\varepsilon'}\mathbf{kr}_1\right) = \frac{i\varepsilon'}{\varepsilon\omega}\frac{d}{dt_1}\exp\!\left(-\frac{i\varepsilon}{\varepsilon'}\mathbf{kr}_1\right)$
+and analogously for $\mathbf{v}_2\mathbf{n}$. As a result, we find that for the purpose of further integration one can replace $\mathbf{v}_1\mathbf{n}$ and $\mathbf{v}_2\mathbf{n}$ by unity.}
+\[
+\frac{1}{2}\sum_\text{polar} R_2^*R_1 = \frac{\varepsilon^2+\varepsilon'^2}{2\varepsilon'^2}(\mathbf{v}_1\mathbf{v}_2 - 1) + \frac{1}{2}\left(\frac{\hbar\omega}{\varepsilon'}\right)^{\!2}\left(\frac{m}{\varepsilon}\right)^{\!2}.
+\]
+
+To the required accuracy
+\[
+\mathbf{v}_1\mathbf{v}_2 = \mathbf{v}^2 - \frac{\tau^2}{4}\dot{\mathbf{v}}^2 + \frac{\tau}{4}\mathbf{v}\ddot{\mathbf{v}} = 1 - \frac{m^2}{\varepsilon^2} - \frac{1}{2}\omega_0^2\tau^2.
+\]
+
+Substituting these expressions into (90.21), and then into (90.10), we obtain
+\begin{equation}
+\begin{split}
+dI &= -\frac{e^2}{4\pi^2}\,\omega^2\,d\omega\,do_\mathbf{n} \times {} \\
+&\quad \times \int_{-\infty}^{\infty}\left(\frac{m^2}{\varepsilon\varepsilon'} + \frac{\varepsilon^2+\varepsilon'^2}{4\varepsilon'^2}\omega_0^2\tau^2\right)\exp\!\left\{-\frac{i\omega\tau\varepsilon}{\varepsilon'}\left(1 - \mathbf{vn} + \frac{\tau^2}{24}\omega_0^2\right)\right\}d\tau.
+\end{split}
+\label{eq:90.22}
+\end{equation}
+
+This formula gives the spectral and angular distribution of the intensity of the radiation. For finding the spectral distribution of the radiation the product is integrated over $do_\mathbf{n}$. Choosing $\mathbf{v}$ as the polar axis with angle $\vartheta$ between $\mathbf{n}$ and $\mathbf{v}$, we have
+\[
+\mathbf{nv} = v\cos\vartheta, \quad do_\mathbf{n} = \sin\vartheta\,d\vartheta\,d\varphi,
+\]
+
+\SourcePage{425}{430}
+
+and the integral
+\[
+\int \exp\!\left(\frac{i\omega\tau\varepsilon}{\varepsilon'}\mathbf{nv}\right)do_\mathbf{n} = \frac{2\pi\varepsilon'}{i\omega\tau\varepsilon v}\left\{\exp\!\left(\frac{i\omega\tau\varepsilon v}{\varepsilon'}\right) - \exp\!\left(-\frac{i\omega\tau\varepsilon v}{\varepsilon'}\right)\right\}.
+\]
+
+Upon substitution of this expression into (90.22) we obtain two terms with exponents of different order of magnitude. The exponent of the second term turns out to be much larger, since it contains the factor $1 + v \approx 2$ instead of the small factor $1 - v \approx m^2/(2\varepsilon^2)$ in the first term. Shifting the contour of integration over $\tau$ to the lower half-plane of the complex variable $\tau$, one can make the second term small and neglect it. After this one can again shift the contour of integration back to the real axis. From the conclusion it is clear, however, that the pole appearing in the sub-integral expression at $\tau = 0$ must be bypassed from below. Thus,
+\begin{equation}
+\begin{split}
+\frac{dI}{d\omega} &= \frac{ie^2\omega}{2\pi}\int_{-\infty}^\infty \left(\frac{m^2}{\varepsilon^2\tau} + \frac{\varepsilon^2+\varepsilon'^2}{4\varepsilon'^2}\omega_0^2\tau^2\right)\exp\!\left\{-\frac{i\omega\tau\varepsilon}{\varepsilon'}\left(1 - v + \frac{\tau^2}{24}\omega_0^2\right)\right\}d\tau,
+\end{split}
+\end{equation}
+where the contour of integration is chosen as indicated above. Using the integral representation of the Airy function $\Phi$ (see III, \S\,b), it is not difficult to show that the first term reduces to an integral of the Airy function, and the second to its derivative. We finally obtain
+\begin{equation}
+\frac{dI}{d\omega} = -\frac{e^2m^2\omega}{\sqrt{\pi}\varepsilon^2}\left[\int_x^\infty \Phi(\xi)\,d\xi + \left(\frac{2}{x} + \frac{\hbar\omega}{\varepsilon}\chi x^{1/2}\right)\Phi'(x)\right],
+\label{eq:90.23}
+\end{equation}
+\begin{equation}
+x = \left(\frac{\hbar\omega}{\varepsilon'\chi}\right)^{\!2/3} = \frac{m^2}{\varepsilon^2}\left(\frac{\varepsilon\omega}{\varepsilon'\omega_0}\right)^{\!2/3},
+\label{eq:90.24}
+\end{equation}
+(\emph{A.~I.~Nikishov, V.~I.~Ritus}, 1967). The maximum in the frequency distribution lies at $x \sim 1$; when $\chi \ll 1$ it follows from this that (90.1), and when $\chi \gg 1$----(90.4). In the classical limiting case we have $\hbar\omega \ll \varepsilon$, so that $\varepsilon' \approx \varepsilon$, $x \approx (\omega/\omega_0)^{2/3}(m/\varepsilon)^2$; the second term in the square brackets is small and (90.23) goes over into the classical formula (74.13) (see II).
+
+% [Figure 15: Five curves showing spectral distribution for different values of χ = 0, 0.2, 1, 2, 10, plotted against ω/ωc]
+% [Figure 16: Graph of I(χ)/I_cl showing decrease from 1 to about 0.2 as 3χ increases from 0 to 1.5]
+
+\SourcePage{426}{431}
+
+The quantity $I_\text{cl}$ is the classical total intensity of the radiation (cf.\ II, (74.2)).
+
+For computing the total intensity of the radiation, expression (90.23) must be integrated over $\omega$ from 0 to $\varepsilon$. Passing to integration over $x$, noting that
+\[
+\hbar\omega = \varepsilon\left(1 - \frac{1}{1 + \chi x^{3/2}}\right),
+\]
+and therefore $x$ varies from 0 to $\infty$. Carrying out in the first term of (90.23) two integrations by parts, we obtain
+\begin{equation}
+I = -\frac{e^2m^2\chi^2}{2\sqrt{\pi}\hbar^2}\int_0^\infty \frac{4 + 5\chi x^{3/2} + 4\chi^2 x^3}{(1+\chi x^{3/2})^4}\,\Phi'(x)\,x\,dx.
+\label{eq:90.25}
+\end{equation}
+
+In Fig.~16 the graph of the function $I(\chi)/I_\text{cl}$ is shown.
+
+When $\chi \ll 1$, in the integral the essential region is $x \sim 1$. Expanding the sub-integral expression in $\chi$ and integrating this expansion with the aid of the formula
+\[
+\int_0^\infty x^\nu \Phi'(x)\,dx = -\frac{1}{2\sqrt{\pi}}3^{(\nu-1)/6}\,\Gamma\!\left(\frac{\nu}{3}+1\right)\Gamma\!\left(\frac{\nu}{3}+\frac{1}{3}\right),
+\]
+we obtain
+\begin{equation}
+I = I_\text{cl}\left(1 - \frac{55\sqrt{3}}{16}\chi + 48\chi^2 - \ldots\right).
+\label{eq:90.26}
+\end{equation}
+
+When $\chi \gg 1$, in the integral the essential region is that in which $\chi x^{3/2} \sim 1$, i.e.\ $x \ll 1$. In the first approximation one can therefore replace $\Phi'(x)$ by $\Phi'(0) = -3^{1/6}\Gamma(2/3)/(2\sqrt{\pi})$, after which integration gives
+\begin{equation}
+I \approx \frac{32\Gamma(2/3)e^2m^2}{243\hbar^2}(3\chi)^{2/3} = 0.37\,\frac{e^2m^2}{\hbar^2}\left(\frac{H\varepsilon}{H_0 m}\right)^{\!2/3}.
+\label{eq:90.27}
+\end{equation}
+
+\SourcePage{427}{432}
+
+Magnetobremsstrahlung radiation leads to the appearance of polarisation of the moving electrons (\emph{A.~A.~Sokolov, I.~M.~Ternov},
+
+1963). To examine this question one must find the probability of a radiative transition with reversal of the spin direction. Setting in (90.21) $\zeta_i = -\zeta_f \equiv \boldsymbol{\zeta}$, $|\boldsymbol{\zeta}| = 1$, we obtain
+\begin{align*}
+R_2^*R_1 &= (\mathbf{B}_1\mathbf{B}_2) - (\mathbf{e}^*\mathbf{B}_2)(\mathbf{e}\mathbf{B}_2) - {} \\
+&\quad {} - (\mathbf{e}^*[\mathbf{B}_1\boldsymbol{\zeta}])(\mathbf{e}[\mathbf{B}_2\boldsymbol{\zeta}]) - i(\boldsymbol{\zeta}\mathbf{e}^*)(\mathbf{e}[\mathbf{B}_1\mathbf{B}_2]).
+\end{align*}
+
+Summation over the polarisations of the photon gives after straightforward transformations
+\begin{equation}
+\sum_\mathbf{e} R_2^*R_1 = (\mathbf{B}_1\mathbf{B}_2)(1-(\boldsymbol{\zeta}\mathbf{n})^2) + (\boldsymbol{\zeta}\mathbf{n})(\mathbf{n}\mathbf{B}_2)(\boldsymbol{\zeta}\mathbf{B}_1) - i(\boldsymbol{\zeta} - \mathbf{n}(\mathbf{n}\boldsymbol{\zeta}))[\mathbf{B}_1\mathbf{B}_2].
+\label{eq:90.28}
+\end{equation}
+
+We shall assume that $\chi \ll 1$, and seek only the leading term of the expansion of the probability in powers of $\hbar$. Since $\mathbf{B}$ (from (90.20)) already contains $\hbar^2$, all remaining quantities (including those in the exponent in (90.18)) can be replaced by $\varepsilon$.
+
+Expanding
+\begin{align*}
+\mathbf{B}_1 &= \frac{\omega}{2\varepsilon}\left(\mathbf{n} - \mathbf{v} + \frac{\tau}{2}\dot{\mathbf{v}} + \mathbf{v}\frac{m}{\varepsilon}\right), \\
+\mathbf{B}_2 &= \frac{\omega}{2\varepsilon}\left(\mathbf{n} - \mathbf{v} - \frac{\tau}{2}\dot{\mathbf{v}} + \mathbf{v}\frac{m}{\varepsilon}\right), \\
+\mathbf{r}_2 - \mathbf{r}_1 &= \tau\mathbf{v} + \frac{\tau^3}{24}\dddot{\mathbf{v}}
+\end{align*}
+and substituting (90.28) into (90.21) and then into (90.10), we find the differential probability of the transition per unit time ($dw = dI/\hbar\omega$). It is integrated with the aid of formula
+\begin{equation}
+\int f(k_\mu)e^{-ikx}\frac{d^3k}{\omega} = -f(i\partial_\mu)\frac{4\pi}{x_0^2 - \mathbf{x}^2},
+\label{eq:90.29}
+\end{equation}
+where in the present case
+\[
+x_0 = \tau, \quad \mathbf{x} = \mathbf{r}_2 - \mathbf{r}_1, \quad x^2 = x_0^2 - \mathbf{x}^2 = \tau^2\left(\frac{m^2}{\varepsilon^2} + \frac{\tau^2\omega_0^2}{12}\right).
+\]
+
+The computation leads to the result
+\begin{equation}
+w = \frac{5\sqrt{3}\alpha}{16}\,\frac{\hbar^2}{m^2}\left(\frac{\varepsilon}{m}\right)^{\!5}\omega_0^3\left(1 - \frac{2}{9}\zeta_\parallel^2 - \frac{8\sqrt{3}}{15}\,\frac{\varepsilon}{|e|}\,\zeta_\perp\right),
+\label{eq:90.30}
+\end{equation}
+
+\SourcePage{428}{433}
+
+where $\zeta_\parallel = \boldsymbol{\zeta}\mathbf{v}$, $\zeta_\perp = \boldsymbol{\zeta}\mathbf{H}/H$. This formula is valid both for electrons ($e < 0$) and for positrons ($e > 0$).
+
+The probability (90.30) does not depend on the sign of the longitudinal polarisation $\zeta_\parallel$, but does depend on the sign of $\zeta_\perp$. Therefore the polarisation arising as a result of the radiation is transverse. For electrons the probability of transition from the state with spin ``along the field'' ($\zeta_\perp = 1$) to the state with spin ``against the field'' is greater than the probability of the reverse transition. Therefore the radiative polarisation of electrons is directed against the field, and its degree in the stationary state (at $\zeta_\parallel = 0$) is
+\[
+\frac{w(\zeta_\perp = -1) - w(\zeta_\perp = 1)}{w(\zeta_\perp = -1) + w(\zeta_\perp = 1)} = \frac{8\sqrt{3}}{15} = 0.92.
+\]
+Positrons are polarised (to the same degree) in the direction of the field.

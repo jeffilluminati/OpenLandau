@@ -1,0 +1,230 @@
+
+\section{Scattering of a photon by an electron}
+
+\SourcePage{395}{400}
+
+Conservation of 4-momentum in the scattering of a photon by a free electron (\emph{Compton effect}) is expressed by the equation
+\begin{equation}
+p + k = p' + k',
+\label{eq:86.1}
+\end{equation}
+where $p$ and $k$ are the 4-momenta of the electron and photon before the collision, and $p'$ and $k'$ are their 4-momenta after the collision. The kinematic invariants introduced in \S\,66 are:
+\begin{equation}
+\begin{aligned}
+s &= (p+k)^2 = (p'+k')^2 = m^2 + 2pk = m^2 + 2p'k', \\
+t &= (p-p')^2 = (k'-k)^2 = 2(m^2 - pp') = -2kk', \\
+u &= (p-k')^2 = (p'-k)^2 = m^2 - 2pk' = m^2 - 2p'k, \\
+&\qquad s + t + u = 2m^2.
+\end{aligned}
+\label{eq:86.2}
+\end{equation}
+
+The process under consideration is represented by the two Feynman diagrams (74.14), and its amplitude is
+\begin{equation}
+M_{fi} = -4\pi e^2 e_\mu^{\prime *} e_\nu (\bar{u}' Q^{\mu\nu} u),
+\label{eq:86.3}
+\end{equation}
+where
+\begin{equation}
+Q^{\mu\nu} = \frac{1}{s - m^2}\,\gamma^\mu(\gamma p + \gamma k + m)\gamma^\nu - \frac{1}{u - m^2}\,\gamma^\nu(\gamma p - \gamma k' + m)\gamma^\mu.
+\label{eq:86.4}
+\end{equation}
+Here $e$, $e'$ are the polarisation 4-vectors of the initial and final photons; $u$, $u'$ are the bispinor amplitudes of the initial and final electrons.
+
+According to the rules set out in \S\,65, for arbitrary polarisation states of the particles, $|M_{fi}|^2$ is replaced by
+\begin{equation}
+|M_{fi}|^2 \to 16\pi^2 e^4 \operatorname{Sp}\!\left\{\rho^{(e)\prime}_{\dot{\lambda}\mu} Q^{(\gamma)\prime}_{\phantom{1}} Q^{\mu\rho}\, \rho^{(e)}\, \rho^{(\gamma)}_{\nu\sigma} \widetilde{Q}^{\lambda\sigma}\right\}.
+\label{eq:86.5}
+\end{equation}
+Here $\rho^{(e)}$, $\rho^{(e)\prime}$ are the density matrices of the initial and final electrons, $\rho^{(\gamma)}$, $\rho^{(\gamma)\prime}$ are the same for the photons; the photonic (tensor) indices are written explicitly, while the electronic (bispinor) indices are implied; the Sp sign refers specifically to the latter indices. The same indices carry the hermitian conjugation sign in the definition $\widetilde{Q}_{\mu\nu} = \gamma^0 Q_{\mu\nu}^+ \gamma^0$.
+
+\SourcePage{396}{401}
+
+Let us consider the scattering of an unpolarised photon by an unpolarised electron, without concern for the polarisations after scattering. Averaging over the polarisations of all particles is achieved by means of the density matrices:
+\[
+\rho^{(\gamma)}_{\lambda\mu} = \rho^{(\gamma)\prime}_{\lambda\mu} = -\tfrac{1}{2}g_{\lambda\mu}, \quad \rho^{(e)} = \tfrac{1}{2}(\gamma p + m), \quad \rho^{(e)\prime} = \tfrac{1}{2}(\gamma p' + m);
+\]
+the transition to summation over polarisations of the final-state particles is accomplished by an additional factor of $2 \cdot 2 = 4$.
+
+By formula (64.23) (in which one must now set $I^2 = \frac{1}{4}(s - m^2)^2$---see (64.15a)) we obtain for the cross section
+\[
+d\sigma = \frac{\pi e^4}{4}\,\frac{dt}{(s - m^2)^2}\,\operatorname{Sp}\!\left\{(\gamma p' + m)Q^{\lambda\mu}(\gamma p + m)\widetilde{Q}_{\lambda\mu}\right\}.
+\]
+With the aid of formula (65.2a) we find that $\widetilde{Q}_{\mu\lambda} = Q_{\lambda\mu}$. Separating the terms that transform into one another under the substitution $k \leftrightarrow -k'$ (and correspondingly $s \leftrightarrow u$), we write the cross section in the form
+\[
+d\sigma = dt\,\frac{\pi e^4}{(s - m^2)^2}\bigl[f(s,u) + g(s,u) + f(u,s) + g(u,s)\bigr],
+\]
+where we have introduced the notation
+\begin{align*}
+f(s,u) &= \frac{1}{4(s-m^2)^2} \times{} \\
+&\quad \times \operatorname{Sp}\!\left\{(\gamma p' + m)\gamma^\mu(\gamma p + \gamma k + m)\gamma^\nu(\gamma p + m)\gamma_\mu(\gamma p + \gamma k + m)\gamma_\nu\right\}, \\[6pt]
+g(s,u) &= \frac{1}{4(s-m^2)(u-m^2)} \times{} \\
+&\quad \times \operatorname{Sp}\!\left\{(\gamma p' + m)\gamma^\mu(\gamma p + \gamma k + m)\gamma^\nu(\gamma p + m)\gamma_\mu(\gamma p - \gamma k' + m)\gamma_\nu\right\}
+\end{align*}
+(in these expressions we bear in mind in advance that the result will depend only on the invariant quantities).
+
+Summation over $\mu$ and $\nu$ is carried out with the aid of formulas (22.6); discarding the terms with an odd number of $\gamma$ factors, we obtain
+\begin{align*}
+f(s,u) &= \frac{1}{(s-m^2)^2}\operatorname{Sp}\!\bigl\{(\gamma p')(\gamma p + \gamma k)(\gamma p)(\gamma p + \gamma k) + {} \\
+&\quad {} + 4m^2(\gamma p + \gamma k)(\gamma k - \gamma p') + m^2(\gamma p)(\gamma p') + 4m^4\bigr\}.
+\end{align*}
+
+Computing the trace with the aid of formulas (22.13) and expressing all quantities through the invariants $s$, $u$, we find after straightforward manipulations
+\[
+f(s,u) = \frac{2}{(s-m^2)^2}\left\{4m^2 - (s-m^2)(u-m^2) + 2m^2(s-m^2)\right\}.
+\]
+
+\SourcePage{397}{402}
+
+In an analogous fashion, $g$ is computed:
+\[
+g(s,u) = \frac{2m^2}{(s-m^2)(u-m^2)}\left\{4m^2 + (s-m^2) + (u-m^2)\right\}.
+\]
+
+As a result, for the cross section we obtain
+\begin{equation}
+\begin{split}
+d\sigma &= 8\pi r_\mathrm{e}^2\,\frac{m^2\,dt}{(s-m^2)^2}\biggl\{\biggl(\frac{m^2}{s-m^2} + \frac{m^2}{u-m^2}\biggr)^{\!2} + {} \\
+&\quad {} + \biggl(\frac{m^2}{s-m^2} + \frac{m^2}{u-m^2}\biggr) - \frac{1}{4}\biggl(\frac{s-m^2}{u-m^2} + \frac{u-m^2}{s-m^2}\biggr)\biggr\},
+\end{split}
+\label{eq:86.6}
+\end{equation}
+where $r_\mathrm{e} = e^2/m$. This formula expresses the cross section through invariant quantities. With its help it is easy to express the cross section through the collision parameters in any particular reference frame.
+
+Let us do this for the laboratory frame, in which the electron before the collision is at rest: $p = (m, \mathbf{0})$. Here
+\begin{equation}
+s - m^2 = 2m\omega, \quad u - m^2 = -2m\omega'.
+\label{eq:86.7}
+\end{equation}
+Writing the 4-momentum conservation equation in the form $p + k - k' = p'$ and squaring, we obtain
+\[
+pk - pk' - kk' = 0,
+\]
+whence (in the laboratory frame)
+\[
+m(\omega - \omega') - \omega\omega'(1 - \cos\vartheta) = 0,
+\]
+where $\vartheta$ is the photon scattering angle. This equation determines the relation between the change in the photon energy and the scattering angle:
+\begin{equation}
+\frac{1}{\omega'} - \frac{1}{\omega} = \frac{1}{m}(1 - \cos\vartheta) = 0.
+\label{eq:86.8}
+\end{equation}
+
+Invariant $t$:
+\[
+t = -2kk' = -2\omega\omega'(1-\cos\vartheta) = 0.
+\]
+At a given energy $\omega$ we find (using (86.8))
+\[
+dt = 2\omega'^2 d\cos\vartheta = \frac{1}{\pi}\omega'^2 do', \quad do' = 2\pi\sin\vartheta\,d\vartheta.
+\]
+Substitution of the expressions written in (86.6) into the following formula for the scattering cross section in the laboratory frame gives:
+\begin{equation}
+d\sigma = \frac{r_\mathrm{e}^2}{2}\left(\frac{\omega'}{\omega}\right)^{\!2}\left(\frac{\omega'}{\omega} + \frac{\omega}{\omega'} - \sin^2\vartheta\right)do'
+\label{eq:86.9}
+\end{equation}
+(\emph{O.~Klein, Y.~Nishina}, 1929; \emph{I.~E.~Tamm}, 1930).
+
+Since the angle $\vartheta$ is uniquely related to $\omega'$ by the relation (86.8), the cross section can also be expressed through the energy of the scattered photon $\omega'$:
+\begin{equation}
+d\sigma = \pi r_\mathrm{e}^2\,\frac{m\,d\omega'}{\omega^2}\left[\frac{\omega}{\omega'} + \frac{\omega'}{\omega} + \left(\frac{m}{\omega'} - \frac{m}{\omega}\right)^{\!2} - 2m\left(\frac{1}{\omega'} - \frac{1}{\omega}\right)\right],
+\label{eq:86.10}
+\end{equation}
+
+\SourcePage{398}{403}
+
+where $\omega'$ varies within the limits
+\begin{equation}
+\frac{\omega}{1 + 2\omega/m} \leqslant \omega' \leqslant \omega.
+\label{eq:86.11}
+\end{equation}
+
+When $\omega \ll m$, one can set $\omega' \approx \omega$ in (86.9), and one obtains, as expected, the classical non-relativistic Thomson formula
+\begin{equation}
+d\sigma = \frac{1}{2}\,r_\mathrm{e}^2(1 + \cos^2\vartheta)\,do'
+\label{eq:86.12}
+\end{equation}
+(cf.\ II, (78.7)).
+
+For computing the total cross section let us return to formula (86.6) (the invariants $s$, $t$, and $u$ entering it take values satisfying the inequalities
+\begin{equation}
+s \geqslant m^2, \quad t \leqslant 0, \quad us \leqslant m^4.
+\label{eq:86.13}
+\end{equation}
+These were already obtained in \S\,67 (corresponding to the physical region---I in Fig.~7, p.~299). It is easy to verify them directly, writing the expressions for the invariants in the centre-of-inertia frame. Here $\mathbf{p} + \mathbf{k} = 0$, and the energies of the electron $\varepsilon$ and photon $\omega$ are related by $\varepsilon = \sqrt{\omega^2 + m^2}$. The invariants:
+\begin{equation}
+\begin{aligned}
+s &= (\varepsilon + \omega)^2 = m^2 + 2\omega(\omega + \varepsilon), \\
+u &= m^2 - 2\omega(\varepsilon + \omega\cos\theta), \\
+t &= -2\omega^2(1 - \cos\theta),
+\end{aligned}
+\label{eq:86.14}
+\end{equation}
+where $\theta$ is the scattering angle (the angle between $\mathbf{p}$ and $\mathbf{p}'$ or $\mathbf{k}$ and $\mathbf{k}'$). The three inequalities (86.13) follow from the conditions: $\omega \geqslant 0$, $-1 \leqslant \cos\theta \leqslant 1$.
+
+At given $s$ (given energy of the particles) the integration over $t$ can be replaced by integration over $u = 2m^2 - s - t$ in the interval
+\[
+m^4/s \geqslant u \geqslant 2m^2 - s.
+\]
+
+Introducing, instead of $s$, $u$, the quantities
+\begin{equation}
+x = \frac{s - m^2}{m^2}, \quad y = \frac{m^2 - u}{m^2},
+\label{eq:86.15}
+\end{equation}
+we obtain
+\[
+\sigma = \frac{8\pi r_\mathrm{e}^2}{x^2}\int_{x/(x+1)}^x \left[\left(\frac{1}{x} - \frac{1}{y}\right)^{\!2} + \frac{1}{x} - \frac{1}{y} + \frac{1}{4}\left(\frac{x}{y} + \frac{y}{x}\right)\right]dy
+\]
+and after elementary integration
+\begin{equation}
+\sigma = 2\pi r_\mathrm{e}^2\,\frac{1}{x}\left\{\left(1 - \frac{4}{x} - \frac{8}{x^2}\right)\ln(1+x) + \frac{1}{2} + \frac{8}{x} - \frac{1}{2(1+x)^2}\right\}.
+\label{eq:86.16}
+\end{equation}
+
+\SourcePage{399}{404}
+
+The leading terms of the expansion for $x \ll 1$ (non-relativistic case) give
+\begin{equation}
+\sigma = \frac{8\pi r_\mathrm{e}^2}{3}(1 - x) \quad \text{(n.r.)}.
+\label{eq:86.17}
+\end{equation}
+The first term is the classical Thomson cross section. In the opposite, ultrarelativistic case $x \gg 1$, expansion of formula (86.16) gives
+\begin{equation}
+\sigma = 2\pi r_\mathrm{e}^2\,\frac{1}{x}\left(\ln x + \frac{1}{2}\right) \quad \text{(u.r.)}.
+\label{eq:86.18}
+\end{equation}
+In the laboratory frame
+\begin{equation}
+x = 2\omega/m,
+\label{eq:86.19}
+\end{equation}
+so that formulas (86.16)--(86.18) directly give the dependence of the scattering cross section on the energy of the photon incident on a stationary electron as a function of $\omega/m$.
+
+% [Figure 13: Graph showing σ/(8π/3)r_e² vs ω/m on logarithmic scale, decreasing from 1.0 at ω/m = 0.01 to approximately 0.05 at ω/m = 100]
+
+We note that in the ultrarelativistic case the cross section decreases with increasing energy both in the laboratory frame ($\sigma \propto \omega^{-1}\ln\omega$) and in the centre-of-inertia frame ($x \approx 4\omega^2/m^2$, $\sigma \propto \omega^{-2}\ln\omega$). The angular distribution of the scattering in the ultrarelativistic case is entirely different in the two reference frames.
+
+In the laboratory frame the differential cross section has a sharp maximum in the forward direction. In a narrow cone $\vartheta \lesssim \sqrt{m/\omega}$ we have $\omega' \sim \omega$ and the cross section $d\sigma/do' \sim r_\mathrm{e}^2$ (reaching the value $r_\mathrm{e}^2$ at $\vartheta \to 0$). Outside this cone the cross section drops off, and in the region $\vartheta^2 \gg m/\omega$ (where $\omega' \approx m/(1-\cos\vartheta)$) we have
+\[
+\frac{d\sigma}{do'} = \frac{r_\mathrm{e}^2}{2}\,\frac{m}{\omega(1-\cos\vartheta)},
+\]
+i.e.\ the cross section decreases by a factor $\sim \omega/m$.
+
+In the centre-of-inertia frame the differential cross section has a maximum in the backward direction. When $\pi - \theta \ll 1$ we have from (86.14)
+\[
+\frac{s-m^2}{m^2} \approx \frac{4\omega^2}{m^2}, \quad \frac{m^2-u}{m^2} \approx 1 + \frac{\omega^2}{m^2}(\pi-\theta)^2.
+\]
+
+\SourcePage{400}{405}
+
+The leading term in the cross section (86.6) is
+\[
+d\sigma \approx 8\pi r_\mathrm{e}^2\,\frac{m^2\,dt}{4(s-m^2)(m^2 - u)};
+\]
+whence
+\begin{equation}
+d\sigma = \frac{r_\mathrm{e}^2}{2}\,\frac{do'}{1 + (\pi-\theta)^2\omega^2/m^2}.
+\label{eq:86.20}
+\end{equation}
+The cross section $d\sigma/do' \sim r_\mathrm{e}^2$ in a narrow cone $\pi - \theta \lesssim m/\omega$, and outside it the cross section decreases by a factor of order $\omega^2/m^2$.

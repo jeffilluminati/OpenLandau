@@ -1,0 +1,307 @@
+
+\section{Scattering of a photon by an electron. Polarisation effects}
+
+\SourcePage{400}{405}
+
+Let us return to the original formulas of the preceding section and show how the calculations should be carried out taking into account the polarisations of the initial and final photons and electrons.
+
+The photon density matrix is expressed, according to (8.17), with the aid of a pair of unit 4-vectors $e^{(1)}$, $e^{(2)}$, satisfying the conditions (8.16). In the present case one can choose these vectors in a unified manner for both photons. These are the 4-vectors introduced in \S\,70\footnote{An alternative method of calculation consists in choosing from the outset a specific reference frame (e.g.\ the laboratory frame), and for each photon taking as $e^{(1)}$, $e^{(2)}$ two purely spatial-like ({\boldmath$e$} $= (0, \mathbf{e})$) vectors, orthogonal to the momentum of the photon and to each other. In that case, however, all the calculations will be carried out in three-dimensional form, and the result will not have an invariant appearance.}
+\begin{equation}
+e^{(1)} = \frac{N}{\sqrt{-N^2}}, \quad e^{(2)} = \frac{P}{\sqrt{-P^2}},
+\label{eq:87.1}
+\end{equation}
+where
+\begin{equation}
+\begin{aligned}
+P^\lambda &= \bigl(p^\lambda + p'^\lambda\bigr) - K^\lambda\frac{pK + p'K}{K^2}, \quad N^\lambda = e^{\lambda\mu\nu\rho}P_\mu q_\nu K_\rho, \\
+K^\lambda &= k^\lambda + k'^\lambda, \quad q^\lambda = k^\lambda - k'^\lambda = p^\lambda - p'^\lambda.
+\end{aligned}
+\label{eq:87.2}
+\end{equation}
+
+The quantities $Q^{\mu\nu}$ in (86.5) are given by formula (86.4). They can be regarded as components of a 4-tensor (in the sense that the 4-tensor formed after constructing the quantity $\bar{u}'Q^{\mu\nu}u$, as one says, ``in bra-kets''). All the components of the 4-tensor can be exhausted by projecting it onto four mutually orthogonal 4-vectors, for example those defined above: $P$, $N$, $q$, $K$. Since the tensors $\rho^{(\gamma)\prime}_{\mu\nu}$, $\rho^{(\gamma)}_{\mu\nu}$ contain only components along $P$ and $N$, in practice we need only the components of $Q_{\mu\nu}$ along these two 4-vectors.
+
+\SourcePage{401}{406}
+
+In other words, it suffices to seek in $Q_{\mu\nu}$ only terms of the form
+\begin{equation}
+\begin{split}
+Q_{\mu\nu} &= Q_0\bigl(e^{(1)}_\mu e^{(1)}_\nu + e^{(2)}_\mu e^{(2)}_\nu\bigr) + Q_1\bigl(e^{(1)}_\mu e^{(2)}_\nu + e^{(2)}_\mu e^{(1)}_\nu\bigr) - {} \\
+&\quad {} - iQ_2\bigl(e^{(1)}_\mu e^{(2)}_\nu - e^{(2)}_\mu e^{(1)}_\nu\bigr) + Q_3\bigl(e^{(1)}_\mu e^{(1)}_\nu - e^{(2)}_\mu e^{(2)}_\nu\bigr);
+\end{split}
+\label{eq:87.3}
+\end{equation}
+the remaining terms upon substitution in (86.5) would vanish anyway. The quantities $Q_0$ and $Q_3$ are scalars---in the same sense as $Q_{\mu\nu}$ is a 4-tensor; they therefore contain $\gamma$ matrices only in ``invariant'' combinations: $\gamma K$ and so on. In this same sense $Q_1$ and $Q_2$ are pseudoscalars ($N$ is a pseudovector!) and must therefore contain the matrix $\gamma^5$.
+
+By direct projection of the tensor $Q_{\mu\nu}$ we find
+\[
+Q_0 = \frac{1}{2}Q^{\mu\nu}\bigl(e^{(1)}_\mu e^{(1)}_\nu + e^{(2)}_\mu e^{(2)}_\nu\bigr)
+\]
+and so on. For the calculations it is convenient first to express $Q_{\mu\nu}$ through the mutually orthogonal 4-vectors $P$, $N$, $q$, $K$:
+\[
+Q^{\mu\nu} = \gamma^\mu\,\frac{\gamma P/2 + m}{s - m^2}\,\gamma^\nu + \gamma^\nu\,\frac{\gamma P/2 + m}{u - m^2}\,\gamma^\mu - \frac{1}{t}\bigl[\gamma^\mu(\gamma K)\gamma^\nu - \gamma^\nu(\gamma K)\gamma^\mu\bigr].
+\]
+
+The further calculation reduces to purely algebraic manipulations with the aid of the formulas given in \S\,22. Furthermore, one can make in $Q^{\mu\nu}$ replacements that will not affect the result upon further formation of the product $\bar{u}'Q^{\mu\nu}u$. For example, since
+\begin{align*}
+\bar{u}'(\gamma p + \gamma p')u &= 2m\bar{u}'u, \\
+\bar{u}'\gamma^5(\gamma q)u &= \bar{u}'[\gamma^5(\gamma p) + (\gamma p')\gamma^5]u = 2m\bar{u}'\gamma^5 u,
+\end{align*}
+one can replace in $Q^{\mu\nu}$ the terms
+\begin{equation}
+\gamma p + \gamma p' \to 2m, \quad \gamma^5(\gamma q) \to 2m\gamma^5.
+\label{eq:87.4}
+\end{equation}
+
+Omitting the details of the calculations, we present the result\footnote{Expression (87.3) with the values (87.5) has the form of (70.11) (70.13), established in \S\,70 from general considerations. In addition to the equalities $f_1 = f_2 = 0$, which follow from $T$-invariance, here it also turns out that there is only one independent amplitude $(f_+)$. This is a property of the Born approximation of perturbation theory under consideration, and it would vanish in higher approximations.}:
+\begin{equation}
+\begin{aligned}
+Q_0 &= -ma_+, & Q_1 &= \tfrac{1}{2}a_+\gamma^5(\gamma K), \\
+Q_2 &= -ma_+\gamma^5, & Q_3 &= ma_+ + \tfrac{1}{2}a_-(\gamma K),
+\end{aligned}
+\label{eq:87.5}
+\end{equation}
+where
+\[
+a_\pm = \frac{1}{s-m^2} \pm \frac{1}{u-m^2}.
+\]
+
+\SourcePage{402}{407}
+
+For the further calculations it is convenient to apply to $Q_{\mu\nu}$ the same formal device that was described in \S\,8 for the photon density matrix: the four components of the tensor (87.3) in the directions $e^{(1)}$, $e^{(2)}$ are combined into a two-row matrix $Q$, which is then expanded in the Pauli matrices. Analogously to formula (8.18) we obtain
+\begin{equation}
+Q = Q_0 + \mathbf{Q}\boldsymbol{\sigma}, \quad \mathbf{Q} = (Q_1, Q_2, Q_3).
+\label{eq:87.6}
+\end{equation}
+
+As regards the tensor $\widetilde{Q}_{\mu\nu} = \gamma^0 Q^+_{\mu\nu}\gamma^0$ appearing in (86.5), using (87.3) and (87.5) it is easy to verify (with the aid of the rules ((65.2a))) that its components are obtained from the components of $Q_{\mu\nu}$ by the replacement of the quantities $Q_0$, $Q_1$, \dots\ by $\bar{Q}_0$, $\bar{Q}_1$, \dots, where
+\begin{equation}
+\bar{Q}_0 = Q_0, \quad \bar{Q}_1 = -Q_1, \quad \bar{Q}_2 = -Q_2, \quad \bar{Q}_3 = Q_3,
+\label{eq:87.7}
+\end{equation}
+and a simultaneous permutation of the indices $\mu\nu$\footnote{For the matrix $Q_{\mu\nu}$ in the original form (86.4) we would simply have $\widetilde{Q}_{\mu\nu} = Q_{\nu\mu}$. This property is, however, lost in the result of transformations including replacements of the type (87.4) and so on.}. In matrix form this means that
+\begin{equation}
+\bar{Q} = \bar{Q}_0 + \bar{\mathbf{Q}}\boldsymbol{\sigma}.
+\label{eq:87.8}
+\end{equation}
+
+Let us now clarify the meaning of the 4-vectors $e^{(1)}$, $e^{(2)}$ in relation to the polarisation of the photons. For each photon the independent directions of polarisation will be determined by the transverse (with respect to the photon momentum $\mathbf{k}$) components of the 3-vectors $e^{(1)}$, $e^{(2)}$\footnote{The longitudinal components of $e$ (as well as the time components of the 4-vectors $e$) can simply be ignored: their inessentiality is ensured by gauge invariance.}. It is easy to see that, both in the centre-of-inertia frame and in the laboratory frame (the rest frame of the initial electron), the vector $\mathbf{P}$ lies in the plane $\mathbf{kk}'$, and the vector $\mathbf{N}$ is perpendicular to this plane. Therefore the direction $e^{(1)}$ has the meaning of polarisation perpendicular to the scattering plane, and the direction $e^{(2)}$ is polarisation in the scattering plane. We note also that for the initial photon the $x$ axis is the same for both photons and perpendicular to the scattering plane:
+\[
+x \parallel [\mathbf{kk}'],
+\]
+while the $y$ axes lie in the scattering plane:
+\[
+y \parallel [\mathbf{k}[\mathbf{kk}']],\quad y' \parallel [\mathbf{k}'[\mathbf{kk}']].
+\]
+For the initial photon the relevant vectors are $\mathbf{N}$, $-\mathbf{P}_\perp$, $\mathbf{k}$, and for the final photon---the vectors $\mathbf{N}$, $\mathbf{P}_\perp'$ ($\mathbf{P}_\perp$, $\mathbf{P}'_\perp$ are the components of $\mathbf{P}$, $\mathbf{P}'$ perpendicular to $\mathbf{k}$ and $\mathbf{k}'$ respectively). A change in the sign of $e^{(2)}$ in the photon density matrix (8.17) is equivalent to changing the sign of $\xi_1$ and $\xi_2$. Therefore the photon density matrices of the initial and final
+
+\SourcePage{403}{408}
+
+photons, referred to the 4-orts $e^{(1)}$, $e^{(2)}$, will be
+\begin{equation}
+\begin{aligned}
+\rho^{(\gamma)} &= \tfrac{1}{2}(1 + \boldsymbol{\xi\sigma}), \quad \boldsymbol{\xi} = (\xi_1, \xi_2, \xi_3); \\
+\rho^{(\gamma)\prime} &= \tfrac{1}{2}(1 + \boldsymbol{\xi}'\boldsymbol{\sigma}), \quad \boldsymbol{\xi}' = (-\xi_1', -\xi_2', \xi_3').
+\end{aligned}
+\label{eq:87.9}
+\end{equation}
+
+Now the tensor trace
+\[
+\rho^{(\gamma)\prime}_{\lambda\mu}\, Q^{\mu\nu}\, \rho^{(\gamma)}_{\nu\rho}\, \widetilde{Q}^{\rho\lambda}
+\]
+is computed as the trace of a matrix product of the matrices (87.6)--(87.9) with the aid of (33.5). The result is
+\begin{equation}
+\begin{split}
+|M_{fi}|^2 &= 8\pi^2 e^4 \operatorname{Sp_1}\bigl\{(\rho^{(e)\prime}Q_0\rho^{(e)}\bar{Q}_0 + \rho^{(e)\prime}\mathbf{Q}\rho^{(e)}\bar{\mathbf{Q}}) + {} \\
+&\quad {} + (\boldsymbol{\xi} + \boldsymbol{\xi}')(\rho^{(e)\prime}Q_0\rho^{(e)}\bar{\mathbf{Q}} + \rho^{(e)\prime}\mathbf{Q}\rho^{(e)}\bar{Q}_0) - i(\boldsymbol{\xi} - \boldsymbol{\xi}')[\rho^{(e)\prime}Q_0\rho^{(e)}\bar{\mathbf{Q}}] + {} \\
+&\quad {} + (\boldsymbol{\xi\xi}')(\rho^{(e)\prime}Q_0\bar{Q}_0\rho^{(e)} - \rho^{(e)\prime}\mathbf{Q}\rho^{(e)}\bar{\mathbf{Q}}) + \rho^{(e)\prime}(\boldsymbol{\xi}'\mathbf{Q})\rho^{(e)}(\boldsymbol{\xi}\bar{\mathbf{Q}}) + {} \\
+&\quad {} + \rho^{(e)\prime}(\boldsymbol{\xi}\mathbf{Q})\rho^{(e)}(\boldsymbol{\xi}'\bar{\mathbf{Q}}) - i[\boldsymbol{\xi\xi}'](\rho^{(e)\prime}Q_0\rho^{(e)}\bar{\mathbf{Q}} - \rho^{(e)\prime}\mathbf{Q}\rho^{(e)}\bar{Q}_0)\bigr\}.
+\end{split}
+\label{eq:87.10}
+\end{equation}
+
+\textbf{Scattering on unpolarised electrons.} Let us compute the complete cross section for scattering of polarised photons by an unpolarised electron, summed over the polarisations of the final electron. For this one must set in (87.10)
+\[
+\rho^{(e)} = \tfrac{1}{2}(\gamma p + m), \quad \rho^{(e)\prime} = \tfrac{1}{2}(\gamma p' + m)
+\]
+and double the result, which must be substituted in place of $|M_{fi}|^2$ in the formula for the cross section (64.22)
+\[
+d\sigma = \frac{1}{32\pi^2}\,\frac{dt\,d\varphi}{(s - m^2)^2}\,|M_{fi}|^2
+\]
+($\varphi$ is the azimuth in the centre-of-inertia frame or in the laboratory frame). The computation of the remaining traces leads to the following final result (in the notation of (86.15)):
+\begin{equation}
+\begin{split}
+d\sigma &= \frac{1}{2}\,d\bar{\sigma} + 2r_\mathrm{e}^2\,\frac{dy\,d\varphi}{x^2}\biggl\{(\xi_3 + \xi_3')\left[-\left(\frac{1}{x} - \frac{1}{y}\right)^{\!2} - \left(\frac{1}{x} - \frac{1}{y}\right)\right] + {} \\
+&\quad {} + \xi_1\xi_1'\left(\frac{1}{x} - \frac{1}{y} + \frac{1}{2}\right) + \xi_2\xi_2'\cdot\frac{1}{4}\left(\frac{x}{y} + \frac{y}{x}\right)\left(1 + \frac{2}{x} - \frac{2}{y}\right) + {} \\
+&\quad {} + \xi_3\xi_3'\left[\left(\frac{1}{x} - \frac{1}{y}\right)^{\!2} + \left(\frac{1}{x} - \frac{1}{y}\right) + \frac{1}{2}\right]\biggr\},
+\end{split}
+\label{eq:87.11}
+\end{equation}
+where $d\bar{\sigma}$ is the cross section for scattering of unpolarised photons, given by formula (86.9); the factor $\frac{1}{2}$ is connected with the fact that in (87.11) there is no summation over polarisations of the final photon.
+
+\SourcePage{404}{409}
+
+In the laboratory frame formula (87.11) takes the form
+\begin{equation}
+d\sigma = \frac{r_\mathrm{e}^2}{4}\left(\frac{\omega'}{\omega}\right)^{\!2}do'\left\{F_0 + F_3(\xi_3 + \xi_3') + F_{11}\xi_1\xi_1' + F_{22}\xi_2\xi_2' + F_{33}\xi_3\xi_3'\right\},
+\label{eq:87.12}
+\end{equation}
+\[
+do' = \sin\vartheta\,d\vartheta\,d\varphi,
+\]
+where
+\begin{equation}
+\begin{aligned}
+F_0 &= \frac{\omega}{\omega'} + \frac{\omega'}{\omega} - \sin^2\vartheta, \quad F_3 = \sin^2\vartheta, \\
+F_{11} &= 2\cos\vartheta, \quad F_{22} = \left(\frac{\omega}{\omega'} + \frac{\omega'}{\omega}\right)\cos\vartheta, \quad F_{33} = 1 + \cos^2\vartheta
+\end{aligned}
+\label{eq:87.13}
+\end{equation}
+(\emph{U.~Fano}, 1949). We note that although expression (87.12) does not contain an explicit dependence on the azimuth of the scattering plane $\varphi$, there is an implicit dependence, since the Stokes parameters $\xi_1$, $\xi_2$, $\xi_3$ are defined relative to the $x$, $y$, $z$ axes associated with the scattering plane. Recall that the $x$ axis is the same for both photons and perpendicular to the scattering plane:
+\[
+x \parallel [\mathbf{kk}'],
+\]
+while the $y$ axes lie in the scattering plane:
+\[
+y \parallel [\mathbf{k}[\mathbf{kk}']],\quad y' \parallel [\mathbf{k}'[\mathbf{kk}']].
+\]
+
+Taking the sum of the cross sections differing by the sign of $\boldsymbol{\xi}'$ (i.e.\ setting $\boldsymbol{\xi}' = 0$ and doubling the result), we obtain the complete (summed over polarisations of the final photon) cross section for scattering of a polarised photon on an unpolarised electron. Denoting it by $d\sigma(\boldsymbol{\xi})$, we have
+\begin{equation}
+d\sigma(\boldsymbol{\xi}) = \frac{1}{2}r_\mathrm{e}^2\left(\frac{\omega'}{\omega}\right)^{\!2}F\,do',
+\label{eq:87.14}
+\end{equation}
+where
+\begin{equation}
+F = F_0 + \xi_3 F_3 = \frac{\omega'}{\omega} + \frac{\omega}{\omega'} - (1-\xi_3)\sin^2\vartheta.
+\label{eq:87.15}
+\end{equation}
+
+We see that the cross section for scattering of photons polarised perpendicular to the scattering plane ($\xi_3 = 1$) is greater than for photons polarised in the scattering plane ($\xi_3 = -1$). For circular polarisation the cross section does not depend on $\xi_1$. Therefore the scattering cross section coincides with the cross section for unpolarised photons if there is no linear polarisation relative to the $x$ or $y$ axes ($\xi_3 = 0$) or even if there is polarisation relative to directions making $45^\circ$ with these axes.
+
+The cross section for scattering of unpolarised photons with detection of the polarised final
+
+\SourcePage{405}{410}
+
+photon possesses analogous properties. This cross section (denote it by $d\sigma(\boldsymbol{\xi}')$) is obtained from formula (87.12) by setting $\boldsymbol{\xi} = 0$:
+\begin{equation}
+d\sigma(\boldsymbol{\xi}') = \frac{1}{4}r_\mathrm{e}^2\left(\frac{\omega'}{\omega}\right)^{\!2}F'\,do', \quad F' = F_0 + \xi_3' F_3.
+\label{eq:87.16}
+\end{equation}
+
+From formula (87.12) one can also find the polarisation of the secondary photon as such; the parameters of this polarisation are denoted $\xi^{(f)}$ in distinction from the detectable polarisation $\boldsymbol{\xi}'$. According to the rules set out in \S\,65, the quantities $\xi_i^{(f)}$ are the ratios of the coefficients at $\xi_i'$ to the term not containing $\boldsymbol{\xi}'$:
+\begin{equation}
+\xi_1^{(f)} = \frac{F_{11}}{F}\xi_1, \quad \xi_2^{(f)} = \frac{F_{22}}{F}\xi_2, \quad \xi_3^{(f)} = \frac{F_3 + F_{33}\xi_3}{F}.
+\label{eq:87.17}
+\end{equation}
+In particular, when an unpolarised photon is scattered,
+\begin{equation}
+\xi_1^{(f)} = 0, \quad \xi_2^{(f)} = 0, \quad \xi_3^{(f)} = \frac{\sin^2\vartheta}{\omega/\omega' + \omega'/\omega - \sin^2\vartheta}.
+\label{eq:87.18}
+\end{equation}
+Here $\xi_3^{(f)} > 0$, i.e.\ the secondary photon is polarised perpendicular to the scattering plane. Circular polarisation of the secondary photon arises only if the primary photon is circularly polarised: $\xi_2^{(f)} \neq 0$ only when $\xi_2 \neq 0$.
+
+Consider the case when the incident photon is completely linearly polarised ($\xi_2 = 0$, $\xi_1^2 + \xi_3^2 = 1$), and let us find the cross section for scattering in which a linearly polarised secondary photon is also detected. Expressing the Stokes parameters $\xi_i$ and $\xi_i'$ through the components of the polarisation vectors $\mathbf{e}$ and $\mathbf{e}'$, we obtain the following expression for the cross section of scattering:
+\begin{equation}
+d\sigma = \frac{r_\mathrm{e}^2}{4}\left(\frac{\omega'}{\omega}\right)^{\!2}\left(\frac{\omega}{\omega'} + \frac{\omega'}{\omega} - 2 + 4\cos^2\Theta\right)do',
+\label{eq:87.19}
+\end{equation}
+where $\Theta$ is the angle between the polarisation directions of the incident and scattered photons\footnote{Formula (87.19) could have been obtained more simply from the outset, by setting in the scattering amplitude (86.3) $e = (0, \mathbf{e})$, $e' = (0, \mathbf{e}')$ and computing the square of the amplitude in three-dimensional form (i.e.\ separating the time and spatial components of the 4-vectors). Averaging $\cos^2\Theta = (\mathbf{ee}')^2$ over the directions of $\mathbf{e}$ and $\mathbf{e}'$ (with the aid of (45.4a)) and doubling the cross section (the transition to summation over $\mathbf{e}'$), we return, of course, to (86.9).}.
+
+\SourcePage{406}{411}
+
+According to this formula, the cross section behaves substantially differently when the polarisations $\mathbf{e}$ and $\mathbf{e}'$ are mutually perpendicular and when they lie in one plane. Distinguishing these two cases by the subscripts $\perp$ and $\parallel$, we have in the non-relativistic limit ($\omega \ll m$, $\omega' \approx \omega$)
+\begin{equation}
+d\sigma_\perp = 0, \quad d\sigma_\parallel = r_\mathrm{e}^2\cos^2\Theta\,do'
+\label{eq:87.20}
+\end{equation}
+in agreement with the classical formulas. In the opposite, ultrarelativistic case $\omega \gg m$, $\omega' \approx m/(1-\cos\vartheta)$. Here one must distinguish the regions of large and small angles ($\omega'/\omega$ large or small):
+\begin{equation}
+\begin{aligned}
+d\sigma_\perp &= d\sigma_\parallel = \frac{1}{4}r_\mathrm{e}^2\,\frac{\omega'}{\omega}\,do' = \frac{1}{4}r_\mathrm{e}^2\,\frac{m\,do'}{\omega(1-\cos\vartheta)}, \quad \vartheta^2 \gg \frac{m}{\omega}, \\
+d\sigma_\perp &= 0, \quad d\sigma_\parallel = r_\mathrm{e}^2\cos^2\Theta\,do', \quad \vartheta^2 \ll \frac{m}{\omega}.
+\end{aligned}
+\label{eq:87.21}
+\end{equation}
+
+We see that in the region of very small scattering angles the cross section coincides with the classical one. The equality $d\sigma_\perp \approx d\sigma_\parallel$ at not too small angles does not mean that the scattered radiation in this region is unpolarised; we stress, however, that this conclusion refers specifically to a linearly polarised incident photon: from (87.17) it is seen that for a circularly polarised photon in the ultrarelativistic case $\xi_2^{(f)} \approx \cos\vartheta \cdot \xi_2$.
+
+\textbf{Scattering on polarised electrons.} For polarised electrons the computation of the traces in formula (87.10) becomes very cumbersome, though it does not present any difficulties in principle. We give here some final results of such a calculation\footnote{More detailed information can be found in the review articles: \emph{Tolhoek H.~A.}\/\/Rev.~Mod.~Phys.\enspace 1956.\enspace V.~28.\enspace P.~277; \emph{McMaster W.~H.}\/\/Rev.~Mod.~Phys.\enspace 1961.\enspace V.~33.\enspace P.~8.}.
+
+In the general case the cross section depends both on the polarisation parameters of the initial and final photons $\boldsymbol{\xi}$ and $\boldsymbol{\xi}'$, and on the polarisations of the initial and final electrons, characterised by the vectors $\boldsymbol{\zeta}$ and $\boldsymbol{\zeta}'$. The dependence of the cross section on each of these parameters is linear. The cross section has the form
+\begin{equation}
+\begin{split}
+d\sigma &= \frac{1}{2}d\sigma(\boldsymbol{\xi},\boldsymbol{\xi}') + {} \\
+&\quad {} + \frac{r_\mathrm{e}^2}{8}\left(\frac{\omega'}{\omega}\right)^{\!2}do'\bigl\{f\zeta\xi_2 + f'\zeta'\xi_2' + g\zeta'\xi_2 + g'\zeta\xi_2' + G_{ik}\zeta_i\zeta_k' + \dots\bigr\}.
+\end{split}
+\label{eq:87.22}
+\end{equation}
+Here $d\sigma(\boldsymbol{\xi},\boldsymbol{\xi}')$ is the cross section (87.12). Listed are all the terms containing products of two polarisation parameters; omitted are
+
+\SourcePage{407}{412}
+
+the terms containing products of three or four parameters; these terms are inessential if we are interested only in correlations between the polarisations of two particles; they vanish when the polarisation parameters of the other two particles are set equal to zero. We give the values of some of the coefficients in the laboratory frame:
+\begin{align*}
+\mathbf{f} &= -\frac{1-\cos\vartheta}{m}(\mathbf{k}\cos\vartheta + \mathbf{k}'), \\
+\mathbf{f}' &= -\frac{1-\cos\vartheta}{m}(\mathbf{k} + \mathbf{k}'\cos\vartheta), \\
+\mathbf{g} &= -\frac{1-\cos\vartheta}{m}\left[(\mathbf{k}\cos\vartheta + \mathbf{k}') - (1+\cos\vartheta)\,\frac{\omega+\omega'}{\omega-\omega'+2m}\,(\mathbf{k}-\mathbf{k}')\right], \\
+\mathbf{g}' &= -\frac{1-\cos\vartheta}{m}\left[(\mathbf{k} + \mathbf{k}'\cos\vartheta) - (1+\cos\vartheta)\,\frac{\omega+\omega'}{\omega-\omega'+2m}\,(\mathbf{k}-\mathbf{k}')\right].
+\end{align*}
+\setcounter{equation}{23}
+
+In the cross section (87.22) there is no term of the form $\mathbf{G}\boldsymbol{\zeta}$; this means that the polarisation of the electron does not affect the complete (summed over $\boldsymbol{\xi}'$ and $\boldsymbol{\zeta}'$) cross section for scattering of polarised photons. There is also no term of the form $\mathbf{G}'\boldsymbol{\zeta}'$; this means that upon scattering of unpolarised photons the recoil electron is not polarised.
+
+We see also that the terms bilinear in the polarisations of the electron and photon contain only the parameters $\xi_2$, $\xi_2'$ corresponding to circular polarisation of the photon. The polarisation vectors of the electrons enter in the form of scalar products $f\boldsymbol{\zeta}$, \dots, containing only the projections of these vectors onto the scattering plane. Therefore, for example, the cross section for scattering of a polarised photon by a polarised electron is
+\begin{equation}
+d\sigma(\boldsymbol{\xi},\boldsymbol{\zeta}) = d\sigma(\boldsymbol{\xi}) + \frac{1}{2}r_\mathrm{e}^2\left(\frac{\omega'}{\omega}\right)^{\!2}\xi_2\,\mathbf{f}\boldsymbol{\zeta}\,do'
+\label{eq:87.24}
+\end{equation}
+and differs from $d\sigma(\boldsymbol{\xi})$ only when the photon has circular polarisation and the electron has a non-zero projection of its mean spin on the scattering plane. For the same reason the recoil electron is polarised only when the photon possesses circular polarisation; the vector of the resulting electron polarisation lies in the scattering plane:
+\begin{equation}
+\boldsymbol{\zeta}^{(f)} = \frac{1}{F}\,\xi_2\mathbf{g}.
+\label{eq:87.25}
+\end{equation}
+
+\textbf{Symmetry relations.} In conclusion we point out that the qualitative properties of polarisation effects in the scattering of photons by electrons follow already from the general requirements of symmetry.
+
+\SourcePage{408}{413}
+
+The parameter $\xi_2$ of circular polarisation is a pseudoscalar (see \S\,8). Therefore, by virtue of $P$-invariance, terms of the form $\propto \xi_2$ (or $\propto \xi_2'$) could appear in the cross section only as the product of $\xi_2$ with some other pseudoscalar that can be constructed from the vectors at our disposal $\mathbf{k}$ and $\mathbf{k}'$\footnote{We consider the process in the laboratory frame, where $\mathbf{p} = 0$, $\mathbf{p}' = \mathbf{k} - \mathbf{k}'$. It is clear that the interesting consequences of the requirements of symmetry (the presence or absence of given terms in the cross section) do not depend on the choice of reference frame.}. But from two polar vectors one cannot construct a pseudoscalar. It follows from this that the indicated terms cannot appear in the cross section.
+
+The parameters of linear polarisation $\xi_1$ and $\xi_2$ are related to the components of the two-dimensional (in the plane perpendicular to $\mathbf{k}$) symmetric tensor
+\begin{equation}
+S_{\alpha\beta} = \frac{1}{2}\bigl(\rho^{(\gamma)}_{\alpha\beta} + \rho^{(\gamma)}_{\beta\alpha}\bigr) = \frac{1}{2}\begin{pmatrix} 1 + \xi_3 & \xi_1 \\ \xi_1 & 1 - \xi_3 \end{pmatrix}.
+\end{equation}
+
+In the present case one of the polarisation axes is chosen along the vector $\boldsymbol{\nu} = [\mathbf{kk}']$, and the other lies in the plane $\mathbf{kk}'$ (along the vector $[\mathbf{k}\boldsymbol{\nu}]$ or $[\mathbf{k}'\boldsymbol{\nu}]$ for one or the other photon). Terms $\propto \xi_1$ could appear in the cross section only as products of $S_{\alpha\beta}\nu_\alpha[\mathbf{k}'\boldsymbol{\nu}]_\beta$ (or, what is the same, $S_{\alpha\beta}\nu_\alpha k'_\beta$) and so on. But since $\boldsymbol{\nu}$ is an axial vector and $\mathbf{k}$ is a polar vector, and $S_{\alpha\beta}$ is a true tensor, such products are not invariant under inversion. Therefore terms $\propto \xi_1$ (or $\propto \xi_1'$) in the cross section are also excluded.
+
+Terms in the cross section proportional to the electron polarisation $\boldsymbol{\zeta}$ are not forbidden by parity, since such terms could be formed as products of two axial vectors: $\boldsymbol{\zeta}\boldsymbol{\nu}$. However, they must be absent as a consequence of the hermiticity of the scattering matrix in the considered approximation (cf.\ \S\,71).
+
+By virtue of this hermiticity, the square of the modulus of the scattering amplitude (and with it the cross section) does not change upon permutation of the initial and final states. At the same time the cross section must be invariant with respect to time reversal---permutation of the initial and final states with the simultaneous reversal of the sign of the momentum and angular momentum vectors of all particles (the Stokes parameters $\xi_1$, $\xi_2$, $\xi_3$ do not change---see \S\,8). Combining both requirements, we conclude that in the considered approximation the cross section must not change upon the simultaneous reversal of the sign of all momenta and angular momenta without the permutation of
+
+\SourcePage{409}{414}
+
+initial and final states, i.e.\ under the transformation
+\begin{equation}
+\mathbf{k} \to -\mathbf{k}', \quad \mathbf{k}' \to -\mathbf{k}', \quad \boldsymbol{\zeta} \to -\boldsymbol{\zeta}' \quad \boldsymbol{\zeta}' \to -\boldsymbol{\zeta}'
+\label{eq:87.26}
+\end{equation}
+and unchanged parameters $\boldsymbol{\xi}$, $\boldsymbol{\xi}'$.
+
+Transformation (87.26) changes the sign of the products $\boldsymbol{\zeta\nu}$, and therefore such terms cannot appear in the cross section. We stress, however, that this prohibition is not a consequence of strict symmetry requirements and may be violated in the following approximations of perturbation theory.
+
+We note also that parity forbids terms of the type $\xi_1\xi_3$ and $\xi_2\xi_3$ in the double correlation between the polarisations of the photons with one another, and imposes no restrictions on the form of the correlation of the photons with the electrons. However, all the terms of the type $\xi_1\xi_2$, $\xi_1\boldsymbol{\zeta}$, $\xi_3\boldsymbol{\zeta}$ are forbidden in the first Born approximation relative to the transformation (87.26). Thus, the terms of the type $\xi_1\xi_2$ and $\xi_1\boldsymbol{\zeta}$ can be formed (from the point of view of obeying parity) as scalars, for example $\xi_1'(S_{\alpha\beta}k'_\alpha \nu_\beta)$ and $(S_{\alpha\beta}k'_\alpha\nu_\beta)(\boldsymbol{\zeta}\mathbf{k})$; these combinations, however, change sign under the transformation (87.26).
+
+The allowed correlation terms of the type $\xi_2\boldsymbol{\zeta}$ can be formed only as products of the type $\xi_2(\boldsymbol{\zeta}\mathbf{k})$; the electron polarisation vectors enter them only in the form of projections on the scattering plane.
+
+Finally, a number of relations among the coefficients in the allowed terms arises from the requirements of cross-universality. The channels of the reaction, differing by the permutation of the initial and final photons, correspond to the same process---scattering of a photon by an electron. Therefore the square of the modulus of the amplitude, and with it the cross section, must be invariant with respect to the transformation expressing the transition from one of these channels to the other:
+\begin{equation}
+k \leftrightarrow -k', \quad e \leftrightarrow e'^*
+\label{eq:87.27}
+\end{equation}
+at unchanged momenta and polarisations of the electrons. In three-dimensional form this means the replacements:
+\[
+\omega \leftrightarrow -\omega', \quad \mathbf{k} \leftrightarrow -\mathbf{k}', \quad \xi_1 \leftrightarrow \xi_1', \quad \xi_2 \leftrightarrow -\xi_2', \quad \xi_3 \leftrightarrow \xi_3'.
+\]
+The change of sign of the parameter $\xi_2$ is obvious from the expression $\xi_2 = i[\mathbf{ee}^*]\mathbf{n}$, in which the vector $[\mathbf{ee}^*]$ changes sign under the substitution $\mathbf{e} \leftrightarrow -\mathbf{e}^*$, while the vector $\mathbf{n} = \mathbf{k}/\omega$ under $\mathbf{k} \leftrightarrow -\mathbf{k}$, $\omega \leftrightarrow -\omega$ does not change. The transformation (87.27), without affecting the momenta of the electrons, leaves the laboratory frame. Therefore the cross section (87.22) must not change its form under this transformation; formulas (87.12), (87.22), (87.23) indeed satisfy this condition.

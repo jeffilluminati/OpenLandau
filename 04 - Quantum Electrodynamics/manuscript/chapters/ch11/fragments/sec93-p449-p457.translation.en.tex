@@ -1,0 +1,284 @@
+
+\section{Bremsstrahlung of an electron on a nucleus. Relativistic case}
+
+\SourcePage{444}{449}
+
+Let us turn to the bremsstrahlung radiation of an electron on a nucleus in the case of relativistic electron velocities\footnote{The greater part of the results presented below was obtained by \emph{Bethe} and \emph{Heitler} (\emph{H.~A.~Bethe, W.~Heitler}, 1934) and independently by \emph{Sauter} (\emph{F.~Sauter}, 1934).}. Here we shall again assume the Born approximation condition to be satisfied, i.e.\ for both the initial ($v$) and the final ($v'$) velocities of the electron: $Ze^2/\hbar v \ll 1$, $Ze^2/\hbar v' \ll 1$. At the same time the charge of the nucleus must not be too large: $Z\alpha \ll 1$.
+
+As in the preceding section, we neglect the recoil of the nucleus, so that it serves merely as the source of the external field (for the justification of such a neglect see \S\,97).
+
+According to (91.4) the bremsstrahlung cross section is expressed through the amplitude by the formula
+\begin{equation}
+d\sigma = |M_{fi}|^2\,\frac{\omega|\mathbf{p}'|}{8(2\pi)^5|\mathbf{p}|}\,do_\mathbf{k}\,do'\,d\omega.
+\label{eq:93.1}
+\end{equation}
+
+In the first non-vanishing approximation the matrix element $M_{fi}$ corresponds to two diagrams:
+% [Feynman diagram: Two bremsstrahlung diagrams. Left: electron line from p through vertex coupling to external field (q), propagator f, vertex emitting photon k, to final electron p'. Right: electron line from p through vertex emitting photon k, propagator f', vertex coupling to external field (q), to final electron p']
+\setcounter{equation}{2}
+
+The free end $q$ corresponds to the external field, so that $q = p' - p + k$ is the 4-vector of the momentum transfer to the nucleus. The neglect of the recoil means that the time component $q^0 = 0$.
+
+According to the diagrams (93.2) we have
+\begin{equation}
+M_{fi} = -e^2 A_0^{(e)}(\mathbf{q})\sqrt{4\pi}\,e_\nu^*\,\bar{u}'\left(\gamma^\mu\,\frac{\gamma f'+m}{f'^2 - m^2}\,\gamma^\nu + \gamma^\nu\,\frac{\gamma f + m}{f^2 - m^2}\,\gamma^\mu\right)u.
+\label{eq:93.3}
+\end{equation}
+
+The intermediate 4-momenta $f = p - k$, $f' = p' + k$; we introduce the notation:
+\begin{equation}
+f^2 - m^2 = -2kp \equiv -2\varkappa\omega, \quad f'^2 - m^2 = -2kp' \equiv -2\varkappa'\omega.
+\label{eq:93.4}
+\end{equation}
+$A_0^{(e)}$ is the scalar potential of the external field; for a purely Coulomb field
+\begin{equation}
+A_0^{(e)}(\mathbf{q}) = \frac{4\pi Ze}{\mathbf{q}^2}.
+\label{eq:93.5}
+\end{equation}
+
+\SourcePage{445}{450}
+
+Substituting into (93.1), we have for the cross section
+\begin{equation}
+d\sigma = \frac{Z^2 e^6}{4\pi^2}\,\frac{|\mathbf{p}'|\omega}{|\mathbf{p}|\mathbf{q}^4}\,e_\nu^* e_\mu(\bar{u}'Q^\mu u)(\bar{u}\widetilde{Q}^\nu u')\,do_\mathbf{k}\,do'\,d\omega,
+\label{eq:93.6}
+\end{equation}
+where
+\[
+Q^\mu = \gamma^\mu\,\frac{\gamma f'+m}{2\omega\varkappa'}\,\gamma^0 - \gamma^0\,\frac{\gamma f+m}{2\omega\varkappa}\,\gamma^\mu,
+\]
+\[
+\widetilde{Q}^\nu = \gamma^0\,\frac{\gamma f'+m}{2\omega\varkappa'}\,\gamma^\nu - \gamma^\nu\,\frac{\gamma f+m}{2\omega\varkappa}\,\gamma^0.
+\]
+
+Without considering polarisation effects, we average the cross section over the spin directions of the initial electron and sum over the polarisations of the final electron and the photon. This reduces to the replacement
+\[
+e_\nu^* e_\mu(\bar{u}'Q^\mu u)(\bar{u}\widetilde{Q}^\nu u') \to -\frac{1}{2}\operatorname{Sp}\,Q_\mu(\gamma p + m)\widetilde{Q}^\mu(\gamma p' + m).
+\]
+
+Computation of the trace is carried out by the standard formulas (see \S\,22). A certain simplification of the algebra is achieved by using the identity
+\[
+\gamma^0(\gamma p)\gamma^0 = \gamma\tilde{p},
+\]
+where $\tilde{p} = (\varepsilon, -\mathbf{p})$, if $p = (\varepsilon, \mathbf{p})$. Furthermore, the number of terms requiring computation can be reduced by using the symmetry with respect to the substitution $p \leftrightarrow p'$, $k \to -k$, $q \to -q$ (this substitution leads only to a cyclic permutation of the factors in the products of matrices and therefore does not change the trace).
+
+As a result one obtains the following expression for the differential cross section of bremsstrahlung with the emission of a photon of given frequency and direction, and with the emission of the secondary electron in a given direction\footnote{Here and below in this section $p$, $p'$, $q$ denote the absolute values of the three-dimensional vectors: $p = |\mathbf{p}|$, $p' = |\mathbf{p}'|$, $q = |\mathbf{q}|$.}:
+\begin{equation}
+\begin{split}
+d\sigma &= \frac{Z^2\alpha r_\mathrm{e}^2}{4\pi^2}\,\frac{p'm^4}{pq^4}\,\frac{d\omega}{\omega}\,do_\mathbf{k}\,do' \times {} \\
+&\quad \times \biggl\{\frac{q^2}{\varkappa^2 m^2}\bigl(2\varepsilon^2+2\varepsilon'^2 - q^2\bigr) + \left(q^2\left(\frac{1}{\varkappa} - \frac{1}{\varkappa'}\right)^{\!2} - \left(\frac{\varepsilon}{\varkappa} - \frac{\varepsilon'}{\varkappa'}\right)^{\!2}\right) + {} \\
+&\quad {} + \frac{2\omega q^2}{m^2}\left(\frac{1}{\varkappa} - \frac{1}{\varkappa'}\right) - \frac{2\omega^2}{m^2}\left(\frac{\varepsilon^2}{\varkappa'^2} - \frac{\varepsilon'^2}{\varkappa^2}\right)\biggr\},
+\end{split}
+\label{eq:93.7}
+\end{equation}
+where
+\[
+\varkappa = \varepsilon - \mathbf{np}, \quad \varkappa' = \varepsilon' - \mathbf{np}' \quad (\mathbf{n} = \mathbf{k}/\omega), \quad \mathbf{q} = \mathbf{p}' + \mathbf{k} - \mathbf{p}.
+\]
+
+\SourcePage{446}{451}
+
+By straightforward transformations this formula can be given a somewhat more convenient form for investigation:
+\begin{equation}
+\begin{split}
+d\sigma &= \frac{Z^2\alpha r_\mathrm{e}^2}{2\pi^2}\,\frac{d\omega}{\omega}\,\frac{p'\,m^2}{p\,q^4}\,\sin\theta\,d\theta\,\sin\theta'\,d\theta'\,d\varphi \times {} \\
+&\quad \times \biggl\{\frac{p'^2}{\varkappa'^2}(4\varepsilon^2 - q^2)\sin^2\theta' + \frac{p^2}{\varkappa^2}(4\varepsilon'^2 - q^2)\sin^2\theta + {} \\
+&\quad {} + \frac{2\omega^2}{\varkappa\varkappa'}(p^2\sin^2\theta + p'^2\sin^2\theta') - {} \\
+&\quad {} - \frac{2pp'}{\varkappa\varkappa'}(2\varepsilon^2 + 2\varepsilon'^2 - q^2)\sin\theta\sin\theta'\cos\varphi\biggr\},
+\end{split}
+\label{eq:93.8}
+\end{equation}
+where
+\begin{gather*}
+\varkappa = \varepsilon - p\cos\theta, \quad \varkappa' = \varepsilon' - p'\cos\theta', \\
+q^2 = p^2 + p'^2 + \omega^2 - 2p\omega\cos\theta + 2p'\omega\cos\theta' - 2pp'(\cos\theta\cos\theta' + \sin\theta\sin\theta'\cos\varphi),
+\end{gather*}
+$\theta$ and $\theta'$ are the angles between $\mathbf{k}$ and, respectively, $\mathbf{p}$ and $\mathbf{p}'$, $\varphi$ the angle between the planes $\mathbf{k}$, $\mathbf{p}$ and $\mathbf{k}$, $\mathbf{p}'$.
+
+Integration of (93.8) over the directions of the photon and secondary electron is quite cumbersome. It leads to the following formula for the spectral distribution of the radiation\footnote{Integration over the directions of the secondary electron alone can also be performed in analytic form---see \emph{Gluckstern R.~L., Hull M.~H.}\/\/Phys.~Rev.\enspace 1953.\enspace V.~90.\enspace P.~1030.}:
+\begin{equation}
+\begin{split}
+d\sigma_\omega &= Z^2\alpha r_\mathrm{e}^2\,\frac{d\omega}{\omega}\,\frac{p'}{p}\biggl\{\frac{4}{3} - 2\varepsilon\varepsilon'\,\frac{p^2 + p'^2}{p^2 p'^2} + {} \\
+&\quad {} + m^2\!\left(l\frac{\varepsilon'}{p^3} + l'\frac{\varepsilon}{p'^3} - \frac{ll'}{pp'}\right) + L\!\left[\frac{8\varepsilon\varepsilon'}{3pp'} + \frac{\omega^2}{p^3 p'^3}\bigl(\varepsilon^2\varepsilon'^2 + p^2 p'^2 + m^2\varepsilon\varepsilon'\bigr)\right] + {} \\
+&\quad {} + \frac{m^2\omega}{2pp'}\!\left(l\frac{\varepsilon\varepsilon' + p^2}{p^3} - l'\frac{\varepsilon\varepsilon' + p'^2}{p'^3} + \frac{2\omega\varepsilon\varepsilon'}{p^2 p'^2}\right)\!\biggr\},
+\end{split}
+\label{eq:93.9}
+\end{equation}
+where
+\[
+L = \ln\frac{\varepsilon\varepsilon' + pp' - m^2}{\varepsilon\varepsilon' - pp' - m^2}, \quad l = \ln\frac{\varepsilon + p}{m}, \quad l' = \ln\frac{\varepsilon' + p'}{m}.
+\]
+
+We recall that the permissible values of frequencies in the obtained formulas are restricted only by the condition imposed on the final velocity of the electron ($Ze^2/v' \ll 1$): the electron must not lose almost all its energy. When $\omega \to 0$ the cross section of radiation diverges as $d\omega/\omega$; this is a manifestation of the general rule discussed in \S\,98.
+
+\SourcePage{447}{452}
+
+In the non-relativistic limit ($p \ll m$) the photon impulse is small compared to the electron impulse, so that $q^2 \approx (\mathbf{p}'-\mathbf{p})^2$. Setting in (93.8) $\varepsilon = \varepsilon' = m$, and neglecting all $p$, $p'$, $\omega$ compared to $m$, we obtain
+\[
+d\sigma = \frac{2}{\pi}\,Z^2\alpha r_\mathrm{e}^2\,\frac{d\omega}{\omega}\,\frac{p'\,m}{p\,q^4}\,\sin\theta\,d\theta\,\sin\theta'\,d\theta'\,d\varphi \times (p^2\sin^2\theta + p'^2\sin^2\theta' - 2pp'\sin\theta\sin\theta'\cos\varphi),
+\]
+or
+\begin{equation}
+d\sigma = \frac{Z^2\alpha^3}{\pi^2}\,\frac{p'}{p}\,[\mathbf{nq}]^2\,\frac{do_\mathbf{k}\,do'\,d\omega}{q^4\,\omega},
+\label{eq:93.10}
+\end{equation}
+in agreement with the formula obtained in the Born approximation in Problem~1 of \S\,92. Correspondingly, for the spectral distribution of the radiation one also obtains the already known result (92.16).
+
+In the ultrarelativistic case, when both the initial and final energies of the electron are large ($\varepsilon$, $\varepsilon' \gg m$), the angular distribution of the photon and secondary electrons has a very specific character. At small angles $\theta$, $\theta'$ the quantities $\varkappa$, $\varkappa'$ appearing in the denominators of formula (93.8) are
+\begin{equation}
+\varkappa \approx \frac{\varepsilon}{2}\left(\frac{m^2}{\varepsilon^2} + \theta^2\right), \quad \varkappa' \approx \frac{\varepsilon'}{2}\left(\frac{m^2}{\varepsilon'^2} + \theta'^2\right)
+\label{eq:93.11}
+\end{equation}
+and in the region $\theta \lesssim m/\varepsilon$ become very small. In this region the magnitude of the vector $\mathbf{q}$($q \sim m$) is also small. Thus, in the ultrarelativistic case the photon and the secondary electron fly forward in a narrow cone with opening angle $\sim m/\varepsilon$.
+
+A quantitative formula for the angular distribution in the ultrarelativistic case is easily obtained from (93.8) by substituting $\varkappa$, $\varkappa'$ from (93.11), replacing everywhere else $p$, $p'$ by $\varepsilon$, $\varepsilon'$ and neglecting $q^2$ compared to $\varepsilon^2$. Introducing convenient notation:
+\begin{equation}
+\delta = \frac{\varepsilon}{m}\theta, \quad \delta' = \frac{\varepsilon'}{m}\theta',
+\label{eq:93.12}
+\end{equation}
+we write this formula in the form
+\begin{equation}
+\begin{split}
+d\sigma &= \frac{8}{\pi}\,Z^2\alpha r_\mathrm{e}^2\,\frac{\varepsilon'\,m^4\,d\omega}{\varepsilon\,q^4\,\omega}\,\delta\,d\delta\cdot\delta'\,d\delta'\,d\varphi \times {} \\
+&\quad \times \biggl\{\frac{\delta^2}{(1+\delta^2)^2} + \frac{\delta'^2}{(1+\delta'^2)^2} + \frac{\omega^2}{2\varepsilon\varepsilon'}\,\frac{\delta^2+\delta'^2}{(1+\delta^2)(1+\delta'^2)} - {} \\
+&\quad {} - \left(\frac{\varepsilon'}{\varepsilon} + \frac{\varepsilon}{\varepsilon'}\right)\frac{\delta\delta'\cos\varphi}{(1+\delta^2)(1+\delta'^2)}\biggr\}.
+\end{split}
+\label{eq:93.13}
+\end{equation}
+
+\SourcePage{448}{453}
+
+Writing $\mathbf{q}^2 = [\mathbf{nq}]^2 + (\mathbf{nq})^2(\mathbf{n} = \mathbf{k}/\omega)$, it is easy to find that for small angles
+\begin{equation}
+\frac{q^2}{m^2} = (\delta^2 + \delta'^2 - 2\delta\delta'\cos\varphi) + m^2\!\left(\frac{1+\delta^2}{2\varepsilon} - \frac{1+\delta'^2}{2\varepsilon'}\right)^{\!2}.
+\label{eq:93.14}
+\end{equation}
+When $\delta \sim \delta' \sim 1$ the second term here is small in comparison with the first. These terms become comparable in the region of even smaller angles, where $\delta \sim m/\varepsilon$. Although $q$ here becomes especially small ($q \sim m^2/\varepsilon \ll m$), the integral contribution of this region to the cross section is still small by the factor $m^2/\varepsilon^2$ (as it is easy to see) compared to the contribution of the whole region $\delta \lesssim 1$. However, $q$ can also reach values $\sim m^2/\varepsilon$ when $\delta \sim \delta' \sim 1$, if in addition
+\begin{equation}
+|\delta - \delta'| \lesssim \frac{m}{\varepsilon}, \quad \varphi \lesssim \frac{m}{\varepsilon}.
+\label{eq:93.15}
+\end{equation}
+
+The contribution of this region is of the same order as the total integral cross section (or even constitutes the main part of it---see below).
+
+Integration of formula (93.13) over $\varphi$ and over $\delta'$ gives the angular distribution of the photon (of given frequency) independently of the directions of the secondary electrons\footnote{First one integrates over $\varphi$ (in the limits from 0 to $2\pi$). The integration over $\delta'$ is conveniently replaced by integration over the difference $|\Delta| = |\delta'-\delta|$, splitting its range into two parts: from 0 to some $\Delta_0$ and from $\Delta_0$ to $\infty$, where $\Delta_0$ satisfies the inequalities $m/\varepsilon \ll \Delta_0 \ll 1$. In each domain corresponding simplifications in the sub-integral expression of (93.13) are possible.}:
+\begin{equation}
+\begin{split}
+d\sigma &= 8Z^2\alpha r_\mathrm{e}^2\,\frac{d\omega}{\omega}\,\frac{\varepsilon'}{\varepsilon}\,\frac{\delta\cdot d\delta}{(1+\delta^2)^2} \times {} \\
+&\quad \times \biggl\{\left[\frac{\varepsilon}{\varepsilon'} + \frac{\varepsilon'}{\varepsilon} - \frac{4\delta^2}{(1+\delta^2)^2}\right]\ln\frac{2\varepsilon\varepsilon'}{m\omega} - {} \\
+&\quad {} - \frac{1}{2}\left[\frac{\varepsilon}{\varepsilon'} + \frac{\varepsilon'}{\varepsilon} + 2 - \frac{16\delta^2}{(1+\delta^2)^2}\right]\biggr\}.
+\end{split}
+\label{eq:93.16}
+\end{equation}
+
+Integrating over $\delta$, we find the spectral distribution of the radiation in the ultrarelativistic case:
+\begin{equation}
+d\sigma_\omega = 4Z^2\alpha r_\mathrm{e}^2\,\frac{d\omega}{\omega}\,\frac{\varepsilon'}{\varepsilon}\left[\left(\frac{\varepsilon}{\varepsilon'} + \frac{\varepsilon'}{\varepsilon} - \frac{2}{3}\right)\left(\ln\frac{2\varepsilon\varepsilon'}{m\omega} - \frac{1}{2}\right)\right].
+\label{eq:93.17}
+\end{equation}
+
+We draw attention to the presence in (93.16) and (93.17) of a logarithm of a large quantity (even at $\omega \sim \varepsilon$ the ratio $\varepsilon\varepsilon'/(m\omega) \sim \varepsilon/m \gg 1$). If it is so large that its logarithm is also large, then in the formulas named, the terms containing the logarithm
+
+\SourcePage{449}{454}
+
+become dominant. We note that this logarithm arises from integration over the region (93.15)\footnote{This is easy to verify by considering the domain of integration in which $\varphi$ and $\Delta = \delta'-\delta$ satisfy conditions: $m/\varepsilon \ll \Delta_0 \ll 1$, $\varphi \ll 1$. In this domain $q^2/m^2 \approx \Delta^2 + \varphi^2\delta^2$, and the expression in curly brackets in (93.13) becomes the expression proportional to $\varphi^2$ or $\Delta^2$ (when $\varphi = 0$ and $\Delta = 0$ it vanishes). The integrals
+$\int \frac{\varphi^2\,d\varphi\,d\Delta}{(\Delta^2 + \delta^2\varphi^2)^2} \quad \text{or} \quad \int \frac{\Delta^2\,d\varphi\,d\Delta}{(\Delta^2 + \delta^2\varphi^2)^2}$
+diverge logarithmically; their ``cutting off'' occurs at the boundaries of the indicated domain of values of the variables.}. Thus, in the logarithmic approximation (i.e.\ neglecting terms not containing the large logarithm), the secondary electron flies at an angle $\sim (m/\varepsilon)^2$ to the direction of incidence.
+
+Finally, we give the limiting formula for the region near the hard boundary of the spectrum, when the ultrarelativistic electron radiates almost all its energy: $\omega \approx \varepsilon \gg \varepsilon'$. From (93.9) one easily finds
+\begin{equation}
+d\sigma_\omega = 2Z^2\alpha r_\mathrm{e}^2\,\frac{d\omega}{\varepsilon}\left\{\frac{\varepsilon'^2}{p'^2}\ln\frac{\varepsilon'+p'}{m} - \frac{m^2\varepsilon'^2}{4p'^3}\ln^2\frac{\varepsilon'+p'}{m} + \frac{\varepsilon'+p'}{3pp'}\right\}.
+\label{eq:93.18}
+\end{equation}
+Formulas (93.17) and (93.18) cover the entire range of values of $\omega$ for an ultrarelativistic initial electron; when $\omega \approx \varepsilon \gg \varepsilon' \gg m$ these formulas coincide. If the secondary electron is non-relativistic ($p' \ll m$), then
+\begin{equation}
+d\sigma_\omega = 2Z^2\alpha r_\mathrm{e}^2\,\frac{\sqrt{2m(\varepsilon-\omega)}}{m}\,\frac{d\omega}{\varepsilon}.
+\label{eq:93.19}
+\end{equation}
+
+\textbf{Polarisation effects.} Polarisation effects in bremsstrahlung can be investigated by the same general method as was done in \S\,87 for the Compton effect. The question of the choice of 4-vectors $e^{(1)}$, $e^{(2)}$ in this case is particularly simple. Since it suffices in practice to consider the process in one specific reference frame (the rest frame of the nucleus), it is sufficient to set
+\[
+e^{(1)} = (0, \mathbf{e}^{(1)}), \quad e^{(2)} = (0, \mathbf{e}^{(2)}),
+\]
+where $\mathbf{e}^{(1)}$, $\mathbf{e}^{(2)}$ are unit vectors perpendicular to $\mathbf{k}$, one of which lies in the plane $\mathbf{kp}$ and the other is perpendicular to it.
+
+We shall not give here the rather cumbersome calculations themselves, but merely indicate some qualitative properties of the polarisation effects.
+
+\SourcePage{450}{455}
+
+These properties can be obtained with the aid of various symmetry relations, similarly to what was done in \S\,87 for the Compton effect.
+
+The theory expounded corresponds to the first Born approximation. In this approximation the cross section cannot contain a term proportional only to the vector of polarisation of one of the initial ($\boldsymbol{\zeta}$) or the final ($\boldsymbol{\zeta}'$) electron. The absence of a term $\propto \boldsymbol{\zeta}$ means that the complete (summed over photon polarisations and the polarisation of the secondary electron) bremsstrahlung cross section does not depend on the polarisation of the incident electron.
+
+Of the terms proportional to only the photon polarisation parameters ($\xi_1$, $\xi_2$, $\xi_3$), the one $\propto \xi_2$ is absent. This means that upon radiation by an unpolarised electron the photon does not possess circular polarisation. Here there is, however, a difference from the analogous result for the Compton effect. In the latter case such terms were forbidden by the impossibility of constructing a pseudoscalar from the only two independent vectors at our disposal $\mathbf{k}$ and $\mathbf{k}'$. In the case of bremsstrahlung there are three independent momenta ($\mathbf{p}$, $\mathbf{p}'$, $\mathbf{k}$), which suffice for the construction of a pseudoscalar ($\mathbf{k}[\mathbf{pp}']$). The term of the form $\xi_2'(\mathbf{k}[\mathbf{pp}'])$ does not contradict spatial parity and, strictly speaking, differs from zero. However, it is not invariant under the transformation (87.26) and therefore is absent in the first Born approximation.
+
+The existence of the pseudoscalar ($\mathbf{k}[\mathbf{pp}']$) leads also to the fact that along with the term $\propto \xi_3$ there also appears in the cross section a term $\propto \xi_1$ (in contrast to the situation in the Compton effect). The term of the form
+\[
+S_{\alpha\beta}\nu_\alpha(\mathbf{k}[\mathbf{pp}'])
+\]
+(where $\boldsymbol{\nu} = [\mathbf{kp}]$), invariant under spatial inversion as well as under the transformation~(87.26), is non-zero.
+
+When also the direction of the secondary electron is detected and recorded, the cross section contains the terms $\propto \xi_1$ (allowed in the cross section also for the Compton effect) and also $\propto \xi_1'$, disappearing upon integration over all directions of $\mathbf{p}'$.
+
+\SourcePage{451}{456}
+
+The degree of linear polarisation does not depend on the polarisation state of the incident electron: the correlation terms of the form $\xi_1'\boldsymbol{\zeta}$ and $\xi_3\boldsymbol{\zeta}$ are forbidden in the first Born approximation. However, the term $\xi_2'\boldsymbol{\zeta}$ is allowed, so that upon radiation by a polarised electron the photon possesses circular polarisation (\emph{Ya.~B.~Zeldovich}, 1952).
+
+\textbf{Screening.} The formulas obtained above are derived for a purely Coulomb field. If, however, one is dealing with radiation not from a ``bare'' nucleus but from an atom, then the screening of the nuclear charge by the atomic electrons, leading to a reduction of the cross section, must be taken into account. For this one must introduce into the potential of the external field $A_0^{(e)}(\mathbf{q})$ the atomic form factor $F(q)$ (see III, \S\,139). According to (139.2) (see III) this is achieved by the replacement of $Z$ by $Z - F(q)$. We determine under what conditions the screening is substantial.
+
+A definite value of $q$ in the form factor corresponds to distances $r \sim 1/q$ in the spatial distribution of the electronic charge in the atom. The form factor approaches the value $Z$ (complete screening) when $q \lesssim 1/a$, where $a$ is the dimensions of the atom.
+
+On the other hand, in the ultrarelativistic case a substantial contribution to the bremsstrahlung cross section arises, as we have seen above, already from the region of values of $q$ close to the smallest value which $q$ can have at given initial and final energies of the electron. In the ultrarelativistic case
+\begin{equation}
+q_\text{min} = p - p' - \omega = \sqrt{\varepsilon^2 - m^2} - \sqrt{\varepsilon'^2 - m^2} - (\varepsilon - \varepsilon') \approx \frac{m^2\omega}{2\varepsilon\varepsilon'}.
+\label{eq:93.20}
+\end{equation}
+
+\SourcePage{452}{457}
+
+Screening is substantial if $q_\text{min} \lesssim 1/a$ or
+\begin{equation}
+\frac{\varepsilon\varepsilon'}{m\omega} \gtrsim \frac{a}{1/m} = \frac{a\,m}{1}.
+\label{eq:93.21}
+\end{equation}
+This condition is always satisfied at sufficiently large energies of the incident electron.
+
+If $q_\text{min} \ll 1/a$ (``complete screening''), then with logarithmic accuracy one can immediately write the answer for the spectral distribution of the radiation. Indeed, under the sign of the logarithm in (93.17) just the left-hand side of inequality (93.21) stands, the logarithm that leads to it. Upon observing the inequality the integral over $dq$, giving rise to this logarithm, is cut off at the value of order of the right-hand side of inequality. According to the Thomas--Fermi model $a \sim a_0 Z^{-1/3}$, where $a_0 \sim 1/(me^2)$ is the Bohr radius (see III, \S\,70); then $am \sim 1/(\alpha Z^{1/3})$. Thus, under complete screening the logarithm in (93.17) should be replaced by $\ln(1/(\alpha Z^{1/3}))$.
+
+The ratio $\varkappa_\text{rad}/\varepsilon$ is also called the cross section of energy loss to radiation. For large $\varepsilon$ it grows logarithmically. This growth is eliminated, however, upon inclusion of screening. Under complete screening $\varkappa_\text{rad}/\varepsilon$ tends to a constant limit $\approx 4Z^2\alpha r_\mathrm{e}^2\ln(1/(\alpha Z^{1/3}))$.
+
+When an atom is bombarded, some radiation is produced not only on the nucleus but also on the electrons. We shall see below (see \S\,97) that in the ultrarelativistic case the cross section of the radiation of an electron on an electron differs from the cross section of radiation on the nucleus only by the absence of the factor $Z^2$. Therefore the presence of $Z$ atomic electrons can approximately be taken into account by the replacement of $Z^2$ by $Z(Z+1)$.
+
+\textbf{Energy loss.} The energy loss of the electron to radiation is characterised by the ``effective retardation'':
+\begin{equation}
+\varkappa_\text{rad} = \int_0^{\varepsilon-m} \omega\,d\sigma_\omega.
+\label{eq:93.22}
+\end{equation}
+
+Computation of the integral of $d\sigma_\omega$ from (93.17) leads to the following result\footnote{Though formula (93.17) is inapplicable close to the upper limit, this is inessential because of the convergence of the integral.}:
+\begin{equation}
+\begin{split}
+\varkappa_\text{rad} &= Z^2\alpha r_\mathrm{e}^2\varepsilon\biggl\{\frac{12\varepsilon^2 + 4m^2}{3\varepsilon p}\ln\frac{\varepsilon+p}{m} - \frac{(8\varepsilon + 6p)m^2}{3\varepsilon p^2}\ln^2\frac{\varepsilon+p}{m} - \frac{4}{3} + {} \\
+&\quad {} + \frac{2m^2}{\varepsilon p}\,F\!\left(\frac{2p(\varepsilon+p)}{m^2}\right)\biggr\},
+\end{split}
+\label{eq:93.23}
+\end{equation}
+where $F(\xi)$ is the Spence function, defined according to (131.19). In the non-relativistic case formula (93.23) goes over into
+\begin{equation}
+\varkappa_\text{rad} = \frac{16}{3}\,Z^2\alpha r_\mathrm{e}^2 m \quad \text{(n.r.)}
+\label{eq:93.24}
+\end{equation}
+(one uses $F(\xi) \approx \xi$ at $\xi \ll 1$---see (131.23)). This expression can, of course, be obtained also by direct integration of the non-relativistic Born formula (92.16). In the ultrarelativistic case
+\begin{equation}
+\varkappa_\text{rad} = 4Z^2\alpha r_\mathrm{e}^2\varepsilon\left(\ln\frac{2\varepsilon}{m} - \frac{1}{3}\right) \quad \text{(u.r.)}
+\label{eq:93.25}
+\end{equation}
+(when $\xi \gg 1$ we have $F(\xi) \approx \frac{1}{2}\ln^2\xi$---see (131.20); both terms with the square of the logarithm in (93.23) can then be omitted).
+
+When passing through a medium containing $N$ atoms per unit volume, a fast electron loses on average its energy to bremsstrahlung
+
+at the rate
+\[
+-\frac{d\varepsilon}{dx} = N\varepsilon\varkappa_\text{rad}/\varepsilon,
+\]
+where $\varkappa_\text{rad}/\varepsilon$ is the cross section of energy loss. For large $\varepsilon$ this ratio grows logarithmically (in the unscreened case). Under complete screening it tends to a constant, $\approx 4Z^2\alpha r_\mathrm{e}^2\ln(1/(\alpha Z^{1/3}))$.
