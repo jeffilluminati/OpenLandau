@@ -1,0 +1,264 @@
+\SourcePage{369}{374}
+\section{Ionization losses of fast particles}
+
+Let us consider the collisions of a fast relativistic particle with an atom, accompanied by excitation and ionisation of the latter. In the non-relativistic case such inelastic collisions were considered in~III, \S\S\,144--150; here we give a relativistic generalisation of the results obtained there (\textit{H.\,A.\,Bethe}, 1933).
+
+The velocity of the incident particle is assumed to be large in comparison with the velocities of the atomic electrons (thereby $Z\alpha \ll 1$, i.e.\ the atomic number is not too large). This condition ensures the applicability of the Born approximation to the process being considered.
+
+The solution of the problem is somewhat different depending on whether the fast particle is a light (electron, positron) or heavy (meson, proton, $\alpha$-particle and so on) one. We shall consider here the latter case, which is simpler.
+
+Let $p = (\varepsilon, \mathbf{p})$ and $p' = (\varepsilon', \mathbf{p}')$ be the initial and final 4-momenta of the fast particle in the laboratory system of reference, in which the atom before the collision was at rest; the difference $q = p' - p$ gives the energy and momentum transferred by the particle to the atom. Let us divide the whole range of possible momentum transfers to the atom into two regions:
+\begin{equation}
+\text{I)}\quad \frac{\mathbf{q}^2}{m} \ll m,\qquad \text{II)}\quad \frac{\mathbf{q}^2}{m} \gg I,
+\tag{82.1}
+\end{equation}
+where $m$ is the mass of the electron, $I$ is some average atomic energy (the ionisation potential of the atom). Both regions overlap each other when $I \ll \mathbf{q}^2/m \ll m$; this circumstance will permit making a precise matching of the results obtained for each of the regions. We shall speak of the values of $\mathbf{q}$ in the first and in the second regions respectively as small and large momentum transfers.
+
+\textbf{Small momentum transfers.} In this region the atomic electrons can be considered non-relativistic both in the initial and in the final states of the atom. The amplitude of the process is given by the expression
+\begin{equation}
+M_{fi}^{(n)} = e^2 J_{n0}^\mu(-q) J_{p'p}^\nu(q) D_{\mu\nu}(q),
+\tag{82.2}
+\end{equation}
+
+\SourcePage{370}{375}
+where $J_{n0}$ is the 4-current of transition of the atom from the initial~(0) to the final~($n$) state, $J_{p'p}$ is the 4-current of transition of the fast particle; these currents, which replace here the expressions $(\bar{u}'\gamma u)$ that would stand, for example, in the amplitude of scattering of two ``elementary'' particles---the electron and the muon~(73.17) (cf.\ also~(139.3)). The transition currents are taken in the momentum representation (see~(43.11)). The cross section of the process in the laboratory system of reference:
+\begin{equation}
+d\sigma_n = 2\pi\delta(\varepsilon - \varepsilon' - \omega_{n0})\left|M_{fi}^{(n)}\right|^2\frac{d^3p'}{2|\mathbf{p}|2\varepsilon'(2\pi)^3},
+\tag{82.3}
+\end{equation}
+where $\omega_{n0} = E_n - E_0$ is the frequency of transition between states of the atom. The final state may correspond both to a discrete and to a continuous spectrum; the first case corresponds to excitation, and the second to ionisation of the atom.
+
+The photon propagator is conveniently chosen in the present case in the Coulomb gauge~(76.14), in which only its spatial components are different from zero:
+\begin{equation}
+D_{ik}(q) = -\frac{4\pi}{\omega^2 - \mathbf{q}^2}\left(\delta_{ik} - \frac{q_i q_k}{\mathbf{q}^2}\right).
+\tag{82.4}
+\end{equation}
+Then in~(82.2) only the spatial components of the 4-currents of transition are needed.
+
+The atomic transition current $\mathbf{J}_{n0}(\mathbf{q})$ in the present case is the Fourier component of the usual non-relativistic expression:
+\begin{equation}
+\mathbf{J}_{n0}(\mathbf{q}) = \frac{i}{2m}\int e^{-i\mathbf{qr}}(\psi_0\boldsymbol{\nabla}\psi_n^* - \psi_n^*\boldsymbol{\nabla}\psi_0)\,d^3x,
+\tag{82.5}
+\end{equation}
+where $\psi_0$, $\psi_n$ are the atomic wave functions (with the summation sign over the atomic electrons, which for brevity of notation we omit here and below, to be understood).
+
+Prointegrating over the first member by parts, we may rewrite this expression in the form of the matrix element:
+\begin{equation}
+\mathbf{J}_{n0}(\mathbf{q}) = \frac{1}{2}(\mathbf{v}e^{-i\mathbf{qr}} + e^{-i\mathbf{qr}}\mathbf{v})_{n0},
+\tag{82.6}
+\end{equation}
+where $\hat{\mathbf{v}} = -\frac{i}{m}\boldsymbol{\nabla}$ is the operator of the velocity of the electron.
+
+As regards the current of transition of the scattered particle, in view of the relative smallness of its recoil ($|\mathbf{q}| \ll |\mathbf{p}|$) it can simply be replaced by the diagonal element
+\begin{equation}
+\mathbf{J}_{pp}(0) = 2\mathbf{p}z,
+\tag{82.7}
+\end{equation}
+corresponding to a classical rectilinear motion (cf.\ below~(99.5)); here is also introduced a factor $z$ that takes into account the possible difference of the charge of the particle ($ze$) from the electron charge.
+
+\SourcePage{371}{376}
+The smallness of $\mathbf{q}$ means also the smallness of the deflection angle of the particle~$\vartheta$. Furthermore, the longitudinal (with respect to~$\mathbf{p}$) and transverse components of $\mathbf{q}$ are
+\begin{equation}
+-q_\parallel \approx \frac{dp}{d\varepsilon}\omega_{n0} = \frac{\omega_{n0}}{v},\qquad q_\perp \approx |\mathbf{p}|\vartheta,
+\tag{82.8}
+\end{equation}
+so that $\mathbf{q}\mathbf{p} \approx -\varepsilon\omega_{n0}$.
+
+Substitution of~((82.4)--(82.8)) in~(82.2) gives, taking into account that
+\[
+M_{fi}^{(n)} = -\frac{4\pi ze^2}{q^2}\left\langle n\left|\frac{\varepsilon}{\omega_{n0}}(\mathbf{q}\mathbf{v}e^{-i\mathbf{qr}} + e^{-i\mathbf{qr}}\mathbf{q}\mathbf{v}) + (\mathbf{p}\mathbf{v}e^{-i\mathbf{qr}} + e^{-i\mathbf{qr}}\mathbf{p}\mathbf{v})\right|0\right\rangle.
+\]
+
+In the first member we note that
+\[
+\mathbf{q}\hat{\mathbf{v}}f + f\mathbf{q}\hat{\mathbf{v}} = 2i\hat{f},
+\]
+where $f \equiv e^{-i\mathbf{qr}}$ (see~III, \S\,149); therefore the matrix element of this operator coincides with the matrix element $2i(\hat{f})_{n0} = 2\omega_{n0}f_{n0}$. In the second member it suffices to replace, in view of the smallness of $\mathbf{q}$, $e^{-i\mathbf{qr}}$ by unity. Then
+\[
+M_{fi}^{(n)} = -\frac{8\pi ze^2}{q^2}\{\varepsilon(e^{-i\mathbf{qr}})_{n0} - i\mathbf{p}\mathbf{r}_{n0}\omega_{n0}\}.
+\]
+
+The square of the modulus of this expression:
+\begin{equation}
+\begin{split}
+\left|M_{fi}^{(n)}\right|^2 &= \frac{64\pi^2(ze)^2}{(\mathbf{q}^2)^2}\bigg\{\varepsilon^2\left|(e^{-i\mathbf{qr}})_{n0}\right|^2 + 2(\mathbf{q}\mathbf{r}_{n0})(\mathbf{p}\mathbf{r}_{n0})\varepsilon\omega_{n0} +{}\\
+&\qquad + (\mathbf{p}\mathbf{r}_{n0})^2\omega_{n0}^2\bigg\}
+\end{split}
+\tag{82.9}
+\end{equation}
+(in the second member it is assumed that $e^{-i\mathbf{qr}} \approx 1 - i\mathbf{qr}$; in the first member this cannot be done for the reason which will be clarified below---see remark on p.\,378).
+
+The energy losses of a fast particle as a result of its inelastic collisions with atoms\,\footnote{These losses are frequently called ionisation losses, although they are connected not only with ionisation but also with excitation of atoms.} are determined by the quantity
+\begin{equation}
+\varkappa = \sum_n\int\omega_{n0}\,d\sigma_n = \frac{1}{16\pi^2}\sum_n\int\omega_{n0}\left|M_{fi}^{(n)}\right|^2do',
+\tag{82.10}
+\end{equation}
+where the summation is carried out over all possible final states of the atom, and the integration over the directions of the scattered particle; we shall call this quantity the \textit{effective retardation} (the ratio $\varkappa/\varepsilon$ is called the \textit{cross section of energy losses}).
+
+\SourcePage{372}{377}
+The integration in~(82.10) can be carried out in two stages: as an averaging over the direction of $\mathbf{p}'$ relative to~$\mathbf{p}$ and then integration over $do' \approx 2\pi\vartheta\,d\vartheta$, where $\vartheta$ is the small angle of deflection. The first operation replaces $\mathbf{q}\mathbf{r}_{n0}$ by
+\[
+\mathbf{q}\mathbf{r}_{n0} \to q_\parallel x_{n0} = -\frac{\omega_{n0}}{v}x_{n0},
+\]
+where $x_{n0}$ is the matrix element of one of the Cartesian coordinates of the atomic electrons\,\footnote{It is immaterial which one: after the summation over the direction of the momentum, the matrix element $x_{n0}$ arising below no longer depends on the direction of the axis~$x$.}. The integration over $\vartheta$ can be replaced by integration over $q^2$, noting that
+\begin{equation}
+-q^2 = -\omega_{n0}^2 + \mathbf{q}^2 \approx -\omega_{n0}^2 + \frac{\omega_{n0}^2}{v^2} + \mathbf{p}^2\vartheta^2 = \frac{\omega_{n0}^2 M^2}{\mathbf{p}^2} + \mathbf{p}^2\vartheta^2
+\tag{82.11}
+\end{equation}
+and therefore $2\vartheta d\vartheta = d|q^2|/\mathbf{p}^2$ ($M$ is the mass of the fast particle). As a result we obtain
+\begin{equation}
+\varkappa = 4\pi(ze)^2\sum_n\int\left\{|(e^{-i\mathbf{qr}})_{n0}|^2\frac{\omega_{n0}}{v^2} - \omega_{n0}^3|x_{n0}|^2\left|\frac{M^2}{\mathbf{p}^2}+\frac{1}{v^2}\right|\right\}\frac{d|q^2|}{|q^2|^2}.
+\tag{82.12}
+\end{equation}
+
+The lower limit of integration over $q^2$:
+\begin{equation}
+|q^2|_\text{min} = \frac{M^2}{\mathbf{p}^2}\omega_{n0}^2.
+\tag{82.13}
+\end{equation}
+
+As the upper limit we shall choose a certain value $|q^2|_1$ such that
+\begin{equation}
+I \ll \frac{|q^2|_1}{m} \ll m,
+\tag{82.14}
+\end{equation}
+i.e.\ lying in the region of overlap of regions~I and~II (see~(82.1)).
+
+The integration and summation in~(82.12) is accomplished similarly to what was done in~III, \S\,149 for the non-relativistic case. Let us divide the whole interval of integration into two parts still: a)~from $|q^2|_\text{min}$ to $|q^2|_0$ and b)~from $|q^2|_0$ to $|q^2|_1$, where the value $|q^2|_0$ is such that
+\begin{equation}
+\frac{IM}{|\mathbf{p}|} \ll \sqrt{|q^2|_0} \ll m\alpha
+\tag{82.15}
+\end{equation}
+(the quantity $m\alpha$ is of the order of the magnitudes of the momenta of the atomic electrons). In region~a) one can expand $e^{-i\mathbf{qr}} \approx 1 - i\mathbf{qr}$, and the contribution of this region to $\varkappa$ takes the form
+\[
+4\pi(ze)^2\sum_n\int_{|q^2|_\text{min}}^{|q^2|_0}\left\{\frac{1}{v^2}\omega_{n0}|x_{n0}|^2\frac{1}{|q^2|}-\frac{M^2}{\mathbf{p}^2}\omega_{n0}^3|x_{n0}|^2\frac{1}{|q^2|^2}\right\}d|q^2| \approx
+\]
+\[
+\approx \frac{4\pi(ze)^2}{v^2}\sum_n\omega_{n0}|x_{n0}|^2\left[\ln\frac{|q^2|_0\mathbf{p}^2}{M^2\omega_{n0}^2} - v^2\right].
+\]
+
+(The integration in the second member can be extended to infinity.)
+
+The summation is accomplished with the help of the formula
+\begin{equation}
+\sum_n\omega_{n0}|x_{n0}|^2 = \frac{Z}{2m},
+\tag{82.16}
+\end{equation}
+
+\SourcePage{373}{378}
+where $Z$ is the number of electrons in the atom (see~III,~(149.10)). The result can be represented in the form
+\begin{equation}
+\frac{2\pi(ze)^2 Z}{mv^2}\left[\ln\frac{|q^2|_0\mathbf{p}^2}{M^2 I^2} - v^2\right],
+\tag{82.17}
+\end{equation}
+where $I$ is a certain average atomic energy, defined by the formula
+\begin{equation}
+\ln I = \frac{\sum_n\omega_{n0}|x_{n0}|^2\ln\omega_{n0}}{\sum_n\omega_{n0}|x_{n0}|^2} = \frac{2m}{Z}\sum_n\omega_{n0}|x_{n0}|^2\ln\omega_{n0}.
+\tag{82.18}
+\end{equation}
+
+In region~b) we have, according to~(82.11), $|q^2| \approx \mathbf{p}^2\vartheta^2$, i.e.\ $|q^2|$ does not depend on the number $n$ of the final state of the atom; $n$ also does not affect the limits of integration. Therefore the summation over $n$ in~(82.12) can be carried out under the integral sign. In the first member it is accomplished by the formula
+\begin{equation}
+\sum_n|(e^{-i\mathbf{qr}})_{n0}|^2\omega_{n0} = \frac{Z}{2m}|q^2|
+\tag{82.19}
+\end{equation}
+(see~III,~(149.5)), and the integral from it is equal to\,\footnote{The logarithmic divergence of the integral at the upper limit is precisely the reason why in the first member in~(82.12) it was not possible to expand $e^{-i\mathbf{qr}}$ in powers of~$\mathbf{q}$.}
+\[
+\frac{2\pi Z(ze)^2}{mv^2}\ln\frac{|q^2|_1}{|q^2|_0}.
+\]
+
+The integral from the second member in~(82.12) in this region gives a negligible contribution to~$\varkappa$.
+
+\SourcePage{374}{379}
+Combining the last formula with~(82.17), we find the contribution to $\varkappa$ from the whole region of small momentum transfers:
+\begin{equation}
+\frac{2\pi Z(ze)^2}{mv^2}\left[\ln\frac{|q^2|_1\mathbf{p}^2}{M^2 I^2} - v^2\right].
+\tag{82.20}
+\end{equation}
+
+\textbf{Large momentum transfers.} Let us turn to collisions with momentum transfer large in comparison with the momentum of the atomic electrons ($\mathbf{q}^2 \gg mI$). In this region one can, obviously, neglect the binding of the electrons in the atom, i.e.\ consider their scattering free. Correspondingly, the collision of the fast particle with the atom will represent in this case the elastic scattering on each of the $Z$ atomic electrons individually. Due to the large velocity of the fast particle the atomic electrons can be considered initially at rest.
+
+Let us denote by $m\Delta$ the energy transferred by the fast particle to the atomic electron, and let $d\sigma_\Delta$ be the cross section of elastic scattering with such transfer. The differential effective retardation on each atom will then be
+\begin{equation}
+d\varkappa = Zm\Delta\,d\sigma_\Delta.
+\tag{82.21}
+\end{equation}
+
+The maximum energy that can be transferred to the resting electron by a collision with a particle of mass $M \gg m$ is
+\begin{equation}
+m\Delta_\text{max} = \frac{2m\mathbf{p}^2}{m^2 + M^2 + 2m\varepsilon} \approx \frac{2m\mathbf{p}^2}{M^2 + 2m\varepsilon},
+\tag{82.22}
+\end{equation}
+where $\varepsilon$ and $\mathbf{p}$ are the energy and momentum of the incident particle (see~II,~(13.13)). We shall assume further that the energy $\varepsilon$ although it can be ultrarelativistic ($\varepsilon \gg M$), is at the same time
+\begin{equation}
+\varepsilon \ll \frac{M^2}{m}.
+\tag{82.23}
+\end{equation}
+Then the maximal transferred energy
+\begin{equation}
+m\Delta_\text{max} \approx \frac{2m\mathbf{p}^2}{M^2} = 2mv^2\gamma^2,\qquad \gamma = \frac{1}{\sqrt{1-v^2}}
+\tag{82.24}
+\end{equation}
+remains small in comparison with the original kinetic energy of the incident particle ($m\Delta_\text{max} \ll \varepsilon - M$). Correspondingly the momentum transfer $\mathbf{q}$ also remains always small in comparison with the initial momentum of the particle~$\mathbf{p}$. This circumstance permits one to consider the motion of the latter not changing during the collision, i.e.\ to consider the incident particle as infinitely heavy. Then the scattering cross section is obtained simply by transformation of the cross section of scattering of the electron on a stationary Coulomb centre~(80.7) to the laboratory system of reference in which the electron
+
+\SourcePage{375}{380}
+was initially at rest. This is easy to do, noting that in the indicated approximation
+\[
+-q^2 \approx \mathbf{q}^2 = 4\mathbf{p}^2\sin^2\frac{\theta}{2},\qquad do' = \frac{\pi d|q^2|}{\mathbf{p}^2},
+\]
+and the relative velocity $v$ is the same in both systems. Formula~(80.7) takes the form
+\[
+d\sigma = \frac{4\pi(ze)^2}{v^2}\left(1 - \frac{|q^2|}{4m^2\gamma^2}\right)\frac{d|q^2|}{|q^2|^2}.
+\]
+
+The energy transfer $\Delta$ is expressed through the same invariant $q^2$: according to~$-q^2 = 2m^2\Delta$. Therefore we have\,\footnote{In this formula, of course, specific effects of strong interactions are not taken into account, if the heavy particle is a hadron. These effects (the hadronic form factor), however, become important only for $|q^2| \propto 1/M^2$, and for the condition~(82.22) such momentum transfers are excluded.}
+\begin{equation}
+d\sigma_\Delta = \frac{2\pi(ze)^2}{mv^2}\left(1 - v^2\frac{\Delta}{\Delta_\text{max}}\right)\frac{d\Delta}{\Delta^2}.
+\tag{82.25}
+\end{equation}
+
+The contribution to the effective retardation from the region of momentum transfers under consideration is obtained by integrating~(82.21) from the previously introduced boundary $|q^2|_1$ to $|q^2|_\text{max} = 2m^2\Delta_\text{max}$. It equals
+\begin{equation}
+\frac{2\pi(ze)^2 Z}{mv^2}\left(\ln\frac{2\Delta_\text{max}m^2}{|q^2|_1} - v^2\right).
+\tag{82.26}
+\end{equation}
+
+Finally, adding the contributions~(82.20) and~(82.25), we obtain the following result for the total ionisation losses of a fast heavy particle:
+\begin{equation}
+\varkappa = \frac{4\pi Z(ze)^2}{mv^2}\left(\ln\frac{2mv^2}{I(1-v^2/c^2)} - \frac{v^2}{c^2}\right)
+\tag{82.27}
+\end{equation}
+(in ordinary units). In the non-relativistic limit from this one recovers the previous formula~(150.10) (see~III):
+\begin{equation}
+\varkappa = \frac{4\pi Z(ze)^2}{mv^2}\ln\frac{2mv}{I},
+\tag{82.28}
+\end{equation}
+and in the ultrarelativistic case
+\begin{equation}
+\varkappa = \frac{4\pi Z(ze)^2}{mc^2}\left(\ln\frac{2mc^2}{I(1-v^2/c^2)} - 1\right).
+\tag{82.29}
+\end{equation}
+
+The retardation depends only on the velocity (but not on the mass) of the fast particle. The decrease of the retardation with increasing velocity of the fast particle, according to~(82.27), is replaced in the ultrarelativistic region by a slow (logarithmic) growth.
+
+\SourcePage{376}{381}
+\textbf{Problems}
+
+\textbf{1.} Determine the effective retardation of a relativistic electron.
+
+\textbf{Solution.} For the region of small momentum transfers the result is the same as the expression~(82.20). For the region of large transfers, instead of~(82.24), one should use formula~(81.14), taking into account the exchange effects. Integrating $\Delta\,d\sigma_\Delta$ from $d\Delta$ over $|q^2|_1/2m^2$ to $(\gamma - 1)/2$ and combining with~(82.20), we find
+\begin{equation}
+\varkappa = \frac{2\pi Ze^4}{mv^2}\left[\ln\frac{m^2(\gamma^2-1)(\gamma-1)}{2I^2}  - \left(\frac{2}{\gamma}-\frac{1}{\gamma^2}\right)\ln 2 + \frac{1}{\gamma^2} + \frac{(\gamma-1)^2}{8\gamma^2}\right]. \tag{1}
+\end{equation}
+
+In the non-relativistic case from this one recovers the formula from Problem to \S\,149 in~III, and in the ultrarelativistic ($\gamma \gg 1$)
+\begin{equation}
+\varkappa = \frac{2\pi Ze^4}{mc^2}\left(\ln\frac{m^2c^4\gamma^3}{2I^2} + \frac{1}{8}\right). \tag{2}
+\end{equation}
+
+\textbf{2.} The same for the positron.
+
+\textbf{Solution.} For $d\sigma_\Delta$ in the region of large transfers one should use~(81.23), with the upper limit of integration over $\Delta$ being $\gamma - 1$. The answer in the ultrarelativistic case:
+\[
+\varkappa = \frac{2\pi Ze^4}{mc^2}\left(\ln\frac{2m^2c^4\gamma^3}{I^2} - \frac{23}{12}\right).
+\]

@@ -1,0 +1,204 @@
+\SourcePage{388}{393}
+\section{Interaction of atoms at large distances}
+
+Between two neutral atoms, situated at large (in comparison with their own dimensions) distances~$r$, there act forces of attraction. The ordinary quantum-mechanical calculation of these forces (see~III, \S\,89) becomes, however, inapplicable at too large distances. The point is that in this calculation only the electrostatic interaction is considered, i.e.\ retardation effects are not taken into account. This consideration is valid only so long as the distance $r$ remains small in comparison with the characteristic wavelengths $\lambda_0$ in the spectra of the interacting atoms. In this paragraph we shall carry out a calculation free from such a restriction.
+
+We shall proceed in approximately the same way as in~\S\,83, i.e.\ we shall compute in the first non-vanishing approximation the amplitude of elastic scattering (without change of internal state) of two different atoms. The obtained expression will be compared with the amplitude that would arise in describing the interaction of atoms by a potential energy $U(r)$.
+
+In the latter case the first non-vanishing element of the $S$-matrix describing the given process would be the element of the first approximation of perturbation theory:
+\begin{equation}
+S_{fi} = -i\int\psi_1'^*\psi_2'^*U(r)\psi_1\psi_2\,d^3x_1\,d^3x_2\times
+\end{equation}
+\[
+\times\int\exp\{-i(\varepsilon_1 + \varepsilon_2 - \varepsilon_1' - \varepsilon_2')t\}\,dt.
+\tag{85.1}
+\]
+Here $\psi_1$, $\psi_2$ and $\psi_1'$, $\psi_2'$ are the time-independent parts of the wave functions (plane waves) describing the translational motion of the atoms with initial and final momenta; $\varepsilon_1$, $\varepsilon_2$ and $\varepsilon_1'$, $\varepsilon_2'$ are the kinetic energies of this motion; the coordinates $\mathbf{r}_1$ and $\mathbf{r}_2$ of the atoms as a whole may be understood as the coordinates of their nuclei, and the distance $r = |\mathbf{r}_1 - \mathbf{r}_2|$. The temporal integral gives, as usual, the $\delta$-function expressing the law of conservation of energy.
+
+The actual computation of the elastic scattering amplitude can be split, under the assumptions made, into two stages. First we average the $S$-operator over the wave functions of the unchanged (ground) states of both atoms (for given coordinates of their nuclei $\mathbf{r}_1$ and $\mathbf{r}_2$), and also over the photon vacuum---in the initial and final states of the process there are no photons. As a result we obtain a quantity which is a function of the distance between the nuclei; let us denote it by $\langle S(r)\rangle$\,\footnote{Instead of a more cumbersome notation for the diagonal matrix element with indication of the states of the atom and photon field.}. To find the desired matrix element of transition, one must then compute the integral
+\begin{equation}
+S_{fi} = \int\psi_1'^*\psi_2'^*\langle S(r)\rangle\psi_1\psi_2\,d^3x_1\,d^3x_2.
+\tag{85.3}
+\end{equation}
+
+\SourcePage{389}{394}
+Comparing with~(85.2), we see that if one obtains for $\langle S(r)\rangle$ the expression
+\[
+\langle S(r)\rangle = -itU(r),
+\]
+then $U(r)$ will be the desired energy of interaction of the atoms.
+
+Since we have to deal in this case with collisions not of elementary particles but of complex systems (atoms, which in the intermediate states can be excited), the usual formal rules of diagram technique are here directly inapplicable, and we start from the initial expression for the $S$-operator in the form of the expansion~(72.10).
+
+For the interaction of atoms only the components of the fields with frequencies of the order of atomic (and smaller) are important. The corresponding wavelengths are large in comparison with atomic dimensions. Therefore the operator of electromagnetic interaction may be taken in the form
+\begin{equation}
+\hat{V} = -\hat{\mathbf{E}}(\mathbf{r}_1)\hat{\mathbf{d}}_1 - \hat{\mathbf{E}}(\mathbf{r}_2)\hat{\mathbf{d}}_2,
+\tag{85.4}
+\end{equation}
+where $\hat{\mathbf{d}}_1$, $\hat{\mathbf{d}}_2$ are the operators of the dipole moments of the atoms (the Heisenberg operators, depending on time are meant), and $\hat{\mathbf{E}}(\mathbf{r})$ is the operator of the electric field, which is evaluated at the points of location of the corresponding atoms.
+
+As is well known, the average values of the dipole moment of the atom in its stationary states are zero (see~III, \S\,75). From this it follows that the non-zero scattering amplitude will appear only in the fourth approximation of perturbation theory, i.e.\ as the matrix element of the operator
+\begin{equation}
+\hat{S}^{(4)} = \frac{(-i)^4}{4!}\int dt_1\ldots\int dt_4\cdot\mathrm{T}\{\hat{V}(t_1)\hat{V}(t_2)\hat{V}(t_3)\hat{V}(t_4)\}.
+\tag{85.5}
+\end{equation}
+
+\SourcePage{390}{395}
+Indeed, in lower orders each member in the products of the operators $\hat{V}$ will contain at most one of the operators $\hat{\mathbf{d}}_1$ or $\hat{\mathbf{d}}_2$ to the first power and upon averaging over the state of the corresponding atom will vanish.
+
+We average the operator~(85.5) over the photon vacuum. By Wick's theorem the average of the product of four operators of the field $\hat{\mathbf{E}}$ reduces to the sum of products of their pairwise averages (contractions). The splitting into pairs can be accomplished in three ways, which can be depicted by diagrams:
+% [Diagram (85.6): Three diagrams showing pairwise contractions of four vertices at points 1,2,3,4 connected by dashed lines]
+\begin{equation}
+\tag{85.6}
+\end{equation}
+where the dashed lines depict the contractions, and the numbers correspond to the arguments $t_1$, $t_2$, $t_3$, $t_4$. Furthermore, each point may correspond to the spatial coordinates $\mathbf{r}_1$ or $\mathbf{r}_2$ (since at each point one of the summands in the operator $\hat{V}$ of the operators $\hat{\mathbf{d}}_1$ or $\hat{\mathbf{d}}_2$ enters to the first power and upon averaging over the state of each atom will vanish). Obviously, in the points connected by lines there should stand different $\mathbf{r}_1$ and $\mathbf{r}_2$. In the opposite case the diagram (i.e.\ the corresponding member in the matrix element) would reduce to a product of independent functions of $\mathbf{r}_1$ and of $\mathbf{r}_2$, instead of being a function of the difference $\mathbf{r}_1 - \mathbf{r}_2$; such terms have no relation to scattering\,\footnote{They give corrections not of interest to us here to the self-energies of each of the atoms.}. In accordance with these conditions one can assign to the four points of the diagrams the arguments $\mathbf{r}_1$ and $\mathbf{r}_2$ in four ways. Taking also the commutativity of the operators $\hat{\mathbf{d}}_1$ and $\hat{\mathbf{d}}_2$, and averaging over the state of each of the atoms, into account, we find that all the resulting $3\cdot 4 = 12$ members are identical (they differ only in the labelling of the variables of integration).
+
+As a result we obtain
+\begin{equation}
+\begin{split}
+\langle S(r)\rangle &= \frac{1}{2}\int dt_1\ldots\int dt_4\cdot\langle\mathrm{T}(E_i(\mathbf{r}_1,t_1)E_k(\mathbf{r}_2,t_2))\rangle\times\\
+&\quad\times\langle\mathrm{T}(E_l(\mathbf{r}_2,t_3)E_m(\mathbf{r}_1,t_4))\rangle\times\\
+&\quad\times\langle\mathrm{T}(d_{1i}(t_1)d_{1m}(t_4))\rangle\langle\mathrm{T}(d_{2k}(t_2)d_{2l}(t_3))\rangle,
+\end{split}
+\tag{85.7}
+\end{equation}
+where $i$, $k$, \ldots\ are three-dimensional vector indices.
+
+\SourcePage{391}{396}
+For computing the quantities
+\begin{equation}
+D_{ik}^E(x_1-x_2) = \langle\mathrm{T}(E_i(x_1)E_k(x_2))\rangle
+\tag{85.8}
+\end{equation}
+we use the gauge of the potentials in which the scalar potential $\Phi = 0$. Then $\hat{\mathbf{E}} = -\partial\hat{\mathbf{A}}/dt$, and we have
+\[
+D_{ik}^E(x_1-x_2) = \frac{\partial^2}{\partial t_1\partial t_2}\langle\mathrm{T}(A_i(x_1)A_k(x_2))\rangle = i\frac{\partial^2}{\partial t^2}D_{ik}(x),
+\]
+where $x = x_1 - x_2$, and $D_{ik}(x)$ is the photon propagator in the given gauge\,\footnote{The first derivative $\frac{\partial}{\partial t}D_{ik}(t)$ has a finite jump at $t = 0$. Therefore the second derivative, i.e.\ the function $D_{ik}^E(t)$, contains also a $\delta$-function term ($\sim\delta^{(4)}(x_2-x_1)$). This term, however, is zero for all $\mathbf{r}_1 \neq \mathbf{r}_2$ and does not concern us here.}.
+
+It will be more convenient below to use the propagator $D_{ik}(\omega, \mathbf{r})$ in the mixed $\omega$, $\mathbf{r}$-representation, which is related to $D_{ik}(t, \mathbf{r})$ by the relation
+\[
+D_{ik}(t,\mathbf{r}) = \int D_{ik}(\omega,\mathbf{r})e^{-i\omega t}\frac{d\omega}{2\pi}.
+\]
+
+With this
+\begin{equation}
+D_{ik}^E(t,\mathbf{r}) = -i\int\omega^2 D_{ik}(\omega,\mathbf{r})e^{-i\omega t}\frac{d\omega}{2\pi}.
+\tag{85.9}
+\end{equation}
+
+The quantities
+\begin{equation}
+\alpha_{ik}(t_1-t_2) = i\langle\mathrm{T}(d_i(t_1)d_k(t_2))\rangle
+\tag{85.10}
+\end{equation}
+we expand into the Fourier integral
+\[
+\alpha_{ik}(t) = \int e^{-i\omega t}\alpha_{ik}(\omega)\frac{d\omega}{2\pi}.
+\]
+Setting for convenience $t_2 = 0$, $t_1 = t$, we write down the T-product by definition
+\begin{equation}
+\alpha_{ik}(\omega) = \int_{-\infty}^{\infty}e^{i\omega t}\alpha_{ik}(t)\,dt =
+\end{equation}
+\[
+= i\int_{-\infty}^{0}e^{i\omega t}\langle d_k(0)d_i(t)\rangle\,dt + i\int_0^\infty e^{i\omega t}\langle d_i(t)d_k(0)\rangle\,dt.
+\tag{85.11}
+\]
+
+\SourcePage{392}{397}
+The averages entering here (over the ground state of the atom) are expressed through the matrix elements of the dipole moment:
+\[
+\langle d_k(0)d_i(t)\rangle = \sum_n(d_k)_{0n}(d_i)_{n0}e^{i\omega_{n0}t},
+\]
+\[
+\langle d_i(t)d_k(o)\rangle = \sum_n(d_i)_{0n}(d_k)_{n0}e^{-i\omega_{n0}t}.
+\]
+
+For the convergence of the integrals in~(85.11) one must understand $\omega$ in the first of them as $\omega - i0$, and in the second as $\omega + i0$. Carrying out the integration, we obtain
+\begin{equation}
+\alpha_{ik}(\omega) = \sum_n\left\{\frac{(d_i)_{0n}(d_k)_{n0}}{\omega_{n0}-\omega-i0}+\frac{(d_k)_{0n}(d_i)_{n0}}{\omega_{n0}+\omega+i0}\right\}.
+\tag{85.12}
+\end{equation}
+
+If the ground state is an $S$-state, then this tensor reduces to a scalar: $\alpha_{ik} = \alpha\delta_{ik}$, where
+\begin{equation}
+\alpha(\omega) = \frac{1}{3}\sum_n|\mathbf{d}_{0n}|^2\left(\frac{1}{\omega_{n0}-\omega-i0}+\frac{1}{\omega_{n0}+\omega+i0}\right).
+\tag{85.13}
+\end{equation}
+
+If the atom possesses angular momentum, then the same result is obtained after averaging over its directions, which is to be understood (for our purposes, the interaction of atoms averaged over their mutual orientations).
+
+Comparing~(85.12) with expression~(59.17), we see that $\alpha_{ik}(\omega)$ coincides with the tensor of coherent scattering of a photon of frequency $\omega$ on the atom. According to~(59.23) $\alpha(\omega)$ at $\omega > 0$ coincides with the polarisability of the atom. The values of $\alpha(\omega)$ at $\omega < 0$ are expressed through the values at $\omega > 0$ with the help of the obvious from~(85.13) relation $\alpha(-\omega) = \alpha(\omega)$.
+
+Substituting the obtained expressions in~(85.7), we find
+\begin{equation}
+\begin{split}
+\langle S(r)\rangle &= \frac{1}{2}\int dt_1\ldots dt_4\,\frac{d\Omega_1}{2\pi}\,\frac{d\Omega_2}{2\pi}\,\frac{d\omega_1}{2\pi}\,\frac{d\omega_2}{2\pi}\times\\
+&\quad\times\alpha_1(\Omega_1)\alpha_2(\Omega_2)\omega_1^2 D_{ik}(\omega_1,\mathbf{r})\omega_2^2 D_{ik}(\omega_2,\mathbf{r})\times\\
+&\quad\times\exp\{-i\omega_1(t_1-t_2)-i\omega_2(t_3-t_4)-i\Omega_1(t_1-t_4)-i\Omega_2(t_2-t_3)\}
+\end{split}
+\end{equation}
+($\mathbf{r} = \mathbf{r}_1 - \mathbf{r}_2$; we have also taken into account the evenness of the function $D_{ik}(\omega, \mathbf{r})$ in $\mathbf{r}$).
+
+Integration over three of the times gives $\delta$-functions (by virtue of which $-\Omega_1 = \Omega_2 = \omega_2 = \omega_1$), and over the fourth---the factor~$t$:
+\[
+\langle S(r)\rangle = -itU(r),
+\]
+where
+\begin{equation}
+U(r) = \frac{i}{2}\int_{-\infty}^{\infty}\omega^4\alpha_1(\omega)\alpha_2(\omega)[D_{ik}(\omega,\mathbf{r})]^2\frac{d\omega}{2\pi}.
+\tag{85.14}
+\end{equation}
+
+\SourcePage{393}{398}
+This formula determines the energy of interaction of two atoms at any distances large in comparison with the atomic dimensions~$a$. It remains to find and substitute into it the explicit expression for the function $D_{ik}(\omega, \mathbf{r})$.
+
+Comparing expressions~(76.14) and~(76.8) with one another, we find that
+\[
+D_{ik}(\omega, \mathbf{k}) = \left(\delta_{ik} - \frac{k_ik_k}{\omega^2}\right)D(\omega, \mathbf{k}),
+\]
+where $D$ is given by formula~(76.8). In the $\omega$, $\mathbf{r}$-representation this relation is expressed, evidently, by the equality
+\begin{equation}
+D_{ik}(\omega, \mathbf{r}) = -\left(\delta_{ik} + \frac{1}{\omega^2}\frac{\partial^2}{\partial x_i\partial x_k}\right)D(\omega, \mathbf{r}).
+\tag{85.15}
+\end{equation}
+
+Substituting here $D(\omega, \mathbf{r})$ from~(76.16) and performing the differentiation, we find
+\begin{equation}
+D_{ik}(\omega, \mathbf{r}) = \left[\delta_{ik}\left(1+\frac{i}{|\omega|r}-\frac{1}{\omega^2r^2}\right)+\frac{x_ix_k}{r^2}\left(\frac{3}{\omega^2r^2}-\frac{3i}{|\omega|r}-1\right)\right]\frac{e^{i|\omega|r}}{r}.
+\tag{85.16}
+\end{equation}
+
+Finally, substituting this expression in~(85.14), after simple transformations taking into account the evenness of the function $\alpha(\omega)$ we obtain the following final expression for the energy of interaction of atoms:
+\[
+U(r) =
+\]
+\begin{equation}
+= \frac{i}{\pi r^2}\int_0^\infty\omega^4\alpha_1(\omega)\alpha_2(\omega)e^{2i\omega r}\left[1+\frac{2i}{\omega r}-\frac{5}{(\omega r)^2}-\frac{6i}{(\omega r)^3}+\frac{3}{(\omega r)^4}\right]d\omega.
+\tag{85.17}
+\end{equation}
+
+This general expression can be simplified in the limiting cases of ``small'' ($a \ll r \ll \lambda_0$) and ``large'' ($r \gg \lambda_0$) distances.
+
+When $r \ll \lambda_0$, in the integral the values $\omega\sim\omega_0$ are important (see below), where $\omega_0\sim c/\lambda_0$ are atomic frequencies; therefore $\omega r \ll 1$. In this case one can retain in the square brackets only the last member and replace the exponential by unity. Writing the integral from $-\infty$ to $\infty$ (with the aim of further transformation), we find
+\begin{equation}
+U(r) = \frac{3i}{2\pi r^6}\int_{-\infty}^{\infty}\alpha_1(\omega)\alpha_1(\omega)\,d\omega.
+\tag{85.18}
+\end{equation}
+
+As expected, we have obtained for the interaction the law $1/r^6$. The integral in this formula is easily
+
+\SourcePage{394}{399}
+computed, after substituting into it $\alpha(\omega)$ from~(85.13), by closing the contour of integration by an infinitely distant semicircle in the lower half-plane of the complex variable~$\omega$; at this the integral is determined by the residues of the subintegral expression in the poles $\omega = \omega_{n0}\sim\omega_0$. Assuming for simplicity of notation that both atoms are identical, we obtain (in ordinary units):
+\begin{equation}
+U(r) = -\frac{2}{3r^6}\sum_{n,n'}\frac{|\mathbf{d}_{0n}|^2|\mathbf{d}_{0n'}|^2}{\hbar(\omega_{n0}+\omega_{n'0})},
+\tag{85.19}
+\end{equation}
+which coincides with the London formula (see~III, \S\,89, Problem).
+
+In the opposite limiting case of large distances, $r \gg \lambda_0$, in the integral the values $\omega \lesssim c/r \ll \omega_0$ are important; when $\omega \gtrsim \omega_0$ the integral is rapidly quenched by the oscillating factor $\exp(2i\omega r)$. Therefore one can replace $\alpha_1(\omega)$ and $\alpha_2(\omega)$ by their static values $\alpha_1(0)$ and $\alpha_2(0)$. After this the integration is carried out elementarily (for ensuring convergence one should replace $r \to r + i0$ in the exponent). As a result we finally obtain (in ordinary units):
+\begin{equation}
+U(r) = -\frac{23}{4\pi}\,\frac{\hbar c\alpha_1(0)\alpha_2(0)}{r^7}
+\tag{85.20}
+\end{equation}
+(\textit{H.\,B.\,G.\,Casimir, D.\,Polder}, 1948)\,\footnote{In the outlined derivation we partially followed \textit{I.\,E.\,Dzyaloshinskii}~(1956).}.

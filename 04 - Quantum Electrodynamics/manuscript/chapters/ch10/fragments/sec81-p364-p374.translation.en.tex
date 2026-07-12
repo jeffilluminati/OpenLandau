@@ -1,0 +1,399 @@
+\SourcePage{359}{364}
+\section{Scattering of electrons and positrons on an electron}
+
+Let us consider the scattering of an electron on an electron: two electrons with 4-momenta $p_1$, $p_2$ collide, acquiring 4-momenta $p_1'$, $p_2'$. Conservation of 4-momentum is expressed by the equality
+\begin{equation}
+p_1 + p_2 = p_1' + p_2'.
+\tag{81.1}
+\end{equation}
+Below we shall use the kinematic invariants introduced in~\S\,66, defined as
+\begin{equation}
+\begin{split}
+s &= (p_1 + p_2)^2 = 2(m^2 + p_1 p_2),\\
+t &= (p_1 - p_1')^2 = 2(m^2 - p_1 p_1'),\\
+u &= (p_1 - p_2')^2 = 2(m^2 - p_1 p_2'),\\
+&\quad s + t + u = 4m^2.
+\end{split}
+\tag{81.2}
+\end{equation}
+
+\SourcePage{360}{365}
+The process under consideration is depicted by two Feynman diagrams~(73.13), (73.14), and its amplitude equals\,\footnote{This form of $M_{fi}$ is in agreement with the general expression~(70.5). In the first non-vanishing approximation of perturbation theory only one of the five invariant amplitudes differs from zero: $f_3(t,u) = 4\pi e^2/t$.}
+\begin{equation}
+M_{fi} = 4\pi e^2\left\{\frac{1}{t}(\bar{u}_2'\gamma^\mu u_2)(\bar{u}_1'\gamma_\mu u_1) - \frac{1}{u}(\bar{u}_1'\gamma^\nu u_2)(\bar{u}_2'\gamma_\nu u_1)\right\}.
+\tag{81.3}
+\end{equation}
+
+According to the rules stated in~\S\,65 for the states of initial and final particles, described by the polarisation density matrices $\rho_1$, $\rho_1'$, \ldots, we replace
+\begin{equation}
+\begin{split}
+|M_{fi}|^2 \to 16\pi^2 \alpha^2 e^4\bigg\{&\frac{1}{t^2}\operatorname{Sp}(\rho_2'\gamma^\mu\rho_2\gamma^\nu)\operatorname{Sp}(\rho_1'\gamma_\mu\rho_1\gamma_\nu) +{}\\
+&+ \frac{1}{u^2}\operatorname{Sp}(\rho_1'\gamma^\mu\rho_2\gamma^\nu)\operatorname{Sp}(\rho_2'\gamma_\mu\rho_1\gamma_\nu) -{}\\
+&- \frac{1}{tu}\operatorname{Sp}(\rho_2'\gamma^\mu\rho_2\gamma^\nu\rho_1'\gamma_\mu\rho_1\gamma_\nu) -{}\\
+&- \frac{1}{tu}\operatorname{Sp}(\rho_1'\gamma^\mu\rho_2\gamma^\nu\rho_2'\gamma_\mu\rho_1\gamma_\nu)\bigg\}.
+\end{split}
+\tag{81.4}
+\end{equation}
+
+For the scattering of unpolarised electrons (not concerning ourselves with their polarisation after scattering) we must set for all density matrices $\rho = \frac{1}{2}(\gamma p + m)$, multiplying the result by $2\cdot 2 = 4$ (averaging over the polarisations of the two initial and summing over the polarisations of the two final electrons). The scattering cross section is determined by formula~(64.23), in which one must set, according to~(64.15a), $I^2 = \frac{1}{4}s(s - 4m^2)$. Let us represent the cross section in the form
+\begin{equation}
+d\sigma = dt\,\frac{4\pi\alpha^2}{s(s - 4m^2)}\{f(t,u) + g(t,u) + f(u,t) + g(u,t)\},
+\tag{81.5}
+\end{equation}
+\begin{equation}
+\begin{split}
+f(t,u) &= \frac{1}{16t^2}\operatorname{Sp}[(\gamma p_2' + m)\gamma^\mu(\gamma p_2 + m)\gamma^\nu]\times\\
+&\qquad\qquad\times\operatorname{Sp}[(\gamma p_1' + m)\gamma_\mu(\gamma p_1 + m)\gamma_\nu],
+\end{split}
+\end{equation}
+\begin{equation}
+g(t,u) = -\frac{1}{16tu}\operatorname{Sp}[(\gamma p_2' + m)\gamma^\mu(\gamma p_2 + m)\gamma^\nu(\gamma p_1' + m)\gamma_\mu(\gamma p_1 + m)\gamma_\nu].
+\end{equation}
+
+In $f(t,u)$ the traces are first computed (using~(22.9), (22.10)), and then the summation over $\mu$ and $\nu$ is carried out\,\footnote{Let us note for future reference the formula
+\[
+\tfrac{1}{4}\operatorname{Sp}(\gamma p_1 + m)\gamma^\mu(\gamma p_2 + m)\gamma^\nu = g^{\mu\nu}(m^2 - p_1 p_2) + p_1^\mu p_2^\nu + p_1^\nu p_2^\mu.
+\]}; in $g(t,u)$ the summation over $\mu$ and $\nu$ is first carried out (using formula~(22.6)).
+
+\SourcePage{361}{366}
+As a result we obtain
+\[
+f(t,u) = \frac{2}{t^2}[(p_1 p_2)^2 + (p_1 p_2')^2 + 2m^2(m^2 - p_1 p_1')],
+\]
+\[
+g(t,u) = \frac{2}{tu}(p_1 p_2 - 2m^2)(p_1 p_2),
+\]
+or, expressing the functions $f$ and $g$ through the invariants~(81.2),
+\begin{equation}
+f(t,u) = \frac{1}{t^2}\left[\frac{s^2 + u^2}{2} + 4m^2(t - m^2)\right],
+\tag{81.6}
+\end{equation}
+\[
+g(t,u) = g(u,t) = \frac{2}{tu}\left(\frac{s}{2} - m^2\right)\left(\frac{s}{2} - 3m^2\right).
+\]
+
+Thus, the cross section
+\begin{equation}
+\begin{split}
+d\sigma &= r_e^2\,\frac{4\pi m^2\,dt}{s(s-4m^2)}\bigg\{\frac{1}{t^2}\left[\frac{s^2+u^2}{2}+4m^2(t-m^2)\right]+{}\\
+&\quad+\frac{1}{u^2}\left[\frac{s^2+t^2}{2}+4m^2(u-m^2)\right]+\frac{4}{tu}\left(\frac{s}{2}-m^2\right)\left(\frac{s}{2}-3m^2\right)\bigg\},
+\end{split}
+\tag{81.7}
+\end{equation}
+where $r_e = e^2/m$.
+
+Let us apply this formula in the centre-of-inertia system. Here
+\begin{equation}
+s = 4\varepsilon^2,\quad t = -4\mathbf{p}^2\sin^2\frac{\theta}{2},\quad u = -4\mathbf{p}^2\cos^2\frac{\theta}{2},
+\tag{81.8}
+\end{equation}
+\[
+-dt = -2\mathbf{p}^2 d\cos\theta = \frac{\mathbf{p}^2}{\pi}\,do
+\]
+($|\mathbf{p}|$, $\varepsilon$ are the magnitude of the momentum and the energy of the electrons, which do not change upon scattering; $\theta$ is the scattering angle). In the non-relativistic case ($\varepsilon \approx m$)\,\footnote{The velocity $v$ is assumed to be small ($v \ll 1$), but such that the condition of applicability of perturbation theory is still satisfied: $e^2/v\,(= e^2/(\hbar v)) \ll 1$.} we obtain
+\begin{equation}
+\begin{split}
+d\sigma &= r_e^2\,\frac{2\pi m^4 dt}{\mathbf{p}^2}\left(\frac{1}{t^2} + \frac{1}{u^2} - \frac{1}{tu}\right) =\\
+&= \left(\frac{e^2}{mv^2}\right)^2\left(\frac{1}{\sin^4\frac{\theta}{2}} + \frac{1}{\cos^4\frac{\theta}{2}} - \frac{1}{\sin^2\frac{\theta}{2}\cos^2\frac{\theta}{2}}\right)do =\\
+&= \left(\frac{e^2}{mv^2}\right)^2\frac{4(1 + 3\cos^2\theta)}{\sin^4\theta}\,do\qquad\text{(n.\,r.)}
+\end{split}
+\tag{81.9}
+\end{equation}
+(where $\mathbf{v} = 2\mathbf{p}/m$ is the relative velocity of the electrons) which agrees with non-relativistic theory (see~III, \S\,137).
+
+In the general case of arbitrary velocities formula~(81.7) after
+
+\SourcePage{362}{367}
+substitution of~(81.8) and simple transformations can be brought to the form
+\begin{equation}
+d\sigma = r_e^2\,\frac{m^2(\varepsilon^2+\mathbf{p}^2)^2}{4\mathbf{p}^4\varepsilon^2}\left[\frac{4}{\sin^4\theta}-\frac{3}{\sin^2\theta}+\left(\frac{\mathbf{p}^2}{\varepsilon^2+\mathbf{p}^2}\right)^2\left(1+\frac{4}{\sin^2\theta}\right)\right]do
+\tag{81.10}
+\end{equation}
+(\textit{Ch.\,M\"oller}, 1932). In the ultrarelativistic case ($\mathbf{p}^2 \approx \varepsilon^2$)
+\begin{equation}
+d\sigma = r_e^2\,\frac{m^2}{\varepsilon^2}\,\frac{(3+\cos^2\theta)^2}{4\sin^4\theta}\,do\qquad\text{(u.\,r.)}.
+\tag{81.11}
+\end{equation}
+
+In the laboratory system of reference, in which one of the electrons (say, the second) was at rest before the collision, we express the cross section through the quantity
+\begin{equation}
+\Delta = \frac{\varepsilon_1 - \varepsilon_1'}{m} = \frac{\varepsilon_2' - m}{m}
+\tag{81.12}
+\end{equation}
+---the energy (in units of $m$) transferred by the first (incident) electron to the second\,\footnote{The kinematic relations for elastic collisions in different systems of reference see in~II, \S\,13.}. The invariants
+\begin{equation}
+s = 2m(m + \varepsilon_1),\quad t = -2m^2\Delta,
+\tag{81.13}
+\end{equation}
+\[
+u = -2m(\varepsilon_1 - m - m\Delta).
+\]
+
+Substitution of these expressions in~(81.7) leads to the following formula for the distribution over energies of the secondary electrons (or, as one says, $\delta$-electrons), arising in the scattering of fast primary electrons:
+\begin{equation}
+d\sigma = 2\pi r_e^2\,\frac{d\Delta}{\gamma^2-1}\left\{\frac{(\gamma-1)^2\gamma^2}{\Delta^2(\gamma-1-\Delta)^2} - \frac{2\gamma^2+2\gamma-1}{\Delta(\gamma-1-\Delta)} + 1\right\},
+\tag{81.14}
+\end{equation}
+where $\gamma = \varepsilon_1/m$; $m\Delta$ and $m(\gamma - 1 - \Delta)$ are the kinetic energies of the two electrons after the collision; the identity of both particles manifests itself here in the symmetry of the formula with respect to these quantities. If one agrees to call the recoil electron the one which has the smaller energy, then $\Delta$ ranges from $0$ to $(\gamma-1)/2$. For small $\Delta$ formula~(81.14) takes the form
+\begin{equation}
+d\sigma = 2\pi r_e^2\,\frac{\gamma^2}{\gamma^2 - 1}\,\frac{d\Delta}{\Delta^2} = \frac{2\pi r_e^2}{\varepsilon_1^2}\,\frac{d\Delta}{\Delta^2},\qquad \Delta \ll \gamma-1.
+\tag{81.15}
+\end{equation}
+Let us note that this formula, expressed through the velocity of the incident electron ($v_1 = |\mathbf{p}_1|/\varepsilon_1$), preserves its form in the transition to the non-relativistic case. It is natural therefore that it agrees in form with the result of non-relativistic theory (cf.~III,~(148.17)).
+
+\SourcePage{363}{368}
+Let us now consider the scattering of a positron on an electron (\textit{H.\,Bhabha}, 1936). This is another cross channel of the same generalised reaction, to which the scattering of an electron on an electron pertains. If $p_-$, $p_+$ are the initial, and $p_-'$, $p_+'$ the final 4-momenta of the electron and positron, then the transition from one case to the other is accomplished by the substitution
+\[
+p_1 \to -p_+',\quad p_2 \to p_-,\quad p_1' \to -p_+,\quad p_2' \to p_-'.
+\]
+The kinematic invariants~(81.2) thereby acquire the following meaning:
+\begin{equation}
+s = (p_- - p_+')^2,\quad t = (p_+ - p_+')^2,\quad u = (p_- - p_+)^2.
+\tag{81.16}
+\end{equation}
+If the $ee$-scattering was the $s$-channel, then the $\bar{e}e$-scattering is the $u$-channel of the reaction. The square of the scattering amplitude, expressed through $s$, $t$, $u$, remains the same, while in the denominator of formula~(81.5) one must replace $s \to u$. Thus, for the cross section of scattering of the positron on the electron we obtain instead of~(81.7)
+\begin{equation}
+\begin{split}
+d\sigma &= r_e^2\,\frac{4\pi m^2\,dt}{u(u-4m^2)}\bigg\{\frac{1}{t^2}\left[\frac{s^2+u^2}{2}+4m^2(t-m^2)\right]+{}\\
+&\quad+\frac{1}{u^2}\left[\frac{s^2+t^2}{2}+4m^2(u-m^2)\right]+\frac{4}{tu}\left(\frac{s}{2}-m^2\right)\left(\frac{s}{2}-3m^2\right)\bigg\}.
+\end{split}
+\tag{81.17}
+\end{equation}
+
+In the centre-of-inertia system the values of the invariants $s$, $t$, $u$ differ from~(81.8) by the permutation of $s$ and $u$:
+\begin{equation}
+s = -4\mathbf{p}^2\cos^2\frac{\theta}{2},\quad t = -4\mathbf{p}^2\sin^2\frac{\theta}{2},\quad u = 4\varepsilon^2.
+\tag{81.18}
+\end{equation}
+
+In the non-relativistic limit formula~(81.17) reduces to the Rutherford formula
+\begin{equation}
+d\sigma = \left(\frac{e^2}{mv^2}\right)^2\frac{do}{\sin^4(\theta/2)}\qquad\text{(n.\,r.)},
+\tag{81.19}
+\end{equation}
+where $\mathbf{v} = 2\mathbf{p}/m$ is the relative velocity of the electron and positron. It is obtained from the first term in the curly brackets in~(81.17), originating from the diagram of the ``scattering'' type (see~\S\,73). The contributions of the ``annihilation'' diagram (the second term in~(81.17)) and of its interference with the scattering diagram (the third term) vanish in the non-relativistic limit\,\footnote{The passage to the non-relativistic limit in the scattering and annihilation parts of the scattering amplitude see below~(83.4) and~(83.20). The annihilation term~(83.20) contains the factor $1/c^2$ and therefore vanishes in this limit.}.
+
+In the general case of arbitrary velocities the contributions of all three terms in~(81.17) are of the same order of magnitude (only in the region
+
+\SourcePage{364}{369}
+of small angles the first term predominates thanks to the factor $t^{-2} \propto \sin^{-4}(\theta/2)$). After the reduction of similar terms one can represent the cross section of positron scattering on the electron (in the centre-of-inertia system) in the form
+\begin{equation}
+\begin{split}
+d\sigma &= do\,\frac{r_e^2}{16}\,\frac{m^2}{\varepsilon^2}\bigg\{\frac{(\varepsilon^2+\mathbf{p}^2)^2}{\mathbf{p}^2}\,\frac{1}{\sin^4(\theta/2)}-\frac{8\varepsilon^4-m^4}{\mathbf{p}^2\varepsilon^2}\,\frac{1}{\sin^2(\theta/2)}+{}\\
+&\quad+\frac{12\varepsilon^4+m^4}{\varepsilon^4}-\frac{4\mathbf{p}^2(\varepsilon^2+\mathbf{p}^2)}{\varepsilon^4}\sin^2\frac{\theta}{2}+\frac{4\mathbf{p}^4}{\varepsilon^4}\sin^2\frac{\theta}{2}\bigg\}.
+\end{split}
+\tag{81.20}
+\end{equation}
+
+The symmetry with respect to the substitution $\theta \to \pi - \theta$, characteristic of the scattering of identical particles, is, of course, absent in the scattering of the positron on the electron. In the ultrarelativistic limit expression~(81.20) differs from the electron-electron scattering cross section by the factor $\cos^4(\theta/2)$ alone:
+\begin{equation}
+d\sigma_{\bar{e}e} = \cos^4\frac{\theta}{2}\,d\sigma_{ee}\qquad\text{(u.\,r.)}.
+\tag{81.21}
+\end{equation}
+
+In the laboratory system, in which one of the particles (say, the electron) was initially at rest, we again introduce the quantity
+\begin{equation}
+\Delta = \frac{\varepsilon_+ - \varepsilon_+'}{m} = \frac{\varepsilon_-' - m}{m},
+\tag{81.22}
+\end{equation}
+i.e.\ the energy transferred by the positron to the electron. Analogously to~(81.13) we now have
+\[
+s = -2m(\varepsilon_+ - m - m\Delta),\quad t = -2m^2\Delta,\quad u = 2m(m + \varepsilon_+).
+\]
+
+Substituting these expressions in~(81.17), after simple transformations we obtain the following formula for the distribution of secondary electrons by energy:
+\begin{equation}
+d\sigma = 2\pi r_e^2\,\frac{d\Delta}{\gamma^2-1}\left\{\frac{\gamma^2}{\Delta^2}-\frac{2\gamma^2+4\gamma+1}{\gamma+1}\,\frac{1}{\Delta}+\frac{3\gamma^2+6\gamma+4}{(\gamma+1)^2}-\frac{2\gamma}{(\gamma+1)^2}\Delta+\frac{1}{(\gamma+1)^2}\Delta^2\right\},
+\tag{81.23}
+\end{equation}
+where $\gamma = \varepsilon_+/m$; $\Delta$ ranges from $0$ to $\gamma - 1$. For $\Delta \ll \gamma - 1$ from~(81.23) one obtains the same formula~(81.15), as for the scattering of electrons as well.
+
+Polarisation effects in the scattering of electrons or positrons are computed by the general rules set out in~\S\,65. In any general case the computations lead to cumbersome formulas. Here we limit ourselves to only a few remarks\,\footnote{More detailed information on this topic can be found in the review article \textit{McMaster W.\,H.}\/\!\/Rev.\,Mod.\,Phys.\ 1961. V.\,133. P.\,8.}.
+
+\SourcePage{365}{370}
+In the approximation being considered (first, non-vanishing approximation of perturbation theory) there are absent in the cross section terms linear in the polarisation vectors of the initial or final particles. As in the non-relativistic theory (see~III, \S\,140), such terms are forbidden by the requirements stemming from the hermiticity of the scattering matrix. Therefore the scattering cross section does not change if only one of the colliding particles is polarised, and the scattering of unpolarised particles does not lead to their polarisation.
+
+These same requirements also forbid the correlation terms in the cross section containing products of polarisations of three of the four participating (initial and final) particles in the process. The cross section contains, however, double and quadruple correlation terms. In the scattering of non-identical particles (electron and positron, electron and muon) in the non-relativistic limit these terms vanish, since the spin-orbit interaction is absent. In the collision of identical particles correlation terms arise already in the non-relativistic case thanks to the exchange effect.
+
+\textbf{Problems}
+
+\textbf{1.} Determine the cross section of scattering of polarised electrons in the non-relativistic case.
+
+\textbf{Solution.} In the non-relativistic case the bispinor amplitudes in the standard representation become two-component, and the density matrices become two-row matrices~(29.20). In the scattering amplitude~(81.3) there remain only the terms with $\mu = \nu = 0$, containing the diagonal (in the standard representation) matrices~$\gamma^0$. Instead of~(81.4) we shall have
+\[
+\sum_{\text{polar}}|M_{fi}|^2 = 16\pi^2\alpha^2 e^4 \cdot 4m^4\left\{\left(\frac{1}{t^2} + \frac{1}{u^2}\right)\operatorname{Sp}(1+\boldsymbol{\sigma}\boldsymbol{\zeta}_1)\operatorname{Sp}(1+\boldsymbol{\sigma}\boldsymbol{\zeta}_2) -\right.
+\]
+\[
+\left.- \frac{2}{tu}\operatorname{Sp}(1+\boldsymbol{\sigma}\boldsymbol{\zeta}_1)\operatorname{Sp}(1+\boldsymbol{\sigma}\boldsymbol{\zeta}_2)\right\} = 16\pi^2\alpha^2 e^4 \cdot 4m^4\left[\frac{1}{t^2}+\frac{1}{u^2} - \frac{1}{tu}(1+\boldsymbol{\zeta}_1\boldsymbol{\zeta}_2)\right].
+\]
+(summation over the polarisations of the final electrons only). Hence the cross section of scattering
+\[
+d\sigma = d\sigma_0\left[1 - \boldsymbol{\zeta}_1'\boldsymbol{\zeta}_2\,\frac{\sin^2\theta}{1+3\cos^2\theta}\right].
+\]
+
+Whence for the vector of polarisation of the scattered electron we have
+\[
+\boldsymbol{\zeta}_1^{(f)} = -\boldsymbol{\zeta}_2\,\frac{2\cos\theta(1-\cos\theta)}{1+3\cos^2\theta}.
+\]
+
+From this, for the probability of reversal of the direction of the spin of a completely polarised electron on scattering by an unpolarised electron
+\[
+\frac{d\sigma}{d\sigma_0} = \frac{(1-\cos\theta)^2}{2(1+3\cos^2\theta)}.
+\]
+
+\textbf{2.} In the non-relativistic case, determine the cross section for the given initial and final polarisations~$\boldsymbol{\zeta}_1$ and~$\boldsymbol{\zeta}_1'$ and also as in Problem~1 we obtain
+\[
+d\sigma = \tfrac{1}{2} d\sigma_0\left[1 + \boldsymbol{\zeta}_1\boldsymbol{\zeta}_1'\,\frac{2\cos\theta(1+\cos\theta)}{1+3\cos^2\theta}\right].
+\]
+
+Setting $\boldsymbol{\zeta}_1\boldsymbol{\zeta}_1' = -1$, we find from this the probability of spin reversal:
+\[
+\frac{d\sigma}{d\sigma_0} = \frac{(1-\cos\theta)^2}{2(1+3\cos^2\theta)}.
+\]
+
+\SourcePage{366}{371}
+\textbf{3.} In the non-relativistic case, determine the probability of reversal of the direction of the spin of a completely polarised electron on scattering by an unpolarised electron.
+
+\textbf{Solution.} Analogously we find the cross section for the given initial polarisations~$\boldsymbol{\zeta}_1$ and~$\boldsymbol{\zeta}_1'$:
+\[
+d\sigma = \tfrac{1}{2} d\sigma_0\left[1 + \boldsymbol{\zeta}_1\boldsymbol{\zeta}_1'\,\frac{2\cos\theta(1+\cos\theta)}{1+3\cos^2\theta}\right].
+\]
+
+Setting $\boldsymbol{\zeta}_1\boldsymbol{\zeta}_1' = -1$, we find from this the probability of spin reversal:
+\[
+\frac{d\sigma}{d\sigma_0} = \frac{(1-\cos\theta)^2}{2(1+3\cos^2\theta)}.
+\]
+
+\textbf{4.} Determine the ratio of scattering cross sections of helical electrons with parallel and antiparallel spins in the ultrarelativistic case.
+
+\textbf{Solution.} In~(81.4) one must set, according to~(29.22),
+\[
+\rho_1 = \tfrac{1}{2}(\gamma p_1)(1-2\lambda_1\gamma^5),\quad \rho_2 = \tfrac{1}{2}(\gamma p_2)(1-2\lambda_2\gamma^5);
+\]
+\[
+\rho_1' = \tfrac{1}{2}\gamma p_1',\quad \rho_2' = \tfrac{1}{2}\gamma p_2',
+\]
+where $\lambda_1$, $\lambda_2 = \pm 1/2$. The computation of traces is carried out by the formulas cited in~\S\,22; in particular,
+\[
+\operatorname{Sp}[\gamma^5(\gamma a)\gamma^\mu(\gamma b)\gamma^\nu]\operatorname{Sp}[\gamma^5(\gamma c)\gamma_\mu(\gamma d)\gamma_\nu] =
+\]
+\[
+= i^2(e^{\mu\lambda\kappa\sigma}a_\kappa b_\lambda)(e_{\mu\nu\rho\tau}c^\rho d^\tau) = 2(\delta^\lambda_\nu\delta^\kappa_\rho\delta^\sigma_\tau - \delta^\lambda_\rho\delta^\kappa_\tau\delta^\sigma_\nu)a_\kappa b_\lambda c^\rho d^\tau = 2(ac)(bd) - 2(ad)(bc).
+\]
+From this, for the ratio of cross sections one obtains the result coinciding with the formula found in Problem~4 of~III, \S\,137 (taking $\mathbf{p}^2 \approx \varepsilon^2$), we find the desired ratio of cross sections:
+\begin{equation}
+\frac{d\sigma_{\uparrow\uparrow}}{d\sigma_{\uparrow\downarrow}} = \frac{1}{8}(1+6\cos^2\theta + \cos^4\theta).
+\tag{1}
+\end{equation}
+This ratio is minimal ($1/8$) at $\theta = \pi/2$.
+
+Since the momenta of the colliding electrons (in the centre-of-inertia system) are mutually opposite, equal helicities ($\lambda_1 = \lambda_2$) correspond to antiparallel spins, and different helicities ($\lambda_1 = -\lambda_2$) correspond to parallel spins. Substituting $s$, $t$, $u$ from~(81.8) (taking $\mathbf{p}^2 \approx \varepsilon^2$), we find for the desired ratio of cross sections
+\[
+\frac{d\sigma_{\uparrow\uparrow}}{d\sigma_{\uparrow\downarrow}} = \frac{1}{8}(1 + 6\cos^2\theta + \cos^4\theta).
+\]
+This ratio is minimal ($1/8$) at $\theta = \pi/2$.
+
+\textbf{5.} The same for the scattering of positrons on electrons.
+
+\textbf{Solution.} Instead of~(81.4) one must compute
+\[
+|M_{fi}|^2 \to 16\pi^2 e^4\bigg\{\frac{1}{t^2}\operatorname{Sp}(\rho_-'\gamma^\mu\rho_-\gamma^\nu)\operatorname{Sp}(\rho_+\gamma_\mu\rho_+'\gamma_\nu) -
+\]
+\[
+-\frac{1}{tu}\operatorname{Sp}(\rho_-'\gamma^\mu\rho_-\gamma^\nu\rho_+\gamma_\mu\rho_+'\gamma_\nu) + \ldots
+\bigg\}
+\]
+(the remaining terms are obtained from those written by the permutation $\rho_+$ and $\rho_-'$). The density matrices:
+\[
+\rho_- = \tfrac{1}{2}(\gamma p_-)(1-2\lambda_-\gamma^5),\quad \rho_+ = \tfrac{1}{2}(\gamma p_+)(1+2\lambda_+\gamma^5),
+\]
+\[
+\rho_-' = \tfrac{1}{2}\gamma p_-',\quad \rho_+' = \tfrac{1}{2}\gamma p_+',
+\]
+where $\lambda_+$, $\lambda_- = \pm 1/2$ (note that for the positron, as for the electron, $\lambda = 1/2$ denotes a spin directed along the momentum). The computation gives
+\[
+\frac{d\sigma}{dt} \propto \left(\frac{s^2+u^2}{t^2}+\frac{s^2+t^2}{u^2}+\frac{2s^2}{tu}\right) - 4\lambda_+\lambda_-\left(\frac{s^2-u^2}{t^2}+\frac{s^2-t^2}{u^2}+\frac{2s^2}{tu}\right).
+\]
+From this for the ratio of cross sections one obtains a result coinciding with the formula of Problem~4.
+
+\textbf{6.} Determine the cross section of scattering of muons on electrons.
+
+\textbf{Solution.} The process is described by only one diagram~(73.17). Instead of~(81.5) we have
+\begin{equation}
+d\sigma = \frac{\pi e^4\,dt}{(p_e p_\mu)^2 - m^2\mu^2}\,f(t,u), \tag{1}
+\end{equation}
+\[
+f(t,u) = \frac{1}{16t^2}\operatorname{Sp}[(\gamma p_\mu' + \mu)\gamma^\lambda(\gamma p_\mu + \mu)\gamma^\nu]\operatorname{Sp}[(\gamma p_e' + m)\gamma_\lambda(\gamma p_e + m)\gamma_\nu]
+\]
+($p_e$, $p_\mu$ and $p_e'$, $p_\mu'$ are the initial and final 4-momenta of the electron and muon; $m$, $\mu$ are their masses). The invariants:
+\[
+s = (p_e + p_\mu)^2 = m^2 + \mu^2 + 2p_e p_\mu,
+\]
+\[
+t = (p_e - p_e')^2 = 2(m^2 - p_e p_e') = 2(\mu^2 - p_\mu p_\mu'),
+\]
+\[
+u = (p_e - p_\mu')^2 = m^2 + \mu^2 - 2p_e p_\mu',
+\]
+\[
+s + t + u = 2(m^2 + \mu^2).
+\]
+The computation leads to the result
+\begin{equation}
+f = \frac{1}{t^2}\left\{\frac{s^2+u^2}{2}+\frac{1}{2}(m^2+\mu^2)(2t-m^2-\mu^2)\right\} =
+\end{equation}
+\[
+= \frac{1}{t^2}\left\{\frac{s^2+u^2}{2}+(m^2+\mu^2)(2t-m^2-\mu^2)\right\}.\tag{2}
+\]
+
+Formulas~(1) and~(2) solve the problem posed. In the centre-of-inertia system
+\[
+d\sigma = \frac{e^4\,do}{8(\varepsilon_e + \varepsilon_\mu)^2\mathbf{p}^4\sin^4(\theta/2)} \times
+\]
+\[
+\times [(\varepsilon_e\varepsilon_\mu+\mathbf{p}^2)^2+(\varepsilon_e\varepsilon_\mu+\mathbf{p}^2\cos\theta)^2-2(m^2+\mu^2)\mathbf{p}^2\sin^2(\theta/2)],
+\]
+where $do = 2\pi\sin\theta\,d\theta$; $\varepsilon_e$, $\varepsilon_\mu$ are the energies of the electron and muon; $\mathbf{p}^2 = \varepsilon_e^2 - m^2 = \varepsilon_\mu^2 - \mu^2$.
+
+When $\mathbf{p}^2 \ll \mu^2$ we return to formula~(80.9) for the scattering of an electron on a stationary Coulomb centre.
+
+\SourcePage{367}{372}
+\textbf{7.} Determine the ratio of cross sections of mutual scattering of helical electrons and muons with parallel and antiparallel spins in the ultrarelativistic case ($\varepsilon_\mu \gg \mu$, $\varepsilon_e \gg m$).
+
+\textbf{Solution.} Analogously to Problem~4 we find
+\[
+\frac{d\sigma_{\uparrow\downarrow}}{d\sigma_{\uparrow\uparrow}} = \cos^4\frac{\theta}{2}
+\]
+($\theta$ is the scattering angle in the centre-of-inertia system).
+
+\textbf{8.} Determine the cross section of conversion of an electron pair into a muon pair (\textit{B.\,B.\,Berestetskii, I.\,Ya.\,Pomeranchuk}, 1955).
+
+\textbf{Solution.} This is another cross-channel of the reaction, which pertains to $\mu e$-scattering. In this channel:
+\[
+s = (p_e - \bar{p}_\mu)^2,\quad t = (p_\mu - \bar{p}_\mu)^2,\quad u = (p_e - p_\mu)^2,
+\]
+where $p_e$, $\bar{p}_e$ are the 4-momenta of the electron and positron, and $p_\mu$, $\bar{p}_\mu$ those of the muon and antimuon. The reaction threshold corresponds to the energy of the electron pair, equal (in the centre-of-inertia system) to $2\mu$, so that $t > 4\mu^2$ must hold. In the laboratory system, in which the electron before the collision rests, the positron has energy $\varepsilon_+$, $t = 2m(\varepsilon_+ + m) \approx 2m\varepsilon_+$, so that $\varepsilon_+ > \varepsilon_\text{th}$, where the threshold energy $\varepsilon_\text{th} = 2\mu^2/m$. In the laboratory system in which the electron before the collision rests the positron has energy $\varepsilon_+$; $t = 2m(\varepsilon_+ + m)$.
+
+The differential cross section (instead of~(1), in Problem~6):
+\[
+d\sigma = \frac{4\pi e^4\,ds}{[s-(m+\mu)^2][s-(m-\mu)^2]}\,f(t,u),\tag{1}
+\]
+\[
+f(t,u) = \frac{1}{16t^2}\operatorname{Sp}[(\gamma p_\mu'+\mu)\gamma^\lambda(\gamma p_\mu+\mu)\gamma^\nu]\operatorname{Sp}[(\gamma p_e'+m)\gamma_\lambda(\gamma p_e+m)\gamma_\nu].
+\]
+
+At a given $t$, the quantity $s$ ranges between limits determined by the equations $su \approx \mu^2$, $s + t + u \approx 2\mu^2$, i.e.
+\[
+\mu^2 - \frac{t}{2} - \frac{1}{2}\sqrt{t(t - 4\mu^2)} \leqslant s \leqslant \mu^2 - \frac{t}{2} + \frac{1}{2}\sqrt{t(t - 4\mu^2)}.
+\]
+
+Elementary integration yields the result:
+\begin{equation}
+\sigma = \frac{4\pi}{3}r_e^2\,\frac{m^2}{t}\,\sqrt{1-\frac{4\mu^2}{t}}\left(1+\frac{2\mu^2}{t}\right),\quad r_e = \frac{e^2}{m}.
+\tag{1}
+\end{equation}
+
+\SourcePage{368}{373}
+(in the laboratory system $t = 2m\varepsilon_+$). This formula is inapplicable in the immediate vicinity of the threshold: when $\varepsilon_+ - \varepsilon_\text{th} \sim \mu e^4$, the emerging muons cannot be considered free particles (taking into account the Coulomb interaction between them, the cross section will not tend to zero but to a constant; see~III, \S\,147).
+
+The cross section~(1) is maximal at $\varepsilon_+ = 1.7\varepsilon_\text{th}$. Its maximum value is approximately 20~times smaller than the cross section of two-photon annihilation at the same energy.
