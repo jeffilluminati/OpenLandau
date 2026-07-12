@@ -1,0 +1,147 @@
+
+\section{The vertex operator}
+
+\SourcePage{521}{526}
+
+In complex diagrams one can distinguish certain standard structural elements (blocks), of which these diagrams are composed. In~\S\S\,103 and 105 two of such elements were in essence already considered: the photon and electron self-energy parts. Below we shall encounter yet another type --- the \emph{vertex part}.
+
+\SourcePage{522}{527}
+
+For this purpose let us define the \emph{vertex function}
+\begin{equation}
+K^\mu_{ik}(x_1, x_2, x_3) = \langle 0|\,T\hat{A}^\mu(x_1)\,\hat{\psi}_i(x_2)\,\hat{\bar{\psi}}_k(x_3)\,|0\rangle
+\label{eq:106.1}
+\end{equation}
+--- the vacuum average of the $T$-product of Heisenberg operators of the electromagnetic and electron-positron fields (one factor of each type). In the interaction representation:
+\begin{equation}
+K^\mu_{ik}(x_1, x_2, x_3) = \frac{\langle 0|\,T\hat{A}^{\mathrm{int},\mu}(x_1)\,\hat{\psi}^{\mathrm{int}}_i(x_2)\,\hat{\bar{\psi}}^{\mathrm{int}}_k(x_3)\,S\,|0\rangle}{\langle 0|S|0\rangle}.
+\label{eq:106.2}
+\end{equation}
+The transition to the momentum representation is carried out by the formula
+\begin{multline}
+(2\pi)^4\,\delta^{(4)}(p_1 + k - p_2)\,K^\mu_{ik}(p_2, p_1;\, k) = {} \\
+= \iiint K^\mu_{ik}(x_1, x_2, x_3)\,e^{-ikx_1 + ip_2 x_2 - ip_1 x_3}\,d^4x_1\,d^4x_2\,d^4x_3.
+\label{eq:106.3}
+\end{multline}
+
+In diagrammatic technique the functions~$K^\mu_{ik}$ correspond to blocks (three-tails) of the type
+
+% [Feynman diagram (106.4): three-tailed vertex diagram with photon line (dashed, momentum k) and two electron lines (solid, momenta p_1 incoming, p_2 outgoing)]
+\begin{equation}
+\label{eq:106.4}
+\end{equation}
+
+\noindent with three (one photon and two electron) ends, whose momenta are related by the conservation law
+\begin{equation}
+p_1 + k = p_2.
+\label{eq:106.5}
+\end{equation}
+
+The zeroth-order term in the expansion of~(\ref{eq:106.2}) vanishes. In first order in the coordinate representation:
+\[
+K^\mu = e \int G(x_2 - x)\,\gamma_\nu\,G(x - x_3)\cdot D^{\nu\mu}(x_1 - x)\,d^4x,
+\]
+and in the momentum representation:
+\begin{equation}
+K^\mu(p_2, p_1; k) = eG(p_2)\,\gamma_\nu\,G(p_1)\cdot D^{\nu\mu}(k),
+\label{eq:106.6}
+\end{equation}
+corresponding to the diagram:
+
+% [Feynman diagram (106.7): simplest three-tailed diagram --- single vertex with one incoming electron line (p_1), one outgoing electron line (p_2), and one photon line (k)]
+\begin{equation}
+\label{eq:106.7}
+\end{equation}
+
+In higher approximations new vertices arise. In third order there are the following diagrams:
+
+% [Feynman diagrams (106.8): four third-order three-tailed diagrams. First three can be cut into the simple vertex plus a second-order self-energy part (electron or photon). The fourth cannot be so decomposed --- it is an irreducible vertex correction.]
+\begin{equation}
+\label{eq:106.8}
+\end{equation}
+
+\noindent The first three of these can be cut into two parts, one of which is the simple vertex~(\ref{eq:106.7}), and the other a second-order self-energy part of one of the external lines.
+
+\SourcePage{523}{528}
+
+Corrections of this kind to the function~$K^\mu$ simply amount to the replacement of the free propagators $G$ and $D$ of the external lines by the exact propagators~$\mathcal{G}$ and~$\mathcal{D}$. But the fourth diagram cannot be decomposed in this manner.
+
+Separating from the sum of all diagrams for~$K^\mu$ the propagators of the three external lines, we write by definition:
+\begin{equation}
+K^\mu(p_2, p_1; k) = \bigl\{i\mathcal{G}(p_2)\,[-ie\Gamma_\nu(p_2, p_1; k)]\,i\mathcal{G}(p_1)\bigr\}\bigl\{-i\mathcal{D}^{\nu\mu}(k)\bigr\}.
+\label{eq:106.9}
+\end{equation}
+The block that cannot be divided into parts by cutting a single (electron or photon) line of an internal diagram is called the \emph{vertex part}. The quantity~$\Gamma^\mu$, equal to the sum of all vertex parts including the simple vertex~$\gamma^\mu$, is called the \emph{vertex operator} (or \emph{vertex function}).
+
+All diagrams of the vertex operator up to fifth order are:
+
+% [Feynman diagrams (106.10): vertex operator diagrams to fifth order, labelled a) through и). Diagram a) is the bare vertex γ^μ; б) is the basic triangle (third-order irreducible); в) has vertex correction inside; г) is another irreducible fifth-order diagram; д), е) have photon self-energy insertions; ж), з), и) contain electron self-energy parts on internal lines.]
+\begin{equation}
+\label{eq:106.10}
+\end{equation}
+
+\noindent The operator~$\Gamma$ has two bispinor indices and one four-vector index; it is a function of~$p_1$, $p_2$ (or equivalently of~$p_1$, $k$, since~$p_2 = p_1 + k$). We note that not all three four-momenta $p_1$, $p_2$, $k$ can correspond simultaneously to real particles, since the conservation law~(\ref{eq:106.5}) cannot be satisfied when $p_1^2 = p_2^2 = m^2$, $k^2 = 0$.
+
+The vertex parts can be split into \emph{irreducible} and \emph{reducible} ones. An irreducible vertex part is one that cannot be split into simpler parts by removing a single electron or photon line; in the terminology previously introduced these are vertex parts that do not contain self-energy insertions in internal lines and do not contain vertex corrections within themselves. From the diagrams~(\ref{eq:106.10}): only~\textit{b}) and~\textit{d}) are irreducible (not counting the bare vertex~\textit{a})); diagrams~\textit{g}),~\textit{h}),~\textit{i}) contain self-energy parts; in diagram~\textit{c}) the upper horizontal dashed line can be regarded as a correction to the upper vertex, and the lateral dashed lines in diagrams~\textit{e}) and~\textit{f}) as corrections to the lateral vertices.
+
+In irreducible diagrams, if one replaces the internal lines by bold (exact propagator) lines and the vertices by bold points, i.e.\ replaces $D$, $G$ by~$\mathcal{D}$,~$\mathcal{G}$ and~$\gamma$ by~$\Gamma$, one obtains all vertex parts whatsoever. The resulting diagrams are called \emph{skeleton diagrams}.
+
+\SourcePage{524}{529}
+
+This decomposition of the vertex operator can be written symbolically in the form:
+
+% [Feynman diagram (106.11): symbolic equation. Bold (exact) vertex = bare vertex + sum of irreducible skeleton diagrams with exact propagators and exact vertices (triangle with bold lines, box with bold lines, ...)]
+\begin{equation}
+\label{eq:106.11}
+\end{equation}
+
+\noindent This is an integral equation for~$\Gamma$, with an infinite number of terms on the right-hand side.
+
+Let us state the general principle of constructing exact expressions corresponding to diagrammatic blocks with an arbitrary number of external lines. Such an expression is constructed as the vacuum average of a $T$-product of Heisenberg operators: one factor of~$\hat{\psi}(x)$ for each final electron line, one factor of~$\hat{\bar{\psi}}(x)$ for each initial electron line, and one factor of~$\hat{A}(x)$ for each photon line.
+
+As an example let us consider four-electron diagrams --- diagrams with four electron external lines:
+
+% [Feynman diagrams (106.12): various diagrams with four electron external lines (two incoming p_1, p_2 and two outgoing p_3, p_4), connected by photon exchange and vertex corrections]
+\begin{equation}
+\label{eq:106.12}
+\end{equation}
+
+\noindent The corresponding function is:
+\begin{equation}
+K_{ik,lm}(x_1, x_2; x_3, x_4) = \langle 0|\,T\hat{\psi}_i(x_1)\,\hat{\psi}_k(x_2)\,\hat{\bar{\psi}}_l(x_3)\,\hat{\bar{\psi}}_m(x_4)\,|0\rangle.
+\label{eq:106.13}
+\end{equation}
+Its Fourier transform contains a $\delta$-function expressing the overall conservation of four-momentum:
+\begin{equation}
+K_{ik,lm}(p_3, p_4; p_1, p_2) \sim (2\pi)^4\,\delta^{(4)}(p_1 + p_2 - p_3 - p_4).
+\label{eq:106.14}
+\end{equation}
+
+We write the function~$K$ in the form:
+\begin{multline}
+K_{ik,lm}(p_3, p_4; p_1, p_2) = (2\pi)^4\bigl[\delta^{(4)}(p_1 - p_3)\,\mathcal{G}_{il}(p_1)\,\mathcal{G}_{km}(p_2) \\
+{} - \delta^{(4)}(p_2 - p_3)\,\mathcal{G}_{im}(p_1)\,\mathcal{G}_{kl}(p_2)\bigr] \\
+{} + \mathcal{G}_{in}(p_3)\,\mathcal{G}_{kr}(p_4)\bigl[-i\Gamma_{nr,st}(p_3, p_4; p_1, p_2)\bigr]\,\mathcal{G}_{sl}(p_1)\,\mathcal{G}_{tm}(p_2).
+\label{eq:106.15}
+\end{multline}
+
+The first two terms in~(\ref{eq:106.15}) exclude from~$\Gamma$ diagrams that split into two disconnected parts, each having two external lines:
+
+% [Feynman diagrams: two disconnected pairs of propagators --- p_3→●→p_1 and p_4→●→p_2 (first term), or p_4→●→p_1 and p_3→●→p_2 (second term, with minus sign from Fermi statistics)]
+
+\noindent The third term: the $\mathcal{G}$-factors on all four external lines exclude corrections to the external electron lines (self-energy insertions on external legs).
+
+\SourcePage{525}{530}
+
+The antisymmetry of~$\Gamma$ (following from the properties of the $T$-product of fermionic $\hat{\psi}$-operators) is expressed by:
+\begin{equation}
+\Gamma_{ik,lm}(p_3, p_4; p_1, p_2) = -\Gamma_{ki,lm}(p_4, p_3; p_1, p_2) = -\Gamma_{ik,ml}(p_3, p_4; p_2, p_1).
+\label{eq:106.16}
+\end{equation}
+
+If $p_1$, $p_2$, $p_3$, $p_4$ correspond to real particles, the non-decomposing diagrams~(\ref{eq:106.12}) describe electron-electron scattering. The scattering amplitude (with the factors~$\mathcal{G}$ replaced, on the external lines, by spinor amplitudes of the particles)\footnote{We shall see later (see~\S\,110) that in constructing amplitudes of real processes one need not include self-energy parts on the free ends of the diagrams.} is:
+\begin{equation}
+iM_{fi} = \bar{u}_i(p_3)\,\bar{u}_k(p_4)\,\bigl[-i\Gamma_{ik,lm}(p_3, p_4; p_1, p_2)\bigr]\,u_l(p_1)\,u_m(p_2).
+\label{eq:106.17}
+\end{equation}
+By virtue of~(\ref{eq:106.16}) this amplitude automatically possesses the required antisymmetry with respect to permutation of the electrons.

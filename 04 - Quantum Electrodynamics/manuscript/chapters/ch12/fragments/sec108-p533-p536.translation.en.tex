@@ -1,0 +1,135 @@
+
+\section{Ward identity}
+
+\SourcePage{528}{533}
+
+Yet another relation between the photon propagator and the vertex part, simpler than the Dyson equation, arises as a consequence of gauge invariance.
+
+Let us perform the gauge transformation~(102.8), assuming that~$\chi(x) \equiv \delta\chi(x)$ is an infinitely small simple (non-operator) function of the 4-coordinates~$x$. Then the electron propagator acquires the addition:
+\begin{equation}
+\delta\mathcal{G}(x, x') = ie\mathcal{G}(x - x')\bigl[\delta\chi(x) - \delta\chi(x')\bigr].
+\label{eq:108.1}
+\end{equation}
+Note that this gauge transformation violates spatial-temporal homogeneity and~$\delta\mathcal{G}$ depends on~$x$ and~$x'$ separately, not just on the difference~$x - x'$. We decompose~$\delta\mathcal{G}$ in a Fourier integral over~$x$ and~$x'$ separately:
+\[
+\delta\mathcal{G}(p_2, p_1) = \int\!\int \delta\mathcal{G}(x, x')\,e^{ip_2 x - ip_1 x'}\,d^4x\,d^4x'.
+\]
+Substituting~(\ref{eq:108.1}) and integrating over $d^4\xi\,d^4x'$ (where $\xi = x - x'$), we obtain:
+\begin{equation}
+\delta\mathcal{G}(p + q,\, p) = ie\,\delta\chi(q)\bigl[\mathcal{G}(p) - \mathcal{G}(p + q)\bigr].
+\label{eq:108.2}
+\end{equation}
+
+On the other hand, under the same gauge transformation the operator~$\hat{A}_\mu(x)$ receives an addition:
+\begin{equation}
+\delta A^{(e)}_\mu(x) = -\frac{\partial}{\partial x^\mu}\,\delta\chi,
+\label{eq:108.3}
+\end{equation}
+which can be regarded as an infinitely small external field. In the momentum representation:
+\begin{equation}
+\delta A^{(e)}_\mu(q) = iq_\mu\,\delta\chi(q).
+\label{eq:108.4}
+\end{equation}
+
+The quantity~$\delta\mathcal{G}$ can be computed as the change of the propagator under the influence of this field. In first-order accuracy, it is represented by the single skeleton diagram:
+
+% [Feynman diagram (108.5): electron propagator correction from external field --- bold electron line (exact propagator) entering from left with momentum p, bold vertex (exact vertex function), bold electron line exiting to right with momentum p+q, and an effective external field line (bold dashed) entering the vertex carrying momentum q]
+\begin{equation}
+\label{eq:108.5}
+\end{equation}
+
+\noindent Here the bold dashed line represents the effective external field line, associated with the factor (see~(103.15)):
+\[
+\delta A^{(e)}_\mu(q) + \delta A^{(e)}_\lambda(q)\,\frac{\mathcal{P}^{\lambda\nu}(q)}{4\pi}\,\mathcal{D}_{\mu\nu}(q).
+\]
+
+\SourcePage{529}{534}
+
+\noindent But the 4-vector~$\delta A^{(e)}_\lambda(q)$ is longitudinal (proportional to~$q_\lambda$), and the tensor~$\mathcal{P}^{\lambda\nu}$ is transverse. Therefore the second term vanishes, and the effective external field reduces to simply the field~$\delta A^{(e)}$:
+
+% [Feynman diagram (108.5'): same as (108.5) but the bold dashed line is replaced by a thin dashed line representing the ordinary external field δA^{(e)}]
+
+\noindent The analytical expression is:
+\begin{equation}
+\delta\mathcal{G} = e\,\mathcal{G}(p + q)\,\Gamma^\mu(p + q,\, p;\, q)\,\mathcal{G}(p)\cdot\delta A^{(e)}_\mu.
+\label{eq:108.6}
+\end{equation}
+
+Substituting~(\ref{eq:108.4}) and comparing with~(\ref{eq:108.2}):
+\[
+\mathcal{G}(p + q) - \mathcal{G}(p) = -\mathcal{G}(p + q)\,\Gamma^\mu(p + q,\, p;\, q)\,\mathcal{G}(p)\cdot q_\mu,
+\]
+or, passing to inverse matrices:
+\begin{equation}
+\mathcal{G}^{-1}(p + q) - \mathcal{G}^{-1}(p) = q_\mu\,\Gamma^\mu(p + q,\, p;\, q)
+\label{eq:108.7}
+\end{equation}
+(\emph{H.~S.~Green}, 1953).
+
+Letting~$q \to 0$ and comparing the coefficients of the infinitely small~$q_\mu$ on both sides, we obtain:
+\begin{equation}
+\frac{\partial}{\partial p_\mu}\,\mathcal{G}^{-1}(p) = \Gamma^\mu(p,\, p;\, 0).
+\label{eq:108.8}
+\end{equation}
+This is the \emph{Ward identity} (\emph{J.~C.~Ward}, 1950). The derivative of~$\mathcal{G}^{-1}(p)$ with respect to the momentum equals the vertex operator at zero momentum transfer.\footnote{In the zeroth approximation, i.e.\ for the free-particle propagator, this identity is obvious: $G^{-1}(p) = \gamma p - m$, and therefore $\partial G^{-1}/\partial p_\mu = \gamma^\mu$.}
+
+\SourcePage{530}{535}
+
+For the derivative of~$\mathcal{G}(p)$ itself:
+\begin{equation}
+-\frac{\partial}{\partial p_\mu}\,i\mathcal{G}(p) = i\mathcal{G}(p)\,\bigl[-i\Gamma^\mu(p,\, p;\, 0)\bigr]\,i\mathcal{G}(p).
+\label{eq:108.9}
+\end{equation}
+
+One could similarly obtain higher derivatives from higher-order terms of the expansion of~$\delta\chi$ in powers of the coordinates. We shall not need such formulae.
+
+Now let us consider the derivative~$\partial\mathcal{P}(k)/\partial k_\mu$ of the polarisation operator. Unlike~$\mathcal{G}(p)$, the operator~$\mathcal{P}(k)$ is gauge-invariant and does not change when the fictitious external field~(\ref{eq:108.4}) is introduced. Therefore the derivative of~$\mathcal{P}$ cannot be computed in the same manner. It is, however, possible to obtain a diagrammatic expression.
+
+Consider the first diagram entering the definition of~$\mathcal{P}$ --- the second-order diagram:
+
+% [Feynman diagram (108.10): second-order polarisation operator --- closed electron loop with two photon vertices. Solid lines carry momenta p (lower) and p+k (upper), with photon lines of momentum k attached at each vertex.]
+\begin{equation}
+\label{eq:108.10}
+\end{equation}
+
+\noindent The solid lines correspond to the factors~$iG(p)$ and~$iG(p + k)$. Differentiating with respect to~$k$ replaces the second factor by~$\partial G(p + k)/\partial k$, and according to the identity~(\ref{eq:108.9}) this replacement is equivalent to adding an extra vertex on the electron line:
+
+% [Feynman diagram (108.11): differentiated second-order polarisation operator --- closed electron loop with three photon vertices. Two original vertices carry momenta k (ingoing and outgoing), and the added vertex carries zero momentum k'=0 (with vector index μ).]
+\begin{equation}
+\label{eq:108.11}
+\end{equation}
+
+\noindent In the first non-vanishing order the desired derivative is thus expressed through a diagram with three photon ends (``photon three-tail''). Note that this diagram by itself does \emph{not} give the amplitude of splitting of one photon into two. The amplitude of such a process would be the sum of diagram~(\ref{eq:108.11}) and the same diagram with the reversed direction of traversal of the loop; by Furry's theorem this sum vanishes. But diagram~(\ref{eq:108.11}) by itself is non-zero.
+
+\SourcePage{531}{536}
+
+Similarly one can differentiate more complex diagrams, adding the vertex with~$k' = 0$ to all electron lines that depend on~$k$. There are also diagrams in which the dependence on~$k$ resides in internal photon lines, for example:
+
+% [Feynman diagram: more complex polarisation operator diagram with internal photon lines depending on k. The derivative is represented by introducing a fictitious three-photon vertex --- a point where three dashed lines meet.]
+
+\noindent The derivative of the diagram enclosed in curly brackets is represented by introducing a new graphical element --- a \emph{fictitious three-photon vertex} (a point at which three dashed lines meet):
+\begin{equation}
+4\pi i\,\frac{\partial D^{-1}}{\partial k^\nu} = 2ik_\mu \equiv v_\mu.
+\label{eq:108.12}
+\end{equation}
+
+Now any diagram depending on~$k$ can be differentiated by adding the vertices~$v_\mu$ or~$\gamma_\mu$ along all lines carrying momentum~$k$. Computing further:
+\begin{equation}
+-\frac{1}{4\pi}\,\frac{\partial\mathcal{P}_{\mu\nu}}{\partial k^\lambda} = V_{\mu\lambda\nu},
+\label{eq:108.13}
+\end{equation}
+where~$ie^2 V_{\mu\lambda\nu}$ is the sum of the internal parts of all ``photon three-tails'' obtained in this manner.
+
+For the second derivative of the polarisation operator, differentiating~(\ref{eq:108.13}) once more:
+\begin{equation}
+\frac{1}{4\pi}\,\frac{\partial^2\mathcal{P}_{\mu\nu}}{\partial k^\rho\,\partial k^\lambda} = \mathcal{G}_{\mu\rho\lambda\nu} + \mathcal{G}_{\mu\lambda\rho\nu},
+\label{eq:108.14}
+\end{equation}
+where~$ie^2\mathcal{G}$ is the sum of the internal parts of all ``photon four-tails'':
+
+% [Feynman diagram (108.15): photon four-tail --- a blob with four photon lines attached, carrying indices ρ, σ, μ, ν and momenta q and k. Includes graphs with fictitious three-photon vertices (108.12).]
+\begin{equation}
+\label{eq:108.15}
+\end{equation}
+
+\noindent (including diagrams with fictitious three-photon vertices~(\ref{eq:108.12})).

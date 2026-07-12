@@ -1,0 +1,66 @@
+
+\section{Dyson equations}
+
+\SourcePage{525}{530}
+
+The exact propagators and the vertex part are connected with each other by definite integral relations.
+
+The concept of irreducibility of diagrams extends to any diagrams. Let us consider compact self-energy electron diagrams. Among them only one is irreducible --- the second-order diagram. All vertex corrections can be assigned to one of the two vertices.\footnote{For clarity we emphasise that although we obtain the entire required collection of diagrams by introducing corrections to only one vertex, for each specific diagram the structure of the correction block generally depends on which vertex it is assigned to.} Therefore the mass operator~$\mathcal{M}$ is depicted by a single skeleton diagram:
+
+% [Feynman diagram (107.1): skeleton self-energy with exact propagators — electron line with one-loop correction using exact vertex Gamma, exact photon propagator D (wavy), and exact electron propagator G (bold solid)]
+\begin{equation}
+\label{eq:107.1}
+\end{equation}
+
+Analytically:\footnote{If in~(\ref{eq:107.1}) the exact vertex part is assigned to the left vertex, then in equation~(\ref{eq:107.2}) the factors~$\gamma$ and~$\Gamma$ are interchanged. Both forms of the equation are, of course, essentially equivalent.}
+\begin{equation}
+\mathcal{M}(p) = \mathcal{G}^{-1}(p) - G^{-1}(p) = -ie^2 \int \gamma^\nu \mathcal{G}(p+k)\,\Gamma^\mu(p+k,p;\,k)\,\mathcal{D}_{\mu\nu}(k)\,\frac{d^4k}{(2\pi)^4}.
+\label{eq:107.2}
+\end{equation}
+
+An analogous expression can be written for the polarisation operator~$\mathcal{P}$. Among the compact photon self-energy parts only one is irreducible:
+
+% [Feynman diagram (107.3): skeleton polarisation operator with exact propagators — photon line with one-loop correction: electron loop containing exact electron propagators (bold solid) and one exact vertex Gamma]
+\begin{equation}
+\label{eq:107.3}
+\end{equation}
+
+The corresponding analytic equality is:
+\begin{equation}
+\frac{\mathcal{P}_{\mu\nu}(k)}{4\pi} = \mathcal{D}^{-1}_{\mu\nu}(k) - D^{-1}_{\mu\nu}(k) = ie^2 \int \mathrm{Sp}\,\gamma_\mu \mathcal{G}(p+k)\,\Gamma_\nu(p+k,p;\,k)\,\mathcal{G}(p)\,\frac{d^4p}{(2\pi)^4}
+\label{eq:107.4}
+\end{equation}
+(in~(\ref{eq:107.2}) and~(\ref{eq:107.4}) bispinor indices are omitted). Equations~(\ref{eq:107.2}) and~(\ref{eq:107.4}) are called the \emph{Dyson equations}.
+
+\SourcePage{526}{531}
+
+These equations can also be derived analytically. For the derivation of~(\ref{eq:107.2}), we consider
+\begin{equation}
+(\gamma\hat{p} - m)_{il}\,\mathcal{G}_{lk}(x - x') = -i(\gamma\hat{p} - m)_{il}\,\langle 0|\,T\psi_l(x)\,\bar{\psi}_k(x')\,|0\rangle
+\label{eq:107.5a}
+\end{equation}
+($\hat{p} = i\partial$ --- the differentiation operator with respect to~$x$). We compute this expression using~(\ref{eq:102.5}), in the same way as was done in~\S\,75 for the free-particle propagator. The result is:
+\begin{equation}
+(\gamma\hat{p} - m)_{il}\,\mathcal{G}_{lk}(x - x') = -ie\gamma^\nu_{il}\,\langle 0|\,T A_\nu(x)\,\psi_l(x)\,\bar{\psi}_k(x')\,|0\rangle + \delta_{ik}\,\delta^{(4)}(x - x').
+\label{eq:107.5b}
+\end{equation}
+The $\delta$-function term here is the same as in~(75.7), since the equal-time commutation relations for operators in the Heisenberg and interaction representations are the same. The first term on the right is $-ie\gamma^\nu K^\nu_{ik}(x, x, x')$, so that (dropping bispinor indices):
+\begin{equation}
+(\gamma\hat{p} - m)\,\mathcal{G}(x - x') = -ie\gamma^\nu K_\nu(x, x, x') + \delta^{(4)}(x - x').
+\label{eq:107.5}
+\end{equation}
+
+We now pass to Fourier components. If we integrate the definition~(\ref{eq:106.3}) over $d^4k\,d^4p_2/(2\pi)^8$, we get:
+\begin{equation}
+\int K^\mu(p+k, p;\,k)\,\frac{d^4k}{(2\pi)^4} = \int K^\mu(x, x, x')\,e^{ip(x-x')}\,d^4(x - x'),
+\label{eq:107.6}
+\end{equation}
+which shows that the integral on the left-hand side is a Fourier component of the function~$K^\mu(x, x, x')$. Taking the Fourier transform of both sides of~(\ref{eq:107.5}), using the definition~(\ref{eq:106.9}), and recalling that $\gamma p - m = G^{-1}(p)$, we obtain:
+
+\SourcePage{527}{532}
+
+\begin{equation}
+G^{-1}(p)\,\mathcal{G}(p) = 1 - ie^2 \int \gamma^\nu \mathcal{G}(p+k)\,\Gamma^\mu(p+k,p;\,k)\,\mathcal{G}(p)\,\mathcal{D}_{\mu\nu}(k)\,\frac{d^4k}{(2\pi)^4}.
+\label{eq:107.7}
+\end{equation}
+Multiplying the right-hand side by~$\mathcal{G}^{-1}(p)$, we return to equation~(\ref{eq:107.2}).

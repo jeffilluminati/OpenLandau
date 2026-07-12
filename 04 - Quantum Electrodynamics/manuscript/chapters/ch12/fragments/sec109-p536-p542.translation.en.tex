@@ -1,0 +1,220 @@
+
+\section{Electron propagator in an external field}
+
+\SourcePage{531}{536}
+
+If the system is in a given external field~$A^{(e)}(x)$, then the exact electron propagator is defined by the same formula~(\ref{eq:105.1}), but the Hamiltonian~$\hat{H} = \hat{H}_0 + \hat{V}$ now includes, together with the interaction between particles, also the interaction with the external field:
+\begin{equation}
+\hat{V} = e\!\int\!\hat{A}_\mu\hat{j}^\mu\,d^3x + e\!\int\!A^{(e)}_\mu\hat{j}^\mu\,d^3x.
+\label{eq:109.1}
+\end{equation}
+
+Since the external field violates the homogeneity of space-time, the propagator~$\mathcal{G}(x, x')$ depends on~$x$ and~$x'$ separately, not merely on the difference~$x - x'$.
+
+Passage to the interaction representation leads to the standard diagrammatic technique, with the difference that in the diagrams there appear, alongside the virtual photon lines, also lines of the external field. Such a technique is inconvenient in those cases where the external field cannot be treated as a small perturbation --- when particles may be in bound states in the field. The electron propagator in an external field is needed precisely for the purpose of studying the properties of bound states when radiative corrections are taken into account.
+
+For the construction of such a propagator, it is natural to start from a representation of the operators in which the external field is already taken into account in the zeroth approximation, while only the electron--photon interaction itself is treated as a perturbation (W.~H.~Furry, 1951).
+
+We shall assume the external field to be stationary (time-independent).
+
+The required representation of the~$\psi$-operators is given by the formulae of second quantisation in the external field:
+\begin{align}
+\hat{\psi}^{(e)}(t, \mathbf{r}) &= \sum_n\Bigl\{\hat{a}_n\,\psi_n^{(+)}(\mathbf{r})\,e^{-i\varepsilon_n^{(+)}t} + \hat{b}_n^\dagger\,\psi_n^{(-)}(\mathbf{r})\,e^{i\varepsilon_n^{(-)}t}\Bigr\}, \notag \\
+\hat{\bar{\psi}}^{(e)}(t, \mathbf{r}) &= \sum_n\Bigl\{\hat{a}_n^\dagger\,\bar{\psi}_n^{(+)}(\mathbf{r})\,e^{i\varepsilon_n^{(+)}t} + \hat{b}_n\,\bar{\psi}_n^{(-)}(\mathbf{r})\,e^{-i\varepsilon_n^{(-)}t}\Bigr\},
+\label{eq:109.2}
+\end{align}
+where~$\psi_n^{(\pm)}(\mathbf{r})$ and~$\varepsilon_n^{(\pm)}$ are the wave functions and energy levels of the electron and the positron --- solutions of the single-particle Dirac equation in the field.
+
+It is easy to see that the operators~(\ref{eq:109.2}) are the~$\psi$-operators in a certain representation (Furry representation), intermediate between the Heisenberg and interaction representations:
+\begin{align}
+\hat{\psi}^{(e)}(t, \mathbf{r}) &= e^{i\hat{H}_1 t}\,\hat{\psi}(\mathbf{r})\,e^{-i\hat{H}_1 t}, \notag \\
+\hat{\bar{\psi}}^{(e)}(t, \mathbf{r}) &= e^{i\hat{H}_1 t}\,\hat{\bar{\psi}}(\mathbf{r})\,e^{-i\hat{H}_1 t},
+\label{eq:109.3}
+\end{align}
+where
+\[
+\hat{H}_1 = \hat{H}_0 + e\!\int\!A^{(e)}_\mu(x)\,\hat{j}^\mu(x)\,d^3x.
+\]
+
+The electromagnetic field operator~$\hat{A}_\mu$ commutes with the second term in~$\hat{H}_1$, so that for this operator the Furry representation coincides with the interaction representation.
+
+The zeroth-approximation electron propagator in the new representation is:
+\begin{equation}
+G^{(e)}_{ik}(x, x') = -i\langle 0|\,T\hat{\psi}^{(e)}_i(x)\,\hat{\bar{\psi}}^{(e)}_k(x')\,|0\rangle.
+\label{eq:109.4}
+\end{equation}
+
+The operator~$\hat{\psi}^{(e)}(t, \mathbf{r})$ satisfies the Dirac equation in the external field:
+\begin{equation}
+\bigl[\gamma\hat{p} - e\gamma A^{(e)}(x) - m\bigr]\hat{\psi}^{(e)}(t, \mathbf{r}) = 0,
+\label{eq:109.5}
+\end{equation}
+and correspondingly for~$G^{(e)}$:
+\begin{equation}
+\bigl[\gamma\hat{p} - e\gamma A^{(e)}(x) - m\bigr]G^{(e)}(x, x') = \delta^4(x - x')
+\label{eq:109.6}
+\end{equation}
+(cf.\ the derivation of~(107.5)).
+
+\SourcePage{532}{537}
+
+The diagrammatic technique for the expansion of the exact propagator~$\mathcal{G}$ in a series in powers of~$e^2$ is constructed --- by passing from the Heisenberg to the Furry representation and then to the interaction representation --- in exactly the same way as the usual technique. It leads to diagrams of the same type, with the sole difference that the solid lines in the diagrams now correspond to the factor~$iG^{(e)}$ (instead of~$iG$).
+
+A slight difference arises in the analytic rules corresponding to the diagrams, since~$G^{(e)}$ is a function not only of the difference~$x - x'$, but of~$x$ and~$x'$ separately. In a constant external field the homogeneity of time is preserved, so that~$t$ and~$t'$ enter only through the difference~$\tau = t - t'$. Thus~$G^{(e)} = G^{(e)}(\tau, \mathbf{r}, \mathbf{r}')$.
+
+Performing the Fourier transform over each of its arguments, we have:
+\begin{equation}
+G^{(e)}(\tau, \mathbf{r}, \mathbf{r}') = \int\! e^{i(\varepsilon\tau - \mathbf{p}_2\cdot\mathbf{r} + \mathbf{p}_1\cdot\mathbf{r}')}\,G^{(e)}(\varepsilon, \mathbf{p}_2, \mathbf{p}_1)\,\frac{d\varepsilon}{2\pi}\,\frac{d^3p_1}{(2\pi)^3}\,\frac{d^3p_2}{(2\pi)^3}.
+\label{eq:109.7}
+\end{equation}
+Each solid line now carries the factor~$iG^{(e)}(\varepsilon, \mathbf{p}_2, \mathbf{p}_1)$, with one energy value~$\varepsilon$ but two momentum values --- the initial~$\mathbf{p}_1$ and the final~$\mathbf{p}_2$:
+
+% [Feynman diagram (109.8): electron line in external field with momentum labels p₂ on outgoing end, ε above, and p₁ on incoming end]
+\begin{equation}
+iG^{(e)}(\varepsilon, \mathbf{p}_2, \mathbf{p}_1).
+\label{eq:109.8}
+\end{equation}
+
+Integration is performed over~$d\varepsilon/(2\pi)$ for each independent loop, and over~$d^3p_1/(2\pi)^3$ and~$d^3p_2/(2\pi)^3$ independently, with conservation of momentum at each vertex. For example:
+
+% [Feynman diagram (109.9): self-energy correction in external field --- electron line splits into electron + virtual photon loop, with labeled internal momenta p', p'', k and energies ε, ε−ω, ω]
+\begin{multline}
+= e^2\!\int G^{(e)}(\varepsilon, \mathbf{p}_2, \mathbf{p}'')\,\gamma^\mu\,G^{(e)}(\varepsilon - \omega, \mathbf{p}'' - \mathbf{k}, \mathbf{p}' - \mathbf{k})\,\gamma^\nu\,G^{(e)}(\varepsilon, \mathbf{p}', \mathbf{p}_1) \\
+{}\times D_{\mu\nu}(\omega, \mathbf{k})\,\frac{d^4k}{(2\pi)^4}\,\frac{d^3p'}{(2\pi)^3}\,\frac{d^3p''}{(2\pi)^3}.
+\label{eq:109.9}
+\end{multline}
+
+It is important to note that in this technique one must also include diagrams with ``self-closed'' electron lines (loops), which in the usual technique are discarded as corresponding to a ``vacuum current.'' In the presence of an external field this current need not vanish, owing to the ``polarisation of the vacuum.'' For example, in the diagram:
+
+% [Feynman diagram (109.10): vacuum polarisation in external field --- a closed electron loop with external field lines attached, connected to the main electron line by a virtual photon]
+\begin{equation}
+\label{eq:109.10}
+\end{equation}
+
+\SourcePage{533}{538}
+
+\noindent the upper loop carries the factor
+\begin{equation}
+i\!\int G^{(e)}(\omega, \mathbf{p} + \mathbf{k}, \mathbf{p})\,\frac{d^3p}{(2\pi)^3}\,\frac{d\omega}{2\pi}.
+\label{eq:109.11}
+\end{equation}
+
+Here one must clarify the meaning of the integral over~$\omega$. The point is that integrating the Fourier component of~$G^{(e)}(\tau)$ over~$\omega$ amounts to taking the value of this function at~$\tau = 0$; but~$G^{(e)}(\tau)$ is discontinuous at this point, and one must specify which of its two limiting values should be taken. To clarify this, we note that the integral~(\ref{eq:109.11}) arises from the contraction of~$\psi$-operators at the same point: $\hat{j}^\mu = \hat{\bar{\psi}}^{(e)}(t, \mathbf{r})\gamma^\mu\hat{\psi}^{(e)}(t, \mathbf{r})$, where~$\hat{\bar{\psi}}^{(e)}$ stands to the left. According to the definition of the propagator~(\ref{eq:109.4}), this ordering of the factors corresponds to~$t = t'$ if~$t'$ is understood as~$t' = t + 0$, i.e.\ one must take the limiting value of~$G^{(e)}(t - t')$ at~$t - t' \to -0$. In other words, the integral over~$d\omega/2\pi$ in~(\ref{eq:109.11}) should be understood as
+\begin{equation}
+\int\!\ldots\,e^{-i\omega\tau}\,\frac{d\omega}{2\pi}, \qquad \tau \to -0.
+\label{eq:109.12}
+\end{equation}
+
+The mass operator in the external field is defined in the same manner as in~\S\,105: $-i\mathcal{M}$ is the sum of all compact self-energy blocks. It is now a function of the energy~$\varepsilon$ and of the momenta~$\mathbf{p}_1$ and~$\mathbf{p}_2$ on the external lines entering and leaving the block:
+
+% [Feynman diagram (109.13): mass operator in external field --- a shaded blob with incoming electron line carrying (ε, p₁) and outgoing electron line carrying (ε, p₂)]
+\begin{equation}
+-i\mathcal{M}(\varepsilon, \mathbf{p}_2, \mathbf{p}_1).
+\label{eq:109.13}
+\end{equation}
+
+Proceeding in exactly the same way as in deriving~(\ref{eq:105.6}):
+\begin{multline}
+\mathcal{G}(\varepsilon, \mathbf{p}_2, \mathbf{p}_1) - G^{(e)}(\varepsilon, \mathbf{p}_2, \mathbf{p}_1) \\
+= \int\!\!\int G^{(e)}(\varepsilon, \mathbf{p}_2, \mathbf{p}'')\,\mathcal{M}(\varepsilon, \mathbf{p}'', \mathbf{p}')\,\mathcal{G}(\varepsilon, \mathbf{p}', \mathbf{p}_1)\,\frac{d^3p'}{(2\pi)^3}\,\frac{d^3p''}{(2\pi)^3}.
+\label{eq:109.14}
+\end{multline}
+
+It is more natural to write this equation in the coordinate representation:
+\begin{equation}
+\mathcal{G}(\varepsilon, \mathbf{r}, \mathbf{r}') = \int\!\!\int \mathcal{G}(\varepsilon, \mathbf{p}_2, \mathbf{p}_1)\,e^{i(\mathbf{p}_2\cdot\mathbf{r} - \mathbf{p}_1\cdot\mathbf{r}')}\,\frac{d^3p_1\,d^3p_2}{(2\pi)^6},
+\label{eq:109.15}
+\end{equation}
+and analogously for the other quantities. Performing the inverse Fourier transform in~(\ref{eq:109.14}):
+\[
+\mathcal{G}(\varepsilon, \mathbf{r}, \mathbf{r}') - G^{(e)}(\varepsilon, \mathbf{r}, \mathbf{r}') = \int\!\!\int G^{(e)}(\varepsilon, \mathbf{r}, \mathbf{r}_2)\,\mathcal{M}(\varepsilon, \mathbf{r}_2, \mathbf{r}_1)\,\mathcal{G}(\varepsilon, \mathbf{r}_1, \mathbf{r}')\,d^3x_1\,d^3x_2.
+\]
+
+\SourcePage{534}{539}
+
+We apply to both sides of this equation the operator~$\gamma^0\varepsilon - \boldsymbol{\gamma}\hat{\mathbf{p}} - e\gamma A^{(e)}(\mathbf{r})$ (where~$\varepsilon$ is a number, and~$\hat{\mathbf{p}} = -i\boldsymbol{\nabla}$ differentiates with respect to~$\mathbf{r}$). According to~(\ref{eq:109.6}):
+\begin{equation}
+\bigl[\gamma^0\varepsilon - \boldsymbol{\gamma}\hat{\mathbf{p}} - e\gamma A^{(e)}(\mathbf{r})\bigr]G^{(e)}(\varepsilon, \mathbf{r}, \mathbf{r}') = \delta(\mathbf{r} - \mathbf{r}').
+\label{eq:109.16}
+\end{equation}
+The result is:
+\begin{equation}
+\bigl[\gamma^0\varepsilon - \boldsymbol{\gamma}\hat{\mathbf{p}} - e\gamma A^{(e)}(\mathbf{r})\bigr]\mathcal{G}(\varepsilon, \mathbf{r}, \mathbf{r}') - \int\!\mathcal{M}(\varepsilon, \mathbf{r}, \mathbf{r}_1)\,\mathcal{G}(\varepsilon, \mathbf{r}_1, \mathbf{r}')\,d^3x_1 = \delta(\mathbf{r} - \mathbf{r}').
+\label{eq:109.17}
+\end{equation}
+
+The particular value of the function~$\mathcal{G}(\varepsilon, \mathbf{r}, \mathbf{r}')$ is that its poles as a function of~$\varepsilon$ determine the energy levels of the electron in the external field.
+
+Let us show this first for the approximate function~$G^{(e)}$. Substituting the operators~(\ref{eq:109.2}) into the definition of the propagator~(\ref{eq:109.4}), we get, in analogy with the formulae~(75.12) for the free-particle propagator:
+\begin{equation}
+G^{(e)}_{ik}(t - t', \mathbf{r}, \mathbf{r}') =
+\begin{cases}
+\displaystyle -i\sum_n \psi_{ni}^{(+)}(\mathbf{r})\,\bar{\psi}_{nk}^{(+)}(\mathbf{r}')\,e^{-i\varepsilon_n^{(+)}(t - t')}, & t > t', \\[8pt]
+\displaystyle \phantom{-}i\sum_n \psi_{ni}^{(-)}(\mathbf{r})\,\bar{\psi}_{nk}^{(-)}(\mathbf{r}')\,e^{i\varepsilon_n^{(-)}(t - t')}, & t < t',
+\end{cases}
+\label{eq:109.18}
+\end{equation}
+and after Fourier transformation:
+\begin{equation}
+G^{(e)}_{ik}(\varepsilon, \mathbf{r}, \mathbf{r}') = \sum_n\left\{\frac{\psi_{ni}^{(+)}(\mathbf{r})\,\bar{\psi}_{nk}^{(+)}(\mathbf{r}')}{\varepsilon - \varepsilon_n^{(+)} + i0} + \frac{\psi_{ni}^{(-)}(\mathbf{r})\,\bar{\psi}_{nk}^{(-)}(\mathbf{r}')}{\varepsilon + \varepsilon_n^{(-)} - i0}\right\}.
+\label{eq:109.19}
+\end{equation}
+
+The function~$G^{(e)}(\varepsilon, \mathbf{r}, \mathbf{r}')$, considered as an analytic function of~$\varepsilon$, has poles on the positive real half-axis at the electron energy levels, and on the negative half-axis at the positron levels. The values~$\varepsilon_n^{(\pm)} > m$ form a continuous spectrum, and the corresponding poles merge into two branch cuts: from~$-\infty$ to~$-m$ and from~$m$ to~$+\infty$. On the interval~$|\varepsilon| < m$ lie the poles that determine the discrete energy levels.
+
+\SourcePage{535}{540}
+
+For the exact propagator~$\mathcal{G}(\varepsilon, \mathbf{r}, \mathbf{r}')$ one obtains an analogous expansion by expressing it through matrix elements of the Schr\"odinger--Heisenberg operators:
+\begin{equation}
+\langle m|\hat{\psi}(t, \mathbf{r})|n\rangle = \langle m|\hat{\psi}(\mathbf{r})|n\rangle\,e^{-i(E_n - E_m)t}.
+\label{eq:109.20}
+\end{equation}
+Here~$E_n$ are the exact (with all radiative corrections) energy levels of the system in the external field. The operator~$\hat{\psi}$ increases the charge by unity, and~$\hat{\bar{\psi}}$ decreases it by unity. In the matrix elements~$\langle n|\hat{\psi}|0\rangle$ and~$\langle 0|\hat{\bar{\psi}}|n\rangle$, the states~$|n\rangle$ must correspond to charge~$-1$ --- one positron plus electron--positron pairs and photons; we denote the energies~$E_n^{(-)}$. Similarly, in~$\langle 0|\hat{\psi}|n\rangle$ and~$\langle n|\hat{\bar{\psi}}|0\rangle$, the states have charge~$+1$ --- one electron plus pairs and photons; energies~$E_n^{(+)}$.
+
+We obtain:\footnote{It is assumed that the external field vanishes at spatial infinity.}
+\begin{equation}
+\mathcal{G}_{ik}(t - t', \mathbf{r}, \mathbf{r}') =
+\begin{cases}
+\displaystyle -i\sum_n \langle 0|\hat{\psi}_i(\mathbf{r})|n\rangle\langle n|\hat{\bar{\psi}}_k(\mathbf{r}')|0\rangle\,e^{-iE_n^{(+)}(t - t')}, & t > t', \\[8pt]
+\displaystyle \phantom{-}i\sum_n \langle 0|\hat{\bar{\psi}}_k(\mathbf{r}')|n\rangle\langle n|\hat{\psi}_i(\mathbf{r})|0\rangle\,e^{iE_n^{(-)}(t - t')}, & t < t',
+\end{cases}
+\label{eq:109.21}
+\end{equation}
+and hence:
+\begin{equation}
+\mathcal{G}_{ik}(\varepsilon, \mathbf{r}, \mathbf{r}') = \sum_n\left\{\frac{\langle 0|\hat{\psi}_i(\mathbf{r})|n\rangle\langle n|\hat{\bar{\psi}}_k(\mathbf{r}')|0\rangle}{\varepsilon - E_n^{(+)} + i0} + \frac{\langle 0|\hat{\bar{\psi}}_k(\mathbf{r}')|n\rangle\langle n|\hat{\psi}_i(\mathbf{r})|0\rangle}{\varepsilon + E_n^{(-)} - i0}\right\}.
+\label{eq:109.22}
+\end{equation}
+
+\SourcePage{536}{541}
+
+Let~$\varepsilon$ be close to one of the discrete energy levels~$E_n^{(+)}$ (or~$E_n^{(-)}$). Then in the sum~(\ref{eq:109.22}) only the single pole term survives. Substituting into~(\ref{eq:109.17}), the factors depending on the second argument~$\mathbf{r}'$ drop out (when~$\mathbf{r} \neq \mathbf{r}'$), giving a homogeneous integro-differential equation for the function~$\langle 0|\hat{\psi}(\mathbf{r})|n\rangle$ (or~$\langle n|\hat{\psi}(\mathbf{r})|0\rangle$), which we denote~$\Psi_n(\mathbf{r})$ for brevity.\footnote{Neglecting radiative corrections, $\Psi_n(\mathbf{r})$ coincides (for states containing one electron or one positron) with the wave functions~$\psi_n^{(\pm)}$ --- solutions of the Dirac equation.} Dropping the index~$n$:
+\begin{equation}
+\bigl[\gamma^0\varepsilon + i\boldsymbol{\gamma}\boldsymbol{\nabla} - e\gamma A^{(e)}(\mathbf{r})\bigr]_{ik}\Psi_k(\mathbf{r}) - \int\!\mathcal{M}_{ik}(\varepsilon, \mathbf{r}, \mathbf{r}_1)\,\Psi_k(\mathbf{r}_1)\,d^3x_1 = 0
+\label{eq:109.23}
+\end{equation}
+(J.~Schwinger, 1951). The discrete energy levels~$E_n$ appear as eigenvalues of this equation, providing the regular procedure for determining these levels.
+
+Let us express, for example, the first-order correction to a discrete electron energy level~$\varepsilon_n$, obtained from the Dirac equation:
+\begin{equation}
+\bigl[\gamma^0\varepsilon_n + i\boldsymbol{\gamma}\boldsymbol{\nabla} - e\gamma A^{(e)}(\mathbf{r})\bigr]\psi_n(\mathbf{r}) = 0,
+\label{eq:109.24}
+\end{equation}
+with normalisation
+\begin{equation}
+\int\!\psi_n^*\,\psi_n\,d^3x = 1.
+\label{eq:109.25}
+\end{equation}
+
+\SourcePage{537}{542}
+
+We write the eigenfunction in the form
+\begin{equation}
+\Psi_n(\mathbf{r}) = \psi_n(\mathbf{r}) + \psi_n^{(1)}(\mathbf{r}),
+\label{eq:109.26}
+\end{equation}
+where~$\psi_n^{(1)}$ is the correction. Substituting~(\ref{eq:109.26}) into equation~(\ref{eq:109.23}), multiplying from the left by~$\bar{\psi}_n(\mathbf{r})$, and integrating over~$d^3x$,\footnote{In the integration one must use the self-adjointness of the differential operator of equation~(\ref{eq:109.24}) for transferring its action from~$\psi_n^{(1)}$ to~$\bar{\psi}_n$.} we obtain:
+\begin{equation}
+E_n - \varepsilon_n \approx \int\!\!\int\bar{\psi}_{ni}(\mathbf{r})\,\mathcal{M}_{ik}(\varepsilon_n, \mathbf{r}, \mathbf{r}_1)\,\psi_{nk}(\mathbf{r}_1)\,d^3x\,d^3x_1.
+\label{eq:109.27}
+\end{equation}
