@@ -1,0 +1,274 @@
+
+\section{Photon--photon scattering}
+
+\SourcePage{622}{627}
+
+The scattering of light by light (in vacuum) is a specifically quantum-electrodynamic process; in classical electrodynamics it is absent, owing to the linearity of Maxwell's equations\footnote{In the limiting case of low frequencies, this process was first considered by \emph{H.~Euler} (1936), and in the ultra-relativistic case by \emph{A.\,I.~Akhiezer} (1937). The complete solution of the problem was given by \emph{R.~Karplus} and \emph{M.~Neumann} (1951).}.
+
+In quantum electrodynamics, photon--photon scattering is described as the result of the creation by two initial photons of a virtual electron--positron pair and its subsequent annihilation into the final quanta. The amplitude of this process (in the first non-vanishing approximation) is represented by six ``box'' diagrams with all possible relative arrangements of their four external legs. These diagrams are
+
+% [Feynman diagram (127.1): Three box diagrams labelled a, b, c. Diagram a: a square electron loop with external photon lines carrying momenta k_4 (top-left), k_2 (top-right), k_1 (bottom-right), k_3 (bottom-left), with internal momenta q, q-k_4, q-k_1-k_2 along the sides. Diagram b: square loop with external photons k_1 (top-left), k_2 (top-right), k_3 (bottom-right), k_4 (bottom-left). Diagram c: square loop with external photons k_3 (top-left), k_2 (top-right), k_4 (bottom-right), k_1 (bottom-left).]
+
+\begin{equation}
+\label{eq:127.1}
+\end{equation}
+
+\noindent and three further diagrams differing from these only in the reversal of the direction of traversal of the internal electron loop. The contribution of the latter coincides with the contribution of diagrams (127.1), and therefore the full scattering amplitude is
+\begin{equation}
+M_{fi} = 2(M^{(a)} + M^{(b)} + M^{(c)}),
+\label{eq:127.2}
+\end{equation}
+where $M^{(a)}$, $M^{(b)}$, $M^{(c)}$ are the contributions of diagrams \textit{a}, \textit{b}, \textit{c}.
+
+According to (64.19) the scattering cross section is
+\begin{equation}
+d\sigma = \frac{1}{64\pi^2}\,|M_{fi}|^2\,\frac{do'}{(2\omega)^2},
+\label{eq:127.3}
+\end{equation}
+where $do'$ is an element of solid angle for the direction of $\mathbf{k}'$ in the centre-of-mass frame. The scattering angle in this frame will be denoted by $\theta$.
+
+\textbf{Invariant amplitudes.} Separating out the polarisation factors of the four photons, we write $M_{fi}$ in the form
+\begin{equation}
+M_{fi} = e_1^\lambda\, e_2^\mu\, e_3^{*\nu}\, e_4^{*\rho}\, M_{\lambda\mu\nu\rho};
+\label{eq:127.4}
+\end{equation}
+
+\SourcePage{623}{628}
+
+\noindent the 4-tensor $M_{\lambda\mu\nu\rho}$ (which is called the \emph{photon--photon scattering tensor}) is a function of the 4-momenta of all the photons. If one writes the arguments of the functions with signs corresponding to identical directions of the external legs of diagrams (127.1), then by the symmetry of the set of diagrams it is obvious that the tensor
+\[
+M_{\lambda\mu\nu\rho}(k_1,\,k_2,\,-k_3,\,-k_4)
+\]
+is symmetric with respect to any permutation of its four arguments together with a simultaneous permutation of the same four indices. By virtue of gauge invariance of the amplitude~(\ref{eq:127.4}), it must not change under the substitution $e \to e + \mathrm{const}\cdot k$. In other words, one must have
+\begin{equation}
+k_1^\lambda\, M_{\lambda\mu\nu\rho} = k_2^\mu\, M_{\lambda\mu\nu\rho} = \dots = 0.
+\label{eq:127.5}
+\end{equation}
+
+As is easy to see, it follows from this, in particular, that the expansion of the scattering tensor in powers of the 4-momenta $k_1$, $k_2$, \dots\ must begin with terms containing fourth-order products of their components. Thus in any case
+\begin{equation}
+M_{\lambda\mu\nu\rho}(0,\,0,\,0,\,0) = 0.
+\label{eq:127.6}
+\end{equation}
+
+For the purpose of explicitly isolating the invariant amplitudes, it is convenient from the outset to choose a definite gauge for the polarisation 4-vectors $e$ --- the gauge in which
+\begin{equation}
+e_1^\mu = (0,\,\mathbf{e}_1), \quad e_2^\mu = (0,\,\mathbf{e}_2), \quad \dots
+\label{eq:127.7}
+\end{equation}
+Then
+\begin{equation}
+M_{fi} = M_{iklm}\, e_{1i}\, e_{2k}\, e_{3l}^*\, e_{4m}^*,
+\label{eq:127.8}
+\end{equation}
+where $M_{iklm}$ is a three-dimensional tensor.
+
+As the two independent polarisations, we choose for each photon circular polarisations with opposite directions of rotation, i.e.\ two helicity states with helicities $\lambda = \pm 1$. After this, the tensor $M_{iklm}$ can be written in the form
+\begin{equation}
+M_{iklm} = \sum_{\lambda_1 \lambda_2 \lambda_3 \lambda_4} M_{\lambda_1 \lambda_2 \lambda_3 \lambda_4}\, e_{1i}^{(\lambda_1)*}\, e_{2k}^{(\lambda_2)*}\, e_{3l}^{(\lambda_3)}\, e_{4m}^{(\lambda_4)};
+\label{eq:127.9}
+\end{equation}
+
+\noindent the 16 quantities $M_{\lambda_1 \lambda_2 \lambda_3 \lambda_4}$ are functions of $s$, $t$, $u$ and play the role of invariant amplitudes; they are not all independent, however.
+
+The quantities $M_{\lambda_1 \lambda_2 \lambda_3 \lambda_4}$ are three-dimensional scalars. Spatial inversion reverses the sign of the helicities; the invariant variables $s$, $t$, $u$ remain unchanged. Therefore the requirement
+
+\SourcePage{624}{629}
+
+\noindent of $P$-invariance leads to the relations
+\begin{equation}
+M_{\lambda_1 \lambda_2 \lambda_3 \lambda_4}(s,\,t,\,u) = M_{-\lambda_1\,-\lambda_2\,-\lambda_3\,-\lambda_4}(s,\,t,\,u).
+\label{eq:127.10}
+\end{equation}
+
+Time reversal interchanges the initial and final photons without changing their helicities; the variables $s$, $t$, $u$ again remain unchanged. Therefore the requirement of $T$-invariance leads to the equality
+\begin{equation}
+M_{\lambda_1 \lambda_2 \lambda_3 \lambda_4}(s,\,t,\,u) = M_{\lambda_3 \lambda_4 \lambda_1 \lambda_2}(s,\,t,\,u).
+\label{eq:127.11}
+\end{equation}
+
+Finally, there is one more relation arising from the invariance of the amplitude $M_{fi}$ with respect to the interchange of two initial or two final photons. If one performs both interchanges simultaneously ($k_1 \leftrightarrow k_2$, $k_3 \leftrightarrow k_4$), the variables $s$, $t$, $u$ do not change, and the rearrangement in the polarisation indices leads to the relation
+\begin{equation}
+M_{\lambda_1 \lambda_2 \lambda_3 \lambda_4}(s,\,t,\,u) = M_{\lambda_2 \lambda_1 \lambda_4 \lambda_3}(s,\,t,\,u).
+\label{eq:127.12}
+\end{equation}
+
+It is easy to verify that, by virtue of the symmetry properties~(\ref{eq:127.10})--(\ref{eq:127.12}), the number of independent invariant amplitudes reduces to five; as such one can choose, for example,
+\[
+M_{++++},\quad M_{++--},\quad M_{+-+-},\quad M_{+--+},\quad M_{+++-}
+\]
+(the indices ``$+$'' and ``$-$'' denote helicities $+1$ and $-1$).
+
+If one substitutes in~(\ref{eq:127.3}) in place of $M_{fi}$ one of the amplitudes $M_{\lambda_1 \lambda_2 \lambda_3 \lambda_4}$, one obtains the scattering cross section with specified polarisations of the initial and final photons. If one instead sums over final and averages over initial polarisations, one obtains the replacement
+\begin{multline}
+|M_{fi}|^2 \to \tfrac{1}{4}\{2|M_{++++}|^2 + 2|M_{++--}|^2 + 2|M_{+-+-}|^2 + {} \\
+{} + 2|M_{+--+}|^2 + 8|M_{+++-}|^2\}.
+\label{eq:127.13}
+\end{multline}
+
+The symmetry relations~(\ref{eq:127.10})--(\ref{eq:127.12}) relate to one another the various invariant amplitudes as functions of one and the same set of variables. Further functional relations arise as a consequence of crossing symmetry (see \S\,78), if one takes into account that the amplitude $M_{fi}$ in all channels describes one and the same reaction (the mutual scattering of two photons) and therefore must not change upon passing from one channel to another.
+
+The transition from the $s$-channel (corresponding to the direction of the arrows on the diagrams~(127.1)) to the $t$-channel is effected by the interchange of 4-momenta $k_2$ and $-k_3$ (i.e.\ by the substitution of variables $s \leftrightarrow t$) and the interchange of helicity indices $\lambda_2 \leftrightarrow -\lambda_3$. Analogously,
+
+\SourcePage{625}{630}
+
+\noindent the transition from the $s$- to the $u$-channel is effected by the interchange of $k_2$ and $-k_4$ (whereby $s \leftrightarrow u$) and the substitution $\lambda_2 \leftrightarrow -\lambda_4$. This leads to the relations
+\begin{equation}
+\begin{split}
+M_{+-+-}(s,\,t,\,u) &= M_{++++}(u,\,t,\,s), \\
+M_{+--+}(s,\,t,\,u) &= M_{++++}(t,\,s,\,u), \\
+M_{++++}(s,\,t,\,u) &= M_{++++}(s,\,u,\,t),
+\end{split}
+\label{eq:127.14}
+\end{equation}
+$M_{++--}(s,\,t,\,u)$ and $M_{+++-}$ are completely symmetric in the variables $s$, $t$, $u$\footnote{Here the symmetry with respect to the pair of final photons is also taken into account. Since the three variables $s$, $t$, $u$ are not independent, it would suffice to write two arguments (for example, the first two); we retain all three solely with the aim of displaying the symmetry of their permutations more clearly.}. It is therefore sufficient to compute only 3 of the 16 amplitudes, for example,
+\[
+M_{++++},\quad M_{++--},\quad M_{+++-}.
+\]
+
+The relations~(\ref{eq:127.10})--(\ref{eq:127.12}), (\ref{eq:127.14}) pertain to the full amplitudes --- sums of the contributions of all three diagrams~(127.1). But the individual contributions are themselves related to one another by relations that are obvious from comparison of the diagrams. Thus, diagram \textit{b} is obtained from diagram \textit{a} by the substitution $k_2 \leftrightarrow -k_4$, $\mathbf{e}_2 \leftrightarrow \mathbf{e}_4^*$, and therefore their contributions to the invariant amplitudes are obtained from each other by the substitution of the variables $s \leftrightarrow u$ and of the indices $\lambda_2 \leftrightarrow -\lambda_4$; analogously, the contribution of diagram \textit{c} is obtained from \textit{a} by the substitution $t \leftrightarrow u$, $\lambda_3 \leftrightarrow -\lambda_4$.
+
+\textbf{Computation of the amplitudes.} The integral $M_{fi}^{(a)}$, corresponding to diagram~(127.1,\,\textit{a}), has the form (126.4), with
+\begin{multline}
+B^{(a)} = \frac{e^4}{\pi^2}\,\mathrm{Sp}\{(\gamma e_1)(\gamma q - \gamma k_2 + m)(\gamma e_2)(\gamma q + m) \times {} \\
+{}\times (\gamma e_3^*)(\gamma q - \gamma k_4 + m)(\gamma e_4^*)(\gamma q - \gamma k_1 - \gamma k_2 + m)\}.
+\label{eq:127.15}
+\end{multline}
+
+The integrals (126.4) diverge logarithmically. In accordance with the condition~(\ref{eq:127.6}), their regularisation is effected by subtracting the values at $k_1 = k_2 = \dots = 0$\footnote{We note that when the contributions of all diagrams are summed, the divergent parts of the integrals cancel. This is easy to verify by observing that the asymptotic form (when $q \to \infty$) of the integral is
+\[
+M_{\lambda\mu\nu\rho}^{(a)} \propto \int \mathrm{Sp}\{\gamma_\lambda(\gamma q)\gamma_\mu(\gamma q)\gamma_\nu(\gamma q)\gamma_\rho(\gamma q)\}\,\frac{d^4q}{(q^2)^4}.
+\]
+Summation over the diagrams means symmetrisation of this expression with respect to the indices $\lambda$, $\mu$, $\nu$, $\rho$, as a result of which it vanishes. We emphasise, however, that this cancellation is of a fortuitous character and does not remove the necessity for regularisation, although it reduces the problem to the computation of a finite quantity.}. The computation of the regularised integrals, however, is exceedingly cumbersome.
+
+The most natural approach for computing the amplitudes of photon--photon scattering is based on the use of a double
+
+\SourcePage{626}{631}
+
+\noindent dispersion relation (\emph{B.~De~Tollis}, 1964). This method accounts most fully for the symmetry of the diagrams and almost entirely eliminates the difficulties of integration\footnote{Some details of the transformation of integrals, various representations of the transcendental functions $B$, $T$, $I$ and their limiting expressions, can be found in \emph{De~Tollis~B.}//Nuovo Cimento. 1964. V.\,32. P.\,757; 1965. V.\,35. P.\,1182; \emph{Costantini~V., De~Tollis~B., Pistoni~G.}//Nuovo Cimento. 1971. V.\,2A. P.\,733.}.
+
+The function $A_{1s}^{(a)}(s,\,t)$ (and analogously $A_{1t}^{(a)}$) for each given set of helicities $\lambda_1$, $\lambda_2$, $\lambda_3$, $\lambda_4$ is computed according to~(126.6). In view of the presence of two $\delta$-functions under the integral, we need only the value of $B^{(a)}$ at
+\begin{equation}
+l_1^2 \equiv q^2 = m^2, \quad l_4^2 \equiv (q - k_1 - k_2)^2 = m^2;
+\label{eq:127.16}
+\end{equation}
+these equalities can be taken into account already when computing the trace~(\ref{eq:127.15}). But for the subsequent substitution into~(126.22), we actually need only the value of $A_{1s}^{(a)}$ at $t = 0$. (This equality means that $\mathbf{k} = \mathbf{k}'$ and $k_2 = k_1$.) The integral~(126.6) then takes the form
+\begin{equation}
+A_{1s}^{(a)}(s,\,0) = -\frac{\pi^2}{4}\,\sqrt{\frac{s - 4m^2}{s}}\int\frac{B^{(a)}\,d o_{\mathbf{q}}}{[(q - k_2)^2 - m^2]^2},
+\label{eq:127.17}
+\end{equation}
+(cf.\ the derivation~(115.10)). Introducing the angle $\vartheta$ between $\mathbf{q}$ and $\mathbf{k}$, we obtain
+\[
+(q - k_2)^2 - m^2 = -2\omega(1 - |\mathbf{q}|\cos\vartheta) = -\sqrt{s}\biggl[1 - \frac{1}{2}\sqrt{s - 4m^2}\cos\vartheta\biggr].
+\]
+
+The integrals~(\ref{eq:127.17}) are effectively expressed through elementary functions. The computation of the function $A_2^{(a)}(s,\,t)$ according to its definition~(126.18) does not require integration at all; the expression for $B^{(a)}$ must be taken from~(\ref{eq:127.15}) for the values of $q$ satisfying~(\ref{eq:127.16}), and also the conditions $(q - k_2)^2 = m^2$, $(q - k_1)^2 = m^2$.
+
+After computing the functions $A_{1s}$, $A_{1t}$, $A_2$, the dispersion relation~(126.22) gives the amplitude directly in the form of single and double definite integrals.
+
+We present here the final result for three of the invariant amplitudes, sufficient, according to what was said above, for
+
+\SourcePage{627}{632}
+
+\noindent the determination also of all the remaining amplitudes:
+\begin{align}
+\frac{1}{8\alpha^2}\,M_{++++} &= -1 - \biggl(2 + \frac{4t}{s}\biggr)B(t) - \biggl(2 + \frac{4u}{s}\biggr)B(u) - \notag\\
+&\quad - \biggl[\frac{2(t^2 + u^2)}{s^2} - \frac{8}{s}\biggr]\bigl[T(t) + T(u)\bigr] + \frac{4}{t}\biggl(1 - \frac{2}{s}\biggr)I(s,\,t) + \notag\\
+&\quad + \frac{4}{u}\biggl(1 - \frac{2}{s}\biggr)I(s,\,u) + \biggl[\frac{2(t^2 + u^2)}{s^2} - \frac{16}{s} - \frac{4}{t} - \frac{4}{u} - \frac{8}{tu}\biggr]I(t,\,u),
+\label{eq:127.18}\\[6pt]
+\frac{1}{8\alpha^2}\,M_{++--} &= 1 + \biggl(\frac{1}{s} + \frac{1}{t} + \frac{1}{u}\biggr)\bigl[T(s) + T(t) + T(u)\bigr] - \notag\\
+&\quad - 4\biggl(\frac{1}{u} + \frac{2}{st}\biggr)I(s,\,t) - 4\biggl(\frac{1}{t} + \frac{2}{su}\biggr)I(s,\,u) - 4\biggl(\frac{1}{s} + \frac{2}{tu}\biggr)I(t,\,u),
+\notag\\[6pt]
+\frac{1}{8\alpha^2}\,M_{+-+-} &= 1 - \frac{8}{st}\,I(s,\,t) - \frac{8}{su}\,I(s,\,u) - \frac{8}{tu}\,I(t,\,u).
+\notag
+\end{align}
+
+\noindent Here the following notation has been introduced:
+\begin{align}
+B(s) &= \sqrt{1 - \frac{4}{s}}\,\mathrm{Arsh}\,\frac{\sqrt{-s}}{2} - 1, \quad s < 0,\notag\\[4pt]
+T(s) &= \biggl(\mathrm{Arsh}\,\frac{\sqrt{-s}}{2}\biggr)^{\!2}, \quad s < 0,
+\label{eq:127.19}\\[4pt]
+I(s,\,t) &= \frac{1}{4}\int_0^1 \frac{dy}{y(1-y) - \dfrac{s+t}{st}}\,\bigl\{\ln[1 - i0 - sy(1-y)] + {}\notag\\
+&\hspace{12em}{}+ \ln[1 - i0 - ty(1-y)]\bigr\},\notag
+\end{align}
+and the expressions in the regions $0 < s < 4$ and $s > 4$ are obtained from~(\ref{eq:127.19}) by analytic continuation according to the rule $s \to s + i0$, i.e.\ through the upper half-plane of the complex variable. (For brevity of notation in formulae~(\ref{eq:127.18}),~(\ref{eq:127.19}), and only in them, the letters $s$ and $t$ denote the ratios $s/m^2$, $t/m^2$.)
+
+\textbf{Cross section of scattering.} In the limiting case of low frequencies ($\omega \ll m$), the first terms of the expansion of the invariant amplitudes in these variables are:
+\begin{equation}
+\begin{gathered}
+M_{++++} \approx \frac{11e^4}{45m^4}\,s^2, \quad M_{+--+} \approx \frac{11e^4}{45m^4}\,t^2, \quad M_{+-+-} \approx \frac{11e^4}{45m^4}\,u^2,\\[4pt]
+M_{++--} \approx -\frac{e^4}{15m^4}\,(s^2 + t^2 + u^2), \quad M_{+++-} \approx 0.
+\end{gathered}
+\label{eq:127.20}
+\end{equation}
+
+\SourcePage{628}{633}
+
+Substituting these expressions into formula~(\ref{eq:127.3}), we obtain the cross sections for scattering of polarised photons. The differential cross section for scattering of unpolarised photons is computed according to~(\ref{eq:127.13}) and equals (in ordinary units)
+\begin{equation}
+d\sigma = \frac{139}{4\pi^2(90)^2}\,\alpha^2 r_e^2\biggl(\frac{\hbar\omega}{mc^2}\biggr)^{\!6}(3 + \cos^2\theta)\,do',
+\label{eq:127.21}
+\end{equation}
+and the total cross section\footnote{In passing from $d\sigma$ to $\sigma$ one must introduce the factor $1/2$, accounting for the identity of the two final photons.} is
+\begin{equation}
+\sigma = \frac{973}{10125\pi}\,\alpha^2 r_e^2\biggl(\frac{\hbar\omega}{mc^2}\biggr)^{\!6} = 0{.}031\,\alpha^2 r_e^2\biggl(\frac{\hbar\omega}{mc^2}\biggr)^{\!6}, \quad \hbar\omega \ll mc^2.
+\label{eq:127.22}
+\end{equation}
+
+In the opposite, ultra-relativistic, case the total cross section for scattering of unpolarised photons\footnote{We shall return to the dependence of $\sigma$ on $\omega$ at the end of \S\,134.} is
+\begin{equation}
+\sigma = 4{.}7\,\alpha^4\biggl(\frac{c}{\omega}\biggr)^{\!2}, \quad \hbar\omega \gg mc^2.
+\label{eq:127.23}
+\end{equation}
+
+Finally, let us present the differential cross section for scattering at small angles in the ultra-relativistic case:
+\begin{equation}
+d\sigma = \frac{\alpha^4 c^2}{\pi^2\omega^2}\,\ln^4\frac{1}{\theta}\,do, \quad \frac{mc^2}{\hbar\omega} \ll \theta \ll 1.
+\label{eq:127.24}
+\end{equation}
+This expression is valid with logarithmic accuracy --- the next term of the expansion contains a power of the large logarithm one less. For passing to the limit $\theta = 0$ (forward scattering), formula~(\ref{eq:127.24}) is unsuitable. In its place, we have here
+\begin{equation}
+d\sigma = \frac{\alpha^4 c^2}{\pi^2\omega^2}\,\ln^4\frac{\hbar\omega}{mc^2}\,do, \quad \theta \ll \frac{mc^2}{\hbar\omega}.
+\label{eq:127.25}
+\end{equation}
+
+Expression~(\ref{eq:127.25}) is easy to obtain with the help of the general formulae~(\ref{eq:127.18}), by putting $t = 0$ in them and noting that when $s \gg 1$ only the function $T$ contains the highest (second) power of the large logarithm:
+\[
+T\biggl(\frac{s}{m^2}\biggr) \approx \frac{1}{4}\,\ln^2\frac{s}{m^2} \approx \ln^2\frac{\omega}{m}.
+\]
+To this accuracy only the amplitudes
+\[
+M_{++++} = M_{----} = M_{+-+-} = -16e^4\ln^2(\omega/m)
+\]
+are different from zero. We see, in particular, that in this case the polarisation of the photon does not change upon scattering.
+
+\SourcePage{629}{634}
+
+% [Figure 24: Log-log plot of the total cross section σ (in units of 10^{-30} cm²) versus ℏω/mc² for photon-photon scattering. The cross section rises as ω⁶ at low frequencies, reaches a maximum near ℏω ≈ 1.5 mc², and falls as ω^{-2} at high frequencies. The kink at ℏω = mc² reflects the change in character of the process due to the possibility of real electron-positron pair creation.]
+\par\noindent
+
+\textbf{The case of small frequencies.} In the case of small frequencies ($\omega \ll m$) the amplitude of photon-photon scattering can also be obtained in an entirely different way, using the correction terms in the Lagrangian of the weak electromagnetic field (see below, \S\,129).
+
+The small correction to the interaction Hamiltonian~$\hat{V}'$ differs from the small correction to the Lagrangian only by sign. According to~(129.21) we have
+\begin{equation}
+\hat{V}' = -\frac{e^4}{45\cdot 8\pi^2 m^4}\int\bigl\{(\hat{\mathbf{E}}^2 - \hat{\mathbf{H}}^2)^2 + 7(\hat{\mathbf{E}}\hat{\mathbf{H}})^2\bigr\}\,d^3x.
+\label{eq:127.26}
+\end{equation}
+Since this operator is of fourth order with respect to the field, it has matrix elements for the transition of interest to us already in first approximation.
+
+For the calculation one must substitute in~(\ref{eq:127.26})
+\begin{equation}
+\hat{\mathbf{E}} = -\frac{\partial\hat{\mathbf{A}}}{\partial t},\qquad \hat{\mathbf{H}} = \operatorname{rot}\hat{\mathbf{A}},\qquad \hat{\mathbf{A}} = \sqrt{4\pi}\sum_{\mathbf{k}\lambda}(\hat{c}_{\mathbf{k}\lambda}\mathbf{e}_{\mathbf{k}\lambda}\,e^{-ikx} + \hat{c}^+_{\mathbf{k}\lambda}\mathbf{e}^*_{\mathbf{k}\lambda}\,e^{ikx}),\quad \alpha = 1,\,2,\,3
+\label{eq:127.27}
+\end{equation}
+($\lambda$ is the polarisation number), after which the $S$-matrix element is computed as
+\begin{equation}
+S_{fi} = -i\langle f|\int V'\,dt\,|i\rangle = -i\langle 0|c_{\mathbf{k}_3\lambda_3}c_{\mathbf{k}_4\lambda_4}\int V'\,dt\;c^+_{\mathbf{k}_1\lambda_1}c^+_{\mathbf{k}_2\lambda_2}|0\rangle
+\label{eq:127.28}
+\end{equation}
+(cf.\ \S\S\,72, 77). With the normalisation of~$\hat{\mathbf{A}}$ as in~(\ref{eq:127.27}), the amplitude of scattering $M_{fi}$ is directly determined from~$S_{fi}$ according to
+\begin{equation}
+S_{fi} = i(2\pi)^4\,\delta^{(4)}(k_3 + k_4 - k_1 - k_2)\,M_{fi}
+\label{eq:127.29}
+\end{equation}
+(cf.\ \S\,64). The average value in~(\ref{eq:127.28}) is computed by Wick's theorem (see~(77.3)), and in the contractions only the ``external'' operators $\hat{c}_{\mathbf{k}\lambda}$, $\hat{c}^+_{\mathbf{k}\lambda}$ are to be contracted with the internal~$\hat{\mathbf{A}}$.

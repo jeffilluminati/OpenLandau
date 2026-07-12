@@ -1,0 +1,267 @@
+
+\section{Photon splitting in a magnetic field}
+
+\SourcePage{643}{648}
+
+Non-linear corrections in the equations of the electromagnetic field give rise to a number of specific effects in the propagation of photons in external fields.
+
+In order to give these equations a more conventional form (cf.\ footnote on p.\,646), we shall in this section denote the electric and magnetic field strengths by the letters $\mathbf{E}$ and $\mathbf{B}$; the letters $\mathbf{D}$ and $\mathbf{H}$ will denote the quantities
+\[
+\mathbf{D} = \mathbf{E} + 4\pi\mathbf{P},\quad \mathbf{H} = \mathbf{B} - 4\pi\mathbf{M},\quad \mathbf{P} = \frac{\partial L'}{\partial\mathbf{E}},\quad \mathbf{M} = \frac{\partial L'}{\partial\mathbf{B}}.
+\]
+Then equations (129.25)--(129.27) take the form
+\begin{equation}
+\begin{gathered}
+\operatorname{div}\mathbf{B} = 0,\quad \operatorname{rot}\mathbf{E} = -\frac{\partial\mathbf{B}}{\partial t},\\[4pt]
+\operatorname{div}\mathbf{D} = 0,\quad \operatorname{rot}\mathbf{B} = \frac{\partial\mathbf{D}}{\partial t}.
+\end{gathered}
+\label{eq:130.1}
+\end{equation}
+
+Let us consider the propagation of a photon in a constant uniform magnetic field $\mathbf{B}_0$. Denoting the quantities pertaining to the weak field of the electromagnetic wave by letters with a prime, we shall have for them the equations
+\begin{equation}
+\begin{gathered}
+{[\mathbf{k}\mathbf{H}']} = -\omega\mathbf{D}',\quad [\mathbf{k}\mathbf{E}'] = \omega\mathbf{B}',\\[4pt]
+\mathbf{k}\mathbf{B}' = 0,\qquad\qquad \mathbf{k}\mathbf{D}' = 0,
+\end{gathered}
+\label{eq:130.2}
+\end{equation}
+where
+\begin{equation}
+D'_i = \varepsilon_{ik}E'_k,\quad B'_i = \mu_{ik}H'_k;
+\label{eq:130.3}
+\end{equation}
+the dielectric and magnetic permeability tensors of the vacuum are functions of the external field $\mathbf{B}_0$. Assuming this field to be weak in the sense $|e|B_0/m^2 \ll 1$, we find from the Lagrangian function (129.21):
+\begin{equation}
+\begin{aligned}
+\varepsilon_{ik} &= \delta_{ik} + \frac{2e^4}{45m^4}\,B_0^2\!\left(-\delta_{ik} + \frac{7}{2}\,b_i b_k\right),\\[6pt]
+\mu_{ik} &= \delta_{ik} + \frac{e^4}{45m^4}\,B_0^2\!\left(\delta_{ik} + 2b_i b_k\right),
+\end{aligned}
+\label{eq:130.4}
+\end{equation}
+where $\mathbf{b} = \mathbf{B}_0/B_0$.
+
+Let us recall that the photon frequency is assumed to be small: $\omega \ll m$ (the condition (129.29)). We note, however, that the character of the structure of the tensors $\varepsilon_{ik}$ and $\mu_{ik}$ is not connected with this assumption, but is already a consequence of the invariance of quantum electrodynamics with respect to spatial inversion and charge conjugation. Thus, the first forbids the appearance in $\mathbf{D}'$ of terms of the form $\operatorname{const}\cdot\mathbf{B}'$ and $\operatorname{const}\cdot\mathbf{B}_0(\mathbf{B}_0\mathbf{B}')$ (inversion changes the sign of $\mathbf{E}$ and $\mathbf{D}$ whilst leaving $\mathbf{H}$ and $\mathbf{B}$ unchanged), and the second forbids the appearance in $\varepsilon_{ik}$ and $\mu_{ik}$ of terms antisymmetric and of odd degree in $\mathbf{B}_0$, i.e.\ terms of the form $e_{ikl}B_{0l}$ (charge conjugation changes the sign of all fields simultaneously).
+
+\SourcePage{644}{649}
+
+Owing to the existence in the problem under consideration of a preferred plane --- the plane passing through $\mathbf{k}$ and $\mathbf{b}$ --- it is natural to choose as the two independent polarisations of the photon linear polarisations in this plane and perpendicular to it. We shall label with the subscripts $\perp$ and $\parallel$ the polarisations for which the vector $\mathbf{B}'$ is respectively perpendicular to the plane $\mathbf{k}$, $\mathbf{b}$ or lies in it.
+
+In the case of perpendicular polarisation, together with the vector $\mathbf{B}'$ the vector $\mathbf{H}'$ is also perpendicular to the plane $\mathbf{k}$, $\mathbf{b}$:
+\[
+\mathbf{B}' = \biggl(1 + \frac{2e^4}{45m^4}\,B_0^2\biggr)\mathbf{H}'.
+\]
+The vectors $\mathbf{E}'$ and $\mathbf{D}'$, on the other hand, lie in the plane $\mathbf{k}$, $\mathbf{b}$. In this case, from equations (\ref{eq:130.2}) we obtain the dispersion law for photons in the form $k = n_\perp\omega$ with a ``refractive index'' (ordinary units)
+\begin{equation}
+n_\perp = 1 + \frac{7e^4\hbar}{90m^4_ec^7}\,B_0^2\sin^2\theta,
+\label{eq:130.5}
+\end{equation}
+where $\theta$ is the angle between $\mathbf{k}$ and $\mathbf{B}_0$\,\footnote{Expressing $\mathbf{B}'$ through $\mathbf{H}'$ from the second of equations (\ref{eq:130.2}), substituting into it $\mathbf{H}'$ from the first equation, and then projecting the latter onto the direction $\mathbf{b}$. The product $\mathbf{k}\mathbf{E}'$ is expressed through $\mathbf{b}\mathbf{E}'$ from the equation $\mathbf{k}\mathbf{D}' = 0$.}.
+
+In the second case the vectors $\mathbf{B}'$ and $\mathbf{H}'$ lie in the plane $\mathbf{k}$, $\mathbf{b}$, while the vectors $\mathbf{E}'$ and $\mathbf{D}'$ are perpendicular to it. For the refractive index one obtains
+\begin{equation}
+n_\parallel = 1 + \frac{2e^4\hbar}{45m^4_ec^7}\,B_0^2\sin^2\theta.
+\label{eq:130.6}
+\end{equation}
+
+We note that $n_\perp \geqslant n_\parallel$. The equality sign is attained at $\theta = 0$, when $n_\perp = n_\parallel = 1$.
+
+The most interesting manifestation of the non-linearity of Maxwell's equations with the inclusion of radiative corrections is the splitting of a photon into two photons in an external magnetic field (\emph{S.\,L.~Adler, J.\,N.~Bahcall, C.\,G.~Callan, M.\,N.~Rosenbluth}, 1970).
+
+In a constant and uniform field this process proceeds with conservation of energy and momentum\,\footnote{Conservation of momentum is connected with the spatial homogeneity of the field, but it takes place, of course, only for processes involving uncharged particles. The Lagrangian function of charged particles involves not only the field strengths but also the potentials of the field, which depend on the coordinates even in a uniform field.}. Upon the decay of a photon $\mathbf{k}$ into photons $\mathbf{k}_1$ and $\mathbf{k}_2$ we have
+\begin{equation}
+\omega(\mathbf{k}) = \omega(\mathbf{k}_1) + \omega(\mathbf{k}_2),\quad \mathbf{k}_1 + \mathbf{k}_2 = \mathbf{k}.
+\label{eq:130.7}
+\end{equation}
+For photons in a vacuum in the absence of external fields $\omega = k$, and the equalities (\ref{eq:130.7}) can be fulfilled only for three photons moving in the same direction. But even in such a case the decay
+
+\SourcePage{645}{650}
+
+\noindent is strictly forbidden by invariance with respect to charge conjugation --- by virtue of Furry's theorem (cf.\ \S\,79) the sum of diagrams with three photon external ends vanishes. The presence of the external field makes the decay of a photon possible (it is depicted by diagrams with three photon external ends and one or more lines of the external field). But this possibility turns out to be connected with the character of polarisation of the photons. This connection can be established already from an analysis of the conservation laws (\ref{eq:130.7}), taking into account the modification of the dispersion law of photons in a magnetic field.
+
+Let us write the dispersion law in the form
+\begin{equation}
+\omega = k + \beta(\mathbf{k}),
+\label{eq:130.8}
+\end{equation}
+where $\beta(\mathbf{k})$ is a small (in a weak field) addition. Its presence makes it possible, in principle, for the equalities (\ref{eq:130.7}) to be fulfilled for momenta $\mathbf{k}_1$, $\mathbf{k}_2$ lying in a narrow cone in the neighbourhood of the direction $\mathbf{k}$. In view of the closeness of the directions of all three vectors $\mathbf{k}$, $\mathbf{k}_1$, $\mathbf{k}_2$, in the small terms $\beta(\mathbf{k})$ one may set them all directed along $\mathbf{k}$ and consider that $k_1 + k_2 = k$. Then the law of conservation of energy is written as
+\[
+\beta(\varkappa k) - \beta_1(\varkappa k_1) - \beta_2(\varkappa(k - k_1)) = k_1 + |\mathbf{k} - \mathbf{k}_1| - k
+\]
+($\varkappa = \mathbf{k}/k$); since the dispersion law depends on the polarisation of the photon, the functions $\beta$, $\beta_1$, $\beta_2$ may be different. Taking into account that
+\[
+|\mathbf{k} - \mathbf{k}_1| = \bigl[(k - k_1)^2 + 2kk_1(1 - \cos\vartheta)\bigr]^{1/2} \approx k - k_1 + \frac{kk_1}{2(k - k_1)}\,\vartheta^2
+\]
+($\vartheta$ is the small angle between $\mathbf{k}$ and $\mathbf{k}_1$), we have
+\begin{equation}
+\beta(\varkappa k) - \beta_1(\varkappa k_1) - \beta_2(\varkappa(k - k_1)) = \frac{kk_1\vartheta^2}{2(k - k_1)} > 0.
+\label{eq:130.9}
+\end{equation}
+This inequality determines the necessary conditions for the properties of the dispersion law for decay to take place.
+
+For frequencies $\omega \ll m$ the dispersion law is given by formulae (\ref{eq:130.5}), (\ref{eq:130.6}), so that $\beta(\mathbf{k}) \approx -k[n(\varkappa) - 1]$, where the function $n(\varkappa)$ depends on the direction but not on the magnitude of the vector $\mathbf{k}$. Then there must be
+\begin{equation}
+k_1 n_1(\varkappa) + (k - k_1)n_2(\varkappa) - kn(\varkappa) > 0.
+\label{eq:130.10}
+\end{equation}
+Since $n_\perp > n_\parallel$, this condition immediately excludes the decays
+\[
+\gamma_\perp \to \gamma_\parallel + \gamma_\parallel,\quad \gamma_\perp \to \gamma_\perp + \gamma_\perp,
+\]
+where the symbol $\gamma$ denotes a photon, and the subscripts $\perp$ and $\parallel$ correspond to the two polarisations defined above\,\footnote{Numerical calculations show that the inequality $n_\perp > n_\parallel$ is valid not only at $\omega \ll m$ (when the expressions (\ref{eq:130.5}), (\ref{eq:130.6}) hold), but also at all $\omega < 2m$ (the threshold for pair production by a photon).}.
+
+\SourcePage{646}{651}
+
+For the decays
+\[
+\gamma_\perp \to \gamma_\perp + \gamma_\perp,\quad \gamma_\parallel \to \gamma_\parallel + \gamma_\parallel
+\]
+the left-hand side of the inequality (\ref{eq:130.10}) vanishes, since the functions $n$, $n_1$, $n_2$ are identical. In order to elucidate this question one must in this case take into account the dependence of the refractive index on $k$, which appears as $\omega$ increases. The required inequality is:
+\[
+k_1 n(\varkappa, k_1) + (k - k_1) n(\varkappa, k - k_1) - kn(\varkappa, k) > 0.
+\]
+Already from general considerations one can assert that $n(\varkappa, k)$ is an increasing function of $k$, and therefore this inequality cannot be fulfilled, so that the decays under consideration are also impossible (indeed, replacing $n(k - k_1)$ and $n(k_1)$ by $n(k)$, we deliberately increase the whole sum, whereas after the replacement it becomes exactly zero). The assertion made applies to any transparent medium, and is a consequence of the Kramers--Kronig formula for the refractive index (cf.\ VIII, \S\,84). In the present case the external field constitutes a ``transparent medium'' for photons of all frequencies $\omega < 2m$ --- up to the threshold for pair production, i.e.\ for the appearance of photon absorption.
+
+Thus, the only allowed decay processes turn out to be
+\begin{equation}
+\gamma_\parallel \to \gamma_\perp + \gamma_\perp,
+\label{eq:130.11}
+\end{equation}
+\begin{equation}
+\gamma_\parallel \to \gamma_\parallel + \gamma_\perp.
+\label{eq:130.12}
+\end{equation}
+
+It was already noted that the momenta $\mathbf{k}_1$ and $\mathbf{k}_2$ are directed at small angles $\vartheta$ to the momentum of the initial photon $\mathbf{k}$. If one neglects these angles, i.e.\ considers the momenta of all photons to be parallel (we shall call this the \emph{collinear approximation}), then the decay (\ref{eq:130.12}) turns out to be impossible, as is clear from the following arguments.
+
+Analogously to (127.14), let us represent the decay amplitude in the form
+\[
+M_{fi} = M_{\lambda\mu\nu}\,e^\lambda\, e_1^{\mu*}\, e_2^{\nu*},
+\]
+where $e$, $e_1$, $e_2$ are the polarisation 4-vectors of the photons, defined, as usual, by their 4-potentials $A$. Choosing the three-dimensional gauge of potentials, $e = (0, \mathbf{e})$, we rewrite this expression as
+\[
+M_{fi} = M_{ikl}\,e_i\, e_{1k}^*\, e_{2l}^*.
+\]
+The two independent polarisations are defined by the unit vectors\,\footnote{The subscripts $\parallel$ and $\perp$ correspond to the polarisations defined above. It must be remembered that the unit vectors $\mathbf{e}$ determine the direction of the vector potential $\mathbf{A}$ (and thereby of the field $\mathbf{E}'$) and are perpendicular to the direction $\mathbf{B}'$.}
+\begin{equation}
+\mathbf{e}_\parallel \parallel [\mathbf{k}\mathbf{b}],\quad \mathbf{e}_\perp \parallel [\mathbf{k}[\mathbf{k}\mathbf{b}]].
+\label{eq:130.13}
+\end{equation}
+
+\SourcePage{647}{652}
+
+It is easy to see that in the expansion
+\[
+M_{ikl} = \sum_{\lambda\lambda_1\lambda_2} M_{\lambda\lambda_1\lambda_2}\,e_i^{(\lambda)*}\,e_k^{(\lambda_1)}\,e_l^{(\lambda_2)}
+\]
+(the indices $\lambda$, $\lambda_1$, $\lambda_2$ run through the values $\perp$, $\parallel$; cf.\ (127.9)) the vectors $\mathbf{e}_\perp$ must appear in each term an even (0 or 2) number of times. Indeed, the amplitude $M_{fi}$ is invariant with respect to $CP$ transformations, and since the potentials $\mathbf{A}$ (and with them $\mathbf{e}$) are $CP$-invariant, the tensor $M_{ikl}$ must also be $CP$-invariant. Under $CP$ transformation $\mathbf{e}_\parallel \to \mathbf{e}_\parallel$, $\mathbf{e}_\perp \to -\mathbf{e}_\perp$ (charge conjugation changes the sign of $\mathbf{b}$, and inversion changes the sign of $\mathbf{k}$, leaving the axial vector $\mathbf{b}$ unchanged). Therefore if in any term of the expansion the vector $\mathbf{e}_\perp$ appears an odd number of times, the corresponding scalar $M_{\lambda\lambda_1\lambda_2}$ must be $CP$-odd. But from the only two (in the collinear approximation) vectors $\mathbf{k} = \mathbf{k}_1 = \mathbf{k}_2$ and $\mathbf{b}$, which both change sign under $CP$ transformation, one cannot construct a $CP$-odd scalar, which proves the assertion made.
+
+Thus, in the collinear approximation the decay (\ref{eq:130.12}) is forbidden. A more detailed estimate shows that the ratio of the amplitude of this process to the amplitude of the decay (\ref{eq:130.11}) allowed in the collinear approximation is
+\begin{equation}
+\frac{M_{\parallel\perp\parallel}}{M_{\perp\perp\parallel}} \sim \vartheta^2 \sim \alpha^2\left(\frac{B_0}{B_{\text{cr}}}\right),
+\label{eq:130.14}
+\end{equation}
+where
+\[
+B_{\text{cr}} = \frac{m^2}{|e|}\left(= \frac{m^2c^3}{|e|\hbar} = 4.4\cdot 10^{13}\;\text{G}\right)
+\]
+(the angles $\vartheta$ are estimated from (\ref{eq:130.9}) as $\vartheta^2 \sim n_\perp - n_\parallel$).
+
+The fact that, of all the decays, only the decay $\gamma_\parallel \to \gamma_\perp + \gamma_\perp$ turns out to be possible (to leading order) means that in an unpolarised beam of photons propagating in a magnetic field, eventually perpendicular ($\perp$) polarisation is established.
+
+Let us proceed to the calculation of the decay amplitude $M_{fi} \equiv M_{\perp\perp\parallel}$ by perturbation theory, i.e.\ under the assumption $B_0 \ll B_{\text{cr}}$.
+
+The first (both in $\alpha$ and in the external field) non-vanishing Feynman diagrams have the form
+
+% [Feynman diagram: box diagram with four vertices — three photon external ends (k, k_1, k_2) and one external field line, with all possible permutations of the external ends]
+\begin{equation}
+\label{eq:130.15}
+\end{equation}
+
+\SourcePage{648}{653}
+
+\noindent (with all possible permutations of the external ends), where the three end-point lines correspond to photons and one to the external field. But in the collinear approximation the amplitude corresponding to these diagrams vanishes. Indeed, by virtue of gauge invariance the external field can enter into the amplitude of the process only in the form of the 4-tensor of its field strengths $F_{\mu\nu}$, and the 4-vectors of polarisation of the photons --- only in antisymmetric combinations
+\[
+f_{\mu\nu} = k_\mu e_\nu - k_\nu e_\mu
+\]
+with the wave 4-vectors. The final expression for the amplitude is built from the tensor of the external field $F_{\mu\nu}$, the tensors $f_{\mu\nu}$, $f_{1\mu\nu}$, $f_{2\mu\nu}$ of the three photons, and their wave 4-vectors $k_\mu$, $k_{1\mu}$, $k_{2\mu}$; moreover, it must be linear in each of the tensors $f_{\mu\nu}$, and for the diagrams (\ref{eq:130.15}) --- linear also in $F_{\mu\nu}$. In the collinear approximation the 4-vectors $k_1$ and $k_2$ reduce to $k$: $k_1 = k\omega_1/\omega$, $k_2 = k\omega_2/\omega$. Under these conditions every scalar product constructed in the indicated manner vanishes identically: it is easy to see that such a product will contain at least one factor equal to zero, namely $k^2$ or $ke$.
+
+Thus, in the collinear approximation the first non-zero contribution to the decay amplitude arises only from six triangle diagrams of the form
+
+% [Feynman diagram: hexagonal (triangle) diagram with six vertices — three photon external ends (k, k_1, k_2) and three external field lines (dashed), with all permutations]
+\begin{equation}
+\label{eq:130.16}
+\end{equation}
+
+\noindent with three lines of the external field\,\footnote{Corrections connected with taking into account the non-collinearity in the diagrams (\ref{eq:130.15}) would give in the amplitude a contribution of the next order in $\alpha$ in comparison with the contribution from diagrams (\ref{eq:130.16}).}. The amplitude corresponding to these diagrams is constructed already with three factors $F_{\mu\nu}$. Such scalar products may be different from zero. But all non-zero products contain the wave vectors of the photons only through the tensors $f_{\mu\nu}$; it is easy to see that adding further factors of $k$ leads to the appearance of a factor equal to zero in the product, namely $k^2$ or $ke$. But the components of the tensor $f_{\mu\nu}$ coincide with the components of the field strengths $\mathbf{E}'$ and $\mathbf{B}'$ of the photon. This means that if the decay amplitude corresponding to the diagrams (\ref{eq:130.16}) is represented as a matrix element of a certain operator, then this operator, being expressed through the operators of the photon field strengths, does not depend
+
+\SourcePage{649}{654}
+
+\noindent on their frequencies. In turn, it follows from this that the calculation of the decay amplitude (corresponding to the diagram (\ref{eq:130.16})) with the help of the Lagrangian (129.17) will give the correct answer, not restricted by the condition $\omega \ll m$.
+
+At the end of \S\,127 it was explained how the Hamiltonian of the interaction is obtained from the Lagrangian function $L$ found in \S\,129. Now we are dealing with a process involving three photons, and the corresponding interaction operator is obtained from those terms of the expansion of $L$ that contain triple products of the fields of the photons $\mathbf{E}'$, $\mathbf{B}'$. In doing so one need consider only terms of the form
+\begin{equation}
+(\mathbf{B}'\mathbf{B}_0)(\mathbf{E}'\mathbf{B}_0)^2,
+\label{eq:130.17}
+\end{equation}
+in which each of the vectors $\mathbf{B}'$ and $\mathbf{E}'$ enters multiplied scalarly by $\mathbf{B}_0$. Indeed, the products $\mathbf{E}'^2$, $\mathbf{B}'^2$, $\mathbf{E}'\mathbf{B}'$ originate, in four-dimensional notation, from the scalars of the form $f_{\mu\nu}f^{\mu\nu}$, which in the collinear approximation identically vanish. The fact that the term with precisely one factor $\mathbf{B}'$ and two factors $\mathbf{E}'$ is chosen is connected with the fact that the process under consideration is one with a $\parallel$-photon and two $\perp$-photons; from the first photon, the component along $\mathbf{B}_0$ has the field $\mathbf{B}'$, and from the last two --- the field $\mathbf{E}'$.
+
+The Lagrangian function $L$ is expressed through the invariants $\mathcal{F} = (\mathbf{B}^2 - \mathbf{E}^2)/2$ and $\mathcal{G} = \mathbf{E}\mathbf{B}$. We need the term in the expansion obtained from the term $\propto\mathcal{F}\mathcal{G}^2$. Computation with the help of (129.17) gives for the latter expression
+\[
+-\frac{13e^6}{630\pi^2 m^8}\,\mathcal{F}\mathcal{G}^2.
+\]
+Setting $\mathbf{B} = \mathbf{B}_0 + \mathbf{B}'$ and $\mathbf{E} = \mathbf{E}'$, and extracting from $\mathcal{F}$ the term $\mathbf{B}_0\mathbf{B}'$, and from $\mathcal{G}$ the term $\mathbf{B}_0\mathbf{E}'$, we obtain the required term of the expansion of the form (\ref{eq:130.17}). Thus, the operator of the three-photon interaction leading to the decay $\gamma_\parallel \to \gamma_{1\perp} + \gamma_{2\perp}$ is given by the expression
+\begin{equation}
+\hat{V}^{(3)} = \frac{13e^6}{315\pi^2 m^8}\int(\mathbf{B}_0\hat{\mathbf{E}}'_1)(\mathbf{B}_0\hat{\mathbf{E}}'_2)(\mathbf{B}_0\hat{\mathbf{B}}')\,d^3x,
+\label{eq:130.18}
+\end{equation}
+where
+\[
+\hat{\mathbf{B}}' = i\sqrt{4\pi}\,[\mathbf{k}\mathbf{e}_\parallel]\,e^{i(\mathbf{k}\mathbf{r} - \omega t)}\hat{c}_{\mathbf{k}\parallel},
+\]
+\[
+\hat{\mathbf{E}}'_1 = -i\sqrt{4\pi\omega_1}\,\mathbf{e}_1\,e^{-i(\mathbf{k}_1\mathbf{r} - \omega_1 t)}\hat{c}^+_{\mathbf{k}_1\perp}
+\]
+and analogously for $\hat{\mathbf{E}}'_2$; cf.\ (127.26), (127.27)\,\footnote{The doubling of the coefficient in (\ref{eq:130.18}) is due to the fact that $\mathbf{E}'_1$ and $\mathbf{E}'_2$ may be taken from each of the two factors $\mathbf{E}'$ in $L$.}.
+
+According to the rules set forth in \S\,64, the decay amplitude $M_{fi}$ is computed by the definition
+\[
+S_{fi} = -i\langle f|\!\int\hat{V}^{(3)}\,dt|i\rangle = i(2\pi)^4\delta^{(4)}(k - k_1 - k_2)M_{fi}
+\]
+
+\SourcePage{650}{655}
+
+\noindent and equals
+\[
+M_{fi} = -i\,\frac{13e^6}{315\pi^2 m^8}\,(4\pi)^{3/2}\,\omega\omega_1\omega_2 B_0^3\sin^3\theta
+\]
+($\theta$ is the angle between $\mathbf{k}$ and $\mathbf{B}_0$). The decay probability per unit time (see (64.11)):
+\[
+dw = (2\pi)^4\delta(\mathbf{k} - \mathbf{k}_1 - \mathbf{k}_2)\,\delta(\omega - \omega_1 - \omega_2)\,|M_{fi}|^2\,\frac{d^3k_1\,d^3k_2}{2\cdot 2\omega\cdot 2\omega_1\cdot 2\omega_2\cdot(2\pi)^6}
+\]
+(the extra factor $1/2$ takes into account the reduction of the phase space volume on account of the identity of the two final photons). The first $\delta$-function is eliminated by integration over $d^3k_2$. For the elimination of the second $\delta$-function we note that, on neglecting the dispersion,
+\[
+\omega - \omega_1 - \omega_2 = k - k_1 - |\mathbf{k} - \mathbf{k}_1| \approx -\frac{kk_1}{k - k_1}(1 - \cos\vartheta_1)
+\]
+and therefore\,\footnote{It is here assumed that when the dispersion is taken into account, the argument of the $\delta$-function does indeed vanish at some $\cos\vartheta_1 < 1$. Thus, dispersion of the required character is necessary in order for the decay to be possible, but the decay probability itself (if it is small) does not depend on the dispersion.}
+\[
+\int_0^\omega\!\!\int_0^1 \omega_1\omega_2\,\delta(\omega - \omega_1 - \omega_2)\,d\cos\vartheta_1\cdot 2\pi\omega_1^2\,d\omega_1 = 2\pi\!\int_0^\omega\omega_1^2(\omega - \omega_1)^2\,d\omega_1 = \frac{\pi}{15}\,\omega^5.
+\]
+
+We finally find the total decay probability of the photon per unit time (ordinary units):
+\begin{equation}
+\begin{split}
+w &= \frac{\alpha^3}{15\pi^2}\biggl(\frac{13}{315}\biggr)^{\!2}\frac{mc^2}{\hbar}\biggl(\frac{\hbar\omega}{mc^2}\biggr)^{\!5}\biggl(\frac{B_0\sin\theta}{B_{\text{cr}}}\biggr)^{\!6}\\[6pt]
+&= 0.18\,\alpha^6\,\frac{mc^2}{\hbar}\biggl(\frac{B_0^2\sin^2\theta}{8\pi mc^2}\biggr)^{\!3}\biggl(\frac{\hbar}{mc}\biggr)^{\!9}\biggl(\frac{\hbar\omega}{mc^2}\biggr)^{\!5}.
+\end{split}
+\label{eq:130.19}
+\end{equation}
+
+As was already mentioned, the applicability of this formula does not require the condition $\omega \ll m$. It is restricted only by the condition of smallness of the terms corresponding to diagrams of the eighth order. To estimate, we note that in the matrix element of the eighth order there may appear, for example, a term differing from that of the sixth order by the dimensionless invariant factor of the form
+
+\SourcePage{651}{656}
+
+\noindent $(eF^{\mu\nu}k_\nu/m^3)^2$. The condition that it be small leads to the very weak condition
+\[
+\omega \ll m(m^2/(|e|B_0)).
+\]

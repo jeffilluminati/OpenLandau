@@ -1,0 +1,236 @@
+
+\section{Relativistic equation for bound states}
+
+\SourcePage{607}{612}
+
+The method employed in the preceding sections for computing radiative corrections to atomic energy levels is inapplicable for solving the problem of determining the corrections to the levels of positronium---a system of two identical particles, neither of which can be treated as fixed relative to the other as a source of external field.
+
+A systematic method for solving this problem is based on the fact that the energy levels of bound states are poles of the exact amplitude of mutual scattering of two particles (the amplitude considered as a function of the total energy of the particles in the centre-of-inertia system). Indeed, positronium in each of its discrete states can be regarded as an ``intermediate particle'' of definite mass, through whose formation the process of electron--positron scattering can proceed; each such ``single-particle'' intermediate state corresponds to a pole of the scattering amplitude (these poles lie, of course, in the non-physical region of 4-momenta of the scattering particles).
+
+According to~(106.17), the exact scattering amplitude is constructed from the exact ``four-tailed'' vertex part $\Gamma_{ik,\,lm}$ and the polarisation amplitudes $u$ of the particles. The latter, evidently, have no relation to the pole singularities, and therefore it is more convenient not to consider them at all, speaking instead of the poles of the vertex part itself, i.e.\ of the function
+\begin{equation}
+\Gamma_{ik,\,lm}(p'_-,\,-p_+;\,p_-,\,-p'_+),
+\label{eq:125.1}
+\end{equation}
+where the designations of the 4-momenta of the external lines of the diagram~(106.12) correspond to the scattering of a positron on an electron.
+
+Let us emphasise that the assertion about the existence of poles refers precisely to the exact scattering amplitude or to the exact vertex part; in each separate term of the perturbation-theory series the required pole is absent. The latter is already obvious from the fact that in the Feynman diagrams of every approximation only electron (and photon) lines appear, but not lines of the ``composite particle''---positronium as a whole. From this it follows in turn that the computation of the scattering amplitude near its poles requires the summation of an infinite sequence of dia-
+
+\SourcePage{608}{613}
+
+\noindent grams. Let us elucidate which diagrams specifically enter into this sequence.
+
+In the first non-vanishing (first in $\alpha$) approximation of perturbation theory for the vertex part~(\ref{eq:125.1}), there correspond two second-order diagrams:
+
+% [Feynman diagram (125.2): Two second-order diagrams for electron-positron scattering. Diagram \textit{a}: single photon exchange with momentum $p_- - p'_-$ between electron line ($p_-$ to $p'_-$) and positron line ($-p_+$ to $-p'_+$). Diagram \textit{b}: annihilation channel with photon momentum $p_- + p_+$ between electron ($p_-$) and positron ($-p_+$) annihilating and creating pair ($p'_-$, $-p'_+$).]
+
+\begin{equation}
+\label{eq:125.2}
+\end{equation}
+
+\noindent or in analytic form:
+\begin{equation}
+\Gamma_{ik,\,lm} = -e^2 \gamma^\mu_{il}\,\gamma^\nu_{km}\,D_{\mu\nu}(p_- - p'_-) + e^2 \gamma^\mu_{im}\,\gamma^\nu_{kl}\,D_{\mu\nu}(p_- + p_+).
+\label{eq:125.3}
+\end{equation}
+
+In the next (second in $\alpha$) approximation there are already 10 fourth-order diagrams:
+
+% [Feynman diagram (125.4): Ten fourth-order diagrams for electron-positron scattering. Diagram \textit{a}: ladder (two-photon exchange) with momenta $q$, $q - p'_-$, $p_- - q$ on internal lines, external momenta $p'_-$, $p_-$, $-p'_+$, $-p_+$. Diagram \textit{b}: crossed two-photon exchange. Diagram \textit{c}: vertex correction on one electron line. Diagram \textit{d}: self-energy insertion on electron propagator. Diagram \textit{e}: vertex correction on positron line. Plus five more diagrams differing by the interchange $p_- \leftrightarrow -p'_+$.]
+
+\begin{equation}
+\label{eq:125.4}
+\end{equation}
+
+\noindent and five more diagrams differing by the interchange $p_- \leftrightarrow -p'_+$. All these diagrams have, compared with diagrams~(\ref{eq:125.2}), an extra power of smallness $e^2 = \alpha$. We shall show, however, that in diagram~(125.4,\textit{a}) this extra power of smallness is compensated by a small (for small momenta of the electron and positron) denominator.
+
+\SourcePage{609}{614}
+
+We shall consider all quantities in the centre-of-inertia system. Since, however, the 4-momenta of the external lines of the diagrams are not assumed to be physical (i.e.\ $p^2 \neq m^2$), although in this system $\mathbf{p}_+ = -\mathbf{p}_-$, we have $\varepsilon_+ \neq \varepsilon_-$. Thus, the 4-momenta of the external lines are
+\begin{equation}
+\begin{gathered}
+p_- = (\varepsilon_-,\,\mathbf{p}), \quad p_+ = (\varepsilon_+,\,-\mathbf{p}), \\
+p'_- = (\varepsilon'_-,\,\mathbf{p}'), \quad p'_+ = (\varepsilon'_+,\,-\mathbf{p}'), \\
+\varepsilon_- + \varepsilon_+ = \varepsilon'_- + \varepsilon'_+\,.
+\end{gathered}
+\label{eq:125.5}
+\end{equation}
+
+The binding energy of the electron and positron in positronium is $\sim m\alpha^2$. Therefore, in the neighbourhood of the poles of the scattering amplitude that is of interest to us,
+\begin{equation}
+|\mathbf{p}| \sim |\mathbf{p}'| \sim m\alpha \ll m, \quad |\varepsilon_- - m| \sim |\varepsilon_+ - m| \sim \mathbf{p}^2/m \sim m\alpha^2, \ldots
+\label{eq:125.6}
+\end{equation}
+
+The contribution to the vertex part from diagram~(125.4,\textit{a}) is
+\begin{equation}
+\Gamma^{(1a)}_{ik,\,lm} = -ie^4 \int (\gamma^\lambda G(q)\gamma^\mu)_{il}\,(\gamma^\nu G(q - p_- - p_+)\gamma^\rho)_{km} \times D_{\lambda\rho}(q - p'_-)\,D_{\mu\nu}(p_- - q)\,\frac{d^4 q}{(2\pi)^4}\,.
+\label{eq:125.7}
+\end{equation}
+In the integral~(\ref{eq:125.7}) the essential region of values of $q^\mu = (q_0,\,\mathbf{q})$ is that near the poles of both electron Green's functions $G$ simultaneously. In this region $|\mathbf{q}|$ and $|q_0 - m|$ are small, and the electron propagators are
+\[
+G(q) = \frac{\gamma^0 q_0 - \boldsymbol{\gamma}\mathbf{q} + m}{(q_0 + m)(q_0 - m) - \mathbf{q}^2 + i0} \approx \frac{\gamma^0 + 1}{2}\biggl[q_0 - m - \frac{\mathbf{q}^2}{2m} + i0\biggr]^{-1},
+\]
+\begin{equation}
+G(q - p_- - p_+) \approx \frac{\gamma^0 - 1}{2}\biggl[q_0 - \varepsilon_- - \varepsilon_+ + m + \frac{\mathbf{q}^2}{2m} - i0\biggr]^{-1}.
+\label{eq:125.8}
+\end{equation}
+The poles of these two expressions lie on opposite sides of the real axis in the plane of the complex variable $q_0$; closing the integration contour along this axis, say, in the upper half-plane, we compute the integral over $q_0$ by the residue at the corresponding pole\footnote{For diagram~(125.4,\textit{e}), which differs from~(125.4,\textit{a}) only in the mutual direction of the electron lines, both poles would lie on the same side of the real axis, so that after the approximations made the integral would vanish.}. As a result we find that
+\[
+\Gamma^{(1a)} \sim e^4 \int \frac{d^3 q}{(q - p'_-)^2 (p_- - q)^2\,(2m - \varepsilon_- - \varepsilon_+ + \mathbf{q}^2/m)}
+\]
+
+\SourcePage{610}{615}
+
+\noindent and from this, taking into account~(\ref{eq:125.6}), the estimate
+\[
+\Gamma^{(1a)} \sim \alpha^2 \frac{(m\alpha)^3}{(m\alpha)^4\,m\alpha^2} = \frac{1}{m^2\alpha}.
+\]
+The contribution to $\Gamma$ from the second-order diagram~(125.2,\textit{a}) (the first term in~(\ref{eq:125.3})) is of the same order of magnitude, which proves the assertion made above regarding the smallness of diagram~(125.4,\textit{a}). An analogous situation occurs in all subsequent approximations of perturbation theory.
+
+Thus, the computation of the vertex part of interest to us near its poles requires the summation of the infinite sequence of ``anomalously large'' diagrams with intermediate states of the type of the internal lines of diagram~(125.4,\textit{a}). It is characteristic of these diagrams that they can be cut between the external lines $p_-$, $-p_+$ and $p'_-$, $-p'_+$ into parts connected to each other only by two electron lines\footnote{Such a definition includes in itself all anomalously large diagrams, but alongside them also some ``normal'' ones, for instance diagram~(125.4,\textit{b}).}. The totality of all diagrams not satisfying this condition we shall call the \emph{compact vertex part} and denote by $\widetilde{\Gamma}_{ik,\,lm}$; since anomalously large diagrams are not included in it, this quantity can be computed by ordinary perturbation theory. Thus, in the first approximation $\widetilde{\Gamma}$ is determined by both second-order diagrams~(\ref{eq:125.2}), and in the second---by the family of fourth-order diagrams (all diagrams, except for~(125.4,\textit{a},\,\textit{b})).
+
+Classifying the non-compact vertex parts by the number of their ``double connections'', one can represent the full $\Gamma$ in the form of an infinite series:
+
+% [Feynman diagram (125.9): Diagrammatic representation of the full vertex $\Gamma$ as a series of ladder-type diagrams. The thick internal lines are exact propagators $\mathcal{G}$. The first term is the compact vertex $\widetilde{\Gamma}$, the second has one pair of $\mathcal{G}$ lines connecting two $\widetilde{\Gamma}$ blocks, the third has two such pairs, and so on.]
+
+\begin{equation}
+\label{eq:125.9}
+\end{equation}
+
+\noindent where all the internal thick solid lines are exact propagators $\mathcal{G}$ (a series of this type is often called \emph{ladder diagrams}). To sum this series, we ``multiply'' it from the left by one more $\widetilde{\Gamma}$\,\footnote{That is, we multiply all terms of the series by $\widetilde{\Gamma}$ and two $\mathcal{G}$, and carry out the corresponding integration over 4-momenta of the new internal connections.}:
+
+% [Feynman diagram: Diagrammatic equation showing $\widetilde{\Gamma}\mathcal{G}\mathcal{G}\Gamma$ equals $\widetilde{\Gamma}\mathcal{G}\mathcal{G}\widetilde{\Gamma}$ plus $\widetilde{\Gamma}\mathcal{G}\mathcal{G}\widetilde{\Gamma}\mathcal{G}\mathcal{G}\widetilde{\Gamma}$ plus $\ldots$]
+
+\SourcePage{611}{616}
+
+Comparing now this series with the original series~(\ref{eq:125.9}), we see that
+
+% [Feynman diagram (125.10): Graphical equation: $\widetilde{\Gamma}\mathcal{G}\mathcal{G}\Gamma = \Gamma - \widetilde{\Gamma}$, with diagrammatic representations of each term.]
+
+\begin{equation}
+\label{eq:125.10}
+\end{equation}
+
+This graphical equation is equivalent to the following integral equation:
+\begin{multline}
+i\Gamma_{ik,\,lm}(p'_-,\,-p_+;\,p_-,\,-p'_+) = i\widetilde{\Gamma}_{ik,\,lm}(p'_-,\,-p_+;\,p_-,\,-p'_+) + {} \\
++ \int \widetilde{\Gamma}_{ir,\,sm}(p'_-,\,q - p'_+ - p'_-;\,q,\,-p'_+)\,\mathcal{G}_{st}(q)\,\mathcal{G}_{nr}(q - p'_+ - p'_-) \times {} \\
+\times \Gamma_{tk,\,ln}(q,\,-p_+;\,p_-,\,-p'_+)\,\frac{d^4 q}{(2\pi)^4}\,.
+\label{eq:125.11}
+\end{multline}
+
+The functions $\widetilde{\Gamma}$ and $\mathcal{G}$ are computed by perturbation theory, after which equation~(\ref{eq:125.11}) gives, in principle, the possibility of computing $\Gamma$ to any required accuracy.
+
+For the determination of energy levels, however, it suffices to know only the position of the poles of the function~$\Gamma$. Near the poles $\Gamma \gg \widetilde{\Gamma}$, so that the first term on the right-hand side of~(\ref{eq:125.11}) (the second diagram on the right in~(\ref{eq:125.10})) can be neglected, and the equation becomes homogeneous in~$\Gamma$. In this equation the variables $p_+$, $p_-$, and also the indices $k$,~$l$ become parameters, the dependence on which remains arbitrary (is not determined by the equation itself). Dropping these parameters (and with them the primes on the remaining variables $p'_+$,~$p'_-$), we obtain the equation
+\begin{equation}
+i\Gamma_{i,m}(p_-;\,-p_+) = \int \widetilde{\Gamma}_{ir,\,sm}(p_-,\,q - p_+ - p_-;\,q,\,-p_+)\,\mathcal{G}_{st}(q) \times \mathcal{G}_{nr}(q - p_+ - p_-)\,\Gamma_{t,\,n}(q;\,q - p_+ - p_-)\,\frac{d^4 q}{(2\pi)^4}
+\label{eq:125.12}
+\end{equation}
+(\textit{E.\,E.~Salpeter, H.\,A.~Bethe}, 1951).
+
+Written in the centre-of-inertia system ($\mathbf{p}_+ + \mathbf{p}_- = 0$), equation~(\ref{eq:125.12}) has solutions only for certain values of $\varepsilon_+ + \varepsilon_-$, which give the energy levels of positronium. The function $\Gamma_{i,\,m}$ plays only an auxiliary role. Instead of it, it is more convenient to introduce another function:
+\begin{equation}
+\chi_{sr}(p_1,\,p_2) = \mathcal{G}_{st}(p_1)\,\Gamma_{t,\,n}(p_1;\,p_2)\,\mathcal{G}_{nr}(p_2).
+\label{eq:125.13}
+\end{equation}
+
+\SourcePage{612}{617}
+
+\noindent Then equation~(\ref{eq:125.12}) takes the form
+\begin{equation}
+i\bigl[\mathcal{G}^{-1}(p_-)\,\chi(p_-,\,-p_+)\,\mathcal{G}^{-1}(-p_+)\bigr]_{im} = \int \widetilde{\Gamma}_{ir,\,sm}(p_-,\,q - p_+ - p_-;\,q,\,-p_+)\,\chi_{sr}(q,\,q - p_+ - p_-)\,\frac{d^4 q}{(2\pi)^4}\,,
+\label{eq:125.14}
+\end{equation}
+in which $\widetilde{\Gamma}$ appears as the kernel of an integral operator. As was already mentioned, $\widetilde{\Gamma}$ can be computed by perturbation theory; the same applies, of course, also to the function $\mathcal{G}^{-1}$.
+
+Let us show that in the first (in $\alpha$) approximation of perturbation theory equation~(\ref{eq:125.14}) reduces, as one should expect, to the non-relativistic Schr\"odinger equation for positronium.
+
+In the first non-relativistic approximation $\widetilde{\Gamma}$ is determined by diagram~(125.2,\textit{a}) alone (the annihilation diagram~(125.2,\textit{b}) vanishes in this approximation)\footnote{We recall that the velocities of the particles in positronium $v/c \sim \alpha$. In this sense the expansions in $\alpha$ and in $1/c$ are interrelated.}. As for the analogous reason in \S\,83, it is convenient to choose the photon propagator in the Coulomb gauge~(76.12),\,(76.13), keeping in it only the component $D_{00}$. Then
+\[
+\widetilde{\Gamma}_{ir,\,sm}(p_-,\,q - p + p_-;\,q,\,-p_+) = -e^2\gamma^0_{is}\gamma^0_{rm} D_{00}(q - p_-) =
+\]
+\[
+= -U(\mathbf{q} - \mathbf{p}_-)\,\gamma^0_{is}\,\gamma^0_{rm},
+\]
+where
+\[
+U(\mathbf{q}) = -4\pi e^2 / \mathbf{q}^2
+\]
+is the Fourier component of the potential energy of Coulomb interaction of the positron and electron. Equation~(\ref{eq:125.14}) takes the form
+\begin{equation}
+i\chi_{im}(p_-,\,-p_+) = \biggl[G(p_-)\gamma^0 \int U(\mathbf{q} - \mathbf{p}_-)\,\chi(q,\,q - p_+ - p_-)\,\frac{d^4 q}{(2\pi)^4} \cdot \gamma^0 G(-p_+)\biggr]_{im},
+\label{eq:125.15}
+\end{equation}
+where the exact propagators $\mathcal{G}$ have also been replaced by the free-electron propagators $G$. For the latter we have the approximate expressions (cf.~(\ref{eq:125.8}))
+\[
+G(p_-) \approx \frac{1 + \gamma^0}{2}\,g(p_-), \quad G(-p_+) \approx \frac{1 - \gamma^0}{2}\,g(p_+),
+\]
+where the matrix factors have been separated out, and $g(p)$ is a scalar function:
+\begin{equation}
+g(p) = \bigl[\varepsilon - m - \mathbf{p}^2/(2m) + i0\bigr]^{-1}.
+\label{eq:125.16}
+\end{equation}
+
+\SourcePage{613}{618}
+
+Upon substituting these expressions into~(\ref{eq:125.15}), we notice that all matrix elements different from zero of
+\[
+\biggl[\frac{1 + \gamma^0}{2}\,\gamma^0\,\chi\,\gamma^0\,\frac{1 - \gamma^0}{2}\biggr]_{im} = \biggl[\frac{\gamma^0 + 1}{2}\,\chi\,\frac{\gamma^0 - 1}{2}\biggr]_{im}
+\]
+coincide with the elements $-\chi_{im}$. Therefore the matrix equation~(\ref{eq:125.15}) is equivalent to an equation for the scalar function:
+\begin{equation}
+i\chi(p_-,\,-p_+) = -g(p_-)\,g(p_+) \int U(\mathbf{q} - \mathbf{p}_-)\,\chi(q,\,q - p_+ - p_-)\,\frac{d^4 q}{(2\pi)^4}\,.
+\label{eq:125.17}
+\end{equation}
+
+Let us now introduce, in place of $p_+$,~$p_-$, the variables
+\[
+p \equiv (\varepsilon,\,\mathbf{p}) = \frac{p_- - p_+}{2}\,, \quad P = p_- + p_+
+\]
+(4-momenta of relative motion of the particles and of positronium as a whole). In the centre-of-inertia system
+\[
+P = (E + 2m,\,\mathbf{0}),
+\]
+where the total energy is denoted by $E + 2m$, i.e.\ $E$ is the energy level measured from the rest mass. Expressing things in terms of these variables, we rewrite~(\ref{eq:125.17}) in the form
+\[
+i\chi(p,\,P) =
+\]
+\[
+= -g\biggl(p + \frac{P}{2}\biggr)\,g\biggl(-p + \frac{P}{2}\biggr) \int U(\mathbf{q} - \mathbf{p}_-)\,\chi\biggl(q - \frac{P}{2},\,P\biggr)\,\frac{d^4 q}{(2\pi)^4} =
+\]
+\[
+= -g\biggl(p + \frac{P}{2}\biggr)\,g\biggl(-p + \frac{P}{2}\biggr) \int U(\mathbf{q}' - \mathbf{p})\,\chi(q',\,P)\,\frac{d^4 q'}{(2\pi)^4}\,.
+\]
+
+In this equation $P$ enters only as a parameter, and the function $\chi$ enters the right-hand side only in the form of the integral
+\[
+\psi(\mathbf{q}) = \int_{-\infty}^{\infty} \chi(q,\,P)\,dq_0\,.
+\]
+
+Integrating both sides of the equation over $d\varepsilon$, we obtain a closed equation for $\psi$:
+\[
+\psi(\mathbf{p}) = -\frac{1}{2\pi i} \int_{-\infty}^{\infty} g\biggl(p + \frac{P}{2}\biggr)\,g\biggl(-p + \frac{P}{2}\biggr)\,d\varepsilon \int U(\mathbf{q} - \mathbf{p})\,\psi(\mathbf{q})\,\frac{d^3 q}{(2\pi)^3}\,,
+\]
+where
+\[
+g\biggl(\pm p + \frac{P}{2}\biggr) = \biggl[\pm\varepsilon + \frac{E}{2} - \frac{\mathbf{p}^2}{2m} + i0\biggr]^{-1}.
+\]
+
+\SourcePage{614}{619}
+
+Closing the integration contour over $d\varepsilon$, say, in the upper half-plane of complex $\varepsilon$, we compute the integral by the residue at the corresponding pole, and finally obtain
+\begin{equation}
+\biggl(\frac{\mathbf{p}^2}{2m} - E\biggr)\psi(\mathbf{p}) + \int U(\mathbf{q} - \mathbf{p})\,\psi(\mathbf{q})\,\frac{d^3 q}{(2\pi)^3} = 0.
+\label{eq:125.18}
+\end{equation}
+This is indeed the Schr\"odinger equation for positronium in the momentum representation (see~III,\,(130.4)).
+
+If we had restricted ourselves to diagrams~(\ref{eq:125.2}) for $\widetilde{\Gamma}$ but had included in them (and also in $\mathcal{G}$) the next terms of the expansion in $1/c$, we would have obtained the Breit equation (see \S\,83). The inclusion of diagrams from~(\ref{eq:125.4}) (together with subsequent terms of the expansion in $1/c$) gives radiative corrections to the levels of positronium; however, the computations become very involved.
+
+We present the result of the computation with these corrections of the difference of the ground levels of ortho- and parapositronium\footnote{\textit{Karplus~R., Klein~A.}~// Phys.\ Rev. 1952. V.\,87. P.\,848.}:
+\begin{equation}
+E({}^3S_1) - E({}^1S_0) = \alpha^2\,\frac{me^4}{2\hbar^2}\biggl\{\frac{7}{6} - \biggl(\frac{16}{9} + \ln 2\biggr)\frac{\alpha}{\pi} - i\frac{\alpha}{2}\biggr\}.
+\label{eq:125.19}
+\end{equation}
+The first term in the curly brackets is the fine-structure splitting (see Problem~2, \S\,84). The second term is the radiative correction to the splitting of levels. The imaginary part of the difference is related to the annihilation probability of parapositronium (see~(89.14)), i.e.\ to the complexity of the level ${}^1S_0$; for parapositronium the width of the level turns out to be of the same order of magnitude as the radiative correction to its real part.

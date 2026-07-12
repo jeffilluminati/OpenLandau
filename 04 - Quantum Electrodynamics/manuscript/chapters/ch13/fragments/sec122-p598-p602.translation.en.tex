@@ -1,0 +1,144 @@
+
+\section{Radiative corrections to scattering}
+
+\SourcePage{593}{598}
+
+Let us proceed to the computation of radiative corrections to the scattering of an electron in an external field (\emph{J.~Schwinger}, 1949).
+
+The corresponding part of the scattering amplitude is represented by two diagrams~(121.2). Diagram~$a$ gives a contribution to the amplitude
+\[
+-(\bar{u}'\gamma^0 u)\,\frac{\mathcal{P}(-\mathbf{q}^2)}{4\pi}\,D(-\mathbf{q}^2)\cdot e\Phi(\mathbf{q}),
+\]
+where $\mathcal{P}(-\mathbf{q}^2)$ is the polarisation operator corresponding to the loop in the diagram. The contribution of diagram~$b$:
+\[
+-(\bar{u}'\Lambda^0 u)e\Phi(\mathbf{q}),
+\]
+where $\Lambda^0$ is the correction term in the vertex operator ($\Gamma^\mu = \gamma^\mu + \Lambda^\mu$);
+
+\SourcePage{594}{599}
+
+\noindent according to (116.6)
+\[
+\Lambda^0 = \gamma^0[f(-\mathbf{q}^2)-1] - \frac{1}{2m}\sigma^{0\nu}q_\nu g(-\mathbf{q}^2).
+\]
+Adding both contributions, we obtain\footnote{In this transformation one must remember that if $q^\mu = (0,\,\mathbf{q})$, then $q_\mu = (0,\,-\mathbf{q})$! Therefore $\sigma^{0\nu}q_\nu = -\mathbf{q}^0\mathbf{q}$.}
+\begin{equation}
+M_{fi}^{(3)} = -(\bar{u}'\gamma^0 Q_{\text{rad}} u)e\Phi(\mathbf{q}),\qquad
+Q_{\text{rad}}(\mathbf{q}) = f(-\mathbf{q}^2) - 1 - \frac{1}{\mathbf{q}^2}\mathcal{P}(-\mathbf{q}^2) + \frac{1}{2m}g(-\mathbf{q}^2)\mathbf{q}\boldsymbol{\gamma}.
+\label{eq:122.1}
+\end{equation}
+
+Let us discuss first of all the question of the \emph{infrared divergence} contained in the form factor $f(-\mathbf{q}^2)$ and thereby also in the scattering amplitude~(\ref{eq:122.1}).
+
+It was already pointed out (see \S\,98) that the exact amplitude of purely elastic scattering is in itself equal to zero, i.e.\ has no meaning. Physical meaning is possessed only by the scattering amplitude defined as a process in which any number of soft photons may be emitted, each with energy less than some given value $\omega_{\max}$ satisfying the conditions for applicability of the theory of soft-photon emission. In other words, only the sum has meaning
+\begin{equation}
+d\sigma = d\sigma_{\text{el}} + d\sigma_{\text{el}}\int_0^{\omega_{\max}}dw_\omega + d\sigma_{\text{el}}\,\frac{1}{2!}\int_0^{\omega_{\max}}dw_{\omega_1}\int_0^{\omega_{\max}}dw_{\omega_2} + \ldots\;,
+\label{eq:122.2}
+\end{equation}
+where $d\sigma_{\text{el}}$ is the scattering cross section without photon emission, $dw_\omega$ is the differential probability of emission of a photon of frequency~$\omega$ by the electron. It is here assumed that $d\sigma_{\text{el}}$ is itself computed by perturbation theory, i.e.\ as a series expansion in powers of~$\alpha^2$). Then upon bringing together terms of each order in~$\alpha$ from all the summands in~(\ref{eq:122.2}) we obtain $d\sigma$ in the form of a series in~$\alpha$, each term of which will be finite.
+
+In the first Born approximation $d\sigma_{\text{el}} \sim \alpha^2$. This term, naturally, has meaning in its own right. If we wish to take into account the next correction to $d\sigma_{\text{el}}$ (a term $\sim\alpha^3$), then alongside it one must also take the second term in the sum~(\ref{eq:122.2}): since $dw_\omega \sim \alpha$, upon multiplication by $d\sigma_{\text{el}} \sim \alpha^2$ a quantity of order $\sim\alpha^3$ also arises from here.\footnote{As regards the probability $dw_\omega$, the necessity of accounting for radiative corrections in it depends on~$\omega_{\max}$; the limit $\omega\to 0$ corresponds to the classical case, in which radiative corrections vanish; therefore by choosing a sufficiently small~$\omega_{\max}$ one can always make them small.}
+
+\SourcePage{595}{600}
+
+$\sim\alpha^3$. Let us show that upon adding these two quantities the infrared divergence is eliminated.
+
+The divergent term in the form factor~$f$ according to (117.17) has the form\footnote{This is easily verified using the relation
+\[
+\frac{|\mathbf{q}|}{m} = \frac{1-\xi}{\sqrt{\xi}}
+\]
+between $|\mathbf{q}|$ and the variable~$\xi$ with the help of which formula~(117.17) was written.}
+\[
+-\frac{\alpha}{2}\,F\!\left(\frac{|\mathbf{q}|}{2m}\right)\ln\frac{m}{\lambda}.
+\]
+The corresponding term in the amplitude~(\ref{eq:122.1}):
+\[
+\frac{\alpha}{2}\,F\ln\frac{m}{\lambda}\cdot(\bar{u}'\gamma^0 u)e\Phi(\mathbf{q}),
+\]
+and in the scattering cross section~(121.5):
+\[
+d\sigma^{\text{infra}} = -\alpha F\ln\frac{m}{\lambda}\cdot|\bar{u}'\gamma^0 u|^2\,|e\Phi(\mathbf{q})|^2\,\frac{do'}{16\pi^2}.
+\]
+Comparing this with the Born cross section
+\[
+d\sigma^{(1)} = |\bar{u}'\gamma^0 u|^2\,|e\Phi(\mathbf{q})|^2\,\frac{do'}{16\pi^2},
+\]
+we find that
+\begin{equation}
+d\sigma^{\text{infra}} = -\alpha F\ln\frac{m}{\lambda}\cdot d\sigma^{(1)}.
+\label{eq:122.3}
+\end{equation}
+On the other hand, the second term in~(\ref{eq:122.2}) with $\int dw_\omega$ from~(120.11) gives
+\begin{equation}
+d\sigma_{\text{el}}\int_0^{\omega_{\max}}dw_\omega = \alpha F\ln\frac{2\omega_{\max}}{\lambda}\cdot d\sigma^{(1)}.
+\label{eq:122.4}
+\end{equation}
+Finally, adding (\ref{eq:122.3}) and (\ref{eq:122.4}), we obtain
+\begin{equation}
+-d\sigma^{(1)}\cdot\alpha F\!\left(\frac{|\mathbf{q}|}{2m}\right)\ln\frac{m}{2\omega_{\max}}.
+\label{eq:122.5}
+\end{equation}
+
+We see that the divergent contribution from soft ($|\mathbf{k}|\sim\lambda$) virtual photons is indeed cancelled by the contribution from the emission of equally soft real photons. The same situation takes place in any other scattering process.
+
+At the same time, there appears a dependence of the scattering cross section on~$\omega_{\max}$. This dependence is a consequence of the fact that the quantity~$\omega_{\max}$ enters into the very definition of scattering as a process in which any number of soft photons may be emitted. Naturally,
+
+\SourcePage{596}{601}
+
+\noindent the cross section of such a process will be smaller, the lower the limit~$\omega_{\max}$ of photon frequencies whose emission we still attribute to the given scattering process.
+
+Let us now find the full expression for the radiative correction to the scattering cross section. Proceeding by the standard rules (see (65.7)), we find for the cross section, averaged over the polarisations of the initial and summed over the polarisations of the final electrons:
+\begin{equation}
+d\sigma = d\sigma^{(1)} + d\sigma_{\text{rad}} =
+|e\Phi(\mathbf{q})|^2\operatorname{Sp}\{(\gamma p'+m)(\gamma^0+\gamma^0 Q_{\text{rad}})(\gamma p+m)(\gamma^0+\overline{Q}_{\text{rad}}\gamma^0)\}\,\frac{do'}{32\pi^2}.
+\label{eq:122.6}
+\end{equation}
+According to~(\ref{eq:122.1})
+\[
+Q_{\text{rad}} = a + b\boldsymbol{\gamma}\mathbf{q},\qquad \overline{Q}_{\text{rad}} = \gamma^0 Q_{\text{rad}}^+ \gamma^0 = a + b\boldsymbol{\gamma}\mathbf{q},
+\]
+\[
+a = f(-\mathbf{q}^2) - 1 - \frac{1}{\mathbf{q}^2}\mathcal{P}(-\mathbf{q}^2),\qquad b = \frac{1}{2m}g(-\mathbf{q}^2).
+\]
+To the accuracy of terms linear in~$a$ and~$b$, the trace in~(\ref{eq:122.6}) equals
+\[
+\frac{1}{4}\operatorname{Sp}\{\ldots\} = 2\!\left(\varepsilon^2 - \frac{\mathbf{q}^2}{4}\right)(1+2a) - 2bm\mathbf{q}^2.
+\]
+Therefore
+\begin{equation}
+d\sigma_{\text{rad}} = 2\biggl\{f_\lambda(-\mathbf{q}^2) - 1 - \frac{1}{\mathbf{q}^2}\mathcal{P}(-\mathbf{q}^2) - \frac{\mathbf{q}^2}{4\varepsilon^2-\mathbf{q}^2}g(-\mathbf{q}^2)\biggr\}\,d\sigma^{(1)},
+\label{eq:122.7}
+\end{equation}
+where $d\sigma^{(1)}$ is the Born cross section for scattering of unpolarised electrons~(80.5); the form factor~$f$ has been given the index~$\lambda$ as a reminder that it is ``cut off by the photon mass~$\lambda$''.
+
+It remains to add to~(\ref{eq:122.7}) the cross section for emission of soft photons. If we represent $f_\lambda$ in the form
+\begin{equation}
+f_\lambda(-\mathbf{q}^2) = 1 - \frac{\alpha}{2}\,F\!\left(\frac{|\mathbf{q}|}{2m}\right)\ln\frac{m}{\lambda} + \alpha F_2,
+\label{eq:122.8}
+\end{equation}
+then according to~(120.11) this addition reduces to the replacement of $f_\lambda$ in~(\ref{eq:122.7}) by
+\begin{equation}
+f_{\omega_{\max}} = 1 - \frac{\alpha}{2}\,F\!\left(\frac{|\mathbf{q}|}{2m}\right)\ln\frac{m}{2\omega_{\max}} + \frac{\alpha}{2}\,F_1 + \alpha F_2.
+\label{eq:122.9}
+\end{equation}
+With this replacement (\ref{eq:122.7}) gives the final answer.
+
+\SourcePage{597}{602}
+
+Let us note that in the non-relativistic limit\footnote{This expression differs from the non-relativistic (117.20) by the replacement $\ln\lambda \to \ln 2\omega_{\max} - 5/6$.}
+\begin{equation}
+f_{\omega_{\max}} = 1 - \frac{\alpha\mathbf{q}^2}{3\pi m^2}\biggl(\ln\frac{m}{2\omega_{\max}} + \frac{11}{24}\biggr), \qquad \mathbf{q}^2 \ll m^2.
+\label{eq:122.10}
+\end{equation}
+Let us draw attention to the fact that the specifics of the external field enter into the radiative correction to the cross section only through $d\sigma^{(1)}$; the multiplier in the curly brackets in~(\ref{eq:122.7}) has a universal character. In the non-relativistic approximation
+\begin{equation}
+d\sigma_{\text{rad}} = -d\sigma^{(1)}\,\frac{2\alpha}{3\pi}\,\frac{\mathbf{q}^2}{m^2}\biggl(\ln\frac{m}{2\omega_{\max}} + \frac{19}{30}\biggr), \qquad \mathbf{q}^2 \ll m^2
+\label{eq:122.11}
+\end{equation}
+(here the contributions from all terms in the curly brackets of~(\ref{eq:122.7}) are included). In the opposite, ultra-relativistic, case the main contribution comes only from the term with $f_{\omega_{\max}} - 1$ and one obtains
+\begin{equation}
+d\sigma_{\text{rad}} = -d\sigma^{(1)}\cdot\frac{2\alpha}{\pi}\ln\frac{\mathbf{q}^2}{m^2}\ln\frac{\varepsilon}{\omega_{\max}}, \qquad \mathbf{q}^2 \gg m^2.
+\label{eq:122.12}
+\end{equation}
+
+Let us note in conclusion that the radiative corrections considered here do not lead to the appearance of any polarisation effects absent in the first Born approximation (in contrast to the corrections of the second Born approximation, considered in \S\,121). The point is that the specifics of the first Born approximation in the final count are connected with the hermiticity of the $S$-matrix. This property is, however, preserved also when the radiative corrections considered here are taken into account, since in this approximation there are no real intermediate states in the scattering channel (so that the right-hand side of the unitarity relation vanishes).\footnote{The computation of radiative corrections to processes appearing only in the second approximation of perturbation theory is considerably more cumbersome and will not be reproduced in this book. We limit ourselves to some literature references: radiative corrections to photon scattering by an electron --- \emph{Brown L.\,M., Feynman R.\,P.}//Phys.\ Rev.\ 1952.\ V.\,85.\ P.\,231; to two-photon annihilation of a pair --- \emph{Harris J., Brown L.\,M.}//Phys.\ Rev.\ 1957.\ V.\,105.\ P.\,1656; to scattering of an electron by an electron and a positron --- \emph{Redhead M.}//Proc.\ Roy.\ Soc.\ 1953.\ V.\,A220.\ P.\,219; \emph{Polovin R.\,V.}//ZhETF.\ 1956.\ V.\,31.\ P.\,449; to bremsstrahlung --- \emph{Fomin P.\,I.}//ZhETF.\ 1958.\ V.\,35.\ P.\,707.}

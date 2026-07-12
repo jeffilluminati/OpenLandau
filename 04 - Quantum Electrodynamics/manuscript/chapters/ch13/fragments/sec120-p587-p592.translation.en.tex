@@ -1,0 +1,183 @@
+
+\section{Emission of soft photons with non-zero mass}
+
+\SourcePage{582}{587}
+
+When computing the electron form factors in \S\,117 we encountered the divergence of integrals at low frequencies of virtual photons. This divergence is closely connected with the infrared catastrophe discussed already in \S\,98. There it was shown that the cross section of any process involving charged particles (including the scattering of an electron by an external field, represented by the diagram of type~(117.1)) has meaning not by itself, but only when the simultaneous emission of any number of soft photons is taken into account. As will be explained in detail below (see \S\,122), in the total cross section, which takes into account the emission of soft photons, all the divergences cancel. In this case, of course, to obtain the correct result the preliminary ``cut-off'' of the divergent integrals in all the contributing cross sections must be carried out in a uniform manner.
+
+In \S\,117 this cut-off was accomplished by introducing a fictitious finite mass $\lambda$ of the virtual photon. We must now accordingly modify the formulae obtained in \S\,98, so that they describe the emission of soft ``photons'' with non-zero mass.
+
+From a formal point of view, such a photon belongs to ``vector'' particles of spin~1, the free field of which was considered in \S\,14. It is described by the 4-vector $\psi$-operator
+\begin{equation}
+\hat{\psi}_\mu = \sqrt{4\pi} \sum_{\mathbf{k}\alpha} \frac{1}{\sqrt{2\omega}} \bigl(\hat{c}_{\mathbf{k}\alpha}\,e_\mu^{(\alpha)}\,e^{-ikx} + \hat{c}^+_{\mathbf{k}\alpha}\,e_\mu^{(\alpha)*}\,e^{ikx}\bigr), \quad \alpha = 1,\,2,\,3
+\label{eq:120.1}
+\end{equation}
+
+\SourcePage{583}{588}
+
+\noindent (here the notation and normalisation have been modified compared to~(14.16) to bring them into correspondence with the photon case).
+
+The interaction of the ``photons''~(\ref{eq:120.1}) with electrons must be described by a Lagrangian of the same form as for real photons:
+\begin{equation}
+-e\hat{j}^\mu \hat{\psi}_\mu
+\label{eq:120.2}
+\end{equation}
+(with the replacement of the potential operators $\hat{A}_\mu$ by $\hat{\psi}_\mu$). Then the amplitudes of emission processes for photons of finite mass will be given by the usual formulae of the diagrammatic technique, with the sole difference that
+\begin{equation}
+k^2 = \lambda^2.
+\label{eq:120.3}
+\end{equation}
+
+The summation over the polarisations of the emitted photon must now be performed over the three independent polarisations (two transverse and one longitudinal) instead of the two for an ordinary photon. This is equivalent to averaging over the density matrix of unpolarised particles
+\begin{equation}
+\rho_{\mu\nu} = -\frac{1}{3}\biggl(g_{\mu\nu} - \frac{k_\mu k_\nu}{\lambda^2}\biggr)
+\label{eq:120.4}
+\end{equation}
+(cf.~(14.15)) with subsequent multiplication by~3.
+
+The propagator for ``photons'' with non-zero mass is
+\[
+D_{\mu\nu} = \frac{4\pi}{k^2 - \lambda^2}\biggl(g_{\mu\nu} - \frac{k_\mu k_\nu}{\lambda^2}\biggr)
+\]
+(cf.~(76.18)). However, owing to gauge invariance the amplitudes of real scattering processes do not depend on the longitudinal part of the photon propagator, and this property is not connected with the specific form of its transverse part. Therefore the second term in the parentheses effectively drops out, and there remains an expression of the same type as for ordinary photons:
+\begin{equation}
+D_{\mu\nu} = \frac{4\pi}{k^2 - \lambda^2}\,g_{\mu\nu}
+\label{eq:120.5}
+\end{equation}
+(which we have already used in \S\S\,117,\,119).
+
+Let us now turn to the study of soft (in the sense explained in \S\,98) photons.
+
+The derivation carried out in \S\,98 of formulae~(98.5),\,(98.6) carries over to the present case with only the modification that, upon expanding the squares $(p \pm k)^2$ in the denominators of the electron propagators, a term $k^2 = \lambda^2$ is added. As a result, instead of~(98.6) we obtain
+\begin{equation}
+d\sigma = d\sigma_{\text{el}} \cdot e^2 \left|\frac{p'e}{(p'k) + \lambda^2/2} - \frac{pe}{(pk) - \lambda^2/2}\right|^2 \frac{d^3 k}{4\pi^2 \omega},
+\label{eq:120.6}
+\end{equation}
+
+\SourcePage{584}{589}
+
+\noindent where $d\sigma_{\text{el}}$ is the cross section for the same process without emission of a soft photon (which we conventionally call the ``elastic'' process). In what follows, when integrating over $d^3 k$, the important values of $|\mathbf{k}|$ will be $\sim \lambda$. In this case $p'k \sim pk \gg \lambda^2$, so that the terms $\lambda^2$ in the denominators may be neglected. The summation over photon polarisations is carried out, as indicated, with the help of~(\ref{eq:120.4}). After the neglect made, the second term in~(\ref{eq:120.4}) does not contribute to the cross section\footnote{At first sight one might doubt the admissibility of neglecting $\lambda^2$ in the averaging, in view of the presence of $\lambda^2$ in the denominator of the second term in~(\ref{eq:120.4}). However, it is easy to verify directly that this term, upon averaging, gives a contribution $\sim \lambda^4 \cdot \lambda^{-2}$ which can be neglected.}, and there remains
+\begin{equation}
+d\sigma = -d\sigma_{\text{el}} \cdot e^2 \biggl(\frac{p'}{(p'k)} - \frac{p}{(pk)}\biggr)^2 \frac{d^3 k}{4\pi^2 \omega}.
+\label{eq:120.6a}
+\end{equation}
+
+Thus we return to formula~(98.7), in which, however, one must now understand $\omega$ as
+\begin{equation}
+\omega = \sqrt{\mathbf{k}^2 + \lambda^2}.
+\label{eq:120.7}
+\end{equation}
+
+Formula~(\ref{eq:120.6a}) has a completely general character. It is applicable both for elastic and for inelastic scattering, and even when the species of particles changes. The result of the subsequent integration over $d^3 k$ depends on the 4-vectors $p$ and $p'$, in other words, on the character of the underlying scattering process.
+
+Let us consider the case of elastic scattering, when
+\[
+|\mathbf{p}| = |\mathbf{p}'|, \quad \varepsilon = \varepsilon',
+\]
+and determine the total probability of emission of photons with frequency less than some $\omega_{\max}$; it is assumed here that
+\begin{equation}
+\omega_{\max} \gg \lambda,
+\label{eq:120.8}
+\end{equation}
+while from above the value of $\omega_{\max}$ is bounded by the conditions of applicability of the theory of soft photon emission~(98.9),\,(98.10).
+
+Let us first compute the integral over $d^3 k$ in the non-relativistic limit. When $|\mathbf{p}| = |\mathbf{p}'| \ll m$ we have
+\[
+\biggl(\frac{p'}{(p'k)} - \frac{p}{(pk)}\biggr)^2 \approx \frac{(\mathbf{q}\mathbf{k})^2}{m^2\omega^4} - \frac{\mathbf{q}^2}{m^2\omega^2}
+\]
+
+\SourcePage{585}{590}
+
+\noindent ($\mathbf{q} = \mathbf{p}' - \mathbf{p}$). Integration of this expression over the directions of $\mathbf{k}$ gives
+\[
+\frac{4\pi\mathbf{q}^2}{m^2\omega^2}\biggl(\frac{\mathbf{k}^2}{3\omega^2} - 1\biggr).
+\]
+
+After this, from~(\ref{eq:120.6a}) we have
+\[
+d\sigma = d\sigma_{\text{el}} \cdot \frac{e^2 \mathbf{q}^2}{\pi m^2} \int_0^{\omega = \omega_{\max}} \biggl[1 - \frac{\mathbf{k}^2}{3(\mathbf{k}^2 + \lambda^2)}\biggr] \frac{\mathbf{k}^2\,d|\mathbf{k}|}{(\mathbf{k}^2 + \lambda^2)^{3/2}},
+\]
+or, carrying out the integration under the assumption $\omega_{\max}/\lambda \gg 1$,
+\begin{equation}
+d\sigma = d\sigma_{\text{el}} \cdot \frac{2\alpha}{3\pi}\biggl(\ln\frac{2\omega_{\max}}{\lambda} - \frac{5}{6}\biggr), \quad \mathbf{q}^2 \ll m^2.
+\label{eq:120.9}
+\end{equation}
+
+In the general relativistic case, to evaluate the integral we make use of formula~(131.4). With its help we have for the angular integral
+\[
+I = \int \frac{d o_\mathbf{k}}{(pk)(p'k)} = \int_0^1 dx \int \frac{d o_\mathbf{k}}{\bigl[(pk)x + (p'k)(1-x)\bigr]^2},
+\]
+or, expanding the scalar products with $p = (\varepsilon,\,\mathbf{p})$, $p' = (\varepsilon,\,\mathbf{p}')$,
+\[
+I = \int_0^1 dx \int \frac{d o_\mathbf{k}}{\bigl\{\varepsilon\omega - \mathbf{k}[\mathbf{p}x + \mathbf{p}'(1-x)]\bigr\}^2}.
+\]
+
+The integral $d o_\mathbf{k}$ is easily evaluated in spherical coordinates with the polar axis along the vector $\mathbf{p}x + \mathbf{p}'(1-x)$, after which
+\[
+I = \int_0^1 \frac{4\pi\,dx}{\bigl(\varepsilon\omega\bigr)^2 - \bigl[\mathbf{p}x + \mathbf{p}'(1-x)\bigr]^2 \mathbf{k}^2} = \int_0^1 \frac{4\pi\,dx}{m^2 + \mathbf{q}^2 x(1-x)\bigr]\mathbf{k}^2 + \varepsilon^2\lambda^2}.
+\]
+
+The two other integrals (with $(pk)^2$ and $(p'k)^2$ in the denominators) are obtained from this at $\mathbf{q} = 0$. Noting also that
+\[
+pp' = \varepsilon^2 - \mathbf{p}\mathbf{p}' = m^2 + \mathbf{q}^2/2,
+\]
+we obtain
+\begin{equation}
+d\sigma = \frac{2e^2}{\pi}\int_0^1 dx \int_0^{\omega_{\max}} \frac{\mathbf{k}^2\,d|\mathbf{k}|}{\sqrt{\mathbf{k}^2 + \lambda^2}} \biggl\{\frac{m^2 + \mathbf{q}^2/2}{\bigl[m^2 + \mathbf{q}^2 x(1-x)\bigr]\mathbf{k}^2 + \varepsilon^2\lambda^2} - \frac{m^2}{m^2\mathbf{k}^2 + \varepsilon^2\lambda^2}\biggr\}\,d\sigma_{\text{el}}.
+\label{eq:120.10}
+\end{equation}
+
+\SourcePage{586}{591}
+
+The integration over $d|\mathbf{k}|$ reduces to evaluating integrals of the form
+\[
+\int_0^{\omega_{\max}} \frac{\mathbf{k}^2\,d|\mathbf{k}|}{(a\mathbf{k}^2 + \lambda^2)\sqrt{\mathbf{k}^2 + \lambda^2}} = \frac{1}{a}\int_0^{\omega_{\max}} \frac{d|\mathbf{k}|}{\sqrt{\mathbf{k}^2 + \lambda^2}} - \frac{\lambda^2}{a}\int_0^{\omega_{\max}} \frac{d|\mathbf{k}|}{(a\mathbf{k}^2 + \lambda^2)\sqrt{\mathbf{k}^2 + \lambda^2}} \approx \frac{1}{a}\ln\frac{2\omega_{\max}}{\lambda} - \frac{1}{a}\int_0^{\infty} \frac{dz}{(az^2 + 1)\sqrt{z^2 + 1}}.
+\]
+
+In the second integral the substitution $|\mathbf{k}| \to \lambda z$ has been made and the upper limit ($\omega_{\max}/\lambda$) replaced by $\infty$, which is permissible since the integral converges.
+
+The integrals over $x$ arising then in~(\ref{eq:120.10}) cannot be expressed in terms of elementary functions in full generality. The result may be written in the form
+\begin{equation}
+d\sigma = \alpha\biggl[F\!\biggl(\frac{|\mathbf{q}|}{2m}\biggr)\ln\frac{2\omega_{\max}}{\lambda} + F_1\biggr]\,d\sigma_{\text{el}},
+\label{eq:120.11}
+\end{equation}
+where\footnote{The function $F(\xi)$ was already encountered in the problems to \S\,98. This is not surprising, since with logarithmic accuracy~(\ref{eq:120.11}) can be obtained by integrating the cross section for emission of photons of zero mass~(98.8) over $\omega$ in the limits from $\lambda$ to $\omega_{\max}$. If one introduces the variable $\theta$ instead of $\xi$ according to $\xi = \sinh(\theta/2)$, then
+\begin{equation}
+F(\theta) = \frac{2}{\pi}(\theta\coth\theta - 1).
+\label{eq:120.12a}
+\end{equation}}
+\begin{equation}
+f(\xi) = \frac{2}{\pi}\biggl[\frac{2\xi^2+1}{\xi\sqrt{\xi^2+1}}\,\ln\bigl(\xi + \sqrt{\xi^2+1}\,\bigr) - 1\biggr],
+\label{eq:120.12}
+\end{equation}
+\begin{equation}
+F = \frac{2\varepsilon}{\pi|\mathbf{p}|}\ln\frac{\varepsilon + |\mathbf{p}|}{m} - \frac{2m^2 + \mathbf{q}^2}{\pi\varepsilon^2}\int_0^1 \frac{dx}{a\sqrt{1-a}}\,\ln\frac{1 + \sqrt{1-a}}{\sqrt{a}},
+\label{eq:120.13}
+\end{equation}
+\[
+a = \frac{1}{\varepsilon^2}\bigl[m^2 + \mathbf{q}^2 x(1-x)\bigr].
+\]
+
+Let us find the asymptotic expression for the cross section in the ultra-relativistic case. It is assumed here that not only $\varepsilon \gg m$, but also $|\mathbf{q}| \gg m$, i.e.\ the scattering angle is not too small. Under these conditions, in the integral~(\ref{eq:120.13}) the essential region of values of $x$ is that in which $a \ll 1$; after the corresponding approximations
+
+\[
+F_1 \approx \frac{\mathbf{q}^2}{2\pi\varepsilon^2}\ln\frac{\ln a}{a}\,da \approx \frac{1}{2\pi}\int \frac{\ln(q^2/\varepsilon^2) + \ln x + \ln(1-x)}{x(1-x)}\,dx.
+\]
+
+\SourcePage{587}{592}
+
+The integral must be cut off at $a \sim m^2/\varepsilon^2$, i.e.\ at $x \sim m^2/\mathbf{q}^2$ from below, and at $1 - x \sim m^2/\mathbf{q}^2$ from above. Then
+\[
+F_1 \approx \frac{1}{2\pi}\biggl[2\ln\frac{\mathbf{q}^2}{\varepsilon^2}\ln\frac{\mathbf{q}^2}{m^2} - \ln^2\frac{\mathbf{q}^2}{m^2}\biggr] = \frac{1}{2\pi}\biggl[\ln^2\frac{\mathbf{q}^2}{m^2} - 4\ln\frac{\varepsilon}{m}\ln\frac{\mathbf{q}^2}{m^2}\biggr].
+\]
+
+This formula is valid to the accuracy of squares of logarithms, or as one says, with \emph{doubly logarithmic} accuracy. With this accuracy it suffices to set in the first term of~(\ref{eq:120.11})
+\[
+F(\xi) \approx \frac{4}{\pi}\ln\xi, \quad \xi \gg 1.
+\]
+
+Finally,
+\begin{equation}
+d\sigma = \frac{2\alpha}{\pi}\biggl[\ln\frac{\mathbf{q}^2}{m^2}\ln\frac{\omega_{\max}}{\lambda} - \ln\frac{\varepsilon}{m}\ln\frac{\mathbf{q}^2}{m^2} + \frac{1}{4}\ln^2\frac{\mathbf{q}^2}{m^2}\biggr]\,d\sigma_{\text{el}}, \quad \mathbf{q}^2 \gg m^2.
+\label{eq:120.14}
+\end{equation}

@@ -1,0 +1,91 @@
+
+\section{Anomalous magnetic moment of the electron}
+
+\SourcePage{574}{579}
+
+As was already indicated in \S\,116, the value $g(0)$ determines the radiative correction to the magnetic moment of the electron. If one sets as the goal the computation of only this quantity, then the computation of the entire function $g(t)$ is, of course, not obligatory. With the help of (117.14) and (116.12) we have
+\begin{equation}
+g(0) = \frac{1}{\pi}\int_{4m^2}^{\infty}\frac{\operatorname{Im} g(t')}{t'}\,dt' = \frac{\alpha}{4\pi}\int_1^{\infty}\frac{dx}{x^{3/2}\sqrt{x-1}} = \frac{\alpha}{2\pi}.
+\label{eq:118.1}
+\end{equation}
+Taking into account this correction, the magnetic moment of the electron is
+\begin{equation}
+\mu = \frac{e\hbar}{2mc}\biggl(1 + \frac{\alpha}{2\pi}\biggr).
+\label{eq:118.2}
+\end{equation}
+This formula was first obtained by \emph{Schwinger} (1949).
+
+In the next approximation ($\sim\alpha^2$) the radiative corrections in form-factor diagrams are represented by seven diagrams (106.10,\,$a$--$i$). The determination of even just the value $g(0)$ in this approximation requires very complex computations. Referring for the details of the computations to the original articles, we give only the final value of the second-approximation correction\footnote{The computation by the unitarity method was carried out by \emph{M.\,V.~Terent'ev}, ZhETF \textbf{43}, 619 (1962).}:
+\begin{equation}
+g^{(2)}(0) = \biggl(\frac{\alpha}{\pi}\biggr)^{\!2}\biggl(\frac{197}{144} + \frac{\pi^2}{12} - \frac{\pi^2}{2}\ln 2 + \frac{3}{4}\zeta(3)\biggr) = -0.328\,\frac{\alpha^2}{\pi^2},
+\label{eq:118.3}
+\end{equation}
+so that the magnetic moment of the electron is
+\begin{equation}
+\mu = \frac{e\hbar}{2mc}\biggl(1 + \frac{\alpha}{2\pi} - 0.328\,\frac{\alpha^2}{\pi^2}\biggr)
+\label{eq:118.4}
+\end{equation}
+(\emph{C.~Sommerfield}, 1957; \emph{A.~Petermann}, 1957).
+
+Let us dwell in particular on the contribution of vacuum polarisation to the correction $g^{(2)}(0)$. This is the diagram
+
+% [Feynman diagram (118.5): vertex diagram with photon self-energy insertion --- the internal photon line of the vertex diagram contains an electron loop (vacuum polarisation); external fermion lines labelled $f$]
+
+\begin{equation}
+\label{eq:118.5}
+\end{equation}
+
+\SourcePage{575}{580}
+
+\noindent containing a photon self-energy part. It differs from the diagram (117.1) of the first approximation only in that in place of the photon propagator $D(f^2) = 4\pi/f^2$, there now stands the product
+\[
+D(f^2)\,\frac{\mathcal{P}(f^2)}{4\pi}\,D(f^2) = \frac{4\pi}{f^2}\,\frac{\mathcal{P}(f^2)}{f^2},
+\]
+where $\mathcal{P}(f^2)$ is the polarisation operator computed in \S\,113 in the first ($\sim\alpha$) approximation. Partially repeating (with this modification) the computations carried out in the preceding section, we obtain for the ``polarisation part'' correction
+\begin{equation}
+\operatorname{Im} g^{(2)}_{\text{polar}}(t) = \frac{\alpha m^2}{\sqrt{t(t-4m^2)}}\int_{-1}^{1}\frac{\mathcal{P}(f^2)}{f^2}\,\frac{1+3\cos\theta}{2}\,d\cos\theta,
+\label{eq:118.6}
+\end{equation}
+where
+\begin{equation}
+f^2 = \frac{t-4m^2}{2}(1-\cos\theta)
+\label{eq:118.7}
+\end{equation}
+(see (117.6)). The computation of this integral, and then of the integral
+\begin{equation}
+g^{(2)}_{\text{polar}}(0) = \frac{1}{\pi}\int_{4m^2}^{\infty}\operatorname{Im} g^{(2)}_{\text{polar}}(t')\,\frac{dt'}{t'}
+\label{eq:118.8}
+\end{equation}
+leads to the value
+\begin{equation}
+g^{(2)}_{\text{polar}}(0) = \frac{\alpha^2}{\pi^2}\biggl(\frac{119}{36} - \frac{\pi^2}{3}\biggr) = 0.016\,\frac{\alpha^2}{\pi^2}\,;
+\label{eq:118.9}
+\end{equation}
+it constitutes $\sim 5\,\%$ of the entire value (118.3).
+
+We have already noted (at the end of \S\,114) that a definite contribution to the radiative corrections can also be made by effects of vacuum polarisation of other particles. The contribution of muonic vacuum to the anomalous magnetic moment of the electron is obtained by the same formulae (118.6)--(118.8), in which (including in the definition of the variable $f^2$) $m$ is as before the mass of the electron ($m_e$), but as the parameter $m$ entering the expression for $\mathcal{P}(f^2)$, the muon mass ($m_\mu$) must be taken. The quantity $\mathcal{P}(f^2)/f^2$ is a function only of the ratio $f^2/m_\mu^2$. In the integral (118.8) the essential region of values of $t$ (and therefore also $f^2$) is of order $m_e^2$; so that the ratio $f^2/m_\mu^2 \sim (m_e/m_\mu)^2 \ll 1$, and for the evaluation of the integrals one can use the limiting formula (113.14), according to which
+\[
+\frac{\mathcal{P}(f^2)}{f^2} = -\frac{\alpha}{15\pi}\,\frac{f^2}{m_\mu^2}.
+\]
+
+From this it is clear that the contribution to $g^{(2)}(0)$ due to muonic vacuum polarisation has an additional small factor $(m_e/m_\mu)^2$.
+
+\SourcePage{576}{581}
+
+The reverse situation arises, however, when finding corrections to the magnetic moment of the muon. Since in (118.3) the mass of the particle does not enter, this value of $g^{(2)}(0)$ pertains also to the muon, with the contribution of muonic vacuum polarisation taken into account. But the contribution of vacuum polarisation of other particles---electrons---turns out in this case to be considerably larger. It is computed by formulae (118.6)--(118.8), in which one must now replace $m \to m_\mu$, and as $\mathcal{P}(t)$ substitute the electronic polarisation operator. In contrast to the preceding case, the essential region of values will now be $f^2/m_e^2 \sim (m_\mu/m_e)^2 \gg 1$, and as $\mathcal{P}(f^2)$ one must take the limiting expression (113.15):
+\[
+\frac{\mathcal{P}(f^2)}{f^2} = \frac{\alpha}{3\pi}\ln\frac{|f^2|}{m_e^2}.
+\]
+The computation of the integrals leads to the value
+\begin{equation}
+[g^{(2)}(0)]_{\text{e.p.}} = \biggl(\frac{\alpha}{\pi}\biggr)^{\!2}\biggl(\frac{1}{3}\ln\frac{m_\mu}{m_e} - \frac{25}{36}\biggr) = 1.09\,\frac{\alpha^2}{\pi^2}
+\label{eq:118.10}
+\end{equation}
+(\emph{H.~Suura, E.\,H.~Wichmann}, 1957; \emph{A.~Petermann}, 1957).
+
+Adding (\ref{eq:118.10}) to (118.3), we obtain for the magnetic moment of the muon
+\begin{equation}
+\mu_{\text{muon}} = \frac{e\hbar}{2m_\mu c}\biggl(1 + \frac{\alpha}{2\pi} + 0.76\,\frac{\alpha^2}{\pi^2}\biggr).
+\label{eq:118.11}
+\end{equation}
+Note that the contribution of muonic vacuum polarisation (\ref{eq:118.9}) constitutes $\sim 2\,\%$ of the entire value of $g^{(2)}(0)$. A contribution of the same order would be given by pionic vacuum polarisation, which (owing to the closeness of the masses) cannot in general be computed exactly. For this reason it would already be pointless to compute corrections $\sim\alpha^3$ to the magnetic moment of the muon.

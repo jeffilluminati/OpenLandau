@@ -1,0 +1,172 @@
+
+\section{Computation of integrals over four-dimensional regions}
+
+\SourcePage{651}{656}
+
+We shall present here certain rules and formulae useful for computing the integrals that arise in the theory of radiative corrections. The typical formula for an integral corresponding to a Feynman diagram is
+\begin{equation}
+\int \frac{f(k)\,d^4k}{a_1 a_2 \ldots a_n},
+\label{eq:131.1}
+\end{equation}
+where $a_1, a_2, \ldots$ are polynomials of second degree in the 4-vector $k$, $f(k)$ is a polynomial of some degree $n'$, and the integration is taken over the entire four-dimensional $k$-space.
+
+A convenient method of computing such integrals (due to \emph{Feynman}, 1949) is based on a preliminary transformation (parametrisation) of the integrand by introducing additional integrations over auxiliary variables $\xi_1, \xi_2, \ldots$ according to the formula
+\begin{equation}
+\frac{1}{a_1 a_2 \ldots a_n} = (n-1)! \int_0^1 d\xi_1 \int_0^1 \ldots \int_0^1 d\xi_n \,\frac{\delta(\xi_1 + \xi_2 + \ldots + \xi_n - 1)}{(a_1\xi_1 + a_2\xi_2 + \ldots + a_n\xi_n)^n}.
+\label{eq:131.2}
+\end{equation}
+As a result of such a transformation, instead of $n$ distinct quadratic polynomials in the denominator there arises a degree $n$ of just a single polynomial of second degree.
+
+Eliminating the $\delta$-function by integrating over $d\xi_n$ and introducing new variables according to
+\[
+\xi_1 = x_{n-1},\quad \xi_2 = x_{n-2} - x_{n-1},\quad \ldots, \quad \xi_{n-1} = x_1 - x_2,
+\]
+\[
+\xi_1 + \xi_2 + \ldots + \xi_{n-1} = x_1,
+\]
+we obtain formula (\ref{eq:131.2}) in the equivalent form:
+\begin{equation}
+\frac{1}{a_1 a_2 \ldots a_n} = (n-1)! \int_0^1 dx_1 \int_0^{x_1} dx_2 \ldots \int_0^{x_{n-2}} dx_{n-1}\,\frac{1}{[a_1 x_{n-1} + a_2(x_{n-2} - x_{n-1}) + \ldots + a_n(1 - x_1)]^n}.
+\label{eq:131.3}
+\end{equation}
+
+\SourcePage{652}{657}
+
+For $n = 2$ this formula takes the form
+\begin{equation}
+\frac{1}{a_1 a_2} = \int_0^1 \frac{dx}{[a_1 x + a_2(1-x)]^2}
+\label{eq:131.4}
+\end{equation}
+and is verified by direct computation. For arbitrary $n$ the formula can be proved by induction from $n - 1$ to $n$. Indeed, carrying out in (\ref{eq:131.3}) the integration over $dx_{n-1}$, one obtains on the right-hand side the difference of two $(n-2)$-fold integrals of the same form. Assuming the formula to be valid for them, we get $\dfrac{1}{a_1 - a_2}\biggl[\dfrac{1}{a_2 a_3 \ldots a_n} - \dfrac{1}{a_1 a_3 \ldots a_n}\biggr]$, which coincides with the expression on the left-hand side of (\ref{eq:131.3}).
+
+By differentiating (\ref{eq:131.3}) with respect to $a_1, a_2, \ldots$ one can obtain analogous formulae serving for the parametrisation of integrals containing in the denominator any of the polynomials raised to powers higher than the first.
+
+Regularisation of divergent integrals is effected by subtracting from them integrals of analogous form. For the computation of such a difference it may prove expedient to carry out a preliminary transformation of the difference of the integrands (each of which has already been transformed by means of (\ref{eq:131.2})) with the aid of the formula
+\begin{equation}
+\frac{1}{a^n} - \frac{1}{b^n} = -\int_0^1 \frac{n(a-b)\,dz}{[(a-b)z + b]^{n+1}}.
+\label{eq:131.5}
+\end{equation}
+
+After the transformation, according to (\ref{eq:131.3}), the four-dimensional integration in (\ref{eq:131.1}) reduces to the form
+\begin{equation}
+\int \frac{f(k)\,d^4k}{[(k - l)^2 - \alpha^2]^n},
+\label{eq:131.6}
+\end{equation}
+where $l$ is a 4-vector and $\alpha^2$ a scalar, both depending on the parameters $x_1, \ldots, x_{n-1}$; the scalar $\alpha^2$ will be taken to be positive.
+
+If the integral (\ref{eq:131.6}) converges, then one can carry out the substitution $k - l \to k$ (shift of the origin of coordinates), after which it takes the form
+\begin{equation}
+\int \frac{f(k)\,d^4k}{(k^2 - \alpha^2)^n}
+\label{eq:131.7}
+\end{equation}
+(with a different function $f(k)$), so that the denominator contains only the square $k^2$. As regards the numerator, it suffices to
+
+\SourcePage{653}{658}
+
+\noindent consider scalar functions $f = F(k^2)$. Indeed, for integrals of other types with respect to the numerator we have
+\begin{equation}
+\int \frac{k^\mu\,F(k^2)\,d^4k}{(k^2 - \alpha^2)^n} = 0,
+\label{eq:131.8}
+\end{equation}
+\begin{equation}
+\int \frac{k^\mu k^\nu\,F(k^2)\,d^4k}{(k^2 - \alpha^2)^n} = \frac{1}{4}\,g^{\mu\nu}\int \frac{k^2\,F(k^2)\,d^4k}{(k^2 - \alpha^2)^n},
+\label{eq:131.9}
+\end{equation}
+\begin{multline}
+\int \frac{k^\mu k^\nu k^\rho k^\sigma\,F(k^2)\,d^4k}{(k^2 - \alpha^2)^n} \\
+= \frac{1}{24}\bigl(g^{\mu\nu}g^{\rho\sigma} + g^{\mu\rho}g^{\nu\sigma} + g^{\mu\sigma}g^{\nu\rho}\bigr)\int \frac{(k^2)^2\,F(k^2)\,d^4k}{(k^2 - \alpha^2)^n},
+\label{eq:131.10}
+\end{multline}
+and so on, which is evident from symmetry considerations (upon integration over all directions of $k$).
+
+In the original integral (\ref{eq:131.1}), each of the factors $a_1, a_2, \ldots$ in the denominator has (as a function of $k_0$) two zeros, which are dealt with upon integration over $dk_0$ according to the usual rule (see \S\,75). After the transformation to the form (\ref{eq:131.7}), instead of $2n$ simple poles the integrand has only two poles of order $n$, which are dealt with by the same rule (contour $C$ in Fig.~25). Rotating the contour of integration, as indicated by the arrows in the figure, one can bring it into coincidence with the imaginary axis in the $k_0$-plane ($C'$ in Fig.~25). In other words, the variable $k_0$ is replaced by $k_0 =$
+
+% Figure 25: Contour rotation in the complex k_0 plane.
+% The contour C runs along the real axis, bypassing poles according to the Feynman rule.
+% The contour C' runs along the imaginary axis after rotation.
+
+\noindent $= ik'_0$ with a real variable $k'_0$. Changing also the notation $\mathbf{k}$ to $\mathbf{k}'$, we have
+\begin{equation}
+k^2 = k_0^2 - \mathbf{k}^2 \to -(k_0'^2 + \mathbf{k}'^2) = -k'^2,
+\label{eq:131.11}
+\end{equation}
+where $k'$ is a 4-vector in Euclidean metric. In this case
+\[
+d^4k \to i\,d^4k' = i\,k'^2\,dk'^2\,d\Omega,
+\]
+where $d\Omega$ is an element of four-dimensional solid angle. Integration over $d\Omega$ gives $2\pi^2$ (see II, \S\,111), after which
+\begin{equation}
+d^4k \to i\pi^2\,k'^2\,d(k'^2).
+\label{eq:131.12}
+\end{equation}
+Denoting $k'^2 = z$, we obtain finally
+
+\SourcePage{654}{659}
+
+\begin{equation}
+\int \frac{F(k^2)\,d^4k}{(k^2 - \alpha^2)^n} = (-1)^n\,i\pi^2 \int_0^\infty \frac{F(-z)\,z\,dz}{(z + \alpha^2)^n}.
+\label{eq:131.13}
+\end{equation}
+
+In particular,
+\begin{equation}
+\int \frac{d^4k}{(k^2 - \alpha^2)^n} = \frac{(-1)^n\,i\pi^2}{\alpha^{2(n-2)}(n-1)(n-2)}.
+\label{eq:131.14}
+\end{equation}
+
+The logarithmically divergent part in integrals of the form (\ref{eq:131.7}) can be separated out as
+\begin{equation}
+\int \frac{d^4k}{[(k-l)^2 - \alpha^2]^2}.
+\label{eq:131.15}
+\end{equation}
+It is easy to see that in such an integral the substitution $k \to k + l$ is permissible. Indeed, the difference of the original and the transformed integrals
+\[
+\int \biggl\{\frac{1}{[(k-l)^2 - \alpha^2]^2} - \frac{1}{(k^2 - \alpha^2)^2}\biggr\}\,d^4k
+\]
+represents a convergent integral, and hence the replacement $k \to k + l$ within it is permissible in any case. Carrying it out and then replacing $k \to -k$, we obtain the same quantity with the opposite sign, whence its vanishing follows.
+
+A linearly divergent integral must have the form
+\begin{equation}
+\int \frac{k^\mu\,d^4k}{[(k-l)^2 - \alpha^2]^2},
+\label{eq:131.16}
+\end{equation}
+but in fact such an integral diverges only logarithmically: the integrand asymptotically (as $k \to \infty$) equals $k^\mu/(k^2)^2$ and vanishes upon averaging over directions. The shift of the origin of coordinates, however, does not leave the integral (\ref{eq:131.16}) unchanged, but adds to it an additive constant. We shall demonstrate this for the case of an infinitesimally small shift $k \to k + \delta l$, computing the difference
+\begin{equation}
+\Delta^\mu = \int \biggl\{\frac{k^\mu}{[(k - \delta l)^2 - \alpha^2]^2} - \frac{k^\mu + \delta l^\mu}{(k^2 - \alpha^2)^2}\biggr\}\,d^4k.
+\label{eq:131.17}
+\end{equation}
+To the accuracy of terms of first order in $\delta l$,
+\[
+\Delta^\mu = \int \biggl\{\frac{4k^\mu(k\delta l)}{(k^2 - \alpha^2)^3} - \frac{\delta l^\mu}{(k^2 - \alpha^2)^2}\biggr\}\,d^4k.
+\]
+In the first term the averaging over directions replaces the numerator by $k^2\,\delta l^\mu$ (cf.\ (\ref{eq:131.9})), after which we find\footnote{A more laborious calculation leads to the same result also for finite $l$.}
+\begin{equation}
+\Delta^\mu = \alpha^2\,\delta l^\mu \int \frac{d^4k}{(k^2 - \alpha^2)^3} = -\frac{i\pi^2}{2}\,\delta l^\mu.
+\label{eq:131.18}
+\end{equation}
+
+\SourcePage{655}{660}
+
+In the final expressions for radiative corrections there frequently appears a transcendental function defined by the integral
+\begin{equation}
+F(\xi) = \int_0^\xi \frac{\ln(1+x)}{x}\,dx
+\label{eq:131.19}
+\end{equation}
+(it is sometimes called the \emph{Spence function}). We shall note here for reference some of its properties:
+\begin{equation}
+F(\xi) + F\!\left(\frac{1}{\xi}\right) = \frac{\pi^2}{6} + \frac{1}{2}\ln^2\xi,
+\label{eq:131.20}
+\end{equation}
+\begin{equation}
+F(-\xi) + F(-1+\xi) = -\frac{\pi^2}{6} + \ln\xi\,\ln(1 - \xi),
+\label{eq:131.21}
+\end{equation}
+\begin{equation}
+F(1) = \frac{\pi^2}{12}, \qquad F(-1) = -\frac{\pi^2}{6}.
+\label{eq:131.22}
+\end{equation}
+Expansion for small $\xi$:
+\begin{equation}
+F(\xi) = \xi - \frac{\xi^2}{4} + \frac{\xi^3}{9} - \frac{\xi^4}{16} + \ldots
+\label{eq:131.23}
+\end{equation}

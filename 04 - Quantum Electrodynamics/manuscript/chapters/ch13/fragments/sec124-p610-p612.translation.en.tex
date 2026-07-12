@@ -1,0 +1,44 @@
+
+\section{Radiative shift of levels of mesoatoms}
+
+\SourcePage{605}{610}
+
+At the end of \S\,118 it was established that the effect of polarisation of the electronic vacuum plays an essential role in the radiative correction (of the second approximation) to the magnetic moment of the muon. Even more important is this effect for the radiative shift (already in the first approximation) of the levels of $\mu$-mesohydrogen --- a hydrogen-like system consisting of a proton and a $\mu$-meson (\emph{A.\,D.~Galanin, I.\,Ya.~Pomeranchuk}, 1952).
+
+In the computation carried out in the preceding section of the shift of levels of an ordinary atom, the effect of polarisation of the electronic vacuum was taken into account, in particular, by the electron loop in diagram (121.2,\,$a$). If, in an analogous manner, for a mesoatom one takes into account the effect of polarisation of the muonic vacuum, then the entire calculation carries over completely to this case as well, with the sole replacement of the electron mass $m = m_e$ everywhere by the muon mass $m_\mu$. Since the relative shift of levels turned out not to depend on the electron mass (see (123.19)), for mesohydrogen one would obtain exactly the same result.
+
+It is easy to see, however, that a significantly larger contribution to the shift of the levels of a mesoatom comes from the effect of polarisation of the electronic vacuum. Indeed, replacing the muon loop in the electron diagram by an electronic one means replacing the muonic polarisation operator by the electronic one. But the polarisation operator $\mathcal{P}(q^2)$ is inversely proportional to the square of the particle mass (at non-relativistic values of $q^2$). It is clear, therefore, that the indicated replacement will lead to an increase of the effect by a factor of $(m_\mu/m_e)^2$. It is precisely this contribution that will
+
+\SourcePage{606}{611}
+
+\noindent determine the order of magnitude of the level shift, which will be
+\[
+\frac{\delta E}{|E|} \sim \alpha^3 \biggl(\frac{m_\mu}{m_e}\biggr)^{\!2},
+\]
+i.e.\ four orders of magnitude greater than for an ordinary atom of hydrogen\footnote{For an analogous reason, the contribution of polarisation of the muonic vacuum to the shift of levels of an ordinary atom of hydrogen will be, on the contrary, negligibly small.}.
+
+More visually, the origin of this effect can be understood by recalling that the distortion of the Coulomb potential by polarisation of the electronic vacuum extends over distances $\sim 1/m_e$ (\S\,114). In an ordinary atom of hydrogen, the electron is located at distances $\sim 1/(m_e\alpha)$, i.e.\ outside the main region of distortion of the field; whereas in mesohydrogen the muon is located at distances $\sim 1/(m_\mu\alpha)$, which just fall within this region.
+
+For an exact computation of the shift of the levels of a mesoatom, one cannot, however, use the approximate non-relativistic expression for the polarisation operator, as was done in formula (123.7) used for computing the shift of levels of an ordinary atom. The point is that the characteristic momenta of the muon in the atom of mesohydrogen are $|\mathbf{p}| \sim \alpha m_\mu$. For the muon, such momenta are non-relativistic, but with respect to the electron they are already relativistic.
+
+We must therefore make use of the full relativistic expression (114.5) for the effective potential of the nuclear field, distorted by polarisation of the electronic vacuum. The shift of levels is determined by averaging over the wave function of the muon in the atom:
+\begin{equation}
+\delta E_{nl} = -|e|\int|\psi_{nl}|^2\,\delta\Phi(r)\,d^3x = -|e|\int R_{nl}^2(r)\,\delta\Phi(r)\,r^2\,dr,
+\label{eq:124.1}
+\end{equation}
+where $R_{nl}$ is the radial part of the Coulomb (non-relativistic) wave function. For a hydrogen-like ion with nuclear charge $Z|e|$, the functions $R_{nl}(r)$ depend on $r$ only through the dimensionless combination $\rho = Z\alpha m_\mu r$ (the distance measured in Coulomb units). Taking this into account and substituting $\delta\Phi(r)$ from (114.5) (with charge $Z|e|$ in place of $e_1$), we bring the integral (124.1) to the form
+\begin{equation}
+\delta E_{nl} = -\frac{2}{3\pi}\,\alpha^3 m_\mu Z\, Q_{nl}\!\biggl(\frac{m_e}{Z\alpha m_\mu}\biggr),
+\label{eq:124.2}
+\end{equation}
+where
+\[
+Q_{nl}(x) = \int_0^\infty \rho\,d\rho \int_1^\infty R_{nl}^2(\rho)\,e^{-2x\rho\zeta}\biggl(1 + \frac{1}{2\zeta^2}\biggr)\frac{\sqrt{\zeta^2 - 1}}{\zeta^2}\,d\zeta.
+\]
+
+\SourcePage{607}{612}
+
+Thus, for several of the first levels of mesohydrogen, the numerical calculation gives the following values of the relative shift:
+\[
+\frac{\delta E_{10}}{|E_{10}|} = -6.4\cdot 10^{-3},\qquad \frac{\delta E_{20}}{|E_{20}|} = -2.8\cdot 10^{-4},\qquad \frac{\delta E_{21}}{|E_{21}|} = -2.0\cdot 10^{-5}.
+\]

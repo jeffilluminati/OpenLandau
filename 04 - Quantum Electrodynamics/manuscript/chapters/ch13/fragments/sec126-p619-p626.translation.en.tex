@@ -1,0 +1,270 @@
+
+\section{Double dispersion relation}
+
+\SourcePage{614}{619}
+
+The next in order of complexity beyond the vertex part with three external lines is a block with four tails. In quantum electrodynamics, three such simplest diagrams are possible:
+
+% [Feynman diagram: Three four-tailed diagrams labeled a, b, c.
+%  (a) photon-photon scattering box diagram (four photon lines, electron loop)
+%  (b) electron self-energy insertion on photon scattering (radiative correction to photon scattering on electron)
+%  (c) vertex correction type (radiative correction to electron scattering on electron)]
+\begin{equation}
+\label{eq:126.1}
+\end{equation}
+
+The first of these describes photon-photon scattering. The remaining two represent individual terms of the radiative corrections --- to the scattering of a photon on an electron (diagram~\textit{b}) and to the scattering of an electron on an electron (diagram~\textit{c}).
+
+\SourcePage{615}{620}
+
+This section is devoted to the study of certain general properties of diagrams of this kind. But for simplicity and concreteness we shall conduct the exposition as applied to a specific diagram --- (126.1,\textit{a}).
+
+The momenta of the lines of such a diagram are denoted as follows:
+
+% [Feynman diagram: Box diagram with four external photon lines.
+%  External momenta k_1 (bottom right), k_2 (top right), k_3 (bottom left), k_4=k_1+k_2-k_3 (top left).
+%  Internal lines: q (top), q-k_4 (left), q-k_1-k_2 (bottom), q-k_2 (right).]
+\begin{equation}
+\label{eq:126.2}
+\end{equation}
+
+The 4-momenta $k_1$, $k_2$, $k_3$, $k_4$ correspond to real photons, so their squares are zero.
+
+Having separated the dependence on the photon polarisations, the amplitude $M_{fi}$ corresponding to diagram~(\ref{eq:126.2}) can be expressed through several scalar functions of the 4-momenta. These are the \emph{invariant amplitudes}, discussed in \S\,70; the concrete extraction of them for the scattering of a photon on a photon will be carried out in the following section. Being scalar, they depend only on the scalar variables, as which one can choose, for example, any two of the quantities
+\begin{equation}
+s = (k_1 + k_2)^2,\quad t = (k_1 - k_3)^2,\quad u = (k_1 - k_4)^2,\quad s + t + u = 0;
+\label{eq:126.3}
+\end{equation}
+below we choose $s$ and $t$ as the independent variables.
+
+Each of the invariant amplitudes (which we denote here by the same letter $M$) can be represented as an integral of the form
+\begin{equation}
+M = \int \frac{iB\,d^4q}{[q^2 - m^2][(q-k_4)^2 - m^2][(q-k_1-k_2)^2 - m^2][(q-k_2)^2 - m^2]},\quad m^2 \to m^2 - i0,
+\label{eq:126.4}
+\end{equation}
+where $B$ is some function of all the 4-momenta; the factors in the denominator come from the propagators of the four virtual electrons.
+
+At sufficiently small $s$ and $t$ the amplitudes $M$ are real (more precisely, can be made so by an appropriate choice of the phase factor). Indeed, the smallness of $s$ ensures the impossibility of the production of real particles (an electron--positron pair) by two photons in the $s$-channel, and the smallness of $t$ ensures the same impossibility in the $t$-channel\footnote{In the $t$-channel, the incoming lines must be lines~1 and~3, so that the initial photon 4-momenta would be $k_1$ and $-k_3$. The physical regions for photon-photon scattering in the variables $s$, $t$ are the hatched sectors in Fig.~8 (p.~299). Thus, the $s$-channel corresponds to the region in which $s > 0$, $t < 0$, $u < 0$.}. In other words, in both channels there are no real intermediate states which could, according to the unitarity condition, give rise to an imaginary part of the amplitude.
+
+\SourcePage{616}{621}
+
+Let us now increase $s$ at fixed (small) values of $t$. At $s \geqslant 4m^2$ the amplitude $M$ acquires an imaginary part, associated with the possibility of the production of a pair by two photons in the $s$-channel. Therefore for $M$ one can write a dispersion relation ``in the variable $s$'':
+\begin{equation}
+M(s,\,t) = \frac{1}{\pi}\int_{4m^2}^{\infty} \frac{A_{1s}(s',\,t)}{s' - s - i0}\,ds',
+\label{eq:126.5}
+\end{equation}
+where $A_{1s}(s,\,t)$ denotes the imaginary part of $M(s,\,t)$.
+
+As for any diagram of the form
+
+% [Feynman diagram: Generic box diagram with arrows on internal lines.
+%  External momenta k_4 (top left), k_2 (top right), k_3 (bottom left), k_1 (bottom right).
+%  Internal line momenta: q (top), q-k_1-k_2 (bottom), q-k_2 (right), q-k_4 (left).]
+
+$A_{1s}(s,\,t)$ is computed by the rule~(115.9), replacing in the integral~(\ref{eq:126.4}) the corresponding pole factors by $\delta$-functions:
+\begin{equation}
+2iA_{1s}(s,\,t) = (2\pi i)^2\int \frac{iB\,\delta(q^2 - m^2)\,\delta[(q-k_1-k_2)^2 - m^2]}{[(q-k_4)^2 - m^2][(q-k_2)^2 - m^2]}\,d^4q,
+\label{eq:126.6}
+\end{equation}
+where the integration is performed over the half of $q$-space in which $q^0 > 0$.
+
+We can make an essential further step by noting that the integral~(\ref{eq:126.6}) has the structure (in the sense of its pole factors) of an amplitude of a reaction of the same type as that depicted by the diagram
+
+% [Feynman diagram: Box diagram viewed as s-channel reaction.
+%  External momenta k_3 (left, incoming), k_1 (bottom left, incoming),
+%  k_2 (right, outgoing), k_4 (top right, outgoing).
+%  Internal lines: q-k_4 (top), q-k_2 (bottom).]
+
+\SourcePage{617}{622}
+
+Therefore the analytic properties of $A_{1s}(s,\,t)$ as a function of $t$ are similar to the analytic properties of this amplitude. In particular, the function $A_{1s}(s,\,t)$ may acquire (upon increasing $t$) an imaginary part only when both factors in the denominator vanish simultaneously --- which would not happen immediately upon reaching the value $t = 4m^2$, the threshold for pair production in the $t$-channel. The point is that the presence of $\delta$-functions in the integrand constrains the region of integration in $q$-space, which may turn out to be incompatible with the value $t = 4m^2$. The extent of the integration region depends on the values of $s$ (the arguments of the $\delta$-functions contain $k_1$ and $k_2$). Therefore both $s$ and the boundary value $t = t_c(s)$, at which the function $A_{1s}(s,\,t)$ becomes complex, depend on $s$.
+
+Similarly to the way in which the function $M(s,\,t)$ is expressed through its imaginary part $A_{1s}(s,\,t)$ by formula~(\ref{eq:126.5}), the function $A_{1s}(s,\,t)$ is in turn expressed through $A_2(s,\,t) = \operatorname{Im} A_{1s}(s,\,t)$ by a dispersion relation ``in the variable~$t$'':
+\begin{equation}
+A_{1s}(s,\,t) = \frac{1}{\pi}\int_{t_c s}^{\infty} \frac{A_2(s,\,t')}{t' - t - i0}\,dt'.
+\label{eq:126.7}
+\end{equation}
+
+Substituting now~(\ref{eq:126.7}) into~(\ref{eq:126.5}), we obtain the \emph{double dispersion relation}, or \emph{Mandelstam representation}, for the amplitude $M(s,\,t)$:
+\begin{equation}
+M(s,\,t) = \frac{1}{\pi^2}\int_{4m^2}^{\infty}\int_{t_c(s')}^{\infty} \frac{A_2(s',\,t')}{(s' - s - i0)(t' - t - i0)}\,dt'\,ds',
+\label{eq:126.8}
+\end{equation}
+(\textit{S.\,Mandelstam}, 1958).
+
+The function $A_2(s,\,t)$ is called the \emph{double spectral density} of the function $M(s,\,t)$. It can be obtained from the integral~(\ref{eq:126.6}) by a repeated application of the replacement rule~(115.9):
+\begin{equation}
+l_1 = q,\quad l_2 = q - k_1,\quad l_3 = q - k_2,\quad l_4 = q - k_1 - k_2,
+\label{eq:126.9}
+\end{equation}
+denoting for brevity
+we obtain
+\begin{equation}
+(2i)^2 A_2(s,\,t) = (2\pi i)^4\int iB\,\delta(l_1^2 - m^2)\,\delta(l_2^2 - m^2)\,\delta(l_3^2 - m^2)\,\delta(l_4^2 - m^2)\,d^4q,
+\label{eq:126.10}
+\end{equation}
+where the integration is performed over the region $q^0 > 0$.
+
+It should be borne in mind, however, that formula~(\ref{eq:126.10}) has only a symbolic meaning. The point is that the region $s > 0$, $t > 0$ is unphysical. Correspondingly, in this region the quantities $l_1$, $l_2$, \ldots\ for real $q$ turn out to be, generally speaking,
+
+\SourcePage{618}{623}
+
+\noindent complex; the concept of a $\delta$-function for complex values of its argument is not fully defined. It would be more precise to speak directly of taking the residues at the corresponding poles of the original integral~(\ref{eq:126.4}). In our case, however, this is not important. The condition that four denominators in~(\ref{eq:126.4}) vanish, or four arguments of $\delta$-functions, fully determines the components of the 4-vector $q$. Passing to integration over $l_1^2$, $l_2^2$, \ldots\ (see below) and formally operating with the integral~(\ref{eq:126.10}) by the usual rules, we shall find (up to sign) the expression for $A_2$.
+
+For further calculations we choose the centre-of-inertia frame (in the $s$-channel). Then
+\begin{equation}
+k_1 = (\omega,\,\mathbf{k}),\quad k_2 = (\omega,\,-\mathbf{k}),\quad k_3 = (\omega,\,\mathbf{k}'),\quad k_4 = (\omega,\,-\mathbf{k}'),
+\label{eq:126.11}
+\end{equation}
+\begin{equation}
+s = 4\omega^2,\quad t = -(\mathbf{k} - \mathbf{k}')^2 = -4\omega^2\sin^2(\theta/2),\quad u = -(\mathbf{k} + \mathbf{k}')^2 = -4\omega^2\cos^2(\theta/2),
+\label{eq:126.12}
+\end{equation}
+where $\theta$ is the angle between $\mathbf{k}$ and $\mathbf{k}'$ (the scattering angle). The $x$~axis of the spatial Cartesian coordinates is directed along the vector $\mathbf{k} + \mathbf{k}'$, and the $y$~axis along $\mathbf{k} - \mathbf{k}'$\,\footnote{For $t > 0$ the quantity $(\mathbf{k} - \mathbf{k}')^2 < 0$, i.e.\ the vector $\mathbf{k} - \mathbf{k}'$ is imaginary. This difficulty can, however, be easily circumvented by expanding all vectorial expressions for $t < 0$ and subsequently performing the analytic continuation to $t > 0$.}.
+
+Let us now transform the integral~(\ref{eq:126.10}), choosing as the squares $l_1^2$, $l_2^2$, \ldots\ the new variables of integration (instead of the four components of~$q$). We have
+\[
+\frac{\partial(l_i^2)}{\partial q^\mu} = 2l_{1\mu},\quad \ldots\;,
+\]
+so the Jacobian of the transformation is
+\[
+\frac{\partial(l_1^2,\,l_2^2,\,l_3^2,\,l_4^2)}{\partial(q^0,\,q_x,\,q_y,\,q_z)} = 16D,
+\]
+where $D$ is the determinant composed of the 16 components of the 4-vectors $l_1$, $l_2$, $l_3$, $l_4$. The integration in~(\ref{eq:126.10}) reduces simply to replacing the functions $B$ and $D$ in the integrand by their values at\,\footnote{This method of integration automatically takes into account only one of the zeros of the arguments of the $\delta$-functions.}
+\begin{equation}
+l_1^2 = l_2^2 = l_3^2 = l_4^2 = m^2.
+\label{eq:126.13}
+\end{equation}
+
+From the conditions $l_1^2 = l_4^2 = m^2$ we obtain, as in \S\,115,
+\begin{equation}
+q^0 = \omega,\quad \mathbf{q}^2 = \omega^2 - m^2.
+\label{eq:126.14}
+\end{equation}
+
+\SourcePage{619}{624}
+
+The remaining two conditions give
+\[
+(q - k_1)^2 - m^2 = -2qk_4 = -2\omega^2 - 2\mathbf{q}\mathbf{k}' = 0,
+\]
+\[
+(q - k_2)^2 - m^2 = -2\omega^2 - 2\mathbf{q}\mathbf{k} = 0,
+\]
+so that
+\[
+\mathbf{q}\mathbf{k} = \mathbf{q}\mathbf{k}' = -s/4,
+\]
+or in components:
+\begin{equation}
+q^0 = \omega,\quad q_x = -\frac{s}{2(s+t)},\quad q_y = 0,\quad q_z = \pm\sqrt{\omega^2 - m^2 - q_x^2} = \pm\left[\frac{st - 4m^2(s+t)}{4(s+t)}\right]^{1/2}.
+\label{eq:126.15}
+\end{equation}
+
+Thus the integral~(\ref{eq:126.10}) equals
+\begin{equation}
+A_2(s,\,t) = \frac{\pi^4}{4D}\sum(-iB),
+\label{eq:126.16}
+\end{equation}
+where the summation is performed over the two values of $\mathbf{q}$ from~(\ref{eq:126.15}).
+
+The determinant $D$ can be written with the help of the unit antisymmetric tensor:
+\[
+D = e_{\mu\nu\rho\sigma}\,l_1^\mu\,l_2^\nu\,l_3^\rho\,l_4^\sigma = -e_{\mu\nu\rho\sigma}\,q^\mu\,k_4^\nu\,k_2^\rho\,k_1^\sigma = -\,e_{\mu\nu\rho\sigma}(q-k_1)^\mu(k_4-k_1)^\nu(k_2-k_1)^\rho\,k_1^\sigma
+\]
+(in the transformation the antisymmetry of $e_{\mu\nu\rho\sigma}$ has been used). Noting that of the four factors only the temporal component of $q$ contributes, we find
+\[
+D = -\omega\mathbf{q}\cdot[(\mathbf{k}+\mathbf{k}')(\mathbf{k}-\mathbf{k}')].
+\]
+Expanding this expression for $t < 0$ and then continuing analytically to $t > 0$, we obtain
+\begin{equation}
+D = -\omega q_z\sqrt{s+t}\,\sqrt{-t} \to \pm\,\tfrac{i}{4}\{st[st - 4m^2(s+t)]\}^{1/2}.
+\label{eq:126.17}
+\end{equation}
+
+The choice of sign in this expression can be made on the basis of the following considerations. We set $B = 1$ for simplicity. Then it is clear that in the physical region ($s > 0$, $t < 0$) we have $A_{1s}(s,\,t) < 0$\,\footnote{This is, of course, not accidental. The negativity of $A_{1s}$ follows in fact from the unitarity condition, as is especially clear at $t = 0$, when $A_{1s}$ determines the total cross section.}. Indeed, both denominators in the integrand of~(\ref{eq:126.6}) have the same (negative) sign:
+\[
+(q - k_1)^2 - m^2 = -2\omega^2 - 2\mathbf{q}\mathbf{k}' < -2\omega(\omega - |\mathbf{q}|) < 0,
+\]
+\[
+(q - k_2)^2 - m^2 = -2\omega^2 - 2\mathbf{q}\mathbf{k} < -2\omega(\omega - |\mathbf{q}|) < 0
+\]
+(here we have used the fact that, by virtue of two $\delta$-functions in the numerator, the relation~(\ref{eq:126.14}) holds, and therefore $|\mathbf{q}| < \omega$). From~(\ref{eq:126.7})
+
+\SourcePage{620}{625}
+
+\noindent it is then clear that the function $A_2(s,\,t)$ must also be negative for $s > 0$, $t > 0$ (taking into account that, according to~(\ref{eq:126.16}), this function is of constant sign). This means that in~(\ref{eq:126.17}) one must choose the upper sign, so that finally
+\begin{equation}
+A_2 = -\pi^2 \frac{\sum B}{\{st[st - 4m^2(s+t)]\}^{1/2}}.
+\label{eq:126.18}
+\end{equation}
+
+Since by its very meaning the function $A_2(s,\,t)$ must be real, in addition to the positivity of $s$ and $t$ there is also the condition of positivity of the expression in the square brackets in the denominator:
+\begin{equation}
+st - 4m^2(s + t) \geqslant 0,\quad s > 0,\quad t > 0.
+\label{eq:126.19}
+\end{equation}
+These inequalities define the region over which the integration in the double dispersion integral~(\ref{eq:126.8}) should be carried out (hatched in Fig.~23). Its boundary is the curve
+\[
+st - 4m^2(s + t) = 0
+\]
+with asymptotes $s = 4m^2$ and $t = 4m^2$.
+
+% [Figure 23: The integration region in the (s, t) plane for the double dispersion relation.
+%  The hatched region lies above and to the right of the hyperbola st - 4m^2(s+t) = 0.
+%  The curve has asymptotes at s = 4m^2 (vertical) and t = 4m^2 (horizontal).
+%  Axes: s horizontal, t vertical.]
+
+The dispersion relations in the form~(\ref{eq:126.5}) and~(\ref{eq:126.8}) do not yet take into account the conditions of renormalisation, and upon their literal application the integrals would diverge and would require regularisation. The renormalisation condition for the amplitude $M(s,\,t)$ consists of the requirement
+\begin{equation}
+M(0,\,0) = 0.
+\label{eq:126.20}
+\end{equation}
+
+Indeed, the amplitude of the scattering of a photon on a photon must vanish when $k_1 = k_2 = k_3 = k_4 = 0$ (and therefore $s = t = 0$), since $k = 0$ signifies a potential constant in time and space, to which no physical field corresponds (we shall discuss this condition in more detail in the following section).
+
+To account for this condition automatically, one must write a \emph{subtracted} dispersion relation (similarly to the passage from~(111.8) to~(111.13)). We arrive at such a relation naturally by first performing an identical transformation of~(\ref{eq:126.8}) with the help of the identity
+
+\SourcePage{621}{626}
+
+\[
+\frac{1}{(s'-s)(t'-t)} = \frac{st}{(s'-s)(t'-t)s't'} + \frac{s}{(s'-s)s't'} + \frac{t}{(t'-t)s't'} + \frac{1}{s't'}.
+\]
+
+Substituting it into the integrand of~(\ref{eq:126.8}), we obtain
+\[
+M(s,\,t) = \frac{st}{\pi^2}\iint \frac{A_2(s',\,t')\,ds'\,dt'}{(s'-s)(t'-t)s't'} + \frac{s}{\pi}\int \frac{f(s')\,ds'}{(s'-s)s'} + \frac{t}{\pi}\int \frac{g(t')\,dt'}{(t'-t)t'} + C,
+\]
+where
+\[
+f(s) = \frac{1}{\pi}\int \frac{A_2(s,\,t')}{t'}\,dt',\qquad g(t) = \frac{1}{\pi}\int \frac{A_2(s',\,t)}{s'}\,ds',
+\]
+\[
+C = \frac{1}{\pi^2}\iint \frac{A_2(s',\,t')}{s't'}\,ds'\,dt'.
+\]
+
+The last equalities, however, would make sense only under the condition that all integrals converge. Otherwise, the functions $f(s)$, $g(t)$ and the constant $C$ should be assigned definite values, prescribed by the renormalisation condition. Namely, one must set
+\[
+C = 0,\quad f(s) = A_{1s}(s,\,0),\quad g(t) = A_{1t}(0,\,t),
+\]
+where $A_{1t}$ is the imaginary part appearing upon increasing $t$ at fixed small $s$, similarly to $A_{1s}$, the imaginary part appearing upon increasing $s$ at fixed small $t$. The first of these equalities is obvious: $C = M(0,\,0) = 0$. The second (and analogously the third) follows from comparison of the equality
+\[
+M(s,\,0) = \frac{s}{\pi}\int \frac{f(s')\,ds'}{(s'-s)s'}
+\]
+with the single-variable dispersion relation~(\ref{eq:126.5}), written ``with subtraction'' in accordance with the condition~(\ref{eq:126.20}):
+\begin{equation}
+M(s,\,0) = \frac{s}{\pi}\int \frac{A_{1s}(s',\,t)}{(s'-s)s'}\,ds'.
+\label{eq:126.21}
+\end{equation}
+
+Thus, the final \emph{subtracted} double dispersion relation is:
+\begin{equation}
+M(s,\,t) = \frac{st}{\pi^2}\iint \frac{A_2(s',\,t')}{(s'-s)(t'-t)s't'}\,ds'\,dt' + \frac{s}{\pi}\int \frac{A_{1s}(s',\,0)}{(s'-s)s'}\,ds' + \frac{t}{\pi}\int \frac{A_{1t}(0,\,t')}{(t'-t)t'}\,dt'.
+\label{eq:126.22}
+\end{equation}
+
+If the values of $s$, $t$ themselves lie in the region of integration of the integrals~(\ref{eq:126.21}),\,(\ref{eq:126.22}), then as always one must understand as the limit
+\begin{equation}
+s \to s + i0,\quad t \to t + i0.
+\label{eq:126.23}
+\end{equation}

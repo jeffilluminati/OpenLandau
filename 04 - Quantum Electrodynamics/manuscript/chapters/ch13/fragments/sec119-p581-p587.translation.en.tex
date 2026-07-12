@@ -1,0 +1,214 @@
+
+\section{Computation of the mass operator}
+
+\SourcePage{576}{581}
+
+Using the example of the computation of the mass operator, we shall demonstrate the method of direct regularisation of Feynman integrals.
+
+In the first non-vanishing approximation, the mass operator is represented by the loop in the diagram
+
+% [Feynman diagram (119.1): first-order mass operator — electron line carrying momentum p enters from the left, emits a virtual photon line carrying momentum k (forming a loop with internal electron line carrying momentum p-k), and exits to the right with momentum p]
+
+\begin{equation}
+\label{eq:119.1}
+\end{equation}
+
+\noindent The corresponding integral is
+\[
+-i\bar{\mathcal{M}}(p) = (-ie)^2 \int \gamma^\mu G(p-k)\gamma^\nu D_{\mu\nu}(k)\,\frac{d^4k}{(2\pi)^4};
+\]
+substituting the propagators and bringing together the factors $\gamma^\mu \dots \gamma_\mu$ with the help of the formulas (22.6), we obtain
+\begin{equation}
+\bar{\mathcal{M}}(p) = -\frac{8\pi i}{(2\pi)^4}\,e^2 \int \frac{2m - (\gamma p) + (\gamma k)}{[(p-k)^2 - m^2](k^2 - \lambda^2)}\,d^4k
+\label{eq:119.2}
+\end{equation}
+(by the bar over $\mathcal{M}$ we denote the unregularised value of the integral). A fictitious ``photon mass'' $\lambda$ has been introduced into the photon propagator in order to eliminate the infrared divergence (as in \S\,117).
+
+We transform the integral with the help of formula (131.4), taking the two factors in the denominator of~(\ref{eq:119.2}) as $a_1$ and $a_2$. After a simple regrouping of the terms in the denominator of the new integral, we obtain
+\begin{equation}
+\bar{\mathcal{M}}(p) = -\frac{8\pi i}{(2\pi)^4}\,e^2 \int d^4k \int_0^1 dx\,\frac{2m - (\gamma p) + (\gamma k)}{[(k - px)^2 - a^2]^2},
+\label{eq:119.3}
+\end{equation}
+where
+\begin{equation}
+a^2 = m^2 x^2 - (p^2 - m^2)x(1-x) + \lambda^2(1-x).
+\label{eq:119.4}
+\end{equation}
+
+The substitution $k \to k + px$ brings the integrand in~(\ref{eq:119.3}) to a form in which the denominator depends only on $k^2$. In doing so, however, according to (131.17), (131.18), an additive constant is added to the integral:
+\begin{equation}
+\bar{\mathcal{M}}(p) = -\frac{8\pi i}{(2\pi)^4}\,e^2 \bigg\{\int d^4k \int_0^1 dx\,\frac{2m(1-x) - \frac{i\pi^2}{4}(\gamma p)}{(k^2 - a^2)^2} \bigg\},
+\label{eq:119.5}
+\end{equation}
+the term with $(\gamma k)$ in the numerator being now omitted as it vanishes upon integration over the directions of the 4-vector $k$ (cf.\ (131.8)).
+
+\SourcePage{577}{582}
+
+Regularisation of this integral consists in such subtractions as would reduce it to an expression of the form (110.20). The latter vanishes upon multiplication by the wave amplitude $u(p)$, if $p$ is the 4-momentum of a real electron. Without introducing $u(p)$ explicitly, one can formulate this condition as the requirement that $\mathcal{M}(p)$ vanish upon the substitution
+\begin{equation}
+(\gamma p) \to m, \qquad p^2 \to m^2.
+\label{eq:119.6}
+\end{equation}
+The form of the integral~(\ref{eq:119.5}) is convenient in that the 4-vector $p$ enters it only in the form $\gamma p$ and $p^2$ (and terms of the form $kp$ are absent).
+
+Subtracting from~(\ref{eq:119.5}) the same expression with the substitution~(\ref{eq:119.6}), we obtain
+\begin{multline}
+-\frac{8\pi i e^2}{(2\pi)^4} \bigg\{ \int d^4k \int_0^1 dx \cdot [2m - (\gamma p)(1-x)] \bigg[\frac{1}{(k^2 - a^2)^2} - \frac{1}{(k^2 - a_0^2)^2}\bigg] \\
+- \int d^4k \int_0^1 dx\,\frac{1-x}{(k^2 - a_0^2)^2}\,(\gamma p - m) - \frac{i\pi^2}{4}\,(\gamma p - m) \bigg\},
+\label{eq:119.7}
+\end{multline}
+where
+\[
+a_0^2 = m^2 x^2 + \lambda^2(1-x).
+\]
+
+For the final regularisation, however, one more subtraction must be performed: according to (110.20), upon the substitution~(\ref{eq:119.6}) not only $\mathcal{M}(p)$ as a whole should vanish, but so should the same expression without one of the factors $\gamma p - m$. The corresponding subtractions eliminate entirely the second and third terms in the curly brackets of~(\ref{eq:119.7})\footnote{In doing so, during the process of ``renormalisation on the fly'' (cf.\ p.\,545), we drop corrections to the renormalisation constant $Z_1$ (see \S\,110). The corresponding integrals diverge logarithmically. If one introduces a ``cut-off parameter'' $\Lambda^2 \gg m^2$, $p^2$, restricting the region of integration over $d^4k$ by the condition $k^2 \leqslant \Lambda^2$, this correction can be computed explicitly. The computation gives the result
+\begin{equation}
+Z_1 = 1 + Z_1^{(1)}, \quad Z_1^{(1)} = -\frac{\alpha}{2\pi}\bigg[\frac{1}{2}\ln\frac{\Lambda^2}{m^2} + \ln\frac{\lambda^2}{m^2} + \frac{9}{4}\bigg].
+\label{eq:119.7a}
+\end{equation}}.
+The first integral is preliminarily transformed by introducing one more auxiliary integration with the help of formula (131.5), putting in it $n=2$ and taking $k^2 - a^2$ and $k^2 - a_0^2$ as $a$ and $b$. Then expression~(\ref{eq:119.7}) takes the form
+
+\SourcePage{578}{583}
+
+\[
+(\gamma p - m)\frac{16\pi i}{(2\pi)^4}\,e^2 \int d^4k \int_0^1 dx \int_0^1 dz\,\frac{[2m - (\gamma p)(1-x)]x(1-x)}{[k^2 - a_0^2 + (p^2 - m^2)x(1-x)z]^3}
+\]
+(here we have also used the identity $p^2 - m^2 = (\gamma p - m)(\gamma p + m)$). We immediately perform the integration over $d^4k$. Assuming that $p^2 - m^2 < 0$, and using (131.14), we obtain
+\[
+(\gamma p - m)\frac{e^2}{2\pi} \int_0^1 dx \int_0^1 dz\,\frac{(\gamma p + m)[2m - (\gamma p)(1-x)]x(1-x)}{m^2 x^2 + \lambda^2(1-x) + (m^2 - p^2)x(1-x)z}.
+\]
+
+It now remains to subtract the factor $(\gamma p - m)$, temporarily omitted, and to perform the same integral with the substitution~(\ref{eq:119.6}); after straightforward manipulations we obtain
+\begin{multline}
+\mathcal{M}(p) = (\gamma p - m)\frac{e^2}{2\pi} \times \\
+\times \int_0^1 dx \int_0^1 dz\,\frac{m(1-x^2) - (\gamma p)(1-x)^2}{m^2 x + (m^2 - p^2)(1-x)z}\bigg[1 - \frac{2x(1+x)}{x^2 + (\lambda/m)^2}\bigg]
+\label{eq:119.8}
+\end{multline}
+(in the common denominator the term with $\lambda^2$ is omitted, since this does not lead to divergences here; in another place $\lambda^2(1-x)$ is replaced by
+
+\SourcePage{579}{584}
+
+\noindent $\lambda^2$, since the infrared divergence will correspond to the divergence at $x \to 0$).
+
+Integration in~(\ref{eq:119.8}) (first over $z$, then over $x$) is rather lengthy, but elementary and leads to the following final result:
+\begin{multline}
+\mathcal{M}(p) = \frac{\alpha}{2\pi m}\,(\gamma p - m)^2 \bigg\{\frac{1}{2(1-\rho)}\bigg(1 - \frac{2-3\rho}{1-\rho}\ln\rho\bigg) - \\
+- \frac{\gamma p + m}{m\rho}\bigg[\frac{1}{2(1-\rho)}\bigg(2 - \rho + \frac{\rho^2 + 4\rho - 4}{1-\rho}\ln\rho\bigg) + 1 + 2\ln\frac{\lambda}{m}\bigg]\bigg\},
+\label{eq:119.9}
+\end{multline}
+where we have denoted
+\[
+\rho = \frac{m^2 - p^2}{m^2}.
+\]
+(\emph{R.~Karplus, N.\,M.~Kroll}, 1950). The integral is computed under the assumption $\rho > 0$, and moreover $\rho \gg \lambda/m$. In accordance with the rule for going around poles, the analytic continuation of expression~(\ref{eq:119.9}) into the region $\rho < 0$ is defined by the substitution $m \to m - i0$; in doing so $\rho \to \rho - i0$, so that $\ln\rho$ for $\rho < 0$ must be understood as
+\begin{equation}
+\ln\rho = \ln|\rho| - i\pi, \quad \rho < 0.
+\label{eq:119.10}
+\end{equation}
+
+Let us examine the behaviour of the mass operator for $p^2 \gg m^2$. We then have $-\rho \approx p^2/m^2 \gg 1$, and with logarithmic accuracy
+\begin{equation}
+\mathcal{M}(p) = -[\mathcal{G}^{-1}(p) - G^{-1}(p)] \approx \frac{\alpha}{4\pi}\,(\gamma p)\ln\frac{p^2}{m^2}.
+\label{eq:119.11}
+\end{equation}
+As in the case of the photon propagator (cf.\ formulas (113.15), (113.16) for the polarisation operator), the correction to $G^{-1}$ turns out to be small only at not too large energies, namely when
+\[
+\frac{\alpha}{4\pi}\ln\frac{p^2}{m^2} \ll 1.
+\]
+
+In the present case, however, the logarithmic growth is in a certain sense fictitious: it can be eliminated by an appropriate choice of gauge, i.e.\ of the function $D^{(l)}$ in the photon propagator (\emph{L.\,D.~Landau, A.\,A.~Abrikosov, I.\,M.~Khalatnikov}, 1954). Namely, one must set (in the notation of \S\,103)
+\begin{equation}
+D^{(l)} = 0,
+\label{eq:119.12}
+\end{equation}
+whereas formula~(\ref{eq:119.9}) was obtained in the gauge
+\begin{equation}
+D^{(l)} = D.
+\label{eq:119.13}
+\end{equation}
+This property of the gauge~(\ref{eq:119.12}) makes it especially convenient for investigating the behaviour of the theory at $p^2 \gg m^2$, which will be used below, in \S\,132.
+
+\SourcePage{580}{585}
+
+To prove the assertion made, we note that if we are interested only in terms $\sim e^2$, then the transformation from the gauge~(\ref{eq:119.13}) to the gauge~(\ref{eq:119.12}) can be regarded as infinitesimally small. Correspondingly, one can directly use formula (105.14), putting in it
+\[
+d^{(l)}(q) = -\frac{D}{q^2} = -\frac{4\pi}{(q^2)^2},
+\]
+and also replacing, with the required accuracy, the function $\mathcal{G}$ in the integrand by $G$. In the integral over $d^4q$, the essential region is $q \gg p$; in this case $G(p-q)$ in the integrand is much smaller than $G(p)$, and it can be neglected. Then
+\[
+\delta\mathcal{G}^{-1} = -\mathcal{G}^{-2}(p)\,\delta\mathcal{G}(p) = -ie^2\,\mathcal{G}^{-1}(p) \int d^{(l)}(q)\,\frac{d^4q}{(2\pi)^4}.
+\]
+
+Finally, applying the transformation (113.11), (113.12), we obtain
+\[
+\delta\mathcal{G}^{-1} = -\frac{e^2}{4\pi}\,\mathcal{G}^{-1}(p) \int \frac{d(-q^2)}{-q^2} \approx -\frac{e^2}{4\pi}\,(\gamma p)\ln\frac{\Lambda^2}{p^2},
+\]
+where $\Lambda$ is an auxiliary upper limit, the divergence at which is removed by renormalisation. The latter consists in subtracting the same expression evaluated at $p^2 \approx m^2$, so that we finally have
+\[
+\delta\mathcal{G}^{-1} = \frac{e^2}{4\pi}\,(\gamma p)\ln\frac{p^2}{m^2}.
+\]
+This expression exactly cancels the difference $\mathcal{G}^{-1} - G^{-1}$ from~(\ref{eq:119.11}).
+
+Finally, let us address the question of the reasons necessitating the introduction of a finite ``photon mass'' $\lambda$ for the regularisation of the integral~(\ref{eq:119.2}), closely connected with its behaviour at $p^2 \to m^2$.
+
+First of all, let us note that this integral is by itself finite at $\lambda = 0$ (for the elimination of the inessential divergence in this respect at large $k$, we assume that the integral is taken over a large but finite region of $k$-space). The need for introducing $\lambda$ arises from subtracting the renormalisation integral, which would otherwise diverge at $p^2 = m^2$. Let us therefore clarify how the unregularised mass operator behaves as $p^2 \to m^2$. Since this behaviour depends significantly on the choice of gauge (whereas the integral~(\ref{eq:119.2}) was written already for a specific choice---(\ref{eq:119.13})), let us consider the general case of an arbitrary gauge.
+
+We again make use of the transformation (105.14). Representing
+
+\SourcePage{581}{586}
+
+\noindent $d^{(l)}$ in the form
+\begin{equation}
+d^{(l)}(q) = -\frac{\delta D^{(l)}}{q^2} = -\frac{4\pi}{(q^2)^2}\,\delta a(q^2),
+\label{eq:119.14}
+\end{equation}
+we shall consider $\delta a$ to be a variation of the function $a(q^2)$, substantially changing only over intervals $q^2 \sim m^2$ and finite at $q^2 \approx m^2$. In the integrand on the right side of (105.14), in the difference $\mathcal{G}(p) - \mathcal{G}(p-q)$, for small $q$ both terms are close and the integral converges. Since for small $q$
+\[
+\mathcal{G}(p-q) \sim \frac{1}{p^2 - m^2 - 2pq},
+\]
+$\mathcal{G}(p-q)$ can be omitted in comparison with $\mathcal{G}(p)$ when $q \gg (p^2 - m^2)/m$. The integral
+\[
+\delta\mathcal{G}(p) = ie^2\,\mathcal{G}(p) \int d^{(l)}(q)\,\frac{d^4q}{(2\pi)^4} = -\frac{e^2}{4\pi}\,\mathcal{G}(p) \int \delta a(q^2)\,\frac{d(-q^2)}{-q^2}
+\]
+diverges logarithmically in the region
+\[
+(p^2 - m^2)/m^2 \ll q^2 \ll m^2.
+\]
+With logarithmic accuracy we therefore have
+\[
+\frac{\delta\mathcal{G}}{\mathcal{G}} = -\frac{e^2}{4\pi}\,\delta a(m^2)\ln\frac{m^2}{p^2 - m^2}.
+\]
+
+This equation can be integrated. Noting that when $\alpha^2 \equiv e^2 \to 0$ the exact propagator $\mathcal{G}$ must coincide with the propagator of free particles $G$, we obtain
+\begin{equation}
+\mathcal{G}(p) = \frac{1}{\gamma p - m}\bigg(\frac{m^2}{p^2 - m^2}\bigg)^{\frac{\alpha}{2\pi}(C - a_0)},
+\label{eq:119.15}
+\end{equation}
+where $a_0 = a(m^2)$, $C$ is a certain constant. To determine the latter, we compare the expression
+\begin{equation}
+\mathcal{G}^{-1}(p) = (\gamma p - m)\bigg[1 + \frac{\alpha}{2\pi}(C - a_0)\ln\rho\bigg],
+\label{eq:119.16}
+\end{equation}
+obtained from~(\ref{eq:119.15}) in the first approximation with respect to $\alpha$, with the analogous expression obtained from the integral~(\ref{eq:119.2}) at $\lambda = 0$\footnote{To obtain~(\ref{eq:119.16}), there is no need to redo the computation from scratch. The term $\sim \ln\rho$ in~(\ref{eq:119.9}) was in fact obtained under the assumption $\rho \gg \lambda$, which permits the passage to $\lambda \to 0$. The term $\sim \ln(\lambda/m)$ arises from the subtraction of the renormalisation integral and is absent in the original integral~(\ref{eq:119.2}).}:
+\begin{equation}
+\mathcal{G}^{-1}(p) = (\gamma p - m)\bigg[1 + \frac{\alpha}{\pi}\ln\rho\bigg].
+\label{eq:119.17}
+\end{equation}
+According to the definition~(\ref{eq:119.14}), the function $a(q^2)$ coincides with the ratio $D^{(l)}/D$. Therefore the gauge~(\ref{eq:119.13}), to which~(\ref{eq:119.17}) pertains, corresponds to $a = a_0 = 1$. Requiring the coincidence of~(\ref{eq:119.16}) and~(\ref{eq:119.17}) at this value of $a_0$, we find $C = 3$.
+
+\SourcePage{582}{587}
+
+Thus we finally find the following limiting expression (\emph{infrared asymptotic}) of the unrenormalised electron propagator as $p^2 \to m^2$:
+\begin{equation}
+\mathcal{G}(p) = \frac{\gamma p + m}{p^2 - m^2}\bigg(\frac{m^2}{p^2 - m^2}\bigg)^{\frac{\alpha}{2\pi}(3 - a_0)}.
+\label{eq:119.18}
+\end{equation}
+(\emph{A.\,A.~Abrikosov}, 1955). Let us stress that the validity of this formula is subject to the inequalities $\alpha \ll 1$, $|\ln\rho| \gg 1$, whereas the formulas of perturbation theory would require the condition $\alpha|\ln\rho|/2\pi \ll 1$ as well. Let us also note that the sign of the difference $p^2 - m^2$ is immaterial here, since the imaginary part of expression~(\ref{eq:119.18}) would in any case be beyond its limits of accuracy.
+
+The renormalised propagator must have a simple pole at $p^2 = m^2$. We see that~(\ref{eq:119.18}) satisfies this requirement only in the gauge in which
+\begin{equation}
+D^{(l)} = 3D.
+\label{eq:119.19}
+\end{equation}
+(so that $a_0 = 3$). In this case the regularisation of the Feynman integral (having the purpose of eliminating its divergence at the upper limits) will not require the introduction of a finite ``photon mass''. In other gauges, however, a vanishing photon mass leads to the appearance of a branch point at $p^2 = m^2$ instead of a simple pole, and the removal of this ``defect'' requires the introduction of a finite parameter $\lambda$.

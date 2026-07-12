@@ -1,0 +1,240 @@
+
+\section{Radiative shift of atomic levels}
+
+\SourcePage{597}{602}
+
+Radiative corrections lead to a shift of the energy levels of bound states of the electron in an external field (the so-called \emph{Lamb shift}). The most interesting case of this kind is the shift of levels of the hydrogen atom (or a hydrogen-like ion)\footnote{The shift of hydrogen levels was first computed by \emph{Bethe} (H.\,A.~Bethe, 1947) with logarithmic accuracy on the basis of a non-relativistic treatment; this calculation served as the impetus for the entire subsequent development of quantum electrodynamics. The difference of the levels $2s_{1/2}$ and $2p_{1/2}$ (in the first non-vanishing approximation of perturbation theory) was computed exactly by \emph{Kroll} and \emph{Lamb} (N.\,M.~Kroll, W.\,E.~Lamb, 1949), and the full formula for the shift of levels was found by \emph{Weisskopf} and \emph{French} (V.~Weisskopf, J.\,B.~French, 1949).}.
+
+A systematic method for computing corrections to the energy levels is based on the use of the exact electron propagator in the external field (see \S\,109). But if
+
+\SourcePage{598}{603}
+
+\begin{equation}
+Z\alpha \ll 1,
+\label{eq:123.1}
+\end{equation}
+one can make use of a simpler method, in which the external field is treated as a perturbation.
+
+In the first approximation in the external field, the radiative correction to the interaction of the electron with a constant electric field is described by the same two diagrams~(121.2) that we already considered in connection with the problem of the scattering of an electron in such a field; the transition from one problem to the other requires only a simple reformulation (see below).
+
+It is easy to understand, however, that in this way one can find only that part of the level shift which is caused by interaction with virtual photons of sufficiently high frequencies. Indeed, consider, for instance, the following (according to the external field) radiative correction to the amplitude of scattering of the electron:
+
+% [Feynman diagram (123.2): electron self-energy correction in external field --- electron line from $p$ through vertex with external field (dashed line) to $p'$, with a virtual photon loop of momentum $k$ on the electron line, the internal electron line labelled $f$]
+
+\begin{equation}
+\label{eq:123.2}
+\end{equation}
+
+\noindent (in contrast to (121.2,$b$) this diagram contains two vertices of the external field). In the region of integration over $d^4k$ where $k_0$ is sufficiently large, this correction contains an extra power of $Z\alpha$ and is therefore inessential. But on introducing into the diagram a second vertex of the external field, one also introduces into it an additional electron propagator $G(f)$. For small $k$ (and non-relativistic external ends $p$ and $p'$) the essential impulses of the virtual electrons~$f$, close to the pole of the propagator $G(f)$, turn out to be significant. The small denominator that appears as a result compensates the extra small factor~$Z\alpha$. The same applies, obviously, also to corrections of all orders in the external field. In other words, in the region of small frequencies of virtual photons the external field must be taken into account exactly---not only with respect to the electron itself, but also for all intermediate states. Under condition~(\ref{eq:123.1}) the applicability regions of both methods of calculation overlap, which allows one to carry out a rigorous ``joining'' of both parts of the correction to the level.
+
+Let us decompose the desired level shift $\delta E_s$\footnote{In this section $E_s$ denotes the energy of the electron in the atom, not including its rest energy. The index $s$ stands for the totality of quantum numbers determining the state of the atom.} into two parts:
+\begin{equation}
+\delta E_s = \delta E_s^{(\mathrm{I})} + \delta E_s^{(\mathrm{II})},
+\label{eq:123.3}
+\end{equation}
+arising respectively from interactions with virtual photons of frequencies in the regions I) $k_0 > \varkappa$, II) $k_0 < \varkappa$. We choose $\varkappa$ so that
+
+\SourcePage{599}{604}
+
+\begin{equation}
+(Z\alpha)^2 m \ll \varkappa \ll m
+\label{eq:123.4}
+\end{equation}
+($Z^2\alpha^2 m$ is of the order of the binding energy of the electron in the atom). Then in region~I it suffices to take the field of the nucleus into account only in the first approximation. In region~II as well (by virtue of the condition $\varkappa \ll m$) one can solve the problem in the non-relativistic approximation---not only with respect to the electron itself, but also for all intermediate states. Under condition~(\ref{eq:123.4}) the applicability regions of both methods of calculation overlap, which allows one to carry out a rigorous ``joining'' of both parts of the correction to the level.
+
+\textbf{High-frequency part of the shift.} Let us consider first region~I. In it one can make use of the correction to the scattering amplitude~(122.1), from which it is necessary to preliminary exclude the contribution of virtual photons belonging to region~II. Such photons make only a small contribution to the form factor~$g$, which therefore does not need modification. In the function~$f$, however, virtual photons of small frequencies make a large contribution due to the infrared divergence. Therefore in place of $f$ in~(122.1) one should substitute the function~$f_\varkappa$, from which the region $k_0 < \varkappa$ has already been excluded.
+
+Such an exclusion could be carried out by a direct method, by computing from $f$ the integral over the region $k_0 < \varkappa$. The required result can, however, be obtained without new computations, using the results of \S\,122.
+
+For this we note that the exclusion of frequencies $k_0 < \varkappa$ can be regarded as one of the possible methods of infrared cutoff. The result for the correction to the scattering cross section cannot, of course, depend on the method of cutoff, provided that in the same way one also cuts off the probability of emission of real soft photons, i.e.\ in the concept of ``elastic'' scattering one includes the emission with frequencies only from $\varkappa$ to a given $\omega_{\max}$. If one chooses $\omega_{\max} = \varkappa$, then the explicit account of photon emission becomes superfluous. It is then clear that $f_\varkappa$ is obtained from the function $f_{\omega_{\max}}$ defined in \S\,122 simply by the replacement of $\omega_{\max}$ by $\varkappa$. In particular, in the non-relativistic case
+
+\SourcePage{600}{605}
+
+\begin{equation}
+f_\varkappa - 1 = -\frac{\alpha\mathbf{q}^2}{3\pi m^2}\biggl(\ln\frac{m}{2\varkappa} + \frac{11}{24}\biggr).
+\label{eq:123.5}
+\end{equation}
+
+Let us now transform the correction~(122.1) to the scattering amplitude, presenting it as the result of a corresponding correction to the effective potential energy of the electron in the field. Comparing the amplitude~(122.1)
+\[
+-e(\bar{u}'\!{}^*\,Q_{\text{rad}}\,\Phi\, u)
+\]
+with the Born scattering amplitude~(121.6)
+\[
+-e(\bar{u}'\!{}^*\,\Phi\, u),
+\]
+we see that the role of the correction is played (in the momentum representation) by the function
+\begin{equation}
+e\,\delta\Phi(\mathbf{q}) = e\,Q_{\text{rad}}(\mathbf{q})\,\Phi(\mathbf{q}).
+\label{eq:123.6}
+\end{equation}
+In the non-relativistic case, taking $\mathcal{P}$ and $g$ from (113.14) and (117.20), and for $f$ substituting $f_\varkappa$ from (\ref{eq:123.5}), we obtain
+\begin{equation}
+\delta\Phi(\mathbf{q}) = \left\{-\frac{\alpha\mathbf{q}^2}{3\pi m^2}\biggl(\ln\frac{m}{2\varkappa} + \frac{11}{24} - \frac{1}{5}\biggr) + \frac{\alpha}{4\pi m}\mathbf{q}\gamma\right\}\Phi(\mathbf{q}).
+\label{eq:123.7}
+\end{equation}
+The corresponding function $\delta\Phi(\mathbf{r})$ in the coordinate representation\footnote{Let us emphasise the difference of this correction to the potential from the correction considered in \S\,114. The latter included in itself only the effect of vacuum polarisation (diagram~(121.2,$a$)) for the Coulomb field as such. The correction~(\ref{eq:123.8}), however, pertains already to the interaction of the field with the electron and includes in itself also the effect of the change in the motion of the electron (diagram~(121.2,$b$)).}:
+\begin{equation}
+\delta\Phi(\mathbf{r}) = \frac{\alpha}{3\pi m^2}\biggl(\ln\frac{m}{2\varkappa} + \frac{11}{24} - \frac{1}{5}\biggr)\Delta\Phi(\mathbf{r}) - i\,\frac{\alpha}{4\pi m}\,\boldsymbol{\gamma}\boldsymbol{\nabla}\Phi(\mathbf{r}).
+\label{eq:123.8}
+\end{equation}
+
+The level shift $\delta E_s^{(\mathrm{I})}$ is obtained by averaging $e\,\delta\Phi(\mathbf{r})$ over the wave function of the unperturbed state of the electron in the atom, i.e.\ as the corresponding diagonal matrix element\footnote{Strictly speaking, the form factors defined in \S\,117 referred to the vertex operator with two free electron ends ($p^2 = p'^2 = m^2$). For an electron in an atom with energy $E_s$, the level is in no way connected with~$\mathbf{p}$. This distinction can, however, be neglected in region~I.}:
+\begin{equation}
+\delta E_s^{(\mathrm{I})} = \frac{e\alpha}{3\pi m^2}\biggl(\ln\frac{m}{2\varkappa} + \frac{11}{24} - \frac{1}{5}\biggr)\langle s|\Delta\Phi|s\rangle - i\,\frac{e\alpha}{4\pi m}\langle s|\boldsymbol{\gamma}\boldsymbol{\nabla}\Phi|s\rangle.
+\label{eq:123.9}
+\end{equation}
+
+\SourcePage{601}{606}
+
+In the first term it suffices to use the non-relativistic wave function of the electron when averaging. In the second term, however, such an approximation is insufficient: the zeroth approximation with respect to non-relativistic wave functions vanishes because of the absence of diagonal elements of the matrix~$\gamma$. Therefore one must use here the approximate relativistic wave function found in \S\,33, $\psi = \begin{pmatrix}\varphi \\ \chi\end{pmatrix}$, retaining in it the small (in the standard representation) component~$\chi$. We have
+\[
+\psi^*\boldsymbol{\gamma}\psi = \varphi^*\boldsymbol{\sigma}\chi - \chi^*\boldsymbol{\sigma}\varphi
+\]
+and, substituting from (33.4)
+\[
+\chi = \frac{1}{2m}\boldsymbol{\sigma}\hat{\mathbf{p}}\,\varphi = -\frac{i}{2m}\boldsymbol{\sigma}\boldsymbol{\nabla}\varphi,
+\]
+we obtain
+\begin{multline*}
+\langle s|\boldsymbol{\gamma}\boldsymbol{\nabla}\Phi|s\rangle = -\frac{i}{2m}\int\bigl\{\varphi^*(\boldsymbol{\sigma}\boldsymbol{\nabla}\Phi)(\boldsymbol{\sigma}\boldsymbol{\nabla}\varphi) + (\boldsymbol{\nabla}\varphi^*\!\cdot\boldsymbol{\sigma})(\boldsymbol{\sigma}\boldsymbol{\nabla}\Phi)\varphi\bigr\}d^3x = {} \\
+= \frac{i}{2m}\int\bigl\{\varphi^*\Delta\Phi\cdot\varphi - 2i\sigma\varphi^*[\boldsymbol{\nabla}\Phi\cdot\boldsymbol{\nabla}\varphi]\bigr\}d^3x
+\end{multline*}
+(in the transformation of the integral the identity~(33.5) was used and integration by parts was performed). Since $\Phi = \Phi(r)$,
+\[
+\boldsymbol{\nabla}\Phi = \frac{\mathbf{r}}{r}\,\frac{d\Phi}{dr},
+\]
+and therefore
+\[
+-i\boldsymbol{\sigma}[\boldsymbol{\nabla}\Phi\cdot\boldsymbol{\nabla}] = \frac{1}{r}\,\frac{d\Phi}{dr}\,\boldsymbol{\sigma}\hat{\mathbf{l}},
+\]
+where $\hat{\mathbf{l}} = -i[\mathbf{r}\boldsymbol{\nabla}]$ is the orbital angular momentum operator. Finally, collecting the expressions obtained and substituting in~(\ref{eq:123.9}), we find
+\begin{equation}
+\delta E_s^{(\mathrm{I})} = \frac{e^3}{3\pi m^2}\biggl(\ln\frac{m}{2\varkappa} + \frac{19}{30}\biggr)\langle s|\Delta\Phi|s\rangle + \frac{e^3}{4\pi m^2}\left\langle s\left|\boldsymbol{\sigma}\frac{1}{r}\,\frac{d\Phi}{dr}\right|s\right\rangle,
+\label{eq:123.10}
+\end{equation}
+where already in both terms the averaging is carried out over the non-relativistic wave function.
+
+\textbf{Low-frequency part of the shift.} For the computation of the second part of the level shift we use a method based ultimately on the unitarity condition.
+
+By virtue of the possibility of photon emission, the excited state of the atom is quasistationary (and not strictly stationary). To such a state one can assign a complex value of the energy, with its imaginary part equal to $-w/2$, where $w$ is the probability of decay of the state, i.e.\ in the present case the total probability of photon emission (see III, \S\,134). In the non-relativistic
+
+\SourcePage{602}{607}
+
+\noindent approximation the radiation is dipolar, and according to~(45.7) we have
+\begin{equation}
+\operatorname{Im}\delta E_s = -\tfrac{1}{2}w_s = -\frac{2}{3}\sum_{s'}|\mathbf{d}_{ss'}|^2(E_s - E_{s'})^3
+\label{eq:123.11}
+\end{equation}
+(where the summation is carried out over all lower-lying levels, $E_{s'} < E_s$), or in equivalent form:
+\[
+\operatorname{Im}\delta E_s = -\frac{2}{3}\int_0^\infty d\omega\cdot\sum_{s'}|\mathbf{d}_{ss'}|^2(E_s - E_{s'})^3\,\delta(E_s - E_{s'} - \omega).
+\]
+
+To find the real part of $\delta E_s$, one should regard $E_s$ as a complex variable and carry out the analytic continuation. This can be done by treating the $\delta$-function as arising from the poles. The rule for going around the poles is given, as usual, by adding a negative imaginary part to the masses of virtual particles, which in the present case are the masses $m_{s'}$ of the electron in intermediate states of the atom. The role of these masses is played by $m_{s'} = m + E_{s'}$, so that one must set
+\[
+E_{s'} \to E_{s'} - i0,
+\]
+whence it follows that the substitution
+\begin{equation}
+\delta(E_s - E_{s'} - \omega) = -\frac{1}{\pi}\operatorname{Im}\frac{1}{E_s - E_{s'} - \omega + i0}
+\label{eq:123.12}
+\end{equation}
+(cf.~(111.3)).
+
+Substituting~(\ref{eq:123.12}) in~(\ref{eq:123.11}), we find
+\[
+\operatorname{Im}\delta E_s = \operatorname{Im}\frac{2}{3\pi}\int_0^\infty d\omega\cdot\sum_{s'}|\mathbf{d}_{ss'}|^2\frac{(E_s - E_{s'})^3}{E_s - E_{s'} - \omega + i0}.
+\]
+The desired analytic continuation is then obtained simply by dropping $\operatorname{Im}$ on both sides of the equality. We need, however, to extract from $\delta E_s$ only that part which is associated with the contribution of frequencies in region~II: $\omega < \varkappa$. For this it suffices to replace the upper limit of the integral by~$\varkappa$. Carrying out the integration, we obtain
+\begin{equation}
+\delta E_s^{(\mathrm{II})} = \frac{2}{3\pi}\sum_{s'}|\mathbf{d}_{ss'}|^2(E_s - E_{s'})^3\ln\frac{\varkappa}{|E_{s'} - E_s| + i0}.
+\label{eq:123.13}
+\end{equation}
+(by virtue of inequality~(\ref{eq:123.4}) we have neglected at the upper limit the difference $E_s - E_{s'}$ in comparison with~$\varkappa$). In what follows we shall be
+
+\SourcePage{603}{608}
+
+\noindent interested only in the real part of the level; it is obtained by replacing in~(\ref{eq:123.13}) the argument of the logarithm by $\varkappa/|E_{s'} - E_s|$.
+
+In expression~(\ref{eq:123.13}) we transform the term with $\ln\varkappa$, replacing the matrix elements of the dipole moment $\mathbf{d} = e\mathbf{r}$ by the matrix elements of the impulse $\mathbf{p} = m\mathbf{v}$ and its derivative $\hat{\mathbf{p}}$:
+\begin{multline*}
+\sum_{s'}|\mathbf{d}_{ss'}|^2(E_s - E_{s'})^3 = -\frac{e^2}{m^2}\sum_{s'}|\mathbf{p}_{ss'}|^2(E_s - E_{s'}) = {} \\
+= \frac{ie^2}{2m^2}\sum_{s'}\bigl\{(\hat{\mathbf{p}})_{ss'}\mathbf{p}_{s's} - \mathbf{p}_{ss'}(\hat{\mathbf{p}})_{s's}\bigr\}.
+\end{multline*}
+
+Replacing now $\hat{\mathbf{p}}$ according to the operator equation of motion of the electron $\hat{\mathbf{p}} = -e\boldsymbol{\nabla}\Phi$, we obtain
+\begin{multline}
+\sum_{s'}|\mathbf{d}_{ss'}|^2(E_s - E_{s'})^3 = -\frac{ie^3}{2m^2}\sum_{s'}\bigl\{(\boldsymbol{\nabla}\Phi)_{ss'}\mathbf{p}_{s's} - \mathbf{p}_{ss'}(\boldsymbol{\nabla}\Phi)_{s's}\bigr\} = {} \\
+= \frac{ie^3}{2m^2}\langle s|\mathbf{p}\boldsymbol{\nabla}\Phi - \boldsymbol{\nabla}\Phi\,\mathbf{p}|s\rangle = \frac{e^3}{2m^2}\langle s|\Delta\Phi|s\rangle.
+\label{eq:123.14}
+\end{multline}
+We can therefore rewrite~(\ref{eq:123.13}) in the form
+\begin{equation}
+\delta E_s^{(\mathrm{II})} = \frac{e^3}{3\pi m^2}\langle s|\Delta\Phi|s\rangle\ln\frac{2\varkappa}{m} + \frac{2e^2}{3\pi}\sum_{s'}|\mathbf{r}_{ss'}|^2(E_{s'} - E_s)^3\ln\frac{m}{2|E_{s'} - E_s|}.
+\label{eq:123.15}
+\end{equation}
+
+\textbf{The full shift.} Finally, combining both parts, we find the following final formula for the shift of the level:
+\begin{multline}
+\delta E_s = \frac{2e^2}{3\pi}\sum_{s'}|\mathbf{r}_{ss'}|^2(E_{s'} - E_s)^3\ln\frac{m}{2|E_{s'} - E_s|} + {} \\
++ \frac{e^3}{3\pi m^2}\,\frac{19}{30}\,\langle s|\Delta\Phi|s\rangle + \frac{e^3}{4\pi m^2}\left\langle s\left|\boldsymbol{\sigma}\frac{1}{r}\,\frac{d\Phi}{dr}\right|s\right\rangle
+\label{eq:123.16}
+\end{multline}
+(as should be, the auxiliary quantity $\varkappa$ has dropped out)\footnote{The determination of corrections of the next order in the shift of levels requires very complex computations. A most complete summary and systematic derivation of such corrections (together with the corresponding bibliography) can be found in the articles: \emph{Erickson G.\,W., Yennie D.\,R.}//Ann.\ of Phys.\ 1965.\ V.\,35.\ P.\,271, 447.}.
+
+All matrix elements in~(\ref{eq:123.16}) are taken with respect to the non-relativistic wave functions of the electron in the atom. For the hydrogen atom (or hydrogen-like ion) these functions depend on only three quantum numbers: the principal quantum number~$n$, the orbital angular momentum~$l$ and its projection~$m$ (but not on the total angular
+
+\SourcePage{604}{609}
+
+\noindent momentum~$j$); correspondingly the energy levels depend only on~$n$\footnote{The matrix elements of $\mathbf{r}$ are diagonal in the numbers $j$ and do not depend on~$j$; therefore the summation over $s$ in~(\ref{eq:123.16}) reduces to summation over $n$, $l$, $m$. By virtue of spatial isotropy the sum~(\ref{eq:123.17}) does not depend, of course, also on the quantum number~$m$.}. Let us introduce the notation
+\begin{equation}
+L_{nl} = \frac{n^3}{2m(Ze^2)^4}\sum_{n'l'm'}\bigl|\langle n'l'm'|\mathbf{r}|nlm\rangle\bigr|^2(E_{n'} - E_n)^3\ln\frac{m(Ze^2)^2}{2|E_{n'} - E_n|}.
+\label{eq:123.17}
+\end{equation}
+The energy levels are proportional to $(Ze^2)^2$, and the characteristic size of the atom is proportional to $Ze^2$; therefore, as defined by~(\ref{eq:123.17}), the quantities $L_{nl}$ do not depend on~$Z$. These quantities can be numerically determined.
+
+Let us consider separately the cases $l = 0$ and $l \neq 0$. When $l = 0$ the last term in~(\ref{eq:123.16}) vanishes. In the second term we make use of the equation
+\[
+e\,\Delta\Phi = 4\pi Ze^2\,\delta(\mathbf{r}),
+\]
+which is satisfied by the Coulomb field of the nucleus. Hence
+\[
+\langle nlm|\Delta\Phi|nlm\rangle = \begin{cases} 4m^3(Ze^2)^4 n^{-3}, & l = 0, \\ 0, & l \neq 0 \end{cases}
+\]
+(see~(34.3)). In the first term we also introduce the notation~(\ref{eq:123.17}) and once more use the equality~(\ref{eq:123.14}):
+\[
+\sum_{n'l'm'}|\langle n'l'm'|\mathbf{r}|n00\rangle|^2(E_{n'} - E_n)^3 = \frac{e}{2m^2}\langle n00|\Delta\Phi|n00\rangle = \frac{2m(Ze^2)^4}{n^3}.
+\]
+As a result we obtain the following expression for the shift of $s$-terms:
+\begin{equation}
+\delta E_{n0} = \frac{4mc^2 Z^4\alpha^5}{3\pi n^3}\biggl[\ln\frac{1}{(Z\alpha)^2} + L_{n0} + \frac{19}{30}\biggr]
+\label{eq:123.18}
+\end{equation}
+(ordinary units). Numerical values of several quantities $L_{n0}$:
+\[
+\begin{array}{lcccccc}
+n = & 1 & 2 & 3 & 4 & \cdots & \infty \\
+L_{n0} = & {-2.984} & {-2.812} & {-2.768} & {-2.750} & \cdots & {-2.721}
+\end{array}
+\]
+
+The unperturbed levels $E_n = -mc^2(Z\alpha)^2/(2n^2)$; therefore the relative magnitude of the radiative shift is
+\begin{equation}
+\left|\frac{\delta E_{n0}}{E_{n0}}\right| \sim Z^2\alpha^3\ln\frac{1}{Z\alpha}.
+\label{eq:123.19}
+\end{equation}
+
+\SourcePage{605}{610}
+
+In the case $l \neq 0$ in~(\ref{eq:123.16}) the second term vanishes. The third is computed with the help of the formulae given in \S\,34. In this term there is also a dependence on the number~$j$. As a result we obtain
+\begin{equation}
+\delta E_{nlj} = \frac{4mc^2 Z^4\alpha^5}{3\pi n^3}\biggl[L_{nl} + \frac{3}{8}\,\frac{j(j+1) - l(l+1) - 3/4}{l(l+1)(2l+1)}\biggr], \quad l \neq 0.
+\label{eq:123.20}
+\end{equation}
+
+Thus the radiative shift removes the last remaining degeneracy, left after accounting for the spin-orbit interaction,---the degeneracy of levels with the same values of $n$ and~$j$, but different $l = j \pm 1/2$. Thus, the numerical value $L_{21} = +0.030$ and from (\ref{eq:123.18})--(\ref{eq:123.20}) one obtains the following value for the difference of the levels $2s_{1/2}$ and $2p_{1/2}$ of the hydrogen atom:
+\[
+E_{20\frac{1}{2}} - E_{21\frac{1}{2}} = 0.41\,mc^2\alpha^5 \approx 1050~\text{MHz}
+\]
+(this difference corresponds to a frequency of 1050~MHz).

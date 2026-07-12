@@ -1,0 +1,165 @@
+
+\section{Electromagnetic form factors of the electron}
+
+\SourcePage{565}{570}
+
+In the derivation presented, only the fact is essential that the diagram is cut into two parts by the intersection of just two lines. Therefore the formulated rule remains valid also for diagrams composed of any two blocks connected by two (electron or photon) lines. The integral, computed by substitution~(115.9), then determines the contribution to the imaginary part of the diagram which, in the unitarity-relation method, is associated with the corresponding two-particle intermediate state.
+
+\bigskip
+
+Consider the vertex operator $\Gamma^\mu = \Gamma^\mu(p_2,\,p_1;\,k)$ in the case when the two electron lines are external and the photon line is internal. The electron external lines correspond to the spinor factors $u_1 = u(p_1)$ and $\bar{u}_2 = \bar{u}(p_2)$, so that $\Gamma$ enters the expression for the diagram in the form of the product
+\begin{equation}
+j_{fi}^\mu = \bar{u}_2\,\Gamma^\mu u_1.
+\label{eq:116.1}
+\end{equation}
+As was already noted in \S\,111, this quantity represents the electron transition current with the inclusion of radiative corrections. The requirements of relativistic and gauge invariance make it possible to establish the general form of the matrix structure of this current.
+
+The operator of electromagnetic interaction $\hat{V} = e(\hat{j}\hat{A})$ is a true scalar (and not a pseudoscalar), which expresses the conservation of spatial parity in these interactions. Therefore the transition current $j_{fi}$ is a true 4-vector (and not a pseudovector). It can consequently be expressed only through true 4-vectors, constructed from the available two 4-momenta $p_1$ and $p_2$ (the third $k = p_2 - p_1$) and the bispinors $u_1$ and $u_2$. Such independent 4-vectors, bilinear in $\bar{u}_2$ and $u_1$, are three in total:
+\[
+\bar{u}_2\gamma u_1, \quad (\bar{u}_2 u_1)p_1, \quad (\bar{u}_2 u_1)p_2,
+\]
+or, equivalently,
+\begin{equation}
+\bar{u}_2\gamma^\mu u_1, \quad (\bar{u}_2 u_1)P^\mu, \quad (\bar{u}_2 u_1)k^\mu,
+\label{eq:116.2}
+\end{equation}
+where $P = p_1 + p_2$. But the condition of gauge invariance requires transversality of the transition current with respect to the 4-momentum of the photon~$k$:
+\begin{equation}
+j_{fi} k = 0.
+\label{eq:116.3}
+\end{equation}
+This condition is satisfied by the first two of the 4-vectors~(\ref{eq:116.2}): the first by virtue of the Dirac equations
+\begin{equation}
+(\gamma p_1 - m)u_1 = 0, \quad \bar{u}_2(\gamma p_2 - m) = 0,
+\label{eq:116.4}
+\end{equation}
+
+\SourcePage{566}{571}
+
+\noindent and the second because $Pk = 0$. The current $j_{fi}$ is represented by a linear combination of these two 4-vectors:
+\[
+j_{fi}^\mu = f_1(\bar{u}_2 u_1)P^\mu + f_2(\bar{u}_2\gamma^\mu u_1),
+\]
+where $f_1$, $f_2$ are invariant functions; they are called the \emph{electromagnetic form factors} of the electron.
+
+Since the 4-momenta $p_1$ and $p_2$ refer to a free electron, $p_1^2 = p_2^2 = m^2$, and from the three 4-vectors $p_1$, $p_2$, $k$ (related by $k = p_2 - p_1$) one can form only one independent scalar variable, which we choose to be~$k^2$. The form factors are then functions of~$k^2$.
+
+The expression for the current can also be presented in other forms, with a different choice of two independent terms. Using equations~(\ref{eq:116.4}) and the commutation rules of the matrices~$\gamma$, it is easy to verify that
+\begin{equation}
+(\bar{u}_2\sigma^{\mu\nu}u_1)k_\nu = -2m(\bar{u}_2\gamma^\mu u_1) + (\bar{u}_2 u_1)P^\mu,
+\label{eq:116.5}
+\end{equation}
+where $\sigma^{\mu\nu} = \tfrac{1}{2}(\gamma^\mu\gamma^\nu - \gamma^\nu\gamma^\mu)$. The coefficient of this term has, as we shall see, an important physical meaning, so we shall write
+\begin{equation}
+\Gamma^\mu = \gamma^\mu f(k^2) - \frac{1}{2m}\,g(k^2)\,\sigma^{\mu\nu}k_\nu,
+\label{eq:116.6}
+\end{equation}
+where $f$, $g$ are two other form factors; the meaning of separating the factor $1/(2m)$ will become clear below\footnote{To avoid misunderstanding we recall: in the definition~(\ref{eq:116.6}) it is assumed that the 4-momentum~$k$ enters the vertex along the photon line; for an outgoing line the sign of the second term would be reversed.}. For brevity we write the vertex operator in place of the transition current, it being understood that it should be taken ``between the spinors'' $\bar{u}_2 \ldots u_1$.
+
+To elucidate the properties of the form factors, let us consider the diagram~(110.16) of the process of electron interaction with an external field. The corresponding scattering amplitude is
+\begin{equation}
+M_{fi} = -e\,j_{fi}^\mu\,A_\mu^{(e)}(k),
+\label{eq:116.7}
+\end{equation}
+where $A^{(e)}$ is the effective (with the inclusion of vacuum polarisation) external field. The amplitude~(\ref{eq:116.7}) describes two reaction channels. In the scattering channel the invariant variable
+\[
+t = k^2 = (p_2 - p_1)^2 \leqslant 0.
+\]
+Replacing $p_2 \to p_-$, $p_1 \to -p_+$, we pass to the annihilation channel, corresponding to the production of a pair with 4-momenta $p_-$ and $p_+$. In this channel
+\[
+t = (p_- + p_+)^2 \geqslant 4m^2.
+\]
+The region of values $0 < t < 4m^2$ is unphysical.
+
+\SourcePage{567}{572}
+
+Let us turn to the unitarity condition~(111.12). In the scattering channel ($t < 0$) there are in the given case no physical intermediate states: a free electron can neither change its momentum nor produce any other particles. There are none, of course, in the unphysical region either. Therefore for $t < 4m^2$ the right-hand side of the equality~(111.12) vanishes, so that the matrix $T_{fi}$ (or, equivalently, $M_{fi}$) is hermitian:
+\[
+M_{fi} = M_{if}^*.
+\]
+
+Interchanging the initial and final states means interchanging $p_2$ and $p_1$, and thereby the substitution $k \to -k$. Representing $M_{fi}$ in the form~(\ref{eq:116.7}), we obtain therefore
+\[
+j_{fi}^\mu A_\mu^{(e)}(k) = j_{if}^{\mu*} A_\mu^{(e)*}(-k).
+\]
+But $A^{(e)}(-k) = A^{(e)*}(k)$, so that it follows that the matrix of transition currents is also hermitian:
+\begin{equation}
+j_{fi} = j_{if}^* \quad \text{for} \quad t < 4m^2.
+\label{eq:116.8}
+\end{equation}
+
+Using the properties of the matrices $\gamma$ (21.7), it is easy to verify that
+\[
+(\bar{u}_2\gamma^\mu u_1) = (\bar{u}_1\gamma^\mu u_2)^*, \qquad (\bar{u}_2\sigma^{\mu\nu}u_1) = -(\bar{u}_1\sigma^{\mu\nu}u_2)^*.
+\]
+Therefore $j_{if}^*$ differs from $j_{fi}$ only by the replacement of the functions $f(t)$ and $g(t)$ by their complex conjugates. From equality~(\ref{eq:116.8}) it follows then that these functions are real:
+\begin{equation}
+\operatorname{Im} f(t) = \operatorname{Im} g(t) = 0, \quad t < 4m^2.
+\label{eq:116.9}
+\end{equation}
+
+In the annihilation channel ($t > 4m^2$) the state is a pair, which can convert into a pair again with the same momenta (elastic scattering) or into some other more complex system. Therefore the right-hand side of the unitarity condition is different from zero, the matrix $M_{fi}$ (and with it $j_{fi}$) is not hermitian, and therefore the form factors are complex.
+
+The analytic properties of the functions $f(t)$ and $g(t)$ are entirely analogous to those of the function $\mathcal{P}(t)$ considered in \S\,111 (although it would be more difficult to prove this equally directly). These functions are analytic in the complex $t$-plane, cut along the positive real axis for $t > 4m^2$, with
+\[
+f^*(t) = f(t^*), \quad g^*(t) = g(t^*).
+\]
+
+The renormalisation condition~(110.19), applied to the vertex operator~(\ref{eq:116.6}), leads to the requirement
+\begin{equation}
+f(0) = 1.
+\label{eq:116.10}
+\end{equation}
+
+\SourcePage{568}{573}
+
+In order to satisfy this condition automatically (when computing the function $f(t)$ from its imaginary part), one must apply the dispersion relation of the type~(111.8) not to the function $f(t)$ itself, but to $(f - 1)/t$. One then obtains a dispersion relation ``with one subtraction'':
+\begin{equation}
+f(t) - 1 = \frac{t}{\pi}\int_{4m^2}^{\infty} \frac{\operatorname{Im} f(t')}{t'(t' - t - i0)}\,dt'.
+\label{eq:116.11}
+\end{equation}
+
+For the form factor $g(t)$, on the other hand, no values are prescribed in advance by physical requirements. Therefore for it the dispersion relation is written ``without subtractions'':
+\begin{equation}
+g(t) = \frac{1}{\pi}\int_{4m^2}^{\infty} \frac{\operatorname{Im} g(t')}{t' - t - i0}\,dt'.
+\label{eq:116.12}
+\end{equation}
+
+The value $g(0)$ has an important physical meaning: it gives a correction to the magnetic moment of the electron. To see this, let us consider the scattering of a non-relativistic electron in a constant, slowly varying magnetic field in space.
+
+The term in the scattering amplitude~(\ref{eq:116.7}) associated with the form factor $g(k^2)$ has the form
+\begin{equation}
+\delta M_{fi} = \frac{e}{2m}\,g(k^2)\,(\bar{u}_2\sigma^{\mu\nu}u_1)\,k_\nu\,A_\mu^{(e)}(k).
+\label{eq:116.13}
+\end{equation}
+For a purely magnetic field $A^{(e)\mu} = (0,\,\mathbf{A})$; constancy of the field in time means that the 4-vector $k^\mu = (0,\,\mathbf{k})$, and slow variation of the field in space corresponds to small~$\mathbf{k}$ (having in mind the further passage to the limit $\mathbf{k} \to 0$, we write at once in~(\ref{eq:116.13}) $A^{(e)}$ in place of the effective~$A^{(e)}$). Expanding the expression~(\ref{eq:116.13}) and expressing it in terms of three-dimensional quantities, we obtain
+\[
+\delta M_{fi} = \frac{e}{2m}\,g(-\mathbf{k}^2)\,(\bar{u}_2\varSigma u_1)\,i[\mathbf{k} \mathbf{A}_\mathbf{k}],
+\]
+where $\varSigma$ is the matrix~(21.21). We replace the product $i[\mathbf{k}\mathbf{A}_\mathbf{k}]$ by the magnetic field intensity $\mathbf{H}_\mathbf{k}$, after which one can pass to the limit $\mathbf{k} \to 0$. Finally, introducing the non-relativistic spinor amplitudes $w_1$, $w_2$, according to~(23.12),
+\[
+\bar{u}_2 = \sqrt{2m}\,(w_2^*\, 0), \qquad u_1 = \sqrt{2m}\begin{pmatrix} w_1 \\ 0 \end{pmatrix},
+\]
+we find ultimately
+\begin{equation}
+\delta M_{fi} = \frac{e}{2m}\,g(0)\,\mathbf{H}_\mathbf{k}\cdot 2m\,(w_2^*\,\boldsymbol{\sigma}\,w_1).
+\label{eq:116.14}
+\end{equation}
+
+\SourcePage{569}{574}
+
+Comparing this expression with the amplitude of scattering in a constant electric field with scalar potential $\Phi_\mathbf{k}$:
+\[
+M_{fi} = -e(\bar{u}_2\gamma^0 u_1)\Phi_\mathbf{k} \approx -e\Phi_\mathbf{k}\cdot 2m\,(w_2^* w_1).
+\]
+
+We see that to the electron in a magnetic field one can ascribe an additional potential energy
+\[
+-\frac{e}{2m}\,g(0)\,\boldsymbol{\sigma}\mathbf{H}_\mathbf{k}.
+\]
+This means that the electron possesses an ``anomalous'' magnetic moment
+\begin{equation}
+\mu' = \frac{e\hbar}{2mc}\,g(0)
+\label{eq:116.15}
+\end{equation}
+(ordinary units) in addition to the ``normal'' Dirac magnetic moment $e\hbar/(2mc)$.

@@ -1,0 +1,86 @@
+
+\section{Coherent scattering of a photon in the field of a nucleus}
+
+\SourcePage{630}{635}
+
+Other (alongside scattering of a photon by a photon) non-linear effects, described by quadratic diagrams of the type (127.1), include the decay of a single photon into two photons in an external field (and the reverse process of ``merging'' of two photons into one) and the scattering of a photon in an external field. The first of these processes corresponds to diagrams in which one of the four external photon lines is replaced by a line of the external field. The second process corresponds to diagrams with two external lines of real photons and two --- of virtual photons of the field.
+
+The latter category includes, in particular, coherent (elastic) scattering of a photon in the constant electric field of a stationary nucleus. In the general case, the calculation leads to very cumbersome formulae (containing multiple quadratures)\footnote{See \emph{V.~Costantini, B.~De~Tollis, G.~Pistoni}, Nuovo Cimento \textbf{2A}, 733, 1971; \emph{B.~De~Tollis, M.~Lusignoli, G.~Pistoni}, Nuovo Cimento \textbf{32A}, 227, 1976.}. We shall confine ourselves here to only some estimates.
+
+By virtue of the requirement of gauge invariance, the scattering amplitude at $\omega \to 0$ must contain products of the components of the 4-momenta of the initial ($k$) and final ($k'$) photons (just as the decomposition of the amplitude of scattering of a photon by a photon starts with the fourth power of the products of the components of the 4-momenta of all photons). In other words, the amplitude of scattering of a photon of small frequency is proportional to $\omega^2$. Taking into account also that this amplitude contains the external field (the field of the nucleus with charge $Ze$) in the second order, we conclude that the scattering cross section
+
+\begin{equation}
+d\sigma \approx Z^4\alpha^4 r_e^2 \biggl(\frac{\omega}{m}\biggr)^{\!4} \, do, \qquad \omega \ll m.
+\label{eq:128.1}
+\end{equation}
+
+The dependence on frequency is, of course, in agreement with the general conclusions of \S\,59.
+
+\SourcePage{631}{636}
+
+The coefficient in \eqref{eq:128.1} cannot be computed using the Lagrangian of a homogeneous electromagnetic field (as could be done for the scattering of light by light). The reason is that in this process the essential distances from the nucleus are $r \sim l/m$, at which the field of the nucleus cannot be regarded as homogeneous.
+
+We present the result of an exact calculation:
+\begin{equation}
+\begin{aligned}
+d\sigma_{++} &= d\sigma_{--} = 1.004 \cdot 10^{-3}\,(Z\alpha)^4 r_e^2 \biggl(\frac{\omega}{m}\biggr)^{\!4} \cos^4\frac{\theta}{2}\, do, \\[6pt]
+d\sigma_{+-} &= d\sigma_{-+} = 3.81 \cdot 10^{-4}\,(Z\alpha)^4 r_e^2 \biggl(\frac{\omega}{m}\biggr)^{\!4} \sin^4\frac{\theta}{2}\, do.
+\end{aligned}
+\label{eq:128.2}
+\end{equation}
+The subscripts ``$+$'' and ``$-$'' denote here (as in \S\,127) the helicities $+1$ or $-1$ of the final or initial photons; $\theta$ is the scattering angle in the rest frame of the nucleus (\emph{V.~Costantini, B.~De~Tollis, G.~Pistoni}, 1971).
+
+To estimate the cross section at high frequencies, we use the optical theorem (cf.\ \S\,71). The intermediate state appearing in the right-hand side of the unitarity relation is, in this case, an electron--positron pair state (it corresponds to the cutting of the diagrams along two internal electron lines between the photon ends). Therefore the optical theorem relates the amplitude of elastic scattering of the photon at zero angle to the total cross section $\sigma_\text{pair}$ for pair production by a photon in the field of a nucleus. Defining the amplitude $f(\omega,\theta)$ of scattering at angle $\theta$ so that the cross section $d\sigma = |f|^2\,do$ (cf.\ (71.5)), we must have
+
+\[
+\operatorname{Im} f(\omega, 0) = \frac{\omega}{4\pi}\,\sigma_\text{pair}.
+\]
+
+The cross section $\sigma_\text{pair}$ differs from zero, of course, only for $\omega > 2m$. In the ultra-relativistic case, taking $\sigma_\text{pair}$ from (94.6), we obtain
+
+\begin{equation}
+f''(\omega) \equiv \operatorname{Im} f(\omega, 0) = \frac{7}{9\pi}\,(Z\alpha)^2 r_e \,\frac{\omega}{m} \biggl[\ln\frac{2\omega}{m} - \frac{109}{42}\biggr], \qquad \omega \gg m.
+\label{eq:128.3}
+\end{equation}
+
+The real part of the scattering amplitude is determined from the imaginary part by the dispersion relation. This relation should be written ``with one subtraction'', i.e.\ it must be written for the function $f/t$ (where $t = \omega^2$), since as $\omega \to 0$ the amplitude $f \propto \omega^2$ (cf.\ the relation ``with two subtractions'' (111.13)). Extracting the real part of the dispersion integral (it suffices to understand the integral in the principal-value sense) and changing from integration over $t' = \omega'^2$ to integration over $\omega'$, we have
+
+\begin{equation}
+f'(\omega) \equiv \operatorname{Re} f(\omega, 0) = \frac{2\omega^2}{\pi} \int_{2m}^{\infty} \frac{f''(\omega')\,d\omega'}{\omega'(\omega'^2 - \omega^2)}.
+\label{eq:128.4}
+\end{equation}
+
+\SourcePage{632}{637}
+
+For $\omega \gg m$, the essential values in the integral are $\omega' \sim \omega \gg m$, so that the expression \eqref{eq:128.3} can be used for $f''(\omega')$; the lower limit of integration can then be replaced by zero. The principal value of the integral can be represented as the half-sum of integrals along contours passing above and below the right-hand real axis in the plane of the complex variable $\omega'$; in turn, these contours can then be rotated in the $\omega'$-plane so as to coincide with the upper and lower imaginary half-axes respectively. As a result, $f'(\omega)$ takes the form
+
+\[
+f'(\omega) = -\frac{\omega^2}{\pi} \int_0^{\infty} \frac{f'(i\xi) + f'(-i\xi)}{\xi(\xi^2 + \omega^2)}\,d\xi = \frac{7}{9\pi}\,(Z\alpha)^2 r_e \frac{\omega^2}{m} \int_0^{\infty} \frac{d\xi}{\xi^2 + \omega^2}
+\]
+
+and finally
+
+\begin{equation}
+\operatorname{Re} f(\omega, 0) = \frac{7}{18}\,(Z\alpha)^2 r_e\,\frac{\omega}{m}.
+\label{eq:128.5}
+\end{equation}
+
+Note that the real part of the amplitude, unlike the imaginary part, does not contain a large logarithm.
+
+The sum of the squares of the expressions \eqref{eq:128.3} and \eqref{eq:128.5} gives the cross section for scattering at zero angle:
+
+\begin{equation}
+\left. d\sigma \right|_{\theta=0} = \frac{49}{81\pi^2}\,(Z\alpha)^4 r_e^2 \biggl(\frac{\omega}{m}\biggr)^{\!2} \biggl\{\ln^2\frac{0.15\,\omega}{m} + \frac{\pi^2}{4}\biggr\}\,do
+\label{eq:128.6}
+\end{equation}
+
+(\emph{F.~Rohrlich, R.\,L.~Gluckstern}, 1952).
+
+The result obtained for forward scattering \eqref{eq:128.6} is valid also in a certain region of small angles. One can show that the condition of its applicability is $\theta \ll (m/\omega)^2$. This region, however, contributes only a small fraction to the total scattering cross section. The principal contribution to the total cross section comes from angles $\theta \lesssim m/\omega$; this is easy to understand on the basis of the general (not at zero angle) unitarity relation connecting the amplitude of elastic photon scattering with the amplitude of photon pair production. In this region, however, there is no logarithmic term, so that the total scattering cross section is
+
+\begin{equation}
+\sigma \sim (Z\alpha)^4 r_e^2 \biggl(\frac{\omega}{m}\biggr)^{\!2} \theta^2 \sim (Z\alpha)^4 r_e^2
+\label{eq:128.7}
+\end{equation}
+
+(\emph{H.\,A.~Bethe, F.~Rohrlich}, 1952). Thus, at large $\omega$ the cross section for coherent scattering tends to a constant limit.

@@ -1,0 +1,189 @@
+
+\section{Computation of the electron form factors}
+
+\SourcePage{569}{574}
+
+Let us turn to the actual computation of the electron form factors (\emph{J.~Schwinger}, 1949).
+
+In the zeroth approximation of perturbation theory, the vertex operator $\Gamma^\mu = \gamma^\mu$, i.e.\ the electron form factors are
+\[
+f = 1, \qquad g = 0.
+\]
+
+The first radiative correction to the form factors is determined by the vertex diagram
+
+% [Feynman diagram (117.1): vertex correction — triangle diagram with photon line (dashed, momentum k) at top, two electron lines (momenta p_- and -p_+) at bottom, internal photon line (dotted, momentum f = p - p_-) connecting the two lower vertices, internal electron line (momentum p - k) along the right side]
+
+\begin{equation}
+\label{eq:117.1}
+\end{equation}
+
+\noindent (with two real electron ends and one virtual photon end). We begin with the computation of the imaginary parts of the form factors. As was shown in the preceding section, they differ from zero only in the annihilation channel ($k^2 > 4m^2$); in accordance with this, the 4-momenta of the electron ends in diagram~(117.1) correspond to the electron and
+
+\SourcePage{570}{575}
+
+\noindent positron being produced, and are denoted by $p_-$ and $-p_+$. The analytic expression for diagram~(117.1):
+\begin{equation}
+-ie\bar{u}(p_-)\Gamma^\mu u(-p_+) =
+(-ie)^3\bar{u}(p_-)\gamma^\nu i\!\int G(p)\gamma^\mu G(p - k)\gamma^\lambda D_{\lambda\nu}(f)\,\frac{d^4p}{(2\pi)^4},
+\label{eq:117.2}
+\end{equation}
+or, in expanded form,
+\begin{equation}
+\gamma^\mu f(k^2) - \frac{1}{2m}\,\sigma^{\mu\nu} k_\nu =
+\frac{i\varphi^\mu(p)\,d^4 p}{(p^2 - m^2)[(p - k)^2 - m^2]},
+\label{eq:117.3}
+\end{equation}
+where the notation is
+\begin{equation}
+\varphi^\mu(p) = -e^2\,\frac{\gamma^\nu(\gamma p + m)\gamma^\mu(\gamma p - \gamma k + m)\gamma_\nu}{4\pi^3(p_- - p)^2}
+\label{eq:117.4}
+\end{equation}
+and for brevity the factors $\bar{u}(p_-) \ldots u(-p_+)$ are omitted; everywhere below it is understood that both sides of the equations are taken between these ``covers''.
+
+The horizontal dashed line drawn across diagram~(117.1) divides it into two parts, in order to display the intermediate state which would appear in the computation of the imaginary part of the form factor from the unitarity condition: this is the state of an electron--positron pair with momenta distinct from $p_-$, $p_+$. This same division shows that in the integral~(\ref{eq:117.2}) the replacement of the pole factors should have been carried out, if in~(\ref{eq:117.3}) these factors are separated out in the subintegral expression, the computation is to be performed by the rule~(115.9).
+
+The integral in~(\ref{eq:117.3}) is of the same form as in~(115.2). Therefore we can write the result directly in the form~(115.10), bypassing the intermediate steps:
+\begin{equation}
+2\gamma^\mu \operatorname{Im} f(t) - \frac{1}{2m}\,\sigma^{\mu\nu} k_\nu\operatorname{Im} g(t) = -\frac{\pi^2}{2}\sqrt{\frac{t - 4m^2}{t}}\int \varphi^\mu(p)\,d o_{\mathbf{p}},
+\label{eq:117.5}
+\end{equation}
+where $t = k^2$, the integration is performed over the direction of the vector $\mathbf{p}$, and the 4-vectors $p'_- \equiv p$ and $p'_+ \equiv k - p$ in the definition of the function $\varphi^\mu(p)$ (cf.~(\ref{eq:117.4})) become 4-momenta of real (and not virtual) particles. Expression~(\ref{eq:117.5}) refers to the centre-of-mass system, in which $\mathbf{k} = 0$; this is the system of the centre of inertia of the pair being produced, $p_-$, $p_+$ (and at the same time the ``intermediate'' pair $p'_-$, $p'_+$). In this system, therefore,
+\[
+k = (k_0, 0), \quad p_- = \Bigl(\frac{k_0}{2},\, \mathbf{p}_-\Bigr), \quad p_+ = \Bigl(\frac{k_0}{2},\, -\mathbf{p}_-\Bigr), \quad p = \Bigl(\frac{k_0}{2},\, \mathbf{p}\Bigr),
+\]
+and it is easy to verify that
+\begin{equation}
+f^2 = (p - p_-)^2 = -2\mathbf{p}^2(1 - \cos\theta) = -\frac{t - 4m^2}{2}(1 - \cos\theta),
+\label{eq:117.6}
+\end{equation}
+
+\SourcePage{571}{576}
+
+\noindent where $\theta$ is the angle between $\mathbf{p}$ and $\mathbf{p}_-$ (and $\mathbf{p}^2 = \mathbf{p}_-^2$). Substituting now~(\ref{eq:117.4}) into~(\ref{eq:117.5}) and eliminating in the subintegral expression the matrices $\gamma^\nu \ldots \gamma_\nu$ with the aid of formulas~(22.6), we obtain
+\begin{equation}
+\begin{split}
+\gamma^\mu \operatorname{Im} f(t) - \frac{1}{2m}\,\sigma^{\mu\nu} k_\nu\operatorname{Im} g(t) &= {} \\
+&= -\frac{e^2}{4\sqrt{t(t - 4m^2)}}\int \frac{d o_{\mathbf{p}}}{2\pi(1 - \cos\theta)}\,\gamma^\nu(\gamma p + m)\gamma^\mu(\gamma p - \gamma k + m)\gamma_\nu = {} \\
+&= -\frac{e^2}{4\sqrt{t(t - 4m^2)}}\int \frac{d o_{\mathbf{f}}}{2\pi(1 - \cos\theta)}\,\bigl[-2m^2\gamma^\mu + 4m(P^\mu + 2f^\mu) + {} \\
+& \qquad\qquad\qquad + 2(\gamma p_+ - \gamma f)\gamma^\mu(\gamma p_- + \gamma f)\bigr],
+\end{split}
+\label{eq:117.7}
+\end{equation}
+where the 4-vectors
+\begin{equation}
+f = p - p_- = (0, \mathbf{f}), \qquad P = p_- - p_+ = (0, 2\mathbf{p}_-)
+\label{eq:117.8}
+\end{equation}
+have been introduced. The integration now reduces to the computation of the integrals
+\begin{equation}
+(I,\, I^\mu,\, I^{\mu\nu}) = \int \frac{(1,\, f^\mu,\, f^\mu f^\nu)}{1 - \cos\theta}\,\frac{d o}{2\pi}
+\label{eq:117.9}
+\end{equation}
+with each of the three listed numerators.
+
+The integral $I$ diverges logarithmically as $\theta \to 0$. Rewriting it as
+\[
+I = \int\limits^{t - 4m^2} \frac{d(\mathbf{f}^2)}{\mathbf{f}^2} = \int\limits_0^{-(t - 4m^2)} \frac{d(f^2)}{f^2},
+\]
+we see that the divergence corresponds to small ``masses'' of the virtual photon. Thus, this is an \emph{infrared} divergence. We shall defer its detailed discussion to \S\,122. Here we note only that it is fictitious, in the sense that upon a proper accounting for all physical effects such divergences cancel out and disappear.  Therefore we may in an arbitrary manner ``cut off'' the integral from below, and in what follows, when computing real physical phenomena, take the cut-off limit to zero.
+
+Here it will be simplest to perform the cut-off in a relativistically invariant manner. To do this we ascribe to the virtual photon $f$ a small but finite mass $\lambda$ ($\lambda \ll m$), i.e.\ we replace in the photon propagator $D(f^2)$ in~(\ref{eq:117.2})
+\begin{equation}
+f^2 \to f^2 - \lambda^2.
+\label{eq:117.10}
+\end{equation}
+
+After this
+\begin{equation}
+I = \int\limits_0^{-(t - 4m^2)} \frac{d(f^2)}{f^2 - \lambda^2} = \ln\frac{t - 4m^2}{\lambda^2}.
+\label{eq:117.11}
+\end{equation}
+
+\SourcePage{572}{577}
+
+The integral $I^\mu$, in which $f^\mu$ is a spacelike 4-vector, must be expressed through the 4-vector $P^\mu$ (of the two 4-vectors at our disposal, $P^\mu$ and $k^\mu$, only $P^\mu$ is spacelike for arbitrary $p_+$, $p_-$). Therefore $I^\mu = AP^\mu$. Multiplying this equation by $P_\mu$ and computing the integral $P_\mu I^\mu$ in the centre-of-inertia system of the pair (the components of the 4-vectors $f$ and $P$ are given by~(\ref{eq:117.8})), we find
+\[
+A = \frac{1}{2\mathbf{p}^2}\int \frac{\mathbf{f} \cdot d\cos\theta}{1 - \cos\theta} = -\frac{1}{2}\int\limits_{-1}^{1} d\cos\theta = -1.
+\]
+Thus,
+\begin{equation}
+I^\mu = -P^\mu.
+\label{eq:117.12}
+\end{equation}
+
+In an analogous manner the integral $I^{\mu\nu}$ is computed:
+\begin{equation}
+I^{\mu\nu} = \frac{1}{4}\,P^2\!\left(g^{\mu\nu} - \frac{P^\mu P^\nu}{P^2}\right) + \frac{1}{4}\,P^\mu P^\nu
+\label{eq:117.13}
+\end{equation}
+(to determine the coefficients in this expression it is sufficient to compute the integrals $I^\mu{}_\mu$ and $I^{\mu\nu}P_\mu P_\nu$).
+
+The further computation proceeds as follows. Substituting~(\ref{eq:117.11})--(\ref{eq:117.13}) into~(\ref{eq:117.7}), we obtain between the ``covers'' $\bar{u}(p_-) \ldots u(-p_+)$ a sum of a series of terms. In each of them we ``push through'' (using the commutation rules for the matrix $\gamma^\mu$) the factor $\gamma p_+$ to the right and $\gamma p_-$ to the left; after this one can make the replacements $\gamma p_- \to m$, $\gamma p_+ \to -m$, since
+\[
+\bar{u}(p_-)\gamma p_- = m\bar{u}(p_-), \qquad \gamma p_+ u(-p_+) = -mu(-p_+).
+\]
+In the resulting sum
+\[
+-4(p_+p_-)I\gamma^\mu + 2mP^\mu - 3P^2\gamma^\mu
+\]
+one can further replace $P^\mu$ by the expression equivalent to it (between the covers!)
+\[
+P^\mu \to 2m\gamma^\mu + \sigma^{\mu\nu} k_\nu
+\]
+(cf.~(116.5)). Finally, expressing all quantities through the invariant $t = k^2$ ($2p_+p_- = t - 2m^2$, $P^2 = 4m^2 - t$) and comparing both sides of equation~(\ref{eq:117.7}), we obtain the following formulas for the imaginary parts of the form factors:
+\begin{equation}
+\operatorname{Im} g(t) = \frac{\alpha m^2}{\sqrt{t(t - 4m^2)}},
+\label{eq:117.14}
+\end{equation}
+\begin{equation}
+\operatorname{Im} f(t) = \frac{\alpha}{4\sqrt{t(t - 4m^2)}}\left[-3t + 8m^2 + 2(t - 2m^2)\ln\frac{t - 4m^2}{\lambda^2}\right].
+\label{eq:117.15}
+\end{equation}
+
+The infrared divergence is present only in $\operatorname{Im} f(t)$.
+
+\SourcePage{573}{578}
+
+The functions $f(t)$ and $g(t)$ themselves are computed from their imaginary parts with the help of formulas~(116.11),(116.12). The integration in these formulas is conveniently performed using the same substitutions that were used in \S\,113 in computing $\mathcal{P}(t)$. Expressed through the variable $\xi$~(113.11), the form factors are given by the formulas
+\begin{equation}
+g(\xi) = \frac{\alpha}{\pi}\,\frac{\xi\ln\xi}{\xi^2 - 1},
+\label{eq:117.16}
+\end{equation}
+\begin{equation}
+\begin{split}
+f(\xi) - 1 = \frac{\alpha}{2\pi}\biggl\{&2\!\left(1 + \frac{1 + \xi^2}{1 - \xi^2}\ln\xi\right)\ln\frac{m}{\lambda} - \frac{3(1 + \xi^2) + 2\xi}{2(1 - \xi^2)}\,\ln\xi + {} \\
+&+ \frac{1 + \xi^2}{1 - \xi^2}\!\left[\frac{\pi^2}{6} - \frac{1}{2}\ln^2\xi - 2F(\xi) + 2\ln\xi\ln(1 + \xi)\right]\biggr\},
+\end{split}
+\label{eq:117.17}
+\end{equation}
+where $F(\xi)$ is the Spence function, defined according to~(131.19).
+
+In the non-physical region ($0 < t/m^2 < 4$) one must set $\xi = e^{i\varphi}$. Then the expressions for the form factors can be brought to the form
+\begin{equation}
+\begin{split}
+f(\varphi) - 1 = \frac{\alpha}{\pi}\biggl\{&\left(1 - \frac{\varphi}{\tan\varphi}\right)\ln\frac{m}{\lambda} + \frac{3\cos\varphi + 1}{2\sin\varphi}\,\varphi + \frac{2}{\tan\varphi}\int\limits_0^{\varphi/2} x\tan x\,dx\biggr\},
+\end{split}
+\label{eq:117.18}
+\end{equation}
+\begin{equation}
+g(\varphi) = \frac{\alpha}{2\pi}\,\frac{\varphi}{\sin\varphi}.
+\label{eq:117.19}
+\end{equation}
+
+Finally, let us write down the limiting formulas for small $|t|$:
+\begin{equation}
+f(t) - 1 = \frac{\alpha t}{3\pi m^2}\!\left(\ln\frac{m}{\lambda} - \frac{3}{8}\right), \quad g(t) = \frac{\alpha}{2\pi}, \qquad |t| \ll 4m^2,
+\label{eq:117.20}
+\end{equation}
+and for large $|t|$:
+\begin{equation}
+f(t) - 1 = -\frac{\alpha}{\pi}\left(\frac{1}{2}\ln^2\frac{|t|}{m^2} + 2\ln\frac{m}{\lambda}\ln\frac{|t|}{m^2}\right) + \begin{cases} \displaystyle i\frac{\alpha}{2}\ln\frac{t}{\lambda^2}, & t \gg 4m^2, \\[6pt] 0, & -t \gg 4m^2, \end{cases}
+\label{eq:117.21}
+\end{equation}
+\begin{equation}
+g(t) = -\frac{\alpha m^2}{\pi t}\ln\frac{|t|}{m^2} + \begin{cases} \displaystyle i\frac{\alpha m^2}{t}, & t \gg 4m^2, \\[6pt] 0, & -t \gg 4m^2. \end{cases}
+\label{eq:117.22}
+\end{equation}
+
+Formula~(\ref{eq:117.21}) is valid (with respect to $\operatorname{Re} f$), as one says, with double logarithmic accuracy, i.e.\ to within the squares of large logarithms.\footnote{The expression for the vertex operator in the case of one virtual and one real electron end and a real photon end, see: \emph{A.\,I.~Akhiezer, V.\,B.~Berestetskii}, Quantum Electrodynamics. Moscow: Nauka, 1981. P.\,5.1.3. P.\,330.}

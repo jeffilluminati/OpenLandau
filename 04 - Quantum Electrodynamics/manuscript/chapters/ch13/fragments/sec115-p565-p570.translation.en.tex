@@ -1,0 +1,172 @@
+
+\section{Computation of the imaginary part of the polarisation operator from the Feynman integral}
+
+\SourcePage{560}{565}
+
+By direct computation from the diagram (the loop in diagram~(113.1)) the polarisation operator in the first approximation of perturbation theory would be given by the integral
+
+% [Feynman diagram: loop diagram for the polarisation operator, with photon line on left labelled $k$ and virtual electron loop]
+\begin{equation}
+i\frac{\mathcal{P}^{\mu\nu}}{4\pi} \to -e^2 \int \operatorname{Sp} \gamma^\mu G(p) \gamma^\nu G(p - k)\,\frac{d^4p}{(2\pi)^4}.
+\label{eq:115.1}
+\end{equation}
+
+However, this integral, taken over all of four-dimensional $p$-space, diverges quadratically, and to obtain a finite result it must be regularised according to the rules described in \S\,112.
+
+We shall not reproduce this derivation in full here, but shall show how one can compute from the integral~(\ref{eq:115.1}) the imaginary part of the polarisation operator (which was determined by us in \S\,113 using the unitarity condition); this derivation contains a number of instructive points.
+
+The imaginary part of the integral~(\ref{eq:115.1}) does not contain divergences and therefore does not require regularisation. For the scalar function
+
+\SourcePage{561}{566}
+
+\noindent $\operatorname{Im} \mathcal{P} = \tfrac{1}{3}\operatorname{Im} \mathcal{P}_\mu^\mu$ we have
+\[
+\operatorname{Im} \mathcal{P} = \operatorname{Im}\left\{i\,\frac{4\pi e^2}{3(2\pi)^4} \int \frac{\operatorname{Sp}\gamma^\mu(\gamma p + m)\gamma_\mu(\gamma p + \gamma k + m)}{(p^2 - m^2 + i0)[(p - k)^2 - m^2 + i0]}\,d^4p\right\}.
+\]
+
+After computing the trace the integral takes the form
+\begin{equation}
+\operatorname{Im} \mathcal{P}(k^2) = \operatorname{Im} \int \frac{i\varphi(p)\,d^4p}{(p^2 - m^2 + i0)[(p - k)^2 - m^2 + i0]},
+\label{eq:115.2}
+\end{equation}
+\[
+\varphi(p) = \frac{2e^2}{3\pi^3}(2m^2 + pk - p^2).
+\]
+
+Let $k^2 > 0$. We pass to the rest frame, in which $k = (k_0,\,0)$. In this frame
+\[
+(p - k)^2 = (p_0 - k_0)^2 - \mathbf{p}^2.
+\]
+Introducing also the notation $\varepsilon = \sqrt{\mathbf{p}^2 + m^2}$ ($\varepsilon$ does not coincide with the ``energy'' of the virtual electron~$p_0$!), we rewrite~(\ref{eq:115.2}) in the form
+\begin{equation}
+\operatorname{Im} \mathcal{P}(k^2) = \operatorname{Im} \int d^3p \int_{-\infty}^{\infty} dp_0\,\frac{i\varphi(p_0,\,\mathbf{p})}{(p_0^2 - \varepsilon^2 + i0)[(p_0 - k_0)^2 - \varepsilon^2 + i0]},
+\label{eq:115.3}
+\end{equation}
+\[
+\varphi(p_0,\,\mathbf{p}) = \frac{2e^2}{3\pi^3}(m^2 + \varepsilon^2 + p_0 k_0 - p_0^2).
+\]
+
+The integrand has four poles with respect to the variable~$p_0$:
+\begin{alignat*}{2}
+&\textit{a})\; p_0 = \varepsilon - i0, &\qquad &\textit{a}')\; p_0 = -\varepsilon - i0,\\
+&\textit{b})\; p_0 = k_0 - \varepsilon + i0, &\qquad &\textit{b}')\; p_0 = k_0 + \varepsilon - i0.
+\end{alignat*}
+
+The arrangement of these poles is shown in Fig.~21; for definiteness we shall assume that $k_0 > 0$ (the final answer is a function of~$k_0^2$ and does not depend on the sign of~$k_0$). We compute the jump of the function~$\mathcal{P}(t)$, which it undergoes on the cut in the plane of the complex variable $t = k^2 = k_0^2$, or, what is the same thing, on the real axis in the plane of complex~$k_0$. The real part of the function~$\mathcal{P}(t)$ is continuous on the cut, so that the jump
+
+% [Figure 21: Disposition of the four poles $a$, $a'$, $b$, $b'$ in the complex $p_0$-plane; $a$ and $b'$ lie below the real axis, $a'$ and $b$ lie above; a dashed contour runs along the real axis]
+\par\noindent
+
+\begin{equation}
+\Delta\mathcal{P}(t) = 2i\operatorname{Im}\mathcal{P}(t).
+\label{eq:115.4}
+\end{equation}
+
+First of all we shall show how one can already determine the position of the cut from the form of the integral. We denote in~(\ref{eq:115.3}) the integral over~$p_0$ as $I(\mathbf{p},\,k_0)$. As long as the upper and lower
+
+\SourcePage{562}{567}
+
+\noindent poles in Fig.~21 are at finite distances from each other, the path of integration over~$p_0$ can be moved away from the poles (dashed line in the figure). In this case the integral $I(\mathbf{p},\,k_0)$ does not change upon an infinitesimally small displacement of the poles~$b$ and~$b'$ downward and upward from the real axis, i.e.\ upon the replacement $k_0 \to k_0 + i\delta$, $\delta \to 0$. In other words, the values $I(\mathbf{p},\,k_0)$ as $k_0$ approaches its real value from above and from below will be equal, so that $I(\mathbf{p},\,k_0)$ will not contribute to the jump~$\Delta\mathcal{P}$. The situation will change only if two poles (when $k_0 > 0$ these can only be the poles~$a$ and~$b$) end up one directly below the other, so that the integration contour will be ``pinched'' between them and cannot be moved away. Thus, the jump $\Delta\mathcal{P} \neq 0$ only if somewhere in the region of integration over~$d^3p$ the condition $k_0 - \varepsilon = \varepsilon$ is fulfilled, i.e.\ $k_0 = 2\varepsilon = 2\sqrt{\mathbf{p}^2 + m^2}$. For this, obviously, it is necessary that $k_0 \geqslant 2m$, i.e.\ $t \geqslant 4m^2$.\footnote{One similarly verifies the absence of the cut when $t = k^2 < 0$. Choosing in this case the rest frame in which $k = (0,\,\mathbf{k})$, we find that the poles of the integrand lie at
+\[
+p_0 = \pm(\varepsilon - i0), \qquad p_0 = \pm(\sqrt{(\mathbf{p} - \mathbf{k})^2 + m^2} - i0).
+\]
+Both lower poles always lie in the right half-plane, and both upper ones in the left half-plane of~$p_0$, so that no pair of them can end up one below the other.}
+
+We rewrite the integral $I(\mathbf{p},\,k_0)$ in the form
+\begin{equation}
+I(\mathbf{p},\,k_0) = \int_G \frac{i\varphi(p_0,\,\mathbf{p})\,dp_0}{(p_0^2 - \varepsilon^2)[(p_0 - k_0)^2 - \varepsilon^2]},
+\label{eq:115.5}
+\end{equation}
+omitting the $i0$ terms in the denominator and correspondingly changing the contour~$C$ of integration, as shown in Fig.~22. We see that the emergence of the jump~$\Delta\mathcal{P}(t)$ is connected with the impossibility of removing
+
+% [Figure 22: Two contours in the complex $p_0$-plane. Upper: contour $C$ running along the real axis, indented below poles $a'$ and $b$ and above poles $a$ and $b'$. Lower: contour $C'$ running below poles $a'$ and $b$, with a small circle $C''$ around pole $a$, and then continuing above poles $a$ and $b'$]
+\par\noindent
+
+\SourcePage{563}{568}
+
+\noindent the contour from pole~$a$ (when the contour is pinched between~$a$ and~$b$). With this in mind, we replace the contour~$C$ by a contour~$C'$ passing below point~$a$, adding correspondingly the integral over a small circle~$C''$ around this point. After this the contour~$C'$ can be freely moved away from the poles, so that integration along it contributes only to the regular part of the function~$\mathcal{P}(t)$. For the determination of the desired jump it therefore suffices to consider only the integral around the circle~$C''$, which reduces to taking the residue at pole~$a$. This operation can be effected by the replacement in the integrand:
+\begin{equation}
+\frac{1}{p_0^2 - \varepsilon^2} \to -2\pi i\delta(p_0^2 - \varepsilon^2)
+\label{eq:115.6}
+\end{equation}
+(the sign ``$-$'' is connected with the fact that the circle around the pole is traversed in the negative direction). In doing so one must take into account in the argument of the $\delta$-function only the root $p_0 = +\varepsilon$ (the pole~$a$, but not~$a'$); this condition will be automatically satisfied if one stipulates that the integration is to be carried out only over the half of the impulse 4-space with $p_0 > 0$.
+
+After the replacement~(\ref{eq:115.6}) the jump of the integral $I(\mathbf{p},\,k_0)$ is computed directly:
+\begin{align*}
+\Delta I &= \{I(\mathbf{p},\,k_0 + i\delta) - I(\mathbf{p},\,k_0 - i\delta)\}_{\delta\to+0} = -2\pi i \\
+&\times \int_0^\infty \delta(p_0^2 - \varepsilon^2)\,i\varphi(p_0,\,\mathbf{p})\left[\frac{1}{(k_0 - p_0)^2 - \varepsilon^2 + i\delta} - \frac{1}{(k_0 - p_0)^2 - \varepsilon^2 - i\delta}\right]dp_0.
+\end{align*}
+
+Using the identity
+\[
+\frac{1}{(k_0 - p_0)^2 - \varepsilon^2 \pm i\delta} = P\frac{1}{(k_0 - p_0)^2 - \varepsilon^2} \mp i\pi\delta[(k_0 - p_0)^2 - \varepsilon^2]
+\]
+(cf.~(111.3)), we obtain
+\[
+\Delta I = i(2\pi i)^2 \int_0^\infty \delta(p_0^2 - \varepsilon^2)\,\delta[(k_0 - p_0)^2 - \varepsilon^2]\,\varphi(p_0,\,\mathbf{p})\,dp_0.
+\]
+
+The arguments of the $\delta$-functions can be rewritten in invariant form, subtracting and adding to them~$\mathbf{p}^2$:
+\[
+p_0^2 - \varepsilon^2 = p^2 - m^2, \qquad (k_0 - p_0)^2 - \varepsilon^2 = (k - p)^2 - m^2.
+\]
+After this we find finally
+\begin{equation}
+\Delta\mathcal{P}(k^2) = i(2\pi i)^2 \int d^4p\;\varphi(p)\,\delta(p^2 - m^2)\,\delta[(p - k)^2 - m^2].
+\label{eq:115.7}
+\end{equation}
+\hspace*{\fill}$p_0 > 0$
+
+By virtue of the presence of the $\delta$-functions the integration is in fact carried out only over the region of intersection of the hypersurfaces
+\begin{equation}
+p^2 = m^2, \qquad (p - k)^2 = m^2.
+\label{eq:115.8}
+\end{equation}
+Since in this region all 4-vectors~$p$ are time-like, the condition of integration over $p_0 > 0$ has an invariant character (the upper sheet of the cone $p^2 = m^2$).
+
+\SourcePage{564}{569}
+
+Comparing~(\ref{eq:115.7}) with the original formula~(\ref{eq:115.2}), we see that the jump of the function~$\mathcal{P}(t)$ on the cut in the $t$-plane can be obtained if in the original Feynman integral one makes the replacement
+\begin{equation}
+\frac{1}{p^2 - m^2 + i0} \to -2\pi i\delta(p^2 - m^2)
+\label{eq:115.9}
+\end{equation}
+in the propagators corresponding to the lines cut by the diagram~(113.1) (\emph{S.~Mandelstam}, 1958, \emph{R.~Cutkosky}, 1960).
+
+Let us note that the conditions~(\ref{eq:115.8}) single out that region of impulse space in which the lines of virtual particles in the diagram correspond to real particles (or, as one says, the 4-momenta~$p$ and $p - k$ lie on the \emph{mass shell}). Here the connection with the method of the unitarity relation, in which these same lines were replaced by lines of real particles of the intermediate state, is clearly visible.
+
+We also see the mathematical reason for the absence of the divergence in the imaginary part of the diagram: it is determined by integration over the finite region of the mass surface instead of integration over all of unbounded impulse 4-space in the original Feynman integral.
+
+To obtain now from~(\ref{eq:115.7}) the formula derived in \S\,113, we return to the rest frame, in which $\mathbf{k} = 0$, and carry out the integration over
+\[
+d^4p = |\mathbf{p}|\,\varepsilon\,d\varepsilon\,dp_0\,do.
+\]
+
+The integration reduces to the removal of the $\delta$-functions. In doing so
+\[
+\delta(p^2 - m^2)\,dp_0 = \delta(p_0^2 - \varepsilon^2)\,dp_0 \to \frac{1}{2\varepsilon}\,\delta(p_0 - \varepsilon)\,dp_0
+\]
+and then
+\begin{align*}
+\delta[(p - k)^2 - m^2]\,|d\varepsilon| &= \delta[(p_0 - k_0)^2 - \varepsilon^2]\,|d\varepsilon| = \\
+&= \delta(-2\varepsilon k_0 + k_0^2)\,d\varepsilon \to \frac{1}{2k_0}\,\delta\!\left(\varepsilon - \frac{k_0}{2}\right)d\varepsilon.
+\end{align*}
+
+As a result we obtain
+\begin{equation}
+\Delta\mathcal{P}(t) = -\frac{i\pi^2}{2}\sqrt{\frac{t - 4m^2}{t}}\int \varphi(\varepsilon,\,\mathbf{p})\,do,
+\label{eq:115.10}
+\end{equation}
+where $t = k^2 = k_0^2$, and the value of the function~$\varphi$ is taken at
+\[
+p_0 = \varepsilon = k_0/2, \qquad \mathbf{p}^2 = \varepsilon^2 - m^2 = k_0^2/4 - m^2,
+\]
+i.e.\ is equal to
+\[
+\varphi(\varepsilon,\,\mathbf{p}) = \frac{e^2}{3\pi^3}(2m^2 + t)
+\]
+and does not depend on the angle. Therefore the integration over~$do$ reduces to multiplication by~$4\pi$, and we return to~(113.8).
+
+\SourcePage{565}{570}
+
+In the derivation presented only the fact that the diagram is cut into two parts by crossing just two lines is essential. Therefore the rule formulated remains valid also for diagrams composed of any two blocks connected by two (electron or photon) lines. The integral, computed by means of the replacement~(\ref{eq:115.9}), determines in this case that contribution to the imaginary part of the diagram which, in the method of the unitarity relation, is connected with the corresponding two-particle intermediate state.

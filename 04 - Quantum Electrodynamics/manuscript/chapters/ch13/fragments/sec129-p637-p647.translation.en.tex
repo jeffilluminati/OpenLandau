@@ -1,0 +1,371 @@
+
+\section{Radiative corrections to the equations of the electromagnetic field}
+
+\SourcePage{632}{637}
+
+When quantising the electron-positron field (see \S\,25) we saw that in the expression for the vacuum energy there appears an infinite constant, which can be written in the form\footnote{We write here $\mathcal{E}$ instead of $E$ to avoid confusion with the electric field strength.}
+\begin{equation}
+\mathcal{E}_0 = -\sum_{\mathbf{p}\sigma}\varepsilon_{\mathbf{p}\sigma}^{(-)},
+\label{eq:129.1}
+\end{equation}
+
+\SourcePage{633}{638}
+
+\noindent where $\varepsilon_{\mathbf{p}\sigma}^{(-)}$ are the negative frequencies of solutions of the Dirac equation. In itself this constant has no physical meaning, since the vacuum energy is by definition equal to zero. On the other hand, in the presence of an electromagnetic field the energy levels $\varepsilon_{\mathbf{p}\sigma}^{(-)}$ will change. These changes are finite and have a definite physical meaning. They describe the dependence of the properties of space on the field and modify the equations of the electromagnetic field in vacuum.
+
+The modification of the field equations is expressed as a change in its Lagrangian function. The density $L$ of the Lagrangian function is a relativistic invariant and therefore can be a function only of the invariants $\mathbf{E}^2 - \mathbf{H}^2$ and $\mathbf{E}\mathbf{H}$. The usual expression
+\begin{equation}
+L_0 = \frac{1}{8\pi}(\mathbf{E}^2 - \mathbf{H}^2)
+\label{eq:129.2}
+\end{equation}
+is the first term of the general expansion in powers of the invariants.
+
+We shall find the Lagrangian function in the case when the fields $\mathbf{E}$ and $\mathbf{H}$ vary so slowly in space and time that they can be regarded as uniform and constant; then $L$ does not contain derivatives of the fields. The formulation of the necessary conditions for this we shall discuss at the end of this section.
+
+However, for the problem as posed to have meaning, it is also necessary to assume that the electric field is sufficiently weak. The point is that a uniform electric field can create pairs from the vacuum. Consideration of the field as a closed system in its own right is permissible only if the probability of pair creation is sufficiently small. Specifically, one must have
+\begin{equation}
+|\mathbf{E}| \ll \frac{m^2}{|e|}\quad\left(=\frac{m^2c^3}{|e|\hbar}\right)
+\label{eq:129.3}
+\end{equation}
+(the change in the energy of a charge $e$ at a distance $\hbar/(mc)$ must be small compared with $mc^2$). We shall see below (see also Problem~2) that in this case the probability of pair creation is exponentially small.
+
+If alongside the electric field there is also a magnetic field, then, generally speaking, one can choose a reference frame in which $\mathbf{E}$ and $\mathbf{H}$ are parallel. Then the magnetic field does not affect the motion of the charge in the direction of $\mathbf{E}$. It is precisely in this frame (the choice of which will be implied in the subsequent calculations) that condition~(\ref{eq:129.3}) must be satisfied.
+
+The computation of the Lagrangian function begins with the determination of the change $W'$ in the energy of the vacuum. The quantity $W'$ is given by the change in the ``zero-point energy''~(\ref{eq:129.1}). From this quantity, however, one must also subtract the average value of the potential energy of the
+
+\SourcePage{634}{639}
+
+\noindent electrons in ``states'' with negative energy. The latter subtraction means simply that the total charge of the vacuum is by definition equal to zero.
+
+The zero-point energy in the presence of the field is:
+\begin{equation}
+\mathcal{E}_0 = -\sum_{\mathbf{p}\sigma}\varepsilon_{\mathbf{p}\sigma}^{(-)} = \sum\int\psi_{\mathbf{p}\sigma}^{(-)*}\,i\frac{\partial}{\partial t}\,\psi_{\mathbf{p}\sigma}^{(-)}\,d^3x,
+\label{eq:129.4}
+\end{equation}
+where $\psi_{\mathbf{p}\sigma}^{(-)}$ are the negative-frequency solutions of the Dirac equation in the given field.
+
+We shall assume that the integration is performed over unit volume, and that the wave functions are normalised to~1 in this volume; then $\mathcal{E}_0$ is the energy per unit volume. In accordance with the above, one must subtract from $\mathcal{E}_0$ the quantity
+\[
+U_0 = \sum_{\mathbf{p}\sigma}\int\psi_{\mathbf{p}\sigma}^{(-)*}\,e\varphi\,\psi_{\mathbf{p}\sigma}^{(-)}\,d^3x,
+\]
+where $\varphi = -\mathbf{E}\mathbf{r}$ is the potential of the uniform field. But according to the theorem on differentiation of the operator with respect to a parameter (see III, (11.16))
+\[
+U_0 \equiv \mathbf{E}\sum_{\mathbf{p}\sigma}\int\psi_{\mathbf{p}\sigma}^{(-)*}\frac{\partial\hat{H}}{\partial\mathbf{E}}\psi_{\mathbf{p}\sigma}^{(-)}\,d^3x = -\mathbf{E}\sum_{\mathbf{p}\sigma}\frac{\partial\varepsilon_{\mathbf{p}\sigma}^{(-)}}{\partial\mathbf{E}} = \mathbf{E}\frac{\partial\mathcal{E}_0}{\partial\mathbf{E}}.
+\]
+
+Thus, the total change in the vacuum energy density is finally
+\begin{equation}
+W' = \left(\mathcal{E}_0 - \mathbf{E}\frac{\partial\mathcal{E}_0}{\partial\mathbf{E}}\right) - \left(\mathcal{E}_0 - \mathbf{E}\frac{\partial\mathcal{E}_0}{\partial\mathbf{E}}\right)_{\!\mathbf{E}=\mathbf{H}=0}\!\!\!.
+\label{eq:129.5}
+\end{equation}
+
+Let us relate $W'$ to the change in the Lagrangian density $L'$ ($L = L_0 + L'$). For this we use the general formula
+\[
+W = \sum_i \dot{q}_i\frac{\partial L}{\partial\dot{q}_i} - L,
+\]
+where $q$ are the ``generalised coordinates'' of the field (see II, \S\,32). For the electromagnetic field the role of the quantities~$q$ is played by the potentials $\mathbf{A}$ and $\varphi$. Since
+\begin{equation}
+\mathbf{E} = -\dot{\mathbf{A}} - \boldsymbol{\nabla}\varphi,\qquad \mathbf{H} = \operatorname{rot}\mathbf{A},
+\label{eq:129.6}
+\end{equation}
+of the ``velocities'' $\dot{q}$, only $\dot{\mathbf{A}}$ enters $L$, and differentiation with respect to $\dot{\mathbf{A}}$ is equivalent to differentiation with respect to $\mathbf{E}$. Therefore
+\begin{equation}
+W' = \mathbf{E}\frac{\partial L'}{\partial\mathbf{E}} - L'.
+\label{eq:129.7}
+\end{equation}
+
+\SourcePage{635}{640}
+
+Comparing (\ref{eq:129.5}) and (\ref{eq:129.7}), we find
+\begin{equation}
+L' = -\bigl[\mathcal{E}_0 - \mathcal{E}_0\big|_{\mathbf{E}=\mathbf{H}=0}\bigr].
+\label{eq:129.8}
+\end{equation}
+Thus, the computation of $L'$ reduces to the evaluation of the sum~(\ref{eq:129.1}).
+
+Let us consider first the case when only a magnetic field is present. The ``negative'' energy levels of the electron (charge $e = -|e|$) in a constant uniform field $H_z = H$ are
+\begin{equation}
+-\varepsilon_{\mathbf{p}}^{(-)} = -\sqrt{m^2 + |e|H(2n-1+\sigma)+p_z^2},\qquad n=0,\,1,\,2,\,\ldots\;;\quad \sigma = \pm 1
+\label{eq:129.9}
+\end{equation}
+(see Problem to \S\,32). To evaluate the sum we note that the number of states in the interval $dp_z$ is
+\[
+\frac{|e|H}{2\pi}\frac{dp_z}{2\pi}
+\]
+(see III, \S\,112); the first factor is the number of states with distinct values of~$p_x$, on which the energy does not depend. Moreover, all levels except the level with $n=0$, $\sigma = -1$ are doubly degenerate: the levels with $n$, $\sigma = +1$ and $n+1$, $\sigma = -1$ coincide. Therefore
+\begin{equation}
+-\mathcal{E}_0 = \frac{|e|H}{(2\pi)^2}\int_{-\infty}^{\infty}\biggl\{\sqrt{m^2+p_z^2}+2\sum_{n=1}^{\infty}\sqrt{m^2+2|e|Hn+p_z^2}\biggr\}dp_z.
+\label{eq:129.10}
+\end{equation}
+
+The divergence of the integrals in (\ref{eq:129.10}) is removed upon evaluating $L'$~(\ref{eq:129.8}) by subtracting the value of the sum at $H=0$. To carry out this ``renormalisation'' it is convenient first to compute the convergent expression
+\[
+\Phi \equiv -\frac{\partial^2\mathcal{E}_0}{(\partial m^2)^2} = -\frac{|e|H}{2(2\pi)^2}\times
+\]
+\[
+{}\times\int_0^{\infty}\biggl\{(m^2+p_z^2)^{-3/2}+2\sum_{n=1}^{\infty}(m^2+2|e|Hn+p_z^2)^{-3/2}\biggr\}dp_z =
+\]
+\[
+{}= -\frac{|e|H}{8\pi^2}\biggl\{\frac{1}{m^2}+2\sum_{n=1}^{\infty}\frac{1}{m^2+2|e|Hn}\biggr\}.
+\]
+
+The summation in the curly brackets can be reduced to a summation of a
+
+\SourcePage{636}{641}
+
+\noindent geometric progression in the following way:
+\begin{equation}
+\Phi = -\frac{|e|H}{8\pi^2}\int_0^{\infty}e^{-m^2\eta}\biggl[2\sum_{n=0}^{\infty}e^{-2|e|Hn\eta}-1\biggr]d\eta = -\frac{|e|H}{8\pi^2}\int_0^{\infty}e^{-m^2\eta}\biggl[\frac{2}{1-e^{-2|e|H\eta}}-1\biggr]d\eta
+\label{eq:129.11}
+\end{equation}
+\[
+{}= -\frac{|e|H}{8\pi^2}\int_0^{\infty}e^{-m^2\eta}\operatorname{coth}(|e|H\eta)\,d\eta.
+\]
+
+To find $L'$ one must now integrate $\Phi$ twice with respect to $m^2$ and then subtract the value of the resulting quantity at $H = 0$. We find
+\begin{equation}
+L' = -\frac{1}{8\pi^2}\int_0^{\infty}\frac{e^{-m^2\eta}}{\eta^3}\bigl\{\eta|e|H\coth(|e|H\eta) - 1 + c_1 + c_2 m^2\bigr\}\,d\eta,
+\label{eq:129.12}
+\end{equation}
+where $c_1$ and $c_2$ depend on $H$ but not on $m^2$.
+
+From considerations of dimensionality and evenness with respect to $\mathbf{H}$ it is obvious that $L'$ as a function of $H$ and $m$ must have the form
+\[
+L' = m^4 f\!\left(\frac{H^2}{m^4}\right).
+\]
+Therefore terms odd in $m^2$ cannot appear in $L'$ at all, so that $c_2 = 0$. The coefficient $c_1$ is determined from the condition that the expansion of $L'$ in powers of $H^2$ must begin with the term $\sim H^4$. Indeed, a term $\sim H^2$ in $L'$ would simply mean a change in the coefficient of $H^2$ in the original Lagrangian $L_0 = -H^2/(8\pi)$. But this would amount, in essence, to a change in the definition of the field strength and charge. Therefore the elimination of terms $\sim H^2$ signifies a charge renormalisation. It is easy to verify that for this one must set
+\[
+c_1 = \frac{H^2 e^2}{3\cdot 8\pi^2}\int_0^{\infty}\frac{e^{-\eta}}{\eta}\,d\eta.
+\]
+
+Finally, making in (\ref{eq:129.12}) the substitution $m^2\eta\to\eta$,
+
+\SourcePage{637}{642}
+
+\noindent we obtain finally
+\begin{equation}
+L'(H;\,E=0) = \frac{m^4}{8\pi^2}\int_0^{\infty}\biggl\{-\eta b\coth b\eta + 1 + \frac{b^2\eta^2}{3}\biggr\}e^{-\eta}\frac{d\eta}{\eta^3},
+\label{eq:129.13}
+\end{equation}
+where $b = |e|H/m^2$.
+
+Let us turn to the general case, when alongside the magnetic field there is also an electric field $\mathbf{E}$ parallel to it, satisfying condition~(\ref{eq:129.3}).
+
+For the computation of $L'$ in this case it is not, however, necessary to solve anew the problem of determining the energy levels $\varepsilon_{\mathbf{p}}^{(-)}$ of the electron in the field. It suffices to note that if one seeks the wave function --- the solution of the second-order equation~(32.7) --- in the form of a product
+\[
+\psi = \psi_E(z)\,e^{ip_x x}\chi_{n\sigma}(y),
+\]
+where $\chi_{n\sigma}$ is the wave function in a magnetic field with $\mathbf{E}=0$ and $p_z = 0$, then the mass $m$ and the field $H$ enter the equation for $\psi_E(z)$ only in the combination
+\[
+m^2 + |e|H(2n+1+\sigma).
+\]
+
+If one now takes into account that the summation over $p_x$ (on which the energy levels do not depend) still gives the factor $|e|H/(2\pi)$, then on dimensional grounds one can write
+\[
+\Phi(H,\,E) \equiv \frac{\partial^2 L'}{(\partial m^2)^2}
+\]
+in the form
+\begin{equation}
+\Phi(H,\,E) = -\frac{|e|H}{8\pi^2}\sum_{n=0}^{\infty}\sum_{\sigma=\pm 1}\frac{F\!\left(\dfrac{m^2+|e|H(2n+1+\sigma)}{|e|H}\right)}{m^2+|e|H(2n+1+\sigma)} = -\frac{b}{8\pi^2}\biggl\{F\!\left(\frac{1}{a}\right) + 2\sum_{n=1}^{\infty}\frac{F\!\left(\dfrac{1+2bn}{a}\right)}{1+2bn}\biggr\},\quad a = \frac{|e|E}{m^2}
+\label{eq:129.14}
+\end{equation}
+(each term of this sum is the derivative $-\partial^2\varepsilon_{\mathbf{p}}^{(-)}/(dm^2)^2$, summed over all quantum numbers except~$n$). Here $F$ is an as yet unknown function, which we shall find from considerations of relativistic invariance.
+
+Indeed, $\Phi$ must be a function of the scalars $H^2 - E^2$ and $(EH)^2 = (\mathbf{E}\mathbf{H})^2$:
+\[
+\Phi(H,\,E) = f(H^2-E^2,\,(EH)^2).
+\]
+
+\SourcePage{638}{643}
+
+\noindent Therefore
+\[
+\Phi(0,\,E) = f(-E^2,\,0) = \Phi(iE,\,0).
+\]
+But the function $\Phi(iE,\,0)$ is obtained from~(\ref{eq:129.11}) by the substitution $H\to iE$; after relabelling the integration variable we find
+\begin{equation}
+\Phi(iE,\,0) = \frac{1}{8\pi^2}\int_0^{\infty}e^{-\eta/a}\cot\eta\,d\eta.
+\label{eq:129.15}
+\end{equation}
+
+Comparing this expression with the limit $\Phi(H\to 0,\,E)$ computed from~(\ref{eq:129.14}), we can find the function~$F$.
+
+The passage to the limit $H\to 0$ in~(\ref{eq:129.14}) is effected by replacing the summation over~$n$ by integration over $dn = dx/(2b)$:
+\begin{equation}
+\Phi(0,\,E) = -\frac{1}{8\pi^2}\int_0^{\infty}F\!\left(\frac{1+x}{a}\right)\frac{dx}{1+x} = -\frac{1}{8\pi^2}\int_{1/a}^{\infty}\frac{F(y)}{y}\,dy.
+\label{eq:129.16}
+\end{equation}
+
+Equating expressions (\ref{eq:129.15}) and (\ref{eq:129.16}) and differentiating the equality with respect to $1/a \equiv z$, we obtain
+\[
+\frac{F(z)}{z} = -\int_0^{\infty}e^{-z\eta}\,\eta\cot\eta\,d\eta.
+\]
+
+After this the summation in~(\ref{eq:129.14}) is again reduced to summation of a geometric progression, and the subsequent calculations are analogous to those carried out above: we express $\Phi$ in terms of $m^2$, $E$ and $H$, integrate twice with respect to~$m^2$, subtract the value at $E = H = 0$ and determine the constants of integration, as in the derivation of~(\ref{eq:129.13}). The final result is\footnote{This result was first obtained by \emph{W.~Heisenberg} and \emph{H.~Euler} (1935). In the calculations presented here, the ideas of the derivation proposed by \emph{V.~Weisskopf} (1936) have also been used.}:
+\begin{equation}
+L' = -\frac{m^4}{8\pi^2}\int_0^{\infty}\frac{e^{-\eta}}{\eta^3}\biggl\{-(\eta a\cot\eta a)(\eta b\coth\eta b) + 1 - \frac{\eta^2}{3}(a^2-b^2)\biggr\}d\eta,
+\label{eq:129.17}
+\end{equation}
+\[
+a = \frac{|e|E}{m^2}\quad\left(=\frac{|e|\hbar E}{m^2c^3}\right),\qquad b = \frac{|e|H}{m^2}\quad\left(=\frac{|e|\hbar H}{m^2c^3}\right).
+\]
+
+\SourcePage{639}{644}
+
+The parameters $a$ and $b$ can be written in invariant form as
+\begin{equation}
+a = -\frac{i|e|}{\sqrt{2}\,m^2}\bigl\{(\mathcal{F}+i\mathcal{G})^{1/2} - (\mathcal{F}-i\mathcal{G})^{1/2}\bigr\},\qquad b = -\frac{|e|}{\sqrt{2}\,m^2}\bigl\{(\mathcal{F}+i\mathcal{G})^{1/2} + (\mathcal{F}-i\mathcal{G})^{1/2}\bigr\},
+\label{eq:129.18}
+\end{equation}
+where $\mathcal{F}$ and $\mathcal{G}$ denote the invariants:
+\begin{equation}
+\mathcal{F} = \tfrac{1}{2}(\mathbf{H}^2-\mathbf{E}^2),\qquad \mathcal{G} = \mathbf{E}\mathbf{H},\qquad \mathcal{F}\pm i\mathcal{G} = \tfrac{1}{2}(\mathbf{H}\pm i\mathbf{E})^2.
+\label{eq:129.19}
+\end{equation}
+
+Once formula~(\ref{eq:129.17}) is expressed through the invariants $\mathcal{F}$ and~$\mathcal{G}$, it thereby becomes applicable in an arbitrary reference frame (and not only in the one where $\mathbf{E}\parallel\mathbf{H}$).
+
+Let us note at once the somewhat conventional nature of writing formula~(\ref{eq:129.17}). It is suitable only if the condition of smallness of the electric field, $a \ll 1$~(\ref{eq:129.3}) (not taken into account in~(\ref{eq:129.17}) in explicit form), is satisfied. This is manifested in the fact that the integrand in~(\ref{eq:129.17}) has poles at $\eta = n\pi/a$ ($n = 1,\,2,\,\ldots$), so that the integral as written strictly speaking has no meaning. Therefore (\ref{eq:129.17}) can, essentially, serve only to obtain the terms of an asymptotic expansion (see below) in powers of~$a$ by means of a formal expansion of $\cot a$.
+
+The integral~(\ref{eq:129.17}) can be given meaning mathematically by going around the poles in the plane of complex~$\eta$. At the same time, $L'$ and thereby also the energy density $W'$ acquire an imaginary part. A complex energy means, as usual, the quasi-stationarity of the state\footnote{The direction of going around the contour must be chosen so that $\operatorname{Im} W' < 0$. This requirement corresponds to the usual rule of mass replacement $m^2 \to m^2 - i0$ (in the present case $a \to a + i0$).}. In this case stationarity is violated by the creation of pairs, and the quantity $-2\operatorname{Im}W'$ is the probability~$w$ of pair creation per unit volume per unit time; since the small corrections $W$ and $L$ differ only in sign, the probability~$w$, expressed in terms of $E$ and~$H$, is simply
+\begin{equation}
+w = 2\operatorname{Im}L'.
+\label{eq:129.20}
+\end{equation}
+It is obvious that it is proportional to $e^{-\pi/a}$ (see below~(129.22)). It is precisely because of the exponential smallness of $\operatorname{Im} W'$ when $a\ll 1$ that the asymptotic expansion in powers of~$a$ makes sense, retaining any finite number of terms.
+
+Let us consider the limiting cases of formula~(\ref{eq:129.17}). In weak fields ($a\ll 1$, $b\ll 1$) the first terms of the expansion are:
+\begin{equation}
+L' = \frac{m^4}{8\pi^2}\,\frac{(a^2-b^2)^2+7(ab)^2}{45} = \frac{e^4}{45\cdot 8\pi^2 m^4}(4\mathcal{F}^2+7\mathcal{G}^2).
+\label{eq:129.21}
+\end{equation}
+In particular, for $b = 0$ the relative correction is
+\[
+\frac{L'}{L_0} = \alpha\,\frac{a^2}{45\pi}.
+\]
+
+\SourcePage{640}{645}
+
+The imaginary part of~$L'$ when $a\ll 1$ is obtained from the integral~(\ref{eq:129.17}) by taking the residue at the pole of the cotangent nearest to zero, i.e.\ at $\eta a = \pi - i0$. According to~(\ref{eq:129.20}), this gives the probability of pair creation by a weak electric field:
+\[
+w = \frac{m^4}{4\pi^3}\,a^2\,e^{-\pi/a},
+\]
+or, in ordinary units:
+\begin{equation}
+w = \frac{1}{4\pi^3}\biggl(\frac{eEh}{m^2c^3}\biggr)^{\!2}\frac{mc^2}{h}\biggl(\frac{mc}{h}\biggr)^{\!3}\exp\biggl(-\frac{\pi m^2c^3}{|e|\hbar E}\biggr).
+\label{eq:129.22}
+\end{equation}
+
+In a strong magnetic field ($a = 0$, $b\gg 1$) we start from formula~(\ref{eq:129.13}), written (with the substitution $b\eta \to \eta$) in the form
+\[
+L' = \frac{m^4 b^2}{8\pi^2}\int_0^{\infty}\frac{e^{-\eta/b}}{\eta}\biggl[\frac{1}{3} - \frac{\eta\coth\eta - 1}{\eta^2}\biggr]d\eta.
+\]
+When $b\gg 1$ the essential region in this integral is $1\ll\eta\ll b$. In it one can neglect the second term in the square brackets, and cut off the integral at the limits $\eta \approx 1$ and $\eta \approx b$. Then
+\begin{equation}
+L' = \frac{m^4 b^2}{24\pi^2}\,\ln b
+\label{eq:129.23}
+\end{equation}
+(a more exact calculation replaces $\ln b$ by $\ln b - 2{.}29$). In this case
+\[
+\frac{L'}{L_0} \approx \frac{\alpha}{3\pi}\,\ln b.
+\]
+
+\SourcePage{641}{646}
+
+It is evident that the radiative corrections to the equations of the field can achieve a relative magnitude of order unity only in exponentially large fields:
+\begin{equation}
+H \approx \frac{m^2}{|e|}\,e^{3\pi/\alpha}.
+\label{eq:129.24}
+\end{equation}
+Nevertheless, the computed corrections have meaning: they violate the linearity of Maxwell's equations and thereby lead to observable, in principle, effects (for example, to scattering of light in vacuum or in an external field).
+
+The relation between the field strengths~$\mathbf{E}$ and~$\mathbf{H}$ and the potentials~$\mathbf{A}$ and~$\varphi$ remains, by definition, the former one~---~(\ref{eq:129.6}). Therefore the first pair of Maxwell's equations is also unchanged:
+\begin{equation}
+\operatorname{div}\mathbf{H} = 0,\qquad \operatorname{rot}\mathbf{E} = -\frac{\partial\mathbf{H}}{\partial t}.
+\label{eq:129.25}
+\end{equation}
+
+The second pair of equations is obtained by varying the action
+\[
+S = \int(L_0 + L')\,d^4x
+\]
+with respect to $\mathbf{A}$ and~$\varphi$. They can be written in the form
+\begin{equation}
+\operatorname{rot}(\mathbf{H}-4\pi\mathbf{M}) = \frac{\partial}{\partial t}(\mathbf{E}+4\pi\mathbf{P}),\qquad \operatorname{div}(\mathbf{E}+4\pi\mathbf{P}) = 0,
+\label{eq:129.26}
+\end{equation}
+\begin{equation}
+\label{eq:129.27}
+\end{equation}
+where the notations are introduced:
+\begin{equation}
+\mathbf{P} = \frac{\partial L'}{\partial\mathbf{E}},\qquad \mathbf{M} = \frac{\partial L'}{\partial\mathbf{H}}.
+\label{eq:129.28}
+\end{equation}
+In form, equations~(\ref{eq:129.25})--(\ref{eq:129.26}) coincide with the macroscopic Maxwell equations for a field in a material medium\footnote{Cf.\ VIII, \S\,75. In comparison it should be borne in mind that in macroscopic electrodynamics the average value of the microscopic magnetic field strength is denoted by~$\mathbf{B}$, and not~$\mathbf{H}$, as here.}. It follows from this that the quantities $\mathbf{P}$ and $\mathbf{M}$ have the meaning of vectors of electric and magnetic polarisation of the vacuum.
+
+Let us note that $\mathbf{P}$ and $\mathbf{M}$ vanish for a plane wave, in which, as is well known, both invariants $\mathbf{E}^2-\mathbf{H}^2$ and $\mathbf{E}\mathbf{H}$ are zero. In other words, for a plane wave the non-linear corrections in the vacuum are absent.
+
+Let us dwell, finally, on the conditions of applicability of the formulae obtained. For the fields to be regarded as constant, their relative changes over distances and time intervals $\sim 1/m$ must be small; this is ensured by the smallness of the derivatives of the corrections to~$L_0$ compared with~$L_0$ itself. Thus, if the field depends only on time, this leads to the natural condition
+\begin{equation}
+\omega \ll m.
+\label{eq:129.29}
+\end{equation}
+
+For the case of a weak field, however, there exists a more stringent condition. It arises from the requirement that the fourth-order term in~(\ref{eq:129.21}) be large compared with the derivative correction to~$L_0$; otherwise this term would lose meaning. Thus, for an electric field depending only on time, this leads to the condition
+\begin{equation}
+\omega \ll m\,\frac{|e|E}{m^2},
+\label{eq:129.30}
+\end{equation}
+more stringent than~(\ref{eq:129.29}).
+
+\SourcePage{642}{647}
+
+Condition~(\ref{eq:129.30}) does not arise, however, in the problem of photon-photon scattering considered in the preceding section (\S\,127). There we were from the very beginning interested only in a four-photon process, described by members of the fourth order in the Lagrangian, and the question of the relative value of other terms in~$L'$ was irrelevant. It was sufficient to require that merely condition~(\ref{eq:129.29}) be fulfilled.
+
+\bigskip
+\textbf{Problems}
+
+\noindent\textbf{1.} Determine the correction to the field of a small stationary charge~$e_1$, associated with the non-linearity of Maxwell's equations.
+
+\emph{Solution.} Setting $\mathbf{H}=0$, from~(\ref{eq:129.21}) we have
+\[
+\mathbf{P} = \frac{\partial L'}{\partial\mathbf{E}} = \frac{\alpha^2}{90\pi^2 m^4}\,\mathbf{E}E^2.
+\]
+In the centrally symmetric case, from~(\ref{eq:129.26}) we find
+\[
+(E + 4\pi P)\,r^2 = \text{const} = e_1
+\]
+(the constant is determined from the condition that at $r\to\infty$ the field coincides with the Coulomb field of charge~$e_1$). Solving approximately equation (2), we obtain
+\[
+E = \frac{e_1}{r^2}\biggl(1 - \frac{2\alpha^2 e_1^2}{45\pi m^4 r^4}\biggr),
+\]
+or
+\[
+\Phi = \frac{e_1}{r}\biggl(1 - \frac{2\alpha^2 e_1^2}{225\pi m^4 r^4}\biggr).
+\]
+The non-linear correction in~(3) should be distinguished from the linear correction in~(114.6), which is connected in the final analysis with the non-uniformity of the Coulomb field. Correction~(3) is of higher order in~$\alpha$, but falls off more slowly with increasing distance and grows faster with increasing~$e_1$.
+
+\noindent\textbf{2.} Estimate directly the probability of pair creation by a weak uniform constant electric field in the quasi-classical approximation (\emph{F.~Sauter}, 1931).
+
+\emph{Solution.} Motion in a weak field~$\mathbf{E}$ is quasi-classical (in the slowly varying potential $\varphi = -\mathbf{E}\mathbf{r} = -Ez$). Since the amplitude of the reaction contains the wave function of the final positron, pair creation can be regarded as the transition of an electron from a ``negative-frequency'' to a ``positive-frequency'' state. In the first of these, in the presence of the field, the quasi-classical impulse is determined by the equation
+\[
+\varepsilon = -\sqrt{p^2(z) + m^2} + |e|Ez,\tag{1}
+\]
+and in the second
+\[
+\varepsilon = +\sqrt{p^2(z) + m^2} + |e|Ez.\tag{2}
+\]
+The transition from the first state to the second involves passage through a potential barrier (the region of imaginary~$p(z)$), separating the domains of applicability of~(1) and (2). The boundaries of this barrier~$z_1$ and $z_2$ lie at $p(z) = 0$, i.e.
+\[
+\varepsilon = -m + |e|Ez_1,\qquad \varepsilon = +m + |e|Ez_2.
+\]
+The probability of passage through the quasi-classical barrier is
+\[
+w \propto \exp\biggl(-2\int_{z_2}^{z_1}|p(z)|\,dz\biggr) = \exp\biggl(-4\,\frac{m^2}{eE}\int_0^1\sqrt{1-\xi^2}\,d\xi\biggr),
+\]
+whence
+\[
+w \propto \exp\biggl(-\frac{\pi m^2}{|e|E}\biggr),
+\]
+in agreement with~(\ref{eq:129.22}).

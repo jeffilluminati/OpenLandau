@@ -1,0 +1,243 @@
+
+\section{Electron scattering in an external field in the second Born approximation}
+
+\SourcePage{587}{592}
+
+In the first two approximations with respect to the external field, electron scattering is represented by the diagrams
+
+% [Feynman diagram (121.1): Two diagrams. Left diagram M^{(1)}: single photon exchange with external field — electron line from p to p' with a single wavy line carrying momentum q to the external field cross. Right diagram M^{(2)}: double photon exchange — electron line from p to p' via intermediate state p'=p+q, with two wavy lines carrying momenta q_1=f-p and q_2=p'-f to external field crosses, and intermediate 4-momentum f.]
+
+\begin{equation}
+\label{eq:121.1}
+\end{equation}
+
+\noindent The first of them corresponds to the amplitude $M^{(1)} \sim Ze^2$, considered in \S\,80. The amplitude of the second approximation $M^{(2)} \sim (Ze^2)^2$.
+
+\SourcePage{588}{593}
+
+It is easy to see that terms of the same order also arise from radiative corrections. In the third order of perturbation theory, radiative corrections to the scattering amplitude are represented by the diagrams
+
+% [Feynman diagram (121.2): Two diagrams contributing to M^{(3)}. Left diagram a: single photon exchange with external field, with a photon self-energy loop on the exchanged photon line. Right diagram b: single photon exchange with external field, with a vertex correction — an additional virtual photon (dashed line carrying momentum k) connecting two points on the electron line, creating a triangle loop.]
+
+\begin{equation}
+\label{eq:121.2}
+\end{equation}
+
+\noindent In this case $M^{(3)} \sim Ze^2 \cdot e^2$, and if $Z \sim 1$, then $M^{(3)} \sim M^{(2)}$. According to (64.26) the scattering cross section is
+\begin{equation}
+d\sigma = |M_{fi}^{(1)} + M_{fi}^{(2)} + M_{fi}^{(3)}|^2 \frac{do'}{16\pi^2}.
+\label{eq:121.3}
+\end{equation}
+In the square of the amplitude appearing here, alongside $|M_{fi}^{(1)}|^2$, we are entitled to retain also the interference terms between $M_{fi}^{(1)}$ and $M_{fi}^{(2)}$ and between $M_{fi}^{(1)}$ and $M_{fi}^{(3)}$. Thus, to accuracy $\sim e^6$ the cross section is represented by the sum
+\begin{equation}
+d\sigma = d\sigma^{(1)} + d\sigma^{(2)} + d\sigma_{\text{rad}},
+\label{eq:121.4}
+\end{equation}
+where $d\sigma^{(1)}$ is the cross section in the first Born approximation (see \S\,80), and the corrections to it are
+\begin{equation}
+\begin{split}
+d\sigma^{(2)} &= 2\operatorname{Re} M_{fi}^{(1)} M_{fi}^{(2)*}\,\frac{do'}{16\pi^2},\\
+d\sigma_{\text{rad}} &= 2\operatorname{Re} M_{fi}^{(1)} M_{fi}^{(3)*}\,\frac{do'}{16\pi^2}.
+\end{split}
+\label{eq:121.5}
+\end{equation}
+
+Recall (see \S\,80) that
+\begin{equation}
+M_{fi}^{(1)} = |e|\,(\bar{u}'\gamma^0 u)\,\Phi(\mathbf{q}),
+\label{eq:121.6}
+\end{equation}
+where $\Phi(\mathbf{q})$ is the Fourier component of the scalar potential of the constant external field ($\Phi \equiv A_0^{(\mathrm{e})}$) and it is taken into account that the charge of the electron is $e = -|e|$.
+
+The two expressions~(\ref{eq:121.5}) can, of course, be computed independently. The first will be considered in this section, and the second in the following one.
+
+The amplitude of the second approximation, constructed according to the diagram~(\ref{eq:121.1}), is (after integration\footnote{We recall that here one must use the rules of diagrammatic technique pertaining to a constant external field; see the rule formulated in \S\,77, rule~8.})
+\begin{equation}
+M_{fi}^{(2)} = -e^2 \int \left\{\bar{u}(p')\gamma^0 \frac{\gamma f + m}{f^2 - m^2 + i0}\,\gamma^0 u(p)\right\} \Phi(\mathbf{p}' - \mathbf{f})\,\Phi(\mathbf{f} - \mathbf{p})\,\frac{d^3\!f}{(2\pi)^3},
+\label{eq:121.7}
+\end{equation}
+the ``4-impulses'' of the constant external field $q_1 = f - p$ and $q_2 = p' - f$ have no time components. Therefore
+\begin{equation}
+f_0 = \varepsilon = \varepsilon',
+\label{eq:121.8}
+\end{equation}
+where $\varepsilon$ and $\varepsilon'$ are the initial and final energies of the electron, which coincide with each other for elastic scattering.
+
+\SourcePage{589}{594}
+
+In a purely Coulomb field of a stationary charge $Z|e|$:
+\[
+\Phi(\mathbf{q}) = \frac{4\pi Z|e|}{\mathbf{q}^2}.
+\]
+For such a potential the integral~(\ref{eq:121.7}) diverges logarithmically (when $\mathbf{f} \approx \mathbf{p}$ and $\mathbf{f} \approx \mathbf{p}'$). This divergence is specific to the Coulomb field and is connected with the slowness of its decrease at large distances. Its origin is most easily clarified using the example of the non-relativistic case. According to Vol.~III, (135.8), the coefficient in the spherical wave $\exp(i|\mathbf{p}|r)/r$ in the asymptotic expression of the wave function of the electron in a Coulomb field has the form
+\[
+f(\theta)\exp\!\left(-i\frac{Z\alpha m}{|\mathbf{p}|}\ln|\mathbf{p}|r\right)\!.
+\]
+But this coefficient is the scattering amplitude of the electron in the field, and we see that its phase contains a divergence (when $r \to \infty$). When the scattering amplitude is expanded in powers of~$Z$, this term leads to a divergence of all terms of the expansion, starting from the second (since the function $f(\theta)$ itself is proportional to~$Z\alpha$). The situation in the relativistic case is, of course, of an analogous character.
+
+These arguments show that at the same time the divergent terms must cancel when computing the scattering cross section, in which the phase of the amplitude is inessential. The simplest way to carry out the computation correctly is to consider first the scattering in a screened Coulomb field, i.e.\ to set
+\begin{equation}
+\Phi(q) = \frac{4\pi Z|e|}{\mathbf{q}^2 + \delta^2}
+\label{eq:121.9}
+\end{equation}
+with a small screening constant $\delta$ ($\delta \ll |\mathbf{p}|$). In this way the divergence is removed in the scattering amplitude, and in the final expression for the cross section one can already set $\delta = 0$.
+
+Substituting~(\ref{eq:121.9}) into~(\ref{eq:121.7}), we obtain
+\[
+M_{fi}^{(2)} = -\frac{2}{\pi}\,Z^2\alpha^2\,\bar{u}(p')\bigl[(\gamma^0\varepsilon + m)J_1 + \boldsymbol{\gamma}\mathbf{J}\bigr]u(p),
+\]
+where the following notation has been introduced:
+
+\SourcePage{590}{595}
+
+\begin{equation}
+\begin{split}
+J_1 &= \int \frac{d^3\!f}{[(\mathbf{p}' - \mathbf{f})^2 + \delta^2][(\mathbf{f} - \mathbf{p})^2 + \delta^2][\mathbf{f}^2 - \mathbf{p}^2 - i0]},\\
+\mathbf{J} &= \int \frac{\mathbf{f}\,d^3\!f}{[(\mathbf{p}' - \mathbf{f})^2 + \delta^2][(\mathbf{f} - \mathbf{p})^2 + \delta^2][\mathbf{f}^2 - \mathbf{p}^2 - i0]} \equiv \frac{\mathbf{p} + \mathbf{p}'}{2}\,J_2.
+\end{split}
+\label{eq:121.10}
+\end{equation}
+Here $\mathbf{p}^2 = \varepsilon^2 - m^2 = \mathbf{p}'^2$ and the integral $\mathbf{J}$ is symmetric with respect to $\mathbf{p}$ and $\mathbf{p}'$; from considerations of vector symmetry it is obvious that the vector $\mathbf{J}$ must be directed along $\mathbf{p} + \mathbf{p}'$. Eliminating now the matrices $\boldsymbol{\gamma}$ with the aid of the identities
+\[
+\boldsymbol{\gamma}\mathbf{p}\,u = (\gamma^0 \varepsilon - m)u, \qquad \bar{u}'\boldsymbol{\gamma}\mathbf{p}' = \bar{u}'(\gamma^0\varepsilon - m),
+\]
+we obtain
+\begin{equation}
+M_{fi}^{(2)} = -\frac{2}{\pi}\,Z^2\alpha^2\,\bar{u}(p')\bigl[\gamma^0\varepsilon(J_1 + J_2) + m(J_1 - J_2)\bigr]u(p).
+\label{eq:121.11}
+\end{equation}
+
+For carrying out further computations we pass (as in \S\,80) from the bispinor amplitudes $u$ and $u'$ to the corresponding three-dimensional 3-spinors $w$ and $w'$ (according to (23.9) and (23.11)). By direct multiplication we find
+\[
+\begin{split}
+\bar{u}'u &= w'^{*}\bigl\{(\varepsilon + m) - (\varepsilon - m)\cos\theta + i\boldsymbol{\nu\sigma}(\varepsilon - m)\sin\theta\bigr\}w,\\
+\bar{u}'\gamma^0 u &= w'^{*}\bigl\{(\varepsilon + m) - (\varepsilon - m)\cos\theta - i\boldsymbol{\nu\sigma}(\varepsilon - m)\sin\theta\bigr\}w,
+\end{split}
+\]
+where
+\[
+\boldsymbol{\nu} = \frac{[\mathbf{n}\mathbf{n}']}{\sin\theta}, \qquad \mathbf{n} = \frac{\mathbf{p}}{|\mathbf{p}|}, \qquad \mathbf{n}' = \frac{\mathbf{p}'}{|\mathbf{p}'|}, \qquad \cos\theta = \mathbf{n}\mathbf{n}'.
+\]
+
+After this the amplitude~(\ref{eq:121.11}) takes the form\footnote{The definition of the quantities $A$ and $B$ here corresponds to the definition in \S\,37 and in Vol.~III, \S\,140, and differs by a factor from the definition in \S\,80.}
+\begin{equation}
+M_{fi}^{(2)} = 4\pi w'^{*}(A^{(2)} + B^{(2)}\boldsymbol{\nu\sigma})w,
+\label{eq:121.12}
+\end{equation}
+\begin{equation}
+\begin{split}
+A^{(2)} &= -\frac{1}{2\pi^2}\,Z^2\alpha^2\bigl\{\bigl[(\varepsilon + m) + (\varepsilon - m)\cos\theta\bigr]\varepsilon(J_1 + J_2) +{}\\
+&\qquad\qquad\quad{}+ \bigl[(\varepsilon + m) - (\varepsilon - m)\cos\theta\bigr]m(J_1 - J_2)\bigr\},\\
+B^{(2)} &= \frac{i}{2\pi^2}\,Z^2\alpha^2(\varepsilon - m)\sin\theta\bigl[\varepsilon(J_1 + J_2) - m(J_1 - J_2)\bigr].
+\end{split}
+\label{eq:121.13}
+\end{equation}
+
+The scattering amplitude in the first Born approximation, in analogous notation, has the form
+\[
+\begin{split}
+M_{fi}^{(1)} &= 4\pi w'^{*}(A^{(1)} + B^{(1)}\boldsymbol{\nu\sigma})w,\\
+A^{(1)} &= \frac{Z\alpha}{\mathbf{q}^2}\bigl[(\varepsilon + m) + (\varepsilon - m)\cos\theta\bigr],\\
+B^{(1)} &= -i\,\frac{Z\alpha}{\mathbf{q}^2}\,(\varepsilon - m)\sin\theta,
+\end{split}
+\]
+where $\mathbf{q} = \mathbf{p}' - \mathbf{p}$.
+
+The scattering cross section and polarisation effects are expressed in terms of the quantities $A = A^{(1)} + A^{(2)}$ and $B = B^{(1)} + B^{(2)}$ by the formulae obtained in Vol.~III, \S\,140. Thus, the cross section for scattering of unpolarised electrons is:
+\[
+d\sigma = (|A|^2 + |B|^2)\,do' \approx d\sigma^{(1)} + 2\bigl(A^{(1)}\operatorname{Re} A^{(2)} - iB^{(1)}\operatorname{Im} B^{(2)}\bigr)do'.
+\]
+
+\SourcePage{591}{596}
+
+\noindent After substitution of~(\ref{eq:121.12}),(\ref{eq:121.13}) a straightforward computation gives
+\begin{equation}
+d\sigma^{(2)} = -do'\,\frac{Z^2\alpha^3\varepsilon^3}{\pi^2\mathbf{p}^2\sin^2(\theta/2)}\left[\left(1 - \mathrm{v}^2\sin^2\frac{\theta}{2}\right)\operatorname{Re}(J_1 + J_2) + \frac{m^2}{\varepsilon^2}\operatorname{Re}(J_1 - J_2)\right],
+\label{eq:121.14}
+\end{equation}
+where $\mathrm{v} = |\mathbf{p}|/\varepsilon$ is the velocity of the electron and $\theta$ is the scattering angle. As a result of the scattering, the electrons become polarised; the polarisation vector of the final electrons is
+\[
+\boldsymbol{\zeta}' = \frac{2\operatorname{Re}(AB^*)}{|A|^2 + |B|^2}\,\boldsymbol{\nu} \approx \frac{2\bigl(A^{(1)}\operatorname{Re} B^{(2)} - iB^{(1)}\operatorname{Im} A^{(2)}\bigr)}{|A|^2 + |B|^2}\,\boldsymbol{\nu}
+\]
+or, after substitution of~(\ref{eq:121.12}),(\ref{eq:121.13}),
+\begin{equation}
+\boldsymbol{\zeta}' = \frac{4Z\alpha m|\mathbf{p}|^4\sin^3(\theta/2)\cos(\theta/2)}{\pi^2\varepsilon^2\bigl[1 - \mathrm{v}^2\sin^2(\theta/2)\bigr]}\,\operatorname{Im}(J_1 - J_2)\,\boldsymbol{\nu}.
+\label{eq:121.15}
+\end{equation}
+
+We now turn to the computation of the integrals $J_1$ and $J_2$. It is facilitated by application of the method of Feynman parametrisation according to the formula (131.2). The integral $J_1$ takes the form
+\[
+J_1 = -2\iiiint\limits_0^1 \frac{d^3\!f\,d\xi_1\,d\xi_2\,d\xi_3\cdot\delta(1 - \xi_1 - \xi_2 - \xi_3)}{\bigl\{[(\mathbf{p}' - \mathbf{f})^2 + \delta^2]\xi_1 + [(\mathbf{p} - \mathbf{f})^2 + \delta^2]\xi_2 + [\mathbf{f}^2 - \mathbf{p}^2 - i0]\xi_3\bigr\}^3}.
+\]
+Integration over $\xi_3$ eliminates the $\delta$-function; combining like terms in the denominator, we obtain
+\[
+J_1 = -2\int\limits_0^1\int\limits_0^{1-\xi_2} \int \frac{d^3\!f\,d\xi_1\,d\xi_2}{\bigl\{\delta^2(\xi_1 + \xi_2) + \mathbf{p}^2(2\xi_1 + 2\xi_2 - 1) - 2\mathbf{f}(\xi_1\mathbf{p}' + \xi_2\mathbf{p}) + \mathbf{f}^2 - i0\bigr\}^3}.
+\]
+Introducing in place of $\mathbf{f}$ a new variable $\mathbf{k} = \mathbf{f} - \xi_1\mathbf{p}' - \xi_2\mathbf{p}$, we reduce the integration over $d^3\!f$ to an integral of the form
+\[
+\int \frac{d^3 k}{(\mathbf{k}^2 - a^2 - i0)^3} = i\,\frac{\pi^2}{4a^3},
+\]
+so that
+
+$J_1 =$
+\[
+= -\frac{i\pi^2}{2}\int\limits_0^1\int\limits_0^{1-\xi_2}\frac{d\xi_1\,d\xi_2}{\bigl\{\mathbf{p}^2(\xi_1^2 + \xi_2^2 - 2\xi_1 - 2\xi_2 + 1) + 2\xi_1\xi_2\mathbf{p}\mathbf{p}' - \delta^2(\xi_1 + \xi_2) - i0\bigr\}^{3/2}}.
+\]
+In place of $\xi_1$ and $\xi_2$ we introduce the symmetric combinations: $x = \xi_1 + \xi_2$, $y = \xi_1 - \xi_2$. Integration over $y$ (in the limits from $0$ to $x$) is elementary
+
+\SourcePage{592}{597}
+
+\noindent and gives
+\[
+J_1 = -\frac{i\pi^2}{2|\mathbf{p}|^3}\int\limits_0^1 \frac{x\,dx}{\left[bx^2 - 2x + 1 - \dfrac{\delta^2}{\mathbf{p}^2}\,x - i0\right]^{1/2}\left[(1 - x)^2 - \dfrac{\delta^2}{\mathbf{p}^2}\,x - i0\right]^{1/2}},
+\]
+where $b = \dfrac{\mathbf{p}^2 + \mathbf{p}\mathbf{p}'}{2\mathbf{p}^2} = \cos^2\dfrac{\theta}{2}$.
+
+To compute the integral over $x$ when $\delta \to 0$ we split the domain of integration into two parts:
+\[
+\int\limits_0^1 \cdots\,dx = \int\limits_0^{1-\delta_1} \cdots\,dx + \int\limits_{1-\delta_1}^1 \cdots\,dx, \qquad 1 \gg \delta_1 \gg \frac{\delta}{|\mathbf{p}|}.
+\]
+
+In the first integral one can set $\delta = 0$; then\footnote{The bypass rule (the term $i0$) allows one to determine the change in argument of the expression under the logarithm sign upon passing from $0$ to $1 - \delta_1$: upon traversal from below the branch point, the argument changes from $0$ to $-\pi$.}
+\[
+\int\limits_0^{1-\delta_1} \cdots\,dx = \frac{1}{2(1-b)}\ln\frac{(1-x)^2}{bx^2 - 2x + 1 - i0}\bigg|_0^{1-\delta_1} = \frac{1}{2(1-b)}\left[\ln\frac{\delta_1^2}{1-b} + i\pi\right].
+\]
+
+In the second integral one can set $x = 1$ everywhere except in the term $(1 - x)^2$, and also set $\delta = 0$ in the first bracket of the denominator. Then\footnote{Here too the bypass rule determines the sign of the square root upon passing from positive to negative values of the expression under the radical.}
+\[
+\int\limits_{1-\delta_1}^1 \cdots\,dx = \frac{1}{1-b}\int\limits_0^{\delta_1}\frac{dx'}{\left(x'^2 - \delta^2/\mathbf{p}^2 - i0\right)^{1/2}} =
+\]
+\[
+= -\frac{1}{1-b}\left[\int\limits_0^{\delta_1}\frac{dx'}{\left(x'^2 - \delta^2/\mathbf{p}^2\right)^{1/2}} + i\int\limits_0^{\delta/|\mathbf{p}|}\frac{dx'}{\left(\delta^2/\mathbf{p}^2 - x'^2\right)^{1/2}}\right]
+\]
+\[
+= -\frac{1}{1-b}\left[\ln\frac{2|\mathbf{p}|\delta_1}{\delta} + i\,\frac{\pi}{2}\right].
+\]
+
+Upon adding the two integrals, the quantity $\delta_1$, as should have been expected, drops out, and one obtains
+\begin{equation}
+J_1 = \frac{i\pi^2}{2|\mathbf{p}|^3\sin^2(\theta/2)}\left[-\ln\frac{2|\mathbf{p}|}{\delta}\sin\frac{\theta}{2}\right].
+\label{eq:121.16}
+\end{equation}
+
+\SourcePage{593}{598}
+
+The integral $J_2$ is computed in an analogous fashion and equals
+\begin{equation}
+J_2 = J_1 - \frac{\pi^3\bigl[1 - \sin(\theta/2)\bigr]}{4|\mathbf{p}|^3\cos^2\dfrac{\theta}{2}\sin\dfrac{\theta}{2}} - \frac{i\pi^2}{2|\mathbf{p}|^3\cos^2\dfrac{\theta}{2}}\ln\sin\frac{\theta}{2}.
+\label{eq:121.17}
+\end{equation}
+
+It remains to substitute these expressions into~(\ref{eq:121.14}),(\ref{eq:121.15}), and we obtain the final results:
+\begin{equation}
+d\sigma^{(2)} = \frac{\pi(Z\alpha)^3\varepsilon}{4|\mathbf{p}|^3\sin\dfrac{\theta}{2}}\left(1 - \sin\frac{\theta}{2}\right)do',
+\label{eq:121.18}
+\end{equation}
+\begin{equation}
+\boldsymbol{\zeta}' = \frac{2Z\alpha m|\mathbf{p}|}{\varepsilon^2}\left|\frac{\sin^3\dfrac{\theta}{2}\ln\sin\dfrac{\theta}{2}}{\left(1 - \mathrm{v}^2\sin^2\dfrac{\theta}{2}\right)\cos\dfrac{\theta}{2}}\right|\boldsymbol{\nu}
+\label{eq:121.19}
+\end{equation}
+
+(\textit{W.\,A.\,McKinley, H.\,Feshbach}, 1948; \textit{R.\,H.\,Dalitz}, 1950).
+
+In the first Born approximation the cross sections for scattering of an electron and a positron (in one and the same external field) are identical. In the second approximation this symmetry disappears. For the scattering of a positron (charge $+|e|$) the first-order amplitude~(\ref{eq:121.6}) has the opposite sign, whereas $M_{fi}^{(1)}$ itself does not change. Therefore the cross section $d\sigma^{(2)}$, which is the interference term between $M_{fi}^{(1)}$ and $M_{fi}^{(2)}$, changes sign. The same happens to expression~(\ref{eq:121.19}) for the polarisation vector. In general, the transition from the formulae for electron scattering to the formulae for positron scattering can be effected by the formal substitution $Z \to -Z$.
