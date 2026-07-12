@@ -1,0 +1,223 @@
+
+\section{The method of equivalent photons}
+
+\SourcePage{484}{489}
+
+Let us compare two processes, described by the diagrams:
+
+% [Feynman diagrams (99.1): a) photon k collides with particle producing system Q; b) particle with 4-momentum p collides with another particle (mass M, 4-momentum p), producing system Q and final particle p']
+
+The circles depict conventionally the entire internal part of the diagrams. Diagram $a$) depicts the collision of a photon $k$ ($k^2 = 0$) with some particle with 4-momentum $q$ (and mass $m$; $q^2 = m^2$). As a result of the collision a system (particle or group of particles) with total 4-momentum $Q$ is formed. Diagram $b$) depicts the collision of the same particle $q$ with another particle, whose 4-momentum is $p$, and mass $M$ ($p^2 = M^2$). As a result of the collision this latter particle acquires 4-momentum $p'$ and there is formed the same system $Q$. The second process can be considered as the collision of the particle $q$ with a virtual photon emitted by the particle $p$, the momentum of which $k = p - p'$ ($k^2 < 0$). If $|k^2|$ is small,
+
+\SourcePage{485}{490}
+
+the virtual photon differs little from a real one. It is obvious that such a situation can be encountered in collisions of very fast particles: the electromagnetic field of a charged particle moving with velocity $v \approx 1$ is almost transverse and therefore close in its properties to the field of a light wave. Under these conditions the cross section of process $b$) can be expressed through the cross section of process $a$)\,\footnote{The method described below was developed by Weizs\"{a}cker and Williams (\emph{K.~Weizs\"{a}cker, E.~J.~Williams}, 1934); the basic idea of this method was already put forward earlier by Fermi (\emph{E.~Fermi}, 1924).}.
+
+Thus, let us consider particle $M$ as ultrarelativistic: its energy (in the rest frame of particle $m$) $\varepsilon \gg M$. If the masses of the colliding particles $m$ and $M$ are different, then for definiteness we shall assume that $m < M$.
+
+The amplitude of process $a$) (with participation of a real photon) can be represented in the form
+\begin{equation}
+M_{fi}^{(r)} = -e\sqrt{4\pi}(e_\mu J^\mu),
+\label{eq:99.2}
+\end{equation}
+where $e_\mu$ is the 4-vector of polarisation of the photon, and $J^\mu$ the transition current, corresponding to the upper vertex (circle) of the diagram. The amplitude of process $b$)
+\begin{equation}
+M_{fi} = Ze^2\,\frac{4\pi}{k^2}\,(j_\mu J^\mu),
+\label{eq:99.3}
+\end{equation}
+where $j_\mu$ is the transition current of particle $m$ (the lower vertex of the diagram); $Ze$ is the charge of this particle. The current $J$ is a function of $k = Q - q$ and therefore in the two cases is different: $k^2 = 0$ in (99.2) and $k^2 \neq 0$ in (99.3). But if in the second case
+\begin{equation}
+|k^2| \ll m^2,
+\label{eq:99.4}
+\end{equation}
+then also here one can take $J$ at $k^2 = 0$.
+
+The change of the momentum of particle $M$ upon emission of a virtual photon, $\mathbf{p} - \mathbf{p}' = \mathbf{k}$, is small compared with its original momentum $|\mathbf{p}| \approx \varepsilon$; therefore in the current $j$ one can set $\mathbf{p} = \mathbf{p}'$. In other words, we consider the motion of particle $M$ as rectilinear and uniform. Since such motion is quasi-classical, the corresponding current does not depend on the spin of the particle\footnote{In the normalisation of wave functions to one particle in unit volume the current is $j^\mu = (1,\,\mathbf{v})$, where $v$ is the velocity. But we have agreed (see \S\,6) to omit in the wave functions the normalisation factor $1/\sqrt{2\varepsilon}$, and we arrive at expression (99.5).}:
+\begin{equation}
+j_\mu = 2p_\mu.
+\label{eq:99.5}
+\end{equation}
+
+\SourcePage{486}{491}
+
+The condition of transversality of the current ($jk = 0$) gives now $\varepsilon\omega - p_x k_x = 0$, where the $x$ axis is chosen in the direction of $\mathbf{p}$. From this
+\begin{equation}
+\omega = vk_x,
+\label{eq:99.6}
+\end{equation}
+where $v = p_x/\varepsilon$ is the velocity of particle $M$. Since
+\begin{equation}
+-\mathbf{k}^2 = -\omega^2 + k_x^2 + \mathbf{k}_\perp^2 \approx \omega^2(1 - v^2) + \mathbf{k}_\perp^2
+\label{eq:99.7}
+\end{equation}
+($\mathbf{k}_\perp$ is the component of the vector $\mathbf{k}$ transverse to the $x$ axis), condition (99.4) is equivalent to the inequality $|\mathbf{k}_\perp| \ll m$ and a considerably stronger inequality for $\omega$: $\omega \ll m\sqrt{1 - v^2}$.
+
+Further, from the condition of transversality of the current $J$ ($Jk = 0$) it follows, using (99.6), that
+\[
+J_0 = \frac{J_x}{v} + \frac{\mathbf{J}_\perp\mathbf{k}_\perp}{\omega}.
+\]
+Therefore for the scalar product $jJ$ we obtain
+\begin{equation}
+jJ = 2(J_0\varepsilon - J_x p_x) \approx 2\,\frac{\varepsilon}{\omega}\!\left(\mathbf{J}_\perp\mathbf{k}_\perp + \frac{\omega M^2}{\varepsilon^2}\,J_x\right).
+\label{eq:99.8}
+\end{equation}
+
+The product $Je$ in (99.2) we expand, choosing the 4-vector of polarisation of the real photon in the three-dimensional transverse gauge: $ek = -\mathbf{e}\mathbf{k} = 0$, whence $e_x \approx -\mathbf{e}_\perp\mathbf{k}_\perp/\omega$. Then
+\begin{equation}
+je = -\mathbf{e}_\perp\!\left(\mathbf{J}_\perp - \frac{\mathbf{k}_\perp}{\omega}\,J_x\right).
+\label{eq:99.9}
+\end{equation}
+
+Comparing expressions (99.8) and (99.9), they will turn out to be proportional to each other if one can neglect the second terms in the brackets. Since the current $J$ pertains to the upper vertex of the diagrams (99.1), it is not connected with the direction of $\mathbf{p}$; therefore $J_x$ and $\mathbf{J}_\perp$ should be considered as quantities of the same order. The permissibility of the indicated neglect requires, therefore, the fulfilment of the conditions $|\mathbf{k}_\perp| \ll \omega$ and $\omega \ll \varepsilon^2|\mathbf{k}_\perp|/M^2$; they do not contradict the conditions already imposed on $\mathbf{k}_\perp$ and $\omega$.
+
+Accepting that in (99.9) the photon is polarised in the plane $x\mathbf{k}$ (so that $\mathbf{e}_\perp \parallel \mathbf{k}_\perp$), and noting that by virtue of the established conditions $\mathbf{e}_\perp^2 \approx \mathbf{e}^2 = 1$, we obtain now
+\begin{equation}
+M_{fi} = M_{fi}^{(r)}\,\frac{Ze\sqrt{4\pi}}{-k^2}\,\frac{2\varepsilon}{\omega}\,|\mathbf{k}_\perp|.
+\label{eq:99.10}
+\end{equation}
+
+According to what was said above, it is assumed here that the following conditions are fulfilled
+\begin{gather}
+|\mathbf{k}_\perp| \ll \omega \ll m\gamma, \label{eq:99.11} \\
+\frac{\omega}{\gamma^2} \ll |\mathbf{k}_\perp| \ll m, \label{eq:99.12}
+\end{gather}
+
+\SourcePage{487}{492}
+
+where for brevity
+\[
+\gamma = \frac{\varepsilon}{M} = \frac{1}{\sqrt{1 - v^2}}.
+\]
+
+From this one can find the relation between the corresponding cross sections. According to the general formula (64.18) we have (in the rest frame of particle $m$)
+\begin{gather*}
+d\sigma_r = |M_{fi}^{(r)}|^2(2\pi)^4\delta^{(4)}(P_f - P_i)\,\frac{1}{4m\omega}\,d\rho_Q, \\
+d\sigma = |M_{fi}|^2(2\pi)^4\delta^{(4)}(P_f - P_i)\,\frac{1}{4m\omega}\,\frac{d^3p'}{2\varepsilon(2\pi)^3}\,d\rho_Q,
+\end{gather*}
+where $d\rho_Q$ are the statistical weights of the system $Q$. Using (99.10) and (99.7), we obtain
+\begin{equation}
+d\sigma = d\sigma_r\cdot n(\mathbf{k})\,d^3p',
+\label{eq:99.13}
+\end{equation}
+where
+\begin{equation}
+n(\mathbf{k}) = \frac{Z^2e^2}{\pi^2}\,\frac{\mathbf{k}_\perp^2}{\omega(\mathbf{k}_\perp^2 + \omega^2/\gamma^2)^2}.
+\label{eq:99.14}
+\end{equation}
+
+Let us recall that $d\sigma_r$ is the cross section of process $a$), caused by a collision with a real photon, with the resting particle, and there is formed a system of particles $Q$ in definite intervals of their momenta. The cross section $d\sigma$ refers to process $b$)---the formation of the same system $Q$ in the collision of a fast particle (mass $M$) with the same resting particle, with the fast particle remaining in the interval $d^3p'$ of values of $\mathbf{p}'$. The factor $n(\mathbf{k})$ in (99.13) can be interpreted as a density of photons (in $\mathbf{k}$-space) equivalent to the electromagnetic field of the fast particle.
+
+Integration over $d^3p'$ is equivalent to integration over $d^3k = d\omega\,d^2k_\perp$. Carrying out the integration over $d^2k_\perp$, we obtain the cross section of the process in which the total energy $E$ of the system $Q$ lies in a given interval $dE = d\omega$ ($E - m = \varepsilon - \varepsilon' = \omega$, where $\varepsilon$ and $\varepsilon'$ are the initial and final energies of particle $M$). The integration over directions of $\mathbf{k}_\perp$ means averaging over the polarisation directions of the incident photon (together with multiplication by $2\pi$). After this we obtain
+\begin{gather}
+d\sigma = n(\omega)\,d\sigma_r\,d\omega, \notag \\
+n(\omega) = \int n(\mathbf{k})\cdot 2\pi k_\perp\,dk_\perp = \frac{2Z^2e^2}{\pi\omega}\int\frac{k_\perp^3\,dk_\perp}{(k_\perp^2 + \omega^2/\gamma^2)^2}. \label{eq:99.15}
+\end{gather}
+
+The integral over $k_\perp$ diverges for large $k_\perp$. The divergence, however, is only logarithmic. This circumstance permits (within the limits of applicability of the method described) obtaining
+
+\SourcePage{488}{493}
+
+the answer in the logarithmic approximation: it is assumed that not only the argument of the logarithm, but the logarithm itself, is large. With such accuracy it suffices to put for the upper limit of integration $k_{\perp\text{max}} \sim m$---the upper limit of inequality (99.12). Carrying out the integration, we obtain for the spectral distribution of equivalent photons (in ordinary units)
+\begin{equation}
+n(\omega)\,d\omega = \frac{2}{\pi}\,Z\alpha\ln\frac{\gamma mc^2}{\hbar\omega}\,\frac{d\omega}{\omega}.
+\label{eq:99.16}
+\end{equation}
+The adopted approximation means that the numerical coefficient in the argument of the logarithm remains undefined: the introduction of such a coefficient would mean the addition to the large logarithm of a relatively small quantity ($\sim 1$) and would represent an excess of the permissible accuracy.
+
+\bigskip
+
+\noindent\textbf{Problems}
+
+\begin{enumerate}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+
+\item Find the bremsstrahlung cross section in the collision of a fast electron with a nucleus, starting from the scattering of photons on the electron.
+
+\textbf{Solution.} In the system of reference $K_1$ in which the electron is at rest before the collision, the process can be considered as scattering on the electron of equivalent photons of the field of the nucleus\footnote{The scattering of virtual photons on the nucleus (in the rest frame of the nucleus) is excluded by the large mass of the latter: the scattering cross section tends to zero with increasing mass of the scattering particle.}. According to (86.10) the cross section of photon scattering by the electron in the frame $K_1$
+\[
+d\sigma_\text{scatt}(\omega_1,\omega_1') = \pi r_\mathrm{e}^2\,\frac{m\,d\omega_1'}{\varepsilon\omega_1}\!\left[\frac{\omega_1}{\omega_1'} + \frac{\omega_1'}{\omega_1} + \left(\frac{m}{\omega_1'} - \frac{m}{\omega_1}\right)^{\!2} - 2m\!\left(\frac{1}{\omega_1'} - \frac{1}{\omega_1}\right)\right],\eqno{(1)}
+\]
+where $\omega_1$ and $\omega_1'$ are the initial and final energies of the photon in this frame. The bremsstrahlung cross section in the frame $K_1$
+\[
+d\sigma_\text{rad}(\omega_1') = \int d\omega_1\cdot n(\omega_1)\,d\sigma_\text{scatt}(\omega_1,\omega_1'),\eqno{(2)}
+\]
+where $n(\omega_1)$ is function (99.16). By virtue of the invariance of the cross section the transition to the frame $K$ in which the nucleus is at rest reduces to the change of the designated variables. For the region of values probed by $\omega_1$ at given $\omega_1'$, we have (cf.\ (4))
+\[
+\omega \leqslant \omega \leqslant \infty \quad \text{when} \quad \omega' > \frac{m}{2};
+\]
+\[
+\omega \leqslant \omega \leqslant \frac{\omega'}{m - 2\omega'} \quad \text{when} \quad \omega' < \frac{m}{2}.
+\]
+When $\omega' < m/2$ the integration over $\omega$ gives
+\[
+d\sigma_\text{rad}^{(2)} = \frac{16}{3}\,\alpha r_\mathrm{e}^2\,\frac{d\omega'}{\omega'}\!\left(1 - \frac{\omega'}{m} + \frac{\omega'^2}{m^2}\right)\ln\frac{\varepsilon}{\omega'},
+\]
+in agreement with (97.4). If, however, $\omega' > m/2$, one must distinguish the case $\omega' \sim m$ and
+
+\SourcePage{489}{494}
+
+$\omega' \sim \varepsilon \gg m$. In the first case we obtain
+\[
+d\sigma_\text{rad}^{(2)} = \frac{2}{3}\,\alpha r_\mathrm{e}^2\,\frac{m\,d\omega'}{\omega'^2}\!\left(4 - \frac{m}{\omega'} + \frac{m^2}{4\omega'^2}\right)\ln\frac{\varepsilon}{m}
+\]
+in agreement with (97.3) (in the argument of the logarithm the replacement of $\varepsilon/\omega'$ by $\varepsilon/m$ is made with the required accuracy). In the case $\omega' \sim \varepsilon$ the method of equivalent photons is generally inapplicable to computing $d\sigma_\text{rad}^{(2)}$. The frequency of the virtual photon $\omega$ ranges over values starting from $\omega'$, and at $\omega = \omega' \sim \varepsilon$, i.e.\ consequently, condition (99.11) is not fulfilled.
+
+\item The same for bremsstrahlung of the electron on an electron.
+
+\textbf{Solution.} In this case the virtual photon can scatter either on the fast electron, or on the recoil electron, and conversely. The scattering of virtual photons on the fast electron gives a cross section $d\sigma_\text{rad}^{(1)}$ coinciding with the cross section of radiation of the electron on the nucleus with $Z = 1$.
+
+The scattering of virtual photons on the recoil electron gives a cross section of radiation
+\[
+d\sigma_\text{rad}^{(2)} = \int d\omega\cdot n(\omega)\,d\sigma_\text{scatt}(\omega,\omega'),
+\]
+with $d\sigma_\text{scatt}(\omega,\omega')$ from (1) (with the correspondingly changed notation of variables). For the region of values probed by $\omega$ at given $\omega'$, we have (cf.\ (4))
+\[
+\omega \leqslant \omega \leqslant \infty \quad \text{when} \quad \omega' > \frac{m}{2};
+\]
+\[
+\omega \leqslant \omega \leqslant \frac{\omega'}{m - 2\omega'} \quad \text{when} \quad \omega' < \frac{m}{2}.
+\]
+When $\omega' < m/2$ the integration over $\omega$ gives
+\[
+d\sigma_\text{rad}^{(2)} = \frac{16}{3}\,\alpha r_\mathrm{e}^2\,\frac{d\omega'}{\omega'}\!\left(1 - \frac{\omega'}{m} + \frac{\omega'^2}{m^2}\right)\ln\frac{\varepsilon}{\omega'},
+\]
+in agreement with (97.4). If $\omega' > m/2$, one must distinguish $\omega' \sim m$ and $\omega' \sim \varepsilon$. In the first case:
+\[
+d\sigma_\text{rad}^{(2)} = \frac{2}{3}\,\alpha r_\mathrm{e}^2\,\frac{m\,d\omega'}{\omega'^2}\!\left(4 - \frac{m}{\omega'} + \frac{m^2}{4\omega'^2}\right)\ln\frac{\varepsilon}{m}
+\]
+in agreement with (97.3). In the case $\omega' \sim \varepsilon$ the method of equivalent photons is generally inapplicable.
+
+\item Determine the total cross section of pair production by a photon in the field of a nucleus, starting from the cross section of pair production by two photons.
+
+\SourcePage{490}{495}
+
+\textbf{Solution.} The energy of the photon in the rest frame of the nucleus (system $K$): $\omega \gg m$.
+We go to the frame $K_0$ in which the nucleus moves towards the photon with velocity $v_0$ such that
+\[
+\frac{1}{\sqrt{1 - v_0^2}} = \frac{\omega}{2m}.
+\]
+In this frame the photon energy is
+\[
+\omega_0 = \omega\,\frac{1 - v_0}{\sqrt{1 - v_0^2}} \approx \frac{\omega}{2}\sqrt{1 - v_0^2} = m.
+\]
+
+The desired cross section $\sigma$ in the frame $K_0$ is computed as the cross section of pair production at the collision of the incident photon $\omega_0$ with equivalent photons of the nuclear field, whose energies we denote by $\omega'$:
+\[
+\sigma = \int\sigma_{\gamma\gamma}\,n(\omega')\,d\omega',
+\]
+where $\sigma_{\gamma\gamma}$ is the cross section of pair production by two photons; it is given by the solution of the Problem to \S\,88, in which one must set
+\[
+v = \sqrt{1 - \frac{m^2}{\omega_0\omega'}} = \sqrt{1 - \frac{m}{\omega'}}.
+\]
+
+Changing to the integration variable $v$ instead of $\omega'$, we obtain
+\[
+\sigma = 2r_\mathrm{e}^2\alpha Z\int v\ln\!\left[\frac{\omega}{m}(1-v^2)\right]\!\left[(3-v^4)\ln\frac{1+v}{1-v} - 2v(2-v^2)\right]dv.
+\]
+Taking into account the convergence of the integral at the upper limit, the integration extends over the whole region from the reaction threshold $\omega' = m$ ($v = 0$) to $\omega' = \infty$ ($v = 1$) and is carried out with logarithmic accuracy (i.e.\ the logarithm $\ln[\omega(1-v^2)/m]$ is replaced by its value at $v = 0$ and taken outside the integral sign). In the result we obtain
+\[
+\sigma = \frac{28}{9}\,\alpha Z^2 r_\mathrm{e}^2\ln\frac{\omega}{m}
+\]
+in agreement with (94.6); the formula is valid when $\ln(\omega/m) \gg 1$.
+
+\end{enumerate}

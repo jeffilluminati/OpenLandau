@@ -1,0 +1,255 @@
+
+\section{Emission of soft photons in collisions}
+
+\SourcePage{477}{482}
+
+Let $d\sigma_0$ be the cross section of some process of scattering of charged particles, which may be accompanied by the emission of a definite number of photons. Alongside this process let us consider also another process, differing from the first only by the emission of one additional photon. If the frequency $\omega$ of this additional photon is sufficiently small (the corresponding conditions will be formulated below), then the cross section $d\sigma$ is in a simple way related to $d\sigma_0$.
+
+Indeed, at small $d\sigma_0$ one can neglect the reverse influence of the emission of this quantum on the scattering process. In other words, the cross section $d\sigma$ can be represented in the form of a product of two independent factors: the cross section $d\sigma_0$ and the probability $dw$ of emission of one photon in the collision. The emission of a soft photon is a quasi-classical process; therefore its probability coincides with the classically computed number of emitted quanta, i.e.\ with the classical intensity (total energy) of the radiation $dI$, divided by $\omega\;(= \hbar\omega)$. Thus,
+\begin{equation}
+d\sigma = d\sigma_0\,\frac{dI}{\omega}.
+\label{eq:98.1}
+\end{equation}
+
+Let us show that this formula can be obtained by the general rules of the diagram technique (\emph{J.~M.~Jauch, F.~Rohrlich}, 1954). The diagrams of the process with an additional photon are obtained from the diagrams of the basic process by adding an external photon line, ``branching off'' from some (external or internal) electron line, i.e.\ by the replacement
+
+% [Feynman diagram (98.2): replacement of external electron line p by line with soft photon k emission, showing p → p-k propagator]
+
+\SourcePage{478}{483}
+
+It is easy to see that the main role will be played by diagrams obtained by such a replacement in the external electron lines. Indeed, if $p$ is the momentum of the external line ($p^2 = m^2$), then for small $k$ also $(p - k)^2 \approx m^2$, i.e.\ the propagator $G(p - k)$ added in the diagram will be near its pole.
+
+For the line of the initial electron $p$ the replacement (98.2) reduces to a replacement in the amplitude of the reaction:
+\begin{gather*}
+u(p) \to e\sqrt{4\pi}\,G(p-k)(\gamma e^*)\,u(p) = {} \\
+= e\sqrt{4\pi}\,\frac{\gamma p - \gamma k + m}{(p-k)^2 - m^2}\,(\gamma e^*)\,u(p) \approx -e\sqrt{4\pi}\,\frac{\gamma p + m}{2(pk)}\,(\gamma e^*)\,u(p).
+\end{gather*}
+Noting that
+\[
+(\gamma p)(\gamma e^*) = 2pe^* - (\gamma e^*)(\gamma p), \quad \gamma p\,u(p) = mu(p),
+\]
+we obtain the replacement rule in the form
+\begin{equation}
+u(p) \to -e\sqrt{4\pi}\,\frac{(pe^*)}{(pk)}\,u(p).
+\label{eq:98.3}
+\end{equation}
+
+Analogously, for the line of the final electron $p'$ the replacement in the diagram
+
+% [Feynman diagram: replacement of final electron line p' by line with soft photon k emission, showing p'+k propagator]
+
+\noindent means a replacement in the amplitude:
+\begin{equation}
+u(p') \to e\sqrt{4\pi}\,\bar{u}(p')\,\frac{(p'e^*)}{(p'k)}.
+\label{eq:98.4}
+\end{equation}
+
+In all remaining parts of the diagrams one can in general neglect the changes in the momenta of lines associated with the emission of the photon $k$. It is assumed here that the photon energy $\omega$ is in all cases small compared with the energies of all particles participating in the reaction (including compared with the energies of hard photons radiated, if there are such).
+
+For definiteness let the cross section $d\sigma_0$ refer to the scattering of an electron on a fixed nucleus (with possible emission of hard photons). The amplitude of this process, which we shall conventionally call elastic, has the form
+\[
+M_{fi}^\text{el} = \bar{u}(p')\,M\,u(p).
+\]
+Carrying out in it the replacement (98.3) once and (98.4) another time, and combining the results, we obtain the amplitude of bremsstrahlung of the same hard photons and a soft photon $k$\,\footnote{Let us draw attention to the fact that the appearance of the difference in this formula is a natural result of gauge invariance: the amplitude of the reaction must not change under the replacement of the 4-vector of polarisation $e \to e + \text{const}\cdot k$.}:
+\begin{equation}
+M_{fi} = M_{fi}^\text{el}\,e\sqrt{4\pi}\!\left(\frac{(p'e^*)}{(p'k)} - \frac{(pe^*)}{(pk)}\right).
+\label{eq:98.5}
+\end{equation}
+
+\SourcePage{479}{484}
+
+The corresponding cross section
+\begin{equation}
+d\sigma = d\sigma_\text{el}\cdot 4\pi e^2\left|\frac{(p'e)}{(p'k)} - \frac{(pe)}{(pk)}\right|^2\frac{d^3k}{(2\pi)^3\omega}.
+\label{eq:98.6}
+\end{equation}
+
+Summing over the polarisations of the photon $k$, we obtain
+\begin{equation}
+d\sigma = -e^2\left|\frac{p'}{(p'k)} - \frac{p}{(pk)}\right|^2\frac{d^3k}{4\pi^2\omega}\,d\sigma_\text{el}.
+\label{eq:98.7}
+\end{equation}
+
+Expressed through three-dimensional quantities, this formula has the form\footnote{For the derivation it is convenient to return to (98.6), setting $p = (\varepsilon,\,\varepsilon\mathbf{v})$, $pk = \varepsilon\omega(1 - \mathbf{v}\mathbf{n})$, $\ldots$, $e = (0,\,\mathbf{e})$ and carrying out the summation over polarisations afresh with the aid of (45.4a).}
+\begin{equation}
+d\sigma = \alpha\!\left(\frac{[\mathbf{v}'\mathbf{n}]}{1 - \mathbf{v}'\mathbf{n}} - \frac{[\mathbf{v}\mathbf{n}]}{1 - \mathbf{v}\mathbf{n}}\right)^{\!2}\frac{d\omega\,do_\mathbf{k}}{4\pi^2\omega}\,d\sigma_\text{el},
+\label{eq:98.8}
+\end{equation}
+where $\mathbf{n} = \mathbf{k}/\omega$, and $\mathbf{v}$ and $\mathbf{v}'$ are the initial and final velocities of the electron. We see that the expression standing before $d\sigma_\text{el}$ indeed coincides (divided by $\omega$) with the classical intensity of radiation (cf.\ II, (69.4)), as was asserted in formula (98.1).
+
+The condition of applicability of the obtained formulas requires also, besides the smallness of $\omega$ compared with $\varepsilon$, that the momentum transfer to the nucleus $q$ be large compared with the change $\delta\mathbf{q}$ of this quantity associated with the emission of a soft photon. We have
+\[
+\delta\mathbf{q} = (\mathbf{p}' - \mathbf{p} - \mathbf{k}) - (\mathbf{p}' - \mathbf{p})_{\omega=0} = \delta\mathbf{p}' - \mathbf{k},
+\]
+where
+\[
+|\delta\mathbf{p}'| \sim \frac{\partial|\mathbf{p}'|}{\partial\varepsilon}\,\omega \sim \frac{\omega}{v},
+\]
+and $|\mathbf{k}| = \omega$. In the non-relativistic case ($v \ll 1$) we therefore obtain the condition
+\begin{equation}
+\omega/|\mathbf{q}|v \ll 1.
+\label{eq:98.9}
+\end{equation}
+
+In scattering on a Coulomb (and in general on a slowly decreasing with distance) potential $|\mathbf{q}| \sim 1/\rho$ ($\rho$ is the impact parameter), so that this condition can also be represented in the form $\omega\tau \ll 1$, where $\tau \sim \rho/v$ is the characteristic collision time.
+
+In the ultrarelativistic case the photons are radiated mainly in directions close to $\mathbf{v}$ or $\mathbf{v}'$ (as is evident from one of the denominators in (98.8)). If the scattering angle $\theta$ of the electron is small, then the directions of all three vectors $\mathbf{p}$, $\mathbf{p}'$, $\mathbf{n}$ are close to each other. Then
+\[
+|\delta\mathbf{q}| = |\delta\mathbf{p}'| - |\mathbf{k}| = \omega\!\left(\frac{1}{v} - 1\right) \sim \frac{\omega m^2}{\varepsilon^2},
+\]
+
+\SourcePage{480}{485}
+
+and since $|\mathbf{q}| \sim \varepsilon\theta$, we obtain the condition
+\begin{equation}
+\theta \gg \frac{\omega}{\varepsilon}\,\frac{m^2}{\varepsilon^2}.
+\label{eq:98.10}
+\end{equation}
+
+By virtue of the quasi-classical character of formulas (98.5)--(98.8) they are valid for radiation by any charged particles (not necessarily electrons, for which the derivation was carried out). In the general case, when several particles participate in the reaction, formula (98.5) must be written in the form
+\begin{equation}
+M_{fi} = M_{fi}^\text{el}\,e\sqrt{4\pi}\sum Z\!\left(\frac{(p'e^*)}{(p'k)} - \frac{(pe^*)}{(pk)}\right),
+\label{eq:98.11}
+\end{equation}
+where the summation is carried out over all particles (with charges $Ze$); correspondingly formulas (98.6)--(98.8) also change. In particular, in the non-relativistic case
+\begin{equation}
+M_{fi} = M_{fi}^\text{el}\,\frac{e\sqrt{4\pi}}{\omega}\sum Z(\mathbf{v}' - \mathbf{v})\mathbf{e}^*.
+\label{eq:98.12}
+\end{equation}
+
+For two particles this formula takes the form
+\begin{equation}
+M_{fi} = M_{fi}^\text{el}\,\frac{\sqrt{4\pi}}{\omega}\!\left(\frac{Z_1 e}{m_1} - \frac{Z_2 e}{m_2}\right)\mathbf{q}\mathbf{e}^*,
+\label{eq:98.13}
+\end{equation}
+\[
+\mathbf{q} = m(\mathbf{v}' - \mathbf{v}), \quad m = \frac{m_1 m_2}{m_1 + m_2},
+\]
+where $\mathbf{v}$ and $\mathbf{v}'$ are the relative velocity of the particles before and after the collision. Integrating the square $|M_{fi}|^2$ over the photon emission directions and summing over its polarisations, we obtain from this the non-relativistic spectral distribution of the radiation in the form
+\[
+d\sigma = d\sigma_\text{el}\,\frac{2e^2}{3\pi}\!\left(\frac{Z_1}{m_1} - \frac{Z_2}{m_2}\right)^{\!2}\mathbf{q}^2\,\frac{d\omega}{\omega}.
+\]
+
+The obtained results generalise to the case of simultaneous emission of several soft photons. For each of the photons one adds to the amplitude $M_{fi}$ its own factor of the type standing at $M_{fi}^\text{el}$ in (98.5). In this one can easily convince oneself directly, say, on the example of two photons. The lines of both emitted photons must be added to the external electron lines, in two different sequences, i.e.\ the diagram with external line $p$ is replaced by two diagrams with lines
+
+% [Feynman diagrams: two orderings of two soft photon emissions k₁, k₂ from external electron line p]
+
+\SourcePage{481}{486}
+
+Each of them contains the factor (the denominators of the electron propagators)
+\[
+\frac{1}{2((pk_1) + (pk_2))}\,\frac{1}{2(pk_1)} \quad \text{or} \quad \frac{1}{2((pk_1) + (pk_2))}\,\frac{1}{2(pk_2)}.
+\]
+Their sum is
+\[
+\frac{1}{2(pk_1)\cdot 2(pk_2)},
+\]
+i.e.\ it contains the product of two independent factors, corresponding to the first and second photon. After this the sum of all the diagrams is assembled (by virtue of gauge invariance) into the product of differences
+\[
+\left(\frac{(p'e_1^*)}{(p'k_1)} - \frac{(pe_1^*)}{(pk_1)}\right)\!\left(\frac{(p'e_2^*)}{(p'k_2)} - \frac{(pe_2^*)}{(pk_2)}\right).
+\]
+
+Correspondingly the factorisation of the amplitude extends to the factor and also to the cross section of the process. Thus, soft photons are emitted independently. The cross section of the process with emission of $n$ soft photons can be represented in the form
+\begin{equation}
+d\sigma = d\sigma_\text{el}\,dw_1\,dw_2\,\ldots\,dw_n,
+\label{eq:98.14}
+\end{equation}
+where $dw_1$, $dw_2$, $\ldots$ are the probabilities of emission of each individual photon $dk_1$, $dk_2$, $\ldots$\,. Upon integration of this formula over a finite interval of the variables (frequencies and directions), equal for all the quanta, a factor $1/n!$ must be introduced, taking into account the identity of the photons.
+
+If one integrates the radiation cross section (98.1) over frequencies in some finite interval from $\omega_1$ to $\omega_2$, we obtain an expression of the form
+\begin{equation}
+d\sigma \sim \alpha\ln\frac{\omega_2}{\omega_1}\,d\sigma_\text{el}
+\label{eq:98.15}
+\end{equation}
+(cf.\ (98.8)). It is assumed here that both frequencies are soft, so that their possible values are limited by the condition of applicability of the method. With logarithmic accuracy, however, one can set $\omega_2 \sim \varepsilon$, where $\varepsilon$ is the initial energy of the radiating particle. The values of $\omega_1$ are in no way limited from below. Sending $\omega_1$ to zero, we see that the cross section of emission of all possible soft quanta turns to infinity. Let us elucidate the meaning of this situation---the so-called \emph{infrared catastrophe} (\emph{F.~Bloch, A.~Nordsieck}, 1937). When
+\begin{equation}
+\alpha\ln\frac{\varepsilon}{\omega_1} \gtrsim 1
+\label{eq:98.16}
+\end{equation}
+
+\SourcePage{482}{487}
+
+$d\sigma$ will be $d\sigma \gtrsim d\sigma_\text{el}$. But this means the inapplicability of perturbation theory---the impossibility of computing $d\sigma$ as a quantity of higher order of smallness than $d\sigma_\text{el}$. In other words, the parameter of smallness should in the given case be not $\alpha$, but the product $\alpha\ln(\varepsilon/\omega_1)$:
+
+Thus, the derivation of formulas (98.5), (98.6) on the basis of perturbation theory turns out to be incorrect at sufficiently small frequencies. On the other hand, the classical formula for the intensity $dI$ (see II, (69.4)) is applicable to a greater extent, the smaller is $\omega$. Therefore formula (98.1) remains correct, if one somewhat modifies its meaning toward greater classicality. Namely, in (98.1) it was assumed that one photon is radiated; then the energy lost by the particle to radiation coincides with $\omega$ and the ``cross section of the relative energy loss'' is given by the expression $\omega d\sigma/\varepsilon$, i.e.
+\begin{equation}
+d\sigma_\text{el}\,\frac{dI}{\varepsilon}.
+\label{eq:98.17}
+\end{equation}
+
+In reality, however, at sufficiently small $\omega$ the probability of radiation is not small, and the probability of radiation of two or more photons is not less, but greater than the probability of radiation of one photon. Under these conditions expression (98.17) remains valid, but the classical intensity $dI$ will determine not the probability of radiation of one photon, but the mean number of radiated photons, and
+\begin{equation}
+d\bar{n} = \frac{dI}{\omega},
+\label{eq:98.18}
+\end{equation}
+or in a finite interval of frequencies
+\begin{equation}
+\bar{n} = \int_{\omega=\omega_1}^{\omega_2}\frac{dI}{\omega}.
+\label{eq:98.19}
+\end{equation}
+
+Since soft photons are radiated statistically independently (this is valid in all approximations of perturbation theory), the Poisson formula can be applied to the process of multiple radiation: the probability $w(n)$ of emission of $n$ photons is expressed through the mean number $\bar{n}$ by the formula
+\begin{equation}
+w(n) = \frac{\bar{n}^n}{n!}\exp(-\bar{n}).
+\label{eq:98.20}
+\end{equation}
+
+Let us represent the cross section of the scattering process with radiation of photons in the form
+\begin{equation}
+d\sigma = d\sigma_\text{el}\cdot w(n).
+\label{eq:98.21}
+\end{equation}
+Since $\sum w(n) = 1$, $d\sigma_\text{el}$ represents the total cross section of scattering accompanied by any soft radiation. This circumstance is obvious from classical considerations; in the theory of perturbations, however, $d\sigma_\text{el}$ is the cross section of purely elastic scattering. But the theory of perturbations here is inapplicable. It turns out that
+
+\SourcePage{483}{488}
+
+$d\sigma_\text{el}$, computed by perturbation theory as the cross section of elastic scattering, in fact takes into account the emission of any soft photons. As regards the cross section of purely elastic scattering, it is in fact equal to zero: when $\omega_1 \to 0$ the mean number $\bar{n} \to \infty$, and according to (98.20) the probability of emission of any finite number of photons goes to zero\footnote{We shall return to the discussion of this situation in \S\,130 in connection with the study of radiative corrections.}.
+
+\bigskip
+
+\noindent\textbf{Problems}
+
+\begin{enumerate}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+
+\item Find the spectral distribution of the bremsstrahlung of soft photons in scattering of an ultrarelativistic electron on a nucleus\footnote{The formulas given below in the application of formula (98.7) are due to \emph{V.~N.~Baier} and \emph{V.~M.~Galitsky} (1964).}.
+
+\textbf{Solution.} Integration of formula (98.8) over $do_\mathbf{k}$ gives
+\[
+d\sigma = \alpha F(\xi)\,\frac{d\omega}{\omega}\,d\sigma_\text{el},\eqno{(1)}
+\]
+where
+\[
+F(\xi) = \frac{2}{\pi}\!\left[\frac{2\xi^2+1}{\sqrt{\xi^2+1}}\ln(\xi+\sqrt{\xi^2+1}) - 1\right], \quad \xi = \frac{|\mathbf{p}|}{m}\sin\frac{\theta}{2}\eqno{(2)}
+\]
+($\mathbf{p}$ is the momentum, $\theta$ the scattering angle of the electron). In the ultrarelativistic case the essential role is played by the angular region
+\[
+\frac{m^2\omega}{\varepsilon^2} \ll \theta \ll \frac{m}{\varepsilon}\eqno{(3)}
+\]
+(the lower bound is condition (98.10), the upper bound from above). At this $\xi \approx \varepsilon\theta/(2m) \ll 1$, so that $F(\xi) \approx (8/(3\pi))\xi^2$, and the elastic scattering cross section on a nucleus (see (80.10))
+\[
+d\sigma_\text{el} \approx 4Z^2 r_\mathrm{e}^2\,\frac{m^2\,do}{\varepsilon^2\theta^4}.\eqno{(4)}
+\]
+The integral
+\[
+d\sigma_\omega = \frac{16}{3}\,Z^2\alpha r_\mathrm{e}^2\,\frac{d\omega}{\omega}\int\frac{d\theta}{\theta}\eqno{(5)}
+\]
+diverges logarithmically; it is cut off from below at $\theta \sim m^2\omega/\varepsilon^2$, from above at $\theta \sim m/\varepsilon$, so that
+\[
+d\sigma_\omega = \frac{16}{3}\,Z^2\alpha r_\mathrm{e}^2\,\frac{d\omega}{\omega}\ln\frac{\varepsilon^2}{m\omega}
+\]
+in agreement with the logarithmic part of formula (93.17) (in which one should set $\varepsilon \approx \varepsilon'$). Achieving non-logarithmic accuracy is possible only by going beyond the quasi-classical region.
+
+\item For the collision of two ultrarelativistic electrons, determine (in the centre-of-mass frame) the cross section of simultaneous emission of two soft photons in opposite directions at small angles to the momenta of the electrons.
+
+\textbf{Solution.} Photons flying in opposite directions are emitted by different electrons. The cross section of simultaneous emission:
+\[
+d\sigma = d\sigma_\text{el}\cdot\alpha F(\xi)\,\frac{d\omega_1}{\omega_1}\cdot\alpha F(\xi)\,\frac{d\omega_2}{\omega_2}, \quad \xi = \frac{\varepsilon}{m}\sin\frac{\theta}{2}\eqno{(6)}
+\]
+where $\varepsilon$ is the energy of each electron, $\theta$ the scattering angle in the centre-of-mass frame. In the ultrarelativistic case the elastic scattering cross section for small angles in the centre of mass coincides with (4) (cf.\ (81.11)). Unlike $\sigma\,(1)$ the cross section (6) behaves as $\theta\,d\theta$ when $\theta \to 0$, so that the integration over angles is convergent down to $\theta = 0$, and one should use the exact expression (2). On the other hand, the main contribution to the integral cross section comes from $\theta \sim m/\varepsilon$, so that $F(\xi)$ should also be used exactly. The result of integration of the cross section over the scattering angles:
+\[
+d\sigma_{\omega_1\omega_2} = \frac{2}{\pi}\!\left[5 + \frac{7}{2}\,\zeta(3)\right]r_\mathrm{e}^2\alpha^2\,\frac{d\omega_1}{\omega_1}\,\frac{d\omega_2}{\omega_2} = 5.9\,r_\mathrm{e}^2\alpha^2\,\frac{d\omega_1}{\omega_1}\,\frac{d\omega_2}{\omega_2}.
+\]
+($\zeta$ is the Riemann zeta function; $\zeta(3) = 1.202$).
+
+\end{enumerate}
