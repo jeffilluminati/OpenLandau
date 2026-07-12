@@ -1,0 +1,112 @@
+\SourcePage{327}{332}
+\section{Feynman diagrams for photon scattering}
+
+Let us consider another second-order effect---the scattering of a photon on an electron (\textit{Compton effect}). Let in the initial state the photon and electron have 4-momenta $k_1$ and $p_1$, and in the final state $k_2$ and $p_2$ (as well as definite polarisations, which for brevity we do not indicate).
+
+The photonic matrix element
+\begin{equation}
+\langle 2|\mathrm{T}A_\mu(x)A_\nu(x')|1\rangle,
+\tag{74.1}
+\end{equation}
+where
+\[
+\hat{A} = \sum_\mathbf{k}(\hat{c}_\mathbf{k} A_k + \hat{c}_\mathbf{k}^+ A_k^*).
+\]
+Contracting the external and internal operators, we obtain
+\begin{equation}
+(74.1) = c_2\,A_\mu A'_\nu c_1^+ + c_2\,A_\mu' A'_\nu c_1^+ = A^*_{2\mu}A'_{1\nu} + A_{1\mu} A'^*_{2\nu}
+\tag{74.2}
+\end{equation}
+(in this the commutativity of the operators $\hat{c}_1$, $\hat{c}_2^+$ has been taken into account; for this same reason the sign T in this case can be omitted). The electronic matrix element
+\begin{equation}
+\langle 2|\mathrm{T}j^\mu(x)j^\nu(x')|1\rangle = \langle 0|a_2\,\mathrm{T}(\bar{\psi}\gamma^\mu\psi)(\bar{\psi}'\gamma^\nu\psi')\,a_1^+|0\rangle.
+\tag{74.3}
+\end{equation}
+
+\SourcePage{328}{333}
+In it there figure four $\psi$-operators. Only two of them will be engaged in annihilating electron~1 and creating electron~2, i.e.\ will be contracted with the operators $\hat{a}_1^+$ and $\hat{a}_2$. These may be the operators $\bar{\psi}'$, $\hat{\psi}$ or $\bar{\psi}$, $\hat{\psi}'$ (but not $\hat{\psi}$, $\bar{\psi}$ or $\hat{\psi}'$, $\bar{\psi}'$; creation and annihilation in one and the same point $x$ or $x'$ of two real electrons together with one real photon leads to a vanishing expression). Performing the contraction in two ways, we obtain in the matrix element~(74.3) two terms; writing them first for $t > t'$:
+\begin{equation}
+(74.3) = a_2(\bar{\psi}'\gamma^\mu\psi)(\bar{\psi}'\gamma^\nu\psi')\,a_1^+ + a_2(\bar{\psi}\gamma^\mu\psi)(\bar{\psi}'\gamma^\nu\psi')\,a_1^+.
+\tag{74.4}
+\end{equation}
+In the first term the contracted operators are
+\[
+\hat{a}_2 \hat{\bar{\psi}} \to \hat{a}_2 \hat{a}_2^+ \bar{\psi}_2,\qquad \hat{\psi}' \hat{a}_1^+ \to \hat{a}_1 \hat{a}_1^+ \psi_1'.
+\]
+Since the operators $\hat{a}_2 \hat{a}_2^+$ are diagonal and stand at the edges of the product, they are replaced by their vacuum value, i.e.\ by unity. For the analogous transformation of the second term in~(74.4) one must first ``push'' the operator $\hat{a}_2^+$ to the left, and $\hat{a}_1$ to the right. This is accomplished with the help of the commutation rules for the operators $\hat{a}_\mathbf{p}$, $\hat{a}_\mathbf{p}^+$, by virtue of which
+\begin{equation}
+\{\hat{a}_\mathbf{p}, \hat{\psi}\}_+ = \{\hat{a}_\mathbf{p}^+, \hat{\bar{\psi}}\}_+ = 0,
+\tag{74.5}
+\end{equation}
+\[
+\{\hat{a}_\mathbf{p}, \hat{\bar{\psi}}\}_+ = \bar{\psi}_p,\qquad \{\hat{a}_\mathbf{p}^+, \hat{\psi}\}_+ = \psi_p.
+\]
+
+As a result, expression~(74.4) transforms to the form
+\begin{equation}
+\langle 0|(\bar{\psi}_2\gamma^\mu\hat{\psi})(\bar{\psi}'\gamma^\nu\psi_1') - (\bar{\psi}\gamma^\mu\psi_1)(\bar{\psi}_2\gamma^\nu\hat{\psi}')|0\rangle,\quad t > t'
+\tag{74.6}
+\end{equation}
+(it is understood that the averaging is over only the operator factors). Analogously for $t < t'$ we obtain the expression differing by the permutation of the prime and the indices $\mu$, $\nu$:
+\begin{equation}
+\langle 0| - (\hat{\bar{\psi}}'\gamma^\nu\psi_1')(\bar{\psi}_2\gamma^\mu\hat{\psi}) + (\bar{\psi}'_2\gamma^\nu\hat{\psi}')(\hat{\bar{\psi}}\gamma^\mu\psi_1)|0\rangle,\quad t < t'.
+\tag{74.7}
+\end{equation}
+Both expressions can be written in a unified form by introducing the \textit{chronological product of $\psi$-operators} according to the definition
+\begin{equation}
+\mathrm{T}\hat{\psi}_i(x)\hat{\bar{\psi}}_k(x') = \begin{cases}\hat{\psi}_i(x)\hat{\bar{\psi}}_k(x'),& t' < t,\\[3pt] -\hat{\bar{\psi}}_k(x')\hat{\psi}_i(x),& t' > t\end{cases}
+\tag{74.8}
+\end{equation}
+($i$, $k$ are bispinor indices). Then the first and second terms in~(74.6), (74.7) can be written in a unified form:
+\begin{equation}
+\bar{\psi}_2\gamma^\mu\langle 0|\mathrm{T}\psi\cdot\bar{\psi}'|0\rangle\gamma^\nu\psi_1' + i\bar{\psi}_2'\gamma^\nu\langle 0|\mathrm{T}\psi'\cdot\bar{\psi}|0\rangle\gamma^\mu\psi_1
+\tag{74.9}
+\end{equation}
+($\psi\cdot\bar{\psi}$ denotes the matrix $\psi_i\bar{\psi}_k$).
+
+\SourcePage{329}{334}
+Let us call attention to the fact that in the definition~(74.8) the products of operators at $t < t'$ and $t > t'$ are taken with different signs. In this it differs from the definition of the T-product to which we resorted for the operators $\hat{A}$ and $\hat{j}$. The origin of this difference is connected with the fact that the fermionic operators $\hat{\psi}$, $\hat{\bar{\psi}}$ anticommute outside the light cone (in contrast to the commuting bosonic operators $\hat{A}$), and also with the bilinearity of the operators $\hat{j} = \hat{\bar{\psi}}\gamma\hat{\psi}$\,\footnote{Let us recall that the $\psi$-operators by themselves do not correspond to any measurable physical quantities and are therefore not required to be commutative outside the light cone.}. Thereby the relativistic invariance of definition~(74.8) is ensured (the formal proof of the commutation rules for $\psi$-operators will be given in~\S\,75)\,\footnote{Analogously one can define the T-product of any number of $\psi$-operators. It is equal to the product of all these operators, placed in a row in the order of decreasing times, the sign being determined by the parity of the permutation which it is necessary to perform in order to obtain this order from the order indicated under the sign T.}.
+
+Let us introduce the \textit{electron propagator} (or \textit{electron Green's function})---a bispinor of second rank $G_{ik}(x - x')$---according to the definition
+\begin{equation}
+G_{ik}(x - x') = -i\langle 0|\mathrm{T}\psi_i(x)\bar{\psi}_k(x')|0\rangle.
+\tag{74.10}
+\end{equation}
+Then the electronic matrix element is written in the form
+\begin{equation}
+\langle 2|\mathrm{T}j^\mu(x)j^\nu(x')|1\rangle = i\bar{\psi}_2\gamma^\mu G\gamma^\nu\psi_1' + i\bar{\psi}_2'\gamma^\nu G\gamma^\mu\psi_1.
+\tag{74.11}
+\end{equation}
+After multiplication by the photonic matrix element~(74.1) and integration over $d^4x\,d^4x'$, both terms in~(74.11) give the same result, so that there arises
+\begin{equation}
+S_{fi} = -ie^2\iint d^4x\,d^4x'\,\bar{\psi}_2(x)\gamma^\mu G(x - x')\gamma^\nu\psi_1(x') \times \{A^*_{2\mu}(x)A_{1\nu}(x') + A^*_{2\nu}(x')A_{1\mu}(x)\}.
+\tag{74.12}
+\end{equation}
+Substituting for the electronic and photonic wave functions plane waves~(64.8), (64.9) and isolating the $\delta$-function as was done for~(73.10), we obtain finally the amplitude of scattering
+\begin{equation}
+M_{fi} = -4\pi e^2\,\bar{u}_2\{(\gamma e_2^*)\,G(p_1 + k_1)(\gamma e_1) + (\gamma e_1)\,G(p_1 - k_2)(\gamma e_2^*)\}\,u_1,
+\tag{74.13}
+\end{equation}
+
+\SourcePage{330}{335}
+where $e_1$, $e_2$ are the 4-vectors of polarisation of the photons, $G(p)$ is the electron propagator in the momentum representation.
+
+The two terms in this expression are represented by the following Feynman diagrams:
+\begin{equation}
+4\pi e^2\,\bar{u}_2(\gamma e_2^*)\,G(f)(\gamma e_1)\,u_1 =
+% [Feynman diagram: Compton scattering, s-channel]
+\tag{74.14}
+\end{equation}
+\[
+4\pi e^2\,\bar{u}_2(\gamma e_1)\,G(f')(\gamma e_2^*)\,u_1 =
+% [Feynman diagram: Compton scattering, u-channel]
+\]
+
+The dashed free ends correspond to real photons; to the incoming lines (initial photon) there corresponds the factor $\sqrt{4\pi}\,e_\mu$, and to the outgoing lines (final photon) the factor $\sqrt{4\pi}\,e^*$, where $e$ is the 4-vector of polarisation. In the first diagram the initial photon is absorbed together with the initial electron, and the final photon is emitted together with the final electron. In the second diagram the emission of the final photon occurs together with the annihilation of the initial electron, and the absorption of the initial photon together with the creation of the final electron.
+
+The internal solid line (joining both vertices) corresponds to a virtual electron, whose 4-momentum is determined by conservation of 4-momentum in the vertices. To this line there corresponds the factor $iG(f)$. In contrast to the 4-momentum of a real particle, the square of the 4-momentum of the virtual electron is not equal to $m^2$. Considering the invariant $f^2$, for example, in the rest frame of the electron, it is easy to find that
+\begin{equation}
+f^2 = (p_1 + k_1)^2 > m^2,\qquad f'^2 = (p_1 - k_2)^2 < m^2.
+\tag{74.15}
+\end{equation}
+

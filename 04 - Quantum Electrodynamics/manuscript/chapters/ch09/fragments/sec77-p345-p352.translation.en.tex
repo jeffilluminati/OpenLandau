@@ -1,0 +1,147 @@
+\SourcePage{340}{345}
+\section{General rules of diagram technique}
+
+The computation performed in~\S\S\,73, 74 for a few simple cases of elements of the scattering matrix contains in itself all the principal elements of the general method. It presents no special difficulty to establish the corresponding generalisations by appropriate generalisation of the rules of computing matrix elements in any order of perturbation theory.
+
+As has already been indicated, the matrix element of the scattering operator $\hat{S}$ for the transition between any initial and final states coincides with the vacuum average of the operator obtained by multiplying $\hat{S}$ from the right by operators of creation of all initial particles, and from the left by operators of annihilation of all final particles. The computation of such averages is accomplished with the help of the following statements constituting the content of \textit{Wick's theorem} (\textit{G.\,C.\,Wick}, 1950).
+
+1.~The vacuum average of a product of any number of bosonic operators $\hat{c}^+$, $\hat{c}$ is equal to the sum of products of all possible pairwise averages (contractions) of these operators. In this each pair the factors must stand in the same order as in the original product.
+
+2.~For fermionic operators $\hat{a}^+$, $\hat{a}$, $\hat{b}^+$, $\hat{b}$ (of the same or different particles) the rule changes only in that each term enters the sum with a sign plus or minus depending on the evenness or oddness of the number of permutations of fermionic operators needed to place side by side all the pairwise averaged operators.
+
+It is clear that the average can be different from zero only if alongside each factor $\hat{a}$, $\hat{b}$, $\hat{c}$ in the product there is also a factor $\hat{a}^+$, $\hat{b}^+$, $\hat{c}^+$. In this contractions should include only pairs of operators ($\hat{a}, \hat{a}^+$), $\ldots$, relating to the same states, and only those in which $\hat{a}^+, \ldots$ stands to the right of $\hat{a}, \ldots$: a particle is first created and then annihilated ($\langle 0|a^+a|0\rangle = 0, \ldots$\,).
+
+If each pair ($\hat{a}, \hat{a}^+$), $\ldots$ enters the product only once, then Wick's theorem is obvious (the average reduces to a single product of pairwise averages). It is also obvious in the case when all operators of annihilation stand to the right of the operators of creation in the product (such a product is called \textit{normal-ordered}); the average is in this case equal to zero. From here it is easy by complete induction to prove Wick's theorem for the general case, when one and the same pair of operators enters the product several ($k$) times.
+
+\SourcePage{341}{346}
+Let us consider the vacuum average $\langle 0|\ldots cc^+\ldots|0\rangle$, in which a pair of bosonic operators $\hat{c}$, $\hat{c}^+$ enters $k$ times (for fermionic operators the further arguments are completely analogous). Rearranging the factors $\hat{c}$, $\hat{c}^+$ in some pair, we obtain on the basis of the commutation rules
+\begin{equation}
+\langle 0|\ldots cc^+\ldots|0\rangle = \langle 0|\ldots c^+c\ldots|0\rangle + \langle 0|\ldots 1\ldots|0\rangle.
+\tag{77.2}
+\end{equation}
+The average $\langle 0|\ldots 1\ldots|0\rangle$ contains $k-1$ pairs, and for it Wick's theorem is assumed to hold. On the other hand, if one expands the average $\langle 0|\ldots c^+c\ldots|0\rangle$ according to Wick's theorem, it will differ from the average $\langle 0|\ldots c^+c\ldots|0\rangle$ by precisely the term $\langle 0|\ldots 1\ldots|0\rangle$
+\[
+\langle 0|\ldots 1\ldots|0\rangle\langle 0|cc^+|0\rangle = \langle 0|\ldots 1\ldots|0\rangle
+\]
+(in expanding $\langle 0|\ldots c^+c\ldots|0\rangle$ the analogous term $\langle 0|\ldots 1\ldots|0\rangle \times \langle 0|c^+c|0\rangle = 0$). Therefore from~(77.2) it follows that if Wick's theorem is valid for the matrix element $\langle 0|\ldots c^+c\ldots|0\rangle$, then it remains valid also after the permutation of $\hat{c}$ and $\hat{c}^+$. Since for one definite (normal) ordering of the factors Wick's theorem holds trivially, it is thereby true in any case.
+
+Being valid for products of operators $\hat{a}$, $\hat{b}$, $\ldots$, Wick's theorem is valid also for any products containing alongside the $\hat{a}$, $\hat{b}$, $\ldots$ also their linear combinations $\hat{\psi}$, $\hat{\bar{\psi}}$, $\hat{A}$. Applying this theorem to the matrix element~(77.1), we represent it in the form of a sum of terms, each of which will be a product of some pairwise averages. Among the latter there will be contractions of the operators $\hat{\psi}$, $\hat{\bar{\psi}}$, $\hat{A}$ with ``external'' operators---operators of creation of initial or annihilation of final particles. These contractions are expressed through the wave functions of the initial and final particles according to the formulae:
+\begin{equation}
+\begin{gathered}
+\langle 0|Ac_\mathbf{p}^+|0\rangle = A_p,\qquad \langle 0|c_\mathbf{p} A|0\rangle = A_p^*,\\[3pt]
+\langle 0|\psi a_\mathbf{p}^+|0\rangle = \psi_p,\\[3pt]
+\langle 0|a_\mathbf{p}\bar{\psi}|0\rangle = \bar{\psi}_p^*,\qquad \langle 0|b_\mathbf{p}\psi|0\rangle = \psi_{-p},\qquad \langle 0|\bar{\psi}b_\mathbf{p}^+|0\rangle = \bar{\psi}_{-p},
+\end{gathered}
+\tag{77.3}
+\end{equation}
+where $A_p$, $\psi_p$ are the photonic and electronic wave functions with momenta $\mathbf{p}$ (as in~\S\S\,73, 74, for brevity we do not write out the polarisation indices). There will also be contractions of the operators $\hat{\psi}$, $\hat{\bar{\psi}}$, $\hat{A}$ standing under the sign of T-products. Since in applying Wick's theorem the ordering of factors in each contracting pair is preserved, in these contractions the chronological ordering of the operators is also preserved, so that they are replaced by the corresponding propagators\,\footnote{Concerning the last assertion the following remark is in order. In proving Wick's theorem we used the commutation rules for the operators $\hat{c}$, $\hat{c}^+$, which have meaning only for real (``transverse'') photons. The ``external'' operators $\hat{c}_f^+$, $\hat{c}_f$ also correspond to such (initial and final) photons. But the operators $\hat{A}$ (entering under the sign of the T-product) describe, as was indicated in~\S\,76, not only transverse
+
+\SourcePage{342}{347}
+photons. The situation is the same here as when computing $D_{\mu\nu}$ in~\S\,76. By virtue of relativistic and gauge invariance it is sufficient to prove the theorem for the transverse (i.e.\ the component of the tensor $\langle 0|\mathrm{T}A_\mu A_\nu|0\rangle$) which are defined by transverse parts of the potentials. It is thereby proved also for arbitrary products.}.
+
+\SourcePage{343}{348}
+Each of the terms of the sum into which the matrix element is decomposed as a result of its expansion according to Wick's theorem is represented by a definite Feynman diagram. A diagram of the $n$-th approximation contains $n$ vertices, to each of which there corresponds one of the variables of integration---one of the 4-vectors $x_1, x_2, \ldots$\,. To each vertex there come three rays---two solid (electronic) and one dashed (photonic), corresponding respectively to the electronic ($\hat{\psi}$ and $\hat{\bar{\psi}}$) and photonic ($\hat{A}$) operators as functions of one and the same variable~$x$. In this the operator $\hat{\psi}$ corresponds to a line coming into the vertex, and $\hat{\bar{\psi}}$ to a line going out from it.
+
+For illustration let us present several examples of correspondence between members of the matrix element of the third approximation and diagrams. Dropping the sign of the integral, the sign of the operators, and the sign T, and also the factors $-ie\gamma$ and not writing out the arguments $x$ of the operators, let us write these terms symbolically in the form
+\begin{equation}
+\begin{aligned}
+a\quad &(\bar{\psi}\,A\,\psi)(\bar{\psi}\,A\,\psi)(\bar{\psi}\,A\,\psi) &&\\[4pt]
+b\quad &(\bar{\psi}A\psi)(\bar{\psi}\,A\,\psi)(\bar{\psi}A\psi) &&\\[4pt]
+c\quad &(\bar{\psi}\,A\,\psi)(\bar{\psi}\,A\,\psi)(\bar{\psi}A\psi) &&\\[4pt]
+d\quad &(\bar{\psi}A\psi)(\bar{\psi}A\psi)(\bar{\psi}A\psi) &&
+\end{aligned}
+\tag{77.4}
+\end{equation}
+
+For clarity, electronic and photonic contractions are depicted on the diagram as solid and dashed arcs respectively. The direction of the arrows on the electronic contractions (from $\bar{\psi}$ to $\psi$) corresponds to the direction of the electron propagator; for the internal photonic contractions the direction is immaterial (which is also manifested in the evenness of the photon propagator as a function of $x - x'$).
+
+Among the terms obtained in this way there are equivalent ones, differing only by the permutation of vertex numbers, i.e.\ simply by the designation of the variables of integration $x_1, x_2,\ldots$\,. The number of such permutations is $n!$. It cancels the factor $1/n!$
+
+\SourcePage{344}{349}
+in~(77.1), after which it is no longer necessary to count diagrams with permutation of vertices. We have already encountered this circumstance in~\S\S\,73, 74. Thus, two diagrams of the second approximation are equivalent:
+\begin{equation}
+(\bar{\psi}A\,\psi)(\bar{\psi}A\psi) = % [Feynman diagram: two-vertex diagram with internal photon line]
+\tag{77.5}
+\end{equation}
+
+In~(77.4) and~(77.5) only the internal lines of the diagrams are depicted, which correspond to internal contractions (virtual electrons and photons). The remaining free operators are contracted with those or other external operators---operators of creation of initial or annihilation of final particles, and as a result there is established the correspondence between the free ends of the diagrams and those or other initial and final particles.
+
+In this $\hat{\bar{\psi}}$ (contracting with the operators $\hat{a}_f$ or $\hat{b}_f^+$) gives a line of the final electron or initial positron, and $\hat{\psi}$ (contracting with $\hat{a}_f^+$ or $\hat{b}_f$) gives a line of the initial electron or final positron. The free operator $\hat{A}$ (contracting with $\hat{c}_f^+$ or $\hat{c}_f$) can correspond to both the initial and the final photon. Thus, there are obtained several topologically identical (i.e.\ consisting of an identical number of identically arranged lines) diagrams, differing only by the permutations of initial and final particles among the incoming and outgoing free ends.
+
+Each such permutation is equivalent, obviously, to a definite permutation of external operators $\hat{a}$, $\hat{b}$, $\ldots$ in~(77.1). It is clear therefore that if among the initial or among the final particles there are identical fermions, then the relative signs of diagrams differing by an odd number of permutations of free ends must be opposite.
+
+The continuous succession of solid lines on the diagrams, along which the arrows preserve an unbroken direction, constitutes an \textit{electron line}. Such a line can either have two free ends or form a closed loop. Thus, the diagram
+\[
+(\bar{\psi}\,A\,\psi)(\bar{\psi}A\psi) =
+\]
+has a loop with two vertices. The conservation of direction along the
+
+\SourcePage{345}{350}
+electron line is a graphical expression of conservation of charge: the charge ``entering'' each vertex equals the charge ``leaving'' it.
+
+The arrangement of bispinor indices along a continuous electron line corresponds to the convention of writing the matrices from left to right in the direction of traversal against the arrows. Along an open line the bispinor indices never get confused. Along a closed loop, however, the succession of indices terminates at the free ends of electronic (or positronic) wave functions; while along a closed loop the succession also closes, i.e.\ the loop corresponds to a trace of the product of matrices arranged along it. It is easy to see that this trace must be taken with a minus sign.
+
+Indeed, a loop with $k$ vertices corresponds to a set of $k$ contractions
+\[
+\overbrace{(\bar{\psi}\,A\,\psi)(\bar{\psi}\,A\,\psi)\ldots(\bar{\psi}\,A\,\psi)}
+\]
+(or another equivalent, differing by a permutation of vertices). In the ($k-1$)-th contraction the operators $\hat{\psi}$ and $\hat{\bar{\psi}}$ already stand side by side (the $\hat{\bar{\psi}}$ to the right of $\hat{\psi}$), in which order they should stand in the electron propagator. But the operators at the edges, having been brought to proximity with an even number of permutations with other $\psi$-operators, turn out to be arranged in the order $\bar{\psi}\psi$. Since
+\[
+\langle 0|\mathrm{T}\bar{\psi}\psi|0\rangle = -\langle 0|\mathrm{T}\psi\bar{\psi}|0\rangle
+\]
+(cf.~the remark on p.\,334), the replacement of this contraction by the corresponding propagator is connected with the change of sign of the whole expression.
+
+The transition to the momentum representation in the general case is carried out completely analogously to how it was done in~\S\S\,73, 74. Alongside the general law of conservation of 4-momentum, there must also be satisfied ``conservation laws'' in each vertex. However, all these conservation laws may turn out to be insufficient for the unambiguous determination of the 4-momenta of all internal lines of the diagram. In such cases, for all remaining undetermined internal momenta there remain integrations (over $d^4p/(2\pi)^4$), carried out over the whole of $p$-space (including also over $p_0$ from $-\infty$ to $+\infty$).
+
+In the above arguments it was assumed that the perturbation acts as the interaction between the particles themselves, ``actively'' participating in the reaction (i.e.\ between particles whose state changes as a result of the process). Analogously one considers also the case when the problem involves an external electromagnetic field, i.e.\ a field created by ``passive'' particles whose state does not change in the given process.
+
+Let $A^{(e)}(x)$ be the 4-potential of the external field. It enters the Lagrangian of interaction
+
+\SourcePage{346}{351}
+in the form of the sum $\hat{A} + A^{(e)}$ (which is also multiplied by the current operator $\hat{j}$). Since $A^{(e)}$ does not contain any operators, it cannot form contractions with other operators. In other words, to the external field there correspond in the Feynman diagrams only external lines.
+
+Let us represent $A^{(e)}$ in the form of the Fourier integral:
+\begin{equation}
+A^{(e)}(x) = \int A^{(e)}(q)\,e^{-iqx}\,\frac{d^4q}{(2\pi)^4},
+\tag{77.6}
+\end{equation}
+\[
+A^{(e)}(q) = \int A^{(e)}(x)\,e^{iqx}\,d^4x.
+\]
+
+In the expressions for matrix elements in the momentum representation the 4-vector $q$ will figure alongside the 4-momenta of the other external lines corresponding to real particles. To each such line of the external field there corresponds the factor $A^{(e)}(q)$, the line being to be considered ``incoming''---in accordance with the sign of the exponent in the factor $e^{-iqx}$ with which $A^{(e)}(q)$ enters the Fourier integral~(77.6). If thereby the law of conservation of 4-momentum (given the 4-momenta of all real particles) does not fix uniquely all 4-momenta $q$ of all external field lines, then for the remaining ``free'' ones integration over $d^4q/(2\pi)^4$ is carried out, as for all other unfixed internal 4-momenta of lines of the diagram.
+
+If the external field does not depend on time, then
+\begin{equation}
+A^{(e)}(q) = 2\pi\delta(q^0)\,A^{(e)}(\mathbf{q}),
+\tag{77.7}
+\end{equation}
+where $A^{(e)}(\mathbf{q})$ is the three-dimensional Fourier component:
+\begin{equation}
+A^{(e)}(\mathbf{q}) = \int A^{(e)}(\mathbf{r})\,e^{-i\mathbf{q}\mathbf{r}}\,d^3x.
+\tag{77.8}
+\end{equation}
+In this case the external line is associated with the factor $A^{(e)}(\mathbf{q})$ and to it there is ascribed the 4-momentum $q^\mu = (0,\mathbf{q})$; the energies of the electronic lines intersecting (together with the external field line) in the vertex are equal by virtue of the law of conservation. For all remaining unfixed three-dimensional momenta $\mathbf{p}$ of internal lines integration over $d^3p/(2\pi)^3$ is carried out. The computed amplitude $M_{fi}$ determines, for example, the cross section of scattering~(64.25).
+
+\SourcePage{347}{352}
+Let us give a final summary of the rules of \textit{diagram technique}, according to which the expression for the amplitude of scattering (more precisely, the expression for $iM_{fi}$) is compiled in the momentum representation.
+
+1.~To the $n$-th order of perturbation theory there correspond diagrams with $n$ vertices, to each of which there come one incoming and one outgoing electronic (solid) and one photonic (dashed) line. The amplitude of the process of scattering includes all diagrams having free ends (external lines) in the number equal to the number of initial and final particles.
+
+2.~To each external incoming solid line there corresponds the amplitude of the initial electron $u(p)$ or of the final positron $u(-p)$ ($p$ is the 4-momentum of the particle). To each outgoing solid line there corresponds the amplitude of the final electron $\bar{u}(p)$ or of the initial positron $\bar{u}(-p)$.
+
+3.~To each vertex there corresponds the 4-vector $-ie\gamma^\mu$.
+
+4.~To each external incoming dashed line there corresponds the amplitude of the initial photon $\sqrt{4\pi}\,e_\mu$, and to the outgoing line the amplitude $\sqrt{4\pi}\,e^*_\mu$ of the final photon ($e$ is the 4-vector of polarisation).
+
+5.~To each internal solid line there corresponds the factor $iG(p)$, and to each internal dashed line the factor $-iD_{\mu\nu}(p)$. The tensor indices $\mu\nu$ coincide with the indices of the matrices $\gamma^\mu$, $\gamma^\nu$ in the vertices joined by the dashed line.
+
+6.~Along each continuous succession of solid lines the arrows have an unchanged direction, and the arrangement of bispinor indices along it corresponds to the convention of writing the matrices from left to right in the direction of traversal against the arrows. A closed electron loop corresponds to a trace of the product of matrices arranged along it.
+
+7.~In each vertex the 4-momenta of lines intersecting in it satisfy the law of conservation, i.e.\ the sum of momenta of incoming lines equals the sum of momenta of outgoing lines. The momenta of the free ends are given (with the overall law of conservation of 4-momentum ensured), and the positronic line is ascribed the momentum $-p$.
+
+8.~To the external free end corresponding to the external field there corresponds the factor $A^{(e)}(q)$; the 4-vector $q$ is related to the 4-momenta of other lines by the law of conservation in the vertex.
+
+9.~An additional factor $-1$ is introduced into the expression for $iM_{fi}$ for each closed electron loop in the diagram and for each pair of positronic external ends, if these ends are the beginning and end of one continuous succession of solid lines. If among the initial or among the final particles there are several electrons or positrons, then the relative sign of diagrams differing by an odd number of permutations of free ends (i.e.\ diagrams which would be identical after the removal of all photonic lines) must be opposite.
+
+For the last rule to be more precise, let us add that diagrams with identical signs should in any case have diagrams whose solid lines are identical, i.e.\ diagrams which would be identical after the removal of all photonic lines. Let us recall also that in the presence of identical fermions the overall sign of the amplitude is arbitrary.

@@ -1,0 +1,105 @@
+\SourcePage{316}{321}
+\section{Chronological product}
+
+The probabilities of various processes in collisions of particles, the interaction between which can be considered small, are computed with the help of perturbation theory. In its usual (for non-relativistic quantum mechanics) form the apparatus of this theory possesses, however, the drawback that it does not make manifest the requirement of relativistic invariance. Although in applying such an apparatus to relativistic problems the final result will ultimately satisfy this requirement, the non-invariant form of the intermediate formulae substantially complicates the calculation. The present chapter is devoted to the development, free from this drawback, of the consistent relativistic perturbation theory; it was constructed by \textit{Feynman} (\textit{R.\,P.\,Feynman}, 1948--1949).
+
+Having in mind the second-quantised description of the system, let us denote by $\Phi$ its wave function in the representation of occupation numbers of states of free particles. The Hamiltonian of the system $\hat{H} = \hat{H}_0 + \hat{V}$, where $\hat{V}$ is the interaction operator.
+Let $\Phi_n$ be the eigenfunctions of the unperturbed Hamiltonian; each of them corresponds to a certain definite set of occupation numbers. An arbitrary function $\Phi$ is represented in the form of the expansion $\Phi = \sum C_n \Phi_n$. Then the exact wave equation
+\begin{equation}
+i\frac{\partial\Phi}{\partial t} = (\hat{H}_0 + \hat{V})\Phi
+\tag{72.1}
+\end{equation}
+is represented in the form of a system of equations for the coefficients $C_n$:
+\begin{equation}
+i\dot{C}_n = \sum_m V_{nm}\exp[i(E_n - E_m)t]\,C_m,
+\tag{72.2}
+\end{equation}
+where $V_{nm}$ are the time-independent matrix elements of the operator $\hat{V}$, and $E_n$ are the energy levels of the unperturbed system (cf.~III, \S\,40).
+
+By definition the operator $\hat{V}$ does not depend explicitly on time. But the quantities
+\begin{equation}
+V_{nm}(t) = V_{nm}\exp[i(E_n - E_m)t]
+\tag{72.3}
+\end{equation}
+
+\SourcePage{317}{322}
+can be regarded as matrix elements of a time-dependent operator
+\begin{equation}
+\hat{V}(t) = \exp(i\hat{H}_0 t)\,\hat{V}\exp(-i\hat{H}_0 t).
+\tag{72.4}
+\end{equation}
+One speaks of it as of the operator in the \textit{interaction representation} (in contrast to the original time-independent Schr\"{o}dinger operator $\hat{V}$\,\footnote{Let us emphasise that in the definition~(72.4) there figures the unperturbed Hamiltonian $H_0$. In this it differs from the \textit{Heisenberg representation} of operators, in which
+\[
+\hat{V}^H(t) = \exp(i\hat{H}t)\,\hat{V}\exp(-i\hat{H}t)
+\]
+(see~III, \S\,13 and below, \S\,102).}). Denoting now by the former letter $\Phi$ the wave function in this new representation, we write equation~(72.2) in the symbolic form
+\begin{equation}
+i\dot{\Phi} = \hat{V}(t)\Phi.
+\tag{72.5}
+\end{equation}
+
+The change of the wave function in this representation is connected only with the action of the perturbation, i.e.\ it corresponds to the processes occurring as a result of the interaction of the particles.
+
+If $\Phi(t)$ and $\Phi(t + \delta t)$ are the values of $\Phi$ at two infinitely close moments of time, then by virtue of~(72.5) they are connected with each other by
+\[
+\Phi(t + \delta t) = [1 - i\delta t\,\hat{V}(t)]\Phi(t) = \exp[-i\delta t \cdot \hat{V}(t)]\Phi(t).
+\]
+Correspondingly, the value of $\Phi$ at an arbitrary moment $t_f$ can be expressed through the value at some initial moment $t_i$ ($t_f > t_i$) as
+\begin{equation}
+\Phi(t_f) = \left\{\prod_i^f\exp[-i\delta t_\alpha\cdot\hat{V}(t_\alpha)]\right\}\Phi(t_i),
+\tag{72.6}
+\end{equation}
+where the sign $\prod$ denotes the limit of the product over all infinitely small intervals $\delta t_\alpha$ between $t_i$ and $t_f$. If $V(t)$ were an ordinary function, then this limit would reduce simply to
+\[
+\exp\left\{-i\int_{t_i}^{t_f}V(t)\,dt\right\}.
+\]
+But such a reduction relies on the commutativity of the factors (taken at different moments of time) implied in passing from the product in~(72.6) to summation in the exponent. For the operator $\hat{V}(t)$ no such commutativity exists, and the reduction to an ordinary integral is impossible.
+
+\SourcePage{318}{323}
+Let us write~(72.6) in the symbolic form
+\begin{equation}
+\Phi(t_f) = \mathrm{T}\exp\left\{-i\int_{t_i}^{t_f}\hat{V}(t)\,dt\right\}\Phi(t_i),
+\tag{72.7}
+\end{equation}
+where T is the symbol of \textit{chronologisation}, denoting a definite (``chronological'') ordering of moments of time in the successive factors of the product~(72.6). In particular, setting $t_i \to -\infty$, $t_f \to +\infty$, we obtain
+\begin{equation}
+\Phi(+\infty) = \hat{S}\Phi(-\infty),
+\tag{72.8}
+\end{equation}
+where
+\begin{equation}
+\hat{S} = \mathrm{T}\exp\left\{-i\int_{-\infty}^{\infty}\hat{V}(t)\,dt\right\}.
+\tag{72.9}
+\end{equation}
+
+The meaning of the expressions~(72.7)--(72.9) as the formally exact solution of the wave equation consists in that such a representation makes it easy to write a series representing the expansion in powers of the perturbation:
+\begin{equation}
+\hat{S} = \sum_{k=0}^{\infty}\frac{(-i)^k}{k!}\int_{-\infty}^{\infty}dt_1\int_{-\infty}^{\infty}dt_2\ldots\int_{-\infty}^{\infty}dt_k\,\mathrm{T}\{\hat{V}(t_1)\hat{V}(t_2)\ldots\hat{V}(t_k)\}.
+\tag{72.10}
+\end{equation}
+Here in each term the $k$-th power of the integral is written in the form of a $k$-fold integral, and the symbol T means that in each region of values of the variables $t_1, t_2, \ldots, t_k$ one must place the corresponding operators in chronological order from right to left in the order of increasing values of $t$\,\footnote{The derivation of the rules of relativistic perturbation theory with the help of the expansion~(72.10) is due to \textit{Dyson} (\textit{F.\,Dyson}, 1949).}.
+
+From definition~(72.8) it is clear that if before the collision the system was in the state $\Phi_i$ (a certain set of free particles), then the amplitude of probability of its transition into the state $\Phi_f$ (a different set of free particles) is the matrix element $S_{fi}$. In other words, these elements are what constitute the $S$-matrix.
+
+The operator of electromagnetic interaction was written already in~\S\,43:
+\begin{equation}
+\hat{V} = e\int(\hat{j}\hat{A})\,d^3x.
+\tag{72.11}
+\end{equation}
+Substituting it into~(72.9), we get
+\begin{equation}
+\hat{S} = \mathrm{T}\exp\left\{-ie\int(\hat{j}\hat{A})\,d^4x\right\}.
+\tag{72.12}
+\end{equation}
+
+\SourcePage{319}{324}
+It is essential that the operator~(72.12) is relativistically invariant. This is evident from the scalar character of the sub-integral expression, the invariant nature of the integration over $d^4x$, and the invariant character of the operation of chronologisation. The last circumstance, however, requires clarification.
+
+As is well known, the ordering of two moments of time $t_1$ and $t_2$ (the sign of the difference $t_2 - t_1$) does not depend on the choice of the system of reference if these moments pertain to world points $x_1$ and $x_2$ separated by a timelike interval: $(x_2 - x_1)^2 > 0$. In this case the invariance of the chronologisation is automatic. But if $(x_2 - x_1)^2 < 0$ (spacelike interval), then in different systems of reference one can have both $t_2 > t_1$ and $t_2 < t_1$\,\footnote{Instead of timelike and spacelike intervals one speaks for brevity of regions: all points $x$, separated from the point $x'$ by intervals with $(x - x')^2 > 0$, lie within the light cone; all points $x'$, separated from point $x$ by intervals with $(x - x')^2 < 0$, lie outside the light cone.}. But such two points correspond to events between which there can be no causal connection. It is clear therefore that there can be no non-commutative operators of two physical quantities relating to such points: non-commutativity of operators physically signifies the joint immeasurability of the given quantities, which presupposes the existence of a physical connection between both measurements. Consequently, the chronological product remains invariant also in this case: although the Lorentz transformation may violate the ordering of moments of time, by virtue of the commutativity of the factors they can be rearranged back into chronological order\,\footnote{As applied to the product $\hat{V}(t_1)\hat{V}(t_2)\ldots$ this statement needs to be made more precise. Since the operator $\hat{V}$ does not possess gauge invariance (it changes together with $\hat{A}$), the factors $\hat{V}(t_1)$, $\hat{V}(t_2)\ldots$, commutative for one gauge of the potentials, may turn out to be non-commutative for another gauge. The statement made above should therefore be formulated as the possibility of such a choice of gauge of the potential for which $\hat{V}(t_1)$ and $\hat{V}(t_2)$ outside the light cone will be commutative. This reservation, of course, in no way affects the invariance of the $S$-matrix: the amplitudes of scattering as real physical quantities cannot depend on the gauge of the potential (formally this independence follows from the gauge invariance of the action integral noted in~\S\,43).}.
+
+It is easy to see that the definition of the $S$-matrix given in this section automatically satisfies the condition of unitarity. Representing $\hat{S}$ in the form of a chronological product, figuring in~(72.6), and noting that the Hermiticity of $\hat{V}$ implies that $\hat{S}^+$ is expressed
+
+\SourcePage{320}{325}
+(with the reversed sign in the exponent) in reverse chronological order. Therefore when multiplying $\hat{S}$ and $\hat{S}^+$ all factors cancel pairwise.
+
+Let us call attention to the fact that the unitarity of the operator $\hat{S}$ is ensured in this case by the Hermiticity of the Hamiltonian. But the requirement of unitarity has in fact a more general character than the premises lying at the basis of the theory presented. It should hold also in quantum-mechanical description not employing the concepts of the Hamiltonian and wave functions.

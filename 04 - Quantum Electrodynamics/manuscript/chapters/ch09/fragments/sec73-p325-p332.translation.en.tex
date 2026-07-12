@@ -1,0 +1,192 @@
+\SourcePage{320}{325}
+\section{Feynman diagrams for electron scattering}
+
+Let us show by concrete examples how the computation of elements of the scattering matrix is carried out. These examples will facilitate the further formulation of the general rules of invariant perturbation theory.
+
+The current operator $\hat{j}$ contains the product of two electron $\psi$-operators. Therefore in the first order of perturbation theory only processes could arise in which altogether (in the initial and final states) three particles participate---two electrons (operator $\hat{j}$) and one photon (operator $\hat{A}$). It is easy, however, to see that such processes between free particles are impossible---they are forbidden by the laws of conservation of energy and momentum. If $p_1$ and $p_2$ are the 4-momenta of the electrons, and $k$ is the 4-momentum of the photon, then the conservation of 4-momentum would be expressed by the equality $k = p_2 - p_1$ or $k = p_2 + p_1$. But such equalities are impossible, since for the photon $k^2 = 0$, while the square $(p_2 \pm p_1)^2$ is certainly different from zero. Indeed, computing the value of the invariant $(p_2 \pm p_1)^2$ in the rest frame of one of the electrons, we get
+\begin{equation}
+(p_2 \pm p_1)^2 = 2(m^2 \pm p_1 p_2) = 2(m^2 \pm \varepsilon_1\varepsilon_2 \mp \mathbf{p}_1\mathbf{p}_2) = 2m(m \pm \varepsilon_2).
+\tag{73.1}
+\end{equation}
+Since $\varepsilon_2 > m$, we have
+\[
+(p_2 + p_1)^2 > 0,\qquad (p_2 - p_1)^2 < 0.
+\]
+
+Thus, the first non-vanishing (off-diagonal) elements of the $S$-matrix can appear only in the second order of perturbation theory. All relevant processes are contained in the operator of second order, obtained from expanding expression~(72.12):
+\[
+\hat{S}^{(2)} = -\frac{e^2}{2!}\iint d^4x\,d^4x'\,\mathrm{T}(\hat{j}^\mu(x)\hat{A}_\mu(x)\hat{j}^\nu(x')\hat{A}_\nu(x')).
+\]
+Since the electronic and photonic operators are commutative with each other, the T-product here can be
+
+\SourcePage{321}{326}
+split into two T-products:
+\begin{equation}
+\hat{S}^{(2)} = -\frac{e^2}{2!}\iint d^4x\,d^4x'\,\mathrm{T}(\hat{j}^\mu(x)\hat{j}^\nu(x'))\,\mathrm{T}(\hat{A}_\mu(x)\hat{A}_\nu(x')).
+\tag{73.2}
+\end{equation}
+
+As a first example let us consider elastic scattering of two electrons: in the initial state we have two electrons with 4-momenta $p_1$ and $p_2$, and in the final state two other electrons with 4-momenta $p_3$ and $p_4$. It is also assumed that all electrons are in definite spin states; spin indices are for brevity everywhere omitted.
+
+Since in both states photons are completely absent, the matrix element we need of the T-product of the photonic operators is the diagonal element $\langle 0|\ldots|0\rangle$, where the symbol $|0\rangle$ denotes the photon-vacuum state. This vacuum average of the T-product represents a certain definite (for each pair of indices $\mu\nu$) function of the two points $x$ and $x'$. By virtue of the homogeneity of 4-space the coordinates can enter only in the form of the difference $x - x'$. The tensor
+\begin{equation}
+D_{\mu\nu}(x - x') = i\langle 0|\mathrm{T}A_\mu(x)A_\nu(x')|0\rangle
+\tag{73.3}
+\end{equation}
+is called the \textit{photon propagator} (or \textit{photon Green's function}). An explicit expression for it will be obtained below in~\S\,76. For the T-product of the electronic operators we must compute the matrix element
+\begin{equation}
+\langle 34|\mathrm{T}j^\mu(x)j^\nu(x')|12\rangle,
+\tag{73.4}
+\end{equation}
+where the symbols $|12\rangle$, $|34\rangle$ denote states with pairs of electrons with the corresponding momenta. This matrix element too can be represented in the form of a vacuum average with the help of the obvious equality
+\[
+\langle 2|F|1\rangle = \langle 0|a_2 F a_1^+|0\rangle,
+\]
+where $F$ is an arbitrary operator, and $\hat{a}_1^+$ and $\hat{a}_2$ are the operators of creation and annihilation of the second electron respectively. Therefore instead of~(73.4) one can compute the quantity
+\begin{equation}
+\langle 0|a_3 a_4\,\mathrm{T}(j^\mu(x)j^\nu(x'))\,a_2^+ a_1^+|0\rangle
+\tag{73.5}
+\end{equation}
+(indices 1, 2, $\ldots$ for brevity replace $\mathbf{p}_1$, $\mathbf{p}_2$, $\ldots$\,).
+
+Each of the two current operators is a product $\hat{j} = \hat{\bar{\psi}}\gamma\hat{\psi}$, and each of the $\psi$-operators is represented by the sum
+\begin{equation}
+\hat{\psi} = \sum_\mathbf{p}(\hat{a}_\mathbf{p}\psi_p + \hat{b}_\mathbf{p}^+\psi_{-p}),\qquad \hat{\bar{\psi}} = \sum_\mathbf{p}(\hat{a}_\mathbf{p}^+\bar{\psi}_p + \hat{b}_\mathbf{p}\bar{\psi}_{-p})
+\tag{73.6}
+\end{equation}
+
+\SourcePage{322}{327}
+(the second terms contain positronic operators which in the present case ``do not work''). Therefore the product $\hat{j}^\mu(x)\hat{j}^\nu(x')$ is represented in the form of a sum of terms, each of which contains the product of two operators $\hat{a}_\mathbf{p}$ and two $\hat{a}_\mathbf{p}^+$. These operators must ensure the annihilation of electrons 1, 2 and the creation of electrons 3, 4. In other words, these must be the operators $\hat{a}_1$, $\hat{a}_2$, $\hat{a}_3^+$, $\hat{a}_4^+$, which are, as one says, \textit{contracted} with the ``external'' operators $\hat{a}_1^+$, $\hat{a}_2^+$, $\hat{a}_3$, $\hat{a}_4$ in~(73.5) and cancel out according to the equalities
+\begin{equation}
+\langle 0|a_\mathbf{p} a_\mathbf{p}^+|0\rangle = 1.
+\tag{73.7}
+\end{equation}
+
+Depending on which of the $\psi$-operators the operators $\hat{a}_1$, $\hat{a}_2$, $\hat{a}_3^+$, $\hat{a}_4^+$ are taken from, four terms arise in~(73.5):
+\begin{equation}
+\begin{split}
+(73.5) = a_3 a_4 \overbrace{(\bar{\psi}'\gamma^\mu\psi)} \overbrace{(\bar{\psi}'\gamma^\nu\psi')} a_2^+ a_1^+ +
+a_3 a_4 \overbrace{(\bar{\psi}\gamma^\mu\psi)} \overbrace{(\bar{\psi}'\gamma^\nu\psi')} a_2^+ a_1^+ +{}\\
+{}+ a_3 a_4 \overbrace{(\bar{\psi}'\gamma^\mu\psi')} \overbrace{(\bar{\psi}'\gamma^\nu\psi')} a_2^+ a_1^+ +
+a_3 a_4 \overbrace{(\bar{\psi}\gamma^\mu\psi')} \overbrace{(\bar{\psi}'\gamma^\nu\psi')} a_2^+ a_1^+,
+\end{split}
+\tag{73.8}
+\end{equation}
+where $\psi = \psi(x)$, $\psi' = \psi(x')$, and the braces join the contracted operators, i.e.\ those from which the pair of operators $\hat{a}$, $\hat{a}^+$ is taken for contraction according to~(73.7). In each of these terms, by successive transpositions, we bring the conjugate operators into pairwise proximity ($\hat{a}_1\hat{a}_1^+$ and so on), after which the vacuum average reduces to the product of pairwise vacuum averages~(73.7). Noting that all these operators are anticommutative (1, 2, 3, 4 are different states!)\,\footnote{In view of this anticommutativity of the operators $\hat{j}(x)$ and $\hat{j}(x')$, in the present case they can be considered (when computing the matrix element) commutative and the sign T omitted.}, we find that the matrix element~(73.4) equals
+\begin{equation}
+\begin{split}
+\langle 34|\mathrm{T}j^\mu(x)j^\nu(x')|12\rangle = (\bar{\psi}_4\gamma^\mu\psi_2)(\bar{\psi}_3\gamma^\nu\psi_1') + (\bar{\psi}_3\gamma^\mu\psi_1)(\bar{\psi}_4\gamma^\nu\psi_2') -{}\\
+{}- (\bar{\psi}_3\gamma^\mu\psi_2)(\bar{\psi}_4\gamma^\nu\psi_1') - (\bar{\psi}_4\gamma^\mu\psi_1)(\bar{\psi}_3\gamma^\nu\psi_2').
+\end{split}
+\tag{73.9}
+\end{equation}
+
+Let us note that the overall sign of this sum is conventional and depends on the order in which we have placed the ``external'' electronic operators in~(73.5). This circumstance corresponds to the fact that the overall sign of the matrix element for scattering of identical fermions is altogether arbitrary. The relative sign of the various terms in~(73.9) does not, of course, depend on the adopted order of placement of the external operators.
+
+The two terms in the first and second lines of~(73.9) differ from each other merely by the simultaneous permutation of indices $\mu$, $\nu$ and of the arguments $x$, $x'$. Such a permutation is immaterial, and the matrix
+
+\SourcePage{323}{328}
+element~(73.3) (in which the ordering of factors is in any case established by the symbol T). Therefore after multiplying~(73.3) and~(73.9) and integrating over $d^4x\,d^4x'$ the four terms in~(73.9) give pairwise the same result, so that the matrix element
+\begin{equation}
+\begin{split}
+S_{fi} = ie^2\iint d^4x\,d^4x'\,D_{\mu\nu}(x-x')\{(\bar{\psi}_4\gamma^\mu\psi_2)(\bar{\psi}_3\gamma^\nu\psi_1') -{}\\
+{} - (\bar{\psi}_4\gamma^\mu\psi_1)(\bar{\psi}_3\gamma^\nu\psi_2')\}
+\end{split}
+\tag{73.10}
+\end{equation}
+(let us call attention to the disappearance of the factor $1/2!$).
+
+The electronic wave functions are plane waves~(64.8), and therefore the expression in braces
+\begin{align*}
+\{\ldots\} &= (\bar{u}_4\gamma^\mu u_2)(\bar{u}_3\gamma^\nu u_1)\,e^{-i(p_2-p_4)x}e^{-i(p_1-p_3)x'} -{}\\
+&\quad{} - (\bar{u}_4\gamma^\mu u_1)(\bar{u}_3\gamma^\nu u_2)\,e^{-i(p_1-p_4)x}e^{-i(p_2-p_3)x'}\\
+&= \{(\bar{u}_4\gamma^\mu u_2)(\bar{u}_3\gamma^\nu u_1)\,e^{-i[(p_2-p_4)+(p_3-p_1)]\xi/2} -{}\\
+&\quad{} - (\bar{u}_4\gamma^\mu u_1)(\bar{u}_3\gamma^\nu u_2)\,e^{-i[(p_1-p_4)+(p_3-p_2)]\xi/2}\}\,e^{-i(p_1+p_2-p_3-p_4)X},
+\end{align*}
+where $X = (x+x')/2$, $\xi = x - x'$. The integration over $d^4x\,d^4x'$ is replaced by integration over $d^4\xi\,d^4X$. The integral over $d^4X$ gives a $\delta$-function (by virtue of which $p_1 + p_2 = p_3 + p_4$). Passing then from the matrix $S$ to the matrix $M$ (see~\S\,64), we obtain finally the amplitude of scattering
+\begin{equation}
+\begin{split}
+M_{fi} = e^2\{(\bar{u}_4\gamma^\mu u_2)D_{\mu\nu}(p_4-p_2)(\bar{u}_3\gamma^\nu u_1) -{}\\
+{} - (\bar{u}_4\gamma^\mu u_1)D_{\mu\nu}(p_4-p_1)(\bar{u}_3\gamma^\nu u_2)\}.
+\end{split}
+\tag{73.11}
+\end{equation}
+Here the photon propagator in the momentum representation
+\begin{equation}
+D_{\mu\nu}(k) = \int D_{\mu\nu}(\xi)\,e^{ik\xi}\,d^4\xi
+\tag{73.12}
+\end{equation}
+has been introduced. Each of the two terms of the amplitude~(73.11) can be symbolically represented in the form of the so-called \textit{Feynman diagrams}. The first term is represented by the diagram
+\begin{equation}
+e^2(\bar{u}_4\gamma^\mu u_2)D_{\mu\nu}(k)(\bar{u}_3\gamma^\nu u_1) =
+% [Feynman diagram: electron scattering, t-channel]
+\tag{73.13}
+\end{equation}
+
+To each of the intersection points of the lines (\textit{vertices} of the diagram) there corresponds a factor $\gamma$. ``Incoming'' solid lines, directed towards the vertex, correspond to initial electrons; they are associated with factors $u$---bispinor amplitudes of the corresponding electronic states. ``Outgoing'' solid lines,
+
+\SourcePage{324}{329}
+directed from the vertex, are final electrons; to these lines there correspond factors $\bar{u}$. When ``reading'' the diagram the indicated factors are written from left to right in the order corresponding to traversal along the solid lines against the direction of the arrows. Both vertices are joined by a dashed line corresponding to the \textit{virtual} (intermediate) photon, ``emitted'' at one vertex and ``absorbed'' at another; to this line there corresponds the factor $-iD_{\mu\nu}(k)$. The 4-momentum of the virtual photon $k$ is determined by ``conservation of the 4-momentum in the vertex'': by the equality of the total momenta of the incoming and outgoing lines; in the present case $k = p_1 - p_3 = p_4 - p_2$. Besides the listed factors, to the diagram as a whole there is added yet an overall factor $(-ie)^2$ (the power of the exponent equals the number of vertices in the diagram), and in this form it enters as a term in $iM_{fi}$. Analogously the second term in~(73.11) is represented by the diagram
+\begin{equation}
+e^2(\bar{u}_4\gamma^\mu u_1)D_{\mu\nu}(k')(\bar{u}_3\gamma^\nu u_2) =
+% [Feynman diagram: electron scattering, u-channel]
+\tag{73.14}
+\end{equation}
+(one must bear in mind that $k' = p_1 - p_4 = p_3 - p_2$). It is immaterial whether we start reading the diagram from the end of $p_3$ or $p_4$; the resulting expressions in this case coincide with each other by virtue of the symmetry of the tensor $D_{\mu\nu}$. Equally arbitrary is the choice of direction of the line of the virtual photon: the change of this direction will lead merely to the change of sign of $k$, which is immaterial by virtue of the evenness of the function $D_{\mu\nu}(k)$ (see~\S\,76).
+
+Lines corresponding to initial and final particles are called \textit{external lines} or \textit{free ends} of the diagram. Diagrams~(73.13) and~(73.14) differ from each other by the exchange of two free electronic ends ($p_3$ and $p_4$). Such a permutation of two fermions changes the sign of the diagram; this rule corresponds to the fact that in the amplitude~(73.11) both terms enter with opposite signs.
+
+From now on we shall always use Feynman diagrams in the described, momentum, representation. Let us note, however, that these diagrams can be brought into correspondence also with terms of the amplitude of scattering in their original---coordinate---representation (integrals~(73.10)). The role of electronic amplitudes is played then by the corresponding coordinate wave functions, and as propagators in the coordinate
+
+\SourcePage{325}{330}
+representation are taken.
+
+Let us consider now the mutual scattering of an electron and a positron; let us denote their initial momenta by $p_-$ and $p_+$ respectively, and the final ones by $p'_-$ and $p'_+$.
+
+The operators of creation and annihilation of positrons enter in the $\psi$-operators~(73.6) together with the operators of annihilation and creation of electrons. At the same time, while in the previous case the annihilation of both initial particles was ensured by the operator $\hat{\psi}$, and the creation of both final particles by the operator $\hat{\bar{\psi}}$, here the role of these operators is reversed with respect to electrons and positrons. Therefore the conjugate function $\bar{\psi}(-p_+)$ will now describe the initial positron, and the final positron will be described by the function $\psi(-p'_+)$ (both with the reversed sign of the 4-momentum). Taking into account this difference we obtain as a result the amplitude of scattering\,\footnote{For scattering of non-identical particles the overall sign of the amplitude is unambiguous. It is determined by the requirement that in~(73.5) the ``external'' operators should be placed so that both electronic operator stood at the edges:
+\[
+\langle 0|a'b'\ldots b^+a^+|0\rangle
+\]
+(or both in the middle); by this condition one ensures the ``same sign'' of the initial and final vacuum states. The overall sign of the amplitude can be verified also by means of the non-relativistic limit: we shall see below (see~\S\,81) that in this limit the second term in~(73.15) tends to zero, and the first term tends to the Born amplitude of Rutherford scattering.}
+\begin{equation}
+\begin{split}
+M_{fi} = -e^2\,(\bar{u}(p'_-)\gamma^\mu u(p_-))\,D_{\mu\nu}(p_- - p'_-)\,(\bar{u}(-p_+)\gamma^\nu u(-p'_+)) +{}\\
+{}+ e^2\,(\bar{u}(-p_+)\gamma^\mu u(p_-))\,D_{\mu\nu}(p_- + p_+)\,(\bar{u}(p'_-)\gamma^\nu u(-p'_+)).
+\end{split}
+\tag{73.15}
+\end{equation}
+The first and second terms in this expression are represented by the following diagrams:
+% [Feynman diagrams (73.16): electron-positron scattering, scattering-type and annihilation-type]
+
+The rules for drawing diagrams change only in the part relating to positrons. As before, to incoming solid lines there corresponds the factor $u$, and to outgoing ones the factor $\bar{u}$. But now the incoming lines correspond to final, and the outgoing ones to initial positrons, and the momenta of all positrons are taken with the reversed sign.
+
+\SourcePage{326}{331}
+Let us call attention to the different character of the two diagrams~(73.16). In the first diagram (of the ``scattering'' type) at one of the vertices the lines of the initial and final electron intersect, and at the other vertex the same for the positron. In the second diagram (of the ``annihilation'' type) at each of the vertices the lines of electrons and positrons---initial and final---intersect; at the upper vertex there occurs as it were the annihilation of the pair with emission of a virtual photon, and at the lower one the creation of a pair from the photon.
+
+This difference is also reflected in the properties of the virtual photons in both diagrams. In the first diagram the 4-momentum of the virtual photon equals the difference of the 4-momenta of two electrons (or positrons); therefore $k^2 < 0$ (cf.~(73.1)). In the second diagram, however, $k' = p_- + p_+$, and therefore $k'^2 > 0$. Let us note in this connection that for a virtual photon $k^2 \neq 0$ always, in contrast to a real photon for which $k^2 = 0$.
+
+If the colliding particles are not identical and are not a particle and antiparticle (say, an electron and a muon), then the amplitude of scattering is represented by just one diagram:
+% [Feynman diagram (73.17): electron-muon scattering, single t-channel exchange]
+
+A diagram of the annihilation or exchange type is in this case impossible. We obtain this result also analytically, having written the current operator as the sum of the electronic and muonic currents
+\[
+\hat{j} = \hat{j}^{(e)} + \hat{j}^{(\mu)} = (\hat{\bar{\psi}}^{(e)}\gamma\hat{\psi}^{(e)}) + (\hat{\bar{\psi}}^{(\mu)}\gamma\hat{\psi}^{(\mu)})
+\]
+and taken in the product $\hat{j}^\mu(x)\hat{j}^\nu(x')$ the matrix elements from the terms producing the required annihilation and creation of particles.
+
+Let us return to the processes forbidden in the first order, as was indicated at the beginning of this section, by the law of conservation of 4-momentum. The matrix elements of the operator
+\begin{equation}
+\hat{S}^{(1)} = -ie\int\hat{j}(x)\hat{A}(x)\,d^4x
+\tag{73.18}
+\end{equation}
+for such transitions correspond to creation or annihilation ``in one and the same point $x$'' of three real particles: two electrons and one photon. They arise as a result of contracting the operators
+
+\SourcePage{327}{332}
+$\hat{\psi}(x)$ and $\hat{\bar{\psi}}(x)$ in one point $x$ and are determined (for example, for the emission of a photon) by integrals of the form
+\[
+S_{fi} = -ie\int\bar{\psi}_2(x)\psi_1(x)(\gamma A^*(x))\,d^4x,
+\]
+vanishing due to the presence in the sub-integral expression of the factor $\exp[-i(p_1 - p_2 - k)x]$ with a non-zero exponent. In the language of diagrams this means that diagrams with three free ends vanish:
+% [Feynman diagram (73.19): forbidden single-vertex diagram with three free ends]
+
+For the same reason there are also impossible processes of second order in which six particles (in the initial and final states) would participate. In the matrix element $S_{fi}$ the corresponding transitions over $d^4x\,d^4x'$ would break up into the product of two integrals vanishing to zero, each of three wave functions taken in one and the same point $x$ or $x'$. In other words, the corresponding diagrams would break up into two independent diagrams of the type~(73.19).

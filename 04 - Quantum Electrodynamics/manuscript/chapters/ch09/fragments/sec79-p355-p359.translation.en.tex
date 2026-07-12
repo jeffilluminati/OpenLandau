@@ -1,0 +1,103 @@
+\SourcePage{349}{354}
+\section{Virtual particles}
+
+The internal lines of Feynman diagrams play in the invariant perturbation theory a role analogous to the role of intermediate states in the ``ordinary'' theory. The character of these states, however, is different in both theories. In the ordinary theory intermediate states are conserved (three-dimensional) momentum, but the energy is not
+
+\SourcePage{350}{355}
+conserved; in this sense one speaks of them as \textit{virtual states}. In the invariant theory, however, momentum and energy enter on equal footing: in the intermediate states all four components of the 4-momentum are conserved (this is the result of the fact that in the elements of the $S$-matrix the integration is carried out over both the coordinates and the time, by which the invariance of the theory is achieved). In this, however, in the intermediate states there is violated the relation between energy and momentum characteristic of real particles (expressed by the equality $p^2 = m^2$). In this sense one speaks of intermediate \textit{virtual particles}. The ratio of momentum to energy of a virtual particle is arbitrary---it is whatever the conservation of 4-momentum in the vertices requires.
+
+Let us consider some diagram consisting of two parts ($I$ and $II$) connected by a single line. Not concerning ourselves with the internal structure of these parts, let us represent the diagram schematically in the form
+% [Diagram (79.1): Two blobs labelled $I$ and $II$ connected by a single internal line with momentum $p$]
+(the depicted lines can be both solid and dashed). By virtue of the overall law of conservation of 4-momentum, the sum of 4-momenta of external lines of parts $I$ and $II$ are equal; and by virtue of conservation in each vertex this same quantity is the 4-momentum $p$ of the internal line joining parts $I$ and $II$. In other words, in the matrix element there is no integration over this momentum.
+
+Depending on the channel of the reaction the square $p^2$ can be both positive and negative. There always exists such a channel, in which $p^2 > 0$\,\footnote{Such is, for example, the channel in which all free ends of part $I$ correspond to the initial, and all of part $II$ to the final particles. Then $p = P_i$ (the sum of 4-momenta of all initial particles), and in the system of the centre of inertia $p = (P_i^0, 0)$, so that $p^2 > 0$.}. Then the virtual particle, by its formal properties, becomes entirely analogous to a real particle with a mass $M = \sqrt{p^2}$. For it one can introduce the rest frame and determine its spin and so on. The photon propagator~(76.11) by its tensor structure coincides with the density matrix of an unpolarised particle with spin~1 and mass different from zero:
+\[
+\rho_{\mu\nu} = -\frac{1}{3}\left(g_{\mu\nu} - \frac{p_\mu p_\nu}{m^2}\right)
+\]
+(see~(14.15)). With the electron propagator~(75.10) the situation is analogous. The propagator
+\[
+G \propto \gamma p + m.
+\]
+Here $m$ is the mass of the real electron, whereas the ``mass'' of the virtual particle $M = \sqrt{p^2}$. Writing
+\begin{equation}
+\gamma p + m = \frac{M + m}{2M}(\gamma p + M) + \frac{M - m}{2M}(\gamma p - M),
+\tag{79.2}
+\end{equation}
+we see that the first term corresponds to the density matrix of a particle with mass $M$ and spin $1/2$, and the second to the density matrix of such an ``antiparticle'' (cf.~(29.10) and~(29.17)). Recalling that the particle and antiparticle have different internal parities (see~\S\,27), we arrive at the conclusion that the virtual electron must be ascribed the same spin~$1/2$, but a definite parity cannot be ascribed to it.
+
+\SourcePage{351}{356}
+The characteristic feature of diagram~(79.1) is that it can be cut into two parts not connected to each other by cutting only one internal line\,\footnote{This property is possessed by the diagrams of almost all processes in the first non-vanishing approximation.}. This line corresponds to a \textit{one-particle} intermediate state---a state of only one virtual particle. The amplitude of scattering corresponding to such a diagram contains the characteristic (not subject to integration!) factor
+\[
+\frac{1}{p^2 - M^2 + i0}
+\]
+arising from the internal line $p$ (where $m$ is the mass of the electron if the line is electronic, or $m = 0$ if the line is photonic). In other words, the amplitude of scattering has a pole at those values of $p$ for which the virtual particle becomes physical ($p^2 = M^2$). This situation is analogous to the fact that in non-relativistic quantum mechanics the amplitude of scattering has poles at energies corresponding to bound states of the colliding system (see~III, \S\,128).
+
+Let us consider diagram~(79.1) for that channel of the reaction in which all right free ends correspond to the initial, and all left ones to the final particles; in this case $p^2 > 0$. Then one can say that in the intermediate state the system of initial particles transforms into one virtual particle. This is possible only if such a transformation does not contradict the necessary conservation laws (without taking into account conservation of 4-momentum): conservation of charge, charge parity, and so on. In this is contained the necessary condition of appearance of \textit{pole diagrams}.
+
+For example, the conservation laws listed do not prevent the appearance of a virtual electron according to $e + \gamma \to e$. This possibility corresponds to the pole of the Compton-effect amplitude, and at the same time of another channel of this reaction---two-photon annihilation of the electron pair. The appearance of a virtual photon according to $e^- + e^+ \to \gamma$ is also not prevented by any conservation law, and corresponds to the pole of the scattering amplitude of the electron on the positron, and also of the electron on the electron. From two photons a virtual electron cannot be produced, and the virtual photon cannot appear; accordingly, the amplitude of scattering of a photon on a photon does not contain pole singularities.
+
+The origin of the pole singularities of the amplitude of scattering, which we have traced here from the Feynman integrals, has in fact a more general character, not connected with perturbation theory. Let us show that these singularities already arise as a consequence of the unitarity condition~(71.2).
+
+Let us assume that among the intermediate states figuring in~(71.2) $n$ is a one-particle state. The contribution of this state:
+\[
+(T_{fi} - T^*_{if})^{(\text{one-part.})} = i(2\pi)^4\sum_\lambda\int\delta^{(4)}(P_f - p)\,T_{fn}\,T^*_{in}\,\frac{V\,d^3p}{(2\pi)^3},
+\]
+
+\SourcePage{352}{357}
+where $p$ and $\lambda$ are the 4-momentum and helicity of the intermediate particle. The integration over $d^3p$ is replaced by integration over $d^4p$ (where $p^0 \equiv \varepsilon > 0$) according to
+\[
+d^3p \to 2\varepsilon\delta(p^2 - M^2)\,d^4p
+\]
+($M$ is the mass of the intermediate particle). The integration removes the $\delta$-function $\delta^{(4)}(P_f - p)$, and we find
+\begin{equation}
+(M_{fi} - M^*_{if})^{(\text{one-part.})} = 2\pi i\delta(p^2 - M^2)\sum_\lambda M_{fn}\,M^*_{in}.
+\tag{79.3}
+\end{equation}
+
+Assuming $T$- and $P$-invariance, we shall have (to within a phase factor) $M_{if} = M_{fi'}$, where the states $i'$, $f'$ differ from $i$, $f$ only by the signs of the helicities of the particles (with the same momenta). Taking the sum of equality~(79.3) and also of the same for $M_{f'i'}\,M^*_{f'i'}$, we get
+\begin{equation}
+\mathrm{Im}\,\overline{M}_{fi}^{(\text{one-part.})} = -\pi\delta(p^2 - M^2)\,R,
+\tag{79.4}
+\end{equation}
+where it is denoted
+\[
+\overline{M}_{fi} = M_{fi} + M_{f'i'},\qquad R = -\sum_\lambda(M_{fn}\,M^*_{in} + M_{f'n}\,M^*_{i'n}).
+\]
+
+From this it follows that $\overline{M}_{fi}$ as an analytic function of $p^2 = P_i^2 = P_f^2$ has a pole at $p^2 = M^2$. According to~(75.18) we have for the pole part
+\begin{equation}
+\overline{M}_{fi}^{(\text{one-part.})} = \frac{R}{p^2 - M^2 + i0}.
+\tag{79.5}
+\end{equation}
+
+Real transitions to the one-particle state are possible only when the value $P_i^2 = P_f^2$ equals $M^2$. Thus we have indeed obtained the structure of the amplitude of scattering of the type of diagram~(79.1).
+
+\SourcePage{353}{358}
+Finally, let us dwell on an important property of diagrams containing closed loops. This property can easily be obtained by the method of application to a virtual photon of the concept of charge parity: to the virtual photon, like the real one, there should be ascribed a definite (negative) charge parity\,\footnote{This follows from the same considerations about the action of the operator of electromagnetic interaction in each vertex, which were indicated in~\S\,13 for the real photon.}.
+
+If some diagram contains a closed loop (with the number of vertices $N > 2$), then alongside this diagram in the amplitude of the process being considered there must also figure another diagram, differing from the first only by the direction of traversal of the loop (for $N = 2$ the concept of direction of traversal has, obviously, no meaning). ``Cutting out'' these loops from their neighbouring dashed lines, we obtain two loops $\Pi_\mathrm{I}$ and $\Pi_\mathrm{II}$:
+% [Diagram (79.6): Two closed electron loops $\Pi_\mathrm{I}$ and $\Pi_\mathrm{II}$ with opposite directions of traversal]
+which can be regarded as diagrams defining the amplitude of the process of transformation of one set of photons (real or virtual) into another: the number $N$ is the total number of initial and final photons. But the conservation of charge parity forbids the transformation of an even number of photons into an odd one. Therefore when $N$ is odd the sum of expressions corresponding to the loops~(79.6) must vanish. The contributions of both loops also vanish in the amplitude of scattering of two diagrams containing these loops, i.e.
+
+Let us trace in more detail the mechanism of the indicated mutual cancellation of diagrams. A closed electron loop corresponds to the expression (given the 4-momenta of the photonic lines $k_1, k_2, \ldots, k_N$)
+\begin{equation}
+\int d^4p\,\mathrm{Sp}[(\gamma e_1)G(p)(\gamma e_2)G(p + k_1)\ldots],
+\tag{79.7}
+\end{equation}
+where $p$, $p + k_1$, $\ldots$ are the 4-momenta of the electronic lines (not fully determined even after taking into account the conservation laws in the vertices). The charge conjugation operation is performed on all matrices $\gamma^\mu$ and $G$ in the trace: they are replaced by $U_C^{-1}\gamma^\mu U_C$ and $U_C^{-1}G U_C$. The expression~(79.7) is unchanged, since the trace of a matrix is invariant with respect to such a transformation. On the other hand, according to~(26.3),
+\begin{equation}
+U_C^{-1}\gamma^\mu U_C = -\widetilde{\gamma}^\mu,
+\tag{79.8}
+\end{equation}
+and therefore
+\begin{equation}
+U_C^{-1}G(p)U_C = \frac{-p\widetilde{\hat{}} + m}{p^2 - m^2} = \widetilde{G}(-p).
+\tag{79.9}
+\end{equation}
+
+But the replacement of $G(p)$ by the transposed matrix with a changed sign of $p$ signifies, obviously, the change of direction of traversal of the loop, in which the direction of all arrows is reversed. In other words, the transposition transforms one loop into the other, and there appears the factor $(-1)^N$ arising from the replacement~(79.8) in each vertex. Thus,
+\begin{equation}
+\Pi_\mathrm{I} = (-1)^N\Pi_\mathrm{II},
+\tag{79.10}
+\end{equation}
+i.e.\ the contributions of both loops are equal for an even and opposite in sign for an odd number of vertices.
