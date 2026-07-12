@@ -1,0 +1,264 @@
+
+\section{Exact theory of pair production in the ultrarelativistic case}
+
+\SourcePage{458}{463}
+
+In the two preceding sections bremsstrahlung and pair production by a photon in the relativistic region were studied on the basis of the Born approximation, for which in any case the fulfilment of the condition $Z\alpha \ll 1$ was required. In \S\S\,95, 96 there is presented the theory of these processes, free from this restriction, i.e.\ valid also when $Z\alpha \sim 1$ (\emph{H.~A.~Bethe, L.~Maximon}, 1954). It is assumed that both particles (the initial and final electron, or the components of the pair) are ultrarelativistic; their energy $\varepsilon \gg m$.
+
+We have seen that in the ultrarelativistic case both particles fly at small angles ($\theta$, $\theta'$ or $\theta_+$, $\theta_-$) to the direction of the photon: $\theta \lesssim m/\varepsilon$. This property is preserved also in the exact (in $Z\alpha$) theory, and we shall consider precisely this region of angles.
+
+The momentum transfer to the nucleus in this region is $q \sim m$. This means that in the wave functions the essential impact parameters are $\rho \sim 1/q \sim 1/m$, i.e.\ ``large'' distances. At such distances one can use the wave function obtained in \S\,39. Let us present the corresponding calculations for pair production.
+
+\SourcePage{459}{464}
+
+The cross section of pair production has a form analogous to the cross section of the photoeffect (cf.\ (56.1), (56.2)):
+\begin{equation}
+d\sigma = 2\pi\left|e\sqrt{4\pi}\,\frac{1}{\sqrt{2\omega}}\,M_{fi}\right|^2\delta(\omega - \varepsilon_+ - \varepsilon_-)\,\frac{d^3p_+\,d^3p_-}{(2\pi)^3},
+\label{eq:95.1}
+\end{equation}
+where
+\begin{equation}
+M_{fi} = \int\psi_{\varepsilon_-\mathbf{p}_-}^{(-)*}(\boldsymbol{\alpha}\mathbf{e})\,e^{i\mathbf{k}\mathbf{r}}\,\psi_{-\varepsilon_+,-\mathbf{p}_+}^{(+)}\,d^3x.
+\label{eq:95.2}
+\end{equation}
+Here $\psi_{\varepsilon_-\mathbf{p}_-}^{(-)}$ is the wave function of the electron, and $\psi_{-\varepsilon_+,-\mathbf{p}_+}^{(+)}$ is the wave function with negative energy $(-\varepsilon_+)$ and momentum $-\mathbf{p}_+$.
+
+The function $\psi_{\varepsilon_-\mathbf{p}_-}^{(-)}$, pertaining to a particle in the final state, must contain in its asymptotics (alongside the plane wave) a converging spherical wave; this circumstance is indicated by the upper index $(-)$ on the function. According to (39.10) such a wave function is\footnote{In this section $p_\pm = |\mathbf{p}_\pm|$, $q = |\mathbf{q}|$.}
+\begin{equation}
+\psi_{\varepsilon_-\mathbf{p}_-}^{(-)} = \frac{C^{(-)}}{\sqrt{2\varepsilon_-}}\,e^{i\mathbf{p}_-\mathbf{r}}\!\left(1 - \frac{i\boldsymbol{\alpha}\boldsymbol{\nabla}}{2\varepsilon_-}\right)F(-i\nu,\,1,\,-i(p_- r + \mathbf{p}_-\mathbf{r}))\,u(\mathbf{p}_-),
+\label{eq:95.3}
+\end{equation}
+\[
+C^{(-)} = e^{\pi\nu/2}\,\Gamma(1 + i\nu), \quad \nu = Z\alpha.
+\]
+
+The function $\psi_{-\varepsilon_+,-\mathbf{p}_+}^{(+)}$ must contain in its asymptotics a diverging spherical wave (index $(+)$ above), since by its meaning it is the wave function of an ``initial state with negative energy''. The wave function of the positron (formed from $\psi_{\varepsilon_+\mathbf{p}_+}^{(+)*}$) will then have a converging wave in its asymptotics, as required for a final-state particle. According to (39.11) such a function is
+\begin{equation}
+\psi_{-\varepsilon_+,-\mathbf{p}_+}^{(+)} = \frac{C^{(+)}}{\sqrt{2\varepsilon_+}}\,e^{-i\mathbf{p}_+\mathbf{r}}\!\left(1 + \frac{i\boldsymbol{\alpha}\boldsymbol{\nabla}}{2\varepsilon_+}\right)F(-i\nu,\,1,\,i(p_+ r + \mathbf{p}_+\mathbf{r}))\,u(-\mathbf{p}_+),
+\label{eq:95.4}
+\end{equation}
+\[
+C^{(+)} = e^{-\pi\nu/2}\,\Gamma(1 + i\nu).
+\]
+
+\SourcePage{460}{465}
+
+Note that the necessity of including the terms $\sim 1/\varepsilon$ in (95.3), (95.4) is connected with the matrix structure of $M_{fi}$ (95.2). The matrix element $(\boldsymbol{\alpha})_{fi}$ is a vector with a direction close to $\mathbf{k}$. Therefore the principal term in $(\boldsymbol{\alpha}\mathbf{e})_{fi}$ turns out to be small, while the correction terms are of the same order of magnitude as it.
+
+Substituting (95.3), (95.4) in (95.2) and neglecting terms $\sim 1/(\varepsilon_+\varepsilon_-)$, we find
+\begin{equation}
+M_{fi} = \frac{N}{2\sqrt{\varepsilon_+\varepsilon_-}}\,u^*(\mathbf{p}_-)\{(\mathbf{e}\boldsymbol{\alpha})I + (\mathbf{e}\boldsymbol{\alpha})(\boldsymbol{\alpha}\mathbf{I}_+) + (\boldsymbol{\alpha}\mathbf{I}_-)(\mathbf{e}\boldsymbol{\alpha})\}u(-\mathbf{p}_+),
+\label{eq:95.5}
+\end{equation}
+where
+\begin{equation}
+N = C^{(+)}C^{(-)} = \frac{\pi\nu}{\sinh\pi\nu},
+\label{eq:95.6}
+\end{equation}
+\begin{equation}
+\begin{split}
+&I = \int e^{-i\mathbf{q}\mathbf{r}}F_-^* F_+\,d^3x, \\
+&\mathbf{I}_+ = \frac{i}{2\varepsilon_+}\int e^{-i\mathbf{q}\mathbf{r}}F_-^*\boldsymbol{\nabla}F_+\,d^3x, \quad \mathbf{I}_- = \frac{i}{2\varepsilon_-}\int e^{-i\mathbf{q}\mathbf{r}}(\boldsymbol{\nabla}F_-)^*F_+\,d^3x,
+\end{split}
+\label{eq:95.7}
+\end{equation}
+\[
+\mathbf{q} = \mathbf{p}_+ + \mathbf{p}_- - \mathbf{k}
+\]
+($F_-$ and $F_+$ denote for brevity the hypergeometric functions appearing in (95.3) and (95.4)). Let us immediately note that the integrals $I$, $\mathbf{I}_+$, $\mathbf{I}_-$ are connected by one identity: from
+\[
+\int\boldsymbol{\nabla}(e^{-i\mathbf{q}\mathbf{r}}F_-^*F_+)\,d^3x = 0
+\]
+we have
+\begin{equation}
+\mathbf{q}I + 2\varepsilon_+\mathbf{I}_+ + 2\varepsilon_-\mathbf{I}_- = 0.
+\label{eq:95.8}
+\end{equation}
+
+The square $|M_{fi}|^2$ is averaged over the polarisations of the incident photon and summed over the spin directions of the electron and positron\footnote{For calculations with account of the polarisation of all particles see \emph{Olsen H., Maximon L.}\/\/ Phys.\ Rev.\ 1959.\ V.~114.\ P.~887, and also the book by V.~Ya.~Baier, V.~M.~Katkov and V.~S.~Fadin indicated on p.~454.}. This is accomplished by the replacement of the tensor:
+\[
+e_i e_k^* \to \frac{1}{2}(\delta_{ik} - n_i n_k), \quad \mathbf{n} = \frac{\mathbf{k}}{\omega},
+\]
+and of the bispinor products:
+\[
+u_\pm\bar{u}_\pm \to 2\rho_\pm = (\varepsilon_\pm\gamma^0 - \mathbf{p}_\pm\boldsymbol{\gamma} \mp m).
+\]
+Replacing also $\boldsymbol{\alpha} = \gamma^0\boldsymbol{\gamma}$, we find
+\[
+|M_{fi}|^2 \to \frac{N^2}{2\varepsilon_+\varepsilon_-}\{\operatorname{Sp}\rho_-\mathrm{Q}\rho_+\bar{\mathrm{Q}} - \operatorname{Sp}\rho_-(\mathbf{n}\mathrm{Q})\rho_+(\mathbf{n}\bar{\mathrm{Q}})\},
+\]
+\[
+\mathrm{Q} = \boldsymbol{\gamma}I - \gamma^0\boldsymbol{\gamma}(\boldsymbol{\gamma}\mathbf{I}_+) - \gamma^0(\boldsymbol{\gamma}\mathbf{I}_-)\boldsymbol{\gamma},
+\]
+\[
+\bar{\mathrm{Q}} = \boldsymbol{\gamma}I^* - \gamma^0\boldsymbol{\gamma}(\boldsymbol{\gamma}\mathbf{I}_+^*) - \gamma^0\boldsymbol{\gamma}(\boldsymbol{\gamma}\mathbf{I}_-^*)\boldsymbol{\gamma}.
+\]
+
+\SourcePage{461}{466}
+
+Let us write out immediately the result, obtained after the appropriate approximations, for the ultrarelativistic case of interest in the region of small angles
+\begin{equation}
+\theta_\pm \sim m/\varepsilon \ll 1.
+\label{eq:95.9}
+\end{equation}
+
+We introduce auxiliary vectors:
+\begin{equation}
+\boldsymbol{\delta}_\pm = \frac{1}{m}(\mathbf{p}_\pm)_\perp, \quad \delta_\pm = \frac{\varepsilon_\pm}{m}\,\theta_\pm
+\label{eq:95.10}
+\end{equation}
+(the subscript $\perp$ denotes the component perpendicular to the direction of $\mathbf{k}$). With their help the result is written in the form
+\begin{equation}
+|M_{fi}|^2 \to \frac{N^2}{4}\biggl\{\frac{m^2\omega^2}{\varepsilon_+^2\varepsilon_-^2}\,|I|^2 + 2\biggl|I\frac{m\boldsymbol{\delta}_+}{2\varepsilon_+} + \mathbf{I}_+\biggr|^2 + 2\biggl|I\frac{m\boldsymbol{\delta}_-}{2\varepsilon_-} + \mathbf{I}_-\biggr|^2\biggr\}.
+\label{eq:95.11}
+\end{equation}
+Here it is taken into account that $I \sim \varepsilon/(q)\cdot I_\pm$ (as is evident from (95.8)), and terms of higher order in $m/\varepsilon$ are omitted.
+
+The integrals $\mathbf{I}_\pm$ can be represented in the form
+\[
+\mathbf{I}_\pm = i\,\frac{p_\pm}{2\varepsilon_\pm}\,\frac{\partial J}{\partial\mathbf{p}_\pm},
+\]
+\begin{equation}
+J = \int\frac{e^{-i\mathbf{q}\mathbf{r}}}{r}\,F(-i\nu,\,1,\,i(p_+r + \mathbf{p}_+\mathbf{r}))\,F(i\nu,\,1,\,i(p_-r + \mathbf{p}_-\mathbf{r}))\,d^3x.
+\label{eq:95.12}
+\end{equation}
+
+The integral $J$ is expressed through the complete hypergeometric function\footnote{For the computation see the paper by Nordsieck indicated on p.~438.}:
+\begin{equation}
+\begin{split}
+J &= \frac{4\pi}{q^2}\left(\frac{q^2 - 2\mathbf{p}_+\mathbf{q}}{q^2 - 2\mathbf{p}_-\mathbf{q}}\right)^{\!i\nu}\!F(-i\nu,\,i\nu,\,1,\,z), \\
+z &= 2\,\frac{q^2(p_+p_- - \mathbf{p}_+\mathbf{p}_-) + 2(\mathbf{p}_+\mathbf{q})(\mathbf{p}_-\mathbf{q})}{(q^2 - 2\mathbf{p}_+\mathbf{q})(q^2 - 2\mathbf{p}_-\mathbf{q})}.
+\end{split}
+\label{eq:95.13}
+\end{equation}
+
+Differentiation with respect to $\mathbf{p}_\pm$ is to be carried out at a given value of the parameter $\mathbf{q}$, and only afterwards can one set $\mathbf{q} = \mathbf{p}_+ + \mathbf{p}_- - \mathbf{k}$. We give the result in a form in which the approximations corresponding to the ultrarelativistic case and the conditions (95.9) have already been made:
+\begin{equation}
+\mathbf{I}_\pm = \frac{4\pi}{q^2}\,\frac{\varepsilon_\mp}{m^2\omega}\!\left(\frac{\varepsilon_\pm\xi_\pm}{\varepsilon_\mp\xi_\mp}\right)^{\!i\nu}\!\left\{\pm\nu\mathbf{q}\xi_\mp F(z) + i\,\frac{q^2}{m^2}\,F'(z)(\mathbf{q}\xi_\mp - m\boldsymbol{\delta}_\pm)\right\}.
+\label{eq:95.14}
+\end{equation}
+
+\SourcePage{462}{467}
+
+Here the following notation has been introduced:
+\begin{equation}
+\xi_\pm = \frac{1}{1 + \delta_\pm^2}, \quad z = 1 - \frac{q^2}{m^2}\,\xi_+\xi_-, \quad F(z) = F(-i\nu,\,i\nu,\,1,\,z)
+\label{eq:95.15}
+\end{equation}
+($F(z)$ is a real function). The integral $I$ is then computed directly from (95.8).
+
+Substituting the values of the integrals in (95.11), and then in (95.1), we obtain the desired differential cross section. The final formula:
+\begin{equation}
+\begin{split}
+d\sigma &= \frac{4}{\pi}\left(\frac{\pi\nu}{\sinh\pi\nu}\right)^{\!2}Z^2\alpha r_\mathrm{e}^2\,\frac{m^2}{q^4\omega^3}\,\delta_+\,d\delta_+\cdot\delta_-\,d\delta_-\cdot d\varphi\,d\varepsilon_+\biggl\{F^2(z) \times {} \\
+&\quad \times \bigl[-2\varepsilon_+\varepsilon_-(\delta_+^2\xi_+^2 + \delta_-^2\xi_-^2) + \omega^2(\delta_+^2 + \delta_-^2)\xi_+\xi_- + 2(\varepsilon_+^2 + \varepsilon_-^2) \times {} \\
+&\quad \times \delta_+\delta_-\xi_+\xi_-\cos\varphi\bigr] + \frac{q^4}{m^4}\,\frac{\xi_+^2\xi_-^2}{\nu^2}\,F'^2(z)\bigl[-2\varepsilon_+\varepsilon_-(\delta_+^2\xi_+^2 + \delta_-^2\xi_-^2) + {} \\
+&\quad {} + \omega^2(1 + \delta_+^2\delta_-^2)\xi_+\xi_- - 2(\varepsilon_+^2 + \varepsilon_-^2)\delta_+\delta_-\xi_+\xi_-\cos\varphi\bigr]\biggr\}.
+\end{split}
+\label{eq:95.16}
+\end{equation}
+
+When $\nu \to 0$
+\[
+\pi\nu/(\sinh\pi\nu) \to 1, \quad F(z) \to 1, \quad F'(z) \approx \nu^2 \to 0.
+\]
+Expression (95.16) reduces in this case, as it should, to the Bethe--Heitler formula (94.3), corresponding to the Born approximation. It reduces to the same formula also for arbitrary $\nu$, if the emergence angles of the pair satisfy the conditions
+\[
+|\delta_+ - \delta_-| \ll 1, \quad |\pi - \varphi| \ll 1.
+\]
+
+Indeed, in this case $q \ll m$, so that the second term in the curly brackets in (95.16) can be dropped in view of the presence in it of the extra (compared with the first term) factor $(q/m)^4$. In the first term, however, we have (noting that $(1-z) \sim q^2/m^2 \ll 1$)
+\begin{equation}
+F(z) \to F(1) \equiv F(-i\nu,\,i\nu,\,1,\,1) = \frac{1}{\Gamma(1-i\nu)\Gamma(1+i\nu)} = \frac{\sinh\pi\nu}{\pi\nu},
+\label{eq:95.17}
+\end{equation}
+as a result of which the analogous factor before the curly brackets cancels\footnote{This value of the function can be obtained from formula (e.~7) (see II), connecting hypergeometric functions of the arguments $z$ and $1-z$.}.
+
+\SourcePage{463}{468}
+
+Let us now turn to the integration of the cross section over the directions of emergence of the pair.
+
+We divide the integration over angles into two regions, I and II, in which respectively
+\[
+\text{I)}\; 1-z > 1-z_1, \quad \text{II)}\; 1-z < 1-z_1,
+\]
+where $z_1$ is some value for which $1 \gg 1-z_1 \gg (m/\varepsilon)^2$.
+
+Since in region II $1-z \ll 1$, $q \ll m$, then, according to what was said above, $d\sigma \approx d\sigma_\text{B} \equiv d\sigma|_{\nu=0}$, where $d\sigma_\text{B}$ is the cross section in the Born approximation. Therefore the integral over angles:
+\begin{equation}
+d\sigma_{\varepsilon_+} \equiv \int d\sigma = \int_\text{I}d\sigma + \int_\text{II}d\sigma\big|_{\nu\to 0} = (d\sigma_{\varepsilon_+})_\text{B} + \int_\text{I}(d\sigma - d\sigma|_{\nu\to 0}),
+\label{eq:95.18}
+\end{equation}
+where $(d\sigma_{\varepsilon_+})_\text{B}$ is the Born cross section (94.5) integrated over angles.
+
+In region I we have
+\[
+q^2/m^2 \approx \delta_+^2 + \delta_-^2 + 2\delta_+\delta_-\cos\varphi.
+\]
+From the variables $\delta_+$, $\delta_-$, $\varphi$ let us go over to the variables $\xi_+$, $\xi_-$, $z$. By direct computation of the Jacobian of the transformation we find
+\[
+\delta_+\,d\delta_+\cdot\delta_-\,d\delta_-\cdot d\varphi \to \frac{\varepsilon_+\varepsilon_-}{8m^2}\,\frac{d\xi_+\,d\xi_-\,d\varphi}{(\xi_+\xi_-)^3\sin\varphi},
+\]
+where
+\[
+1 - z = \frac{q^2}{m^2}\,\xi_+\xi_- = \xi_+ + \xi_- - 2\xi_+\xi_- + 2\sqrt{\xi_+\xi_-(1-\xi_+)(1-\xi_-)}\cos\varphi.
+\]
+Expressing from this $\cos\varphi$ and $\sin\varphi$ and substituting in (95.16), after simple algebraic transformations we obtain
+\begin{multline*}
+d\sigma = A\,d\varepsilon_+\,\frac{2\,d\xi_+\,d\xi_-\,dz}{[z(1-z) - (1-z)(\xi_+ + \xi_- - 1)^2 - z(\xi_+ - \xi_-)^2]^{1/2}} \times {} \\
+\times \biggl\{\frac{F^2(z)}{1-z}\bigl[(\varepsilon_+^2 + \varepsilon_-^2)z + 2\varepsilon_+\varepsilon_-(\xi_+ - \xi_- - 1)^2\bigr] + {} \\
+{} + \frac{F'^2(z)}{\nu^2}\bigl[(\varepsilon_+^2 + \varepsilon_-^2)z + 2\varepsilon_+\varepsilon_-(\xi_+ + \xi_- - 1)^2\bigr]\biggr\},
+\end{multline*}
+\[
+A = \left(\frac{\pi\nu}{\sinh\pi\nu}\right)^{\!2}\frac{Z^2\alpha r_\mathrm{e}^2}{2\pi\omega^3}.
+\]
+
+Finally, we introduce instead of $\xi_+$, $\xi_-$ new ``spherical'' variables $\chi$, $\psi$:
+\begin{gather*}
+\xi_+ + \xi_- - 1 = \sqrt{z}\sin\chi\cos\psi; \\
+\xi_+ - \xi_- = \sqrt{1-z}\sin\chi\sin\psi; \\
+0 \leqslant \chi \leqslant \pi/2, \quad 0 \leqslant \psi \leqslant 2\pi; \\
+2\,d\xi_+\,d\xi_- \to \sqrt{z(1-z)}\sin\chi\cos\chi\,d\chi\,d\psi.
+\end{gather*}
+
+\SourcePage{464}{469}
+
+The indicated intervals of variation of $\chi$ and $\psi$ correspond to the variation of $\xi_+$, $\xi_-$ from 0 to 1, i.e.\ $\delta_+$, $\delta_-$ (or, what is the same, $\theta_+$, $\theta_-$) from 0 to $\infty$; the fast convergence of the integral permits such an extension of the region of variation of angles. After the transformation, the square root in the denominator reduces to $\sqrt{z(1-z)}\cos\chi$; the integration over $d\chi\,d\psi$ is elementary and gives
+\[
+d\sigma = 2A\cdot 2\pi\,dz\left(\varepsilon_+^2 + \varepsilon_-^2 + \frac{2}{3}\,\varepsilon_+\varepsilon_-\right)\!\left[\frac{F^2(z)}{1-z} + \frac{z}{\nu^2}\,F'^2(z)\right]d\varepsilon_+.
+\]
+Here an extra factor of 2 has been introduced, taking into account the fact that the integration over $z$ will be carried out from 0 to $z_1$, whereas as the azimuth $\varphi$ varies from 0 to $\pi$ and from $\pi$ to $2\pi$ each value of $z$ is traversed twice.
+
+% [Figure 18: graph of f(ν)/ν² as a function of ν, showing a curve decreasing from about 1.20 at ν = 0 to about 1.04 at ν ≈ 0.3]
+
+The integration over $dz$ is performed with the aid of formula (92.14), which for $\nu' = -\nu$ (and correspondingly real $F(z)$) takes the form
+\[
+\frac{F^2}{1-z} + \frac{z}{\nu^2}\,F'^2 = \frac{1}{\nu^2}\,\frac{d}{dz}(zFF').
+\]
+The integral of this expression is $z_1 F(z_1)F'(z_1)/\nu^2$. The value $z_1 F(z_1) \approx F(1)$, while the limiting expression for $F'(z_1 \to 1)$ is given by the formula\footnote{The derivation of these formulas can be found in the appendix to the paper by \emph{Davies H., Bethe H.~A., Maximon L.~C.}\/\/ Phys.\ Rev.\ 1954.\ V.~93.\ P.~788.}
+\[
+\frac{1}{\nu^2}\,F'(z) = F(1-i\nu,\,1+i\nu,\,2,\,z) \approx -\bigl[\ln(1-z) + 2f(\nu)\bigr]\frac{\sinh\pi\nu}{\pi\nu},
+\]
+where
+\begin{equation}
+f(\nu) = \frac{1}{2}[\Psi(1+i\nu) + \Psi(1-i\nu) - 2\Psi(1)] = \nu^2\sum_{n=1}^{\infty}\frac{1}{n(n^2+\nu^2)},
+\label{eq:95.19}
+\end{equation}
+\[
+\Psi(z) = \Gamma'(z)/\Gamma(z).
+\]
+
+Substituting all the found expressions in (95.18), we obtain the following final formula:
+\begin{equation}
+d\sigma_{\varepsilon_+} = 4Z^2\alpha r_\mathrm{e}^2\!\left(\varepsilon_+^2 + \varepsilon_-^2 + \frac{2}{3}\,\varepsilon_+\varepsilon_-\right)\!\left[\ln\frac{2\varepsilon_+\varepsilon_-}{m\omega} - \frac{1}{2} - f(\alpha Z)\right]\frac{d\varepsilon_+}{\omega^3}.
+\label{eq:95.20}
+\end{equation}
+
+\SourcePage{465}{470}
+
+The total cross section of pair production by a photon with energy $\omega$:
+\begin{equation}
+\sigma = \frac{28}{9}\,Z^2\alpha r_\mathrm{e}^2\!\left[\ln\frac{2\omega}{m} - \frac{109}{42} - f(\alpha Z)\right].
+\label{eq:95.21}
+\end{equation}
+We see that in these formulas the changes reduce to the subtraction from the logarithm of a universal function of the atomic number $f(\alpha Z)$. In Fig.~18 a graph of this function is given. When $\nu \ll 1$ the function $f(\nu) \approx 1.2\nu^2$.

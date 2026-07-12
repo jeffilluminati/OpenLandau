@@ -275,10 +275,59 @@ where $F(\xi)$ is the Spence function, defined according to (131.19). In the non
 \end{equation}
 (when $\xi \gg 1$ we have $F(\xi) \approx \frac{1}{2}\ln^2\xi$---see (131.20); both terms with the square of the logarithm in (93.23) can then be omitted).
 
-When passing through a medium containing $N$ atoms per unit volume, a fast electron loses on average its energy to bremsstrahlung
+When passing through a medium containing $N$ atoms per unit volume, a fast electron loses on average its energy to bremsstrahlung at a rate $-d\varepsilon/dx = N\varkappa_\text{rad}$. Hence the energy decreases exponentially along the path, $\varepsilon = \varepsilon_0\,e^{-x/l_\text{rad}}$,
 
-at the rate
+\SourcePage{453}{458}
+
+at distances of order
+\begin{equation}
+l_\text{rad} \sim \frac{\varepsilon}{N\varkappa_\text{rad}} \sim \left[Z^2\alpha N r_\mathrm{e}^2\ln\frac{1}{\alpha Z^{1/3}}\right]^{-1};
+\label{eq:93.26}
+\end{equation}
+this length is called the \emph{radiation length}.
+
+\textbf{Coherence length.} Formula (93.20) admits also another, more general interpretation: for the applicability of the obtained formulas it is necessary that the external field in which the electron moves change little (in the direction of motion) over distances
+\begin{equation}
+l_\text{coh} \sim \frac{1}{q_\text{min}} \sim \frac{\varepsilon\varepsilon'}{m^2\omega} \left(= \frac{\varepsilon\varepsilon'}{c^2m^2\omega}\right);
+\label{eq:93.27}
+\end{equation}
+this length is called the \emph{formation length} of the radiation or the \emph{coherence length}\footnote{The considerations presented are due to \emph{M.~L.~Ter-Mikaelyan} (1953).}. The value (93.27), obtained in the Born approximation, has in fact (for ultrarelativistic particles) a completely general character---it is easy to obtain it also in the opposite limiting case of quasi-classical motion. Indeed, from formula (90.22)\footnote{The derivation of formula (90.22) is based only on the smallness of the curvature of the trajectory and in this sense is not connected with the fact that in \S\,90 a specifically magnetic field was considered.} it is immediately clear that for radiation at small angles to the direction of motion the essential times are
 \[
--\frac{d\varepsilon}{dx} = N\varepsilon\varkappa_\text{rad}/\varepsilon,
+\tau \sim \frac{\varepsilon'}{\varepsilon\omega(1 - v)} \sim \frac{\varepsilon\varepsilon'}{m^2\omega},
 \]
-where $\varkappa_\text{rad}/\varepsilon$ is the cross section of energy loss. For large $\varepsilon$ this ratio grows logarithmically (in the unscreened case). Under complete screening it tends to a constant, $\approx 4Z^2\alpha r_\mathrm{e}^2\ln(1/(\alpha Z^{1/3}))$.
+i.e.\ a segment of trajectory of length $c\tau \sim l_\text{coh}$.
+
+At a given frequency $\omega$ the coherence length grows with increase of the electron energy. Meanwhile the formulas obtained for bremsstrahlung on a single isolated atom can be valid for radiation during passage through a medium only under the condition that on the coherence length no repeated scattering of the photon or scattering of the electron occurs. The first condition means that one must have $l_\text{coh} \ll l_\text{rad}$. But already significantly earlier the second condition is violated---over a path $\sim l_\text{rad}$ there arises multiple scattering of the electron on nuclei of atoms of the medium.
+
+For a quantitative formulation of the condition let us return to formula (90.22) and the expression in the exponent of the exponential; carrying out the integration over time, we write it in the form
+\begin{equation}
+-i\frac{\omega\varepsilon}{\varepsilon'}\int_{t_1}^{t_1+\tau}\!(1 - \mathbf{n}\mathbf{v})\,dt \approx -\frac{i\omega\varepsilon}{\varepsilon'}(1 - v)\tau + \frac{1}{2}\int_{t_1}^{t_1+\tau}\!\theta^2\,dt,
+\label{eq:93.28}
+\end{equation}
+
+\SourcePage{454}{459}
+
+where $\theta$ is the small angle between $\mathbf{v}$ and $\mathbf{n}$, associated with scattering on nuclei. In Coulomb scattering the angle $\theta$ changes by small increments, so that the variation of $\theta$ with time has the character of a slow ``diffusion in angles''. The mean square deviation of the electron over a path $t - t_1\;(= c(t - t_1))$
+\[
+\overline{\theta^2} \sim (t - t_1)/l_\text{Coul},
+\]
+where $l_\text{Coul}$ is the mean free path with respect to Coulomb collisions. For this mean free path we have
+\[
+\frac{1}{l_\text{Coul}} \sim \frac{NZ^2e^4}{\varepsilon^2}\ln\frac{\chi_\text{max}}{\chi_\text{min}},
+\]
+where $\chi_\text{min}$ and $\chi_\text{max}$ are the minimum and maximum scattering angles in a single collision for which the scattering can still be considered Rutherford (cf.\ X, \S\,41)\footnote{Recall that the mean free path is defined by the transport cross section $\sigma_\text{tr} = \int(1 - \cos\chi)\,d\sigma(\chi)$. For scattering of ultrarelativistic electrons on a Coulomb centre the cross section $d\sigma(\chi)$ is given by formula (80.10).}. The first of them is determined by the atomic dimensions $a$, at which the field of the nucleus is screened: $\chi_\text{min} \sim 1/(pa)$. Large scattering angles are bounded (for an ultrarelativistic electron) by distances of order the nuclear radius $R$: $\chi_\text{max} \approx 1/(pR)$. Putting $R \approx 1.5\cdot 10^{-13}\,Z^{1/3}$\,cm $\sim r_\mathrm{e}\,Z^{1/3}$, we obtain
+\begin{equation}
+l_\text{Coul} \sim \frac{\varepsilon^2}{NZ^2e^4\ln(1/(\alpha Z^{1/3}))} \sim \frac{\alpha\varepsilon^2}{m^2}\,l_\text{rad}.
+\label{eq:93.29}
+\end{equation}
+
+The second term in (93.28), accumulated over the time $\tau \sim l_\text{coh}$, is now estimated as
+\[
+\overline{\theta^2}\,\tau \sim \frac{\omega\varepsilon\,l_\text{coh}^2}{\varepsilon'\,l_\text{Coul}} \sim \frac{l_\text{coh}}{\alpha\,l_\text{rad}}.
+\]
+For the applicability of the bremsstrahlung formulas obtained without account of multiple scattering, this term must be small compared with unity. From this we find the condition
+\begin{equation}
+l_\text{coh} \ll \alpha\,l_\text{rad},
+\label{eq:93.30}
+\end{equation}
+stronger than the condition $l_\text{coh} \ll l_\text{rad}$ (\emph{L.~D.~Landau, I.~Ya.~Pomeranchuk}, 1953).
