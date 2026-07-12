@@ -1,0 +1,274 @@
+\SourcePage{606}{609}
+\section{General theory of scattering}
+
+In classical mechanics, the collision of two particles is specified completely
+by their velocities and by the impact parameter (the distance at which they
+would pass one another if there were no interaction). In quantum mechanics the
+question itself must be posed differently: for motion at specified velocities,
+a trajectory has no meaning, and consequently neither does an impact
+parameter. The task of the theory is then only to calculate the probability
+that, after the collision, the particles will be deflected---or, as one says,
+\emph{scattered}---through a particular angle. Here we consider so-called
+elastic collisions, in which the particles undergo no transformations and, if
+they are composite, their internal states remain unchanged.
+
+Like every two-body problem, an elastic collision reduces to the scattering of
+one particle, with the reduced mass, by the field $U(r)$ of a fixed force
+centre\footnote{We neglect the spin--orbit interaction of the particles (if
+they possess spin). By assuming a centrally symmetric field, we also exclude
+from consideration processes such as electron scattering by molecules.}. The
+reduction is made by passing to the frame in which the centre of mass of the
+two particles is at rest. Let the scattering angle in this frame be $\theta$.
+It is connected by simple formulae with the deflection angles $\theta_1$ and
+$\theta_2$ of the two particles in the ``laboratory'' frame, in which one of
+the particles (the second) was at rest before the collision:
+\begin{equation}
+ \tan\theta_1=\frac{m_2\sin\theta}{m_1+m_2\cos\theta},\qquad
+ \theta_2=\frac{\pi-\theta}{2},
+ \tag{123.1}
+\end{equation}
+where $m_1$ and $m_2$ are the particle masses (see I, \S~17). In particular,
+when the masses are equal ($m_1=m_2$), this gives simply
+\begin{equation}
+ \theta_1=\frac\theta2,\qquad \theta_2=\frac{\pi-\theta}{2};
+ \tag{123.2}
+\end{equation}
+
+\SourcePage{607}{610}
+the sum $\theta_1+\theta_2=\pi/2$, so that the particles fly apart at a right
+angle.
+
+Throughout the remainder of this chapter, unless expressly stated otherwise,
+we use the centre-of-mass frame and denote the reduced mass of the colliding
+particles by $m$.
+
+A free particle moving along the positive $z$-axis is represented by a plane
+wave, which we write as $\psi=e^{ikz}$; thus we choose a normalization for
+which the current density in the wave equals the particle velocity $v$. Far
+from the centre, the scattered particles are represented by an outgoing
+spherical wave $f(\theta)e^{ikr}/r$, where $f(\theta)$ is a function of the
+scattering angle $\theta$ (the angle between the $z$-axis and the direction of
+the scattered particle). This function is called the \emph{scattering
+amplitude}. Hence the exact wave function solving the Schrödinger equation
+with potential energy $U(r)$ must have, at large distances, the asymptotic
+form
+\begin{equation}
+ \psi\approx e^{ikz}+\frac{f(\theta)}r e^{ikr}.
+ \tag{123.3}
+\end{equation}
+
+The probability per unit time for a scattered particle to cross the surface
+element $dS=r^2d\Omega$ (where $d\Omega$ is the element of solid angle) is
+$vr^{-2}|f|^2dS=v|f|^2d\Omega$\footnote{This argument tacitly assumes that the
+incident particle beam is bounded by a broad, but finite, aperture---broad so
+as to avoid diffraction effects---as in actual scattering experiments. There
+is consequently no interference between the two terms in (123.3): the square
+$|\psi|^2$ is evaluated at points where the incident wave is absent.}. Its
+ratio to the current density of the incident wave is
+\begin{equation}
+ d\sigma=|f(\theta)|^2d\Omega.
+ \tag{123.4}
+\end{equation}
+This quantity has the dimensions of area and is called the \emph{effective
+cross-section} (or simply the \emph{cross-section}) for scattering into the
+solid-angle element $d\Omega$. On putting
+$d\Omega=2\pi\sin\theta\,d\theta$, we obtain the cross-section
+\begin{equation}
+ d\sigma=2\pi\sin\theta|f(\theta)|^2d\theta
+ \tag{123.5}
+\end{equation}
+for scattering into the angular interval from $\theta$ to
+$\theta+d\theta$.
+
+The solution of the Schrödinger equation describing scattering in the central
+field $U(r)$ must plainly be axially symmetric about the $z$-axis, the
+direction of the incident particles. Any such solution may be represented as
+a
+
+\SourcePage{608}{611}
+superposition of continuous-spectrum wave functions for particles moving in
+the given field with specified energy $\hbar^2k^2/2m$, with orbital angular
+momenta of various magnitudes $l$ and vanishing $z$-components (these
+functions do not depend on the azimuthal angle $\varphi$ about the $z$-axis
+and are therefore axially symmetric). The required wave function thus has the
+form
+\begin{equation}
+ \psi=\sum_{l=0}^\infty A_lP_l(\cos\theta)R_{kl}(r),
+ \tag{123.6}
+\end{equation}
+where the $A_l$ are constants and the radial functions $R_{kl}(r)$ satisfy
+\begin{equation}
+ \frac1{r^2}\frac d{dr}\left(r^2\frac{dR_{kl}}{dr}\right)
+ +\left[k^2-\frac{l(l+1)}{r^2}-\frac{2m}{\hbar^2}U(r)\right]R_{kl}=0.
+ \tag{123.7}
+\end{equation}
+The coefficients $A_l$ must be chosen so that (123.6) has the asymptotic form
+(123.3) at large distances. We shall show that this requires
+\begin{equation}
+ A_l=\frac1{2k}(2l+1)i^l\exp(i\delta_l),
+ \tag{123.8}
+\end{equation}
+where $\delta_l$ are the phase shifts of the functions $R_{kl}$. This will at
+the same time express the scattering amplitude in terms of these phases.
+
+The asymptotic form of $R_{kl}$ is given by (33.20):
+\[
+ \begin{split}
+ R_{kl}&\approx\frac2r\sin\left(kr-\frac{l\pi}{2}+\delta_l\right)\\
+ &=\frac1{ir}\{(-i)^l\exp[i(kr+\delta_l)]
+ -i^l\exp[-i(kr+\delta_l)]\}.
+ \end{split}
+\]
+Substitution of this expression and (123.8) into (123.6) gives the asymptotic
+wave function
+\begin{equation}
+ \psi\approx\frac1{2irk}\sum_{l=0}^\infty(2l+1)P_l(\cos\theta)
+ [(-1)^{l+1}e^{-ikr}+S_le^{ikr}],
+ \tag{123.9}
+\end{equation}
+where we have introduced the notation
+\begin{equation}
+ S_l=\exp(2i\delta_l).
+ \tag{123.10}
+\end{equation}
+On the other hand, after the same rearrangement, the expansion (34.2) of a
+plane wave reads
+\[
+ e^{ikz}\approx\frac1{2ikr}\sum_{l=0}^\infty(2l+1)P_l(\cos\theta)
+ [(-1)^{l+1}e^{-ikr}+e^{ikr}].
+\]
+
+\SourcePage{609}{612}
+We see that all terms containing $e^{-ikr}$ cancel, as they must, in the
+difference $\psi-e^{ikz}$. The coefficient of $e^{ikr}/r$ in this difference,
+which is the scattering amplitude, is therefore
+\begin{equation}
+ f(\theta)=\frac1{2ik}\sum_{l=0}^\infty(2l+1)(S_l-1)P_l(\cos\theta).
+ \tag{123.11}
+\end{equation}
+This formula expresses the scattering amplitude in terms of the phases
+$\delta_l$ (H.~Faxen, J.~Holtsmark, 1927)\footnote{Of fundamental interest is
+the inverse problem of recovering the scattering potential when the phases
+$\delta_l$ are presumed known. This problem was solved by
+\emph{I.~M.~Gelfand, B.~M.~Levitan, and V.~A.~Marchenko}. In principle, to
+determine $U(r)$ it is sufficient to know $\delta_0(k)$ as a function of the
+wave vector over the whole range $0\leq k<\infty$, together with the
+coefficients $a_n$ in the asymptotic expressions (as $r\to\infty$)
+\[
+ R_{n0}\approx a_ne^{-\kappa_nr}/r
+ \quad(\kappa_n=\sqrt{2m|E_n|}/\hbar)
+\]
+for the wave functions of states belonging to discrete (negative) energy
+levels $E_n$, if such levels exist. Determining $U(r)$ from these data reduces
+to solving a certain linear integral equation. A systematic account may be
+found in: V.~de~Alfaro and T.~Regge, \emph{Potential Scattering}. Moscow: Mir,
+1966.}.
+
+Integrating $d\sigma$ over all angles gives the total scattering
+cross-section $\sigma$, which is the ratio of the total probability per unit
+time that a particle is scattered to the current density in the incident
+wave. Substituting (123.11) in
+\[
+ \sigma=2\pi\int_0^\pi|f(\theta)|^2\sin\theta\,d\theta
+\]
+and using the mutual orthogonality of Legendre polynomials with different
+$l$, together with
+\[
+ \int_0^\pi P_l^2(\cos\theta)\sin\theta\,d\theta=\frac2{2l+1},
+\]
+we obtain the following expression for the total cross-section:
+\begin{equation}
+ \sigma=\frac{4\pi}{k^2}\sum_{l=0}^\infty(2l+1)\sin^2\delta_l.
+ \tag{123.12}
+\end{equation}
+
+Each term of this sum is the \emph{partial cross-section} $\sigma_l$ for the
+scattering of particles with the specified orbital angular
+
+\SourcePage{610}{613}
+momentum $l$. The greatest possible value of this cross-section is
+\begin{equation}
+ \sigma_{l\,\max}=\frac{4\pi}{k^2}(2l+1).
+ \tag{123.13}
+\end{equation}
+Comparison with (34.5) shows that the number of particles scattered with
+angular momentum $l$ can be four times the number of such particles in the
+incident flux. This circumstance is a purely quantum effect associated with
+interference between scattered and unscattered particles.
+
+We shall also find it convenient below to use the \emph{partial scattering
+amplitudes} $f_l$, defined as the coefficients in the expansion
+\begin{equation}
+ f(\theta)=\sum_{l=0}^\infty(2l+1)f_lP_l(\cos\theta).
+ \tag{123.14}
+\end{equation}
+According to (123.11), they are related to the phases $\delta_l$ by
+\begin{equation}
+ f_l=\frac1{2ik}(S_l-1)=\frac1{2ik}(e^{2i\delta_l}-1),
+ \tag{123.15}
+\end{equation}
+and the partial cross-sections are
+\begin{equation}
+ \sigma_l=4\pi(2l+1)|f_l|^2.
+ \tag{123.16}
+\end{equation}
+
+\ProblemHeading
+
+Express the scattering amplitude in terms of phase shifts in two dimensions.
+The field is $U=U(\rho)$, where $\rho=\sqrt{x^2+z^2}$, and the particle flux
+is directed along the $z$-axis.
+
+\SolutionHeading In two dimensions, far from the scatterer the wave function
+is a superposition of a plane wave and an outgoing cylindrical wave:
+\begin{equation}
+ \psi=e^{ikz}+f(\varphi)\frac{e^{ik\rho}}{\sqrt{-i\rho}}.
+ \tag{1}
+\end{equation}
+Here $\varphi$ is the angle between the $z$-axis and the scattering direction,
+and $f(\varphi)$ is the scattering amplitude, whose dimension in two
+dimensions is the square root of length. The factor
+$-i=\exp(-i\pi/2)$ beneath the radical has been introduced to simplify the
+subsequent formulae. The scattering cross-section per unit length along the
+$y$-axis is
+\[
+ d\sigma=|f|^2d\varphi.
+\]
+It has the dimension of length.
+
+The wave function must be expanded in functions with a definite projection
+$m$ of angular momentum on the $y$-axis, of the form
+$Q_m(\rho)e^{im\varphi}$. At large distances from the scatterer, the radial
+functions differ from the free-motion functions obtained in the problem to
+\S~34 only by a phase shift:
+\[
+ Q_m(\rho)\approx i^m\sqrt{\frac2{\pi k\rho}}
+ \sin\left[k\rho-\frac\pi2\left(m-\frac12\right)+\delta_m\right],
+\]
+
+\SourcePage{611}{614}
+with $\delta_m=\delta_{-m}$. Repeating the argument of this section and using
+the plane-wave expansion from the problem to \S~34, we find that the function
+with asymptotic form (1) is given by the series
+\[
+ \psi=\sum_{m=-\infty}^{\infty}e^{i\delta_m}Q_m(\rho)e^{im\varphi},
+\]
+and that the scattering amplitude is
+\begin{equation}
+ f(\varphi)=\frac1{i\sqrt{2\pi k}}
+ \sum_{m=-\infty}^{\infty}(e^{2i\delta_m}-1)e^{im\varphi}.
+ \tag{2}
+\end{equation}
+Integration gives the total cross-section
+\[
+ \sigma=\int_0^{2\pi}|f|^2d\varphi
+ =\sum_{m=-\infty}^{\infty}\sigma_m,
+ \qquad \text{where}\qquad
+ \sigma_m=\sigma_{-m}=\frac4k\sin^2\delta_m.
+\]
+It is readily verified that
+\begin{equation}
+ \operatorname{Im}f(0)=\sqrt{\frac{k}{8\pi}}\,\sigma,
+ \tag{3}
+\end{equation}
+which is the optical theorem in two dimensions (see formula (125.9) below).

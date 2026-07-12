@@ -1,0 +1,125 @@
+\SourcePage{720}{723}
+\section{Inelastic scattering of slow particles}
+
+The derivation in \S~132 of the limiting law for elastic scattering at low
+energies is readily generalized to include inelastic processes.
+
+As before, scattering with $l=0$ plays the principal role at low energies.
+Recall that the corresponding $S$-matrix element found in \S~132 was
+\[
+ S_0=e^{2i\delta_0}\approx1+2i\delta_0=1-2ik\alpha.
+\]
+The properties of the wave function used in \S~132 change only in that its
+condition at infinity, the asymptotic form (142.1), is now complex instead of
+the real standing wave of purely elastic scattering. Consequently the
+constant $\alpha=-c_2/c_1$ is complex as well. The modulus $|S_0|$ is no
+longer unity; the condition $|S_0|<1$ means that the imaginary part of
+$\alpha=\alpha'+i\alpha''$ must be negative, $\alpha''<0$.
+
+Substitution of $S_0$ in (142.7) gives the elastic and inelastic scattering
+cross-sections
+\begin{align}
+ \sigma_e&=4\pi|\alpha|^2, \tag{143.1}\\
+ \sigma_r&=(4\pi/k)|\alpha''|. \tag{143.2}
+\end{align}
+Thus the elastic scattering cross-section remains independent of speed. The
+inelastic cross-section is inversely proportional to the particle speed, the
+
+\SourcePage{721}{724}
+so-called \emph{$1/v$ law} (H.~A.~Bethe, 1935). Hence, as the speed
+decreases, inelastic processes become increasingly important relative to
+elastic scattering\footnote{The velocity dependence of partial reaction
+cross-sections for nonzero orbital angular momenta $l$ can be determined in
+the same way. They are proportional to
+$\sigma_r^{(l)}\sim k^{2l-1}$. The elastic partial cross-sections remain
+proportional to $\sigma_e^{(l)}\sim k^{4l}$, and therefore decrease as
+$k\to0$ more rapidly than $\sigma_r^{(l)}$ with the same $l$.}.
+
+The limiting laws (143.1), (143.2) are, of course, only the first terms in
+expansions of the cross-sections in powers of $k$. Interestingly, the next
+term in each expansion contains no new constants beyond those occurring in
+(143.1), (143.2) (F.~L.~Shapiro, 1958). This follows from the evenness of
+$g_0(k^2)$ in the partial amplitude (142.13),
+$f_0(k)=1/[g_0(k^2)-ik]$, for $l=0$. At small $k$, this function is expanded
+in even powers of $k$, so the term following $g_0\approx-1/\alpha$ is of
+order $k^2$. Neglecting that term, we may nevertheless retain two terms in
+$f_0(k)$: $f_0(k)\approx-\alpha(1-ik\alpha)$. The corresponding next terms
+in the cross-sections may then also be retained, giving
+\begin{align}
+ \sigma_e&=4\pi|\alpha|^2(1-2k|\alpha''|), \tag{143.3}\\
+ \sigma_r&=(4\pi|\alpha''|/k)(1-2k|\alpha''|). \tag{143.4}
+\end{align}
+
+These results assume that the interaction decreases sufficiently rapidly at
+large distances. We saw in \S~132 that the elastic scattering amplitude tends
+to a constant as $k\to0$ if $U(r)$ decreases faster than $r^{-3}$. The same
+condition is required for (143.1) in the presence of inelastic
+channels\footnote{Equation (143.3), which includes the next term in powers of
+$k$, requires $U$ to decrease faster than $r^{-4}$.}.
+
+The $1/v$ law for the reaction cross-section requires only the weaker
+condition that the field decrease faster than $r^{-2}$, as is clear from the
+following direct argument.
+
+The probability of a reaction in a collision is proportional to the squared
+modulus of the incident-particle wave function in the ``reaction zone,'' the
+region $r\sim a$. Physically, this expresses the fact that a slow neutron
+colliding with a nucleus, for example, can cause a reaction only by
+``penetrating'' the nucleus. If the interaction decreases faster than
+$r^{-2}$, it does not change the order of magnitude of the wave function on
+the path from large $r$ to $r\sim a$;
+
+\SourcePage{722}{725}
+in other words, $|\psi(a)/\psi(\infty)|^2$ tends to a finite limit as
+$k\to0$. This follows because $U\psi$ in the Schrödinger equation is small
+compared with $\Delta\psi$. The reaction cross-section is obtained by
+dividing $|\psi|^2$ by the current density. Taking $\psi$ to be a plane wave
+normalized to unit current density gives $|\psi|^2\sim1/v$, the required
+result.
+
+In collisions of charged nuclear particles, the short-range nuclear forces
+are accompanied by a slowly decreasing Coulomb field. This field may
+substantially alter the incident wave in the reaction zone. The reaction
+cross-section is found by multiplying $1/v$ by the ratio of the squared
+moduli of the Coulomb and free wave functions at $r\to0$; this ratio is given
+by (136.10), (136.11). Thus, in Coulomb units,
+\begin{equation}
+ \sigma_r=\frac{2\pi A}{k^2|e^{\pm2\pi/k}-1|};
+ \tag{143.5}
+\end{equation}
+the plus sign in the exponent corresponds to repulsion, and the minus sign to
+attraction. The coefficient $A$ is the constant in the $1/v$ law. If the
+speed is large compared with the Coulomb unit ($k\gg1$), the Coulomb
+interaction is unimportant and the law $\sigma_r=A/k$ is recovered.
+
+If the speed is small compared with the Coulomb unit ($k\ll1$, or in ordinary
+units $Z_1Z_2e^2/\hbar v\gg1$, where $Z_1e$, $Z_2e$ are the particle charges),
+the Coulomb interaction dominates the wave function in the reaction zone.
+For collisions of attracting particles,
+\begin{equation}
+ \sigma_r=2\pi A/k^2,
+ \tag{143.6}
+\end{equation}
+whereas for collisions of repelling particles,
+\begin{equation}
+ \sigma_r=(2\pi A/k^2)e^{-2\pi/k}.
+ \tag{143.7}
+\end{equation}
+In the latter case the cross-section tends to zero as $k\to0$. The
+exponential factor distinguishing (143.7) from (143.6) is the probability of
+penetrating the Coulomb potential barrier; in ordinary units it is
+$\exp(-2\pi Z_1Z_2e^2/\hbar v)$.
+
+The limiting law (143.6) applies not only to the total cross-section but also
+to the partial cross-section for each angular momentum $l$\footnote{The same
+is true of (143.7).}. This follows because, in the expansion (136.1) of the
+functions $\psi_{\mathbf{k}}^{(+)}$ occurring in (136.10), (136.11), the
+
+\SourcePage{723}{726}
+functions $R_{kl}$ in every term have the same limiting dependence on $k$.
+Indeed, as $k\to0$ the radial functions for attraction are given by (36.25),
+and near the center $R_{kl}\sim\sqrt{k}r^l$. The contributions of the
+individual angular momenta to the squared wave function in the reaction zone
+are proportional to $a^{2l}/k$; they therefore have the same $k$ dependence,
+although they are reduced by the small factor $(a/a_c)^{2l}$, where
+$a_c=\hbar^2/(mZ_1Z_2e^2)$ is the Coulomb unit of length.

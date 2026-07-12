@@ -1,0 +1,227 @@
+\SourcePage{769}{772}
+\section{Inelastic scattering at high energies}
+
+The eikonal approximation used in §~131 for the mutual scattering of two particles can be generalized so as to include processes, among them inelastic ones, occurring when a fast particle collides with a system of particles---a ``target'' (R.~J.~Glauber, 1958).
+
+The basic assumptions remain the same in this generalization. The incident-particle energy $E$ is taken to be so large that $E\gg|U|$ and $ka\gg1$, where $U$ is the energy of its interaction with the target particles and $a$ is the range of that interaction. We consider scattering with a relatively small momentum transfer: the change $\hbar\mathbf q$ in the incident particle's momentum is small compared with its initial momentum $\hbar\mathbf k$, so that $q\ll k$. Here, however, this condition implies not only a small scattering angle but also a comparatively small energy transfer.
+
+We shall also suppose that the incident particle's speed $v$ is large compared with the speeds $v_0$ of particles within the target:
+\begin{equation}
+ v\gg v_0.
+ \tag{152.1}
+\end{equation}
+
+\SourcePage{770}{773}
+For the scattering of charged particles by atoms, this condition is equivalent to the applicability of the Born approximation (compare §§~148 and 150): $v\gg v_0$ automatically entails $|U|a/\hbar v\ll1$. Thus the theory developed here is not needed in that case. The situation is different for nuclear targets, whose constituents are bound by nuclear rather than Coulomb forces. For definiteness, we shall below speak of a fast particle scattered by a nucleus\footnote{For nuclei of any appreciable mass, condition (152.1) requires relativistic values of $v$. In presenting the formalism of this section within nonrelativistic theory, we leave aside the question of its actual applicability to particular scattering processes.}.
+
+Condition (152.1) permits the incident particle's motion to be considered at prescribed positions of the nucleons in the nucleus\footnote{This approximation is analogous to the one underlying molecular theory, in which the electronic state is considered for a prescribed arrangement of the nuclei.}. In other words, the wave function of the particle--target system can be written as
+\begin{equation}
+ \psi(\mathbf r,\mathbf R_1,\mathbf R_2,\ldots)
+ =\varphi(\mathbf r;\mathbf R_1,\mathbf R_2,\ldots)\Phi_i(\mathbf R_1,\mathbf R_2,\ldots).
+ \tag{152.2}
+\end{equation}
+Here $\Phi_i(\mathbf R_1,\mathbf R_2,\ldots)$ is the wave function of some internal state $i$ of the nucleus ($\mathbf R_1,\mathbf R_2,\ldots$ are the position vectors of its nucleons). The factor $\varphi(\mathbf r;\mathbf R_1,\mathbf R_2,\ldots)$ is the wave function of the scattered particle ($\mathbf r$ is its position vector) for fixed values of $\mathbf R_1,\mathbf R_2,\ldots$, which serve as parameters in the Schrödinger equation
+\begin{equation}
+ \left[-\frac{\hbar^2}{2m}\Delta+\sum_a U_a(\mathbf r-\mathbf R_a)\right]\varphi
+ =\frac{\hbar^2k^2}{2m}\varphi,
+ \tag{152.3}
+\end{equation}
+where $U_a(\mathbf r-\mathbf R_a)$ is the interaction energy of the particle with nucleon $a$, and $\hbar\mathbf k$ is its momentum at infinity\footnote{Equation (152.3) assumes that the particle's interaction with the nucleus reduces to the sum of its pairwise interactions with the individual nucleons.}.
+
+If a solution of (152.3) is found with the asymptotic form
+\begin{equation}
+ \varphi=e^{i\mathbf k\mathbf r}+F(\mathbf n',\mathbf n;\mathbf R_1,\mathbf R_2,\ldots)\frac{e^{ikr}}r,
+ \tag{152.4}
+\end{equation}
+where $\mathbf n'=\mathbf r/r$ and $\mathbf n=\mathbf k/k$, then the wave function (152.2),
+\begin{equation}
+ \psi=e^{i\mathbf k\mathbf r}\Phi_i+F\Phi_i\frac{e^{ikr}}r,
+ \tag{152.5}
+\end{equation}
+describes scattering by a nucleus which, before the collision, is in its state $i$: in (152.5), the incident wave $e^{i\mathbf k\mathbf r}$ occurs multiplied by $\Phi_i$.
+
+\SourcePage{771}{774}
+The second term in (152.5) represents the scattered wave. This expression can be used to determine the scattering amplitude only when the incident particle's energy changes by sufficiently little, that is, when the change in the nucleus's internal energy is small. Indeed, in treating the particle's motion in the constant field of nucleons ``fixed in place,'' as in (152.3), we thereby neglect a possible change in the energy of this motion.
+
+To extract the scattering amplitude for a definite change of the nucleus's internal state, $\psi$ must be expanded in the form
+\begin{equation}
+ \psi=e^{i\mathbf k\mathbf r}\Phi_i+\sum_f f_{fi}(\mathbf n',\mathbf n)\Phi_f\frac{e^{ikr}}r,
+ \tag{152.6}
+\end{equation}
+where the sum runs over the different states of the nucleus. The quantity $f_{fi}(\mathbf n',\mathbf n)$ is then the desired amplitude for scattering accompanied by the specified nuclear transition $i\to f$, as a function of the scattering angle (the angle between $\mathbf n$ and $\mathbf n'$). Comparison of (152.6) and (152.5) gives
+\begin{equation}
+ f_{fi}(\mathbf n',\mathbf n)=\int\Phi_f^*F\Phi_i\,d\tau,
+ \tag{152.7}
+\end{equation}
+where $d\tau=d^3R_1d^3R_2\ldots$ is the volume element in the nucleus's configuration space. We emphasize again that this formula applies only when the energy difference between states $i$ and $f$ is relatively small.
+
+The solution (152.4) of (152.3) is itself obtained by the method described in §~131\footnote{It was noted in §~131 that the initial expression (131.4) for the wave function applies only at distances $a\ll ka^2$. This fact did not affect the subsequent derivation in §~131. For scattering by a system of particles (a nucleus), however, it gives an additional restriction: expression (131.4) must be valid throughout the entire scattering system. Hence $R_0\ll ka^2$, where $R_0$ is the nuclear radius and $a$ is the range of the potentials $U$.}. In analogy with (131.7), we have
+\begin{equation}
+ F(\mathbf n',\mathbf n;\mathbf R_1,\mathbf R_2,\ldots)
+ =\frac{k}{2\pi i}\int[S(\boldsymbol\rho,\mathbf R_1,\mathbf R_2,\ldots)-1]
+ e^{-i\mathbf q\boldsymbol\rho}\,d^2\rho,
+ \tag{152.8}
+\end{equation}
+with the notation
+\begin{align}
+ S(\boldsymbol\rho,\mathbf R_1,\mathbf R_2,\ldots)&=\exp[2i\delta(\boldsymbol\rho,\mathbf R_1,\mathbf R_2,\ldots)],\notag\\
+ \delta(\boldsymbol\rho,\mathbf R_1,\mathbf R_2,\ldots)&=\sum_a\delta_a(\boldsymbol\rho-\mathbf R_{a\perp}),\notag\\
+ \delta_a(\boldsymbol\rho-\mathbf R_{a\perp})&=-\frac1{2\hbar v}\int_{-\infty}^{\infty}U_a(\mathbf r-\mathbf R_a)\,dz.
+ \tag{152.9}
+\end{align}
+
+\SourcePage{772}{775}
+Recall that $\boldsymbol\rho$ is the projection of the position vector $\mathbf r$ on the $xy$ plane perpendicular to $\mathbf k$ (and $\mathbf R_{a\perp}$ is the corresponding projection of $\mathbf R_a$). Further, $\hbar\mathbf q=\mathbf p'-\mathbf p$ is the change in the scattered particle's momentum, of which only the transverse components occur in (152.8). The functions $\delta_a$ determine the amplitudes for elastic scattering by the separate free nucleons according to
+\begin{equation}
+ f^{(a)}=\frac{k}{2\pi i}\int\{\exp[2i\delta_a(\boldsymbol\rho)]-1\}e^{-i\mathbf q\boldsymbol\rho}\,d^2\rho.
+ \tag{152.10}
+\end{equation}
+For $i=f$, equations (152.7) and (152.8) give the amplitude for elastic scattering by the nucleus:
+\begin{equation}
+ f_{ii}(\mathbf n',\mathbf n)=\frac{k}{2\pi i}\int[\overline S(\boldsymbol\rho)-1]e^{-i\mathbf q\boldsymbol\rho}\,d^2\rho,
+ \tag{152.11}
+\end{equation}
+where the bar denotes averaging over the internal state of the nucleus:
+\begin{equation}
+ \overline S(\boldsymbol\rho)=\int S(\boldsymbol\rho,\mathbf R_1,\mathbf R_2,\ldots)|\Phi_i(\mathbf R_1,\mathbf R_2,\ldots)|^2\,d\tau.
+ \tag{152.12}
+\end{equation}
+This is a generalization of the earlier formula (131.7).
+
+Putting $\mathbf n'=\mathbf n$ in (152.11) and using the optical theorem (142.10), we obtain the total scattering cross-section
+\begin{equation}
+ \sigma_t=2\int(1-\Re\overline S)\,d^2\rho.
+ \tag{152.13}
+\end{equation}
+The integrated elastic-scattering cross-section $\sigma_e$ is obtained by integrating $|f_{ii}|^2$ over the directions $\mathbf n'$. At small scattering angles $\theta$, we have $q\simeq k\theta$ and the solid-angle element is $d\Omega\simeq d^2q/k^2$. Hence
+\[
+ \sigma_e=\int|f_{ii}|^2\frac{d^2q}{k^2}.
+\]
+Writing $f_{ii}f_{ii}^*$, with $f_{ii}$ from (152.11), as a double integral over $d^2\rho\,d^2\rho'$, we integrate over $d^2q$ by means of
+\[
+ \int e^{-i\mathbf q(\boldsymbol\rho-\boldsymbol\rho')}\,d^2q=(2\pi)^2\delta(\boldsymbol\rho-\boldsymbol\rho'),
+\]
+after which the delta function is removed by integration. The result is
+\begin{equation}
+ \sigma_e=\int|\overline S-1|^2\,d^2\rho.
+ \tag{152.14}
+\end{equation}
+Finally, the total reaction cross-section is
+\begin{equation}
+ \sigma_r=\sigma_t-\sigma_e=\int(1-|\overline S|^2)\,d^2\rho.
+ \tag{152.15}
+\end{equation}
+
+\SourcePage{773}{776}
+Notice the correspondence between (152.13)--(152.15) and the general formulas (142.3)--(142.5). If in the latter we pass from summation over large $l$ to integration over $d^2\rho$, with $\rho=l/k$, and replace $S_l$ by the function $\overline S(\rho)$, we obtain (152.13)--(152.15).
+
+\subsection*{\ProblemHeading}
+
+1. Express the amplitude for elastic scattering of a fast particle by a deuteron in terms of the amplitudes for scattering by a proton and a neutron (R.~J.~Glauber, 1955).
+
+\SolutionHeading
+According to (152.11), the amplitude for elastic scattering by a deuteron is
+\begin{equation}
+ \begin{split}
+ f^{(d)}(\mathbf q)={}&\frac{k}{2\pi i}\int|\psi_d(\mathbf R)|^2
+ \left\{\exp\left[2i\delta_n\left(\boldsymbol\rho-\frac{\mathbf R_\perp}{2}\right)\right.\right.\\
+ &\left.\left.{}+2i\delta_p\left(\boldsymbol\rho+\frac{\mathbf R_\perp}{2}\right)\right]-1\right\}
+ e^{-i\mathbf q\boldsymbol\rho}\,d^3R\,d^2\rho.
+ \end{split}
+ \tag{1}
+\end{equation}
+Here $\psi_d(\mathbf R)$ is the wave function of the relative motion of the neutron ($n$) and proton ($p$) in the deuteron; $\mathbf R=\mathbf R_n-\mathbf R_p$, while $\mathbf R_\perp$ is the projection of $\mathbf R$ on the plane perpendicular to the incident particle's wave vector $\mathbf k$. Write the difference in braces in (1) as
+\[
+ e^{2i\delta_n+2i\delta_p}-1=(e^{2i\delta_n}-1)+(e^{2i\delta_p}-1)+(e^{2i\delta_n}-1)(e^{2i\delta_p}-1).
+\]
+The integrals can then be transformed by using the definition (152.10) of the neutron and proton scattering amplitudes, $f^{(n)}$ and $f^{(p)}$, together with the inverse formulas.
+
+We obtain
+\begin{equation}
+ \begin{split}
+ f^{(d)}(\mathbf q)={}&f^{(n)}(\mathbf q)F(\mathbf q)+f^{(p)}(\mathbf q)F(-\mathbf q)\\
+ &-\frac1{2\pi ik}\int F(2\mathbf q')f^{(n)}\left(\frac{\mathbf q}{2}+\mathbf q'\right)
+ f^{(p)}\left(\frac{\mathbf q}{2}-\mathbf q'\right)d^2q',
+ \end{split}
+ \tag{2}
+\end{equation}
+where
+\[
+ F(\mathbf q)=\int|\psi_d(\mathbf R)|^2e^{-i\mathbf q\mathbf R/2}\,d^3R
+\]
+is the deuteron form factor. Setting $\mathbf q=0$ in (2), with $F(0)=1$, and using the optical theorem (142.10), we find the total cross-section for scattering by the deuteron:
+\begin{equation}
+ \sigma_t^{(d)}=\sigma_t^{(n)}+\sigma_t^{(p)}+\frac2{k^2}\Re\int F(2\mathbf q)f^{(n)}(\mathbf q)f^{(p)}(-\mathbf q)\,d^2q.
+ \tag{3}
+\end{equation}
+
+2. Determine the cross-section for breakup of a fast deuteron into a free neutron and proton when it is scattered by a heavy absorbing nucleus. The nuclear radius $R_0$ is large compared both with the deuteron's wavelength ($kR_0\gg1$, where $\hbar k$ is the deuteron momentum) and with the deuteron's radius (E.~L.~Feinberg, 1954; R.~J.~Glauber, 1955; A.~I.~Akhiezer and A.~G.~Sitenko, 1955).
+
+\SolutionHeading
+For an incident deuteron plane wave, a large ($kR_0\gg1$) absorbing nucleus acts as an opaque screen at which the wave diffracts. The wave function of the incident deuterons is $e^{i\mathbf k\mathbf r}\psi_d(\mathbf R)$, where $\psi_d(\mathbf R)$ is the internal deuteron wave function.
+
+\SourcePage{774}{777}
+Here $\mathbf R=\mathbf R_n-\mathbf R_p$ is the vector from the proton to the neutron in the deuteron, and $\mathbf r=(\mathbf R_n+\mathbf R_p)/2$ is the position vector of their centre of mass. The absorbing nucleus ``cuts out'' the part of this function for which the transverse coordinates of the neutron and proton, $\boldsymbol\rho_n$ and $\boldsymbol\rho_p$, fall within the nucleus's ``shadow,'' namely inside the circle of radius $R_0$. In other words, the wave function becomes
+\[
+ \psi=e^{i\mathbf k\mathbf r}S(\boldsymbol\rho_n,\boldsymbol\rho_p)\psi_d(\mathbf R),
+\]
+where $S=1$ for $\rho_n,\rho_p\geqslant R_0$, while $S=0$ if either $\rho_n$ or $\rho_p$ is less than $R_0$\footnote{The Coulomb interaction between the deuteron and the nucleus is neglected.}. Apart from the factor $\psi_d$, this function corresponds to the form (131.5) of the incident wave, in which diffraction-induced bending of rays is ignored. The factor $S$ therefore has the same meaning as in §§~131 and 152.
+
+In analogy with (152.13) and (152.14), the total deuteron scattering cross-section $\sigma_t$, including all inelastic processes, and the elastic-scattering cross-section $\sigma_e$ are
+\[
+ \sigma_t=2\int(1-\overline S)\,d^2\rho,
+ \qquad
+ \sigma_e=\int(\overline S-1)^2\,d^2\rho,
+\]
+where $\boldsymbol\rho=(\boldsymbol\rho_n+\boldsymbol\rho_p)/2$ and the reality of $S$ has been used; $S$ is averaged over the deuteron ground state:
+\[
+ \overline S(\boldsymbol\rho)=\int S|\psi_d(\mathbf R)|^2\,d^3R.
+\]
+We use the approximate wave function
+\[
+ \psi_d(R)=\sqrt{\frac{\varkappa}{2\pi}}\frac{e^{-\varkappa R}}R,
+\]
+valid at distances $R$ beyond the range of the nuclear forces acting between neutron and proton (compare (133.14)); here $\varkappa=\sqrt{m|E_d|}/\hbar$, $|E_d|$ is the deuteron binding energy, and $m$ is the nucleon mass. By definition of $S$, the difference $1-S$ is nonzero if one or both nucleons enter the circle of radius $R_0$ and are absorbed by the nucleus. Therefore
+\begin{equation}
+ \sigma_{\mathrm{cap}}=\int(1-\overline S)\,d^2\rho=\frac12\sigma_t
+ \tag{1}
+\end{equation}
+is the cross-section for capture of one or both nucleons. On the other hand, $\sigma_t=\sigma_{\mathrm{cap}}+\sigma_e+\sigma_{\mathrm{br}}$, where $\sigma_{\mathrm{br}}$ is the ``diffractive'' deuteron-breakup cross-section sought. Thus
+\begin{equation}
+ \sigma_{\mathrm{br}}=\frac12\sigma_t-\sigma_e=\int\overline S(1-\overline S)\,d^2\rho.
+ \tag{2}
+\end{equation}
+For $R_0\varkappa\gg1$, only small distances, of order $1/\varkappa$, from the nuclear edge contribute materially to the integral (2). Integration along the edge then gives a factor $2\pi R_0$, while integration in the perpendicular direction may be performed as though the shadow region were bounded by a straight line. Taking this line as the $y$ axis and directing the $x$ axis outward from the shadow, we have
+\[
+ \sigma_{\mathrm{br}}=2\pi R_0\int_0^\infty\overline S(x)[1-\overline S(x)]\,dx.
+\]
+
+\SourcePage{775}{778}
+Here the integral
+\[
+ \overline S(x)=\int_{-2x}^{2x}\!\int\!\int|\psi_d(\mathbf R)|^2\,dX\,dY\,dZ,
+ \qquad R=\sqrt{X^2+Y^2+Z^2},
+\]
+is taken over the region $X_n,X_p\geqslant0$ for a fixed value of $x=(X_n+X_p)/2$, or equivalently over $|X|=|X_n-X_p|\leqslant2x$. It is transformed by passing to $X$, $R$, and the polar angle in the $YZ$ plane, with $dY\,dZ\to2\pi R\,dR$, and becomes
+\begin{equation}
+ \overline S(x)=1-e^{-4\varkappa x}+4\varkappa x\int_{4\varkappa x}^{\infty}\frac{e^{-\xi}}\xi\,d\xi.
+ \tag{3}
+\end{equation}
+The integral (2), with this function $\overline S(x)$, is evaluated by repeated integrations by parts, using
+\[
+ \int_0^\infty x^n\ln x\,e^{-ax}\,dx
+ =\frac{n!}{a^{n+1}}\left(1+\frac12+\cdots+\frac1n-C-\ln a\right).
+\]
+The result is
+\[
+ \sigma_{\mathrm{br}}=\frac{\pi R_0}{3\varkappa}\left(\ln2-\frac14\right).
+\]
+Under the same condition $\varkappa R_0\gg1$, the capture cross-section is
+\[
+ \sigma_{\mathrm{cap}}=\pi R_0^2+\frac{\pi R_0}{4\varkappa}
+\]
+(the integral (1) over $\rho>R_0$ is evaluated with (3), while the integral over $\rho<R_0$ gives $\pi R_0^2$). This cross-section includes both capture of the deuteron as a whole and capture of only one nucleon with release of the other (the stripping reaction). The cross-section for the latter is calculated as the impact area, averaged with $|\psi_d|^2$, corresponding to the entry of just one of the two nucleons into the shadow region, and is
+\[
+ \sigma_{\mathrm{cap}\,n}=\sigma_{\mathrm{cap}\,p}=\frac{\pi R_0}{4\varkappa}
+\]
+(R.~Serber, 1947).

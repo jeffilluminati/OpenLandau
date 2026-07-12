@@ -1,0 +1,170 @@
+\SourcePage{761}{764}
+\section{Inelastic collisions of heavy particles with atoms}
+
+Expressed in terms of the particle speed, the condition for applicability of
+the Born approximation to collisions of heavy particles with atoms remains
+the same as for electrons: $v\gg v_0$.
+
+This follows directly from the general condition (126.2) for applicability of
+perturbation theory, $Ua_0/\hbar v\ll1$, upon observing that the particle mass
+does not enter it at all, while $Ua_0/\hbar$ is of the order of the atomic
+electron speed.
+
+In the coordinate system in which the center of mass of the atom and particle
+is at rest, the cross section is determined by the general formula (148.3)
+(where $m$ must now mean the reduced mass of the particle and atom). It is
+more convenient, however, to consider the collision in the coordinate system
+in which the scattering atom is at rest before the collision. For this
+purpose we start from (148.1). In the coordinate system in which the atom was
+at rest before the collision, the argument of the delta-function expressing
+energy conservation is
+\begin{equation}
+ \frac{p'^2}{2M}-\frac{p^2}{2M}+
+ \frac{(\mathbf p'-\mathbf p)^2}{2M_a}+E_n-E_0,
+ \tag{150.1}
+\end{equation}
+where $M$ is the mass of the incident particle and $M_a$ the mass of the atom;
+the third term is the atom's recoil kinetic energy (which could be neglected
+completely in an electron collision).
+
+When a fast heavy particle collides with an atom, the change in the particle's
+momentum is almost always small compared with its initial momentum. If this
+condition holds, the atom's recoil energy may be neglected in the argument of
+the delta-function. We then return exactly to formula (148.3), except that
+$m$ must be replaced by the mass $M$ of the incident particle (not by the
+reduced mass of the particle and atom). Since the momentum transfer is
+assumed small compared with the initial momentum, we put $p\approx p'$.
+Thus, for the cross section in the coordinate system in which the atom was at
+rest before the collision,
+
+\SourcePage{762}{765}
+we obtain
+\begin{equation}
+ d\sigma_n=\frac{M^2}{4\pi^2\hbar^4}
+ \left|\iint Ue^{-i\mathbf q\mathbf r}\psi_n^*\psi_0\,d\tau\,dV\right|^2d\Omega.
+ \tag{150.2}
+\end{equation}
+
+To allow for a particle charge different from the electron charge, we write
+$ze^2$ in place of $e^2$, where $ze$ is the charge of the incident particle.
+The general formula for inelastic scattering, written in the form (148.9),
+\begin{equation}
+ d\sigma_n=8\pi\left(\frac{ze^2}{\hbar v}\right)^2
+ \left|\left\langle n\left|\sum_a e^{-i\mathbf q\mathbf r_a}\right|0\right\rangle\right|^2
+ \frac{dq}{q^3},
+ \tag{150.3}
+\end{equation}
+contains no particle mass. It follows that all formulas derived from it remain
+applicable to collisions of heavy particles as well, provided those formulas
+are expressed in terms of $v$ and $q$.
+
+It is readily seen how formulas expressed in terms of the scattering angle
+$\vartheta$ (the deflection angle of the heavy particle colliding with the
+atom) must be modified. First observe that in an inelastic collision of a
+heavy particle, $\vartheta$ is always small. Indeed, when the momentum
+transfer is large compared with atomic-electron momenta, an inelastic
+collision with an atom may be regarded as an elastic collision with free
+electrons; but when a heavy particle collides with a light one (an electron),
+the heavy particle is hardly deflected. In other words, the momentum transfer
+from the heavy particle to the atom is small compared with the particle's
+initial momentum (the exception is elastic scattering through large angles,
+which is, however, extremely improbable).
+
+Consequently, throughout the angular range one may put
+\begin{equation}
+ q=\frac1\hbar\sqrt{\left(\frac{E_n-E_0}{v}\right)^2+(Mv\vartheta)^2},
+ \tag{150.4}
+\end{equation}
+which in practice reduces to
+\begin{equation}
+ q\hbar\approx Mv\vartheta
+ \tag{150.5}
+\end{equation}
+except at the very smallest angles. On the other hand, when considering
+electron collisions with an atom, we wrote (for small angles)
+\[
+ q=\frac1\hbar\sqrt{\left(\frac{E_n-E_0}{v}\right)^2+(mv\vartheta)^2}.
+\]
+Comparison of the two expressions shows that the formulas obtained for
+electron collisions with atoms,
+
+\SourcePage{763}{766}
+when expressed in terms of the speed and deflection angle, are converted into
+formulas for heavy-particle collisions by making the replacement everywhere
+(including in the solid-angle element
+$d\Omega=2\pi\sin\vartheta\,d\vartheta\approx
+2\pi\vartheta\,d\vartheta$)
+\begin{equation}
+ \vartheta\longrightarrow\frac{M}{m}\vartheta,
+ \tag{150.6}
+\end{equation}
+at the same incident-particle speed $v$. Qualitatively, this means that the
+entire small-angle scattering pattern is narrowed by the factor $m/M$ (at a
+specified speed).
+
+The rules obtained also apply to elastic scattering at small angles. Applying
+the transformation (150.6) to (139.4) with $\vartheta\ll1$, we obtain the
+cross section
+\begin{equation}
+ d\sigma_e=8\pi\left(\frac{ze^2}{Mv^2}\right)^2
+ \left[Z-F\left(\frac{Mv\vartheta}{\hbar}\right)\right]^2
+ \frac{d\vartheta}{\vartheta^3}.
+ \tag{150.7}
+\end{equation}
+Elastic scattering of heavy particles through angles $\vartheta\sim1$, on the
+other hand, reduces to Rutherford scattering by the atomic nucleus.
+
+Inelastic scattering with ionization of the atom at large momentum transfer
+requires separate consideration. Unlike electron-impact ionization, there
+are of course no exchange effects here. A characteristic feature of heavy
+particles is that a large momentum transfer ($qa_0\gg1$) does not at all imply
+deflection through a large angle; $\vartheta$ always remains small. The
+ionization cross section for emission of an electron with energy between
+$\varepsilon$ and $\varepsilon+d\varepsilon$ follows directly from (148.25),
+which we write as
+\[
+ d\sigma_r=8\pi\left(\frac{ze^2}{\hbar v}\right)^2Z\frac{dq}{q^3},
+\]
+and in which we put $\hbar^2q^2/2m=\varepsilon$ (the entire momentum
+$\hbar\mathbf q$ is transferred to one atomic electron). This gives
+\begin{equation}
+ d\sigma_r=\frac{2\pi Zz^2e^4}{mv^2}
+ \frac{d\varepsilon}{\varepsilon^2}.
+ \tag{150.8}
+\end{equation}
+
+For collisions of heavy particles with atoms, integral effective cross
+sections and stopping are of particular interest.
+
+The total inelastic-scattering cross section is determined by the previous
+formula (148.26). The total effective stopping is obtained by substituting in
+(149.12), for $q_1$, the greatest possible momentum transfer $q_{\max}$. The
+latter is readily expressed in terms of the particle speed as follows. Since
+$\hbar q_{\max}$ is still small compared with the particle's initial momentum
+$Mv$,
+
+\SourcePage{764}{767}
+the change in its energy is related to the change in momentum by
+$\Delta E=\mathbf v\cdot\hbar\mathbf q$.
+
+On the other hand, at large momentum transfer essentially all this energy is
+transferred to one atomic electron, so that we may write
+\[
+ \varepsilon=\frac{\hbar^2q^2}{2m}
+ =\hbar\mathbf v\mathbf q\leqslant\hbar vq.
+\]
+It follows that $\hbar q\leqslant2mv$, that is,
+\begin{equation}
+ \hbar q_{\max}=2mv,\qquad \varepsilon_{\max}=2mv^2.
+ \tag{150.9}
+\end{equation}
+Note that the greatest particle deflection angle in inelastic scattering is
+\[
+ \vartheta_{\max}=\frac{\hbar q_{\max}}{Mv}=\frac{2m}{M}.
+\]
+Substitution of (150.9) in (149.12) gives the total effective stopping of a
+heavy particle:
+\begin{equation}
+ \kappa=\frac{4\pi Zz^2e^4}{mv^2}\ln\frac{2mv^2}{I}.
+ \tag{150.10}
+\end{equation}

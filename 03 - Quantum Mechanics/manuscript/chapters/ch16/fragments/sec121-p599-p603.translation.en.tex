@@ -1,0 +1,210 @@
+\SourcePage{599}{602}
+\section{Hyperfine structure of atomic levels}
+
+Another atomic effect associated with specific properties of the nucleus is
+the splitting of atomic energy levels through the interaction of the
+electrons with the nuclear spin. This is the so-called \emph{hyperfine
+structure} of the levels. Since this interaction is weak, the intervals of
+the resulting structure are very small, even relative to the fine-structure
+intervals. The hyperfine structure must therefore be considered separately
+for each fine-structure component.
+
+In this section we denote the nuclear spin by $\mathbf i$ (in accordance with
+the convention of atomic spectroscopy), while retaining $\mathbf J$ for the
+total angular momentum of the atomic electron shell. Let the total angular
+momentum of the atom, including the nucleus, be
+$\mathbf F=\mathbf J+\mathbf i$. Each hyperfine-structure component is
+characterized by a definite value of this angular momentum. From the general
+rules for addition of angular momenta, the quantum number $F$ takes the values
+\begin{equation}
+ F=J+i,\quad J+i-1,\ldots,|J-i|,
+ \tag{121.1}
+\end{equation}
+so that every level of given $J$ splits into $2i+1$ components if $i<J$, or
+into $2J+1$ components if $i>J$.
+
+Because the mean electron distances $r$ in an atom are large compared with
+the nuclear radius $R$, the principal contributions to hyperfine splitting
+come from the interactions of the electrons with the lowest-order nuclear
+multipole moments. These are the magnetic dipole and electric quadrupole
+moments (the mean electric dipole moment vanishes; see \S~75).
+
+The nuclear magnetic moment is of order
+$\mu_{\text{nuc}}\sim eRv_{\text{nuc}}/c$, where $v_{\text{nuc}}$ denotes
+the velocities of nucleons in the nucleus. Its interaction energy with the
+electron magnetic moment ($\mu_{\text{el}}\sim e\hbar/mc$) is of order
+
+\SourcePage{600}{603}
+\begin{equation}
+ \frac{\mu_{\text{nuc}}\mu_{\text{el}}}{r^3}
+ \sim\frac{e^2\hbar}{mc^2}\frac{Rv_{\text{nuc}}}{r^3}.
+ \tag{121.2}
+\end{equation}
+
+The nuclear quadrupole moment is $Q\sim eR^2$; the interaction energy of its
+field with the electron charge is of order
+\begin{equation}
+ \frac{eQ}{r^3}\sim\frac{e^2R^2}{r^3}.
+ \tag{121.3}
+\end{equation}
+Comparison of (121.2) and (121.3) shows that the magnetic interaction, and
+hence the level splitting that it produces, exceeds the quadrupole
+interaction by a factor
+$(v_{\text{nuc}}/c)(\hbar/mcR)\sim15$. Although $v_{\text{nuc}}/c$ is
+comparatively small, $\hbar/mcR$ is large.
+
+The operator for the magnetic interaction of the electrons with the nucleus
+has the form
+\begin{equation}
+ \hat V_{iJ}=a\hat{\mathbf i}\hat{\mathbf J}
+ \tag{121.4}
+\end{equation}
+(in analogy with the electron spin--orbit interaction (72.4)). Its dependence
+on $F$, and consequently that of the splitting which it produces, is
+\begin{equation}
+ \frac a2F(F+1)
+ \tag{121.5}
+\end{equation}
+(cf. (72.5)).
+
+The quadrupole interaction operator is formed from the operator
+$\hat Q_{ik}$ of the nuclear quadrupole-moment tensor and the components of
+the electron angular momentum $\hat{\mathbf J}$. It is proportional to the
+scalar $\hat Q_{ik}\hat J_i\hat J_k$ constructed from these operators, and
+thus has the form
+\begin{equation}
+ b\left[\hat i_i\hat i_k+\hat i_k\hat i_i
+ -\frac23i(i+1)\delta_{ik}\right]\hat J_i\hat J_k;
+ \tag{121.6}
+\end{equation}
+here we have used the fact that $Q_{ik}$ is expressed in terms of the nuclear
+spin operator by a formula of the type (75.2). Evaluation of the eigenvalues
+of (121.6), exactly as in the calculation in Problem 1 of \S~84, gives the
+following dependence of the quadrupole hyperfine splitting on $F$:
+\begin{equation}
+ \frac b2F^2(F+1)^2
+ +\frac b2F(F+1)[1-2J(J+1)-2i(i+1)].
+ \tag{121.7}
+\end{equation}
+
+\SourcePage{601}{604}
+Magnetic hyperfine splitting is especially pronounced for levels associated
+with an outer electron in an $s$ state, because such an electron has a
+comparatively high probability of being near the nucleus.
+
+We calculate the hyperfine splitting for an atom having one outer $s$
+electron (E.~Fermi, 1930). Its motion in the self-consistent field of the
+remaining electrons and the nucleus is described by a spherically symmetric
+wavefunction $\psi(r)$\footnote{The calculation below assumes that
+$Ze^2/(\hbar c)\ll1$ (cf. the note on p.~601).}.
+
+We seek the electron--nucleus interaction operator as the energy operator
+$-\hat{\boldsymbol\mu}\hat{\mathbf H}$ of the nuclear magnetic moment
+$\hat{\boldsymbol\mu}=\mu\hat{\mathbf i}/i$ in the magnetic field produced by
+the electron at the origin. The familiar formula of electrodynamics gives
+this field as
+\begin{equation}
+ \hat{\mathbf H}=\frac1c\int\frac{\mathbf n\times\hat{\mathbf j}}{r^2}\,dV,
+ \tag{121.8}
+\end{equation}
+where $\hat{\mathbf j}$ is the current-density operator produced by the
+moving electron spin, while $\mathbf r=\mathbf n r$ is the radius vector from
+the centre to the volume element $dV$\footnote{See II, \S~43, formula (43.7).
+There the vector $\mathbf R$ points in the opposite direction, from $dV$ to
+the centre (the point at which the field is observed).}. According to (115.4),
+\[
+ \hat{\mathbf j}=-2\mu_Bc\,\Curl{\psi^2\hat{\mathbf s}}
+ =-2\mu_Bc\frac{d\psi^2(r)}{dr}\,\mathbf n\times\hat{\mathbf s}
+\]
+($\mu_B$ is the Bohr magneton). Writing $dV=r^2\,dr\,d\Omega$ and performing
+the integrations, we find
+\[
+ \hat{\mathbf H}=-2\mu_B\int_0^\infty\frac{d\psi^2}{dr}\,dr
+ \int\mathbf n\times(\mathbf n\times\hat{\mathbf s})\,d\Omega
+ =-2\mu_B\psi^2(0)\frac{8\pi}{3}\hat{\mathbf s}.
+\]
+Thus the interaction operator is
+\begin{equation}
+ \hat V_{is}=-\hat{\boldsymbol\mu}\hat{\mathbf H}
+ =\frac{16\pi}{3i}\mu\mu_B\psi^2(0)
+ \hat{\mathbf i}\hat{\mathbf s}.
+ \tag{121.9}
+\end{equation}
+
+If the total atomic angular momentum is $J=S=1/2$, the hyperfine splitting
+produces a doublet, with $F=i\pm1/2$. Equations (121.5) and (121.9) give the
+separation of its two levels as
+\begin{equation}
+ E_{i+1/2}-E_{i-1/2}
+ =\frac{8\pi}{3i}\mu\mu_B(2i+1)\psi^2(0).
+ \tag{121.10}
+\end{equation}
+
+\SourcePage{602}{605}
+Since $\psi(0)$ is proportional to $\sqrt Z$ (see \S~71), this splitting
+increases in proportion to the atomic number.
+
+\ProblemHeading 1. Calculate the hyperfine splitting due to the magnetic interaction
+for an atom having, outside closed shells, one electron with orbital angular
+momentum $l$ (E.~Fermi, 1930).
+
+\SolutionHeading Vector potential and magnetic-field intensity produced by
+the nuclear magnetic moment $\boldsymbol\mu$ are
+\[
+ \mathbf A=\frac{\boldsymbol\mu\times\mathbf n}{r^2},\qquad
+ \mathbf H=\frac{3\mathbf n(\boldsymbol\mu\mathbf n)-\boldsymbol\mu}{r^3}
+\]
+($\Div{\mathbf A}=0$). These expressions give the interaction operator in the
+form
+\[
+ \frac{|e|}{mc}\mathbf A\hat{\mathbf p}
+ +\frac{|e|\hbar}{mc}\hat{\mathbf H}\hat{\mathbf s}
+ =\frac{2\mu_B}{r^3}\hat{\boldsymbol\mu}
+ \left[\hat{\mathbf l}+3(\hat{\mathbf s}\mathbf n)\mathbf n
+ -\hat{\mathbf s}\right].
+\]
+After averaging over a state of specified $j$, the expression in square
+brackets is directed along $\mathbf j$. We may therefore write
+\[
+ \hat V_{ij}=2\mu_B(\hat{\boldsymbol\mu}\hat{\mathbf j})
+ [\hat{\mathbf l}\hat{\mathbf j}
+ +3(\hat{\mathbf s}\mathbf n)(\mathbf n\hat{\mathbf j})
+ -\hat{\mathbf s}\hat{\mathbf j}]
+ \frac{\overline{r^{-3}}}{j(j+1)}.
+\]
+The mean $\overline{n_in_k}$ was evaluated in the problem to \S~29. Using
+that result and passing to eigenvalues, we obtain
+\[
+ \frac{2\mu_B\mu}{i}(\hat{\mathbf i}\hat{\mathbf j})
+ \left[\hat{\mathbf l}\hat{\mathbf j}
+ +\frac{2l(l+1)\hat{\mathbf s}\hat{\mathbf j}
+ -6(\hat{\mathbf s}\hat{\mathbf l})(\hat{\mathbf j}\hat{\mathbf l})}
+ {(2l-1)(2l+3)}\right]
+ \frac{\overline{r^{-3}}}{j(j+1)},
+\]
+and a straightforward calculation finally gives
+\[
+ \frac{\mu_B\mu}{i}\frac{l(l+1)}{j(j+1)}F(F+1)\overline{r^{-3}},
+\]
+where $\mathbf F=\mathbf j+\mathbf i$ and $j=l\pm1/2$. The average of
+$r^{-3}$ is taken over the radial part of the electron wavefunction.
+
+\ProblemHeading 2. Determine the Zeeman splitting of the hyperfine-structure
+components of an atomic level (S.~A.~Goudsmit, R.~F.~Bacher, 1930).
+
+\SolutionHeading In formula (113.4), where the field is assumed so weak that
+the splitting which it produces is small compared with the hyperfine
+intervals, the averaging must now be carried out both over the electronic
+state and over the orientations of the nuclear spin. The first averaging
+gives $\Delta E=\mu_Bg_J\overline{J_z}H$, with the same $g_J$ as in (113.7).
+By analogy with (113.5), the second averaging gives
+\[
+ \overline{J_z}=\frac{(\mathbf J\mathbf F)}{F^2}M_F.
+\]
+Consequently,
+
+\SourcePage{603}{606}
+\[
+ \Delta E=\mu_Bg_FHM_F,\qquad
+ g_F=g_J\frac{F(F+1)+J(J+1)-i(i+1)}{2F(F+1)}.
+\]

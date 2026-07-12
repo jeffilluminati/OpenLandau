@@ -9,7 +9,7 @@ The equation
  y''-xy=0
  \tag{b.1}
 \end{equation}
-also belongs to the Laplace type. Following the general method, we form the
+is likewise of Laplace type. Applying the general procedure, we form the
 functions
 \[
  P=t^2,\hspace{1.5em}Q=-1,\hspace{1.5em}
@@ -17,21 +17,22 @@ functions
 \]
 
 \SourcePage{779}{782}
-so that a solution can be represented as
+and hence a solution can be written as
 \begin{equation}
  y(x)=\mathrm{const}\cdot\int_C\exp(xt-t^3/3)\,dt,
  \tag{b.2}
 \end{equation}
-where the integration path $C$ must be chosen so that $V$ vanishes at both
-ends. For this purpose, the ends must tend to infinity in those regions of the
-complex $t$ plane where $\operatorname{Re}(t^3)>0$ (these regions are shaded
-in Fig.~54).
+where the contour $C$ must be selected so that $V$ vanishes at both of its
+ends. These ends must therefore recede to infinity through the regions of the
+complex $t$-plane in which $\operatorname{Re}(t^3)>0$ (the shaded regions in
+Fig.~54).
 
-A solution finite for every $x$ is obtained by choosing $C$ as shown in the
-figure. The path may be displaced arbitrarily, provided only that its ends go
-to infinity in the same two shaded sectors ($I$ and $III$ in Fig.~54). Notice
-that a path passing, for example, through sectors $III$ and $II$ would give a
-solution tending to infinity as $x\to\infty$.
+A solution finite for every $x$ follows from choosing $C$ as shown in the
+figure. The contour may be displaced arbitrarily, subject only to the
+requirement that its ends tend to infinity through the same two shaded
+sectors (I and III in Fig.~54). Notice that a contour passing, for example,
+through sectors III and II would instead give a solution that diverges as
+$x\to\infty$.
 
 \begin{figure}[ht]
 \centering
@@ -84,70 +85,67 @@ solution tending to infinity as $x\to\infty$.
 \caption{ }\label{fig:54}
 \end{figure}
 
-Displacing $C$ until it coincides with the imaginary axis gives (b.2) in the
-form (with the substitution $t=iu$)
+Moving $C$ until it lies on the imaginary axis puts (b.2) into the form
+(with $t=iu$)
 \begin{equation}
  \Phi(x)=\frac1{\sqrt\pi}\int_0^\infty
  \cos\left(ux+\frac{u^3}{3}\right)\,du.
  \tag{b.3}
 \end{equation}
-We have set the constant in (b.2) equal to $-i/(2\sqrt\pi)$ and denoted the
-function so defined by $\Phi(x)$; it is called the \emph{Airy
-function}\footnote{We follow the definition proposed by V.~A.~Fock (see
-G.~D.~Yakovleva, \emph{Tables of Airy Functions}. Moscow: Nauka, 1969;
-$\Phi(x)$ is one of the two functions introduced by Fock, denoted by him as
-$V(x)$). Another definition of the Airy function, differing from (b.3) by a
-constant factor, is also used in the literature:
-$\operatorname{Ai}x=\Phi(x)/\sqrt\pi$, so that
-$\int\operatorname{Ai}x\,dx=1$.}.
+Here the constant in (b.2) has been set equal to $-i/(2\sqrt\pi)$, and the
+function defined in this way has been denoted by $\Phi(x)$; it is called the
+\emph{Airy function}\footnote{We use the definition proposed by V.~A.~Fock
+(see G.~D.~Yakovleva, \emph{Tables of Airy Functions}. Moscow: Nauka, 1969;
+$\Phi(x)$ is one of Fock's two functions and is denoted there by $V(x)$).
+Another definition of the Airy function is also used in the literature; it
+differs from (b.3) by a constant factor: $\operatorname{Ai}x=
+\Phi(x)/\sqrt\pi$, so that $\int\operatorname{Ai}x\,dx=1$.}.
 
-The asymptotic expression for $\Phi(x)$ at large $x$ can be obtained by
-evaluating the integral (b.2) by the saddle-point method. For $x>0$, the
-exponent in the integrand has extrema at $t=\pm\sqrt{x}$, and its direction of
-``steepest descent'' is parallel to the imaginary axis. Accordingly, to
-obtain the asymptotic expression for large positive $x$, we expand the
-exponent in powers of
+For large $x$, an asymptotic expression for $\Phi(x)$ can be found by
+evaluating (b.2) by the saddle-point method. When $x>0$, the exponent of the
+integrand is stationary at $t=\pm\sqrt{x}$, and its direction of steepest
+descent is parallel to the imaginary axis. Accordingly, for large positive
+$x$ we expand the exponent in powers of
 
 \SourcePage{780}{783}
-$t+\sqrt{x}$ and integrate along the straight line $C_1$ (see Fig.~54),
-parallel to the imaginary axis (the distance $OA=\sqrt{x}$). Making the
-substitution $t=-\sqrt{x}+iu$, we obtain
+$t+\sqrt{x}$ and integrate along the line $C_1$ (Fig.~54), which is parallel
+to the imaginary axis (with $OA=\sqrt{x}$). Substitution of
+$t=-\sqrt{x}+iu$ gives
 \[
  \Phi(x)\approx\frac1{2\sqrt\pi}\int_{-\infty}^{+\infty}
  \exp\left(-\frac23x^{3/2}-\sqrt{x}\,u^2\right)\,du,
 \]
-and hence
+and therefore
 \begin{equation}
  \Phi(x)\approx\frac1{2x^{1/4}}\exp\left(-\frac23x^{3/2}\right).
  \tag{b.4}
 \end{equation}
-Thus, for large positive $x$, the function $\Phi(x)$ decays exponentially.
+Thus $\Phi(x)$ decreases exponentially at large positive $x$.
 
-To obtain the asymptotic expression at large negative $x$, note that when
-$x<0$ the exponent has extrema at
+To obtain the asymptotic expression at large negative $x$, observe that for
+$x<0$ the exponent is stationary at
 \[
  t=i\sqrt{|x|}\hspace{1.5em}\text{and}\hspace{1.5em}t=-i\sqrt{|x|},
 \]
-while the steepest-descent directions at these points lie along straight
-lines making angles $\mp\pi/4$, respectively, with the real axis. Taking the
-broken line $C_3$ as the integration path (with $OB=\sqrt{|x|}$), after simple
-transformations we find
+while at these two points the respective directions of steepest descent are
+the lines making angles $\mp\pi/4$ with the real axis. Taking the broken line
+$C_3$ as the integration contour (with $OB=\sqrt{|x|}$), straightforward
+transformations give
 \begin{equation}
  \Phi(x)=\frac1{|x|^{1/4}}
  \sin\left(\frac23|x|^{3/2}+\frac\pi4\right).
  \tag{b.5}
 \end{equation}
-Thus, in the region of large negative $x$, the function $\Phi(x)$ is
-oscillatory. We mention that its first (largest) maximum is
-$\Phi(-1{.}02)=0{.}95$.
+Thus, for large negative $x$, $\Phi(x)$ is oscillatory. Its first (and
+largest) maximum may be noted: $\Phi(-1.02)=0.95$.
 
-The Airy function can be expressed in terms of Bessel functions of order
-$1/3$. As is readily verified, equation (b.1) has the solution
+The Airy function can be expressed through Bessel functions of order $1/3$.
+As is readily verified, equation (b.1) has the solution
 \[
  \sqrt{x}\,Z_{1/3}\left(\frac23x^{3/2}\right),
 \]
-where $Z_{1/3}(x)$ is any solution of the Bessel equation of order $1/3$. The
-solution coinciding with (b.3) is
+where $Z_{1/3}(x)$ denotes any solution of the Bessel equation of order
+$1/3$. The solution agreeing with (b.3) is
 \begin{align}
  \Phi(x)&=\frac{\sqrt{\pi x}}3
  \left[I_{-1/3}\left(\frac23x^{3/2}\right)
@@ -162,19 +160,19 @@ solution coinciding with (b.3) is
 \end{align}
 
 \SourcePage{781}{784}
-where
+Here
 \[
  I_\nu(x)=i^{-\nu}J_\nu(ix),\hspace{2em}
  K_\nu(x)=\frac{\pi}{2\sin\nu\pi}\,[I_{-\nu}(x)-I_\nu(x)].
 \]
-Using the recurrence relations
+The recurrence relations
 \[
  K_{\nu-1}(x)-K_{\nu+1}(x)=-\frac{2\nu}{x}K_\nu(x),
 \]
 \[
- 2K'_\nu(x)=-K_{\nu-1}(x)-K_{\nu+1}(x),
+ 2K'_\nu(x)=-K_{\nu-1}(x)-K_{\nu+1}(x)
 \]
-one readily obtains the following expression for the derivative of the Airy
+then readily yield the following expression for the derivative of the Airy
 function:
 \begin{equation}
  \Phi'(x)=-\frac{x}{\sqrt{3\pi}}
@@ -184,8 +182,8 @@ function:
 At $x=0$,
 \begin{equation}
  \begin{gathered}
- \Phi(0)=\frac{\sqrt\pi}{3^{2/3}\Gamma(2/3)}=0{.}629,\\
- \Phi'(0)=\frac{3^{1/6}\Gamma(2/3)}{2\sqrt\pi}=-0{.}459.
+ \Phi(0)=\frac{\sqrt\pi}{3^{2/3}\Gamma(2/3)}=0.629,\\
+ \Phi'(0)=\frac{3^{1/6}\Gamma(2/3)}{2\sqrt\pi}=-0.459.
  \end{gathered}
  \tag{b.8}
 \end{equation}

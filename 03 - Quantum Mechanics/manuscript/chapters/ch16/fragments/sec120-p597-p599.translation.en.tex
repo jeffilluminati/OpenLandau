@@ -1,0 +1,104 @@
+\SourcePage{597}{600}
+\section{Isotope shift}
+
+Properties specific to the nucleus---its finite mass, dimensions, and spin---
+distinguish it from a fixed point centre of a Coulomb field and have a definite
+effect on the electronic energy levels of an atom.
+
+One such effect is the so-called \emph{isotope shift} of the levels: the change
+in a level's energy when one isotope of an element is replaced by another. In
+practice, of course, it is not the change in one level that is of interest, but
+the change in the separation between two levels, observed as a spectral line.
+For this reason, one must consider not the energy of the entire electron shell
+as a whole, but only the part associated with the electron taking part in the
+spectral transition in question.
+
+In light atoms the principal source of the isotope shift is the finite mass of
+the nucleus. Allowance for nuclear motion introduces into the atomic
+Hamiltonian the term
+\[
+ \frac1{2M}\left(\sum_i\hat{\mathbf p}_i\right)^2,
+\]
+where $M$ is the nuclear mass and $\mathbf p_i$ are the electron
+momenta\footnote{In the centre-of-mass frame of the atom, the sum of the
+nuclear and electron momenta vanishes:
+$\mathbf p_{\text{nuc}}+\sum_i\mathbf p_i=0$. Their total kinetic energy is
+therefore
+\[
+ \frac{\mathbf p_{\text{nuc}}^2}{2M}+\frac1{2m}\sum_i\mathbf p_i^2
+ =\frac1{2M}\left(\sum_i\mathbf p_i\right)^2
+ +\frac1{2m}\sum_i\mathbf p_i^2.
+\]
+}. The isotope shift due to this effect is consequently found as the mean
+value
+\begin{equation}
+ \frac12\left(\frac1{M_1}-\frac1{M_2}\right)
+ \overline{\left(\sum_i\mathbf p_i\right)^2},
+ \tag{120.1}
+\end{equation}
+calculated with the wavefunction of the given atomic state ($M_1$ and $M_2$
+are the nuclear masses of the isotopes).
+
+\SourcePage{598}{601}
+In heavy atoms the main contribution to the isotope shift is associated with
+the finite extent of the nucleus. In practice this effect is appreciable only
+for levels of an outer electron in an $s$ state, since an $s$-state
+wavefunction, unlike those of states with $l\ne0$, does not vanish as
+$r\to0$. The probability of finding the electron within the ``nuclear
+volume'' is therefore comparatively large. We shall calculate the isotope
+shift for this case\footnote{The calculation below neglects relativistic
+effects in the motion of the electron near the nucleus and is valid when
+$Ze^2/(\hbar c)\ll1$.}.
+
+Let $\varphi(r)$ denote the actual electrostatic potential of the nucleus, as
+distinct from the potential $Ze/r$ of the Coulomb field of a point charge
+$Ze$. The change in the electron energy relative to its value in the pure
+Coulomb field $Ze/r$ is then given by
+\begin{equation}
+ \Delta E=-e\int\left(\varphi-\frac{Ze}{r}\right)\psi^2(r)\,dV,
+ \tag{120.2}
+\end{equation}
+where $\psi(r)$ is the electron wavefunction (for an $s$ state it is
+spherically symmetric and real). Although the integration is formally over
+all space, the difference $\varphi-Ze/r$ in the integrand is nonzero only
+inside the nucleus.
+
+On the other hand, as $r\to0$ the $s$-state wavefunction tends to a constant
+limit (see \S~32), and this constant value is already attained, to sufficient
+accuracy, outside the nucleus. Thus $\psi^2$ may be taken outside the integral
+after replacing $\psi(r)$ by its value at $r=0$, calculated for the Coulomb
+field of a point charge.
+
+To transform the integral further, we use the identity $\Delta r^2=6$ and
+rewrite (120.2) as
+\[
+ \Delta E=-\frac16e\psi^2(0)\int
+ \left(\varphi-\frac{Ze}{r}\right)\Delta r^2\,dV
+ =-\frac16e\psi^2(0)\int r^2\Delta
+ \left(\varphi-\frac{Ze}{r}\right)dV
+\]
+(in transforming the volume integral, the resulting integral over a surface
+at infinity has been taken to vanish). But
+$\Delta(1/r)=-4\pi\delta(\mathbf r)$, while
+$r^2\delta(\mathbf r)=0$ for every $r$. The electrostatic Poisson equation is
+$\Delta\varphi=-4\pi\rho$, where here $\rho$ is the density of electric charge
+in the nucleus. We therefore obtain
+\begin{equation}
+ \Delta E=\frac{2\pi}{3}\psi^2(0)Ze^2\overline{r^2},
+ \tag{120.3}
+\end{equation}
+
+\SourcePage{599}{602}
+where
+\[
+ \overline{r^2}=\frac1{Ze}\int\rho r^2\,dV
+\]
+is the proton mean-square radius of the nucleus (for a uniform distribution
+of protons in the nucleus one would have
+$\overline{r^2}=3R^2/5$, where $R$ is the geometrical radius of the nucleus).
+The isotope shift of a level is determined by the difference between the
+expressions (120.3) for the two isotopes.
+
+In \S~71 the magnitude of $\psi(0)$ was estimated and was found to depend on
+the atomic number (assumed large) as $\sqrt Z$. Hence the magnitude of the
+splitting (120.3) is proportional to $R^2Z^2$.

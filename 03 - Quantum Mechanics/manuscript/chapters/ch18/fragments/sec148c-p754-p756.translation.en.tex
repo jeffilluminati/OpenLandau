@@ -1,0 +1,203 @@
+\SourcePage{754}{757}
+and perform the summation over $n$, using expression (148.14) for
+$d\sigma_n$. Summing by means of relation (148.21) with $f=d_x$ and recalling
+that $\langle d_x\rangle=0$, we obtain
+\begin{equation}
+ d\sigma_r=\left(\frac{2e}{\hbar v}\right)^2\langle d_x^2\rangle\frac{d\Omega}{\vartheta^2}.
+ \tag{148.24}
+\end{equation}
+It is instructive to compare this expression with the cross-section (139.5)
+for elastic scattering at small angles. Whereas the latter is independent of
+$\vartheta$, the cross-section for inelastic scattering into the solid-angle
+element $d\Omega$ increases as $1/\vartheta^2$ when $\vartheta$ decreases.
+
+At angles $v_0/v\ll\vartheta\ll1$ (so that $qa_0\gg1$), the second and third
+terms in braces in (148.23) are small, and we simply have
+\begin{equation}
+ d\sigma_r=Z\left(\frac{2e^2}{mv^2}\right)^2\frac{d\Omega}{\vartheta^4},
+ \tag{148.25}
+\end{equation}
+that is, Rutherford scattering by $Z$ atomic electrons (with exchange
+neglected). Recall that the differential cross-section (139.6) for elastic
+scattering is proportional to $Z^2$, not $Z$.
+
+Finally, integration over the angles gives the total cross-section $\sigma_r$
+for inelastic scattering through all angles and with all excitations of the
+atom. In exactly the same manner as in the calculation of $\sigma_n$ in
+(148.18), we obtain
+\begin{equation}
+ \sigma_r=8\pi\left(\frac{e}{\hbar v}\right)^2\langle d_x^2\rangle
+ \ln\left(\beta\frac{v\hbar}{e^2}\right).
+ \tag{148.26}
+\end{equation}
+
+\subsection*{Problems\footnote{Atomic units are used in all the problems.}}
+
+\ProblemHeading{1.} Find the angular distribution (for
+$v^{-2}\ll\vartheta\ll1$) of the inelastic scattering of fast electrons by a
+hydrogen atom (in its ground state).
+
+\SolutionHeading For a hydrogen atom the third term in braces in (148.23) is
+absent, while the atomic factor $F(q)$ was calculated in the problem to
+\S~139. Substitution gives
+\[
+ d\sigma_r=\frac4{v^4\vartheta^4}\left[1-\left(1+\frac{v^2\vartheta^2}{4}\right)^{-4}\right]d\Omega.
+\]
+
+\ProblemHeading{2.} Find the differential cross-section for collisions of
+electrons with a hydrogen atom in its ground state that are accompanied by
+excitation of the $n$th level of the discrete spectrum ($n$ is the principal
+quantum number).
+
+\SolutionHeading It is convenient to calculate the matrix elements in
+parabolic coordinates. Choose the $z$ axis along the direction of the vector
+$\mathbf q$; then
+$e^{i\mathbf q\mathbf r}=e^{iqz}=e^{iq(\xi-\eta)/2}$. The wave function of the
+ground state is $\psi_{000}=\pi^{-1/2}e^{-(\xi+\eta)/2}$. The matrix elements
+are nonzero only for transitions to states with $m=0$. The wave functions of
+these states are
+\[
+ \psi_{n_1n_20}=\frac1{\sqrt{\pi n^2}}\exp\!\left(-\frac{\xi+\eta}{2n}\right)
+ F\!\left(-n_1,1,\frac\xi n\right)F\!\left(-n_2,1,\frac\eta n\right)
+\]
+
+\SourcePage{755}{758}
+($n=n_1+n_2+1$). The required matrix elements are given by the integrals
+\[
+ \langle n_1n_20|e^{i\mathbf q\mathbf r}|000\rangle=
+ \int_0^\infty\!\!\int_0^\infty
+ \exp\!\left(i\frac q2(\xi-\eta)\right)\psi_{000}\psi_{n_1n_20}
+ \frac{\xi+\eta}{4}\,2\pi\,d\xi\,d\eta.
+\]
+The integration is carried out with the aid of the formulae given in \S~f of
+the Mathematical Appendices. The calculation gives
+\[
+ |\langle n_1n_20|e^{i\mathbf q\mathbf r}|000\rangle|^2
+ =2^8n^6q^2\frac{[(n-1)^2+(qn)^2]^{n-3}}{[(n+1)^2+(qn)^2]^{n+3}}
+ [(n_1-n_2)^2+(qn)^2].
+\]
+All states with the same $n_1+n_2=n-1$ have the same energy. Summing over all
+possible values of $n_1-n_2$ at a given $n$ and substituting the result in
+(148.9), we obtain the required cross-section
+\[
+ d\sigma_n=\frac{2^{11}\pi}{v^2}n^7\left[\frac{n^2-1}{3}+(qn)^2\right]
+ \frac{[(n-1)^2+(qn)^2]^{n-3}}{[(n+1)^2+(qn)^2]^{n+3}}\frac{dq}{q}.
+\]
+
+\ProblemHeading{3.} Find the total cross-section for excitation of the first
+excited state of the hydrogen atom.
+
+\SolutionHeading Integrate the expression
+\[
+ d\sigma_2=\frac{2^8\pi}{v^2}\frac{dq}{q(q^2+9/4)^5}
+\]
+over all $q$ from $q_{\min}=(E_2-E_1)/v=3/8v$ to $q_{\max}=2v$, retaining only
+the terms of highest degree in $v$. The elementary integration gives\footnote{The
+cross-section can also be calculated for arbitrary $n$. Numerical calculation
+also gives the total cross-section for inelastic scattering by a hydrogen
+atom: $\sigma_r=(4\pi/v^2)\ln(v^2/0.160)$. Of this, collisions involving
+excitation of discrete-spectrum states and ionization account, respectively,
+for $\sigma_{\mathrm{exc}}=(4\pi/v^2)\cdot0.715\ln(v^2/0.45)$ and
+$\sigma_{\mathrm{ion}}=(4\pi/v^2)\cdot0.285\ln(v^2/0.012)$.}
+\[
+ \sigma_2=\frac{2^{18}\pi}{3^{10}v^2}\left(\ln4v-\frac{25}{24}\right)
+ =\frac{4\pi}{v^2}\cdot0.555\ln\frac{v^2}{0.50}.
+\]
+
+\ProblemHeading{4.} Find the cross-section for ionization of a hydrogen atom
+(in its ground state) with the secondary electron ejected in a specified
+direction. The energy of the secondary electron is small compared with the
+energy of the primary electron, so exchange effects are unimportant
+(H.~Massey, C.~Mohr, 1933).
+
+\SolutionHeading The wave function of the atom in the initial state is
+$\psi_0=\pi^{-1/2}e^{-r}$. In the final state the atom is ionized, and the
+secondary electron ejected from it has a wave vector that we denote by
+$\boldsymbol\varkappa$ (and energy $\varkappa^2/2$). This state is described by
+the function $\psi_{\boldsymbol\varkappa}^{(-)}$ in (136.9), whose ``outgoing''
+part consists (at infinity) only of a plane wave propagating in the direction
+$\boldsymbol\varkappa$. The function $\psi_{\boldsymbol\varkappa}^{(-)}$ is
+normalized to a delta-function in $\boldsymbol\varkappa/2\pi$ space; the
+cross-section calculated with it is therefore referred to
+$d^3\varkappa/(2\pi)^3$, or to
+$\varkappa^2d\varkappa\,d\Omega_{\varkappa}/(2\pi)^3$, where
+$d\Omega_{\varkappa}$ is the solid-angle element for the direction of the
+secondary electron. Thus
+\[
+ d\sigma=\frac{4\kappa'\varkappa^2}{(2\pi)^3\kappa q^4}
+ |\langle\boldsymbol\varkappa|e^{-i\mathbf q\mathbf r}|0\rangle|^2
+ d\Omega\,d\Omega_{\varkappa}\,d\varkappa
+\]
+
+\SourcePage{756}{759}
+($d\Omega$ is the solid-angle element for the scattered electron), where
+\[
+ \langle\boldsymbol\varkappa|e^{-i\mathbf q\mathbf r}|0\rangle
+ =\int\psi_{\boldsymbol\varkappa}^{(-)*}e^{-i\mathbf q\mathbf r}\psi_0\,dV
+ =\frac{e^{-\pi/2\varkappa}\Gamma(1-i/\varkappa)}{\pi^{1/2}}I,
+\]
+\[
+ I=\left\{-\frac\partial{\partial\lambda}\int
+ \exp(-i\mathbf q\mathbf r-i\boldsymbol\varkappa\mathbf r-\lambda r)
+ F\!\left(\frac i\varkappa,1,i(\varkappa r+\boldsymbol\varkappa\mathbf r)\right)
+ \frac{dV}{r}\right\}_{\lambda=1}.
+\]
+We perform the integration in parabolic coordinates, with the $z$ axis along
+the direction of $\boldsymbol\varkappa$ and the angle $\varphi$ measured from
+the plane $(\mathbf q,\boldsymbol\varkappa)$:
+\[
+\begin{split}
+ I=\biggl\{&-\frac12\frac\partial{\partial\lambda}
+ \int_0^\infty\!\!\int_0^\infty\!\!\int_0^{2\pi}
+ \exp\!\biggl[-\frac i2q(\xi-\eta)\cos\gamma
+ +iq\sqrt{\xi\eta}\sin\gamma\cos\varphi\\
+ &\hspace{28mm}-\frac\lambda2(\xi+\eta)-\frac i2\varkappa(\xi-\eta)\biggr]
+ F(i/\varkappa,1,i\varkappa\xi)\,d\varphi\,d\xi\,d\eta\biggr\}_{\lambda=1}.
+\end{split}
+\]
+($\gamma$ is the angle between $\boldsymbol\varkappa$ and $\mathbf q$). The
+integration over $d\varphi\,d\eta$ is readily carried out by making the
+substitution $\sqrt\eta\cos\varphi=u$, $\sqrt\eta\sin\varphi=v$, after which
+we obtain
+\[
+ \frac I{2\pi}=\left\{\frac\partial{\partial\lambda}\int_0^\infty
+ \exp\!\left[\frac{-q^2\sin^2\gamma+\lambda^2+(\varkappa+q\cos\gamma)^2}
+ {2[i(\varkappa+q\cos\gamma)-\lambda]}\xi\right]
+ \frac{F(i/\varkappa,1,i\varkappa\xi)\,d\xi}{i(\varkappa+q\cos\gamma)-\lambda}
+ \right\}_{\lambda=1}.
+\]
+The integral appearing here is evaluated by formula (f.3) with $\gamma=1$,
+$n=0$.
+
+The remaining calculations are lengthy but elementary and give the following
+expression for the cross-section:
+\[
+\begin{split}
+ d\sigma={}&\frac{2^8\kappa'\varkappa
+ [q^2+2q\varkappa\cos\gamma+(\varkappa^2+1)\cos^2\gamma]}
+ {\pi\kappa q^2[q^2+2q\varkappa\cos\gamma+1+\varkappa^2]^4}\\
+ &\times\frac{\exp\!\left\{-\dfrac2\varkappa
+ \arctan\dfrac{2\varkappa}{q^2-\varkappa^2+1}\right\}}
+ {[(q+\varkappa)^2+1][(q-\varkappa)^2+1](1-e^{-2\pi/\varkappa})}
+ d\Omega\,d\Omega_{\varkappa}\,d\varkappa.
+\end{split}
+\]
+Integration over all directions of emission of the secondary electron is
+elementary and gives the angular distribution of scattering for a specified
+energy $\varkappa^2/2$ of the emitted electron:
+\[
+ d\sigma=\frac{2^{10}\kappa'\varkappa[q^2+(1/3)(1+\varkappa^2)]
+ \exp\{-\frac2\varkappa\arctan[2\varkappa/(q^2-\varkappa^2+1)]\}}
+ {\kappa q^2[(q+\varkappa)^2+1]^3[(q-\varkappa)^2+1]^3(1-e^{-2\pi/\varkappa})}
+ d\Omega\,d\varkappa.
+\]
+For $q\gg1$ this expression has a sharp maximum at $\varkappa\approx q$;
+near the maximum,
+\[
+ d\sigma=\frac{2^5}{3\pi\varkappa^4}
+ \frac{d\varkappa\,d\Omega}{[1+(q-\varkappa)^2]^3}.
+\]
+Integrating over
+$d\Omega=2\pi q\,dq/\kappa^2\approx(2\pi\varkappa/\kappa^2)d(q-\varkappa)$,
+we obtain $8\pi\,d\varkappa/\kappa^2\varkappa^3$, which agrees, as it should,
+with the first term in formula (148.17).

@@ -1,0 +1,110 @@
+\SourcePage{567}{570}
+\section{Current density in a magnetic field}
+
+We shall obtain the quantum-mechanical expression for the current density of a
+charged particle moving in a magnetic field. We start from the relation\footnote{In
+this section $\mathbf j$ denotes the electric-current density: the particle-current
+density multiplied by the charge $e$.}
+\begin{equation}
+ \delta H=-\frac1c\int\mathbf j\,\delta\mathbf A\,dV,
+ \tag{115.1}
+\end{equation}
+which specifies the change in the Hamilton function of charges distributed in
+space when the vector potential is varied\footnote{The Lagrange function for a
+charge in a magnetic field contains the term $(e/c)\mathbf v\mathbf A$, or, if
+the charge is regarded as distributed through space,
+$(1/c)\int\mathbf j\mathbf A\,dV$. Its change upon variation of $\mathbf A$ is
+therefore
+\[
+ \delta L=\frac1c\int\mathbf j\,\delta\mathbf A\,dV.
+\]
+An infinitesimal change of the Hamilton function is the negative of the change
+of the Lagrange function (see I, \S~40).}. In quantum mechanics this relation
+must be applied to the mean value of the charged particle's Hamiltonian:
+\begin{equation}
+ \overline H=\int\Psi^*\left[
+ \frac1{2m}\left(\hat{\mathbf p}-\frac ec\mathbf A\right)^2
+ -\frac\mu s\mathbf H\hat{\mathbf s}\right]\Psi\,dV.
+ \tag{115.2}
+\end{equation}
+Varying this expression, and using
+$\delta\mathbf H=\Curl{\delta\mathbf A}$, gives
+\begin{align}
+ \delta\overline H={}&\int\Psi^*\left[-\frac e{2mc}
+ (\hat{\mathbf p}\,\delta\mathbf A+\delta\mathbf A\hat{\mathbf p})
+ +\frac{e^2}{mc^2}\mathbf A\,\delta\mathbf A\right]\Psi\,dV\notag\\
+ &-\frac\mu s\int\Curl{\delta\mathbf A}\cdot
+ \Psi^*\hat{\mathbf s}\Psi\,dV.
+ \tag{115.3}
+\end{align}
+We transform the term containing $\hat{\mathbf p}\,\delta\mathbf A$ by
+integration by parts:
+\[
+ \int\Psi^*\hat{\mathbf p}\,\delta\mathbf A\Psi\,dV
+ =-i\hbar\int\Psi^*\nabla(\delta\mathbf A\Psi)\,dV
+ =i\hbar\int\delta\mathbf A\Psi\nabla\Psi^*\,dV
+\]
+(as usual, the integral over the surface at infinity vanishes). We likewise
+integrate the last term of (115.3) by parts, employing the familiar identity of
+vector analysis
+\[
+ \mathbf a\Curl{\mathbf b}
+ =-\Div{\mathbf a\times\mathbf b}
+ +\mathbf b\Curl{\mathbf a}.
+\]
+
+\SourcePage{568}{571}
+The integral of the term containing $\Div{}$ vanishes, leaving
+\[
+ \int\Psi^*\hat{\mathbf s}\Psi\Curl{\delta\mathbf A}\,dV
+ =\int\delta\mathbf A\Curl{(\Psi^*\hat{\mathbf s}\Psi)}\,dV.
+\]
+Thus the final result is
+\begin{align*}
+ \delta\overline H={}&-\frac{ie\hbar}{2mc}\int\delta\mathbf A
+ (\Psi\nabla\Psi^*-\Psi^*\nabla\Psi)\,dV\\
+ &+\frac{e^2}{mc^2}\int\mathbf A\,\delta\mathbf A\Psi\Psi^*\,dV
+ -\frac\mu s\int\delta\mathbf A\Curl{(\Psi^*\hat{\mathbf s}\Psi)}\,dV.
+\end{align*}
+Comparison with (115.1) now yields the following current-density expression:
+\begin{equation}
+ \mathbf j=\frac{ie\hbar}{2m}
+ [ (\nabla\Psi^*)\Psi-\Psi^*\nabla\Psi]
+ -\frac{e^2}{mc}\mathbf A\Psi^*\Psi
+ +\frac\mu s c\Curl{(\Psi^*\hat{\mathbf s}\Psi)}.
+ \tag{115.4}
+\end{equation}
+We stress that, despite its explicit dependence on the vector potential, this
+expression is, as required, wholly unambiguous. This follows immediately by a
+direct calculation: together with the gauge transformation of the vector
+potential, one must, in accordance with (111.8), also transform the wave
+function as prescribed by (111.9).
+
+It is also readily verified that the current (115.4), jointly with the charge
+density $\rho=e|\Psi|^2$, obeys the continuity equation, as it must:
+\[
+ \frac{\partial\rho}{\partial t}+\Div{\mathbf j}=0.
+\]
+The final term in (115.4) is the contribution to the current density due to the
+particle's magnetic moment. It has the form $c\Curl{\mathbf m}$, where
+\begin{equation}
+ \mathbf m=\frac\mu s\Psi^*\hat{\mathbf s}\Psi
+ =\Psi^*\hat{\boldsymbol\mu}\Psi
+ \tag{115.5}
+\end{equation}
+is the spatial density of magnetic moment.
+
+Expression (115.4) is the mean value of the current density. It may be viewed
+as the diagonal matrix element of an operator, namely the current-density
+operator $\hat{\mathbf j}$. This operator is written most simply in the
+second-quantized representation: one replaces $\Psi$ and $\Psi^*$ by the
+operators $\hat\Psi$ and $\hat\Psi^+$ (and, by the general rule, places
+$\hat\Psi^+$ to the left of $\hat\Psi$ in every term). The off-diagonal matrix
+elements of this operator may also be defined:
+\begin{equation}
+ \mathbf j_{nm}=\frac{ie\hbar}{2m}
+ [ (\nabla\Psi_n^*)\Psi_m-\Psi_n^*\nabla\Psi_m]
+ -\frac{e^2}{mc}\mathbf A\Psi_n^*\Psi_m
+ +\frac\mu s c\Curl{(\Psi_n^*\hat{\mathbf s}\Psi_m)}.
+ \tag{115.6}
+\end{equation}

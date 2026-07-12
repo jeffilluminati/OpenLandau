@@ -1,0 +1,241 @@
+\SourcePage{756}{759}
+\section{Effective stopping}
+
+In applications of collision theory, the mean energy lost by a colliding
+particle is an important quantity to calculate. It is convenient to
+characterize this loss by
+\begin{equation}
+ d\kappa=\sum_n(E_n-E_0)d\sigma_n,
+ \tag{149.1}
+\end{equation}
+
+\SourcePage{757}{760}
+which we shall call the (differential) \emph{effective stopping}; the sum is,
+of course, taken over states of both the discrete and continuous spectra, and
+$d\kappa$ refers to scattering into the specified solid-angle element
+\footnote{If an electron passes through a gas, scattering by different atoms
+occurs independently, and $N\,d\kappa$ ($N$ is the number of atoms per unit
+volume of the gas) is the energy lost by the electron per unit path length in
+collisions that deflect it into the specified solid-angle element.}.
+
+The general formula for the effective stopping of fast electrons is
+\begin{equation}
+ d\kappa=8\pi\left(\frac{e^2}{\hbar v}\right)^2
+ \sum_n(E_n-E_0)\left|\left\langle n\left|\sum_a e^{-i\mathbf q\mathbf r_a}\right|0\right\rangle\right|^2
+ \frac{dq}{q^3}
+ \tag{149.2}
+\end{equation}
+($d\sigma_n$ is taken from (148.9)). As in deriving (148.23), we exclude the
+region of extremely small angles and again assume that
+$(v_0/v)^2\ll\vartheta\ll1$. Then $q$ does not depend on the amount of energy
+transferred, and the sum over $n$ can be evaluated in general form.
+
+The sum is evaluated by means of a \emph{sum rule}, derived as follows. The
+matrix elements of a quantity $f$ (a function of the coordinates) and of its
+time derivative $\dot f$ are related by
+\begin{equation}
+ (\dot f)_{0n}=-(i/\hbar)(E_n-E_0)f_{0n}.
+ \tag{149.3}
+\end{equation}
+Hence
+\[
+\begin{aligned}
+ \sum_n(E_n-E_0)|f_{0n}|^2
+ &=\sum_n(E_n-E_0)f_{0n}(f_{0n})^*
+ =\sum_n(E_n-E_0)f_{0n}(f^+)_{n0}\\
+ &=i\hbar\sum_n(\dot f)_{0n}(f^+)_{n0}=i\hbar(\dot f f^+)_{00}.
+\end{aligned}
+\]
+The wave functions of the atom's stationary states may be chosen real. The
+matrix elements of the coordinate function $f$ then obey $f_{0n}=f_{n0}$,
+while the matrix elements in (149.3) correspondingly obey
+$(\dot f)_{0n}=-(\dot f)_{n0}$. The sum under consideration may therefore
+also be written
+\[
+ -i\hbar\sum_n(f^+)_{0n}(\dot f)_{n0}=-i\hbar(f^+\dot f)_{00}.
+\]
+Taking half the sum of the two expressions gives the required sum rule
+\begin{equation}
+ \sum_n(E_n-E_0)|f_{0n}|^2=\frac{i\hbar}{2}(\dot f f^+-f^+\dot f)_{00}.
+ \tag{149.4}
+\end{equation}
+
+\SourcePage{758}{761}
+Apply it to $f=\sum_a e^{-i\mathbf q\mathbf r_a}$. By (19.2), its time
+derivative is represented by the operator
+\[
+ \hat{\dot f}=-\frac{\hbar}{2m}\sum_a
+ [e^{-i\mathbf q\mathbf r_a}(\mathbf q\boldsymbol\nabla_a)
+ +(\mathbf q\boldsymbol\nabla_a)e^{-i\mathbf q\mathbf r_a}].
+\]
+Direct calculation gives
+\[
+ \hat{\dot f}\hat f^+-\hat f^+\hat{\dot f}=-\frac{i\hbar}{m}q^2Z.
+\]
+Substitution in (149.4) yields
+\begin{equation}
+ \sum_n\frac{2m}{\hbar^2q^2}(E_n-E_0)
+ \left|\left\langle n\left|\sum_a e^{-i\mathbf q\mathbf r_a}\right|0\right\rangle\right|^2=Z,
+ \tag{149.5}
+\end{equation}
+which performs the summation we need\footnote{Nowhere in deriving this
+relation did we use the fact that the state labelled 0 is the atom's normal
+state. The relation therefore holds for any initial state.}.
+
+Thus, for the differential effective stopping we find
+\begin{equation}
+ d\kappa=4\pi\frac{Ze^4}{mv^2}\frac{dq}{q}
+ =\frac{2Ze^4}{mv^2}\frac{d\Omega}{\vartheta^2}.
+ \tag{149.6}
+\end{equation}
+Its range of applicability is specified by
+$(v_0/v)^2\ll\vartheta\ll1$, that is,
+$v_0/v\ll a_0q\ll v/v_0$.
+
+Next define the total effective stopping $\kappa(q_1)$ for all collisions in
+which the momentum transfer does not exceed a certain value $q_1$ such that
+$v_0/v\ll a_0q_1\ll v/v_0$:
+\begin{equation}
+ \kappa(q_1)=\sum_n\int_{q_{\min}}^{q_1}(E_n-E_0)d\sigma_n;
+ \tag{149.7}
+\end{equation}
+$q_{\min}$ is given by (148.11). The integral sign cannot be taken outside
+the summation sign, since $q_{\min}$ depends on $n$.
+
+Divide the integration region into two parts, from $q_{\min}$ to $q_0$ and
+from $q_0$ to $q_1$, where $q_0$ is a value of $q$ such that
+$v_0/v\ll q_0a_0\ll1$. Throughout the integration region from $q_{\min}$ to
+$q_0$, expression (148.14) may then be used for $d\sigma_n$:
+\[
+ \kappa(q_0)=8\pi\left(\frac{e}{\hbar v}\right)^2
+ \sum_n|\langle n|d_x|0\rangle|^2(E_n-E_0)
+ \int_{q_{\min}}^{q_0}\frac{dq}{q},
+\]
+
+\SourcePage{759}{762}
+whence
+\begin{equation}
+ \kappa(q_0)=8\pi\left(\frac{e}{\hbar v}\right)^2
+ \sum_n|\langle n|d_x|0\rangle|^2(E_n-E_0)
+ \ln\frac{q_0\hbar v}{E_n-E_0}.
+ \tag{149.8}
+\end{equation}
+In the region from $q_0$ to $q_1$, on the other hand, the summation over $n$
+may be carried out first. It reduces $d\kappa$ to (149.6), whose integration
+over $dq$ gives
+\begin{equation}
+ \kappa(q_1)-\kappa(q_0)=4\pi\frac{Ze^4}{mv^2}\ln\frac{q_1}{q_0}.
+ \tag{149.9}
+\end{equation}
+
+To transform these expressions, use the sum rule obtained from (149.4) by
+setting
+\[
+ \hat f=\frac{d_x}{e}=\sum_a x_a,\qquad
+ \hat{\dot f}=\frac1m\sum_a\hat p_{xa}.
+\]
+Commuting $\hat f^+$ with $\hat{\dot f}$ gives ($\hat f^+$ here coincides
+with $\hat f$)
+$\hat{\dot f}\hat f^+-\hat f^+\hat{\dot f}=-(i\hbar/m)Z$, and hence
+\footnote{The same comment made concerning (149.5) applies to this relation.}
+\begin{equation}
+ \sum_nN_{0n}\equiv\sum_n\frac{2m}{(e\hbar)^2}(E_n-E_0)
+ |\langle n|d_x|0\rangle|^2=Z.
+ \tag{149.10}
+\end{equation}
+
+The quantities $N_{0n}$ are called the \emph{oscillator strengths} of the
+corresponding transitions. Introduce a mean atomic energy $I$ by the relation
+\begin{equation}
+ \ln I=\frac{\sum_nN_{0n}\ln(E_n-E_0)}{\sum_nN_{0n}}
+ =\frac1Z\sum_nN_{0n}\ln(E_n-E_0).
+ \tag{149.11}
+\end{equation}
+Using (149.10), formula (149.8) may be rewritten as
+$\kappa(q_0)=4\pi Ze^4(mv^2)^{-1}\ln(q_0\hbar v/I)$. Adding (149.9), we
+finally obtain
+\begin{equation}
+ \kappa(q_1)=\frac{4\pi Ze^4}{mv^2}\ln\frac{q_1\hbar v}{I}.
+ \tag{149.12}
+\end{equation}
+This formula contains only one constant characteristic of the given atom
+\footnote{For hydrogen,
+$I=0.55me^4/\hbar^2=14.9\,\text{eV}$. For heavy atoms, good accuracy may be
+expected if the constant $I$ is calculated by the Thomas--Fermi method. It is
+easy to establish how values of $I$ calculated in this way depend on $Z$. In
+the semiclassical case, the energy-level differences correspond to the
+normal frequencies of the particle system. The atom's mean normal frequency
+is of order $v_0/a_0$; we may therefore conclude that
+$I\sim\hbar v_0/a_0$. In the Thomas--Fermi model, the atomic-electron speeds
+depend on $Z$ as $Z^{2/3}$, while the atomic dimensions vary as $Z^{-1/3}$.
+Thus we find that $I$ must be proportional to $Z$:
+$I=\mathrm{const}\cdot Z$. Experimental data give
+$\mathrm{const}\sim10\,\text{eV}$.}.
+
+\SourcePage{760}{763}
+Expressing $q_1$ in terms of the scattering angle $\vartheta_1$ by
+$q_1=mv\vartheta_1/\hbar$, we obtain the effective stopping for scattering
+through all angles $\vartheta\leqslant\vartheta_1$:
+\begin{equation}
+ \kappa(\vartheta_1)=4\pi\frac{Ze^4}{mv^2}\ln\frac{mv^2\vartheta_1}{I}.
+ \tag{149.13}
+\end{equation}
+
+If $q_1a_0\gg1$ (that is, $\vartheta_1\gg v_0/v$), $\kappa$ may be
+expressed as a function of the greatest energy transferred from the incident
+electron to the atom. The preceding section showed that when $qa_0\gg1$ the
+atom is ionized, with practically the entire momentum $\hbar\mathbf q$ and
+the energy transferred to a single atomic electron. Thus $\hbar q$ and
+$\varepsilon$ are related as the momentum and energy of an electron:
+$\varepsilon=\hbar^2q^2/2m$. Substituting
+$q_1^2=2m\varepsilon_1/\hbar^2$ in (149.12), we obtain the effective stopping
+in collisions involving energy transfers $\varepsilon\ll\varepsilon_1$:
+\begin{equation}
+ \kappa(\varepsilon_1)=\frac{2\pi Ze^4}{mv^2}
+ \ln\frac{2m\varepsilon_1v^2}{I^2}.
+ \tag{149.14}
+\end{equation}
+
+We conclude with the following observation. The energy levels of an atom's
+discrete spectrum are associated mainly with excitation of one (outer)
+electron; excitation of two electrons already usually requires enough energy
+to ionize the atom. Consequently, within the sum of oscillator intensities,
+transitions to discrete-spectrum states contribute only a fraction of order
+unity, whereas ionizing transitions contribute an amount of order $Z$. It
+follows that collisions accompanied by ionization play the principal part in
+the stopping by heavy atoms.
+
+\ProblemHeading
+
+Determine the total effective stopping of an electron by a hydrogen atom
+($I=0.55$ atomic units); at large energy transfers, the faster of the two
+colliding electrons is taken to be the primary electron.
+
+\SolutionHeading
+
+When the primary and secondary electrons acquire comparable energies after a
+collision, the exchange effect must be included. Therefore, for stopping with
+energy transfer from some value $\varepsilon_1$
+($I\ll\varepsilon_1\ll v^2$) to the maximum
+$\varepsilon_{\max}=E/2=v^2/4$ (because of our definition of the primary
+electron), the cross section (148.17) must be used:
+\[
+\begin{split}
+ \kappa(\varepsilon_{\max})-\kappa(\varepsilon_1)
+ &=\frac\pi E\int_{\varepsilon_1}^{E/2}\varepsilon
+ \left[\frac1{\varepsilon^2}+\frac1{(E-\varepsilon)^2}
+ -\frac1{\varepsilon(E-\varepsilon)}\right]d\varepsilon\\
+ &=\frac\pi E\left(\ln\frac{E}{8\varepsilon_1}+1\right).
+\end{split}
+\]
+
+\SourcePage{761}{764}
+Adding (149.14), we obtain (in atomic units)\footnote{For collisions of a
+positron with a hydrogen atom there is no exchange effect, and the total
+stopping follows simply by substituting
+$\varepsilon_{\max}=E=v^2/2$ for $\varepsilon_1$ in (149.14):
+$\kappa=(4\pi/v^2)\ln(v^2/0.55)$.}
+\[
+ \kappa=\frac{4\pi}{v^2}\ln\left(\frac{v^2}{2I}\sqrt{e/2}\right)
+ =\frac{4\pi}{v^2}\ln\frac{v^2}{0.94}.
+\]

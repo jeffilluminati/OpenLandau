@@ -1,0 +1,345 @@
+\SourcePage{727}{730}
+\section{The Breit--Wigner formulas}
+
+In \S~134 quasistationary states were introduced as states having a finite
+but comparatively long lifetime. A broad class of such states occurs in
+nuclear reactions at moderate energies which proceed through the formation
+of a \emph{compound nucleus}\footnote{The concept of the compound nucleus was
+introduced by N.~Bohr (1936).}.
+
+The physical picture is that the incident particle interacts with the
+nucleons and ``merges'' with the nucleus, forming a compound system in which
+its energy is distributed among many nucleons. Resonance energies correspond
+to quasidiscrete levels of this system. Their lifetimes are long compared
+with nuclear periods because, most of the time, the energy is shared among so
+many particles that none can overcome the attraction of the others and leave
+the nucleus. Only rarely is enough energy concentrated on one particle. The
+compound nucleus can decay in various ways, corresponding to the possible
+reaction channels\footnote{The competing processes also include radiative
+capture of the incident particle, in which the excited compound nucleus emits
+a $\gamma$ quantum and passes to its ground state. This process too is
+``slow,'' because a radiative transition has comparatively low probability.}.
+
+\SourcePage{728}{731}
+This character of the collision shows that inelastic processes do not affect
+the potential part of the elastic amplitude, which is unrelated to compound-
+nucleus properties (see \S~134); they change only its resonance part. For the
+same reason, inelastic amplitudes involving a compound nucleus are purely
+resonant. The resonance denominator retains the form
+$E-E_0+i\Gamma/2$, associated with the vanishing of the incoming-wave
+coefficient at $E=E_0-i\Gamma/2$, and $\Gamma$ still determines the total
+decay probability of the quasistationary state by any route.
+
+These considerations, together with unitarity, determine the amplitudes.
+Number all decay channels symmetrically, without first choosing the entrance
+channel, using indices $a,b,c,\ldots$. Consider partial amplitudes for the
+angular momentum $l$ of the quasistationary state\footnote{We first disregard
+the complicating influence of particle spins.}. Seek them in the form
+\begin{equation}
+ f_{ab}^{(l)}=\frac1{2ik_a}(e^{2i\delta_a}-1)\delta_{ab}
+ -\frac1{2\sqrt{k_ak_b}}e^{i(\delta_a+\delta_b)}
+ \frac{\Gamma M_{ab}}{E-E_0+(1/2)i\Gamma}.
+ \tag{145.1}
+\end{equation}
+The index $l$ on $\delta_a$ and $M_{ab}$ is suppressed. The first term occurs
+only for $a=b$ and is the potential elastic amplitude in channel $a$; the
+$\delta_a$ are the phases $\delta_l^{(0)}$ of (134.12). The second term is
+resonant. Its coefficient is written in this form to simplify unitarity.
+
+Since the fixed magnitude of orbital angular momentum is unchanged by time
+reversal, reciprocity here simply requires $f_{ab}^{(l)}$ to be symmetric in
+$a,b$. Thus $M_{ab}=M_{ba}$.
+
+\SourcePage{729}{732}
+The unitarity conditions are
+\begin{equation}
+ \operatorname{Im}f_{ab}^{(l)}=\sum_c k_c f_{ac}^{(l)}f_{bc}^{(l)*}
+ \tag{145.2}
+\end{equation}
+(compare (144.8)). Substitution of (145.1) gives
+\[
+ \frac{M_{ab}^*}{E-E_0-(1/2)i\Gamma}
+ -\frac{M_{ab}}{E-E_0+(1/2)i\Gamma}
+ =\frac{i\Gamma\sum_c M_{ac}M_{bc}^*}
+ {(E-E_0)^2+(1/4)\Gamma^2}.
+\]
+For this to hold identically in $E$, first $M_{ab}=M_{ab}^*$, so the
+$M_{ab}$ are real, and then
+\begin{equation}
+ M_{ab}=\sum_c M_{ac}M_{bc}.
+ \tag{145.3}
+\end{equation}
+Thus the matrix $M$ equals its square.
+
+A real symmetric $M$ can be diagonalized by an orthogonal transformation
+$U$. Denoting its eigenvalues by $M^{(\alpha)}$, write
+\[
+ \sum_{a,b}U_{\alpha a}U_{\beta b}M_{ab}=M^{(\alpha)}\delta_{\alpha\beta},
+\]
+with
+\begin{equation}
+ \sum_c U_{\alpha c}U_{\beta c}=\delta_{\alpha\beta}.
+ \tag{145.4}
+\end{equation}
+Conversely,
+\begin{equation}
+ M_{ab}=\sum_\alpha U_{\alpha a}U_{\alpha b}M^{(\alpha)}.
+ \tag{145.5}
+\end{equation}
+Equation (145.3) gives $M^{(\alpha)}=(M^{(\alpha)})^2$, so every eigenvalue is
+0 or 1. If only $M^{(1)}=1$ is nonzero, then
+\begin{equation}
+ M_{ab}=U_{1a}U_{1b}.
+ \tag{145.6}
+\end{equation}
+
+\SourcePage{730}{733}
+If several eigenvalues are nonzero, $M_{ab}$ is a sum of terms involving
+independent sets $U_{1a},U_{2a},\ldots$, constrained only by orthogonality.
+This would describe accidental degeneracy, with several compound-nucleus
+quasistationary states at the same quasidiscrete energy\footnote{This is
+especially clear if every $M^{(\alpha)}=1$. Equations (145.4), (145.5) then
+give $M_{ab}=\delta_{ab}$, so there are no transitions between different
+channels. The case would represent several independent quasidiscrete states,
+each realized in elastic scattering in one channel.}. Excluding these
+uninteresting degenerate levels, the elements of $M$ factor into quantities
+depending on one channel each.
+
+Define
+\[
+ |U_{1a}|=\sqrt{\Gamma_a/\Gamma}.
+\]
+Then (145.6) becomes
+\begin{equation}
+ M_{ab}=\pm\sqrt{\Gamma_a\Gamma_b}/\Gamma,
+ \tag{145.7}
+\end{equation}
+where the sign depends on those of $U_{1a}$ and $U_{1b}$. Since
+$\sum_cU_{1c}U_{1c}=1$,
+\begin{equation}
+ \sum_a\Gamma_a=\Gamma.
+ \tag{145.8}
+\end{equation}
+The $\Gamma_a$ are the \emph{partial widths} of the channels. Equations
+(145.1), (145.7), (145.8) give the required general amplitudes.
+
+Now select one entrance channel\footnote{These formulas were first obtained
+by \emph{Breit and Wigner} (O.~Breit, E.~Wigner, 1936).}. Denote its partial
+width by $\Gamma_e$, the \emph{elastic width}, and the widths of the reactions
+by $\Gamma_{r_1},\Gamma_{r_2},\ldots$. The total elastic amplitude is
+\begin{equation}
+ f_e(\theta)=f^{(0)}(\theta)-\frac{2l+1}{2k}
+ \frac{\Gamma_e}{E-E_0+(1/2)i\Gamma}e^{2i\delta_l^{(0)}}P_l(\cos\theta),
+ \tag{145.9}
+\end{equation}
+
+\SourcePage{731}{734}
+where $\mathbf k$ is the incident wave vector and $f^{(0)}$ is the potential
+scattering amplitude. This differs from (134.12) by replacing $\Gamma$ in the
+resonance numerator with the smaller $\Gamma_e$.
+
+The inelastic amplitudes are purely resonant. Their differential and integral
+cross-sections are
+\begin{equation}
+ d\sigma_{r_a}=\frac{(2l+1)^2}{4k^2}
+ \frac{\Gamma_e\Gamma_{r_a}}{(E-E_0)^2+(1/4)\Gamma^2}
+ [P_l(\cos\theta)]^2d\Omega,
+ \tag{145.10}
+\end{equation}
+\begin{equation}
+ \sigma_{r_a}=(2l+1)\frac\pi{k^2}
+ \frac{\Gamma_e\Gamma_{r_a}}{(E-E_0)^2+(1/4)\Gamma^2}.
+ \tag{145.11}
+\end{equation}
+The total inelastic cross-section is
+\begin{equation}
+ \sigma_r=(2l+1)\frac\pi{k^2}
+ \frac{\Gamma_e\Gamma_r}{(E-E_0)^2+(1/4)\Gamma^2},
+ \tag{145.12}
+\end{equation}
+where $\Gamma_r=\Gamma-\Gamma_e$ is the total inelastic width.
+
+Integrating over the resonance region, and extending $E-E_0$ from
+$-\infty$ to $\infty$ because $\sigma_r$ falls rapidly, gives
+\begin{equation}
+ \int\sigma_r\,dE=(2l+1)\frac{2\pi^2}{k^2}\frac{\Gamma_e\Gamma_r}{\Gamma}.
+ \tag{145.13}
+\end{equation}
+
+For slow neutrons only $s$-wave scattering matters, and the potential
+amplitude is the real constant $-\alpha$. Instead of (134.14),
+\begin{equation}
+ f_e=-\alpha-\frac{\Gamma_e}{2k(E-E_0+(1/2)i\Gamma)}.
+ \tag{145.14}
+\end{equation}
+The total elastic cross-section is
+\begin{equation}
+ \sigma_e=4\pi\alpha^2+\frac\pi{k^2}
+ \frac{\Gamma_e^2+4\alpha k\Gamma_e(E-E_0)}{(E-E_0)^2+(1/4)\Gamma^2}.
+ \tag{145.15}
+\end{equation}
+The first term is the potential-scattering cross-section. Potential and
+resonance scattering interfere. Only very near the level,
+$E-E_0\sim\Gamma$, may $\alpha$ be negligible (recall
+$|\alpha k|\ll1$), giving
+\begin{equation}
+ \sigma_e=\frac\pi{k^2}\frac{\Gamma_e^2}{(E-E_0)^2+(1/4)\Gamma^2}.
+ \tag{145.16}
+\end{equation}
+
+\SourcePage{732}{735}
+The total elastic plus inelastic cross-section is then
+\begin{equation}
+ \sigma_t=\sigma_e+\sigma_r=\frac\pi{k^2}
+ \frac{\Gamma_e\Gamma}{(E-E_0)^2+(1/4)\Gamma^2}.
+ \tag{145.17}
+\end{equation}
+When potential scattering is negligible,
+\[
+ \sigma_e=\sigma_t\frac{\Gamma_e}{\Gamma},\qquad
+ \sigma_{r_a}=\sigma_t\frac{\Gamma_{r_a}}{\Gamma}.
+\]
+Here $\sigma_t$, the sum over every resonant process, is the cross-section for
+forming the compound nucleus. Each elastic or inelastic cross-section is
+$\sigma_t$ times the relative probability for the corresponding decay,
+given by the partial width divided by the total width. This factorization of
+$M_{ab}$ matches the two-stage physical picture: formation of a compound
+nucleus in a quasistationary state, followed by decay through one
+channel\footnote{The calculations above referred to reactions
+$a+X=b+Y$, with two particles both before and after. This assumption is not
+fundamental, as is clear from the physical result. Formulas such as (145.11)
+for integral cross-sections also apply when more than one particle is emitted.}.
+
+As noted in \S~134, these formulas require only
+$|E-E_0|\ll D$, where $D$ is the spacing of neighboring compound-nucleus
+levels with the same angular momentum. In this form, however, they do not
+permit the limit $E\to0$ when zero lies in the resonance region. One must then
+replace $E_0$ by a related constant $\varepsilon_0$, and
+$\Gamma_e$ by $\gamma_e\sqrt E$, while keeping $\Gamma_r$ constant
+(H.~A.~Bethe, G.~Placzek, 1937)\footnote{For inelastic processes possible at
+low energies, such as radiative capture, $E=0$ is not a threshold. A similar
+replacement for $\Gamma_{r_a}$ would be required near the threshold of that
+reaction, below which it is impossible.}.
+
+\SourcePage{733}{736}
+The resulting inelastic cross-section (145.12) grows as $1/\sqrt E$ when
+$E\to0$, in agreement with \S~143.
+
+Spin generally gives cumbersome formulas. Consider only slow-neutron
+scattering, where $l=0$. Coupling the target spin $i$ to the neutron spin
+$s=1/2$ gives compound-nucleus spin $j=i\pm1/2$; assume $i\ne0$. Each
+quasidiscrete level has one definite $j$. The reaction cross-section is
+therefore (145.12), with $l=0$, multiplied by the probability $g(j)$ that the
+nucleus--neutron system has the required $j$.
+
+Suppose neutron and target spins are randomly oriented. There are
+$2(2i+1)$ orientations of the pair, and $2j+1$ correspond to a specified
+$j$. Hence
+\begin{equation}
+ g(j)=\frac{2j+1}{2(2i+1)}.
+ \tag{145.18}
+\end{equation}
+The elastic formula changes similarly. Both $j$ values contribute to
+potential scattering, so multiply the second term of (145.15) by the
+$g(j)$ of the resonant level, and replace $4\pi\alpha^2$ by
+$\sum_jg(j)\,4\pi\alpha^{(j)2}$.
+
+Compound-nucleus formation also implies general properties of the angular
+distribution of reaction products. Each quasistationary state has a definite
+parity, which is inherited by the final system $(b+Y)$. Under inversion its
+wave function and reaction amplitude can only acquire a factor $\pm1$, so
+the cross-section is unchanged. In the center-of-mass system inversion sends
+
+\SourcePage{734}{737}
+$\theta\to\pi-\theta$, $\varphi\to\pi+\varphi$. Thus the distribution is
+invariant under this replacement. After averaging over all spin directions,
+it depends only on $\theta$ and is symmetric under
+$\theta\to\pi-\theta$\footnote{For spinless particles the differential
+reaction cross-section is simply proportional to
+$[P_l(\cos\theta)]^2$, making the symmetry evident.}.
+
+The great number of densely spaced compound-nucleus levels makes the detailed
+energy dependence of scattering cross-sections extremely complicated and
+obscures systematic changes between nuclei. It is therefore useful to average
+over energy intervals large compared with level spacings, suppressing the
+resonance detail. We also cease to distinguish types of inelastic process and
+divide scattering, in the sense described below, only into ``elastic'' and
+``inelastic'' parts\footnote{The averaging method leading to the optical model
+of nuclear scattering was proposed by \emph{Weisskopf, Porter, and Feshbach}
+(V.~F.~Weisskopf, C.~E.~Porter, H.~Feshbach, 1954).}.
+
+To explain the averaging, again disregard spin and consider $l=0$. From
+(142.7),
+\begin{equation}
+ \sigma_e=\frac\pi{k^2}|S-1|^2,\qquad
+ \sigma_r=\frac\pi{k^2}(1-|S|^2),\qquad
+ \sigma_t=\frac\pi{k^2}\,2(1-\operatorname{Re}S),
+ \tag{145.19}
+\end{equation}
+where the superscript $(0)$ is suppressed. Since $\sigma_t$ is linear in $S$,
+its energy average is
+\begin{equation}
+ \overline{\sigma}_t=\frac\pi{k^2}\,2(1-\operatorname{Re}\overline S),
+ \tag{145.20}
+\end{equation}
+leaving the slowly varying $k^{-2}$ outside the average. Define the
+``elastic'' cross-section in the averaged picture as
+
+\SourcePage{735}{738}
+\begin{equation}
+ \overline{\sigma}_e^{\mathrm{opt}}=(\pi/k^2)|\overline S-1|^2,
+ \tag{145.21}
+\end{equation}
+which generally differs from $\overline{\sigma_e}$. Thus the outgoing-wave
+amplitude $Se^{ikr}/r$ is averaged before defining elastic scattering. This
+preserves the form of an elastically scattered wave packet and describes the
+``coherent'' part. Elastic scattering through the long-lived compound nucleus
+is excluded, since its formation and decay erase the incident packet's
+specific character. Define the averaged ``inelastic'' cross-section by
+$\overline{\sigma}_a^{\mathrm{opt}}
+=\overline{\sigma}_t-\overline{\sigma}_e^{\mathrm{opt}}$:
+\begin{equation}
+ \overline{\sigma}_a^{\mathrm{opt}}=(\pi/k^2)(1-|\overline S|^2).
+ \tag{145.22}
+\end{equation}
+It includes both truly inelastic processes and elastic scattering through an
+intermediate compound nucleus.
+
+This interpretation gives the correct limiting pictures and provides a
+reasonable interpolation. For well-resolved low-energy resonances
+($\Gamma\ll D$), near each level
+\[
+ S=\left(1-\frac{i\Gamma_e}{E-E_0+(1/2)i\Gamma}\right)
+ \exp(2i\delta^{(0)}).
+\]
+Averaging gives
+\begin{equation}
+ \overline S=(1-\pi\overline\Gamma_e/D)\exp(2i\delta^{(0)}),
+ \tag{145.23}
+\end{equation}
+where $\overline\Gamma_e$ and $D$ are the mean elastic width and mean level
+spacing in the interval, and slowly varying $\delta^{(0)}(E)$ is held
+constant. Hence
+\begin{equation}
+ \overline{\sigma}_a^{\mathrm{opt}}=(\pi/k^2)(2\pi\overline\Gamma_e/D),
+ \tag{145.24}
+\end{equation}
+neglecting terms of order $\Gamma/D$\footnote{Terms from the influence of
+other levels near a given level would be of the same order.}. This equals the
+mean of (145.17), the compound-nucleus formation cross-section.
+
+\SourcePage{736}{739}
+As excitation energy increases, level spacings decrease and decay
+probabilities, hence total widths, increase, until levels overlap and the
+notion of quasidiscrete levels largely loses meaning. Irregularities in
+$S(E)$ are smoothed, so the exact and averaged functions become close, and
+(145.22) coincides with $\sigma_r$ in (145.19). At high energies, decay back
+through the entrance channel is negligible beside the many other decay modes;
+all compound-nucleus processes may then be regarded as inelastic.
+
+Thus the averaged scattering is again determined by one quantity,
+$\overline S$, now a smooth function of energy. In the \emph{optical model},
+the nucleus is approximated by a force field with a complex potential. Its
+imaginary part produces absorption in addition to elastic scattering. This
+absorption, with cross-section (145.22), is identified with ``inelastic''
+scattering in the averaged picture.

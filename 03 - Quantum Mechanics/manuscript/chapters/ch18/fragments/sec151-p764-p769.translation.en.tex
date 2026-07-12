@@ -1,0 +1,175 @@
+\SourcePage{764}{767}
+\section{Neutron scattering}
+
+In a number of physical problems in collision theory, one must determine how the intrinsic motion of the scattering centres affects the scattering process. Under certain conditions these problems can be treated by a special perturbative method developed by Fermi (1936), even though perturbation theory need not apply to scattering by an individual centre. One such question is the scattering of slow neutrons by a system of atoms---for example, by a molecule.
+
+For definiteness, we shall discuss precisely this problem below.
+
+Electrons scatter neutrons to a negligible extent, so that in practice all scattering occurs at the nuclei\footnote{It is also assumed that the molecule has no magnetic moment. Otherwise there is an additional, specific scattering effect associated with the interaction between the magnetic moments of the molecule and the neutron.}. We assume that the scattering amplitude of an individual nucleus is small compared with the interatomic distances. The amplitude of the wave
+
+\SourcePage{765}{768}
+scattered by each nucleus in the molecule is then already small at the positions of the other nuclei. Under these conditions, the molecular scattering amplitude reduces to the sum of the amplitudes for scattering by the individual nuclei.
+
+In general, perturbation theory does not apply to a collision between a neutron and a nucleus: although nuclear forces have a short range, they are very large within that range. What matters, however, is that the scattering amplitude for a slow neutron (whose wavelength is large compared with the nuclear dimensions) is a constant independent of velocity. Let $f_a$ be the amplitude for scattering by nucleus $a$; then $|f_a|^2d\Omega$ is the differential cross-section for elastic neutron scattering by a free nucleus (in their centre-of-mass frame).
+
+This constant amplitude may be obtained formally from perturbation theory if the interaction of the neutron with the nucleus is represented by the ``point'' potential energy
+\begin{equation}
+ U(\mathbf r)=-\frac{2\pi\hbar^2}{M}f\delta(\mathbf r),
+ \tag{151.1}
+\end{equation}
+where $M$ is the reduced mass of the neutron and nucleus. On substituting this expression in the Born formula (126.4), the delta function turns the integral into a constant independent of $\mathbf q$. The ``field'' $U(\mathbf r)$ defined in this way is called a \emph{pseudopotential}. We stress that its introduction is possible precisely because $f$ is constant.
+
+For a neutron of arbitrary energy, the scattering amplitude generally depends separately on the initial and final momenta $\mathbf p$ and $\mathbf p'$, and not merely on their difference $\mathbf q$; an amplitude calculated in the Born approximation, by contrast, can depend only on $\mathbf q$\footnote{We also stress that, although the pseudopotential gives the correct scattering amplitude when perturbation theory is applied formally, this by no means implies that perturbation theory is actually applicable to such a field. On the contrary, for a potential well whose depth $U_0$ tends to infinity according to $U_0a^3=\mathrm{const}$ (where $a$, the well radius, tends to zero), conditions (126.1) and (126.2) are certainly not satisfied.}.
+
+If the scattering nucleus undergoes a prescribed motion (molecular vibrations, for example), averaging over this motion ``smears'' the interaction (151.1) over a region whose dimensions are, in general, large compared with the scattering amplitude $f$. Such a smeared interaction satisfies condition (126.1) for applicability of the Born approximation.
+
+\SourcePage{766}{769}
+We shall therefore describe the interaction of the neutron with the molecule by the pseudopotential
+\begin{equation}
+ U(\mathbf r)=-2\pi\hbar^2\sum_a\frac{f_a}{M_a}\delta(\mathbf r-\mathbf R_a),
+ \tag{151.2}
+\end{equation}
+where the sum runs over all nuclei in the molecule, $\mathbf R_a$ are their radius vectors, and $\mathbf r$ is the neutron radius vector. Substitution in the perturbation-theory formula (148.3), with the reduced mass $M_\text{m}$ of the molecule and neutron in place of $m$, gives the following expression for the cross-section of neutron scattering by the molecule in their centre-of-mass frame:
+\begin{equation}
+ d\sigma_n=M_\text{m}^2\frac{p'}p
+ \left|\sum_a\frac{f_a}{M_a}\langle n|e^{-i\mathbf q\mathbf R_a}|0\rangle\right|^2d\Omega.
+ \tag{151.3}
+\end{equation}
+The matrix elements here are taken with the wave functions of stationary states of nuclear motion having energies $E_0$ and $E_n$, while $p$ and $p'$ are related by energy conservation:
+\[
+ \frac{p^2-p'^2}{2M_\text{m}}=E_n-E_0.
+\]
+
+Formula (151.3) describes an inelastic collision accompanied by a specified change in the state of nuclear motion in the molecule (a transition $0\longrightarrow n$). It solves the problem posed: from the assumed known amplitudes for neutron scattering by free nuclei, it determines the molecular scattering cross-section while allowing both for the intrinsic motion of the nuclei and for interference between scattering at different nuclei.
+
+If the nuclei have nonzero spin, one must also allow for the dependence of the scattering amplitudes $f_a$ on the total spin of the scattering nucleus and neutron. This can be done as follows.
+
+The total spin of nucleus $a$ and the neutron may take the two values $j_a=i_a\pm1/2$, where $i_a$ is the nuclear spin. Denote the corresponding scattering amplitudes by $f_a^+$ and $f_a^-$. We construct a spin operator whose eigenvalues at the two values of $j_a$ are respectively $f_a^+$ and $f_a^-$. Such an operator is
+\begin{equation}
+ \hat f_a=a_a+b_a\hat{\mathbf s}\hat{\mathbf i}_a,
+ \tag{151.4}
+\end{equation}
+where $\hat{\mathbf i}_a$ and $\hat{\mathbf s}$ are the nuclear and neutron spin operators, and
+\begin{equation}
+ a_a=\frac1{2i_a+1}\big[(i_a+1)f_a^++i_af_a^-\big],\qquad
+ b_a=\frac2{2i_a+1}(f_a^+-f_a^-).
+ \tag{151.5}
+\end{equation}
+
+\SourcePage{767}{770}
+This follows at once by noting that, for a specified $j$, the eigenvalue of $\mathbf s\mathbf i$ is
+\[
+ \mathbf s\mathbf i=\frac12\left[j(j+1)-i(i+1)-\frac34\right].
+\]
+
+The operators (151.4), rather than $f_a$, must be substituted in (151.3), with their matrix elements taken for the transition under consideration. If neither the incident neutrons nor the target nuclei are polarized, the scattering cross-section must be averaged accordingly.
+
+\subsection*{Problems}
+
+\ProblemHeading{1.} Average formula (151.3), assuming completely random orientations of the neutron and nuclear spins. All nuclei in the molecule are distinct.
+
+\SolutionHeading The averages over the neutron-spin and nuclear-spin directions are independent, and each spin averages to zero; hence $\overline{\mathbf s\mathbf i_a}=0$. If the molecule contains no identical atoms, there is no exchange interaction between nuclear spins; because their direct interaction is negligible, the spin directions of different nuclei in the molecule may be regarded as independent. Products of the form $(\mathbf s\mathbf i_1)(\mathbf s\mathbf i_2)$ therefore also vanish on averaging. For the squares $(\mathbf s\mathbf i)^2$, however,
+\[
+ \overline{(\mathbf s\mathbf i)^2}=\frac13\mathbf s^2\mathbf i^2
+ =\frac{s(s+1)i(i+1)}3=\frac{i(i+1)}4.
+\]
+The averaged cross-section is consequently
+\[
+ d\sigma_n=M_\text{m}^2\frac{p'}p\left\{
+ \left|\sum_a\frac{a_a}{M_a}\langle n|e^{-i\mathbf q\mathbf R_a}|0\rangle\right|^2
+ +\frac14\sum_a\frac{i_a(i_a+1)}{M_a^2}b_a^2
+ \left|\langle n|e^{-i\mathbf q\mathbf R_a}|0\rangle\right|^2\right\}d\Omega.
+\]
+
+\ProblemHeading{2.} Apply formula (151.3) to the scattering of slow neutrons by para- and orthohydrogen (J.~Schwinger, E.~Teller, 1937).
+
+\SolutionHeading Before the matrix elements of the spin operators are evaluated, expression (151.3) for scattering by an $\mathrm H_2$ molecule has the form
+\begin{equation}
+ d\sigma_n=\frac{16p'}{9p}\left|a\langle n|e^{-i\mathbf q\mathbf r/2}+e^{i\mathbf q\mathbf r/2}|0\rangle
+ +b\hat{\mathbf s}\langle n|\hat{\mathbf i}_1e^{-i\mathbf q\mathbf r/2}+\hat{\mathbf i}_2e^{i\mathbf q\mathbf r/2}|0\rangle\right|^2d\Omega,
+ \tag{1}
+\end{equation}
+\[
+ a=\frac14(3f^++f^-),\qquad b=f^+-f^-
+\]
+(the radius vectors of the two nuclei relative to the molecular centre of mass are $\pm\mathbf r/2$).
+
+The rotational and vibrational states of the molecule are specified by the quantum numbers $K$, $M_K$, and $v$, whose collection is to be understood as $n$ in (1). In the ground electronic state of $\mathrm H_2$, even $K$ can occur only for total nuclear spin $I=0$ (parahydrogen), and odd $K$ only for $I=1$ (orthohydrogen); see \S~86. Two cases must therefore be distinguished: (1) transitions between rotational states whose $K$ values have the same parity, possible only without a change of $I$ (ortho--ortho and para--para transitions); (2) transitions between states whose $K$ values have opposite parity, possible only with a change of $I$ (ortho--para and para--ortho transitions).
+
+\SourcePage{768}{771}
+In the first case,
+\[
+ \langle n|e^{-i\mathbf q\mathbf r/2}|0\rangle
+ =\langle n|e^{i\mathbf q\mathbf r/2}|0\rangle
+ =\left\langle n\left|\cos\frac{\mathbf q\mathbf r}{2}\right|0\right\rangle
+\]
+(recall that the rotational wave function is multiplied by $(-1)^K$ when the sign of $\mathbf r$ is reversed). The spin operator in (1) then becomes $2a+b\hat{\mathbf s}\hat{\mathbf I}$, where $\hat{\mathbf I}=\hat{\mathbf i}_1+\hat{\mathbf i}_2$. In accordance with the preceding argument, this operator is diagonal in $I$. The square $(2a+b\mathbf s\mathbf I)^2$ is averaged as in problem 1 and gives
+\[
+ 4a^2+\frac{b^2}{4}I(I+1).
+\]
+It follows that
+\begin{equation}
+ d\sigma_n=\frac{4p'}{9p}\left|\left\langle n\left|\cos\frac{\mathbf q\mathbf r}{2}\right|0\right\rangle\right|^2
+ \big\{(3f^++f^-)^2+I(I+1)(f^+-f^-)^2\big\}d\Omega.
+ \tag{2}
+\end{equation}
+
+In the second case,
+\[
+ \langle n|e^{i\mathbf q\mathbf r/2}|0\rangle
+ =-\langle n|e^{-i\mathbf q\mathbf r/2}|0\rangle
+ =i\left\langle n\left|\sin\frac{\mathbf q\mathbf r}{2}\right|0\right\rangle,
+\]
+and the spin operator in (1) reduces to $\hat{\mathbf s}(\hat{\mathbf i}_1-\hat{\mathbf i}_2)$; it has only matrix elements off diagonal in $I$. The squared modulus of these elements, summed over all possible projections of the final total spin $I'$, is calculated as the mean value (diagonal element) of the square $(\mathbf s,\mathbf i_1-\mathbf i_2)^2$ (see the note on p.~704) and is
+\[
+ \overline{(\mathbf s,\mathbf i_1-\mathbf i_2)^2}
+ =\frac13\cdot\frac34\,\overline{(\mathbf i_1-\mathbf i_2)^2}
+ =\frac14(2\mathbf i_1^2+2\mathbf i_2^2-\mathbf I^2)
+ =\frac14[3-I(I+1)].
+\]
+Thus
+\begin{equation}
+ d\sigma_n=(1)(3)\frac{4p'}{9p}
+ \left|\left\langle n\left|\sin\frac{\mathbf q\mathbf r}{2}\right|0\right\rangle\right|^2(f^+-f^-)^2d\Omega,
+ \tag{3}
+\end{equation}
+where the factor (1) applies to ortho--para transitions and the factor (3) to para--ortho transitions.
+
+If the neutrons are so slow that their wavelength is also large compared with the molecular dimensions, one may put $\cos(qr/2)=1$ and $\sin(qr/2)=0$ in the matrix elements in (2) and (3). All of them then vanish except the diagonal element 00; naturally, only elastic scattering is possible under these conditions. Its cross-section is
+\[
+ d\sigma_e=\frac49\big[(3f^++f^-)^2+I(I+1)(f^+-f^-)^2\big]d\Omega.
+\]
+
+\ProblemHeading{3.} Find the cross-section for neutron scattering by a bound proton treated as an isotropic spatial oscillator of frequency $\omega$ (E.~Fermi, 1936).
+
+\SolutionHeading Since the proton is regarded as oscillating about a point fixed in space, the meaning of the derivation of (151.3) requires us to set $M_\text{m}=M$ and $M_a=M/2$ in that formula, where $M$ is the proton mass. Then
+\[
+ d\sigma_n=\frac{p'}p\frac{\sigma_0}{\pi}\sum
+ \left|\int e^{-i\mathbf q\mathbf r}\psi_{000}(\mathbf r)\psi_{n_1n_2n_3}(\mathbf r)\,dV\right|^2d\Omega,
+\]
+
+\SourcePage{769}{772}
+where $\sigma_0=4\pi|f|^2$ is the scattering cross-section for a free proton, and $\psi_{n_1n_2n_3}$ are the eigenfunctions of the spatial oscillator corresponding to the energy levels $E_n=\hbar\omega(n+3/2)$. The sum is over all $n_1,n_2,n_3$ with the specified sum $n_1+n_2+n_3=n$. The functions $\psi_{n_1n_2n_3}$ are products of the wave functions of three linear oscillators (see problem 4 in \S~33). The required integral therefore separates into a product of three integrals of the form
+\[
+ \int_{-\infty}^{\infty}\exp\left(-\frac{iq_xx}{2}-\frac{\alpha^2x^2}{2}-\frac{\alpha^2x^2}{2}\right)H_{n_1}(\alpha x)\,dx
+\]
+with $\alpha=\sqrt{M\omega/\hbar}$. These integrals are evaluated by substituting $H_n(x)$ in the form (a.4) and integrating by parts $n$ times. The result is
+\[
+ d\sigma_n=\frac1\pi\frac{v'}v\frac{\sigma_0}{2^n\alpha^{2n}}
+ \sum\frac{q_x^{2n_1}q_y^{2n_2}q_z^{2n_3}}{n_1!n_2!n_3!}
+ \exp\left(-\frac{q^2}{2\alpha^2}\right)d\Omega.
+\]
+The sum is evaluated by the multinomial formula, giving finally
+\[
+ d\sigma_n=\frac{\sigma_0}{\pi n!}\sqrt{\frac{E'}E}
+ \left(\frac{q^2}{2\alpha^2}\right)^n
+ \exp\left(-\frac{q^2}{2\alpha^2}\right)d\Omega.
+\]
+In particular, the elastic-scattering cross-section ($n=0$, $E=E'$) is
+\[
+ d\sigma_e=\frac{\sigma_0}{\pi}\exp\left(-\frac{q^2}{2\alpha^2}\right)d\Omega,
+ \qquad
+ \sigma_e=\sigma_0\frac{\hbar\omega}{E}
+ \left[1-\exp\left(-\frac{4E}{\hbar\omega}\right)\right].
+\]
+If $E/\hbar\omega\longrightarrow0$, then $\sigma_e\longrightarrow4\sigma_0$.

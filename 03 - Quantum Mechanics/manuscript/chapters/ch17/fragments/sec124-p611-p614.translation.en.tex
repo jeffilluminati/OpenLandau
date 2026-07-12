@@ -1,0 +1,126 @@
+\SourcePage{611}{614}
+\section{Analysis of the general formula}
+
+The formulas obtained above apply, in principle, to scattering by any field
+$U(r)$ that tends to zero at infinity.  Their analysis therefore reduces to
+examining the properties of the phases $\delta_l$ which occur in them.
+
+To estimate the order of magnitude of $\delta_l$ at large $l$, we use the
+fact that the motion is quasiclassical for large $l$ (see \S~49).  The phase
+of the wave function is consequently determined by the integral
+\[
+ \int_{r_0}^{r}\sqrt{k^2-\frac{(l+1/2)^2}{r^2}
+ -\frac{2mU(r)}{\hbar^2}}\,dr+\frac\pi4,
+\]
+where $r_0$ is a root of the expression under the radical (the region
+$r>r_0$ is classically accessible).  From this we subtract the phase
+\[
+ \int_{r_0}^{r}\sqrt{k^2-\frac{(l+1/2)^2}{r^2}}\,dr+\frac\pi4
+\]
+of the free-motion wave function and then let $r\to\infty$; by definition,
+the result is $\delta_l$.  For large $l$, the value of $r_0$ is also large.
+Hence $U(r)$ is small throughout the integration region, and approximately
+
+\SourcePage{612}{615}
+\begin{equation}
+ \delta_l=-\int_{r_0}^{\infty}
+ \frac{mU(r)\,dr}{\hbar^2\sqrt{k^2-(l+1/2)^2/r^2}}.
+ \tag{124.1}
+\end{equation}
+In order of magnitude, this integral (provided it converges) is
+\begin{equation}
+ \delta_l\sim\frac{mU(r_0)r_0}{k\hbar^2}.
+ \tag{124.2}
+\end{equation}
+The corresponding magnitude of $r_0$ is $r_0\sim l/k$.
+
+If $U(r)$ approaches zero at infinity as $r^{-n}$ with $n>1$, the integral
+(124.1) converges and the phases $\delta_l$ are finite.  For $n\leqslant1$,
+on the contrary, the integral diverges, and the phases $\delta_l$ are
+infinite.  This statement applies to every $l$: convergence of (124.1)
+depends on the large-$r$ behavior of $U(r)$, while at large distances (where
+the field $U(r)$ is already weak) radial motion is quasiclassical for any
+$l$.  The interpretation of formulas (123.11) and (123.12) when $\delta_l$
+is infinite will be given below.
+
+First consider convergence of the series (123.12), which represents the
+total scattering cross-section.  At large $l$ the phases satisfy
+$\delta_l\ll1$, as follows from (124.1) when $U(r)$ decreases faster than
+$1/r$.  We may therefore put $\sin^2\delta_l\approx\delta_l^2$, so that the
+tail of the series (123.12) has the order of
+$\sum_{l\gg1}l\delta_l^2$.  The usual integral test shows that this series
+converges if $\int_0^\infty l\delta_l^2\,dl$ converges.  Substitution of
+(124.2), followed by replacing $l$ with $kr_0$, gives the integral
+\[
+ \int^{\infty}U^2(r_0)r_0^3\,dr_0.
+\]
+When $U(r)$ falls off at infinity as $r^{-n}$ with $n>2$, this integral
+converges and the total cross-section is finite.  If, however, the field
+$U(r)$ decreases as $1/r^2$ or more slowly, the total cross-section is
+infinite.  Physically, this is because a slowly decreasing field gives a
+very large probability of scattering through small angles.  Recall in this
+connection that, in classical mechanics, a particle passing at any finite
+impact parameter $\rho$, however large, still undergoes a deflection through
+some small
+
+\SourcePage{613}{616}
+but nonzero angle whenever the field vanishes only as $r\to\infty$; the total
+scattering cross-section is therefore infinite for every law by which $U(r)$
+decreases.\footnote{This appears as the divergence of the integral
+$\int2\pi\rho\,d\rho$ which defines the total cross-section in classical
+mechanics.}  This argument does not apply in quantum mechanics, if only
+because scattering through a given angle can be discussed only when that
+angle is large compared with the uncertainty in the direction of motion.  If
+the impact parameter is known to an accuracy $\Delta\rho$, it produces an
+uncertainty $\sim\hbar/\Delta\rho$ in the transverse momentum component, and
+thus an angular uncertainty $\sim\hbar/(mv\Delta\rho)$.
+
+Because small-angle scattering is so important when $U(r)$ decreases slowly,
+one naturally asks whether the scattering amplitude $f(\theta)$ might diverge
+at $\theta=0$ even when $U(r)$ falls off faster than $1/r^2$.  On setting
+$\theta=0$ in (123.11), the distant terms of the sum give an expression
+proportional to $\sum_{l\gg1}l\delta_l$.  The same reasoning as before reduces
+the condition for finiteness of the sum to convergence of
+\[
+ \int^{\infty}U(r_0)r_0^2\,dr_0,
+\]
+which already diverges for $U(r)\sim r^{-n}$ when $n\leqslant3$.  Thus the
+scattering amplitude becomes infinite at $\theta=0$ ($n\leqslant1$) in fields
+which fall off as $1/r^3$ or more slowly.
+
+Finally, consider the case in which the phase $\delta_l$ itself is infinite,
+as happens for $U(r)\sim r^{-n}$ with $n\leqslant1$.  The preceding results
+make it clear in advance that, with so slow a decrease of the field, both the
+total cross-section and the scattering amplitude at $\theta=0$ are infinite.
+It remains to determine $f(\theta)$ for $\theta\ne0$.  We first note the
+formula\footnote{This formula is the expansion of the $\delta$-function in
+Legendre polynomials and follows directly on multiplying both sides by
+$\sin\theta P_l(\cos\theta)$ and integrating with respect to $d\theta$.  Here
+the integral $\int_0^\infty\delta(x)\,dx$ of the even function $\delta(x)$ is
+taken to be $1/2$.}
+\begin{equation}
+ \sum_{l=0}^{\infty}(2l+1)P_l(\cos\theta)=4\delta(1-\cos\theta).
+ \tag{124.3}
+\end{equation}
+In other words, this sum vanishes for every $\theta\ne0$.  Consequently, for
+$\theta\ne0$ the unity in square brackets in every term of (123.11) may be
+
+\SourcePage{614}{617}
+omitted, leaving
+\begin{equation}
+ f(\theta)=\frac1{2ik}\sum_{l=0}^{\infty}(2l+1)
+ P_l(\cos\theta)e^{2i\delta_l}.
+ \tag{124.4}
+\end{equation}
+Multiplication of the right-hand side by the constant factor
+$\exp(-2i\delta_0)$ does not affect the cross-section, which is determined by
+$|f(\theta)|^2$; it merely changes the phase of the complex function
+$f(\theta)$ by an inessential constant.  On the other hand, in the difference
+$\delta_l-\delta_0$ between expressions (124.1), the divergent integral of
+$U(r)$ cancels and a finite quantity remains.  Thus, in the case considered,
+the scattering amplitude may be calculated from
+\begin{equation}
+ f(\theta)=\frac1{2ik}\sum_{l=0}^{\infty}(2l+1)
+ P_l(\cos\theta)e^{2i(\delta_l-\delta_0)}.
+ \tag{124.5}
+\end{equation}

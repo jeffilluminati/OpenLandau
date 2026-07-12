@@ -5,13 +5,14 @@
 \setcounter{figure}{51}
 
 % Lettered supplement fragments enter the translation only after editorial approval.
-% Part a passed the independence gate and rendered standalone QA.
+% Inputs below are active only where the current owner-local audit passes.
 \InputIfFileExists{manuscript/supplements/fragments/part-a-p776-p778.translation.en}{}{}
+% Part b clean-room replacement passes the current owner-local audit.
 \InputIfFileExists{manuscript/supplements/fragments/part-b-p778-p781.translation.en}{}{}
 \InputIfFileExists{manuscript/supplements/fragments/part-c-p781-p784.translation.en}{}{}
 % Provisional: part d awaits the required owner-local similarity audit.
-% \InputIfFileExists{manuscript/supplements/fragments/part-d-p784-p789.translation.en}{}{}
-% Provisional: enable only after the required similarity audit passes.
-% \InputIfFileExists{manuscript/supplements/fragments/part-e-p789-p791.translation.en}{}{}
-% Provisional: part f awaits the required owner-local similarity audit.
-% \InputIfFileExists{manuscript/supplements/fragments/part-f-p791-p795.translation.en}{}{}
+\ProvisionalInput{manuscript/supplements/fragments/part-d-p784-p789.translation.en}
+% Part e passed the current owner-local audit.
+\InputIfFileExists{manuscript/supplements/fragments/part-e-p789-p791.translation.en}{}{}
+% Part f passed the current owner-local audit.
+\InputIfFileExists{manuscript/supplements/fragments/part-f-p791-p795.translation.en}{}{}
