@@ -1,0 +1,113 @@
+
+\section{Radiative corrections to Coulomb's law}
+
+\SourcePage{557}{562}
+
+Let us investigate, on the basis of the obtained formulas, the radiative corrections to Coulomb's law. These corrections can be described visually as the result of \emph{polarisation of the vacuum} around a point charge.
+
+Without corrections, the field of a stationary centre (with charge~$e_1$) is given by the Coulomb scalar potential $\Phi \equiv A_0^{(e)} = e_1/r$. The components of its three-dimensional Fourier expansion:
+\[
+\Phi(\mathbf{k}) \equiv A_0^{(e)}(\mathbf{k}) = \frac{4\pi e_1}{\mathbf{k}^2}.
+\]
+With the inclusion of radiative corrections, this field is replaced by an ``effective field'':
+\begin{equation}
+A_0^{(e)} = A_0^{(e)} + D_{0\rho}\,\frac{\mathcal{P}^{\rho\lambda}}{4\pi}\,D\,A_\lambda^{(e)}
+= A_0^{(e)} + \frac{1}{4\pi}\,\mathcal{P}\,D\,A_0^{(e)}
+\label{eq:114.1}
+\end{equation}
+(cf.~(\ref{eq:103.5})). The second term gives the sought correction to the scalar potential. In the first approximation of perturbation theory, for~$\mathcal{P}(k^2)$ one must take the expression obtained in the preceding section, and for the function~$D(k^2)$ its zeroth approximation:
+\[
+\mathcal{D}(k^2) \approx D(k^2) = -4\pi/k^2.
+\]
+
+% [Figure 20: Branch cut of the function $\mathcal{P}(-y^2)$ in the complex $y$-plane, starting from the point $2im$ and running upwards along the imaginary axis; the left bank of the cut corresponds to the physical sheet]
+
+Thus, the radiative correction to the potential of the field:
+\begin{equation}
+\delta\Phi(\mathbf{k}) = -\frac{4\pi e_1}{(\mathbf{k}^2)^2}\,\mathcal{P}(-\mathbf{k}^2).
+\label{eq:114.2}
+\end{equation}
+
+To determine the form of this correction in coordinate representation, one must carry out the inverse Fourier transform:
+\begin{equation}
+\delta\Phi(\mathbf{r}) = \int e^{i\mathbf{k}\cdot\mathbf{r}}\,\delta\Phi(\mathbf{k})\,\frac{d^3k}{(2\pi)^3}.
+\label{eq:114.3}
+\end{equation}
+Since $\delta\Phi(\mathbf{k})$ is a function only of $t = -\mathbf{k}^2$, performing the integration over angles, we obtain
+\[
+\delta\Phi(r) = \frac{1}{4\pi^2}\int_0^\infty \delta\Phi(t)\,\frac{\sin(r\sqrt{-t})}{r}\,d(-t)
+= \frac{1}{4\pi^2 r}\operatorname{Im}\int_{-\infty}^{\infty}\delta\Phi(-y^2)\,e^{iry}\,y\,dy
+\]
+
+\SourcePage{558}{563}
+
+\noindent $\mathcal{P}(-y^2)$ (Fig.~20). This cut begins at the point~$2im$ and runs upward along the imaginary axis (the left bank of the cut corresponding to the physical sheet). Introducing, in place of~$y$, a new variable according to $y = ix$, we find
+\[
+\delta\Phi(r) = \frac{1}{2\pi^2 r}\int_{2m}^{\infty}\operatorname{Im}\delta\Phi(x^2)\,e^{-rx}\,x\,dx.
+\]
+Finally, returning to integration over $t = x^2$, we have definitively:
+\begin{equation}
+\delta\Phi(r) = \frac{1}{2\pi^2 r}\int_{4m^2}^{\infty}\operatorname{Im}\delta\Phi(t)\,e^{-r\sqrt{t}}\,dt.
+\label{eq:114.4}
+\end{equation}
+
+The imaginary part
+\[
+\operatorname{Im}\delta\Phi = -\frac{4\pi e}{t^2}\,\operatorname{Im}\mathcal{P}(t)
+\]
+we take from~(\ref{eq:113.8}), and after an obvious change of variable we find
+\begin{equation}
+\Phi(r) + \delta\Phi(r) = \frac{e_1}{r}\left\{1 + \frac{2\alpha}{3\pi}\int_1^\infty e^{-2mr\zeta}\left(1 + \frac{1}{2\zeta^2}\right)\frac{\sqrt{\zeta^2 - 1}}{\zeta^2}\,d\zeta\right\}
+\label{eq:114.5}
+\end{equation}
+(\emph{E.~Uehling, R.~Serber}, 1935).
+
+The integral entering here can be evaluated in two limiting cases.
+
+Consider first small~$r$ ($mr \ll 1$). We split the integral from the first term in the round brackets into two:
+\[
+I = \int_1^\infty e^{-2mr\zeta}\,\frac{\sqrt{\zeta^2 - 1}}{\zeta^2}\,d\zeta
+= \int_1^{\zeta_1}\ldots\,d\zeta + \int_{\zeta_1}^\infty\ldots\,d\zeta \equiv I_1 + I_2,
+\]
+where~$\zeta_1$ is chosen so that $1/(mr) \gg \zeta_1 \gg 1$. By virtue of this, in the first integral one can set $r = 0$, giving
+\[
+I_1 \approx \int_1^{\zeta_1}\frac{\sqrt{\zeta^2 - 1}}{\zeta^2}\,d\zeta \approx \ln 2\zeta_1 - 1.
+\]
+In~$I_2$ one can, on the contrary, neglect the unity under the square root:
+\[
+I_2 \approx \int_{\zeta_1}^\infty e^{-2mr\zeta}\,\frac{d\zeta}{\zeta}
+= -\ln\zeta_1\cdot e^{-2mr\zeta_1} + 2mr\int_{\zeta_1}^\infty e^{-2mr\zeta}\ln\zeta\,d\zeta.
+\]
+
+\SourcePage{559}{564}
+
+\noindent In the exponent and the lower limit of the integral one can set $\zeta_1 = 0$. Making after this the substitution $2mr\zeta = x$, we obtain
+\[
+I_2 = -\ln(2\zeta_1) + \ln\frac{1}{mr} + \int_0^\infty e^{-x}\ln x\,dx
+= -\ln(2\zeta_1) + \ln\frac{1}{mr} - C,
+\]
+where $C = 0.577\ldots$ is the Euler constant. The integral from the second term in~(\ref{eq:114.5}) can be immediately evaluated at $r = 0$:
+\[
+I_3 \approx \frac{1}{2}\int_1^\infty \frac{\sqrt{\zeta^2 - 1}}{\zeta^4}\,d\zeta = \frac{1}{6}.
+\]
+Adding all three integrals (the auxiliary quantity~$\zeta_1$ cancels), we obtain
+\begin{equation}
+\Phi(r) = \frac{e_1}{r}\left[1 + \frac{2\alpha}{3\pi}\left(\ln\frac{1}{mr} - C - \frac{5}{6}\right)\right], \qquad r \ll \frac{1}{m}.
+\label{eq:114.6}
+\end{equation}
+
+For $mr \gg 1$, the essential region in the integral is $\zeta - 1 \sim 1/(mr) \ll 1$. Substituting $\zeta = 1 + \xi$ and with the corresponding simplifications, it reduces to the integral
+\[
+e^{-2mr}\int_0^\infty e^{-2mr\xi}\cdot\frac{3}{2}\sqrt{2\xi}\,d\xi
+= \frac{3}{2}\sqrt{2}\cdot\frac{\sqrt{\pi}}{2(2mr)^{3/2}}\,e^{-2mr}
+= \frac{3}{8}\,\frac{\sqrt{\pi}}{(mr)^{3/2}}\,e^{-2mr}.
+\]
+Thus, in this case\footnote{The origin of the factor~$e^{-2mr}$ in~$\delta\Phi(r)$ is clear already from the form of the original integral~(\ref{eq:114.4}): for large~$r$ the essential values of~$t$ in it lie near the lower limit, and the exponent of the exponential factor is determined by the position of the first singularity of the function~$\delta\Phi(e)$.}
+\begin{equation}
+\Phi(r) = \frac{e_1}{r}\left(1 + \frac{\alpha}{4\sqrt{\pi}}\,\frac{e^{-2mr}}{(mr)^{3/2}}\right), \qquad r \gg \frac{1}{m}.
+\label{eq:114.7}
+\end{equation}
+
+We see that vacuum polarisation distorts the Coulomb field of a point charge in the region $r \sim 1/m\;(= \hbar/(mc))$, where~$m$ is the electron mass. Outside this region the distortion of the field falls off exponentially.
+
+Let us make one more remark of a general character. We have been assuming up to now that the radiative corrections arise from the interaction of the photon field with the electron--positron vacuum. But the photon also interacts with the fields of other particles; the interaction with the ``vacua'' of these fields is described by the same self-energy diagrams, in which the internal electron lines are replaced by lines of the corresponding particles.

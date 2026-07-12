@@ -1,0 +1,130 @@
+
+\section{Computation of the polarisation operator}
+
+\SourcePage{553}{558}
+
+Proceeding to the actual computation of radiative corrections, we begin with the computation of the polarisation operator (J.~Schwinger, 1949; R.\,P.~Feynman, 1949).
+
+In the first approximation of perturbation theory, it is given by the loop in the diagram
+
+% [Feynman diagram (113.1): polarisation operator loop — electron loop with two external photon lines carrying momentum k, internal electron lines carrying momenta p and p-k]
+
+As was already noted, the task is simplified by starting the computation with $\operatorname{Im}\mathcal{P}$. This computation is most conveniently carried out with the help of the unitarity relation. The virtual photon lines are regarded as a ``real'' particle---a vector boson of mass $M^2 = k^2$, interacting with the electron by the same law as the photon. Thus~(113.1) becomes a diagram of a ``real'' process, which justifies the application of unitarity.
+
+The crosses on diagram~(113.1) show where the cut is to be made: the intermediate state contains an electron with 4-momentum $p_- = p$ and a positron with $p_+ = -(p - k)$.
+
+The unitarity condition~(71.2) with a two-particle intermediate state~(71.4) gives:
+\begin{equation}
+2\operatorname{Im} M_{ii} = \frac{|\mathbf{p}|}{(4\pi)^2 \varepsilon} \sum_{\mathrm{pol}} \int |M_{ni}|^2\,d o.
+\label{eq:113.2}
+\end{equation}
+Here the amplitude $M_{ii}$ is constructed from diagram~(113.1):
+\begin{equation}
+iM_{ii} = \sqrt{4\pi}\,e^*_\mu \cdot \sqrt{4\pi}\,e_\nu \cdot \frac{i\mathcal{P}^{\mu\nu}}{4\pi},
+\label{eq:113.3}
+\end{equation}
+where $e_\mu$ is the 4-vector of boson polarisation; according to~(14.13) it satisfies the condition $e_\mu k^\mu = 0$.
+
+The amplitude $M_{ni}$ corresponds to the decay diagram:
+
+% [Feynman diagram: boson decay to electron-positron pair — photon line splitting into electron (p₋) and positron (-p₊)]
+
+\begin{equation}
+M_{ni} = -e\sqrt{4\pi}\,e_\mu\,j^\mu, \quad j^\mu = \bar{u}(p_-)\gamma^\mu u(-p_+).
+\label{eq:113.4}
+\end{equation}
+
+Substituting~(\ref{eq:113.3}),~(\ref{eq:113.4}) into~(\ref{eq:113.2}):
+\begin{equation}
+2e^*_\mu e_\nu \operatorname{Im}\mathcal{P}^{\mu\nu} = \frac{e^2|\mathbf{p}|}{4\pi\varepsilon} \sum_{\mathrm{pol}} \int j^{\mu*} j^\nu\,e^*_\mu e_\nu\,do.
+\label{eq:113.5}
+\end{equation}
+
+\SourcePage{554}{559}
+
+\noindent Here $\mathbf{p} = \mathbf{p}_- = -\mathbf{p}_+$ and $\varepsilon = \varepsilon_- + \varepsilon_+ = 2\varepsilon_+$ are the momenta and total energy of the pair in the centre-of-inertia frame; the integration is over the directions of~$\mathbf{p}$, and the summation is over the polarisations of both particles.
+
+We average both sides over the boson polarisations. The averaging is performed by the substitution:
+\begin{equation}
+e^*_\mu e_\nu \to -\frac{1}{3}\biggl(g_{\mu\nu} - \frac{k_\mu k_\nu}{k^2}\biggr)
+\label{eq:113.6}
+\end{equation}
+(cf.~(14.5)). Taking into account the transversality of $\mathcal{P}^{\mu\nu}$ and $j^\mu$ ($\mathcal{P}^{\mu\nu}k_\nu = 0$, $j^\mu k_\mu = 0$) and using $\mathcal{P}^\mu{}_\mu = 3\mathcal{P}$:
+\begin{equation}
+2\operatorname{Im}\mathcal{P} = \frac{1}{12\pi}\,\frac{|\mathbf{p}|}{\varepsilon} \sum_{\mathrm{pol}} \int (jj^*)\,do.
+\label{eq:113.7}
+\end{equation}
+Summation over polarisations by the usual method, integration over $do$ gives~$4\pi$, resulting in:
+\[
+2\operatorname{Im}\mathcal{P} = e^2\operatorname{Sp}\gamma_\mu(\gamma p_- + m)\gamma^\mu(\gamma p_+ - m) \cdot \frac{8|\mathbf{p}|}{3\varepsilon} = -e^2\,\frac{8|\mathbf{p}|}{3\varepsilon}\,(p_+ p_- + 2m^2).
+\]
+
+We introduce the variable:
+\begin{equation}
+t = k^2 = (p_+ + p_-)^2 = 2(m^2 + p_+ p_-).
+\label{eq:113.8}
+\end{equation}
+Then $\varepsilon^2 = t$, $\mathbf{p}^2 = t/4 - m^2$, and the final formula is:
+\begin{equation}
+\operatorname{Im}\mathcal{P}(t) = -\frac{\alpha}{3}\,\sqrt{\frac{t - 4m^2}{t}}\,(t + 2m^2), \quad t \geq 4m^2.
+\label{eq:113.9}
+\end{equation}
+
+The value $t = 4m^2$ is the threshold for production of one electron-positron pair by a virtual photon (cf.\ footnote on p.\,550); in the approximation considered ($\sim e^2$) a state with one pair is the only possible intermediate state in the unitarity condition~(\ref{eq:113.2}). In the same approximation, for $t < 4m^2$ the right side of~(\ref{eq:113.2}) is zero:
+\begin{equation}
+\operatorname{Im}\mathcal{P}(t) = 0, \quad t < 4m^2.
+\label{eq:113.10}
+\end{equation}
+
+For the same reason, in the approximation considered, the cut for $\mathcal{P}(t)$ in the complex $t$~plane extends only from $t = 4m^2$, and this point serves as the lower limit in the dispersion integral~(111.13). Thus:
+\begin{equation}
+\mathcal{P}(t) = -\frac{\alpha}{3\pi}\,t^2 \int_{4m^2}^{\infty} \frac{dt'}{t'^2(t' - t - i0)}\,\sqrt{\frac{t' - 4m^2}{t'}}\,(t' + 2m^2).
+\label{eq:113.11}
+\end{equation}
+
+\SourcePage{555}{560}
+
+To formulate the result it is convenient to introduce, instead of~$t$, another variable, defining it by:
+\begin{equation}
+\frac{t}{m^2} = -\frac{(1 - \xi)^2}{\xi}.
+\label{eq:113.12}
+\end{equation}
+This transformation maps the upper half of the complex $t$~plane onto the upper semicircle of unit radius in the upper half of the complex $\xi$~plane, as shown in Fig.~19 (identically hatched segments correspond to each other in both planes). The non-physical region ($0 \leq t/m^2 \leq 4$) corresponds to the arc, and the physical regions ($t < 0$ and $t/m^2 > 4$) correspond to the right and left real radii.
+
+% [Figure 19: conformal mapping from t-plane to ξ-plane — showing the cut along positive real axis in t-plane mapped to upper semicircle in ξ-plane]
+
+The integral~(\ref{eq:113.11}) is most easily evaluated using the substitution $t'/(4m^2) = 1/(1 - x^2)$, considering first the case $t < 0$ (then the denominator does not vanish and the $i0$ can be omitted). Expressed in terms of the variable~$\xi$, the result of integration is:
+\begin{equation}
+\mathcal{P}(\xi) = \frac{\alpha m^2}{3\pi}\biggl\{-\frac{22}{3} + \frac{5}{3}\Bigl(\xi + \frac{1}{\xi}\Bigr) + \Bigl(\xi + \frac{1}{\xi} - 4\Bigr)\frac{1 + \xi}{1 - \xi}\,\ln\xi\biggr\}.
+\label{eq:113.13}
+\end{equation}
+
+The analytic continuation to $t > 4m^2$ is obtained by setting $\xi \to \xi e^{i\pi}$ (with the logarithm giving $\ln\xi = \ln|\xi| + i\pi$).\footnote{The analytic continuation so performed is, as required, continuation to the upper edge of the cut, since the semicircle in the $\xi$-plane corresponds to the upper half of the $t$-plane.} For the non-physical region one sets $\xi = e^{i\varphi}$:
+\begin{equation}
+\mathcal{P}(t) = \frac{2\alpha m^2}{3\pi}\biggl\{-\frac{10}{3}\sin^2\frac{\varphi}{2} - 2 + \Bigl(1 + 2\sin^2\frac{\varphi}{2}\Bigr)\varphi\cot\frac{\varphi}{2}\biggr\}, \quad \frac{t}{4m^2} = \sin^2\frac{\varphi}{2}.
+\label{eq:113.14}
+\end{equation}
+
+In the limit of small $|t|$ ($\xi \to 1$):
+\begin{equation}
+\mathcal{P}(t) = -\frac{\alpha}{15\pi}\,\frac{t}{m^2}, \quad |t| \ll 4m^2.
+\label{eq:113.15}
+\end{equation}
+
+\SourcePage{556}{561}
+
+In the opposite limit of large $|t|$ ($\xi \to 0$):
+\begin{equation}
+\mathcal{P}(t) = \begin{cases}
+\displaystyle -\frac{\alpha}{3\pi}\,|t|\,\ln\frac{|t|}{m^2}, & -t \gg 4m^2; \\[8pt]
+\displaystyle \frac{\alpha}{3\pi}\,t\Bigl(\ln\frac{t}{m^2} - i\pi\Bigr), & t \gg 4m^2.
+\end{cases}
+\label{eq:113.16}
+\end{equation}
+
+By the meaning of perturbation theory, the obtained formulas are valid as long as $\mathcal{P}/(4\pi) \ll D^{-1} = t/(4\pi)$. Therefore the condition for applicability of~(\ref{eq:113.16}) is:
+\begin{equation}
+\frac{\alpha}{3\pi}\,\ln\frac{|t|}{m^2} \ll 1.
+\label{eq:113.17}
+\end{equation}
+Radiative corrections containing $\alpha\ln(|t|/m)$ are called \emph{logarithmic}.
