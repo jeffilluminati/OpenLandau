@@ -3,6 +3,13 @@
 
 \LoadClass[10pt,twoside,openright]{book}
 
+% Unaudited fragments remain inert in focused/release wrappers.  The complete
+% working proof explicitly enables them and labels itself provisional.
+\newif\ifOpenLandauFullDraft
+\OpenLandauFullDraftfalse
+\newcommand{\ProvisionalInput}[1]{%
+  \ifOpenLandauFullDraft\InputIfFileExists{#1}{}{}\fi}
+
 \RequirePackage[
   paperwidth=155mm,
   paperheight=235mm,
@@ -168,6 +175,11 @@
   {\S\,\thesection.}
   {0.6em}
   {}[\label{sec:\thesection}]
+\titleformat{name=\section,numberless}
+  {\normalfont\sffamily\large\bfseries}
+  {}
+  {0pt}
+  {}
 \makeatletter
 \newcommand{\OpenLandauSectionLink}[1]{%
   \@ifundefined{r@sec:#1}{#1}{\hyperref[sec:#1]{#1}}% 

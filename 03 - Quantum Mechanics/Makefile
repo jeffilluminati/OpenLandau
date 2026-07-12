@@ -2,6 +2,7 @@ LATEXMK := latexmk
 FLAGS := -interaction=nonstopmode -halt-on-error -file-line-error
 TEXINPUTS := .:./manuscript//:./drivers//:
 TEXMFVAR := $(CURDIR)/build/texmf-var
+AUDIT_MANUSCRIPT ?= manuscript/chapters
 export TEXINPUTS
 export TEXMFVAR
 
@@ -9,7 +10,7 @@ CHAPTERS := 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18
 CHAPTER_TARGETS := $(addprefix chapter-,$(CHAPTERS))
 SOURCE_TARGETS := $(addprefix source-,$(CHAPTERS))
 
-.PHONY: all prepare book chapters sources supplements source-supplements subject-index source-subject-index fragment-source fragment-translation watch check check-vector clean distclean $(CHAPTER_TARGETS) $(SOURCE_TARGETS)
+.PHONY: all prepare book audit chapters sources supplements source-supplements subject-index source-subject-index fragment-source fragment-translation watch check check-vector clean distclean $(CHAPTER_TARGETS) $(SOURCE_TARGETS)
 
 all: book
 
@@ -18,6 +19,12 @@ prepare:
 
 book: prepare check-vector
 	$(LATEXMK) $(FLAGS) quantum-mechanics.tex
+
+# REF must point to the owner-local OCR outside the repository.  Optional
+# CHAPTER="--chapter ch01 --chapter ch02" supports concurrent batch audits.
+audit:
+	@test -n "$(REF)" || { echo 'Usage: make audit REF=/absolute/path/ref-ocr.txt [CHAPTER="--chapter chNN"]'; exit 2; }
+	python3 ../tools/similarity-audit.py "$(REF)" --manuscript "$(AUDIT_MANUSCRIPT)" $(CHAPTER)
 
 chapters: $(CHAPTER_TARGETS)
 
