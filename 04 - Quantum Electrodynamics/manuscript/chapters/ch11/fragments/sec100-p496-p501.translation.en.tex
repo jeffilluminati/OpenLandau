@@ -1,0 +1,159 @@
+
+\section{Pair production in particle collisions}
+
+\SourcePage{491}{496}
+
+The production of an electron pair in the collision of two charged particles is described by diagrams of two types:
+
+% [Feynman diagrams (100.1): a) two-photon diagram with upper lines for colliding particles and lower line for produced pair e⁻e⁺; b) one-photon exchange diagram with pair produced from field of second particle]
+
+The two upper solid lines correspond to the colliding particles, the lower one to the pair being produced.
+
+Let us consider in the ultrarelativistic case the collision of two heavy particles (nuclei). The change in the state of motion of the particles themselves in such a collision can be neglected, i.e.\ they can be considered as sources of an external field\footnote{The case of the collision of two light particles (electrons), the change in the motion of which cannot be neglected, is considerably more complicated. See about this the book by V.~Ya.~Baier, V.~M.~Katkov and V.~S.~Fadin indicated on p.~454.}. To this there correspond two diagrams of the first type:
+
+% [Feynman diagrams (100.2): two diagrams showing pair production from two-photon exchange, with momentum labels q⁽¹⁾, q⁽²⁾ for Fourier components of fields of two particles]
+
+where $q^{(1)}$, $q^{(2)}$ are the ``momenta'' of the Fourier components of the fields of the two particles.
+
+The potential $A^\mu = (A_0,\,\mathbf{A})$, created by a uniformly moving with velocity $\mathbf{v}$ classical particle, satisfies the equations
+\[
+\Box A_0 = -4\pi Ze\,\delta(\mathbf{r} - \mathbf{v}t - \mathbf{r}_0), \quad \Box\mathbf{A} = -4\pi Ze\mathbf{v}\,\delta(\mathbf{r} - \mathbf{v}t - \mathbf{r}_0).
+\]
+
+Its Fourier components:
+\[
+A_0(\omega,\mathbf{k}) = -\frac{8\pi^2 Ze}{\omega^2 - \mathbf{k}^2}\,e^{-i\mathbf{k}\mathbf{r}_0}\,\delta(\omega - \mathbf{k}\mathbf{v})
+\]
+and analogously for $\mathbf{A}(\omega,\mathbf{k})$. In four-dimensional form
+\[
+A^\mu(q) = -\frac{8\pi^2 Ze}{q^2}\,e^{iqx_0}\,U^\mu\,\delta(Uq),
+\]
+where $U$ is the 4-velocity of the particle, and the 4-vector $x_0 = (0,\,\mathbf{r}_0)$. If nucleus 1 is at rest at the origin ($\mathbf{r}_0^{(1)} = 0$), then $\boldsymbol{\rho} \equiv \mathbf{r}_0^{(2)}$ is the impact parameter vector (in the plane perpendicular to the direction of motion of nucleus 2). This expression for $A^\mu(q)$ should be used in the analytic representation of diagrams (100.2).
+
+\SourcePage{492}{497}
+
+The pair production cross section can be determined by the method of equivalent photons from the known cross section of pair production by a photon on a nucleus. Replacing in diagrams (100.2) the field lines $q^{(1)}$ of one of the particles by real photon lines, the set of these two diagrams becomes identical to the set of diagrams for pair production by a photon on nucleus 2. For $\varepsilon_+,\,\varepsilon_- \gg m$ this cross section is given by formula (94.5). Multiplying it by the equivalent photon spectrum (99.16) of the first nucleus, we obtain the differential cross section for pair production in collisions:
+\begin{equation}
+d\sigma = \frac{8}{\pi}\,r_\mathrm{e}^2\,(Z_1 Z_2 \alpha)^2\,\frac{d\varepsilon_+\,d\varepsilon_-}{(\varepsilon_+ + \varepsilon_-)^4}\left(\varepsilon_+^2 + \varepsilon_-^2 + \tfrac{2}{3}\,\varepsilon_+\varepsilon_-\right)\ln\frac{2\varepsilon_+\varepsilon_-}{m(\varepsilon_+ + \varepsilon_-)}\,\ln\frac{m\gamma}{\varepsilon_+ + \varepsilon_-},
+\label{eq:100.3}
+\end{equation}
+where $\gamma = 1/\sqrt{1 - v^2} \gg 1$. This formula applies in the region
+\begin{equation}
+m \ll \varepsilon_+,\,\varepsilon_- \ll m\gamma.
+\label{eq:100.4}
+\end{equation}
+The upper inequality is the applicability condition for the equivalent photon method. The region (100.4) coincides with the region of energies of the electron and positron that are essential in integrating expression (100.3).
+
+Integrating over $\varepsilon_+$ or $\varepsilon_-$ at fixed sum $\varepsilon \equiv \varepsilon_+ + \varepsilon_-$ ($\gg m$), the essential region lies near the upper limit; discarding terms that are non-leading in the logarithm:
+\[
+d\sigma = \frac{56}{9\pi}\,r_\mathrm{e}^2\,(Z_1 Z_2 \alpha)^2\,\ln\frac{\varepsilon}{m}\,\ln\frac{m\gamma}{\varepsilon}\,\frac{d\varepsilon}{\varepsilon}.
+\]
+
+The integral over $\varepsilon$ taken over region (100.4) diverges as the cube of the logarithm, while at its boundaries only as the square of the logarithm. In the logarithmic approximation ($\ln\gamma \gg 1$), region (100.4) is the principal one, and the integral can be taken from $m$ to $m\gamma$. Using
+\[
+\int_1^\gamma \ln\xi\,(\ln\gamma - \ln\xi)\,\frac{d\xi}{\xi} = \frac{1}{6}\ln^3\gamma,
+\]
+
+\SourcePage{493}{498}
+
+\noindent we obtain the total cross section for pair production:
+\begin{equation}
+\sigma = \frac{28}{27\pi}\,r_\mathrm{e}^2\,(Z_1 Z_2 \alpha)^2\,\ln^3\frac{1}{\sqrt{1-v^2}}
+\label{eq:100.5}
+\end{equation}
+(\emph{L.~D.~Landau, E.~M.~Lifshitz}, 1934).
+
+Let us now consider the non-relativistic case of colliding nuclei. The change in the state of motion of the nuclei becomes essential, and the main contribution comes from diagrams of the second type in (100.1). There are four such diagrams:
+
+% [Feynman diagrams (100.6): four diagrams showing pair production from one-photon exchange between two nuclei with momenta p_1, p'_1, p_2, p'_2, virtual photon k, and produced pair with momenta p, -p_+]
+
+\noindent and two analogous diagrams in which the virtual photon $k$ (producing the pair) is emitted by the first rather than the second nucleus\footnote{Note that pair production in the collision of two electrons corresponds to 36 diagrams: $2!\cdot 3! = 12$ diagrams of type $a$), obtained by permutations among two initial and three final electrons, plus $2\cdot 2!\cdot 3! = 24$ diagrams of type $b$), obtained similarly from the two diagrams (100.6).}.
+
+We assume that the pair energy is small compared with the kinetic energy of relative motion of the nuclei in their centre-of-mass system:
+\begin{equation}
+\varepsilon_+ + \varepsilon_- \ll \tfrac{1}{2}Mv^2
+\label{eq:100.7}
+\end{equation}
+($v$ is the initial relative velocity, $M = M_1 M_2/(M_1 + M_2)$ is the reduced mass). Then one can neglect the back-reaction of pair production on the nuclear motion. If one removes the electron--positron line from diagrams (100.6), the remaining parts depict emission of a virtual photon of small frequency ($\omega = \varepsilon_+ + \varepsilon_-$) by colliding particles. We thus return to the situation considered in \S\,98 for emission of a real soft photon, and can use formula (98.13) obtained there for the non-relativistic case (with the difference that in place of the amplitude $\sqrt{4\pi}\,e^*$ of the real photon, the propagator of the virtual photon will stand)\footnote{In the non-relativistic case the photon momentum is small compared with the momentum of the radiating particles ($|\delta\mathbf{p}| \sim \omega/v$), and therefore can be neglected (compared with $\delta\mathbf{p}$) even when it is not negligible compared with the photon energy. This applies all the more in the present case to the virtual photon, for which $k^2 = (p_+ + p_-)^2 > 0$, so that $|\mathbf{k}| < \omega$. Under these conditions the difference between a real and a virtual photon vanishes, which justifies the use of formula (98.13).}.
+
+\SourcePage{494}{499}
+
+Thus the amplitude of the entire pair production process is written as:
+\begin{equation}
+M_{fi} = M_{fi}^\text{el}\,\frac{1}{\omega}\!\left(\frac{Z_1 e}{M_1} - \frac{Z_2 e}{M_2}\right)q^\lambda D_{\lambda\mu}(k)\,[-ie(\bar{u}_- \gamma^\mu u_+)],
+\label{eq:100.8}
+\end{equation}
+where $\mathbf{q} = M(\mathbf{v}' - \mathbf{v})$, $q = (0,\,\mathbf{q})$.
+
+As usual, in the non-relativistic case the photon propagator should be chosen in the Coulomb gauge (76.14). From the amplitude (100.8) we find the cross section of the process:
+\begin{equation}
+d\sigma = d\sigma_\text{sc}\cdot e^4\!\left(\frac{Z_1}{M_1} - \frac{Z_2}{M_2}\right)^{\!2}\frac{d^3 p_+\,d^3 p_-}{2\varepsilon_+\,2\varepsilon_-\,(2\pi)^6}\,\frac{(4\pi)^2}{\omega^2(\omega^2 - \mathbf{k}^2)^2}\,|\bar{u}_- \boldsymbol{\gamma}\mathbf{Q}\,u_+|^2,
+\label{eq:100.9}
+\end{equation}
+where
+\[
+\omega = \varepsilon_+ + \varepsilon_-, \quad \mathbf{k} = \mathbf{p}_+ + \mathbf{p}_-, \quad \mathbf{Q} = \mathbf{q} - \frac{1}{\omega^2}\,\mathbf{k}(\mathbf{q}\cdot\mathbf{k});
+\]
+$d\sigma_\text{sc}$ is the cross section of elastic scattering of nuclei off each other (in their centre-of-mass system). It is given by the Rutherford formula:
+\begin{equation}
+d\sigma_\text{sc} = 4(Z_1 Z_2 e^2)^2\,\frac{M^2\,d\sigma}{q^4} \approx \frac{4(Z_1 Z_2 e^2)^2\,dq_y\,dq_z}{v^2\,q^4}
+\label{eq:100.10}
+\end{equation}
+(the approximate equality assumes small deflection of the nuclei from their initial direction of motion---the $x$-axis)\footnote{Diagrams (100.6) correspond to the Born approximation for nuclear scattering. However, since the Rutherford formula (for Coulomb interaction) is exact, the validity of the obtained results does not actually require the applicability condition of the Born approximation.}. Substituting (100.10) into (100.9) and performing the usual summation over polarisations of the pair:
+\begin{multline}
+d\sigma = \frac{(Z_1 Z_2 e^2)^2 e^4}{v^2}\!\left(\frac{Z_1}{M_1} - \frac{Z_2}{M_2}\right)^{\!2}\frac{d^3 p_+\,d^3 p_-}{4\pi^2\,\varepsilon_+\varepsilon_-}\,\frac{dq_y\,dq_z}{q^4(\omega^2 - \mathbf{k}^2)^2\omega^2} \\
+{}\times \operatorname{Sp}\{(\gamma p_- + m)(\boldsymbol{\gamma}\mathbf{Q})(\gamma p_+ - m)(\boldsymbol{\gamma}\mathbf{Q})\}.
+\label{eq:100.11}
+\end{multline}
+
+Further computation is performed in the approximation where all logarithms arising during integration are considered large quantities. We shall see that with this accuracy the main role is played by pair energies $\varepsilon_+,\,\varepsilon_- \gg m$ and angles $\theta$ between $\mathbf{p}_+$ and $\mathbf{p}_-$ in the region
+\begin{equation}
+m/\varepsilon \ll \theta \ll 1.
+\label{eq:100.12}
+\end{equation}
+
+\SourcePage{495}{500}
+
+With the corresponding approximations, the trace computation in (100.11) gives:
+\begin{multline*}
+\operatorname{Sp}\{\ldots\} = 4\biggl[(\varepsilon_+\varepsilon_- - \mathbf{p}_+\cdot\mathbf{p}_-)\biggl(q^2 - \frac{(\mathbf{q}\cdot\mathbf{k})^2}{\omega^2}\biggr) + 2(\mathbf{p}_+\cdot\mathbf{q})(\mathbf{p}_-\cdot\mathbf{q}) \\
+{}+ \frac{2\varepsilon_+\varepsilon_-}{\omega^2}\,(\mathbf{q}\cdot\mathbf{k})^2 - \frac{2(\mathbf{q}\cdot\mathbf{k})}{\omega}\bigl(\varepsilon_+(\mathbf{q}\cdot\mathbf{p}_-) + \varepsilon_-(\mathbf{q}\cdot\mathbf{p}_+)\bigr)\biggr],
+\end{multline*}
+where one can set $|\mathbf{p}_+| = \varepsilon_+$, $|\mathbf{p}_-| = \varepsilon_-$. In the denominator:
+\[
+\omega^2 - \mathbf{k}^2 \approx \varepsilon_+\varepsilon_-\theta^2 + \frac{m^2(\varepsilon_+ + \varepsilon_-)^2}{\varepsilon_+\varepsilon_-}.
+\]
+Integrating over the directions of $\mathbf{p}_+$ and $\mathbf{p}_-$ at fixed angle $\theta$ between them:
+\begin{multline}
+d\sigma = \frac{8}{3\pi^2}\,(Z_1 Z_2 e^2)^2\,\frac{e^4}{v^2}\!\left(\frac{Z_1}{M_1} - \frac{Z_2}{M_2}\right)^{\!2}(\varepsilon_+^2 + \varepsilon_-^2)\,d\varepsilon_+\,d\varepsilon_- \\
+{}\times \frac{\theta^3\,d\theta}{\bigl[\theta^2 + m^2(\varepsilon_+ + \varepsilon_-)^2/(\varepsilon_+^2\varepsilon_-^2)\bigr]^2}\,\frac{dq_y\,dq_z}{q^2}.
+\label{eq:100.13}
+\end{multline}
+
+The form of the $\theta$-dependence confirms the assumption (100.12). Integration over the last factor in (100.13) is carried out from $q_y = q_z = 0$ to $\sqrt{q_y^2 + q_z^2} \sim 1/R$, where $R$ is a quantity of order of the nuclear radius (this value corresponds to the minimum impact parameter---see below); this integration gives:
+\[
+\pi\ln(q_x^2 + q_y^2 + q_z^2)\Big|_{q_y=q_z=0}^{q_y=q_z=1/R} \approx 2\pi\ln\frac{1}{Rq_x}.
+\]
+On the other hand, the total pair energy, equal to the change in the kinetic energy of the nuclei, is:
+\[
+\varepsilon \equiv (\varepsilon_+ + \varepsilon_-) = \tfrac{1}{2}M(v'^2 - v^2) \approx Mv(v'_x - v_x) = vq_x,
+\]
+so that $q_x = \varepsilon/v$. Thus we find:
+\begin{multline*}
+d\sigma = \frac{16}{3\pi}\,(Z_1 Z_2 e^2)^2\,\frac{e^4 m^2}{v^2}\!\left(\frac{Z_2}{M_2} - \frac{Z_1}{M_1}\right)^{\!2}\frac{\varepsilon_+^2 + \varepsilon_-^2}{\varepsilon^4} \\
+{}\times \ln\frac{v}{R\varepsilon}\,\ln\frac{\varepsilon_+\varepsilon_-}{m(\varepsilon_+ + \varepsilon_-)}\,d\varepsilon_+\,d\varepsilon_-,
+\end{multline*}
+and after integration over $\varepsilon_+$ or $\varepsilon_-$ at fixed sum $\varepsilon$:
+\begin{equation}
+d\sigma = \frac{32}{9\pi}\,(Z_1 Z_2 e^2)^2\,\frac{e^4 m^2}{v^2}\!\left(\frac{Z_1}{M_1} - \frac{Z_2}{M_2}\right)^{\!2}\ln\frac{v}{R\varepsilon}\,\ln\frac{\varepsilon}{m}\,\frac{d\varepsilon}{\varepsilon}.
+\label{eq:100.14}
+\end{equation}
+
+\SourcePage{496}{501}
+
+The energy $\varepsilon$ can be related to the impact parameter: $\rho \sim v/\varepsilon$ (the pair energy is of order of the frequency corresponding to the collision time). Therefore the logarithmic divergence in $\varepsilon$ in (100.14) signifies the same divergence in impact parameters. This means that the essential $\rho$ are large (which, incidentally, justifies the use of the Rutherford scattering cross section (100.10) in the pure Coulomb field of the nucleus). Correspondingly, the essential energy region is: $m \ll \varepsilon \ll v/R$. Integrating (100.14) gives the total pair production cross section; finally (in ordinary units)\footnote{A numerical error was corrected by \emph{L.~B.~Okun'} (1953).}:
+\begin{equation}
+\sigma = \frac{16}{27\pi}\,(Z_1 Z_2 \alpha)^2\,r_\mathrm{e}^2\,\frac{c^2}{v^2}\!\left(\frac{Z_2 m}{M_2} - \frac{Z_1 m}{M_1}\right)^{\!2}\ln^3\frac{\hbar v}{mc^2 R}
+\label{eq:100.15}
+\end{equation}
+(\emph{E.~M.~Lifshitz}, 1935).

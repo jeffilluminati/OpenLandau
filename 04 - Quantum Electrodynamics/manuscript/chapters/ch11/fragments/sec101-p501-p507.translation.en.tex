@@ -1,0 +1,208 @@
+
+\section{Emission of a photon by an electron in the field of an intense electromagnetic wave}
+
+\SourcePage{496}{501}
+
+The applicability of perturbation theory to processes of interaction of an electron with the radiation field presupposes (besides the smallness of the coupling constant $\alpha$) also sufficient weakness of this field. If $a$ is the amplitude of the classical 4-potential of the electromagnetic wave field, the characteristic quantity in this sense is the dimensionless invariant ratio
+\begin{equation}
+\xi = \frac{e\sqrt{-a^2}}{m}.
+\label{eq:101.1}
+\end{equation}
+
+In this section we consider radiation processes arising in the interaction of an electron with the field of a strong electromagnetic wave, for which $\xi$ can have any value. The method used is based on exact account of this interaction; the interaction of the electron with the newly emitted photons can still be treated as a small perturbation (\emph{A.~I.~Nikishov, V.~I.~Ritus}, 1964).
+
+Consider a monochromatic plane wave, for definiteness circularly polarised. Its 4-potential:
+\begin{equation}
+A = a_1 \cos\varphi + a_2 \sin\varphi, \quad \varphi = kx,
+\label{eq:101.2}
+\end{equation}
+where $k^\mu = (\omega,\,\mathbf{k})$ is the wave 4-vector ($k^2 = 0$), and the 4-amplitudes $a_1$ and $a_2$ are equal in magnitude and mutually orthogonal:
+\[
+a_1^2 = a_2^2 \equiv a^2, \quad a_1 a_2 = 0.
+\]
+
+\SourcePage{497}{502}
+
+We assume the potential is calibrated by the Lorentz condition, so $a_1 k = a_2 k = 0$.
+
+The exact wave function for an electron in the field of an arbitrary plane electromagnetic wave was found in~\S\,40 (formulae~(40.7), (40.8)). We change, however, the normalisation: we require that $\psi_p$ correspond to unit average spatial particle density --- similar to how we normalise the wave functions of free particles to one particle per unit volume. Since for function~(40.7) the average density is $\bar{\jmath}_0 = q_0/p_0$, to obtain the required normalisation we multiply it by $\sqrt{p_0/q_0}$, i.e.\ replace in~(40.7) the factor $1/\sqrt{2p_0}$ by $1/\sqrt{2q_0}$. For the wave with 4-potential~\eqref{eq:101.2} we obtain:
+\begin{equation}
+\psi_p = \biggl\{1 + \frac{e}{2(kp)}\bigl[(\gamma k)(\gamma a_1)\cos\varphi + (\gamma k)(\gamma a_2)\sin\varphi\bigr]\biggr\} \frac{u(p)}{\sqrt{2q_0}} \exp\biggl\{-\frac{ie(a_1 p)}{(kp)}\sin\varphi + \frac{ie(a_2 p)}{(kp)}\cos\varphi - iqx\biggr\},
+\label{eq:101.3}
+\end{equation}
+where
+\begin{equation}
+q^\mu = p^\mu - \frac{e^2 a^2}{2(kp)}\,k^\mu.
+\label{eq:101.4}
+\end{equation}
+According to~(40.14) the 4-vector $q$ is the average kinetic 4-momentum of the electron; we shall call it the \emph{quasi-momentum}.
+
+The $S$-matrix element for transition of the electron from state $\psi_p$ to state $\psi_{p'}$ with emission of a photon with 4-momentum $k'^\mu = (\omega',\,\mathbf{k}')$ and polarisation 4-vector $e'$:
+\begin{equation}
+S_{fi} = -ie \int \bar{\psi}_{p'}(\gamma e'^{\,*})\,\psi_p\,\frac{e^{ik'x}}{\sqrt{2\omega'}}\,d^4x.
+\label{eq:101.5}
+\end{equation}
+
+The integrand in~\eqref{eq:101.5} is a linear combination of the quantities
+\[
+\exp(-i\alpha_1\sin\varphi + i\alpha_2\cos\varphi)\cdot\{1,\,\cos\varphi,\,\sin\varphi\},
+\]
+where
+\begin{equation}
+\alpha_1 = e\!\left(\frac{(a_1 p)}{(kp)} - \frac{(a_1 p')}{(kp')}\right)\!, \quad \alpha_2 = e\!\left(\frac{(a_2 p)}{(kp)} - \frac{(a_2 p')}{(kp')}\right)\!.
+\label{eq:101.6}
+\end{equation}
+Together with the factor $\exp[i(k' + q' - q)x]$ these quantities exhaust all the dependence of the integrand on~$x$.
+
+\SourcePage{498}{503}
+
+Expand them in Fourier series, denoting the expansion coefficients $B_s$, $B_{1s}$, $B_{2s}$; for example:
+\[
+\exp(-i\alpha_1\sin\varphi + i\alpha_2\cos\varphi) = \exp\bigl[-i\sqrt{\alpha_1^2 + \alpha_2^2}\;\sin(\varphi - \varphi_0)\bigr] = \sum_{s=-\infty}^{\infty} B_s\,e^{-is\varphi}.
+\]
+
+These coefficients are expressed through Bessel functions:
+\begin{equation}
+\begin{aligned}
+B_s &= J_s(z)\,e^{is\varphi_0}, \\
+B_{1s} &= \tfrac{1}{2}\bigl[J_{s+1}(z)\,e^{i(s+1)\varphi_0} + J_{s-1}(z)\,e^{i(s-1)\varphi_0}\bigr], \\
+B_{2s} &= \tfrac{1}{2i}\bigl[J_{s+1}(z)\,e^{i(s+1)\varphi_0} - J_{s-1}(z)\,e^{i(s-1)\varphi_0}\bigr],
+\end{aligned}
+\label{eq:101.7}
+\end{equation}
+where $z = \sqrt{\alpha_1^2 + \alpha_2^2}$, $\cos\varphi_0 = \alpha_2/z$, $\sin\varphi_0 = \alpha_1/z$. The functions $B_s$, $B_{1s}$, $B_{2s}$ are related by
+\begin{equation}
+\alpha_1 B_{1s} + \alpha_2 B_{2s} = s B_s,
+\label{eq:101.8}
+\end{equation}
+which is a consequence of the known recurrence relation for Bessel functions:
+\[
+J_{s-1}(z) + J_{s+1}(z) = \frac{2s}{z}\,J_s(z).
+\]
+
+The matrix element~\eqref{eq:101.5} thus takes the form
+\begin{equation}
+S_{fi} = \frac{1}{\sqrt{2\omega'\cdot 2q_0\cdot 2q'_0}}\;\sum_s M_{fi}^{(s)}\,(2\pi)^4\,i\delta^{(4)}(sk + q - q' - k');
+\label{eq:101.9}
+\end{equation}
+the rather cumbersome expressions for the amplitudes $M_{fi}^{(s)}$ we shall not write out here. Thus $S_{fi}$ is an infinite sum of terms, each of which corresponds to a conservation law:
+\begin{equation}
+sk + q = q' + k'.
+\label{eq:101.10}
+\end{equation}
+
+Since
+\begin{equation}
+q^2 = q'^2 = m^2(1 + \xi^2) \equiv m_*^2
+\label{eq:101.11}
+\end{equation}
+(cf.~(40.15)), and $k^2 = k'^2 = 0$, the equality~\eqref{eq:101.10} is possible only for $s \geq 1$. The $s$-th term of the sum describes emission of a photon $k'$ due to absorption of $s$ photons with 4-momenta $k$ from the wave. From the form of the equality~\eqref{eq:101.10} it is clear that all kinematic relations for the Compton effect will apply to the processes under consideration, if we replace the electron momenta by quasi-momenta $q$ and the incident photon momentum by the 4-vector
+
+\SourcePage{499}{504}
+
+\noindent $sk$. In particular, for the frequency of the emitted photon in the system where the electron is on average at rest ($\mathbf{q} = 0$, $q_0 = m_*$), we have
+\begin{equation}
+\omega' = \frac{s\omega}{1 + (s\omega/m_*)(1 - \cos\theta)},
+\label{eq:101.12}
+\end{equation}
+where $\theta$ is the angle between $\mathbf{k}$ and $\mathbf{k}'$ (cf.~(86.8)). One can say that the frequencies $\omega'$ are harmonics of the frequency $\omega$. In our adopted notation (\S\,64) the amplitude of the $s$-th harmonic radiation process coincides with $M_{fi}^{(s)}$, and the expression
+\begin{equation}
+dW_s = \frac{|M_{fi}^{(s)}|^2\,d^3k'\,d^3q'}{(2\pi)^6\cdot 2\omega'\cdot 2q_0\cdot 2q'_0}\,(2\pi)^4\,\delta^{(4)}(sk + q - q' - k')
+\label{eq:101.13}
+\end{equation}
+gives the corresponding differential probability (per unit time)\footnote{Note that the normalisation of the functions $\psi_p$ to unit density corresponds to normalisation of the $\delta$-function ``on the scale $q/(2\pi)$'' (cf.~(40.17), where the factor $q_0/p_0$ on the right side of the equality will now be absent). It is precisely for this reason that the number of final states of the electron must be measured by the element $d^3q'/(2\pi)^3$.}.
+
+The structure of the amplitudes $M_{fi}^{(s)}$ is similar to the structure of the scattering amplitude with plane waves: $\bar{u}(p')\ldots u(p)$. Therefore the operations of summation over polarisations of the particles are carried out in the usual way. After summation over polarisations of the final electron and photon and averaging over polarisations of the initial electron:
+\begin{equation}
+\begin{split}
+dW_s = \frac{e^2 m^2}{4\pi}\,\frac{d^3k'\,d^3q'}{q_0\,q'_0\,\omega'}\,\delta^{(4)}(sk + q - q' - k') \times {} \\
+\times \biggl\{-2J_s^2(z) + \xi^2\biggl(1 + \frac{(kk')^2}{2(kp)(kp')}\biggr)\bigl(J_{s+1}^2 + J_{s-1}^2 - 2J_s^2\bigr)\biggr\}.
+\end{split}
+\label{eq:101.14}
+\end{equation}
+
+For integration of this expression we note that due to the axial symmetry of the circularly polarised wave field, the differential probability does not depend on the overall azimuthal angle $\phi$ around the direction~$\mathbf{k}$. Together with the $\delta$-function, this allows integration over all variables except one; as the latter we choose the invariant quantity $u = (kk')/(kp')$. Then after integration over $d^3k'\,d\phi\,d(q'_0 + \omega')$ we have
+\[
+\delta^{(4)}(sk + q - q' - k')\,\frac{d^3q'\,d^3k'}{q'_0\,\omega'} \to \frac{2\pi\,du}{(1+u)^2}.
+\]
+
+\SourcePage{500}{505}
+
+Indeed, in the centre-of-inertia system (the system where $s\mathbf{k} + \mathbf{q} = \mathbf{q}' + \mathbf{k}' = 0$), the indicated integration gives $2\pi|\mathbf{q}'|\,d\!\cos\theta/E_s$, where $E_s = s\omega + q_0 = \omega' + q'_0$ and $\theta$ is the angle between $\mathbf{k}$ and $\mathbf{q}'$. On the other hand, in this same system,
+\[
+u = \frac{E_s}{q'_0 - |\mathbf{q}'|\cos\theta} - 1, \quad d\!\cos\theta = \frac{E_s\,du}{|\mathbf{q}'|(1+u)^2}.
+\]
+The interval $-1 \leq \cos\theta \leq 1$ corresponds to the interval
+\[
+0 \leq u \leq u_s \equiv \frac{E_s^2}{m_*^2} - 1 = \frac{2s(kp)}{m_*^2}
+\]
+(in the transformations one should remember that $(kp) = (kq)$).
+
+Thus the total probability of radiation per unit time:
+\begin{equation}
+\begin{split}
+W = \sum_{s=1}^{\infty} W_s = \frac{e^2 m^2}{4q_0}\sum_{s=1}^{\infty}\int_0^{u_s}\frac{du}{(1+u)^2}\biggl\{-4J_s^2(z) + {} \\
++ \xi^2\biggl(2 + \frac{u^2}{1+u}\biggr)\bigl(J_{s+1}^2 + J_{s-1}^2 - 2J_s^2\bigr)\biggr\},
+\end{split}
+\label{eq:101.15}
+\end{equation}
+where\footnote{The indicated value of $a^2$ corresponds to normalisation of the 4-potential to one photon per unit volume. For its determination one must equate $\omega$ times the energy of the classical field with the (real) 4-potential~\eqref{eq:101.2}.}
+\begin{equation}
+u = \frac{(kk')}{(kp')}, \quad u_s = \frac{2s(kp)}{m_*^2}, \quad z = \frac{2sm^2\xi}{m_*\sqrt{1+\xi^2}}\sqrt{\frac{u}{u_s}\biggl(1 - \frac{u}{u_s}\biggr)}.
+\label{eq:101.16}
+\end{equation}
+
+For $\xi \ll 1$ (the condition for applicability of perturbation theory) the integrand expressions in~\eqref{eq:101.15} can be expanded in powers of~$\xi$. Thus, for the first term of the expansion $W_1$ (at $\xi \ll 1$):
+\begin{equation}
+\begin{split}
+W_1 &= \frac{e^2 m^2 \xi^2}{4p_0}\int_0^{u_1}\biggl[2 + \frac{u^2}{1+u} - \frac{4u}{u_1}\biggl(1 - \frac{u}{u_1}\biggr)\biggr]\frac{du}{(1+u)^2} \\
+&= \frac{e^2 m^2 \xi^2}{4p_0}\biggl[\biggl(1 - \frac{4}{u_1} - \frac{8}{u_1^2}\biggr)\ln(1+u_1) + \frac{1}{2} + \frac{8}{u_1} - \frac{1}{2(1+u_1)^2}\biggr],
+\end{split}
+\label{eq:101.17}
+\end{equation}
+
+\SourcePage{501}{506}
+
+\noindent with $u_1 \approx 2(kp)/m^2$. As expected, this result coincides with the Klein--Nishina formula for photon scattering on an electron: substituting in~\eqref{eq:101.17} $-a^2 = 4\pi/\omega$, $\xi^2 = 4\pi e^2/(m^2\omega)$ and dividing by the flux density~(64.14), we return to~(86.16) (the total scattering cross section does not depend on the initial polarisation of the photon).
+
+We also give the expression for the probability of emission of the second harmonic (first term of the expansion of $W_2$ at $\xi \ll 1$):
+\begin{equation}
+\begin{split}
+W_2 &= \frac{e^2 m^2 \xi^4}{p_0}\int_0^{u_2}\frac{du}{(1+u)^2}\,\frac{u}{u_2}\biggl(1 - \frac{u}{u_2}\biggr)\biggl[2 + \frac{u^2}{1+u} - \frac{4u}{u_2}\biggl(1 - \frac{u}{u_2}\biggr)\biggr].
+\end{split}
+\label{eq:101.18}
+\end{equation}
+In general, the main term in $W_s$ (for not too large $s$) is proportional to $\xi^{2s}$.
+
+Now consider the opposite case: $\xi \gg 1$. The parameter $\xi$ can be made large, for example, by decreasing the frequency $\omega$ at fixed field intensity (obviously, $\xi = eF/(m\omega)$, where $F$ is the field amplitude). Therefore it is clear that the case $\xi \gg 1$ essentially reduces to processes in a constant uniform field, the intensities $\mathbf{E}$ and $\mathbf{H}$ of which are mutually perpendicular and equal in magnitude (such a field is called a \emph{crossed field}). The radiation probability can be obtained by the limiting transition $\xi \to \infty$, but it is simpler to carry out the calculations directly for a constant field, taking the 4-potential in the form
+\begin{equation}
+A^\mu = a^\mu\varphi, \quad \varphi = kx, \quad ak = 0
+\label{eq:101.19}
+\end{equation}
+(so that $F_{\mu\nu} = k_\mu a_\nu - k_\nu a_\mu = \mathrm{const}$). The exact wave function of the electron in this field is obtained by substitution of~\eqref{eq:101.19} into~(40.7), (40.8):
+\begin{equation}
+\psi_p = \biggl[1 + \frac{e(\gamma k)(\gamma a)}{2(kp)}\,\varphi\biggr]\frac{u(p)}{\sqrt{2p_0}}\exp\biggl\{-\frac{ie(ap)}{2(kp)}\,\varphi^2 + \frac{ie^2 a^2}{6(kp)}\,\varphi^3 - ipx\biggr\}.
+\label{eq:101.20}
+\end{equation}
+
+The result obtained with this function is exact for radiation of an electron in a crossed field at any electron energy. But in the ultrarelativistic case this result
+
+\SourcePage{502}{507}
+
+\noindent applies to radiation of an electron not only in a crossed field, but in any constant uniform electromagnetic field, including a constant magnetic field (which was considered in~\S\,90).
+
+To formulate this assertion we note that the state of a particle in an arbitrary constant uniform field is determined by the same quantum numbers as the state of a free particle, and these quantum numbers can always be chosen so that when the field is switched off they go over into the quantum numbers of the free particle, i.e.\ its 4-momentum $p^\mu$ ($p^2 = m^2$). Thus the state of the particle in the field will be described by a constant 4-vector~$p$.
+
+The total radiation intensity, being an invariant quantity, depends only on invariants that can be formed from the constant 4-tensor $F_{\mu\nu}$ and the 4-vector~$p$. Taking into account also that $F_{\mu\nu}$ must enter the intensity only together with the charge~$e$, we obtain three dimensionless invariants\footnote{In the expression for $\chi$ one can with the same accuracy consider $p$ as the ordinary kinematic 4-momentum of the particle.}:
+\begin{equation}
+\chi^2 = -\frac{e^2}{m^6}(F_{\mu\nu}p^\nu)^2, \quad f = \frac{e^2 (F_{\mu\nu})^2}{m^4}, \quad g = \frac{e^2}{m^4}\,e_{\lambda\mu\nu\rho}\,F^{\lambda\mu}F^{\nu\rho}.
+\label{eq:101.21}
+\end{equation}
+
+In a crossed field $f = g \equiv 0$, while in the general case all three invariants are non-zero. But if the electron is ultrarelativistic ($p_0 \gg m$), and its momentum $\mathbf{p}$ makes with the fields $\mathbf{E}$, $\mathbf{H}$ angles $\theta \gg m/p_0$, then $\chi^2 \gg f,\,g$ (in other words, for an ultrarelativistic particle almost for all directions of $\mathbf{p}$ any constant field looks like a crossed one). If, moreover, the field intensities $|\mathbf{E}|,\,|\mathbf{H}| \ll m^2/e$ ($= m^2c^3/(e\hbar)$), then $|f|,\,|g| \ll 1$. Under these conditions the radiation intensity, computed for a crossed field, also applies to radiation in any constant field, expressed through the invariant $\chi$ computed for a crossed field.
+
+The invariant $\chi$ is expressed through the field intensities $\mathbf{E}$, $\mathbf{H}$ as
+\[
+\chi^2 = \frac{e^2}{m^6}\bigl\{([\mathbf{p}\mathbf{H}] + p_0\mathbf{E})^2 - (\mathbf{p}\cdot\mathbf{E})^2\bigr\}.
+\]
+For a constant magnetic field, $\chi$ coincides with the quantity~(90.3) introduced in~\S\,90, so that the considerations presented here give another way to obtain the results of~\S\,90\footnote{Detailed treatment of the theory of various processes in strong fields is given in the reviews by \emph{A.~I.~Nikishov} and \emph{V.~I.~Ritus} in the collection ``Kvantovaya elektrodinamika yavlenii v intensivnom pole'' (Trudy FIAN, M.: Nauka, 1979, T.~111).}.
