@@ -1,0 +1,68 @@
+\SourcePage{278}{281}
+\section{The indistinguishability principle for identical particles}
+
+In classical mechanics, identical particles (electrons, for example) retain their ``individuality'' despite having the same physical properties. One may imagine numbering the particles that make up a given physical system at some instant and thereafter following the motion of each along its own trajectory; the particles could then be identified at any later time.
+
+In quantum mechanics the situation is entirely different. As has already been pointed out more than once, the uncertainty principle deprives the notion of an electron trajectory of all meaning. Even if an electron's position is known exactly at the present instant, at the next instant its coordinates have no definite values at all. We therefore gain nothing toward identifying electrons at later times by localizing and numbering them at some instant. If at another instant one electron is localized at a certain point in space, it is impossible to say which particular electron has reached that point. Quantum mechanics thus provides no possibility in principle of following each identical particle separately and thereby distinguishing one from another. One may say that identical particles lose their ``individuality'' completely in quantum mechanics. Here the sameness of their physical properties has a very profound consequence: the particles are wholly indistinguishable.
+
+This \emph{indistinguishability principle} for identical particles, as it is called, is fundamental to the quantum theory of systems made up of such particles. Consider first a system containing only two particles. Since they are identical, two states that differ merely by interchange of the particles must be physically equivalent in every respect. Consequently, under this interchange the system's wave function can change only by an
+
+\SourcePage{279}{282}
+irrelevant phase factor. Let $\psi(\xi_1,\xi_2)$ be the wave function of the system, where $\xi_1$ and $\xi_2$ denote, by convention, the set consisting of the three coordinates and the spin projection of each particle. We must then have
+\[
+  \psi(\xi_1,\xi_2)=e^{i\alpha}\psi(\xi_2,\xi_1),
+\]
+where $\alpha$ is a real constant. Interchanging the particles a second time restores the initial state, while multiplying $\psi$ by $e^{2i\alpha}$. Hence $e^{2i\alpha}=1$, so that $e^{i\alpha}=\pm1$. Thus $\psi(\xi_1,\xi_2)=\pm\psi(\xi_2,\xi_1)$.
+
+There are therefore only two possibilities: the wave function is either symmetric (that is, it remains entirely unchanged when the particles are interchanged) or antisymmetric (that is, its sign is reversed by the interchange). Clearly, the wave functions for all states of one and the same system must possess the same symmetry. Otherwise, the wave function of a state formed as a superposition of states with different symmetries would be neither symmetric nor antisymmetric.
+
+\input{manuscript/chapters/ch09/fragments/sec61-p279-line19-symmetry-statistics.cleanroom.translation.en.tex}
+
+\SourcePage{280}{283}
+The laws of relativistic quantum mechanics make it possible to prove (see IV, §~25) that the statistics obeyed by particles is uniquely tied to their spin: particles of half-integral spin are fermions, whereas those of integral spin are bosons.
+
+\input{manuscript/chapters/ch09/fragments/sec61-line24-composite-statistics-20260718.translation.en.tex}
+
+Thus atomic nuclei of odd atomic weight (that is, nuclei made up of an odd number of protons and neutrons) obey Fermi statistics, while nuclei of even atomic weight obey Bose statistics. For atoms, which contain electrons as well as a nucleus, the statistics is evidently determined by whether the sum of the atomic weight and atomic number is even or odd.
+
+Consider a system of $N$ identical particles whose mutual interaction may be neglected. Let $\psi_1,\psi_2,\ldots$ be the wave functions of the various stationary states available to each particle separately. The state of the entire system can be specified by listing the labels of the states occupied by the individual particles. We must determine how the wave function $\psi$ of the full system is to be constructed from $\psi_1,\psi_2,\ldots$.
+
+\input{manuscript/chapters/ch09/fragments/sec61-line30-boson-product-intro-7c2d.translation.en.tex}
+\begin{equation}
+  \psi_{p_1}(\xi_1)\psi_{p_2}(\xi_2)\cdots\psi_{p_N}(\xi_N)
+  \tag{61.1}
+\end{equation}
+over all possible permutations of the distinct indices $p_1,p_2,\ldots$; this sum plainly has the required symmetry. For example, for two particles occupying different states ($p_1\ne p_2$),
+\begin{equation}
+ \psi(\xi_1,\xi_2)=\frac1{\sqrt2}\left[\psi_{p_1}(\xi_1)\psi_{p_2}(\xi_2)+\psi_{p_1}(\xi_2)\psi_{p_2}(\xi_1)\right].
+ \tag{61.2}
+\end{equation}
+
+\SourcePage{281}{284}
+The factor $1/\sqrt2$ provides normalization (all the functions $\psi_1,\psi_2,\ldots$ are mutually orthogonal and are assumed normalized). More generally, for a system containing an arbitrary number $N$ of particles, the normalized wave function is
+\begin{equation}
+ \psi_{N_1N_2\ldots}=\left(\frac{N_1!N_2!\cdots}{N!}\right)^{1/2}
+ \sum \psi_{p_1}(\xi_1)\psi_{p_2}(\xi_2)\cdots\psi_{p_N}(\xi_N),
+ \tag{61.3}
+\end{equation}
+where the sum runs over all permutations of distinct members among the indices $p_1,p_2,\ldots,p_N$, and $N_i$ gives the number of these indices whose common value is $i$ (with $\sum N_i=N$). On integrating $|\psi|^2$ over $d\xi_1d\xi_2\cdots d\xi_N$\footnote{Integration over $d\xi$ conventionally means here (and in §§~64 and 65) integration over the coordinates together with summation over $\sigma$.}, every term vanishes except the squared moduli of the individual terms in the sum. Since the total number of terms in the sum (61.3) is plainly $N!/(N_1!N_2!\cdots)$, the normalization coefficient displayed there follows.
+
+For a system of fermions, the wave function $\psi$ is an antisymmetric combination of products (61.1). Thus, for two particles,
+\begin{equation}
+ \psi(\xi_1,\xi_2)=\frac1{\sqrt2}\left[\psi_{p_1}(\xi_1)\psi_{p_2}(\xi_2)-\psi_{p_1}(\xi_2)\psi_{p_2}(\xi_1)\right].
+ \tag{61.4}
+\end{equation}
+For the general case of $N$ particles, the system's wave function is written as the determinant
+\begin{equation}
+ \psi_{N_1N_2\ldots}=\frac1{\sqrt{N!}}
+ \begin{vmatrix}
+  \psi_{p_1}(\xi_1)&\psi_{p_1}(\xi_2)&\cdots&\psi_{p_1}(\xi_N)\\
+  \psi_{p_2}(\xi_1)&\psi_{p_2}(\xi_2)&\cdots&\psi_{p_2}(\xi_N)\\
+  \cdots&\cdots&\cdots&\cdots\\
+  \psi_{p_N}(\xi_1)&\psi_{p_N}(\xi_2)&\cdots&\psi_{p_N}(\xi_N)
+ \end{vmatrix}.
+ \tag{61.5}
+\end{equation}
+Here an interchange of two particles corresponds to interchanging two columns of the determinant, which reverses its sign.
+
+Expression (61.5) yields an important result. If any two of the labels $p_1,p_2,\ldots$ coincide, two rows of the determinant are identical and the determinant vanishes identically. It can be nonzero only when all the labels $p_1,p_2,\ldots$ are different. Thus, in a system of identical fermions, two or more particles cannot occupy the same state at the same time. This is the so-called \emph{Pauli principle} (W.~Pauli, 1925).

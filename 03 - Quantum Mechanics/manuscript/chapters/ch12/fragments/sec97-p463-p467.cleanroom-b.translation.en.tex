@@ -1,0 +1,225 @@
+\SourcePage{463}{466}
+\section{Selection rules for matrix elements}
+
+Group theory serves not only to classify the terms of any symmetric physical
+system; it also supplies a straightforward way of determining selection rules
+for matrix elements of the various quantities that characterize the system.
+
+The method rests on the following general theorem. Let
+$\psi_i^{(\alpha)}$ be one of the functions in a basis of an irreducible
+(nonidentity) representation of the symmetry group. Its integral over the
+entire space\footnote{The configuration space of the physical system in
+question is meant here.} then vanishes identically:
+\begin{equation}
+ \int \psi_i^{(\alpha)}\,dq=0.
+ \tag{97.1}
+\end{equation}
+To prove this, observe that an integral over all space is invariant under any
+change of the coordinate system and, in particular,
+\SourcePage{464}{467}
+under every symmetry transformation. Hence
+\[
+ \int\psi_i^{(\alpha)}dq=\int\widehat G\psi_i^{(\alpha)}dq
+ =\int\sum_k G_{ki}^{(\alpha)}\psi_k^{(\alpha)}dq.
+\]
+Now sum this equality over the elements of the group. On the left the integral
+is merely multiplied by the group order $g$, so that
+\[
+ g\int\psi_i^{(\alpha)}dq=\sum_k\int\psi_k^{(\alpha)}\sum_G G_{ki}^{(\alpha)}dq.
+\]
+For any irreducible representation other than the identity representation,
+however, $\sum_GG_{ki}^{(\alpha)}=0$ identically. This is the special case of
+the orthogonality relations (94.7) in which one of the two irreducible
+representations is the identity representation. The theorem follows.
+
+If $\psi$ is a basis function of some reducible representation, the integral
+$\int\psi\,dq$ can be nonzero only when that representation includes the
+identity representation. This assertion is an immediate consequence of the
+preceding theorem.
+
+The matrix elements of a physical quantity $f$ are the integrals
+\begin{equation}
+ \langle\beta k|f|\alpha i\rangle=\int\psi_k^{(\beta)}\widehat f\psi_i^{(\alpha)}dq,
+ \tag{97.2}
+\end{equation}
+where $\alpha$ and $\beta$ distinguish different energy levels of the system,
+while $i$ and $k$ enumerate the wave functions belonging to the same
+degenerate level\footnote{After passing to ``physically irreducible''
+representations, the basis functions may be chosen real. For this reason,
+(97.2) makes no distinction between the wave functions and their complex
+conjugates.}. Denote by $D^{(\alpha)}$ and $D^{(\beta)}$ the irreducible
+representations of the system's symmetry group realized by
+$\psi_i^{(\alpha)}$ and $\psi_k^{(\beta)}$. Let $D_f$ denote the
+representation of that group corresponding to the symmetry of $f$; it is
+determined by the tensor character of $f$. Thus, when $f$ is a true scalar,
+its operator $\widehat f$ is invariant under every symmetry transformation,
+and $D_f$ is the identity representation. The same conclusion holds for a
+pseudoscalar if the group contains symmetry axes only. If reflections also
+belong to the group, $D_f$ is one-dimensional but is not the identity
+representation. For a vector quantity $f$, the representation $D_f$ is
+realized by the three vector components that transform into one another;
+\SourcePage{465}{468}
+in general this representation is different for polar and axial vectors.
+
+The products $\psi_k^{(\beta)}\widehat f\psi_i^{(\alpha)}$ realize the group
+representation given by the direct product
+$D^{(\beta)}\times D_f\times D^{(\alpha)}$. A matrix element can be nonzero
+when this representation contains the identity representation, or,
+equivalently, when $D^{(\beta)}\times D^{(\alpha)}$ contains $D_f$. In
+practice it is more convenient to resolve $D^{(\alpha)}\times D_f$ into
+irreducible parts. This immediately gives every type $D^{(\beta)}$ of state
+for which transitions from a state of type $D^{(\alpha)}$ can have nonzero
+matrix elements.
+
+The simplest case is that of a scalar quantity, for which $D_f$ is the
+identity representation. It follows at once that a matrix element can be
+nonzero only for a transition between states of the same type. Indeed, the
+direct product of two distinct irreducible representations
+$D^{(\alpha)}\times D^{(\beta)}$ does not contain the identity
+representation, whereas the direct product of an irreducible representation
+with itself always does. This is the most general statement of a theorem whose
+special cases have already arisen several times.
+
+\input{manuscript/chapters/ch12/fragments/sec97-energy-diagonal-sentence.fresh17.translation.en.tex}
+Here there is only one system of functions
+$\psi_1^{(\alpha)}$, $\psi_2^{(\alpha)}$,~\ldots, rather than two different
+systems. The procedure for obtaining the selection rules now depends on how
+$f$ behaves under time reversal.
+
+Consider a state whose wave function has the form
+$\psi=\sum_i c_i\psi_i^{(\alpha)}$. In this state the mean value of $f$ is
+\[
+ \bar f=\sum_{i,k}c_k^*c_i\langle\alpha k|f|\alpha i\rangle.
+\]
+For the state with the complex-conjugate wave function
+$\psi^*=\sum_i c_i^*\psi_i^{(\alpha)}$, we have
+\[
+ \bar f=\sum_{i,k}c_kc_i^*\langle\alpha k|f|\alpha i\rangle
+ =\sum_{i,k}c_ic_k^*\langle\alpha i|f|\alpha k\rangle.
+\]
+\input{manuscript/chapters/ch12/fragments/sec97-p466-time-sentence-b.translation.en.tex}
+\[
+ \langle\alpha k|f|\alpha i\rangle=\langle\alpha i|f|\alpha k\rangle.
+\]
+It is readily shown that the selection rules must then be found from the
+symmetric part $[D^{(\alpha)2}]$ rather than from the whole direct product
+$D^{(\alpha)}\times D^{(\alpha)}$. Nonzero matrix elements exist if
+$[D^{(\alpha)2}]$ contains $D_f$\footnote{The product
+$[D^{(\alpha)2}]$ always includes the identity representation. Thus, for a
+scalar quantity, diagonal elements (as well as nondiagonal elements between
+states of the same type) can be nonzero.}.
+
+If instead $f$ changes sign under time reversal, replacing $\psi$ by $\psi^*$
+must be accompanied by a reversal of the sign of $\bar f$. The same argument
+then yields
+\[
+ \langle\alpha k|f|\alpha i\rangle=-\langle\alpha i|f|\alpha k\rangle.
+\]
+In this case the selection rules are fixed by the decomposition of the
+antisymmetric part of the direct product, $\{D^{(\alpha)2}\}$.
+
+\subsection*{Problems}
+
+\ProblemHeading{1.} Find the selection rules for the matrix elements of the
+electric dipole moment $\mathbf d$ and magnetic dipole moment
+$\boldsymbol\mu$ when the symmetry is $O$.
+
+\SolutionHeading The group $O$ contains no reflections. Polar vectors
+($\mathbf d$) and axial vectors ($\boldsymbol\mu$) therefore transform
+according to the same irreducible representation, $F_1$. The direct products
+of $F_1$ with the other representations of $O$ decompose as
+\begin{align}
+ F_1\times A_1&=F_2,&F_1\times A_2&=F_1,&F_1\times E&=F_1+F_2,\notag\\
+ F_1\times F_1&=A_1+E+F_1+F_2,&F_1\times F_2&=A_2+E+F_1+F_2.\tag{1}
+\end{align}
+Consequently, the nondiagonal (in energy) matrix elements can be nonzero for
+the transitions
+\[
+ F_1\leftrightarrow A_1,E,F_1,F_2;\qquad F_2\leftrightarrow A_2,E,F_1,F_2.
+\]
+The symmetric and antisymmetric products of the irreducible representations
+of $O$ are
+\begin{align}
+ [A_1^2]&=[A_2^2]=A_1,&[E^2]&=A_1+E,&[F_1^2]&=[F_2^2]=A_1+E+F_2,\notag\\
+ \{E^2\}&=A_2,&\{F_1^2\}&=\{F_2^2\}=F_1.\tag{2}
+\end{align}
+None of the symmetric products contains $F_1$. Hence the vector $\mathbf d$,
+which is invariant under time reversal, has no matrix elements diagonal in
+energy. The magnetic moment, on the other hand, reverses sign under time
+reversal and has diagonal matrix elements in states of type $F_1$ and $F_2$.
+
+\ProblemHeading{2.} Repeat the calculation for symmetry $D_{3d}$.
+
+\SolutionHeading The transformation laws of $\mathbf d$ and
+$\boldsymbol\mu$ differ in the group $D_{3d}$:
+\[
+ d_x,d_y\sim E_u,\quad d_z\sim A_{2u},\qquad
+ \mu_x,\mu_y\sim E_g,\quad \mu_z\sim A_{2g}
+\]
+\SourcePage{467}{470}
+(here and in the problems below, the sign $\sim$ stands for the words
+``transforms according to the representation''). We have
+\begin{align}
+ E_u\times A_{1g}&=E_u\times A_{2g}=E_u,&E_u\times A_{1u}&=E_u\times A_{2u}=E_g,\notag\\
+ E_u\times E_u&=A_{1g}+A_{2g}+E_g,&E_u\times E_g&=A_{1u}+A_{2u}+E_u.\tag{3}
+\end{align}
+Thus the nondiagonal matrix elements of $d_x,d_y$ can be nonzero for
+$E_u\leftrightarrow A_{1g},A_{2g},E_g$ and
+$E_g\leftrightarrow A_{1u},A_{2u},E_u$. The other selection rules are found
+in the same way:
+\begin{align*}
+\text{for }d_z:\quad&A_{1g}\leftrightarrow A_{2u};\ A_{2g}\leftrightarrow A_{1u};\ E_g\leftrightarrow E_u;\\
+\text{for }\mu_x,\mu_y:\quad&E_g\leftrightarrow A_{1g},A_{2g},E_g;\ E_u\leftrightarrow A_{1u},A_{2u},E_u;\\
+\text{for }\mu_z:\quad&A_{1g}\leftrightarrow A_{2g};\ A_{1u}\leftrightarrow A_{2u};\ E_g\leftrightarrow E_g;\ E_u\leftrightarrow E_u.
+\end{align*}
+The symmetric and antisymmetric products of the irreducible representations
+of $D_{3d}$ are
+\begin{align}
+ [A_{1g}^2]&=[A_{1u}^2]=[A_{2g}^2]=[A_{2u}^2]=A_{1g},\notag\\
+ [E_g^2]&=[E_u^2]=E_g+A_{1g},\notag\\
+ \{E_g^2\}&=\{E_u^2\}=A_{2g}.\tag{4}
+\end{align}
+It follows that every component of $\mathbf d$ has vanishing matrix elements
+diagonal in energy. For $\boldsymbol\mu$, diagonal matrix elements of $\mu_z$
+exist for transitions between states belonging to a degenerate level of type
+$E_g$ or $E_u$.
+
+\ProblemHeading{3.} Find the selection rules for matrix elements of the
+electric quadrupole-moment tensor $Q_{ik}$ for symmetry $O$.
+
+\SolutionHeading With respect to the group $O$, the components of $Q_{ik}$,
+a symmetric tensor satisfying $\sum_iQ_{ii}=0$, transform as follows:
+\[
+ Q_{xy},\ Q_{xz},\ Q_{yz}\sim F_2,
+\]
+\[
+ Q_{xx}+\epsilon Q_{yy}+\epsilon^2Q_{zz},\quad Q_{xx}+\epsilon^2Q_{yy}+\epsilon Q_{zz}\sim E
+ \quad(\epsilon=e^{2\pi i/3}).
+\]
+Decomposing the direct products of $F_2$ and $E$ with every representation of
+the group gives the following selection rules for nondiagonal matrix elements:
+\begin{align*}
+ \text{for }Q_{xy},Q_{xz},Q_{yz}:&\quad F_1\leftrightarrow A_2,E,F_1,F_2;\ F_2\leftrightarrow A_1,E,F_1,F_2;\\
+ \text{for }Q_{xx},Q_{yy},Q_{zz}:&\quad E\leftrightarrow A_1,A_2,E;\ F_1\leftrightarrow F_1,F_2;\ F_2\leftrightarrow F_2.
+\end{align*}
+As follows from (2), diagonal matrix elements occur in the following states:
+\begin{align*}
+ \text{for }Q_{xy},Q_{xz},Q_{yz}:&\quad F_1,F_2,\\
+ \text{for }Q_{xx},Q_{yy},Q_{zz}:&\quad E,F_1,F_2.
+\end{align*}
+
+\ProblemHeading{4.} Repeat the calculation for symmetry $D_{3d}$.
+
+\SolutionHeading The components of $Q_{ik}$ transform under $D_{3d}$
+according to
+\[
+ Q_{zz}\sim A_{1g};\quad Q_{xx}-Q_{yy},\ Q_{xy}\sim E_g;\quad Q_{xz},\ Q_{yz}\sim E_g.
+\]
+The component $Q_{zz}$ behaves as a scalar. Decomposing the direct products of
+$E_g$ with all the group representations, we obtain the selection rules for
+the nondiagonal matrix elements of the remaining components of $Q_{ik}$:
+\[
+ E_g\leftrightarrow A_{1g},A_{2g},E_g;\qquad E_u\leftrightarrow A_{1u},A_{2u},E_u.
+\]
+As follows from (4), diagonal elements can be nonzero only for states of type
+$E_g$ and $E_u$.

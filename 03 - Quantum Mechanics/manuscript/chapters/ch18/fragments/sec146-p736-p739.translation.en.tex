@@ -1,125 +1,37 @@
-\SourcePage{736}{739}
-\section{Final-state interaction in reactions}
-
-The interaction between particles produced in a reaction may substantially
-affect their energy and angular distributions. Naturally, this effect is most
-pronounced when their relative speed is small. Such a phenomenon occurs, for
-example, in nuclear reactions emitting two or more nucleons, where it is due
-to the nuclear forces between the free nucleons\footnote{The results presented
-below were obtained by A.~B.~Migdal (1950) and independently by
-K.~M.~Watson (1952).}.
-
-Let $\mathbf p_0$ be the momentum of the center of mass of a pair of emitted
-nucleons and $\mathbf p$ their relative-motion momentum. Suppose that
-$p\ll p_0$, so the relative energy $E=p^2/m$
-
-\SourcePage{737}{740}
-($m$ is the nucleon mass) is small compared with the center-of-mass energy
-$E_0=p_0^2/4m$. At the same time, suppose $E_0$ is large compared with the
-energy $\varepsilon$ of the true or virtual level of the two-nucleon system.
-Thus only the relative motion is ``slow''; the nucleons themselves are
-``fast.''
-
-The reaction probability is proportional to the squared modulus of the wave
-function of the produced particles while they are in the ``reaction zone,''
-at separations of order the range $a$ of the nuclear forces (compare the
-similar argument for the initial particles in \S~143). Here we seek only the
-dependence on the relative motion of one nucleon pair. It is therefore enough
-to consider its wave function $\psi_{\mathbf p}(\mathbf r)$, so the
-probability of producing a pair with relative momentum in $d^3p$ is
-\begin{equation}
- dw_{\mathbf p}=\mathrm{const}\cdot|\psi_{\mathbf p}(a)|^2d^3p.
- \tag{146.1}
-\end{equation}
-
-As shown in \S~136, the probability of a scattering transition to a state
-with a specified direction of motion requires final-state functions
-$\psi_{\mathbf p}^{(-)}$, which contain at infinity a plane wave and only an
-incoming spherical wave; they are normalized to a momentum delta-function.
-Moreover, $\psi_{\mathbf p}^{(-)}$ follows directly, by complex conjugation
-and reversal of $\mathbf p$, from $\psi_{\mathbf p}^{(+)}$, which contains an
-outgoing spherical wave and describes mutual scattering of two particles.
-This distinction is immaterial in (146.1), so $\psi_{\mathbf p}$ there may be
-taken as $\psi_{\mathbf p}^{(+)}$. The problem is thereby reduced to the
-resonance scattering of slow particles considered earlier.
-
-Although the true form of $\psi_{\mathbf p}$ for $r\sim a$ is unknown, its
-energy dependence can be found by considering it at
-$r\gtrsim1/k\gg a$, where $\mathbf k=\mathbf p/\hbar$ and $ak\ll1$, and then
-extending its order of magnitude to $r\sim a$\footnote{This procedure is
-permissible because for $r\ll1/k$ the energy $E$ may be neglected in the
-Schrödinger equation for $\psi_{\mathbf p}$. Its dependence on $E$ in this
-region is therefore determined entirely by matching to the function at
-$r\sim1/k$.}. In this procedure,
-
-\SourcePage{738}{741}
-the spherical wave, containing $1/r$, makes the principal contribution. It is
-a sum of partial waves whose amplitudes are the corresponding scattering
-amplitudes. For $|\psi_{\mathbf p}(a)|^2$, only the $s$-wave need be retained,
-since the amplitudes with $l\ne0$ are relatively small at low energies. From
-(133.7), therefore,
-\begin{equation}
- \psi_{\mathbf p}\sim\frac1{\kappa+ik}\frac{e^{ikr}}r,
- \tag{146.2}
-\end{equation}
-where $\kappa=\sqrt{m|\varepsilon|}/\hbar$ and $\varepsilon$ is the energy of
-the bound or virtual state of the two-nucleon system\footnote{We mean an
-$np$ pair with parallel or antiparallel spins, or an $nn$ pair with
-antiparallel spins. For a $pp$ pair, Coulomb repulsion complicates the
-situation; that case must be treated by the theory of \S~138.}. Substitution
-in (146.1) gives
-\begin{equation}
- dw_{\mathbf p}=\mathrm{const}\cdot\frac{d^3p}{E+|\varepsilon|}.
- \tag{146.3}
-\end{equation}
-
-Thus the distribution in momentum direction, in the two-nucleon
-center-of-mass system, is isotropic. The relative-energy distribution is
-\begin{equation}
- dw_E=\mathrm{const}\cdot\frac{\sqrt E\,dE}{E+|\varepsilon|}.
- \tag{146.4}
-\end{equation}
-The nucleon interaction therefore produces a maximum at small $E$, with
-$E\sim|\varepsilon|$\footnote{Strictly, the constant coefficients in
-(146.3), (146.4) may also depend on $E$ through the other parts of the wave
-function of the complete reaction-product system. This dependence is weak:
-as a function of $E$, the coefficient changes appreciably only over the full
-energy interval of order $E_0$ available to the nucleon pair. In the region
-$E\ll E_0$, it may therefore be neglected beside the strong dependence in
-(146.4).}.
-
-Small relative momentum, $p\ll p_0$, corresponds in the laboratory system to
-small angles $\theta$ between the two nucleon momenta. The maximum in the
-energy distribution therefore appears as an angular correlation between the
-emission directions, with enhanced probability at small $\theta$.
-
-\SourcePage{739}{742}
-Let $\mathbf p_1$, $\mathbf p_2$ be the laboratory momenta. Then
-\[
- \mathbf p_0=\mathbf p_1+\mathbf p_2,\qquad
- \mathbf p=\frac12(\mathbf p_2-\mathbf p_1),
-\]
-since the reduced mass of two identical particles is $m/2$. Taking the vector
-product of these equalities gives
-$\mathbf p_0\times\mathbf p=\mathbf p_1\times\mathbf p_2$. For $p\ll p_0$,
-\[
- p_0p_\perp=p_1p_2\sin\theta\approx\frac{p_0^2}{4}\theta,
-\]
-or $\theta=4p_\perp/p_0$, where $p_\perp$ is the component of $\mathbf p$
-transverse to $\mathbf p_0$. Rewrite (146.3) as
-\[
- dw_{\mathbf p}=\mathrm{const}\cdot
- \frac{2\pi p_\perp\,dp_\perp\,dp_\parallel}
- {(1/m)(p_\perp^2+p_\parallel^2)+|\varepsilon|}.
-\]
-Integration over $dp_\parallel$ gives the angular distribution. Because the
-integral converges rapidly, its limits may be extended from $-\infty$ to
-$\infty$, giving
-\begin{equation}
- dw_\theta=\mathrm{const}\cdot
- \frac{\theta\,d\theta}{\sqrt{\theta^2+4|\varepsilon|/E_0}}.
- \tag{146.5}
-\end{equation}
-Per unit solid angle $d\Omega\approx2\pi\theta\,d\theta$, the angular
-distribution has a maximum at
-$\theta\sim\sqrt{|\varepsilon|/E_0}$.
+\input{manuscript/chapters/ch18/fragments/sec146-p736-heading.translation.en}
+\input{manuscript/chapters/ch18/fragments/sec146-p736-line4.translation.en}
+\par
+\input{manuscript/chapters/ch18/fragments/sec146-p736-p737-lines6-9.translation.en}
+\par
+\input{manuscript/chapters/ch18/fragments/sec146-p737-line11.translation.en}
+\input{manuscript/chapters/ch18/fragments/sec146-p737-eq146-1.translation.en}
+\par
+\input{manuscript/chapters/ch18/fragments/sec146-p737-line17-sent1.translation.en}
+\input{manuscript/chapters/ch18/fragments/sec146-p737-line17-sent2.translation.en}
+\input{manuscript/chapters/ch18/fragments/sec146-p737-line17-sent3.translation.en}
+\par
+\input{manuscript/chapters/ch18/fragments/sec146-p737-line19.translation.en}
+\input{manuscript/chapters/ch18/fragments/sec146-p738-lines21-22-sent1-2.translation.en}
+\input{manuscript/chapters/ch18/fragments/sec146-p738-lines21-22-sent3-4.translation.en}
+\input{manuscript/chapters/ch18/fragments/sec146-p738-eq146-2.translation.en}
+\input{manuscript/chapters/ch18/fragments/sec146-p738-line27.translation.en}
+\input{manuscript/chapters/ch18/fragments/sec146-p738-eq146-3.translation.en}
+\par
+\input{manuscript/chapters/ch18/fragments/sec146-p738-line33.translation.en}
+\par
+\input{manuscript/chapters/ch18/fragments/sec146-p738-line35.translation.en}
+\input{manuscript/chapters/ch18/fragments/sec146-p738-eq146-4.translation.en}
+\input{manuscript/chapters/ch18/fragments/sec146-p738-line40.translation.en}
+\par
+\input{manuscript/chapters/ch18/fragments/sec146-p738-line42.translation.en}
+\par
+\input{manuscript/chapters/ch18/fragments/sec146-p739-lines44-45.translation.en}
+\input{manuscript/chapters/ch18/fragments/sec146-p739-momenta.translation.en}
+\input{manuscript/chapters/ch18/fragments/sec146-p739-line50.translation.en}
+\input{manuscript/chapters/ch18/fragments/sec146-p739-transverse.translation.en}
+\Needspace{7\baselineskip}
+\input{manuscript/chapters/ch18/fragments/sec146-p739-line54.translation.en}
+\input{manuscript/chapters/ch18/fragments/sec146-p739-rewritten146-3.translation.en}
+\input{manuscript/chapters/ch18/fragments/sec146-p739-line60.translation.en}
+\input{manuscript/chapters/ch18/fragments/sec146-p739-eq146-5.translation.en}
+\input{manuscript/chapters/ch18/fragments/sec146-p739-line66.translation.en}

@@ -1,0 +1,45 @@
+\SourcePage{433}{436}
+\section{Transformation groups}
+
+\input{manuscript/chapters/ch12/fragments/sec92-src004-006-fresh-c-20260718.translation.en.tex}
+
+Symmetry groups are conveniently studied by means of the general mathematical machinery known as \emph{group theory}, whose foundations are presented below. We begin with groups containing only a finite number of distinct transformations (the so-called \emph{finite groups}). Each transformation belonging to a group is called an \emph{element of the group}.
+
+Symmetry groups have the following evident properties. Every group contains the identity transformation $E$ (called the \emph{identity element of the group}). Group elements can be \emph{multiplied} together; the product of two (or several) transformations means the result of applying them successively. Evidently, the product of any two elements of a group is an element of the same group. Element multiplication obeys the associative law $(AB)C=A(BC)$, where $A,B,C$ are group elements. The commutative law does not hold in general, however: ordinarily $AB\ne BA$. For every group element $A$, the same group contains an \emph{inverse element} $A^{-1}$ (the inverse transformation), such that $AA^{-1}=E$. In some
+\SourcePage{435}{438}
+cases an element may coincide with its inverse; in particular, $E^{-1}=E$. It is evident that mutually inverse elements $A$ and $A^{-1}$ commute.
+
+The inverse of the product $AB$ of two elements is
+\[
+(AB)^{-1}=B^{-1}A^{-1}
+\]
+and the analogous statement holds for a product of more elements. This follows at once by carrying out the multiplication and using associativity.
+
+If all the elements of a group commute, the group is called \emph{abelian}. The so-called \emph{cyclic groups} form a special class of abelian groups. A cyclic group is one whose every element can be obtained by taking successive powers of a single element; thus it consists of the elements
+\[
+A,A^2,A^3,\ldots,A^n=E,
+\]
+where $n$ is an integer.
+
+Let $\boldsymbol{G}$ be a group\footnote{Groups will be denoted by bold italic letters.}. If a collection of its elements, denoted by $\boldsymbol{H}$, can be selected so that it too forms a group, then $\boldsymbol{H}$ is called a \emph{subgroup} of $\boldsymbol{G}$. One and the same group element may belong to several different subgroups.
+
+Take any element $A$ of the group and form its successive powers. Since the total number of elements in the group is finite, the identity element must eventually be reached. If $n$ is the smallest number for which $A^n=E$, then $n$ is called the \emph{order of the element} $A$, while the collection $A,A^2,\ldots,A^n=E$ is the \emph{period} of $A$. The period is denoted by $\{A\}$; it is itself a group, hence a subgroup of the original group, and specifically a cyclic subgroup.
+
+To determine whether a given collection of group elements is a subgroup, it is enough to check that multiplication of any two of its elements gives an element contained in the same collection. Indeed, together with every element $A$, the collection will then contain all its powers, including $A^{n-1}$ (where $n$ is the order of the element), which serves as its inverse (since $A^{n-1}A=A^n=E$); it will plainly contain the identity as well.
+
+\input{manuscript/chapters/ch12/fragments/sec92-src032-038-fresh-c-20260718.translation.en.tex}
+
+If the order of a group is prime, the result just proved immediately shows that the group has no subgroups at all (apart from $E$ and the group itself). The converse is also true: any group without subgroups must have prime order and must moreover be cyclic (otherwise it would contain elements whose periods would form subgroups).
+
+\input{manuscript/chapters/ch12/fragments/sec92-src042-048-fresh-c-20260718.translation.en.tex}
+
+All elements in the same class have the same order. Indeed, if $n$ is the order of $A$ (so that $A^n=E$), then for the conjugate element $B=CAC^{-1}$ we likewise have $(CAC^{-1})^n=CA^nC^{-1}=E$.
+
+Let $\boldsymbol{H}$ be a subgroup of $\boldsymbol{G}$, and let $G_1$ be an element of $\boldsymbol{G}$ outside $\boldsymbol{H}$. It is easily verified that the collection of elements $G_1\boldsymbol{H}G_1^{-1}$ satisfies all the requirements for a group and hence is also a subgroup of $\boldsymbol{G}$. The subgroups $\boldsymbol{H}$ and $G_1\boldsymbol{H}G_1^{-1}$ are called conjugate; each element of one is conjugate to an element of the other. Giving $G_1$ different values yields a number of conjugate subgroups, some of which may coincide. It can happen that every subgroup conjugate to $\boldsymbol{H}$ coincides with $\boldsymbol{H}$. In that case $\boldsymbol{H}$ is called a \emph{normal divisor} (or an \emph{invariant subgroup}) of $\boldsymbol{G}$. Thus, for example, every subgroup of an abelian group is plainly a normal divisor of that group.
+
+Consider a group $\boldsymbol{A}$ with $n$ elements $A,A',A'',\ldots$ and a group $\boldsymbol{B}$ with $m$ elements $B,B',B'',\ldots$, and suppose that all the elements of $\boldsymbol{A}$ (apart from the identity $E$) are distinct from and commute with the elements of $\boldsymbol{B}$. Multiplying each element of $\boldsymbol{A}$ by every element of $\boldsymbol{B}$ produces a collection of $nm$ elements that likewise forms a group. Indeed, for any two elements of the collection,
+$AB\cdot A'B'=AA'\cdot BB'=A''B''$, which is again an element of the same collection. The resulting group of order $nm$ is denoted by $\boldsymbol{A}\times\boldsymbol{B}$ and is called the \emph{direct product} of the groups $\boldsymbol{A}$ and $\boldsymbol{B}$.
+
+Finally, we introduce the concept of group \emph{isomorphism}. Two groups $\boldsymbol{A}$ and $\boldsymbol{B}$ of the same order are called isomorphic if a one-to-one correspondence can be established between their elements such that, if $A$ corresponds to $B$
+\SourcePage{438}{441}
+and $A'$ to $B'$, then $A''=AA'$ corresponds to $B''=BB'$. Considered abstractly, two such groups plainly have identical properties, even though the concrete meanings of their elements differ.

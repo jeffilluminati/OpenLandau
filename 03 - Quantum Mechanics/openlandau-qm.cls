@@ -46,7 +46,7 @@
 \RequirePackage{tocloft}
 \RequirePackage{emptypage}
 \RequirePackage{tikz}
-\usetikzlibrary{arrows.meta,calc}
+\usetikzlibrary{arrows.meta,calc,decorations.markings,decorations.pathreplacing,patterns}
 \RequirePackage{pgfplots}
 \pgfplotsset{compat=1.18}
 \RequirePackage{xcolor}

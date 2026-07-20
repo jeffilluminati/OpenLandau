@@ -1,0 +1,25 @@
+We now introduce the important notion of \emph{conjugate elements}.  Two 
+elements $A$ and $B$ are said to be conjugate to one another if
+\[
+A=CBC^{-1},
+\]
+where $C$ is also an element of the group.  Multiplying this equality by $C$ 
+on the right and by $C^{-1}$ on the left gives the inverse relation 
+$B=C^{-1}AC$.  An essential property of conjugacy is transitivity: if $A$ is 
+conjugate to $B$, and $B$ to $C$, then $A$ and $C$ are conjugate as well.  In 
+fact, from $B=P^{-1}AP$ and $C=Q^{-1}BQ$, with $P,Q$ elements of the group, it 
+follows that $C=(PQ)^{-1}A(PQ)$.  One may therefore consider sets of elements 
+that are mutually conjugate.  Such sets are called \emph{conjugacy classes}, 
+or simply classes of the group.  Any one of its elements $A$ determines the 
+entire class: once $A$ is given, form the products $GAG^{-1}$ as $G$ ranges 
+over all elements of the group; the same member of the class may, of course, 
+be obtained more than once.  In this way the whole group can be partitioned 
+into classes, and each element evidently belongs to only one class.
+\SourcePage{437}{440}
+The identity element forms a class by itself, since $GEG^{-1}=E$ for every 
+element $G$ of the group.  In an Abelian group the same is true of each 
+element.  All elements of such a group commute by definition, so every 
+element is conjugate only to itself and hence constitutes its own class.  It 
+should be emphasized that a class other than $E$ is by no means a subgroup: 
+this already follows from the fact that it does not contain the identity 
+element.

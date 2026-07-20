@@ -1,0 +1,82 @@
+\SourcePage{314}{317}
+\section{The self-consistent field}
+
+For atoms containing more than one electron, the Schrödinger equation cannot be solved analytically. Approximate methods for calculating the energies and wave functions of stationary atomic states therefore become important. Foremost among them is the method usually called the self-consistent-field method. Its basic idea is to regard each electron in an atom as moving in a \emph{self-consistent field} produced jointly by the nucleus and all the other electrons.
+
+As an example, consider the helium atom and restrict attention to those of its terms in which both electrons occupy $s$ states (with either equal or different $n$); the states of the atom as a whole are then $S$ states. Let $\psi_1(r_1)$ and $\psi_2(r_2)$ be the electron wave functions. In $s$ states they depend only on the respective distances $r_1,r_2$ from the nucleus. The wave function $\psi(r_1,r_2)$ of the complete atom is represented either by the symmetrized product
+\begin{equation}
+ \psi=\psi_1(r_1)\psi_2(r_2)+\psi_1(r_2)\psi_2(r_1)
+ \tag{69.1}
+\end{equation}
+or by the antisymmetrized product
+\begin{equation}
+ \psi=\psi_1(r_1)\psi_2(r_2)-\psi_1(r_2)\psi_2(r_1)
+ \tag{69.2}
+\end{equation}
+of the two functions, according as the total spin is $S=0$ or $S=1$\footnote{The state of the helium atom with $S=0$ is conventionally called a \emph{parahelium} state, and one with $S=1$ an \emph{orthohelium} state.}. We shall consider the latter case; $\psi_1$ and $\psi_2$ may then be taken to be mutually orthogonal\footnote{In general, the functions $\psi_1,\psi_2,\ldots$ for different one-electron states obtained by the self-consistent-field method are not mutually orthogonal, since they solve different equations rather than one common equation. In (69.2), however, $\psi_2$ can be replaced by $\psi'_2+\mathop{\rm const}\cdot\psi_1$ without altering the wave function $\psi$ of the whole atom. An appropriate choice of the constant always makes $\psi_1$ and $\psi'_2$ mutually orthogonal.}.
+
+\input{manuscript/chapters/ch10/fragments/sec69-src018-021-fresh-c-20260718.translation.en.tex}
+
+The Schrödinger equation, as we know, follows from the variational principle
+\[
+ \iint\psi^*\hat H\psi\,dV_1dV_2=\min
+\]
+subject to the additional condition
+\[
+ \iint|\psi|^2dV_1dV_2=1
+\]
+(the integration is over the coordinates of both electrons in the helium atom). Variation gives
+\begin{equation}
+ \iint\delta\psi^*(\hat H-E)\psi\,dV_1dV_2=0,
+ \tag{69.3}
+\end{equation}
+from which the usual Schrödinger equation results when the variation of $\psi$ is arbitrary. In the self-consistent-field method, by contrast, expression (69.2) is substituted for $\psi$ in (69.3), and $\psi_1$ and $\psi_2$ are varied separately.
+
+In other words, the integral is extremized among functions $\psi$ having the form (69.2). This naturally yields an approximate energy eigenvalue and an approximate wave function, but the latter is the best among all functions representable in that form.
+
+The Hamiltonian of the helium atom is\footnote{Atomic units are used throughout this section and its problems.}
+\begin{equation}
+ \hat H=\hat H_1+\hat H_2+\frac1{r_{12}},\qquad \hat H_1=-\frac12\Delta_1-\frac2{r_1}
+ \tag{69.4}
+\end{equation}
+($r_{12}$ is the distance between the electrons). Substitute (69.2) in (69.3), carry out the variation, and set the coefficients of $\delta\psi_1$ and $\delta\psi_2$ in the integrand equal to zero. The resulting equations are
+\begin{equation}
+\begin{split}
+ [\tfrac12\Delta+\tfrac2r+E-H_{22}-G_{22}(r)]\psi_1(r)+[H_{12}+G_{12}(r)]\psi_2(r)&=0,\\
+ [\tfrac12\Delta+\tfrac2r+E-H_{11}-G_{11}(r)]\psi_2(r)+[H_{12}+G_{12}(r)]\psi_1(r)&=0,
+\end{split}\tag{69.5}
+\end{equation}
+
+\SourcePage{316}{319}
+where
+\begin{equation}
+ G_{ab}(r_1)=\int\frac{\psi_a(r_2)\psi_b(r_2)}{r_{12}}\,dV_2,\quad
+ H_{ab}=\int\psi_a\left(-\frac12\Delta-\frac2r\right)\psi_b\,dV,\quad a,b=1,2.
+ \tag{69.6}
+\end{equation}
+\input{manuscript/chapters/ch10/fragments/sec69-src060-fresh-d-20260718.translation.en.tex}
+
+The equations for more complicated cases must be derived in the same way. The atomic wave function to be placed in the variational integral is constructed as a linear combination of products of individual-electron wave functions. This combination must be chosen so that, first, its permutation symmetry corresponds to the total spin $S$ of the atomic state under consideration and, second, it corresponds to the specified total orbital angular momentum $L$ of the atom\footnote{General procedures for constructing wave functions of an electron system in a central field are described in the book by I.~G.~Kaplan cited on p.~291.}.
+
+By using a wave function with the required permutation symmetry in the variational principle, we thereby include the exchange interaction between the atomic electrons. Simpler equations, though with less accurate results, follow if both the exchange interaction and the dependence of the atomic energy on $L$ for a fixed electron configuration are neglected (D.~R.~Hartree, 1928). Again taking helium as an example, the electron wave functions may then be written directly as ordinary Schrödinger equations,
+\begin{equation}
+ [\tfrac12\Delta_a+E_a-V_a(r_a)]\psi_a(r_a)=0,\qquad a=1,2,
+ \tag{69.7}
+\end{equation}
+where $V_a$ is the potential energy of one electron moving in the nuclear field and in the field of the distributed charge of the other electron:
+\begin{equation}
+ V_1(r_1)=-\frac2{r_1}+\int\frac1{r_{12}}\psi_2^2(r_2)\,dV_2
+ \tag{69.8}
+\end{equation}
+
+\SourcePage{317}{320}
+(and similarly for $V_2$). To find the energy $E$ of the entire atom, observe that the electrostatic interaction of the two electrons is counted twice in $E_1+E_2$, since it enters both the potential energy $V_1(r_1)$ of the first electron and $V_2(r_2)$ of the second. Hence $E$ is obtained from $E_1+E_2$ by subtracting the mean value of this interaction once, that is,
+\begin{equation}
+ E=E_1+E_2-\iint\frac1{r_{12}}\psi_1^2(r_1)\psi_2^2(r_2)\,dV_1dV_2.
+ \tag{69.9}
+\end{equation}
+The results of this simplified method can subsequently be refined by treating the exchange interaction and the dependence of the energy on $L$ as perturbations.
+
+\input{manuscript/chapters/ch10/fragments/sec69-src083-099-fresh-c-20260718.translation.en.tex}
+
+\input{manuscript/chapters/ch10/fragments/sec69-src101-114-fresh-d-20260718.translation.en.tex}

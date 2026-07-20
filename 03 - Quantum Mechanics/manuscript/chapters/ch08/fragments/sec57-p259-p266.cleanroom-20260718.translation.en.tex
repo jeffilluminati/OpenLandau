@@ -1,0 +1,253 @@
+\SourcePage{259}{262}
+\section{Wave functions of particles with arbitrary spin}
+
+Having developed the formal algebra of spinors of arbitrary rank, we can now
+turn to the immediate problem: the properties of wave functions for particles
+of arbitrary spin.
+
+It is convenient to approach this question by considering a collection of
+$n$ particles of spin $1/2$. The largest possible value of the $z$ component
+of the system's total spin is $n/2$. It is obtained when $s_z=1/2$ for every
+particle (all spins point in the same direction, along the $z$ axis). In this
+case the total spin $S$ of the system must likewise equal $n/2$.
+
+\SourcePage{260}{263}
+Every component of the particle-system wave function
+$\psi(\sigma_1,\sigma_2,\ldots,\sigma_n)$ then vanishes except for
+$\psi(1/2,1/2,\ldots,1/2)$. Write the wave function as a product of $n$
+spinors $\psi^\lambda\varphi^\mu\ldots$, one for each particle. Each spinor
+has only its component with $\lambda,\mu,\ldots=1$ different from zero.
+Consequently, the sole nonzero product is $\psi^1\varphi^1\ldots$. The full
+set of these products, however, constitutes a spinor of rank $n$ symmetric in
+all its indices. A transformation of coordinates (so that the spins no longer
+point along the $z$ axis) yields a general spinor of rank $n$, which remains
+symmetric.
+
+The spin properties of wave functions are, in essence, their behavior under
+rotations of the coordinates. They are therefore identical for a particle of
+spin $s$ and for a system of $n=2s$ spin-$1/2$ particles oriented so that the
+system has total spin $s$. It follows that the wave function of a spin-$s$
+particle is a symmetric spinor of rank $n=2s$.
+
+The number of independent components of a symmetric spinor of rank $2s$ is,
+as required, $2s+1$. Indeed, the distinct components are precisely those
+whose indices contain $2s$ ones and no twos, then $2s-1$ ones and one two,
+and so on, through no ones and $2s$ twos.
+
+Mathematically, symmetric spinors classify the possible transformation types
+of quantities under rotations of the coordinates. Suppose that $2s+1$
+different quantities transform linearly among themselves, and that no choice
+of linear combinations can reduce their number. Their transformation law is
+then equivalent to that of the components of a symmetric spinor of rank $2s$.
+Any collection of functions, of whatever size, that transform linearly among
+themselves under coordinate rotations can be reduced, by a suitable linear
+transformation, to one or more symmetric spinors\footnote{Equivalently,
+symmetric spinors realize the irreducible representations of the rotation
+group (see \S~98).}.
+
+Thus an arbitrary spinor of rank $n$, $\psi^{\lambda\mu\nu\ldots}$, can be
+reduced to symmetric spinors of ranks $n$, $n-2$, $n-4$, \ldots. In practice
+the reduction may be performed as follows. Symmetrizing
+$\psi^{\lambda\mu\nu\ldots}$ over all its indices produces a symmetric
+spinor of the same rank $n$. Next, contracting
+
+\SourcePage{261}{264}
+the original spinor $\psi^{\lambda\mu\nu\ldots}$ over various pairs of
+indices gives spinors of rank $n-2$ such as
+$\psi^\lambda{}_{\lambda}{}^{\nu\ldots}$. Symmetrizing these in turn gives
+symmetric spinors of rank $n-2$. Contracting
+$\psi^{\lambda\mu\ldots}{}_{\lambda\mu}$ over two pairs and symmetrizing the
+resulting spinors gives symmetric spinors of rank $n-4$, and so forth.
+
+It remains to connect the components of a symmetric spinor of rank $2s$ with
+the $2s+1$ functions $\psi(\sigma)$, where
+$\sigma=s,s-1,\ldots,-s$. The component
+\[
+ \psi^{\overbrace{11\ldots1}^{s+\sigma}
+              \overbrace{22\ldots2}^{s-\sigma}},
+\]
+in which the index 1 occurs $s+\sigma$ times and the index 2 occurs
+$s-\sigma$ times, corresponds to a spin projection $\sigma$ on the $z$ axis.
+To verify this, replace the one particle of spin $s$ once again by a system of
+$n=2s$ spin-$1/2$ particles. The component just written corresponds to the
+product
+\[
+ \underbrace{\psi^1\varphi^1\ldots}_{s+\sigma}
+ \underbrace{\chi^2\rho^2\ldots}_{s-\sigma};
+\]
+this product represents a state in which $s+\sigma$ particles have spin
+projection $+1/2$ and $s-\sigma$ have projection $-1/2$. Their total
+projection is therefore
+$\frac12(s+\sigma)-\frac12(s-\sigma)=\sigma$. Finally, choose the
+proportionality factor between this spinor component and $\psi(\sigma)$ so
+that
+\input{manuscript/chapters/ch08/fragments/sec57-src086-104-fresh-e-20260718.translation.en.tex}
+
+\SourcePage{262}{265}
+Relation (57.2) ensures not only condition (57.1), but also, as is readily
+checked, the more general condition
+\begin{equation}
+ \psi^{\lambda\mu\ldots}\varphi_{\lambda\mu\ldots}
+ =\sum_\sigma(-1)^{s-\sigma}\psi(\sigma)\varphi(-\sigma),
+ \tag{57.3}
+\end{equation}
+where $\psi^{\lambda\mu\ldots}$ and $\varphi_{\lambda\mu\ldots}$ are two
+different spinors of equal rank, while $\psi(\sigma)$ and $\varphi(\sigma)$
+are the functions associated with them by (57.2). The factor
+$(-1)^{s-\sigma}$ appears because raising all the indices changes the sign of
+a component once for every index equal to 2.
+
+\input{manuscript/chapters/ch08/fragments/sec57-src120-136-fresh-c-20260718.translation.en.tex}
+\input{manuscript/chapters/ch08/fragments/sec57-src137-164-fresh-e-20260718.translation.en.tex}
+\input{manuscript/chapters/ch08/fragments/sec57-src165-177-fresh-d-20260718.translation.en.tex}
+
+In establishing this correspondence, two aspects of the dependence of the
+wave functions on the angular-momentum projection $m$, for fixed $j$, must be
+distinguished carefully. A wave function may be regarded as a probability
+amplitude for the possible values of $m$, or it may be an eigenfunction for a
+specified value of $m$.
+
+Both aspects appeared at the beginning of \S~55 in the eigenfunction
+$\delta_{\sigma\sigma_0}$ of $s_z$ belonging to the value
+$s_z=\sigma_0$. Their mathematical difference is particularly transparent
+for a particle with spin $s=1/2$. With respect to the variable $\sigma$, its
+spin function is a contravariant spinor of rank one and should therefore be
+written, in spinor notation, as $\delta^\lambda{}_{\sigma_0}$. With respect
+to $\sigma_0$, it is consequently a covariant spinor.
+
+\input{manuscript/chapters/ch08/fragments/sec57-src194-213-fresh-f-20260718.translation.en.tex}
+
+\SourcePage{264}{267}
+The three spherical functions $Y_{1m}$ are
+\[
+ Y_{10}=i\sqrt{\frac3{4\pi}}\cos\theta=i\sqrt{\frac3{4\pi}}n_z,
+ \qquad
+ Y_{1,\pm1}=\mp i\sqrt{\frac3{8\pi}}\sin\theta e^{\pm i\varphi}
+ =\mp i\sqrt{\frac3{8\pi}}(n_x\pm in_y)
+\]
+where $\mathbf n$ is the unit vector in the radius-vector direction. Their
+transformation properties show that these three functions are equivalent to
+the components of a vector $\mathbf a$ under the correspondence
+\begin{equation}
+ \psi_{10}=ia_z,\qquad
+ \psi_{11}=-\frac i{\sqrt2}(a_x+ia_y),\qquad
+ \psi_{1,-1}=\frac i{\sqrt2}(a_x-ia_y).
+ \tag{57.7}
+\end{equation}
+Comparing these expressions with (57.6) gives the following correspondence
+between the components of a symmetric spinor of rank two and those of a
+vector:
+\begin{equation}
+ \psi_{11}=-\frac i{\sqrt2}(a_x+ia_y),\qquad
+ \psi_{12}=\psi_{21}=\frac i{\sqrt2}a_z,\qquad
+ \psi_{22}=\frac i{\sqrt2}(a_x-ia_y),
+ \tag{57.8}
+\end{equation}
+or
+\begin{equation}
+ \psi^{11}=\frac i{\sqrt2}(a_x-ia_y),\qquad
+ \psi^{12}=\psi^{21}=-\frac i{\sqrt2}a_z,\qquad
+ \psi^{22}=-\frac i{\sqrt2}(a_x+ia_y).
+ \tag{57.9}
+\end{equation}
+Conversely,
+\begin{equation}
+ a_z=i\sqrt2\psi^{12},\qquad
+ a_x=\frac i{\sqrt2}(\psi^{22}-\psi^{11}),\qquad
+ a_y=\frac1{\sqrt2}(\psi^{11}+\psi^{22}).
+ \tag{57.10}
+\end{equation}
+With these definitions one readily verifies
+\begin{equation}
+ \psi^{\lambda\mu}\varphi_{\lambda\mu}=\mathbf a\cdot\mathbf b,
+ \tag{57.11}
+\end{equation}
+where $\mathbf a$ and $\mathbf b$ are the vectors corresponding to the
+symmetric spinors $\psi^{\lambda\mu}$ and $\varphi_{\lambda\mu}$. One may
+also verify the spinor--vector correspondence\footnote{The mixed components
+of a symmetric spinor may be written as $\psi^\lambda{}_{\mu}$ without
+distinguishing $\psi^{\lambda\mu}$ from $\psi^{\mu\lambda}$.}
+\begin{equation}
+ \psi^\lambda{}_{\rho}\varphi^{\rho\mu}
+ -\varphi^\lambda{}_{\rho}\psi^{\rho\mu}
+ \longleftrightarrow i\sqrt2(\mathbf a\times\mathbf b).
+ \tag{57.12}
+\end{equation}
+Equations (57.10) can be written compactly in terms of the Pauli matrices:
+\begin{equation}
+ a_i=\frac i{\sqrt2}(\hat\sigma_i)^\lambda{}_{\mu}\psi^\mu{}_{\lambda}.
+ \tag{57.13}
+\end{equation}
+
+\SourcePage{265}{268}
+The matrix indices on $\sigma$ have been placed above and below in accordance
+with the positions of the spinor indices on $\psi^\mu{}_{\lambda}$. The origin
+of this formula becomes clear in the special case in which the rank-two
+spinor $\psi^\mu{}_{\lambda}$ reduces to the product of a rank-one spinor
+$\psi^\mu$ and its complex conjugate $\psi_\lambda^*$. The quantity
+\[
+ \frac12\psi_\lambda^*\hat{\boldsymbol\sigma}^\lambda{}_{\mu}\psi^\mu
+\]
+is then the mean spin for a particle with wave function $\psi^\mu$, so its
+vector character is evident.
+
+The correspondence (57.8) or (57.9) is a special case of a general rule. To
+every symmetric spinor of even rank $2j$, with integral $j$, one may associate
+a symmetric tensor of half that rank, $j$, whose contraction over every pair
+of indices vanishes; such a tensor will be called irreducible. This follows
+already from the equality of the numbers of independent components of these
+spinors and tensors, both being $2j+1$, as a direct count confirms\footnote{In
+other words, the $2j+1$ components of an irreducible tensor of rank $j$ (for
+integral $j$), the set of $2j+1$ spherical functions $Y_{jm}$, and the
+$2j+1$ components of a symmetric spinor of rank $2j$ all realize the same
+irreducible representation of the rotation group.}. The relation between the
+spinor and tensor components can be found from (57.8)--(57.10), by treating a
+spinor of the given rank as a product of rank-two spinors and the tensor as a
+product of vectors.
+
+\ProblemHeading
+
+1. Rewrite the definition (57.4) of the spin-$1/2$ operator in terms of the
+spinor components of the vector $\mathbf s$.
+
+\SolutionHeading
+
+Using (57.9), which relates the vector $\mathbf s$ to the spinor
+$s^{\lambda\mu}$, definition (57.4) becomes
+\[
+ s^{\lambda\mu}\psi^\nu=\frac i{2\sqrt2}
+ (\psi^\lambda g^{\mu\nu}+\psi^\mu g^{\lambda\nu}).
+\]
+
+2. Give the formulas defining the action of the spin operator on the vector
+wave function of a particle of spin 1.
+
+\SolutionHeading
+
+Equations (57.9) relate the components of the vector function
+$\boldsymbol\psi$ to the components of the spinor $\psi^{\lambda\mu}$, while
+the last of equations (57.5) gives
+\[
+ \hat s_z\psi_+=-\psi_+,
+ \qquad \hat s_z\psi_-=\psi_-,
+ \qquad \hat s_z\psi_z=0
+\]
+where $\psi_\pm=\psi_x\pm i\psi_y$, or
+\[
+ \hat s_z\psi_x=-i\psi_y,\qquad
+ \hat s_z\psi_y=i\psi_x,\qquad
+ \hat s_z\psi_z=0.
+\]
+The remaining formulas follow by cyclic permutation of the indices $x,y,z$.
+Together they read
+\[
+ \hat s_i\psi_k=-ie_{ik\ell}\psi_\ell.
+\]
+
+The complex vector $\boldsymbol\psi$ may be represented as
+$\boldsymbol\psi=e^{i\alpha}(\mathbf u+i\mathbf v)$, where $\mathbf u$ and
+$\mathbf v$ are real vectors. By a suitable choice of the common phase
+$\alpha$, these vectors may be made mutually perpendicular. The two vectors
+$\mathbf u$ and $\mathbf v$ specify a plane with the following property: the
+spin projection on the direction normal to it can take only the values
+$\pm1$.

@@ -23,8 +23,8 @@ functions for energies $E_1,E_2$, with $E_2>E_1$ (Fig.~17). We must calculate
  \draw[thick] (-1.4,1.9) .. controls (-.6,1.55) and (.2,.5) .. (2.1,.25);
  \draw[dashed] (-1.8,1.55)--(1.7,1.55) node[right] {$E_2$};
  \draw[dashed] (-1.8,.85)--(1.7,.85) node[right] {$E_1$};
- \draw[dashed] (-.65,0)--(-.65,1.55) node[below=3pt] {$a_2$};
- \draw[dashed] (.45,0)--(.45,.85) node[below=3pt] {$a_1$};
+ \draw[dashed] (-.81,1.55)--(-.81,0) node[below=2pt] {$a_2$};
+ \draw[dashed] (.28,.85)--(.28,0) node[below=2pt] {$a_1$};
 \end{tikzpicture}
 \par\smallskip Fig. 17
 \end{figure}
@@ -101,10 +101,11 @@ singular points of $\psi(x)$.
 \centering
 \begin{tikzpicture}[x=1cm,y=1cm]
  \draw[->] (-1.5,0)--(1.8,0) node[right] {$x$};
- \fill (0,1) circle (1.3pt) node[below=5pt] {$x_0$};
- \draw[thick,->] (-.14,2.2)--(-.14,1.14);
- \draw[thick] (-.14,1.14) arc[start angle=180,end angle=360,radius=.14];
- \draw[thick,->] (.14,1.14)--(.14,2.05);
+ \fill (0,1.18) circle (1.3pt);
+ \node[below] at (0,.92) {$x_0$};
+ \draw[thick,->] (-.2,2.2)--(-.2,1.5);
+ \draw[thick] (-.2,1.5)--(-.2,1.18) arc[start angle=180,end angle=360,radius=.2];
+ \draw[thick,->] (.2,1.18)--(.2,2.05);
 \end{tikzpicture}
 \par\smallskip Fig. 18
 \end{figure}

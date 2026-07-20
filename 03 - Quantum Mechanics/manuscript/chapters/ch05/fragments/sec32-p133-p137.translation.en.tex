@@ -36,7 +36,7 @@ In spherical coordinates this becomes
 \begin{equation}
  \frac1{r^2}\frac\partial{\partial r}\left(r^2\frac{\partial\psi}{\partial r}\right)
  +\frac1{r^2}\left[\frac1{\sin\theta}\frac\partial{\partial\theta}
- (\sin\theta\frac{\partial\psi}{\partial\theta})
+ \left(\sin\theta\frac{\partial\psi}{\partial\theta}\right)
  +\frac1{\sin^2\theta}\frac{\partial^2\psi}{\partial\varphi^2}\right]
  +\frac{2m}{\hbar^2}[E-U(r)]\psi=0.\tag{32.5}
 \end{equation}
@@ -44,17 +44,17 @@ Introducing the squared-angular-momentum operator (26.16),\footnote{If the
 radial momentum operator is defined by
 \[
  \hat p_r\psi=-i\hbar\frac1r\frac\partial{\partial r}(r\psi)
- =-i\hbar(\frac\partial{\partial r}+\frac1r)\psi,
+ =-i\hbar\left(\frac\partial{\partial r}+\frac1r\right)\psi,
 \]
 then
 \[
- \hat H=\frac1{2m}(\hat p_r^2+\frac{\hbar^2\hat{\mathbf l}^2}{r^2})+U(r),
+ \hat H=\frac1{2m}\left(\hat p_r^2+\frac{\hbar^2\hat{\mathbf l}^2}{r^2}\right)+U(r),
 \]
 formally the same as the classical Hamilton function in spherical
 coordinates.}
 \begin{equation}
  \frac{\hbar^2}{2m}\left[-\frac1{r^2}\frac\partial{\partial r}
- (r^2\frac{\partial\psi}{\partial r})+\frac{\hat{\mathbf l}^2}{r^2}\psi\right]
+ \left(r^2\frac{\partial\psi}{\partial r}\right)+\frac{\hat{\mathbf l}^2}{r^2}\psi\right]
  +U(r)\psi=E\psi.\tag{32.6}
 \end{equation}
 
@@ -64,7 +64,7 @@ definite $l,m$, these values fix the angular dependence. Seek
 where $Y_{lm}$ are spherical functions. Since
 $\hat{\mathbf l}^2Y_{lm}=l(l+1)Y_{lm}$, the radial function obeys
 \begin{equation}
- \frac1{r^2}\frac d{dr}(r^2\frac{dR}{dr})-\frac{l(l+1)}{r^2}R
+ \frac1{r^2}\frac d{dr}\left(r^2\frac{dR}{dr}\right)-\frac{l(l+1)}{r^2}R
  +\frac{2m}{\hbar^2}[E-U(r)]R=0.\tag{32.8}
 \end{equation}
 This contains no $l_z=m$, consistently with the $(2l+1)$-fold directional
@@ -73,7 +73,7 @@ degeneracy. Put
 \SourcePage{135}{138}
 Then
 \begin{equation}
- \frac{d^2\chi}{dr^2}+[\frac{2m}{\hbar^2}(E-U)-\frac{l(l+1)}{r^2}]\chi=0.
+ \frac{d^2\chi}{dr^2}+\left[\frac{2m}{\hbar^2}(E-U)-\frac{l(l+1)}{r^2}\right]\chi=0.
  \tag{32.10}
 \end{equation}
 If $U(r)$ is finite everywhere, $\psi$ and hence $R$ must remain finite at
@@ -123,7 +123,7 @@ To find the radial function near the origin, assume
 \begin{equation}\lim_{r\to0}U(r)r^2=0.\tag{32.14}\end{equation}
 Take the leading term as $R=\operatorname{const}\cdot r^s$. From (32.8),
 after multiplication by $r^2$ and passage to $r\to0$,
-\[\frac d{dr}(r^2\frac{dR}{dr})-l(l+1)R=0,\]
+\[\frac d{dr}\left(r^2\frac{dR}{dr}\right)-l(l+1)R=0,\]
 so $s(s+1)=l(l+1)$ and
 \[s=l\quad\text{or}\quad s=-(l+1).\]
 \SourcePage{137}{140}

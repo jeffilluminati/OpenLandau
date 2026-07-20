@@ -1,0 +1,21 @@
+\SolutionHeading In a centrally symmetric field, the number of states differs
+from the number of energy levels because the latter are degenerate with respect
+to the orientation of the angular momentum. The required number may be found by
+noting that the number of levels for a specified value of the angular momentum
+$M$ is the same as the number of nondegenerate levels for one-dimensional
+motion with potential energy
+$U_{\text{eff}}=U(r)+M^2/(2mr^2)$. At a given $r$, the largest possible value of
+the momentum $p_r$ for energies $E\leq0$ is
+$p_{r\max}=\sqrt{-2mU_{\text{eff}}}$. Consequently, the number of states (that
+is, the number of levels) is
+\[
+  \frac1{2\pi\hbar}\oint dr\,dp_r
+  =\frac{\sqrt{2m}}{\pi\hbar}\int
+  \sqrt{-U-\frac{M^2}{2mr^2}}\,dr.
+\]
+The required total number of discrete levels is obtained from this result by
+integration with the measure $dM/\hbar$ (which, in the semiclassical case,
+replaces summation over $l$), and is
+\[
+  \frac{\sqrt{2m}}{4\hbar^2}\int(-U)r\,dr.
+\]

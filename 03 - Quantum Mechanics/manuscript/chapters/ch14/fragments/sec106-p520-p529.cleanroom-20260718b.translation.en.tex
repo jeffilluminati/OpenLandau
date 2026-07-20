@@ -1,0 +1,242 @@
+\SourcePage{520}{523}
+\section{$3j$ Symbols}
+
+\input{manuscript/chapters/ch14/fragments/sec106-line004-fresh-c-20260718.translation.en.tex}
+
+\input{manuscript/chapters/ch14/fragments/sec106-line006-fresh-d-20260718.translation.en.tex}
+\begin{equation}
+ \psi^{(1)}_{\lambda\mu\ldots}\psi^{(2)}_{\rho\sigma\ldots}.
+ \tag{106.1}
+\end{equation}
+\input{manuscript/chapters/ch14/fragments/sec106-line011-fresh-i-20260718.translation.en.tex}
+
+\SourcePage{521}{524}
+Continuing in this way, we obtain the already familiar rule: $j$ assumes, once each, all values from $j_1+j_2$ down to $|j_1-j_2|$.
+
+Mathematically, this amounts to resolving the direct product $D^{(j_1)}\times D^{(j_2)}$ of two irreducible representations of the rotation group (of dimensions $2j_1+1$ and $2j_2+1$) into irreducible components. In this language, the angular-momentum addition rule is the decomposition
+\[
+ D^{(j_1)}\times D^{(j_2)}=D^{(j_1+j_2)}+D^{(j_1+j_2-1)}+\cdots+D^{(|j_1-j_2|)}.
+\]
+
+To complete the solution of the angular-momentum addition problem, we must still determine how the wave function of a system with a specified total angular momentum is constructed from the wave functions of its two constituent particles.
+
+Begin with the simplest case: two angular momenta adding to zero. Clearly, $j_1=j_2$ and their projections obey $m_1=-m_2$. Let $\psi_{jm}$ denote normalized wave functions for the states of one particle with angular momentum $j$ and projection $m$ (in a nonspinor representation). The required system wave function $\psi_0$ is a sum of products of the two particles' wave functions with opposite values of $m$:
+\begin{equation}
+ \psi_0=\frac{1}{\sqrt{2j+1}}\sum_{m=-j}^{j}(-1)^{j-m}\psi^{(1)}_{jm}\psi^{(2)}_{j,-m}.
+ \tag{106.2}
+\end{equation}
+\input{manuscript/chapters/ch14/fragments/sec106-lines028-033-fresh-d-20260718.translation.en.tex}
+
+It must nevertheless be kept in mind that, in general, only the relative signs of the terms in (106.2) are fixed; the overall sign may depend on the
+\SourcePage{522}{525}
+``order of addition'' of the angular momenta. Indeed, lowering all the spinor indices (of which $j+m$ are ones and $j-m$ are twos) on $\psi^{(1)}$ and raising them on $\psi^{(2)}$ multiplies the scalar (106.3) by $(-1)^{2j}$; thus, for half-integral $j$, its sign changes.
+
+Now consider a system of three particles, with angular momenta $j_1,j_2,j_3$ and projections $m_1,m_2,m_3$, whose total angular momentum is zero. This condition implies $m_1+m_2+m_3=0$, while $j_1,j_2,j_3$ must have values such that each can result from the vector addition of the other two. Geometrically, $j_1,j_2,j_3$ must therefore be the sides of a closed triangle; in other words, each is no smaller than the difference and no larger than the sum of the other two:
+\[
+ |j_1-j_2|\leq j_3\leq j_1+j_2\quad\text{and so on.}
+\]
+It is clear that the algebraic sum $j_1+j_2+j_3$ is then an integer.
+
+The wave function of this system has the form
+\begin{equation}
+ \psi_0=\sum_{m_1m_2m_3}
+ \begin{pmatrix}j_1&j_2&j_3\\m_1&m_2&m_3\end{pmatrix}
+ \psi^{(1)}_{j_1m_1}\psi^{(2)}_{j_2m_2}\psi^{(3)}_{j_3m_3},
+ \tag{106.4}
+\end{equation}
+where each $m_i$ is summed from $-j_i$ to $j_i$. The coefficients in this formula are called Wigner $3j$ symbols. By definition, they are nonzero only when $m_1+m_2+m_3=0$.
+
+Under a permutation of the indices 1, 2, 3, the wave function (106.4) can change only by an immaterial phase factor. In fact, the $3j$ symbols may be defined to be purely real (see below), in which case the only ambiguity in $\psi_0$ is its overall sign (just as for the function (106.2)). Thus, permuting the columns of a $3j$ symbol can either leave it unchanged or reverse its sign.
+
+The most symmetric prescription for the coefficients in (106.4), and the one conventionally used to define the $3j$ symbols, is as follows. In spinor notation, $\psi_0$ is a scalar obtained from the product of three spinors $\psi^{(1)}_{\lambda\mu\ldots}$, $\psi^{(2)}_{\lambda\mu\ldots}$, $\psi^{(3)}_{\lambda\mu\ldots}$ by contracting all indices in pairs, each pair belonging to two different spinors. We agree that, in every pair associated with particles 1 and 2, the spinor index is written upstairs on $\psi^{(1)}$ and downstairs on $\psi^{(2)}$; in a pair associated with particles 2 and 3, it is upstairs on $\psi^{(2)}$ and downstairs
+\SourcePage{523}{526}
+on $\psi^{(3)}$; and in a pair associated with particles 3 and 1, it is upstairs on $\psi^{(3)}$ and downstairs on $\psi^{(1)}$. (There are, respectively, $j_1+j_2-j_3$, $j_2+j_3-j_1$, and $j_1+j_3-j_2$ pairs of these three ``types,'' as is easily counted.) This prescription fixes the sign of $\psi_0$ uniquely.
+
+With this definition, a cyclic permutation of the indices 1, 2, 3 evidently leaves $\psi_0$ unchanged. Hence a $3j$ symbol is invariant under a cyclic permutation of its columns. Interchanging any two indices, on the other hand, requires, as is readily seen, raising the lower and lowering the upper indices in all $j_1+j_2+j_3$ pairs. Thus $\psi_0$ is multiplied by $(-1)^{j_1+j_2+j_3}$; equivalently, the $3j$ symbols satisfy
+\begin{equation}
+ \begin{pmatrix}j_2&j_1&j_3\\m_2&m_1&m_3\end{pmatrix}
+ =(-1)^{j_1+j_2+j_3}\begin{pmatrix}j_1&j_2&j_3\\m_1&m_2&m_3\end{pmatrix}
+ \quad\text{and so on},
+ \tag{106.5}
+\end{equation}
+that is, interchanging two columns changes their sign when $j_1+j_2+j_3$ is odd.
+
+Finally, it is easy to see that
+\begin{equation}
+ \begin{pmatrix}j_1&j_2&j_3\\-m_1&-m_2&-m_3\end{pmatrix}
+ =(-1)^{j_1+j_2+j_3}\begin{pmatrix}j_1&j_2&j_3\\m_1&m_2&m_3\end{pmatrix}.
+ \tag{106.6}
+\end{equation}
+Indeed, reversing the signs of the $z$ components of all angular momenta may be regarded as the result of a rotation through $\pi$ about the $y$ axis. This transformation is equivalent to raising every lower spinor index and lowering every upper one (see (58.5)).
+
+Expression (106.4) can be used to obtain an important formula for the wave function $\psi_{jm}$ of a two-particle system having specified values of $j$ and $m$. Regard particles 1 and 2 together as a single system. Since the angular momentum $j$ of this system and the angular momentum $j_3$ of particle 3 add to zero, we must have $j=j_3$ and $m=-m_3$. Formula (106.2) then gives
+\begin{equation}
+ \psi_0=\frac1{\sqrt{2j+1}}\sum_m(-1)^{j-m}\psi_{jm}\psi^{(3)}_{j,-m}.
+ \tag{106.7}
+\end{equation}
+This formula is to be compared with (106.4), in which $j,-m$ are written in place of $j_3,m_3$. Before doing so, however, one must account for the fact that the rule used to construct the sum in (106.7), according to (106.3), differs from the rule for constructing the sum (106.4). To bring (106.7) into the form (106.4), the upper and lower indices in the pairs associated with
+
+\SourcePage{524}{527}
+particles 1 and 3 must be interchanged, as is easily verified; this supplies the extra factor $(-1)^{j_1-j_2+j_3}$. The result is\footnote{Under time reversal the wave functions transform, according to (60.2), as $\psi_{jm}\to(-1)^{j-m}\psi_{j,-m}$. It is readily checked that when the functions $\psi_{j_1m_1}$ and $\psi_{j_2m_2}$ on the right-hand side of (106.8) undergo this transformation, the function $\psi_{jm}$ on the left-hand side transforms in the same way.}
+\begin{equation}
+ \psi_{jm}=(-1)^{j_1-j_2+m}\sqrt{2j+1}\sum_{m_1m_2}
+ \begin{pmatrix}j_1&j_2&j\\m_1&m_2&-m\end{pmatrix}
+ \psi^{(1)}_{j_1m_1}\psi^{(2)}_{j_2m_2},
+ \tag{106.8}
+\end{equation}
+where $m_1$ and $m_2$ are summed subject to $m_1+m_2=m$.
+
+Formula (106.8) gives the required expansion of the system wave function in terms of the wave functions of the two particles with definite angular momenta $j_1$ and $j_2$. It may be written as
+\begin{equation}
+ \psi_{jm}=\sum_{m_1m_2}(m_1m_2\mid jm)\psi^{(1)}_{j_1m_1}\psi^{(2)}_{j_2m_2},\qquad m_2=m-m_1.
+ \tag{106.9}
+\end{equation}
+The coefficients
+\begin{equation}
+ (m_1m_2\mid jm)=(-1)^{j_1-j_2+m}\sqrt{2j+1}
+ \begin{pmatrix}j_1&j_2&j\\m_1&m_2&-m\end{pmatrix}
+ \tag{106.10}
+\end{equation}
+\input{manuscript/chapters/ch14/fragments/sec106-line105-fresh-d-20260718.translation.en.tex}
+
+The transformation matrix (106.9) is unitary (see \S~12). The coefficients of the inverse transformation
+\begin{equation}
+ \psi^{(1)}_{j_1m_1}\psi^{(2)}_{j_2m_2}
+ =\sum_{j=|j_2-j_1|}^{j_1+j_2}(jm\mid m_1m_2)\psi_{jm}
+ \tag{106.11}
+\end{equation}
+are therefore the complex conjugates of the coefficients in (106.9). We shall see below that these coefficients are real;
+
+\SourcePage{525}{528}
+hence simply
+\[
+ (m_1m_2\mid jm)=(jm\mid m_1m_2).
+\]
+By the general rules of quantum mechanics, the squares of the expansion coefficients in (106.11) give the probabilities that the system has the various values of $j,m$ (when $j_1,m_1$ and $j_2,m_2$ are specified).
+
+The unitarity of the transformation (106.9) implies definite orthogonality relations for its coefficients. From (12.5) and (12.6),
+\begin{align}
+ \sum_{m_1m_2}(m_1m_2\mid jm)(m_1m_2\mid j'm')&=\delta_{jj'}\delta_{mm'}, \tag{106.12}\\
+ \sum_{jm}(m_1m_2\mid jm)(m'_1m'_2\mid jm)&=\delta_{m_1m'_1}\delta_{m_2m'_2}. \tag{106.13}
+\end{align}
+
+The explicit general expression for a $3j$ symbol is rather cumbersome. It may be written as\footnote{The expansion coefficients (106.9) were first calculated by Wigner (1931). The symmetry properties of these coefficients and the symmetric expression (106.14) for them were found by Racah (G. Racah, 1942). Perhaps the most direct calculation is to pass straight from the spinor representation of $\psi_0$ (normalized appropriately) to the sum (106.4), using the correspondence formula (57.6). Notice that the real coefficient in that formula automatically establishes that the $3j$ symbols are real. Another derivation is given in Edmonds's book (see the note on p.~272). The table of $3j$ symbols below is also taken from that book.}
+\begingroup\small
+\begin{align}
+\begin{pmatrix}j_1&j_2&j_3\\m_1&m_2&m_3\end{pmatrix}
+={}&\left[\frac{(j_1+j_2-j_3)!(j_1-j_2+j_3)!(-j_1+j_2+j_3)!}{(j_1+j_2+j_3+1)!}\right]^{1/2}\notag\\
+&\times[(j_1+m_1)!(j_1-m_1)!(j_2+m_2)!(j_2-m_2)!(j_3+m_3)!(j_3-m_3)!]^{1/2}\notag\\
+&\times\sum_z\frac{(-1)^{z+j_1-j_2-m_3}}{z!(j_1+j_2-j_3-z)!(j_1-m_1-z)!(j_2+m_2-z)!}\notag\\[-2pt]
+&\hspace{25mm}\times\frac1{(j_3-j_2+m_1+z)!(j_3-j_1-m_2+z)!}.
+\tag{106.14}
+\end{align}
+\endgroup
+The sum extends over all integral values of $z$; since the factorial of a negative number is taken to be $\infty$, however, the number of terms is actually finite. The factor preceding the sum is manifestly symmetric in the indices 1, 2, 3; the symmetry of the sum itself becomes evident after a suitable relabeling of the summation variable $z$.
+
+\SourcePage{526}{529}
+Besides the symmetry properties (106.5), (106.6), which follow simply from the definition of the $3j$ symbols, there are further symmetries whose derivation is more involved and will not be given here. They are conveniently stated by introducing a square $(3\times3)$ array of numbers related to the parameters of the $3j$ symbol as follows:
+\begin{equation}
+\begin{pmatrix}j_1&j_2&j_3\\m_1&m_2&m_3\end{pmatrix}
+\longleftrightarrow
+\begin{bmatrix}
+j_2+j_3-j_1&j_3+j_1-j_2&j_1+j_2-j_3\\
+j_1-m_1&j_2-m_2&j_3-m_3\\
+j_1+m_1&j_2+m_2&j_3+m_3
+\end{bmatrix}.
+\tag{106.15}
+\end{equation}
+(The sum of the entries in every row and every column of this array is $j_1+j_2+j_3$.) Then: 1) interchanging any two columns of the array multiplies the $3j$ symbol by $(-1)^{j_1+j_2+j_3}$ (this is the same property as (106.5)); 2) the same statement holds for interchanging any two rows (for the two lower rows this is the same property as (106.6)); 3) the $3j$ symbol is unchanged when the rows of the array are replaced by its columns\footnote{See T. Regge // Nuovo Cimento. 1958. V.~10. P.~544; 1959. V.~11. P.~116. For the deeper mathematical aspects of the symmetry property (106.15), as well as of the property (108.3) of the $6j$ symbols given below, see the review article by Ya.~A.~Smorodinsky and L.~A.~Shelepin // UFN. 1972. V.~106. P.~3.}.
+
+We list several simpler formulas for special cases. The value
+\begin{equation}
+ \begin{pmatrix}j&j&0\\m&-m&0\end{pmatrix}=\frac{(-1)^{j-m}}{\sqrt{2j+1}}
+ \tag{106.16}
+\end{equation}
+corresponds to formula (106.2). The formula
+\begingroup\small
+\begin{align}
+\begin{pmatrix}j_1&j_2&j_1+j_2\\m_1&m_2&-m_1-m_2\end{pmatrix}
+={}&(-1)^{j_1-j_2+m_1+m_2}\notag\\[-2pt]
+&\times\left[\frac{(2j_1)!(2j_2)!(j_1+j_2+m_1+m_2)!(j_1+j_2-m_1-m_2)!}{(j_1+j_2+1)!(j_1+m_1)!(j_1-m_1)!(j_2+m_2)!(j_2-m_2)!}\right]^{1/2},
+\tag{106.17}
+\end{align}
+\endgroup
+
+\SourcePage{527}{530}
+follows directly from (106.14). Deriving the formula
+\begin{align}
+\begin{pmatrix}j_1&j_2&j_3\\0&0&0\end{pmatrix}
+={}&(-1)^p\left[\frac{(j_1+j_2-j_3)!(j_1-j_2+j_3)!(-j_1+j_2+j_3)!}{(2p+1)!}\right]^{1/2}\notag\\[-2pt]
+&\times\frac{p!}{(p-j_1)!(p-j_2)!(p-j_3)!},
+\tag{106.18}
+\end{align}
+where $2p=j_1+j_2+j_3$ is even, requires several additional calculations\footnote{See the book by Edmonds cited above.} (when $2p$ is odd, this $3j$ symbol vanishes by the symmetry property (106.6)).
+
+For reference, Table~9 gives the values of the $3j$ symbols for $j_3=1/2,1,3/2,2$. For each $j_3$, the smallest set of $3j$ symbols from which all the others can be obtained by means of (106.5), (106.6) is displayed.
+
+\setcounter{table}{8}
+\begin{table}[htbp]
+\centering\small
+\caption{Formulas for $3j$ symbols}
+\renewcommand{\arraystretch}{1.55}
+\begin{tabular}{@{}c c l@{}}
+\toprule
+$j_3$ & $j_1$ & \multicolumn{1}{c}{Value of $(-1)^{j-m}\begin{pmatrix}j_1&j&j_3\\m_1&-m-m_3&m_3\end{pmatrix}$}\\
+\midrule
+$\frac12$ & $j$ & $m_3=\frac12:\quad -\left[\dfrac{j-m}{(2j+1)(2j+2)}\right]^{1/2}$\\
+ & $j+1$ & $\left[\dfrac{j+m+1}{(2j+1)(2j+2)}\right]^{1/2}$\\
+\midrule
+$1$ & $j$ & $m_3=0:\quad \dfrac{2m}{[2j(2j+1)(2j+2)]^{1/2}}$\\
+ & $j+1$ & $\left[\dfrac{2(j+m+1)(j-m+1)}{(2j+1)(2j+2)(2j+3)}\right]^{1/2}$\\
+ & $j$ & $m_3=1:\quad \left[\dfrac{2(j-m)(j+m+1)}{2j(2j+1)(2j+2)}\right]^{1/2}$\\
+ & $j+1$ & $\left[\dfrac{(j-m)(j-m+1)}{(2j+1)(2j+2)(2j+3)}\right]^{1/2}$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\SourcePage{528}{531}
+\begin{table}[htbp]
+\centering\scriptsize
+\caption*{Table 9 (continued)}
+\renewcommand{\arraystretch}{1.55}
+\begin{tabular}{@{}c c l@{}}
+\toprule
+$j_3$ & $j_1$ & \multicolumn{1}{c}{Value}\\
+\midrule
+$\frac32$ & $j+\frac12$ & $m_3=\frac12:\quad -(j+3m+\frac32)\left[\dfrac{j-m+\frac12}{2j(2j+1)(2j+2)(2j+3)}\right]^{1/2}$\\
+&$j+\frac32$&$\left[\dfrac{3(j-m+\frac12)(j-m+\frac32)(j+m+\frac32)}{(2j+1)(2j+2)(2j+3)(2j+4)}\right]^{1/2}$\\
+&$j+\frac12$&$m_3=\frac32:\quad-\left[\dfrac{3(j-m-\frac12)(j-m+\frac12)(j+m+\frac32)}{2j(2j+1)(2j+2)(2j+3)}\right]^{1/2}$\\
+&$j+\frac32$&$\left[\dfrac{(j-m-\frac12)(j-m+\frac12)(j-m+\frac32)}{(2j+1)(2j+2)(2j+3)(2j+4)}\right]^{1/2}$\\
+\midrule
+$2$&$j$&$m_3=0:\quad\dfrac{2[3m^2-j(j+1)]}{[(2j-1)2j(2j+1)(2j+2)(2j+3)]^{1/2}}$\\
+&$j+1$&$-2m\left[\dfrac{6(j+m+1)(j-m+1)}{2j(2j+1)(2j+2)(2j+3)(2j+4)}\right]^{1/2}$\\
+&$j+2$&$\left[\dfrac{6(j+m+2)(j+m+1)(j-m+2)(j-m+1)}{(2j+1)(2j+2)(2j+3)(2j+4)(2j+5)}\right]^{1/2}$\\
+&$j$&$m_3=1:\quad(1+2m)\left[\dfrac{6(j+m+1)(j-m)}{(2j-1)2j(2j+1)(2j+2)(2j+3)}\right]^{1/2}$\\
+&$j+1$&$-2(j+2m+2)\left[\dfrac{(j-m+1)(j-m)}{2j(2j+1)(2j+2)(2j+3)(2j+4)}\right]^{1/2}$\\
+&$j+2$&$2\left[\dfrac{(j+m+2)(j-m+2)(j-m+1)(j-m)}{(2j+1)(2j+2)(2j+3)(2j+4)(2j+5)}\right]^{1/2}$\\
+&$j$&$m_3=2:\quad\left[\dfrac{6(j-m-1)(j-m)(j+m+1)(j+m+2)}{(2j-1)2j(2j+1)(2j+2)(2j+3)}\right]^{1/2}$\\
+&$j+1$&$-2\left[\dfrac{(j-m-1)(j-m)(j-m+1)(j+m+2)}{2j(2j+1)(2j+2)(2j+3)(2j+4)}\right]^{1/2}$\\
+&$j+2$&$\left[\dfrac{(j-m-1)(j-m)(j-m+1)(j-m+2)}{(2j+1)(2j+2)(2j+3)(2j+4)(2j+5)}\right]^{1/2}$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\SourcePage{529}{532}
+\ProblemHeading
+
+Determine the angular dependence of the wave functions of a particle of spin $1/2$ in states with specified orbital angular momentum $l$, total angular momentum $j$, and projection $m$.
+
+\SolutionHeading. The problem is solved by the general formula (106.8), in which $\psi^{(1)}$ is to mean an eigenfunction of the orbital angular momentum (that is, a spherical harmonic $Y_{lm_l}$), while $\psi^{(2)}$ is the spin wave function $\chi(\sigma)$ (where $\sigma=\pm1/2$):
+\[
+ \psi_{jm}=(-1)^{l+m-1/2}\sqrt{2j+1}\sum_\sigma
+ \begin{pmatrix}l&\frac12&j\\m-\sigma&\sigma&-m\end{pmatrix}Y_{l,m-\sigma}\chi(\sigma).
+\]
+Substitution of the $3j$ symbols gives
+\begin{align*}
+ \psi_{l+1/2,m}&=\sqrt{\frac{j+m}{2j}}\,\chi\!\left(\frac12\right)Y_{l,m-1/2}
+ +\sqrt{\frac{j-m}{2j}}\,\chi\!\left(-\frac12\right)Y_{l,m+1/2},\\
+ \psi_{l-1/2,m}&=-\sqrt{\frac{j-m+1}{2j+2}}\,\chi\!\left(\frac12\right)Y_{l,m-1/2}
+ +\sqrt{\frac{j+m+1}{2j+2}}\,\chi\!\left(-\frac12\right)Y_{l,m+1/2}.
+\end{align*}
+
+% The assigned range ends immediately before the heading of \S 107.

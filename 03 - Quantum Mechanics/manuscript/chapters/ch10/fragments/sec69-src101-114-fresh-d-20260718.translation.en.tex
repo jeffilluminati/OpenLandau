@@ -1,0 +1,26 @@
+\ProblemHeading{2.} Solve the same problem by the variational principle, approximating the wave function by the product of two hydrogenic functions with an effective nuclear charge.
+
+\SourcePage{318}{321}
+\SolutionHeading{} Evaluate the integral
+\[
+ \iint\psi\hat H\psi\,dV_1dV_2,
+ \qquad
+ \hat H=-\frac12(\Delta_1+\Delta_2)-\frac Z{r_1}-\frac Z{r_2}+\frac1{r_{12}},
+\]
+using the function $\psi$ from expression (1) of the preceding problem, with $Z_{\mathrm{eff}}$ in place of $Z$. The integral of $\psi^2/r_{12}$ is evaluated in the same way as in Problem~1. The integral of $\psi\Delta_1\psi$ can be reduced to one involving $\psi^2/r_1$ by observing that the Schr\"odinger equation gives
+\[
+ \left(-\frac12\Delta_1-\frac{Z_{\mathrm{eff}}}{r_1}\right)\psi_1
+ =-\frac12Z_{\mathrm{eff}}^2\psi_1.
+\]
+The result is
+\[
+ \iint\psi\hat H\psi\,dV_1dV_2
+ =Z_{\mathrm{eff}}^2-2ZZ_{\mathrm{eff}}+\frac58Z_{\mathrm{eff}}.
+\]
+As a function of $Z_{\mathrm{eff}}$, this expression has its minimum at $Z_{\mathrm{eff}}=Z-5/16$. The corresponding energy is
+\[
+ E=-\left(Z-\frac5{16}\right)^2.
+\]
+For the helium atom, this gives $-E=2.85$.
+
+It should be noted that, with the value of $Z_{\mathrm{eff}}$ just found, wave function (1) is in fact the best not merely among functions of the form (1), but among all functions that depend only on the sum $r_1+r_2$.

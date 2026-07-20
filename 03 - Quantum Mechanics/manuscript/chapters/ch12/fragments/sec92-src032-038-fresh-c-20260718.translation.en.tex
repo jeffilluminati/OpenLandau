@@ -1,0 +1,26 @@
+The total number of elements in a group is called the \emph{order} of the 
+group.  It is readily seen that the order of a subgroup divides the order of 
+the whole
+\SourcePage{436}{439}
+group.  To prove this, consider a subgroup $\boldsymbol{H}$ of a group 
+$\boldsymbol{G}$, and let $G_1$ be an element of $\boldsymbol{G}$ that does not 
+belong to $\boldsymbol{H}$.  Multiplication of every element of 
+$\boldsymbol{H}$ by $G_1$---on the right, for example---gives a set (or 
+\emph{coset}) of elements denoted by $\boldsymbol{H}G_1$.  Every element of 
+this coset plainly belongs to $\boldsymbol{G}$, but none belongs to 
+$\boldsymbol{H}$.  Indeed, if two elements $H_a,H_b$ of $\boldsymbol{H}$ 
+satisfied $H_aG_1=H_b$, it would follow that 
+$G_1=H_a^{-1}H_b$; this would put $G_1$ in $\boldsymbol{H}$, contrary to our 
+assumption.  In the same way, if $G_2$ belongs to $\boldsymbol{G}$ but to 
+neither $\boldsymbol{H}$ nor $\boldsymbol{H}G_1$, then none of the elements of 
+$\boldsymbol{H}G_2$ belongs to either of those two sets.  Continuing in this 
+fashion eventually exhausts all elements of the finite group 
+$\boldsymbol{G}$.  Thus its elements are partitioned into sets (the 
+\emph{cosets} of $\boldsymbol{H}$ in $\boldsymbol{G}$)
+\[
+\boldsymbol{H},\ \boldsymbol{H}G_1,\ \boldsymbol{H}G_2,\ldots,\boldsymbol{H}G_m,
+\]
+each containing $h$ elements, where $h$ is the order of the subgroup 
+$\boldsymbol{H}$.  Consequently the order of $\boldsymbol{G}$ is $g=hm$, 
+which proves the assertion.  The integer $m=g/h$ is called the \emph{index} 
+of $\boldsymbol{H}$ in $\boldsymbol{G}$.

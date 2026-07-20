@@ -1,0 +1,122 @@
+\SourcePage{603}{606}
+\section{Hyperfine structure of molecular levels}
+
+The origin of the hyperfine structure of molecular energy levels is analogous
+to that of atomic levels.
+
+In the overwhelming majority of molecules the total electronic spin is zero.
+For such molecules, the principal source of hyperfine level splitting is the
+quadrupole interaction between the nuclei and the electrons. Naturally, only
+nuclei whose spin $i$ differs from 0 and $1/2$ participate in this
+interaction, since otherwise the quadrupole moment vanishes.
+
+Because the nuclei move comparatively slowly within a molecule, the operator
+of the quadrupole interaction is averaged over a molecular state in two
+stages. It must first be averaged over the electronic state with the nuclei
+held fixed, and then over the rotation of the molecule.
+
+Consider first a diatomic molecule. After the first averaging stage, the
+interaction of each nucleus with the electrons is represented by an operator
+proportional to the scalar $\hat Q_{ik}n_in_k$. This scalar is formed from the
+operator of the nuclear quadrupole-moment tensor and the unit vector
+$\mathbf n$ along the molecular axis, the sole quantity specifying the
+orientation of the molecule relative to the direction of the nuclear spin.
+Since $\hat Q_{ii}=0$, this operator may be written as
+\begin{equation}
+ b\hat i_i\hat i_k\left(n_in_k-\frac13\delta_{ik}\right);
+ \tag{122.1}
+\end{equation}
+for a specified value of the projection $i_\zeta$ of the nuclear spin on the
+molecular axis, its value is $b[i_\zeta^2-\frac13i(i+1)]$.
+
+On averaging the operator (122.1) over molecular rotation, it is instead
+expressed in terms of the operator $\hat{\mathbf K}$ of the conserved
+rotational angular momentum. The product $n_in_k$ is averaged by the formula
+derived in the problem to \S~29 (with $\mathbf K$ in place of $\mathbf l$),
+and the result is
+\begin{equation}
+ -\frac{b}{(2K-1)(2K+3)}\hat i_i\hat i_k
+ \left[\hat K_i\hat K_k+\hat K_k\hat K_i
+ -\frac23\delta_{ik}K(K+1)\right].
+ \tag{122.2}
+\end{equation}
+The eigenvalues of this operator are found in the same manner as described
+for the operator (121.6).
+
+For a polyatomic molecule, (122.1) is replaced, in general, by an operator of
+the form
+\begin{equation}
+ b_{ik}\hat i_i\hat i_k,
+ \tag{122.3}
+\end{equation}
+
+\SourcePage{604}{607}
+where $b_{ik}$ is a traceless tensor that constitutes a particular
+characteristic of the molecule's electronic state. Once it has been averaged
+over the molecule's rotation, this tensor is expressed in terms of the total
+rotational angular momentum $\mathbf J$ by a formula of the form
+\begin{equation}
+ \overline{b_{ik}}=b\left[\hat J_i\hat J_k+\hat J_k\hat J_i
+ -\frac23J(J+1)\delta_{ik}\right].
+ \tag{122.4}
+\end{equation}
+
+\input{manuscript/chapters/ch16/fragments/sec122-lines064-068-fresh-c-20260718.translation.en.tex}
+\begin{equation}
+ \overline{b_{ik}J_iJ_k}
+ =bJ(J+1)\left[\frac43J(J+1)-1\right]
+ \tag{122.5}
+\end{equation}
+(the calculation is analogous to the one carried out in the problem to
+\S~29). On the other hand, expanding the tensor product along the $\xi$,
+$\eta$, $\zeta$ axes yields
+\begin{equation}
+ \overline{b_{ik}J_iJ_k}
+ =b_{\xi\xi}\overline{J_\xi^2}
+ +b_{\eta\eta}\overline{J_\eta^2}
+ +b_{\zeta\zeta}\overline{J_\zeta^2}.
+ \tag{122.6}
+\end{equation}
+Here it has been used that the mean values of the products
+$J_\xi J_\zeta,\ldots$ vanish\footnote{Indeed, in a representation in which
+the matrix of one component of $\mathbf J$ (say $J_\zeta$) is diagonal, the
+matrices of the products $J_\xi J_\zeta$, $J_\eta J_\zeta$ have nonzero
+elements only when the quantum number $k$ changes by 1. The wavefunctions of
+the stationary states of an asymmetric top, however, contain functions
+$\psi_{Jk}$ whose values of $k$ differ by an even integer (see \S~103).}.
+\input{manuscript/chapters/ch16/fragments/sec122-lines089-092-fresh-d-20260718.translation.en.tex}
+\[
+ \overline{J_\zeta^2}=k^2,\qquad
+ \overline{J_\xi^2}=\overline{J_\eta^2}
+ =\frac12[J(J+1)-k^2].
+\]
+
+When the nuclear spins are $1/2$, the quadrupole interaction is absent. One
+of the principal sources of hyperfine splitting in this case is the direct
+magnetic interaction of the nuclear magnetic moments with each other. The
+interaction operator of two magnetic moments
+$\boldsymbol\mu_1=\mu_1\hat{\mathbf i}_1/i_1$,
+$\boldsymbol\mu_2=\mu_2\hat{\mathbf i}_2/i_2$ is
+\[
+ \frac{\mu_1\mu_2}{i_1i_2r^3}
+ [\hat{\mathbf i}_1\hat{\mathbf i}_2
+ -3(\hat{\mathbf i}_1\mathbf n)(\hat{\mathbf i}_2\mathbf n)].
+\]
+
+\SourcePage{605}{608}
+To determine the splitting energy, this operator must be averaged over the
+molecular state in the manner described above.
+
+\input{manuscript/chapters/ch16/fragments/sec122-lines115-122-fresh-d-20260718.translation.en.tex}
+
+Finally, the interaction of a nuclear moment with molecular rotation also
+makes a definite contribution to the hyperfine splitting of molecular
+levels. As a moving system of charges, a rotating molecule produces a
+magnetic field. This field can be calculated from the standard formulas of
+electrodynamics for the given current density
+$\mathbf j=\rho(\boldsymbol\Omega\times\mathbf r)$, where $\rho$ is the charge
+density of the electrons and nuclei in the molecule at rest, and
+$\boldsymbol\Omega$ is its angular velocity of rotation. The level splitting
+is the energy of the nuclear magnetic moment in this field; the components of
+the molecule's angular velocity must here be expressed in terms of the
+components of its angular momentum (cf. \S~103).

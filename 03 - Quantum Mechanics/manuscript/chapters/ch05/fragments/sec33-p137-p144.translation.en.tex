@@ -12,7 +12,7 @@ The state with angular momentum $l$ and projection $m$ has
 \begin{equation}\psi_{klm}=R_{kl}(r)Y_{lm}(\theta,\varphi),\tag{33.2}\end{equation}
 where
 \begin{equation}
- R_{kl}''+\frac2rR_{kl}'+[k^2-\frac{l(l+1)}{r^2}]R_{kl}=0.\tag{33.3}
+ R_{kl}''+\frac2rR_{kl}'+\left[k^2-\frac{l(l+1)}{r^2}\right]R_{kl}=0.\tag{33.3}
 \end{equation}
 The continuum wave functions satisfy
 \[
@@ -29,7 +29,7 @@ obey
 For normalization on the energy scale instead,
 $\int r^2R_{E'l}R_{El}dr=\delta(E'-E)$, (5.14) gives
 \begin{equation}
- R_{El}=R_{kl}(\frac1{2\pi}\frac{dk}{dE})^{1/2}
+ R_{El}=R_{kl}\left(\frac1{2\pi}\frac{dk}{dE}\right)^{1/2}
  =\frac1\hbar\sqrt{\frac{m}{2\pi k}}R_{kl}.\tag{33.5}
 \end{equation}
 
@@ -42,16 +42,16 @@ For $l\ne0$, put
 Then
 \[\chi_{kl}''+\frac{2(l+1)}r\chi_{kl}'+k^2\chi_{kl}=0.\]
 Differentiation gives
-\[\chi_{kl}'''+\frac{2(l+1)}r\chi_{kl}''+[k^2-\frac{2(l+1)}{r^2}]\chi_{kl}'=0.\]
+\[\chi_{kl}'''+\frac{2(l+1)}r\chi_{kl}''+\left[k^2-\frac{2(l+1)}{r^2}\right]\chi_{kl}'=0.\]
 Putting $\chi_{kl}'=r\chi_{k,l+1}$ yields the required equation for
 $\chi_{k,l+1}$, so
 \begin{equation}\chi_{k,l+1}=\frac1r\chi_{kl}'.\tag{33.8}\end{equation}
 \SourcePage{139}{142}
 Hence
-\[\chi_{kl}=(\frac1r\frac d{dr})^l\chi_{k0},\]
+\[\chi_{kl}=\left(\frac1r\frac d{dr}\right)^l\chi_{k0},\]
 where $\chi_{k0}=R_{k0}$ from (33.6), up to an arbitrary constant. Thus
 \begin{equation}
- R_{kl}=(-1)^l\,2\frac{r^l}{k^l}(\frac1r\frac d{dr})^l\frac{\sin kr}{r}.
+ R_{kl}=(-1)^l\,2\frac{r^l}{k^l}\left(\frac1r\frac d{dr}\right)^l\frac{\sin kr}{r}.
  \tag{33.9}
 \end{equation}
 The factor $k^{-l}$ normalizes the function, and $(-1)^l$ is convenient.
@@ -64,23 +64,20 @@ where the spherical Bessel functions are
 \footnote{The first few are
 \[
 j_0=\frac{\sin x}x,\quad j_1=\frac{\sin x}{x^2}-\frac{\cos x}x,\quad
-j_2=(\frac3{x^3}-\frac1x)\sin x-\frac{3\cos x}{x^2}.
+j_2=\left(\frac3{x^3}-\frac1x\right)\sin x-\frac{3\cos x}{x^2}.
 \]
 Another convention in the literature differs from (33.11) by a factor $x$.}
 
 At large $r$, the slowest-decaying term in (33.9) comes from differentiating
 the sine $l$ times. Every operation $-d/dr$ shifts its argument by $-\pi/2$,
 giving
-\begin{equation}R_{kl}\approx\frac2r\sin(kr-\frac{\pi l}2).\tag{33.12}\end{equation}
+\begin{equation}R_{kl}\approx\frac2r\sin\left(kr-\frac{\pi l}2\right).\tag{33.12}\end{equation}
 Normalization may be performed from the asymptotic form (\secref{21}); comparison
 with (33.6) confirms the coefficient in (33.9).
-\SourcePage{140}{143}
-Near the origin, expansion of $\sin kr$ and retention of the term giving the
-lowest power after differentiation yields\footnote{$!!$ denotes the product
-of all integers of the same parity up to and including the stated one.}
+\input{manuscript/chapters/ch05/fragments/sec33-origin.fresh.translation.en.tex}
 \[
-(\frac1r\frac d{dr})^l\frac{\sin kr}r
-\approx(\frac1r\frac d{dr})^l\frac{(-1)^l(kr)^{2l+1}}{r(2l+1)!}
+\left(\frac1r\frac d{dr}\right)^l\frac{\sin kr}r
+\approx\left(\frac1r\frac d{dr}\right)^l\frac{(-1)^l(kr)^{2l+1}}{r(2l+1)!}
 =\frac{(-1)^lk^{2l+1}}{(2l+1)!!}.
 \]
 Therefore
@@ -93,7 +90,7 @@ $l=0$, replace the standing wave (33.6) by an outgoing or incoming wave:
 \begin{equation}R_{k0}^\pm=\frac Ar e^{\pm ikr}.\tag{33.14}\end{equation}
 For arbitrary $l$,
 \begin{equation}
- R_{kl}^\pm=(-1)^lA\frac{r^l}{k^l}(\frac1r\frac d{dr})^l\frac{e^{\pm ikr}}r.
+ R_{kl}^\pm=(-1)^lA\frac{r^l}{k^l}\left(\frac1r\frac d{dr}\right)^l\frac{e^{\pm ikr}}r.
  \tag{33.15}
 \end{equation}
 In terms of Hankel functions,
@@ -103,7 +100,7 @@ In terms of Hankel functions,
 of the first and second kind for $+$ and $-$ respectively. Their asymptotic
 forms are
 \begin{equation}
- R_{kl}^\pm\approx\frac Ar\exp[\pm i(kr-\frac{\pi l}2)],\tag{33.17}
+ R_{kl}^\pm\approx\frac Ar\exp\left[\pm i\left(kr-\frac{\pi l}2\right)\right],\tag{33.17}
 \end{equation}
 and near the origin
 \begin{equation}R_{kl}^\pm\approx A\frac{(2l-1)!!}{k^l}r^{-l-1}.\tag{33.18}\end{equation}
@@ -176,7 +173,7 @@ Fig.~9.
  \node[left] at (0,1.55) {$y$}; \node[below left] at (0,0) {$O$};
  \node[below] at (6.95,0) {$x$}; \node[above] at (2.03,1.29) {$\alpha x$};
  \node[right] at (2.05,0.86) {$\sin x$};
- \node[right] at (3.35,-0.93) {$-\sin x$};
+ \node at (2.35,-1.2) {$-\sin x$};
 \end{tikzpicture}
 
 \small Fig.~9
@@ -216,7 +213,7 @@ $l\mapsto-l-1$, also
 $(r^{l+1}R_{-l-1})'\sim r^{l+1}R_{-l}$. Since $R_{-l}$ and $R_{l-1}$ obey
 the same equation, finally
 $(r^{l+1}R_l)'\sim r^{l+1}R_{l-1}$, as used here.} to $R_{l-1}=0$, hence
-\[J_{l-1/2}(\frac a\hbar\sqrt{2mU_0})=0;\]
+\[J_{l-1/2}\left(\frac a\hbar\sqrt{2mU_0}\right)=0;\]
 for $l=0$, replace $J_{l-1/2}$ by $\cos$. The order of appearance is
 \[1s,\ 1p,\ 1d,\ 2s,\ 1f,\ 2p,\ 1g,\ 2d,\ 3s,\ 1h,\ 2f,\ldots\]
 Differences from the deep-well ordering begin only for rather high levels.

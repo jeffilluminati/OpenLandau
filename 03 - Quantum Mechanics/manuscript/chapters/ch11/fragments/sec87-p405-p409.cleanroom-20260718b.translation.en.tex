@@ -1,0 +1,138 @@
+\SourcePage{405}{408}
+\section{Matrix elements for a diatomic molecule}
+
+This section gives several general formulas for matrix elements of physical quantities pertaining to a diatomic molecule. We first consider matrix elements for transitions between zero-spin states.
+
+\input{manuscript/chapters/ch11/fragments/sec87-line006-fresh-f-20260718.translation.en.tex}
+\begin{equation}
+\langle n'\Lambda|A_\zeta|n\Lambda\rangle,\quad
+\langle n'\Lambda|A_\xi+iA_\eta|n,\Lambda-1\rangle,\quad
+\langle n',\Lambda-1|A_\xi-iA_\eta|n\Lambda\rangle
+\tag{87.1}
+\end{equation}
+(here $n$ labels the electronic terms for a specified $\Lambda$).
+
+When both terms are $\Sigma$ terms, the selection rule associated with reflection symmetry in a plane containing the molecular axis must also be taken into account. Under such a reflection, the $\zeta$ component of an ordinary (polar) vector remains unchanged, whereas that of an axial vector reverses sign. It follows that, for a polar vector, $A_\zeta$ has nonzero matrix elements only in the transitions $\Sigma^+\to\Sigma^+$ and $\Sigma^-\to\Sigma^-$, while for an axial vector this occurs for $\Sigma^+\to\Sigma^-$. We do not discuss the components $A_\xi$, $A_\eta$, since transitions without a change in $\Lambda$ are altogether impossible for them.
+
+\input{manuscript/chapters/ch11/fragments/sec87-line017-fresh-c-20260718.translation.en.tex}
+
+The relation between the matrix elements (87.1) and the matrix elements of the same vector in the space-fixed coordinate system $xyz$ follows from the general formulas derived below (in \S~110) for an arbitrary axially symmetric physical system.
+
+\input{manuscript/chapters/ch11/fragments/sec87-lines021-024-fresh-c-20260718.translation.en.tex}
+\begin{equation}
+\begin{split}
+\langle n'K\Lambda\|A\|nK\Lambda\rangle&=\Lambda\sqrt{\frac{2K+1}{K(K+1)}}\langle n'\Lambda|A_\zeta|n\Lambda\rangle,\\
+\langle n',K-1,\Lambda\|A\|nK\Lambda\rangle&=i\sqrt{\frac{K^2-\Lambda^2}{K}}\langle n'\Lambda|A_\zeta|n\Lambda\rangle
+\end{split}
+\tag{87.2}
+\end{equation}
+and, for elements not diagonal in $\Lambda$,
+\begin{equation}
+\begin{split}
+\langle n'K\Lambda\|A\|nK,\Lambda-1\rangle
+&=\left[\frac{(2K+1)(K+\Lambda)(K-\Lambda+1)}{4K(K+1)}\right]^{1/2}\\[-2pt]
+&\qquad\times\langle n'\Lambda|A_\xi+iA_\eta|n,\Lambda-1\rangle,\\
+\langle n'K\Lambda\|A\|n,K-1,\Lambda-1\rangle
+&=i\left[\frac{(K+\Lambda)(K+\Lambda-1)}{4K}\right]^{1/2}\\[-2pt]
+&\qquad\times\langle n'\Lambda|A_\xi+iA_\eta|n,\Lambda-1\rangle,\\
+\langle n',K-1,\Lambda\|A\|nK,\Lambda-1\rangle
+&=i\left[\frac{(K-\Lambda)(K-\Lambda+1)}{4K}\right]^{1/2}\\[-2pt]
+&\qquad\times\langle n'\Lambda|A_\xi+iA_\eta|n,\Lambda-1\rangle.
+\end{split}
+\tag{87.3}
+\end{equation}
+The other nonzero elements follow from those displayed above upon using the Hermiticity relations for the reduced matrix elements,
+\[
+\langle nK\Lambda\|A\|n'K'\Lambda'\rangle=\langle n'K'\Lambda'\|A\|nK\Lambda\rangle^*,
+\]
+and for the matrix elements in the $\xi\eta\zeta$ system,
+\[
+\langle n\Lambda|A_\xi-iA_\eta|n'\Lambda'\rangle=\langle n'\Lambda'|A_\xi+iA_\eta|n\Lambda\rangle^*,\qquad
+\langle n\Lambda|A_\zeta|n'\Lambda'\rangle=\langle n'\Lambda'|A_\zeta|n\Lambda\rangle^*.
+\]
+
+\SourcePage{407}{410}
+We record separately the formulas for matrix elements of the vector $\mathbf A=\mathbf n$, the unit vector along the molecular axis. In this case simply $A_\xi=A_\eta=0$, $A_\zeta=1$, so in the $\xi\eta\zeta$ system only the diagonal elements are nonzero: $\langle n\Lambda|A_\zeta|n\Lambda\rangle=1$. The reduced matrix elements are diagonal in every index except $K$; displaying only that index, we have
+\begin{equation}
+\langle K\|n\|K\rangle=\Lambda\sqrt{\frac{2K+1}{K(K+1)}},\qquad
+\langle K-1\|n\|K\rangle=i\sqrt{\frac{K^2-\Lambda^2}{K}}.
+\tag{87.4}
+\end{equation}
+(H.~Hönl, F.~London, 1925). For $\Lambda=0$, these formulas give
+\[
+\langle K\|n\|K\rangle=0,\qquad \langle K-1\|n\|K\rangle=i\sqrt K,
+\]
+which is precisely what is expected for the matrix elements of a unit vector in motion in a centrally symmetric field (see (29.14)).
+
+We now indicate how the formulas obtained above are to be modified for transitions between states of nonzero spin. Here it is essential whether the states belong to case $a$ or to case $b$.
+
+If both states belong to case $a$, the changes in the formulas are essentially only notational. The quantum numbers $K$ and $M_K$ do not exist; in their place one has the total angular momentum $J$ and its $z$ projection $M_J$. In addition, the numbers $S$ and $\Omega=\Lambda+\Sigma$ are introduced, so that the reduced matrix elements are written as
+\[
+\langle n'J'S'\Omega'\Lambda'\|A\|nJS\Omega\Lambda\rangle.
+\]
+Let $\mathbf A$ be any orbital vector (that is, one independent of spin). Its operator commutes with the spin operator $\widehat{\mathbf S}$, and its matrix is therefore diagonal in the quantum numbers $S$ and $S_\zeta=\Sigma$; hence the quantum number $\Omega=\Lambda+\Sigma$ changes together with $\Lambda$ (that is, $\Omega'-\Omega=\Lambda'-\Lambda$). Equations (87.2)--(87.4) change only in that indices are added to the matrix elements and $K,\Lambda$ must be replaced by $J,\Omega$ in all the other factors. For example, the first of equations (87.2) is replaced by
+\[
+\langle n'JS\Omega\Lambda\|A\|nJS\Omega\Lambda\rangle
+=\Omega\sqrt{\frac{2J+1}{J(J+1)}}\langle n'\Omega\Lambda|A_\zeta|n\Omega\Lambda\rangle
+\]
+(the diagonal index $S$ has been omitted).
+
+Now let $\mathbf A=\mathbf S$. Since the spin operator commutes both with the orbital angular momentum and with the Hamiltonian, its matrix is diagonal in $n,\Lambda$. It is not, however, diagonal in $S$ and $\Sigma$ (or $\Omega$). For
+
+\SourcePage{408}{411}
+the transitions $S,\Sigma\to S',\Sigma'$, the matrix elements of the components $A_\xi,A_\eta,A_\zeta$ are determined by (27.13), with $S,\Sigma$ written in place of $L,M$. The transformation to the coordinate system $xyz$ is then performed using (87.2), (87.3), with $K,\Lambda$ replaced by $J,\Omega$. In this manner, for example, we obtain
+\begin{equation}
+\begin{split}
+\langle J\Omega\|S\|J,\Omega-1\rangle
+&=\left[\frac{(2J+1)(J+\Omega)(J-\Omega+1)}{4J(J+1)}\right]^{1/2}
+\langle\Omega|S_\xi+iS_\eta|\Omega-1\rangle\\
+&=\left[\frac{(2J+1)(J+\Omega)(J-\Omega+1)(S+\Sigma)(S-\Sigma+1)}{4J(J+1)}\right]^{1/2}.
+\end{split}
+\tag{87.5}
+\end{equation}
+(the diagonal indices $n,S,\Lambda$ have been omitted).
+
+Next suppose that both states belong to case $b$, and that $\mathbf A$ is an orbital vector. The matrix elements are calculated in two stages. First we consider the rotating molecule without allowing for the coupling of $\mathbf S$ and $\mathbf K$; the matrix elements are diagonal in $S$ and are given by the same formulas (87.2), (87.3). At the second stage, $\mathbf K$ is coupled with $\mathbf S$ to form the total angular momentum $\mathbf J$, and the transformation to the new matrix elements is made by means of the general formulas (109.3) (with $K,S,J$ playing the parts of $j_1,j_2,J$ in those formulas). Thus, for elements diagonal in $J,K,\Lambda$, we first find
+\[
+\langle n'JK\Lambda\|A\|nJK\Lambda\rangle
+=(-1)^{K+J+S+1}(2J+1)
+\begin{Bmatrix}K&J&S\\J&K&1\end{Bmatrix}
+\langle n'K\Lambda\|A\|nK\Lambda\rangle
+\]
+and then, using the value of the $6j$ symbol from Table~10 (p.~542) and the reduced matrix element from (87.2), we finally obtain
+\[
+\langle n'JK\Lambda\|A\|nJK\Lambda\rangle
+=\Lambda\left[\frac{2J+1}{J(J+1)}\right]^{1/2}
+\frac{J(J+1)+K(K+1)-S(S+1)}{2K(K+1)}
+\langle n'\Lambda|A_\zeta|n\Lambda\rangle.
+\]
+
+\input{manuscript/chapters/ch11/fragments/sec87-line113-fresh-c-20260718.translation.en.tex}
+
+\ProblemHeading[1] Determine the Stark splitting of the terms of a diatomic molecule having a permanent dipole moment, when the term belongs to case $a$.
+
+\SourcePage{409}{412}
+\SolutionHeading The energy of a dipole $\mathbf d$ in an electric field $\boldsymbol{\mathcal E}$ is $-\mathbf d\boldsymbol{\mathcal E}$. By symmetry, the dipole moment of a diatomic molecule is plainly directed along its axis: $\mathbf d=d\mathbf n$ (where $d$ is constant). Choosing the field direction as the $z$ axis, we obtain the perturbation operator in the form $-dn_z\mathcal E$.
+
+\input{manuscript/chapters/ch11/fragments/sec87-line120-fresh-c-20260718.translation.en.tex}
+\[
+\Delta E=-\mathcal E dM_J\frac{\Omega}{J(J+1)}.
+\]
+
+\ProblemHeading[2] The same problem for a term belonging to case $b$ (with $\Lambda\ne0$).
+
+\SolutionHeading In the same manner we find
+\[
+\Delta E=-\mathcal E dM_J\Lambda\frac{J(J+1)-S(S+1)+K(K+1)}{2K(K+1)J(J+1)}.
+\]
+
+\ProblemHeading[3] The same problem for a ${}^1\Sigma$ term.
+
+\SolutionHeading When $\Lambda=0$, the linear effect is absent, and second-order perturbation theory must be used. In carrying out the sum in the general formula (38.10), it is sufficient to retain only the terms corresponding to transitions between rotational components of the given electronic term (in the other terms, the energy differences in the denominators are large). We thus find
+\[
+\Delta E=d^2\mathcal E^2\left\{\frac{|\langle KM_K|n_z|K-1,M_K\rangle|^2}{E_K-E_{K-1}}+\frac{|\langle KM_K|n_z|K+1,M_K\rangle|^2}{E_K-E_{K+1}}\right\},
+\]
+where $E_K=BK(K+1)$. A straightforward calculation gives
+\[
+\Delta E=\frac{d^2\mathcal E^2}{B}\frac{K(K+1)-3M_K^2}{2K(K+1)(2K-1)(2K+3)}.
+\]

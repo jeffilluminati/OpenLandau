@@ -1,0 +1,258 @@
+\SourcePage{446}{449}
+\section{Group representations}
+
+Consider a symmetry group, and let $\psi_1$ be a single-valued function of the coordinates (in the configuration space of the physical system under consideration). A change of coordinates corresponding to an element $G$ of the group takes this function into another function.
+
+\SourcePage{447}{450}
+Apply in turn all $g$ transformations of the group, where $g$ is its order. In general, $g$ different functions are then obtained from $\psi_1$. For particular choices of $\psi_1$, however, some of these functions may be linearly dependent. The result is a set of $f$ ($f\leqslant g$) linearly independent functions $\psi_1,\psi_2,\ldots,\psi_f$. Under any symmetry transformation belonging to the group, these functions are transformed linearly among themselves. Thus, a transformation $G$ takes each $\psi_i$ ($i=1,2,\ldots,f$) into a linear combination of the form
+\[
+ \sum_{k=1}^f G_{ki}\psi_k,
+\]
+where the constants $G_{ki}$ depend on the transformation $G$. The collection of these constants is called the \emph{transformation matrix}\footnote{Because the functions $\psi_i$ are assumed to be single-valued, one definite matrix corresponds to every group element.}.
+
+It is useful here to regard the group elements $G$ as operators acting on the functions $\psi_i$. We may then write
+\begin{equation}
+ \widehat G\psi_i=\sum_kG_{ki}\psi_k.
+ \tag{94.1}
+\end{equation}
+The functions $\psi_i$ can always be chosen mutually orthogonal and normalized. The transformation matrix then has exactly the meaning of an operator matrix as defined in \S~11:
+\begin{equation}
+ G_{ik}=\int\psi_i^*\widehat G\psi_k\,dq.
+ \tag{94.2}
+\end{equation}
+
+The matrix corresponding to the product of two group elements $G$ and $H$ is obtained from their matrices by the ordinary matrix-multiplication rule (11.12):
+\begin{equation}
+ (GH)_{ik}=\sum_lG_{il}H_{lk}.
+ \tag{94.3}
+\end{equation}
+
+The collection of the matrices for all elements of a group is called a \emph{representation of the group}. The functions $\psi_1,\ldots,\psi_f$ by which these matrices are defined form the \emph{basis of the representation}. Their number $f$ is the \emph{dimension of the representation}.
+
+\SourcePage{448}{451}
+Consider the integrals $\int\psi_i^*\psi_k\,dq$. Since integration is over the entire space, their values plainly remain unchanged under every rotation or reflection of the coordinate system. In other words, symmetry transformations preserve the orthonormality of the basis functions. It follows (see \S~12) that the operators $\widehat G$ are unitary\footnote{What is essential in this argument is that the integrals either vanish (when $i\ne k$) or are certainly nonzero (when $i=k$), because the integrand $|\psi_i|^2$ is positive.}.
+
+Consequently, the matrices representing the group elements are also unitary when the representation has an orthonormal basis.
+
+Perform on $\psi_1,\ldots,\psi_f$ a linear unitary transformation
+\begin{equation}
+ \psi_i'=\sum_kS_{ki}\psi_k.
+ \tag{94.4}
+\end{equation}
+This gives a new set $\psi_1',\ldots,\psi_f'$ which is likewise orthonormal (see \S~12)\footnote{Recall from (12.12) that, because the transformations are unitary, the sum of the squared moduli of the basis functions is invariant.}. If the functions $\psi_i'$ are used as the basis, we obtain another representation of the same dimension. Representations related through a linear transformation of their basis functions are said to be \emph{equivalent}; plainly, they are not essentially different.
+
+The matrices of equivalent representations obey a simple relation. According to (12.7), the matrix of $\widehat G$ in the new representation equals, in the old representation, the matrix of the operator
+\begin{equation}
+ \widehat{S}^{-1}\widehat G\widehat S.
+ \tag{94.5}
+\end{equation}
+
+The sum of the diagonal elements, that is, the trace, of the matrix representing a group element $G$ is called its \emph{character}; characters will be denoted by $\chi(G)$. An essential fact is that the matrices of equivalent representations have the same characters (see (12.11)). This gives special importance to describing a group representation through its characters: representations that differ essentially can thereby be distinguished at once from equivalent ones. Henceforth, only inequivalent representations will be described as different.
+
+If $S$ in (94.5) is taken to mean a group element relating conjugate elements $G$ and $G'$, we conclude
+
+\SourcePage{449}{452}
+that, in any given representation of the group, matrices representing elements in the same class have equal characters.
+
+The identity element $E$ corresponds to the identity transformation. Its matrix in every representation is therefore diagonal, with all diagonal entries equal to one. Thus its character $\chi(E)$ is simply the dimension of the representation:
+\begin{equation}
+ \chi(E)=f.
+ \tag{94.6}
+\end{equation}
+
+Consider a representation of dimension $f$. It may be possible, by an appropriate linear transformation (94.4), to divide the basis functions into sets containing $f_1,f_2,\ldots$ functions ($f_1+f_2+\cdots=f$), in such a way that every group element transforms the functions of each set only among themselves, without involving functions from the other sets. Such a representation is called \emph{reducible}.
+
+If no linear transformation of the basis can reduce the number of functions transformed among themselves, their representation is called \emph{irreducible}. Every reducible representation can be decomposed into irreducible representations. This means that a suitable linear transformation separates the basis functions into a number of sets, each of which transforms under the group elements according to an irreducible representation. Several distinct sets may transform according to the same irreducible representation; that irreducible representation is then said to occur in the reducible one the corresponding number of times.
+
+Irreducible representations are an essential characteristic of a group and play the central part in every quantum-mechanical application of group theory. We shall state their principal properties\footnote{Proofs of these properties may be found in any specialized course on group theory.}.
+
+It can be shown that the number of different irreducible representations equals the number $r$ of classes in the group. We distinguish the characters of different irreducible representations by superscripts: the characters of the matrix for an element $G$ in these representations are $\chi^{(1)}(G),\chi^{(2)}(G),\ldots,\chi^{(r)}(G)$.
+
+The matrix elements of irreducible representations satisfy several orthogonality relations. First, for two different irreducible representations one has
+
+\SourcePage{450}{453}
+\begin{equation}
+ \sum_GG_{ik}^{(\alpha)}G_{lm}^{(\beta)*}=0,
+ \tag{94.7}
+\end{equation}
+where $\alpha\ne\beta$ labels the two irreducible representations and the sum extends over all group elements. For each individual irreducible representation,
+\begin{equation}
+ \sum_GG_{ik}^{(\alpha)}G_{lm}^{(\alpha)*}=\frac{g}{f_\alpha}\delta_{il}\delta_{km},
+ \tag{94.8}
+\end{equation}
+so only the sums of squared moduli of matrix elements are nonzero:
+\[
+ \sum_G|G_{ik}^{(\alpha)}|^2=\frac{g}{f_\alpha}.
+\]
+Relations (94.7) and (94.8) may be combined as
+\begin{equation}
+ \sum_GG_{ik}^{(\alpha)}G_{lm}^{(\beta)*}=\frac{g}{f_\alpha}\delta_{\alpha\beta}\delta_{il}\delta_{km}.
+ \tag{94.9}
+\end{equation}
+
+In particular, this yields an important orthogonality relation for representation characters. Summing both sides of (94.9) over the index pairs $i,k$ and $l,m$, we find
+\begin{equation}
+ \sum_G\chi^{(\alpha)}(G)\chi^{(\beta)}(G)^*=g\delta_{\alpha\beta}.
+ \tag{94.10}
+\end{equation}
+For $\alpha=\beta$ this becomes
+\[
+ \sum_G|\chi^{(\alpha)}(G)|^2=g.
+\]
+Thus the sum of squared moduli of the characters of an irreducible representation equals the order of the group. This relation can also serve as a test of irreducibility: for a reducible representation the sum is necessarily greater than $g$ (it equals $ng$ if the representation contains $n$ irreducible parts, all mutually different).
+
+Equation (94.10) further shows that equality of the characters of two irreducible representations is sufficient, as well as necessary, for their equivalence.
+
+Since characters belonging to elements of one class are equal, the sum in (94.10) actually has only $r$ independent terms. It may therefore be rewritten
+\begin{equation}
+ \sum_Cg_C\chi^{(\alpha)}(C)\chi^{(\beta)}(C)^*=g\delta_{\alpha\beta},
+ \tag{94.11}
+\end{equation}
+
+\SourcePage{451}{454}
+where the sum is over the $r$ classes of the group, denoted provisionally by $C$, and $g_C$ is the number of elements in class $C$.
+
+Because the number of irreducible representations is the same as the number of classes, the quantities $f_{\alpha C}=\sqrt{g_C/g}\,\chi^{(\alpha)}(C)$ form a square matrix containing $r^2$ entries.
+
+The orthogonality relations in the first index, $\sum_Cf_{\alpha C}f_{\beta C}^*=\delta_{\alpha\beta}$, then imply automatically the orthogonality relations in the second index, $\sum_\alpha f_{\alpha C}f_{\alpha C'}^*=\delta_{CC'}$. Hence, in addition to (94.11),
+\begin{equation}
+ \sum_\alpha\chi^{(\alpha)}(C)\chi^{(\alpha)}(C')^*=\frac{g}{g_C}\delta_{CC'}.
+ \tag{94.12}
+\end{equation}
+
+Among the irreducible representations of every group there is always one trivial representation, realized by a single basis function invariant under all transformations of the group. This one-dimensional representation is called the \emph{unit representation}; all its characters equal one. If one representation in the orthogonality relation (94.10) or (94.11) is the unit representation, then for the other we obtain
+\begin{equation}
+ \sum_G\chi^{(\alpha)}(G)=\sum_Cg_C\chi^{(\alpha)}(C)=0,
+ \tag{94.13}
+\end{equation}
+that is, the sum of the characters of all group elements vanishes for every nonunit representation.
+
+Relation (94.10) provides a very simple decomposition of any reducible representation into irreducible ones once the characters of both are known.
+
+Let $\chi(G)$ be the characters of a reducible representation of dimension $f$, and let $a^{(1)},a^{(2)},\ldots,a^{(r)}$ give the numbers of times the corresponding irreducible representations occur in it, so that
+\begin{equation}
+ \sum_{\beta=1}^ra^{(\beta)}f_\beta=f
+ \tag{94.14}
+\end{equation}
+($f_\beta$ are the dimensions of the irreducible representations). The characters $\chi(G)$ may then be written
+\begin{equation}
+ \chi(G)=\sum_{\beta=1}^ra^{(\beta)}\chi^{(\beta)}(G).
+ \tag{94.15}
+\end{equation}
+
+\SourcePage{452}{455}
+Multiplying this equality by $\chi^{(\alpha)}(G)^*$ and summing over all $G$, relation (94.10) gives
+\begin{equation}
+ a^{(\alpha)}=\frac1g\sum_G\chi(G)\chi^{(\alpha)}(G)^*.
+ \tag{94.16}
+\end{equation}
+
+Consider the $f=g$ dimensional representation realized by the $g$ functions $\widehat G\phi$, where $\phi$ is a coordinate function of general form, so that the $g$ functions $\widehat G\phi$ obtained from it are all linearly independent. Such a representation is called \emph{regular}. Clearly, none of its matrices has any diagonal element except the matrix corresponding to the identity element. Hence $\chi(G)=0$ for $G\ne E$, while $\chi(E)=g$. On decomposing this representation into irreducible ones, (94.16) gives $a^{(\alpha)}=(1/g)gf_\alpha=f_\alpha$. Thus every irreducible representation occurs in the regular representation a number of times equal to its dimension. Substitution in (94.14) gives
+\begin{equation}
+ f_1^2+f_2^2+\cdots+f_r^2=g;
+ \tag{94.17}
+\end{equation}
+\input{manuscript/chapters/ch12/fragments/sec94-src157-fresh-a-20260718.translation.en.tex}
+
+It follows in particular that every irreducible representation of an Abelian group (where $r=g$) is one-dimensional ($f_1=f_2=\cdots=f_r=1$).
+
+We also state, without proof, that the dimensions of a group's irreducible representations are divisors of its order.
+
+The actual decomposition of the regular representation into irreducible parts is effected by the formula
+\begin{equation}
+ \psi_i^{(\alpha)}=\frac{f_\alpha}{g}\sum_GG_{ik}^{(\alpha)*}\widehat G\phi.
+ \tag{94.18}
+\end{equation}
+It is readily verified that, for a fixed value of $k$, the functions $\psi_i^{(\alpha)}$ ($i=1,2,\ldots,f_\alpha$) defined by this formula transform among themselves according to
+\[
+ \widehat G\psi_i^{(\alpha)}=\sum_lG_{li}^{(\alpha)}\psi_l^{(\alpha)},
+\]
+
+\SourcePage{453}{456}
+and hence form a basis of the $\alpha$th irreducible representation. Giving $k$ its different values produces $f_\alpha$ distinct sets of basis functions $\psi_i^{(\alpha)}$ for the same irreducible representation. This agrees with the fact that the irreducible representation occurs $f_\alpha$ times in the regular representation.
+
+An arbitrary function $\psi$ may be represented as a sum of functions transforming according to the irreducible representations of the group. The required formulas are
+\begin{equation}
+ \psi=\sum_\alpha\sum_i\psi_i^{(\alpha)},\qquad
+ \psi_i^{(\alpha)}=\frac{f_\alpha}{g}\sum_GG_{ii}^{(\alpha)*}\widehat G\psi.
+ \tag{94.19}
+\end{equation}
+To prove them, substitute the second formula into the first and perform the summation over $i$. This gives
+\begin{equation}
+ \psi=\frac1g\sum_\alpha f_\alpha\chi^{(\alpha)*}(G)\widehat G\psi.
+ \tag{94.20}
+\end{equation}
+The dimensions $f_\alpha$ are the characters $\chi^{(\alpha)}(E)$ of the identity element. Using the orthogonality relation (94.12), we find that the sum $\sum_\alpha f_\alpha\chi^{(\alpha)*}(G)$ is nonzero, and equal to $g$, only when $G$ is the identity element. The right-hand side of (94.20) therefore coincides identically with $\psi$.
+
+Consider two different sets of functions $\psi_1^{(\alpha)},\ldots,\psi_{f_\alpha}^{(\alpha)}$ and $\psi_1^{(\beta)},\ldots,\psi_{f_\beta}^{(\beta)}$ realizing two irreducible representations of the group. The products $\psi_i^{(\alpha)}\psi_k^{(\beta)}$ form a set of $f_\alpha f_\beta$ new functions which can serve as the basis of a new representation of dimension $f_\alpha f_\beta$. This is called the \emph{direct (or Kronecker) product} of the first two representations. It is irreducible only if at least one of $f_\alpha$ or $f_\beta$ equals one. The characters of the direct product are plainly the products of the characters of its two component representations. Indeed, if
+\[
+ \widehat G\psi_i^{(\alpha)}=\sum_lG_{li}^{(\alpha)}\psi_l^{(\alpha)},\qquad
+ \widehat G\psi_k^{(\beta)}=\sum_mG_{mk}^{(\beta)}\psi_m^{(\beta)},
+\]
+then
+\[
+ \widehat G\psi_i^{(\alpha)}\psi_k^{(\beta)}=
+ \sum_{l,m}G_{li}^{(\alpha)}G_{mk}^{(\beta)}\psi_l^{(\alpha)}\psi_m^{(\beta)};
+\]
+
+\SourcePage{454}{457}
+hence, denoting its characters by $(\chi^{(\alpha)}\mathbin{\times}\chi^{(\beta)})(G)$, we obtain
+\[
+ (\chi^{(\alpha)}\mathbin{\times}\chi^{(\beta)})(G)
+ =\sum_{i,k}G_{ii}^{(\alpha)}G_{kk}^{(\beta)}
+ =\sum_iG_{ii}^{(\alpha)}\sum_kG_{kk}^{(\beta)},
+\]
+that is,
+\begin{equation}
+ (\chi^{(\alpha)}\mathbin{\times}\chi^{(\beta)})(G)
+ =\chi^{(\alpha)}(G)\chi^{(\beta)}(G).
+ \tag{94.21}
+\end{equation}
+
+The two irreducible representations being multiplied may in particular coincide. In that event, there are two different sets $\psi_1,\ldots,\psi_f$ and $\phi_1,\ldots,\phi_f$ realizing the same representation, while its direct product with itself is realized by the $f^2$ functions $\psi_i\phi_k$ and has characters
+\[
+ (\chi\mathbin{\times}\chi)(G)=[\chi(G)]^2.
+\]
+\input{manuscript/chapters/ch12/fragments/sec94-src218-fresh-d-20260718.translation.en.tex}
+
+To determine the characters of the symmetric product, write
+\[
+ \begin{aligned}
+ \widehat G(\psi_i\phi_k+\psi_k\phi_i)
+ &=\sum_{l,m}G_{li}G_{mk}(\psi_l\phi_m+\psi_m\phi_l)\\
+ &=\frac12\sum_{l,m}(G_{li}G_{mk}+G_{mi}G_{lk})(\psi_l\phi_m+\psi_m\phi_l).
+ \end{aligned}
+\]
+Its character is therefore
+\[
+ [\chi^2](G)=\frac12\sum_{i,k}(G_{ii}G_{kk}+G_{ik}G_{ki}).
+\]
+But
+\[
+ \sum_iG_{ii}=\chi(G),\qquad \sum_{i,k}G_{ik}G_{ki}=\chi(G^2);
+\]
+and hence finally
+\begin{equation}
+ [\chi^2](G)=\frac12\{[\chi(G)]^2+\chi(G^2)\},
+ \tag{94.22}
+\end{equation}
+
+\SourcePage{455}{458}
+which expresses the characters of the symmetric product of a representation with itself through those of the original representation. In precisely the same manner, the characters of the antisymmetric product are found to be\footnote{For representations of dimension 2, it is useful to note that the characters $\{\chi^2\}(G)$ coincide with the determinants of the linear transformations $G$, as is readily checked by direct calculation.}
+\begin{equation}
+ \{\chi^2\}(G)=\frac12\{[\chi(G)]^2-\chi(G^2)\}.
+ \tag{94.23}
+\end{equation}
+
+If the functions $\psi_i$ and $\phi_i$ coincide, they can of course define only the symmetric product, realized by the squares $\psi_i^2$ and the products $\psi_i\psi_k$ ($i\ne k$). Symmetric products of higher powers also arise in applications; their characters can be found in an analogous way.
+
+\input{manuscript/chapters/ch12/fragments/sec94-src248-fresh-a-20260718.translation.en.tex}
+
+\input{manuscript/chapters/ch12/fragments/sec94-src250-fresh-b-20260718.translation.en.tex}
+\begin{equation}
+ \chi(C)=\chi^{(\alpha)}(A)\chi^{(\beta)}(B).
+ \tag{94.24}
+\end{equation}
+
+\SourcePage{456}{459}
+Taking in this way all pairwise products of the irreducible representations of groups $A$ and $B$ gives every irreducible representation of $A\times B$.

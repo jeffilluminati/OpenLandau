@@ -1,0 +1,197 @@
+\SourcePage{754}{757}
+repeat the summation over $n$, now using (148.14) for $d\sigma_n$.
+Summation by means of (148.21), with $f=d_x$, and the fact that
+$\langle d_x\rangle=0$ give
+\begin{equation}
+ d\sigma_r=\left(\frac{2e}{\hbar v}\right)^2\langle d_x^2\rangle\frac{do}{\vartheta^2}.
+ \tag{148.24}
+\end{equation}
+It is instructive to compare this result with the small-angle elastic-scattering
+cross-section (139.5).  The latter is independent of $\vartheta$, whereas the
+inelastic cross-section into a solid-angle element $do$ increases as
+$1/\vartheta^2$ when $\vartheta$ decreases.
+
+For angles $v_0/v\ll\vartheta\ll1$, and hence $qa_0\gg1$, the second and
+third terms within the braces in (148.23) are small.  We then simply obtain
+\begin{equation}
+ d\sigma_r=Z\left(\frac{2e^2}{mv^2}\right)^2\frac{do}{\vartheta^4},
+ \tag{148.25}
+\end{equation}
+which is Rutherford scattering by the $Z$ atomic electrons, with exchange
+neglected.  Recall that the differential elastic-scattering cross-section
+(139.6) is proportional to $Z^2$, rather than to $Z$.
+
+Finally, angular integration gives the total cross-section $\sigma_r$ for
+inelastic scattering through arbitrary angles and with arbitrary atomic
+excitation.  Proceeding exactly as in the calculation of $\sigma_n$ in
+(148.18), we find
+\begin{equation}
+ \sigma_r=8\pi\left(\frac{e}{\hbar v}\right)^2\langle d_x^2\rangle
+ \ln\left(\beta\frac{v\hbar}{e^2}\right).
+ \tag{148.26}
+\end{equation}
+
+\subsection*{Problems\footnote{Atomic units are used throughout these problems.}}
+
+\noindent\textbf{1.} Determine the angular distribution, for
+$v^{-2}\ll\vartheta\ll1$, of the inelastic scattering of fast electrons by a
+hydrogen atom in its ground state.
+
+\SolutionHeading For hydrogen, the third term in the braces in (148.23) is
+absent, while the atomic factor $F(q)$ was calculated in the problem following
+\S~139.  Its substitution gives
+\[
+ d\sigma_r=\frac4{v^4\vartheta^4}\left[1-\left(1+\frac{v^2\vartheta^2}{4}\right)^{-4}\right]do.
+\]
+
+\noindent\textbf{2.} Find the differential cross-section for collisions of
+electrons with a ground-state hydrogen atom that excite the $n$th discrete
+level, where $n$ is the principal quantum number.
+
+\SolutionHeading The matrix elements are conveniently evaluated in parabolic
+coordinates.  Choose the $z$ axis along $\mathbf q$; then
+$e^{i\mathbf q\mathbf r}=e^{iqz}=e^{iq(\xi-\eta)/2}$.  The ground-state wave
+function is $\psi_{000}=\pi^{-1/2}e^{-(\xi+\eta)/2}$.  Matrix elements are
+nonzero only for transitions to states with $m=0$.  The wave functions of
+these states are
+\[
+ \psi_{n_1n_20}=\frac1{\sqrt{\pi n^2}}\exp\!\left(-\frac{\xi+\eta}{2n}\right)
+ F\!\left(-n_1,1,\frac\xi n\right)F\!\left(-n_2,1,\frac\eta n\right)
+\]
+
+\SourcePage{755}{758}
+with $n=n_1+n_2+1$.  The required matrix elements are represented by the
+integrals
+\[
+ \langle n_1n_20|e^{i\mathbf q\mathbf r}|000\rangle=
+ \int_0^\infty\!\!\int_0^\infty
+ \exp\!\left(i\frac q2(\xi-\eta)\right)\psi_{000}\psi_{n_1n_20}
+ \frac{\xi+\eta}{4}\,2\pi\,d\xi\,d\eta.
+\]
+The integrations use the formulas collected in \S~f of the Mathematical
+Appendix.  Their evaluation yields
+\[
+ |\langle n_1n_20|e^{i\mathbf q\mathbf r}|000\rangle|^2
+ =2^8n^6q^2\frac{[(n-1)^2+(qn)^2]^{n-3}}{[(n+1)^2+(qn)^2]^{n+3}}
+ [(n_1-n_2)^2+(qn)^2].
+\]
+All states having the same $n_1+n_2=n-1$ have equal energies.  Summing over
+all possible values of $n_1-n_2$ at fixed $n$, and inserting the result into
+(148.9), gives the required cross-section:
+\[
+ d\sigma_n=\frac{2^{11}\pi}{v^2}n^7\left[\frac{n^2-1}{3}+(qn)^2\right]
+ \frac{[(n-1)^2+(qn)^2]^{n-3}}{[(n+1)^2+(qn)^2]^{n+3}}\frac{dq}{q}.
+\]
+
+\noindent\textbf{3.} Determine the total cross-section for excitation of the
+first excited state of the hydrogen atom.
+
+\SolutionHeading Integrate
+\[
+ d\sigma_2=\frac{2^8\pi}{v^2}\frac{dq}{q(q^2+9/4)^5}
+\]
+over $q$ from $q_{\min}=(E_2-E_1)/v=3/8v$ to $q_{\max}=2v$, retaining only
+terms of the highest order in $v$.  Elementary integration gives\footnote{The
+cross-section can likewise be calculated for arbitrary $n$.  Numerical
+calculation also gives the total inelastic-scattering cross-section for
+hydrogen: $\sigma_r=(4\pi/v^2)\ln(v^2/0.160)$.  Of this result, excitation of
+discrete-spectrum states and ionization account, respectively, for
+$\sigma_{\text{exc}}=(4\pi/v^2)\cdot0.715\ln(v^2/0.45)$ and
+$\sigma_{\text{ion}}=(4\pi/v^2)\cdot0.285\ln(v^2/0.012)$.}
+\[
+ \sigma_2=\frac{2^{18}\pi}{3^{10}v^2}\left(\ln4v-\frac{25}{24}\right)
+ =\frac{4\pi}{v^2}\cdot0.555\ln\frac{v^2}{0.50}.
+\]
+
+\noindent\textbf{4.} Find the cross-section for ionization of a ground-state
+hydrogen atom when the secondary electron is emitted in a specified direction.
+The secondary electron's energy is small compared with the primary electron's
+energy, so exchange effects are immaterial (H.~Massey, C.~Mohr, 1933).
+
+\SolutionHeading The initial atomic wave function is
+$\psi_0=\pi^{-1/2}e^{-r}$.  In the final state the atom is ionized.  Denote the
+wave vector of the emitted secondary electron by $\boldsymbol\kappa$, so that
+its energy is $\kappa^2/2$.  This state is described by
+$\psi_{\boldsymbol\kappa}^{(-)}$ from (136.9), whose ``outgoing'' part at
+infinity consists only of a plane wave propagating in the
+$\boldsymbol\kappa$ direction.  The function
+$\psi_{\boldsymbol\kappa}^{(-)}$ is normalized to a delta function in
+$\boldsymbol\kappa/2\pi$-space.  The cross-section calculated from it is
+therefore referred to $d^3\kappa/(2\pi)^3$, or to
+$\kappa^2d\kappa\,do_{\kappa}/(2\pi)^3$, where $do_{\kappa}$ is the
+solid-angle element for the secondary electron's direction.  Thus
+\[
+ d\sigma=\frac{4k'\kappa^2}{(2\pi)^3kq^4}
+ |\langle\boldsymbol\kappa|e^{-i\mathbf q\mathbf r}|0\rangle|^2
+ do\,do_{\kappa}\,d\kappa
+\]
+
+\SourcePage{756}{759}
+where $do$ is the solid-angle element for the scattered electron, and
+\[
+ \langle\boldsymbol\kappa|e^{-i\mathbf q\mathbf r}|0\rangle
+ =\int\psi_{\boldsymbol\kappa}^{(-)*}e^{-i\mathbf q\mathbf r}\psi_0\,dV
+ =\frac{e^{-\pi/2\kappa}\Gamma(1-i/\kappa)}{\pi^{1/2}}I,
+\]
+\[
+ I=\left\{-\frac\partial{\partial\lambda}\int
+ \exp(-i\mathbf q\mathbf r-i\boldsymbol\kappa\mathbf r-\lambda r)
+ F\!\left(\frac i\kappa,1,i(\kappa r+\boldsymbol\kappa\mathbf r)\right)
+ \frac{dV}{r}\right\}_{\lambda=1}.
+\]
+Carry out the integration in parabolic coordinates with the $z$ axis along
+$\boldsymbol\kappa$.  Let $\varphi$ be measured from the plane
+$(\mathbf q,\boldsymbol\kappa)$:
+\[
+\begin{split}
+ I=\biggl\{&-\frac12\frac\partial{\partial\lambda}
+ \int_0^\infty\!\!\int_0^\infty\!\!\int_0^{2\pi}
+ \exp\!\biggl[-\frac i2q(\xi-\eta)\cos\gamma
+ +iq\sqrt{\xi\eta}\sin\gamma\cos\varphi\\
+ &\hspace{28mm}-\frac\lambda2(\xi+\eta)-\frac i2\kappa(\xi-\eta)\biggr]
+ F(i/\kappa,1,i\kappa\xi)\,d\varphi\,d\xi\,d\eta\biggr\}_{\lambda=1}.
+\end{split}
+\]
+Here $\gamma$ is the angle between $\boldsymbol\kappa$ and $\mathbf q$.
+The integrations over $d\varphi\,d\eta$ are readily performed by substituting
+$\sqrt\eta\cos\varphi=u$ and $\sqrt\eta\sin\varphi=v$, after which
+\[
+ \frac I{2\pi}=\left\{\frac\partial{\partial\lambda}\int_0^\infty
+ \exp\!\left[\frac{-q^2\sin^2\gamma+\lambda^2+(\kappa+q\cos\gamma)^2}
+ {2[i(\kappa+q\cos\gamma)-\lambda]}\xi\right]
+ \frac{F(i/\kappa,1,i\kappa\xi)\,d\xi}{i(\kappa+q\cos\gamma)-\lambda}
+ \right\}_{\lambda=1}.
+\]
+The remaining integral follows from (f.3) with $\gamma=1$ and $n=0$.
+
+The subsequent calculations are lengthy but elementary.  They lead to the
+following cross-section:
+\[
+\begin{split}
+ d\sigma={}&\frac{2^8k'\kappa
+ [q^2+2q\kappa\cos\gamma+(\kappa^2+1)\cos^2\gamma]}
+ {\pi kq^2[q^2+2q\kappa\cos\gamma+1+\kappa^2]^4}\\
+ &\times\frac{\exp\!\left\{-\dfrac2\kappa
+ \arctan\dfrac{2\kappa}{q^2-\kappa^2+1}\right\}}
+ {[(q+\kappa)^2+1][(q-\kappa)^2+1](1-e^{-2\pi/\kappa})}
+ do\,do_{\kappa}\,d\kappa.
+\end{split}
+\]
+Integration over all directions of emission of the secondary electron is
+elementary and gives, at the specified emitted-electron energy $\kappa^2/2$,
+the distribution of scattering directions
+\[
+ d\sigma=\frac{2^{10}k'\kappa[q^2+(1/3)(1+\kappa^2)]
+ \exp\{-\frac2\kappa\arctan[2\kappa/(q^2-\kappa^2+1)]\}}
+ {kq^2[(q+\kappa)^2+1]^3[(q-\kappa)^2+1]^3(1-e^{-2\pi/\kappa})}
+ do\,d\kappa.
+\]
+For $q\gg1$ this expression has a sharp maximum near $\kappa=q$.  Close to
+the maximum,
+\[
+ d\sigma=\frac{2^5}{3\pi\kappa^4}\frac{d\kappa\,do}{[1+(q-\kappa)^2]^3}.
+\]
+Integrating over
+$do=2\pi q\,dq/k^2\approx(2\pi\kappa/k^2)d(q-\kappa)$ gives
+$8\pi\,d\kappa/k^2\kappa^3$, in agreement, as required, with the first term
+of (148.17).

@@ -1,0 +1,138 @@
+\section{Multipole Moments}
+
+In classical theory, the electrical properties of a system are characterized by its multipole moments of various orders, which are expressed in terms of the particles' charges and coordinates. In quantum theory these quantities retain the same definitions, but the definitions must be understood as operator definitions.
+
+The first multipole moment is the \emph{dipole moment}, defined by the vector
+\[
+ \mathbf d=\sum e\mathbf r
+\]
+\input{manuscript/chapters/ch10/fragments/sec75-src009-014-fresh-d-20260718.translation.en.tex}
+
+The same conclusion plainly applies to all $2^l$-pole moments with odd $l$. The components of such a moment are odd polynomials of degree $l$ in the coordinates; like the components of a polar vector, they reverse sign under coordinate inversion. They consequently obey the same parity selection rule.
+
+The \emph{quadrupole moment} of a system is defined as the symmetric tensor
+\begin{equation}
+ \widehat Q_{ik}=\sum e(3x_i x_k-\delta_{ik}\mathbf r^2)
+ \tag{75.1}
+\end{equation}
+whose diagonal terms sum to zero. To determine the values of these quantities in a particular state of the system (say, an atom), the operator (75.1) must be averaged with the corresponding wave function. It is useful to carry out this averaging in two stages (cf. \S~72).
+
+Let $\widehat Q_{ik}$ denote the quadrupole-moment operator after averaging over electronic states with a prescribed value of the total angular momentum $J$, but without fixing its projection $M_J$.
+
+An operator averaged in this way can depend only on operators for quantities that describe the atomic state as a whole. The ``vector'' $\widehat{\mathbf J}$ is the only such vector. The operator $\widehat Q_{ik}$ must therefore have the form
+\begin{equation}
+ \widehat Q_{ik}=\frac{3Q}{2J(2J-1)}\left(\widehat J_i\widehat J_k+\widehat J_k\widehat J_i-\frac23\widehat{\mathbf J}^{2}\delta_{ik}\right),
+ \tag{75.2}
+\end{equation}
+where the expression in parentheses has been constructed to be symmetric in $i,k$ and to vanish when contracted over this pair of indices (the meaning of the coefficient $Q$ is given below). Here the opera\SourcePageJoin{344}{347}tors $\widehat J_i$ are to be understood as the familiar matrices (\S~27, 54) with respect to states having different $M_J$ values. The operator $\widehat{\mathbf J}^{2}$ may, of course, simply be replaced by its eigenvalue $J(J+1)$.
+
+\input{manuscript/chapters/ch10/fragments/sec75-src037-041-fresh-a-20260718.translation.en.tex}
+\begin{equation}
+ Q_{zz}=\frac{3Q}{J(2J-1)}\left[M_J^2-\frac13J(J+1)\right].
+ \tag{75.3}
+\end{equation}
+For $M_J=J$ (the angular momentum is directed ``entirely'' along the $z$ axis), $Q_{zz}=Q$; this quantity is customarily called simply the quadrupole moment.
+
+When $J=0$, all matrix elements of the angular momentum vanish, and hence so do the operators (75.2). They also vanish identically for $J=1/2$. This follows at once by directly multiplying the Pauli matrices (55.7), which represent the component matrices of every angular momentum equal to $1/2$.
+
+This is not an accidental circumstance, but a special instance of a general rule: the tensor of a $2^l$-pole moment (for even $l$) is nonzero only for system states whose total angular momentum satisfies
+\begin{equation}
+ J\geqslant l/2.
+ \tag{75.4}
+\end{equation}
+The tensor of a $2^l$-pole moment is an irreducible tensor of rank $l$ (see II, \S~41), and condition (75.4) follows from the general angular-momentum selection rules for matrix elements of such tensors: it is the condition under which diagonal matrix elements may be nonzero (\S~107). As noted above, the parity selection rule additionally requires $l$ to be even.
+
+One must also take into account that electric multipole moments are purely ``orbital'' quantities: their operators contain no spin operators. If the spin--orbit interaction can be neglected, so that $L$ and $S$ are conserved separately, the matrix elements of multipole moments therefore obey selection rules in $L$ as well as in the quantum number $J$.
+
+\SourcePage{345}{348}
+\ProblemHeading 1. Find the relation between the atomic quadrupole-moment operators in states belonging to different fine-structure components of a level (that is, states with different $J$ for prescribed $L$ and $S$).
+
+\SolutionHeading In states with fixed $L$ and $S$, the quadrupole-moment operator, being a purely orbital quantity, depends only on $\widehat{\mathbf L}$. It is therefore given by the same formula (75.2), with $\widehat{\mathbf J}$ replaced by $\widehat{\mathbf L}$ (and with a different constant $Q$). A further average over a state with given $J$ yields the operator (75.2):
+\begin{equation}
+\begin{split}
+ \widehat Q_{ik}&=\frac{3Q_J}{2J(J-1)}\left[\widehat J_i\widehat J_k+\widehat J_k\widehat J_i-\frac23J(J+1)\delta_{ik}\right]\\
+ &=\frac{3Q_L}{2L(L-1)}\overline{\left[\widehat L_i\widehat L_k+\widehat L_k\widehat L_i-\frac23L(L+1)\delta_{ik}\right]}.
+\end{split}
+\tag{1}
+\end{equation}
+We must determine the relation between $Q_J$ and $Q_L$. Multiply equation (1) on the left by $\widehat J_i$ and on the right by $\widehat J_k$, summing over $i$ and $k$, and then replace the resulting diagonal operators by their eigenvalues. In doing so,
+\[
+ \widehat J_i\widehat L_i\widehat L_k\widehat J_k=(\mathbf{JL})^2,
+\]
+where, by (31.4),
+\[
+ 2\mathbf{JL}=J(J+1)+L(L+1)-S(S+1).
+\]
+The product $\widehat J_i\widehat L_k\widehat L_i\widehat J_k$, on the other hand, is transformed by means of
+\[
+ \{\widehat L_i,\widehat L_k\}=i e_{ikl}\widehat L_l,\qquad
+ \{\widehat J_i,\widehat L_l\}=i e_{ilm}\widehat L_m,
+\]
+in the same manner as in the problem following \S~29, and gives
+\[
+ \widehat J_i\widehat L_k\widehat L_i\widehat J_k=(\mathbf{JL})^2-(\mathbf{JL}).
+\]
+Likewise,
+\[
+ \widehat J_i\widehat J_i\widehat J_k\widehat J_k=(\mathbf J^2)^2,\qquad
+ \widehat J_i\widehat J_k\widehat J_i\widehat J_k=\mathbf J^2(\mathbf J^2-1).
+\]
+Equation (1) consequently gives
+\begin{equation}
+ Q_J=Q_L\frac{3(\mathbf{JL})(2\mathbf{JL}-1)-2J(J+1)L(L+1)}{(J+1)(2J+3)L(2L-1)}.
+ \tag{2}
+\end{equation}
+For $S=1/2$, in particular, this formula becomes
+\begin{equation}
+ \begin{aligned}
+ Q_J&=Q_L, &&\text{for }J=L+\frac12,\\
+ Q_J&=Q_L\frac{(L-1)(2L+3)}{L(2L+1)}, &&\text{for }J=L-\frac12.
+ \end{aligned}
+ \tag{3}
+\end{equation}
+
+\ProblemHeading 2. Express the quadrupole moment of an electron (charge $-|e|$) having orbital angular momentum $l$ in terms of the mean square of its distance from the center.
+
+\SolutionHeading We have to average
+\[
+ Q_{zz}=-|e|\,\overline{r^2}(3\cos^2\theta-1)=-|e|\,\overline{r^2}(3n_z^2-1)
+\]
+
+\SourcePage{346}{349}
+over the state with angular momentum $l$ and projection $m=l$. The mean value of the angular factor follows directly from the formula obtained in the problem after \S~29, with $\widehat l_z$ replaced there by $l$. The result is
+\begin{equation}
+ Q_l=|e|\,\overline{r^2}\frac{2l}{2l+3}.
+ \tag{1}
+\end{equation}
+As it should, this quantity has the sign opposite to the electron charge: a particle moving with its angular momentum directed along the $z$ axis is found mainly near the plane $z=0$, and therefore has $\cos^2\theta<1/3$.
+
+For an electron of prescribed $j=l\pm1/2$, formulas (3) then give
+\begin{equation}
+ Q_j=|e|\,\overline{r^2}\frac{2j-1}{2j+2}.
+ \tag{2}
+\end{equation}
+
+\ProblemHeading 3. Determine the ground-state quadrupole moment of an atom in which all $\nu$ electrons outside closed shells occupy equivalent states with orbital angular momentum $l$.
+
+\SolutionHeading Since the total quadrupole moment of the closed shells is zero, the atomic quadrupole-moment operator is the sum
+\[
+ \widehat Q_{ik}=\frac{3|e|\,\overline{r^2}}{(2l-1)(2l+3)}\sum\left[\widehat l_i\widehat l_k+\widehat l_k\widehat l_i-\frac23l(l+1)\delta_{ik}\right],
+\]
+taken over the $\nu$ outer electrons (formula (4) has been used here).
+
+Suppose first that $\nu\leqslant2l+1$, so that no more than half of the places in the shell are occupied. Hund's rule (\S~67) then makes the spins of all $\nu$ electrons parallel, and hence $S=\nu/2$. The atomic spin wave function is therefore symmetric, while the coordinate wave function must be antisymmetric in these electrons. It follows that the electrons must all have different $m$ values. Thus the largest possible $M_L$, which is also $L$, equals
+\[
+ L=(M_L)_{\max}=\sum_{m=l-\nu+1}^{l}m=\frac12\nu(2l-\nu+1).
+\]
+The required $Q_L$ is the eigenvalue of $Q_{zz}$ at $M_L=L$. Consequently,
+\[
+ Q_L=\frac{6|e|\,\overline{r^2}}{(2l-1)(2l+3)}\sum_{m=l-\nu+1}^{l}\left[m^2-\frac{l(l+1)}3\right],
+\]
+and evaluation of the sum gives
+\begin{equation}
+ Q_L=\frac{2l(2l-2\nu+1)}{(2l-1)(2l+3)}|e|\,\overline{r^2}.
+ \tag{1}
+\end{equation}
+The final conversion from $Q_L$ to $Q_J$ is made with formula (2).
+
+For an atom whose outer shell is more than half filled, the preceding case is recovered by considering holes instead of electrons. The answer is therefore given by the same formula (6), with its overall sign reversed because a hole has charge $+|e|$; here $\nu$ is now to mean the number of unoccupied places in the shell, rather than the number of electrons.

@@ -1,83 +1,75 @@
 \SourcePage{383}{386}
-\section{Vibrational and rotational structure of singlet terms in a diatomic molecule}
+\section[Singlet-term vibration and rotation]{Vibrational and rotational structure of singlet terms of a diatomic molecule}
 
-As noted at the beginning of this chapter, the large difference between nuclear and electronic masses permits the problem of molecular energy levels to be divided into two parts. First, the energy levels of the electron system with fixed nuclei are found as functions of the internuclear distance; these are the electronic terms. One then considers the motion of the nuclei for a specified electronic state. This amounts to treating the nuclei as particles interacting according to $U_n(r)$, where $U_n$ is the corresponding electronic term. Molecular motion consists of translation of the molecule as a whole and motion of the nuclei relative to their center of mass. The translational motion is of no interest here, and we may take the center of mass to be at rest.
+As noted at the beginning of this chapter, the large disparity between the nuclear and electronic masses allows the determination of molecular energy levels to be divided into two parts. First one finds, as functions of the internuclear distance, the energy levels of the electrons for fixed nuclei (the electronic terms). One may then consider nuclear motion in a specified electronic state; the nuclei are thereby treated as particles interacting through $U_n(r)$, where $U_n$ is the corresponding electronic term. Molecular motion consists of translation of the molecule as a whole and motion of the nuclei relative to their center of mass. The translational part is of no interest here, and the center of mass may be taken as fixed.
 
-For clarity, first consider electronic terms for which the total molecular spin is zero (singlet terms). The relative motion of two particles, the nuclei, interacting through $U(r)$ reduces to the motion of one particle of mass $M$, the reduced mass of the nuclei, in the central field $U(r)$. Here $U(r)$ denotes the energy of the electronic term being considered. Motion in the central field, in turn, reduces to a one-dimensional problem with an effective energy equal to $U(r)$ plus the centrifugal energy.
+For clarity, consider first electronic terms for which the total molecular spin $S$ vanishes (singlet terms). The relative motion of two particles (the nuclei) interacting through $U(r)$ reduces to the motion of one particle of mass $M$ (their reduced mass) in the central field $U(r)$. (Here $U(r)$ denotes the energy of the electronic term under consideration.) Motion in the central field, in turn, reduces to a one-dimensional problem with an effective energy equal to $U(r)$ plus the centrifugal energy.
 
-Let $\mathbf K$ be the total angular momentum of the molecule, the sum of the electronic orbital angular momentum $\mathbf L$ and the rotational angular momentum of the nuclei. The nuclear centrifugal-energy operator is
-\[
-B(r)(\mathbf K-\mathbf L)^2,
-\]
-where the notation customary in diatomic-molecule theory is
-\begin{equation}B(r)=\frac{\hbar^2}{2Mr^2}.\tag{82.1}\end{equation}
-Averaging this expression over the electronic state at fixed $r$ gives the centrifugal energy as a function of $r$, to be included in the effective potential energy $U_K(r)$. Thus
+Let $\mathbf K$ be the total angular momentum of the molecule, composed of the electronic orbital angular momentum $\mathbf L$ and the angular momentum of nuclear rotation. The operator of the nuclear centrifugal energy is then
+\[B(r)(\mathbf K-\mathbf L)^2,\]
+where the notation
+\begin{equation}B(r)=\frac{\hbar^2}{2Mr^2},\tag{82.1}\end{equation}
+customary in the theory of diatomic molecules, has been introduced. Averaging this quantity over the electronic state (at fixed $r$) gives the centrifugal energy as a function of $r$, which must enter the effective potential energy $U_K(r)$. Hence
 \begin{equation}U_K(r)=U(r)+B(r)\overline{(\mathbf K-\mathbf L)^2},\tag{82.2}\end{equation}
 where the bar denotes this averaging.
 
 \SourcePage{384}{387}
-Perform the average for a state in which the molecule has a definite squared total angular momentum $\mathbf K^2=K(K+1)$, with integral $K$, and a definite projection of the electronic angular momentum on the molecular $z$ axis, $L_z=\Lambda$. Expanding (82.2), we have
+Carry out the average for a state with a definite square of the total angular momentum, $\mathbf K^2=K(K+1)$ ($K$ is an integer), and a definite projection of the electronic angular momentum on the molecular axis (the $z$ axis), $L_z=\Lambda$. Expansion of (82.2) gives
 \begin{equation}U_K(r)=U(r)+B(r)K(K+1)-2B(r)\overline{\mathbf{LK}}+B(r)\overline{\mathbf L^2}.\tag{82.3}\end{equation}
-The last term depends only on the electronic state and contains no $K$; it may simply be included in $U(r)$. We show that the same is true of the preceding term.
+The last term depends only on the electronic state and contains no quantum number $K$; it can simply be absorbed into $U(r)$. We now show that this also applies to the penultimate term.
 
-Recall that when the projection of an angular momentum on an axis has a definite value, the mean value of the entire angular-momentum vector is directed along the same axis (see the remark at the end of \S~27). Let $\mathbf n$ be a unit vector along $z$; then $\overline{\mathbf L}=\Lambda\mathbf n$. In classical mechanics, the rotational angular momentum of two particles is $\mathbf r\times\mathbf p$, where $\mathbf r=r\mathbf n$ is their relative radius vector and $\mathbf p$ their relative momentum. It is perpendicular to $\mathbf n$. The same relation holds in quantum mechanics for the nuclear rotational-angular-momentum operator: $(\mathbf K-\mathbf L)\mathbf n=0$, or $\mathbf K\mathbf n=\mathbf L\mathbf n$. Equality of the operators entails equality of their eigenvalues; since $\mathbf n\mathbf L=L_z=\Lambda$,
+Recall that when the projection of an angular momentum on an axis has a definite value, the mean angular-momentum vector is directed along that same axis (see the remark at the end of \S~27). Let $\mathbf n$ denote the unit vector along the $z$ axis: $\overline{\mathbf L}=\Lambda\mathbf n$. In classical mechanics the rotational angular momentum of a two-particle system (the nuclei) is $\mathbf r\times\mathbf p$, where $\mathbf r=r\mathbf n$ is the radius vector between the particles and $\mathbf p$ is the momentum of their relative motion; this quantity is perpendicular to $\mathbf n$. The same statement holds in quantum mechanics for the operator of nuclear rotational angular momentum: $(\mathbf K-\mathbf L)\mathbf n=0$, or $\mathbf K\mathbf n=\mathbf L\mathbf n$. Equality of the operators entails equality of their eigenvalues, and since $\mathbf n\mathbf L=L_z=\Lambda$, it follows that
 \begin{equation}\mathbf K\mathbf n=\Lambda.\tag{82.4}\end{equation}
-Thus, in the penultimate term of (82.3), $\overline{\mathbf{LK}}=\mathbf n\mathbf K\Lambda=\Lambda^2$ and is independent of $K$. Redefining $U(r)$, the effective potential energy can finally be written
+Thus, in the penultimate term of (82.3), $\overline{\mathbf{LK}}=\mathbf n\mathbf K\Lambda=\Lambda^2$, which is independent of $K$. After redefining $U(r)$, the effective potential energy finally becomes
 \begin{equation}U_K(r)=U(r)+B(r)K(K+1).\tag{82.5}\end{equation}
-It also follows from $K_z=\Lambda$ that, for a specified $\Lambda$, the allowed values of $K$ satisfy
+We also note that $K_z=\Lambda$ implies that, for a given $\Lambda$, the quantum number $K$ can assume only the values
 \begin{equation}K\geqslant\Lambda.\tag{82.6}\end{equation}
 
-Solving the one-dimensional Schrödinger equation with potential energy (82.5) gives a sequence of energy levels. For each $K$, number them in increasing order by $v=0,1,2,\ldots$, with $v=0$ the lowest. Nuclear motion therefore splits every electronic term into levels characterized by the two quantum numbers $K$ and $v$.
+Solving the one-dimensional Schrödinger equation with the potential energy (82.5) yields a sequence of energy levels. For each fixed $K$, let these levels be numbered in ascending order by $v=0,1,2,\ldots$, with $v=0$ corresponding to the lowest one. Nuclear motion therefore splits every electronic term into a set of levels characterized by the two quantum numbers $K$ and $v$.
 
 \SourcePage{385}{388}
-The number of these levels for a specified electronic term may be finite or infinite. If the electronic state is such that the molecule becomes two isolated neutral atoms as $r\to\infty$, the potential $U(r)$, and hence $U_K(r)$, approaches the constant limiting value $U(\infty)$, the sum of the two isolated-atom energies, faster than $1/r^2$ (see \S~89). The number of levels in such a field is finite (see \S~18), although in actual molecules it is very large. For each $K$ there is then a definite number of levels distinguished by $v$. This number decreases as $K$ increases, until a value of $K$ is reached for which no levels remain.
+For a given electronic term, the number of these levels may be finite or infinite. Suppose the electronic state is such that, as $r\to\infty$, the molecule becomes two separate neutral atoms. Then $U(r)$, and with it $U_K(r)$, tends to the limiting constant $U(\infty)$ (the sum of the energies of the two isolated atoms) faster than $1/r^2$ (see \S~89). Such a field has finitely many levels (see \S~18), although their actual number in molecules is very large. Their distribution is as follows: for each fixed $K$ there is a certain number of levels distinguished by $v$, and this number decreases as $K$ increases, until a value of $K$ is reached for which no levels remain at all.
 
-If instead the molecule dissociates into two ions as $r\to\infty$, then at large distances $U(r)-U(\infty)$ becomes the Coulomb attraction energy of the ions, proportional to $1/r$. Such a field has infinitely many levels, accumulating at the limiting value $U(\infty)$. Most molecules in their normal state belong to the first case; only comparatively few yield ions when the nuclei are separated.
+\input{manuscript/chapters/ch11/fragments/sec82-ions.fresh.translation.en.tex}
 
-The dependence of the energy levels on the quantum numbers cannot be calculated completely in general. Such a calculation is possible only for fairly weakly excited levels not too far above the lowest level\footnote{Throughout, the levels are those arising from one specified electronic term.}. These have small $K$ and $v$. They are the levels usually encountered in molecular spectra and are therefore of particular interest.
+\input{manuscript/chapters/ch11/fragments/sec82-weaklevels.fresh3.translation.en.tex}
 
-Nuclear motion in weakly excited states may be described as small oscillations about equilibrium. Expand $U(r)$ in powers of $\xi=r-r_e$, where $r_e$ is the position of its minimum. Since $U'(r_e)=0$, through second order $U(r)=U_e+M\omega_e^2\xi^2/2$, where $U_e=U(r_e)$ and $\omega_e$ is the oscillation frequency. In the second term of (82.5), the centrifugal energy, it is enough to put $r=r_e$, since that term already contains the small quantity $K(K+1)$. Hence
+In weakly excited states, nuclear motion can be described as small oscillations about equilibrium. Accordingly, expand $U(r)$ in powers of $\xi=r-r_e$, where $r_e$ is the value of $r$ at which $U(r)$ is minimal. Since $U'(r_e)=0$, through second order $U(r)=U_e+M\omega_e^2\xi^2/2$, where $U_e=U(r_e)$ and $\omega_e$ is the oscillation frequency. In the second term of (82.5), the centrifugal energy, it is sufficient to put $r=r_e$, since this term already contains the small quantity $K(K+1)$. We thus have
 \begin{equation}U_K(r)=U_e+B_eK(K+1)+\frac{M\omega_e^2\xi^2}{2},\tag{82.7}\end{equation}
 
-\SourcePage{386}{389}
-where $B_e=\hbar^2/(2Mr_e^2)=\hbar^2/2I$ is the \emph{rotational constant}, and $I=Mr_e^2$ is the molecular moment of inertia.
+\input{manuscript/chapters/ch11/fragments/sec82-rotconst.fresh.translation.en.tex}
 
-The first two terms in (82.7) are constants, and the third is the potential of a one-dimensional harmonic oscillator. The required energy levels may therefore be written at once:
+\input{manuscript/chapters/ch11/fragments/sec82-oscillator.fresh.translation.en.tex}
 \begin{equation}E=U_e+B_eK(K+1)+\hbar\omega_e\left(v+\frac12\right).\tag{82.8}\end{equation}
-Thus, in this approximation the energy level is the sum of three independent parts:
+Thus, in this approximation an energy level consists of three independent parts:
 \begin{equation}E=E^{el}+E^r+E^v.\tag{82.9}\end{equation}
-The first, $E^{el}=U_e$, is the electronic energy, including the Coulomb interaction of the nuclei at $r=r_e$. The second,
+\input{manuscript/chapters/ch11/fragments/sec82-rotation-pre.fresh.translation.en.tex}
 \begin{equation}E^r=B_eK(K+1),\tag{82.10}\end{equation}
-is the \emph{rotational} energy associated with molecular rotation\footnote{The wave function describing rotation of a spinless diatomic molecule essentially coincides with that of a symmetric top (\S~103). Unlike a top, molecular rotation is described by only two angles, $\alpha\equiv\varphi$ and $\beta\equiv\theta$, which determine the direction of the molecular axis. The rotational wave function differs from (103.8) by the absence of the factor $e^{ik\gamma}/\sqrt{2\pi}$ and by the notation for the quantum numbers. Since (82.4) makes $\Lambda$ equal to the projection of the total angular momentum $\mathbf K$ on the molecular axis (the $\zeta$ axis of \S~103), the replacements are $J,M,k\to K,M,\Lambda$, where now $M=K_z$. Thus $\psi_{\mathrm{rot}}(\varphi,\theta)=i^K\sqrt{(2K+1)/(4\pi)}D_{\Lambda M}^{(K)}(\varphi,\theta,0)$.}. Finally,
-\begin{equation}E^v=\hbar\omega_e\left(v+\frac12\right)\tag{82.11}\end{equation}
-is the energy of nuclear vibration within the molecule. By definition, $v$ numbers the levels of fixed $K$ in increasing order and is called the \emph{vibrational quantum number}.
+\input{manuscript/chapters/ch11/fragments/sec82-rotation-post.fresh4.translation.en.tex}%
+\unskip,
+\begin{equation}E^v=\hbar\omega_e\left(v+\frac12\right),\tag{82.11}\end{equation}
+is the energy of nuclear vibration within the molecule. In accordance with its definition, $v$ numbers in ascending order the levels having a given $K$; it is called the \emph{vibrational} quantum number.
 
-For a given shape of $U(r)$, the frequency $\omega_e$ is inversely proportional to $\sqrt M$. Thus the spacings $\Delta E^v$ between vibrational levels are proportional to $1/\sqrt M$. The spacings $\Delta E^r$ between rotational levels contain the moment of inertia $I$ in the denominator and are proportional to $1/M$. The spacings $\Delta E^{el}$ between electronic levels,
+For a fixed shape of the potential-energy curve $U(r)$, the frequency $\omega_e$ is inversely proportional to $\sqrt M$. The spacings $\Delta E^v$ between vibrational levels are consequently proportional to $1/\sqrt M$. The spacings $\Delta E^r$ between rotational levels contain the moment of inertia $I$ in the denominator and are therefore proportional to $1/M$. By contrast, the spacings $\Delta E^{el}$ between electronic levels,
 
 \SourcePage{387}{390}
-like the levels themselves, contain no $M$. Since $m/M$, where $m$ is the electron mass, is the small parameter of diatomic-molecule theory,
+like the levels themselves, contain no $M$. Since $m/M$ ($m$ being the electron mass) is the small parameter in the theory of diatomic molecules, we find
 \begin{equation}\Delta E^{el}\gg\Delta E^v\gg\Delta E^r.\tag{82.12}\end{equation}
-These inequalities reflect the distinctive distribution of molecular energy levels. Nuclear vibration splits an electronic term into comparatively closely spaced levels, and molecular rotation in turn produces a still finer splitting of each of these\footnote{For illustration, the values of $U_e$, $\hbar\omega_e$, and $B_e$, in electron volts, for several molecules are
-\[
-\begin{array}{c|ccc}&\mathrm H_2&\mathrm N_2&\mathrm O_2\\\hline
--U_e&4{,}7&7{,}5&5{,}2\\
-\hbar\omega_e&0{,}54&0{,}29&0{,}20\\
-10^3B_e&7{,}6&0{,}25&0{,}18
-\end{array}
-\] }.
+These inequalities express the distinctive distribution of molecular energy levels. Nuclear vibration resolves the electronic terms into levels lying comparatively close together. Molecular rotation, in turn, produces a still finer splitting of these levels\footnote{As an example, values of $U_e$, $\hbar\omega_e$, and $B_e$ (in electron-volts) for several molecules are
+\[\begin{array}{c|ccc}&\mathrm H_2&\mathrm N_2&\mathrm O_2\\\hline-U_e&4{,}7&7{,}5&5{,}2\\\hbar\omega_e&0{,}54&0{,}29&0{,}20\\10^3B_e&7{,}6&0{,}25&0{,}18\end{array}\] }.
 
-In subsequent approximations the energy can no longer be separated into independent vibrational and rotational parts. Rotation--vibration terms involving both $K$ and $v$ appear. Successive approximations would give $E$ as a series in powers of the quantum numbers $K$ and $v$.
+In subsequent approximations the energy can no longer be separated into independent vibrational and rotational parts; rotation--vibration terms appear that contain both $K$ and $v$. Successive approximations would give the levels $E$ as a power-series expansion in the quantum numbers $K$ and $v$.
 
-We calculate the approximation following (82.8). Expand $U(r)$ through fourth order in $\xi$ (cf. the anharmonic-oscillator problem in \S~38), and expand the centrifugal energy through terms in $\xi^2$. This gives
+We calculate here the approximation immediately following (82.8). For this purpose the expansion of $U(r)$ in powers of $\xi$ must be continued through fourth-order terms (compare the anharmonic-oscillator problem in \S~38). Correspondingly, expand the centrifugal energy through terms in $\xi^2$. This gives
 \begin{equation}\begin{split}U_K(r)={}&U_e+\frac{M\omega_e^2}{2}\xi^2+\frac{\hbar^2}{2Mr_e^2}K(K+1)-a\xi^3+b\xi^4\\&-\frac{\hbar^2}{Mr_e^3}K(K+1)\xi+\frac{3\hbar^2}{2Mr_e^4}K(K+1)\xi^2.\end{split}\tag{82.13}\end{equation}
-Now calculate the correction to the eigenvalues (82.8), treating the last four terms of (82.13) as the perturbation. First-order perturbation theory suffices for the terms in $\xi^2$ and $\xi^4$, whereas the terms in $\xi$ and $\xi^3$ require second order, since their diagonal matrix elements vanish identically. All the matrix elements needed were calculated
+Now calculate the correction to the eigenvalues (82.8), treating the last four terms in (82.13) as the perturbation operator. First-order perturbation theory suffices for the terms in $\xi^2$ and $\xi^4$, whereas second order must be calculated for those in $\xi$ and $\xi^3$, since the diagonal matrix elements of $\xi$ and $\xi^3$ vanish identically. All matrix elements needed for the calculation were found in \S~23 and in problem 3 of \S~38. The result is
 
 \SourcePage{388}{391}
-in \S~23 and problem 3 of \S~38. The result is conventionally written
+conventionally written as
 \begin{equation}\begin{split}E={}&E^{el}+\hbar\omega_e\left(v+\frac12\right)-x_e\hbar\omega_e\left(v+\frac12\right)^2\\&+B_vK(K+1)-D_eK^2(K+1)^2,\end{split}\tag{82.14}\end{equation}
 where
 \begin{equation}B_v=B_e-\alpha_e\left(v+\frac12\right)\equiv B_0-\alpha_ev.\tag{82.15}\end{equation}
-The constants $x_e$, $B_e$, $\alpha_e$, and $D_e$ are related to those entering (82.14) by
+The constants $x_e$, $B_e$, $\alpha_e$, and $D_e$ are related to the constants entering (82.14) by
 \begin{equation}\begin{gathered}B_e=\frac{\hbar^2}{2I},\qquad D_e=\frac{4B_e^3}{\hbar^2\omega_e^2},\\
 \alpha_e=\frac{6B_e^2}{\hbar\omega_e}\left(\frac{a\hbar}{M\omega_e^2}\sqrt{\frac2{MB_e}}-1\right),\\
 x_e=\frac3{2\hbar\omega_e}\left(\frac{\hbar}{M\omega_e}\right)^2\left(\frac52\frac{a^2}{M\omega_e^2}-b\right).
@@ -86,26 +78,22 @@ Terms independent of $v$ and $K$ have been included in $E^{el}$.
 
 \ProblemHeading Estimate the accuracy of the approximation that separates electronic and nuclear motion in a diatomic molecule.
 
-\SolutionHeading Write the complete molecular Hamiltonian as $\widehat H=\widehat T_r+\widehat H_{el}$, where $\widehat T_r=\widehat{\mathbf p}^{2}/2M$ is the kinetic-energy operator for the relative nuclear motion, $\widehat{\mathbf p}=-i\hbar\partial/\partial\mathbf r$, $\mathbf r$ is the internuclear vector, and $M$ the reduced mass. The Hamiltonian $\widehat H_{el}$ includes the electronic kinetic-energy operators, the potential energy of their Coulomb interactions with one another and with the nuclei, and the Coulomb interaction energy of the nuclei\footnote{The Hamiltonian $\widehat H$ refers to the frame in which the center of mass of the entire molecule is at rest: $\mathbf P_n+\mathbf P_e=0$, where $\mathbf P_n$ is the total momentum of the two nuclei and $\mathbf P_e$ the total electronic momentum. The term representing the kinetic energy of the nuclear center of mass, $\widehat{\mathbf P}_n^{2}/2(M_1+M_2)=\mathbf P_e^2/2(M_1+M_2)$, has already been omitted. It is certainly smaller than the electronic kinetic energy by the ratio $m/M$.}. We seek a solution of
+\SolutionHeading Write the complete molecular Hamiltonian as $\widehat H=\widehat T_r+\widehat H_{el}$, where $\widehat T_r=\widehat{\mathbf p}^{2}/2M$ is the kinetic-energy operator for the relative motion of the nuclei ($\widehat{\mathbf p}=-i\hbar\partial/\partial\mathbf r$; $\mathbf r$ is the vector separating the nuclei, and $M$ their reduced mass). The Hamiltonian $\widehat H_{el}$ includes the electron kinetic-energy operators, the potential energy of their Coulomb interactions with one another and with the nuclei, and the Coulomb interaction energy of the nuclei\footnote{The Hamiltonian $\widehat H$ refers to a frame in which the center of mass of the whole molecule is at rest ($\mathbf P_n+\mathbf P_e=0$, where $\mathbf P_n$ is the total momentum of the two nuclei and $\mathbf P_e$ the total electronic momentum). The term corresponding to the kinetic energy of the nuclear center of mass has nevertheless already been omitted: $\widehat{\mathbf P}_n^{2}/2(M_1+M_2)=\mathbf p_e^2/2(M_1+M_2)$. This term is certainly smaller than the electronic kinetic energy by the ratio $m/M$.}. Seek a solution of the Schrödinger equation
 \begin{equation}\widehat H\psi=(\widehat T_r+\widehat H_{el})\psi=E\psi\tag{1}\end{equation}
 in the form
 \begin{equation}\psi=\sum_m\chi_m(\mathbf r)\varphi_m(q,\mathbf r),\tag{2}\end{equation}
 
 \SourcePage{389}{392}
-where $\varphi_m(q,\mathbf r)$ are orthonormal solutions of
-\begin{equation}\widehat H_{el}\varphi_m(q,\mathbf r)=U_m(r)\varphi_m(q,\mathbf r),\tag{3}\end{equation}
-and $q$ denotes all electronic coordinates. The $U_m(r)$ are eigenvalues of $\widehat H_{el}$ with $r$ as a parameter. Substituting (2) in (1), multiplying on the left by $\varphi_n^*(q,\mathbf r)$, and integrating over $dq$, we obtain
+where the functions $\varphi_m(q,\mathbf r)$ are orthonormal solutions of
+\begin{equation}\widehat H_{el}\varphi_m(q,\mathbf r)=U_m(r)\varphi_m(q,\mathbf r)\tag{3}\end{equation}
+($q$ denotes the full set of electronic coordinates), and $U_m(r)$ are the eigenvalues of $\widehat H_{el}$ with $r$ treated as a parameter. Substitute (2) into (1), multiply on the left by $\varphi_n^*(q,\mathbf r)$, and integrate over $dq$. The result is
 \begin{equation}\left[\frac{\widehat{\mathbf p}^{2}}{2M}+V_{nn}''+U_n(r)-E\right]\chi_n(\mathbf r)=-\sum_m'(\widehat V_{nm}'+V_{nm}'')\chi_m(\mathbf r),\tag{4}\end{equation}
 where
-\[
-\widehat V_{nm}'=\frac1M\mathbf p_{nm}\widehat{\mathbf p},\qquad V_{nm}''=\frac1{2M}(\mathbf p^2)_{nm},
-\]
-and $\mathbf p_{nm}=\int\varphi_n^*\widehat{\mathbf p}\varphi_m\,dq$ and $(\mathbf p^2)_{nm}$ are matrix elements with respect to the electronic wave functions. The diagonal element $\mathbf p_{nn}$ vanishes by symmetry.
+\[\widehat V_{nm}'=\frac1M\mathbf p_{nm}\widehat{\mathbf p},\qquad V_{nm}''=\frac1{2M}(\mathbf p^2)_{nm},\]
+and $\mathbf p_{nm}=\int\varphi_n^*\widehat{\mathbf p}\varphi_m,dq$, while $(\mathbf p^2)_{nm}$ is likewise a matrix element with respect to the electronic wave functions; the diagonal element $\mathbf p_{nn}$ vanishes by symmetry.
 
-The electronic functions $\varphi_n$ vary appreciably only over atomic distances; differentiating them with respect to $\mathbf r$ therefore introduces no large parameter $M/m$, where $m$ is the electron mass. Thus $V_{nn}''$ is smaller than $U_n(r)$ by $m/M$ and may be omitted. If the terms on the right of (4) are regarded as a small perturbation, the zeroth-order functions $\chi_n(\mathbf R)$ are solutions of
+The electronic functions $\varphi_n$ vary appreciably only over distances of atomic order. Differentiating them with respect to $\mathbf r$ therefore introduces no large parameter $M/m$ ($m$ is the electron mass). Consequently, $V_{nn}''$ is smaller than $U_n(r)$ by the ratio $m/M$ and may be omitted. If the terms on the right-hand side of (4) are regarded as a small perturbation, then to zeroth order the functions $\chi_n(\mathbf R)$ are solutions of
 \begin{equation}\left[\frac{\widehat{\mathbf p}^{2}}{2M}+U_n(r)\right]\chi_{nv}=E_{nv}\chi_{nv},\tag{5}\end{equation}
-describing nuclear motion in the field $U_n(r)$; $v$ denotes the quantum numbers of this motion. Perturbation theory is applicable if
-\[
-|\langle nv'|\widehat V_{nm}'+V_{nm}''|mv\rangle|\ll|E_{nv'}-E_{mv}|.
-\]
-The right side contains energy differences belonging to different electronic terms and is of zeroth order in the small parameter $m/M$. The left side consists of matrix elements between nuclear wave functions. The term containing $\widehat V_{nm}''$ includes $m/M$ and is certainly small. In the matrix element of $\widehat V_{nm}'$, the operator $\widehat{\mathbf p}$ acting on $\chi_{mv}$ multiplies it by a quantity of the order of the nuclear momentum. For small nuclear oscillations this momentum is $\sim\sqrt{M\hbar\omega_e}$. Since at the same time $\omega_e\propto1/\sqrt M$, the matrix element $\langle nv'|\widehat V_{nm}'|mv\rangle$ is of order $(m/M)^{3/4}$.
+which describes nuclear motion in the field $U_n(r)$ ($v$ denotes the quantum numbers of this motion). Perturbation theory is applicable provided
+\[|\langle nv'|\widehat V_{nm}'+V_{nm}''|mv\rangle|\ll|E_{nv'}-E_{mv}|.\]
+On the right are energy differences belonging to different electronic terms; they are of zeroth order in the small parameter $m/M$. On the left are matrix elements over the nuclear wave functions. The term involving $\widehat V_{nm}''$ contains $m/M$ and is certainly small. In the matrix element of $\widehat V_{nm}'$, the operator $\widehat{\mathbf p}$ acting on $\chi_{mv}$ multiplies it by a quantity of the order of the nuclear momentum. For small nuclear oscillations this momentum is $\sim\sqrt{M\hbar\omega_e}$; since at the same time $\omega_e$ is inversely proportional to $\sqrt M$, the matrix element $\langle nv'|\widehat V_{nm}'|mv\rangle$ is of order $(m/M)^{3/4}$.

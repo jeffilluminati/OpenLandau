@@ -1,0 +1,91 @@
+\SourcePage{686}{689}
+\section{Collisions of identical particles}
+
+The collision of two identical particles requires separate consideration. In quantum mechanics, particle identity produces a peculiar exchange interaction between them, which has a substantial effect on scattering (N.~Mott, 1930)\footnote{The direct spin--orbit interaction is still not considered here.}.
+
+\input{manuscript/chapters/ch17/fragments/sec137-line006-amplitude-symmetry-fresh-b-20260718.translation.en.tex}
+\begin{equation}
+ \psi=e^{ikz}\pm e^{-ikz}+\frac1r e^{ikr}[f(\theta)\pm(\pi-\theta)].
+ \tag{137.1}
+\end{equation}
+Because the particles are identical, one cannot say which is scattered and which is the scatterer. In the centre-of-mass frame there are two identical incident waves propagating towards each other, $e^{ikz}$ and $e^{-ikz}$. The outgoing spherical wave in (137.1) accounts for the scattering of both particles, and the flux calculated from it gives the probability that either particle is scattered into a given solid-angle element $d o$. The scattering cross-section is the ratio of this flux to the flux density in each incident
+
+\SourcePage{687}{690}
+plane wave; as before, it is therefore the squared modulus of the coefficient of $e^{ikr}/r$ in (137.1).
+
+If the total spin of the colliding particles is even, the cross-section is
+\begin{equation}
+ d\sigma_s=|f(\theta)+f(\pi-\theta)|^2d o,
+ \tag{137.2}
+\end{equation}
+while for odd total spin it is
+\begin{equation}
+ d\sigma_a=|f(\theta)-f(\pi-\theta)|^2d o.
+ \tag{137.3}
+\end{equation}
+The appearance of the interference term $f(\theta)f^*(\pi-\theta)+f^*(\theta)f(\pi-\theta)$ is characteristic of the exchange interaction. If the particles were distinguishable, as in ordinary classical mechanics, the probability for either of them to be scattered into $d o$ would simply be the sum of the probabilities for one to be deflected through $\theta$ and the oppositely moving one through $\pi-\theta$. The cross-section would then be
+\[
+ \{|f(\theta)|^2+|f(\pi-\theta)|^2\}d o.
+\]
+
+In the low-velocity limit, the scattering amplitude, provided the interaction decreases sufficiently rapidly with distance, tends to an angle-independent constant (\S~132). Equation (137.3) then shows that $d\sigma_a$ vanishes: only particles with even total spin scatter from one another.
+
+\input{manuscript/chapters/ch17/fragments/sec137-line033-cross-section-fresh-b-20260718.translation.en.tex}
+
+It was shown in \S~62 that among the $(2s+1)^2$ spin states of two particles of spin $s$, $s(2s+1)$ states have even total spin and $(s+1)(2s+1)$ have odd total spin if $s$ is half-integral, with the assignments reversed if $s$ is integral. First let $s$ be half-integral. The probabilities of even and odd $S$ are then $s/(2s+1)$ and $(s+1)/(2s+1)$, respectively. Hence
+\begin{equation}
+ d\sigma=\frac{s}{2s+1}d\sigma_s+\frac{s+1}{2s+1}d\sigma_a.
+ \tag{137.4}
+\end{equation}
+
+\SourcePage{688}{691}
+Substitution of (137.2) and (137.3) gives
+\begin{equation}
+ d\sigma\left\{|f(\theta)|^2+|f(\pi-\theta)|^2
+ -\frac1{2s+1}[f(\theta)f(\pi-\theta)^*+f(\theta)^*f(\pi-\theta)]\right\}d o.
+ \tag{137.5}
+\end{equation}
+For integral $s$, similarly,
+\begin{equation}
+ d\sigma=\left\{|f(\theta)|^2+|f(\pi-\theta)|^2
+ +\frac1{2s+1}[f(\theta)f(\pi-\theta)^*+f(\theta)^*f(\pi-\theta)]\right\}d o.
+ \tag{137.6}
+\end{equation}
+
+As an example, consider two electrons interacting through the Coulomb law $U=e^2/r$. Substitution of (135.9) in (137.5) with $s=1/2$ gives, after a simple calculation in ordinary units,
+\begin{align}
+ d\sigma={}&\left(\frac{e^2}{m_0v^2}\right)^2
+ \left[\frac1{\sin^4(\theta/2)}+\frac1{\cos^4(\theta/2)}\right.\notag\\
+ &\left.-\frac1{\sin^2(\theta/2)\cos^2(\theta/2)}
+ \cos\left(\frac{e^2}{\hbar v}\ln\tan^2\frac\theta2\right)\right]d o
+ \tag{137.7}
+\end{align}
+(we have introduced the electron mass $m_0$ in place of the reduced mass $m=m_0/2$). This formula simplifies appreciably when the speed is so high that $e^2\ll v\hbar$, precisely the condition for perturbation theory to apply to the Coulomb field. The cosine in the third term can then be replaced by unity, giving
+\begin{equation}
+ d\sigma=\left(\frac{2e^2}{m_0v^2}\right)^2\frac{4-3\sin^2\theta}{\sin^4\theta}\,d o.
+ \tag{137.8}
+\end{equation}
+The opposite limit, $e^2\gg v\hbar$, corresponds to the classical limit (see the end of \S~127). In (137.7) this limit is reached in a distinctive manner. For $e^2\gg v\hbar$, the cosine in the third term oscillates rapidly. At any prescribed $\theta$, (137.7) generally gives a cross-section appreciably different from Rutherford's. Averaging over even a small interval of $\theta$, however, removes the oscillatory term and gives the classical formula.
+
+All these formulas refer to the centre-of-mass frame. Passage to a frame in which one particle was at rest before the collision is accomplished,
+
+\SourcePage{689}{692}
+according to (123.2), simply by replacing $\theta$ by $2\vartheta$. Thus (137.7) gives for electron collisions
+\begin{align}
+ d\sigma={}&\left(\frac{2e^2}{m_0v^2}\right)^2
+ \left[\frac1{\sin^4\vartheta}+\frac1{\cos^4\vartheta}
+ -\frac1{\sin^2\vartheta\cos^2\vartheta}\right.\notag\\
+ &\left.\times\cos\left(\frac{e^2}{\hbar v}\ln\tan^2\vartheta\right)\right]
+ \cos\vartheta\,d o,
+ \tag{137.9}
+\end{align}
+where $d o$ is the solid-angle element in the new frame. When $\theta$ is replaced by $2\vartheta$, $d o$ must be replaced by $4\cos\vartheta\,d o$, since $\sin\theta\,d\theta\,d\varphi=4\cos\vartheta\sin\vartheta\,d\vartheta\,d\varphi$.
+
+\subsection*{Problem}
+
+Determine the scattering cross-section of two identical spin-$1/2$ particles having prescribed mean spins $\bar{\mathbf s}_1$ and $\bar{\mathbf s}_2$.
+
+\SolutionHeading The dependence of the cross-section on the particle polarizations must occur through a term proportional to the scalar $\bar{\mathbf s}_1\bar{\mathbf s}_2$. Seek $d\sigma$ in the form $a+b\bar{\mathbf s}_1\bar{\mathbf s}_2$. For unpolarized particles, $\bar{\mathbf s}_1=\bar{\mathbf s}_2=0$, the second term is absent and (137.4) gives $d\sigma=a=(d\sigma_s+3d\sigma_a)/4$. If both particles are fully polarized in the same direction, $\bar{\mathbf s}_1\bar{\mathbf s}_2=1/4$, the system is certainly in a state with $S=1$; hence $d\sigma=a+b/4=d\sigma_a$. Solving these two equations for $a$ and $b$, we find
+\[
+ d\sigma=\frac14(d\sigma_s+3d\sigma_a)+(d\sigma_a-d\sigma_s)\bar{\mathbf s}_1\bar{\mathbf s}_2.
+\]

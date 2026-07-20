@@ -1,0 +1,120 @@
+\SourcePage{456}{459}
+\section{Irreducible representations of point groups}
+
+We now turn to determining explicitly the irreducible representations of point groups. The overwhelming majority of molecules possess only symmetry axes of orders two, three, four, and six. We shall therefore omit the icosahedral groups $Y$, $Y_h$; we shall consider the groups $C_n$, $C_{nh}$, $C_{nv}$, $D_n$, $D_{nh}$ only for $n=1,2,3,4,6$, and the groups $S_{2n}$, $D_{nd}$ only for $n=1,2,3$.
+
+\input{manuscript/chapters/ch12/fragments/sec95-table-intro-direct.translation.en.tex}
+\[
+\varepsilon=e^{2\pi i/3},\qquad \omega=e^{2\pi i/6}=-\omega^4,
+\qquad \varepsilon+\varepsilon^2=-1,\qquad \omega^2-\omega=-1.
+\]
+
+\begin{table}[p]
+\centering\small
+\caption{Characters of irreducible representations of point groups}
+\begin{tabular}{c|cc|c|cc|c|ccc}
+$C_i$&$E$&$I$&$C_2$&$E$&$C_2$&$C_s$&$E$&$\sigma$\\\hline
+$A_g$&1&1&$A;z$&1&1&$A';x,y$&1&1\\
+$A_u;x,y,z$&1&-1&$B;x,y$&1&-1&$A'';z$&1&-1
+\end{tabular}
+
+\medskip
+{\setlength{\tabcolsep}{5.8pt}%
+\begin{tabular}{c|rrrr|c|rrrr|c|rrrr}
+$C_{2h}$&$E$&$C_2$&$\sigma_h$&$I$&$C_{2v}$&$E$&$C_2$&$\sigma_v$&$\sigma'_v$&$D_2$&$E$&$C_2$&$C'_2$&$C''_2$\\\hline
+$A_g$&1&1&1&1&$A_1;z$&1&1&1&1&$A$&1&1&1&1\\
+$B_g$&1&-1&-1&1&$B_2;y$&1&-1&-1&1&$B_3;x$&1&-1&-1&1\\
+$A_u;z$&1&1&-1&-1&$A_2$&1&1&-1&-1&$B_1;z$&1&1&-1&-1\\
+$B_u;x,y$&1&-1&1&-1&$B_1;x$&1&-1&1&-1&$B_2;y$&1&-1&1&-1
+\end{tabular}
+}
+
+\medskip
+\begin{tabular}{c|rrr|c|rrr}
+$C_{3v}$&$E$&$2C_3$&$3\sigma_v$&$D_3$&$E$&$2C_3$&$3U_2$\\\hline
+$A_1;z$&1&1&1&$A_1$&1&1&1\\
+$A_2$&1&1&-1&$A_2;z$&1&1&-1\\
+$E;x,y$&2&-1&0&$E;x,y$&2&-1&0
+\end{tabular}
+\end{table}
+
+\SourcePage{457}{460}
+\begin{table}[p]\centering\small
+\caption*{Table 7 (continued)}
+\begin{tabular}{c|rrrrrr}
+$C_6$&$E$&$C_6$&$C_3$&$C_2$&$C_6^5$&$C_6^4$\\\hline
+$A;z$&1&1&1&1&1&1\\ $B$&1&-1&1&-1&1&-1\\
+$E_1$&1&$\omega$&$\omega^2$&-1&$-\omega$&$-\omega^2$\\
+&1&$-\omega$&$\omega^2$&-1&$\omega$&$-\omega^2$\\
+$E_2;x\pm iy$&1&$\omega^2$&$-\omega$&1&$\omega^2$&$-\omega$\\
+&1&$-\omega^2$&$-\omega$&1&$-\omega^2$&$\omega$
+\end{tabular}
+
+\medskip
+\begin{tabular}{c|rrrrr}
+$C_{4v},D_4,D_{2d}$&$E$&$C_2$&$2C_4$&$2U_2$&$2U'_2$\\\hline
+$A_1$&1&1&1&1&1\\ $A_2$&1&1&1&-1&-1\\
+$B_1$&1&1&-1&1&-1\\ $B_2$&1&1&-1&-1&1\\ $E;x,y$&2&-2&0&0&0
+\end{tabular}
+\end{table}
+
+\SourcePage{458}{461}
+\begin{table}[p]\centering\small
+\caption*{Table 7 (continued)}
+\begin{tabular}{c|rrrrrr}
+$D_6,C_{6v},D_{3h}$&$E$&$C_2$&$2C_3$&$2C_6$&$3U_2$&$3U'_2$\\\hline
+$A_1$&1&1&1&1&1&1\\ $A_2$&1&1&1&1&-1&-1\\
+$B_1$&1&-1&1&-1&1&-1\\ $B_2$&1&-1&1&-1&-1&1\\
+$E_2$&2&2&-1&-1&0&0\\ $E_1;x,y$&2&-2&-1&1&0&0
+\end{tabular}
+
+\medskip
+\begin{tabular}{c|rrrr|c|rrrrr}
+$T$&$E$&$3C_2$&$4C_3$&$4C_3^2$&$O,T_d$&$E$&$8C_3$&$3C_2$&$6\sigma_d$&$6S_4$\\\hline
+$A$&1&1&1&1&$A_1$&1&1&1&1&1\\
+$E$&1&1&$\varepsilon$&$\varepsilon^2$&$A_2$&1&1&1&-1&-1\\
+&1&1&$\varepsilon^2$&$\varepsilon$&$E$&2&-1&2&0&0\\
+$F;x,y,z$&3&-1&0&0&$F_2;x,y,z$&3&0&-1&1&-1\\
+&&&&&$F_1$&3&0&-1&-1&1
+\end{tabular}
+\end{table}
+
+\input{manuscript/chapters/ch12/fragments/sec95-root-unity-b.translation.en.tex}
+\[
+\widehat G\psi=e^{2\pi ik/g}\psi,\qquad k=1,2,\ldots,g.
+\]
+The group $C_{2h}$ (and the groups $C_{2v}$ and $D_2$ isomorphic to it) is Abelian, so all its irreducible representations are likewise one-dimensional; their characters can only be $\pm1$ (since the square of every element is $E$).
+
+Next consider the group $C_{3v}$. Relative to the group $C_3$, it has in addition the reflections $\sigma_v$ in vertical planes (all belonging to one class). A function invariant under rotation about the axis (a basis function of the representation $A$ of $C_3$) may be either symmetric or antisymmetric under the reflections $\sigma_v$. Functions that acquire the factors $\varepsilon$ and $\varepsilon^2$ under the rotation $C_3$ (basis functions of the complex-conjugate representations $E$), however, are transformed into one another by reflection\footnote{These functions may be chosen, for example, as $\psi_1=e^{i\varphi}$, $\psi_2=e^{-i\varphi}$. Under reflection in a vertical plane, $\varphi$ changes sign.}. It follows that the group $C_{3v}$ (and the group $D_3$ isomorphic to it) has two one-dimensional irreducible representations and one two-dimensional irreducible representation, with the characters listed in the
+
+\SourcePage{459}{462}
+table. That these are indeed all the irreducible representations follows from $1^2+1^2+2^2=6$, which is the order of the group.
+
+\input{manuscript/chapters/ch12/fragments/sec95-line91-analogous-7f3c.translation.en.tex}
+
+The group $T$ is obtained from the group $D_2\equiv V$ by adjoining rotations about four inclined axes of order three. A function invariant under the transformations of $V$ (a basis function of the representation $A$) may acquire a factor $1$, $\varepsilon$, or $\varepsilon^2$ under a rotation $C_3$. The basis functions of the three one-dimensional representations $B_1$, $B_2$, $B_3$ of $V$, on the other hand, are transformed into one another by rotations about the axes of order three (as is seen, for example, by taking the coordinates $x,y,z$ themselves for these functions). We thus obtain three one-dimensional irreducible representations and one three-dimensional irreducible representation ($1^2+1^2+1^2+3^2=12$).
+
+Finally, consider the isomorphic groups $O$ and $T_d$. The group $T_d$ is obtained from $T$ by adjoining reflections $\sigma_d$ in planes, each of which contains two axes of order three. A basis function of the identity representation $A$ of $T$ may be either symmetric or antisymmetric under these reflections (all of which belong to one class), giving two one-dimensional representations of $T_d$. Functions that acquire the factor $\varepsilon$ or $\varepsilon^2$ under rotation about an axis of order three (a basis of the complex-conjugate representations $E$ of $T$) are interchanged by reflection in a plane containing this axis, thereby giving one two-dimensional representation.
+
+Lastly, of the three basis functions of the representation $F$ of $T$, one is transformed into itself by reflection (and may either remain unchanged or change sign), while the other two are interchanged. Altogether, therefore, there are two one-dimensional, one two-dimensional, and two three-dimensional representations\footnote{We mention that the icosahedral groups have irreducible representations of higher dimensions (four and five).}.
+
+The representations of the remaining point groups of interest may be obtained directly from those already written down by observing that these groups are direct products of groups already considered with the group $C_i$ (or $C_s$). Specifically,
+\[
+\begin{gathered}
+C_{3h}=C_3\times C_s,\quad D_{2h}=D_2\times C_i,\quad D_{3d}=D_3\times C_i,\quad O_h=O\times C_i,\\
+C_{4h}=C_4\times C_i,\quad D_{4h}=D_4\times C_i,\quad D_{6h}=D_6\times C_i,\\
+C_{6h}=C_6\times C_i,\quad S_6=C_3\times C_i,\quad T_h=T\times C_i.
+\end{gathered}
+\]
+
+\SourcePage{460}{463}
+\input{manuscript/chapters/ch12/fragments/sec95-direct-product-sentence-b.translation.en.tex}
+
+The characters of these representations are obtained from those of the original group's representations by multiplication by $\pm1$ (in accordance with rule (94.24)). Thus, for the group $D_{3d}$ we obtain the representations
+\[
+\begin{array}{c|rrrrrr}
+D_{3d}&E&2C_3&3U_2&I&2S_6&3\sigma_d\\\hline
+A_{1g}&1&1&1&1&1&1\\ A_{2g}&1&1&-1&1&1&-1\\ E_g&2&-1&0&2&-1&0\\
+A_{1u}&1&1&1&-1&-1&-1\\ A_{2u}&1&1&-1&-1&-1&1\\ E_u&2&-1&0&-2&1&0
+\end{array}
+\]

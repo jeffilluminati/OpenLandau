@@ -1,0 +1,27 @@
+\SourcePage{720}{723}
+\section{Inelastic scattering of slow particles}
+
+The derivation in \S~132 of the low-energy limiting law for elastic scattering extends readily to situations in which inelastic processes are also present.
+
+As before, scattering with $l=0$ gives the principal contribution at low energies. Recall from the results of \S~132 that the corresponding element of the $S$-matrix was
+\[
+ S_0=e^{2i\delta_0}\approx1+2i\delta_0=1-2ik\alpha.
+\]
+The properties of the wave function used in \S~132 change in only one respect. Its boundary condition at infinity, the asymptotic form (142.1), is now complex rather than the real standing wave appropriate to purely elastic scattering. Consequently the constant $\alpha=-c_2/c_1$ is complex as well. The modulus $|S_0|$ is no longer unity; the condition $|S_0|<1$ requires the imaginary part in $\alpha=\alpha'+i\alpha''$ to be negative, $\alpha''<0$.
+
+Substitution of $S_0$ into (142.7) gives the elastic and inelastic scattering cross sections
+\begin{align}
+ \sigma_e&=4\pi|\alpha|^2, \tag{143.1}\\
+ \sigma_r&=(4\pi/k)|\alpha''|. \tag{143.2}
+\end{align}
+Thus the elastic-scattering cross section remains independent of velocity. The cross section for inelastic processes, by contrast, is inversely proportional to the particle velocity---the%
+\SourcePage{721}{724}%
+so-called $1/v$ \emph{law} (H.~A.~Bethe, 1935). Hence, as the velocity decreases, inelastic processes become increasingly important relative to elastic scattering\footnote{The velocity dependence of partial reaction cross sections for nonzero orbital angular momenta $l$ can be found in the same way. They are proportional to $\sigma_r^{(l)}\sim k^{2l-1}$. The elastic-scattering cross sections $\sigma_e^{(l)}$ remain proportional to $k^{4l}$ and thus, for the same $l$, decrease as $k\to0$ more rapidly than $\sigma_r^{(l)}$.}.
+
+The limiting laws (143.1) and (143.2) are, of course, only the leading terms in expansions of the cross sections in powers of $k$. Remarkably, the next term in each expansion introduces no new constants beyond the quantities already present in (143.1) and (143.2) (F.~L.~Shapiro, 1958). This follows from the evenness of the function $g_0(k^2)$ in the expression (142.13), $f_0(k)=1/[g_0(k^2)-ik]$, for the partial scattering amplitude with $l=0$. At small $k$, this function therefore has an expansion in even powers of $k$, so the term following $g_0\approx-1/\alpha$ is of order $k^2$. Even when that term is neglected, two terms may still be retained in the expansion of $f_0(k)$: $f_0(k)\approx-\alpha(1-ik\alpha)$. Correspondingly, the next terms can also be kept in the cross sections, giving
+\begin{align}
+ \sigma_e&=4\pi|\alpha|^2(1-2k|\alpha''|), \tag{143.3}\\
+ \sigma_r&=(4\pi|\alpha''|/k)(1-2k|\alpha''|). \tag{143.4}
+\end{align}
+
+These results assume that the interaction falls off sufficiently rapidly at large distances. We saw in \S~132 that the elastic-scattering amplitude approaches a constant limit as $k\to0$ when the field $U(r)$ decreases faster than $r^{-3}$. The same condition is required for the corresponding law (143.1) to hold when inelastic channels are present\footnote{Formula (143.3), which includes the next term in the expansion in powers of $k$, requires $U$ to decrease faster than $r^{-4}$.}.

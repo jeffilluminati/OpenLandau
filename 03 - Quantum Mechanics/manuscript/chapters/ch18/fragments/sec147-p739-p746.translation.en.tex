@@ -94,20 +94,12 @@ Thus, the existence of a reaction threshold produces a characteristic feature in
 \begin{figure}[tbp]
 \centering
 \begin{tikzpicture}[x=0.72cm,y=0.50cm,line cap=round,line join=round]
-\foreach \yy/\lab/\leftsign/\rightsign in {12/{a}/1/1,8/{b}/-1/1,4/{c}/-1/-1,0/{d}/1/-1}{
+\foreach \yy/\lab/\m/\k/\sleft/\sright in {12/{a}/1.25/.633/-1/-1,8/{b}/.7/.4/1/-1,4/{c}/.35/.45/1/1,0/{d}/.7/.4/-1/1}{
   \draw[->] (0,\yy) -- (5.4,\yy) node[right] {$E$};
   \draw[->] (0,\yy-1.15) -- (0,\yy+1.55) node[above] {$\dfrac{d\sigma}{dE}$};
   \draw[dashed] (2.7,\yy-1.0) -- (2.7,\yy+1.35);
-  \ifnum\leftsign=1
-    \draw (0.35,\yy+0.15) .. controls (1.45,\yy+0.2) and (2.35,\yy+0.45) .. (2.7,\yy+1.25);
-  \else
-    \draw (0.35,\yy+1.05) .. controls (1.45,\yy+1.0) and (2.35,\yy+0.75) .. (2.7,\yy-0.05);
-  \fi
-  \ifnum\rightsign=1
-    \draw (2.7,\yy+1.25) .. controls (3.05,\yy+0.45) and (4.15,\yy+0.2) .. (5.05,\yy+0.15);
-  \else
-    \draw (2.7,\yy-0.05) .. controls (3.05,\yy+0.75) and (4.15,\yy+1.0) .. (5.05,\yy+1.05);
-  \fi
+  \draw[smooth,samples=60,domain=.35:2.7] plot (\x,{\yy+\m+\sleft*\k*sqrt(2.7-\x)});
+  \draw[smooth,samples=60,domain=2.7:5.05] plot (\x,{\yy+\m+\sright*\k*sqrt(\x-2.7)});
   \node at (2.7,\yy-1.35) {\lab};
 }
 \end{tikzpicture}
@@ -200,7 +192,8 @@ they are shifted from the pure Coulomb levels, the roots of $\tan(\pi/\varkappa_
   .. controls (1.65,0.08) and (1.82,2.9) .. (2.08,2.85)
   .. controls (2.34,2.8) and (2.48,0.1) .. (2.72,0.15)
   .. controls (2.94,0.18) and (3.05,2.9) .. (3.25,2.88)
-  .. controls (3.43,0.18) and (3.52,2.88) .. (3.7,2.9)
+  .. controls (3.36,0.17) and (3.42,0.17) .. (3.48,0.17)
+  .. controls (3.55,0.17) and (3.6,2.9) .. (3.7,2.9)
   .. controls (3.86,2.9) and (3.93,0.17) .. (4.08,0.18)
   .. controls (4.22,0.18) and (4.27,2.88) .. (4.4,2.88)
   .. controls (4.52,2.88) and (4.56,0.18) .. (4.67,0.18)

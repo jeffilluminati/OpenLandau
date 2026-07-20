@@ -117,8 +117,8 @@ Decomposing this representation into irreducible parts, we find that it contains
  \coordinate (o) at (\x,1.15); \coordinate (l) at (\x-1.25,0); \coordinate (r) at (\x+1.25,0);
  \draw (l)--(o)--(r) (l)--(r); \fill (l) circle(2pt) (r) circle(2pt); \draw[fill=white] (o) circle(2pt); \node at (\x+1.65,.65){\lab};}
 \draw[->] (0,1.35)--(0,1.85); \draw[->] (-1.25,-.05)--(-1.7,-.45); \draw[->] (1.25,-.05)--(1.7,-.45);
-\draw[->] (4,1.35)--(4,.65); \draw[->] (2.75,.05)--(2.45,.55); \draw[->] (5.25,.05)--(5.55,.55);
-\draw[->] (8,1.15)--(8.65,1.55); \draw[->] (6.75,0)--(6.3,-.45); \draw[->] (9.25,0)--(8.8,.45);
+\draw[->] (4,1.05)--(4,.55); \draw[->] (2.75,.05)--(2.45,.55); \draw[->] (5.25,.05)--(5.48,.43);
+\draw[->] (8,1.15)--(8.65,1.55); \draw[->] (6.75,0)--(6.3,-.45); \draw[->] (9.25,0)--(9.0,.52);
 \coordinate (O) at (12,1.15); \coordinate (H1) at (10.75,0); \coordinate (H2) at (13.25,0); \draw (H1)--(O)--(H2) (H1)--(H2); \fill (H1) circle(2pt) (H2) circle(2pt); \draw[fill=white] (O) circle(2pt); \node[above] at (O){O}; \node[left] at (H1){H}; \node[right] at (H2){H};
 \end{tikzpicture}
 \caption{}
@@ -140,9 +140,9 @@ This representation decomposes into the irreducible representations $2A_1$, $1B_
 \centering
 \begin{tikzpicture}[scale=.78,line cap=round,font=\small]
 % a CH3Cl
-\begin{scope}[shift={(-5.2,4.3)}]\node at (-1.2,.3){\textit{a}}; \coordinate(C)at(0,.3);\coordinate(Cl)at(0,2);\draw(C)--(Cl) (C)--(-1.2,-.8) (C)--(0,-.9) (C)--(1.2,-.8);\draw[fill=white](C)circle(1.5pt);\node[left]at(C){C};\node[above]at(Cl){Cl};\foreach\p in {(-1.2,-.8),(0,-.9),(1.2,-.8)}\fill\p circle(1.5pt);\node[below]at(-1.2,-.8){H};\node[below]at(0,-.9){H};\node[below]at(1.2,-.8){H};\node at(0,1.7){$\otimes$};\end{scope}
+\begin{scope}[shift={(-5.2,4.3)}]\node at (-1.2,.3){\textit{a}}; \coordinate(C)at(0,.3);\coordinate(Cl)at(0,2);\draw(C)--(Cl) (C)--(-1.2,-.8) (C)--(0,-.9) (C)--(1.2,-.8);\draw[fill=white](C)circle(1.5pt);\node[left]at(C){C};\node[above]at(Cl){Cl};\foreach\p in {(-1.2,-.8),(0,-.9),(1.2,-.8)}\fill\p circle(1.5pt);\node[below]at(-1.2,-.8){H};\node[below]at(0,-.9){H};\node[below]at(1.2,-.8){H};\end{scope}
 % b CH4 tetrahedron
-\begin{scope}[shift={(-1.7,4.3)}]\node at(-1.3,.3){\textit{b}};\coordinate(T)at(0,.9);\coordinate(L)at(-1,-.8);\coordinate(R)at(1,-.8);\coordinate(M)at(.2,-.1);\draw(T)--(L)--(R)--cycle (T)--(M);\draw[dashed](L)--(M)--(R);\fill(T)circle(1.5pt)(L)circle(1.5pt)(R)circle(1.5pt)(M)circle(2.5pt);\node[above]at(T){H};\node[below left]at(L){H};\node[below right]at(R){H};\node[right]at(M){H};\node[left]at(M){C};\end{scope}
+\begin{scope}[shift={(-1.7,4.3)}]\node at(-1.3,.3){\textit{b}};\coordinate(T)at(0,.9);\coordinate(L)at(-1,-.8);\coordinate(R)at(1,-.8);\coordinate(M)at(.5,.1);\coordinate(C)at(-.05,-.2);\draw(T)--(L)--(R)--cycle;\draw[dashed](L)--(M)--(R) (T)--(M);\draw(C)--(T) (C)--(L) (C)--(R);\draw[dashed](C)--(M);\draw[fill=white](C)circle(2pt);\fill(T)circle(1.5pt)(L)circle(1.5pt)(R)circle(1.5pt)(M)circle(1.5pt);\node[above]at(T){H};\node[below left]at(L){H};\node[below right]at(R){H};\node[right]at(M){H};\node[below left=-2pt]at(C){C};\end{scope}
 % c benzene
 \begin{scope}[shift={(3.2,4.3)}]\node at(-2,.3){\textit{c}};\foreach\i in{0,...,5}{\coordinate(C\i)at({60*\i}:1.35);\coordinate(H\i)at({60*\i}:2.15);\draw(C\i)--(H\i);\draw[fill=white](C\i)circle(1.5pt);\fill(H\i)circle(1.5pt);\node at({60*\i}:1.05){C};\node at({60*\i}:2.45){H};}\draw(C0)--(C1)--(C2)--(C3)--(C4)--(C5)--cycle;\end{scope}
 % d cube OsF8
@@ -150,9 +150,9 @@ This representation decomposes into the irreducible representations $2A_1$, $1B_
 % e UF6 octahedron
 \begin{scope}[shift={(0,.2)}]\node at(-1.8,1.1){\textit{e}};\coordinate(T)at(0,2);\coordinate(B)at(0,-2);\coordinate(L)at(-1.5,0);\coordinate(R)at(1.5,0);\coordinate(F)at(-.45,-.05);\coordinate(K)at(.45,.05);\draw(T)--(L)--(B)--(R)--cycle (T)--(F)--(B) (T)--(K)--(B) (L)--(R);\draw[dashed](L)--(K) (R)--(F);\fill(0,0)circle(2pt);\node[below right]at(0,-.12){U};\foreach\p in{T,B,L,R,F,K}\draw[fill=white](\p)circle(1.5pt);\node[above]at(T){F};\node[below]at(B){F};\node[left]at(L){F};\node[right]at(R){F};\node[below left]at(F){F};\node[above right]at(K){F};\end{scope}
 % f ethane
-\begin{scope}[shift={(4.3,.2)}]\node at(-1.4,1.1){\textit{f}};\coordinate(Ct)at(0,.8);\coordinate(Cb)at(0,-.8);\draw(Ct)--(Cb);\node[right]at(Ct){C};\node[right]at(Cb){C};\foreach\p in{(-.75,1.45),(.75,1.55),(.85,.95),(-.75,-1.45),(.75,-1.55),(.85,-.95)}\fill\p circle(1.5pt);\draw(Ct)--(-.75,1.45) (Ct)--(.75,1.55) (Ct)--(.85,.95) (Cb)--(-.75,-1.45) (Cb)--(.75,-1.55) (Cb)--(.85,-.95);\foreach\p in{(-1,1.55),(1,1.7),(1.1,.9),(-1,-1.55),(1,-1.7),(1.1,-.9)}\node at\p{H};\draw[dashed](-.95,1.45)--(-.95,-1.45);\end{scope}
+\begin{scope}[shift={(4.3,.2)}]\node at(-1.4,1.1){\textit{f}};\coordinate(Ct)at(0,.8);\coordinate(Cb)at(0,-.8);\draw(Ct)--(Cb);\node[left]at(Ct){C};\node[left]at(Cb){C};\foreach\p in{(-.75,1.45),(.75,1.55),(.85,.95),(-.75,-1.45),(.75,-1.55),(.85,-.95)}\fill\p circle(1.5pt);\draw(Ct)--(-.75,1.45) (Ct)--(.75,1.55) (Ct)--(.85,.95) (Cb)--(-.75,-1.45) (Cb)--(.75,-1.55) (Cb)--(.85,-.95);\foreach\p in{(-1,1.55),(1,1.7),(1.1,.9),(-1,-1.55),(1,-1.7),(1.1,-.9)}\node at\p{H};\draw[dashed](-.95,1.35)--(-.95,-1.35);\end{scope}
 % g ethylene
-\begin{scope}[shift={(0,-3.3)}]\node at(-2.2,.1){\textit{g}};\coordinate(CL)at(-.8,0);\coordinate(CR)at(.8,0);\draw[double](CL)--(CR);\node[above]at(CL){C};\node[above]at(CR){C};\draw(CL)--(-1.5,1.2) (CL)--(-1.5,-1.2) (CR)--(1.5,1.2) (CR)--(1.5,-1.2);\foreach\p in{(-1.5,1.2),(-1.5,-1.2),(1.5,1.2),(1.5,-1.2)}\node at\p{H};\draw[dashed](0,0)--(0,1.25) (.8,0)--(2,0);\node[above]at(0,1.25){$y$};\node[right]at(2,0){$x$};\end{scope}
+\begin{scope}[shift={(0,-3.3)}]\node at(-2.2,.1){\textit{g}};\coordinate(CL)at(-.8,0);\coordinate(CR)at(.8,0);\draw[double](CL)--(CR);\node[above]at(CL){C};\node[above]at(CR){C};\draw(CL)--(-1.5,1.2) (CL)--(-1.5,-1.2) (CR)--(1.5,1.2) (CR)--(1.5,-1.2);\foreach\p in{(-1.5,1.2),(-1.5,-1.2),(1.5,1.2),(1.5,-1.2)}\node at\p{H};\draw[dashed](0,0)--(0,.85) (.8,0)--(2,0);\node[left]at(0,.78){$y$};\node[right]at(2,0){$x$};\end{scope}
 \end{tikzpicture}
 \caption{}
 \end{figure}

@@ -1,0 +1,194 @@
+\SourcePage{677}{680}
+\section{The Rutherford formula}
+
+Coulomb-field scattering is important in physical applications. It is also
+noteworthy because, in this instance, the quantum-mechanical collision problem
+admits a complete exact solution.
+
+When a direction is distinguished---here, the direction of the incident
+particle---the Schr\"odinger equation for a Coulomb field is conveniently
+solved in the parabolic coordinates $\xi$, $\eta$, $\varphi$ (see \S~37). The
+problem of scattering by a central field
+
+\SourcePage{678}{681}
+has axial symmetry, and the wave function $\psi$ is consequently independent
+of the angle $\varphi$. Write a separated solution of the Schr\"odinger
+equation (37.6) as
+\begin{equation}
+ \psi=f_1(\xi)f_2(\eta)
+ \tag{135.1}
+\end{equation}
+(formula (37.7) with $m=0$). Separation of the variables then gives equations
+(37.8) with $m=0$\footnote{Coulomb units are used throughout this section (see
+p.~154).}:
+\begin{align}
+ \frac{d}{d\xi}\left(\xi\frac{df_1}{d\xi}\right)
+ +\left[\frac{k^2}{4}\xi-\beta_1\right]f_1&=0, \notag\\
+ \frac{d}{d\eta}\left(\eta\frac{df_2}{d\eta}\right)
+ +\left[\frac{k^2}{4}\eta-\beta_2\right]f_2&=0, \notag\\
+ \beta_1+\beta_2&=1.
+ \tag{135.2}
+\end{align}
+The scattered particle naturally has positive energy; we have put $E=k^2/2$.
+The signs in (135.2) refer to a repulsive field. An attractive field gives
+exactly the same final scattering cross-section.
+
+We require a solution of the Schr\"odinger equation which, for negative $z$
+and large $r$, behaves as the plane wave
+\[
+ \psi\sim e^{ikz}\quad\text{for}\quad-\infty<z<0,\quad r\to\infty.
+\]
+This describes a particle incident in the positive $z$ direction. It will
+follow below that a single separated solution (135.1), rather than a sum of
+solutions having different $\beta_1$ and $\beta_2$, can meet this condition.
+
+In parabolic coordinates the condition reads
+\[
+ \psi\sim\exp\left[\frac{ik}{2}(\xi-\eta)\right]
+ \quad\text{for}\quad\eta\to\infty\quad\text{at every }\xi.
+\]
+It can hold only when
+\begin{equation}
+ f_1(\xi)=e^{ik\xi/2},
+ \tag{135.3}
+\end{equation}
+while $f_2(\eta)$ obeys
+\begin{equation}
+ f_2(\eta)\sim e^{-ik\eta/2}\quad\text{for}\quad\eta\to\infty.
+ \tag{135.4}
+\end{equation}
+Substitution of (135.3) into the first equation (135.2) confirms that this
+function does solve it when $\beta_1=ik/2$. With
+$\beta_2=1-\beta_1$, the second equation (135.2)
+
+\SourcePage{679}{682}
+therefore becomes
+\[
+ \frac{d}{d\eta}\left(\eta\frac{df_2}{d\eta}\right)
+ +\left(\frac{k^2}{4}\eta-1+\frac{ik}{2}\right)f_2=0.
+\]
+Seek its solution in the form
+\begin{equation}
+ f_2(\eta)=e^{-ik\eta/2}w(\eta),
+ \tag{135.5}
+\end{equation}
+where $w(\eta)$ tends to a constant limit as $\eta\to\infty$. The equation for
+$w(\eta)$ is
+\begin{equation}
+ \eta w''+(1-ik\eta)w'-w=0.
+ \tag{135.6}
+\end{equation}
+The change of variable $\eta_1=ik\eta$ reduces this to the confluent
+hypergeometric equation with parameters $\alpha=-i/k$, $\gamma=1$. Among its
+solutions we must choose the one which, after multiplication by $f_1(\xi)$,
+contains only an outgoing (that is, scattered) spherical wave and no incoming
+one. That solution is
+\[
+ w=\mathrm{const}\cdot F\left(-\frac{i}{k},1,ik\eta\right).
+\]
+
+Collecting these results, we obtain the following exact solution of the
+Schr\"odinger equation for the scattering process:
+\begin{equation}
+ \psi=\exp\left(-\frac{\pi}{2k}\right)\Gamma\left(1+\frac{i}{k}\right)
+ \exp\left[\frac{ik}{2}(\xi-\eta)\right]
+ F\left(-\frac{i}{k},1,ik\eta\right).
+ \tag{135.7}
+\end{equation}
+The normalization constant in $\psi$ has been selected so that the incident
+plane wave has unit amplitude (as verified below).
+
+To separate the incident and scattered waves in this function, we examine its
+large-distance form. The first two terms in asymptotic expansion (d.14) of the
+confluent hypergeometric function give, at large $\eta$,
+\begin{align*}
+ F\left(-\frac{i}{k},1,ik\eta\right)
+ &\approx\frac{(-ik\eta)^{i/k}}{\Gamma(1+i/k)}
+ \left(1+\frac{1}{ik^3\eta}\right)\\
+ &\quad+\frac{(ik\eta)^{-i/k}e^{ik\eta}}{\Gamma(-i/k)ik\eta}\\
+ &=\frac{e^{\pi/2k}}{\Gamma(1+i/k)}
+ \left(1+\frac{1}{ik^3\eta}\right)
+ \exp\left(\frac{i}{k}\ln k\eta\right)\\
+ &\quad-\frac{(i/k)e^{\pi/2k}}{\Gamma(1-i/k)}
+ \frac{e^{ik\eta}}{ik\eta}
+ \exp\left(-\frac{i}{k}\ln k\eta\right).
+\end{align*}
+Insert this expression in (135.7) and change to spherical coordinates,
+$\xi-\eta=2z$ and $\eta=r-z=r(1-\cos\theta)$. The resulting
+
+\SourcePage{680}{683}
+asymptotic form of the wave function is
+\begin{align}
+ \psi={}&\left[1+\frac{1}{ik^3r(1-\cos\theta)}\right]
+ \exp\left\{ikz+\frac{i}{k}\ln[kr(1-\cos\theta)]\right\}\notag\\
+ &+\frac{f(\theta)}{r}\exp\left\{ikr-\frac{i}{k}\ln(2kr)\right\},
+ \tag{135.8}
+\end{align}
+where
+\begin{equation}
+ f(\theta)=-\frac{1}{2k^2\sin^2(\theta/2)}
+ \frac{\Gamma(1+i/k)}{\Gamma(1-i/k)}
+ \exp\left(-\frac{2i}{k}\ln\sin\frac{\theta}{2}\right).
+ \tag{135.9}
+\end{equation}
+
+The first term of (135.8) is the incident wave. The Coulomb field falls off so
+slowly that the incident plane wave remains distorted even far from the
+center: the phase has a logarithmic contribution and the amplitude contains a
+term of order $1/r$\footnote{This distortion is already intelligible from the
+classical picture. Consider a family of classical hyperbolic Coulomb
+trajectories with a common incident direction parallel to the $z$ axis. At
+large distances from the scattering center ($z\to-\infty$), the equation of a
+surface normal to these trajectories tends, as may readily be shown, not to
+$z=\mathrm{const}$ but to
+$z+k^{-2}\ln k(r-z)=\mathrm{const}$. This is precisely the constant-phase
+surface of the incident wave in (135.8).}. The scattered spherical wave,
+represented by the second term of (135.8), likewise has a logarithmic
+distortion in its phase. These departures from the usual asymptotic form
+(123.3) are nevertheless immaterial: their corrections to the flux density
+vanish as $r\to\infty$.
+
+Hence the scattering cross-section $d\sigma=|f(\theta)|^2d\Omega$ is
+\[
+ d\sigma=\frac{d\Omega}{4k^2\sin^4(\theta/2)},
+\]
+or, in ordinary units,
+\begin{equation}
+ d\sigma=\left(\frac{\alpha}{2mv^2}\right)^2
+ \frac{d\Omega}{\sin^4(\theta/2)}.
+ \tag{135.10}
+\end{equation}
+Here $v=k\hbar/m$ is the particle velocity. This is the familiar
+\emph{Rutherford formula} of classical mechanics. Thus quantum and classical
+mechanics predict the same result for scattering in a Coulomb field
+(N.~Mott and W.~Gordon, 1928). The Born formula (126.12), as expected, also
+leads to (135.10).
+
+\SourcePage{681}{684}
+For reference, we give the scattering amplitude (135.9) as an expansion in
+spherical functions. Substitution in (124.5) of the phases from
+(36.28) yields it\footnote{The quantity $\delta_l^{\mathrm C}$ in that formula
+differs from the true Coulomb phase of the outgoing wave by a quantity common
+to all $l$.}:
+\begin{equation}
+ \exp(2i\delta_l^{\mathrm C})=
+ \frac{\Gamma(l+1+i/k)}{\Gamma(l+1-i/k)}.
+ \tag{135.11}
+\end{equation}
+Consequently,
+\begin{equation}
+ f(\theta)=\frac{1}{2ik}\sum_l(2l+1)
+ \frac{\Gamma(l+1+i/k)}{\Gamma(l+1-i/k)}P_l(\cos\theta).
+ \tag{135.12}
+\end{equation}
+
+The signs in amplitude (135.9) correspond to repulsion in the Coulomb field.
+For attraction, (135.9) must be replaced by its complex conjugate. In that
+case $f(\theta)$ becomes infinite at the poles of $\Gamma(1-i/k)$, namely when
+the argument of the gamma function is zero or a negative integer (here
+$\Im k>0$, and $r\psi$ decays at infinity). The corresponding energies are
+\[
+ \frac{k^2}{2}=-\frac{1}{2n^2},\qquad n=1,2,3,\ldots,
+\]
+and coincide with the discrete energy levels of the attractive Coulomb field
+(compare \S~128).

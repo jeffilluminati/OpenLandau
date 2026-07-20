@@ -1,0 +1,491 @@
+\SourcePage{580}{583}
+\section{The shell model}
+
+Many nuclear properties admit a good description in terms of the \emph{shell
+model}, whose basic picture resembles the description of an atom's electron
+shell. In this approach, each nucleon is treated as moving in the
+self-consistent field produced by all the remaining nucleons. Because nuclear
+forces have a short range, this field falls off rapidly beyond the volume
+enclosed by the nuclear ``surface.'' The state of the entire nucleus is
+therefore specified by listing the states occupied by its individual
+nucleons.
+
+\SourcePage{581}{584}
+The self-consistent field has spherical symmetry, with its center naturally at
+the nuclear center of mass. This gives rise, however, to a difficulty. In the
+self-consistent-field method, the system's wave function is constructed as a
+product of one-particle wave functions (or as a suitably symmetrized sum of
+such products). A function of this sort does not keep the center of mass at
+rest: although it yields zero for the mean velocity of the center of mass, it
+also assigns finite probabilities to nonzero values of that
+velocity\footnote{For electrons in an atom this difficulty does not arise at
+all, since the center of mass is automatically kept at rest by its coincidence
+with the position of the stationary heavy nucleus.}.
+
+The difficulty can be circumvented by first removing the motion of the center
+of mass whenever a physical quantity is evaluated with the
+self-consistent-field wave functions
+$\psi(\mathbf r_1,\ldots,\mathbf r_A)$. Let
+$f(\mathbf r_i,\mathbf p_i)$ denote any physical quantity, regarded as a
+function of the nucleon coordinates and momenta. To evaluate its matrix
+elements with the functions $\psi$, one leaves $\psi(\mathbf r_i)$ unchanged
+and instead replaces the arguments of $f$ according to
+\begin{equation}
+ \mathbf r_i\to\mathbf r_i-\mathbf R,\qquad
+ \mathbf p_i\to\mathbf p_i-\frac{\mathbf P}{A},
+ \tag{118.1}
+\end{equation}
+where $\mathbf R$ is the radius vector of the nuclear center of mass, $A$ is
+the number of particles in the nucleus, and $\mathbf P$ is the momentum of the
+nucleus as a whole. The second replacement in (118.1) amounts to subtracting
+the center-of-mass velocity $\mathbf V$ from the nucleon velocities,
+$\mathbf v_i\to\mathbf v_i-\mathbf V$; here $\mathbf P$ and $\mathbf V$ are
+related by $\mathbf P=Am_p\mathbf V$ (S.~Gartenhaus, C.~Schwartz, 1957).
+
+For example, the nuclear dipole-moment operator is
+$\hat{\mathbf d}=e\sum_p\mathbf r_p$, the sum extending over every proton in
+the nucleus. In self-consistent-field matrix elements, however, it must be
+replaced by $e\sum_p(\mathbf r_p-\mathbf R)$. The coordinate of the nuclear
+center is
+\[
+ \mathbf R=\frac1A\left(\sum_p\mathbf r_p+\sum_n\mathbf r_n\right),
+\]
+where the two sums run over all protons and all neutrons, respectively. Since
+the nucleus contains $Z$ protons, the final replacement of the dipole-moment
+operator is
+\begin{equation}
+ e\sum_p\mathbf r_p\to
+ e\left(1-\frac ZA\right)\sum_p\mathbf r_p
+ -e\frac ZA\sum_n\mathbf r_n.
+ \tag{118.2}
+\end{equation}
+
+\SourcePage{582}{585}
+Thus the protons occur with an ``effective charge'' $e(1-Z/A)$, while the
+neutrons have the ``charge'' $-eZ/A$. As (118.2) shows, the correction terms
+that enter the dipole moment have relative order of magnitude unity. By
+contrast, it is readily seen that the corrections to the magnetic moment and
+to the higher electric multipole moments are of relative order $\sim1/A$.
+
+In the nonrelativistic approximation, a nucleon's interaction with the
+self-consistent field is independent of its spin. Such a dependence could
+only be represented by a term proportional to $\hat{\mathbf s}\mathbf n$,
+where $\mathbf n$ is the unit vector along the nucleon's radius vector
+$\mathbf r$; this product is a pseudoscalar rather than a true scalar.
+
+Velocity-dependent relativistic terms nevertheless introduce a spin
+dependence into the nucleon energy. The largest such term is linear in the
+velocity. The three vectors $\mathbf s$, $\mathbf n$, and $\mathbf v$ can be
+combined into the true scalar $(\mathbf n\times\mathbf v)\mathbf s$.
+Consequently the operator for a nucleon's \emph{spin--orbit coupling} in the
+nucleus has the form
+\begin{equation}
+ \hat V_{sl}=-\varphi(r)(\mathbf n\times\hat{\mathbf v})\hat{\mathbf s},
+ \tag{118.3}
+\end{equation}
+where $\varphi(r)$ is some function of $r$ (compare also the note on p.~579).
+Since $m_p(\mathbf r\times\mathbf v)$ is the particle's orbital angular
+momentum $\hbar\hat{\mathbf l}$, (118.3) may also be written
+\begin{equation}
+ \hat V_{sl}=-f(r)\hat{\mathbf l}\hat{\mathbf s},
+ \tag{118.4}
+\end{equation}
+with $f=\hbar\varphi/(rm_p)$. Notice that this interaction is of first order
+in $v/c$, whereas the spin--orbit coupling of an atomic electron is a
+second-order effect (\S~72). The reason for this distinction is that nuclear
+forces already depend on spin in the nonrelativistic approximation, whereas
+the nonrelativistic interaction between electrons (the Coulomb forces) has no
+spin dependence.
+
+The energy of the spin--orbit interaction is concentrated chiefly near the
+nuclear surface; in other words, $f(r)$ decreases toward the nuclear interior.
+Indeed, an interaction of this form could not exist at all in unbounded nuclear
+matter. The homogeneity of such a system leaves no preferred direction along
+which the vector $\mathbf n$ could point.
+
+The interaction (118.4) splits a nucleon level of orbital angular momentum
+$l$ into two levels whose angular momenta are $j=$
+
+\SourcePage{583}{586}
+$l\pm1/2$. Since
+\begin{equation}
+ \begin{aligned}
+  \mathbf l\mathbf s&=l/2 &&\text{for }j=l+1/2,\\
+  \mathbf l\mathbf s&=-(l+1)/2 &&\text{for }j=l-1/2,
+ \end{aligned}
+ \tag{118.5}
+\end{equation}
+by (31.3), the magnitude of the splitting is
+\begin{equation}
+ \Delta E=E_{l-1/2}-E_{l+1/2}=\overline{f(r)}(l+1/2).
+ \tag{118.6}
+\end{equation}
+Experiment places the $j=l+1/2$ level (parallel $\mathbf l$ and $\mathbf s$)
+deeper than the $j=l-1/2$ level. Hence $f(r)>0$.
+
+A nucleon's spin--orbit coupling within a nucleus is weak relative to its
+interaction with the self-consistent field. At the same time it is generally
+larger than the energy of direct interaction between two nucleons in the
+nucleus, because the latter decreases more rapidly as the atomic weight
+increases.
+
+This hierarchy of interaction energies requires nuclear levels to be
+classified by the $jj$-coupling scheme. For each nucleon its spin and orbital
+angular momentum combine to form the total angular momentum
+$\mathbf j=\mathbf l+\mathbf s$. This is a definite quantity because the
+coupling between $\mathbf l$ and $\mathbf s$ is not destroyed by the direct
+interaction of the particles with one another (M.~G\"oppert-Mayer, 1949;
+O.~Haxel, J.~H.~Jensen, H.~E.~Suess, 1949)\footnote{Only in the lightest
+nuclei is the coupling closer to the $LS$ type.}.
+\input{manuscript/chapters/ch16/fragments/sec118-spin-classification-combined-b-20260718.translation.en.tex}
+
+Each nucleon state in a nucleus is characterized by its angular momentum $j$
+and parity. Although neither $\mathbf l$ nor $\mathbf s$ is separately
+conserved, the magnitude of the nucleon's orbital angular momentum is still
+definite. Indeed, a given $j$ can arise either from a state with $l=j-1/2$ or
+from one with $l=j+1/2$. For fixed half-integral $j$, these two states have
+opposite parities $(-1)^l$; specifying $j$ and the parity thus fixes the
+quantum number $l$ as well.
+
+\SourcePage{584}{587}
+Nucleon states having the same $l$ and $j$ are conventionally numbered, in
+order of increasing energy, by a ``principal quantum number'' $n$ that takes
+integer values beginning with 1\footnote{This differs from the convention for
+atomic electron levels, in which the allowed values of $n$ begin with
+$l+1$.}. The various states are denoted by $1s_{1/2}$, $1p_{1/2}$,
+$1p_{3/2}$, and so forth. The numeral preceding the letter is the principal
+quantum number; the letters $s$, $p$, $d$, \ldots indicate $l$ in the usual
+way; and the subscript on the letter gives $j$. A state with specified $n$,
+$l$, and $j$ can contain at most $2j+1$ neutrons and the same number of
+protons.
+
+For a specified configuration, the state of the nucleus as a whole is
+customarily written as a numeral giving $J$, with a $+$ or $-$ subscript to
+show the state's parity. In the shell model that parity is determined by
+whether the algebraic sum of the $l$ values of all nucleons is even or odd.
+
+Analysis of experimental information about nuclear properties reveals a
+number of regularities in the arrangement of nuclear levels.
+
+First, nucleon-level energies rise as the orbital angular momentum $l$
+increases. This rule follows because a larger $l$ increases the particle's
+centrifugal energy and hence lowers its binding energy.
+
+Second, at fixed $l$, the level with $j=l+1/2$ (corresponding to parallel
+$\mathbf l$ and $\mathbf s$) lies deeper than the level with $j=l-1/2$. This
+rule was already mentioned above in connection with the properties of a
+nucleon's spin--orbit coupling inside a nucleus.
+
+A further rule concerns nuclear isotopic spin. Recall that the projection
+$T_\zeta$ is fixed by the weight and number of the nucleus (see (116.1)). For
+a specified $T_\zeta$, the isospin magnitude may assume any value satisfying
+$T\geqslant|T_\zeta|$. Ordinarily the nuclear ground state has the smallest
+allowed isospin, namely
+\begin{equation}
+ T_{\text{ground}}=|T_\zeta|=(1/2)(N-Z).
+ \tag{118.7}
+\end{equation}
+This rule is tied to the character of the neutron--proton interaction: in an
+$np$ system, the $T=0$ state (the deuteron state) has a greater binding energy
+than the $T=1$ state (see the note on p.~580).
+
+Some rules can also be stated for the spins of nuclear ground states. They
+specify how the angular momenta $\mathbf j$ of the individual nucleons combine
+into the total nuclear spin. These rules express the tendency of protons and
+neutrons that occupy identical nuclear sta\SourcePageJoin{585}{588}tes to form
+$pp$ and $nn$ pairs whose angular momenta are opposite. The binding energy of
+such a pair is of order 1--2 MeV.
+
+One consequence is that, if both the proton number and the neutron number are
+even (an \emph{even--even nucleus}), all nucleon angular momenta cancel in
+pairs and the total nuclear angular momentum vanishes.
+
+If either the number of protons or the number of neutrons is odd, and all the
+nucleons outside the filled shells occupy identical states, the total nuclear
+angular momentum usually equals that of a single nucleon. It is as though,
+after every possible proton and neutron pair had formed, just one nucleon with
+uncancelled angular momentum remained. The total angular momentum of any
+filled shell is automatically zero.
+
+For \emph{odd--odd nuclei}, in which both $Z$ and $N$ are odd, no sufficiently
+general rule determines the ground-state spin.
+
+A detailed discussion of the particular sequence in which nuclear shells are
+filled would require extensive analysis of the available experimental data
+and lies outside the scope of this book. We shall give only a few further
+general observations.
+
+In studying atoms, we found that their electron states can be divided into
+groups such that completing one group and beginning the next reduces an
+electron's binding energy. Nuclei exhibit an analogous pattern, with nucleon
+states distributed among the following groups:
+\begin{equation}
+ \begin{array}{@{}ll@{}}
+  1s_{1/2} & 2\text{ nucleons},\\
+  1p_{3/2},\ 1p_{1/2} & 6\text{ nucleons},\\
+  1d_{5/2},\ 1d_{3/2},\ 2s_{1/2} & 12\text{ nucleons},\\
+  1f_{7/2},\ 2p_{3/2},\ 1f_{5/2},\ 2p_{1/2},\ 1g_{9/2}
+    & 30\text{ nucleons},\\
+  2d_{5/2},\ 1g_{7/2},\ 1h_{11/2},\ 2d_{3/2},\ 3s_{1/2}
+    & 32\text{ nucleons},\\
+  2f_{7/2},\ 1h_{9/2},\ 1i_{13/2},\ 2f_{5/2},\ 3p_{3/2},\ 3p_{1/2}
+    & 44\text{ nucleons}.
+ \end{array}
+ \tag{118.8}
+\end{equation}
+For each group the table gives the total number of available proton or neutron
+places. It follows that one of these groups is completed whenever the total
+proton number $Z$, or the total neutron number $N$, reaches one of the values
+\[
+ 2,\ 8,\ 20,\ 50,\ 82,\ 126.
+\]
+These are conventionally called \emph{magic numbers}\footnote{The
+$1f_{7/2}$ states, with their 8 places, are sometimes separated into a group
+of their own, reflecting the fact that 28 too has, to some extent, the
+properties of a magic number.}.
+
+\SourcePage{586}{589}
+The so-called \emph{doubly magic nuclei}, for which both $Z$ and $N$ are magic
+numbers, possess exceptional stability. Relative to neighboring nuclei, their
+affinity for one additional nucleon is anomalously small, while their first
+excited levels are anomalously high\footnote{Examples are
+${}^{4}_{2}\mathrm{He}_{2}$, ${}^{16}_{8}\mathrm{O}_{8}$,
+${}^{40}_{20}\mathrm{Ca}_{20}$, and
+${}^{208}_{82}\mathrm{Pb}_{126}$. The ${}^{4}\mathrm{He}$ nucleus cannot
+bind an additional nucleon at all. The number at the lower right is the value
+of $N$ in the nucleus.}.
+
+Within each group in (118.8), the states have been listed approximately in the
+sequence in which they are progressively filled along the series of nuclei.
+In reality, substantial irregularities occur in this filling. It must also be
+remembered that, in heavy nuclei far from magic numbers, the separations
+between different levels may be comparable with the ``pairing energy.'' Under
+these conditions, the very notion of individual states for the two members of
+a pair largely loses its meaning.
+
+We now make several remarks on calculating a nucleus's magnetic moment in the
+shell model. By the magnetic moment of a nucleus we naturally mean the moment
+averaged over the motion of the particles within it. The mean magnetic moment
+$\overline{\boldsymbol\mu}$ is evidently directed along the nuclear spin
+$\mathbf J$, since the latter is the nucleus's only preferred direction. Its
+operator is therefore
+\begin{equation}
+ \hat{\overline{\boldsymbol\mu}}=\mu_0g\hat{\mathbf J},
+ \tag{118.9}
+\end{equation}
+\input{manuscript/chapters/ch16/fragments/sec118-lines282-285-magneton-b.translation.en.tex}
+\begin{equation}
+ \hat{\overline{\boldsymbol\mu}}=\mu(\hat{\mathbf J}/J).
+ \tag{118.10}
+\end{equation}
+
+The nuclear magnetic moment is composed of the moments of nucleons outside
+filled shells, since those of nucleons in filled shells cancel one another.
+Every nucleon contributes a magnetic moment having two parts: a spin part and,
+for a proton, an orbital part. It is thus expressed as the sum
+$g_s\hat{\mathbf s}+g_l\hat{\mathbf l}$.
+\input{manuscript/chapters/ch16/fragments/sec118-p580-p589-parenthetical-unit-295-297.translation.en.tex}
+The orbital and spin gyromagnetic factors are
+$g_l=1$, $g_s=5{,}585$ for a proton, and $g_l=0$, $g_s=-3{,}826$ for a
+neutron.
+
+\SourcePage{587}{590}
+After averaging over a nucleon's motion in the nucleus, its magnetic moment is
+proportional to $\mathbf j$. Writing it as $g_j\hat{\mathbf j}$, we have
+\[
+ g_j\hat{\mathbf j}=g_s\hat{\mathbf s}+g_l\hat{\mathbf l}
+ =\frac12(g_l+g_s)\hat{\mathbf j}
+ +\frac12(g_l-g_s)(\hat{\mathbf l}-\hat{\mathbf s}).
+\]
+Multiplying both sides by
+$\hat{\mathbf j}=\hat{\mathbf l}+\hat{\mathbf s}$ and passing to the
+eigenvalues gives
+\[
+ g_jj(j+1)=\frac12(g_l+g_s)j(j+1)
+ +\frac12(g_l-g_s)[l(l+1)-s(s+1)].
+\]
+On setting $s=1/2$ and $j=l\pm1/2$, we obtain
+\begin{equation}
+ g_j=g_l\pm\frac{g_s-g_l}{2l+1}\quad\text{for }j=l\pm1/2.
+ \tag{118.11}
+\end{equation}
+With the gyromagnetic factors quoted above, the proton magnetic moment
+$\mu_p=g_jj$ is
+\begin{equation}
+ \begin{aligned}
+  \mu_p&=\left(1-\frac{2{,}29}{j+1}\right)j
+     &&\text{for }j=l-1/2,\\
+  \mu_p&=j+2{,}29 &&\text{for }j=l+1/2,
+ \end{aligned}
+ \tag{118.12}
+\end{equation}
+and the neutron magnetic moment is
+\begin{equation}
+ \begin{aligned}
+  \mu_n&=\frac{1{,}91}{j+1}j &&\text{for }j=l-1/2,\\
+  \mu_n&=-1{,}91 &&\text{for }j=l+1/2.
+ \end{aligned}
+ \tag{118.13}
+\end{equation}
+(T.~Schmidt, 1937).
+
+If only one nucleon lies outside the filled shells, (118.12) or (118.13)
+directly supplies the nuclear magnetic moment. The addition of the magnetic
+moments is also elementary for two nucleons (see Problem 1). With more
+nucleons, the magnetic moment must be averaged using a system wave function
+properly constructed from the individual nucleon wave functions. The nucleon
+configuration together with the state of the whole nucleus determines this
+construction uniquely whenever the configuration admits only a single system
+state with the specified $J$ and $T$ (see, for example, Problem 3). Otherwise
+the nuclear state is a mixture of several independent states with the same
+$J$ and $T$, and the coefficients in the linear combination that forms the
+nuclear wave function are generally unknown\footnote{In practice, however,
+the accuracy of the ``one-particle'' scheme for calculating nuclear magnetic
+moments is not high. The paired values in (118.12) and (118.13) serve more as
+upper and lower bounds than as exact moment values.}.
+
+\SourcePage{588}{591}
+Finally, the presence of nucleon spin--orbit coupling in a nucleus gives the
+protons an additional magnetic moment beyond (118.9) (M.~G\"oppert-Mayer,
+J.~H.~Jensen, 1952). The reason is that, when an interaction operator depends
+explicitly on a particle's velocity, an external field is introduced by the
+replacement $\hat{\mathbf p}\to\hat{\mathbf p}-(e/c)\mathbf A$. Making this
+replacement in (118.3), and using (111.7) for the vector potential, produces
+the following additional term in the proton Hamiltonian:
+\[
+ \varphi(r)\frac{e}{cm_p}(\mathbf n\times\mathbf A)\hat{\mathbf s}
+ =f(r)\frac{e}{2c\hbar}\{\mathbf r\times(\mathbf H\times\mathbf r)\}
+   \hat{\mathbf s}
+ =f(r)\frac{e}{2c\hbar}
+   \{\mathbf r\times(\hat{\mathbf s}\times\mathbf r)\}\mathbf H.
+\]
+This term is equivalent to an additional magnetic moment whose operator is
+\begin{equation}
+ \hat{\boldsymbol\mu}_{\text{add}}
+ =-\frac{e}{2c\hbar}f(r)
+   \{\mathbf r\times(\hat{\mathbf s}\times\mathbf r)\}
+ =-\frac{e}{2c\hbar}r^2f(r)
+ \{\hat{\mathbf s}-(\hat{\mathbf s}\mathbf n)\mathbf n\}.
+ \tag{118.14}
+\end{equation}
+
+\ProblemHeading 1. Find the magnetic moment of a two-nucleon system, whose
+total mechanical angular momentum is $\mathbf J=\mathbf j_1+\mathbf j_2$,
+expressing it in terms of the individual nucleon magnetic moments $\mu_1$ and
+$\mu_2$.
+
+\SolutionHeading A derivation analogous to that of (118.11) gives
+\[
+ \frac\mu J=\frac12\left(\frac{\mu_1}{j_1}+\frac{\mu_2}{j_2}\right)
+ +\frac12\left(\frac{\mu_1}{j_1}-\frac{\mu_2}{j_2}\right)
+ \frac{(j_1-j_2)(j_1+j_2+1)}{J(J+1)}.
+\]
+
+\ProblemHeading 2. Determine the possible states of three nucleons with
+angular momenta $j=3/2$ and identical principal quantum numbers.
+
+\SolutionHeading We proceed as in \S~67 when the possible states
+of equivalent electrons were found. Each nucleon may occupy one of eight
+states, characterized by the following pairs $(m_j,\tau_\zeta)$:
+\[
+ \begin{gathered}
+ (3/2,1/2),\quad(1/2,1/2),\quad(-1/2,1/2),\quad(-3/2,1/2),\\
+ (3/2,-1/2),\quad(1/2,-1/2),\quad(-1/2,-1/2),\quad(-3/2,-1/2).
+ \end{gathered}
+\]
+Combining three distinct states at a time, we obtain the following pairs
+$(M_J,T_\zeta)$ for the three-nucleon system:
+\[
+ (7/2,1/2),\quad2(5/2,1/2),\quad(3/2,3/2),\quad4(3/2,1/2),
+ \quad(1/2,3/2),\quad5(1/2,1/2).
+\]
+The numeral preceding a pair gives the number of corresponding states; states
+with negative $M_J$ and $T_\zeta$ need not be listed. These pairs correspond
+to system states with the following $(J,T)$ values:
+\[
+ (7/2,1/2),\quad(5/2,1/2),\quad(3/2,3/2),\quad(3/2,1/2),\quad(1/2,1/2).
+\]
+
+\ProblemHeading 3. Taking isotopic invariance into account, determine the
+magnetic moment of the ground state for a configuration consisting of two
+neutrons and one proton in $p_{3/2}$ states with the same
+$n$\footnote{The ${}^{7}\mathrm{Li}$ nucleus has this configuration outside
+the filled shell $(1s_{1/2})^4$.}.
+
+\SourcePage{589}{592}
+\SolutionHeading The ground state of this configuration has
+$J=3/2$, while the rule stated in the text gives its isospin the smallest
+possible value, $T=|T_\zeta|=1/2$.
+
+We determine the system wave function belonging to the largest possible value
+$M_J=3/2$. Subject to the Pauli-principle requirements for the two identical
+nucleons, this $M_J$ value may be realized by the following triples of $m_j$
+values for the nucleons $p,n,n$, respectively:
+\[
+ (3/2,3/2,-3/2),\quad(3/2,1/2,-1/2),\quad
+ (1/2,3/2,-1/2),\quad(1/2,3/2,1/2).
+\]
+The required wave function $\Psi^{JM_J}_{TT_\zeta}$ is therefore a linear
+combination of the form
+\begin{equation}
+ \begin{split}
+ \Psi^{3/2\;3/2}_{1/2\;-1/2}
+ &=a[\psi^{3/2}_{1/2}\psi^{3/2}_{-1/2}\psi^{-3/2}_{-1/2}]
+ +b[\psi^{3/2}_{1/2}\psi^{1/2}_{-1/2}\psi^{-1/2}_{-1/2}]\\
+ &\quad+c[\psi^{-3/2}_{-1/2}\psi^{1/2}_{1/2}\psi^{-1/2}_{-1/2}]
+ +d[\psi^{3/2}_{-1/2}\psi^{1/2}_{-1/2}\psi^{-1/2}_{1/2}],
+ \end{split}
+ \tag{1}
+\end{equation}
+where $[\ldots]$ denotes a normalized antisymmetrized product, that is, a
+determinant of the form (61.5), of the individual nucleon wave functions
+$\psi^{m_j}_{\tau_\zeta}$.
+
+The function (1) must vanish under the action of each of the operators
+\[
+ \hat T_- =\sum_{i=1}^3\hat\tau_-^{(i)}
+ \quad\text{and}\quad
+ \hat J_+=\sum_{i=1}^3\hat j_+^{(i)}
+\]
+(compare the problem in \S~67). The operators $\hat\tau_-^{(i)}$ turn the
+proton function of the $i$th nucleon into a neutron function (and annihilate a
+neutron function). It is therefore readily seen that $\hat T_-$ turns the
+first term in (1) into a determinant with two identical rows and hence into
+zero, while the determinants from the other three terms become identical. We
+thus obtain the condition $b+c+d=0$. Next, for a single nucleon with $j=3/2$
+and the various $m_j$ values, (27.12) gives
+\[
+ \hat j_+\psi^{3/2}=0,\quad
+ \hat j_+\psi^{1/2}=\sqrt3\psi^{3/2},\quad
+ \hat j_+\psi^{-1/2}=2\psi^{1/2},\quad
+ \hat j_+\psi^{-3/2}=\sqrt3\psi^{-1/2}.
+\]
+It then follows that applying $\hat J_+$ to (1) yields
+\[
+ \hat J_+\Psi^{3/2\;3/2}_{1/2\;-1/2}
+ =\sqrt3(a+b-c)
+ [\psi^{3/2}_{1/2}\psi^{3/2}_{-1/2}\psi^{-1/2}_{-1/2}]
+ +2(c-d)[\psi^{3/2}_{-1/2}\psi^{1/2}_{1/2}\psi^{1/2}_{-1/2}].
+\]
+The sign changes in some terms result from interchanging rows of the
+determinant. Requiring this expression to vanish gives
+\[
+ a+b-c=0,\qquad c-d=0.
+\]
+Together with normalization of (1), these relations yield
+\[
+ a=\frac3{\sqrt{15}},\qquad b=-\frac2{\sqrt{15}},\qquad
+ c=d=\frac1{\sqrt{15}}.
+\]
+The mean value of the proton (or neutron) magnetic-moment projection in a
+state with given $m_j$ is $\mu_pm_j/j$ (or $\mu_nm_j/j$). The mean system
+moment calculated with (1) is consequently
+\[
+ \overline\mu=\overline\mu_z
+ =\frac9{15}\mu_p+\frac4{15}\mu_p
+ +\frac1{15}\left(\frac13\mu_p+\frac23\mu_n\right)
+ +\frac1{15}\left(-\frac13\mu_p+\frac34\mu_n\right)
+ =\frac1{15}(13\mu_p+\mu_n).
+\]
+Equations (118.12) and (118.13) give, for a nucleon in a $p_{3/2}$ state,
+$\mu_n=-1{,}91$ and $\mu_p=3{,}79$. The result is $\mu=3{,}03$.

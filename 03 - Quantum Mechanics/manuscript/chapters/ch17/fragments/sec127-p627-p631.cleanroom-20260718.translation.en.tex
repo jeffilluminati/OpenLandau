@@ -1,0 +1,165 @@
+\SourcePage{627}{630}
+\section{The semiclassical case}
+
+We shall trace how the classical limit emerges from the quantum-mechanical theory of scattering.
+
+Excluding the zero scattering angle $\theta$ from consideration, we can write the scattering amplitude given by the exact theory in the form (124.4):
+\begin{equation}
+ f(\theta)=\frac1{2ik}\sum_{l=0}^{\infty}(2l+1)P_l(\cos\theta)e^{2i\delta_l}.
+ \tag{127.1}
+\end{equation}
+We know that semiclassical wave functions have large phases. It is therefore natural to anticipate that the limiting transition in scattering theory corresponds to large phases $\delta_l$. The main contribution to the sum (127.1) comes from terms with large $l$. We may consequently replace $P_l(\cos\theta)$ by the asymptotic expression (49.7), written as
+\[
+ P_l(\cos\theta)\approx-\frac{i}{\sqrt{2\pi l\sin\theta}}
+ \left\{\exp\left[i\left(l+\frac12\right)\theta+\frac{i\pi}4\right]
+ -\exp\left[-i\left(l+\frac12\right)\theta-\frac{i\pi}4\right]\right\}.
+\]
+Substitution in (127.1) gives
+\begingroup\small
+\begin{equation}
+ f(\theta)=\frac1k\sum_l\sqrt{\frac{l}{2\pi\sin\theta}}
+ \left(\exp\left\{i\left[2\delta_l-\left(l+\frac12\right)\theta-\frac\pi4\right]\right\}
+ -\exp\left\{i\left[2\delta_l+\left(l+\frac12\right)\theta+\frac\pi4\right]\right\}\right).
+\tag{127.2}
+\end{equation}
+\endgroup
+
+Regarded as functions of $l$, the exponential factors oscillate rapidly, since their phases are large. Most of the terms in (127.2) therefore cancel one another. The sum is determined chiefly by the range of $l$ close to the value at which the exponent of one of the exponentials is stationary, that is, close to a root of
+\begin{equation}
+ 2\frac{d\delta_l}{dl}\pm\theta=0.
+ \tag{127.3}
+\end{equation}
+This range contains many terms for which the exponential factors remain nearly constant, because their exponents vary slowly near the stationary point; these terms therefore do not cancel.
+
+\SourcePage{628}{631}
+In the semiclassical case, the phases $\delta_l$ can be written (see \S~124) as the limit, as $r\to\infty$, of the difference between the phase
+\[
+ \frac\pi4+\frac1\hbar\int_{r_0}^{r}
+ \sqrt{2m[E-U(r)]-\frac{\hbar^2(l+1/2)^2}{r^2}}\,dr
+\]
+of the semiclassical wave function in the field $U(r)$ and the free-motion wave-function phase $kr-\pi l/2$ (see \S~33). Thus,
+\begin{equation}
+ \delta_l=\int_{r_0}^{\infty}\left[\sqrt{\frac{2m}{\hbar^2}(E-U)-\frac{(l+1/2)^2}{r^2}}-k\right]dr
+ +\frac\pi2\left(l+\frac12\right)-kr_0.
+ \tag{127.4}
+\end{equation}
+\input{manuscript/chapters/ch17/fragments/sec127-line046-impact-parameter-fresh-b-20260718.translation.en.tex}
+
+After making this substitution, equation (127.3) takes the final form
+\begin{equation}
+ 2\int_{r_0}^{\infty}\frac{\rho\,dr}{r^2\sqrt{1-U/E-\rho^2/r^2}}=\pi\pm\theta.
+ \tag{127.5}
+\end{equation}
+In a repulsive field this equation has a root for $\rho$ only with the minus sign before $\theta$ on the right-hand side, and in an attractive field only with the plus sign.
+
+Equation (127.5) coincides exactly with the classical equation relating the scattering angle to the impact parameter (see I, \S~18). It is also straightforward to verify that the cross-section takes its classical form.
+
+To do so, expand the exponent in (127.2) in powers of $l'=l-l_0(\theta)$, where $l_0(\theta)$ is determined by (127.3)--(127.5). For definiteness, consider the first term in (127.2), and accordingly take the lower sign in (127.3), the repulsive case. From (127.3), observe that
+\[
+ \frac{d\delta_l}{dl}=\frac12\frac{d\theta}{dl_0}.
+\]
+
+\SourcePage{629}{632}
+We then have
+\[
+ i\left[2\delta_l-\left(l+\frac12\right)\theta-\frac\pi4\right]
+ \approx i\left[2\delta_{l_0}-\left(l_0+\frac12\right)\theta-\frac\pi4\right]
+ +i\frac12\frac{d\theta}{dl_0}l'^2.
+\]
+We now replace the summation over $l$ in (127.2) by integration over $dl'$ near $l'=0$. Treating $l'$ as a complex variable, direct the integration path near that point along the direction of steepest descent of the exponential, at an angle $\pi/4$ or $-\pi/4$ to the real axis according to the sign of $d\theta/dl_0$. In other words, put $l'=\xi\exp(\pm i\pi/4)$ and integrate over real $\xi$. Since the integral converges rapidly, its limits may be extended from $-\infty$ to $\infty$:
+\[
+ \int_{-\infty}^{\infty}\exp\left(-\frac12\left|\frac{d\theta}{dl_0}\right|\xi^2\right)d\xi
+ =\sqrt{2\pi\left|\frac{dl_0}{d\theta}\right|}.
+\]
+The result is
+\begin{equation}
+ f(\theta)=\frac1k\left(\frac{l_0}{\sin\theta}\left|\frac{dl_0}{d\theta}\right|\right)^{1/2}
+ \exp\left\{i\left[2\delta_{l_0}-\left(l_0+\frac12\right)\theta-\frac\pi4\right]\right\}.
+ \tag{127.6}
+\end{equation}
+It follows that
+\begin{equation}
+ d\sigma=|f|^2\,2\pi\sin\theta\,d\theta
+ =2\pi\frac{l_0}{k^2}\left|\frac{dl_0}{d\theta}\right|d\theta,
+ \tag{127.7}
+\end{equation}
+and on introducing the impact parameter by $\rho=l_0/k$, we recover the classical formula $d\sigma=2\pi\rho\,d\rho$.
+
+Thus, for scattering through a prescribed angle $\theta$ to be classical, both the value of $l$ satisfying (127.3) and the phase $\delta_l$ at that value must be large\footnote{The relation between $\theta$ and $\rho$ given by (127.5) need not be single-valued; more than one value of $\rho$ may then correspond to the same $\theta$. In that event, $f(\theta)$ is a sum of expressions (127.6) with the corresponding values of $l_0$. At extrema of $\theta(\rho)$, the derivative $d\rho/d\theta$, and with it the classical differential cross-section $d\sigma/do$, becomes infinite; the classical approximation is, of course, inadequate near such an angle (see Problem 2).}. This condition has a simple meaning. To speak of classical scattering through an angle $\theta$ for a particle passing with impact parameter $\rho$, the quantum-mechanical uncertainties in both quantities must be relatively small: $\Delta\rho\ll\rho$ and $\Delta\theta\ll\theta$. The uncertainty of the scattering angle is of order $\Delta\theta\sim\Delta p/p$, where $p$ is the particle momentum and $\Delta p$ is the uncertainty in its transverse component. Since $\Delta p\sim\hbar/\Delta\rho\gg\hbar/\rho$,
+
+\SourcePage{630}{633}
+we have $\Delta\theta\gg\hbar/p\rho$, and consequently, in any event,
+\begin{equation}
+ \theta\gg\frac{\hbar}{\rho mv}.
+ \tag{127.8}
+\end{equation}
+Replacing the angular momentum $m\rho v$ by $\hbar l$, we obtain $\theta l\gg1$, which is the same as the condition $\delta_l\gg1$ (because $\delta_l\sim l\theta$, as follows from (127.3)).
+
+The classical deflection angle can be estimated as the ratio of the transverse momentum increment $\Delta p$ acquired during the collision time $\tau\sim\rho/v$ to the initial momentum $mv$. The force on a particle in the field $U(r)$ at a distance $\rho$ is $F=-dU(\rho)/d\rho$, and hence $\Delta p\sim F\rho/v$, so that $\theta\sim\rho F/mv^2$. Strictly, this estimate is valid only for $\theta\ll1$, but as an order-of-magnitude estimate it may be extended to $\theta\sim1$. Substitution in (127.8) gives the condition for semiclassical scattering:
+\begin{equation}
+ |F|\rho^2\gg\hbar v.
+ \tag{127.9}
+\end{equation}
+This inequality must hold for all values of $\rho$ for which $|U(\rho)|\lesssim E$ still holds.
+
+\input{manuscript/chapters/ch17/fragments/sec127-line105-field-decay-fresh-b-20260718.translation.en.tex}
+
+For the Coulomb field $U=\alpha/r$, condition (127.9) holds when $\alpha\gg\hbar v$. This is the reverse of the condition under which the Coulomb field may be treated as a perturbation. We shall see, however, that for accidental reasons the quantum theory of scattering in a Coulomb field gives the same result as the classical theory in every case.
+
+\subsection*{Problems}
+
+1. Find the total semiclassical scattering cross-section in a field whose form at sufficiently large distances is $U=\alpha/r^n$, with $n>2$.
+
+\SolutionHeading Bearing in mind that the main contribution comes from phases $\delta_l$ with large $l$, calculate them from (124.1):
+\begin{equation}
+ \delta_l=-\frac{m\alpha}{\hbar^2}\int_{l/k}^{\infty}\frac{dr}{r^n\sqrt{k^2-l^2/r^2}}
+ =-\frac{m\alpha k^{n-2}}{2\hbar^2l^{n-1}}
+ \frac{\Gamma(1/2)\Gamma((n-1)/2)}{\Gamma(n/2)}.
+ \tag{1}
+\end{equation}
+
+\SourcePage{631}{634}
+(for evaluation of the integral, cf. Problem 5 of \S~126). Replacing the summation in (123.11) by integration, write
+\[
+ \sigma=\frac{4\pi}{k^2}\int_0^\infty2l\sin^2\delta_l\,dl.
+\]
+After the substitution $\delta_l=u$ and an integration by parts with respect to $du$, the integral reduces to a $\Gamma$-function. The result is
+\begin{equation}
+ \sigma=\frac{2\pi}{n-1}\sin\left[\frac\pi2\left(\frac{n-3}{n-1}\right)\right]
+ \Gamma\left(\frac{n-3}{n-1}\right)
+ \left[\frac{\sqrt\pi\,\Gamma((n-1)/2)}{\Gamma(n/2)}\right]^{2/(n-1)}
+ \left(\frac{m\alpha}{\hbar^2k}\right)^{2/(n-1)}.
+ \tag{2}
+\end{equation}
+(for $n=3$, resolving the indeterminate form gives $\sigma=2\pi^2\alpha m/\hbar v$).
+
+For this result to apply, it is necessary first of all that $l\gg1$ when $\delta_l\sim1$; this gives the inequality
+\[
+ \frac{m\alpha k^{n-2}}{\hbar^2}\gg1.
+\]
+Another condition follows from requiring the field $U(r)$ to have the form under consideration already at distances
+\[
+ r\sim l/k\sim(m\alpha/\hbar^2k)^{1/(n-1)}
+\]
+(where $l$ is obtained from $\delta_l\sim1$), which make the main contribution to the integral (1). If this form is reached only at distances $r\gg a$, where $a$ is the characteristic size of the field, this gives the condition
+\[
+ \frac{m\alpha}{\hbar^2ka^{n-1}}\gg1,
+\]
+which sets an upper limit on the permissible speeds. Recall that in the opposite case, at sufficiently high speeds and subject to $m\alpha/\hbar^2ka^{n-1}\ll1$, one has $\sigma\sim k^{-2}$ (cf. Problem 5 of \S~126).
+
+\input{manuscript/chapters/ch17/fragments/sec127-line150-problem2-fresh-f-20260718.translation.en.tex}
+
+\SolutionHeading An extremum of $\theta(l)$ at some $l=l_0$ means, by (127.3), that the phase near this point has the form
+\[
+ \delta_l\approx\delta_{l_0}+\frac{\theta_0}{2}l'+\frac\alpha3l'^3,
+\]
+where $\theta_0=\theta(l_0)$ and $l'=l-l_0$ (again choosing, for definiteness, the case of the lower sign in (127.3)); the constant $\alpha$ is negative or positive according as $\theta(l)$ has a maximum or a minimum. In place of (127.6), the scattering amplitude is
+\[
+ |f(\theta)|=\frac1k\left(\frac{l_0}{2\pi\sin\theta_0}\right)^{1/2}
+ \left|\int_{-\infty}^{\infty}\exp\left[i\left(\frac{2\alpha}3l'^3-\theta'l'\right)\right]dl'\right|,
+\]
+\input{manuscript/chapters/ch17/fragments/sec127-line161-airy-result-fresh-d-20260718.translation.en.tex}
+\[
+ d\sigma=\frac{4\pi l_0}{\alpha^{2/3}k^2}
+ \Phi^2\left(-\frac{\theta'}{\alpha^{1/3}}\right)d\theta.
+\]

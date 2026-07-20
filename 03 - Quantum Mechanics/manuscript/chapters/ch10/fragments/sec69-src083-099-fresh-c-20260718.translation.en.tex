@@ -1,0 +1,18 @@
+\subsection*{Problems}
+\ProblemHeading
+\noindent\textbf{1.} Find an approximate value for the ground-state energy of the helium atom and of helium-like ions (a nucleus of charge $Z$ with two electrons), treating the electron--electron interaction as a perturbation.
+
+\SolutionHeading In the ion's ground state, both electrons occupy $S$ states. The unperturbed energy is twice the ground-state energy of a hydrogen-like ion, since two electrons are present:
+\[E^{(0)}=2(-Z^2/2)=-Z^2.\]
+The first-order correction is the mean electron--electron interaction energy evaluated in the state whose wave function is
+\begin{equation}
+ \psi=\psi_1(r_1)\psi_2(r_2)=\frac{Z^2}{\pi}e^{-Z(r_1+r_2)}
+ \tag{1}
+\end{equation}
+(the product of two hydrogenic functions with $l=0$). The integral
+\[E^{(1)}=\iint\psi^2\frac1{r_{12}}\,dV_1dV_2\]
+is most conveniently evaluated in the form
+\[E^{(1)}=2\int_0^\infty dV_2\,\rho_2\frac1{r_2}\int_0^{r_2}\rho_1\,dV_1,\qquad dV_1=4\pi r_1^2dr_1,\quad dV_2=4\pi r_2^2dr_2\]
+(the energy of the charge distribution $\rho_2=|\psi_2|^2$ in the field of the spherically symmetric distribution $\rho_1=|\psi_1|^2$; the integrand in the $dV_2$ integration is the energy of the charge $\rho_2(r_2)$ in the field of the sphere $r_1<r_2$, while the factor 2 before the integral accounts for the configurations with $r_1>r_2$). Hence $E^{(1)}=5Z/8$, and finally
+\[E=E^{(0)}+E^{(1)}=-Z^2+\frac58Z.\]
+For the helium atom this gives $-E=11/4=2.75$ (the actual ground-state energy of this atom is $-E=2.90$ atomic units, or $78.9$~eV).

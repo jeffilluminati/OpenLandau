@@ -1,0 +1,175 @@
+\SourcePage{547}{550}
+\section{The Schrödinger equation in a magnetic field}
+
+A particle with spin also possesses an ``intrinsic'' magnetic moment
+$\boldsymbol\mu$. Its quantum-mechanical operator is proportional to the spin
+operator $\hat{\mathbf s}$ and may therefore be written
+\begin{equation}
+ \hat{\boldsymbol\mu}=\frac{\mu}{s}\hat{\mathbf s},
+ \tag{111.1}
+\end{equation}
+where $s$ is the magnitude of the particle's spin and $\mu$ is a constant
+characteristic of the particle. The eigenvalues of the projection of the
+magnetic moment are $\mu_z=\mu\sigma/s$. Thus the coefficient $\mu$, which is
+usually referred to simply as the magnitude of the magnetic moment, is the
+largest possible value of $\mu_z$ and is attained for the spin projection
+$\sigma=s$.
+
+The ratio $\mu/(\hbar s)$ gives the ratio of the particle's intrinsic magnetic
+moment to its intrinsic mechanical angular momentum when both are directed
+along the $z$ axis. For ordinary orbital angular momentum this ratio is, as is
+known, $e/(2mc)$ (see II, \S~44). The proportionality coefficient between the
+intrinsic magnetic moment and the spin of a particle is different. For the
+electron it is $-|e|/mc$, twice the ordinary value (this value follows
+theoretically from the relativistic Dirac wave equation; see IV, \S~33). The
+intrinsic magnetic moment of the electron, whose spin is $1/2$, is consequently
+$-\mu_B$, where
+\begin{equation}
+ \mu_B=\frac{|e|\hbar}{2mc}=0.927\cdot10^{-20}\frac{\text{erg}}{\text{G}}.
+ \tag{111.2}
+\end{equation}
+This quantity is called the \emph{Bohr magneton}.
+
+The magnetic moments of heavy particles are conventionally measured in
+\emph{nuclear magnetons}, defined as $e\hbar/(2m_pc)$, where $m_p$ is the
+proton mass. Experiment gives the intrinsic magnetic moment of the proton as
+$2.79$ nuclear magnetons, directed along the spin. The neutron's magnetic
+moment is directed opposite to its spin and has magnitude $1.91$ nuclear
+magnetons.
+
+\SourcePage{548}{551}
+Notice that the quantities $\boldsymbol\mu$ and $\mathbf s$ on the two sides
+of (111.1) have, as they must, the same vector character: both are axial
+vectors. An analogous equality for the electric dipole moment $\mathbf d$,
+namely $\mathbf d=\mathrm{const}\cdot\mathbf s$, would be incompatible with
+symmetry under inversion of the coordinates, since inversion would change the
+relative sign of the two sides\input{manuscript/chapters/ch15/fragments/sec111-line021-time-reversal-footnote-fresh-20260718.translation.en.tex}.
+
+In nonrelativistic quantum mechanics a magnetic field can be treated only as
+an external field. The magnetic interaction between particles is a
+relativistic effect, and a consistent relativistic theory is required to take
+it into account.
+
+In classical theory the Hamilton function of a charged particle in an
+electromagnetic field is
+\[
+ H=\frac{1}{2m}\left(\mathbf p-\frac ec\mathbf A\right)^2+e\varphi,
+\]
+where $\varphi$ and $\mathbf A$ are respectively the scalar and vector
+potentials of the field, while $\mathbf p$ is the generalized momentum of the
+particle (see II, \S~16). If the particle has no spin, the transition to
+quantum mechanics is made in the usual way: the generalized momentum is
+replaced by the operator $\hat{\mathbf p}=-i\hbar\boldsymbol\nabla$, giving the
+Hamiltonian\footnote{Here we use the same letter $\mathbf p$ for the
+generalized momentum as for the ordinary momentum, instead of the $\mathbf P$
+used in II, \S~16, in order to emphasize that the same operator corresponds to
+it.}
+\begin{equation}
+ \hat H=\frac{1}{2m}\left(\hat{\mathbf p}-\frac ec\mathbf A\right)^2+e\varphi.
+ \tag{111.3}
+\end{equation}
+
+If the particle has spin, however, this procedure is insufficient. Its
+intrinsic magnetic moment interacts directly with the magnetic field. This
+interaction is entirely absent from the classical Hamilton function, since
+spin itself, being a purely quantum effect, disappears in the classical
+limit. The correct Hamiltonian is obtained by adding to (111.3) the term
+$-\hat{\boldsymbol\mu}\mathbf H$, corresponding to the energy of a magnetic
+moment $\boldsymbol\mu$ in a field $\mathbf H$. Thus the
+\SourcePage{549}{552}
+Hamiltonian of a particle with spin is\footnote{Using the same letter for the
+magnetic field and the Hamiltonian cannot cause confusion: the symbol for the
+Hamiltonian carries a hat.}
+\begin{equation}
+ \hat H=\frac{1}{2m}\left(\hat{\mathbf p}-\frac ec\mathbf A\right)^2-\hat{\boldsymbol\mu}\mathbf H+e\varphi.
+ \tag{111.4}
+\end{equation}
+When expanding the square $(\hat{\mathbf p}-(e/c)\mathbf A)^2$, one must bear
+in mind that the operator $\hat{\mathbf p}$ does not in general commute with
+the vector $\mathbf A$, which is a function of the coordinates. We must
+therefore write
+\begin{equation}
+ \hat H=\frac{1}{2m}\hat{\mathbf p}^{2}-\frac{e}{2mc}(\hat{\mathbf p}\mathbf A+\mathbf A\hat{\mathbf p})+\frac{e^2}{2mc^2}\mathbf A^2-\frac{\mu}{s}\hat{\mathbf s}\mathbf H+e\varphi.
+ \tag{111.5}
+\end{equation}
+The commutation rule (16.4) for the momentum operator and an arbitrary
+function of the coordinates gives
+\begin{equation}
+ \hat{\mathbf p}\mathbf A-\mathbf A\hat{\mathbf p}=-i\hbar\Div{\mathbf A}.
+ \tag{111.6}
+\end{equation}
+
+Thus $\hat{\mathbf p}$ and $\mathbf A$ commute if $\Div{\mathbf A}=0$. This
+condition holds, in particular, for a uniform field when its vector potential
+is chosen as
+\begin{equation}
+ \mathbf A=(1/2)(\mathbf H\times\mathbf r).
+ \tag{111.7}
+\end{equation}
+
+The equation $i\hbar\,\partial\Psi/\partial t=\hat H\Psi$, with Hamiltonian
+(111.4), is the generalization of the Schrödinger equation to the presence of
+a magnetic field. The wave functions acted on by the Hamiltonian in this
+equation are symmetric spinors of rank $2s$.
+
+Wave functions of a particle in an electromagnetic field have an ambiguity
+associated with the ambiguity in the field potentials. As is known (see II,
+\S~18), the latter are determined only up to a \emph{gauge transformation}
+\begin{equation}
+ \mathbf A\to\mathbf A+\boldsymbol\nabla f,\qquad
+ \varphi\to\varphi-\frac1c\frac{\partial f}{\partial t},
+ \tag{111.8}
+\end{equation}
+where $f$ is an arbitrary function of the coordinates and time. Such a
+transformation does not affect the field strengths. It must therefore leave
+the solutions of the wave equation essentially unchanged as well; in
+particular, $|\Psi|^2$ must remain invariant. It is indeed readily verified
+that the original equation is recovered if, together with the replacement
+(111.8) in the Hamiltonian, the wave function is replaced according to
+\begin{equation}
+ \Psi\to\Psi\exp\left(\frac{ie}{\hbar c}f\right).
+ \tag{111.9}
+\end{equation}
+
+\SourcePage{550}{553}
+This ambiguity of the wave function has no effect on any physically
+meaningful quantity whose definition does not explicitly contain the
+potentials.
+
+\input{manuscript/chapters/ch15/fragments/sec111-line076-velocity-operator-fresh-20260718.translation.en.tex}
+\begin{equation}
+ m\hat{\mathbf v}=\hat{\mathbf p}-\frac ec\mathbf A,
+ \tag{111.10}
+\end{equation}
+which is exactly analogous to the classical relation. The operators of the
+velocity components obey the commutation rules
+\begin{equation}
+ \left\{\hat v_x,\hat v_y\right\}=i\frac{e\hbar}{m^2c}H_z,\qquad
+ \left\{\hat v_y,\hat v_z\right\}=i\frac{e\hbar}{m^2c}H_x,\qquad
+ \left\{\hat v_z,\hat v_x\right\}=i\frac{e\hbar}{m^2c}H_y,
+ \tag{111.11}
+\end{equation}
+\input{manuscript/chapters/ch15/fragments/sec111-line088-velocity-components-fresh-20260718.translation.en.tex}
+
+For motion in a magnetic field, time-reversal symmetry holds only if the sign
+of the field $\mathbf H$, and of the vector potential $\mathbf A$, is reversed
+as well. This means (see \S\S~18 and 60) that the Schrödinger equation
+$\hat H\psi=E\psi$ must retain its form upon passage to the complex-conjugate
+quantities accompanied by reversal of the sign of $\mathbf H$. This is
+immediately evident for every term in the Hamiltonian (111.4) except
+$-\hat{\mathbf s}\mathbf H$. Under the specified transformation the term
+$-\hat{\mathbf s}\mathbf H\psi$ in the Schrödinger equation becomes
+$\hat{\mathbf s}^{*}\mathbf H\psi^{*}$ and appears at first sight to violate
+the required invariance, since the operator $\hat{\mathbf s}^{*}$ is not equal
+to $-\hat{\mathbf s}$.
+
+One must take into account, however, that the wave function is actually a
+contravariant spinor $\psi^{\lambda\mu\ldots}$, which on complex conjugation
+becomes the covariant spinor $\psi^{\lambda\mu\ldots *}$ (see \S~60). The
+spinor $\psi^{*}_{\lambda\mu\ldots}$, on the other hand, is contravariant.
+Using definitions (57.4) and (57.5) to find the components of
+$(\hat{\mathbf s}\mathbf H\psi)^*$ and expressing them in terms of
+$\psi^{*}_{\lambda\mu\ldots}$, one verifies that time reversal leads to a
+Schrödinger equation for the components $\psi^{*}_{\lambda\mu\ldots}$ of the
+same form as the original equation for the components
+$\psi^{\lambda\mu\ldots}$.

@@ -1,0 +1,92 @@
+\SourcePage{540}{543}
+\section{Matrix elements in the coupling of angular momenta}
+
+Consider once more a system made up of two parts, which we shall call subsystems 1 and 2. Let $f_{kq}^{(1)}$ be a spherical tensor characterizing the first subsystem. By (107.6), its matrix elements between wave functions of that subsystem are
+\begin{equation}
+ \begin{aligned}
+ \langle n'_1j'_1m'_1|f_{kq}^{(1)}|n_1j_1m_1\rangle
+ ={}&i^k(-1)^{j_{1\max}-m'_1}
+ \begin{pmatrix}j'_1&k&j_1\\-m'_1&q&m_1\end{pmatrix}\
+ &\times\langle n'_1j'_1\|f_k^{(1)}\|n_1j_1\rangle.
+ \end{aligned}
+ \tag{109.1}
+\end{equation}
+
+\SourcePage{541}{544}
+We now need the matrix elements of these same quantities between wave functions of the complete system. We shall show how to express them through the reduced matrix elements already occurring in (109.1).
+
+A state of the complete system is specified by the quantum numbers $j_1j_2JMn_1n_2$, where $J$ and $M$ give the magnitude and projection of the total angular momentum. Since $f_{kq}^{(1)}$ belongs to subsystem 1, its operator commutes with the angular-momentum operator of subsystem 2. Its matrix is consequently diagonal in $j_2$, and likewise in the remaining quantum numbers $n_2$ of that subsystem. For brevity we shall suppress the indices $j_2,n_2$ and write the required matrix elements as
+\[
+ \langle n'_1j'_1J'M'|f_{kq}^{(1)}|n_1j_1JM\rangle.
+\]
+Equation (107.6) fixes their dependence on $M$:
+\begin{equation}
+ \begin{aligned}
+ \langle n'_1j'_1J'M'|f_{kq}^{(1)}|n_1j_1JM\rangle
+ ={}&i^k(-1)^{J_{\max}-M'}
+ \begin{pmatrix}J'&k&J\\-M'&q&M\end{pmatrix}\
+ &\times\langle n'_1j'_1J'\|f_k^{(1)}\|n_1j_1J\rangle.
+ \end{aligned}
+ \tag{109.2}
+\end{equation}
+
+To relate the reduced matrix elements on the right-hand sides of (109.1) and (109.2), use the definition of a matrix element to write
+\[
+ \begin{aligned}
+ \langle n'_1j'_1J'M'|f_{kq}^{(1)}|n_1j_1JM\rangle
+ & =\int\psi_{J'M'}^{*}\widehat f_{kq}^{(1)}\psi_{JM}\,dq={}\\
+ & =\sum_{\!m_1m'_1}(-1)^{j'_1-j_2+M'-M}\!\!\!\sqrt{(2J'+1)(2J+1)}
+ \begin{pmatrix}j'_1&j_2&J'\\m'_1&m_2&-M'\end{pmatrix}\\
+ &\qquad\times
+ \begin{pmatrix}j_1&j_2&J\\m_1&m_2&-M\end{pmatrix}
+ \langle n'_1j'_1m'_1|f_{kq}^{(1)}|n_1j_1m_1\rangle.
+ \end{aligned}
+\]
+Insert (109.1) and (109.2) here and compare the resulting relation with (108.4). It then follows that the ratio of the reduced matrix elements in (109.1) and (109.2) is proportional to a particular $6j$ symbol. A detailed comparison of the two relations gives the fi\SourcePageJoin{542}{545}nal result
+\begin{equation}
+ \begin{aligned}
+ \langle n'_1j'_1J'\|f_k^{(1)}\|n_1j_1J\rangle
+ ={}&(-1)^{j_{1\max}+j_2+J_{\min}+k}
+ \sqrt{(2J+1)(2J'+1)}\\
+ &\times
+ \begin{Bmatrix}j'_1&J'&j_2\\J&j_1&k\end{Bmatrix}
+ \langle n'_1j'_1\|f_k^{(1)}\|n_1j_1\rangle
+ \end{aligned}
+ \tag{109.3}
+\end{equation}
+(here $j_{1\max}$ is the greater of $j_1,j'_1$, while $J_{\min}$ is the lesser of $J,J'$). For a spherical tensor belonging to subsystem 2, the corresponding formula for the reduced matrix elements is
+\begin{equation}
+ \begin{aligned}
+ \langle n'_2j'_2J'\|f_k^{(2)}\|n_2j_2J\rangle
+ ={}&(-1)^{j_1+j_{2\min}+J_{\max}+k}
+ \sqrt{(2J+1)(2J'+1)}\\
+ &\times
+ \begin{Bmatrix}j'_2&J'&j_1\\J&j_2&k\end{Bmatrix}
+ \langle n'_2j'_2\|f_k^{(2)}\|n_2j_2\rangle.
+ \end{aligned}
+ \tag{109.4}
+\end{equation}
+
+\input{manuscript/chapters/ch14/fragments/sec109-phase-coupling-order-r1.translation.en.tex}
+
+We next derive a useful expression for the matrix elements, between wave functions of the complete system, of the scalar product [as defined in (107.4)] of two rank-$k$ spherical tensors belonging to different subsystems and hence commuting with one another. By (107.10), these matrix elements can be written in terms of the reduced matrix elements of the two tensors, taken between wave functions of the complete system, in the form
+\[
+ \begin{aligned}
+ &\langle n'_1n'_2j'_1j'_2JM|(f_k^{(1)}f_k^{(2)})_{00}|n_1n_2j_1j_2JM\rangle={}\\
+ &\quad=\frac1{2J+1}\sum_{J''}
+ \langle n'_1j'_1J\|f_k^{(1)}\|n_1j_1J''\rangle
+ \langle n'_2j'_2J''\|f_k^{(2)}\|n_2j_2J\rangle
+ \end{aligned}
+\]
+(we have used here the fact that the matrix of a quantity belonging to either subsystem is diagonal in the quantum numbers of the other). Substitution of (109.3) and (109.4), followed by application of the summation formula (108.8), gives the required expression of the scalar-product matrix element in terms of the reduced matrix elements of the individual tensors between wave functions of the respective sub\SourcePageJoin{543}{546}systems:
+\begin{equation}
+ \begin{aligned}
+ &\langle n'_1n'_2j'_1j'_2JM|(f_k^{(1)}f_k^{(2)})_{00}|n_1n_2j_1j_2JM\rangle={}\\
+ &\quad=(-1)^{j_{1\min}+j_{2\max}+J}
+ \begin{Bmatrix}J&j'_2&j'_1\\k&j_1&j_2\end{Bmatrix}\\
+ &\qquad\times
+ \langle n'_1j'_1\|f_k^{(1)}\|n_1j_1\rangle
+ \langle n'_2j'_2\|f_k^{(2)}\|n_2j_2\rangle.
+ \end{aligned}
+ \tag{109.5}
+\end{equation}

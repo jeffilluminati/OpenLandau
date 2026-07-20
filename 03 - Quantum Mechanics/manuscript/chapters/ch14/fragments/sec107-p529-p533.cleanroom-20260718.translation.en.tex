@@ -1,0 +1,140 @@
+\SourcePage{529}{532}
+\section{Matrix elements of tensors}
+
+In \S~29 we obtained formulas giving the dependence of the matrix elements of a vector physical quantity on the value of the angular-momentum projection. In fact, those formulas are a special instance of general relations that solve the same problem for an irreducible tensor (see p.~268) of arbitrary rank\footnote{The treatment of the questions considered in \S~107--109, as well as most of the results presented there, is due to Racah (1942/1943).}.
+
+The set of $2k+1$ components of an irreducible tensor of rank $k$ (where $k$ is an integer) is, in its transformation properties, equivalent to the set of $2k+1$ spherical harmonics $Y_{kq}$ ($q=-k,\ldots,k$) (see the note on p.~268). Thus suitable linear combinations of the tensor components yield a set of quantities that transform under rotations in the same way as the functions $Y_{kq}$. We shall denote these quantities by $f_{kq}$ and call their set a \emph{spherical tensor} of rank $k$.
+
+For example, a vector corresponds to $k=1$, and the quantities $f_{1q}$ are related to the vector components by
+\begin{equation}
+ f_{10}=ia_z,\qquad f_{1,\pm1}=\mp\frac{i}{\sqrt2}(a_x\pm ia_y)
+ \tag{107.1}
+\end{equation}
+(cf. (57.7)). The analogous formulas for a tensor of rank two\SourcePage{530}{533}are
+\begin{equation}
+ \begin{gathered}
+ f_{20}=-\sqrt{3/2}\,a_{zz},\qquad f_{2,\pm1}=\pm(a_{xz}\pm ia_{yz}),\\
+ f_{2,\pm2}=-\frac12(a_{xx}-a_{yy}\pm2ia_{xy}),
+ \end{gathered}
+ \tag{107.2}
+\end{equation}
+with $a_{xx}+a_{yy}+a_{zz}=0$\footnote{It is understood that the quantities $f_{kq}$ are complex only because of the change to spherical coordinates; the original Cartesian tensor components are real.}.
+
+Tensor products of two (or more) spherical tensors $f_{k_1q_1}$, $g_{k_2q_2}$ are formed according to the rules for adding angular momenta, with $k_1$ and $k_2$ formally playing the role of the ``angular momenta'' associated with the tensors. Thus two spherical tensors of ranks $k_1$ and $k_2$ can be combined into spherical tensors of ranks $K=k_1+k_2,\ldots,|k_1-k_2|$ by the formulas
+\begin{equation}
+ \begin{aligned}
+ (f_{k_1}g_{k_2})_{KQ}&=\sum_{q_1q_2}(q_1q_2|KQ)f_{k_1q_1}g_{k_2q_2}=\\
+ &=(-1)^{k_1-k_2+Q}\sqrt{2K+1}\sum_{q_1q_2}
+ \begin{pmatrix}k_1&k_2&K\\q_1&q_2&-Q\end{pmatrix}f_{k_1q_1}g_{k_2q_2}
+ \end{aligned}
+ \tag{107.3}
+\end{equation}
+\input{manuscript/chapters/ch14/fragments/sec107-scalar-product-intro-r1.translation.en.tex}
+\begin{equation}
+ (f_kg_k)_{00}=\sum_q(-1)^{k-q}f_{kq}g_{k,-q},
+ \tag{107.4}
+\end{equation}
+which differs by a factor $\sqrt{2k+1}$ from the definition obtained by putting $K=Q=0$ in (107.3) (cf. (106.2))\footnote{If $\mathbf A$ and $\mathbf B$ are two vectors corresponding, by (107.1), to the spherical tensors $f_{1q}$ and $g_{1q}$, then
+\[
+ (f_1g_1)_{00}=\mathbf{AB}.
+\]}. The same definition may also be written as
+\[
+ (f_kg_k)_{00}=\sum_q f_{kq}g_{kq}^{*},
+\]
+since complex conjugation of a spherical tensor obeys the rule
+\[
+ f_{kq}^{*}=(-1)^{k-q}f_{k,-q}
+\]
+(cf. (28.9))\footnote{We repeat the observation made above in connection with (106.8): with this rule, complex conjugation of the tensors of ranks $k_1$ and $k_2$ on the right-hand side of (107.3) produces the same conjugation of the rank-$K$ tensor on its left-hand side.}.
+
+\SourcePage{531}{534}
+Representing physical quantities as spherical tensors is particularly convenient when calculating their matrix elements, since the results of angular-momentum addition theory can then be used.
+
+By the definition of matrix elements,
+\begin{equation}
+ \widehat f_{kq}\psi_{njm}=\sum_{n'j'm'}\langle n'j'm'|f_{kq}|njm\rangle\psi_{n'j'm'},
+ \tag{107.5}
+\end{equation}
+where $\psi_{njm}$ are the wave functions of stationary states of the system, specified by its angular momentum $j$, its projection $m$, and the set $n$ of the remaining quantum numbers. In their transformation properties, the functions on the two sides of (107.5) correspond to the functions on the respective sides of (106.11). The selection rules follow at once.
+
+Matrix elements of the components $f_{kq}$ of an irreducible tensor of rank $k$ can be nonzero only for transitions $jm\to j'm'$ satisfying the angular-momentum ``addition rule'' $\mathbf j'=\mathbf j+\mathbf k$. The numbers $j'$, $j$, and $k$ must then satisfy the ``triangle rule'' (that is, they can be the lengths of the sides of a closed triangle), while $m'=m+q$. In particular, diagonal matrix elements can be nonzero only if $2j\geqslant k$.
+
+The same analogy under transformations further shows that the coefficients in the sum (107.5) must be proportional to those in (106.11) (the \emph{Wigner--Eckart theorem}). This fixes their dependence on $m$ and $m'$. Accordingly, we write the matrix elements in the form
+\begin{equation}
+ \langle n'j'm'|f_{kq}|njm\rangle=i^k(-1)^{j_{\max}-m'}
+ \begin{pmatrix}j'&k&j\\-m'&q&m\end{pmatrix}
+ \langle n'j'\|f_k\|nj\rangle,
+ \tag{107.6}
+\end{equation}
+where $j_{\max}$ is the larger of $j$ and $j'$. The quantities $\langle n'j'\|f_k\|nj\rangle$, which do not depend on $m$, $m'$, or $q'$, are called \emph{reduced matrix elements}. Formula (107.6) answers the question of how matrix elements depend on the angular-momentum projections. This dependence is governed entirely by symmetry with respect to the rotation group, whereas dependence on the other quantum numbers is determined by the physical nature of the quantities $f_{kq}$ themselves\footnote{Among other consequences, these results yield the selection rules stated in \S~29 for vector matrix elements and the formulas (29.7)--(29.9) for them.}.
+
+\SourcePage{532}{535}
+The operators $\widehat f_{kq}$ are related by
+\begin{equation}
+ \widehat f_{kq}^{+}=(-1)^{k-q}\widehat f_{k,-q}.
+ \tag{107.7}
+\end{equation}
+Their matrix elements therefore satisfy
+\begin{equation}
+ \langle n'j'm'|f_{kq}|njm\rangle^{*}=(-1)^{k-q}\langle njm|f_{k,-q}|n'j'm'\rangle.
+ \tag{107.8}
+\end{equation}
+Substitution of (107.6) into this equality, followed by use of the $3j$-symbol properties (106.5) and (106.6), gives the ``Hermiticity'' relation for the reduced matrix elements\footnote{The phase factor in definition (107.6) was chosen precisely so as to ensure this equality.}
+\begin{equation}
+ \langle n'j'\|f_k\|nj\rangle=\langle nj\|f_k\|n'j'\rangle^{*}.
+ \tag{107.9}
+\end{equation}
+
+The matrix elements of the scalar (107.4) are diagonal in $j$ and $m$. The rule of matrix multiplication gives
+\[
+ \begin{aligned}
+ \langle n'jm|(f_kg_k)_{00}|njm\rangle={}&\\
+ ={}&\sum_q(-1)^{k-q}\sum_{n''j''m''}
+ \langle n'jm|f_{kq}|n''j''m''\rangle\\
+ &\qquad{}\times\langle n''j''m''|g_{k,-q}|njm\rangle.
+ \end{aligned}
+\]
+Substituting (107.6) here and summing over $q$ and $m''$ with the aid of the $3j$-symbol orthogonality relation (106.12), we obtain
+\begin{equation}
+ \langle n'jm|(f_kg_k)_{00}|njm\rangle=
+ \frac1{2j+1}\sum_{n''j''}\langle n'j\|f_k\|n''j''\rangle
+ \langle n''j''\|g_k\|nj\rangle.
+ \tag{107.10}
+\end{equation}
+
+In the same way one readily obtains the following formulas for sums of squared matrix elements:
+\begin{equation}
+ \sum_{qm'}|\langle n'j'm'|f_{kq}|njm\rangle|^2=
+ \frac1{2j+1}|\langle n'j'\|f_k\|nj\rangle|^2,
+ \tag{107.11}
+\end{equation}
+\begin{equation}
+ \sum_{mm'}|\langle n'j'm'|f_{kq}|njm\rangle|^2=
+ \frac1{2k+1}|\langle n'j'\|f_k\|nj\rangle|^2.
+ \tag{107.12}
+\end{equation}
+In the first formula the sum is over $q$ and $m'$ for a specified $m$; in the second it is over $m$ and $m'$ for a specified $q$ (with $m'=m+q$ in every case).
+
+For reference, consider the case in which the quantities $f_{kq}$ are the spherical harmonics $Y_{kq}$ themselves, and give the expressions for their matrix elements in transitions between states\SourcePage{533}{536}of one particle with integral orbital angular momenta $l_1$ and $l_2$, that is, for the integrals
+\begin{equation}
+ \langle l_1m_1|Y_{lm}|l_2m_2\rangle=\int Y_{l_1m_1}^{*}Y_{lm}Y_{l_2m_2}\,do.
+ \tag{107.13}
+\end{equation}
+Besides the selection rule corresponding to angular-momentum addition ($\mathbf l+\mathbf l_2=\mathbf l_1$), these matrix elements obey the further rule that the sum $l+l_1+l_2$ must be even. This follows from parity conservation: the product $(-1)^{l_1+l_2}$ of the parities of the two states must equal the parity $(-1)^l$ of the physical quantity under consideration (see \S~30).
+
+The matrix elements (107.13) are a special case of a more general integral that will be calculated in \S~110 (see the note on p.~547). They are given by
+\begin{equation}
+ \begin{aligned}
+ \langle l_1m_1|Y_{lm}|l_2m_2\rangle={}&(-1)^{m_1}i^{-l_1+l_2+l}
+ \begin{pmatrix}l_1&l&l_2\\-m_1&m&m_2\end{pmatrix}
+ \begin{pmatrix}l_1&l&l_2\\0&0&0\end{pmatrix}\\
+ &\times\left[\frac{(2l+1)(2l_1+1)(2l_2+1)}{4\pi}\right]^{1/2}.
+ \end{aligned}
+ \tag{107.14}
+\end{equation}
+In particular, on setting $m_1=m_2=m=0$, we find the integral of the product of three Legendre polynomials:
+\begin{equation}
+ \int_{-1}^{1}P_l(\mu)P_{l_1}(\mu)P_{l_2}(\mu)\,d\mu=
+ 2\begin{pmatrix}l_1&l&l_2\\0&0&0\end{pmatrix}^{2}.
+ \tag{107.15}
+\end{equation}

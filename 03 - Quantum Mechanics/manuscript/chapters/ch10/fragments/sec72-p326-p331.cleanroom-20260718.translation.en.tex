@@ -1,0 +1,97 @@
+\SourcePage{326}{329}
+\section{Fine structure of atomic levels}
+
+A systematic derivation of the formulas for relativistic effects in the interaction of electrons belongs to another volume of this course (see Vol.~IV, \S~33, 83). Here we give only a general account of these effects as they apply to the study of atomic terms.
+
+The relativistic terms in an atom's Hamiltonian fall into two classes: some are linear in the electron-spin operators, whereas others are quadratic in them. The former correspond, as it were, to an interaction between the orbital motion of the electrons and their spins; this is called the \emph{spin--orbit interaction}. The latter describe the interaction among the electron spins (the \emph{spin--spin interaction}). Both interactions have the same order, the second, in $v/c$, the ratio of an electron's speed to the speed of light. In practice, however, the spin--orbit interaction in heavy atoms is much greater than the spin--spin interaction. The reason is that the spin--orbit interaction grows rapidly with atomic number, while the spin--spin interaction is, to leading order, independent of $Z$ altogether (see below).
+
+\SourcePage{327}{330}
+The spin--orbit interaction operator has the form
+\begin{equation}
+ \hat V_{sl}=\sum_a\hat{\mathbf s}_a\hat{\mathbf A}_a
+ \tag{72.1}
+\end{equation}
+\input{manuscript/chapters/ch10/fragments/sec72-src014-fresh-a-20260718.translation.en.tex}
+\begin{equation}
+ \hat V_{sl}=\sum_a\alpha_a\hat{\mathbf s}_a\hat{\mathbf l}_a.
+ \tag{72.2}
+\end{equation}
+The coefficients in this sum are expressed through the potential energy $U(r)$ of an electron in the self-consistent field as follows:
+\begin{equation}
+ \alpha_a=\frac{\hbar^2}{2m^2c^2r_a}\frac{dU(r_a)}{dr_a}.
+ \tag{72.3}
+\end{equation}
+Since $|U(r)|$ decreases with distance from the nucleus, all the $\alpha_a$ are positive.
+
+When the interaction (72.2) is treated as a perturbation, its contribution to the energy must be averaged over the unperturbed state. The principal contribution comes from distances close to the nucleus---distances of the order of the Bohr radius ($\sim\hbar^2/Zme^2$) for a nucleus of charge $Ze$. The nuclear field is practically unscreened in this region, and the potential energy is
+\[
+ U\sim-\frac{Ze^2}{r}\sim-\frac{Z^2me^4}{\hbar^2},
+\]
+so that
+\[
+ \alpha\sim\frac{\hbar^2}{m^2c^2}\frac Ur^2\sim Z^4\left(\frac{e^2}{\hbar c}\right)^2\frac{me^4}{\hbar^2}.
+\]
+The mean value of $\alpha$ is obtained from this estimate by multiplying by the probability $w$ of finding the electron near the nucleus. By (71.3), $w\sim Z^{-2}$; hence the final estimate for the spin--orbit interaction energy of an electron is
+\[
+ \alpha\sim\left(\frac{Ze^2}{\hbar c}\right)^2\frac{me^4}{\hbar^2},
+\]
+
+\SourcePage{328}{331}
+that is, it differs from the principal energy of an outer electron in the atom ($\sim me^4/\hbar^2$) only by the factor $(Ze^2/\hbar c)^2$. This factor increases rapidly with atomic number and becomes of order unity in heavy atoms.
+
+The actual averaging of the perturbation operator (72.2) over the unperturbed states of the electron shell is carried out in two stages. First we average over the electronic state of the atom for specified values $L$ and $S$ of its total orbital angular momentum and total spin, but not over their directions. After this averaging, $\hat V_{sl}$ is still an operator; it must now, however, be expressible solely through operators for quantities that characterize the atom as a whole, rather than its individual electrons. These are the operators $\hat{\mathbf L}$ and $\hat{\mathbf S}$.
+
+Let the spin--orbit interaction operator averaged in this manner be denoted by $\hat V_{SL}$. Since it is linear in $\hat{\mathbf S}$, it has the form
+\begin{equation}
+ \hat V_{SL}=A\hat{\mathbf S}\hat{\mathbf L},
+ \tag{72.4}
+\end{equation}
+where $A$ is a constant characteristic of the given unsplit term; thus it depends on $S$ and $L$, but not on the atom's total angular momentum $J$\footnote{To clarify the meaning of this operation, recall that in quantum mechanics averaging means taking the corresponding diagonal matrix element. Partial averaging, on the other hand, consists in forming a collection of matrix elements that are diagonal only in some of all the quantum numbers specifying the system's state. Thus, in the present case, averaging the operator (72.2) means forming a matrix of the elements $(nM'_LM'_S|\hat V_{sl}|nM_LM_S)$ for every possible $M_L$, $M'_L$, $M_S$, and $M'_S$, while it is diagonal in all the remaining quantum numbers (whose collection is denoted by $n$). Correspondingly, the operators $\hat{\mathbf S}$ and $\hat{\mathbf L}$ are to be understood as the matrices $(M'_S|\mathbf S|M_S)$ and $(M'_L|\mathbf L|M_L)$, whose elements are given by (27.13). We shall repeatedly use this method of averaging in successive stages below.}.
+
+\input{manuscript/chapters/ch10/fragments/sec72-src051-fresh-b-20260718.translation.en.tex}
+
+\SourcePage{329}{332}
+All components of a multiplet have the same $L$ and $S$, and only their relative positions are of interest. The splitting energy may therefore be written as
+\begin{equation}
+ \frac12AJ(J+1).
+ \tag{72.5}
+\end{equation}
+Consequently, the intervals between adjacent components, characterized by $J$ and $J-1$, are
+\begin{equation}
+ \Delta E_{J,J-1}=AJ.
+ \tag{72.6}
+\end{equation}
+This formula is known as the \emph{Land\'e interval rule} (A.~Land\'e, 1923).
+
+\input{manuscript/chapters/ch10/fragments/sec72-src069-fresh-c-20260718.translation.en.tex}
+
+The sign of $A$ is readily found for atomic ground states when the electron configuration contains just one incompletely filled shell. If this shell is no more than half full, Hund's rule (\S~67) says that all $n$ electrons in it have parallel spins, so the total spin has its greatest possible value, $S=n/2$. Substituting $\mathbf s_a=\mathbf S/n$ into (72.2) and taking $\alpha_a$ (the same for every electron in one shell) outside the sum gives
+\[
+ \hat V_{SL}=\frac{\alpha}{2S}\hat{\mathbf S}\hat{\mathbf L},
+\]
+and hence $A=\alpha/2S>0$. If the shell is more than half full, we first add to (72.2), and subtract from it, an identical sum taken over the unoccupied places---the holes in the incomplete shell. Since a completely filled shell would have $\hat V_{sl}=0$, the result represents the operator as $\hat V_{sl}=-\sum_a\alpha_a\hat{\mathbf l}_a\hat{\mathbf s}_a$, where the sum now extends only over the holes; moreover, the atom's total spin and orbital angular momentum are $\mathbf S=-\sum_a\mathbf s_a$ and $\mathbf L=-\sum_a\mathbf l_a$. Repeating the preceding argument therefore yields $A=-\alpha/2S$, so that $A<0$.
+
+The foregoing gives a simple rule for the value of $J$ in the ground state of an atom having one incompletely filled shell. If this shell contains no more than half its maximum possible number of electrons, then $J=|L-S|$. If it is more than half full, then $J=L+S$.
+
+\input{manuscript/chapters/ch10/fragments/sec72-src080-fresh-c-20260718.translation.en.tex}
+
+By analogy with (72.4), averaging the spin--spin interaction operator must give an expression quadratic in $\hat{\mathbf S}$. The expressions quadratic in $\hat{\mathbf S}$ are $S^2$ and $(\hat{\mathbf L}\hat{\mathbf S})^2$. The eigenvalues of the first do not depend on $J$, so it does not split the term. It may therefore be omitted, and we may write
+\begin{equation}
+ \hat V_{ss}=B(\hat{\mathbf S}\hat{\mathbf L})^2,
+ \tag{72.7}
+\end{equation}
+where $B$ is a constant. The eigenvalues of this operator contain terms independent of $J$, terms proportional to $J(J+1)$, and finally a term proportional to $J^2(J+1)^2$. The first group produces no splitting and is consequently of no interest; the second can be absorbed into (72.5), which is equivalent merely to changing the constant $A$. The last group gives the following contribution to the term energy:
+\begin{equation}
+ \frac14BJ^2(J+1)^2.
+ \tag{72.8}
+\end{equation}
+
+The construction of atomic levels described in \S\S~66 and 67 is based on the picture in which the orbital angular momenta of the electrons combine to form the total orbital angular momentum $L$ of the atom, and their spins combine to form its total spin $S$. As stated earlier, this treatment is possible only when the relativistic effects are small; more precisely, the fine-structure intervals must be small in comparison with the separations of levels having different $L$ and $S$. This approximation is called the \emph{Russell--Saunders case} (H.~Russell, F.~Saunders, 1925); it is also described as the $LS$ type of coupling.
+
+In fact, the range of validity of this approximation is limited. The levels of light atoms follow the $LS$ scheme; with increasing atomic number, the relativistic interactions within the atom become stronger and the Russell--Saunders approximation ceases to apply\footnote{Although the quantitative formulas describing this type of coupling cease to apply, the classification of levels according to the same scheme may remain meaningful for heavier atoms as well, especially for the lowest states (including the ground state).}. It should also be observed that the approximation is inapplicable, in particular, to highly excited levels in which the atom has one electron in a state of large $n$, and this electron consequently lies mainly at great distances from the nucleus (\S~68). Its electrostatic interaction with the motion of the other electrons is relatively weak, while the relativistic interaction within the ``atomic core'' does not diminish.
+
+\input{manuscript/chapters/ch10/fragments/sec72-src098-fresh-a-20260718.translation.en.tex}
+
+\input{manuscript/chapters/ch10/fragments/sec72-src100-fresh-a-20260718.translation.en.tex}
+
+\input{manuscript/chapters/ch10/fragments/sec72-src102-fresh-e-20260718.translation.en.tex}

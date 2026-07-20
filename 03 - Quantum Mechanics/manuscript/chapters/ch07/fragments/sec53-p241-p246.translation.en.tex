@@ -1,0 +1,141 @@
+\SourcePage{241}{244}
+\section{Transitions Caused by Adiabatic Perturbations}
+
+We noted already in §~41 that, in the limit of an arbitrarily slowly time-varying perturbation, the probability for a system to pass from one state to another tends to zero. We shall now examine this question quantitatively by calculating the transition probability produced by a slowly varying (adiabatic) perturbation (L.~D.~Landau, 1961).
+
+Let the system's Hamiltonian be a slowly varying function of time, approaching definite limits as $t\to\pm\infty$. Let, further, $\psi_n(q,t)$ and $E_n(t)$ be the energy eigenfunctions and eigenvalues (with time serving as a parameter) obtained by solving the Schrödinger equation $\widehat H(t)\psi_n=E_n\psi_n$. Since the time variation of $\widehat H$ is adiabatic, the time dependences of $E_n$ and $\psi_n$ are likewise
+\SourcePage{242}{245}
+slow. Our problem is to determine the probability $w_{21}$ that the system will be found in a given state $\psi_2$ as $t\to+\infty$, provided that it occupied state $\psi_1$ as $t\to-\infty$.
+
+The slowness of the perturbation makes the ``transition process'' last a long time, so that the change in action over this interval (given by $-\int E(t)dt$) is large. In this sense the problem is semiclassical. The transition probability sought is governed essentially by those values $t=t_0$ for which
+\begin{equation}
+ E_1(t_0)=E_2(t_0)
+ \tag{53.1}
+\end{equation}
+and which may be viewed as counterparts of the ``transition instant'' in classical mechanics (cf. §~52). Such a transition is, of course, classically impossible in reality; this appears in the complex character of the roots of equation (53.1). We must therefore investigate the solutions of the Schrödinger equation at complex values of the parameter $t$, near the point $t=t_0$ where two energy eigenvalues become equal.
+
+As will be seen, the eigenfunctions $\psi_1$, $\psi_2$ vary strongly with $t$ near this point. To determine this dependence, first introduce linear combinations of them, denoted by $\varphi_1$, $\varphi_2$, that satisfy
+\begin{equation}
+ \int\varphi_1^2dq=\int\varphi_2^2dq=0,\qquad
+ \int\varphi_1\varphi_2dq=1.
+ \tag{53.2}
+\end{equation}
+This can always be achieved by a suitable choice of complex coefficients (functions of $t$). The functions $\varphi_1$, $\varphi_2$ are no longer singular at $t=t_0$.
+
+We now seek the eigenfunctions as linear combinations
+\begin{equation}
+ \psi=a_1\varphi_1+a_2\varphi_2.
+ \tag{53.3}
+\end{equation}
+It should be borne in mind that, for complex values of the ``time'' $t$, the operator $\widehat H(t)$ depending on it (of the form (17.4)) still equals its transpose ($\widehat H=\widetilde H$), but is no longer Hermitian ($\widehat H\ne\widetilde H^*$), because the potential energy $U(t)\ne U(t)^*$.
+
+Substitute (53.3) into the Schrödinger equation, multiply it on the left first by $\varphi_1$ and then by $\varphi_2$, and integrate over $dq$. With the notation
+\begin{equation}
+ H_{ik}(t)=\int\varphi_i\widehat H\varphi_k,dq
+ \tag{53.4}
+\end{equation}
+\SourcePage{243}{246}
+and using $H_{12}=H_{21}$, which follows from the stated property of the Hamiltonian, we obtain the system
+\begin{equation}
+ \begin{aligned}
+ H_{11}a_1+H_{12}a_2&=Ea_2,\\
+ H_{12}a_1+H_{22}a_2&=Ea_1.
+ \end{aligned}
+ \tag{53.5}
+\end{equation}
+Its solvability condition gives $(H_{12}-E)^2=H_{11}H_{22}$, whose roots determine the energy eigenvalues:
+\begin{equation}
+ E=H_{12}\pm\sqrt{H_{11}H_{22}}.
+ \tag{53.6}
+\end{equation}
+Equation (53.5) then gives
+\begin{equation}
+ a_2/a_1=\pm\sqrt{H_{11}/H_{22}}.
+ \tag{53.7}
+\end{equation}
+
+It follows from (53.6) that, for the two eigenvalues to coincide at $t=t_0$, either $H_{11}$ or $H_{22}$ must vanish there; suppose it is $H_{11}$. At a regular point a function generally vanishes in proportion to $t-t_0$. Hence
+\begin{equation}
+ E(t)-E(t_0)=\pm\operatorname{const}\cdot\sqrt{t-t_0},
+ \tag{53.8}
+\end{equation}
+so $E(t)$ has a branch point at $t=t_0$. At the same time $a_2\sim\sqrt{t-t_0}$, and thus only one eigenfunction exists at $t=t_0$, coinciding with $\varphi_1$.
+
+We now see that the problem posed is formally identical to the above-barrier reflection problem treated in §~52. Here the wave function $\Psi(t)$ is ``semiclassical in time'' (instead of semiclassical in the coordinate as in §~52). We must find the term $c_2\psi_2\exp(-iE_2t/\hbar)$ in the wave function as $t\to+\infty$, given that $\Psi(t)=\psi_1\exp(-iE_1t/\hbar)$ as $t\to-\infty$. This corresponds to finding the reflected wave at $x\to-\infty$ from the transmitted wave at $x\to+\infty$; the desired transition probability is $w_{21}=|c_2|^2$. The action $S=-\int E(t)dt$ is now an integral over time of a function having complex branch points, just as $p(x)$ had complex branch points in the integral $\int p,dx$. The present problem is therefore solved by continuing around a path in the complex $t$ plane (from large negative to large positive values), in complete analogy with the continuation in the complex $x$ plane used in §~52; we shall not repeat that reasoning.
+
+Suppose that $E_2>E_1$ on the real axis. The path must then pass through the upper half of the complex
+\SourcePage{244}{247}
+$t$ plane (where the ratio $e^{-iE_2t/\hbar}/e^{-iE_1t/\hbar}$ increases). The result is the formula analogous to (52.2):
+\begin{equation}
+ w_{21}=\exp\left(\frac2\hbar\operatorname{Im}\int_{C'}E(t)\,dt\right),
+ \tag{53.9}
+\end{equation}
+where the integral follows the contour shown in Fig.~19, but from left to right.
+
+On the left branch of this contour $E=E_1$, while on its right branch $E=E_2$. Formula (53.9) may consequently be written as
+\begin{equation}
+ w_{21}=\exp\left(-2\operatorname{Im}\int_t^{t_0}\omega_{21}(t)\,dt\right),
+ \tag{53.10}
+\end{equation}
+where $\omega_{21}=(E_2-E_1)/\hbar$ and $t$ is any point on the real $t$ axis. For $t_0$ one must choose, among the roots of equation (53.1) in the upper half-plane, the one for which the absolute value of the exponent in (53.10) is smallest\footnote{The competing values of $t_0$ must also include points at which $E(t)$ becomes infinite (although the pre-exponential factor in (53.10) would be different for such points).}. Moreover, direct transition from state 1 to state 2 may compete with ``transition paths'' passing through various intermediate states, whose probabilities are expressed by analogous formulas. Thus, for the ``path'' $1\to3\to2$, the integral in (53.10) is replaced by the sum
+\[
+ \int^{t_0^{(31)}}\omega_{31}(t)\,dt+
+ \int^{t_0^{(23)}}\omega_{23}(t)\,dt,
+\]
+whose upper limits are the ``crossing points'' of the terms $E_1(t)$, $E_3(t)$ and $E_2(t)$, $E_3(t)$, respectively. This result follows by using a contour enclosing both complex points\footnote{Intermediate states belonging to a continuous spectrum require separate treatment.}.
+
+\ProblemHeading
+
+Determine the change in the adiabatic invariant of a classical oscillator governed by
+\begin{equation}
+ \frac{d^2x}{dt^2}+\omega^2(t)x=0
+ \tag{1}
+\end{equation}
+\SourcePage{245}{248}
+when the frequency $\omega(t)$ varies slowly from the value $\omega_1$ as $t\to-\infty$ to $\omega_2$ as $t\to\infty$ (A.~M.~Dykhne, 1960).
+
+\SolutionHeading Equation (1) is obtained from the Schrödinger equation by the changes of notation
+\[
+ \psi\to x,\qquad x\to t;\qquad p(x)/\hbar=k(x)\to\omega(t),
+\]
+after which the problem is formally equivalent to reflection from a potential barrier, considered in §~25. The calculation of the change in the adiabatic invariant can thus be reduced to calculating the reflection amplitude.
+
+Write the solution of (1) as $t\to\mp\infty$ in the form
+\[
+ \begin{aligned}
+ x&=A_1e^{i\omega_1t}+A_1^*e^{-i\omega_1t},&&t\to-\infty,\\
+ x&=A_2e^{i\omega_2t}+A_2^*e^{-i\omega_2t},&&t\to\infty.
+ \end{aligned}
+\]
+According to (25.6),
+\begin{equation}
+ A_2=\alpha A_1+\beta A_1^*.
+ \tag{2}
+\end{equation}
+For an oscillator the adiabatic invariant is $E/\omega$, so that
+\[
+ I_1=m\omega_1\overline{x^2}=2m\omega_1|A_1|^2,\qquad
+ I_2=2m\omega_2|A_2|^2,
+\]
+or, on substituting (2),
+\[
+ I_2=2m\omega_2[(|\alpha|^2+|\beta|^2)|A_1|^2+2\operatorname{Re}(\alpha\beta^*A_1^2)].
+\]
+Using relation (25.7), which in our notation reads $|\alpha|^2=|\beta|^2+\omega_1/\omega_2$, we find
+\begin{equation}
+ I_2-I_1=4m\omega_2[|\beta|^2|A_1|^2+\operatorname{Re}(\alpha\beta^*A_1^2)].
+ \tag{3}
+\end{equation}
+
+Slow variation of $\omega(t)$ in the case under consideration corresponds to the semiclassical situation of the preceding section in the barrier-reflection problem. In that situation $\beta$ is exponentially small and $|\alpha|^2\approx\omega_1/\omega_2$. (It is assumed that $\omega^2(t)$ has neither singularities nor zeros on the real $t$ axis.) The method given in the preceding section for calculating the reflection amplitude yields the estimate
+\[
+ \Delta I=I_2-I_1\sim|\beta|\sim
+ \exp\left(-2\operatorname{Im}\int_{t_1}^{t_0}\omega(t)\,dt\right),
+\]
+where $t_0$ is the singular point in the upper half of the $t$ plane that makes the largest contribution to $\Delta I$. This formula agrees, for the harmonic oscillator considered here, with the results of §~51 (see Vol.~I). When $\omega^2(t)$ has a simple zero in the upper half-plane, the formulas of the preceding section also determine the pre-exponential factor. (See the note on p.~241.)
+
+Notice that the second---and principal---term in (3) depends on the initial phase of the oscillations. Averaging over this phase makes it vanish, so that
+\[
+ \overline{\Delta I}\approx2RI_1,
+\]
+where $R\approx(\omega_2/\omega_1)|\beta|^2$ is the ``reflection coefficient.''

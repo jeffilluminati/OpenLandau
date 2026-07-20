@@ -1,0 +1,336 @@
+\SourcePage{295}{298}
+\section{Second quantization. The case of Bose statistics}
+
+For the theory of systems formed by many identical particles, a special
+method known as \emph{second quantization} is used extensively. This method is
+particularly indispensable in relativistic theory, where
+
+\SourcePage{296}{299}
+one has to treat systems in which even the number of particles is
+variable\footnote{Dirac developed the method of second quantization for
+photons in the theory of radiation (1927); Wigner and Jordan subsequently
+extended it to fermions (E.~Wigner, P.~Jordan, 1928).}.
+
+Let $\psi_1(\xi)$, $\psi_2(\xi)$,~\dots be some complete orthogonal normalized
+set of wave functions for the stationary states of one
+particle\footnote{As in \S~61, $\xi$ denotes all the coordinates together
+with the particle's spin projection $\sigma$; integration over $d\xi$ will
+mean integration over the coordinates and summation over $\sigma$.}. These
+may be the states of a particle in an arbitrarily selected external field,
+although plane waves are generally chosen: the wave functions of a free
+particle having specified momentum (and spin projection). To make the state
+spectrum discrete, the motion is then considered in a large but bounded
+region of space. For motion in a finite volume, the eigenvalues of the
+momentum components form a discrete sequence; the spacings of successive
+values are inversely proportional to the linear dimensions of the region and
+tend to zero as those dimensions increase.
+
+In a system of free particles, the momentum of every particle is conserved
+separately. Consequently, the \emph{occupation numbers} are conserved as
+well: the numbers $N_1,N_2,\ldots$ that state how many particles are in each
+of the states $\psi_1,\psi_2,\ldots$. In a system of interacting particles,
+the separate particle momenta are no longer conserved, and neither are the
+occupation numbers. For such a system one can speak only of the probability
+distribution among different values of the occupation numbers. Our aim is to
+construct a mathematical formalism in which these numbers themselves, rather
+than particle coordinates and spin projections, are the independent
+variables.
+
+Dirac notation (see the end of \S~11) is convenient in this formalism, with
+$N_1,N_2,\ldots$ chosen as the quantum numbers specifying a state. The states
+corresponding to the wave functions (61.3) and (61.5) will be denoted by
+$|N_1,N_2,\ldots\rangle$. Coordinate and spin variables then no longer appear
+explicitly.
+
+\input{manuscript/chapters/ch09/fragments/sec64-src046-056-fresh-b-20260718.translation.en.tex}
+
+We first consider systems of particles obeying Bose statistics.
+
+Let $\hat f_a^{(1)}$ be the operator of some quantity referring to one
+particle (particle $a$), so that it acts only on functions of the variables
+$\xi_a$. Introduce the operator symmetric in all particles
+\begin{equation}
+ \hat F^{(1)}=\sum_a\hat f_a^{(1)}
+ \tag{64.1}
+\end{equation}
+(the sum runs over every particle), and determine its matrix elements with
+respect to the wave functions (61.3). It is readily seen first of all that
+these matrix elements can be nonzero only for transitions that leave all the
+numbers $N_1,N_2,\ldots$ unchanged (the diagonal elements), or for transitions
+in which one of these numbers rises by one while another falls by one. Indeed,
+each operator $\hat f_a^{(1)}$ acts on only one factor in the product
+$\psi_{p_1}(\xi_1)\psi_{p_2}(\xi_2)\cdots\psi_{p_N}(\xi_N)$, and hence its
+matrix element can differ from zero only when a single particle changes its
+state. This means that the number of particles in one state decreases by one,
+whereas the number in another state increases by one. The actual evaluation
+of these matrix elements is very simple; it is easier to carry it out than to
+follow a written account of it. We therefore give only the result. The
+off-diagonal elements are
+\begin{equation}
+ \langle N_i,N_k-1|\hat F^{(1)}|N_i-1,N_k\rangle
+ =f_{ik}^{(1)}\sqrt{N_iN_k}.
+ \tag{64.2}
+\end{equation}
+Only the indices in which the matrix element is not diagonal have been shown;
+the others are suppressed for brevity. Here $f_{ik}^{(1)}$ is the matrix
+element
+\begin{equation}
+ f_{ik}^{(1)}=\int\psi_i^*(\xi)\hat f^{(1)}\psi_k(\xi)\,d\xi;
+ \tag{64.3}
+\end{equation}
+the operators $\hat f_a^{(1)}$ differ only in the designation of the variables
+on which they act, so the integrals (64.3) do not depend on $a$, and this index
+has been omitted. The diagonal matrix elements of $\hat F^{(1)}$ are the mean
+values
+
+\SourcePage{298}{301}
+of $F^{(1)}$ in the states $\Psi_{N_1N_2\ldots}$. Their evaluation gives
+\begin{equation}
+ \overline{F^{(1)}}=\sum_i f_{ii}^{(1)}N_i.
+ \tag{64.4}
+\end{equation}
+
+We now introduce the operators fundamental to the second-quantization method,
+$\hat a_i$. They act not on functions of coordinates but on functions of the
+occupation numbers. By definition, when $\hat a_i$ acts on the state
+$|N_1,N_2,\ldots\rangle$, it reduces the variable $N_i$ by one and at the same
+time multiplies the function by $\sqrt{N_i}$\footnote{We have used the natural
+notation $\hat a|n\rangle$ for the result of applying the operator $\hat a$ to
+the wave function of the state $|n\rangle$.}:
+\begin{equation}
+ \hat a_i|N_1,N_2,\ldots,N_i,\ldots\rangle
+ =\sqrt{N_i}|N_1,N_2,\ldots,N_i-1,\ldots\rangle.
+ \tag{64.5}
+\end{equation}
+One may say that $\hat a_i$ lowers by one the number of particles in the
+$i$th state; it is accordingly called the particle \emph{annihilation
+operator}. It can be represented by a matrix having just one nonzero element,
+namely
+\begin{equation}
+ \langle N_i-1|\hat a_i|N_i\rangle=\sqrt{N_i}.
+ \tag{64.6}
+\end{equation}
+
+The operator $\hat a_i^+$ adjoint to $\hat a_i$ is represented, by definition
+(see (11.9)), by the matrix with the single element
+\begin{equation}
+ \langle N_i|\hat a_i^+|N_i-1\rangle
+ =\langle N_i-1|\hat a_i|N_i\rangle^*=\sqrt{N_i}.
+ \tag{64.7}
+\end{equation}
+This means that its action on the function $|N_1,N_2,\ldots\rangle$ increases
+$N_i$ by one:
+\begin{equation}
+ \hat a_i^+|N_1,N_2,\ldots,N_i,\ldots\rangle
+ =\sqrt{N_i+1}|N_1,N_2,\ldots,N_i+1,\ldots\rangle.
+ \tag{64.8}
+\end{equation}
+In other words, $\hat a_i^+$ increases by one the number of particles in the
+$i$th state; it is called the particle \emph{creation operator}.
+
+When the product $\hat a_i^+\hat a_i$ acts on a wave function, it can only
+multiply that function by a constant while leaving all the variables
+$N_1,N_2,\ldots$ unchanged: $\hat a_i$ lowers $N_i$ by one, after which
+$\hat a_i^+$ restores its initial value. Direct multiplication of the matrices
+(64.6) and (64.7) does indeed show that $\hat a_i^+\hat a_i$ is represented
+by a diagonal matrix whose diagonal entries equal $N_i$:
+\begin{equation}
+ \hat a_i^+\hat a_i=N_i.
+ \tag{64.9}
+\end{equation}
+In the same way one finds
+\begin{equation}
+ \hat a_i\hat a_i^+=N_i+1.
+ \tag{64.10}
+\end{equation}
+
+\SourcePage{299}{302}
+Subtracting these expressions gives the commutation rule for $\hat a_i$ and
+$\hat a_i^+$:
+\begin{equation}
+ \hat a_i\hat a_i^+-\hat a_i^+\hat a_i=1.
+ \tag{64.11}
+\end{equation}
+Operators with different indices $i$ and $k$, which act on different
+variables ($N_i$ and $N_k$), commute:
+\begin{equation}
+ \hat a_i\hat a_k-\hat a_k\hat a_i=0,\qquad
+ \hat a_i\hat a_k^+-\hat a_k^+\hat a_i=0,\qquad i\ne k.
+ \tag{64.12}
+\end{equation}
+
+From the properties of $\hat a_i$ and $\hat a_i^+$ just described, it follows
+at once that the operator
+\begin{equation}
+ \hat F^{(1)}=\sum_{i,k}f_{ik}^{(1)}\hat a_i^+\hat a_k
+ \tag{64.13}
+\end{equation}
+is identical with (64.1). Indeed, all matrix elements computed with (64.6)
+and (64.7) coincide with those in (64.2) and (64.4). This result is very
+important. The quantities $f_{ik}^{(1)}$ in (64.13) are merely numbers. We
+have thereby expressed an ordinary operator acting on functions of the
+coordinates as an operator acting on functions of the new variables, the
+occupation numbers $N_i$.
+
+The result is readily generalized to operators of other kinds. Let
+\begin{equation}
+ \hat F^{(2)}=\sum_{a>b}\hat f_{ab}^{(2)},
+ \tag{64.14}
+\end{equation}
+where $\hat f_{ab}^{(2)}$ is the operator of a physical quantity referring to
+a pair of particles at once and therefore acts on functions of $\xi_a$ and
+$\xi_b$. An analogous calculation shows that this operator can be expressed
+through $\hat a_i$ and $\hat a_i^+$ as
+\begin{equation}
+ \hat F^{(2)}=\frac12\sum_{i,k,l,m}
+ \langle ik|f^{(2)}|lm\rangle\hat a_i^+\hat a_k^+\hat a_m\hat a_l,
+ \tag{64.15}
+\end{equation}
+\[
+ \langle ik|f^{(2)}|lm\rangle=\iint
+ \psi_i^*(\xi_1)\psi_k^*(\xi_2)\hat f^{(2)}
+ \psi_l(\xi_1)\psi_m(\xi_2)\,d\xi_1d\xi_2.
+\]
+The generalization of these formulas to operators of any other kind that are
+symmetric in all the particles ($\hat F^{(3)}=\sum\hat f_{abc}^{(3)}$, and so
+forth) is evident.
+
+These formulas also allow the Hamiltonian of the physical system under study,
+consisting of $N$ interacting identical particles, to be expressed through
+$\hat a_i$ and $\hat a_i^+$. The Hamiltonian of such a system is, of course,
+symmetric in all the particles. In the nonrelativistic
+approximation\footnote{In the absence of a magnetic field.}, it is independent
+of their spins
+
+\SourcePage{300}{303}
+and may be written in the general form
+\begin{equation}
+ \hat H=\sum_a\hat H_a^{(1)}+\sum_{a>b}U^{(2)}(\mathbf r_a,\mathbf r_b)
+ +\sum_{a>b>c}U^{(3)}(\mathbf r_a,\mathbf r_b,\mathbf r_c)+\cdots
+ \tag{64.16}
+\end{equation}
+Here $\hat H_a^{(1)}$ is the part of the Hamiltonian depending on the
+coordinates of only one particle, particle $a$:
+\begin{equation}
+ \hat H_a^{(1)}=-\frac{\hbar^2}{2m}\Delta_a+U^{(1)}(\mathbf r_a),
+ \tag{64.17}
+\end{equation}
+where $U^{(1)}(\mathbf r_a)$ is the potential energy of one particle in the
+external field. The remaining terms in (64.16) describe the energy of
+interaction among the particles; terms depending respectively on the
+coordinates of two, three, and so on particles have been separated.
+
+Writing the Hamiltonian in this form permits direct application of (64.13),
+(64.15), and the analogous formulas. Thus
+\begin{equation}
+ \hat H=\sum_{i,k}H_{ik}^{(1)}\hat a_i^+\hat a_k
+ +\frac12\sum_{i,k,l,m}\langle ik|U^{(2)}|lm\rangle
+ \hat a_i^+\hat a_k^+\hat a_m\hat a_l+\cdots
+ \tag{64.18}
+\end{equation}
+\input{manuscript/chapters/ch09/fragments/sec64-src241-242-fresh-e-20260718.translation.en.tex}
+
+\input{manuscript/chapters/ch09/fragments/sec64-src244-245-fresh-f-20260718.translation.en.tex}
+\begin{equation}
+ \hat H=\sum_{i,k}H_{ik}^{(1)}\hat a_i^+\hat a_k.
+ \tag{64.19}
+\end{equation}
+If the functions $\psi_i$ are chosen to be eigenfunctions of the
+one-particle Hamiltonian $\hat H^{(1)}$, then the matrix $H_{ik}^{(1)}$ is
+diagonal, and its diagonal entries are the particle's energy eigenvalues
+$\varepsilon_i$. Consequently,
+\[
+ \hat H=\sum_i\varepsilon_i\hat a_i^+\hat a_i;
+\]
+replacing $\hat a_i^+\hat a_i$ by its eigenvalues (64.9), we obtain the
+following expression for the energy levels of the system:
+\[
+ E=\sum_i\varepsilon_iN_i.
+\]
+This is the trivial result that should indeed have emerged.
+
+\SourcePage{301}{304}
+The formalism developed above can be put into a more compact form by
+introducing the so-called $\psi$-operators\footnote{Notice the analogy between
+(64.20) and the expansion $\psi=\sum a_i\psi_i$ of an arbitrary wave function
+in a complete set of functions. Here the expansion is, as it were, quantized
+once again, which accounts for the name of the entire method: second
+quantization.}
+\begin{equation}
+ \hat\psi(\xi)=\sum_i\psi_i(\xi)\hat a_i,\qquad
+ \hat\psi^+(\xi)=\sum_i\psi_i^*(\xi)\hat a_i^+,
+ \tag{64.20}
+\end{equation}
+where $\xi$ is regarded as a parameter. It is clear from the properties of
+$\hat a_i$ and $\hat a_i^+$ stated above that $\hat\psi$ decreases the total
+number of particles in the system by one, whereas $\hat\psi^+$ increases it
+by one.
+
+It is easy to see that $\hat\psi^+(\xi_0)$ creates a particle situated at the
+point $\xi_0$. Indeed, the action of $\hat a_i^+$ creates a particle in the
+state whose wave function is $\psi_i(\xi)$. It follows that applying
+$\psi_i^*(\xi_0)\hat a_i^+$ creates a particle in the state with wave function
+\[
+ \sum_i\psi_i^*(\xi)\psi_i(\xi_0)=\delta(\xi-\xi_0).
+\]
+Formula (5.12) has been used here; the result corresponds to a particle with
+specified coordinates and spin\footnote{$\delta(\xi-\xi_0)$ conventionally
+denotes the product
+\[
+ \delta(x-x_0)\delta(y-y_0)\delta(z-z_0)\delta_{\sigma\sigma_0}.
+\]}.
+
+The commutation rules for the $\psi$-operators follow immediately from those
+for $\hat a_i$ and $\hat a_i^+$:
+\begin{equation}
+ \hat\psi(\xi)\hat\psi(\xi')-\hat\psi(\xi')\hat\psi(\xi)=0,
+ \tag{64.21}
+\end{equation}
+\begin{equation}
+ \hat\psi(\xi)\hat\psi^+(\xi')-\hat\psi^+(\xi')\hat\psi(\xi)
+ =\sum_i\psi_i(\xi)\psi_i^*(\xi')=\delta(\xi-\xi').
+ \tag{64.22}
+\end{equation}
+
+In terms of the $\psi$-operators, the second-quantized operator
+$\hat F^{(1)}$ takes the form
+\begin{equation}
+ \hat F^{(1)}=\int\hat\psi^+(\xi)\hat f^{(1)}\hat\psi(\xi)\,d\xi
+ \tag{64.23}
+\end{equation}
+(the operator $\hat f^{(1)}$ is understood here to act in $\hat\psi(\xi)$ on
+functions of the parameters $\xi$). Substitution of $\hat\psi$ and
+$\hat\psi^+$ from (64.20), together with the definition (64.3), does indeed
+return us
+
+\SourcePage{302}{305}
+to (64.13). Similarly, in place of (64.15) we have
+\begin{equation}
+ \hat F^{(2)}=\frac12\iint\hat\psi^+(\xi)\hat\psi^+(\xi')
+ \hat f^{(2)}\hat\psi(\xi')\hat\psi(\xi)\,d\xi\,d\xi'.
+ \tag{64.24}
+\end{equation}
+
+In particular, the Hamiltonian of the system expressed through the
+$\psi$-operators is
+\begin{equation}
+ \begin{aligned}
+ \hat H={}&\int\left\{-\frac{\hbar^2}{2m}\hat\psi^+(\xi)
+ \Delta\hat\psi(\xi)+\hat\psi^+(\xi)U^{(1)}(\xi)\hat\psi(\xi)\right\}d\xi\\
+ &+\frac12\iint\hat\psi^+(\xi)\hat\psi^+(\xi')U^{(2)}(\xi,\xi')
+ \hat\psi(\xi')\hat\psi(\xi)\,d\xi\,d\xi'+\cdots
+ \end{aligned}
+ \tag{64.25}
+\end{equation}
+
+\input{manuscript/chapters/ch09/fragments/sec64-src338-341-fresh-c-20260718.translation.en.tex}
+\begin{equation}
+ \hat N=\int\hat\psi^+\hat\psi\,d\xi
+ \tag{64.26}
+\end{equation}
+\input{manuscript/chapters/ch09/fragments/sec64-src346-356-fresh-d-20260718.translation.en.tex}
+
+Finally, if a system contains bosons of different kinds, separate operators
+$\hat a$ and $\hat a^+$ must be introduced for every kind of particle in the
+second-quantization method. Operators belonging to different kinds of
+particles evidently commute with one another.

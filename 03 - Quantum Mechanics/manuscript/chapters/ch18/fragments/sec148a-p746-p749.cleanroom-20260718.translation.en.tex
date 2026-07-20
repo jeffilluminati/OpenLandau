@@ -1,0 +1,106 @@
+\SourcePage{746}{749}
+\section{Inelastic collisions of fast electrons with atoms}
+
+Inelastic collisions of fast electrons with atoms can be treated in the Born approximation, in the same manner as the elastic collisions in \S~139\footnote{Most of the results presented in \S\S~148--150 were obtained by H.~A.~Bethe (1930).}. As before, the condition for applicability of the Born approximation requires the speed of the incident electron to be large in comparison with the speeds of the atomic electrons. The energy lost in the collision, however, may have any value. If the electron loses a substantial part of its energy, the atom is ionized and the energy is transferred to one of its electrons. But of these two electrons we may always call the one having the greater speed after the collision the scattered electron. Thus, when the incident electron is fast, the scattered electron will be fast as well.
+
+\input{manuscript/chapters/ch18/fragments/sec148a-lines006-011-frame-states-fresh-b-20260718.translation.en.tex}
+
+We begin, as in \S~126, with the general formula for a transition probability between states of a continuous spectrum, applying it to a system composed of the incident electron and the atom. Let $\mathbf p$ and $\mathbf p'$ be the momenta of the incident electron, and let $E_0$ and $E_n$ be the atomic energies before and after the collision, respectively. In place of (126.9), the transition probability is
+\begin{equation}
+ dw_n=\frac{2\pi}{\hbar}|\langle n,\mathbf p'|U|0,\mathbf p\rangle|^2
+ \delta\!\left(\frac{p'^2-p^2}{2m}+E_n-E_0\right)
+ \frac{d^3p'}{(2\pi\hbar)^3},
+ \tag{148.1}
+\end{equation}
+where the matrix element is taken of the interaction energy between the incident electron and the atom,
+\[
+ U=\frac{Ze^2}{r}-\sum_{a=1}^{Z}\frac{e^2}{|\mathbf r-\mathbf r_a|}
+\]
+\input{manuscript/chapters/ch18/fragments/sec148a-line024-coordinate-definitions-fresh-20260718.translation.en.tex}
+
+The electron wave functions $\psi_{\mathbf p}$ and $\psi_{\mathbf p'}$ are given by the same formulas (126.10) and (126.11); $dw$ is then the collision cross-section $d\sigma$. Denote the atomic wave functions in the initial and final states by $\psi_0$ and $\psi_n$. If the final atomic state belongs to the discrete spectrum, $\psi_n$, like $\psi_0$, is normalized in the usual way to unity. If the atom passes to a state in the continuous spectrum, the wave function is normalized to a $\delta$-function in the parameters $\nu$ specifying these states (such parameters may be, for example, the atomic energy and the components of the momentum of the electron ejected from the atom during ionization). The resulting cross-sections determine the probability of a collision in which the atom passes to continuous-spectrum states whose parameter values lie between $\nu$ and $\nu+d\nu$.
+
+Integration in (148.1) over the magnitude of $p'$ gives
+\[
+ d\sigma_n=\frac{mp'}{4\pi^2\hbar^4}|\langle n\mathbf p'|U|0\mathbf p\rangle|^2do',
+\]
+
+\SourcePage{748}{751}
+where $p'$ is determined by conservation of energy:
+\begin{equation}
+ \frac{p^2-p'^2}{2m}=E_n-E_0.
+ \tag{148.2}
+\end{equation}
+Substituting the electron wave functions (126.10) and (126.11) into the matrix element, we obtain
+\begin{equation}
+ d\sigma_n=\frac{m^2}{4\pi^2\hbar^4}\frac{p'}p
+ \left|\iint Ue^{-i\mathbf q\mathbf r}\psi_n^*\psi_0\,d\tau\,dV\right|^2do
+ \tag{148.3}
+\end{equation}
+($d\tau=dV_1dV_2\ldots dV_Z$ is the configuration-space element for the $Z$ atomic electrons, and the prime on $do$ has been omitted)\footnote{In this form, this is the general perturbation-theory formula, applicable not only to electron--atom collisions but to any inelastic collision of two particles. It determines the scattering cross-section in the coordinate frame in which the centre of mass of the particles is at rest (in that case, $m$ is the reduced mass of the two particles).}. For $n=0$ and $p=p'$, formula (148.3) becomes the elastic-scattering cross-section formula.
+
+By orthogonality of $\psi_n$ and $\psi_0$, the term in $U$ containing the interaction $Ze^2/r$ with the nucleus vanishes upon integration over $d\tau$. Thus, for inelastic collisions,
+\begin{equation}
+ d\sigma_n=\frac{m^2}{4\pi^2\hbar^4}\frac{p'}p
+ \left|\sum_a\iint\frac{e^2}{|\mathbf r-\mathbf r_a|}e^{-i\mathbf q\mathbf r}
+ \psi_n^*\psi_0\,d\tau\,dV\right|^2do.
+ \tag{148.4}
+\end{equation}
+
+The integration over $dV$ can be carried out in the same way as in \S~139. The integral
+\[
+ \varphi_{\mathbf q}(\mathbf r_a)=\int\frac{e^{-i\mathbf q\mathbf r}}{|\mathbf r-\mathbf r_a|}\,dV
+\]
+is formally the Fourier component of the potential produced at the point $\mathbf r$ by charges distributed in space with density $\rho=\delta(\mathbf r-\mathbf r_a)$. Formula (139.1) therefore gives
+\begin{equation}
+ \varphi_{\mathbf q}(\mathbf r_a)=\frac{4\pi}{q^2}e^{-i\mathbf q\mathbf r_a}.
+ \tag{148.5}
+\end{equation}
+Substitution of this expression into (148.4) finally gives the following \emph{general} expression for the cross-section of inelastic collisions:
+\begin{equation}
+ d\sigma_n=\left(\frac{e^2m}{\hbar^2}\right)^2\frac{4k'}{kq^4}
+ \left|\left\langle n\left|\sum_a e^{-i\mathbf q\mathbf r_a}\right|0\right\rangle\right|^2do,
+ \tag{148.6}
+\end{equation}
+where the matrix element is evaluated with the atomic wave functions, and the momenta have been replaced by the wave vectors $\mathbf k=\mathbf p/\hbar$,
+
+\SourcePage{749}{752}
+\input{manuscript/chapters/ch18/fragments/sec148a-line073-scattering-probability-fresh-e-20260718.translation.en.tex}
+
+For calculations it is sometimes more convenient to specify the cross-section per element $dq$ of the magnitude of $\mathbf q$, rather than per element of solid angle. The vector $\mathbf q$ is defined by $\mathbf q=\mathbf k'-\mathbf k$; its magnitude satisfies
+\begin{equation}
+ q^2=k^2+k'^2-2kk'\cos\vartheta.
+ \tag{148.7}
+\end{equation}
+Hence, for prescribed $k$ and $k'$, that is, for a prescribed energy loss by the electron,
+\begin{equation}
+ q\,dq=kk'\sin\vartheta\,d\vartheta=\frac{kk'}{2\pi}do.
+ \tag{148.8}
+\end{equation}
+Formula (148.6) can therefore be rewritten as
+\begin{equation}
+ d\sigma_n=8\pi\left(\frac{e^2}{\hbar v}\right)^2\frac{dq}{q^3}
+ \left|\left\langle n\left|\sum_a e^{-i\mathbf q\mathbf r_a}\right|0\right\rangle\right|^2.
+ \tag{148.9}
+\end{equation}
+
+The vector $\mathbf q$ plays an important part in the calculations below. We examine in more detail how it is related to the scattering angle $\vartheta$ and to the energy $E_n-E_0$ transferred in the collision. It will be seen below that the main contribution comes from collisions producing scattering through small angles ($\vartheta\ll1$) and transferring an energy small in comparison with the energy $E=mv^2/2$ of the incident electron: $E_n-E_0\ll E$. The difference $k-k'$ is then also small ($k-k'\ll k$), and consequently
+\[
+ E_n-E_0=\frac{\hbar^2}{2m}(k^2-k'^2)\approx\frac{\hbar^2}{m}k(k-k')=\hbar v(k-k').
+\]
+Since $\vartheta$ is small, (148.7) gives $q^2\approx(k-k')^2+(k\vartheta)^2$, and hence
+\begin{equation}
+ q=\sqrt{\left(\frac{E_n-E_0}{\hbar v}\right)^2+(k\vartheta)^2}.
+ \tag{148.10}
+\end{equation}
+The minimum value of $q$ is
+\begin{equation}
+ q_{\min}=\frac{E_n-E_0}{\hbar v}.
+ \tag{148.11}
+\end{equation}
+
+At small angles, further regions can be distinguished according to the relation between the small quantities $\vartheta$ and $v_0/v$, where $v_0$ is of the order of an atomic-electron speed. For energy transfers of the order of the atomic-electron energy $\varepsilon_0$ ($E_n-E_0\sim\varepsilon_0\sim mv_0^2$), if $(v_0/v)^2\ll\vartheta\ll1$, then
+\begin{equation}
+ q=k\vartheta=mv\vartheta/\hbar.
+ \tag{148.12}
+\end{equation}

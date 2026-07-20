@@ -1,0 +1,222 @@
+\SourcePage{212}{215}
+\section{The Bohr--Sommerfeld quantization rule}
+
+States belonging to the discrete energy spectrum become quasiclassical when
+the quantum number $n$, which gives the ordinal number of the state, is large.
+Indeed, this number specifies the number of nodes of the eigenfunction (see
+§~21). The separation of two successive nodes, however, has the same order of
+magnitude as the de Broglie wavelength. Hence, for large $n$ this separation
+is small, and the wavelength is short in comparison with the dimensions of the
+region of motion.
+
+Let us derive the condition that fixes the quantum energy levels in the
+quasiclassical case. Consider a particle executing bounded one-dimensional
+motion in a potential well. The classically accessible interval
+$b\leq x\leq a$ is bounded by two turning points\footnote{In classical
+mechanics a particle in this field would move periodically, with period (the
+time required to travel from $b$ to $a$ and back)
+\[
+  T=2\int_b^a\frac{dx}{v}
+\]
+($v$ is the particle velocity).}.
+
+\SourcePage{213}{216}
+By rule (47.5), the boundary condition at $x=b$ gives, in the region to its
+right, the wave function
+\begin{equation}
+  \psi=\frac C{\sqrt p}\cos\left(\frac1\hbar\int_b^x p\,dx-\frac\pi4\right).
+  \tag{48.1}
+\end{equation}
+Applying the same rule to the region on the left of $x=a$, we obtain another
+form of the same wave function:
+\[
+  \psi=\frac{C'}{\sqrt p}\cos\left(\frac1\hbar\int_x^a p\,dx-\frac\pi4\right).
+\]
+For these expressions to agree throughout the interval, the sum of their
+phases, which is constant, must be an integral multiple of $\pi$:
+\[
+  \frac1\hbar\int_b^a p\,dx-\frac\pi2=n\pi
+\]
+(with $C'=(-1)^nC$). It follows that
+\begin{equation}
+  \frac1{2\pi\hbar}\oint p\,dx=n+\frac12,
+  \tag{48.2}
+\end{equation}
+where $\oint p\,dx=2\int_b^a p\,dx$ is evaluated over a complete period of
+the particle's classical motion. This is the condition determining the
+stationary states in the quasiclassical regime. It corresponds to the
+Bohr--Sommerfeld quantization rule of the old quantum theory.
+
+The quantity $I=(1/2\pi)\oint p\,dx$ is called the adiabatic invariant (see
+I, §~49), and therefore (48.2) may be written
+\[
+  I(E)=\hbar(n+1/2).
+\]
+It was already noted in §~41 that, if the parameters change sufficiently
+slowly, or ``adiabatically,'' a system remains in the same quantum state---in
+the present case, the state having a particular $n$. We now see that in the
+quasiclassical limit this statement becomes the classical theorem asserting
+the constancy of the adiabatic invariant under a slow change of parameters.
+
+\SourcePage{214}{217}
+It is readily seen that the integer $n$ equals the number of zeros of the wave
+function and is therefore the ordinal number of the stationary state. In
+fact, the phase in (48.1) increases from $-\pi/4$ at $x=b$ to
+$(n+1/4)\pi$ at $x=a$, so the cosine vanishes $n$ times within this interval
+(outside the range $b\ll x\ll a$, the wave function decreases monotonically
+and has no zeros at finite distances)\footnote{Strictly, the zeros must be
+counted using the exact form of the wave function near the turning points. An
+analysis of this kind confirms the stated result.}.
+
+As explained above, $n$ is large in the quasiclassical case. Nevertheless,
+retaining the term $1/2$ beside $n$ in (48.2) is legitimate. Inclusion of the
+next correction terms in the phases of the wave functions would add to the
+right-hand side of (48.2) only terms of order $\lambda/L$, which are small
+compared with unity (see the remark at the end of §~46)\input{manuscript/chapters/ch07/fragments/sec48-footnote074-080-fresh-i-20260718.translation.en.tex}.
+
+To normalize the wave function, it is sufficient to integrate $|\psi|^2$
+only over $b\leq x\leq a$, since $\psi(x)$ decays exponentially outside this
+interval. The argument of the cosine in (48.1) varies rapidly, so to the
+required accuracy its square may be replaced by its mean value, $1/2$. Thus
+\[
+  \int|\psi|^2dx\approx\frac{C^2}{2}\int_b^a\frac{dx}{p(x)}
+  =\frac{\pi C^2}{2m\omega}=1,
+\]
+where $\omega=2\pi/T$ is the frequency of the classical periodic motion. The
+normalized quasiclassical function is consequently
+\begingroup\small
+\begin{equation}
+  \psi=2\sqrt{\frac{m\omega}{\pi p}}
+  \cos\left(\frac1\hbar\int_b^x p\,dx-\frac\pi4\right).
+  \tag{48.3}
+\end{equation}
+\endgroup
+It should be kept in mind that $\omega$ depends on the energy and, in
+general, differs from one level to another.
+
+\input{manuscript/chapters/ch07/fragments/sec48-src101-121-fresh-d-20260718.translation.en.tex}
+
+The general pattern in which levels are distributed through the energy
+spectrum can be deduced from the quantization rule (48.2). Let $\Delta E$
+denote the separation of two adjacent levels, whose quantum numbers $n$ thus
+differ by one. Since, for large $n$, $\Delta E$ is small in comparison with
+the level energy itself, (48.2) gives
+\[
+  \Delta E\oint\frac{\partial p}{\partial E}\,dx=2\pi\hbar.
+\]
+But $\partial E/\partial p=v$, and hence
+\[
+  \oint\frac{\partial p}{\partial E}\,dx=\oint\frac{dx}{v}=T.
+\]
+We therefore find
+\begin{equation}
+  \Delta E=\frac{2\pi\hbar}{T}=\hbar\omega.
+  \tag{48.5}
+\end{equation}
+
+Thus the spacing of adjacent levels is $\hbar\omega$. For a sequence of
+nearby levels whose differences in $n$ are small compared with $n$ itself,
+the corresponding frequencies $\omega$ may be regarded as approximately
+equal. It follows that, within any small portion of the quasiclassical part of
+the spectrum, the levels are equidistant, with the common interval
+$\hbar\omega$.
+\input{manuscript/chapters/ch07/fragments/sec48-src147-151-fresh-j-20260718.translation.en.tex}
+It is useful to trace the limiting behavior of the matrix elements of an
+arbitrary physical quantity $f$. We start from the requirement that the mean
+value of $f$ in a quantum state must tend simply to its classical value,
+provided that, in the limit, the state itself describes motion of the particle
+along a definite trajectory. Such a state is represented by a wave packet
+(see §~6), formed by superposing stationary states with neighboring energies.
+Its wave function has the form
+\[
+  \psi=\sum_n a_n\psi_n,
+\]
+where the coefficients $a_n$ differ appreciably from zero only within an
+interval $\Delta n$ of quantum-number values such that
+$1\ll\Delta n\ll n$. The numbers $n$ are assumed large, as required for the
+stationary states to be quasiclassical. By definition, the mean value of $f$
+is
+\[
+  \bar f=\int\psi^*f\psi\,dx
+  =\sum_n\sum_m a_m^*a_nf_{mn}e^{i\omega_{mn}t},
+\]
+or, replacing the summation over $n,m$ by summations over $n$ and the
+difference $s=m-n$, we obtain
+\[
+  \bar f=\sum_n\sum_s a_{n+s}^*a_nf_{n+s,n}e^{i\omega_st},
+\]
+where, in accordance with (48.5), $\omega_{mn}=\omega s$.
+
+When evaluated with quasiclassical wave functions, the matrix elements
+$f_{mn}$ decrease rapidly in magnitude as the difference $m-n$ grows, while
+varying slowly with $n$ itself when $m-n$ is fixed. We may consequently write,
+to the same approximation,
+\[
+  \bar f=\sum_n\sum_s a_n^*a_nf_se^{i\omega st}
+  =\sum_n|a_n|^2\sum_sf_se^{i\omega st},
+\]
+where $f_s=f_{n+s,n}$ and $n$ denotes some mean value of the quantum number in
+the interval $\Delta n$. Since $\sum_n|a_n|^2=1$, it follows that
+\[
+  \bar f=\sum_sf_se^{i\omega st}.
+\]
+
+\SourcePage{217}{220}
+The resulting sum has the form of an ordinary Fourier series. Since $\bar f$
+must approach the classical quantity $f(t)$ in the limit, we conclude that
+the matrix elements $f_{mn}$ tend to the coefficients $f_{m-n}$ in the
+Fourier-series expansion of the classical function $f(t)$.
+
+Similarly, matrix elements for transitions between states in the continuous
+spectrum tend to the components in the Fourier-integral expansion of $f(t)$.
+Here the wave functions of the stationary states must be normalized to a
+delta function of the energy divided by $\hbar$.
+
+\input{manuscript/chapters/ch07/fragments/sec48-src204-224-fresh-c-20260718.translation.en.tex}
+
+For arbitrary multidimensional motion that is not conditionally periodic, a
+formulation of the quasiclassical quantization conditions requires a more
+subtle argument\footnote{See $J.,B.~Keller$ // Ann. Phys. 1958. V.~4.
+P.~180.}. The notion of phase-space ``cells,'' however, always applies in the
+same manner within the quasiclassical approximation. This is clear from the
+connection, noted above, between this notion and the number of normal modes of
+a wave field in a given spatial volume. In the general case of a system with
+$s$ degrees of freedom, a phase-space volume element
+
+\SourcePage{218}{221}
+contains
+\begin{equation}
+  \Delta N=\frac{\Delta q_1\cdots\Delta q_s\,
+  \Delta p_1\cdots\Delta p_s}{(2\pi\hbar)^s}
+  \tag{48.7}
+\end{equation}
+quantum states\footnote{In particular, $d^3p/(2\pi\hbar)^3$ for a single
+particle is the number of states associated with a momentum interval $d^3p$
+in a unit volume of space. This accounts for the agreement between the two
+interpretations of the plane-wave normalization (15.8) noted in the footnote
+on p.~68.}.
+
+\ProblemHeading
+
+\input{manuscript/chapters/ch07/fragments/sec48-problem249-250-fresh-i-20260718.translation.en.tex}
+
+\SolutionHeading The number of states ``belonging'' to the phase-space volume
+for momenta in the range $0\leq p\leq p_{\max}$ and particle coordinates in
+the volume element $dV$ is
+\[
+  \frac{(4\pi/3)p_{\max}^3dV}{(2\pi\hbar)^3}.
+\]
+At a given $r$, the particle may have, in its classical motion, any momentum
+that obeys $E=(p^2/2m)+U(r)\leq0$. Substitution of
+$p_{\max}=\sqrt{-2mU(r)}$ gives the total number of discrete-spectrum states:
+\[
+  \frac{\sqrt2m^{3/2}}{3\pi^2\hbar^3}\int(-U)^{3/2}\,dV,
+\]
+where the integration extends over the part of space in which $U<0$. This
+integral diverges, and the number of levels is infinite, if $U$ decreases at
+infinity as $r^{-s}$ with $s<2$, in agreement with the results of §~18.
+
+\textbf{2.} Find the corresponding number for a quasiclassical central field
+$U(r)$ (V.~L.~Pokrovskii).
+
+\input{manuscript/chapters/ch07/fragments/sec48-src271-289-fresh-f-20260718.translation.en.tex}
