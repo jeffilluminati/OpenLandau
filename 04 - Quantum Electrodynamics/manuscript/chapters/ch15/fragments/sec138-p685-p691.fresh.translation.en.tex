@@ -1,0 +1,158 @@
+\SourcePage{685}{690}
+\setcounter{chapter}{13}
+\chapter{Electrodynamics of Hadrons}
+\setcounter{section}{137}
+\section{Electromagnetic Form Factors of Hadrons}
+
+Up to this point, the quantum electrodynamics discussed in this book has concerned particles that do not undergo strong interactions: electrons, positrons, and muons. There is also a large number of particles that do participate in strong interactions; these are called hadrons\footnote{From the Greek word ``hadros,'' meaning large or massive.}.
+
+Examples of hadrons include the spin-$1/2$ proton and neutron, the spin-0 $\pi$ mesons, and other particles. Atomic nuclei are, of course, hadrons as well, since they consist of protons and neutrons.
+
+Within the existing theory, it is impossible to construct a complete electrodynamics of hadrons. Evidently, equations determining the electromagnetic interactions of hadrons cannot be formulated without taking into account their much more intense strong interactions.
+
+In particular, if the strong interactions are omitted, even the explicit form of the hadronic current that must describe quantum-electrodynamic interactions cannot be found.
+
+Under these circumstances the hadronic current is introduced phenomenologically. Its structure is fixed only by general kinematic requirements, independently of any assumptions about interaction dynamics\footnote{This book does not discuss those aspects of hadron electrodynamics that are connected with the quark model.}. The electromagnetic-interaction operator retains the form
+\begin{equation}
+e(\widehat J\widehat A),
+\tag{138.1}
+\end{equation}
+where the current is now denoted by the capital letter $J$ (to distinguish it from the electron current $j$). Since the scale of this interaction is set by the same elementary charge $e$, perturbation theory remains applicable\footnote{In this chapter $e$ denotes the elementary charge ($e>0$).}.
+
+We shall determine the transition current between two states of a freely moving hadron (with no
+\SourcePage{686}{691}
+transformation of the hadron itself). This current occurs in the three-leg vertex
+\begin{equation}
+\begin{tikzpicture}[baseline=-.45ex,x=1cm,y=1cm,>=stealth,line width=.6pt,font=\small]
+  \coordinate (v) at (0,.56);
+  \draw[dashed,->] (0,1.38)--(v);
+  \draw[->] (v)--(-.78,-.36);
+  \draw[->] (.78,-.36)--(v);
+  \fill (v) circle (1.3pt);
+  \node[right] at (.04,1.18) {$q$};
+  \node[below left] at (-.74,-.31) {$p_2$};
+  \node[below right] at (.74,-.31) {$p_1$};
+\end{tikzpicture}
+\tag{138.2}
+\end{equation}
+which may itself form part of a more complicated diagram (for example, one for elastic electron--hadron scattering). The dashed line in (138.2) represents a virtual photon. It cannot correspond to a real photon, since a free particle cannot absorb (or emit) such a photon. Here $q^2=(p_2-p_1)^2<0$.
+
+Consider first a spin-0 hadron. Let $u_1$ and $u_2$ be the wave amplitudes of its initial and final states, in which its 4-momenta are $p_1$ and $p_2$; for a spin-0 particle these amplitudes are scalars (or pseudoscalars)\footnote{Recall that a plane wave is written as $\psi=\dfrac{u}{\sqrt{2\varepsilon}}e^{-ipx}$. Normalization to one particle per unit volume corresponds, for spin-0 particles, to the scalar normalization $u^*u=1$; one may then simply set $u=1$ (see \S~10). Below we define the transition current with the amplitudes $u_1$, $u_2$ displayed, in accordance with the notation adopted in \S~64.}. The hadronic transition current $J_{fi}$ between these states must be bilinear in $u_1$ and $u_2^*$. Write it as
+\begin{equation}
+J_{fi}=u_2^*\Gamma u_1,
+\tag{138.3}
+\end{equation}
+where the 4-vector $\Gamma$ is the unknown vertex operator (the circle in diagram (138.2)). Setting $u_1=u_2=1$ gives simply $J_{fi}=\Gamma$.
+
+A universal property of an electrodynamic current, following from gauge invariance of the theory, is its conservation. In momentum space this is expressed by the orthogonality of the transition current to the photon 4-momentum $q=p_2-p_1$:
+\begin{equation}
+qJ_{fi}=0.
+\tag{138.4}
+\end{equation}
+In the present case this requires the operator $\Gamma$ to have the form
+\begin{equation}
+\Gamma=PF(q^2),
+\tag{138.5}
+\end{equation}
+where $P=p_1+p_2$, while $F(q^2)$ is a scalar function of the sole independent invariant variable, the square $q^2$. The species of hadron is unchanged in the transition, so $p_1^2=p_2^2=M^2$ ($M$ is the hadron mass), and consequently $Pq=0$.
+
+\SourcePage{687}{692}
+The matrix elements (138.3), with $\Gamma$ given by (138.5), are polar 4-vectors, as is the operator $J$ itself. Hence the interaction operator (138.1) is a scalar. Thus the electromagnetic interaction of spin-0 hadrons is automatically $P$-invariant. It is also $T$-invariant. Indeed, time reversal first interchanges the initial and final 4-momenta, leaving their sum $P=p_1+p_2$ unchanged. Second, time reversal reverses the spatial components of the 4-momenta without changing their time components; the components of the 4-potential $A$ transform in the same way, and hence the product $\widehat J\widehat A$ is unchanged.
+
+The invariant function $F(q^2)$ is called the hadron's \emph{electromagnetic form factor}. Its form plainly cannot be determined within a phenomenological theory. It can nevertheless be stated that this function is real (in the region $q^2<0$ considered here). This follows from the same argument used in \S~116 for the electron form factors: when $q^2<0$, there are in any event no intermediate states that could occur on the right-hand side of the unitarity relation. The matrix $M_{fi}$, and with it $J_{fi}$, is therefore Hermitian.
+
+At $q=0$ the initial and final states coincide, and $J_{fi}$ becomes a diagonal matrix element. In particular, $e(J^0)_{ii}/2\varepsilon_i=eF(0)$ is the charge density; with normalization to one particle per unit volume, this is equal to the particle's total charge $Ze$.
+
+For an electrically neutral particle, $F(0)=0$. This by no means implies, however, that the particle is genuinely neutral. If it is genuinely neutral and has definite charge parity, then $F(q^2)=0$ for every $q^2$: since the current operator is odd under charge conjugation (see \S~13), its matrix elements between two states of the same hadron vanish\footnote{This does not, of course, mean that such a hadron has no interaction at all with the electromagnetic field. The product of two current operators, $\widehat J(x)$, $\widehat J(x')$, is even under charge conjugation, and its matrix elements for transitions between states of equal charge parity do not vanish. A genuinely neutral hadron can therefore scatter a photon and can also emit two photons simultaneously, i.e. it can participate in processes of higher order in $\alpha$.}.
+
+We turn now to spin-$1/2$ hadrons. In this case the wave amplitudes $u_1$, $u_2$ are bispinors, and the hadronic current is
+\begin{equation}
+J_{fi}=\bar u_2\Gamma u_1.
+\tag{138.6}
+\end{equation}
+
+\SourcePage{688}{693}
+From the bilinear combinations of $\bar u_2$ and $u_1$ together with the 4-vectors $p_1$, $p_2$, one can construct both polar 4-vectors and pseudovectors (satisfying (138.4)). Consequently, $P$-invariance of the interaction is no longer automatic and must be imposed as an additional condition\footnote{We do not consider possible parity nonconservation in electromagnetic interactions arising from virtual weak interactions.}. As shown in \S~116, under this condition the vertex operator contains two independent form factors, both real for $q^2<0$. We now write it in the form
+\begin{equation}
+\begin{aligned}
+\Gamma^\mu
+&=2M(F_e-F_m)\frac{P^\mu}{P^2}+F_m\gamma^\mu
+=2M\left(F_e-\frac{q^2}{4M^2}F_m\right)\frac{P^\mu}{P^2}
+-\frac{F_m}{2M}\sigma^{\mu\nu}q_\nu={}\\
+&=(4M^2F_e-q^2F_m)\frac{\gamma^\mu}{P^2}
++\frac{2M}{P^2}(F_e-F_m)\sigma^{\mu\nu}q_\nu,
+\end{aligned}
+\tag{138.7}
+\end{equation}
+where $F_e(q^2)$ and $F_m(q^2)$ are invariant form factors ($M$ is the hadron mass). The equivalence of the three displayed expressions follows immediately from $P^2+q^2=4M^2$ and (116.5)\footnote{The reason for defining the form factors as in (138.7) ($R.~Sackhs$, 1962) will become apparent below. The form factors $F_1$, $F_2$ are also used in the literature; they are defined in analogy with $f$ and $g$ in (116.6), that is, by
+\[
+\Gamma^\mu=F_1\gamma^\mu-\frac{F_2}{2M}\sigma^{\mu\nu}q_\nu.
+\]
+They are related to $F_e$, $F_m$ by
+\[
+F_e=F_1+F_2\frac{q^2}{4M^2},\qquad F_m=F_1+F_2.
+\] }.
+
+Electromagnetic form factors belong to the class of invariant amplitudes introduced in \S~70. They may be regarded as amplitudes for a ``reaction'' that, in its annihilation channel, is the decay of a virtual photon into a hadron and an antihardon. A virtual photon is a spin-1 ``particle.'' That its decay into two spin-$1/2$ particles must be described by two independent amplitudes can also be verified simply by counting the corresponding helicity amplitudes $\langle\lambda_b\lambda_c|S^J|\lambda_a\rangle$ (see \S~69). Indeed, by $P$-invariance, the four nonzero $S$-matrix elements are equal in pairs:
+\[
+\langle\tfrac12\,\tfrac12|S^1|1\rangle
+=\langle-\tfrac12\,-\tfrac12|S^1|-1\rangle,
+\]
+\[
+\langle\tfrac12\,-\tfrac12|S^1|0\rangle
+=\langle-\tfrac12\,\tfrac12|S^1|0\rangle.
+\]
+
+The requirement of $T$-invariance (or of $C$-invariance in the annihilation channel) supplies no further relations among these
+\SourcePage{689}{694}
+elements. This is connected with the fact that the interaction described by the vertex operator (138.7) is automatically $T$-invariant as well (this is no longer the case, however, for particles of higher spin).
+
+At $q\to0$, the terms of zeroth and first order in $q$ in (138.7) give
+\begin{equation}
+\Gamma^\mu=F_e(0)\gamma^\mu-\frac{1}{2M}[F_m(0)-F_e(0)]\sigma^{\mu\nu}q_\nu.
+\tag{138.8}
+\end{equation}
+It follows (see \S~116) that $F_e(0)\equiv Z$ is the particle's electric charge in units of $e$, while $F_m(0)-F_e(0)$ is its anomalous magnetic moment in units of $e/2M$\footnote{For the proton, $F_e(0)=1$, $F_m(0)-F_e(0)=1{,}79$. For the neutron, $F_e(0)=0$, $F_m(0)=-1{,}91$ (its magnetic moment is wholly ``anomalous'').}.
+
+So far we have used only form factors in momentum space. This is, of course, sufficient for describing observable phenomena. For illustrative purposes alone, however, the form factors may also be given a somewhat more pictorial interpretation by regarding them as Fourier transforms of certain functions of the coordinates.
+
+For this purpose it is convenient to choose a frame in which $\mathbf P=\mathbf p_1+\mathbf p_2=0$ (the so-called \emph{Breit frame}); this is always possible because $P^2>4M^2>0$. In this frame $\varepsilon_1=\varepsilon_2\equiv\varepsilon$, so that $P^0=2\varepsilon$, while the components of the 4-vector $q$ are $q^0=0$, $\mathbf q=2\mathbf p_2=-2\mathbf p_1$.
+
+For a spin-0 hadron the transition current has a particularly simple form in the Breit frame:
+\[
+\frac{J_{fi}^0}{2\varepsilon}=F(-\mathbf q^2),\qquad \mathbf J=0.
+\]
+It follows that $F(-\mathbf q^2)$ may be interpreted as the Fourier transform of a static charge distribution with density
+\begin{equation}
+e\rho(\mathbf r)=e\frac{1}{(2\pi)^3}\int F(-\mathbf q^2)e^{i\mathbf q\mathbf r}\,d^3q.
+\tag{138.9}
+\end{equation}
+In this sense one speaks of the particle's spatial electromagnetic structure: if $F=\mathrm{const}=Z$, then $\rho(\mathbf r)=Z\delta(\mathbf r)$; dependence of the form factor on $\mathbf q$ is interpreted as a departure of the charge distribution from a point distribution. This interpretation must not, however, be taken literally. The function $\rho(\mathbf r)$ does not in general refer to any single frame, since a different frame corresponds to each value of $\mathbf q$.
+
+Only in the nonrelativistic limit $\mathbf q^2\ll M^2$, where the change in the particle's energy during scattering can be neglected, does the Breit frame coincide with the particle's rest frame and become independent
+\SourcePage{690}{695}
+of $\mathbf q$. In this approximation the initial and final states of the particle are the same, so the transition current becomes a diagonal matrix element and $\rho(\mathbf r)$ acquires the actual meaning of a spatial charge distribution. For elementary particles, however, the characteristic values of $|\mathbf q|$ over which the form factors change appreciably are only slightly smaller than $M$. Thus, in the nonrelativistic limit one may replace $F(-\mathbf q^2)$ by $F(0)$ altogether and regard such a particle as pointlike. The situation is different for nuclei. The nuclear mass $M$ is proportional to the number $A$ of nucleons it contains, whereas the characteristic value $|\mathbf q|\sim1/R$ is proportional to $A^{-1/3}$ ($R$ is the nuclear radius). For sufficiently heavy nuclei, therefore, the characteristic $\mathbf q^2\ll M^2$, and a nonrelativistic treatment is valid throughout the relevant range; the concept of the electromagnetic structure of a nucleus then has a well-defined meaning.
+
+For a spin-$1/2$ particle, (138.7) gives in the Breit frame
+\begin{equation}
+J_{fi}^0=(F_e-F_m)\frac{M}{\varepsilon}(\bar u_2u_1)
++F_m(\bar u_2\gamma^0u_1)=F_e(\bar u_2\gamma^0u_1),
+\tag{138.10}
+\end{equation}
+\begin{equation}
+\mathbf J_{fi}=-\frac{1}{2M}F_m\,i\mathbf q\times(\bar u_2\boldsymbol\Sigma u_1),
+\tag{138.11}
+\end{equation}
+where $\boldsymbol\Sigma$ is the three-dimensional spin operator (matrix) (21.21). In (138.10) we have used the relation $\varepsilon(\bar u_2\gamma^0u_1)=M(\bar u_2u_1)$, which is readily verified from the Dirac equations for $u_1$ and $\bar u_2$ when $\mathbf p_1=-\mathbf p_2$.
+
+The time component of the transition current (138.10) differs from the expression for a ``point particle,'' the electron, by the factor $F_e(-\mathbf q^2)$. Thus the form factor $F_e$ (called the \emph{charge form factor}) may be said to describe the ``spatial charge distribution'' according to (138.9).
+
+In the same way, the three-vector (138.11) may be associated with a ``spatial distribution'' of current density $e\mathbf j(\mathbf r)=\Curl{\boldsymbol\mu(\mathbf r)}$, where
+\[
+\boldsymbol\mu(\mathbf r)=\frac{e}{2M}\boldsymbol\Sigma
+\int F_m(-\mathbf q^2)e^{i\mathbf q\mathbf r}\,d^3q
+\]
+is a ``magnetic-moment density.'' Thus the form factor $F_m$ (called the \emph{magnetic form factor}) may be interpreted as specifying the spatial distribution of magnetic moment, subject, of course, to the same qualifications made above for the charge distribution. Here $F_m$ includes both the ``normal'' Dirac magnetic moment and the ``anomalous'' moment specific to the hadron; the difference $F_m-F_e$ corresponds to the ``density'' of the latter.
+
+\SourcePage{691}{696}
+It is natural to suppose that the singularities of the hadronic electromagnetic form factors, like those of the electron form factors, lie at real positive values of the argument $t=q^2=-\mathbf q^2$. This permits definite conclusions about the asymptotic behavior of the distributions $\rho(r)$ (and $\boldsymbol\mu(r)$) as $r\to\infty$. In fact, applying to the integral (138.9) the same transformation that was used in \S~114 to pass from (114.3) to (114.4), one finds at large $r$ that $\rho(r)\propto e^{-\varkappa_0r}$, where $\varkappa_0^2$ is the abscissa of the first singularity of the form factor $F(q^2)$ (compare also the note on p.~564). If the nearest singularity is the threshold for the virtual photon's creation of a hadron pair (each of mass $M_0$), then $\varkappa_0=2M_0$.

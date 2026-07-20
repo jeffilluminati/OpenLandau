@@ -1,0 +1,100 @@
+\SourcePage{161}{166}
+\section{Scattering in a spherically symmetric field}
+
+Write the asymptotic expression for the wave function of a particle scattered by the field of a stationary force center as\footnote{In \S\S~37 and 38, $p$ denotes $|\mathbf p|$, while $\varepsilon$ and $\mathbf p$ are written separately as indices on an amplitude.}
+\begin{equation}
+\psi=u_{\varepsilon\mathbf p}e^{ipz}+u'_{\varepsilon\mathbf p'}e^{ipr}/r.
+\tag{37.1}
+\end{equation}
+Here $u_{\varepsilon\mathbf p}$ is the bispinor amplitude of the incident plane wave. The bispinor $u'_{\varepsilon\mathbf p'}$ is a function of the scattering direction $\mathbf n'$. For each specified value of $\mathbf n'$, its form, though of course not its normalization, coincides with the bispinor amplitude of a plane wave propagating along $\mathbf n'$.
+
+We saw in \S~24 that the bispinor amplitude of a plane wave is fixed completely by a two-component quantity, the 3-spinor $w$, which is the nonrelativistic wave function in the particle's rest frame. The flux density is also expressed through this spinor: it is proportional to $w^*w$, with a proportionality coefficient depending only on the energy $\varepsilon$ and consequently identical for the incident and scattered \SourcePage{162}{167}particles. The scattering cross section is therefore $d\sigma=(w'^*w'/w^*w)do$, or, if the incident wave is normalized by $w^*w=1$ as in \S~24,
+\[
+d\sigma=w'^*w'\,do.
+\]
+
+Introduce the scattering operator $f$ by the definition
+\begin{equation}
+w'=\widehat f w.
+\tag{37.2}
+\end{equation}
+Since $w$ and $w'$ have two components, the operator so defined is analogous to the operator scattering amplitude used in nonrelativistic scattering theory with spin (see III, \S~140). The formulas derived there, which express the operator in terms of phase shifts of the wave functions in the scattering field, can therefore be transferred directly to the present problem. Only the phases must be relabeled, expressing the shifts $\delta_l^+$ and $\delta_l^-$ introduced in III, \S~140 in terms of the phase shift $\delta_\varkappa$ that appears in the relativistic formula (35.7). Recall that $\delta_l^+$ and $\delta_l^-$ referred to states of orbital angular momentum $l$ and total angular momentum $j=l+1/2$ and $j=l-1/2$, respectively. By definition (35.3), $\varkappa=-l-1$ for $j=l+1/2$, while $\varkappa=l$ for $j=l-1/2$. We must therefore make the replacements
+\[
+\delta_l^+\to\delta_{-(l+1)},\qquad \delta_l^-\to\delta_l
+\]
+and remember that the index on $\delta$ now specifies the value of $\varkappa$. We thus obtain
+\begin{equation}
+\widehat f=A+B\boldsymbol\nu\boldsymbol\sigma,
+\tag{37.3}
+\end{equation}
+\begin{equation}
+A=\frac1{2ip}\sum_{l=0}^{\infty}
+\left[(l+1)(e^{2i\delta_{-l-1}}-1)+l(e^{2i\delta_l}-1)\right]P_l(\cos\theta),
+\tag{37.4}
+\end{equation}
+\begin{equation}
+B=\frac1{2p}\sum_{l=1}^{\infty}
+(e^{2i\delta_{-l-1}}-e^{2i\delta_l})P_l^1(\cos\theta),
+\tag{37.5}
+\end{equation}
+where $\boldsymbol\nu$ is a unit vector in the direction of $\mathbf n\times\mathbf n'$.
+
+Since $w$ is the spinor wave function in the rest frame, the polarization properties of the scattering are described in terms of $\widehat f$ by the same formulas as in III, \S~140.
+
+For a Coulomb field, both functions $A(\theta)$ and $B(\theta)$ can be expressed through a single function. We briefly indicate the calculation\footnote{\emph{Gluckstern R.~L., Lin S.~R.}//J. Math. Phys.~--- 1964.~--- Vol.~5.~--- P.~1594.}.
+
+\SourcePage{163}{168}
+For a Coulomb field, the phases $\delta_\varkappa$ are given by (36.18), which we write in the form
+\begin{equation}
+\begin{aligned}
+e^{2i\delta_\varkappa}
+&=-\left(\varkappa-i\frac{Ze^2m}{p}\right)
+\frac{\varkappa}{|\varkappa|}C_\varkappa,\\
+C_\varkappa
+&=-\frac{\Gamma(\gamma-i\nu)}{\Gamma(\gamma+1+i\nu)}
+e^{i\pi(|\varkappa|-\gamma)}
+\end{aligned}
+\tag{37.6}
+\end{equation}
+(note that $e^{i\pi l}=e^{i\pi\varkappa}$ for $\varkappa>0$, while $e^{i\pi l}=-e^{i\pi\varkappa}$ for $\varkappa<0$). In terms of the quantities introduced in this way, the series (37.4) and (37.5) can be written
+\begin{equation}
+\begin{aligned}
+A(\theta)&=\frac1pG(\theta)-i\frac{Ze^2m}{p^2}F(\theta),\\
+B(\theta)&=-\frac ip\tan\frac\theta2G(\theta)
++\frac{Ze^2m}{p^2}\cot\frac\theta2F(\theta),
+\end{aligned}
+\tag{37.7}
+\end{equation}
+where
+\begin{equation}
+G(\theta)=\frac i2\sum_{l=1}^{\infty}l^2C_l(P_l+P_{l-1}),
+\qquad
+F(\theta)=\frac i2\sum_{l=1}^{\infty}lC_l(P_l-P_{l-1}).
+\tag{37.8}
+\end{equation}
+
+In transforming the series for $B(\theta)$, the following recurrence relations between Legendre polynomials have been used:
+\begin{equation}
+P_l^1+P_{l-1}^1=\cot\frac\theta2\cdot l(P_l-P_{l-1}),
+\tag{37.9}
+\end{equation}
+\begin{equation}
+P_l^1-P_{l-1}^1=\tan\frac\theta2\cdot l(P_l+P_{l-1}).
+\tag{37.10}
+\end{equation}
+On the other hand, by the identity
+\begin{equation}
+\begin{aligned}
+(1+\cos\theta)\frac d{d\cos\theta}
+[P_l(\cos\theta)-P_{l-1}(\cos\theta)]
+={}&l[P_l(\cos\theta)+P_{l-1}(\cos\theta)]
+\end{aligned}
+\tag{37.11}
+\end{equation}
+the functions $F(\theta)$ and $G(\theta)$ are related by
+\begin{equation}
+G=(1-\cos\theta)\frac{dF}{d\cos\theta}
+=-\cot\frac\theta2\frac{dF}{d\theta}.
+\tag{37.12}
+\end{equation}
+Thus $A(\theta)$ and $B(\theta)$ are both expressed through the single function $F(\theta)$\footnote{The function $F(\theta)$ cannot be expressed in closed form in terms of elementary functions. It can, however, be written as a definite double integral; see the paper cited above.}.

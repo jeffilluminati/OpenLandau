@@ -1,0 +1,83 @@
+\SourcePage{660}{665}
+\section{Relation between the ``bare'' and physical charges}
+
+At large $|k^2|$, however, formula~(132.14) ceases to be applicable because its denominator becomes small. Indeed, its derivation rests on neglecting diagram~(132.13) (as well as diagrams containing still more thick photon lines) relative to diagram~(132.12). Yet the introduc\SourcePageJoin{661}{666}tion of each such line supplies the diagram with a factor $e^2D$, where $D$ is the exact propagator. Thus, in place of $\alpha=e^2$, the small parameter is
+\begin{equation}
+\frac{\alpha}{1-\dfrac{\alpha}{3\pi}\ln\dfrac{|k^2|}{m^2}}\ll 1.
+\tag{133.1}
+\end{equation}
+As $|k^2|$ grows and this quantity becomes of order unity, the theory in effect loses any small parameter at all.
+
+The situation is seen more clearly if, in deriving~(132.14), renormalization is not carried out along the way, but instead one first introduces a ``bare'' electron charge $e_c$. This charge is subsequently chosen so as to yield the correct observed value of the physical charge $e$ (see~\S~110). If the integral is cut off, as above, at an auxiliary upper limit $\Lambda^2$, the bare charge is a function of that limit, $e_c=e_c(\Lambda^2)$, and at the end one must take the limit $\Lambda\to\infty$.
+
+With this procedure, the polarization operator is
+\[
+\mathcal P(k^2)=-\frac{e_c^2}{3\pi}k^2\ln\frac{\Lambda^2}{|k^2|}
+\]
+(expression~(132.8), with $e_c$ in place of $e$), and hence
+\begin{equation}
+D(k^2)=\frac{4\pi}{k^2}\frac{1}{1+\dfrac{e_c^2}{3\pi}\ln\dfrac{\Lambda^2}{|k^2|}}.
+\tag{133.2}
+\end{equation}
+We now define the physical charge $e$ by the condition
+\[
+e_c^2D(k^2)\to\frac{4\pi}{k^2}e^2,\qquad k^2\to\sim m^2.
+\]
+This gives
+\begin{equation}
+e^2=\frac{e_c^2}{1+\dfrac{e_c^2}{3\pi}\ln\dfrac{\Lambda^2}{m^2}},
+\tag{133.3}
+\end{equation}
+or
+\begin{equation}
+e_c^2=\frac{e^2}{1-\dfrac{e^2}{3\pi}\ln\dfrac{\Lambda^2}{m^2}}.
+\tag{133.4}
+\end{equation}
+
+If the limit $\Lambda\to\infty$ is taken formally in~(133.3), then $e^2\to0$, irrespective of the form of the function $e_c^2(\Lambda)$. Such a ``nullification'' of the charge plainly signifies that renormalization cannot be performed rigorously. This limiting passage cannot, however,
+\SourcePage{662}{667}
+be made without violating the assumptions used in deriving~(133.3). Equation~(133.4) shows that, for a fixed value of $e^2$, $e_c^2$ increases with $\Lambda$; but as soon as $e_c^2\sim1$, the formulas no longer apply, since they were obtained under the assumption
+\begin{equation}
+e_c^2\ll1
+\tag{133.5}
+\end{equation}
+required for perturbation theory to be applicable to the ``bare'' interaction. The failure of inequality~(133.5) as $\Lambda$ increases is of considerable fundamental importance. It reveals that quantum electrodynamics is logically incomplete as a theory of weak interaction. In essence, it reveals the logical incompleteness of the available theory altogether. Its formalism depends precisely on the possibility of treating the electromagnetic interaction as a weak perturbation. Every calculable quantity is obtained in the theory as a power series in $e_c^2$, and these series are in fact asymptotic. To assign a definite meaning to them when $e_c^2$ is not small would, at the very least, require additional considerations that do not follow from the general principles of the existing theory.
+
+At the same time, it must be stressed that in quantum electrodynamics the difficulties just described may be of purely theoretical significance. They arise at fantastically high energies that are of no practical interest\footnote{For example, the equality $(\alpha/\pi)\ln(\varepsilon^2/m^2)=1$ is reached at $\varepsilon\sim10^{93}m$.}. One may expect that, in reality, electromagnetic interactions become entangled with weak and strong interactions at incomparably lower energies, so that pure electrodynamics loses its meaning\footnote{The opposite situation occurs in theories where interaction between particles is mediated not by the electromagnetic field, but by the so-called Yang--Mills fields. In such theories the relation between the renormalized and bare charges is given by a formula of the type~(133.4), but with the opposite sign in the denominator. Thus, at fixed $e$, the bare charge $e_c$ decreases as $\Lambda$ grows. This property of a theory is called \emph{asymptotic freedom}. A theory with asymptotic freedom is, of course, fundamentally different from a theory with charge nullification.}.
+
+To conclude this section, we show how formulas~(133.3) and~(133.4) can be obtained from simple arguments based on the meaning of renormalization and on dimensional considerations (\emph{M.~Gell-Mann, F.~Low}, 1954).
+
+Regard the square of the bare charge as a function of the cutoff parameter, $e_c^2(\Lambda^2)$, and introduce a function $d$ that relates the values of $e_c^2$ at two different values of its argument: $e_c^2(\Lambda_2^2)=e_c^2(\Lambda_1^2)d$. When $\Lambda_1^2$, $\Lambda_2^2\gg m^2$, the function $d$ is independent of $m$; being dimensionless, it can
+\SourcePage{663}{668}
+depend only on the likewise dimensionless quantities $e_c^2(\Lambda_1^2)$ and $\Lambda_2^2/\Lambda_1^2$:
+\begin{equation}
+e_c^2(\Lambda_2^2)=e_c^2(\Lambda_1^2)d\left(e_c^2(\Lambda_1^2),\frac{\Lambda_2^2}{\Lambda_1^2}\right).
+\tag{133.6}
+\end{equation}
+
+This functional relation may be converted into a differential equation. For this purpose, write equation~(133.6) for infinitesimally close values of $\Lambda_1^2$ and $\Lambda_2^2$. Denoting $\Lambda_1^2\equiv\xi$ and setting $\Lambda_2^2=\xi+d\xi$, we obtain the following differential equation for the function $\alpha_c(\xi)\equiv e_c^2(\Lambda_1^2)$:
+\begin{equation}
+d\alpha_c=\varphi(\alpha_c)\frac{d\xi}{\xi}.
+\tag{133.7}
+\end{equation}
+Here we have introduced the notation
+\begin{equation}
+\varphi(\alpha_c)=\alpha_c\left[\frac{\partial d(\alpha_c,x)}{\partial x}\right]_{x=1}
+\tag{133.8}
+\end{equation}
+and used the fact that, by definition~(133.6), $d(\alpha_c,1)\equiv1$. Integrating equation~(133.7) from $\xi=\Lambda_1^2$ to $\xi=\Lambda_2^2$, we find
+\begin{equation}
+\ln\frac{\Lambda_2^2}{\Lambda_1^2}=\int_{e_c^2(\Lambda_1^2)}^{e_c^2(\Lambda_2^2)}\frac{d\alpha}{\varphi(\alpha)}.
+\tag{133.9}
+\end{equation}
+
+Throughout the integration range, $e_c^2$ is small. We may therefore use for $\varphi(\alpha)$ the expression corresponding to the first approximation of perturbation theory. The correction to the bare charge $e_c^2$ is given by $e_c^2k^2\mathcal P(k^2)$. Taking the polarization operator in its first approximation~(132.1), we obtain
+\[
+d\left(\alpha_c,\frac{\Lambda_2^2}{\Lambda_1^2}\right)=1+\frac{\alpha_c}{3\pi}\ln\frac{\Lambda_2^2}{\Lambda_1^2},\qquad \varphi(\alpha)=\frac{\alpha^2}{3\pi},
+\]
+after which integration in~(133.9) yields
+\begin{equation}
+\frac{1}{3\pi}\ln\frac{\Lambda_2^2}{\Lambda_1^2}=\frac{1}{e_c^2(\Lambda_1^2)}-\frac{1}{e_c^2(\Lambda_2^2)}.
+\tag{133.10}
+\end{equation}
+As $\Lambda_1^2\to\sim m^2$, the bare charge $e_c(\Lambda_1^2)$ tends to the physical charge $e$, and~(133.10) then agrees with~(133.3) and~(133.4)\footnote{A systematic development of the method based on the functional properties of propagators and vertex parts (the so-called renormalization-group method) is given in: \emph{N.~N.~Bogoliubov and D.~V.~Shirkov, Introduction to the Theory of Quantized Fields}. Moscow: Nauka, 1984.}.

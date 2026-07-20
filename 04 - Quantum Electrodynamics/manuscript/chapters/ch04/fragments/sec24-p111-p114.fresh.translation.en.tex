@@ -1,0 +1,141 @@
+\SourcePage{106}{111}
+\section{Spherical waves}
+
+The wave functions of free-particle states (for spin $1/2$) with definite values of the angular momentum $j$ are spinor spherical waves. We shall determine their form, first recalling the analogous formulas of nonrelativistic theory.
+
+The nonrelativistic wave function is a 3-spinor $\psi = \binom{\psi^1}{\psi^2}$. For a state with definite energy $\varepsilon$ (and hence also a definite momentum magnitude $p$\,\footnote{In this section, $p$ denotes $|\mathbf{p}|$.}), orbital angular momentum $l$, total angular momentum $j$, and its projection $m$, the wave function has the form
+\begin{equation}
+\psi = R_{pl}(r)\Omega_{jlm}(\theta, \varphi).
+\tag{24.1}
+\end{equation}
+Its angular part $\Omega_{jlm}$ consists of three-dimensional spinors whose components (for the two values $j = l \pm 1/2$ possible at a given $l$) are
+\begin{equation}
+\begin{aligned}
+\Omega_{l+1/2,\,l,\,m} &={}
+\begin{pmatrix}
+\sqrt{\dfrac{j+m}{2j}}\,Y_{l,\,m-1/2}\\[6pt]
+\sqrt{\dfrac{j-m}{2j}}\,Y_{l,\,m+1/2}
+\end{pmatrix},\\[6pt]
+\Omega_{l-1/2,\,l,\,m} &={}
+\begin{pmatrix}
+-\sqrt{\dfrac{j-m+1}{2j+2}}\,Y_{l,\,m-1/2}\\[6pt]
+\sqrt{\dfrac{j+m+1}{2j+2}}\,Y_{l,\,m+1/2}
+\end{pmatrix}
+\end{aligned}
+\tag{24.2}
+\end{equation}
+(see III, \S\,106, problem). We shall call $\Omega_{jlm}$ \emph{spherical spinors}. Their normalization is
+\begin{equation}
+\int \Omega^*_{jlm}\Omega_{j'l'm'}\,do = \delta_{jj'}\delta_{ll'}\delta_{mm'}.
+\tag{24.3}
+\end{equation}
+
+The radial functions $R_{pl}$, on the other hand, are a common factor in both components of the spinor $\psi$ and are given by formula
+
+\SourcePage{107}{112}
+(33.10) (see III):
+\begin{equation}
+R_{pl} = \sqrt{\frac{2\pi p}{r}}\,J_{l+1/2}(pr).
+\tag{24.4}
+\end{equation}
+They obey the normalization condition
+\begin{equation}
+\int_0^\infty r^2 R_{p'l}R_{pl}\,dr = 2\pi\delta(p' - p).
+\tag{24.5}
+\end{equation}
+
+Returning to the relativistic case, we first recall that spin and orbital angular momentum are not separately conserved for a moving particle: neither $\widehat{\mathbf{s}}$ nor $\widehat{\mathbf{l}}$, taken individually, commutes with the Hamiltonian. The parity of a state nevertheless remains conserved (for a free particle). Thus the quantum number $l$ no longer specifies a definite orbital-angular-momentum value, but it does determine the parity of the state, as shown below.
+
+We take the required wave function (a bispinor) in the standard representation: $\psi = \binom{\varphi}{\chi}$. Under rotations, $\varphi$ and $\chi$ transform as 3-spinors. Their angular dependence is therefore described by the same spherical spinors $\Omega_{jlm}$. Let $\varphi \propto \Omega_{jlm}$, where $l$ is one definite member of the pair $j + 1/2$ and $j - 1/2$. Under inversion, $\varphi(\mathbf{r}) \to i\varphi(-\mathbf{r})$ (see~(21.18)); since $\Omega_{jlm}(-\mathbf{n}) = (-1)^l\Omega_{jlm}(\mathbf{n})$, it follows that
+\[
+\varphi(\mathbf{r}) \to i(-1)^l\varphi(\mathbf{r}).
+\]
+
+The components of $\chi$, however, transform under inversion according to $\chi(\mathbf{r}) \to -i\chi(-\mathbf{r})$. For the state to have a definite parity (that is, for every component to acquire the same factor under inversion), the angular dependence of $\chi$ must consequently be given by the spherical spinor $\Omega_{jl'm}$ with the other possible value of $l$. Since the two values differ by~1, $(-1)^{l'} = -(-1)^l$.
+
+The radial dependences of $\varphi$ and $\chi$ are in turn determined by the same functions $R_{pl}$ and $R_{pl'}$, with $l$ and $l'$ matching the orders of the spherical functions entering $\Omega_{jlm}$. This follows because every component of $\psi$ satisfies the second-order equation $(\widehat{\mathbf p}^{,2} - m^2)\psi = 0$, which, at a specified value of $|\mathbf{p}|$, takes the form
+\[
+(\Delta + \mathbf{p}^2)\psi = 0,
+\]
+formally identical to the nonrelativistic Schr\"odinger equation for a free particle.
+
+\SourcePage{108}{113}
+Hence
+\begin{equation}
+\varphi = AR_{pl}\Omega_{jlm},\qquad \chi = BR_{pl'}\Omega_{jl'm},
+\tag{24.6}
+\end{equation}
+and only the constant coefficients $A$ and $B$ remain to be found. For this purpose, consider the distant region, where a spherical wave may be treated as a plane wave. By the asymptotic formula~(33.12) (see III),
+\begin{equation}
+R_{pl} \approx \frac{1}{ir}\left\{e^{i\bigl(pr - \frac{\pi l}{2}\bigr)} - e^{-i\bigl(pr - \frac{\pi l}{2}\bigr)}\right\},
+\tag{24.7}
+\end{equation}
+so that $\varphi$ is the difference of two plane waves propagating in the directions $\pm\mathbf{n}$ ($\mathbf{n} = \mathbf{r}/r$). For each of them, equation~(23.8) gives
+\[
+\chi = \frac{p}{\varepsilon + m}(\pm\mathbf{n}\boldsymbol{\sigma})\varphi.
+\]
+
+The preceding discussion and formulas~(24.6) show that $(\mathbf{n}\boldsymbol{\sigma})\Omega_{jlm} = a\Omega_{jl'm}$, where $a$ is a constant. It can be found readily by comparing the two sides at $m = 1/2$ when $\mathbf{n}$ points along the $z$ axis. Using~(7.2a), we obtain
+\begin{equation}
+(\mathbf{n}\boldsymbol{\sigma})\Omega_{jlm} = i^{l'-l}\Omega_{jl'm}.
+\tag{24.8}
+\end{equation}
+
+Combining these formulas and comparing the result with~(24.6), we find
+\[
+B = -\frac{p}{\varepsilon + m}\,A.
+\]
+Finally, $A$ is fixed by the overall normalization of $\psi$. With the condition
+\begin{equation}
+\int \psi^*_{pjlm}\psi_{p'j'l'm'}\,d^3x = 2\pi\delta_{jj'}\delta_{ll'}\delta_{mm'}\delta(p - p'),
+\tag{24.9}
+\end{equation}
+the final result is
+\begin{equation}
+\psi_{pjlm} = \frac{1}{\sqrt{2\varepsilon}}\begin{pmatrix} \sqrt{\varepsilon + m}\,R_{pl}\,\Omega_{jlm}\\ -\sqrt{\varepsilon - m}\,R_{pl'}\,\Omega_{jl'm} \end{pmatrix},\qquad l' = 2j - l.
+\tag{24.10}
+\end{equation}
+
+Thus, for specified $j$ and $m$ (and energy $\varepsilon$), there are two states distinguished by their parity. The latter is fixed uniquely by $l$, which takes the values $j \pm 1/2$: under inversion, the bispinor~(24.10) is multiplied by $i(-1)^l$. Its components, however, contain spherical functions of both orders $l$ and $l'$, expressing the absence of a definite orbital-angular-momentum value.
+
+As $r \to \infty$, the spherical waves~(24.7) can be treated in every small region of space as plane waves with momentum $\mathbf{p} = \pm p\mathbf{n}$. It is therefore clear that the momentum-representation wave functions differ from~(24.10) mainly by
+
+\SourcePage{109}{114}
+the absence of radial factors and by interpreting $\mathbf{n}$ as the momentum direction.
+
+To pass directly to the momentum representation, one performs the Fourier expansion
+\begin{equation}
+\psi(\mathbf{p}') = \int \psi(\mathbf{r})\,e^{-i\mathbf{p}'\mathbf{r}}\,d^3x,
+\tag{24.11}
+\end{equation}
+
+The integral is evaluated with the expansion of a plane wave in spherical functions (see III, (34.3)):
+\begin{equation}
+e^{i\mathbf{p}\mathbf{r}} = \frac{2\pi}{p}\sum_{l=0}^{\infty}\sum_{m=-l}^{l}i^l R_{pl}(r)\,Y^*_{lm}\Bigl(\frac{\mathbf{p}}{p}\Bigr)Y_{lm}\Bigl(\frac{\mathbf{r}}{r}\Bigr).
+\tag{24.12}
+\end{equation}
+Expanding the factor $e^{-i\mathbf{p}'\mathbf{r}}$ in~(24.11) in this way and using~(24.5), the Fourier components of the function
+\[
+\psi(\mathbf{r}) = R_{pl}(r)\,\Omega_{jlm}\Bigl(\frac{\mathbf{r}}{r}\Bigr)
+\]
+are
+\[
+\psi(\mathbf{p}') = \frac{(2\pi)^2}{p}\,\delta(p' - p)\,i^{-l}Y_{lm'}\Bigl(\frac{\mathbf{p}'}{p'}\Bigr)\int \Omega_{jlm}\Bigl(\frac{\mathbf{r}}{r}\Bigr)Y^*_{lm'}\Bigl(\frac{\mathbf{r}}{r}\Bigr)\,do.
+\]
+The integral here equals the coefficients of the spherical functions in the definition of the spherical spinors~(24.2). Together with the factor $Y_{lm'}(\mathbf{p}'/p')$, these coefficients again form the same spherical spinor, now with argument $\mathbf{p}'/p'$:
+\[
+\psi(\mathbf{p}') = \frac{(2\pi)^2}{p}\,\delta(p' - p)\,i^{-l}\,\Omega_{jlm}\Bigl(\frac{\mathbf{p}'}{p'}\Bigr).
+\]
+
+Applying this result to the bispinor wave function~(24.10), we obtain its momentum representation:
+\begin{equation}
+\psi_{pjlm}(\mathbf{p}') = \delta(p' - p)\,\frac{(2\pi)^2}{p\sqrt{2\varepsilon}}\begin{pmatrix} \sqrt{\varepsilon + m}\,i^{-l}\,\Omega_{jlm}(\mathbf{p}'/p')\\ -\sqrt{\varepsilon - m}\,i^{-l'}\,\Omega_{jl'm}(\mathbf{p}'/p') \end{pmatrix}.
+\tag{24.13}
+\end{equation}
+
+The states $|pjlm\rangle$ coincide with the states $|pjm|\lambda|\rangle$ considered in \S\,16 (where $|\lambda| = 1/2$): both have definite values of $pjm$ and parity. The spherical spinors $\Omega_{jlm}$ can therefore be expressed through the functions $D^{(j)}_m$ (both being functions of $\mathbf{p}/p$). As $p \to 0$, the wave functions~(24.13) reduce to the 3-spinors $\Omega_{jlm}$, whose parity is $P = \eta(-1)^l$ (where $\eta = i$ is the ``intrinsic parity'' of the spinor). Comparison with the results of \S\,16 yields
+\begin{equation}
+\Omega_{jlm} = i^l\sqrt{\frac{2j+1}{8\pi}}\Bigl(w^{(-1/2)}D^{(j)}_{-1/2,m} \pm w^{(1/2)}D^{(j)}_{1/2,m}\Bigr)
+\tag{24.14}
+\end{equation}
+(for $l = j \mp 1/2$, where $w^{(\lambda)}$ are the 3-spinors~(23.14)).

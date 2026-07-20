@@ -129,3 +129,57 @@ The strict law of conservation of angular momentum leads now to a strict selecti
 But by virtue of the extreme weakness of the interaction of the electrons with the spin of the nucleus it can be entirely neglected in the computation of the matrix elements of the electric (and magnetic) moments of the electron shell of the atom. Therefore the previous selection rules for the electronic angular momentum $J$ and for the electronic parity also remain valid. In particular, by virtue of the latter, electric dipole transitions between components of the hyperfine structure of one and the same term are impossible: all these levels have the same parity, whereas the indicated transitions are possible only between states of different parity.
 
 Since the operator of the dipole moment commutes with the spin of the nucleus, the dependence of the matrix elements on the numbers $I$ and $F$
+
+\SourcePage{211}{216}
+can be found in explicit form; the calculations differ from those given above only by an obvious change of notation. The probability of radiation, summed over the final values of the projection of the total angular momentum $F$:
+\begin{equation}
+w(nJIF \to n'J'IF') = \frac{4\omega^3}{3\hbar c^3}\;\frac{1}{2F+1}\;|\langle n'J'IF'\|d\|nJIF\rangle|^2,
+\tag{49.18}
+\end{equation}
+\[
+\omega = \omega(nJ \to n'J'),
+\]
+where the square of the reduced matrix element
+\[
+|\langle n'J'IF'\|d\|nJIF\rangle|^2 = (2F+1)(2F'+1)\begin{Bmatrix} J' & F' & I \\ F & J & 1\end{Bmatrix}^{\!2}|\langle n'J'\|d\|nJ\rangle|^2.
+\tag{49.19}
+\]
+
+\bigskip
+\begin{center}\textbf{Problem}\end{center}
+\smallskip
+The majority of lines in the spectra of alkali metals can be described as a result of transitions of one outer (optical) electron in the self-consistent field of the atomic core forming a closed configuration; the state of the atom is constructed according to the $LS$-coupling scheme. Under these assumptions determine the relative intensities of the fine-structure components of spectral lines.
+
+\textit{Solution.} The total angular momenta $L$ and $S = \tfrac{1}{2}$ of the atom coincide with the orbital angular momentum and spin of the optical electron. The parity of the state is $(-1)^l$ (the parity of the closed configuration of the atomic core is positive). The selection rules for parity therefore forbid a dipole transition with $L' = L$, so that only transitions with $L' - L = \pm 1$ are possible. The transitions between components of the doublet levels $n$, $L$ and $n'$, $L - 1$ give in all (by virtue of the selection rules for $J$) just three lines (Fig.~1).
+
+\begin{figure}[h]
+\centering
+\setlength{\unitlength}{1mm}
+\begin{picture}(50,30)
+\put(0,25){\line(1,0){20}}
+\put(0,20){\line(1,0){20}}
+\put(0,5){\line(1,0){20}}
+\put(25,25){\makebox(0,0)[l]{\footnotesize $j = L + \tfrac{1}{2}$}}
+\put(25,20){\makebox(0,0)[l]{\footnotesize $j = L - \tfrac{1}{2}$}}
+\put(25,5){\makebox(0,0)[l]{\footnotesize $j' = L - \tfrac{1}{2}$}}
+\put(-5,25){\makebox(0,0)[r]{\footnotesize $n,\,L$}}
+\put(-5,5){\makebox(0,0)[r]{\footnotesize $n',\,L-1$}}
+\put(5,24.5){\line(0,-1){19}}
+\put(10,19.5){\line(0,-1){14}}
+\put(15,24.5){\line(0,-1){19}}
+\put(3,14){\makebox(0,0){\footnotesize $a$}}
+\put(11.5,12){\makebox(0,0){\footnotesize $b$}}
+\put(17,14){\makebox(0,0){\footnotesize $c$}}
+\end{picture}
+\caption{}
+\end{figure}
+
+Their relative intensities (denoting them $a$, $b$, $c$) can be determined, without resorting to formula~(49.15), from the rule~(49.16). Composing the ratios of the summed intensities of lines with one and the same initial (or final) level, we obtain two equalities:
+\[
+\frac{b + c}{a} = \frac{2L}{2L+2},\qquad \frac{a + b}{c} = \frac{2L}{2L-2},
+\]
+from which
+\[
+a : b : c = [(L+1)(2L-1)] : 1 : [(L-1)(2L+1)].
+\]
+If $L = 1$, the lower level is not split, line $c$ is absent, and $a/b = 2$.

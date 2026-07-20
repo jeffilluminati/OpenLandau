@@ -1,0 +1,171 @@
+\SourcePage{99}{104}
+\section{Algebra of the Dirac Matrices}
+
+Calculations involving the Dirac equation make extensive use of the $\gamma$ matrices without requiring their explicit form in any particular representation. The rules for manipulating these matrices follow entirely from the anticommutation relations
+\begin{equation}
+\gamma^\mu\gamma^\nu + \gamma^\nu\gamma^\mu = 2g^{\mu\nu},\qquad \mu, \nu = 0, 1, 2, 3,
+\tag{22.1}
+\end{equation}
+which express all their general properties.
+
+Here we collect several formulas and rules from the algebra of the $\gamma$ matrices that are useful in calculations.
+
+The ``scalar product'' of the $\gamma$ matrices with themselves is $g_{\mu\nu}\gamma^\mu\gamma^\nu = 4$. For conciseness, in analogy with covariant components of 4-vectors, we introduce the notation $\gamma_\mu = g_{\mu\nu}\gamma^\nu$. Then
+\begin{equation}
+\gamma_\mu\gamma^\mu = 4.
+\tag{22.2}
+\end{equation}
+If $\gamma_\mu$ and $\gamma^\mu$ are separated by one or more $\gamma$ factors, repeated use of~(22.1) brings them into neighboring positions, after which the sum over $\mu$ is evaluated with~(22.2). In this way one obtains
+\begin{equation}
+\begin{gathered}
+\gamma_\mu\gamma^\nu\gamma^\mu = -2\gamma^\nu,\\
+\gamma_\mu\gamma^\lambda\gamma^\nu\gamma^\mu = 4g^{\lambda\nu},\\
+\gamma_\mu\gamma^\lambda\gamma^\nu\gamma^\rho\gamma^\mu = -2\gamma^\rho\gamma^\nu\gamma^\lambda,\\
+\gamma_\mu\gamma^\lambda\gamma^\nu\gamma^\rho\gamma^\sigma\gamma^\mu = 2(\gamma^\sigma\gamma^\lambda\gamma^\nu\gamma^\rho + \gamma^\rho\gamma^\nu\gamma^\lambda\gamma^\sigma).
+\end{gathered}
+\tag{22.3}
+\end{equation}
+
+Usually the factors $\gamma^\mu, \ldots$ occur together with different 4-vectors in the form of ``scalar products''\,\footnote{In this edition we use no special symbol for such a product. Letters carrying a hat or a slash are frequently used for it in the literature.}
+\begin{equation}
+\gamma a \equiv \gamma^\mu a_\mu.
+\tag{22.4}
+\end{equation}
+For these products, formulas~(22.1) become
+\begin{equation}
+(a\gamma)(b\gamma) + (b\gamma)(a\gamma) = 2(ab),\qquad (a\gamma)(a\gamma) = a^2
+\tag{22.5}
+\end{equation}
+and formulas~(22.3) take the form
+\begin{equation}
+\begin{gathered}
+\gamma_\mu(a\gamma)\gamma^\mu = -2(a\gamma),\\
+\gamma_\mu(a\gamma)(b\gamma)\gamma^\mu = 4(ab),\\
+\gamma_\mu(a\gamma)(b\gamma)(c\gamma)\gamma^\mu = -2(c\gamma)(b\gamma)(a\gamma),\\
+\gamma_\mu(a\gamma)(b\gamma)(c\gamma)(d\gamma)\gamma^\mu = 2[(d\gamma)(a\gamma)(b\gamma)(c\gamma) + (c\gamma)(b\gamma)(a\gamma)(d\gamma)].
+\end{gathered}
+\tag{22.6}
+\end{equation}
+
+\SourcePage{100}{105}
+A frequently used operation is the trace of a product containing some number of $\gamma$ matrices. Consider the quantities
+\begin{equation}
+T^{\mu_1\mu_2\ldots\mu_n} \equiv \tfrac{1}{4}\Tr\bigl(\gamma^{\mu_1}\gamma^{\mu_2}\ldots\gamma^{\mu_n}\bigr).
+\tag{22.7}
+\end{equation}
+The familiar property of the trace of a matrix product makes this tensor symmetric under cyclic permutations of the indices $\mu_1\mu_2\ldots\mu_n$.
+
+Because the $\gamma$ matrices have the same form in every reference frame, the quantities $T$ are likewise independent of the frame chosen. They therefore form a tensor expressible solely in terms of the metric tensor $g_{\mu\nu}$, which has the same property.
+
+Only tensors of even rank can be constructed from the rank-two tensor $g_{\mu\nu}$. It follows at once that the trace of a product containing any odd number of $\gamma$ factors vanishes. In particular, every individual $\gamma$ matrix has zero trace\,\footnote{The trace of a matrix is invariant under transformations $\gamma = U\gamma U^{-1}$. Equation~(22.8) is therefore also evident from the explicit matrices in~(21.3).}:
+\begin{equation}
+\Tr\gamma^\mu = 0.
+\tag{22.8}
+\end{equation}
+
+The trace of the identity matrix of order four (implicitly present on the right-hand side of the anticommutation relation~(22.1)) equals~4. Taking the trace of both sides of~(22.1) consequently gives
+\begin{equation}
+T^{\mu\nu} = g^{\mu\nu}.
+\tag{22.9}
+\end{equation}
+
+For the trace of a product of four matrices one has
+\begin{equation}
+T^{\lambda\mu\nu\rho} = g^{\lambda\mu}g^{\nu\rho} - g^{\lambda\nu}g^{\mu\rho} + g^{\lambda\rho}g^{\mu\nu}.
+\tag{22.10}
+\end{equation}
+For example, this formula can be derived by moving the factor $\gamma^\lambda$ to the right through $\Tr(\gamma^\lambda\gamma^\mu\gamma^\nu\gamma^\rho)$ with the aid of~(22.1). Each interchange produces one of the terms appearing in~(22.10):
+\[
+T^{\lambda\mu\nu\rho}=2g^{\lambda\mu}T^{\nu\rho}-T^{\mu\lambda\nu\rho}
+=2g^{\lambda\mu}g^{\nu\rho}-T^{\mu\lambda\nu\rho}
+\]
+and so on. Once all interchanges have been made, the right-hand side retains $-T^{\mu\nu\rho\lambda}=-T^{\lambda\mu\nu\rho}$, which is transferred to the left. The same procedure reduces the trace of a product of six $\gamma$ matrices to traces of products of four factors, and so forth. Thus,
+\begin{multline}
+T^{\lambda\mu\nu\rho\sigma\tau} = g^{\lambda\mu}T^{\nu\rho\sigma\tau} - g^{\lambda\nu}T^{\mu\rho\sigma\tau} + g^{\lambda\rho}T^{\mu\nu\sigma\tau} -{}\\
+{}- g^{\lambda\sigma}T^{\mu\nu\rho\tau} + g^{\lambda\tau}T^{\mu\nu\rho\sigma}.
+\tag{22.11}
+\end{multline}
+
+We note that every trace $T^{\lambda\mu\ldots}$ is real and can be nonzero only when each of the matrices $\gamma^0, \gamma^1, \ldots$
+\SourcePage{101}{106}
+occurs an even number of times in the product; both statements are evident from the formulas just obtained. It then follows readily that reversing the order of all factors leaves the trace unchanged:
+\begin{equation}
+T^{\lambda\mu\ldots\rho\sigma} = T^{\sigma\rho\ldots\mu\lambda}.
+\tag{22.12}
+\end{equation}
+
+As already mentioned, $\gamma$ factors usually appear in scalar products with various 4-vectors. In such cases formulas~(22.9) and~(22.10), for example, mean that
+\begin{equation}
+\begin{gathered}
+\tfrac{1}{4}\Tr(a\gamma)(b\gamma) = ab,\\
+\tfrac{1}{4}\Tr(a\gamma)(b\gamma)(c\gamma)(d\gamma) = (ab)(cd) - (ac)(bd) + (ad)(bc).
+\end{gathered}
+\tag{22.13}
+\end{equation}
+
+The product $\gamma^0\gamma^1\gamma^2\gamma^3$ has a special role. It is conventionally denoted by
+\begin{equation}
+\gamma^5 = -i\gamma^0\gamma^1\gamma^2\gamma^3.
+\tag{22.14}
+\end{equation}
+
+It is easy to see that
+\begin{equation}
+\gamma^5\gamma^\mu + \gamma^\mu\gamma^5 = 0,\qquad (\gamma^5)^2 = 1,
+\tag{22.15}
+\end{equation}
+so that $\gamma^5$ anticommutes with every $\gamma^\mu$. With respect to the matrices $\boldsymbol{\alpha}$ and $\beta$, the corresponding rules are
+\begin{equation}
+\boldsymbol{\alpha}\gamma^5 - \gamma^5\boldsymbol{\alpha} = 0,\qquad \beta\gamma^5 + \gamma^5\beta = 0
+\tag{22.16}
+\end{equation}
+(commutation with $\boldsymbol{\alpha}$ follows because $\boldsymbol{\alpha} = \gamma^0\boldsymbol{\gamma}$ is a product of two $\gamma^\mu$ matrices).
+
+The matrix $\gamma^5$ is Hermitian. Indeed,
+\[
+\gamma^{5+} = i\gamma^{3+}\gamma^{2+}\gamma^{1+}\gamma^{0+} = -i\gamma^3\gamma^2\gamma^1\gamma^0,
+\]
+and since the sequence 3210 is reduced to 0123 by an even number of interchanges,
+\begin{equation}
+\gamma^{5+} = \gamma^5.
+\tag{22.17}
+\end{equation}
+
+For completeness, its form in two particular representations is
+\begin{equation}
+\begin{aligned}
+\text{spinor}
+\quad &\gamma^5 = \begin{pmatrix} -1 & 0\\ 0 & 1 \end{pmatrix};\\
+\text{standard}
+\quad &\gamma^5 = \begin{pmatrix} 0 & -1\\ -1 & 0 \end{pmatrix}.
+\end{aligned}
+\tag{22.18}
+\end{equation}
+
+The trace of $\gamma^5$ is zero:
+\begin{equation}
+\Tr\gamma^5 = 0
+\tag{22.19}
+\end{equation}
+(this is also seen directly from~(22.18)). The traces of products $\gamma^5\gamma^\mu\gamma^\nu$ vanish as well. For products of $\gamma^5$ with four $\gamma^\mu$ factors, however,
+\begin{equation}
+\tfrac{1}{4}\Tr\,\gamma^5\gamma^\lambda\gamma^\mu\gamma^\nu\gamma^\rho = ie^{\lambda\mu\nu\rho}.
+\tag{22.20}
+\end{equation}
+
+\SourcePage{102}{107}
+Another useful formula is
+\begin{equation}
+\gamma N = i\gamma^5(\gamma a)(\gamma b)(\gamma c),\qquad N^\lambda = e^{\lambda\mu\nu\rho}a_\mu b_\nu c_\rho,
+\tag{22.21}
+\end{equation}
+valid for mutually orthogonal 4-vectors $a$, $b$, and $c$: $ab = ac = bc = 0$.
+
+In some situations (in problems involving nonrelativistic particles) one must evaluate traces of products in which $\gamma^0$ and the three-dimensional ``vector'' $\boldsymbol{\gamma}$ enter separately. Only products containing an even number of $\gamma^0$ and $\boldsymbol{\gamma}$ factors can have a nonzero trace. All $\gamma^0$ factors then reduce to~1, while traces of products with two and four $\boldsymbol{\gamma}$ factors are given by
+\begin{equation}
+\begin{gathered}
+\tfrac{1}{4}\Tr(\mathbf{a}\boldsymbol{\gamma})(\mathbf{b}\boldsymbol{\gamma}) = -\mathbf{ab},\\
+\tfrac{1}{4}\Tr(\mathbf{a}\boldsymbol{\gamma})(\mathbf{b}\boldsymbol{\gamma})(\mathbf{c}\boldsymbol{\gamma})(\mathbf{d}\boldsymbol{\gamma}) = (\mathbf{ab})(\mathbf{cd}) - (\mathbf{ac})(\mathbf{bd}) + (\mathbf{ad})(\mathbf{bc}).
+\end{gathered}
+\tag{22.22}
+\end{equation}

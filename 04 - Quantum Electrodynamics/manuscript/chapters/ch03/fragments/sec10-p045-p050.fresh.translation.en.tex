@@ -1,0 +1,160 @@
+\SourcePage{45}{50}
+
+\section{Wave equation for spin-zero particles}
+
+Chapter I showed how a quantum description of the free electromagnetic field can be constructed by starting from the known properties of the field in the classical limit and using the concepts of ordinary quantum mechanics. The resulting picture of the field as a system of photons contains many features that also carry over to the relativistic quantum description of particles.
+
+The electromagnetic field is a system with infinitely many degrees of freedom. It has no conservation law for the number of particles (photons), and its possible states include states with any number of particles.\footnote{In reality, of course, the photon number changes only through various interaction processes.} In general, however, systems of any particles must possess the same property in a relativistic theory. Conservation of particle number in nonrelativistic theory is connected with conservation of mass: the sum of the masses (rest masses) of the particles does not change when they interact; for example, conservation of the sum of the masses in a system of electrons also means that their number remains fixed. Relativistic mechanics, by contrast, has no law of mass conservation; only the total energy of the system, including the particles' rest energy, must be conserved. The particle number therefore need not be conserved, and every relativistic particle theory consequently has to be a theory of systems with infinitely many degrees of freedom. In other words, such a particle theory assumes the character of a field theory.
+
+The apparatus of second quantization is the appropriate mathematical means of describing systems with variable particle number (see III, \S\S~64, 65). In the quantum description of the electromagnetic field, the 4-potential $\widehat A$ acts as the second-quantized operator. It is expressed through the (coordinate) wave functions of individual particles (photons) and their creation and annihilation operators. A quantized wave-function operator plays an analogous role in describing a system of particles. Its construction first requires the form of the wave function\SourcePage{46}{51} of one free particle and the equation obeyed by that function.
+
+The auxiliary nature of the concept of a free-particle field should be emphasized. Real particles interact, and the purpose of the theory is to study these interactions. Every interaction, however, reduces to a collision, before and after which the system may be regarded as an assemblage of free particles. Section~1 noted that these are the only measurable objects. We therefore use free-particle fields as a means of describing initial and final states.
+
+We begin the relativistic description of free particles with particles of spin~0. The mathematical simplicity of this case makes the central ideas and characteristic features of the description especially transparent.
+
+The state of a free particle without spin can be specified completely by its momentum $\mathbf{p}$ alone. The particle energy $\varepsilon$\footnote{We denote the energy of an individual particle by $\varepsilon$, to distinguish it from the energy $E$ of a system of particles.} then obeys $\varepsilon^2=\mathbf{p}^2+m^2$, where $m$ is the particle mass, or, in four-dimensional form,
+\begin{equation}
+p^2=m^2.
+\tag{10.1}
+\end{equation}
+
+As is known, the conservation laws for momentum and energy are connected with the homogeneity of space and time, that is, with symmetry under an arbitrary parallel displacement of the 4-coordinate system. In quantum theory, this symmetry requires the wave function of a particle with definite 4-momentum to acquire only a phase factor of unit modulus under such a transformation of the 4-coordinates. Only an exponential function with an exponent linear in the 4-coordinates satisfies this requirement. Thus the wave function of a free-particle state with specified 4-momentum $p^\mu=(\varepsilon,\mathbf{p})$ must be a plane wave:
+\begin{equation}
+\mathrm{const}\cdot e^{-ipx},
+\qquad
+px=\varepsilon t-\mathbf{p}\mathbf{r}
+\tag{10.2}
+\end{equation}
+(the choice of sign in the exponent is itself conventional in relativistic theory; it has been made to agree with the nonrelativistic case).
+
+The wave equation must admit (10.2) as particular solutions for every 4-vector $p$ satisfying (10.1). It must be linear, as required by the superposition principle: any linear combination of functions (10.2) also describes a possible particle state and must therefore also be a solution. Finally, its order should be as low as possible; an equation of higher order would introduce extraneous solutions.
+
+\SourcePage{47}{52}
+Spin is the angular momentum of a particle in the reference frame in which it is at rest. If the particle spin is $s$, its wave function in the rest frame is a three-dimensional spinor of rank $2s$. To describe the particle in an arbitrary reference frame, however, its wave function must be expressed in terms of four-dimensional quantities.
+
+In the rest frame, a spin-zero particle is described by a three-dimensional scalar. Such a scalar can nevertheless have different four-dimensional ``origins'': it may be a four-dimensional scalar $\psi$, or it may be the fourth component of a timelike 4-vector $\psi_\mu$ whose only nonzero component in the rest frame is $\psi_0$.\footnote{Or, similarly, it may be the time component of a higher-rank 4-tensor; that case, however, would lead to equations of higher order.}
+
+For a free particle, the only operator that can enter the wave equation is the 4-momentum operator $\widehat p$. Its components are the differentiation operators with respect to the coordinates and time:
+\begin{equation}
+\widehat p^\mu=i\partial^\mu
+=\left(i\frac{\partial}{\partial t},-i\boldsymbol{\nabla}\right).
+\tag{10.3}
+\end{equation}
+
+The wave equation must be a differential relation between $\psi$ and $\psi_\mu$, effected by the operator $\widehat p$. This relation must, of course, be expressed in relativistically invariant form. The required relations are
+\begin{equation}
+m\psi_\mu=\widehat p_\mu\psi,
+\qquad
+\widehat p^\mu\psi_\mu=m\psi,
+\tag{10.4}
+\end{equation}
+where $m$ is a dimensional constant characterizing the particle.\footnote{The constants $m$ have been inserted in (10.4) so that $\psi_\mu$ and $\psi$ have the same dimension. Introducing different constants $m_1$ and $m_2$ into the two equations would serve no purpose, since they could always be made equal by redefining either $\psi$ or $\psi_\mu$.}
+
+Substitution of $\psi_\mu$ from the first equation into the second gives
+\begin{equation}
+(\widehat p^2-m^2)\psi=0
+\tag{10.5}
+\end{equation}
+(\emph{O.~Klein}, \emph{V.~A.~Fock}, 1926; \emph{W.~Gordon}, 1927). Written out explicitly, this equation is
+\begin{equation}
+-\partial_\mu\partial^\mu\psi
+=\left(-\frac{\partial^2}{\partial t^2}+\mathop{\Delta}\right)\psi
+=m^2\psi.
+\tag{10.6}
+\end{equation}
+
+Putting the plane wave (10.2) into this equation yields $p^2=m^2$, which shows that $m$ is the particle mass. Notice that the form of (10.5) is already evident from the fact that $\widehat p^2$ is the only scalar operator constructible from $\widehat p$ (for the same reason, every component of the wave function of a particle of any spin satisfies the same equation, as we shall repeatedly see below).\SourcePage{48}{53}
+
+Thus, in essence, a spin-zero particle is described by just one four-dimensional scalar $\psi$, satisfying the second-order equation (10.5). In the first-order equations (10.4), the wave function is the collection of quantities $\psi$ and $\psi_\mu$, with the 4-vector $\psi_\mu$ reducing to the 4-gradient of the scalar $\psi$. In the rest frame, the particle wave function is independent of the spatial coordinates, and the spatial components of the 4-vector $\psi_\mu$ therefore vanish, as they should.
+
+For second quantization it is useful to express the energy and momentum of the particle as spatial integrals of combinations bilinear in $\psi$ and $\psi^*$, which act as spatial densities of these quantities. In other words, we must find the energy--momentum tensor $T_{\mu\nu}$ corresponding to (10.5). In terms of this tensor, conservation of energy and momentum is written
+\begin{equation}
+\partial_\mu T^\mu_{\nu}=0.
+\tag{10.7}
+\end{equation}
+
+Following the general rules of field theory (see II, \S~32), we formulate a variational principle from which (10.5) follows. Such a principle must require the ``action integral''
+\begin{equation}
+S=\int L\,d^4x
+\tag{10.8}
+\end{equation}
+of some real 4-scalar $L$, the density of the field's Lagrange function, to be minimal.\footnote{The corresponding second-quantized operator $\widehat L$ is called the \emph{field Lagrangian}. To simplify the terminology, we shall use this term for both the ``quantized'' and the ``unquantized'' density of the Lagrange function.} From the scalar $\psi$ and the operator $\partial^\mu$, one can form the real bilinear scalar expression
+\begin{equation}
+L=\partial_\mu\psi^*\cdot\partial^\mu\psi-m^2\psi^*\psi,
+\tag{10.9}
+\end{equation}
+where $m$ is a dimensional constant. Treating $\psi$ and $\psi^*$ as independent variables describing the field (the field's ``generalized coordinates'' $q$), one readily sees that the Lagrange equations
+\begin{equation}
+\frac{\partial}{\partial x^\mu}\frac{\partial L}{\partial q_{,\mu}}
+=\frac{\partial L}{\partial q}
+\tag{10.10}
+\end{equation}
+($q_{,\mu}\equiv\partial_\mu q$) coincide with (10.5) for $\psi$ and $\psi^*$, with $m$ being the particle mass. Notice also that (10.9) has been assigned an overall sign such that the square\SourcePage{49}{54} of the time derivative, $|\partial\psi/\partial t|^2$, enters $L$ with a plus sign; otherwise the action could not have a minimum (cf. II, \S~27). The choice of an overall numerical coefficient in $L$ is conventional and affects only the normalization factor in $\psi$.
+
+The energy--momentum tensor is now calculated from
+\begin{equation}
+T^\nu_\mu=\sum_q q_{,\mu}\frac{\partial L}{\partial q_{,\nu}}
+-L\delta^\nu_\mu
+\tag{10.11}
+\end{equation}
+(summation over all $q$). Substitution of (10.9) gives
+\begin{equation}
+T_{\mu\nu}=\partial_\mu\psi^*\cdot\partial_\nu\psi
++\partial_\nu\psi^*\cdot\partial_\mu\psi-Lg_{\mu\nu}
+\tag{10.12}
+\end{equation}
+(these quantities are real, as required, because $L$ is real). In particular,
+\begin{align}
+T_{00}
+&=2\frac{\partial\psi^*}{\partial t}\frac{\partial\psi}{\partial t}-L
+=\frac{\partial\psi^*}{\partial t}\frac{\partial\psi}{\partial t}
++\boldsymbol{\nabla}\psi^*\cdot\boldsymbol{\nabla}\psi
++m^2\psi^*\psi,
+\tag{10.13}\\
+T_{i0}
+&=\frac{\partial\psi^*}{\partial t}\frac{\partial\psi}{\partial x^i}
++\frac{\partial\psi^*}{\partial x^i}\frac{\partial\psi}{\partial t}.
+\tag{10.14}
+\end{align}
+The field 4-momentum is given by the integral
+\begin{equation}
+P_\mu=\int T_{\mu0}\,d^3x,
+\tag{10.15}
+\end{equation}
+so $T_{00}$ and $T_{i0}$ serve as the energy and momentum densities. Notice that $T_{00}$ is positive definite.
+
+Formula (10.13) can be used to normalize the wave function. A plane wave normalized to one particle in a volume $V=1$ is
+\begin{equation}
+\psi_p=\frac{1}{\sqrt{2\varepsilon}}e^{-ipx}.
+\tag{10.16}
+\end{equation}
+Indeed, this function gives $T_{00}=\varepsilon$, so that the total energy in the volume $V=1$ equals the energy of one particle.
+
+The angular momentum, whose conservation is associated with the isotropy of space, can likewise be expressed as a spatial integral; that representation will not be needed below.
+
+Finally, besides the conservation laws directly associated with space-time symmetry, equations (10.4) admit one further conservation law. It is readily verified from (10.4), together with the corresponding equations for $\psi^*$, that
+\begin{equation}
+\partial_\mu j^\mu=0,
+\tag{10.17}
+\end{equation}
+where
+\begin{equation}
+j_\mu=m(\psi^*\psi_\mu+\psi^*_\mu\psi)
+=i[\psi^*\partial_\mu\psi-(\partial_\mu\psi^*)\psi].
+\tag{10.18}
+\end{equation}
+
+\SourcePage{50}{55}
+It follows that $j^\mu$ plays the role of a current-density 4-vector. Equation (10.17) is the continuity equation expressing conservation of the quantity
+\begin{equation}
+Q=\int j_0\,d^3x,
+\tag{10.19}
+\end{equation}
+where
+\begin{equation}
+j_0=j^0=i\left(\psi^*\frac{\partial\psi}{\partial t}
+-\frac{\partial\psi^*}{\partial t}\psi\right).
+\tag{10.20}
+\end{equation}
+
+Note that $j_0$ is not positive definite. This fact alone shows that, in general, it cannot be interpreted as a probability density for the particle's spatial localization. The meaning of the conservation law expressed by (10.17) will become clear in the next section.

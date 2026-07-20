@@ -1,0 +1,76 @@
+\SourcePage{164}{169}
+\section{Scattering in the ultrarelativistic case}
+
+We consider separately scattering in the ultrarelativistic case ($\varepsilon\gg m$). In the first approximation, the mass $m$ is neglected altogether in the wave equation. It is then convenient to use the spinor representation $\psi=\binom{\xi}{\eta}$, because at $m=0$ the equations for $\xi$ and $\eta$ separate:
+\begin{equation}
+-i\boldsymbol\sigma\boldsymbol\nabla\xi=(\varepsilon-U)\xi,
+\qquad
+-i\boldsymbol\sigma\boldsymbol\nabla\eta=-(\varepsilon-U)\eta
+\tag{38.1}
+\end{equation}
+and acquire the ``neutrino'' form; see \S~30.
+
+An electron in a helicity state polarized along $\mathbf p$ has the wave function $\psi=\binom{\xi}{0}$, while polarization opposite to $\mathbf p$ corresponds to $\psi=\binom{0}{\eta}$. Since the equations for $\xi$ and $\eta$ are independent, this property plainly remains unchanged in scattering. In other words, helicity is conserved when ultrarelativistic electrons are scattered. Symmetry considerations, namely longitudinal polarization, show that scattering of particles in helicity states has no azimuthal asymmetry. One can also state that the scattering cross section of electrons in helicity states does not depend on the sign of the helicity. This follows because a central field is invariant under inversion, while inversion reverses the helicity sign.
+
+In the ultrarelativistic case, formulas (37.3)--(37.5) can be simplified substantially (\emph{D.~R. Yennie, D.~G. Ravenhall, R.~N. Wilson}, 1954).
+
+Let the incident electron be polarized, say, along its direction of motion $\mathbf n$. For a plane wave with a definite value of $\mathbf n\boldsymbol\sigma$, the spinor $\xi\,(=(\varphi+\chi)/\sqrt2)$ is proportional to the same 3-spinor $w$ that appeared in the standard representation of the wave. The relation between the spinor amplitudes of the incident and scattered waves in the new representation is therefore still effected by the same operator $\widehat f$.
+
+As a result of scattering, the polarization vector turns together with the momentum and acquires the direction $\mathbf n'$. The action of $\widehat f$ on the electron spin wave function consequently reduces to a rotation of the spin through the angle $\theta$, the angle between $\mathbf n$ and $\mathbf n'$, about the axis $\boldsymbol\nu$. Such a rotation is in turn equivalent to rotating the coordinate system about the same axis in the opposite sense, through the angle $-\theta$. It follows that, apart from a coefficient, $\widehat f$ must coincide with the operator that transforms the wave function under this change of coordinate system, namely operator (18.17) with $\theta$ replaced by $-\theta$.
+
+\SourcePage{165}{170}
+Comparison of (37.3) and (18.17) gives
+\begin{equation}
+\frac BA=-i\tan\frac\theta2.
+\tag{38.2}
+\end{equation}
+Thus, in the ultrarelativistic limit,
+\begin{equation}
+\widehat f=A(\theta)\left[1-i\tan\frac\theta2\cdot
+\boldsymbol\nu\boldsymbol\sigma\right].
+\tag{38.3}
+\end{equation}
+
+The expression (37.4) for $A(\theta)$ can also be simplified by using the relation between the phases $\delta_\varkappa$ and $\delta_{-\varkappa}$ that arises in the same limit. To derive it, note that after the terms containing $m$ are deleted, equations (35.4) for $f$ and $g$ are invariant under the replacement
+\[
+\varkappa\to-\varkappa,
+\qquad f\to g,
+\qquad g\to-f,
+\]
+which changes no parameter of either the particle or the field. We must therefore have $f_\varkappa/g_\varkappa=-g_{-\varkappa}/f_{-\varkappa}$. Substitution of the asymptotic expressions then gives
+\[
+\begin{aligned}
+\tan\left(pr-\frac{l\pi}{2}+\delta_\varkappa\right)
+&=-\cot\left(pr-\frac{l'\pi}{2}+\delta_{-\varkappa}\right),\\
+\delta_\varkappa&=\delta_{-\varkappa}-(l'-l)\frac\pi2
++\left(n+\frac12\right)\pi,
+\end{aligned}
+\]
+whence
+\begin{equation}
+e^{2i\delta_\varkappa}=e^{2i\delta_{-\varkappa}}.
+\tag{38.4}
+\end{equation}
+Using this relation, and changing the summation index $l$ to $l-1$ in the first term of the sum in (37.4), we find
+\begin{equation}
+A(\theta)=\frac1{2ip}\sum_{l=1}^{\infty}
+l(e^{2i\delta_l}-1)[P_l(\cos\theta)+P_{l-1}(\cos\theta)].
+\tag{38.5}
+\end{equation}
+
+Equation (38.2) implies $\operatorname{Re}(AB^*)=0$. Thus, in the approximation under consideration, the cross section is independent of the initial particle polarization, and an unpolarized beam remains unpolarized after scattering (see formulas III, (140.8)--(140.10)). We also note that as $\theta\to\pi$, the expression (38.5) for $A(\theta)$ tends to zero as $(\pi-\theta)^2$; recall that $P_l(-1)=(-1)^l$. The cross section tends to zero together with it:
+\begin{equation}
+\frac{d\sigma}{do}=|A|^2+|B|^2
+=\frac{|A(\theta)|^2}{\cos^2(\theta/2)}.
+\tag{38.6}
+\end{equation}
+
+These properties naturally disappear in the subsequent approximations in the small quantity $m/\varepsilon$. In particular, analysis shows that as $\theta\to\pi$, the cross section tends to a limit proportional to $(m/\varepsilon)^2$.
+
+\SourcePage{166}{171}
+For a Coulomb field in the ultrarelativistic case, the phases $\delta_\varkappa$ are independent of energy, as can be seen from (36.9)\footnote{This can also be seen directly from equations (38.1), since for a Coulomb field the substitution $\mathbf r\to\mathbf r'/\varepsilon$ eliminates the energy $\varepsilon$ from the equations altogether.}. Therefore, in a pure Coulomb field the scattering cross section for $\varepsilon\gg m$ has the form
+\begin{equation}
+d\sigma=\frac{\tau(\theta)}{\varepsilon^2}do,
+\tag{38.7}
+\end{equation}
+where $\tau$ is a function of the angle alone.

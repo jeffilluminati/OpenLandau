@@ -1,0 +1,121 @@
+\SourcePage{211}{216}
+\section{Radiation from atoms. Magnetic type}
+
+The order of magnitude of an atom's magnetic moment is given by the Bohr magneton: $\mu\sim e\hbar/mc$. This estimate differs by a factor $\alpha$ from the order of magnitude of the electric dipole moment, $d\sim ea\sim\hbar^2/(me)$ (since $v/c\sim\alpha$ as well, $\mu\sim dv/c$, as
+\SourcePage{212}{217}
+expected). It follows that the probability of magnetic-dipole ($M1$) radiation from an atom is approximately $\alpha^2$ times the probability of electric-dipole radiation at the same frequency. Magnetic radiation therefore has a significant role only in transitions forbidden by the selection rules for the electric type.
+
+For electric-quadrupole ($E2$) radiation, the order of magnitude of its probability relative to that of $M1$ radiation is
+\begin{equation}
+\frac{E2}{M1}\sim\frac{(ea^2)^2\omega^2/c^2}{\mu^2}
+\sim\frac{a^4m^2\omega^2}{\hbar^2}
+\sim\left(\frac{\Delta E}{E}\right)^2
+\tag{50.1}
+\end{equation}
+(the quadrupole moment is $\sim ea^2$, $E\sim\hbar^2/ma^2$ is the atomic energy, and $\Delta E$ is the change in energy during the transition). We see that at ordinary atomic frequencies, that is, when $\Delta E\sim E$, the probabilities of $E2$ and $M1$ radiation have the same order of magnitude (provided, of course, that both are allowed by the selection rules). If $\Delta E\ll E$, as for transitions between fine-structure components of the same term, $M1$ radiation is more probable than $E2$ radiation.
+
+Magnetic-dipole transitions obey the strict selection rules
+\begin{equation}
+|J'-J|\leq1\leq J+J',
+\tag{50.2}
+\end{equation}
+\begin{equation}
+PP'=1.
+\tag{50.3}
+\end{equation}
+In the case of $LS$ coupling, additional selection rules arise that are even more restrictive than in the electric case. This is connected with a specific property of the atomic magnetic moment resulting from the identity of all the particles in the system (the electrons). Namely, the atomic magnetic-moment operator is expressed in terms of the operators of its total orbital and spin angular momenta:
+\begin{equation}
+\widehat{\boldsymbol\mu}=-\mu_0(\widehat{\mathbf L}+2\widehat{\mathbf S})
+=-\mu_0(\widehat{\mathbf J}+\widehat{\mathbf S}),
+\tag{50.4}
+\end{equation}
+where $\mu_0=|e|\hbar/(2mc)$ is the Bohr magneton (see III, \S~113). Because total angular momentum is conserved, the operator $\widehat{\mathbf J}$ has no matrix elements off-diagonal in energy at all; thus, for radiation theory it is sufficient to write $\widehat{\boldsymbol\mu}=-\mu_0\widehat{\mathbf S}$\footnote{Exceptions occur when the electronic angular momentum $\mathbf J$ of the atom is not conserved: when hyperfine structure is included, in the presence of an external field, and so forth (see the problems).}.
+
+When spin-orbit interaction is neglected, each of the angular momenta $L$ and $S$ is conserved separately. Hence the
+\SourcePage{213}{218}
+spin operator is diagonal in all the quantum numbers $nSL$ that characterize the unsplit term. For any transition to occur at all, the number $J$ must therefore change. We thus have the selection rules
+\begin{equation}
+n'=n,\qquad S'=S,\qquad L'=L,\qquad J'-J=\pm1,
+\tag{50.5}
+\end{equation}
+that is, transitions are possible only between fine-structure components of the same term.
+
+The radiation probability in this case can be calculated completely. Changing the notation in formula (49.10) accordingly, we find
+\[
+w(nLSJ\to nLSJ')=\frac{4\omega^3\mu_0^2}{3\hbar c^3}(2J'+1)
+\begin{Bmatrix}S&J'&L\\J&S&1\end{Bmatrix}^{\!2}
+|\langle S\|S\|S\rangle|^2.
+\]
+The reduced matrix element of the spin with respect to its own eigenfunctions that enters here is given by
+\begin{equation}
+\langle S\|S\|S\rangle=\sqrt{S(S+1)(2S+1)}
+\tag{50.6}
+\end{equation}
+(see III, (29.13)). The required $6j$ symbol is
+\begin{equation}
+\begin{Bmatrix}S&J-1&L\\J&S&1\end{Bmatrix}^{\!2}
+=\frac{(L+S+J+1)(L+S-J+1)(L-S+J)(S-L+J)}
+{S(2S+1)(2S+2)(2J-1)2J(2J+1)}
+\tag{50.7}
+\end{equation}
+(see the table in III, \S~108). The result is
+\begin{equation}
+\begin{aligned}
+&w(nLSJ\to nLS,J-1)\\
+&\quad=\frac{2J+1}{2J-1}w(nLS,J-1\to nLSJ)={}\\
+&\quad=\frac{\omega^3\mu_0^2}{3\hbar c^3(2J+1)J}
+(L+S+J+1)(L+S-J+1)\mathbin{\times}\\
+&\qquad{}\mathbin{\times}(J+S-L)(J+L-S).
+\end{aligned}
+\tag{50.8}
+\end{equation}
+
+Transitions between hyperfine-structure components of the same level (their frequencies lie in the radio-wave region) cannot occur as electric-dipole transitions at all, since all these components have the same parity. The $E2$ and $M1$ transitions occur without a change of parity. Because the hyperfine-structure intervals are very small, however, $E2$ radiation is improbable in comparison with $M1$ radiation (cf. (50.1)), and the transitions in question therefore take place as magnetic-dipole transitions.
+
+\ProblemHeading
+1. Find the probability of an $M1$ transition between hyperfine-structure components of the same level.
+
+\SolutionHeading The transition probability is given by formulas (49.18) and (49.19), in which the diagonal reduced matrix element of the magnetic moment, $\langle nJ\|\mu\|nJ\rangle$, now occurs. Its value may be written down at once by observing that the total (unreduced) matrix element $\langle nJM|\mu_z|nJM\rangle$ determines precisely the splitting of this level in the Zeeman effect (see III, \S~113) and is equal to $-\mu_0gM$, where $g$ is the Landé factor. The reduced matrix element (see III, (29.7)) is
+\SourcePage{214}{219}
+\[
+\begin{aligned}
+\langle nJ\|\mu\|nJ\rangle
+&=\frac1M\sqrt{J(J+1)(2J+1)}
+\langle nJM|\mu_z|nJM\rangle={}\\
+&=-\mu_0g\sqrt{J(J+1)(2J+1)}.
+\end{aligned}
+\]
+Consequently, the required probability is\footnote{An interesting example is the transition between the hyperfine-structure components of the ground level of the hydrogen atom $(1s_{1/2})$, which is strictly forbidden not only as $E1$ but also as $E2$ (the latter by the rule forbidding a quadrupole transition with $J+J'=1$). This transition has frequency $\omega=2\pi\cdot1.42\cdot10^9\ \mathrm{s}^{-1}$ (wavelength $\lambda=21$ cm). Setting $g=2$, $I=1/2$, $J=1/2$, $F=1$, and $F'=0$, we obtain
+\[
+w=\frac{4\omega^3\mu_0^2}{3\hbar c^3}
+=2.85\cdot10^{-15}\ \mathrm{s}^{-1}.
+\]}:
+\[
+\begin{aligned}
+w(nJIF\to nJI,F-1)
+&=\frac{2F+1}{2F-1}w(nJI,F-1\to nJIF)={}\\
+&=\frac{\omega^3\mu_0^2g^2}{3\hbar c^3(2F+1)F}
+(J+I+F+1)(J+I-F+1)\\
+&\qquad{}\times(F+J-I)(F-J+I).
+\end{aligned}
+\]
+This expression differs from (50.8) only by the evident change of notation and the additional factor $g^2$.
+
+\ProblemHeading
+2. Find the probability of an $M1$ transition between Zeeman components of the same atomic level.
+
+\SolutionHeading This is a transition $M\to M-1$ with the values of $nJ$ unchanged; its frequency (see below, (51.3)) is $\hbar\omega=\mu_0gH$ ($g$ is the Landé factor). The matrix element of the spherical component $\mu_{-1}$ of the vector $\boldsymbol\mu$ is
+\[
+\begin{aligned}
+|\langle nJ,M-1|\mu_{-1}|nJM\rangle|
+&=\sqrt{\frac{(J-M+1)(J+M)}{2J(J+1)(2J+1)}}
+\langle nJ\|\mu\|nJ\rangle={}\\
+&=-\mu_0g\sqrt{\frac12(J-M+1)(J+M)}
+\end{aligned}
+\]
+(see III, (27.12) and the preceding problem). The transition probability is
+\[
+w=\frac{4\omega^3}{3\hbar c^3}
+|\langle nJ,M-1|\mu_{-1}|nJM\rangle|^2
+=\frac{2\mu_0^5H^3}{3\hbar^4c^3}(J-M+1)(J+M).
+\]

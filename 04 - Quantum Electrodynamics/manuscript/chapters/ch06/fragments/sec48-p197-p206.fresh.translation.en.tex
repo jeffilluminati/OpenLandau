@@ -1,0 +1,409 @@
+\SourcePage{197}{202}
+\section{Angular distribution and polarization of radiation}
+
+The formulas derived in \S~46 and 47 concerned emission of a photon with specified values of the angular momentum $j$ and its projection $m$. Correspondingly, the emitting system (a nucleus, for example) was assumed, both before and after emission, to possess not only a definite angular momentum $J$ but also a definite polarization, that is, a definite value of $M$.
+
+\SourcePage{198}{203}
+We now consider the more general case in which a partially polarized nucleus emits radiation (its dimensions are still assumed small compared with the wavelength). The emitted photon again has a definite angular momentum $j$, but it may be only partially polarized. We shall determine the emission probability as a function of the photon direction $\mathbf n$. It must be expressed through density matrices describing the polarization states of the nucleus and photon.
+
+As a preliminary step, consider the emission probability as a function of the direction $\mathbf n$ and photon helicity $\lambda$ ($\lambda=\pm1$), when the initial and final nuclei have definite values $J_iM_i$ and $J_fM_f$.
+
+The matrix element for emission of a photon with specified $jm$ is proportional to the matrix element of the $2^j$-pole (electric or magnetic) moment of the nucleus:
+\begin{equation}
+\langle J_fM_f;jm|V|J_iM_i\rangle
+\propto(-1)^m\langle J_fM_f|Q_{j,-m}|J_iM_i\rangle.
+\tag{48.1}
+\end{equation}
+
+The wave function of the emitted photon in momentum representation is proportional to $\mathbf Y_{jm}^{(\mathrm E)}(\mathbf n)$ or $\mathbf Y_{jm}^{(\mathrm M)}(\mathbf n)$. A photon whose momentum points along $\mathbf n$ and whose helicity is $\lambda$ has a wave function proportional to the polarization vector $\mathbf e^{(\lambda)}$. The matrix element for emission of a photon $\mathbf n\lambda$ is obtained by multiplying (48.1) by the projection of the wave function of the state $|jm\rangle$ on that of the state $|\mathbf n\lambda\rangle$:
+\[
+\langle J_fM_f;\mathbf n\lambda|V|J_iM_i\rangle
+\propto(-1)^m\langle J_fM_f|Q_{j,-m}|J_iM_i\rangle
+(\mathbf e^{(\lambda)*}\mathbf Y_{jm}).
+\]
+According to (16.23), for photons of either type,
+\begin{equation}
+\mathbf e^{(\lambda)*}\mathbf Y_{jm}(\mathbf n)
+\propto D_{\lambda m}^{(j)}(\mathbf n).
+\tag{48.2}
+\end{equation}
+
+We express the multipole-moment matrix element in the usual way through its reduced element. The resulting transition amplitude is
+\begin{equation}
+\langle J_fM_f;\mathbf n\lambda|V|J_iM_i\rangle
+\propto(-1)^{J_f-M_f+m}
+\begin{pmatrix}J_f&j&J_i\\-M_f&-m&M_i\end{pmatrix}
+QD_{\lambda m}^{(j)}(\mathbf n),
+\tag{48.3}
+\end{equation}
+where $Q$ denotes $\langle J_f\|Q\|J_i\rangle$.
+
+We may now pass to the general case of mixed polarization states. By the general rules of quantum mechanics, the transition probability is proportional to the
+\SourcePage{199}{204}
+expression\footnote{If the initial and final states of the system are described by the superpositions
+\[
+\psi^{(i)}=\sum_n a_n\psi_n^{(i)},\qquad
+\psi^{(f)}=\sum_m b_m\psi_m^{(f)},
+\]
+then the matrix element is
+\[
+\langle f|V|i\rangle=\sum_{mn}b_m^*a_nV_{mn},
+\]
+and its square is
+\[
+|\langle f|V|i\rangle|^2
+=\sum_{nn'mm'}V_{mn}V_{m'n'}^*a_na_{n'}^*b_m^*b_{m'}.
+\]
+The mixed-state case is obtained by making the replacements
+\[
+a_na_{n'}^*\to\rho_{nn'}^{(i)},\qquad
+b_m^*b_{m'}\to\rho_{m'm}^{(f)},
+\]
+so that
+\[
+|\langle f|V|i\rangle|^2\to
+\sum_{nn'mm'}V_{mn}V_{m'n'}^*\rho_{nn'}^{(i)}\rho_{m'm}^{(f)}.
+\]}
+\begin{equation}
+\begin{split}
+\sum_{(m)}&\langle J_fM_f;\mathbf n\lambda|V|J_iM_i\rangle
+\langle J_fM_f';\mathbf n\lambda'|V|J_iM_i'\rangle^*\\
+&\times\langle M_i|\rho^{(i)}|M_i'\rangle
+\langle M_f'|\rho^{(f)}|M_f\rangle
+\langle\lambda'|\rho^{(\gamma)}|\lambda\rangle,
+\end{split}
+\tag{48.4}
+\end{equation}
+where $\rho^{(i)}$, $\rho^{(f)}$, and $\rho^{(\gamma)}$ are the density matrices of the initial nucleus, final nucleus, and emitted photon. The symbol $(m)$ under the summation sign means that the sum is taken over every twice-repeated $m$-type index ($M_iM_i'M_fM_f'\lambda\lambda'$). Equation (48.3) is to be substituted in (48.4).
+
+Let $w(\mathbf n)do$ denote the probability of emission into the solid-angle element $do$. The total probability, summed over all directions and all polarizations of the photon and secondary nucleus, is plainly independent of the initial polarization state of the nucleus. It is given by formulas already obtained and is not of interest here. We shall therefore normalize $w(\mathbf n)$ to unity. This gives\footnote{When transforming the sign factor, one may use the fact that $2J_i$, $2J_f$, $2M_i$, and $2M_f$ have the same parity. Recall also that $j$ and $m$ are integers, while $\lambda=\pm1$.}
+\[
+\begin{split}
+w(\mathbf n)={}&\frac{(2j+1)(2J_i+1)}{8\pi}
+\sum_{(m)}(-1)^{2j-M_i-M_i'}D_{\lambda m}^{(j)}D_{\lambda'm'}^{(j)*}\\
+&\times
+\begin{pmatrix}J_f&j&J_i\\-M_f&-m&M_i\end{pmatrix}
+\begin{pmatrix}J_f&j&J_i\\-M_f'&-m'&M_i'\end{pmatrix}
+\langle M_i|\rho^{(i)}|M_i'\rangle\\
+&\times\langle M_f'|\rho^{(f)}|M_f\rangle
+\langle\lambda'|\rho^{(\gamma)}|\lambda\rangle .
+\end{split}
+\]
+(the normalization will be verified below). We transform this formula by expanding the product of two $D$-functions in the series (110.2) (see III):
+\[
+\begin{split}
+D_{\lambda m}^{(j)}D_{\lambda'm'}^{(j)*}
+&=(-1)^{\lambda'+m'}D_{\lambda m}^{(j)}D_{-\lambda',-m'}^{(j)}\\
+&=(-1)^{\lambda+m}\sum_L(2L+1)
+\begin{pmatrix}j&j&L\\\lambda&-\lambda'&-\Lambda\end{pmatrix}
+\begin{pmatrix}j&j&L\\m&-m'&-\mu\end{pmatrix}D_{\Lambda\mu}^{(L)}
+\end{split}
+\]
+(the indices are $\Lambda=\lambda-\lambda'$ and $\mu=m-m'$; $L$ is integral and $L\leq2j$). We thus finally obtain
+\begin{equation}
+\begin{split}
+w(\mathbf n)={}&\frac{(2j+1)(2J_i+1)}{8\pi}
+\sum_L\sum_{(m)}(-1)^{2J_i-M_i-M_i'+m+1}(2L+1)\\
+&\times\begin{pmatrix}j&j&L\\\lambda&-\lambda'&-\Lambda\end{pmatrix}
+\begin{pmatrix}j&j&L\\m&-m'&-\mu\end{pmatrix}
+\begin{pmatrix}J_f&j&J_i\\-M_f&-m&M_i\end{pmatrix}\\
+&\times\begin{pmatrix}J_f&j&J_i\\-M_f'&-m'&M_i'\end{pmatrix}
+D_{\Lambda\mu}^{(L)}(\mathbf n)
+\langle M_i|\rho^{(i)}|M_i'\rangle\\
+&\times\langle M_f'|\rho^{(f)}|M_f\rangle
+\langle\lambda'|\rho^{(\gamma)}|\lambda\rangle .
+\end{split}
+\tag{48.5}
+\end{equation}
+
+\SourcePage{200}{205}
+As above, $\sum_{(m)}$ denotes summation over all twice-repeated $m$-type indices. The indices $\lambda$, $\lambda'$ differ from the other $m$-type indices: the sum over them is not over all $2j+1$ values possible for a given $j$ index, but only over the two values $\lambda,\lambda'=\pm1$, corresponding to the two photon polarizations.
+
+Formula (48.5) contains all the information needed about the angular distribution and polarization of the emitted photons, and also about the polarization of the secondary nuclei (those which have emitted a photon). The initial density matrix is understood to be specified.
+
+\subsection*{Angular distribution.} The angular distribution of the photons is obtained by summing over all polarizations of the photon and secondary nucleus. Averaging over polarizations amounts to substituting the density matrices of unpolarized states:
+\begin{equation}
+\langle\lambda|\rho^{(\gamma)}|\lambda'\rangle=\frac12\delta_{\lambda\lambda'},
+\qquad
+\langle M_f|\rho^{(f)}|M_f'\rangle=\frac1{2J_f+1}\delta_{M_fM_f'},
+\tag{48.6}
+\end{equation}
+after which summation reduces to multiplication by 2 for the photon or by $2J_f+1$ for the nucleus. Equivalently, summation is effected simply by the replacements
+\begin{equation}
+\langle\lambda|\rho^{(\gamma)}|\lambda'\rangle\to\delta_{\lambda\lambda'},
+\qquad
+\langle M_f|\rho^{(f)}|M_f'\rangle\to\delta_{M_fM_f'}.
+\tag{48.7}
+\end{equation}
+
+\SourcePage{201}{206}
+The angular distribution is therefore
+\[
+\begin{split}
+\overline w(\mathbf n)={}&\frac{(2j+1)(2J_i+1)}{8\pi}
+\sum_L\sum_{(m)}(-1)^{m'+1}(2L+1)D_{0\mu}^{(L)}(\mathbf n)\\
+&\times\begin{pmatrix}j&j&L\\\lambda&-\lambda&0\end{pmatrix}
+\begin{pmatrix}j&j&L\\m&-m'&-\mu\end{pmatrix}
+\begin{pmatrix}J_f&j&J_i\\-M_f&-m&M_i\end{pmatrix}\\
+&\times\begin{pmatrix}J_f&j&J_i\\-M_f&-m'&M_i'\end{pmatrix}
+\langle M_i|\rho^{(i)}|M_i'\rangle .
+\end{split}
+\]
+This formula can be simplified substantially by carrying out the sums over the $m$-type indices.
+
+First note that
+\begin{equation}
+\begin{pmatrix}j&j&L\\\lambda&-\lambda&0\end{pmatrix}
+=(-1)^L\begin{pmatrix}j&j&L\\-\lambda&\lambda&0\end{pmatrix},
+\tag{48.8}
+\end{equation}
+and hence
+\[
+\sum_{\lambda=\pm1}\begin{pmatrix}j&j&L\\\lambda&-\lambda&0\end{pmatrix}
+=\begin{cases}
+2\begin{pmatrix}j&j&L\\1&-1&0\end{pmatrix},&\text{for even }L,\\
+0,&\text{for odd }L.
+\end{cases}
+\]
+Only terms with even $L$ remain in the sum over $L$; thus it contains spherical functions $D_{0\mu}^{(L)}$ only of even order. This result could have been anticipated: conservation of parity requires the probability to be invariant under inversion, that is, under $\mathbf n\to-\mathbf n$.
+
+Consequently,
+\[
+\begin{split}
+\overline w(\mathbf n)={}&\frac{(2j+1)(2J_i+1)}{8\pi}
+\sum_L(2L+1)\begin{pmatrix}j&j&L\\1&-1&0\end{pmatrix}D_{0\mu}^{(L)}(\mathbf n)\\
+&\times\sum_{(m)}(-1)^{m'+1}
+\begin{pmatrix}j&j&L\\m&-m'&-\mu\end{pmatrix}
+\begin{pmatrix}J_f&j&J_i\\-M_f&-m&M_i\end{pmatrix}\\
+&\times\begin{pmatrix}J_f&j&J_i\\-M_f&-m'&M_i'\end{pmatrix}
+\langle M_i|\rho^{(i)}|M_i'\rangle .
+\end{split}
+\]
+The normalization can readily be checked here. From
+\[
+\int D_{0\mu}^{(L)}(\mathbf n)\frac{do}{4\pi}=\delta_{L0}\delta_{\mu0},
+\]
+only the term $L=\mu=0$ remains after integration over directions. Using
+\[
+\begin{gathered}
+\begin{pmatrix}j&j&0\\m&-m&0\end{pmatrix}
+=(-1)^{j-m}\frac1{\sqrt{2j+1}},\\
+\sum_{M_fm}\begin{pmatrix}J_f&j&J_i\\-M_f&-m&M_i\end{pmatrix}^{\!2}
+=\frac1{2J_i+1},\qquad \Tr\rho^{(i)}=1,
+\end{gathered}
+\]
+we see that the integral is unity.
+
+\SourcePage{202}{207}
+The remaining sum over $mm'M_f$ in the inner sum for $\overline w(\mathbf n)$ is evaluated by means of formula (108.4) (see III). The following final expression for the photon angular distribution results:
+\begin{equation}
+\begin{split}
+\overline w(\mathbf n)={}&(-1)^{1+J_i+J_f}
+\frac{(2j+1)\sqrt{2J_i+1}}{4\pi}
+\sum_{\text{even }L}(-i)^L\sqrt{2L+1}\\
+&\times\begin{pmatrix}j&j&L\\1&-1&0\end{pmatrix}
+\left\{\begin{matrix}J_i&J_i&L\\j&j&J_f\end{matrix}\right\}
+\sum_\mu\mathcal P_{L\mu}^{(i)*}D_{0\mu}^{(L)}(\mathbf n),
+\end{split}
+\tag{48.9}
+\end{equation}
+where
+\begin{equation}
+\begin{split}
+\mathcal P_{L\mu}^{(i)}={}&i^L\sqrt{(2L+1)(2J_i+1)}
+\sum_{M_iM_i'}(-1)^{J_i-M_i'}\\
+&\times\begin{pmatrix}J_i&L&J_i\\-M_i'&\mu&M_i\end{pmatrix}
+\langle M_i|\rho^{(i)}|M_i'\rangle,\\
+\mathcal P_{L\mu}^{(i)*}={}&(-1)^{L-\mu}\mathcal P_{L,-\mu}^{(i)}.
+\end{split}
+\tag{48.10}
+\end{equation}
+The inner sum in (48.9) extends over all $|\mu|\leq L$, and the outer sum over all even $L$ satisfying
+\begin{equation}
+L\leq2j,\qquad L\leq2J_i
+\tag{48.11}
+\end{equation}
+(these conditions follow from the triangle rule obeyed by the $j$ indices in the $3j$ symbols appearing in (48.9) and (48.10)). The number of terms is therefore usually small. For $J_i=0$ or $1/2$, only the term $L=0$ remains, so the radiation is isotropic (one readily verifies that this term is $1/4\pi$, as required by normalization). For $J_i=1$, $3/2$, or for $j=1$, the sum over $L$ has two terms, $L=0,2$. If the density matrix $\rho^{(i)}$ is diagonal ($M_i=M_i'$), then $\mu=0$ and the distribution (48.9) becomes an expansion in Legendre polynomials (by (16.5) and (58.23) (see III), the functions $D_{00}^{(L)}$ reduce to $P_L(\cos\theta)$). Finally, if
+\[
+\langle M_i|\rho^{(i)}|M_i'\rangle
+=\frac1{2J_i+1}\delta_{M_iM_i'},
+\]
+so that the initial nucleus is unpolarized, all $\mathcal P_{L\mu}^{(i)}$ vanish except $\mathcal P_{00}^{(i)}=1$\footnote{Indeed, noting that
+\[
+\begin{pmatrix}J&0&J\\-M'&0&M\end{pmatrix}
+=(-1)^{J-M}\frac1{\sqrt{2J+1}}\delta_{MM'},
+\]
+we have
+\[
+\begin{aligned}
+&\sum_{MM'}(-1)^{J-M'}
+\begin{pmatrix}J&L&J\\-M'&\mu&M\end{pmatrix}\delta_{MM'}\\
+&\quad=\sqrt{2J+1}\sum_{MM'}
+\begin{pmatrix}J&L&J\\-M'&\mu&M\end{pmatrix}
+\begin{pmatrix}J&0&J\\-M'&0&M\end{pmatrix}\\
+&\quad=\sqrt{2J+1}\delta_{L0}\delta_{\mu0},
+\end{aligned}
+\]
+and the stated result follows from definition (48.10).}.
+
+\SourcePage{203}{208}
+The quantities $\mathcal P_{L\mu}$ provide convenient characteristics of the nuclear polarization state; we shall call them \emph{polarization moments}. Formula (48.10) defines them in terms of the density matrix $\rho_{MM'}$. Direct substitution readily verifies the inverse formula expressing this matrix through the polarization moments:
+\begin{equation}
+\rho_{MM'}=\sum_{L\mu}\sqrt{\frac{2L+1}{2J+1}}i^{-L}(-1)^{J-M'}
+\begin{pmatrix}J&L&J\\-M'&\mu&M\end{pmatrix}\mathcal P_{L\mu}.
+\tag{48.12}
+\end{equation}
+
+Let $f_{L\mu}$ be a spherical tensor depending on the nuclear polarization state. By the general rules (see III, (14.8)), its mean value in a state with density matrix $\rho_{MM'}$ is
+\begin{equation}
+\overline f_{L\mu}=\sum_{MM'}\rho_{MM'}\langle JM'|f_{L\mu}|JM\rangle.
+\tag{48.13}
+\end{equation}
+Expressing the matrix elements of $f_{L\mu}$ through the reduced element $\langle J\|f_L\|J\rangle$ according to
+\[
+\langle JM'|f_{L\mu}|JM\rangle
+=i^L(-1)^{J-M'}
+\begin{pmatrix}J&L&J\\-M'&\mu&M\end{pmatrix}
+\langle J\|f_L\|J\rangle
+\]
+and introducing the polarization moments by definition (48.10), we obtain
+\begin{equation}
+\overline f_{L\mu}=\frac{\langle J\|f_L\|J\rangle}
+{\sqrt{(2L+1)(2J+1)}}\mathcal P_{L\mu}.
+\tag{48.14}
+\end{equation}
+
+\subsection*{Photon polarization.} For specified matrices $\rho^{(\gamma)}$ and $\rho^{(f)}$, in addition to $\rho^{(i)}$, formula (48.5) determines the probability of a transition in which the emitted photon and nucleus occupy specified polarization states. These states characterize, in substance, not the radiation process itself but the detectors that register the photon and recoil nucleus while selecting particular polarizations. A more natural formulation leaves the final state of the ``nucleus+photon'' system unspecified and asks for the polarization density matrix of that state when only the photon emission direction is given.
+
+The same formula (48.5) answers this question. Written as
+\begin{equation}
+w=\overline w(\mathbf n)\sum_{(m)}
+\langle M_f;\mathbf n\lambda|\rho|M_f';\mathbf n\lambda'\rangle
+\langle\lambda'|\rho^{(\gamma)}|\lambda\rangle
+\langle M_f'|\rho^{(f)}|M_f\rangle,
+\tag{48.15}
+\end{equation}
+the expression $\langle M_f;\mathbf n\lambda|\rho|M_f';\mathbf n\lambda'\rangle$ is the required density matrix, since the general rules of quantum mechanics give the probability $w$ for transition to a prescribed state as its
+\SourcePage{204}{209}
+``projection'' on the specified $\rho^{(\gamma)}\rho^{(f)}$. The factor $\overline w(\mathbf n)$ was extracted in (48.15) so that this matrix has the conventional normalization
+\[
+\sum_{\lambda M_f}\langle M_f;\mathbf n\lambda|\rho|M_f;\mathbf n\lambda\rangle=1.
+\]
+
+If only the photon polarization is wanted, we must sum over $M_f=M_f'$:
+\[
+\langle\mathbf n\lambda|\rho|\mathbf n\lambda'\rangle
+=\sum_{M_f}\langle M_f;\mathbf n\lambda|\rho|M_f;\mathbf n\lambda'\rangle.
+\]
+A calculation entirely analogous to the derivation of (48.9) gives
+\begin{equation}
+\begin{split}
+\langle\mathbf n\lambda|\rho|\mathbf n\lambda'\rangle
+={}&(-1)^{1+J_i+J_f}\frac{(2j+1)\sqrt{2J_i+1}}
+{8\pi\overline w(\mathbf n)}
+\sum_L(-i)^L\sqrt{2L+1}\\
+&\times
+\begin{pmatrix}j&j&L\\\lambda&-\lambda'&-\Lambda\end{pmatrix}
+\left\{\begin{matrix}J_i&J_i&L\\j&j&J_f\end{matrix}\right\}\\
+&\times\sum_\mu\mathcal P_{L\mu}^{(i)*}D_{\Lambda\mu}^{(L)}(\mathbf n),
+\end{split}
+\tag{48.16}
+\end{equation}
+where $\Lambda=\lambda-\lambda'$, and the sum is over every integral $L$ satisfying (48.11).
+
+In particular, circular polarization is determined by the Stokes parameter
+\[
+\xi_2=\langle\mathbf n1|\rho|\mathbf n1\rangle
+-\langle\mathbf n,-1|\rho|\mathbf n,-1\rangle
+\]
+(see the problem to \S~8). By (48.8), all terms with even $L$ cancel in this difference, and the formula for $\xi_2$ differs from (48.9) only in having a sum over odd rather than even $L$.
+
+\subsection*{Polarization of secondary nuclei.} Finally, if only the final nuclear polarization is required, we put $\rho^{(\gamma)}\to\delta$. If we also integrate over photon directions, the density matrix of the secondary nucleus is
+\[
+\begin{split}
+\langle M_f|\rho|M_f'\rangle
+={}&\int\overline w(\mathbf n)
+\langle M_f\mathbf n|\rho|M_f'\mathbf n\rangle do\\
+={}&(2J_i+1)\sum_{mM_iM_i'}(-1)^{2J_i-M_i-M_i'}
+\begin{pmatrix}J_f&j&J_i\\-M_f&-m&M_i\end{pmatrix}\\
+&\times\begin{pmatrix}J_f&j&J_i\\-M_f'&-m&M_i'\end{pmatrix}
+\langle M_i|\rho^{(i)}|M_i'\rangle .
+\end{split}
+\]
+
+\SourcePage{205}{210}
+The polarization moments calculated from this matrix are
+\begin{equation}
+\mathcal P_{L\mu}^{(f)}=(-1)^{J_i+J_f+L+j}
+\sqrt{(2J_i+1)(2J_f+1)}
+\left\{\begin{matrix}J_i&J_i&L\\J_f&J_f&j\end{matrix}\right\}
+\mathcal P_{L\mu}^{(i)}.
+\tag{48.17}
+\end{equation}
+
+If the initial nucleus is unpolarized, the final nucleus is likewise unpolarized. There is nevertheless a correlation polarization: the nucleus is polarized after emission in a specified direction. Setting $\rho^{(i)}\to\delta/(2J_i+1)$ (and hence $\overline w(\mathbf n)=1/(4\pi)$) and carrying out a calculation analogous to the derivation of (48.9), we obtain the density matrix describing this polarization:
+\begin{equation}
+\begin{split}
+\langle M_f;\mathbf n|\rho|M_f';\mathbf n\rangle
+={}&(2j+1)(-1)^{J_i+M_f'+1}
+\sum_{\text{even }L}(2L+1)
+\begin{pmatrix}j&j&L\\1&-1&0\end{pmatrix}\\
+&\times\begin{pmatrix}J_f&L&J_f\\-M_f'&\mu&M_f\end{pmatrix}
+\left\{\begin{matrix}J_f&J_f&L\\j&j&J_i\end{matrix}\right\}
+D_{0\mu}^{(L)}(\mathbf n).
+\end{split}
+\tag{48.18}
+\end{equation}
+The corresponding polarization moments are
+\begin{equation}
+\begin{split}
+\mathcal P_{L\mu}^{(f)}={}&i^L(-1)^{1+J_i+J_f}(2j+1)
+\sqrt{(2L+1)(2J_f+1)}\\
+&\times\begin{pmatrix}j&j&L\\1&-1&0\end{pmatrix}
+\left\{\begin{matrix}J_f&J_f&L\\j&j&J_i\end{matrix}\right\}
+D_{0\mu}^{(L)}(\mathbf n).
+\end{split}
+\tag{48.19}
+\end{equation}
+Only moments of even order occur (another consequence of the parity conservation noted above).
+
+If the secondary nucleus emits in turn, its polarization produces an anisotropic photon distribution. Since the polarization moments (48.19) depend on the direction $\mathbf n$ of the photon emitted in the first decay, a definite correlation arises between the directions of photons emitted in succession when the primary nucleus is unpolarized. Other correlation phenomena in cascade emission, such as polarization correlations, may be treated similarly.\footnote{A detailed account of these questions may be found in the article by \emph{A.~Z.~Dolginov} in the book ``Gamma Rays'' (USSR Academy of Sciences Press, 1961).}
+
+\ProblemHeading
+Relate the polarization moments $\mathcal P_{1\mu}$ and $\mathcal P_{2\mu}$ to the mean values of the angular-momentum vector $\mathbf J$ and the quadrupole-moment tensor $Q_{ik}$.
+
+\SolutionHeading The reduced elements of the vector $\mathbf J$ and tensor $Q_{ik}$ are determined from
+\[
+\overline{\mathbf J^2}=\frac{|\langle J\|\mathbf J\|J\rangle|^2}{2J+1},
+\qquad
+\overline{Q_{ik}^2}=\frac{|\langle J\|Q\|J\rangle|^2}{2J+1}
+\]
+\SourcePage{206}{211}
+(compare III, (107.10), (107.11)). The operator $\widehat Q_{ik}$ is expressed in terms of the angular-momentum operators by formula (75.2) (see III):
+\[
+\widehat Q_{ik}=\frac{3Q}{2J(2J-1)}
+\left(\widehat J_i\widehat J_k+\widehat J_k\widehat J_i
+-\frac23\widehat{\mathbf J}^{,2}\delta_{ik}\right).
+\]
+It follows that the mean value is
+\[
+\overline{Q_{ik}^2}
+=\frac{3Q^2}{2J^2(2J-1)^2}\overline{\mathbf J^2}(4J^2-3)
+=Q^2\frac{3(J+1)(2J+3)}{2J(2J-1)}.
+\]
+The reduced matrix elements are
+\[
+\langle J\|\mathbf J\|J\rangle=\sqrt{J(J+1)(2J+1)},
+\]
+\[
+\langle J\|Q\|J\rangle
+=Q\sqrt{\frac{3(2J+1)(J+1)(2J+3)}{2J(2J-1)}}.
+\]
+It is now evident from (48.14) that the polarization moments $\mathcal P_{1\mu}$ coincide with the spherical components of the vector
+\[
+\sqrt{\frac3{J(J+1)}}\,\mathbf J,
+\]
+while the moments $\mathcal P_{2\mu}$ are the spherical components of the tensor
+\[
+\sqrt{\frac{10J(2J-1)}{3(J+1)(2J+3)}}\,\frac{\widehat Q_{ik}}Q.
+\]

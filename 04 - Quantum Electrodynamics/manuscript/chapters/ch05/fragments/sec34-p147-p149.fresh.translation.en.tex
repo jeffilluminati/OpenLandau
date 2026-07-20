@@ -1,0 +1,89 @@
+\SourcePage{147}{152}
+
+\section{Fine structure of the hydrogen-atom levels}
+
+We shall determine the relativistic corrections to the energy levels of the hydrogen atom, that is, of an electron in the Coulomb field of a stationary nucleus\footnote{The effect of nuclear motion on these corrections is of higher order in the small quantities and will not concern us here.}. The electron velocity in a hydrogen atom satisfies $v/c\sim\alpha\ll1$. The desired corrections can therefore be calculated by perturbation theory: one averages the relativistic terms in the approximate Hamiltonian (33.12) over the unperturbed state, using the nonrelativistic wave function. To make the result somewhat more general, take the nuclear charge to be $Ze$, while still assuming $Z\alpha\ll1$.
+
+The electric field strength of the nucleus is $\mathbf E=Ze\mathbf r/r^3$, and its potential obeys $\Delta\Phi=-4\pi Ze\delta(\mathbf r)$. Substitution in the last three terms of (33.12), with account taken of the negative electron charge, gives the perturbation operator
+\begin{equation}
+\widehat V=-\frac{\widehat{\mathbf p}^{4}}{8m^3}
++\frac{Z\alpha}{2r^3m^2}\widehat{\mathbf l}\widehat{\mathbf s}
++\frac{Z\alpha\pi}{2m^2}\delta(\mathbf r).
+\tag{34.1}
+\end{equation}
+According to the nonrelativistic Schrödinger equation,
+\[
+\widehat{\mathbf p}^{2}\psi
+=2m\left(\varepsilon_0+\frac{Z\alpha}{r}\right)\psi
+\]
+where $\varepsilon_0=-mZ^2\alpha^2/2n^2$ is the unperturbed level and $n$ is the principal quantum number. Hence the mean value is
+\[
+\overline{\mathbf p^4}=4m^2\,\overline{\left(\varepsilon_0+\frac{Z\alpha}{r}\right)^2}.
+\]
+This quantity, as well as the mean value of the second term in (34.1), is evaluated from the formulas (see III, \S~36)
+\begin{equation}
+\overline{r^{-1}}=\frac{m\alpha Z}{n^2},
+\qquad
+\overline{r^{-2}}=\frac{(m\alpha Z)^2}{n^3(l+1/2)},
+\qquad
+\overline{r^{-3}}=\frac{(m\alpha Z)^3}{n^3l(l+1/2)(l+1)}
+\tag{34.2}
+\end{equation}
+where the last formula applies for $l\ne0$. The eigenvalue is
+\[
+\mathbf l\mathbf s=
+\begin{cases}
+\dfrac12\bigl[j(j+1)-l(l+1)-3/4\bigr],&l\ne0,\\[4pt]
+0,&l=0.
+\end{cases}
+\]
+Finally, the third term is averaged using
+\begin{equation}
+\psi(0)=
+\begin{cases}
+\dfrac{1}{\sqrt\pi}\left(\dfrac{Z\alpha m}{n}\right)^{3/2},&l=0,\\[5pt]
+0,&l\ne0.
+\end{cases}
+\tag{34.3}
+\end{equation}
+
+\SourcePage{148}{153}
+Straightforward calculation with the formulas above yields, for every $j$ and $l$,
+\begin{equation}
+\Delta\varepsilon=-\frac{m(Z\alpha)^4}{2n^3}
+\left(\frac{1}{j+1/2}-\frac{3}{4n}\right).
+\tag{34.4}
+\end{equation}
+
+Formula (34.4) is the required relativistic correction to the energy of a hydrogen level, the fine-structure energy\footnote{This formula, as well as the more accurate formula (36.10), was obtained by Sommerfeld (A.~Sommerfeld) from the old Bohr theory even before quantum mechanics was created.}. Recall that nonrelativistic theory has both degeneracy with respect to spin direction and Coulomb degeneracy with respect to $l$. Fine structure, or the spin--orbit interaction, removes this degeneracy, but not completely. Levels with the same $n$ and $j$ but different $l=j\pm1/2$ remain mutually twofold degenerate. The only nondegenerate levels are those with the largest possible value at fixed $n$, namely $j=j_{\max}=l_{\max}+1/2=n-1/2$. The hydrogen levels, including fine structure, therefore occur in the sequence
+\[
+\begin{aligned}
+&1s_{1/2};\\
+&\underbrace{2s_{1/2},\ 2p_{1/2}},\qquad 2p_{3/2};\\
+&\underbrace{3s_{1/2},\ 3p_{1/2}},\qquad
+ \underbrace{3p_{3/2},\ 3d_{3/2}},\qquad 3d_{5/2}.\\[-2pt]
+&\ldots\quad\ldots
+\end{aligned}
+\]
+A level with principal quantum number $n$ splits into $n$ fine-structure components.
+
+Recall also that in nonrelativistic mechanics the ``accidental'' degeneracy of the energy levels in a Coulomb field is connected with a conservation law specific to that field. The conserved quantity is $\mathbf A$, whose operator is
+\[
+\widehat{\mathbf A}=\frac{\mathbf r}{r}
++\frac{1}{2m\alpha}\left\{
+\widehat{\mathbf l}\times\widehat{\mathbf p}
+-\widehat{\mathbf p}\times\widehat{\mathbf l}
+\right\}
+\]
+(see III, (36.30)). The twofold degeneracy that remains in the relativistic case is likewise associated with a special conservation law: the Dirac-equation Hamiltonian $\widehat H=\boldsymbol\alpha\widehat{\mathbf p}+\beta m-e^2/r$ commutes with the operator
+\[
+\widehat I=\frac{\mathbf r}{r}\boldsymbol\Sigma
++\frac{i}{m\alpha}\beta(\boldsymbol\Sigma\widehat{\mathbf l}+1)
+\gamma^5(\widehat H-m\beta)
+\]
+(M.~H.~Johnson, B.~A.~Lippmann, 1950). In the nonrelativistic limit, this operator becomes $\widehat I\to\boldsymbol\Sigma\widehat{\mathbf A}$.
+
+\SourcePage{149}{154}
+We shall see later (\S~123) that this residual degeneracy is removed by the so-called radiative corrections (the \emph{Lamb shift}), which are not included in the one-electron Dirac equation.
+
+Anticipating that discussion, we note here that these corrections are of order $mZ^4\alpha^5\ln(1/\alpha)$. The second-order correction from the spin--orbit interaction would instead be of order $m(Z\alpha)^6$, so its ratio to the radiative corrections is of order $Z^2\alpha/\ln(1/\alpha)$. For hydrogen ($Z=1$) this ratio is certainly small, and an exact solution of the Dirac equation is therefore not meaningful in this case. Such a problem may, however, be meaningful for electron energy levels in the field of a nucleus with large $Z$ (see \S~36).

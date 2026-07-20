@@ -1,0 +1,111 @@
+\SourcePage{267}{272}
+\section{Scattering by molecules}
+
+The distinctive features of molecular scattering arise from the same molecular properties on which the general theory of molecular spectra rests: the electronic state can be considered separately for fixed nuclei, and the nuclear motion can then be considered in the resulting effective electronic field.
+
+Let the incident-light frequency $\omega$ be smaller than the energy $\omega_e$ of the first electronic excitation. The electronic terms then cannot be excited in the scattering. The scattering is either unshifted or shifted through excitation of rotational or vibrational levels.
+
+Assume also that the ground electronic term of the molecule is nondegenerate (and has no fine structure). In other words, both the total electron spin and the projection of the total electron orbital angular momentum on the molecular axis (for a symmetric-top molecule) are assumed to vanish. For a diatomic molecule, this means that the ground electronic term must be $^{1}\Sigma$. These conditions are known to hold for the ground states of most molecules\footnote{The results given below may nevertheless remain valid, to a certain accuracy, when the degeneracy of the ground electronic term is associated with nonzero spin and the spin-orbit interaction is weak (so that the fine structure it produces can be neglected). In this approximation, states with different spin directions do not combine and, in this sense, behave as nondegenerate states. An example is the $\mathrm O_2$ molecule, whose ground term is $^{3}\Sigma$.}.
+
+Finally, we shall suppose that $\omega$ is large in comparison with the intervals of the nuclear (rotational and vibrational) structure of the ground term, and that $\omega_e-\omega$ bears the same relation to the nuclear structure of the excited electronic term. Thus the incident-light frequency must lie sufficiently far from resonances. These are precisely the conditions that allow the nuclear motion initially to be set aside when the scattering tensor is calculated, so that the problem is first treated for a specified nuclear configuration.
+
+In this fixed-configuration problem, the scattering tensor coincides with the polarizability tensor $\alpha_{ik}=(\alpha_{ik})_{11}$ and can in principle be calculated from the general formula (59.17), with the sum extending over all excited electronic terms. The quantities $\alpha_{ik}$ obtained in this way are functions of the nuclear-configuration coordinates $q$ (the energies and wavefunctions of the electronic terms depend parametrically on these coordinates). Since the state is nondegenerate, the tensor $\alpha_{ik}(q)$ is real and therefore symmetric.
+
+\SourcePage{268}{273}
+The tensor $\alpha_{ik}(q)$ is the electronic polarizability of the molecule in the specified nuclear configuration. To solve the actual scattering problem, the nuclear motion in the initial and final states must still be included. Let $\psi_{s_1}(q)$ and $\psi_{s_2}(q)$ be the nuclear wavefunctions of these states, so that $s_1,s_2$ are sets of vibrational and rotational quantum numbers. The required scattering tensor is the matrix element of $\alpha_{ik}(q)$ evaluated with these functions:
+\begin{equation}
+\langle s_2|\alpha_{ik}|s_1\rangle
+=\int\psi_{s_2}^*(q)\alpha_{ik}\psi_{s_1}\,dq.
+\tag{61.1}
+\end{equation}
+Because $\alpha_{ik}(q)$ is symmetric, the tensor (61.1) is also symmetric, whether $s_1$ and $s_2$ coincide or differ. Under the conditions considered here, the antisymmetric part is therefore absent from both unshifted and shifted scattering. Only scalar and symmetric parts remain.
+
+The scalar part of the polarizability, $\alpha^0(q)$, is independent of the molecular orientation and depends only on the internal arrangement of its atoms. Denote the full set of vibrational quantum numbers by $v$, and the set of rotational numbers other than the magnetic number $m$ by $r$. Then
+\begin{equation}
+\langle v_2r_2m_2|\alpha^0|v_1r_1m_1\rangle
+=\langle v_2|\alpha^0|v_1\rangle
+\delta_{r_1r_2}\delta_{m_1m_2}.
+\tag{61.2}
+\end{equation}
+Diagonality in $r,m$ is a general property of every scalar. What is specific to (61.2) is that here the matrix elements do not depend on these numbers at all. Scalar scattering thus occurs only for purely vibrational transitions and is independent of the rotational state.
+
+Symmetric scattering is determined by matrix elements of the tensor $\alpha^s_{ik}$. Its components in the fixed coordinate system $xyz$ are expressed through the components $\overline\alpha^s_{i'k'}$ in the molecule-fixed system $\xi\eta\zeta$ as
+\begin{equation}
+\alpha^s_{ik}=\sum_{i'k'}\overline\alpha^s_{i'k'}D_{i'i}D_{k'k},
+\tag{61.3}
+\end{equation}
+where $D_{i'i}$ are the direction cosines of the new axes with respect to the old ones. The quantities $\overline\alpha^s_{i'k'}$ do not depend on the molecular orientation, while $D_{i'i}$ do not depend on its internal coordinates. Hence
+\[
+\langle v_2r_2m_2|\alpha^s_{ik}|v_1r_1m_1\rangle
+=\sum_{i'k'}\langle v_2|\overline\alpha^s_{i'k'}|v_1\rangle
+\langle r_2m_2|D_{i'i}D_{k'k}|r_1m_1\rangle.
+\]
+
+\SourcePage{269}{274}
+As is readily verified, the sum over $r_2m_2,ik$ of the squared moduli of these quantities is\footnote{In transforming the sum, one uses the equality expressing the unitarity of the matrix $D_{i'i}$:
+\[
+\begin{aligned}
+&\sum_{ik}\sum_{r_2m_2}
+\langle r_1m_1|D_{i'i}D_{k'k}|r_2m_2\rangle
+\langle r_2m_2|D_{i''i}D_{k''k}|r_1m_1\rangle\\
+&\quad=\left\langle r_1m_1\left|
+\sum_{ik}D_{i'i}D_{i''i}D_{k'k}D_{k''k}
+\right|r_1m_1\right\rangle\\
+&\quad=\langle r_1m_1|\delta_{i'i''}\delta_{k'k''}|r_1m_1\rangle
+=\delta_{i'i''}\delta_{k'k''}.
+\end{aligned}
+\]}:
+\begin{equation}
+\sum_{r_2m_2}\sum_{ik}
+|\langle v_2r_2m_2|\alpha^s_{ik}|v_1r_1m_1\rangle|^2
+=\sum_{i'k'}|\langle v_2|\overline\alpha^s_{i'k'}|v_1\rangle|^2.
+\tag{61.4}
+\end{equation}
+Thus the total intensity of scattering from a given vibrational-rotational level $v_1r_1$ to all rotational levels of the vibrational state $v_2$ does not depend on $r_1$.
+
+For symmetric-top molecules one can go further and determine the dependence of the scattering intensity on the rotational quantum numbers for each transition $v_1r_1\to v_2r_2$. In this case the numbers $r$ are the angular momentum $J$ and its projection $k$ on the molecular axis. Replace the Cartesian components $\alpha^s_{ik}$ by the corresponding second-rank spherical tensor, whose components will be denoted by $\alpha_\lambda$ ($\lambda=0,\pm1,\pm2$). According to formula (110.7) (see III), the squared moduli of its matrix elements are
+\[
+\begin{aligned}
+&|\langle v_2J_2k_2m_2|\alpha_\lambda|v_1J_1k_1m_1\rangle|^2={}\\
+&\quad=(2J_1+1)(2J_2+1)
+\begin{pmatrix}J_2&2&J_1\\-k_2&\lambda'&k_1\end{pmatrix}^{\!2}
+\begin{pmatrix}J_2&2&J_1\\-m_2&\lambda&m_1\end{pmatrix}^{\!2}
+|\langle v_2|\overline\alpha_{\lambda'}|v_1\rangle|^2,
+\end{aligned}
+\]
+where $\overline\alpha_{\lambda'}(q)$ is the spherical polarizability tensor referred to axes fixed in the molecule, and $\lambda'=k_2-k_1$. Summing over $m_2$ and $\lambda=m_2-m_1$ for a specified $m_1$, we obtain (compare III, (110.8))
+\begin{equation}
+\begin{aligned}
+&\sum_{m_2\lambda}
+|\langle v_2J_2k_2m_2|\alpha_\lambda|v_1J_1k_1m_1\rangle|^2={}\\
+&\quad=(2J_2+1)
+\begin{pmatrix}J_2&2&J_1\\-k_2&\lambda'&k_1\end{pmatrix}^{\!2}
+|\langle v_2|\overline\alpha_{\lambda'}|v_1\rangle|^2.
+\end{aligned}
+\tag{61.5}
+\end{equation}
+This quantity determines the scattering intensity for the vibrational-rotational transition $v_1J_1k_1\to v_2J_2k_2$. Since the matrix elements $\langle v_2|\overline\alpha_{\lambda'}|v_1\rangle$ do not depend on the molecular rotation, this formula gives the intensity dependence on both $J_1,J_2$ and $k_1,k_2$. Notice that only one spherical component of the polarizability tensor enters the right-hand side of (61.5).
+
+\SourcePage{270}{275}
+Summing (61.5) over $J_2$ and $k_2$ gives\footnote{For the sum over $J_2$ with $k_1$ and $\lambda'$ specified (and hence also $k_2=k_1+\lambda'$), one has
+\[
+\sum_{J_2}(2J_2+1)
+\begin{pmatrix}J_2&2&J_1\\-k_2&\lambda'&k_1\end{pmatrix}^{\!2}=1
+\]
+by (106.13) (see III). One then sums over $k_2$, or equivalently over $\lambda'=k_2-k_1$, for the specified $k_1$.}:
+\[
+\sum_\lambda\sum_{J_2k_2m_2}
+|\langle v_2J_2k_2m_2|\alpha_\lambda|v_1J_1k_1m_1\rangle|^2
+=\sum_{\lambda'}|\langle v_2|\overline\alpha_{\lambda'}|v_1\rangle|^2,
+\]
+so that the sum rule (61.4) is recovered.
+
+A rotor, that is, a linear molecule (in particular a diatomic molecule), is a special case of the symmetric top. The projection of the angular momentum on the axis of such a molecule vanishes (in a nondegenerate electronic state with zero electronic orbital angular momentum)\footnote{Effects associated with the interaction between molecular vibration and rotation are not considered here (see III, \S~104).}. Consequently, one must set $k_1=k_2=0$ in (61.5) for this case.
+
+Finally, consider the selection rules for vibrational Raman scattering, together with the analogous question for the vibrational emission (or absorption) spectra of a molecule\footnote{These spectra lie in the infrared region and are usually observed in absorption.}.
+
+For scattering, the problem is to find the conditions under which the matrix elements of the tensor $\alpha_{ik}(q)$ evaluated with the vibrational wavefunctions $\psi_v(q)$ are nonzero. The scalar $\alpha^0$ (for scalar scattering) and the irreducible symmetric tensor $\alpha^s_{ik}$ (for symmetric scattering) must be considered separately. In emission (or absorption), the analogous role is played by matrix elements of the vector $\mathbf d(q)$, the molecular dipole moment averaged over the electronic state at a specified nuclear configuration (this was already noted in \S~54 for diatomic molecules).
+
+The vibrations of a polyatomic molecule are classified by symmetry types, that is, by irreducible representations of the corresponding point group: $D_a$, where $a$ labels the representation (see III, \S~100). These representations also determine the symmetry of the wavefunctions of the molecular vibrational states (see III, \S~101). The symmetry of the first vibrational state (quantum number $v_a=1$) is that of the representation $D_a$ \SourcePage{271}{276}assigned to the vibrational mode. For higher states ($v_a>1$), the symmetry is given by the representation $[D_a^{v_a}]$, the symmetric product of $D_a$ with itself $v_a$ times. Finally, the symmetry of states in which distinct vibrations $a$ and $b$ are excited simultaneously is given by the direct product $[D_a^{v_a}]\times[D_b^{v_b}]$\footnote{The symmetry properties of vibrational wavefunctions do not, of course, depend on the particular form of the vibrational potential energy. In particular, they are independent of the assumption of harmonic vibrations made in vol.~III, \S~101.}. The procedure for obtaining the selection rules for various quantities (scalar, vector, and tensor) from their symmetry types is described in vol.~III, \S~97.
+
+Selection rules based on molecular symmetry are exact. Alongside them there are approximate rules associated with the harmonic-vibration assumption and with expansion of the functions $\alpha_{ik}(q)$ or $\mathbf d(q)$ in powers of the vibrational coordinates $q$. They follow from the familiar selection rule for a harmonic oscillator: matrix elements of its coordinate $q$ are nonzero only for transitions in which the vibrational quantum number changes by $\Delta v=\pm1$.

@@ -1,0 +1,207 @@
+\SourcePage{235}{240}
+\section{Photoelectric effect. Nonrelativistic case}
+
+In \S\S~49--52 we considered radiative transitions (emission or absorption of a photon) between atomic levels belonging to the discrete spectrum. The photoelectric effect differs from such a process of%
+\SourcePage{236}{241}
+photon absorption only in that the final state belongs to the continuous spectrum.
+
+For a hydrogen atom, or a hydrogen-like ion (with nuclear charge $Z\ll137$), the photoelectric cross section can be calculated analytically in closed form.
+
+In the initial state there is an electron in a discrete level $\varepsilon_i=-I$ ($I$ is the ionization potential of the atom) and a photon of definite momentum $\mathbf k$. In the final state the electron has momentum $\mathbf p$ (and energy $\varepsilon_f=\varepsilon$). Since $\mathbf p$ ranges over a continuous set of values, the photoelectric cross section is
+\begin{equation}
+d\sigma=2\pi|V_{fi}|^2\delta(-I+\omega-\varepsilon)\frac{d^3p}{(2\pi)^3}
+\tag{56.1}
+\end{equation}
+(cf. (44.3)), where the wave function of the final electron state is assumed to be normalized to one particle in a volume $V=1$. The photon wave function is normalized in the same way as before; in passing from the probability $dw$ to the cross section $d\sigma$, it must therefore be divided by the photon flux density (equal to $c/V=c$), but in relativistic units this does not alter the form of (56.1).
+
+As in (45.2), choose the three-dimensionally transverse gauge for the photon. Then
+\[
+V_{fi}=-e\mathbf A\mathbf j_{fi}
+=-e\sqrt{4\pi}\frac1{\sqrt{2\omega}}M_{fi},
+\]
+where
+\begin{equation}
+M_{fi}=\int\psi'^*(\boldsymbol\alpha\mathbf e)e^{i\mathbf k\mathbf r}\psi\,d^3x
+\tag{56.2}
+\end{equation}
+($\psi\equiv\psi_i$ and $\psi'\equiv\psi_f$ are the initial and final electron wave functions). Replacing $d^3p\to\mathbf p^2d|\mathbf p|\,do=\varepsilon|\mathbf p|\,d\varepsilon\,do$ in (56.1) and integrating the $\delta$-function with respect to $d\varepsilon$, we rewrite this formula as
+\begin{equation}
+d\sigma=e^2\frac{\varepsilon|\mathbf p|}{2\pi\omega}|M_{fi}|^2do.
+\tag{56.3}
+\end{equation}
+
+We shall carry out the calculation in two cases, distinguished by the photon energy: for $\omega\gg I$ and for $\omega\ll m$. Since $I\sim me^4Z^2\ll m$, these two regions overlap in part (when $I\ll\omega\ll m$), so their examination gives, in essence, a complete description of the photoelectric effect.
+
+We begin with the case
+\begin{equation}
+\omega\ll m.
+\tag{56.4}
+\end{equation}
+Here the electron velocity is small in both the initial and final states, and the problem is therefore wholly nonrelativistic as regards the electron. Accordingly, in (56.2) replace $\boldsymbol\alpha$ by the nonrelativistic velocity operator $\hat{\mathbf v}=-i\nabla/m$%
+\SourcePage{237}{242}
+(cf. \S~45). We may also pass to the dipole approximation, putting $e^{i\mathbf k\mathbf r}\approx1$, that is, neglecting the photon momentum in comparison with the electron momentum. We then have
+\begin{equation}
+d\sigma=e^2\frac{m|\mathbf p|}{2\pi\omega}
+|\mathbf e\mathbf v_{fi}|^2do,\qquad
+\mathbf v_{fi}=-\frac im\int\psi'^*\nabla\psi\cdot d^3x.
+\tag{56.5}
+\end{equation}
+
+Consider the photoelectric effect from the ground level of a hydrogen atom (or a hydrogen-like ion). Then
+\begin{equation}
+\psi=\frac{(Ze^2m)^{3/2}}{\sqrt\pi}e^{-Ze^2mr}
+\tag{56.6}
+\end{equation}
+(in ordinary units $me^2\to1/a_0$, where $a_0=\hbar^2/me^2$ is the Bohr radius).
+
+For $\psi'$, on the other hand, we must use the wave function whose asymptotic form contains a plane wave ($e^{i\mathbf p\mathbf r}$) together with an incoming spherical wave (see III, \S~136, where this function was denoted by $\psi_{\mathbf p}^{(-)}$). By the selection rule for $l$, a transition from an $s$-state is possible only to a $p$-state (in the dipole case). Hence, in the expansion\footnote{Below in this section, $p$ denotes $|\mathbf p|$.}
+\begin{equation}
+\psi_{\mathbf p}^{(-)}
+=\frac1{2p}\sum_{l=0}^{\infty}i^l(2l+1)e^{-i\delta_l}
+R_{pl}(r)P_l(\mathbf n\mathbf n_1)
+\tag{56.7}
+\end{equation}
+($\mathbf n=\mathbf p/p$, $\mathbf n_1=\mathbf r/r$), it is sufficient to retain only the term with $l=1$. Dropping inessential phase factors, we obtain
+\begin{equation}
+\psi'=\frac3{2p}(\mathbf n\mathbf n_1)R_{p1}(r).
+\tag{56.8}
+\end{equation}
+With the functions $\psi$ and $\psi'$ from (56.6) and (56.8), we have
+\[
+\begin{aligned}
+\mathbf e\mathbf v_{fi}
+&=\frac{3(Ze^2m)^{5/2}}{2\sqrt\pi\,mp}
+\iint(\mathbf n\mathbf n_1)(\mathbf n_1\mathbf e)
+e^{-Ze^2mr}R_{p1}(r)\,do_1\cdot r^2dr={}\\
+&=\frac{\sqrt{2\pi}(Ze^2m)^{5/2}}{pm}
+\int_0^\infty r^2e^{-Ze^2mr}R_{p1}(r)\,dr.
+\end{aligned}
+\]
+According to (36.18) and (36.24) (see III), the radial function (in the units used here) is
+\[
+R_{pl}=\frac{\sqrt{8\pi}\,Ze^2m}{3}
+\sqrt{\frac{1+\nu^2}{\nu(1-e^{-2\pi\nu})}}\,
+pr\,e^{-ipr}F(2+i\nu,4,2ipr),
+\]
+where
+\begin{equation}
+\nu=\frac{Ze^2m}{p}\left(=\frac{Ze^2}{\hbar v}\right).
+\tag{56.9}
+\end{equation}
+\SourcePage{238}{243}
+The integral required here is evaluated with the aid of the formula
+\[
+\int_0^\infty e^{-\lambda z}z^{\gamma-1}F(\alpha,\gamma,kz)\,dz
+=\Gamma(\gamma)\lambda^{\alpha-\gamma}(\lambda-k)^{-\alpha}
+\]
+(see III, (f. 3)). Noting also that
+\[
+\left(\frac{\nu+i}{\nu-i}\right)^{i\nu}
+=e^{-2\nu\operatorname{arccot}\nu},
+\]
+we obtain
+\[
+\mathbf e\mathbf v_{fi}
+=\frac{2^{7/2}\pi\nu^3(\mathbf n\mathbf e)}
+{\sqrt{pm}(1+\nu^2)^{3/2}}\,
+\frac{e^{-2\nu\operatorname{arccot}\nu}}
+{\sqrt{1-e^{-2\pi\nu}}}.
+\]
+
+The ionization energy from the ground level of a hydrogen atom (or hydrogen-like ion) is $I=Z^2e^4m/2$. Therefore
+\begin{equation}
+\omega=\frac{p^2}{2m}+I=\frac{p^2}{2m}(1+\nu^2).
+\tag{56.10}
+\end{equation}
+Taking this relation into account, the final expression for the photoelectric cross section with emission of an electron into the solid-angle element $do$ is
+\begin{equation}
+d\sigma=2^7\pi\alpha a^2
+\left(\frac I{\hbar\omega}\right)^{\!4}
+\frac{e^{-4\nu\operatorname{arccot}\nu}}
+{1-e^{-2\pi\nu}}(\mathbf n\mathbf e)^2do,
+\tag{56.11}
+\end{equation}
+where $a=\hbar^2/(mZe^2)=a_0/Z$ (here and below, ordinary units are used). Notice that the angular distribution of the photoelectrons is determined by the factor $(\mathbf n\mathbf e)^2$. It is greatest in directions parallel to the polarization of the incident photons, and vanishes in directions perpendicular to $\mathbf e$, including the direction of incidence. For unpolarized photons, (56.11) must be averaged over the directions of $\mathbf e$, which amounts to the replacement
+\[
+(\mathbf n\mathbf e)^2\to\frac12[\mathbf n_0\mathbf n]^2,
+\]
+where $\mathbf n_0=\mathbf k/k$ (see (45.46)).
+
+Integration of (56.11) over the angles gives the total photoelectric cross section:
+\begin{equation}
+\sigma=\frac{2^9\pi^2}{3}\alpha a^2
+\left(\frac I{\hbar\omega}\right)^{\!4}
+\frac{e^{-4\nu\operatorname{arccot}\nu}}
+{1-e^{-2\pi\nu}}
+\tag{56.12}
+\end{equation}
+(\emph{M. Stobbe}, 1930).
+
+The limiting value of $\sigma$ as $\hbar\omega\to I$ (that is, $\nu\to\infty$) is
+\begin{equation}
+\sigma=\frac{2^9\pi^2}{3e^4}\alpha a^2
+=\frac{2^9\pi^2}{3e^4}\frac{\alpha a_0^2}{Z^2}
+=0{.}23\frac{a_0^2}{Z^2}
+\tag{56.13}
+\end{equation}
+\SourcePage{239}{244}
+(in the denominator, $e=2{.}71\ldots$!). As is required for a reaction producing charged particles (see III, \S~147), the photoelectric cross section tends to a constant limit near its threshold.
+
+The case $\hbar\omega\gg I$ (while still $\hbar\omega\ll mc^2$) corresponds to the Born approximation ($\nu=Ze^2/(\hbar v)\ll1$). Formula (56.12) then becomes
+\begin{equation}
+\sigma=\frac{2^8\pi}{3}\alpha a_0^2Z^5
+\left(\frac{I_0}{\hbar\omega}\right)^{\!7/2}
+\tag{56.14}
+\end{equation}
+($I_0=e^4m/(2\hbar^2)$ is the ionization energy of the hydrogen atom).
+
+The inverse of the photoelectric effect is radiative recombination of an electron with a stationary ion. The cross section for this process ($\sigma_{\text{rec}}$) can be found from the photoelectric cross section ($\sigma_{\text{ph}}$) by means of the principle of detailed balance (III, \S~144). According to this principle, the cross sections of the processes $i\to f$ and $f\to i$ (with two particles in each of the states $i$ and $f$) are related by
+\[
+g_i p_i^2\sigma_{i\to f}=g_f p_f^2\sigma_{f\to i},
+\]
+where $p_i$, $p_f$ are the relative-motion momenta of the particles, and $g_i$, $g_f$ are the spin statistical weights of states $i$ and $f$. Taking account also of the fact that $g=2$ for a photon (two polarization directions), while the statistical weight of a free electron and ion is equal to that of the ground state of the hydrogen atom, we obtain for this state
+\begin{equation}
+\sigma_{\text{rec}}=\sigma_{\text{ph}}\frac{2k^2}{p^2}
+\tag{56.15}
+\end{equation}
+($\mathbf p=m\mathbf v$ is the momentum of the incident electron, and $\mathbf k$ is the momentum of the emitted photon).
+
+\ProblemHeading
+
+1. Derive (56.14) by applying the Born approximation directly in the nonrelativistic case.
+
+\SolutionHeading In the Born approximation, $\psi'$ in (56.5) must simply be taken as the plane wave $\psi'=e^{i\mathbf p\mathbf r}$, while $\psi$ remains the function (56.6). Then
+\[
+\mathbf v_{fi}=\mathbf v_{if}
+=\frac1m\int\psi\hat{\mathbf p}\psi'\,d^3x
+=\frac{\mathbf p}{m}\frac{(Ze^2m)^{3/2}}{\sqrt\pi}
+(e^{-Ze^2mr})_{\mathbf p}.
+\]
+The Fourier component is given by (57.66), and hence
+\[
+\mathbf v_{fi}\approx8\sqrt\pi\,p^{-3}m^{3/2}(Ze^2)^{5/2}\mathbf n.
+\]
+Substitution in (56.5), followed by integration over $do$, gives (56.14) (to the required accuracy, $p^2/(2m)\approx\omega$ here).
+
+2. Find the total cross section for radiative recombination of a fast nonrelativistic electron ($I\ll mv^2\ll mc^2$) with a nucleus (of charge $Z\ll137$).
+
+\SourcePage{240}{245}
+\SolutionHeading The capture cross section into the $K$ shell (principal quantum number $n=1$) follows by substituting (56.14) into (56.15):
+\[
+\sigma_1^{\text{rec}}
+=\frac{2^7\pi}{3}Z^5\alpha^3a_0^2
+\left(\frac{I_0}{\varepsilon}\right)^{\!5/2}
+\]
+($\varepsilon=mv^2/2$ is the energy of the incident electron; $\hbar\omega\approx\varepsilon$). Of the other states of the atom being formed, only the $s$-states are important: in calculating the matrix element in the Born approximation, the values of the bound-state wave function at small $r$ are relevant (as will be seen from the calculations in \S~57), and for $l>0$ these values are small compared with those of the functions having $l=0$; it is sufficient here to retain the first two terms in the expansion of $\psi$ in powers of $r$. For states with $l=0$ and arbitrary $n$, these terms are
+\[
+\psi=\frac1{\sqrt{\pi a^3}n^{3/2}}
+\left(1-\frac ra\right),
+\]
+that is, they contain $n$ only through the overall factor $n^{-3/2}$ (the displayed expression follows by expanding (36.13) (see III)). Consequently, the total recombination cross section is
+\[
+\sigma^{\text{rec}}
+=\sum_{n=1}^{\infty}\sigma_n^{\text{rec}}
+=\sigma_1^{\text{rec}}\sum_{n=1}^{\infty}\frac1{n^3}
+=\zeta(3)\sigma_1^{\text{rec}}
+\]
+(the value of the zeta function is $\zeta(3)=1{.}202$).

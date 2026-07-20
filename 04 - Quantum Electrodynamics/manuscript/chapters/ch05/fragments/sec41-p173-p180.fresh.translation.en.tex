@@ -1,0 +1,228 @@
+\SourcePage{173}{178}
+
+\section{Spin motion in an external field}
+
+The semiclassical limit of the Dirac equation is taken in the same way as in nonrelativistic theory. In the second-order equation (32.7a), put\footnote{We initially use conventional units.}
+\[
+\psi=ue^{iS/\hbar},
+\]
+where $S$ is a scalar and $u$ is a slowly varying bispinor. The usual semiclassical condition is assumed: the particle momentum must change little over distances of the order of the wavelength $\hbar/|\mathbf p|$.
+
+At zeroth order in $\hbar$, one obtains the ordinary classical relativistic Hamilton--Jacobi equation for the action $S$. All spin-dependent terms (which are proportional to $\hbar$) then drop out of the equations of motion. Spin would appear only at the next order in $\hbar$. In other words,\SourcePage{174}{179}the effect of the electron's magnetic moment on its motion is always of the same order as quantum corrections. This is natural in view of the purely quantum origin of spin angular momentum, which is proportional to $\hbar$.
+
+This circumstance makes it meaningful to ask how the spin of an electron behaves while the electron follows a prescribed semiclassical motion in an external field. The answer is contained in the next order in $\hbar$ of the Dirac equation. We shall instead use a different method, which is more transparent and does not appeal directly to the Dirac equation. Its advantage is that it applies to any particle, including one with an ``anomalous'' gyromagnetic ratio not described by the Dirac equation.
+
+Our aim is to establish an ``equation of motion'' for spin during an arbitrary prescribed motion of the particle. We begin with the nonrelativistic case.
+
+The nonrelativistic Hamiltonian of a particle in an external field is
+\begin{equation}
+\widehat H=\widehat H'-\mu\boldsymbol\sigma\cdot\mathbf H,
+\tag{41.1}
+\end{equation}
+where $\widehat H'$ includes all terms independent of spin (see III, \S~111), and $\mu$ is the particle's magnetic moment. This form of the Hamiltonian is not tied to any particular species. For an electron, $\mu=e\hbar/2mc$ (the electron charge is $e=-|e|$!), while for nucleons $\mu$ also contains an ``anomalous'' part\footnote{When radiative corrections are included, the electron magnetic moment also contains a very small ``anomalous part.''}
+\begin{equation}
+\mu'=\mu-\frac{e\hbar}{2mc}.
+\tag{41.2}
+\end{equation}
+
+By the general rules of quantum mechanics, the operator equation of spin motion follows from
+\begin{equation}
+\hat{\dot{\mathbf s}}=\frac i\hbar(\widehat H\hat{\mathbf s}-\hat{\mathbf s}\widehat H)
+=\frac i{2\hbar}(\widehat H\boldsymbol\sigma-\boldsymbol\sigma\widehat H).
+\tag{41.3}
+\end{equation}
+Substitution of (41.1) gives
+\[
+\hat{\dot s}_i=-\frac{i\mu}{2\hbar}H_k(\sigma_k\sigma_i-\sigma_i\sigma_k)
+=-\frac\mu\hbar e_{ikl}H_k\sigma_l,
+\]
+or
+\begin{equation}
+\hat{\dot{\mathbf s}}=\frac{2\mu}{\hbar}(\hat{\mathbf s}\times\mathbf H).
+\tag{41.4}
+\end{equation}
+
+Average this operator equality over the state of a semiclassical wave packet moving along a specified trajectory. This amounts to replacing the spin operator by its\SourcePage{175}{180}mean value $\bar{\mathbf s}$ and the vector $\mathbf H$ by the function $\mathbf H(t)$ giving the magnetic field at the particle's (wave packet's) position as it moves along the prescribed trajectory. In the nonrelativistic approximation, that is, within the Pauli equation, $\hat{\mathbf s}=\boldsymbol\sigma/2$ is the particle's spin operator in its rest frame; in \S~29 we denoted its mean value by $\boldsymbol\zeta/2$. We therefore obtain
+\begin{equation}
+\frac{d\boldsymbol\zeta}{dt}=\frac{2\mu}{\hbar}(\boldsymbol\zeta\times\mathbf H(t)).
+\tag{41.5}
+\end{equation}
+In this form the equation is, in essence, purely classical. It states that the magnetic-moment vector precesses about the field direction with angular velocity $-2\mu H/\hbar$, while retaining its magnitude\footnote{Classically, equation (41.5) follows directly from
+\[
+d\mathbf M/dt=\boldsymbol\mu\times\mathbf H,
+\]
+where $\mathbf M$ is the angular momentum of the system, $\boldsymbol\mu$ its magnetic moment, and $\boldsymbol\mu\times\mathbf H$ the torque acting on it. Setting $\mathbf M=\tfrac12\hbar\boldsymbol\zeta$ and $\boldsymbol\mu=\tfrac{\mu}{2s}\boldsymbol\zeta=\mu\boldsymbol\zeta$ gives (41.5).}.
+
+In the same nonrelativistic case, the particle velocity $\mathbf v$ changes according to
+\[
+\frac{d\mathbf v}{dt}=\frac e{mc}(\mathbf v\times\mathbf H),
+\]
+so that $\mathbf v$ rotates about the direction of $\mathbf H$ with angular velocity $-eH/mc$. If $\mu'=0$, then $\mu=e\hbar/2mc$, and this angular velocity equals the angular velocity $-2\mu H/\hbar$ of $\boldsymbol\zeta$. Thus the polarization vector keeps a constant angle with the direction of motion (we shall see below that this remains true in the relativistic case).
+
+We now generalize equation (41.5) relativistically. A covariant description of polarization requires the 4-vector $a$ introduced in \S~29, and the equation of spin motion must determine the derivative $da/d\tau$ with respect to the proper time $\tau$\footnote{Below we again put $c=1$, $\hbar=1$.}.
+
+The possible form of this equation can already be fixed by relativistic invariance. Its right side must be linear and homogeneous in the electromagnetic field tensor $F^{\mu\nu}$ and the 4-vector $a^\mu$, and besides these may contain only the 4-velocity $u^\mu=p^\mu/m$. The only equation satisfying these requirements has the form
+\begin{equation}
+\frac{da^\mu}{d\tau}
+=\alpha F^{\mu\nu}a_\nu+\beta u^\mu F^{\nu\lambda}u_\nu a_\lambda,
+\tag{41.6}
+\end{equation}
+\SourcePage{176}{181}
+where $\alpha$ and $\beta$ are constants. The condition $a_\mu u^\mu=0$ and the antisymmetry of $F^{\mu\nu}$ (so that $F^{\mu\nu}u_\mu u_\nu=0$) make it clear that no other expression of the required type can be formed.
+
+As $v\to0$, this equation must reduce to (41.5). Setting $a^\mu=(0,\boldsymbol\zeta)$, $u^\mu=(1,0)$, and $\tau=t$, we obtain
+\[
+\frac{d\boldsymbol\zeta}{dt}=\alpha(\boldsymbol\zeta\times\mathbf H).
+\]
+Comparison with (41.5) gives $\alpha=2\mu$.
+
+To determine $\beta$, use $a^\mu u_\mu=0$. Differentiating this equality with respect to $\tau$ and using the classical equation of motion of a charge in a field,
+\[
+m\frac{du^\mu}{d\tau}=eF^{\mu\nu}u_\nu
+\]
+(see II, \S~23), we find
+\[
+u_\mu\frac{da^\mu}{d\tau}
+=-a_\mu\frac{du^\mu}{d\tau}
+=-a_\mu\frac emF^{\mu\nu}u_\nu
+=\frac emF^{\mu\nu}u_\mu a_\nu.
+\]
+Multiplying both sides of (41.6) by $u_\mu$, using $u_\mu u^\mu=1$, and cancelling the common factor $F^{\mu\nu}u_\mu a_\nu$, we obtain
+\[
+\beta=-2\left(\mu-\frac e{2m}\right)=-2\mu'.
+\]
+
+The final relativistic equation of spin motion is therefore
+\begin{equation}
+\frac{da^\mu}{d\tau}=2\mu F^{\mu\nu}a_\nu
+-2\mu'u^\mu F^{\nu\lambda}u_\nu a_\lambda
+\tag{41.7}
+\end{equation}
+(V.~Bargmann, L.~Michel, V.~Telegdi, 1959)\footnote{An equation of this kind, in another form, was first found by Ya.~I.~Frenkel (1926).}.
+
+We pass from the 4-vector $a$ to $\boldsymbol\zeta$, which directly describes the particle polarization in its ``instantaneous'' rest frame; their relation is given by (29.7)--(29.9). First note that (41.7) automatically gives $a_\mu da^\mu/d\tau=0$, and hence $a_\mu a^\mu=\operatorname{const}$. Since $a_\mu a^\mu=-\boldsymbol\zeta^2$, this yields the natural result that the magnitude of the particle polarization $\boldsymbol\zeta$ remains unchanged during the motion.
+
+To obtain the equation governing the direction of polarization, convert (41.7) to three-dimensional notation. Writing out the spa\SourcePageJoin{177}{182}tial components gives
+\[
+\begin{aligned}
+\frac{d\mathbf a}{dt}={}&\frac{2\mu m}{\varepsilon}(\mathbf a\times\mathbf H)
++\frac{2\mu m}{\varepsilon}(\mathbf a\cdot\mathbf v)\mathbf E
+-\frac{2\mu'\varepsilon}{m}\mathbf v(\mathbf a\cdot\mathbf E)+{}\\
+&+\frac{2\mu'\varepsilon}{m}\mathbf v\bigl(\mathbf v\cdot(\mathbf a\times\mathbf H)\bigr)
++\frac{2\mu'\varepsilon}{m}\mathbf v(\mathbf a\cdot\mathbf v)(\mathbf v\cdot\mathbf E).
+\end{aligned}
+\]
+Substitute (29.9) here, using in the differentiation $\mathbf p=\varepsilon\mathbf v$, $\varepsilon^2=\mathbf p^2+m^2$, and the equations of motion
+\begin{equation}
+\frac{d\mathbf p}{dt}=e\mathbf E+e(\mathbf v\times\mathbf H),
+\qquad
+\frac{d\varepsilon}{dt}=e(\mathbf v\cdot\mathbf E).
+\tag{41.8}
+\end{equation}
+A straightforward, though fairly long, calculation gives\footnote{If, as is often done for charged particles, the gyromagnetic coefficient (Land\'e factor) $g$ is defined by $\mu=g\dfrac e{2m}\cdot\dfrac12$ ($=g\dfrac{e\hbar}{2mc}\dfrac12$), the equation takes the form
+\begin{equation}
+\begin{aligned}
+\frac{d\boldsymbol\zeta}{dt}={}&\frac e{2m}\left(g-2+2\frac m\varepsilon\right)(\boldsymbol\zeta\times\mathbf H)
++\frac e{2m}(g-2)\frac\varepsilon{\varepsilon+m}(\mathbf v\cdot\mathbf H)(\mathbf v\times\boldsymbol\zeta)+{}\\
+&+\frac e{2m}\left(g-\frac{2\varepsilon}{\varepsilon+m}\right)
+\bigl(\boldsymbol\zeta\times(\mathbf E\times\mathbf v)\bigr).
+\end{aligned}
+\tag{41.9a}
+\end{equation}}:
+\begin{equation}
+\frac{d\boldsymbol\zeta}{dt}
+=\frac{2\mu m+2\mu'(\varepsilon-m)}{\varepsilon}(\boldsymbol\zeta\times\mathbf H)
++\frac{2\mu'\varepsilon}{\varepsilon+m}(\mathbf v\cdot\mathbf H)(\mathbf v\times\boldsymbol\zeta)
++\frac{2\mu m+2\mu'\varepsilon}{\varepsilon+m}
+\bigl(\boldsymbol\zeta\times(\mathbf E\times\mathbf v)\bigr).
+\tag{41.9}
+\end{equation}
+
+Of particular interest is not so much the change in the absolute direction of polarization in space as its change relative to the direction of motion. Write
+\begin{equation}
+\boldsymbol\zeta=\mathbf n\zeta_\parallel+\boldsymbol\zeta_\perp
+\tag{41.10}
+\end{equation}
+(where $\mathbf n=\mathbf v/v$), and form the equation for the projection $\zeta_\parallel$ of the polarization on the direction of motion. Calculation with (41.8) and (41.9) gives\footnote{A slightly shorter derivation follows by writing out the time component of (41.7).}
+\begin{equation}
+\frac{d\zeta_\parallel}{dt}
+=2\mu'\bigl(\boldsymbol\zeta_\perp\cdot(\mathbf H\times\mathbf n)\bigr)
++\frac2v\left(\frac{\mu m^2}{\varepsilon^2}-\mu'\right)
+(\boldsymbol\zeta_\perp\cdot\mathbf E).
+\tag{41.11}
+\end{equation}
+
+Several applications of these equations are considered in the problems to this section. Here we note only that, in a purely magnetic field, the polarization of a particle without an anomalous magnetic moment maintains a constant angle with its velocity ($\zeta_\parallel=\operatorname{const}$). Thus the result stated\SourcePage{178}{183}above for the nonrelativistic case is indeed general.
+
+We specify more precisely the conditions under which the equations obtained are applicable. The requirement, mentioned at the outset, that the particle momentum vary sufficiently slowly reduces to a condition that the fields $\mathbf E$ and $\mathbf H$ be sufficiently weak; in particular, the Larmor radius in a magnetic field ($\sim p/eH$) must be large compared with the particle wavelength. Strictly speaking, an additional condition is that the fields not vary too rapidly in space: the field must change little across the semiclassical wave packet. It must therefore vary little over distances of the order of the particle wavelength ($1/p$) and also over the Compton wavelength $1/m$\footnote{The latter requirement follows from the condition that, in the rest frame of the wave packet, its velocity spread be small compared with $c$; otherwise nonrelativistic formulas could not be used in that frame.
+
+If the field varies too rapidly, additional terms containing spatial derivatives of the field may become important in the equations.}.
+
+In practical problems concerning motion in macroscopic fields, the slow-variation condition is certainly satisfied, so that only sufficient weakness is actually required.
+
+In \S~33 the first relativistic corrections were found for the Hamiltonian of an electron moving in an external field. For an electron in an electric field, the approximate Hamiltonian has the form (see (33.12))
+\begin{equation}
+\widehat H=\widehat H'-\frac e{4m}
+\left(\boldsymbol\sigma\cdot\left(\mathbf E\times\frac{\widehat{\mathbf p}}m\right)\right),
+\qquad
+\widehat{\mathbf p}=-i\boldsymbol\nabla,
+\tag{41.12}
+\end{equation}
+where $\widehat H'$ contains the spin-independent terms. In the present case, because the field varies slowly, the term containing derivatives of $\mathbf E$ (that is, $\Div{\mathbf E}$) must be neglected in $\widehat H'$. The small term containing $\widehat{\mathbf p}^{,4}$ may also be omitted, since it is unrelated to the field effects of interest here. Thus in the absence of a magnetic field, $\widehat H'$ reduces to the nonrelativistic Hamiltonian $\widehat H'=\widehat{\mathbf p}^{,2}/(2m)+e\Phi$.
+
+Formula (41.12) can also be obtained from equation (41.9), without direct use of the Dirac equation. This will at the same time generalize it, in the semiclassical case, to particles with an anomalous magnetic moment.
+
+To first order in the velocity $v$, the equation of spin motion in an electric field follows from\SourcePage{179}{184}(41.9) as
+\[
+\frac{d\boldsymbol\zeta}{dt}
+=(\mu+\mu')\bigl(\boldsymbol\zeta\times(\mathbf E\times\mathbf v)\bigr)
+=\left(\frac e{2m}+2\mu'\right)
+\bigl(\boldsymbol\zeta\times(\mathbf E\times\mathbf v)\bigr).
+\]
+If this equation is required to follow quantum mechanically by commuting the spin operator with the Hamiltonian, according to (41.3), then, as is readily checked, one must put
+\begin{equation}
+\widehat H-\widehat H'
+=\left(\mu'+\frac e{4m}\right)
+\left(\boldsymbol\sigma\cdot\left(\mathbf E\times\frac{\widehat{\mathbf p}}m\right)\right).
+\tag{41.13}
+\end{equation}
+This is the required expression. For $\mu'=0$, it reduces to (41.12). Notice that the ``normal'' magnetic moment $e/2m$ enters with an extra factor $1/2$ relative to the anomalous moment $\mu'$\footnote{This is the ``Thomas half'' mentioned in the note on p.~151. The derivation given here clearly shows its origin.}.
+
+\ProblemHeading
+
+1. Determine the change in the polarization direction of a particle moving in a plane perpendicular to a uniform magnetic field ($\mathbf v\perp\mathbf H$).
+
+\SolutionHeading Only the first term remains on the right side of (41.9). Thus $\boldsymbol\zeta$ precesses about the direction of $\mathbf H$ (the $z$ axis) with angular velocity
+\[
+-\frac{2\mu m+2\mu'(\varepsilon-m)}\varepsilon\mathbf H
+=-\left(\frac e\varepsilon+2\mu'\right)\mathbf H.
+\]
+The projection of $\boldsymbol\zeta$ on the $xy$ plane (denote it by $\boldsymbol\zeta_1$) rotates in that plane with the same angular velocity. The vector $\mathbf v$ rotates in the same plane with angular velocity $-e\mathbf H/\varepsilon$, as follows from the equation of motion $\dot{\mathbf p}=\varepsilon\dot{\mathbf v}=e(\mathbf v\times\mathbf H)$. Hence $\boldsymbol\zeta_1$ turns relative to the direction of $\mathbf v$ with angular velocity $-2\mu'\mathbf H$.
+
+2. The same question for motion along the magnetic-field direction.
+
+\SolutionHeading When $\mathbf v$ and $\mathbf H$ have the same direction, equation (41.9) becomes
+\[
+\frac{d\boldsymbol\zeta}{dt}=\frac{2\mu m}\varepsilon(\boldsymbol\zeta\times\mathbf H),
+\]
+so that $\boldsymbol\zeta$ precesses about the common direction of $\mathbf v$ and $\mathbf H$ with angular velocity $-2\mu mH/\varepsilon$.
+
+3. The same question for motion in a uniform electric field.
+
+\SolutionHeading Let the field $\mathbf E$ point along the $x$ axis, and let the motion take place in the $xy$ plane (so that $p_y=\operatorname{const}$). Equation (41.9) shows that $\boldsymbol\zeta$ precesses about the $z$ axis with instantaneous angular velocity
+\[
+-\left(\frac e{\varepsilon+m}+2\mu'\right)E\frac{p_y}{\varepsilon}.
+\]
+Again decompose $\boldsymbol\zeta$ into $\zeta_z$ and $\boldsymbol\zeta_\perp$ (in the $xy$ plane). Then
+\[
+\zeta_\parallel=\zeta_1\cos\varphi,
+\qquad
+\boldsymbol\zeta_\perp\cdot\mathbf E=-\zeta_1\sin\varphi\cdot\frac{v_y}{v}.
+\]
+
+\SourcePage{180}{185}
+Equation (41.11) gives the instantaneous angular velocity with which $\boldsymbol\zeta_1$ rotates relative to the direction of $\mathbf v$:
+\[
+\dot\varphi=\frac{2v_y}{v^2}\left(\frac{\mu m^2}{\varepsilon^2}-\mu'\right)E
+=\frac{p_y}{\varepsilon}\left(\frac{em}{p^2}-2\mu'\right).
+\]

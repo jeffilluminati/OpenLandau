@@ -1,0 +1,104 @@
+\SourcePage{288}{293}
+\section{Kinematic invariants}
+
+Let us consider some kinematic relations for scattering processes in which both the initial and the final state contain just two particles. We have in mind relations that follow from the general conservation laws alone and are therefore valid irrespective of the nature of the particles and of the laws governing their interaction.
+\SourcePage{289}{294}
+
+We write four-momentum conservation in a general form that does not specify in advance which momenta belong to the initial particles and which to the final ones:
+\begin{equation}
+q_1+q_2+q_3+q_4=0.
+\tag{66.1}
+\end{equation}
+Here the $+q_a$ are four-momentum vectors; two correspond to the incident particles, while the other two correspond to the scattered particles, whose momenta are $-q_a$. In other words, two of the $q_a$ have time component $q_a^0>0$, and two have $q_a^0<0$.
+
+Charge conservation must hold along with four-momentum conservation. Charge here may mean not only electric charge, but also other conserved quantities whose signs are opposite for particles and antiparticles.
+
+When the types of particles participating in the process are specified, the squares of the four-vectors $q_a$ are the specified squared particle masses ($q_a^2=m_a^2$). Three distinct reactions result, depending on the ranges of the time components $q_a^0$ and on the charges. We write these three processes as
+\begin{equation}
+\begin{aligned}
+\mathrm I.\quad &1+2\to3+4,\\
+\mathrm{II}.\quad &1+\overline3\to\overline2+4,\\
+\mathrm{III}.\quad &1+\overline4\to\overline2+3.
+\end{aligned}
+\tag{66.2}
+\end{equation}
+Here a numeral denotes the particle number, and a bar over it distinguishes an antiparticle from a particle. Passing from one reaction to another---that is, moving a particle from one side of a formula to the other---corresponds to changing the sign of the relevant time component $q_a^0$ and also the sign of the charge, or equivalently to replacing a particle by its antiparticle. (The reverse reactions are, of course, also possible alongside the processes (66.2).)
+
+The three processes (66.2) are described as the three \emph{crossed channels} of a single generalized reaction.
+
+Here are several examples. If particles 1 and 3 are electrons and particles 2 and 4 are photons, channel I is the scattering of a photon by an electron; because the photon is truly neutral, channel III is the same as I. Channel II is the conversion of an electron--positron pair into two photons. If all four particles are electrons, channel I is electron--electron scattering, whereas channels II and III are positron--electron scattering. If particles 1 and 3 are electrons and particles 2 and 4 are muons, channel I is $e$--$\mu$ scattering, channel III is $e$--$\overline\mu$ scattering, and channel II is the conversion of an $e\overline e$ pair into a $\mu\overline\mu$ pair.
+
+Invariant quantities formed from the four-momenta play a special role in the study of scattering processes. The invariant scattering amplitudes are functions of these quantities (see \S~70).
+\SourcePage{290}{295}
+
+Two independent invariant quantities can be formed from the four four-momenta. Indeed, by (66.1), only three of the four-vectors $q_a$ are independent; take them to be $q_1$, $q_2$, and $q_3$. Six invariants can be formed from them: the three squares $q_1^2$, $q_2^2$, $q_3^2$ and the three products $q_1q_2$, $q_1q_3$, $q_2q_3$. The first three, however, are the specified squared masses, while the latter three obey one relation following from the equality\footnote{In the general case, when $n>4$ particles participate in a reaction, the number of functionally independent invariant variables is $3n-10$. Indeed, there are altogether $4n$ quantities, the components of the $n$ four-momenta $q_a$. They obey $n$ functional relations $q_a^2=m_a^2$ and four more supplied by the conservation law $\sum q_a=0$. Arbitrary values may be assigned to six quantities, equal to the number of parameters specifying a general Lorentz transformation (a general rotation in four dimensions). Hence the number of independent invariant variables is $4n-n-4-6=3n-10$.}
+\[
+(q_1+q_2+q_3)^2=q_4^2=m_4^2.
+\]
+For greater symmetry, however, it is convenient to consider not two but three invariants, chosen as follows:
+\begin{equation}
+\begin{aligned}
+s&=(q_1+q_2)^2=(q_3+q_4)^2,\\
+t&=(q_1+q_3)^2=(q_2+q_4)^2,\\
+u&=(q_1+q_4)^2=(q_2+q_3)^2.
+\end{aligned}
+\tag{66.3}
+\end{equation}
+As is readily seen, they satisfy
+\begin{equation}
+s+t+u=h,
+\tag{66.4}
+\end{equation}
+where
+\begin{equation}
+h=m_1^2+m_2^2+m_3^2+m_4^2.
+\tag{66.5}
+\end{equation}
+
+In the principal channel (I), the invariant $s$ has a simple physical meaning. It is the square of the total energy of the colliding particles (1 and 2) in their center-of-momentum frame (when $\mathbf p_1+\mathbf p_2=0$: $s=(\varepsilon_1+\varepsilon_2)^2$). In channel II the invariant $t$ plays the analogous role, and in channel III the invariant $u$ does so. Accordingly, channels I, II, and III are often called the $s$-, $t$-, and $u$-channels.
+
+It is straightforward to express the invariants $s$, $t$, and $u$ in terms of the energies and momenta of the colliding particles in each channel. Consider the $s$-channel. In the center-of-momentum frame of particles 1 and 2, the time and space components of the four-vectors $q_a$ are
+\begin{equation}
+\begin{aligned}
+q_1&=p_1=(\varepsilon_1,\mathbf p_s),&
+q_2&=p_2=(\varepsilon_2,-\mathbf p_s),\\
+q_3&=-p_3=(-\varepsilon_3,-\mathbf p'_s),&
+q_4&=-p_4=(-\varepsilon_4,\mathbf p'_s)
+\end{aligned}
+\tag{66.6}
+\end{equation}
+\SourcePage{291}{296}
+(the subscript $s$ on $\mathbf p_s$ and $\mathbf p'_s$ serves as a reminder that these momenta refer to the reaction in the $s$-channel). Then
+\begin{equation}
+s=\varepsilon_s^2,\qquad
+\varepsilon_s=\varepsilon_1+\varepsilon_2=\varepsilon_3+\varepsilon_4;
+\tag{66.7}
+\end{equation}
+\begin{equation}
+\begin{aligned}
+4s\mathbf p_s^2&=[s-(m_1+m_2)^2][s-(m_1-m_2)^2],\\
+4s\mathbf p_s'{}^2&=[s-(m_3+m_4)^2][s-(m_3-m_4)^2];
+\end{aligned}
+\tag{66.8}
+\end{equation}
+\begin{equation}
+\begin{aligned}
+2t&=h-s+4\mathbf p_s\mathbf p'_s
+-\frac1s(m_1^2-m_2^2)(m_3^2-m_4^2),\\
+2u&=h-s-4\mathbf p_s\mathbf p'_s
++\frac1s(m_1^2-m_2^2)(m_3^2-m_4^2).
+\end{aligned}
+\tag{66.9}
+\end{equation}
+For elastic scattering ($m_1=m_3$, $m_2=m_4$), we have $|\mathbf p_s|=|\mathbf p'_s|$, and hence $\varepsilon_1=\varepsilon_3$, $\varepsilon_2=\varepsilon_4$. In place of (66.9), this gives the simpler formulas
+\begin{equation}
+\begin{aligned}
+t&=-(\mathbf p_s-\mathbf p'_s)^2
+=-2\mathbf p_s^2(1-\cos\theta_s),\\
+u&=-2\mathbf p_s^2(1+\cos\theta_s)+(\varepsilon_1-\varepsilon_2)^2,
+\end{aligned}
+\tag{66.10}
+\end{equation}
+where $\theta_s$ is the angle between $\mathbf p_s$ and $\mathbf p'_s$. Notice that the invariant $-t$ is then the square of the (three-dimensional) momentum transferred in the collision.
+
+The corresponding formulas for the other channels follow by a simple change of notation. To pass to the $t$-channel, make the substitutions $s\leftrightarrow t$, $2\leftrightarrow3$ in (66.6)--(66.10); to pass to the $u$-channel, make the substitutions $s\leftrightarrow u$, $2\leftrightarrow4$.

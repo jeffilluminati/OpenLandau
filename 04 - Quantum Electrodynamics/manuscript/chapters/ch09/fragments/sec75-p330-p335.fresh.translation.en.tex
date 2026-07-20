@@ -1,0 +1,220 @@
+\SourcePage{330}{335}
+\section{The electron propagator}
+
+The propagation functions, or propagators, introduced in the preceding sections play a central role in the apparatus of quantum electrodynamics. The photon propagator $D_{\mu\nu}$ becomes the principal quantity characterizing the interaction of two electrons. This role is clearly displayed by its place in the electron-scattering amplitude, where $D_{\mu\nu}$ is multiplied by the transition currents of the two particles. A simi\SourcePageJoin{331}{336}lar role is played by the electron propagator in the interaction between an electron and a photon.
+
+We now turn to the actual calculation of the propagators, beginning with the electron case.
+
+Apply the operator $\gamma\hat p-m$, where $\hat p_\mu=i\partial_\mu$, to the function
+\begin{equation}
+G_{ik}(x-x')=-i\langle0|\mathop{\mathrm T}\hat\psi_i(x)\widehat{\bar\psi}_k(x')|0\rangle
+\tag{75.1}
+\label{eq:75.1}
+\end{equation}
+($i$ and $k$ are bispinor indices). Since $\hat\psi(x)$ satisfies the Dirac equation $(\gamma\hat p-m)\hat\psi(x)=0$, the result is zero at every $x$ except where $t=t'$. Indeed, $G(x-x')$ approaches different limits as $t\to t'+0$ and $t\to t'-0$. By the definition (74.8), these limits are respectively
+\[
+-i\langle0|\hat\psi_i(\mathbf r,t)\widehat{\bar\psi}_k(\mathbf r',t)|0\rangle
+\quad\text{and}\quad
++i\langle0|\widehat{\bar\psi}_k(\mathbf r',t)\hat\psi_i(\mathbf r,t)|0\rangle.
+\]
+As we shall see, they do not coincide on the light cone. The derivative $\partial G/\partial t$ therefore acquires an additional delta-function term:
+\begin{equation}
+\begin{aligned}
+\frac{\partial G}{\partial t}={}&-i\left\langle0\left|\mathop{\mathrm T}
+\frac{\partial\hat\psi_i(x)}{\partial t}\widehat{\bar\psi}_k(x')\right|0\right\rangle\\
+&+\delta(t-t')\bigl(G|_{t\to t'+0}-G|_{t\to t'-0}\bigr).
+\end{aligned}
+\tag{75.2}
+\end{equation}
+Noting that the time derivative enters $\gamma\hat p-m$ as $i\gamma^0\partial/\partial t$, we thus have
+\begin{equation}
+(\gamma\hat p-m)_{ik}G_{kl}(x-x')
+=\delta(t-t')\gamma^0_{ik}\langle0|\{\hat\psi_k(\mathbf r,t),
+\widehat{\bar\psi}_l(\mathbf r',t)\}_+|0\rangle.
+\tag{75.3}
+\end{equation}
+
+Let us calculate the anticommutator in this expression. Multiplying the operators $\hat\psi(\mathbf r,t)$ and $\widehat{\bar\psi}(\mathbf r',t)$ (see (73.6)) and applying the interchange rules for the fermion operators $\hat a_{\mathbf p}$ and $\hat b_{\mathbf p}$, we find
+\begin{equation}
+\{\hat\psi_i(\mathbf r,t),\widehat{\bar\psi}_k(\mathbf r',t)\}_+
+=\sum_{\mathbf p}\bigl[\psi_{\mathbf p i}(\mathbf r)\bar\psi_{\mathbf p k}(\mathbf r')
++\psi_{-\mathbf p i}(\mathbf r)\bar\psi_{-\mathbf p k}(\mathbf r')\bigr].
+\tag{75.4}
+\end{equation}
+Here $\psi_{\pm\mathbf p}(\mathbf r)$ are the wave functions without the time factor (as in \S\S~73 and 74, their polarization indices are suppressed for brevity). The collection of all $\psi_{\pm\mathbf p}(\mathbf r)$, the eigenfunctions of the electron Hamiltonian, forms a complete normalized system; hence, by the general properties of such systems (compare III, (5.12)),
+\begin{equation}
+\sum_{\mathbf p}\bigl[\psi_{\mathbf p i}(\mathbf r)\psi^*_{\mathbf p k}(\mathbf r')
++\psi_{-\mathbf p i}(\mathbf r)\psi^*_{-\mathbf p k}(\mathbf r')\bigr]
+=\delta_{ik}\delta(\mathbf r-\mathbf r').
+\tag{75.5}
+\end{equation}
+
+\SourcePage{332}{337}
+The sum on the right-hand side of (75.4) differs from this one by the replacement of $\psi_k^*$ with $(\psi^*\gamma^0)_k$ and is therefore equal to $\gamma^0_{ik}\delta(\mathbf r-\mathbf r')$. Thus
+\begin{equation}
+\{\hat\psi_i(\mathbf r,t),\widehat{\bar\psi}_k(\mathbf r',t)\}_+
+=\delta(\mathbf r-\mathbf r')\gamma^0_{ik}.
+\tag{75.6}
+\end{equation}
+In particular, this formula implies the statement already mentioned in \S~74 that $\hat\psi$ and $\widehat{\bar\psi}$ anticommute outside the light cone. If $(x-x')^2<0$, a reference frame always exists in which $t=t'$; when $\mathbf r\ne\mathbf r'$ as well, the anticommutator (75.6) is indeed zero.
+
+Substitution of (75.6) into (75.3), with the bispinor indices suppressed, finally gives\footnote{Written explicitly with bispinor indices,
+\[
+(\gamma\hat p-m)_{il}G_{lk}(x-x')=\delta^{(4)}(x-x')\delta_{ik}.
+\tag{75.7a}
+\]}
+\begin{equation}
+(\gamma\hat p-m)G(x-x')=\delta^{(4)}(x-x').
+\tag{75.7}
+\end{equation}
+Thus the electron propagator satisfies the Dirac equation with a delta function on the right-hand side. In other words, it is a \emph{Green function} for the Dirac equation.
+
+In what follows we shall need not $G(\xi)$ itself, where $\xi=x-x'$, but its Fourier components
+\begin{equation}
+G(p)=\int G(\xi)e^{ip\xi}\,d^4\xi.
+\tag{75.8}
+\end{equation}
+(the propagator in the momentum representation). Taking the Fourier component of both sides of (75.7), we find that $G(p)$ satisfies the system of algebraic equations
+\begin{equation}
+(\gamma p-m)G(p)=1.
+\tag{75.9}
+\end{equation}
+The solution of this system is
+\begin{equation}
+G(p)=\frac{\gamma p+m}{p^2-m^2}.
+\tag{75.10}
+\end{equation}
+The four components of the 4-vector $p$ in $G(p)$ are independent variables; they are not constrained by $p^2=p_0^2-\mathbf p^2=m^2$. Writing the denominator of (75.10) as $p_0^2-(\mathbf p^2+m^2)$ shows that, as a function of $p_0$ at fixed $\mathbf p$, $G(p)$ has two poles: $p_0=\pm\varepsilon$, where $\varepsilon=\sqrt{\mathbf p^2+m^2}$. Integration over $dp_0$ in the integral
+\begin{equation}
+\begin{aligned}
+G(\xi)&=\frac{1}{(2\pi)^4}\int e^{-ip\xi}G(p)\,d^4p\\
+&=\frac{1}{(2\pi)^4}\int d^3p\,e^{i\mathbf p\boldsymbol\xi}
+\int dp_0\,e^{-ip_0\tau}G(p)
+\end{aligned}
+\tag{75.11}
+\end{equation}
+\SourcePage{333}{338}
+where $\tau=t-t'$, consequently raises the question of how the poles are to be bypassed; until this prescription is specified, (75.10) is still essentially undefined.
+
+To settle this question, return to the original definition (75.1). Substitute the expansions (73.6) for the $\psi$-operators, observing that only the following vacuum mean values of products of creation and annihilation operators are nonzero:
+\[
+\langle0|\hat a_{\mathbf p}\hat a_{\mathbf p}^+|0\rangle=1,
+\qquad
+\langle0|\hat b_{\mathbf p}\hat b_{\mathbf p}^+|0\rangle=1.
+\]
+(Because the vacuum contains no particles, a particle must first be created by $\hat a_{\mathbf p}^+$ or $\hat b_{\mathbf p}^+$ before it can be annihilated by $\hat a_{\mathbf p}$ or $\hat b_{\mathbf p}$.) We obtain
+\begin{equation}
+\begin{aligned}
+G_{ik}(x-x')&=-i\sum_{\mathbf p}\psi_{\mathbf p i}(\mathbf r,t)
+\bar\psi_{\mathbf p k}(\mathbf r',t')\\
+&=-i\sum_{\mathbf p}e^{-i\varepsilon(t-t')}
+\psi_{\mathbf p i}(\mathbf r)\bar\psi_{\mathbf p k}(\mathbf r'),
+\qquad t-t'>0;
+\end{aligned}
+\tag{75.12}
+\end{equation}
+\[
+\begin{aligned}
+G_{ik}(x-x')&=i\sum_{\mathbf p}\bar\psi_{-\mathbf p k}(\mathbf r',t')
+\psi_{-\mathbf p i}(\mathbf r,t)\\
+&=i\sum_{\mathbf p}e^{i\varepsilon(t-t')}
+\psi_{-\mathbf p i}(\mathbf r)\bar\psi_{-\mathbf p k}(\mathbf r'),
+\qquad t-t'<0.
+\end{aligned}
+\]
+(For $t>t'$ only the electron terms contribute to $G$, and for $t<t'$ only the positron terms.)
+
+Replace the sum over $\mathbf p$ conceptually by an integral over $d^3p$ and compare (75.12) with (75.11). The integral
+\begin{equation}
+\int e^{-ip_0\tau}G(p)\,dp_0
+\tag{75.13}
+\end{equation}
+must have the phase factor $e^{-i\varepsilon\tau}$ for $\tau>0$ and $e^{i\varepsilon\tau}$ for $\tau<0$. This condition is met if the poles $p_0=\varepsilon$ and $p_0=-\varepsilon$ are bypassed above and below, respectively, in the complex $p_0$ plane:
+\begin{equation}
+\begin{tikzpicture}[baseline=-.45ex,x=.8cm,y=.8cm,>=Stealth,line width=.55pt,font=\small]
+\draw[->] (-3.25,0)--(-1.25,0);
+\draw (-1.25,0) arc[start angle=180,end angle=360,radius=.45];
+\draw[->] (-.35,0)--(1.15,0);
+\draw (1.15,0) arc[start angle=180,end angle=0,radius=.45];
+\draw[->] (2.05,0)--(3.25,0);
+\fill (-.8,0) circle (1.2pt);
+\fill (0,0) circle (1.2pt);
+\fill (1.6,0) circle (1.2pt);
+\node[above=3pt] at (-.8,0) {$-\varepsilon$};
+\node[below=3pt] at (0,0) {$0$};
+\node[below=3pt] at (1.6,0) {$+\varepsilon$};
+\end{tikzpicture}
+\tag{75.14}
+\end{equation}
+Indeed, for $\tau>0$ the integration path is closed by a semicircle at infinity in the lower half-plane, so the value of (75.13) is given by the residue at the pole $p_0=+\varepsilon$. For $\tau<0$ the contour is closed in the upper half-plane and the integral is determined by the residue at $p_0=-\varepsilon$. The required result follows in both cases.
+
+\SourcePage{334}{339}
+This bypass prescription, the \emph{Feynman prescription}, can be stated in another way: integration is performed everywhere along the real axis itself, but the particle mass $m$ is assigned an infinitesimal negative imaginary part:
+\begin{equation}
+m\to m-i0.
+\tag{75.15}
+\end{equation}
+Indeed, then
+\[
+\varepsilon\to\sqrt{\mathbf p^2+(m-i0)^2}
+=\sqrt{\mathbf p^2+m^2-i0}=\varepsilon-i0.
+\]
+In other words, the poles $p_0=\pm\varepsilon$ are displaced below and above the real axis:
+\begin{equation}
+\begin{tikzpicture}[baseline=-.45ex,x=.8cm,y=.8cm,>=Stealth,line width=.55pt,font=\small]
+\draw[->] (-3.2,0)--(-.45,0);
+\draw[->] (-.45,0)--(3.2,0);
+\fill (-1.35,.42) circle (1.4pt);
+\fill (0,0) circle (1.4pt);
+\fill (1.35,-.42) circle (1.4pt);
+\node[above=3pt] at (-1.35,.42) {$-\varepsilon+i0$};
+\node[below=3pt] at (0,0) {$0$};
+\node[below left=2pt] at (1.35,-.42) {$+\varepsilon$};
+\node[below right=2pt] at (1.35,-.42) {$-i0$};
+\end{tikzpicture}
+\tag{75.16}
+\end{equation}
+so that integration along this axis becomes equivalent to integration along the path in (75.14)\footnote{It is useful to note that the pole-displacement prescription corresponds to an infinitesimal damping of $G(x-x')$ with $|\tau|$, where $\tau=t-t'$. Indeed, if the values of $p_0$ at the displaced poles are written as $-(\varepsilon-i\delta)$ and $+(\varepsilon-i\delta)$, where $\delta\to+0$, the time factor in (75.13) is $\exp(-i\varepsilon|\tau|-\delta|\tau|)$.}. With the prescription (75.15), the propagator (75.10) may be written
+\begin{equation}
+G(p)=\frac{\gamma p+m}{p^2-m^2+i0}.
+\tag{75.17}
+\end{equation}
+The integration rule for a displaced pole is expressed by
+\begin{equation}
+\frac{1}{x+i0}=\mathop{\mathrm P}\frac{1}{x}-i\pi\delta(x).
+\tag{75.18}
+\end{equation}
+This is to be understood in the sense that multiplication by a function $f(x)$ and integration gives
+\begin{equation}
+\int_{-\infty}^{\infty}\frac{f(x)}{x+i0}\,dx
+=\mathop{\mathrm P}\int_{-\infty}^{\infty}\frac{f(x)}{x}\,dx-i\pi f(0),
+\tag{75.19}
+\end{equation}
+where the crossed integral sign, or the symbol $\mathrm P$, denotes the principal value.
+
+The Green function (75.10) is the product of the bispinor factor $\gamma p+m$ and the scalar
+\begin{equation}
+G^{(0)}(p)=\frac{1}{p^2-m^2}.
+\tag{75.20}
+\end{equation}
+The corresponding coordinate function $G^{(0)}(\xi)$ is evidently a solution of
+\begin{equation}
+(\hat p^2-m^2)G^{(0)}(x-x')=\delta^{(4)}(x-x'),
+\tag{75.21}
+\end{equation}
+\SourcePage{335}{340}
+that is, a Green function for the equation $(\hat p^2-m^2)\psi=0$. In this sense, $G^{(0)}(x-x')$ may be called the propagator for scalar particles. A direct calculation similar to the one above readily shows that the scalar-field propagation function is expressed in terms of the $\psi$-operators (11.2) by
+\begin{equation}
+G^{(0)}(x-x')=-i\langle0|\mathop{\mathrm T}\hat\psi(x)\hat\psi^+(x')|0\rangle,
+\tag{75.22}
+\end{equation}
+in analogy with the definition (75.1). Here the chronological product is defined, as for all boson operators, by
+\begin{equation}
+\mathop{\mathrm T}\hat\psi(x)\hat\psi^+(x')=
+\begin{cases}
+\hat\psi(x)\hat\psi^+(x'),&t>t',\\
+\hat\psi^+(x')\hat\psi(x),&t<t'
+\end{cases}
+\tag{75.23}
+\end{equation}
+with the same signs for $t>t'$ and $t<t'$.

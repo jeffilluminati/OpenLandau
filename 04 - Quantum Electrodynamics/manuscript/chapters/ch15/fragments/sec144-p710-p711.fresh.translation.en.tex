@@ -1,0 +1,85 @@
+\SourcePage{710}{715}
+\section{Conversion of an electron--positron pair into hadrons}
+
+Consider now the conversion of an electron--positron pair into hadrons. Denote the electron and positron 4-momenta by $p_-$ and $p_+$, and the (total) 4-momentum of the set of hadrons produced by $p_h$; thus $p_-+p_+=p_h$. The process is represented by the diagram
+\begin{equation}
+\begin{tikzpicture}[baseline=-.45ex,x=1cm,y=1cm,>=stealth,line width=.65pt,font=\small]
+  \coordinate (v) at (0,.55);
+  \coordinate (j) at (0,-.42);
+  \draw[->] (v)--(-.82,1.55);
+  \draw[->] (.82,1.55)--(v);
+  \draw (v)--(0,.22);
+  \draw[dashed] (0,.22)--(j);
+  \fill (j) circle (1.5pt);
+  \draw[line width=2.4pt] (j)--(0,-1.28);
+  \node[above left] at (-.66,1.34) {$-p_+$};
+  \node[above right] at (.66,1.34) {$p_-$};
+\end{tikzpicture}
+\tag{144.1}
+\end{equation}
+The lower vertex of this diagram corresponds to the current for a transition from the vacuum to some hadronic state $|n\rangle$; as in~\S~104, we denote it by $\langle n|J|0\rangle$.
+
+The amplitude corresponding to diagram~(144.1) is
+\begin{equation}
+M_n=-\frac{4\pi\alpha}{q^2}\bar u(-p_+)\gamma_\mu u(p_-)\langle n|J^\mu|0\rangle.
+\tag{144.2}
+\end{equation}
+We shall be interested in the total cross section $\sigma_h$ for annihilation into hadrons, that is, we sum over all final states $|n\rangle$. Then, in accordance with~(64.18),
+\begin{equation}
+\sigma_h=\frac{1}{4I}\sum_n|M_n|^2(2\pi)^4\delta^{(4)}(p_h-q),
+\tag{144.3}
+\end{equation}
+where $q=p_-+p_+$. We shall henceforth neglect the electron mass; then $q^2=2(p_-p_+)$ and $I=q^2/2$.
+
+Proceeding as in~\S~143, write the cross section as
+\begin{equation}
+\sigma_h=\frac{(4\pi)^2}{2t^3}w^{\mu\nu}W_{\mu\nu},
+\tag{144.4}
+\end{equation}
+where
+\begin{equation}
+w^{\mu\nu}=\alpha\left(p_-^\mu q^\nu+p_-^\nu q^\mu-2p_-^\mu p_-^\nu-\frac12q^2g^{\mu\nu}\right),
+\tag{144.5}
+\end{equation}
+\begin{equation}
+W_{\mu\nu}=\alpha\sum_n(2\pi)^4\delta^{(4)}(p_h-q)
+\langle0|J_\nu|n\rangle\langle n|J_\mu|0\rangle
+\tag{144.6}
+\end{equation}
+and $t=q^2>0$.
+
+Observe that $t$ is the only kinematic invariant in the problem under consideration (the ``three-tailed'' diagram
+\SourcePage{711}{716}
+(144.1)), and $q$ is the sole 4-vector on which $W_{\mu\nu}$ can depend. Taking current conservation into account, the tensor $W_{\mu\nu}$ may therefore be written
+\begin{equation}
+W_{\mu\nu}=\frac12\rho_h(t)\left(\frac{q_\mu q_\nu}{q^2}-g_{\mu\nu}\right),
+\tag{144.7}
+\end{equation}
+where $\rho_h(t)$ is the single invariant function that depends on the properties of the hadronic current and determines the annihilation cross section. Substitution of~(144.5)--(144.7) into~(144.4) gives
+\begin{equation}
+\sigma_h=\frac{4\pi^2\alpha}{t^2}\rho_h(t).
+\tag{144.8}
+\end{equation}
+Notice that the function $\rho_h(t)=-2W^\mu_\mu/3$ is exactly the same as the function $\rho(t)$ defined in~(104.9), provided the currents in that formula are understood to be hadronic currents. Recall also that $\rho(t)$ is the spectral density of the photon self-energy function $\Pi(t)$: $\operatorname{Im}\Pi(t)=-\pi\rho(t)$. In the lowest-order approximation in $\alpha$ considered here, $\Pi$ coincides with the polarization operator $\mathcal P$. Consequently, in this approximation $\rho_h(t)$ is also the spectral density of the hadronic contribution to the polarization operator:
+\begin{equation}
+\operatorname{Im}\mathcal P_h(t)=-\pi\rho_h(t).
+\tag{144.9}
+\end{equation}
+Using the dispersion relation~(111.13) and expressing $\rho_h$ through $\sigma_h$ according to~(144.8), we obtain
+\begin{equation}
+\mathcal P_h(t)=-\frac{t^2}{4\pi^2\alpha}
+\int_0^\infty\frac{\sigma_h(t')\,dt'}{t'-t-i0},
+\tag{144.10}
+\end{equation}
+which expresses the hadronic contribution to vacuum polarization in terms of the experimentally measurable annihilation cross section into hadrons.
+
+The problem of electron--positron annihilation into a muon pair could be solved in precisely the same way (to first order in $\alpha$, only one such pair can be produced). Analogously to~(144.8), we would find
+\begin{equation}
+\sigma_\mu=\frac{4\pi^2\alpha}{t^2}\rho_\mu(t),
+\tag{144.11}
+\end{equation}
+where $\rho_\mu(t)$ is the spectral density of muon vacuum polarization. It differs from the electron polarization only by replacement of the electron mass $m$ with the muon mass $\mu$ and, according to~(113.8), is given by
+\[
+\rho_\mu(t)=\frac{\alpha}{3\pi}(t+2\mu^2)\sqrt{1-\frac{4\mu^2}{t}}.
+\]
+Substitution into~(144.11) reproduces the result already obtained in problem~8 of~\S~81.

@@ -1,0 +1,210 @@
+\SourcePage{14}{19}
+\section{Quantization of the free electromagnetic field}
+
+To treat the electromagnetic field as a quantum object, it is useful to begin with a classical description in which the field is specified by a discrete, though infinite, sequence of variables. Such a description allows the ordinary apparatus of quantum mechanics to be applied directly. By contrast, representing the field through potentials assigned at every point in space amounts essentially to a description in terms of a continuous set of variables.
+
+Let $\mathbf{A}(\mathbf{r},t)$ be the vector potential of a free electromagnetic field, satisfying the ``transversality condition''
+\begin{equation}
+\Div{\mathbf{A}}=0.
+\tag{2.1}
+\end{equation}
+The scalar potential is then $\Phi=0$, while the fields $\mathbf{E}$ and $\mathbf{H}$ are
+\begin{equation}
+\mathbf{E}=-\dot{\mathbf{A}},\qquad \mathbf{H}=\Curl{\mathbf{A}}.
+\tag{2.2}
+\end{equation}
+Maxwell's equations reduce to the wave equation for $\mathbf{A}$:
+\begin{equation}
+\Delta\mathbf{A}-\frac{\partial^2\mathbf{A}}{\partial t^2}=0.
+\tag{2.3}
+\end{equation}
+
+As is known (see II, \S~52), in classical electrodynamics a description by a discrete sequence of variables is obtained by considering the field within some large but finite volume of space $V$\footnote{To avoid burdening the formulas with superfluous factors, we shall set $V=1$.}. We briefly recall this construction, omitting the computational details.
+
+Within a finite volume the field may be expanded in travelling plane waves, so that its potential takes the form
+\begin{equation}
+\mathbf{A}=\sum_{\mathbf{k}}\left(\mathbf{a}_{\mathbf{k}}e^{i\mathbf{kr}}+\mathbf{a}_{\mathbf{k}}^*e^{-i\mathbf{kr}}\right),
+\tag{2.4}
+\end{equation}
+where the coefficients $\mathbf{a}_{\mathbf{k}}$ depend on time according to
+\begin{equation}
+\mathbf{a}_{\mathbf{k}}\sim e^{-i\omega t},\qquad \omega=|\mathbf{k}|.
+\tag{2.5}
+\end{equation}
+By virtue of condition~(2.1), the complex vectors $\mathbf{a}_{\mathbf{k}}$ are orthogonal to the corresponding wave vectors: $\mathbf{a}_{\mathbf{k}}\mathbf{k}=0$.
+
+\SourcePage{15}{20}
+The summation in~(2.4) extends over an infinite discrete set of values of the wave vector (that is, of its three components $k_x$, $k_y$, $k_z$). Passage to integration over a continuous distribution is effected by using
+\[
+\frac{d^3k}{(2\pi)^3}
+\]
+for the number of possible values of $\mathbf{k}$ belonging to the element $d^3k=dk_xdk_ydk_z$ of volume in $\mathbf{k}$-space.
+
+The vectors $\mathbf{a}_{\mathbf{k}}$ determine the field in the given volume completely. They may therefore be regarded as a discrete collection of classical ``field variables.'' To determine how to pass to the quantum theory, however, we must first transform these variables further, so that the field equations acquire a form analogous to the canonical (Hamilton) equations of classical mechanics. The canonical field variables are defined by
+\begin{equation}
+\begin{aligned}
+\mathbf{Q}_{\mathbf{k}}&=\frac{1}{\sqrt{4\pi}}\left(\mathbf{a}_{\mathbf{k}}+\mathbf{a}_{\mathbf{k}}^*\right),\\
+\mathbf{P}_{\mathbf{k}}&=-\frac{i\omega}{\sqrt{4\pi}}\left(\mathbf{a}_{\mathbf{k}}-\mathbf{a}_{\mathbf{k}}^*\right)=\dot{\mathbf{Q}}_{\mathbf{k}}
+\end{aligned}
+\tag{2.6}
+\end{equation}
+(these quantities are plainly real). In terms of the canonical variables the vector potential is
+\begin{equation}
+\mathbf{A}=\sqrt{4\pi}\sum_{\mathbf{k}}\left(\mathbf{Q}_{\mathbf{k}}\cos\mathbf{kr}-\frac{1}{\omega}\mathbf{P}_{\mathbf{k}}\sin\mathbf{kr}\right).
+\tag{2.7}
+\end{equation}
+
+To obtain the Hamiltonian $H$, we must calculate the total field energy
+\[
+\frac{1}{8\pi}\int\left(\mathbf{E}^2+\mathbf{H}^2\right)d^3x,
+\]
+expressing it in terms of $\mathbf{Q}_{\mathbf{k}}$ and $\mathbf{P}_{\mathbf{k}}$. On substituting expansion~(2.7) for $\mathbf{A}$, evaluating $\mathbf{E}$ and $\mathbf{H}$ from~(2.2), and carrying out the integration, we find
+\[
+H=\frac{1}{2}\sum_{\mathbf{k}}\left(\mathbf{P}_{\mathbf{k}}^2+\omega^2\mathbf{Q}_{\mathbf{k}}^2\right).
+\]
+
+Both $\mathbf{P}_{\mathbf{k}}$ and $\mathbf{Q}_{\mathbf{k}}$ are perpendicular to the wave vector $\mathbf{k}$ and thus have two independent components apiece. Their direction fixes the polarization direction of the corresponding wave. Denoting the two components of $\mathbf{Q}_{\mathbf{k}}$ and $\mathbf{P}_{\mathbf{k}}$ (in the plane normal to $\mathbf{k}$) by $Q_{\mathbf{k}\alpha}$ and $P_{\mathbf{k}\alpha}$, where $\alpha=1,2$, we rewrite the Hamiltonian as
+\begin{equation}
+H=\sum_{\mathbf{k}\alpha}\frac{1}{2}\left(P_{\mathbf{k}\alpha}^2+\omega^2Q_{\mathbf{k}\alpha}^2\right).
+\tag{2.8}
+\end{equation}
+
+\SourcePage{16}{21}
+The Hamiltonian has therefore separated into a sum of independent terms, each involving only one pair $Q_{\mathbf{k}\alpha}$, $P_{\mathbf{k}\alpha}$. Each term corresponds to a travelling wave of specified wave vector and polarization, and has the form of the Hamiltonian of a one-dimensional harmonic oscillator. The resulting expansion is consequently called a decomposition of the field into \emph{oscillators}.
+
+We now quantize the free electromagnetic field. The classical formulation just described makes the transition to the quantum theory immediate. The canonical variables---the generalized coordinates $Q_{\mathbf{k}\alpha}$ and generalized momenta $P_{\mathbf{k}\alpha}$---must now be treated as operators obeying the commutation rule
+\begin{equation}
+\widehat{P}_{\mathbf{k}\alpha}\widehat{Q}_{\mathbf{k}\alpha}-\widehat{Q}_{\mathbf{k}\alpha}\widehat{P}_{\mathbf{k}\alpha}=-i
+\tag{2.9}
+\end{equation}
+(operators bearing different $\mathbf{k}\alpha$ commute with one another). Along with them, the potential $\mathbf{A}$ and, by~(2.2), the field strengths $\mathbf{E}$ and $\mathbf{H}$ also become Hermitian operators.
+
+A consistent definition of the field Hamiltonian requires evaluation of the integral
+\begin{equation}
+\widehat{H}=\frac{1}{8\pi}\int\left(\widehat{\mathbf{E}}^2+\widehat{\mathbf{H}}^2\right)d^3x,
+\tag{2.10}
+\end{equation}
+with $\widehat{\mathbf{E}}$ and $\widehat{\mathbf{H}}$ expressed through $\widehat{P}_{\mathbf{k}\alpha}$ and $\widehat{Q}_{\mathbf{k}\alpha}$. Their noncommutativity does not in fact enter here: the products $Q_{\mathbf{k}\alpha}P_{\mathbf{k}\alpha}$ occur multiplied by $\cos\mathbf{kr}\cdot\sin\mathbf{kr}$, whose integral over the whole volume vanishes. The Hamiltonian is thus
+\begin{equation}
+\widehat{H}=\sum_{\mathbf{k}\alpha}\frac{1}{2}\left(\widehat{P}_{\mathbf{k}\alpha}^{2}+\omega^2\widehat{Q}_{\mathbf{k}\alpha}^{2}\right),
+\tag{2.11}
+\end{equation}
+which agrees exactly with the classical Hamiltonian, as one would naturally expect.
+
+No special calculation is needed to find the eigenvalues of this Hamiltonian, since the problem reduces to the familiar energy levels of linear oscillators (see III, \S~23). We may therefore write the field energy levels at once as
+\begin{equation}
+E=\sum_{\mathbf{k}\alpha}\left(N_{\mathbf{k}\alpha}+\frac{1}{2}\right)\omega,
+\tag{2.12}
+\end{equation}
+where the $N_{\mathbf{k}\alpha}$ are integers.
+
+We shall return to this formula in the next section. For the moment, let us write the matrix elements of $Q_{\mathbf{k}\alpha}$,
+
+\SourcePage{17}{22}
+which follow directly from the familiar expressions for the coordinate matrix elements of an oscillator (see III, \S~23). The nonzero elements are
+\begin{equation}
+\left\langle N_{\mathbf{k}\alpha}\middle|Q_{\mathbf{k}\alpha}\middle|N_{\mathbf{k}\alpha}-1\right\rangle
+=\left\langle N_{\mathbf{k}\alpha}-1\middle|Q_{\mathbf{k}\alpha}\middle|N_{\mathbf{k}\alpha}\right\rangle
+=\sqrt{\frac{N_{\mathbf{k}\alpha}}{2\omega}}.
+\tag{2.13}
+\end{equation}
+The matrix elements of $P_{\mathbf{k}\alpha}=\dot{Q}_{\mathbf{k}\alpha}$ differ from those of $Q_{\mathbf{k}\alpha}$ only by a factor $\pm i\omega$.
+
+For subsequent calculations it is more convenient to replace $Q_{\mathbf{k}\alpha}$ and $P_{\mathbf{k}\alpha}$ by the linear combinations $\omega Q_{\mathbf{k}\alpha}\pm iP_{\mathbf{k}\alpha}$, whose matrix elements are nonzero only for the transitions $N_{\mathbf{k}\alpha}\to N_{\mathbf{k}\alpha}\pm1$. We accordingly introduce the operators
+\begin{equation}
+\widehat{c}_{\mathbf{k}\alpha}=\frac{1}{\sqrt{2\omega}}\left(\omega\widehat{Q}_{\mathbf{k}\alpha}+i\widehat{P}_{\mathbf{k}\alpha}\right),\qquad
+\widehat{c}_{\mathbf{k}\alpha}^{+}=\frac{1}{\sqrt{2\omega}}\left(\omega\widehat{Q}_{\mathbf{k}\alpha}-i\widehat{P}_{\mathbf{k}\alpha}\right)
+\tag{2.14}
+\end{equation}
+(apart from a factor $\sqrt{2\pi/\omega}$, the classical quantities $c_{\mathbf{k}\alpha}$, $c_{\mathbf{k}\alpha}^*$ coincide with the coefficients $a_{\mathbf{k}\alpha}$, $a_{\mathbf{k}\alpha}^*$ in expansion~(2.4)). Their matrix elements are
+\begin{equation}
+\left\langle N_{\mathbf{k}\alpha}-1\middle|\widehat{c}_{\mathbf{k}\alpha}\middle|N_{\mathbf{k}\alpha}\right\rangle
+=\left\langle N_{\mathbf{k}\alpha}\middle|\widehat{c}_{\mathbf{k}\alpha}^{+}\middle|N_{\mathbf{k}\alpha}-1\right\rangle
+=\sqrt{N_{\mathbf{k}\alpha}}.
+\tag{2.15}
+\end{equation}
+The commutation rule for $\widehat{c}_{\mathbf{k}\alpha}$ and $\widehat{c}_{\mathbf{k}\alpha}^{+}$ follows from definition~(2.14) and rule~(2.9):
+\begin{equation}
+\widehat{c}_{\mathbf{k}\alpha}\widehat{c}_{\mathbf{k}\alpha}^{+}-\widehat{c}_{\mathbf{k}\alpha}^{+}\widehat{c}_{\mathbf{k}\alpha}=1.
+\tag{2.16}
+\end{equation}
+
+For the vector potential we return to an expansion of the form~(2.4), now with operator-valued coefficients. Write it as
+\begin{equation}
+\widehat{\mathbf{A}}=\sum_{\mathbf{k}\alpha}\left(\widehat{c}_{\mathbf{k}\alpha}\mathbf{A}_{\mathbf{k}\alpha}+\widehat{c}_{\mathbf{k}\alpha}^{+}\mathbf{A}_{\mathbf{k}\alpha}^*\right),
+\tag{2.17}
+\end{equation}
+where
+\begin{equation}
+\mathbf{A}_{\mathbf{k}\alpha}=\sqrt{4\pi}\,\frac{\mathbf{e}^{(\alpha)}}{\sqrt{2\omega}}e^{i\mathbf{kr}}.
+\tag{2.18}
+\end{equation}
+Here $\mathbf{e}^{(\alpha)}$ denotes a unit vector along the polarization direction of an oscillator. These vectors are perpendicular to the wave vector $\mathbf{k}$, and two independent polarizations exist for each $\mathbf{k}$.
+
+Similarly, for the operators $\widehat{\mathbf{E}}$ and $\widehat{\mathbf{H}}$ we write
+\begin{equation}
+\widehat{\mathbf{E}}=\sum_{\mathbf{k}\alpha}\left(\widehat{c}_{\mathbf{k}\alpha}\mathbf{E}_{\mathbf{k}\alpha}+\widehat{c}_{\mathbf{k}\alpha}^{+}\mathbf{E}_{\mathbf{k}\alpha}^*\right),\qquad
+\widehat{\mathbf{H}}=\sum_{\mathbf{k}\alpha}\left(\widehat{c}_{\mathbf{k}\alpha}\mathbf{H}_{\mathbf{k}\alpha}+\widehat{c}_{\mathbf{k}\alpha}^{+}\mathbf{H}_{\mathbf{k}\alpha}^*\right),
+\tag{2.19}
+\end{equation}
+with
+\begin{equation}
+\mathbf{E}_{\mathbf{k}\alpha}=i\omega\mathbf{A}_{\mathbf{k}\alpha},\qquad
+\mathbf{H}_{\mathbf{k}\alpha}=\mathbf{n}\times\mathbf{E}_{\mathbf{k}\alpha}\qquad(\mathbf{n}=\mathbf{k}/\omega).
+\tag{2.20}
+\end{equation}
+
+\SourcePage{18}{23}
+The vectors $\mathbf{A}_{\mathbf{k}\alpha}$ are mutually orthogonal in the sense that
+\begin{equation}
+\int\mathbf{A}_{\mathbf{k}\alpha}\mathbf{A}_{\mathbf{k}'\alpha'}^*d^3x=\frac{2\pi}{\omega}\delta_{\alpha\alpha'}\delta_{\mathbf{k}\mathbf{k}'}.
+\tag{2.21}
+\end{equation}
+Indeed, if $\mathbf{A}_{\mathbf{k}\alpha}$ and $\mathbf{A}_{\mathbf{k}'\alpha'}^*$ have different wave vectors, their product contains $e^{i(\mathbf{k}-\mathbf{k}')\mathbf{r}}$, which integrates to zero over the volume. If only their polarizations differ, then $\mathbf{e}^{(\alpha)}\mathbf{e}^{(\alpha')*}=0$, since the two independent polarization directions are mutually orthogonal. Corresponding relations hold for $\mathbf{E}_{\mathbf{k}\alpha}$ and $\mathbf{H}_{\mathbf{k}\alpha}$. Their normalization is conveniently written as
+\begin{equation}
+\frac{1}{4\pi}\int\left(\mathbf{E}_{\mathbf{k}\alpha}\mathbf{E}_{\mathbf{k}'\alpha'}^*+\mathbf{H}_{\mathbf{k}\alpha}\mathbf{H}_{\mathbf{k}'\alpha'}^*\right)d^3x=\omega\delta_{\mathbf{k}\mathbf{k}'}\delta_{\alpha\alpha'}.
+\tag{2.22}
+\end{equation}
+
+Substitution of operators~(2.19) into~(2.10), followed by integration using~(2.22), gives the field Hamiltonian in terms of $\widehat{c}$ and $\widehat{c}^{+}$:
+\begin{equation}
+\widehat{H}=\sum_{\mathbf{k}\alpha}\frac{1}{2}\omega\left(\widehat{c}_{\mathbf{k}\alpha}\widehat{c}_{\mathbf{k}\alpha}^{+}+\widehat{c}_{\mathbf{k}\alpha}^{+}\widehat{c}_{\mathbf{k}\alpha}\right).
+\tag{2.23}
+\end{equation}
+In the representation under consideration (with the matrix elements~(2.15) of $\widehat{c}$ and $\widehat{c}^{+}$), this operator is diagonal, and its eigenvalues naturally coincide with~(2.12).
+
+In classical theory the field momentum is defined by the integral
+\[
+\mathbf{P}=\frac{1}{4\pi}\int\mathbf{E}\times\mathbf{H}\,d^3x.
+\]
+On passing to the quantum theory, we replace $\mathbf{E}$ and $\mathbf{H}$ by operators~(2.19) and readily obtain
+\begin{equation}
+\widehat{\mathbf{P}}=\sum_{\mathbf{k}\alpha}\frac{1}{2}\left(\widehat{P}_{\mathbf{k}\alpha}^{2}+\omega^2\widehat{Q}_{\mathbf{k}\alpha}^{2}\right)\mathbf{n},
+\tag{2.24}
+\end{equation}
+in agreement with the familiar classical relation between the energy and momentum of plane waves. The eigenvalues of this operator are
+\begin{equation}
+\mathbf{P}=\sum_{\mathbf{k}\alpha}\mathbf{k}\left(N_{\mathbf{k}\alpha}+\frac{1}{2}\right).
+\tag{2.25}
+\end{equation}
+
+The operator representation furnished by matrix elements~(2.15) is the ``occupation-number representation'': it describes the state of the system (the field) by specifying the quantum numbers $N_{\mathbf{k}\alpha}$ (the \emph{occupation numbers}). In this representation, field operators~(2.19) (and hence Hamiltonian~(2.11)) act on the wave function of the system expressed as a function
+
+\SourcePage{19}{24}
+of the numbers $N_{\mathbf{k}\alpha}$; denote it by $\Phi(N_{\mathbf{k}\alpha},t)$. The field operators~(2.19) have no explicit time dependence. This is the Schrödinger representation of operators customarily used in nonrelativistic quantum mechanics. The state $\Phi(N_{\mathbf{k}\alpha},t)$ is instead time-dependent, and its dependence is governed by the Schrödinger equation
+\[
+i\frac{\partial\Phi}{\partial t}=\widehat{H}\Phi.
+\]
+
+This description of the field is relativistically invariant in essence, since it rests on the invariant Maxwell equations. The invariance is not displayed explicitly, however, chiefly because the space coordinates and time enter the description in a highly asymmetric fashion.
+
+In relativistic theory it is expedient to cast the description into a form that appears more invariant. For this purpose one uses the so-called Heisenberg representation, in which the explicit time dependence is transferred to the operators themselves (see III, \S~13). Time and the coordinates then enter the field operators on an equal footing, while the state $\Phi$ becomes a function of the occupation numbers alone.
+
+For $\widehat{\mathbf{A}}$, passage to the Heisenberg representation consists in replacing, in every term of the sum in~(2.17), (2.18), the factor $e^{i\mathbf{kr}}$ by $e^{i(\mathbf{kr}-\omega t)}$. Thus $\mathbf{A}_{\mathbf{k}\alpha}$ is to mean the time-dependent function
+\begin{equation}
+\mathbf{A}_{\mathbf{k}\alpha}=\sqrt{4\pi}\,\frac{\mathbf{e}^{(\alpha)}}{\sqrt{2\omega}}e^{-i(\omega t-\mathbf{kr})}.
+\tag{2.26}
+\end{equation}
+This can be checked at once by noting that a matrix element of a Heisenberg operator for a transition $i\to f$ must contain the factor $\exp\{-i(E_i-E_f)t\}$, where $E_i$ and $E_f$ are the energies of the initial and final states (see III, \S~13). For a transition in which $N_{\mathbf{k}}$ decreases or increases by~1, this factor becomes $e^{-i\omega t}$ or $e^{i\omega t}$, respectively. The replacement just described satisfies this requirement.
+
+In what follows, for both the electromagnetic field and particle fields, the Heisenberg representation of operators will always be understood.

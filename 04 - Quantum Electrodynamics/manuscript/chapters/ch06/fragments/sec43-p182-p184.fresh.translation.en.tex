@@ -1,0 +1,94 @@
+\SourcePage{182}{187}
+\section{The electromagnetic interaction operator}
+
+The interaction of electrons with an electromagnetic field can generally be treated by perturbation theory. This is possible because the electromagnetic interaction is comparatively weak, as expressed by the smallness of its dimensionless ``coupling constant'', the fine-structure constant $\alpha=e^2/\hbar c=1/137$. This small parameter has a fundamental role in quantum electrodynamics.
+
+In classical electrodynamics (see II, \S~16, 28), the electromagnetic interaction is described by the term
+\begin{equation}
+-e j^\mu A_\mu
+\tag{43.1}
+\end{equation}
+in the Lagrangian density of the ``field+charges'' system ($A$ is the field 4-potential and $j$ is the 4-vector of the particle-current density). The current density obeys the continuity equation
+\begin{equation}
+\partial_\mu j^\mu=0,
+\tag{43.2}
+\end{equation}
+which expresses charge conservation. Recall (see II, \S~29) that the gauge invariance of the theory is closely connected with this law. Indeed, under the replacement $A_\mu\to A_\mu+\partial_\mu\chi$ (4.1), the quantity $-e j^\mu\partial_\mu\chi$ is added to the Lagrangian density (43.1). By (43.2), this quantity can be written as the 4-divergence
+\[
+-e\partial_\mu(\chi j^\mu)
+\]
+and consequently makes no contribution after integration over $d^4x$ in the action $S=\int Ld^4x$.
+
+In quantum electrodynamics, the 4-vectors $j$ and $A$ are replaced by the corresponding second-quantized operators. The current operator is then expressed in terms of the $\psi$ operators according to $\hat j=\widehat{\bar\psi}\gamma\hat\psi$. The values of $\widehat{\bar\psi}$, $\hat\psi$, and $\hat A$ at every point of space play the role of the generalized ``coordinates'' $q$ in the Lagrangian
+\[
+\int\widehat L_{\text{int}}d^3x=-e\int(\hat j\hat A)d^3x.
+\]
+Since the Lagrangian density depends only on the ``coordinates'' $q$ themselves (and not on their derivatives with respect to $x$), the passage\SourcePage{183}{188} to the Hamiltonian density by formula (10.11) merely reverses the sign of the Lagrangian density\footnote{Independently of this argument, we note that when only a first-order correction is at issue, any small correction to the Lagrangian enters the Hamiltonian with its sign reversed (see I, \S~40).}. Thus, the electromagnetic interaction operator (the spatial integral of the interaction Hamiltonian density) is
+\begin{equation}
+\hat V=e\int(\hat j\hat A)d^3x.
+\tag{43.3}
+\end{equation}
+
+The free electromagnetic-field operator is the sum
+\begin{equation}
+\hat A=\sum_n[\hat c_n A_n(x)+\hat c_n^+ A_n^*(x)],
+\tag{43.4}
+\end{equation}
+which contains the photon creation and annihilation operators for the different states (labelled by the index $n$). Each of these operators has matrix elements only when the corresponding occupation number $N_n$ increases or decreases by 1 (with all other occupation numbers unchanged). The operator $\hat A$ therefore also has matrix elements only for transitions in which the photon number changes by 1. In other words, first-order perturbation theory permits only the emission or absorption of a single photon.
+
+According to (2.15), the matrix elements are
+\begin{equation}
+\langle N_n-1|\hat c_n|N_n\rangle
+=\langle N_n|\hat c_n^+|N_n-1\rangle=\sqrt{N_n}.
+\tag{43.5}
+\end{equation}
+If no photons (of type $n$) are present in the initial field state, then $\langle1|\hat c_n^+|0\rangle=1$. The matrix element of operator (43.3) for photon emission is
+\begin{equation}
+V_{fi}(t)=e\int(j_{fi}A_n^*)d^3x,
+\tag{43.6}
+\end{equation}
+where $A_n(x)$ is the wave function of the emitted photon, while $j_{fi}$ is the matrix element of the operator $\hat j$ for the transition of the radiating system from its initial state $i$ to its final state $f$\footnote{There is a slight inconsistency in the notation in (43.6): the indices of $V_{fi}$ refer to states of the entire ``radiating system+field'', whereas those of $j_{fi}$ refer to states of the radiating system alone.}. The 4-vector $j_{fi}^\mu=(\rho_{fi},\mathbf j_{fi})$ is called the \emph{transition current}.
+
+The matrix element for photon absorption is obtained similarly:
+\begin{equation}
+V_{fi}(t)=e\int(j_{fi}A_n)d^3x.
+\tag{43.7}
+\end{equation}
+It differs from (43.6) only in having $A_n(x)$ in place of $A_n^*(x)$.
+
+\SourcePage{184}{189}
+By displaying the argument $t$ in $V_{fi}$, we emphasize that this matrix element depends on time. Separating the time factors in the wave functions, we may pass in the usual way to time-independent matrix elements:
+\begin{equation}
+V_{fi}(t)=V_{fi}e^{-i(E_i-E_f\mp\omega)t}
+\tag{43.8}
+\end{equation}
+($E_i$ and $E_f$ are the initial and final energies of the radiating system; the signs $\mp$ correspond to emission and absorption of a photon of frequency $\omega$).
+
+The wave function of a photon with definite momentum $\mathbf k$ and definite polarization is
+\begin{equation}
+A^\mu=\sqrt{4\pi}\frac{e^\mu}{\sqrt{2\omega}}e^{i\mathbf k\mathbf r}
+\tag{43.9}
+\end{equation}
+(see (4.3); the time factor has been omitted). Substitution in (43.6) gives the matrix element for emission of such a photon in the form
+\begin{equation}
+V_{fi}=e\sqrt{4\pi}\frac1{\sqrt{2\omega}}e_\mu^*j_{fi}^\mu(\mathbf k),
+\tag{43.10}
+\end{equation}
+where $j_{fi}(\mathbf k)$ is the transition current in the momentum representation, that is, its Fourier components are
+\begin{equation}
+j_{fi}(\mathbf k)=\int j_{fi}(\mathbf r)e^{-i\mathbf k\mathbf r}d^3x.
+\tag{43.11}
+\end{equation}
+The corresponding formula for photon absorption is
+\begin{equation}
+V_{fi}=e\sqrt{4\pi}\frac1{\sqrt{2\omega}}e_\mu j_{fi}^\mu(-\mathbf k).
+\tag{43.12}
+\end{equation}
+
+In the momentum representation, the current-conservation equation takes the form of the 4-transversality condition for transition currents:
+\begin{equation}
+k_\mu j_{fi}^\mu=\omega\rho_{fi}(\mathbf k)-\mathbf k\mathbf j_{fi}(\mathbf k)=0.
+\tag{43.13}
+\end{equation}
+
+The formulas written in this section, in which the form of the current operator has not been specified, are general and apply to electromagnetic processes involving any charged particles. The existing theory allows the form of the current operator to be established (and hence its matrix elements to be calculated in principle) only for electrons. In applying these formulas to systems of strongly interacting particles, including nuclei, we shall instead give a semiphenomenological theory in which the transition currents are quantities taken from experiment and constrained only by the general requirements of space-time symmetry and by the continuity equation.

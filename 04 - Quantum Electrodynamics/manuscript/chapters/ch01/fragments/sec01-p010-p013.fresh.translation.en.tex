@@ -1,0 +1,56 @@
+\SourcePage{10}{15}
+\section{Uncertainty relations in the relativistic domain}
+
+The quantum theory presented in volume~III of this course is essentially nonrelativistic and cannot be applied to phenomena involving motion at speeds that are not small compared with the speed of light. At first sight, one might expect to obtain a relativistic theory by a more or less direct generalization of the machinery of nonrelativistic quantum mechanics. Closer examination shows, however, that a logically complete relativistic theory cannot be constructed without new physical principles.
+
+Let us recall some of the physical ideas underlying nonrelativistic quantum mechanics (III, \S~1). Measurement has a fundamental role in that theory. It means an interaction between a quantum system and a ``classical object'' (an ``apparatus''), as a result of which the quantum system acquires definite values of particular dynamical variables, such as coordinates or velocities. We also saw that quantum mechanics severely restricts the simultaneous possession of different dynamical variables by an electron\footnote{As in volume~III, \S~1, we speak briefly of an electron while meaning any quantum system.}. Thus the uncertainties $\Delta q$ and $\Delta p$ with which coordinate and momentum can coexist are related by $\Delta q \Delta p \sim \hbar$\footnote{Ordinary units are used in this section.}; the more accurately one quantity is measured, the less accurately the other can be measured at the same time.
+
+It is essential, however, that each dynamical variable of the electron, considered separately, could be measured with arbitrarily high accuracy in an arbitrarily short interval of time. This circumstance is funda\SourcePageJoin{11}{16}mental to the whole of nonrelativistic quantum mechanics. It alone makes possible the concept of a wave function, which is basic to the formalism of the theory. The physical meaning of $\psi(q)$ is that its squared modulus gives the probability that a measurement performed at the given instant will yield one or another value of the electron coordinate. A necessary premise for introducing such a probability is plainly the possibility, in principle, of measuring the coordinate with unlimited accuracy and speed. Without that possibility, the probability would have no subject and would lose its physical meaning.
+
+The existence of a limiting speed, the speed of light $c$, places new fundamental restrictions on the measurement of physical quantities (\emph{L.\,D.~Landau, R.~Peierls}, 1930).
+
+In volume~III, \S~44, the relation
+\begin{equation}
+(v' - v)\,\Delta p\,\Delta t \sim \hbar,
+\tag{1.1}
+\end{equation}
+was obtained between the uncertainty $\Delta p$ in a measurement of the electron momentum and the duration $\Delta t$ of the measurement process itself; $v$ and $v'$ are the electron velocities before and after the measurement. According to this relation, measuring the momentum accurately in a short time (small $\Delta p$ together with small $\Delta t$) is possible only at the cost of a sufficiently large change in velocity caused by the measurement itself. In nonrelativistic theory, this expresses the impossibility of repeating a momentum measurement after a short interval, but does not affect the possibility in principle of a single momentum measurement of unlimited accuracy, since $v' - v$ may be made arbitrarily large.
+
+A limiting speed changes the situation completely. Neither $v' - v$ nor the velocities themselves can now exceed $c$ (more precisely, $2c$). Replacing $v' - v$ in~(1.1) by $c$, we obtain
+\begin{equation}
+\Delta p\,\Delta t \sim \hbar/c,
+\tag{1.2}
+\end{equation}
+which sets the best accuracy in momentum measurement that is attainable in principle for a given measurement time $\Delta t$. Thus relativistic theory makes an arbitrarily rapid and accurate momentum measurement fundamentally impossible. Exact momentum measurement, $\Delta p \to 0$, is possible only in the limit of an infinitely long measurement.
+
+There are reasons to expect that the measurability of the electron coordinate by itself is also altered. In the \SourcePage{12}{17}mathematical formalism, this appears as an incompatibility between exact coordinate measurement and the requirement that the energy of a free particle be positive. We shall see that a complete system of eigenfunctions of the relativistic wave equation for a free particle contains not only solutions with the ``proper'' time dependence, but also solutions of ``negative frequency.'' In general, these functions also enter the expansion of a wave packet representing an electron localized in a small region of space.
+
+As will be shown, negative-frequency wave functions are connected with the existence of antiparticles, the positrons. Their occurrence in the wave-packet expansion expresses the generally unavoidable creation of electron-positron pairs during a measurement of the electron coordinates. The production of new particles, uncontrolled by the measurement process itself, deprives a measurement of the electron coordinates of meaning.
+
+In the electron rest frame, the least uncertainty in measuring its coordinates is
+\begin{equation}
+\Delta q \sim \hbar/mc.
+\tag{1.3}
+\end{equation}
+This value, which is also the only one allowed by dimensional considerations, corresponds to a momentum uncertainty $\Delta p \sim mc$ and hence to the minimum threshold energy for pair creation.
+
+In a reference frame in which the electron has energy $\varepsilon$, equation~(1.3) is replaced by
+\begin{equation}
+\Delta q \sim c\hbar/\varepsilon.
+\tag{1.4}
+\end{equation}
+
+In particular, in the limiting ultrarelativistic case, energy and momentum obey $\varepsilon \approx cp$, and consequently
+\begin{equation}
+\Delta q \sim \hbar/p,
+\tag{1.5}
+\end{equation}
+so the uncertainty $\Delta q$ equals the particle's de Broglie wavelength\footnote{We mean measurements for which every possible experimental outcome permits a conclusion about the state of the electron. Thus we exclude coordinate measurements made by collisions when, during the observation time, the relevant outcome does not occur with probability~1. A particle's deflection in such a case permits a conclusion about the electron's location, but the absence of a deflection permits no conclusion at all.}.
+
+For photons the ultrarelativistic case always applies, and therefore~(1.5) is valid. It follows that photon coordinates are meaningful only when the characteristic dimensions are large compared with the wavelength. This is precisely the ``classical'' limiting case of geometrical optics, in which \SourcePage{13}{18}light may be said to propagate along definite paths, the rays. In the quantum case, when the wavelength cannot be regarded as small, the notion of photon coordinates has no subject. We shall see below (see \S~4) that within the mathematical formalism, the unmeasurability of photon coordinates already appears in the impossibility of constructing from the photon wave function a quantity that could serve as a probability density and meet the necessary requirements of relativistic invariance.
+
+The preceding considerations naturally suggest that a future theory will abandon any description of the time course of particle-interaction processes. Such a theory will show that these processes have no exactly definable characteristics, even within ordinary quantum-mechanical accuracy. A description in time would then prove as illusory as the classical trajectories of nonrelativistic quantum mechanics. The only observable quantities would be properties such as the momenta and polarizations of free particles: the initial particles entering the interaction and the final particles produced by it (\emph{L.\,D.~Landau, R.~Peierls}, 1930).
+
+A characteristic problem in relativistic quantum theory is to determine probability amplitudes for transitions connecting specified initial and final states of a particle system, that is, its states at $t \to \mp\infty$. The collection of transition amplitudes between all possible states forms the \emph{scattering matrix}, or \emph{$S$-matrix}. This matrix contains all physically observable information about particle-interaction processes (\emph{W.~Heisenberg}, 1938).
+
+At present, a complete and logically closed relativistic quantum theory does not yet exist. We shall see that the existing theory introduces new physical features into the description of particle states, giving that description some aspects of field theory (see \S~10). Nevertheless, it is built to a considerable extent on the pattern and concepts of ordinary quantum mechanics. This construction has been successful in quantum electrodynamics. Its lack of complete logical closure is manifested by divergent expressions that arise when its mathematical apparatus is applied directly, although definite procedures exist for removing those divergences. These procedures still retain much of the character of semi-empirical prescriptions, and confidence in the results obtained from them rests ultimately on their excellent agreement with experiment rather than on the internal consistency and logical coherence of the theory's basic principles.

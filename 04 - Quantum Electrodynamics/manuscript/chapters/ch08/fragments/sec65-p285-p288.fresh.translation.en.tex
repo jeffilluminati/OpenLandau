@@ -1,0 +1,156 @@
+\SourcePage{285}{290}
+\section{Reactions involving polarized particles}
+
+In this section we use simple examples to show how the polarization states of particles taking part in a reaction are included in calculating its cross section.
+
+Suppose there is one electron in each of the initial and final states. The scattering amplitude then has the form
+\begin{equation}
+M_{fi}=\overline{u'}Au\;(\equiv\overline{u'_i}A_{ik}u_k),
+\tag{65.1}
+\end{equation}
+where $u,u'$ are the bispinor amplitudes of the initial and final electrons, and $A$ is a matrix (depending on the momenta and polarizations of any other particles taking part in the reaction).
+
+The scattering cross section is proportional to $|M_{fi}|^2$. We have
+\[
+(\overline{u'}Au)^*=u_i'{}^*\gamma^{0*}A^*u_k^*=u^*A^+\gamma^{0+}u',
+\]
+or
+\begin{equation}
+(\overline{u'}Au)^*=\overline u\,\overline A u',
+\tag{65.2}
+\end{equation}
+where\footnote{For later use in forming $\overline A$, note the readily verified relations
+\begin{equation}
+\overline{\gamma^\mu}=\gamma^\mu,\quad
+\overline{\gamma^\mu\gamma^\nu\ldots\gamma^\rho}=\gamma^\rho\ldots\gamma^\nu\gamma^\mu,\quad
+\overline{\gamma^5}=-\gamma^5,\quad
+\overline{\gamma^5\gamma^\mu}=\gamma^5\gamma^\mu.
+\tag{65.2a}
+\end{equation}}
+\[
+\overline A=\gamma^0A^+\gamma^0.
+\]
+Thus
+\begin{equation}
+|M_{fi}|^2=(\overline{u'}Au)(\overline u\,\overline A u')
+=u'_i\overline{u'_k}A_{kl}u_l\overline u_m\overline A_{mi}.
+\tag{65.3}
+\end{equation}
+
+If the initial electron is in a mixed (partially polarized) state with density matrix $\rho$, and the final electron is to be detected in a specified polarization state $\rho'$, replace the products of bispinor components by
+\[
+u'_i\overline{u'_k}\to\rho'_{ik},\qquad u_l\overline u_m\to\rho_{lm}.
+\]
+Then
+\begin{equation}
+|M_{fi}|^2=\Tr(\rho'A\rho\overline A).
+\tag{65.4}
+\end{equation}
+The density matrices $\rho,\rho'$ are given by (29.13):
+\begin{equation}
+\rho=\frac12(\gamma p+m)[1-\gamma^5(\gamma a)]
+\tag{65.5}
+\end{equation}
+(and similarly for $\rho'$).
+
+For an unpolarized initial electron,
+\begin{equation}
+\rho=\frac12(\gamma p+m).
+\tag{65.6}
+\end{equation}
+
+\SourcePage{286}{291}
+Substitution of this expression is equivalent to averaging over the electron polarizations. If the cross section is required with arbitrary final-electron polarization, one must also put $\rho'=(\gamma p'+m)/2$ and double the result; this is equivalent to summing over the final-electron polarizations. Hence
+\begin{equation}
+\frac12\sum_{\text{pol}}|M_{fi}|^2
+=\frac12\Tr\{(\gamma p'+m)A(\gamma p+m)\overline A\},
+\tag{65.7}
+\end{equation}
+where $\sum_{\text{pol}}$ denotes summation over initial and final polarizations, and the factor $1/2$ converts one of the sums into an average.
+
+The density matrix $\rho'$ in (65.4) is an auxiliary concept that essentially describes the detector, which selects a particular final-electron polarization, rather than the scattering process itself. We may instead ask for the polarization state into which the scattering process itself places the electron. If $\rho^{(f)}$ is its density matrix, the probability of detecting the electron in state $\rho'$ is obtained by projecting $\rho^{(f)}$ onto $\rho'$, that is, by forming $\Tr(\rho^{(f)}\rho')$. The corresponding cross section, and hence $|M_{fi}|^2$, is proportional to the same quantity. Comparison with (65.4) gives
+\begin{equation}
+\rho^{(f)}\sim A\rho\overline A.
+\tag{65.8}
+\end{equation}
+Since $\rho^{(f)}$ must have the form (65.5) with some 4-vector $a^{(f)}$, the problem reduces to determining this vector. Formula (29.14) could be used, but the procedure below is still simpler.
+
+We saw in \S~29 that the components of $a$ are expressed through the components of the 3-vector $\boldsymbol\zeta$, the mean doubled electron spin in its rest frame. Electron polarization states are completely specified by these vectors, so it is useful to express the cross section in terms of them as well. Evidently, $|M_{fi}|^2$ is linear in each of the vectors $\boldsymbol\zeta,\boldsymbol\zeta'$ belonging to the initial and final electrons. As a function of $\boldsymbol\zeta'$ it has the form
+\begin{equation}
+|M_{fi}|^2=\alpha+\boldsymbol\beta\boldsymbol\zeta',
+\tag{65.9}
+\end{equation}
+where $\alpha,\boldsymbol\beta$ are themselves linear functions of $\boldsymbol\zeta$.
+
+The vector $\boldsymbol\zeta'$ in (65.9) is the specified final-electron polarization selected by the detector. The vector $\boldsymbol\zeta^{(f)}$ corresponding to $\rho^{(f)}$ is found as follows. From the preceding discussion,
+\[
+|M_{fi}|^2\sim\Tr(\rho'\rho^{(f)}).
+\]
+
+\SourcePage{287}{292}
+This invariant may be calculated in any frame. In the final electron's rest frame, (29.20) gives
+\[
+\rho'\rho^{(f)}\sim(1+\boldsymbol\sigma\boldsymbol\zeta')(1+\boldsymbol\sigma\boldsymbol\zeta^{(f)}).
+\]
+Therefore
+\[
+|M_{fi}|^2\sim1+\boldsymbol\zeta'\boldsymbol\zeta^{(f)},
+\]
+and comparison with (65.9) gives
+\begin{equation}
+\boldsymbol\zeta^{(f)}=\boldsymbol\beta/\alpha.
+\tag{65.10}
+\end{equation}
+Thus calculating the cross section as a function of the parameter $\boldsymbol\zeta'$ also determines the polarization $\boldsymbol\zeta^{(f)}$.
+
+More complicated cases, with more than one initial or final electron, are treated analogously by the same scheme.
+
+For example, with two electrons in both the initial and final states, the amplitude is
+\[
+M_{fi}=(\overline{u'_1}Au_1)(\overline{u'_2}Bu_2)+(\overline{u'_2}Cu_1)(\overline{u'_1}Du_2),
+\]
+where $u_1,u_2$ are the initial and $u'_1,u'_2$ the final bispinor amplitudes. Forming $|M_{fi}|^2$ produces terms of the form
+\[
+|\overline{u'_1}Au_1|^2|\overline{u'_2}Bu_2|^2
+\]
+and terms of the form
+\[
+(\overline{u'_1}Au_1)(\overline{u'_2}Bu_2)(\overline{u'_2}Cu_1)^*(\overline{u'_1}Du_2)^*.
+\]
+The first reduce to products of two traces of the form (65.4), and the second to traces of the form
+\[
+\Tr(\rho'_1A\rho_1\overline C\rho'_2B\rho_2\overline D).
+\]
+
+Positrons are described by ``negative-frequency'' amplitudes $u(-p)$. For reactions involving positrons, the only change is to use density matrices differing from (65.5), (65.6) by reversal of the sign before $m$ (cf. (29.16), (29.17)).
+
+We now turn to the polarization states of photons participating in the reaction.
+
+The polarization of each initial photon enters the scattering amplitude linearly as a 4-vector $e$, and that of each final photon as $e^*$. In both cases the cross section, that is $|M_{fi}|^2$, contains the 4-tensor $e_\mu e_\nu^*$. For an arbitrary partially polarized state this tensor must
+
+\SourcePage{288}{293}
+be replaced by the four-dimensional density matrix, the 4-tensor $\rho_{\mu\nu}$:
+\begin{equation}
+e_\mu e_\nu^*\to\rho_{\mu\nu}.
+\tag{65.11}
+\end{equation}
+In particular, for an unpolarized photon, (8.15) gives
+\begin{equation}
+\rho_{\mu\nu}=-g_{\mu\nu}/2.
+\tag{65.12}
+\end{equation}
+Thus averaging over photon polarizations reduces to contraction in $|M_{fi}|^2$ over the corresponding pair of tensor indices $\mu\nu$.\footnote{Expression (65.12) formally reduces averaging over the two physically possible photon polarizations to averaging over four independent directions of the 4-vector $e$.}
+
+To sum, rather than average, over photon polarizations, replace $e_\mu e_\nu^*$ by twice this expression:
+\begin{equation}
+e_\mu e_\nu^*\to-g_{\mu\nu}.
+\tag{65.13}
+\end{equation}
+
+The density matrix of a polarized photon is given by (8.17). The choice of the 4-vectors $e^{(1)},e^{(2)}$ occurring there is generally dictated by the particular problem. Sometimes they may be tied to specified spatial directions in a particular frame; in other cases it is more convenient to relate them to characteristic 4-vectors in the problem, namely particle 4-momenta.
+
+In (8.17), photon polarization is described by the Stokes parameters forming the ``vector'' $\boldsymbol\xi=(\xi_1,\xi_2,\xi_3)$. As for the electron, the polarization $\boldsymbol\xi^{(f)}$ of the final photon itself must be distinguished from the polarization $\boldsymbol\xi'$ selected by the detector. If the squared amplitude is known as a function of $\boldsymbol\xi'$,
+\[
+|M_{fi}|^2=\alpha+\boldsymbol\beta\boldsymbol\xi',
+\]
+then $\boldsymbol\xi^{(f)}=\boldsymbol\beta/\alpha$, in analogy with (65.10).

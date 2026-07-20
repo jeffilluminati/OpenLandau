@@ -1,0 +1,289 @@
+\SourcePage{320}{325}
+\section{Feynman diagrams for electron scattering}
+
+We shall use specific examples to show how scattering-matrix elements are calculated. These examples will facilitate the subsequent formulation of the general rules of invariant perturbation theory.
+
+The current operator $\hat j$ contains a product of two electron $\psi$ operators. First-order perturbation theory could therefore give processes involving only three particles in the initial and final states: two electrons from $\hat j$ and one photon from $\hat A$. Such processes between free particles are impossible, however, because energy--momentum conservation forbids them. If $p_1,p_2$ are the electron 4-momenta and $k$ the photon 4-momentum, conservation would require $k=p_2-p_1$ or $k=p_2+p_1$. These equalities are impossible because $k^2=0$ for a photon, whereas $(p_2\pm p_1)^2$ is necessarily nonzero. Evaluating this invariant in the rest frame of one electron gives
+\[
+(p_2\pm p_1)^2=2(m^2\pm p_1p_2)=2(m^2\pm\varepsilon_1\varepsilon_2\mp\mathbf p_1\mathbf p_2)=2m(m\pm\varepsilon_2).
+\]
+Since $\varepsilon_2>m$,
+\begin{equation}
+(p_2+p_1)^2>0,\qquad (p_2-p_1)^2<0.
+\tag{73.1}
+\end{equation}
+
+The first nonvanishing off-diagonal elements of the $S$-matrix can therefore occur only in second order. All such processes are contained in the second-order operator obtained by expanding (72.12):
+\[
+\hat S^{(2)}=-\frac{e^2}{2!}\iint d^4x\,d^4x'\cdot
+\mathop{\mathrm T}\bigl(\hat j^\mu(x)\hat A_\mu(x)\hat j^\nu(x')\hat A_\nu(x')\bigr).
+\]
+Since electron and photon operators commute with one another, this chronological product may
+
+\SourcePage{321}{326}
+be separated into two:
+\begin{equation}
+\hat S^{(2)}=-\frac{e^2}{2!}\iint d^4x\,d^4x'\cdot
+\mathop{\mathrm T}\bigl(\hat j^\mu(x)\hat j^\nu(x')\bigr)
+\mathop{\mathrm T}\bigl(\hat A_\mu(x)\hat A_\nu(x')\bigr).
+\tag{73.2}
+\end{equation}
+
+As a first example, consider elastic scattering of two electrons. Initially their 4-momenta are $p_1,p_2$, and finally $p_3,p_4$. All electrons are also understood to be in specified spin states; spin-variable indices are suppressed throughout.
+
+Since neither state contains photons, the required matrix element of the photon chronological product is the diagonal element $\langle0|\ldots|0\rangle$, where $|0\rangle$ denotes the photon vacuum. This vacuum expectation value is, for each $\mu\nu$, a function of the coordinates $x,x'$. Homogeneity of 4-space permits dependence only on $x-x'$. The tensor
+\begin{equation}
+D_{\mu\nu}(x-x')=i\langle0|\mathop{\mathrm T}\hat A_\mu(x)\hat A_\nu(x')|0\rangle
+\tag{73.3}
+\end{equation}
+is called the \emph{photon propagation function}, or \emph{photon propagator}. Its explicit form will be found in \S~76.
+
+For the electron chronological product we require
+\begin{equation}
+\langle34|\mathop{\mathrm T}\hat j^\mu(x)\hat j^\nu(x')|12\rangle,
+\tag{73.4}
+\end{equation}
+where $|12\rangle,|34\rangle$ denote the corresponding two-electron states. It may also be written as a vacuum expectation value using
+\[
+\langle2|\hat F|1\rangle=\langle0|\hat a_2\hat F\hat a_1^+|0\rangle,
+\]
+where $\hat F$ is arbitrary and $\hat a_1^+,\hat a_2$ respectively create the first and annihilate the second electron. Thus instead of (73.4) we may calculate
+\begin{equation}
+\langle0|\hat a_3\hat a_4\mathop{\mathrm T}\bigl(\hat j^\mu(x)\hat j^\nu(x')\bigr)\hat a_2^+\hat a_1^+|0\rangle
+\tag{73.5}
+\end{equation}
+(the indices abbreviate $p_1,p_2,\ldots$).
+
+Each current is $\hat j=\widehat{\bar\psi}\gamma\hat\psi$, and each $\psi$ operator is
+\begin{equation}
+\hat\psi=\sum_{\mathbf p}\bigl(\hat a_{\mathbf p}\psi_{\mathbf p}+\hat b_{\mathbf p}^+\psi_{-\mathbf p}\bigr),
+\qquad
+\widehat{\bar\psi}=\sum_{\mathbf p}\bigl(\hat a_{\mathbf p}^+\bar\psi_{\mathbf p}+\hat b_{\mathbf p}\bar\psi_{-\mathbf p}\bigr)
+\tag{73.6}
+\end{equation}
+(the second terms contain positron operators, which do not contribute here). The product $\hat j^\mu(x)\hat j^\nu(x')$
+
+\SourcePage{322}{327}
+is a sum of terms each containing two $\hat a_{\mathbf p}$ and two $\hat a_{\mathbf p}^+$. They must annihilate electrons 1,2 and create electrons 3,4; they are therefore $\hat a_1,\hat a_2,\hat a_3^+,\hat a_4^+$. These are said to be \emph{contracted} with the external operators $\hat a_1^+,\hat a_2^+,\hat a_3,\hat a_4$ in (73.5), and cancel by
+\begin{equation}
+\langle0|\hat a_{\mathbf p}\hat a_{\mathbf p}^+|0\rangle=1.
+\tag{73.7}
+\end{equation}
+
+Depending on which $\psi$ operators supply $\hat a_1,\hat a_2,\hat a_3^+,\hat a_4^+$, (73.5) contains four terms:
+\newcommand{\SecLXXIIIWickNode}[2]{\tikz[baseline=(#1.base),remember picture]{\node[inner sep=0pt](#1){$#2$};}}
+\begin{equation}
+\begin{aligned}
+(73.5)={}&\SecLXXIIIWickNode{aa3}{\hat a_3}\SecLXXIIIWickNode{aa4}{\hat a_4}
+(\SecLXXIIIWickNode{aab}{\widehat{\bar\psi}}\gamma^\mu\SecLXXIIIWickNode{aap}{\hat\psi})
+(\SecLXXIIIWickNode{aabp}{\widehat{\bar\psi'}}\gamma^\nu\SecLXXIIIWickNode{aapp}{\hat\psi'})
+\SecLXXIIIWickNode{aa2}{\hat a_2^+}\SecLXXIIIWickNode{aa1}{\hat a_1^+}\\[1.5ex]
+&+\SecLXXIIIWickNode{bb3}{\hat a_3}\SecLXXIIIWickNode{bb4}{\hat a_4}
+(\SecLXXIIIWickNode{bbb}{\widehat{\bar\psi}}\gamma^\mu\SecLXXIIIWickNode{bbp}{\hat\psi})
+(\SecLXXIIIWickNode{bbbp}{\widehat{\bar\psi'}}\gamma^\nu\SecLXXIIIWickNode{bbpp}{\hat\psi'})
+\SecLXXIIIWickNode{bb2}{\hat a_2^+}\SecLXXIIIWickNode{bb1}{\hat a_1^+}\\[1.5ex]
+&+\SecLXXIIIWickNode{cc3}{\hat a_3}\SecLXXIIIWickNode{cc4}{\hat a_4}
+(\SecLXXIIIWickNode{ccb}{\widehat{\bar\psi}}\gamma^\mu\SecLXXIIIWickNode{ccp}{\hat\psi})
+(\SecLXXIIIWickNode{ccbp}{\widehat{\bar\psi'}}\gamma^\nu\SecLXXIIIWickNode{ccpp}{\hat\psi'})
+\SecLXXIIIWickNode{cc2}{\hat a_2^+}\SecLXXIIIWickNode{cc1}{\hat a_1^+}\\[1.5ex]
+&+\SecLXXIIIWickNode{dd3}{\hat a_3}\SecLXXIIIWickNode{dd4}{\hat a_4}
+(\SecLXXIIIWickNode{ddb}{\widehat{\bar\psi}}\gamma^\mu\SecLXXIIIWickNode{ddp}{\hat\psi})
+(\SecLXXIIIWickNode{ddbp}{\widehat{\bar\psi'}}\gamma^\nu\SecLXXIIIWickNode{ddpp}{\hat\psi'})
+\SecLXXIIIWickNode{dd2}{\hat a_2^+}\SecLXXIIIWickNode{dd1}{\hat a_1^+},
+\end{aligned}
+\begin{tikzpicture}[remember picture,overlay,line width=.45pt]
+\draw (aa4.north) .. controls +(0,.24) and +(0,.24) .. (aab.north);
+\draw (aap.south) .. controls +(0,-.30) and +(0,-.30) .. (aa2.south);
+\draw (aa3.north) .. controls +(0,.46) and +(0,.46) .. (aabp.north);
+\draw (aapp.south) .. controls +(0,-.20) and +(0,-.20) .. (aa1.south);
+\draw (bb3.north) .. controls +(0,.24) and +(0,.24) .. (bbb.north);
+\draw (bbp.south) .. controls +(0,-.42) and +(0,-.42) .. (bb1.south);
+\draw (bb4.north) .. controls +(0,.46) and +(0,.46) .. (bbbp.north);
+\draw (bbpp.south) .. controls +(0,-.20) and +(0,-.20) .. (bb2.south);
+\draw (cc3.north) .. controls +(0,.24) and +(0,.24) .. (ccb.north);
+\draw (ccp.south) .. controls +(0,-.30) and +(0,-.30) .. (cc2.south);
+\draw (cc4.north) .. controls +(0,.46) and +(0,.46) .. (ccbp.north);
+\draw (ccpp.south) .. controls +(0,-.34) and +(0,-.34) .. (cc1.south);
+\draw (dd4.north) .. controls +(0,.24) and +(0,.24) .. (ddb.north);
+\draw (ddp.south) .. controls +(0,-.42) and +(0,-.42) .. (dd1.south);
+\draw (dd3.north) .. controls +(0,.46) and +(0,.46) .. (ddbp.north);
+\draw (ddpp.south) .. controls +(0,-.20) and +(0,-.20) .. (dd2.south);
+\end{tikzpicture}
+\tag{73.8}
+\end{equation}
+where $\psi=\psi(x)$, $\psi'=\psi(x')$, and arcs join contracted operators, those supplying a pair $\hat a,\hat a^+$ for cancellation by (73.7). In each term, successive interchanges bring conjugate operators into adjacent pairs. Since all these operators anticommute (states 1,2,3,4 are distinct),\footnote{Because of this anticommutativity, the operators $\hat j(x),\hat j(x')$ may here be regarded as commuting when the matrix element is evaluated, and the chronological-ordering symbol may be omitted.} (73.4) is
+\begin{equation}
+\begin{aligned}
+\langle34|\mathop{\mathrm T}\hat j^\mu(x)\hat j^\nu(x')|12\rangle={}&
+(\bar\psi_4\gamma^\mu\psi_2)(\bar\psi_3'\gamma^\nu\psi_1')
++(\bar\psi_3\gamma^\mu\psi_1)(\bar\psi_4'\gamma^\nu\psi_2')\\
+&-(\bar\psi_3\gamma^\mu\psi_2)(\bar\psi_4'\gamma^\nu\psi_1')
+-(\bar\psi_4\gamma^\mu\psi_1)(\bar\psi_3'\gamma^\nu\psi_2').
+\end{aligned}
+\tag{73.9}
+\end{equation}
+The overall sign is conventional and depends on the ordering of the external electron operators in (73.5), as is generally true for identical-fermion scattering. The relative signs are independent of that ordering.
+
+The two terms in the first and second lines of (73.9) differ only by simultaneous interchange of $\mu,\nu$ and $x,x'$. This interchange also leaves (73.3) unchanged, since the ordering of its factors is in any case fixed by $\mathrm T$. After multiplication of (73.3) by (73.9) and integration over $d^4x\,d^4x'$, the four terms therefore give equal results in pairs, and
+
+\SourcePage{323}{328}
+\begin{equation}
+\begin{aligned}
+S_{fi}=ie^2\iint d^4x\,d^4x'\cdot D_{\mu\nu}(x-x')
+\bigl\{&(\bar\psi_4\gamma^\mu\psi_2)(\bar\psi_3'\gamma^\nu\psi_1')\\
+&-(\bar\psi_4\gamma^\mu\psi_1)(\bar\psi_3'\gamma^\nu\psi_2')\bigr\}
+\end{aligned}
+\tag{73.10}
+\end{equation}
+(notice that the factor $1/2!$ has disappeared).
+
+The electron wave functions are the plane waves (64.8), so the expression in braces is
+\[
+\begin{aligned}
+\{\ldots\}={}&(\bar u_4\gamma^\mu u_2)(\bar u_3\gamma^\nu u_1)
+e^{-i(p_2-p_4)x-i(p_1-p_3)x'}-\\
+&-(\bar u_4\gamma^\mu u_1)(\bar u_3\gamma^\nu u_2)
+e^{-i(p_1-p_4)x-i(p_2-p_3)x'}={}\\
+={}&\bigl\{(\bar u_4\gamma^\mu u_2)(\bar u_3\gamma^\nu u_1)
+e^{-i[(p_2-p_4)+(p_3-p_1)]\xi/2}-\\
+&-(\bar u_4\gamma^\mu u_1)(\bar u_3\gamma^\nu u_2)
+e^{-i[(p_1-p_4)+(p_3-p_2)]\xi/2}\bigr\}
+e^{-i(p_1+p_2-p_3-p_4)X},
+\end{aligned}
+\]
+where $X=(x+x')/2$, $\xi=x-x'$. Replace integration over $d^4x\,d^4x'$ by integration over $d^4\xi\,d^4X$. The $d^4X$ integral gives a delta function, enforcing $p_1+p_2=p_3+p_4$. Passing from $S$ to $M$ as in \S~64 gives the scattering amplitude
+\begin{equation}
+\begin{aligned}
+M_{fi}=e^2\bigl\{&(\bar u_4\gamma^\mu u_2)D_{\mu\nu}(p_4-p_2)(\bar u_3\gamma^\nu u_1)-\\
+&-(\bar u_4\gamma^\mu u_1)D_{\mu\nu}(p_4-p_1)(\bar u_3\gamma^\nu u_2)\bigr\}.
+\end{aligned}
+\tag{73.11}
+\end{equation}
+Here the momentum-representation photon propagator has been introduced:
+\begin{equation}
+D_{\mu\nu}(k)=\int D_{\mu\nu}(\xi)e^{ik\xi}\,d^4\xi.
+\tag{73.12}
+\end{equation}
+
+Each of the two terms in (73.11) may be represented symbolically by a \emph{Feynman diagram}. The first is
+\begin{equation}
+e^2(\bar u_4\gamma^\mu u_2)D_{\mu\nu}(k)(\bar u_3\gamma^\nu u_1)=
+\begin{tikzpicture}[baseline=-.45ex,x=.72cm,y=.72cm,>=Stealth,line width=.6pt,font=\small]
+\coordinate (u) at (0,.55); \coordinate (d) at (0,-.55);
+\draw[->] (1.15,1.12) node[right] {$p_1$} -- (u);
+\draw[->] (u) -- (-1.15,1.12) node[left] {$p_3$};
+\draw[->] (1.15,-1.12) node[right] {$p_2$} -- (d);
+\draw[->] (d) -- (-1.15,-1.12) node[left] {$p_4$};
+\draw[dashed,->] (u)--(d) node[midway,right] {$k$};
+\end{tikzpicture}
+\tag{73.13}
+\end{equation}
+Each intersection of lines, or \emph{vertex}, supplies a factor $\gamma$. Incoming solid lines directed toward a vertex represent initial electrons and supply the bispinor amplitudes $u$; outgoing solid lines directed away represent final electrons and supply $\bar u$. When a diagram is read, these factors are written from left to right in the order encountered along solid lines against the arrows. The two vertices are joined by a dashed line representing a \emph{virtual} photon emitted at one vertex and absorbed at the other; it supplies $-iD_{\mu\nu}(k)$. Its 4-momentum is fixed by conservation at a vertex: here $k=p_1-p_3=p_4-p_2$. The whole diagram also supplies $(-ie)^2$, the exponent being the number of vertices, and in this form contributes to $iM_{fi}$. Similarly, the second term is
+
+\SourcePage{324}{329}
+\begin{equation}
+e^2(\bar u_4\gamma^\mu u_1)D_{\mu\nu}(k')(\bar u_3\gamma^\nu u_2)=
+\begin{tikzpicture}[baseline=-.45ex,x=.72cm,y=.72cm,>=Stealth,line width=.6pt,font=\small]
+\coordinate (u) at (0,.55); \coordinate (d) at (0,-.55);
+\draw[->] (1.15,1.12) node[right] {$p_1$} -- (u);
+\draw[->] (u) -- (-1.15,1.12) node[left] {$p_4$};
+\draw[->] (1.15,-1.12) node[right] {$p_2$} -- (d);
+\draw[->] (d) -- (-1.15,-1.12) node[left] {$p_3$};
+\draw[dashed,->] (u)--(d) node[midway,right] {$k'$};
+\end{tikzpicture}
+\tag{73.14}
+\end{equation}
+where $k'=p_1-p_4=p_3-p_2$. The diagram may be read starting from either the $p_3$ or $p_4$ end; the results coincide because $D_{\mu\nu}$ is symmetric. The virtual-photon line may likewise be oriented either way: reversing it merely changes the sign of $k$, which is immaterial because $D_{\mu\nu}(k)$ is even (see \S~76).
+
+Lines representing initial and final particles are called \emph{external lines}, or \emph{free ends}. Diagrams (73.13), (73.14) differ by exchange of the two free electron ends $p_3,p_4$. Exchanging two fermions reverses the sign of a diagram, corresponding to the opposite signs of the two terms in (73.11).
+
+We shall always use Feynman diagrams in this momentum representation. They can also be associated with the coordinate-representation terms of (73.10): electron amplitudes are then coordinate wave functions, propagators are in coordinate space, and each vertex corresponds to an integration variable ($x$ or $x'$). Factors belonging to lines meeting at a vertex are evaluated at that variable.
+
+\SourcePage{325}{330}
+Now consider electron--positron scattering. Denote the initial momenta by $p_-,p_+$ and the final momenta by $p_-',p_+'$.
+
+Positron creation and annihilation operators occur in (73.6) together with electron annihilation and creation operators, respectively. Previously, $\hat\psi$ annihilated both initial particles and $\widehat{\bar\psi}$ created both final ones; here their roles are opposite for the electron and positron. Thus the initial positron is described by $\bar u(-p_+)$ and the final positron by $u(-p_+')$, both with reversed 4-momentum. Allowing for this difference gives\footnote{For scattering of nonidentical particles, the overall sign of the amplitude is fixed. In (73.5), the external operators must be arranged so that both electron operators stand at the edges,
+\[
+\langle0|a'b'\ldots b^+a^+|0\rangle
+\]
+(or both in the middle); this ensures the same sign for the initial and final vacuum states. The overall sign can also be checked from the nonrelativistic limit: in \S~81 we shall see that the second term in (73.15) tends to zero, while the first tends to the Born amplitude for Rutherford scattering.}
+\begin{equation}
+\begin{aligned}
+M_{fi}={}&-e^2\bigl(\bar u(p_-')\gamma^\mu u(p_-)\bigr)D_{\mu\nu}(p_--p_-')
+\bigl(\bar u(-p_+)\gamma^\nu u(-p_+')\bigr)+\\
+&+e^2\bigl(\bar u(-p_+)\gamma^\mu u(p_-)\bigr)D_{\mu\nu}(p_-+p_+)
+\bigl(\bar u(p_-')\gamma^\nu u(-p_+')\bigr).
+\end{aligned}
+\tag{73.15}
+\end{equation}
+The two terms are represented by
+\begin{equation}
+\begin{tikzpicture}[baseline=-.45ex,x=.68cm,y=.68cm,>=Stealth,line width=.6pt,font=\small]
+\coordinate (u) at (0,.55); \coordinate (d) at (0,-.55);
+\draw[->] (1.2,1.1) node[right] {$p_-$} -- (u);
+\draw[->] (u) -- (-1.2,1.1) node[left] {$p_-'$};
+\draw[->] (d) -- (-1.2,-1.1) node[left] {$-p_+$};
+\draw[->] (1.2,-1.1) node[right] {$-p_+'$} -- (d);
+\draw[dashed,->] (u)--(d) node[midway,right] {$p_--p_-'$};
+\end{tikzpicture}
+\qquad
+\begin{tikzpicture}[baseline=-.45ex,x=.68cm,y=.68cm,>=Stealth,line width=.6pt,font=\small]
+\coordinate (u) at (0,.55); \coordinate (d) at (0,-.55);
+\draw[->] (1.2,1.1) node[right] {$p_-$} -- (u);
+\draw[->] (u) -- (-1.2,1.1) node[left] {$-p_+$};
+\draw[->] (d) -- (-1.2,-1.1) node[left] {$p_-'$};
+\draw[->] (1.2,-1.1) node[right] {$-p_+'$} -- (d);
+\draw[dashed,->] (u)--(d) node[midway,right] {$p_-+p_+$};
+\end{tikzpicture}
+\tag{73.16}
+\end{equation}
+The diagram rules change only for positrons. Incoming solid lines still supply $u$ and outgoing lines $\bar u$, but incoming lines now represent final positrons and outgoing lines initial positrons, with all positron momenta reversed.
+
+The diagrams in (73.16) have different characters. In the first, initial and final electron lines meet at one vertex, and initial and final positron lines at the other. In the second, electron and positron lines meet at each vertex: the pair appears to annihilate into a virtual photon at the upper vertex and to be created from it at the lower.
+
+This difference is reflected in the virtual photons. In the first, the scattering-type diagram, the virtual-photon 4-momentum is the difference of two electron or positron 4-momenta, so $k^2<0$. In the annihilation diagram, $k'=p_-+p_+$, hence $k'^2>0$. For a virtual photon always $k^2\ne0$, unlike a real photon, for which $k^2=0$.
+
+If the colliding particles are neither identical nor particle and antiparticle, say an electron and a muon, only one diagram occurs:
+
+\SourcePage{326}{331}
+\begin{equation}
+\begin{tikzpicture}[baseline=-.45ex,x=.72cm,y=.72cm,>=Stealth,line width=.6pt,font=\small]
+\coordinate (u) at (0,.55); \coordinate (d) at (0,-.55);
+\draw[->] (1.15,1.12) node[right] {$p^{(e)}$} -- (u);
+\draw[->] (u) -- (-1.15,1.12) node[left] {$p^{(e)'}$};
+\draw[->] (1.15,-1.12) node[right] {$p^{(\mu)}$} -- (d);
+\draw[->] (d) -- (-1.15,-1.12) node[left] {$p^{(\mu)'}$};
+\draw[dashed,->] (u)--(d) node[midway,right] {$k$};
+\end{tikzpicture}
+\tag{73.17}
+\end{equation}
+An annihilation- or exchange-type diagram is impossible. Analytically, write the current as
+\[
+\hat j=\hat j^{(e)}+\hat j^{(\mu)}
+=(\widehat{\bar\psi}^{(e)}\gamma\hat\psi^{(e)})
++(\widehat{\bar\psi}^{(\mu)}\gamma\hat\psi^{(\mu)})
+\]
+and in $\hat j^\mu(x)\hat j^\nu(x')$ take matrix elements of the terms producing the required annihilations and creations.
+
+Return to the first-order processes forbidden by 4-momentum conservation. Matrix elements of
+\begin{equation}
+\hat S^{(1)}=-ie\int\hat j(x)\hat A(x)\,d^4x
+\tag{73.18}
+\end{equation}
+describe creation or annihilation at one point $x$ of three real particles, two electrons and a photon. They result from contracting $\hat\psi(x),\widehat{\bar\psi}(x)$ at the same point and, for photon emission, contain integrals such as
+
+\SourcePage{327}{332}
+\[
+S_{fi}=-ie\int\bar\psi_2(x)\psi_1(x)(\gamma A^*(x))\,d^4x,
+\]
+which vanish because the integrand contains $\exp[-i(p_1-p_2-k)x]$ with a nonzero exponent. Diagrammatically, diagrams with three free ends vanish:
+\begin{equation}
+\begin{tikzpicture}[baseline=-.45ex,x=.72cm,y=.72cm,>=Stealth,line width=.6pt,font=\small]
+\coordinate (v) at (0,0);
+\draw[->] (1.05,-1.05) node[right] {$p_1$} -- (v);
+\draw[->] (v) -- (-1.05,-1.05) node[left] {$p_2$};
+\draw[dashed,->] (v)--(0,1.2) node[midway,right] {$k$};
+\end{tikzpicture}
+\tag{73.19}
+\end{equation}
+For the same reason, second-order processes involving six particles in the initial and final states are impossible. Their $S_{fi}$ integrals over $d^4x\,d^4x'$ would factor into two vanishing integrals, each over a product of three wave functions at one point. Equivalently, their diagrams separate into two independent diagrams of the form (73.19).

@@ -1,0 +1,387 @@
+\SourcePage{249}{254}
+\section{The scattering tensor}
+
+Scattering of a photon by an electron system (for definiteness, we shall speak of an atom) consists in absorption of the initial photon $\mathbf k$ accompanied by emission of another photon $\mathbf k'$. The atom may remain either in its initial energy level or in another discrete level. In the first case the photon frequency is unchanged (\emph{Rayleigh}, or \emph{unshifted, scattering}); in the second it changes by
+\begin{equation}
+\omega'-\omega=E_1-E_2,
+\tag{59.1}
+\end{equation}
+where $E_1$ and $E_2$ are the initial and final atomic energies (\emph{combination}, or \emph{shifted, scattering}).\footnote{In this chapter, quantities referring to the initial and final states of the scattering system carry the indices 1 and 2.} If the initial atomic state is the ground state, then $E_2>E_1$ in combination scattering, so that $\omega'<\omega$: the frequency decreases (the \emph{Stokes} case). For scattering by an excited atom, both the Stokes and the \emph{anti-Stokes} ($\omega'>\omega$) cases are possible.
+
+Since the electromagnetic-perturbation operator has no matrix elements for transitions in which two photon occupation numbers change simultaneously, scattering first appears in second-order perturbation theory. It must be regarded as proceeding through intermediate states of two possible types:
+
+I. The photon $\mathbf k$ is absorbed and the atom passes to one of its possible states $E_n$; in the subsequent transition to the final state, the photon $\mathbf k'$ is emitted.
+
+II. The photon $\mathbf k'$ is emitted and the atom passes to a state $E_n$; in the transition to the final state, the photon $\mathbf k$ is absorbed.
+
+The role of the matrix element for this process is played by the sum (see vol.~III, (43.7))
+\begin{equation}
+V_{21}=\sum_n'\left(
+\frac{V'_{2n}V_{n1}}{\mathcal E_1-\mathcal E_n^{\mathrm I}}
++\frac{V_{2n}V'_{n1}}{\mathcal E_1-\mathcal E_n^{\mathrm{II}}}
+\right),
+\tag{59.2}
+\end{equation}
+
+\SourcePage{250}{255}
+where the initial energy of the ``atom+photons'' system is $\mathcal E_1=E_1+\omega$, while the intermediate-state energies are
+\[
+\mathcal E_n^{\mathrm I}=E_n,\qquad
+\mathcal E_n^{\mathrm{II}}=E_n+\omega+\omega';
+\]
+$V$ denotes matrix elements for absorption of the photon $\mathbf k$, and $V'$ those for emission of the photon $\mathbf k'$; the initial state is excluded from the sum over $n$ (as indicated by the prime). The scattering cross section is
+\begin{equation}
+d\sigma=2\pi|V_{21}|^2\frac{\omega'^2do'}{(2\pi)^3},
+\tag{59.3}
+\end{equation}
+where $do'$ is the solid-angle element for the directions of $\mathbf k'$. The light energy $dI'$ scattered per second into $do'$ is related to the incident-light intensity $I$ (energy-flux density) by
+\[
+dI'=I\frac{\omega'}{\omega}\,d\sigma.
+\]
+
+We suppose that the wavelengths of the initial and final photons are large compared with the size $a$ of the scattering system, and accordingly treat every transition in the dipole approximation. If the photon states are described by plane waves, this approximation amounts to replacing the factors $e^{i\mathbf k\mathbf r}$ by unity. The photon wave functions (in the three-dimensionally transverse gauge) are then
+\[
+\mathbf A_{\mathbf e\omega}=\sqrt{4\pi}\frac{\mathbf e}{\sqrt{2\omega}}e^{-i\omega t},
+\qquad
+\mathbf A_{\mathbf e'\omega'}=\sqrt{4\pi}\frac{\mathbf e'}{\sqrt{2\omega'}}e^{-i\omega't}.
+\]
+Under these conditions the electromagnetic interaction operator can be written
+\begin{equation}
+\hat V=-\hat{\mathbf d}\hat{\mathbf E},
+\tag{59.4}
+\end{equation}
+where $\hat{\mathbf E}=-\dot{\hat{\mathbf A}}$ is the field-strength operator and $\hat{\mathbf d}$ the atomic dipole-moment operator (as in the classical expression for the energy of a small system in an electric field; see vol.~II, \S~42). Its matrix elements are
+\[
+V_{n1}=-i\sqrt{2\pi\omega}\,(\mathbf e\mathbf d_{n1}),
+\qquad
+V'_{2n}=i\sqrt{2\pi\omega'}\,(\mathbf e'^*\mathbf d_{2n}).
+\]
+Substitution in (59.2), (59.3) gives the scattering cross section (in ordinary units)\footnote{This formula was first obtained by Kramers and Heisenberg (\emph{H. A. Kramers, W. Heisenberg}, 1925), before quantum mechanics was developed.}:
+\begin{equation}
+d\sigma=\left|\sum_n\left\{
+\frac{(\mathbf d_{2n}\mathbf e'^*)(\mathbf d_{n1}\mathbf e)}{\omega_{n1}-\omega-i0}
++\frac{(\mathbf d_{2n}\mathbf e)(\mathbf d_{n1}\mathbf e'^*)}{\omega_{n1}+\omega-i0}
+\right\}\right|^2\frac{\omega\omega'^3}{\hbar^2c^4}\,do',
+\tag{59.5}
+\end{equation}
+\[
+\hbar\omega_{n1}=E_n-E_1,\qquad \omega'-\omega=\omega_{12}.
+\]
+
+\SourcePage{251}{256}
+The sum extends over all possible atomic states, including continuum states (states 1 and 2 drop out automatically because $d_{11}=d_{22}=0$). The infinitesimal imaginary additions in the denominators implement the usual pole-bypass rule of perturbation theory (see vol.~III, \S~43): an infinitesimal negative imaginary part is added to the intermediate-state energies $E_n$ being summed. The prescription matters when poles of (59.5), regarded as a function of $E_n$, lie in the continuum (if state 1 is the atomic ground state, for example, $\hbar\omega$ must then exceed the ionization threshold).\footnote{For a molecule, the dissociation threshold into atoms plays the role of the ionization threshold here.}
+
+Introduce the notation (ordinary units)\footnote{Most of the results presented in \S\S~59--61 are due to Placzek (\emph{G. Placzek}, 1931--1933).}
+\begin{equation}
+(c_{ik})_{21}=\frac1\hbar\sum_n\left[
+\frac{(d_i)_{2n}(d_k)_{n1}}{\omega_{n1}-\omega-i0}
++\frac{(d_k)_{2n}(d_i)_{n1}}{\omega_{n1}+\omega-i0}
+\right]
+\tag{59.6}
+\end{equation}
+($i,k=x,y,z$ are three-dimensional vector indices). Formula (59.5) then becomes
+\begin{equation}
+d\sigma=\frac{\omega(\omega+\omega_{12})^3}{c^4}
+\left|(c_{ik})_{21}e_i'^*e_k\right|^2do'.
+\tag{59.7}
+\end{equation}
+
+The notation (59.6) is justified because the sum can indeed be represented as a matrix element of a tensor. This is seen most easily by introducing a vector $\mathbf b$ whose operator satisfies
+\[
+i\dot{\mathbf b}+\omega\mathbf b=\dot{\mathbf d}.
+\]
+Its matrix elements are
+\[
+\mathbf b_{n1}=\frac{\mathbf d_{n1}}{\omega-\omega_{n1}},
+\qquad
+\mathbf b_{2n}=\frac{\mathbf d_{2n}}{\omega+\omega_{n2}},
+\]
+so that
+\begin{equation}
+(c_{ik})_{21}=(b_kd_i-d_ib_k)_{21}.
+\tag{59.8}
+\end{equation}
+We shall call the matrix elements $(c_{ik})_{21}$ the \emph{light-scattering tensor}.
+
+It follows that the selection rules for scattering coincide with those for matrix elements of an arbitrary second-rank tensor. In particular, if the system has a center of symmetry (so its states can
+
+\SourcePage{252}{257}
+be classified by parity), transitions are possible only between states of the same parity, including transitions with no change of state. This is the reverse of the parity selection rule for electric-dipole radiation; there is an alternating prohibition: transitions allowed in radiation are forbidden in scattering, and those allowed in scattering are forbidden in radiation.
+
+Decompose $c_{ik}$ into irreducible parts:
+\begin{equation}
+c_{ik}=c^0\delta_{ik}+c_{ik}^s+c_{ik}^a,
+\tag{59.9}
+\end{equation}
+where
+\begin{equation}
+c^0=\frac13c_{ii},\qquad c_{ik}^s=\frac12(c_{ik}+c_{ki})-c^0\delta_{ik},\qquad c_{ik}^a=\frac12(c_{ik}-c_{ki})
+\tag{59.10}
+\end{equation}
+are, respectively, a scalar, a symmetric traceless tensor, and an antisymmetric tensor. Their matrix elements are
+\begin{equation}
+(c^0)_{21}=\frac13\sum_n\frac{\omega_{n1}+\omega_{n2}}{(\omega_{n1}-\omega)(\omega_{n2}+\omega)}(\mathbf d_{2n}\mathbf d_{n1}),
+\tag{59.11}
+\end{equation}
+\begin{equation}
+\begin{aligned}
+(c_{ik}^s)_{21}={}&\frac12\sum_n\frac{\omega_{n1}+\omega_{n2}}{(\omega_{n1}-\omega)(\omega_{n2}+\omega)}
+\bigl[(d_i)_{2n}(d_k)_{n1}+(d_k)_{2n}(d_i)_{n1}\bigr]\\
+&{}-(c^0)_{21}\delta_{ik},
+\end{aligned}
+\tag{59.12}
+\end{equation}
+\begin{equation}
+(c_{ik}^a)_{21}=\frac{2\omega+\omega_{12}}2\sum_n
+\frac{(d_i)_{2n}(d_k)_{n1}-(d_k)_{2n}(d_i)_{n1}}{(\omega_{n1}-\omega)(\omega_{n2}+\omega)}
+\tag{59.13}
+\end{equation}
+(the pole-bypass signs have been omitted for brevity).
+
+Consider some properties of the scattering tensor in the limiting cases of low and high photon frequencies.\footnote{The resonant case, in which $\omega$ is close to one of the frequencies $\omega_{n1}$ or $\omega_{n2}$, will be considered in \S~63.}
+
+For unshifted scattering ($\omega_{12}=0$), the antisymmetric part vanishes as $\omega\to0$ because of the factor $\omega$ preceding the sum in (59.13). The scalar and symmetric parts, however, approach finite limits. The cross section at low $\omega$ is therefore proportional to $\omega^4$.
+
+In the opposite case, where $\omega$ is large compared with all frequencies $\omega_{n1}$ and $\omega_{n2}$ relevant in (59.6) (while the wavelength, of course, still satisfies $\gg a$), the classical formulas must be recovered. The first term in the expansion in powers of $1/\omega$ is
+\[
+\frac1\omega\sum_n[(d_k)_{2n}(d_i)_{n1}-(d_i)_{2n}(d_k)_{n1}]
+=\frac1\omega(d_kd_i-d_id_k)_{21}
+\]
+and vanishes because $d_i$ and $d_k$ commute. The next term is
+\[
+\begin{aligned}
+(c_{ik})_{21}&=\frac1{\omega^2}\sum_n\omega_{n1}[(d_i)_{2n}(d_k)_{n1}-(d_k)_{2n}(d_i)_{n1}]\\
+&=\frac1{i\omega^2}(\dot d_i d_k-d_i\dot d_k)_{21}.
+\end{aligned}
+\]
+
+\SourcePage{253}{258}
+Using $\mathbf d=\sum e\mathbf r$ (the sum is over all atomic electrons) and the momentum--coordinate commutation rules, we obtain
+\begin{equation}
+(c_{ik})_{11}=-\frac{Ze^2}{m\omega^2}\delta_{ik},\qquad (c_{ik})_{21}=0,
+\tag{59.14}
+\end{equation}
+where $Z$ is the total number of electrons in the system and $m$ the electron mass. Thus at high frequencies only the scalar part remains, and scattering occurs without a change in the state of the system (it is entirely coherent; see below). The cross section is then
+\begin{equation}
+d\sigma=r_e^2Z^2|\mathbf e'^*\mathbf e|^2do',
+\tag{59.15}
+\end{equation}
+where $r_e=e^2/m$. Summing over final-photon polarizations gives
+\begin{equation}
+d\sigma=r_e^2Z^2\{1-(\mathbf e\mathbf n')^2\}do'=r_e^2Z^2\sin^2\theta\cdot do',
+\tag{59.16}
+\end{equation}
+which is indeed the classical Thomson formula (see vol.~II, (80.7); $\theta$ is the angle between the scattering direction and the incident photon's polarization vector).
+
+Consider scattering by $N$ identical atoms occupying a volume whose dimensions are small compared with the wavelength. The scattering tensor of the collection is the sum of the tensors of the individual atoms. We must, however, take account of the fact that the wave functions used to calculate dipole-moment matrix elements for several identical atoms considered together cannot simply be regarded as identical. A wave function is intrinsically defined only up to an arbitrary phase factor, and each atom has its own. The scattering cross section must therefore be averaged independently over the phase factors of the atoms.
+
+The tensor $(c_{ik})_{21}$ of each atom contains the factor $e^{i(\varphi_1-\varphi_2)}$, where $\varphi_1$ and $\varphi_2$ are the phases of the initial- and final-state wave functions. In shifted scattering states 1 and 2 differ, so this factor is not unity. In the squared modulus
+\[
+\left|e_i'^*e_k\sum(c_{ik})_{21}\right|^2
+\]
+
+\SourcePage{254}{259}
+(the sum is over all $N$ atoms), products of terms belonging to different atoms contain phase factors that vanish under independent averaging over the atomic phases; only the squared moduli of the individual terms remain. Thus the total cross section for $N$ atoms is $N$ times the single-atom cross section: the scattering is incoherent.
+
+If the initial and final atomic states coincide, the factors $e^{i(\varphi_1-\varphi_2)}=1$. The scattering amplitude of the collection is then $N$ times the single-atom amplitude, and the cross section is correspondingly larger by $N^2$: the scattering is coherent.\footnote{The factor $Z^2$ in (59.15), (59.16) has the same origin: the cross section for coherent scattering by the $Z$ electrons of one atom is $Z^2$ times that for one electron.} Thus, if the atomic energy level is nondegenerate, unshifted scattering is completely coherent. If it is degenerate, there is also incoherent unshifted scattering due to transitions between distinct mutually degenerate states. The latter is a purely quantum effect: in classical theory, scattering without a frequency change is always coherent.
+
+The coherent-scattering tensor is the diagonal matrix element $(c_{ik})_{11}$; denote it by $\alpha_{ik}$ (suppressing the index that should indicate the atomic state). According to (59.6),
+\begin{equation}
+\alpha_{ik}(\omega)=(c_{ik})_{11}=\sum_n\left[
+\frac{(d_i)_{1n}(d_k)_{n1}}{\omega_{n1}-\omega-i0}
++\frac{(d_k)_{1n}(d_i)_{n1}}{\omega_{n1}+\omega-i0}\right].
+\tag{59.17}
+\end{equation}
+This can also be written
+\begin{equation}
+\alpha_{ik}(\omega)=\frac{e^2}{m\omega^2}\left\{-Z\delta_{ik}+\frac1m\sum_n\left[
+\frac{(p_i)_{1n}(p_k)_{n1}}{\omega_{n1}-\omega-i0}
++\frac{(p_k)_{1n}(p_i)_{n1}}{\omega_{n1}+\omega-i0}\right]\right\},
+\tag{59.18}
+\end{equation}
+where the limiting expression (59.14) has been separated out. Here $\mathbf p$ is the total momentum of the atomic electrons. The equivalence follows at once from
+\[
+\frac e m\mathbf p_{1n}=i\omega_{1n}\mathbf d_{1n},
+\]
+together with the relations used in deriving (59.14).
+
+If neither $E_1+\omega$ nor $E_1-\omega$ coincides with an atomic energy level $E_n$, including in the continuum, the $i0$ terms may be omitted. Since $\mathbf p_{1n}^*=\mathbf p_{n1}$, the tensor is then Hermitian\footnote{This result follows from neglecting the natural line width, and hence the possibility of absorption of the incident light (see \S~62).}:
+
+\SourcePage{255}{260}
+\begin{equation}
+\alpha_{ik}=\alpha_{ki}^*.
+\tag{59.19}
+\end{equation}
+Its scalar and symmetric parts are therefore real, while its antisymmetric part is imaginary. Notice that the antisymmetric part necessarily vanishes if the atom is in a nondegenerate state: the wave function of such a state is real, and hence so are the diagonal matrix elements.
+
+The tensor $\alpha_{ik}$ is related to the polarizability of an atom in an external electric field. To establish the relation, calculate the correction to the mean dipole moment when the system is placed in the field
+\begin{equation}
+\frac12\left(\mathbf E e^{-i\omega t}+\mathbf E^*e^{i\omega t}\right).
+\tag{59.20}
+\end{equation}
+We use the standard perturbation-theory formula (see vol.~III, \S~40): if the perturbation is
+\[
+\widehat V=\widehat F e^{-i\omega t}+\widehat F^+e^{i\omega t},
+\]
+the first-order correction to the diagonal matrix elements of a quantity $f$ is
+\[
+\begin{aligned}
+f_{11}^{(1)}(t)=-\sum_n\Biggl\{&\left[
+\frac{f_{1n}^{(0)}F_{n1}}{\omega_{n1}-\omega-i0}
++\frac{f_{n1}^{(0)}F_{1n}}{\omega_{n1}+\omega+i0}\right]e^{-i\omega t}\\
+&{}+\left[
+\frac{f_{1n}^{(0)}F_{1n}^*}{\omega_{n1}+\omega-i0}
++\frac{f_{n1}^{(0)}F_{n1}^*}{\omega_{n1}-\omega+i0}\right]e^{i\omega t}\Biggr\}
+\end{aligned}
+\]
+(the perturbation must be regarded as switched on infinitely slowly from $t=-\infty$, so $\omega$ is understood as $\omega+i0$ in the first term and as $\omega-i0$ in the second; the imaginary additions in the denominators have been written accordingly).
+
+Here $\widehat F=-\mathbf d\mathbf E/2$, and the correction to the diagonal dipole-moment matrix element is
+\begin{equation}
+\mathbf d_{11}^{(1)}=\frac12\left(\overline{\mathbf d}e^{-i\omega t}+\overline{\mathbf d}^{,*}e^{i\omega t}\right),
+\tag{59.21}
+\end{equation}
+where $\overline{\mathbf d}$ has components
+\begin{equation}
+\overline d_i=\alpha_{ik}^{(\text{pol})}E_k,
+\tag{59.22}
+\end{equation}
+
+\SourcePage{256}{261}
+and the expression for $\alpha_{ik}^{(\text{pol})}(\omega)$ differs from (59.17) for $\alpha_{ik}$ by the reversed sign of the imaginary addition in the denominator of the second term. By definition, $\alpha_{ik}^{(\text{pol})}(\omega)$ is the tensor of atomic polarizability in a field of frequency $\omega$. At frequencies for which the imaginary additions may be omitted and $\alpha_{ik}$ is Hermitian, $\alpha_{ik}$ and $\alpha_{ik}^{(\text{pol})}$ simply coincide. In particular, at $\omega=0$, (59.22) becomes formula (76.4) of vol.~III, and the static-polarizability tensor (vol.~III, (76.5)) coincides with $\alpha_{ik}(0)$ from (59.17). Notice also that if state 1 is the ground state,\footnote{Only this case, which will be understood below, permits a fully rigorous treatment because excited states have finite lifetimes (see \S~62).} all $\omega_{n1}>0$; the bypass prescription in the first term of (59.17) then matters only for $\omega>0$, and that in the second only for $\omega<0$. Hence
+\begin{equation}
+\alpha_{ik}(\omega)=\alpha_{ik}^{(\text{pol})}(|\omega|).
+\tag{59.23}
+\end{equation}
+The scattering formulas implicitly take $\omega>0$; the tensor $\alpha_{ik}$ then coincides with the polarizability tensor.
+
+We shall also need the photon scattering amplitude $f$. As usual in perturbation theory, apart from a normalization factor it is the negative of the matrix element (59.2). Choosing the factor so that (59.7) becomes $d\sigma=|f|^2do'$, we find for elastic scattering
+\begin{equation}
+f=\omega^2\alpha_{ik}e_i'^*e_k.
+\tag{59.24}
+\end{equation}
+By the optical theorem (see (71.10) below), the imaginary part of the forward-scattering amplitude (with neither momentum nor polarization changed) determines the total cross section $\sigma_t$ of all possible elastic and inelastic processes for the given initial photon state:
+\begin{equation}
+\sigma_t=\frac{4\pi}{\omega}\Im(\omega^2\alpha_{ik}e_i^*e_k)
+=4\pi\omega\frac{\alpha_{ik}-\alpha_{ki}^*}{2i}e_i^*e_k.
+\tag{59.25}
+\end{equation}
+Thus the total cross section is determined by the anti-Hermitian part of the scattering tensor.
+
+Formula (59.25) has a simple classical meaning. The electric field $\mathbf E$ does work on the system of charges at the rate $\sum e\mathbf v\mathbf E=\mathbf E\dot{\mathbf d}$. Writing the field as in (59.20), the dipole moment as in (59.21), (59.22), and averaging this work over time gives
+\[
+\frac12\omega|E|^2e_i^*e_k\frac{\alpha_{ik}-\alpha_{ki}^*}{2i}
+\]
+
+\SourcePage{257}{262}
+($\mathbf E=\mathbf eE$). On the other hand, if $\mathbf E$ is the incident-light field, its mean energy-flux density is $|E|^2/(8\pi)$, and the energy absorbed by the atom is
+\[
+\frac1{8\pi}|E|^2\sigma_t.
+\]
+Equating these expressions gives (59.25).
+
+If the ground-state angular momentum is $J=0$, spherical symmetry gives $\alpha_{ik}=\alpha\delta_{ik}$. Then
+\begin{equation}
+\sigma_t=4\pi\omega\Im\alpha.
+\tag{59.26}
+\end{equation}
+For a system with angular momentum, the same relation holds for quantities averaged over its directions in space (see \S~60).
+
+Above the atomic ionization threshold, the principal contribution to $\sigma_t$ is ionization, namely photon absorption in the photoelectric effect. The scattering cross section is of higher order in $e^2$ (compare, for example, (56.13) and (59.16)).
+
+Below the ionization threshold, but away from resonance with a discrete atomic excitation frequency, the cross section reduces to the scattering cross section; it, and hence the imaginary part of the amplitude, is of higher order than the real part. Neglecting the imaginary part again gives (59.19). Near resonance the cross section increases; that case will be considered in \S~63.
+
+Alongside scattering, the two-photon processes appearing in second-order perturbation theory include \emph{double emission}, the simultaneous emission of two quanta by an atom.
+
+Its probability differs from (59.5) only by the substitutions $\omega\to-\omega$, $\mathbf e\to\mathbf e^*$ (emission rather than absorption of the photon $\omega$), and by the additional factor
+\[
+\frac{d^3k}{(2\pi)^3}=\frac{\omega^2d\omega do}{(2\pi)^3},
+\]
+the number of quantum states of the emitted photon in the specified intervals of frequency $\omega$ and direction $\mathbf k$; the second photon frequency is fixed by $\omega+\omega'=\omega_{12}$. The emission probability per unit time is therefore\footnote{Here and below in this section, ordinary units are used.}
+\begin{equation}
+dw=\left|(b_{ik})_{21}e_i'^*e_k^*\right|^2
+\frac{\omega^3\omega'^3}{(2\pi)^3c^6\hbar^2},do\,do'\,d\omega,
+\tag{59.27}
+\end{equation}
+
+\SourcePage{258}{263}
+where
+\[
+(b_{ik})_{21}=\sum_n\left[
+\frac{(d_i)_{2n}(d_k)_{n1}}{\omega_{n1}+\omega-i0}
++\frac{(d_k)_{2n}(d_i)_{n1}}{\omega_{n1}+\omega'-i0}\right]
+\]
+differs from $(c_{ik})_{21}$ in (59.6) only in the sign before $\omega$. Summing over photon polarizations and integrating over their emission directions\footnote{This operation reduces to complete averaging over the directions of $\mathbf e$ according to $\overline{e_i e_k^*}=\delta_{ik}/3$, followed by multiplication by $2\cdot2\cdot4\pi\cdot4\pi$.} gives
+\begin{equation}
+dw=\frac{8\omega^3\omega'^3}{9\pi\hbar^2c^6}|(b_{ik})_{21}|^2d\omega.
+\tag{59.28}
+\end{equation}
+
+The probability of emitting two photons $\omega$ and $\omega'$ is usually very small compared with that of emitting one photon of frequency $\omega+\omega'$. Exceptions occur when selection rules forbid the latter process but allow the former. Examples are transitions between two $J=0$ states, for which every one-photon emission process is strictly forbidden, and the transition from the first excited state of hydrogen ($2s_{1/2}$) to the ground state ($1s_{1/2}$), which is forbidden for both $E1$ and $M1$ radiation (see problem 2, \S~52).\footnote{The lifetime of the $2s_{1/2}$ level due to double emission is 0.15~s.}
+
+If the atom is in an incident field of photons $\omega,\mathbf k$, then in addition to spontaneous double emission, whose probability is (59.27), stimulated double emission is possible: the field induces emission of another identical photon and, with it, a photon $\omega',\mathbf k'$. Its probability differs from the spontaneous probability by the factor $N_{\mathbf k\mathbf e}$, the number density of incident photons with specified $\mathbf k,\mathbf e$. The incident photon-flux density is
+\[
+dI=cN_{\mathbf k\mathbf e}\frac{d^3k}{(2\pi)^3}
+=N_{\mathbf k\mathbf e}\frac{\omega^2}{8\pi^3c^2},d\omega\,do.
+\]
+Solving for $N_{\mathbf k\mathbf e}$ and dividing the process probability by $dI$ gives its cross section
+\begin{equation}
+d\sigma=\frac{\omega\omega'^3}{\hbar^2c^4}\left|(b_{ik})_{12}e_i'^*e_k^*\right|^2do'.
+\tag{59.29}
+\end{equation}
+Similarly, if the atom is in a field of photons $\omega',\mathbf k'$, incidence of a photon $\omega,\mathbf k$ produces \emph{stimulated combination scattering}, whose cross section is proportional to the number density of the $\omega',\mathbf k'$ photons.
+
+\SourcePage{259}{264}
+Calculation of $(c_{ik})_{12}$ or $(b_{ik})_{12}$ for particular atoms requires sums of the form
+\begin{equation}
+(M_{ik}^{(2)})_{21}=\sum_n\frac{(d_i)_{2n}(d_k)_{n1}}{E_n-E-i0},
+\tag{59.30}
+\end{equation}
+where $E$ takes the values $E_1\pm\hbar\omega$ or $E_1\pm\hbar\omega'$. For brevity, consider a hydrogen atom. Write (59.30) as the integral
+\begin{equation}
+(M_{ik}^{(2)})_{21}=\int\psi_2^*(\mathbf r)d_iG(\mathbf r,\mathbf r';E)d_k'\psi_1(\mathbf r')\,d^3x\,d^3x',
+\tag{59.31}
+\end{equation}
+where
+\begin{equation}
+G(\mathbf r,\mathbf r';E)=\sum_n\frac{\psi_n(\mathbf r)\psi_n^*(\mathbf r')}{E_n-E-i0}.
+\tag{59.32}
+\end{equation}
+
+Act on $G$ with $\widehat H-E$, where $\widehat H$ is the atomic Hamiltonian. Since $\widehat H\psi_n=E_n\psi_n$,
+\[
+(\widehat H-E)G=\sum_n\psi_n(\mathbf r)\psi_n^*(\mathbf r').
+\]
+By completeness, the sum is $\delta(\mathbf r-\mathbf r')$. Thus $G$ satisfies
+\begin{equation}
+(\widehat H-E)G(\mathbf r,\mathbf r';E)=\delta(\mathbf r-\mathbf r'),
+\tag{59.33}
+\end{equation}
+and is the Green function of the Schrödinger equation (the bypass prescription in (59.32) selects the required solution). The calculation of (59.30) is thereby reduced to finding the atomic Green function. An exact solution of (59.33), however, is possible only when exact solutions of the homogeneous Schrödinger equation are known, in practice only for hydrogen.\footnote{See \emph{Hostler L.}//J. Math. Phys.~--- 1964.~--- Vol.~5.~--- P.~591. For an application of this Green function to the scattering amplitude of hydrogen, see \emph{Granovsky Ya.~I.}//ZhETF.~--- 1969.~--- Vol.~56.~--- P.~605.}
+
+\ProblemHeading
+
+Calculate the probability for elastic scattering of a nonrelativistic electron by an almost monochromatic standing light wave (\emph{P.~L.~Kapitza, P.~A.~M.~Dirac}, 1933).
+
+\SolutionHeading A standing wave may be regarded as a collection of photons with momenta $\mathbf k$ and $-\mathbf k$ and identical polarizations. Electron scattering may be regarded as absorption of a photon of momentum $\mathbf k$ followed by stimulated emission of a photon of momentum $-\mathbf k$. The electron momentum $\mathbf p$ thereby increases by $2\hbar\mathbf k$, turning through an angle $\theta$ without changing its magnitude:
+
+\SourcePage{260}{265}
+$|\mathbf p|\sin(\theta/2)=\hbar\omega/c$. The process probability follows from the Thomson-scattering cross section (59.15),
+\[
+d\sigma=r_e^2|\mathbf e'^*\mathbf e|^2do'=r_e^2do',
+\]
+by multiplying it by the flux density of photons of momentum $\mathbf k$ and the number of photons of momentum $-\mathbf k$.
+
+The flux density of photons with frequencies in $d\omega$ is
+\[
+\frac{cU_\omega d\omega}{2\hbar\omega},
+\]
+where $U_\omega d\omega$ is the standing-wave energy density in the spectral interval $d\omega$ (the factor $1/2$ accounts for the equal division of the wave energy between photons moving in opposite directions). The momenta $\mathbf k$ of all photons forming the standing wave are parallel to a specified direction $\mathbf n$ (the ``direction'' of the standing wave). Thus the energy density as a function of photon frequency and direction $\mathbf n'$ is $U_{\omega\mathbf n'}=U_\omega\delta^{(2)}(\mathbf n'-\mathbf n)$. Accordingly, the number of photons with momentum $-\mathbf k$ is (cf. (44.8))
+\[
+\int N_{-\mathbf k}do'=\frac{8\pi^3c^3}{\hbar\omega^3}\frac{U_\omega}{2}.
+\]
+The electron scattering probability per second is therefore
+\[
+w=\frac{2\pi^3e^4}{m^2\hbar^2\omega^4}\int U_\omega^2\,d\omega.
+\]
+The factor $\omega^{-4}$ has been taken outside the integral because the degree of nonmonochromaticity $\Delta\omega$ is assumed small. At fixed total intensity, the integral is inversely proportional to $\Delta\omega$.

@@ -1,0 +1,198 @@
+\SourcePage{58}{63}
+
+\section{The transformations \texorpdfstring{$C$, $P$, and $T$}{C, P, and T}}
+
+Unlike 4-inversion, three-dimensional (spatial) inversion cannot be reduced to rotations of the 4-dimensional coordinate frame: the determinant of this transformation is $-1$, not $+1$. Consequently, relativistic invariance by itself does not determine the symmetry properties of particles under inversion (the $P$ transformation)\footnote{The Lorentz group supplemented by spatial inversion is called the \emph{extended Lorentz group}. The original group, which does not contain $P$, is correspondingly called the \emph{proper Lorentz group}. The extended group comprises all transformations that leave the $t$ axis within the corresponding halves of the light cone.}.
+
+For a scalar wave function, inversion acts according to
+\begin{equation}
+\widehat P\psi(t,\mathbf{r})=\pm\psi(t,-\mathbf{r}),
+\tag{13.1}
+\end{equation}
+where the plus and minus signs on the right correspond, respectively, to a true scalar and a pseudoscalar.
+
+Thus two aspects of the wave function's behavior under inversion must be distinguished. The first concerns its coordinate dependence. This was the only aspect considered in nonrelativistic quantum mechanics; it gives the parity of the state, which we shall now call its \emph{orbital parity}, and characterizes the symmetry of the particle's motion. A state has a definite orbital parity, $+1$ or $-1$, if
+\[
+\psi(t,-\mathbf{r})=\pm\psi(t,\mathbf{r}).
+\]
+
+The second aspect is the wave function's behavior at a given point when the coordinate axes are inverted; this point may conveniently be regarded as the origin. It gives rise to the \emph{intrinsic parity of the particle}. For a spin-zero particle, the two signs in (13.1) correspond to intrinsic parities $+1$ and $-1$. The total parity of a system of particles is the product of their intrinsic parities and the orbital parity of their relative motion.
+
+The ``internal'' symmetry properties of different particles can of course manifest themselves only in processes that transform one particle into another. In nonrelativistic quantum mechanics, the analogue of intrinsic parity is the parity of a composite system's bound state, such as a nucleus. Relativistic theory draws no fundamental distinction between composite and elementary particles, so this intrinsic parity is no different from that of particles treated as elementary in\SourcePage{59}{64} nonrelativistic theory. In the nonrelativistic domain these latter particles behave as immutable objects; their internal symmetry properties are then unobservable, and considering them would have no physical content.
+
+In second quantization, intrinsic parity is expressed through the behavior of the $\psi$ operators under inversion. Scalar and pseudoscalar fields obey
+\begin{equation}
+P:\ \widehat\psi(t,\mathbf{r})\to\pm\widehat\psi(t,-\mathbf{r}).
+\tag{13.2}
+\end{equation}
+The action of inversion on a $\psi$ operator must itself be formulated as a definite transformation of particle annihilation and creation operators, chosen so that it produces (13.2). This transformation is readily seen to be
+\begin{equation}
+P:\ \widehat a_{\mathbf{p}}\to\pm\widehat a_{-\mathbf{p}},
+\qquad
+\widehat b_{\mathbf{p}}\to\pm\widehat b_{-\mathbf{p}}
+\tag{13.3}
+\end{equation}
+(with the same rule for the adjoint operators). Indeed, make this replacement in
+\begin{equation}
+\widehat\psi(t,\mathbf{r})
+=\sum_{\mathbf{p}}\frac{1}{\sqrt{2\varepsilon}}
+\left(\widehat a_{\mathbf{p}}e^{-i\omega t+i\mathbf{p}\mathbf{r}}
++\widehat b^+_{\mathbf{p}}e^{i\omega t-i\mathbf{p}\mathbf{r}}\right)
+\tag{13.4}
+\end{equation}
+and then relabel the summation variable, $\mathbf{p}\to-\mathbf{p}$; the result is $\pm\widehat\psi(t,-\mathbf{r})$. Hence, if $\widehat\psi^P(t,\mathbf{r})$ denotes the operator obtained by applying (13.3), then
+\begin{equation}
+\widehat\psi^P(t,\mathbf{r})=\pm\widehat\psi(t,-\mathbf{r}).
+\tag{13.5}
+\end{equation}
+The form of (13.3) is entirely natural: inversion reverses the polar vector $\mathbf{p}$, replacing particles of momentum $\mathbf{p}$ by particles of momentum $-\mathbf{p}$.
+
+In (13.3), both $\widehat a_{\mathbf{p}}$ and $\widehat b_{\mathbf{p}}$ transform either with the upper signs or with the lower signs. Within second quantization this expresses the equality of the intrinsic parities of a spin-zero particle and its antiparticle. That equality is already clear from the fact that the same scalar or pseudoscalar wave functions describe the particle and antiparticle.
+
+Relativistic theory also has a symmetry under a transformation with no nonrelativistic counterpart, called \emph{charge conjugation} (the $C$ transformation). Interchange every pair of operators $\widehat a_{\mathbf{p}}$ and $\widehat b_{\mathbf{p}}$:
+\begin{equation}
+C:\ \widehat a_{\mathbf{p}}\to\widehat b_{\mathbf{p}},
+\qquad
+\widehat b_{\mathbf{p}}\to\widehat a_{\mathbf{p}}
+\tag{13.6}
+\end{equation}
+\SourcePage{60}{65}
+(that is, exchange particles and antiparticles). The operator $\widehat\psi$ then becomes its charge-conjugate $\widehat\psi^C$, with
+\begin{equation}
+\widehat\psi^C(t,\mathbf{r})=\widehat\psi^+(t,\mathbf{r}).
+\tag{13.7}
+\end{equation}
+This equation displays the symmetry with which the concepts of particle and antiparticle enter the theory.
+
+There is an inessential formal freedom in the definition of charge conjugation. Its meaning is unchanged if an arbitrary phase factor is introduced into (13.6):
+\[
+\widehat a_{\mathbf{p}}\to e^{i\alpha}\widehat b_{\mathbf{p}},
+\qquad
+\widehat b_{\mathbf{p}}\to e^{-i\alpha}\widehat a_{\mathbf{p}}.
+\]
+One would then have
+\[
+\widehat\psi\to e^{i\alpha}\widehat\psi^+,
+\qquad
+\widehat\psi^+\to e^{-i\alpha}\widehat\psi,
+\]
+while applying the transformation twice would still give the identity, $\widehat\psi\to\widehat\psi$. All such definitions are equivalent. Since multiplying the $\psi$ operators by a phase does not alter their properties (compare the end of the preceding section), one may simply redefine $\widehat\psi$ as $\widehat\psi e^{i\alpha/2}$ and thereby return to (13.6), (13.7).
+
+Since charge conjugation replaces a particle by a distinct antiparticle, in general it supplies no new characteristic of a particle or of a particle system as such.
+
+Systems containing equal numbers of particles and antiparticles are an exception. The operator $\widehat C$ maps such a system into itself, so it possesses eigenstates with eigenvalues $C=\pm1$ (because $\widehat C^2=1$). To describe charge symmetry, the particle and antiparticle may here be regarded as two different ``charge states'' of one particle, distinguished by a charge quantum number $Q=\pm1$. The system's wave function is a product of an orbital function and a ``charge'' function, and it must be symmetric under simultaneous interchange of all variables, both coordinate and charge, for any pair of particles. The symmetry of the ``charge'' function then determines the charge parity of the system (see the problem)\footnote{This argument concerns spin-zero particles. The construction generalizes directly to other cases; see, for example, the problem in \S~27.}.
+
+The notion of charge parity, arising naturally for ``genuinely neutral'' systems, applies in full also\SourcePage{61}{66} to genuinely neutral ``elementary'' particles. In second quantization it is expressed by
+\begin{equation}
+\widehat\psi^C=\pm\widehat\psi;
+\tag{13.8}
+\end{equation}
+the plus and minus signs characterize charge-even and charge-odd particles, respectively.
+
+It was stated in \S~11 that relativistic invariance must include invariance under 4-inversion. For the operator of a field scalar under 4-rotations, this requires
+\[
+\widehat\psi(t,\mathbf{r})=\widehat\psi(-t,-\mathbf{r})
+\]
+with the plus sign invariably on the right. In terms of the transformations of $\widehat a_{\mathbf{p}}$ and $\widehat b_{\mathbf{p}}$, changing $\widehat\psi(t,\mathbf{r})$ into $\widehat\psi(-t,-\mathbf{r})$ is achieved by interchanging in (13.4) the coefficients of $e^{-ipx}$ and $e^{ipx}$, namely by
+\begin{equation}
+\widehat a_{\mathbf{p}}\to\widehat b^+_{-\mathbf{p}},
+\qquad
+\widehat b_{\mathbf{p}}\to\widehat a^+_{-\mathbf{p}}
+\tag{13.9}
+\end{equation}
+Because it replaces $a$ operators by $b$ operators, this transformation exchanges particles and antiparticles. Thus relativistic theory naturally requires invariance under a transformation in which spatial inversion ($P$) and time reversal ($T$) are accompanied by charge conjugation ($C$). This statement is called the $CPT$ \emph{theorem}\footnote{It was formulated by \emph{Lüders} (\emph{G.~Lüders}, 1954) and \emph{Pauli} (\emph{W.~Pauli}, 1955).}.
+
+It is important, however, to stress that although the arguments presented here and in \S~11, 12 appear to extend naturally the ideas of ordinary quantum mechanics and classical relativity, the results obtained go beyond both theories in form (the $\psi$ operators contain particle creation and annihilation operators simultaneously) and in substance (particles and antiparticles). They therefore cannot be regarded as consequences of logic alone. They embody new physical principles whose validity can be judged only by experiment.
+
+Let $\widehat\psi^{CPT}(t,\mathbf{r})$ denote the operator (13.4) after transformation (13.9). Then
+\begin{equation}
+\widehat\psi^{CPT}(t,\mathbf{r})=\widehat\psi(-t,-\mathbf{r}).
+\tag{13.10}
+\end{equation}
+By formulating 4-inversion as (13.9), we also obtain the transformation rule for time reversal of the $\psi$ operator: together\SourcePage{62}{67} with $CP$ (called \emph{combined inversion}), it must yield (13.9). Equations (13.3) and (13.6) therefore give
+\begin{equation}
+T:\ \widehat a_{\mathbf{p}}\to\pm\widehat a^+_{-\mathbf{p}},
+\qquad
+\widehat b_{\mathbf{p}}\to\pm\widehat b^+_{-\mathbf{p}}
+\tag{13.11}
+\end{equation}
+(the two signs correspond to those in (13.3)). This transformation also has a natural meaning. Time reversal not only turns motion with momentum $\mathbf{p}$ into motion with momentum $-\mathbf{p}$, but also interchanges initial and final states in matrix elements. It consequently replaces annihilation operators for particles of momentum $\mathbf{p}$ by creation operators for particles of momentum $-\mathbf{p}$. Apply (13.11) to (13.4) and relabel the summation variable, $\mathbf{p}\to-\mathbf{p}$; one obtains\footnote{If $T$ is defined independently of the other transformations, its phase factor has the same freedom as that of $C$. Requiring $CPT$ symmetry leaves the phase factor arbitrary in only one of the two transformations, $C$ or $T$.}
+\begin{equation}
+\widehat\psi^T(t,\mathbf{r})=\pm\widehat\psi^+(-t,\mathbf{r}).
+\tag{13.12}
+\end{equation}
+
+This equation is analogous to the usual rule for time reversal in quantum mechanics. If a state is described by $\psi(t,\mathbf{r})$, its time-reversed state is described by $\psi^*(-t,\mathbf{r})$. Passing to the complex-conjugate function is necessary to restore the ``correct'' time dependence disrupted by changing the sign of $t$ (\emph{E.~P.~Wigner}, 1932).
+
+Because $T$ and hence $CPT$ interchange initial and final states, eigenstates and eigenvalues are not meaningful for these transformations. They therefore add no characteristics of particles as such. Their consequences for scattering processes will be discussed in \S~69, 71.
+
+We now examine how the current 4-vector operator $\widehat j^\mu$ of (12.8) transforms under $C$, $P$, and $T$. Transformation (13.2), together with $(\partial_0,\partial_i)\to(\partial_0,-\partial_i)$, gives
+\begin{equation}
+P:\ (\widehat j^0,\widehat{\mathbf j})_{t,\mathbf r}
+\to(\widehat j^0,-\widehat{\mathbf j})_{t,-\mathbf r},
+\tag{13.13}
+\end{equation}
+as required for a true 4-vector. Transformation (13.7) would simply give
+\begin{equation}
+C:\ (\widehat j^0,\widehat{\mathbf j})_{t,\mathbf r}
+\to(-\widehat j^0,-\widehat{\mathbf j})_{t,\mathbf r},
+\tag{13.14}
+\end{equation}
+if $\widehat\psi$ and $\widehat\psi^+$ commuted. Their noncommutativity comes only from that of $\widehat a_{\mathbf p}$ and $\widehat a^+_{\mathbf p}$ (or $\widehat b_{\mathbf p}$ and $\widehat b^+_{\mathbf p}$ for equal $\mathbf p$). By the commutation rules\SourcePage{63}{68} (11.4), however, interchanging these operators produces only terms independent of the occupation numbers, and hence independent of the field state. Discarding these terms as in (11.5), (11.6), we recover (13.14), whose meaning is natural: charge conjugation changes the sign of every component of the 4-current when it replaces particles by antiparticles.
+
+Since time reversal transposes initial and final states, its action on an operator product reverses the order of the factors. Thus
+\[
+(\widehat\psi^+\partial_\mu\widehat\psi)^T
+=(\partial_\mu\widehat\psi)^T(\widehat\psi^+)^T.
+\]
+Here this fact is immaterial: commutativity of the $\psi$ operators, in the sense just specified, allows the original order to be restored without affecting the result. Also noting that $(\partial_0,\partial_i)\to(-\partial_0,\partial_i)$ under time reversal, we find
+\begin{equation}
+T:\ (\widehat j^0,\widehat{\mathbf j})_{t,\mathbf r}
+\to(\widehat j^0,-\widehat{\mathbf j})_{-t,\mathbf r}.
+\tag{13.15}
+\end{equation}
+The three-dimensional vector $\mathbf j$ reverses sign, in agreement with its classical meaning.
+
+Finally, under $CPT$,
+\begin{equation}
+CPT:\ (\widehat j^0,\widehat{\mathbf j})_{t,\mathbf r}
+\to(-\widehat j^0,-\widehat{\mathbf j})_{-t,-\mathbf r},
+\tag{13.16}
+\end{equation}
+as appropriate to 4-inversion. We emphasize that since 4-inversion reduces to a rotation of the 4-dimensional coordinate frame, no distinction between true and pseudo 4-tensors of any rank exists with respect to it.
+
+So far the particles have been understood to be free. Parity quantum numbers acquire real significance only for interacting particles, where they entail selection rules that allow or forbid particular processes. Such significance is possible only for conserved characteristics: eigenvalues of operators commuting with the Hamiltonian of the interacting particles.
+
+Relativistic invariance requires the $CPT$ operator in any event to commute with the Hamiltonian. Experiment shows that electromagnetic and strong interactions are separately invariant under $C$ and $T$ (and also $P$), so the associated parity quantum numbers are conserved in these interactions. In the weak interaction, these conservation laws are violated\footnote{The possibility that parity might not be conserved in weak interactions\SourcePage{64}{69} was first proposed by \emph{Lee and Yang} (\emph{T.~D.~Lee}, \emph{C.~N.~Yang}, 1956). Earlier, \emph{Dirac} (1949) had expressed the more general idea that physical laws need not be $P$- and $T$-invariant.}.
+
+Anticipating a later result, the interaction operator for charged particles and the electromagnetic field is the product of the 4-vector operators $\widehat A$ and $\widehat j$. Charge conjugation reverses $\widehat j$; invariance of the electromagnetic interaction under this transformation therefore requires $\widehat A$ to reverse as well. In other words, photons are charge-odd particles.
+
+This behavior of the operators $\widehat A$ agrees with the properties of the 4-potential in classical theory. Indeed, the transformations
+\[
+\begin{aligned}
+C:\quad &(\widehat A_0,\widehat{\mathbf A})\to(-\widehat A_0,-\widehat{\mathbf A})_{t,\mathbf r},\\
+P:\quad &(\widehat A_0,\widehat{\mathbf A})\to(\widehat A_0,-\widehat{\mathbf A})_{t,-\mathbf r},\\
+CPT:\quad &(\widehat A_0,\widehat{\mathbf A})\to(-\widehat A_0,-\widehat{\mathbf A})_{-t,-\mathbf r},
+\end{aligned}
+\]
+imply
+\[
+T:\quad (\widehat A_0,\widehat{\mathbf A})\to(\widehat A_0,-\widehat{\mathbf A})_{-t,\mathbf r},
+\]
+which is precisely the classical time-reversal rule for the electromagnetic potentials.
+
+The demand for $CPT$ invariance places no restrictions on the properties of a particle considered alone. It does, however, impose relations between particle and antiparticle properties. Foremost among these is equality of their masses; this is already evident from the connection, discussed in \S~11, between 4-inversion and the very origin of the concepts of particle and antiparticle.
+
+Furthermore, $CPT$ invariance implies that the proportionality coefficients relating the electric and magnetic moment vectors to the spin vector differ between a particle and its antiparticle only in sign. The magnetic moment changes sign under $C$ and $T$, and, being an axial vector, is invariant under $P$. Hence $CPT$, while turning a particle into its antiparticle, leaves the sign of the magnetic moment unchanged, whereas the spin vector reverses. The same conclusion holds for the electric moment: it is unchanged by time reversal and reverses under charge conjugation and, as a polar vector, under spatial inversion.
+
+The requirements of $P$ or $T$ invariance, whenever they hold, already constrain the properties of each individual particle: they\SourcePage{65}{70} forbid it to have an electric dipole moment. For a stationary elementary particle, the only vector constructible from its $\psi$ operators is its spin operator vector. This vector is even under $P$ and odd under $T$, so it can determine a magnetic moment but not an electric one. Notice that either $P$ invariance or $T$ invariance alone suffices for this prohibition.
+
+\ProblemHeading
+
+Find the charge parity and spatial parity of a system consisting of a spin-zero particle and its antiparticle, when their relative motion has orbital angular momentum $l$.
+
+\SolutionHeading Interchanging the particle coordinates is equivalent to inversion about the center of mass and therefore multiplies the orbital function by $(-1)^l$. Interchanging the charge variables is equivalent to charge conjugation and multiplies the ``charge'' factor in the wave function by the required value $C$. The condition $C(-1)^l=1$ gives
+\[
+C=(-1)^l.
+\]
+The spatial parity $P$ of the system is the product of the orbital parity and the intrinsic parities of the two particles. Since the particle and antiparticle have equal intrinsic parities here, $P$ equals the orbital parity: $P=(-1)^l$.

@@ -1,0 +1,117 @@
+\SourcePage{50}{55}
+
+\section{Particles and antiparticles}
+
+Following the general procedure of second quantization, we must expand an arbitrary wave function in eigenfunctions of a complete set of possible free-particle states, for example in the plane waves $\psi_p$:
+\[
+\psi=\sum_{\mathbf p}a_{\mathbf p}\psi_p,
+\qquad
+\psi^*=\sum_{\mathbf p}a^*_{\mathbf p}\psi^*_p.
+\]
+The coefficients $a_{\mathbf p}$, $a^*_{\mathbf p}$ would then have to be understood as the operators $\widehat a_{\mathbf p}$, $\widehat a^+_{\mathbf p}$ that annihilate and create particles in the corresponding states.\footnote{We attach the 4-momentum index $p$ to the $\psi$-functions; below, functions of ``negative frequency'' will be denoted by $\psi_{-p}$. The operators $\widehat a$, $\widehat a^+$ instead carry the three-dimensional momentum index $\mathbf p$, which fully specifies the state of a real particle.}
+
+At this point, however, we immediately encounter a new circumstance of principle, absent in nonrelativistic theory. For a plane wave satisfying (10.5), the energy $\varepsilon$ at a given momentum $\mathbf p$ is constrained only by $\varepsilon^2=\mathbf p^2+m^2$ and can therefore take the two values $\pm\sqrt{\mathbf p^2+m^2}$. Yet only positive values of $\varepsilon$ can have the physical meaning of the energy of a free particle. The negative values cannot simply be discarded: the general solution of the wave equation is a superposition of all its independent particular solutions. This circumstance shows that some modi\SourcePageJoin{51}{56}fication is needed in the interpretation of the expansion coefficients of $\psi$ and $\psi^*$ upon second quantization.
+
+Write the expansion as
+\begin{equation}
+\psi=\sum_{\mathbf p}\frac{1}{\sqrt{2\varepsilon}}a^{(+)}_{\mathbf p}
+e^{i(\mathbf p\mathbf r-\varepsilon t)}
++\sum_{\mathbf p}\frac{1}{\sqrt{2\varepsilon}}a^{(-)}_{\mathbf p}
+e^{i(\mathbf p\mathbf r+\varepsilon t)},
+\tag{11.1}
+\end{equation}
+where the first sum contains plane waves of positive frequency, normalized according to (10.16), and the second contains waves of negative ``frequency''; throughout, $\varepsilon$ denotes the positive quantity $\varepsilon=+\sqrt{\mathbf p^2+m^2}$. In second quantization, the coefficients $a^{(+)}_{\mathbf p}$ in the first sum are replaced in the usual manner by the particle annihilation operators $\widehat a_{\mathbf p}$. In the second sum, however, we note that when matrix elements are subsequently formed, the time dependence of its terms corresponds not to annihilation but to creation of particles; the factor $e^{i\varepsilon t}=(e^{-i\varepsilon t})^*$ represents one additional particle of energy $\varepsilon$ in the final state (cf. the end of \S~2). Accordingly, we replace $a^{(-)}_{\mathbf p}$ by operators $\widehat b^+_{-\mathbf p}$ that create particles of another kind. Also changing the summation variable in the second sum of (11.1) from $\mathbf p$ to $-\mathbf p$, so that its exponential factor becomes $e^{-i(\mathbf p\mathbf r-\varepsilon t)}$, we obtain the $\psi$-operators in the form
+\begin{equation}
+\widehat\psi
+=\sum_{\mathbf p}\frac{1}{\sqrt{2\varepsilon}}
+\left(\widehat a_{\mathbf p}e^{-ipx}+\widehat b^+_{\mathbf p}e^{ipx}\right),
+\qquad
+\widehat\psi^+
+=\sum_{\mathbf p}\frac{1}{\sqrt{2\varepsilon}}
+\left(\widehat a^+_{\mathbf p}e^{ipx}+\widehat b_{\mathbf p}e^{-ipx}\right).
+\tag{11.2}
+\end{equation}
+
+Thus all operators $\widehat a_{\mathbf p}$, $\widehat b_{\mathbf p}$ multiply functions having the ``correct'' time dependence, proportional to $e^{-i\varepsilon t}$, while $\widehat a^+_{\mathbf p}$, $\widehat b^+_{\mathbf p}$ multiply their complex conjugates. In accordance with the general rules, this makes it possible to interpret $\widehat a_{\mathbf p}$, $\widehat b_{\mathbf p}$ as annihilation operators and $\widehat a^+_{\mathbf p}$, $\widehat b^+_{\mathbf p}$ as creation operators for particles with momenta $\mathbf p$ and energies $\varepsilon$.
+
+We are led to two kinds of particles that occur together and on an equal footing. They are called \emph{particles} and \emph{antiparticles} (the reason for these names will become clear below). In the second-quantized formalism, one kind is represented by $\widehat a_{\mathbf p}$, $\widehat a^+_{\mathbf p}$ and the other by $\widehat b_{\mathbf p}$, $\widehat b^+_{\mathbf p}$. Since the operators for both kinds occur in the same $\psi$-operator, the two kinds have equal masses.
+
+The same conclusions can also be reached directly from the requirements of relativistic invariance.
+
+\SourcePage{52}{57}
+In mathematical terms, Lorentz transformations are rotations of the four-dimensional coordinate system that change the direction of the time axis. Together with purely spatial rotations, which leave the time axis unchanged, they form a transformation group called the \emph{Lorentz group}.\footnote{The set of all three-dimensional spatial rotations is itself a group and is a subgroup of the Lorentz group. The set of Lorentz transformations by itself, however, is not a group: the result of successive Lorentz transformations may reduce to a purely spatial rotation.} All these transformations share the property that they do not carry the $t$ axis outside the corresponding sheet of the light cone; this expresses the physical principle that signal propagation has a limiting speed.
+
+From a purely mathematical standpoint, simultaneous reversal of all four coordinates, a \emph{four-dimensional inversion}, is also a rotation: the determinant of this transformation is $+1$, just as for every other rotational transformation. It carries the time axis from one sheet of the light cone to the other. Although this makes the transformation physically unrealizable as a change of reference frame, mathematically the distinction amounts only to the fact that, owing to the pseudo-Euclidean metric, such a rotation cannot be performed without allowing the coordinates to become complex along the way.
+
+It is natural to suppose that this distinction is immaterial when four-dimensional invariance is at issue. Every expression invariant under Lorentz transformations should then also be invariant under 4-inversion. The precise statement of this requirement for a scalar $\psi$-operator will be given in \S~13. Here we merely note that it necessarily requires terms with both signs before $\varepsilon$ in the exponents to occur simultaneously in the $\psi$-operators, since $t\to-t$ changes precisely this sign.
+
+Return to (11.2) and establish the permutation relations among $\widehat a_{\mathbf p}$, $\widehat a^+_{\mathbf p}$, and among $\widehat b_{\mathbf p}$, $\widehat b^+_{\mathbf p}$. For photons this was done for $\widehat c_{\mathbf p}$, $\widehat c^+_{\mathbf p}$ by analogy with oscillators, and thus ultimately from the properties of the electromagnetic field in the classical limit. No such analogy is now available. To determine whether the operators obey Bose or Fermi commutation rules, we can be guided only by the form of the Hamiltonian constructed from them.
+
+\SourcePage{53}{58}
+This Hamiltonian is obtained (see III, \S~64) by substituting $\widehat\psi$ and $\widehat\psi^+$ for $\psi$ and $\psi^*$ in the integral $\int T_{00}\,d^3x$.\footnote{In nonrelativistic theory the conjugate operator $\widehat\psi^+$ is placed to the left of $\widehat\psi$. Here the order is immaterial, because interchanging $\widehat\psi^+$ and $\widehat\psi$ would merely interchange the equivalent operators $\widehat a_{\mathbf p}$ and $\widehat b_{\mathbf p}$. Once one order or the other has been selected, however, the same convention must always be followed.} We thus find
+\begin{equation}
+\widehat H=\sum_{\mathbf p}\varepsilon
+\left(\widehat a^+_{\mathbf p}\widehat a_{\mathbf p}
++\widehat b_{\mathbf p}\widehat b^+_{\mathbf p}\right).
+\tag{11.3}
+\end{equation}
+
+A sensible result for the eigenvalues of this Hamiltonian is obtained only if the operators obey the Bose commutation rules:
+\begin{equation}
+\left\{\widehat a_{\mathbf p},\widehat a^+_{\mathbf p}\right\}_{-}
+=\left\{\widehat b_{\mathbf p},\widehat b^+_{\mathbf p}\right\}_{-}
+=1
+\tag{11.4}
+\end{equation}
+(all other operator pairs commute; in particular, every particle operator $\widehat a_{\mathbf p}$, $\widehat a^+_{\mathbf p}$ commutes with every antiparticle operator $\widehat b_{\mathbf p}$, $\widehat b^+_{\mathbf p}$). Indeed, in that case
+\[
+\widehat H=\sum_{\mathbf p}\varepsilon
+\left(\widehat a^+_{\mathbf p}\widehat a_{\mathbf p}
++\widehat b^+_{\mathbf p}\widehat b_{\mathbf p}+1\right).
+\]
+The eigenvalues of $\widehat a^+_{\mathbf p}\widehat a_{\mathbf p}$ and $\widehat b^+_{\mathbf p}\widehat b_{\mathbf p}$ are the positive integers $N_{\mathbf p}$ and $\overline N_{\mathbf p}$, the numbers of particles and antiparticles. The infinite additive constant $\sum\varepsilon$, the ``vacuum energy,'' may again simply be omitted:
+\begin{equation}
+E=\sum_{\mathbf p}\varepsilon
+\left(N_{\mathbf p}+\overline N_{\mathbf p}\right)
+\tag{11.5}
+\end{equation}
+(cf. (3.1) and the note thereto). This expression is positive definite and agrees with the conception of two kinds of particles that actually exist. Similarly, the total momentum of the particle system is
+\begin{equation}
+\mathbf P=\sum_{\mathbf p}\mathbf p
+\left(N_{\mathbf p}+\overline N_{\mathbf p}\right).
+\tag{11.6}
+\end{equation}
+
+Had we adopted Fermi permutation relations in place of (11.4), with anticommutators rather than commutators, we would have obtained
+\[
+\widehat H=\sum_{\mathbf p}\varepsilon
+\left(\widehat a^+_{\mathbf p}\widehat a_{\mathbf p}
+-\widehat b^+_{\mathbf p}\widehat b_{\mathbf p}+1\right)
+\]
+and, instead of (11.5), the physically meaningless expression $\sum\varepsilon(N_{\mathbf p}-\overline N_{\mathbf p})$. This expression is not positive\SourcePage{54}{59} definite and therefore cannot represent the energy of a system of free particles.
+
+Thus spin-zero particles are bosons.
+
+Next consider the integral $Q$ in (10.19). Replacing $\psi$ and $\psi^*$ in $j^0$ by the operators $\widehat\psi$ and $\widehat\psi^+$ and carrying out the integration gives
+\begin{equation}
+\widehat Q
+=\sum_{\mathbf p}\left(\widehat a^+_{\mathbf p}\widehat a_{\mathbf p}
+-\widehat b_{\mathbf p}\widehat b^+_{\mathbf p}\right)
+=\sum_{\mathbf p}\left(\widehat a^+_{\mathbf p}\widehat a_{\mathbf p}
+-\widehat b^+_{\mathbf p}\widehat b_{\mathbf p}-1\right).
+\tag{11.7}
+\end{equation}
+The eigenvalues of this operator, after subtraction of the inessential additive constant $\sum1$, are
+\begin{equation}
+Q=\sum_{\mathbf p}\left(N_{\mathbf p}-\overline N_{\mathbf p}\right),
+\tag{11.8}
+\end{equation}
+that is, the differences between the total numbers of particles and antiparticles.
+
+As long as free particles are being considered without any interaction between them, the meaning of conservation of $Q$, like that of conservation of the total energy and momentum (11.5, 11.6), remains largely conditional: in fact, not only this sum but every $N_{\mathbf p}$ and $\overline N_{\mathbf p}$ is separately conserved. Whether $Q$ remains conserved when the particles interact depends on the nature of the interaction. If $Q$ is conserved, meaning that $\widehat Q$ commutes with the interaction Hamiltonian, then (11.8) shows how this law restricts possible changes in particle number: only pairs ``particle $+$ antiparticle'' can appear or disappear.
+
+If a particle is electrically charged, its antiparticle must have charge of the opposite sign. If the two had charges of the same sign, creation or annihilation of a pair would contradict the strict law of nature requiring conservation of total electric charge. We shall see below, in \S~32, how this opposition of charges arises automatically in the theory when particles interact with the electromagnetic field.
+
+The quantity $Q$ is sometimes called the \emph{charge} of the field of the particles in question. For electrically charged particles, $Q$ specifies, in particular, the total electric charge of the system in units of the elementary charge $e$. It should be emphasized, however, that particles and antiparticles may be electrically neutral.
+
+We have thus seen how the relativistic relation between energy and momentum, specifically the two-valued root of $\varepsilon^2=\mathbf p^2+m^2$, together with the requirements of relativistic invariance, introduces a new classification principle for particles into quantum theory: the possible existence of pairs of distinct particles, a particle and its antiparticle,\SourcePage{55}{60} related to one another in the manner described above. This remarkable prediction was first made by Dirac in 1930 for particles of spin $1/2$, before the first antiparticle, the positron, was actually discovered.\footnote{Weisskopf and Pauli extended the concept of antiparticles to bosons (V.~Weisskopf, W.~Pauli, 1934).}

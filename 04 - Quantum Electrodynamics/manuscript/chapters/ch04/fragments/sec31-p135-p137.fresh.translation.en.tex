@@ -1,0 +1,89 @@
+\SourcePage{135}{140}
+
+\section{Wave equation for a spin-\texorpdfstring{$3/2$}{3/2} particle}
+
+In its rest frame, a spin-$3/2$ particle is described by a symmetric third-rank 3-spinor, with $2s+1=4$ independent components. Accordingly, in an arbitrary reference frame its description may involve the 4-spinors $\xi^{\alpha\dot\beta\dot\gamma}$, $\eta_{\dot\alpha\beta\gamma}$ and $\zeta^{\alpha\beta\gamma}$, $\chi_{\dot\alpha\dot\beta\dot\gamma}$. Each is symmetric in all indices of the same kind, dotted or undotted; inversion interchanges the spinors within the first pair and within the second pair.
+
+For the 4-spinors $\xi^{\alpha\dot\beta\dot\gamma}$ and $\eta_{\dot\alpha\beta\gamma}$ to become 3-spinors symmetric in all three indices in the rest frame, they must obey
+\begin{equation}
+\widehat p^{\dot\alpha\beta}\eta_{\dot\alpha\beta\gamma}=0,
+\qquad
+\widehat p_{\alpha\dot\beta}\xi^{\alpha\dot\beta\dot\gamma}=0.
+\tag{31.1}
+\end{equation}
+Indeed, in the rest frame,
+\[
+\widehat p^{\dot\alpha\beta}\to\widehat p_0\delta_\alpha^\beta
+=m\delta_\alpha^\beta
+\]
+as follows from (20.1). Conditions (31.1) therefore give
+\[
+\delta_\alpha^\beta\eta^{\prime\alpha}_{\ \ \beta\gamma}=0,
+\qquad
+\delta_\alpha^\beta\xi^{\prime\alpha}_{\ \ \beta\gamma}=0,
+\]
+where primed letters denote the corresponding 3-spinors. In other words, these spinors vanish upon simplification over the in\SourcePageJoin{136}{141}dices $\alpha\beta$. This means that they are symmetric in those indices, and hence in all three indices.
+
+The differential relation between the spinors $\xi$ and $\eta$ is established by
+\begin{equation}
+\widehat p^{\delta\dot\gamma}\eta^{\dot\beta}_{\alpha\dot\delta}
+=m\xi^{\dot\beta\dot\gamma}_\alpha,
+\qquad
+\widehat p_{\delta\dot\gamma}\xi^{\dot\beta\dot\gamma}_\alpha
+=m\eta^{\dot\beta}_{\alpha\dot\delta}.
+\tag{31.2}
+\end{equation}
+The left-hand sides of these equations are symmetric in $\dot\beta,\dot\gamma$ or in $\alpha,\delta$, respectively. This symmetry is ensured by (31.1), by virtue of which they vanish upon simplification over all the indices. In the rest frame, equations (31.2) make the 3-spinors $\xi'$ and $\eta'$ identical. Eliminating either $\eta$ or $\xi$ from (31.2), we find that every component of both spinors satisfies the second-order equation
+\begin{equation}
+(\widehat p^2-m^2)\xi^{\alpha\dot\beta\dot\gamma}=0.
+\tag{31.3}
+\end{equation}
+
+Equations (31.1) and (31.2) together form the complete system of wave equations for a spin-$3/2$ particle\footnote{For a Lagrangian formulation of these equations, see the paper by Fierz and Pauli cited on p.~76.}. Adding the spinors $\zeta$ and $\chi$ would introduce nothing new. They are constructed according to
+\[
+m\zeta^{\alpha\beta\gamma}
+=\widehat p^{\alpha\dot\delta}\eta^{\beta\gamma}_{\dot\delta},
+\qquad
+m\chi_{\dot\alpha\dot\beta\dot\gamma}
+=\widehat p_{\dot\alpha\delta}\xi^\delta_{\dot\beta\dot\gamma}.
+\]
+
+The equations for spin-$3/2$ particles also admit another formulation, which uses the vector aspects of spinor properties (W.~Rarita, J.~Schwinger, 1941; A.~S.~Davydov, I.~E.~Tamm, 1942). A single four-dimensional vector index $\mu$ is associated with the pair of spinor indices $\alpha\dot\beta$. The components of the third-rank spinor $\xi^{\alpha\dot\beta\dot\gamma}$ can therefore be put into correspondence with components of the ``mixed'' quantities $\psi_\mu^{\dot\gamma}$, which carry one vector and one spinor index. Similarly, the spinor $\eta^{\dot\beta\alpha\gamma}$ corresponds to the quantities $\psi_\mu^\gamma$, while the two spinors together correspond to a ``vector'' bispinor $\psi_\mu$; its bispinor index is not displayed. The wave equation then takes the form of a ``Dirac equation'' for each vector component $\psi_\mu$:
+\begin{equation}
+(\gamma\widehat p-m)\psi_\mu=0
+\tag{31.4}
+\end{equation}
+with the additional condition
+\begin{equation}
+\gamma^\mu\psi_\mu=0.
+\tag{31.5}
+\end{equation}
+Using the spinor-representation expressions for the matrices $\gamma^\mu$ and the formulas relating spinor and vector components \SourcePage{137}{142}(18.6), (18.7), one readily verifies that (31.2) is contained in (31.4), while condition (31.5) is equivalent to symmetry of the spinors $\xi^{\alpha\dot\beta\dot\gamma}$ and $\eta^{\dot\alpha\beta\gamma}$ in $\dot\beta\dot\gamma$ or $\beta\gamma$. Multiplication of (31.4) by $\gamma^\mu$ gives, in view of (31.5),
+\[
+\gamma^\mu\gamma^\nu\widehat p_\nu\psi_\mu=0,
+\]
+or, on using the commutation rules for the matrices $\gamma^\mu$,
+\begin{equation}
+2g^{\mu\nu}\widehat p_\nu\psi_\mu
+-\gamma^\nu\widehat p_\nu\gamma^\mu\psi_\mu=0.
+\tag{31.6}
+\end{equation}
+The second term again vanishes by (31.5), while the first yields
+\begin{equation}
+\widehat p^\mu\psi_\mu=0.
+\tag{31.7}
+\end{equation}
+It is readily seen that this condition, which follows automatically from (31.4) and (31.5), is equivalent to (31.1).
+
+Finally, a further formulation of the wave equation introduces quantities $\psi_{ikl}$ ($i,k,l=1,2,3,4$) symmetric in their three bispinor indices (V.~Bargmann, E.~P.~Wigner, 1948). Together these quantities are equivalent to the combined components of all four spinors $\xi$, $\eta$, $\zeta$, and $\chi$. The wave equation is written as a system of ``Dirac equations'':
+\begin{equation}
+\widehat p_\mu\gamma^\mu_{im}\psi_{mkl}=m\psi_{ikl}.
+\tag{31.8}
+\end{equation}
+These equations already leave the required number, four, of independent components $\psi_{ikl}$, so no additional conditions need be imposed. Indeed, in the rest frame (31.8) reduces to
+\[
+\gamma^0_{im}\psi_{mkl}=\psi_{ikl},
+\]
+which, in the standard representation, makes all components with $i,k,l=3,4$ vanish; thus $\psi_{ikl}$ reduces to the components of a third-rank 3-spinor.
+
+The results above generalize directly to particles of any half-integral spin $s$. In a description by equations of the form (31.4), (31.5), the wave function is a symmetric 4-tensor of rank $(2s-1)/2$ carrying one bispinor index. In a description by equations of the form (31.8), the wave function instead carries $2s$ bispinor indices and is symmetric in them.

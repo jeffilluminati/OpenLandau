@@ -2,6 +2,7 @@ LATEXMK := latexmk
 FLAGS := -interaction=nonstopmode -halt-on-error -file-line-error
 TEXINPUTS := .:./manuscript//:./drivers//:
 TEXMFVAR := $(CURDIR)/build/texmf-var
+AUDIT_MANUSCRIPT ?= manuscript/chapters
 export TEXINPUTS
 export TEXMFVAR
 
@@ -9,7 +10,7 @@ CHAPTERS := 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15
 CHAPTER_TARGETS := $(addprefix chapter-,$(CHAPTERS))
 SOURCE_TARGETS := $(addprefix source-,$(CHAPTERS))
 
-.PHONY: all prepare book chapters sources fragment-source fragment-translation watch check check-vector clean distclean $(CHAPTER_TARGETS) $(SOURCE_TARGETS)
+.PHONY: all prepare book audit chapters sources fragment-source fragment-translation watch check check-vector clean distclean $(CHAPTER_TARGETS) $(SOURCE_TARGETS)
 
 all: book
 
@@ -18,6 +19,14 @@ prepare:
 
 book: prepare check-vector
 	$(LATEXMK) $(FLAGS) quantum-electrodynamics.tex
+
+# REF must point to the owner-local OCR outside the repository. Optional
+# AUDIT_MANUSCRIPT=... selects a single canonical fragment for the corrected
+# single-file audit mode.
+audit:
+	@test -n "$(REF)" || { echo 'Usage: make audit REF=/absolute/path/ref-ocr.txt [AUDIT_MANUSCRIPT=manuscript/...translation.en.tex]'; exit 2; }
+	@test -r "$(REF)" || { echo 'Reference OCR is missing or unreadable; owner must provide it as an opaque external audit input.'; exit 2; }
+	python3 ../tools/similarity-audit.py --manuscript "$(AUDIT_MANUSCRIPT)" "$(REF)"
 
 chapters: $(CHAPTER_TARGETS)
 

@@ -1,0 +1,327 @@
+\SourcePage{154}{159}
+
+\section{Motion in a Coulomb field}
+
+We begin the study of motion in the especially important Coulomb field by examining the behavior of the wave functions at short distances. For definiteness, consider an attractive field: $U=-Z\alpha/r$\footnote{In conventional units, $U=-Ze^2/r$. On passing to relativistic units, $e^2$ is replaced by the dimensionless quantity $\alpha$.}.
+
+At small $r$, the terms containing $\varepsilon\pm m$ may be dropped from equations (35.5); then
+\[
+\begin{aligned}
+(fr)'+\frac\varkappa rfr-\frac{Z\alpha}{r}gr&=0,\\
+(gr)'-\frac\varkappa rgr+\frac{Z\alpha}{r}fr&=0.
+\end{aligned}
+\]
+The functions $fr$ and $gr$ enter each of these equations symmetrically. We therefore seek both as the same powers of $r$: $fr=ar^\gamma$, $gr=br^\gamma$. Substitution gives
+\[
+a(\gamma+\varkappa)-bZ\alpha=0,
+\qquad
+aZ\alpha+b(\gamma-\varkappa)=0,
+\]
+whence
+\begin{equation}
+\gamma^2=\varkappa^2-(Z\alpha)^2.
+\tag{36.1}
+\end{equation}
+
+Let $(Z\alpha)^2<\varkappa^2$. Then $\gamma$ is real, and its positive value must be selected: the corresponding solution either remains finite at $r=0$ or diverges less rapidly than the other. This selection can be justified by considering a potential cut off (as explained in the preceding section) at some small $r_0$, and then taking the limit $r_0\to0$ (compare the analogous argument in III, \S~35). Thus,
+\begin{equation}
+f=\frac{Z\alpha}{\gamma+\varkappa}g
+=\operatorname{const}\cdot r^{-1+\gamma},
+\qquad
+\gamma=\sqrt{\varkappa^2-Z^2\alpha^2}
+=\sqrt{(j+1/2)^2-Z^2\alpha^2}.
+\tag{36.2}
+\end{equation}
+Although the wave function may become infinite at $r=0$ (when $\gamma<1$), the integral of $|\psi|^2$ remains, of course,\SourcePage{155}{160}convergent. If $(Z\alpha)^2>\varkappa^2$, both values of $\gamma$ in (36.2) are imaginary. The corresponding solutions oscillate as $r\to0$ (like $r^{-1}\cos(|\gamma|\ln r)$), again describing the inadmissible relativistic situation of ``fall'' to the center discussed above. Since $\varkappa^2\geqslant1$, a pure Coulomb field can therefore be treated in Dirac theory only for $Z\alpha<1$, that is, $Z<137$.
+
+We pause to describe qualitatively what occurs for $Z>137$. To avoid an ambiguity in the boundary condition at $r=0$, one must again use a potential cut off at some distance $r_0$ (I.~Ya.~Pomeranchuk and Ya.~A.~Smorodinsky, 1945). This has not only a formal but also a direct physical meaning. A charge $Z>137$ can in fact be concentrated only in a finite-radius ``superheavy'' nucleus. Let us therefore see how the level positions change as $Z$ increases at fixed $r_0$.
+
+In the ``uncut'' Coulomb field, the energy $\varepsilon_1$ of the lowest level vanishes at $Z\alpha=1$, and the curve $\varepsilon_1(Z)$ terminates: for $Z\alpha>1$, the level $\varepsilon_1$ becomes imaginary (see (36.10)). In the ``cut-off'' field, at a fixed $r_0\ne0$, the level $\varepsilon_1$ passes through zero only at some $Z\alpha>1$. But the value $\varepsilon_1=0$ has no special physical status, and for $r_0\ne0$ it is not distinguished formally either: the curve $\varepsilon_1(Z)$ does not terminate there. As $Z$ is increased further, the levels continue to descend, and at a certain ``critical'' value $Z=Z_c(r_0)$ the energy $\varepsilon_1$ reaches the boundary $(-m)$ of the lower continuum. As explained in the preceding section, this means that the energy required to create a free positron has fallen to zero. Hence the critical value $Z_c$ is the greatest charge that a ``bare'' nucleus of the specified $r_0$ can possess.
+
+For $Z>Z_c$, the level has $\varepsilon_1<-m$, and creation of two electron--positron pairs becomes energetically favorable. The positrons escape to infinity, carrying away kinetic energy $2(|\varepsilon_1|-m)$, while the two electrons occupy the level $\varepsilon_1$. The result is an ``ion'' with a filled $K$ shell and charge $Z_{\mathrm{eff}}=Z-2$ (S.~S.~Gershtein and Ya.~B.~Zeldovich, 1969). This system is stable for $Z>Z_c$ until $Z$ reaches values at which the next level arrives at the boundary $-m$\footnote{For example, if the nuclear charge is distributed uniformly over a sphere of radius $r_0=1.2\cdot10^{-12}$~cm, the critical value is $Z_c=170$, and the next level reaches the boundary $-m$ at $Z=185$ (V.~S.~Popov, 1970). For a detailed account of the quantitative theory, see the review by Ya.~B.~Zeldovich and V.~S.~Popov (Usp. Fiz. Nauk~--- 1971.~--- Vol.~105.~--- P.~403).}.
+
+\SourcePage{156}{161}
+Finally, even for a point charge, radiative corrections distort the potential at short distances. Their inclusion, however, produces only corrections of order $\alpha$ to the value of $Z_c\alpha$.
+
+We now turn to the exact solution of the wave equation (G.~Darwin, 1928; W.~Gordon, 1928).
+
+\textbf{Discrete spectrum ($\varepsilon<m$).} Seek the functions $f$ and $g$ in the form
+\begin{equation}
+\begin{aligned}
+f&=\sqrt{m+\varepsilon}\,e^{-\rho/2}\rho^{\gamma-1}(Q_1+Q_2),\\
+g&=-\sqrt{m-\varepsilon}\,e^{-\rho/2}\rho^{\gamma-1}(Q_1-Q_2),
+\end{aligned}
+\tag{36.3}
+\end{equation}
+where
+\begin{equation}
+\rho=2\lambda r,
+\qquad
+\lambda=\sqrt{m^2-\varepsilon^2},
+\qquad
+\gamma=\sqrt{\varkappa^2-Z^2\alpha^2}.
+\tag{36.4}
+\end{equation}
+This form is natural in view of the already known behavior of the functions as $\rho\to0$, (36.2), and their exponential decay ($\sim e^{-\rho/2}$) as $\rho\to\infty$. Since the first relation (35.9) must also hold for the Coulomb field when $\rho\to\infty$, we expect $Q_1\gg Q_2$ in this limit.
+
+Substitution of (36.3) in (35.4) gives
+\[
+\begin{aligned}
+\rho(Q_1+Q_2)'&+(\gamma+\varkappa)(Q_1+Q_2)-\rho Q_2
++Z\alpha\sqrt{\frac{m-\varepsilon}{m+\varepsilon}}(Q_1-Q_2)=0,\\
+\rho(Q_1-Q_2)'&+(\gamma-\varkappa)(Q_1-Q_2)+\rho Q_2
+-Z\alpha\sqrt{\frac{m+\varepsilon}{m-\varepsilon}}(Q_1+Q_2)=0
+\end{aligned}
+\]
+(a prime denotes differentiation with respect to $\rho$). Their sum and difference yield
+\begin{equation}
+\begin{aligned}
+\rho Q_1'+\left(\gamma-\frac{Z\alpha\varepsilon}{\lambda}\right)Q_1
++\left(\varkappa-\frac{Z\alpha m}{\lambda}\right)Q_2&=0,\\
+\rho Q_2'+\left(\gamma+\frac{Z\alpha\varepsilon}{\lambda}-\rho\right)Q_2
++\left(\varkappa+\frac{Z\alpha m}{\lambda}\right)Q_1&=0,
+\end{aligned}
+\tag{36.5}
+\end{equation}
+or, on eliminating $Q_1$ or $Q_2$,
+\[
+\begin{aligned}
+\rho Q_1''+(2\gamma+1-\rho)Q_1'
+-\left(\gamma-\frac{Z\alpha\varepsilon}{\lambda}\right)Q_1&=0,\\
+\rho Q_2''+(2\gamma+1-\rho)Q_2'
+-\left(\gamma+1-\frac{Z\alpha\varepsilon}{\lambda}\right)Q_2&=0
+\end{aligned}
+\]
+(where $\gamma^2-(Z\alpha\varepsilon/\lambda)^2=\varkappa^2-(Z\alpha m/\lambda)^2$ must be used). The solutions finite at $\rho=0$ are
+\begin{equation}
+\begin{aligned}
+Q_1&=AF\left(\gamma-\frac{Z\alpha\varepsilon}{\lambda},2\gamma+1,\rho\right),\\
+Q_2&=BF\left(\gamma+1-\frac{Z\alpha\varepsilon}{\lambda},2\gamma+1,\rho\right),
+\end{aligned}
+\tag{36.6}
+\end{equation}
+\SourcePage{157}{162}
+where $F(\alpha,\beta,z)$ is the confluent hypergeometric function. Setting $\rho=0$ in either equation (36.5), we find the relation between the constants $A$ and $B$:
+\begin{equation}
+B=-\frac{\gamma-Z\alpha\varepsilon/\lambda}{\varkappa-Z\alpha m/\lambda}A.
+\tag{36.7}
+\end{equation}
+
+Both hypergeometric functions in (36.6) must reduce to polynomials (otherwise they grow as $e^\rho$ when $\rho\to\infty$, and the entire wave function grows with them as $e^{\rho/2}$). The function $F(\alpha,\beta,z)$ reduces to a polynomial when the parameter $\alpha$ is a negative integer or zero. Write
+\begin{equation}
+\gamma-\frac{Z\alpha\varepsilon}{\lambda}=-n_r.
+\tag{36.8}
+\end{equation}
+For $n_r=1,2,\ldots$, both hypergeometric functions reduce to polynomials. If $n_r=0$, only one of them does. But $n_r=0$ means $\gamma=Z\alpha\varepsilon/\lambda$, and then, as is readily verified, $Z\alpha m/\lambda=|\varkappa|$. If $\varkappa<0$, the coefficient $B$ in (36.7) vanishes, so that $Q_2=0$ and the required condition is not violated. If $\varkappa>0$, however, $B=A$, and for $n_r=0$ the function $Q_2$ remains divergent. The permitted values of the quantum number $n_r$ are therefore
+\begin{equation}
+n_r=\begin{cases}
+0,1,2,\ldots&\text{for }\varkappa<0,\\
+1,2,3,\ldots&\text{for }\varkappa>0.
+\end{cases}
+\tag{36.9}
+\end{equation}
+
+Definition (36.8) now gives the following expression for the discrete energy levels:
+\begin{equation}
+\frac\varepsilon m
+=\left[1+\frac{(Z\alpha)^2}
+{\left(\sqrt{\varkappa^2-(Z\alpha)^2}+n_r\right)^2}\right]^{-1/2}.
+\tag{36.10}
+\end{equation}
+In particular, the energy of the ground level $1s_{1/2}$ ($|\varkappa|=1$, $n_r=0$) is
+\[
+\varepsilon_1=m\sqrt{1-(Z\alpha)^2}.
+\]
+
+For $Z\alpha\ll1$, the first terms in the expansion of (36.10) give
+\[
+\frac\varepsilon m-1
+=-\frac{(Z\alpha)^2}{2(|\varkappa|+n_r)^2}
+\left\{1+\frac{(Z\alpha)^2}{|\varkappa|+n_r}
+\left[\frac1{|\varkappa|}-\frac3{4(|\varkappa|+n_r)}\right]\right\}.
+\]
+Putting $n_r+|\varkappa|=n$ ($=1,2,\ldots$) and noting that $|\varkappa|=j+1/2$, we recover formula (34.4), obtained earlier by perturbation theory. As noted at the end of \S~34, the subsequent terms of this expansion have no meaning, since they are certainly masked by radiative corrections. The exact expression (36.10), however, remains meaningful when $Z\alpha\sim1$.
+
+\SourcePage{158}{163}
+The twofold degeneracy of the levels revealed by the approximate formula (34.4) is also retained in the exact expression: because only $|\varkappa|$ enters it, levels with different $l$ and the same $j$ still coincide.
+
+It remains to determine the overall normalization coefficient $A$ in the wave function. As usual, a discrete-spectrum wave function must satisfy $\int|\psi|^2d^3x=1$; for $f$ and $g$ this condition is
+\[
+\int_0^\infty(f^2+g^2)r^2\,dr=1.
+\]
+The simplest way to find $A$ is from the asymptotic form of the functions as $r\to\infty$. The asymptotic formula
+\[
+F(-n_r,2\gamma+1,\rho)
+\approx\frac{\Gamma(2\gamma+1)}{\Gamma(n_r+2\gamma+1)}(-\rho)^{n_r}
+\]
+(see III, (d.~14)) gives
+\[
+f\approx(-1)^{n_r}A\sqrt{m+\varepsilon}
+\frac{\Gamma(2\gamma+1)}{\Gamma(n_r+2\gamma+1)}
+e^{-\lambda r}(2\lambda r)^{\gamma+n_r-1}.
+\]
+Comparison with (36.22), derived below, determines $A$. Collecting the resulting formulas, we write the final expressions for the normalized wave functions:
+\begin{equation}
+\begin{aligned}
+\left.\begin{matrix}f\\g\end{matrix}\right\}
+={}&\frac{\pm(2\lambda)^{3/2}}{\Gamma(2\gamma+1)}
+\left[\frac{(m\pm\varepsilon)\Gamma(2\gamma+n_r+1)}
+{4m(Z\alpha m/\lambda)(Z\alpha m/\lambda-\varkappa)n_r!}\right]^{1/2}
+(2\lambda r)^{\gamma-1}e^{-\lambda r}\times{}\\
+&\times\left\{\left(\frac{Z\alpha m}{\lambda}-\varkappa\right)
+F(-n_r,2\gamma+1,2\lambda r)
++n_rF(1-n_r,2\gamma+1,2\lambda r)\right\}.
+\end{aligned}
+\tag{36.11}
+\end{equation}
+(the upper signs refer to $f$, and the lower signs to $g$).
+
+\textbf{Continuous spectrum ($\varepsilon>m$).} There is no need to solve the wave equation anew for states in the continuous spectrum. Their wave functions follow from the discrete-spectrum functions by the replacements\footnote{Below in this section, $p$ denotes $|\mathbf p|=\sqrt{\varepsilon^2-m^2}$.}
+\begin{equation}
+\sqrt{m-\varepsilon}\to-i\sqrt{\varepsilon-m},
+\qquad
+\lambda\to-ip,
+\qquad
+-n_r\to\gamma-i\frac{Z\alpha\varepsilon}{p}
+\tag{36.12}
+\end{equation}
+(for the choice of sign in analytically continuing the root $\sqrt{m-\varepsilon}$, see III, \S~128). The functions must, however, be normalized again.
+
+\SourcePage{159}{164}
+Making these replacements in (36.11), write $f$ and $g$ as
+\[
+\begin{aligned}
+\left.\begin{matrix}f\\g\end{matrix}\right\}
+={}&\left.\begin{matrix}\sqrt{\varepsilon+m}\\i\sqrt{\varepsilon-m}\end{matrix}\right\}
+\cdot A'e^{ipr}(2pr)^{\gamma-1}\times{}\\
+&\times\left[e^{i\xi}F(\gamma-i\nu,2\gamma+1,-2ipr)
+\mp e^{-i\xi}F(\gamma+1-i\nu,2\gamma+1,-2ipr)\right],
+\end{aligned}
+\]
+where $A'$ is a new normalization constant and
+\begin{equation}
+\nu=\frac{Z\alpha\varepsilon}{p},
+\qquad
+e^{-2i\xi}=\frac{\gamma-i\nu}{\varkappa-i\nu m/\varepsilon}
+\tag{36.13}
+\end{equation}
+($\xi$ is real, since $\gamma^2+(Z\alpha\varepsilon/p)^2
+=\varkappa^2+(Z\alpha m/p)^2$).
+
+The known formula
+\[
+F(\alpha,\beta,z)=e^zF(\beta-\alpha,\beta,-z)
+\]
+(see III, (d.~10)) gives
+\[
+\begin{aligned}
+F(\gamma+1-i\nu,2\gamma+1,-2ipr)
+&=e^{-2ipr}F(\gamma+i\nu,2\gamma+1,2ipr)={}\\
+&=e^{-2ipr}F^*(\gamma-i\nu,2\gamma+1,-2ipr),
+\end{aligned}
+\]
+and therefore
+\begin{equation}
+\left.\begin{matrix}f\\g\end{matrix}\right\}
+=2iA'\sqrt{\varepsilon\pm m}(2pr)^{\gamma-1}
+\left.\begin{matrix}\operatorname{Im}\\\operatorname{Re}\end{matrix}\right\}
+\left\{e^{i(pr+\xi)}F(\gamma-i\nu,2\gamma+1,-2ipr)\right\}.
+\tag{36.14}
+\end{equation}
+
+The normalization coefficient $A'$ is fixed by comparing the asymptotic form of this function with the general expression (35.7) for a normalized spherical wave. We give directly the resulting wave functions of the continuous spectrum (and then verify them)\footnote{The wave functions in a repulsive field follow by reversing the sign before $Z\alpha$, that is, by reversing the sign of $\nu$.}:
+\begin{equation}
+\begin{aligned}
+\left.\begin{matrix}f\\g\end{matrix}\right\}
+={}&2^{3/2}\sqrt{\frac{m\pm\varepsilon}{\varepsilon}}
+e^{\pi\nu/2}\frac{|\Gamma(\gamma+1+i\nu)|}{\Gamma(2\gamma+1)}
+\frac{(2pr)^\gamma}{r}\times{}\\
+&\times\left.\begin{matrix}\operatorname{Im}\\\operatorname{Re}\end{matrix}\right\}
+\left\{e^{i(pr+\xi)}F(\gamma-i\nu,2\gamma+1,-2ipr)\right\}.
+\end{aligned}
+\tag{36.15}
+\end{equation}
+The asymptotic expression for this function follows from formula III, (d.~14), of which only the first term is relevant here (the second decreases with a higher power of $1/r$):
+\begin{equation}
+\left.\begin{matrix}f\\g\end{matrix}\right\}
+=\frac{\sqrt2}{r}\sqrt{\frac{\varepsilon\pm m}{\varepsilon}}
+\left.\begin{matrix}\sin\\\cos\end{matrix}\right\}
+\left(pr-\frac{\pi l}{2}+\delta_\varkappa+\nu\ln2pr-\frac{\pi l}{2}\right),
+\tag{36.16}
+\end{equation}
+\SourcePage{160}{165}
+where
+\begin{equation}
+\delta_\varkappa=\xi-\arg\Gamma(\gamma+1+i\nu)-\frac{\pi\gamma}{2}+\frac{\pi l}{2},
+\tag{36.17}
+\end{equation}
+or
+\begin{equation}
+e^{2i\delta_\varkappa}
+=\frac{\varkappa-i\nu m/\varepsilon}{\gamma-i\nu}
+\frac{\Gamma(\gamma+1-i\nu)}{\Gamma(\gamma+1+i\nu)}e^{i\pi(l-\gamma)}.
+\tag{36.18}
+\end{equation}
+For later reference, note the phases in the ultrarelativistic case ($\varepsilon\gg m$, $\nu\approx Z\alpha$):
+\begin{equation}
+e^{2i\delta_\varkappa}
+=\frac\varkappa{\gamma-iZ\alpha}
+\frac{\Gamma(\gamma+1-iZ\alpha)}{\Gamma(\gamma+1+iZ\alpha)}e^{i\pi(l-\gamma)}.
+\tag{36.19}
+\end{equation}
+
+Expression (36.16) differs from (35.8) only by the logarithmic term in the argument of the trigonometric function. As with the Schrödinger equation, the slow decrease of the Coulomb potential distorts the wave phase, making it a slowly varying function of $r$.
+
+On analytic continuation into the region $\varepsilon<m$, expression (36.18) becomes
+\begin{equation}
+e^{2i\delta_\varkappa}
+=\frac{\varkappa-Z\alpha m/\lambda}{\gamma-Z\alpha\varepsilon/\lambda}
+\frac{\Gamma(\gamma+1-Z\alpha\varepsilon/\lambda)}
+{\Gamma(\gamma+1+Z\alpha\varepsilon/\lambda)}e^{i\pi(l-\gamma)}.
+\tag{36.20}
+\end{equation}
+It has poles at the points where $\gamma+1-Z\alpha\varepsilon/\lambda=1-n_r$, $n_r=1,2,\ldots$ (the poles of the $\Gamma$ function in the numerator), and also at $\gamma-Z\alpha\varepsilon/\lambda=-n_r=0$ (provided $\varkappa<0$); as expected, these points coincide with the discrete energy levels.
+
+Near any pole with $n_r\ne0$,
+\[
+e^{2i\delta_\varkappa}\approx
+\frac{(Z\alpha m/\lambda-\varkappa)e^{i\pi(l-\gamma)}}
+{n_r!\Gamma(2\gamma+1+n_r)}
+\Gamma\left(\gamma+1-\frac{Z\alpha\varepsilon}{\lambda}\right).
+\]
+The form of the $\Gamma$ function near its pole follows from the known formula $\Gamma(z)\Gamma(1-z)=\pi/\sin\pi z$:
+\[
+\Gamma\left(\gamma+1-\frac{Z\alpha\varepsilon}{\lambda}\right)
+\approx\frac\pi{\Gamma(n_r)\sin\pi(\gamma+1-Z\alpha\varepsilon/\lambda)},
+\]
+\[
+\begin{aligned}
+\sin\pi\left(\gamma+1-\frac{Z\alpha\varepsilon}{\lambda}\right)
+&\approx\pi\cos\pi n_r\frac d{d\varepsilon}
+\left(\frac{Z\alpha\varepsilon}{\lambda}\right)(\varepsilon-\varepsilon_0)={}\\
+&=(-1)^{n_r}\frac{\pi Z\alpha m^2}{\lambda^3}(\varepsilon-\varepsilon_0)
+\end{aligned}
+\]
+($\varepsilon_0$ is an energy level). Thus\footnote{It is readily verified that this formula remains valid for $n_r=0$ as well.},
+\begin{equation}
+e^{2i\delta_\varkappa}\approx(-1)^{l+n_r}
+\frac{e^{-i\pi\gamma}(Z\alpha m/\lambda-\varkappa)}
+{n_r!\Gamma(2\gamma+1+n_r)}
+\frac{\lambda^3}{Z\alpha m^2}\frac1{\varepsilon-\varepsilon_0}.
+\tag{36.21}
+\end{equation}
+
+\SourcePage{161}{166}
+At the end of the preceding section, formula (35.11) was obtained, relating the residue of $e^{2i\delta_\varkappa}$ at its pole to the coefficient in the asymptotic wave function of the corresponding bound state. For a Coulomb field, however, this formula must be modified slightly because (36.16) contains the sum $\delta_\varkappa+\nu\ln(2pr)$ instead of the constant phase shift $\delta_\varkappa$ used in (35.7). The left side of (35.11) must therefore contain, in place of $e^{2i\delta_\varkappa}$,
+\[
+\exp[2i\delta_\varkappa+2i\nu\ln(2pr)]
+\to e^{2i\delta_\varkappa}(2i\lambda r)^{2(n_r+\gamma)}.
+\]
+Using (36.21) and determining from (35.11) the coefficient $A_0$ (which is now a power function of $r$), we obtain the asymptotic form of the normalized discrete-spectrum wave function:
+\begin{equation}
+f=\left[\frac{(Z\alpha m/\lambda-\varkappa)(m+\varepsilon)\lambda^2}
+{2n_r!Z\alpha m^2\Gamma(2\gamma+1+n_r)}\right]^{1/2}
+\frac{e^{-\lambda r}}r(2\lambda r)^{n_r+\gamma}.
+\tag{36.22}
+\end{equation}
+This formula was already used to determine the coefficient in (36.11).

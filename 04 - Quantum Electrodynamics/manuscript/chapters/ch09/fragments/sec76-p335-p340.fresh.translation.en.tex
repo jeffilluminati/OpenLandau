@@ -1,0 +1,198 @@
+\SourcePage{335}{340}
+\section{The photon propagator}
+
+So far, in \S~43 and 74, we have needed the explicit form of the electromagnetic-field operators $\widehat{\mathbf A}$ only when calculating matrix elements involving a change in the number of real photons. For this purpose it was sufficient to use the representation given in \S~2, in which the free-field potentials are expanded in transverse plane waves.
+
+This representation by itself, however, does not describe an arbitrary field completely. This is evident already from the fact that the scattering diagrams (73.13), (73.14) must also include the Coulomb interaction between the electrons. That interaction is described by the scalar potential $\Phi$ and plainly cannot be reduced to the exchange of transverse virtual photons alone (which are described by a vector potential subject to $\Div{\mathbf A}=0$)\footnote{When $\Div{\mathbf A}=0$, Maxwell's equations give the following equations for $\mathbf A$ and $\Phi$:
+\[
+\Box\mathbf A=-4\pi\mathbf j+\Grad{\frac{\partial\Phi}{\partial t}},\qquad \Delta\Phi=-4\pi\rho.
+\]
+In this gauge, $\Phi$ obeys the static Poisson equation (compare formula (76.13) for $D_{00}$ in the same gauge).}.
+
+Thus we still have, in substance, no complete definition of the operators $\widehat{\mathbf A}$; without one, the photon propagator cannot be calculated directly from
+\begin{equation}
+D_{\mu\nu}(x-x')=i\langle 0|\operatorname{T}A_\mu(x)A_\nu(x')|0\rangle.
+\tag{76.1}
+\label{eq:76.1}
+\end{equation}
+On the other hand, the gauge ambiguity of the potentials largely deprives the oper\SourcePageJoin{336}{341}ators that would have to be introduced for an exhaustive quantization of the electromagnetic field of physical meaning.
+
+These difficulties are merely formal rather than physical. They can be avoided by using certain general properties of the propagator that follow directly from relativistic and gauge invariance.
+
+The most general form of a rank-two 4-tensor that depends only on the 4-vector $\xi=x-x'$ is
+\begin{equation}
+D_{\mu\nu}(\xi)=g_{\mu\nu}D(\xi^2)-\partial_\mu\partial_\nu D^{(l)}(\xi^2),
+\tag{76.2}
+\end{equation}
+where $D$ and $D^{(l)}$ are scalar functions of the invariant $\xi^2$\footnote{These functions are different in the three ranges of their argument that cannot be transformed into one another by Lorentz transformations: outside the light cone ($\xi^2<0$), in its future interior ($\xi^2>0$, $\xi_0>0$), and in its past interior ($\xi^2>0$, $\xi_0<0$).}. Notice that the tensor is automatically symmetric.
+
+Accordingly, in the momentum representation we have
+\begin{equation}
+D_{\mu\nu}(k)=D(k^2)g_{\mu\nu}+k_\mu k_\nu D^{(l)}(k^2),
+\tag{76.3}
+\label{eq:76.3}
+\end{equation}
+where $D(k^2)$ and $D^{(l)}(k^2)$ are the Fourier components of $D(\xi^2)$ and $D^{(l)}(\xi^2)$.
+
+In physical quantities---the scattering amplitudes---the photon propagator is multiplied by the transition currents of two electrons, and therefore occurs in combinations such as $j_{21}^{\mu}D_{\mu\nu}j_{43}^{\nu}$ (see, for example, (73.13)). Current conservation ($\partial_\mu j^\mu=0$), however, implies that its matrix elements $j_{21}^{\mu}=\bar\psi_2\gamma^\mu\psi_1$ obey the 4-transversality condition
+\begin{equation}
+k_\mu(j^\mu)_{21}=0,
+\tag{76.4}
+\end{equation}
+where $k=p_2-p_1$ (compare (43.13)). It is consequently clear that no physical result changes under the replacement
+\begin{equation}
+D_{\mu\nu}\to D_{\mu\nu}+\chi_\mu k_\nu+\chi_\nu k_\mu,
+\tag{76.5}
+\end{equation}
+where the $\chi_\mu$ may be arbitrary functions of $\mathbf k$ and $k_0$. This freedom in the choice of $D_{\mu\nu}$ corresponds to the freedom in the gauge of the field potentials.
+
+An arbitrary gauge transformation (76.5) may spoil the relativistically invariant form of $D_{\mu\nu}$ assumed in (76.3), if the quantities $\chi_\mu$ do not make up a 4-vector. Yet even if we restrict ourselves to relativistically invariant forms of the propagator, the choice of the function $D^{(l)}(k^2)$ in (76.3) remains arbitrary. It cannot affect physical results and may be fixed for convenience (L.~D.~Landau, A.~A.~Abrikosov, I.~M.~Khalatnikov, 1954).
+
+The determination of the propagator thus reduces to finding just one gauge-invariant
+
+\SourcePage{337}{342}
+function, $D(k^2)$. For a prescribed value of $k^2$, choose the $z$ axis along $\mathbf k$. The transformations (76.5) then leave the components $D_{xx}=D_{yy}=D(k^2)$ unchanged. It is therefore enough to calculate the single component $D_{xx}$, using any gauge for the potentials.
+
+We use the gauge in which $\Div{\widehat{\mathbf A}}=0$ and the operator $\widehat{\mathbf A}$ is given by the expansions (2.17), (2.18):
+\begin{equation}
+\widehat{\mathbf A}=\sum_{\mathbf k\alpha}\sqrt{\frac{2\pi}{\omega}}\left(\widehat c_{\mathbf k\alpha}\mathbf e^{(\alpha)}e^{-ikx}+\widehat c^{+}_{\mathbf k\alpha}\mathbf e^{(\alpha)*}e^{ikx}\right),
+\qquad \omega=|\mathbf k|
+\tag{76.6}
+\end{equation}
+(the index $\alpha=1,2$ labels the polarizations). Of all the vacuum expectation values of products of the operators $\widehat c$ and $\widehat c^+$, the only nonzero ones are
+\[
+\langle 0|\widehat c_{\mathbf k\alpha}\widehat c^+_{\mathbf k\alpha}|0\rangle=1.
+\]
+The definition (76.1) therefore gives
+\begin{equation}
+D_{ik}(\xi)=\frac{1}{(2\pi)^3}\int\frac{2\pi i\,d^3k}{\omega}
+\left(\sum_\alpha e_i^{(\alpha)}e_k^{(\alpha)*}\right)
+e^{-i\omega|\tau|+i\mathbf k\boldsymbol\xi}
+\tag{76.7}
+\end{equation}
+($i$ and $k$ are three-dimensional vector indices; we have replaced the sum over $\mathbf k$ by integration with the measure $d^3k/(2\pi)^3$). The absolute value of the difference $\tau=t-t'$ in the exponent results from the time ordering of the operator product in (76.1).
+
+Equation (76.7) shows that the integrand without the factor $e^{i\mathbf k\boldsymbol\xi}$ is the component in the three-dimensional Fourier expansion of $D_{ik}(\mathbf r,t)$. For $D_{xx}=-D$ it is
+\[
+\frac{2\pi i}{\omega}e^{-i\omega|\tau|}\sum_\alpha|e_x^{(\alpha)}|^2
+=\frac{2\pi i}{\omega}e^{-i\omega|\tau|}.
+\]
+To find $D_{xx}(k^2)$, it remains to expand this function as a Fourier integral over time. The required expansion is
+\[
+\frac{2\pi i}{\omega}e^{-i\omega|\tau|}
+=-\frac{1}{2\pi}\int_{-\infty}^{\infty}
+\frac{4\pi}{k_0^2-\mathbf k^2+i0}e^{-ik_0\tau}\,dk_0.
+\]
+As explained in the preceding section, this integration entails passing below the pole $k_0=+|\mathbf k|=+\omega$ and above the pole $k_0=-|\mathbf k|=-\omega$. For $\tau>0$ the integral is determined by the residue at $k_0=+\omega$, and for $\tau<0$ by the residue at $k_0=-\omega$.
+
+We finally obtain
+\begin{equation}
+D(k^2)=\frac{4\pi}{k^2+i0}.
+\tag{76.8}
+\end{equation}
+
+\SourcePage{338}{343}
+The occurrence of $+i0$ in the denominator, obtained automatically in the preceding derivation, agrees with rule (75.15): $i0$ is subtracted from the (zero) photon mass. It follows from (76.8) that the corresponding coordinate-space function $D(\xi^2)$ satisfies
+\begin{equation}
+-\partial_\mu\partial^\mu D(x-x')=4\pi\delta^{(4)}(x-x'),
+\tag{76.9}
+\end{equation}
+so it is a Green function of the wave equation.
+
+We shall normally set $D^{(l)}=0$, thus using the propagator in the form
+\begin{equation}
+D_{\mu\nu}=g_{\mu\nu}D(k^2)=\frac{4\pi}{k^2+i0}g_{\mu\nu}
+\tag{76.10}
+\end{equation}
+(the \emph{Feynman gauge}).
+
+We also give other gauge choices that can offer advantages in some applications.
+
+Putting $D^{(l)}=-D/k^2$, we obtain the propagator
+\begin{equation}
+D_{\mu\nu}=\frac{4\pi}{k^2}\left(g_{\mu\nu}-\frac{k_\mu k_\nu}{k^2}\right)
+\tag{76.11}
+\end{equation}
+(the \emph{Landau gauge}). In this case $D_{\mu\nu}k^\nu=0$. This choice is analogous to the Lorenz gauge for the potentials ($A_\mu k^\mu=0$).
+
+The gauge of the potentials defined by the three-dimensional condition $\Div{\mathbf A}=0$ has as its analogue the propagator gauge specified by
+\[
+D_{il}k^l=0,\qquad D_{0l}k^l=0.
+\]
+Together with $D_{xx}=-D=-4\pi/k^2$, these conditions give
+\begin{equation}
+D_{il}=\frac{4\pi}{\omega^2-\mathbf k^2}
+\left(\delta_{il}-\frac{k_i k_l}{\mathbf k^2}\right).
+\tag{76.12}
+\end{equation}
+To obtain this $D_{il}$, transformation (76.5) must be applied to propagator (76.10), with
+\[
+\chi_0=-\frac{4\pi\omega}{2(\omega^2-\mathbf k^2)\mathbf k^2},
+\qquad
+\chi_i=-\frac{4\pi k_i}{2(\omega^2-\mathbf k^2)\mathbf k^2}.
+\]
+The remaining components $D_{\mu\nu}$ then become
+\begin{equation}
+D_{00}=-4\pi/\mathbf k^2,\qquad D_{0i}=0.
+\tag{76.13}
+\end{equation}
+This gauge is called the Coulomb gauge (E.~Salpeter, 1952). Notice that $D_{00}$ is here the Fourier component of the Coulomb potential.
+
+Finally, the propagator gauge analogous to the potential gauge $\Phi=0$ is
+\begin{equation}
+D_{il}=\frac{4\pi}{\omega^2-\mathbf k^2}
+\left(\delta_{il}-\frac{k_i k_l}{\omega^2}\right),
+\qquad D_{0i}=D_{00}=0.
+\tag{76.14}
+\end{equation}
+
+\SourcePage{339}{344}
+This form is convenient in nonrelativistic problems (I.~E.~Dzyaloshinsky, L.~P.~Pitaevsky, 1959).
+
+All the expressions written above refer to the momentum representation of the propagator. In some cases it is convenient to use a mixed frequency--coordinate representation, namely the function
+\begin{equation}
+D_{\mu\nu}(\omega,\mathbf r)=\int D_{\mu\nu}(\omega,\mathbf k)e^{i\mathbf k\mathbf r}\frac{d^3k}{(2\pi)^3}.
+\tag{76.15}
+\end{equation}
+In the Feynman gauge (76.10),
+\[
+D_{\mu\nu}(\omega,\mathbf r)=g_{\mu\nu}D(\omega,\mathbf r),
+\]
+where
+\[
+D(\omega,\mathbf r)=4\pi\int\frac{e^{i\mathbf k\mathbf r}}{\omega^2-\mathbf k^2+i0}\frac{d^3k}{(2\pi)^3}
+=-\frac{i}{\pi r}\int_0^\infty\frac{e^{ikr}-e^{-ikr}}{\omega^2-k^2+i0}\,k\,dk,
+\]
+or, after replacing $k$ by $-k$ in the second term of the integrand,
+\[
+D(\omega,\mathbf r)=-\frac{i}{\pi r}\int_{-\infty}^{\infty}
+\frac{e^{ikr}k\,dk}{\omega^2-k^2+i0}.
+\]
+The last integral is evaluated by closing the contour with an infinitely distant semicircle in the upper half-plane of the complex $k$ plane. It then reduces to the residue at the pole $k=|\omega|+i0$. The result is
+\begin{equation}
+D(\omega,\mathbf r)=-e^{i|\omega|r}/r.
+\tag{76.16}
+\end{equation}
+
+We make the following observation concerning this expression. The process represented by diagrams (73.13), (73.14) can be pictured as electron 2 being scattered in the field produced by electron 1 (or conversely). Function (76.16) corresponds to the usual ``retarded'' potential $\propto e^{i\omega r}$ (see II, (64.1), (64.2)) only when $\omega>0$. The sign of $\omega$, however, depends on the arbitrary choice of direction for the arrow $k$ in the diagram. This property of $D(\omega,\mathbf r)$ means that, in quantum electrodynamics, the source of the field must be taken to be the particle that gives up energy, i.e. emits the virtual photon.
+
+We conclude with the propagator for spin-1 particles of nonzero mass. In this case there is no gauge freedom, and the choice of propagator is unique.
+
+Substitution of the $\psi$ operators (14.16) into the definition
+\begin{equation}
+G_{\mu\nu}=-i\langle 0|\operatorname{T}\psi_\mu(x)\psi_\nu^+(x')|0\rangle,
+\tag{76.17}
+\end{equation}
+
+\SourcePage{340}{345}
+gives an expression differing from (76.7) only in that the polarization sum in its integrand is replaced by
+\[
+\sum_\alpha u_\mu^{(\alpha)}u_\nu^{(\alpha)*}.
+\]
+Summation over polarizations is equivalent to averaging and then multiplying by 3, the number of independent polarizations. The average gives the density matrix (14.15) for unpolarized particles. Hence the vector-particle propagator is
+\begin{equation}
+G_{\mu\nu}(p)=-\frac{1}{p^2-m^2+i0}
+\left(g_{\mu\nu}-\frac{p_\mu p_\nu}{m^2}\right).
+\tag{76.18}
+\end{equation}
+Notice the analogous structure of propagators (75.17) and (76.18): their denominator is the difference $p^2-m^2$, while the numerator is, up to a factor, the density matrix of unpolarized particles having the specified spin.

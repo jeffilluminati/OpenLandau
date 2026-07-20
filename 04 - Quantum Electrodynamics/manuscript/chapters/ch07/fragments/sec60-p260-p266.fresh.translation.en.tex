@@ -1,0 +1,270 @@
+\SourcePage{260}{265}
+\section{Scattering by freely oriented systems}
+
+If an atomic energy level is nondegenerate, the polarizability and the coherent-scattering intensity are determined by the same tensor $\alpha_{ik}\equiv(c_{ik})_{11}$. If the level is degenerate, the observed values of these quantities are obtained by averaging over all states belonging to that level. The polarizability must be defined as the mean
+\[
+\alpha_{ik}=\overline{(c_{ik})}_{11}.
+\]
+The observed scattering intensity, on the other hand, is determined by averages of the products
+\[
+\overline{(c_{ik})_{11}(c_{lm})_{11}}.
+\]
+The connection between polarizability and scattering is therefore less direct.
+
+Notice that although each quantity $(c_{ik})_{11}$ may be complex, their mean values are real (we suppose that there is no absorption and that $\alpha_{ik}$ is Hermitian). Indeed, in carrying out the average one may choose the set of independent wave functions belonging to the degenerate level arbitrarily, and they can always all be chosen real.
+
+\SourcePage{261}{266}
+For free atoms or molecules (those not in an external field), level degeneracy is usually associated with an angular momentum whose orientation in space is free. Let the initial state in the scattering have angular momentum $J_1$, and the final state $J_2$. As usual, the scattering cross section must be averaged over all values of the projection $M_1$ and summed over the values of $M_2$. After the first average the cross section no longer depends on $M_2$, so the subsequent summation reduces to multiplication by $(2J_2+1)$. The averaged scattering cross section is thus
+\begin{equation}
+d\overline\sigma=\omega\omega'^{\,3}c_{iklm}^{(21)}e_i'{}^*e_ke_l'e_m^*\,do',
+\tag{60.1}
+\end{equation}
+where
+\begin{equation}
+c_{iklm}^{(21)}=\frac1{2J_1+1}\sum_{M_1M_2}(c_{ik})_{21}(c_{lm})_{21}^*
+=(2J_2+1)\overline{(c_{ik})_{21}(c_{lm})_{21}^*}^{\,1},
+\tag{60.2}
+\end{equation}
+and the bar with the index 1 denotes averaging over $M_1$.
+
+For unshifted scattering, states 1 and 2 belong to the same energy level ($\omega_{12}=0$). If only coherent scattering is meant, states 1 and 2 must coincide completely, so that $M_1=M_2$. The sum over $M_2$, and with it the factor $2J_2+1$ in (60.2), then disappears:
+\begin{equation}
+c_{iklm}^{(\text{coh})}=\overline{(c_{ik})_{11}(c_{lm})_{11}^*}^{\,1}.
+\tag{60.3}
+\end{equation}
+
+The result of the averaging can be written without a detailed calculation. Averaging over $M_1$ is equivalent to averaging over all orientations of the system, after which the mean can be expressed only in terms of the unit tensor $\delta_{ik}$. Only products of components belonging separately to the scalar, symmetric, and antisymmetric parts of the scattering tensor can have nonzero means: no expression constructed from the unit tensor can have the symmetry properties required by mixed products of these parts. Consequently,
+\begin{equation}
+c_{iklm}^{(21)}=G_{21}^0\delta_{ik}\delta_{lm}+c_{iklm}^{(21)s}+c_{iklm}^{(21)a},
+\tag{60.4}
+\end{equation}
+where
+\begin{equation}
+\begin{aligned}
+G_{21}^0&=(2J_2+1)\overline{(c^0)_{21}}^{\,1},\\
+c_{iklm}^{(21)s}&=(2J_2+1)\overline{(c_{ik}^s)_{21}(c_{lm}^s)_{21}^*}^{\,1},\\
+c_{iklm}^{(21)a}&=(2J_2+1)\overline{(c_{ik}^a)_{21}(c_{lm}^a)_{21}^*}^{\,1}.
+\end{aligned}
+\tag{60.5}
+\end{equation}
+In other words, the cross section (and hence the intensity) for scattering by a freely oriented system separates into the sum of three
+
+\SourcePage{262}{267}
+independent parts, which we shall call \emph{scalar, symmetric, and antisymmetric scattering}.
+
+Each of the three terms in (60.4) is expressed through just one independent quantity. The scalar scattering is expressed through $G_{21}^0$, while for the symmetric and antisymmetric scattering we have
+\begin{equation}
+\begin{aligned}
+c_{iklm}^{(21)s}&=\frac1{10}G_{21}^s
+\left(\delta_{il}\delta_{km}+\delta_{im}\delta_{kl}-\frac23\delta_{ik}\delta_{lm}\right),\\
+G_{21}^s&=(2J_2+1)\overline{(c_{ik}^s)_{21}(c_{ik}^s)_{21}}^{\,1};\\
+c_{iklm}^{(21)a}&=\frac16G_{21}^a(\delta_{il}\delta_{km}-\delta_{im}\delta_{kl}),\\
+G_{21}^a&=(2J_2+1)\overline{(c_{ik}^a)_{21}(c_{ik}^a)_{21}}^{\,1}
+\end{aligned}
+\tag{60.6}
+\end{equation}
+(the combination of unit tensors is constructed from the symmetry properties, after which the overall coefficient is found by contracting over the pairs of indices $il$ and $km$).
+
+Substitution of (60.4)--(60.6) into (60.1) gives the following expression for the scattering cross section:
+\begin{equation}
+d\overline\sigma=\omega\omega'^{\,3}\left\{G_{21}^0|\mathbf e'^*\mathbf e|^2
++\frac1{10}G_{21}^s\left(1+|\mathbf e'\mathbf e|^2-\frac23|\mathbf e'^*\mathbf e|^2\right)
++\frac16G_{21}^a\left(1-|\mathbf e'\mathbf e|^2\right)\right\}do'.
+\tag{60.7}
+\end{equation}
+This formula gives explicitly the angular dependence and polarization properties of the scattering.
+
+The total scattering cross section over all directions, summed over the final-photon polarizations and averaged over the polarizations and incident directions of the initial photon, follows directly from (60.1). We note that
+\[
+\overline{e_i^*e_k}=\delta_{ik}/3
+\]
+when the average is taken over both polarizations and directions of photon propagation (summing over them instead gives a result larger by a factor $2\cdot4\pi$). We obtain
+\begin{equation}
+\overline\sigma=\frac{8\pi}{9}\omega\omega'^{\,3}c_{ikik}^{(21)}
+=\frac{8\pi}{9}\omega\omega'^{\,3}(3G_{21}^0+G_{21}^s+G_{21}^a).
+\tag{60.8}
+\end{equation}
+
+It was stated above that the selection rules for scattering coincide with those for matrix elements of an arbitrary second-rank tensor. In view of the division of the scattering intensity into three independent parts, it is useful to formulate these rules separately for each part.
+
+\SourcePage{263}{268}
+The selection rules for symmetric scattering coincide with those for electric-quadrupole radiation, since the latter is also determined by an irreducible symmetric tensor (the quadrupole-moment tensor). For antisymmetric scattering they coincide with those for magnetic-dipole radiation, since both are determined by an axial vector (recall that an antisymmetric tensor is equivalent, or dual, to an axial vector).\footnote{This statement concerns, of course, the selection rules associated with symmetry, not the specific form of the axial vector in radiation: the magnetic-moment vector contains a spin part, whereas scattering involves matrix elements of quantities of orbital (coordinate) origin.} There is, however, one difference. Diagonal matrix elements, which in radiation give mean values of electric or magnetic moments (and do not correspond to radiative transitions), are important in scattering: they belong to coherent scattering.
+
+For scalar scattering, the selection rules coincide with those for matrix elements of a scalar quantity. Transitions are therefore possible only between states of the same symmetry. In particular, the total angular momentum $J$ and its projection $M$ must have the same values (and diagonal matrix elements in $M$ are independent of the value of $M$; see vol.~III, (29.3)). For unshifted scattering, states 1 and 2 must consequently coincide completely, not merely in energy but also in $M$, so unshifted scalar scattering is entirely coherent. Conversely, since every state is in any event combined with itself in scalar scattering, coherent scattering always contains a scalar part.
+
+Just as the scattering cross section was averaged above, the polarizability tensor of a system freely oriented in space must also be averaged over the directions of the angular momentum $J_1$. The averaging is immediate:
+\[
+\alpha_{ik}\equiv\overline{(c_{ik})_{11}}^{\,1}=\overline{(c^0)_{11}}^{\,1}\delta_{ik}.
+\]
+The symmetric and antisymmetric parts of the scattering tensor vanish upon averaging, since $\delta_{ik}$ is the only isotropic second-rank tensor.
+
+It was noted above that diagonal matrix elements of a scalar do not depend on $M_1$. The averaging sign over $(c^0)_{11}$ may therefore be omitted altogether (and $(c^0)_{11}$ may be calculated for any value of $M_1$), giving the polarizability
+\begin{equation}
+\alpha_{ik}\equiv(c^0)_{11}\delta_{ik}.
+\tag{60.9}
+\end{equation}
+
+\SourcePage{264}{269}
+For the same reason, the averaging sign may also be omitted in $G_{11}^0$, which determines the scalar part of coherent scattering:
+\begin{equation}
+G_{11}^0=\overline{|(c^0)_{11}|^2}^{\,1}=(c^0)_{11}^2
+\tag{60.10}
+\end{equation}
+(the factor $2J_2+1$ is omitted in accordance with (60.3)). Thus there is a simple relation between the mean polarizability and the scalar part of coherent scattering. Both are determined by the quantity
+\begin{equation}
+(c^0)_{11}=\frac23\sum_n\frac{\omega_{n1}}{\omega_{n1}^2-\omega^2}|\mathbf d_{n1}|^2.
+\tag{60.11}
+\end{equation}
+
+\ProblemHeading
+
+1. Find the angular distribution and degree of depolarization in the scattering of linearly polarized light.
+
+\SolutionHeading Let $\theta$ be the angle between the scattering direction $\mathbf n'$ and the polarization direction $\mathbf e$ of the incident light. The scattered light contains two independent components, polarized in the plane $\mathbf n'\mathbf e$ (intensity $I_1$) and perpendicular to it (intensity $I_2$); the degree of depolarization is the ratio $I_2/I_1$. The intensities $I_1$ and $I_2$ follow from (60.7), with $\mathbf e'$ directed appropriately.
+
+In scalar scattering the light remains completely polarized in the same plane ($I_2=0$), and the angular intensity distribution is
+\[
+I=\frac32\sin^2\theta.
+\]
+(Here and below, the expressions for $I=I_1+I_2$ are normalized to have mean value 1 when averaged over directions.) For symmetric scattering,
+\[
+I=\frac3{20}(6+\sin^2\theta),
+\qquad \frac{I_2}{I_1}=\frac3{3+\sin^2\theta}.
+\]
+For antisymmetric scattering,
+\[
+I=\frac34(1+\cos^2\theta),
+\qquad \frac{I_2}{I_1}=\frac1{\cos^2\theta}.
+\]
+
+2. Find the same quantities for the scattering of unpolarized light.
+
+\SolutionHeading The transition in (60.7) to unpolarized incident light is effected by the replacement
+\[
+e_i e_k^*\longrightarrow\frac12(\delta_{ik}-n_i n_k),
+\]
+which represents averaging over the polarization directions $\mathbf e$ at a fixed incident direction $\mathbf n$. The scattered light is partially polarized. By symmetry, its two independent components are linearly polarized in the scattering plane $\mathbf n\mathbf n'$ (intensity $I_{\parallel}$) and perpendicular to it (intensity $I_{\perp}$). Denote by $\theta$ the scattering angle, that is, the angle between $\mathbf n$ and $\mathbf n'$.
+
+For scalar scattering,
+\[
+I=I_{\perp}+I_{\parallel}=\frac34(1+\cos^2\theta),
+\qquad \frac{I_{\parallel}}{I_{\perp}}=\cos^2\theta;
+\]
+
+\SourcePage{265}{270}
+for symmetric scattering,
+\[
+I=\frac3{40}(13+\cos^2\theta),
+\qquad \frac{I_{\parallel}}{I_{\perp}}=\frac{6+\cos^2\theta}{7};
+\]
+and for antisymmetric scattering,
+\[
+I=\frac38(2+\sin^2\theta),
+\qquad \frac{I_{\parallel}}{I_{\perp}}=1+\sin^2\theta.
+\]
+
+3. For the scattering of circularly polarized light, determine the reversal coefficient (the ratio of the intensity of the component circularly polarized in the ``reversed'' sense to that of the component polarized in the ``proper'' sense).
+
+\SolutionHeading With circularly polarized incident light, the angular distribution and the degree of depolarization (the ratio $I_{\parallel}/I_{\perp}$) are the same as for the scattering of unpolarized light.
+
+Let the polarization vector of the incident light have components $\mathbf e=(1,i,0)/\sqrt2$ (in a coordinate system whose $xz$ plane is the scattering plane and whose $z$ axis is along $\mathbf n$). The polarization vectors of the ``reversed'' and ``proper'' circularly polarized components of the scattered light are then, respectively,
+\[
+\mathbf e'=\frac1{\sqrt2}(\cos\theta,-i,-\sin\theta)
+\quad\text{and}\quad
+\mathbf e'=\frac1{\sqrt2}(\cos\theta,i,-\sin\theta).
+\]
+Calculating the intensity from (60.7), we find the reversal coefficients $P$ for the three types of scattering:
+\[
+P^0=\tan^4\frac\theta2,
+\qquad
+P^s=\frac{13+\cos^2\theta+10\cos\theta}{13+\cos^2\theta-10\cos\theta},
+\qquad
+P^a=\frac{1-\cos^4(\theta/2)}{1-\sin^4(\theta/2)}
+\]
+($\theta$ is the scattering angle).
+
+4. Calculate the cross section for scattering of a low-frequency photon by a hydrogen atom in its ground state.
+
+\SolutionHeading A low-frequency photon can scatter only elastically. Since the orbital angular momentum in the ground state of the hydrogen atom is $L=0$, the selection rules show that only scalar scattering occurs when spin--orbit coupling is neglected. The static polarizability of the atom (in ordinary units) is
+\[
+\alpha=\frac92\left(\frac{\hbar^2}{me^2}\right)^{\!3}
+\]
+(see vol.~III, \S~76, problem 4). Substitution in (60.8) gives the required cross section:
+\[
+\sigma_t=54\pi\left(\frac{\omega}{c}\right)^{\!4}
+\left(\frac{\hbar^2}{me^2}\right)^{\!6}.
+\]
+
+5. Calculate the cross section for elastic scattering of $\gamma$ radiation by a deuteron ($H$.~$A$.~Bethe, $R$.~Peierls, 1935).
+
+\SolutionHeading The wave functions of the deuteron ground state and of its continuum states (a dissociated deuteron) are
+\[
+\psi_0=\sqrt{\frac{\varkappa}{2\pi}}\frac{e^{-\varkappa r}}r,
+\qquad \psi_{\mathbf p}=e^{i\mathbf p\mathbf r},
+\qquad \varkappa=\sqrt{MI}
+\]
+(see (58.2), (58.3)). The matrix element of the dipole moment, equal to
+\[
+\mathbf d_{\mathbf p0}=-\frac{ie\mathbf p_{\mathbf p0}}{M\omega_{\mathbf p0}},
+\]
+was calculated in \S~58:
+\[
+\mathbf d_{\mathbf p0}=-\frac{4\pi i e}{M\omega_{\mathbf p0}}
+\sqrt{\frac{\varkappa}{2\pi}}\frac{\mathbf p}{\varkappa^2+p^2},
+\]
+
+\SourcePage{266}{271}
+where the frequencies are $\omega_{\mathbf p0}=(\mathbf p^2+\varkappa^2)/M$. The polarizability tensor is
+\[
+\alpha_{ik}=\left\{\frac23\int\frac{\omega_{\mathbf p0}}{\omega_{\mathbf p0}^2-\omega^2}
+|\mathbf d_{\mathbf p0}|^2\frac{d^3p}{(2\pi)^3}-\frac{e^2}{2M\omega^2}\right\}\delta_{ik}.
+\]
+The first term is associated with virtual excitation of the deuteron's internal degrees of freedom; it is written in the form (60.11). The second term is associated with the action of the wave field on the translational motion of the deuteron as a whole. Since this motion is quasiclassical, the corresponding part of the scattering tensor is given by (59.14), with the deuteron mass $2M$ used for $m$.
+
+The calculation of $\alpha_{ik}$ reduces to the integral
+\[
+J=\frac12\int_{-\infty}^{\infty}
+\frac{z^4\,dz}{(z^2+1)^3[(z^2+1)^2-\gamma^2]},
+\qquad z=\frac p\varkappa,
+\qquad \gamma=\frac{M\omega}{\varkappa^2}=\frac\omega I.
+\]
+We have
+\[
+J=\left.\frac18\frac d{d\lambda}
+\left(\frac1\lambda\frac{dJ_0}{d\lambda}\right)\right|_{\lambda=1},
+\qquad
+J_0=\frac12\int_{-\infty}^{\infty}
+\frac{z^4\,dz}{(z^2+\lambda^2)[(z^2+1)^2-\gamma^2]}.
+\]
+For $\gamma<1$, the integrand has poles in the upper half-plane of the complex variable $z$ at $i\lambda$, $i\sqrt{1+\gamma}$, and $i\sqrt{1-\gamma}$; the integral $J_0$ is evaluated from the residues at these poles. The result is
+\[
+J=\frac\pi2\left\{\frac{(1+\gamma)^{3/2}}{2\gamma^4}
++\frac{(1-\gamma)^{3/2}}{2\gamma^4}
+-\left(\frac3{8\gamma^2}+\frac1{\gamma^4}\right)\right\}.
+\]
+By (60.8) and (60.10), the total scattering cross section is expressed in terms of $\alpha_{ik}$ and is (in ordinary units)
+\[
+\sigma=\frac{8\pi}{3}\left(\frac{e^2}{Mc^2}\right)^{\!2}
+\left|-1-\frac4{3\gamma^2}+\frac2{3\gamma^2}
+\big[(1+\gamma)^{3/2}+(1-\gamma)^{3/2}\big]\right|^2
+\quad\text{for}\quad \gamma=\frac{\hbar\omega}{I}<1.
+\]
+For $\gamma>1$ (above the deuteron-dissociation threshold), the scattering amplitude is obtained by analytic continuation of the amplitude for $\gamma<1$; it acquires an imaginary part, which must be positive (in accordance with the bypass prescription in (59.17)):
+\[
+\sigma=\frac{8\pi}{3}\left(\frac{e^2}{Mc^2}\right)^{\!2}
+\left|-1-\frac4{3\gamma^2}+\frac2{3\gamma^2}(\gamma+1)^{3/2}
++i\frac2{3\gamma^2}(\gamma-1)^{3/2}\right|^2
+\quad\text{for}\quad \gamma>1.
+\]
+For $\gamma\gg1$ this gives $\sigma=(8\pi/3)(e^2/Mc^2)^2$, as expected for nonrelativistic scattering by a free proton.
+
+The angular distribution of the radiation is
+\[
+d\sigma=\sigma\frac34(1+\cos^2\theta)\frac{do}{4\pi},
+\]
+where $\theta$ is the scattering angle. Defining the scattering amplitude according to (59.24), we have
+\[
+\Im f(0)=\frac{2e^2}{3Mc^2}\frac{(\gamma-1)^{3/2}}{\gamma^2},
+\qquad \gamma>1.
+\]
+By the optical theorem (59.26), this quantity equals $\omega\sigma_t/(4\pi)$, where $\sigma_t$ is the total photodissociation cross section (58.4). Recall that the elastic-scattering cross section is of higher order ($\sim e^4$) than the dissociation cross section ($\sim e^2$; see (58.4)), so that $\sigma_t$ coincides with the dissociation cross section. For the same reason, in the approximation used here the scattering amplitude for $\gamma<1$ (below the dissociation threshold) is real.

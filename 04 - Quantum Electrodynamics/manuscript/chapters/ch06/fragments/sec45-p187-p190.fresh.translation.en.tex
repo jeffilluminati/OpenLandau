@@ -1,0 +1,97 @@
+\SourcePage{187}{192}
+\section{Dipole radiation}
+
+We apply the formulas obtained above to photon emission by a relativistic electron in a prescribed external field. In this case, the transition current is the matrix element of the operator
+\[
+\hat j=\widehat{\bar\psi}\gamma\widehat\psi,
+\]
+\SourcePage{188}{193}
+in which the $\psi$ operators are understood to be expanded in a system of wave functions for the stationary electron states in the given field (see \S~32). The matrix element $\langle 0_i1_f|\hat j|1_i0_f\rangle$ corresponds to the electron transition from state $i$ to state $f$. This change in the occupation numbers is effected by the operator $\hat a_f^+\hat a_i$, and the transition current is therefore
+\begin{equation}
+j_{fi}^{\mu}=\bar\psi_f\gamma^\mu\psi_i
+=(\psi_f^*\psi_i,\,\psi_f^*\boldsymbol\alpha\psi_i),
+\tag{45.1}
+\end{equation}
+where $\psi_i$ and $\psi_f$ are the wave functions of the initial and final electron states.
+
+Choose the photon wave function in the three-dimensionally transverse gauge (the polarization 4-vector is $e=(0,\mathbf e)$). The product in (43.10) is then $j_{fi}e^*=-\mathbf j_{fi}\mathbf e^*$. Substituting $V_{fi}$ in (44.4), we obtain the following formula for the emission probability (per second) into the solid-angle element $do$ for a photon with polarization $\mathbf e$:
+\begin{equation}
+dw_{\mathbf e\mathbf n}=e^2\frac\omega{2\pi}
+\left|\mathbf e^*\mathbf j_{fi}(\mathbf k)\right|^2do,
+\tag{45.2}
+\end{equation}
+where
+\begin{equation}
+\mathbf j_{fi}(\mathbf k)=\int\psi_f^*\boldsymbol\alpha\psi_i
+e^{-i\mathbf k\mathbf r}\,d^3x.
+\tag{45.3}
+\end{equation}
+
+Summation over the photon polarizations is carried out by averaging over the directions of $\mathbf e$ (in the plane perpendicular to the specified direction $\mathbf n=\mathbf k/\omega$), and then multiplying the result by 2 for the two independent possibilities for transverse photon polarization\footnote{The averaging uses the formula
+\begin{equation}
+\overline{e_i e_k^*}=\frac12(\delta_{ik}-n_i n_k)
+\tag{45.4\text{\fontencoding{T2A}\selectfont а}}
+\end{equation}
+or
+\begin{equation}
+\overline{(\mathbf a\mathbf e)(\mathbf b\mathbf e^*)}
+=\frac12\{\mathbf a\mathbf b-(\mathbf a\mathbf n)(\mathbf b\mathbf n)\}
+=\frac12(\mathbf a\times\mathbf n)(\mathbf b\times\mathbf n),
+\tag{45.4\text{\fontencoding{T2A}\selectfont б}}
+\end{equation}
+where $\mathbf a$ and $\mathbf b$ are constant vectors.}. This gives
+\begin{equation}
+dw_{\mathbf n}=e^2\frac\omega{2\pi}
+\left|\mathbf n\times\mathbf j_{fi}(\mathbf k)\right|^2do.
+\tag{45.4}
+\end{equation}
+
+Of particular importance is the case in which the photon wavelength $\lambda$ is large compared with the dimensions $a$ of the radiating system. This situation is usually connected with particle velocities small compared with the speed of light. To the first approximation in $a/\lambda$ (corresponding to dipole radiation; cf. II, \S~67), the factor $e^{-i\mathbf k\mathbf r}$ in the transition current (45.3), which varies little in the
+\SourcePage{189}{194}
+region where either $\psi_i$ or $\psi_f$ differs appreciably from zero, may be replaced by unity. In other words, this replacement means neglecting the photon momentum in comparison with the particle momenta in the system.
+
+In the same approximation, the integral $\mathbf j_{fi}(0)$ may be replaced by its nonrelativistic expression, namely the matrix element $\mathbf v_{fi}$ of the electron velocity evaluated with Schrödinger wave functions. In turn, this element is $\mathbf v_{fi}=-i\omega\mathbf r_{fi}$, while $e\mathbf r_{fi}=\mathbf d_{fi}$, where $\mathbf d$ is the dipole moment of the electron (in its orbital motion). We consequently obtain the following formula for the dipole-radiation probability:
+\begin{equation}
+dw_{\mathbf e\mathbf n}=\frac{\omega^3}{2\pi}
+\left|\mathbf e^*\mathbf d_{fi}\right|^2do
+\tag{45.5}
+\end{equation}
+(the direction $\mathbf n$ enters here implicitly: the vector $\mathbf e$ must be perpendicular to $\mathbf n$). Summing over polarizations gives
+\begin{equation}
+dw_{\mathbf n}=\frac{\omega^3}{2\pi}
+\left|\mathbf n\times\mathbf d_{fi}\right|^2do.
+\tag{45.6}
+\end{equation}
+
+Because these formulas are nonrelativistic with respect to the electron, their generalization to arbitrary electron systems is immediate: $\mathbf d_{fi}$ is to mean the matrix element of the total dipole moment of the system.
+
+Integrating formula (45.6) over all directions, we find the total emission probability:
+\begin{equation}
+w=\frac{4\omega^3}{3}|\mathbf d_{fi}|^2,
+\tag{45.7}
+\end{equation}
+or, in ordinary units,
+\begin{equation}
+w=\frac{4\omega^3}{3\hbar c^3}|\mathbf d_{fi}|^2.
+\tag{45.7\text{\fontencoding{T2A}\selectfont а}}
+\end{equation}
+
+The radiation intensity $I$ is obtained by multiplying the probability by $\hbar\omega$:
+\begin{equation}
+I=\frac{4\omega^4}{3c^3}|\mathbf d_{fi}|^2.
+\tag{45.8}
+\end{equation}
+
+This formula displays a direct analogy with the classical formula (see II, (67.11)) for the intensity of dipole radiation from a system of periodically moving particles: the radiation intensity at frequency $\omega_s=s\omega$ (where $\omega$ is the frequency of the particle motion and $s$ is an integer) is
+\begin{equation}
+I_s=\frac{4\omega_s^4}{3c^3}|\mathbf d_s|^2,
+\tag{45.9}
+\end{equation}
+\SourcePage{190}{195}
+where $\mathbf d_s$ are the Fourier components of the dipole moment, that is, the coefficients in the expansion
+\begin{equation}
+\mathbf d(t)=\sum_{s=-\infty}^{\infty}\mathbf d_s e^{-is\omega t}.
+\tag{45.10}
+\end{equation}
+
+The quantum formula (45.8) follows from (45.9) when these Fourier components are replaced by the matrix elements for the corresponding transitions. This rule, which expresses Bohr's \emph{correspondence principle}, is a special case of the general correspondence between Fourier components of classical quantities and quantum matrix elements in the semiclassical case (see III, \S~48). Radiation is semiclassical for transitions between states having large quantum numbers; the transition frequency $\hbar\omega=E_i-E_f$ is then small compared with the energies $E_i$ and $E_f$ of the radiating system. This circumstance would not, however, change the form of (45.8), which is valid for arbitrary transitions. It explains the fact---accidental in a certain sense---that the correspondence principle for the radiation intensity is valid not only in the semiclassical case but also in the general quantum case.

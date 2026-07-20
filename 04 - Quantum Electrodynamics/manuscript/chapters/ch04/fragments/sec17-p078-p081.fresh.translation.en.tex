@@ -1,0 +1,94 @@
+\SourcePage{78}{83}
+
+\section{Four-dimensional spinors}
+
+In nonrelativistic theory, a particle of arbitrary spin $s$ is described by a quantity with $2s+1$ components---a symmetric spinor of rank $2s$. Mathematically, such quantities furnish irreducible representations of the spatial-rotation group.
+
+In relativistic theory, this group is only a subgroup of the larger group of four-dimensional rotations, the Lorentz group. It is consequently necessary to develop the theory of four-dimensional spinors (4-spinors), namely quantities furnishing irreducible representations of the Lorentz group. This theory is presented in \S\S~17--19. Sections~17 and 18 deal only with the proper Lorentz group, which does not include spatial inversion; inversion itself is considered in \S~19.
+
+The theory of 4-spinors is constructed by analogy with that of three-dimensional spinors (B.~L.~van der Waerden, 1929; G.~E.~Uhlenbeck, O.~Laporte, 1931).
+
+A spinor $\xi^\alpha$ is a two-component quantity ($\alpha=1,2$). When these are components of the wave function of a spin-$1/2$ particle, $\xi^1$ and $\xi^2$ correspond respectively to the eigenvalues $+1/2$ and $-1/2$ of the spin projection on the $z$-axis. Under any transformation belonging to the (proper) Lorentz group, the two quantities $\xi^1$ and $\xi^2$ are transformed into linear combinations of one another:
+\begin{equation}
+\xi^{1'}=\alpha\xi^1+\beta\xi^2,\qquad
+\xi^{2'}=\gamma\xi^1+\delta\xi^2,
+\tag{17.1}
+\end{equation}
+The coefficients $\alpha$, $\beta$, $\gamma$, and $\delta$ are definite functions of the rotation angles of the four-dimensional coordinate system, subject to the condition
+\begin{equation}
+\alpha\delta-\beta\gamma=1,
+\tag{17.2}
+\end{equation}
+that is, the determinant of the binary transformation (17.1) is unity, just as are the determinants of coordinate transformations in the Lorentz group.
+
+Condition (17.2) makes the bilinear form $\xi^1\Xi^2-\xi^2\Xi^1$ invariant under (17.1), where $\xi^\alpha$ and $\Xi^\alpha$ are two spinors. This form corresponds to a spin-zero particle ``composed'' of two spin-$1/2$ particles. To write invariants of this kind naturally, one introduces, together with the ``contravariant'' components \SourcePage{79}{84}$\xi^\alpha$, the ``covariant'' components $\xi_\alpha$. Conversion between them is performed with the ``metric spinor'' $g_{\alpha\beta}$\footnote{Spinor indices will be denoted by the first letters of the Greek alphabet: $\alpha$, $\beta$, $\gamma$, \ldots.}:
+\begin{equation}
+\xi_\alpha=g_{\alpha\beta}\xi^\beta,
+\tag{17.3}
+\end{equation}
+where
+\begin{equation}
+g=\begin{pmatrix}0&1\\-1&0\end{pmatrix},
+\tag{17.4}
+\end{equation}
+and hence
+\begin{equation}
+\xi_1=\xi^2,\qquad \xi_2=-\xi^1.
+\tag{17.5}
+\end{equation}
+The invariant $\xi^1\Xi^2-\xi^2\Xi^1$ can then be written as the scalar product $\xi^\alpha\Xi_\alpha$. Notice also that $\xi^\alpha\Xi_\alpha=-\xi_\alpha\Xi^\alpha$.
+
+The properties listed so far formally coincide with those of three-dimensional spinors. A difference appears, however, when complex-conjugate spinors are considered.
+
+In nonrelativistic theory the sum
+\begin{equation}
+\psi^1\psi^{1*}+\psi^2\psi^{2*},
+\tag{17.6}
+\end{equation}
+which determines the probability density for locating particles in space, had to be a scalar. This required the components $\psi^{\alpha*}$ to transform as covariant spinor components; in other words, transformation (17.1) had to be unitary ($\alpha=\delta^*$, $\beta=-\gamma^*$). In relativistic theory, by contrast, the particle density is not a scalar: it is the time component of a 4-vector. The stated requirement therefore disappears, and the transformation coefficients are now constrained only by (17.2), with no additional conditions. The four complex quantities $\alpha$, $\beta$, $\gamma$, and $\delta$, subject solely to (17.2), are equivalent to $8-2=6$ real parameters. This agrees with the number of angles specifying a rotation of a four-dimensional coordinate system, since there are six coordinate planes.
+
+Thus the two mutually complex-conjugate binary transformations are essentially different, and relativistic theory consequently has two types of spinor. A special notation is used to distinguish them: spinors transformed by formulas complex-conjugate to (17.1) carry numeral indices marked with dots above them (\emph{dotted indices}). Accordingly, by definition,
+\begin{equation}
+\eta^{\dot\alpha}\sim\xi^{\alpha*},
+\tag{17.7}
+\end{equation}
+
+\SourcePage{80}{85}
+where $\sim$ means ``transforms as.'' In explicit form, the transformation formulas for the ``dotted'' spinor are
+\begin{equation}
+\eta^{\dot1'}=\alpha^*\eta^{\dot1}+\beta^*\eta^{\dot2},\qquad
+\eta^{\dot2'}=\gamma^*\eta^{\dot1}+\delta^*\eta^{\dot2}.
+\tag{17.8}
+\end{equation}
+
+Dotted indices are lowered and raised in the same way as undotted ones:
+\begin{equation}
+\eta_{\dot1}=\eta^{\dot2},\qquad \eta_{\dot2}=-\eta^{\dot1}.
+\tag{17.9}
+\end{equation}
+
+With respect to spatial rotations, 4-spinors behave in the same way as 3-spinors. For the latter we know that $\psi_\alpha^*\sim\psi^\alpha$. Definition (17.7) therefore implies that, under rotations, the 4-spinor $\eta_{\dot\alpha}$ behaves as a contravariant 3-spinor $\psi^\alpha$. The covariant components $\eta_{\dot1}$ and $\eta_{\dot2}$ thus correspond to the spin-projection eigenvalues $1/2$ and $-1/2$, respectively.
+
+Spinors of higher rank are defined as collections of quantities that transform like products of components of several first-rank spinors. A higher-rank spinor may have both dotted and undotted indices. For example, there are three types of second-rank spinor:
+\[
+\xi^{\alpha\beta}\sim\xi^\alpha\Xi^\beta,
+\qquad
+\zeta^{\alpha\dot\beta}\sim\xi^\alpha\eta^{\dot\beta},
+\qquad
+\eta^{\dot\alpha\dot\beta}\sim\eta^{\dot\alpha}\mathrm H^{\dot\beta}.
+\]
+Consequently, specifying only the total spinor rank does not determine the type uniquely. Where necessary, we shall therefore give the rank as a pair $(k,l)$: the numbers of undotted and dotted indices.
+
+Transformations (17.1) and (17.8) are algebraically independent. There is consequently no need to prescribe an ordering of dotted and undotted indices; in this sense, for example, the spinors $\zeta^{\alpha\dot\beta}$ and $\zeta^{\dot\beta\alpha}$ are the same.
+
+For a spinor equation to be invariant, its two sides must contain equal numbers of undotted indices and equal numbers of dotted indices. Otherwise the equality necessarily fails after a change of reference frame. It must also be remembered that complex conjugation replaces dotted indices by undotted ones and vice versa. Thus the relation $\eta^{\dot\alpha\dot\beta}=(\xi^{\alpha\beta})^*$ between two spinors is invariant.
+
+Spinors, or products of them, can be contracted only over pairs of indices of the same kind: either two dotted indices or two undotted indices. Summation over one dotted and one undotted index is not invariant. Hence, from the spinor
+\begin{equation}
+\zeta^{\alpha_1\alpha_2\ldots\alpha_k\dot\beta_1\dot\beta_2\ldots\dot\beta_l},
+\tag{17.10}
+\end{equation}
+\SourcePage{81}{86}
+which is symmetric in all its $k$ undotted indices and in all its $l$ dotted indices, no spinor of lower rank can be formed (recall that simplification over a pair of indices in which the spinor is symmetric gives zero). This means that no smaller set of linear combinations can be formed from the quantities (17.10) such that the combinations transform among themselves under every group transformation. In other words, symmetric 4-spinors furnish irreducible representations of the proper Lorentz group. Each irreducible representation is specified by a pair $(k,l)$.
+
+Since each spinor index has two possible values, there are $k+1$ essentially distinct strings $\alpha_1\alpha_2\ldots\alpha_k$ in (17.10), containing respectively $0,1,2,\ldots,k$ occurrences of 1 and $k,k-1,\ldots,0$ occurrences of 2. Likewise there are $l+1$ strings $\dot\beta_1\dot\beta_2\ldots\dot\beta_l$. A symmetric spinor of rank $(k,l)$ therefore has a total of $(k+1)(l+1)$ independent components. This is the dimension of the irreducible representation it furnishes.

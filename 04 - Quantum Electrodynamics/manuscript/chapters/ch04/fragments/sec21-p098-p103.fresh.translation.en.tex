@@ -1,0 +1,231 @@
+\SourcePage{93}{98}
+\section{Symmetric form of the Dirac equation}
+
+The spinor form of the Dirac equation is the most natural one in that it displays its relativistic invariance directly. In applications, however, other representations of the wave equation may be more convenient; these result from choosing a different set of four independent components of the wave function.
+
+Let the four-component wave function be denoted by $\psi$ (with components $\psi_i$, $i = 1, 2, 3, 4$). In the spinor representation it is a bispinor:
+\begin{equation}
+\psi = \binom{\xi}{\eta}.
+\tag{21.1}
+\end{equation}
+But any linear combinations of the components of the spinors $\xi$ and $\eta$ may equally well be chosen as the independent components of $\psi$\footnote{For brevity, we shall call the four-component quantity $\psi$ a bispinor even in its nonspinor representations.}. We shall restrict the ad\SourcePageJoin{94}{99}missible linear transformations only by requiring them to be unitary; such transformations leave unchanged the bilinear forms constructed from $\psi$ and $\psi^*$ (see \S\,28).
+
+For an arbitrary choice of the components of $\psi$, the Dirac equation can in general be written as
+\[
+\widehat p_\mu\gamma^{\mu}_{ik}\psi_k = m\psi_i,
+\]
+where $\gamma^\mu$ ($\mu = 0, 1, 2, 3$) are certain four-by-four matrices (the \emph{Dirac matrices}). We shall usually suppress the matrix indices and write this equation symbolically as
+\begin{equation}
+(\gamma\widehat p - m)\psi = 0,
+\tag{21.2}
+\end{equation}
+where
+\[
+\gamma\widehat p \equiv \gamma^\mu\widehat p_\mu = \widehat p_0\gamma^0 - \widehat{\mathbf{p}}\boldsymbol{\gamma} = i\gamma^0\frac{\partial}{\partial t} + i\boldsymbol{\gamma}\boldsymbol{\nabla},\quad \boldsymbol{\gamma} = (\gamma^1, \gamma^2, \gamma^3).
+\]
+In the spinor form of the equation, with the components of $\psi$ given by~(21.1), the corresponding matrices are\footnote{Here and below, four-by-four matrices are written compactly in terms of two-by-two matrices: each symbol in~(21.3) represents a two-by-two matrix.}
+\begin{equation}
+\gamma^0 = \begin{pmatrix} 0 & 1\\ 1 & 0 \end{pmatrix},\qquad \boldsymbol{\gamma} = \begin{pmatrix} 0 & -\boldsymbol{\sigma}\\ \boldsymbol{\sigma} & 0 \end{pmatrix},
+\tag{21.3}
+\end{equation}
+as is readily seen by writing equations~(20.5) in the form
+\[
+\begin{pmatrix} 0 & \widehat p_0 + \widehat{\mathbf{p}}\boldsymbol{\sigma}\\ \widehat p_0 - \widehat{\mathbf{p}}\boldsymbol{\sigma} & 0 \end{pmatrix}\binom{\xi}{\eta} = m\binom{\xi}{\eta}
+\]
+and comparing with~(21.2).
+
+In general, the matrices $\gamma$ need obey only the conditions that ensure the equality $\widehat p^2 = m^2$. To find these conditions, multiply equation~(21.2) on the left by $\gamma\widehat p$. This gives
+\[
+(\gamma^\mu\widehat p_\mu)\,(\gamma^\nu\widehat p_\nu)\,\psi = m\,(\widehat p_\mu\gamma^\mu)\,\psi = m^2\psi.
+\]
+Since $\widehat p_\mu\widehat p_\nu$ is a symmetric tensor (all the operators $\widehat p_\mu$ commute), the equality may be rewritten
+\[
+\tfrac{1}{2}\widehat p_\mu\widehat p_\nu\,(\gamma^\mu\gamma^\nu + \gamma^\nu\gamma^\mu)\psi = m^2\psi,
+\]
+which shows that
+\begin{equation}
+\gamma^\mu\gamma^\nu + \gamma^\nu\gamma^\mu = 2g^{\mu\nu}.
+\tag{21.4}
+\end{equation}
+Thus every pair of distinct matrices $\gamma^\mu$ anticommutes, while their squares are
+\begin{equation}
+\bigl(\gamma^1\bigr)^2 = \bigl(\gamma^2\bigr)^2 = \bigl(\gamma^3\bigr)^2 = -1,\qquad \bigl(\gamma^0\bigr)^2 = 1.
+\tag{21.5}
+\end{equation}
+
+\SourcePage{95}{100}
+Under an arbitrary unitary transformation of the components of $\psi$ ($\psi' = U\psi$, where $U$ is a unitary four-by-four matrix), the matrices $\gamma$ transform according to
+\begin{equation}
+\gamma' = U\gamma U^{-1} = U\gamma U^+
+\tag{21.6}
+\end{equation}
+(so that the equation $(\gamma\widehat p - m)\psi = 0$ becomes $(\gamma'\widehat p - m)\psi' = 0$). The commutation relations~(21.4) of course remain unchanged.
+
+The matrix $\gamma^0$ in~(21.3) is Hermitian, whereas the matrices $\boldsymbol{\gamma}$ are anti-Hermitian. These properties are retained under every unitary transformation~(21.6), and consequently we shall always have\footnote{These equalities can be combined in the form
+\begin{equation}
+\gamma^{\lambda+} = \gamma^0\gamma^\lambda\gamma^0.
+\tag{21.7\,a}
+\end{equation}}:
+\begin{equation}
+\boldsymbol{\gamma}^+ = -\boldsymbol{\gamma},\qquad \gamma^{0+} = \gamma^0.
+\tag{21.7}
+\end{equation}
+
+We also write the equation for the complex-conjugate function $\psi^*$. Taking the complex conjugate of equation~(21.2) and using~(21.7), we obtain
+\[
+(\widehat p_0\widetilde\gamma^0 - \widehat{\mathbf{p}}\widetilde{\boldsymbol{\gamma}} - m)\psi^* = 0.
+\]
+Move $\psi^*$ to the left by means of $\widetilde\gamma^\mu\psi^* = \psi^*\gamma^\mu$, and then multiply the equation on the right by $\gamma^0$. Noting that $\boldsymbol{\gamma}\gamma^0 = -\gamma^0\boldsymbol{\gamma}$ and introducing the new bispinor
+\begin{equation}
+\bar\psi = \psi^*\gamma^0,\qquad \psi^* = \bar\psi\gamma^0,
+\tag{21.8}
+\end{equation}
+we find
+\begin{equation}
+\bar\psi(\gamma\widehat p + m) = 0.
+\tag{21.9}
+\end{equation}
+As in~(20.11), the operator $\widehat p$ is understood here to act on the function to its left. The function $\bar\psi$ is called the \emph{Dirac-conjugate} (or \emph{relativistically conjugate}) of $\psi$. The purpose of the factor $\gamma^0$ in its definition is that, in the spinor representation, it interchanges the spinors $\xi^*$ and $\eta^*$ so that in $\bar\psi = (\eta^*, \xi^*)$ the undotted spinor comes first and the dotted one second, just as in $\psi$. This is precisely why $\bar\psi$ is a more natural ``partner'' of $\psi$ than $\psi^*$ when, for example, they occur together in various bilinear combinations (see \S\,28).
+
+The inversion transformation of the wave function may be written
+\begin{equation}
+P:\quad \psi \to i\gamma^0\psi,\qquad \bar\psi \to -i\bar\psi\gamma^0.
+\tag{21.10}
+\end{equation}
+When $\psi$ is in the spinor representation, the matrix $\gamma^0$ interchanges the components $\xi$ and $\eta$, as inversion requires. The invariance
+\SourcePage{96}{101}
+of the Dirac equation under transformation~(21.10) is also evident directly in the general case. Replacing $\widehat{\mathbf{p}} \to -\widehat{\mathbf{p}}$ in equation~(21.2) and simultaneously replacing $\psi \to i\gamma^0\psi$, we obtain
+\[
+(\widehat p_0\gamma^0 + \widehat{\mathbf{p}}\boldsymbol{\gamma} - m)\gamma^0\psi = 0.
+\]
+Multiplying this equation on the left by $\gamma^0$ and using the anticommutation of $\gamma^0$ and $\boldsymbol{\gamma}$ returns us to the original equation.
+
+Multiply $(\gamma\widehat p - m)\psi = 0$ on the left by $\bar\psi$, multiply $\bar\psi(\gamma\widehat p + m) = 0$ on the right by $\psi$, and add the results. We get
+\[
+\bar\psi\gamma^\mu\bigl(\widehat p_\mu\psi\bigr) + \bigl(\widehat p_\mu\bar\psi\bigr)\,\gamma^\mu\psi = \widehat p_\mu\bigl(\bar\psi\gamma^\mu\psi\bigr) = 0,
+\]
+where the parentheses indicate the function on which the operator $\widehat p$ acts. The resulting equality has the form of the continuity equation $\partial_\mu j^\mu = 0$, so that
+\begin{equation}
+j^\mu = \bar\psi\gamma^\mu\psi = \bigl(\psi^*\psi, \psi^*\gamma^0\boldsymbol{\gamma}\psi\bigr)
+\tag{21.11}
+\end{equation}
+is the 4-vector of particle current density. Its time component $j^0 = \psi^*\psi$ is positive definite.
+
+The Dirac equation may be put in a form solved for the time derivative:
+\begin{equation}
+i\frac{\partial\psi}{\partial t} = \widehat H\psi,
+\tag{21.12}
+\end{equation}
+where $\widehat H$ is the particle Hamiltonian\footnote{For a spin-zero particle the wave equation could not be written in this form: equation~(10.5) for the scalar $\psi$ is second order in time, while the first-order system~(10.4) for the five-component quantity $(\psi, \psi_\mu)$ contains time derivatives of only some of the components.}. It is enough to multiply equation~(21.2) on the left by $\gamma^0$. The Hamiltonian is then
+\begin{equation}
+\widehat H = \boldsymbol{\alpha}\widehat{\mathbf{p}} + \beta m,
+\tag{21.13}
+\end{equation}
+where the customary notation for the matrices occurring here has been introduced:
+\begin{equation}
+\boldsymbol{\alpha} = \gamma^0\boldsymbol{\gamma},\qquad \beta = \gamma^0.
+\tag{21.14}
+\end{equation}
+We note that
+\begin{equation}
+\alpha_i\alpha_k + \alpha_k\alpha_i = 2\delta_{ik},\qquad \beta\boldsymbol{\alpha} + \boldsymbol{\alpha}\beta = 0,\qquad \beta^2 = 1,
+\tag{21.15}
+\end{equation}
+that is, all the matrices $\boldsymbol{\alpha}$ and $\beta$ anticommute pairwise, and their squares equal~1; all of them are Hermitian. In the spinor representation,
+\begin{equation}
+\boldsymbol{\alpha} = \begin{pmatrix} \boldsymbol{\sigma} & 0\\ 0 & -\boldsymbol{\sigma} \end{pmatrix},\qquad \beta = \begin{pmatrix} 0 & 1\\ 1 & 0 \end{pmatrix}.
+\tag{21.16}
+\end{equation}
+
+\SourcePage{97}{102}
+In the low-velocity limit, a particle must be described by only one two-component spinor, as in nonrelativistic theory. Indeed, taking the limit $\mathbf{p} \to 0$, $\varepsilon \to m$ in equations~(20.5), we obtain $\xi = \eta$: the two spinors making up the bispinor coincide. Here, however, a shortcoming of the spinor form of the Dirac equation becomes apparent. All four components of $\psi$ remain nonzero in the limiting process, although only two of them are actually independent. It is more convenient to use a representation of $\psi$ in which two components tend to zero in this limit.
+
+Accordingly, replace $\xi$ and $\eta$ by their linear combinations $\varphi$ and $\chi$:
+\begin{equation}
+\psi = \binom{\varphi}{\chi},\qquad \varphi = \frac{1}{\sqrt2}(\xi+\eta),\qquad \chi = \frac{1}{\sqrt2}(\xi-\eta).
+\tag{21.17}
+\end{equation}
+For a particle at rest, $\chi = 0$. We shall call this representation of $\psi$ the \emph{standard representation}. Under inversion, $\varphi$ and $\chi$ transform separately according to
+\begin{equation}
+P:\quad \varphi \to i\varphi,\qquad \chi \to -i\chi.
+\tag{21.18}
+\end{equation}
+
+The equations for $\varphi$ and $\chi$ follow by adding and subtracting equations~(20.5):
+\begin{equation}
+\widehat p_0\varphi - \widehat{\mathbf{p}}\boldsymbol{\sigma}\chi = m\varphi,\qquad -\widehat p_0\chi + \widehat{\mathbf{p}}\boldsymbol{\sigma}\varphi = m\chi.
+\tag{21.19}
+\end{equation}
+It follows that the matrices in the standard representation are
+\begin{equation}
+\gamma^0 \equiv \beta = \begin{pmatrix} 1 & 0\\ 0 & -1 \end{pmatrix},\qquad \boldsymbol{\gamma} = \begin{pmatrix} 0 & \boldsymbol{\sigma}\\ -\boldsymbol{\sigma} & 0 \end{pmatrix},\qquad \boldsymbol{\alpha} = \begin{pmatrix} 0 & \boldsymbol{\sigma}\\ \boldsymbol{\sigma} & 0 \end{pmatrix}.
+\tag{21.20}
+\end{equation}
+Because~(21.17) combines the first components of $\xi$ and $\eta$ separately from their second components, in the standard representation, just as in the spinor representation, the components $\psi_1$ and $\psi_3$ correspond to the eigenvalue $+1/2$ of the spin projection, while $\psi_2$ and $\psi_4$ correspond to $-1/2$. In both representations, therefore, the matrix $\tfrac{1}{2}\boldsymbol{\Sigma}$, where
+\begin{equation}
+\boldsymbol{\Sigma} = \begin{pmatrix} \boldsymbol{\sigma} & 0\\ 0 & \boldsymbol{\sigma} \end{pmatrix},
+\tag{21.21}
+\end{equation}
+is the three-dimensional spin operator: when $\tfrac{1}{2}\Sigma_z$ acts on a bispinor containing only the components $\psi_1$, $\psi_3$, or only $\psi_2$, $\psi_4$, the bispinor is multiplied by $+1/2$ or $-1/2$, respectively. In an arbitrary representation this matrix may be written
+\begin{equation}
+\boldsymbol{\Sigma} = -\boldsymbol{\alpha}\gamma^5 = -\frac{i}{2}(\boldsymbol{\alpha}\times\boldsymbol{\alpha})
+\tag{21.22}
+\end{equation}
+(for the definition of $\gamma^5$, see~(22.14) below).
+
+\SourcePage{98}{103}
+\ProblemHeading
+
+\begin{enumerate}
+\item Find the transformation laws of the wave function under an infinitesimal Lorentz transformation and an infinitesimal spatial rotation.
+
+\SolutionHeading In the spinor representation, under an infinitesimal Lorentz transformation $\psi$ obeys
+\[
+\xi' = \Bigl(1 - \frac{1}{2}\boldsymbol{\sigma}\delta\mathbf{V}\Bigr)\xi,\qquad \eta' = \Bigl(1 + \frac{1}{2}\boldsymbol{\sigma}\delta\mathbf{V}\Bigr)\eta
+\]
+(see~(18.8), (18.8\,a), (18.12)). The two formulas may be combined as
+\begin{equation}
+\psi' = \Bigl(1 - \frac{1}{2}\boldsymbol{\alpha}\delta\mathbf{V}\Bigr)\psi.
+\tag*{(1)}
+\end{equation}
+Similarly, the transformation law under an infinitesimal rotation is
+\begin{equation}
+\psi' = \Bigl(1 + \frac{i}{2}\boldsymbol{\Sigma}\delta\boldsymbol{\theta}\Bigr)\psi.
+\tag*{(2)}
+\end{equation}
+Written in this way, the formulas hold in any representation of $\psi$, provided $\boldsymbol{\alpha}$ and $\boldsymbol{\Sigma}$ are understood to be the matrices in that same representation.
+
+It is readily verified that the matrices $\boldsymbol{\alpha}$ and $\boldsymbol{\Sigma}$ form the components of an antisymmetric ``matrix 4-tensor''
+\[
+\sigma^{\mu\nu} = \frac{1}{2}(\gamma^\mu\gamma^\nu - \gamma^\nu\gamma^\mu) = (\boldsymbol{\alpha}, i\boldsymbol{\Sigma})
+\]
+(the components are listed according to the rule~(19.15)). Introduce also the infinitesimal antisymmetric tensor $\delta\varepsilon^{\mu\nu} = (\delta\mathbf{V}, \delta\boldsymbol{\theta})$. Then
+\[
+\sigma^{\mu\nu}\delta\varepsilon_{\mu\nu} = 2i\boldsymbol{\Sigma}\delta\boldsymbol{\theta} - 2\boldsymbol{\gamma}\delta\mathbf{V}
+\]
+and formulas~(1), (2) may both be written in the unified form
+\begin{equation}
+\psi' = \Bigl(1 + \frac{1}{4}\sigma^{\mu\nu}\delta\varepsilon_{\mu\nu}\Bigr)\psi.
+\tag*{(3)}
+\end{equation}
+
+\item Write the Dirac equation in a representation in which it contains no imaginary coefficients (\emph{E.~Majorana}, 1937).
+
+\SolutionHeading In the standard representation, in the equation
+\[
+\Bigl(\frac{\partial}{\partial t} + \alpha_x\frac{\partial}{\partial x} + \alpha_y\frac{\partial}{\partial y} + \alpha_z\frac{\partial}{\partial z} + im\beta\Bigr)\psi = 0
+\]
+only the matrices $\alpha_y$ and $i\beta$ are imaginary. This imaginary character can be removed by making a transformation $\psi' = U\psi$ that interchanges the imaginary matrix $\alpha_y$ with the real matrix $\beta$. For this purpose set
+\[
+U = \frac{1}{\sqrt2}(\alpha_y + \beta) = U^{-1}.
+\]
+Then
+\[
+\alpha'_x = U\alpha_x U = -\alpha_x,\quad \alpha'_y = \beta,\quad \alpha'_z = -\alpha_z,\quad \beta' = \alpha_y,
+\]
+and the Dirac equation becomes
+\[
+\Bigl(\frac{\partial}{\partial t} - \alpha_x\frac{\partial}{\partial x} + \beta\frac{\partial}{\partial y} - \alpha_z\frac{\partial}{\partial z} + im\alpha_y\Bigr)\psi' = 0,
+\]
+in which every coefficient is real.
+\end{enumerate}

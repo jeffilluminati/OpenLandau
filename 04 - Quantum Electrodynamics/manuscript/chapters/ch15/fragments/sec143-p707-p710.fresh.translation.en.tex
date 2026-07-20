@@ -1,0 +1,116 @@
+\SourcePage{707}{712}
+\section{Inelastic scattering of electrons by hadrons}
+
+Elastic scattering of electrons by hadrons was considered in~\S~139. The problem of inelastic scattering can be formulated in a similar way. The difference is that the final hadronic state now corresponds either to another hadron or to a collection of hadrons. The momentum-conservation law~(139.1) remains valid if $p'_h$ is understood as the 4-momentum of the final hadron, or as the total 4-momentum of the complete collection of hadrons produced in the scattering process. Thus, we now have $p_h^{\prime 2}\ne p_h^2\ne M^2$, where $M$ is the mass of the initial hadron.
+
+With this difference, the inelastic-scattering process is described by the same diagram~(139.2). We denote the lower vertex of this diagram by $J_{fi}$, as in~\S~138. Unlike~(138.3) or~(138.6), however, we shall not express the transition current in terms of a vertex operator and state amplitudes, since that would fix the nature of the final hadronic state in advance.
+
+The scattering amplitude can now be written in a form analogous to~(139.3):
+\begin{equation}
+M_{fi}=-\frac{4\pi e^2}{(p_e-p'_e)^2}(\bar u'_e\gamma_\mu u_e)J_{fi}^\mu
+\tag{143.1}
+\end{equation}
+(an amplitude of this kind was already used in Problem~1 of~\S~142, where energy transfer to an electron was considered; the amplitude in the problem of nuclear excitation by electrons has a similar structure).
+
+We shall take the initial electron energy to be high enough that many hadrons can be produced in the final state. Our interest will be in the so-called \emph{inclusive} cross section: in the final state only the electron momentum is specified, while a sum is taken over all hadronic states.
+
+\SourcePage{708}{713}
+In accordance with the formulas of~\S~64, this differential cross section is
+\begin{equation}
+d\sigma=\frac{d^3p'_e}{4I(2\pi)^3 2\varepsilon'_e}
+\sum_f(2\pi)^4\delta^{(4)}(p_h+p'_h-p_e-p'_e)|M_{fi}|^2.
+\tag{143.2}
+\end{equation}
+
+The inclusive cross section can depend on only three kinematic invariants that can be determined by measurements made solely on the electrons. There are three such invariants:
+\begin{equation}
+t=q^2\equiv(p_e-p'_e)^2,\qquad s=(p_e+p_h)^2
+\tag{143.3}
+\end{equation}
+and $p_h^{\prime 2}$. The third invariant is required because, unlike in elastic scattering, $p_h^{\prime 2}$---the ``mass'' of the final hadronic state---is not fixed. It is more convenient, however, to replace $p_h^{\prime 2}$ by the invariant
+\begin{equation}
+\nu=qp_h.
+\tag{143.4}
+\end{equation}
+The relation between $\nu$ and $p_h^{\prime 2}$ follows from $p'_h=p_h+q$:
+\begin{equation}
+p_h^{\prime 2}=M^2+t+2\nu.
+\tag{143.5}
+\end{equation}
+If the initial hadron is stable (a proton, for example), the rest energy of the final state is greater than~$M$, that is, $p_h^{\prime 2}\gg M^2$; since $t<0$, it follows from~(143.5) that
+\begin{equation}
+\nu\geq|t|/2
+\tag{143.6}
+\end{equation}
+(equality corresponds to elastic scattering).
+
+The kinematic invariants can be expressed through the initial and final electron energies $\varepsilon_e$ and $\varepsilon'_e$, and the scattering angle~$\theta$. Below, we shall regard the electron as ultrarelativistic ($\varepsilon_e\gg m$, $\varepsilon'_e\gg m$) and neglect its mass. In the rest frame of the initial hadron (the laboratory frame), we then obtain
+\begin{equation}
+t=-4\varepsilon_e\varepsilon'_e\sin^2(\theta/2),\qquad
+\nu=M(\varepsilon_e-\varepsilon'_e),\qquad
+s-M^2=2M\varepsilon.
+\tag{143.7}
+\end{equation}
+
+Substituting~(143.1) in~(143.2) and carrying out the sum over electron polarizations in the usual way, we obtain the cross section for scattering of unpolarized electrons. We write it as
+\begin{equation}
+d\sigma=\frac{\alpha^2}{(q^2)^2}
+\frac{d^3p'_e}{(2\pi)^3\cdot8M\varepsilon_e\varepsilon'_e}
+w_{\mu\nu}W^{\mu\nu},
+\tag{143.8}
+\end{equation}
+or
+\begin{equation}
+d\sigma=\frac{\alpha^2}{(q^2)^2}
+\frac{dt\,d\nu}{4(p_hp_e)^2}w_{\mu\nu}W^{\mu\nu},
+\tag{143.9}
+\end{equation}
+
+\SourcePage{709}{714}
+where
+\begin{equation}
+w_{\mu\nu}=4p_{e\mu}p'_{e\nu}-2(p_{e\mu}q_\nu+p_{e\nu}q_\mu)+q^2g_{\mu\nu},
+\tag{143.10}
+\end{equation}
+\begin{equation}
+W^{\mu\nu}=\sum_f(2\pi)^4\delta^{(4)}(p'_h-p_h-q)J_{fi}^\mu J_{fi}^{\nu*}.
+\tag{143.11}
+\end{equation}
+
+The tensor $W^{\mu\nu}$ naturally depends essentially on the properties of the hadronic currents, and in the general case we can only pose the problem of its phenomenological structure, analogous to the problem of hadron form factors. First, the tensor structure of $W^{\mu\nu}$ must be determined solely by the 4-vectors associated with the lower vertex of diagram~(139.2), namely $p_h$ and~$q$. Together with the metric tensor $g_{\mu\nu}$, these can form only five independent tensors. Invariance under time reversal requires the tensor to be symmetric; four such tensors can be constructed. Finally, current conservation,
+\[
+W^{\mu\nu}q_\nu=0,\qquad W^{\mu\nu}q_\mu=0,
+\]
+reduces the number of independent tensors to two. They may be chosen as
+\begin{equation}
+\tau_{\mu\nu}^{(1)}=\frac{q_\mu q_\nu}{q^2}-g_{\mu\nu},\qquad
+\tau_{\mu\nu}^{(2)}=\left(p_{h\mu}-\frac{\nu}{t}q_\mu\right)
+\left(p_{h\nu}-\frac{\nu}{t}q_\nu\right)
+\tag{143.12}
+\end{equation}
+and $W_{\mu\nu}$ can be written as
+\begin{equation}
+W_{\mu\nu}=4\pi MW_1\tau_{\mu\nu}^{(1)}
++\frac{4\pi}{M}W_2\tau_{\mu\nu}^{(2)}.
+\tag{143.13}
+\end{equation}
+Substituting~(143.10) and~(143.13) in~(143.8), we put the cross section in the form
+\begin{equation}
+d\sigma=\left(W_2+2W_1\tan^2\frac{\theta}{2}\right)
+d\varepsilon'_e\,d\sigma_{\mathrm{el}},
+\tag{143.14}
+\end{equation}
+where
+\[
+d\sigma_{\mathrm{el}}=\frac{\alpha^2}{4\varepsilon_e^2}
+\frac{\cos^2(\vartheta/2)}{\sin^4(\vartheta/2)}do'
+\]
+is the cross section for scattering of an ultrarelativistic electron in a Coulomb field (cf.~(80.7)).
+
+We see that the cross section is determined by two structure functions, each depending on the two invariants $t$ and~$\nu$. If at high energies hadron physics contains no characteristic quantities with the dimensions of mass (the \emph{scale-invariance hypothesis}), one may expect the structure functions at high energies to depend on the single dimensionless parameter $t/\nu$. The functions $W_1$ and~$W_2$ must then be functions of one variable, of the form
+\begin{equation}
+W_1=\frac{M}{\nu}F_1\left(\frac{t}{\nu}\right),\qquad
+W_2=\frac{M}{\nu}F_2\left(\frac{t}{\nu}\right)
+\tag{143.15}
+\end{equation}
+(notice that the ratio $M/\nu$ is independent of~$M$).

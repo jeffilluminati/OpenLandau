@@ -1,0 +1,36 @@
+\SourcePage{25}{30}
+\section{The electromagnetic field in quantum theory}
+
+Describing the field as an assembly of photons is the only description fully adequate to the physical meaning of the electromagnetic field in quantum theory. It replaces the classical description in terms of field strengths. Within the mathematical machinery of the photon picture, these strengths appear as second-quantized operators.
+
+It is well known that the properties of a quantum system approach classical behavior when the quantum numbers specifying its stationary states are large. For the free electromagnetic field in a given volume, this means that the quantum numbers of the oscillators, namely the photon numbers $N_{\mathbf{k}\alpha}$, must be large. In this connection, the fact that photons obey Bose statistics has a deep significance. In the mathematical formalism, the relation between Bose statistics and the properties of the classical field appears in the commutation rules for $\widehat c_{\mathbf{k}\alpha}$ and $\widehat c^+_{\mathbf{k}\alpha}$. When $N_{\mathbf{k}\alpha}$ is large, so are the matrix elements of these operators, and the unit on the right-hand side of commutation relation~(2.16) may be neglected. The result is
+\[
+\widehat c_{\mathbf{k}\alpha}\widehat c^+_{\mathbf{k}\alpha} \simeq
+\widehat c^+_{\mathbf{k}\alpha}\widehat c_{\mathbf{k}\alpha},
+\]
+so the operators pass into the mutually commuting classical quantities $c_{\mathbf{k}\alpha}$ and $c^*_{\mathbf{k}\alpha}$ that determine the classical field strengths.
+
+The condition for a quasiclassical field still requires refinement. If every $N_{\mathbf{k}\alpha}$ were large, summation over all states $\mathbf{k}\alpha$ would necessarily give an infinite field energy, making the condition meaningless.
+
+A physically meaningful formulation of the quasiclassical condition is based on field values averaged over a short time interval $\Delta t$. Suppose the classical electric field $\mathbf E$ (or magnetic field $\mathbf H$) is expanded as a Fourier integral in time. When it is averaged over $\Delta t$, an appreciable contribution to the mean $\overline{\mathbf E}$ comes only from Fourier components whose frequencies obey $\omega\Delta t \lesssim 1$; otherwise, the oscillating factor $e^{-i\omega t}$ nearly averages to zero. Thus, in determining the condition for the averaged field to be quasiclassical, one need consider only quantum oscillators with $\omega \lesssim 1/\Delta t$. It is enough to require large quantum numbers for these oscillators.
+
+\SourcePage{26}{31}
+The number of oscillators with frequencies between zero and $\omega \sim 1/\Delta t$, per unit volume $V = 1$, is of the order\,\footnote{Ordinary units are used in this section.}
+\begin{equation}
+\left(\frac{\omega}{c}\right)^3 \sim \frac{1}{(c\Delta t)^3}.
+\tag{5.1}
+\end{equation}
+
+The total field energy per unit volume is $\sim \overline{\mathbf E}^{,2}$. Dividing it by the number of oscillators and by a representative energy of a single photon, $\sim \hbar\omega$, gives the order of magnitude of the photon numbers:
+\[
+N_{\mathbf{k}} \sim \frac{\overline{\mathbf E}^{,2}c^3}{\hbar\omega^4}.
+\]
+Requiring this number to be large gives the inequality
+\begin{equation}
+|\overline{\mathbf E}| \gg \frac{\sqrt{\hbar c}}{(c\Delta t)^2}.
+\tag{5.2}
+\end{equation}
+
+This is the required condition under which a field averaged over intervals $\Delta t$ may be treated classically. The field must be sufficiently strong, and increasingly so as the averaging interval $\Delta t$ becomes shorter. For time-dependent fields, this interval must of course not exceed the periods over which the field changes appreciably. Consequently, sufficiently weak time-dependent fields cannot in any event be quasiclassical. Only for static fields, constant in time, may one set $\Delta t \to \infty$, so that the right-hand side of~(5.2) vanishes. A static field is therefore always classical.
+
+It was already pointed out that the classical expressions for an electromagnetic field as a superposition of plane waves must be regarded as operators in quantum theory. The physical meaning of these operators is, however, very limited. A physically meaningful field operator would have to give zero field values in the photon-vacuum state. Yet the mean value of the squared-field operator $\widehat{\mathbf E}^{,2}$ in a normal state, which is proportional to the zero-point energy of the field, is infinite. Here ``mean value'' denotes the quantum-mechanical mean, that is, the corresponding diagonal matrix element of the operator. This cannot be avoided even by a formal deletion procedure, as can be done for the field energy: here one would have to accomplish it by some reasonable modification of the operators $\widehat{\mathbf E}$ and $\widehat{\mathbf H}$ themselves, rather than of their squares, and that is impossible.

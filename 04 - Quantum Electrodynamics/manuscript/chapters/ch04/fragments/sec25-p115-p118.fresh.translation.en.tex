@@ -1,0 +1,94 @@
+\SourcePage{110}{115}
+\section{The relation between spin and statistics}
+
+Second quantization of the field of spin-$1/2$ particles (the spinor field) is carried out in the same way as for the scalar field in \S\,11.
+
+Without repeating the entire argument, we write down the field operators at once, in a form fully analogous to formulas~(11.2):
+\begin{equation}
+\begin{aligned}
+\widehat\psi &= \sum_{\mathbf{p}\sigma}\frac{1}{\sqrt{2\varepsilon}}\bigl(\widehat a_{\mathbf{p}\sigma}u_{p\sigma}e^{-ipx} + \widehat b^+_{\mathbf{p}\sigma}u_{-p\,-\sigma}e^{ipx}\bigr),\\
+\widehat{\bar\psi} &\equiv \widehat\psi^+\gamma^0 = \sum_{\mathbf{p}\sigma}\frac{1}{\sqrt{2\varepsilon}}\bigl(\widehat a^+_{\mathbf{p}\sigma}\bar u_{p\sigma}e^{ipx} + \widehat b_{\mathbf{p}\sigma}\bar u_{-p\,-\sigma}e^{-ipx}\bigr)\,;
+\end{aligned}
+\tag{25.1}
+\end{equation}
+the summation extends over every momentum $\mathbf{p}$ and over $\sigma = \pm 1/2$. The antiparticle annihilation operators $\widehat b_{\mathbf{p}\sigma}$ (like the particle annihilation operators $\widehat a_{\mathbf{p}\sigma}$) occur as coefficients of functions whose coordinate dependence ($e^{i\mathbf{pr}}$) corresponds to a state of momentum~$\mathbf{p}$\,\footnote{Both kinds of function also correspond to the same value of the rest-frame spin projection $\sigma$: for the functions $\bar\psi_{-p,-\sigma}$ this will be shown in \S\,26; see~(26.10).}.
+
+To calculate the Hamiltonian of the spinor field, there is no need to determine its energy-momentum tensor (as was done for the scalar field), because here a particle Hamiltonian exists and allows the wave equation, the Dirac equation~(21.12), to be written. The mean energy of a particle in a state with wave function $\psi$ is the integral
+\begin{equation}
+\int \psi^*\widehat H\psi\,d^3x = i\int \psi^*\frac{\partial\psi}{\partial t}\,d^3x = i\int \bar\psi\gamma^0\frac{\partial\psi}{\partial t}\,d^3x.
+\tag{25.2}
+\end{equation}
+Notice that the ``energy density'' (the integrand) is not positive definite in this case.
+
+Replacing $\psi$ and $\bar\psi$ in~(25.2) by the corresponding field operators, and using the mutual orthogonality of wave functions with different $\mathbf{p}$ or $\sigma$, together with the relation $\bar u_{\pm p\sigma}\gamma^0 u_{\pm p\sigma} = 2\varepsilon$ for the wave amplitudes, we obtain the field Hamiltonian
+\begin{equation}
+\widehat H = \sum_{\mathbf{p}\sigma}\varepsilon\bigl(\widehat a^+_{\mathbf{p}\sigma}\widehat a_{\mathbf{p}\sigma} - \widehat b_{\mathbf{p}\sigma}\widehat b^+_{\mathbf{p}\sigma}\bigr).
+\tag{25.3}
+\end{equation}
+
+It follows that Fermi quantization must be used here:
+\begin{equation}
+\{\widehat a_{\mathbf{p}\sigma}, \widehat a^+_{\mathbf{p}\sigma}\}_+ = 1,\qquad \{\widehat b_{\mathbf{p}\sigma}, \widehat b^+_{\mathbf{p}\sigma}\}_+ = 1,
+\tag{25.4}
+\end{equation}
+\SourcePage{111}{116}while every other pair among the operators $\widehat a$, $\widehat a^+$, $\widehat b$, and $\widehat b^+$ anticommutes (see III, \S\,65). Indeed, the Hamiltonian~(25.3) can then be rewritten as
+\[
+\widehat H = \sum_{\mathbf{p}\sigma}\varepsilon\bigl(\widehat a^+_{\mathbf{p}\sigma}\widehat a_{\mathbf{p}\sigma} + \widehat b^+_{\mathbf{p}\sigma}\widehat b_{\mathbf{p}\sigma} - 1\bigr),
+\]
+and its energy eigenvalues (after subtracting, as always, the infinite additive constant) are
+\begin{equation}
+E = \sum_{\mathbf{p}\sigma}\varepsilon(N_{\mathbf{p}\sigma} + \bar N_{\mathbf{p}\sigma}),
+\tag{25.5}
+\end{equation}
+and are therefore positive definite, as required. Bose quantization applied to~(25.3), on the other hand, would give the meaningless, non-positive-definite eigenvalues
+\[
+\sum_{\mathbf{p}\sigma}\varepsilon(N_{\mathbf{p}\sigma} - \bar N_{\mathbf{p}\sigma})
+\]
+
+The analogous expression
+\begin{equation}
+\mathbf{P} = \sum_{\mathbf{p}\sigma}\mathbf{p}(N_{\mathbf{p}\sigma} + \bar N_{\mathbf{p}\sigma})
+\tag{25.6}
+\end{equation}
+for the momentum of the system is obtained from the eigenvalues of the operator $\int \widehat\psi^+\widehat{\mathbf{p}}\widehat\psi\,d^3x$.
+
+The 4-current operator is
+\begin{equation}
+\widehat j^\mu = \widehat{\bar\psi}\gamma^\mu\widehat\psi,
+\tag{25.7}
+\end{equation}
+and the operator of the field ``charge'' is
+\begin{equation}
+\widehat Q = \int \widehat{\bar\psi}\gamma^0\widehat\psi\,d^3x = \sum_{\mathbf{p}\sigma}\bigl(\widehat a^+_{\mathbf{p}\sigma}\widehat a_{\mathbf{p}\sigma} + \widehat b_{\mathbf{p}\sigma}\widehat b^+_{\mathbf{p}\sigma}\bigr) = \sum_{\mathbf{p}\sigma}\bigl(\widehat a^+_{\mathbf{p}\sigma}\widehat a_{\mathbf{p}\sigma} - \widehat b^+_{\mathbf{p}\sigma}\widehat b_{\mathbf{p}\sigma} + 1\bigr),
+\tag{25.8}
+\end{equation}
+with eigenvalues
+\begin{equation}
+Q = \sum_{\mathbf{p}\sigma}(N_{\mathbf{p}\sigma} - \bar N_{\mathbf{p}\sigma})
+\tag{25.9}
+\end{equation}
+
+We are thus led once more to particles and antiparticles, to which everything said about them in \S\,11 applies.
+
+Particles of spin~0, however, are bosons, whereas particles of spin $1/2$ are fermions. Tracing the formal origin of this distinction shows that it arises from the different character of the ``energy-density'' expressions for scalar and spinor fields. In the first case the expression is positive definite, so both terms \SourcePage{112}{117}($\widehat a^+\widehat a$ and $\widehat b\widehat b^+$) enter the Hamiltonian~(11.3) with a plus sign. To keep the energy eigenvalues positive, $\widehat b\widehat b^+$ must then be replaced by $\widehat b^+\widehat b$ without a sign change, that is, according to the Bose commutation rule. For a spinor field, by contrast, the ``energy density'' is not positive definite; consequently the term $\widehat b\widehat b^+$ has a minus sign in the Hamiltonian~(25.3), and obtaining positive eigenvalues requires the replacement of $\widehat b\widehat b^+$ by $\widehat b^+\widehat b$ to be accompanied by a sign change, that is, to follow the Fermi commutation rule.
+
+On the other hand, the form of the energy density is directly connected with the transformation properties of the wave function and with the demands of relativistic invariance. In this sense, the relation between a particle's spin and its statistics may likewise be regarded as a direct consequence of those demands.
+
+The fact that spin-$1/2$ particles are fermions also yields the general statement that all particles of half-integer spin are fermions and particles of integer spin are bosons (including the result for a spin-0 particle proved in \S\,11)\,\footnote{The origin of the relation between a particle's spin and the statistics it obeys was clarified by \emph{Pauli} (\emph{W.~Pauli}, 1940).}.
+
+This becomes evident by imagining a particle of spin~$s$ as being ``composed'' of $2s$ spin-$1/2$ particles. For half-integer $s$, the number $2s$ is odd; for integer $s$, it is even. A ``composite'' particle containing an even number of fermions is a boson, whereas one containing an odd number is a fermion\,\footnote{This reasoning assumes that all particles with the same spin obey the same statistics, independently of how they are ``composed.'' That this is indeed so follows from a similar argument. If spin-0 fermions existed, for example, a spin-0 fermion and a spin-$1/2$ fermion could form a spin-$1/2$ particle that would be a boson, contradicting the general result proved for spin $1/2$.}.
+
+If a system contains particles of different kinds, separate creation and annihilation operators must be introduced for each kind. Operators belonging to different bosons, or to bosons and fermions, commute with one another. Operators belonging to different fermions could, within nonrelativistic theory, be taken either to commute or to anticommute (III, \S\,65). Relativistic theory permits mutual transformations of particles, however, and therefore the creation and annihilation operators of different fermions must be taken to anticommute, just \SourcePage{113}{118}as do the operators belonging to different states of the same fermions.
+
+\ProblemHeading
+
+Find the Lagrangian of the spinor field.
+
+\SolutionHeading The Lagrangian function corresponding to the Dirac equation is given by the real scalar expression
+\begin{equation}
+L = \frac{i}{2}\bigl(\bar\psi\gamma^\mu\partial_\mu\psi - \partial_\mu\bar\psi\cdot\gamma^\mu\psi\bigr) - m\bar\psi\psi.
+\tag*{(1)}
+\end{equation}
+Taking the components of $\psi$ and $\bar\psi$ as the ``generalized coordinates'' $q$, one readily verifies that the corresponding Lagrange equations~(10.10) coincide with the Dirac equations for $\bar\psi$ and $\psi$. The overall sign of the Lagrangian (as well as its overall coefficient) is conventional in this case. Since $L$ is linear in the derivatives of $\psi$ and $\bar\psi$, the action $S = \int L\,d^4x$ cannot have either a minimum or a maximum. The condition $\delta S = 0$ here determines only a stationary point, not an extremum of the integral.
+
+The Lagrangian of the spinor field is obtained by replacing $\psi$ in~(1) with the operator $\widehat\psi$. Applying formula~(12.12) to this Lagrangian gives the current operator~(25.7).

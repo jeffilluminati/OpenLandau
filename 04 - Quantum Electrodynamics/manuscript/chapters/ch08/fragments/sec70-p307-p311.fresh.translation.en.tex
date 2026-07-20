@@ -1,0 +1,217 @@
+\SourcePage{307}{312}
+\section{Invariant amplitudes}
+
+Helicity amplitudes use a particular reference frame, namely the center-of-momentum frame. When scattering amplitudes are calculated by invariant perturbation theory (and also when their general analytic properties are studied), however, it is convenient to write them in a manifestly invariant form.
+
+If the particles participating in the reaction have no spin, the scattering amplitude depends only on invariant products of their four-momenta. For a reaction of the form
+\begin{equation}
+a+b\to c+d
+\tag{70.1}
+\end{equation}
+any two of the quantities $s$, $t$, and $u$ defined in \S~66 may be chosen as these invariants. The scattering amplitude then reduces to a single function, $M_{fi}=f(s,t)$.
+
+If the particles have spin, there are, in addition to the kinematic invariants $s$, $t$, and $u$, invariants that can be formed from the particle wave amplitudes (bispinors, four-tensors, and so on). The scattering amplitudes must then have the form
+\begin{equation}
+M_{fi}=\sum_n f_n(s,t)F_n,
+\tag{70.2}
+\end{equation}
+where the $F_n$ are invariants depending linearly on the wave amplitudes of all participating particles (and also on their four-momenta). The coefficients $f_n(s,t)$ are called \emph{invariant amplitudes}.
+
+If the wave amplitudes are chosen to describe particles of definite helicity, the invariants acquire definite values $F_n=F_n(\lambda_i,\lambda_f)$. The helicity scattering amplitudes are then homogeneous linear combinations of the invariant amplitudes $f_n$. It follows that the number of independent functions $f_n(s,t)$ equals the number of independent helicity amplitudes. Since the latter number is readily found (as explained in \S~69), the construction of the invariants $F_n$ is thereby simplified: their required number is known in advance.
+
+Let us consider some examples. In every example we assume that the interaction is $T$- and $P$-invariant; the latter
+\SourcePage{308}{313}
+property means that the invariants $F_n$ must be true scalars rather than pseudoscalars.
+
+\subsection*{Scattering of a spin-0 particle by a spin-$1/2$ particle.}
+
+To count the invariants---or, equivalently, the independent helicity amplitudes---note that the total number of elements of the matrix $S^J$ (that is, the number of different sets of values $\lambda_1$, $\lambda_2$, $\lambda_1'$, $\lambda_2'$) is 4 in this case ($\lambda_1=\lambda_1'=0$, $\lambda_2$, $\lambda_2'=\pm1/2$). Taking $P$ invariance into account reduces the number of independent elements to two, after which $T$ invariance produces no further reduction.
+
+Two independent invariants may be chosen as
+\begin{equation}
+F_1=\bar u'u,\qquad F_2=\bar u'(\gamma K)u.
+\tag{70.3}
+\end{equation}
+Here $u=u(p)$ and $u'=u(p')$ are the bispinor amplitudes of the initial and final fermions; $K=k+k'$, where $k$ and $k'$ are the four-momenta of the initial and final bosons\footnote{At first sight, one might also form an invariant of the type $\bar u'\sigma_{\mu\nu}k^\mu k'^{\nu}u$ (the matrices $\sigma_{\mu\nu}$ are defined in (28.2)). It is readily shown, however, that this invariant reduces to those in (70.3) when the conservation law $k'=p+k-p'$ and the equations
+\[
+(\gamma p)u=mu,\qquad \bar u'(\gamma p')=m\bar u',
+\]
+satisfied by the bispinor amplitudes are used.}.
+
+The $T$ invariance of the quantities (70.3) becomes evident on noting that the products $\bar u'u$ and $\bar u'\gamma^\mu u$ transform under time reversal by the same law (28.6) as the operators $\widehat{\bar\psi\psi}$ and $\widehat{\bar\psi\gamma^\mu\psi}$ of which they are matrix elements: the product $\bar u'u$ is invariant by itself, whereas the four-vector $\bar u'\gamma u$ transforms as
+\[
+\bar u'\gamma^0u\to\bar u'\gamma^0u,
+\qquad
+\bar u'\boldsymbol\gamma u\to-\bar u'\boldsymbol\gamma u.
+\]
+The four-momenta transform in the same way, $(K^0,\mathbf K)\to(k^0,-\mathbf K)$, and consequently the scalar product $F_2=K_\mu(\bar u'\gamma^\mu u)$ is invariant.
+
+\subsection*{Elastic scattering of two identical spin-$1/2$ particles.}
+
+To count the independent helicity amplitudes, it is convenient to begin with the linear combinations of helicity states
+\[
+\psi_{1g}=\psi_{++}+\psi_{--},\qquad
+\psi_{2g}=\psi_{++}-\psi_{--},
+\]
+\[
+\psi_{3g}=\psi_{+-}+\psi_{-+},\qquad
+\psi_u=\psi_{+-}-\psi_{-+},
+\]
+where the subscripts $+$ and $-$ indicate the helicities ($\pm1/2$) of the two particles. The states $1g$, $2g$, and $3g$ are even, while the state $u$ is odd under particle interchange. The transitions $g\leftrightarrow u$ are therefore forbidden, leaving $16-6=10$ matrix elements after interchange symmetry is taken into account. Under the inversion
+\SourcePage{309}{314}
+$P$, the functions $\psi_{1g}$, $\psi_{3g}$ have parity opposite to that of $\psi_{2g}$; forbidding transitions between them reduces the number of independent amplitudes to six. Finally, $T$ invariance makes the amplitudes of the transitions $1g\to3g$ and $3g\to1g$ equal, so that only five independent amplitudes remain. Five independent invariants may be chosen as
+\begin{equation}
+\begin{aligned}
+F_1&=(\bar u_1'u_1)(\bar u_2'u_2),
+&F_2&=(\bar u_1'\gamma^5u_1)(\bar u_2'\gamma^5u_2),\\
+F_3&=(\bar u_1'\gamma^\mu u_1)(\bar u_2'\gamma_\mu u_2),
+&F_4&=(\bar u_1'\gamma^\mu\gamma^5u_1)(\bar u_2'\gamma_\mu\gamma^5u_2),\\
+F_5&=(\bar u_1'\sigma^{\mu\nu}u_1)(\bar u_2'\sigma_{\mu\nu}u_2),
+\end{aligned}
+\tag{70.4}
+\end{equation}
+where $u_1$, $u_2$ are the bispinor amplitudes of the initial particles, and $u_1'$, $u_2'$ those of the final particles. Interchanging the initial (or final) particles produces no new invariants: the resulting invariants can be expressed through the original ones (see the problem to \S~28). But expression (70.2) with the $F_n$ from (70.4) does not explicitly incorporate the requirement that interchanging two identical fermions must change the sign of the scattering amplitude. An expression satisfying this requirement can be written as
+\begin{equation}
+M_{fi}=\bigl[(\bar u_1'u_1)(\bar u_2'u_2)f_1(t,u)
+-(\bar u_2'u_1)(\bar u_1'u_2)f_1(u,t)\bigr]+\ldots
+\tag{70.5}
+\end{equation}
+When $p_1'$ and $p_2'$ (or $p_1$ and $p_2$) are interchanged, the kinematic invariants transform as $s\to s$, $t\to u$, $u\to t$, so the stated requirement is fulfilled automatically.
+
+\subsection*{Elastic scattering of a photon by particles of spin 0 and $1/2$.}
+
+It is useful to express the amplitudes of these processes in terms of unit spacelike four-vectors $e^{(1)}$, $e^{(2)}$ satisfying
+\begin{equation}
+\begin{aligned}
+e^{(1)2}=e^{(2)2}&=-1,&e^{(1)}e^{(2)}&=0,\\
+e^{(1)}k=e^{(2)}k&=0,&e^{(1)}k'=e^{(2)}k'&=0
+\end{aligned}
+\tag{70.6}
+\end{equation}
+(for each of the two photons these four-vectors may serve as the four-unit vectors used in an invariant description of its polarization properties; see \S~8).
+
+Let $k$ and $k'$ be the initial and final photon four-momenta, and let $p$ and $p'$ be the corresponding four-momenta of the scattering particle. Consider the four-vectors
+\begin{equation}
+P^\lambda=p^\lambda+p'^\lambda
+-K^\lambda\frac{pK+p'K}{K^2},
+\qquad
+N^\lambda=e^{\lambda\mu\nu\rho}P_\mu q_\nu K_\rho,
+\tag{70.7}
+\end{equation}
+where
+\[
+K=k+k',\qquad q=p-p'=k'-k.
+\]
+They are manifestly mutually orthogonal. They are also orthogonal to the four-vectors $K$, $q$, and hence to $k$, $k'$. Since they are orthogonal to the timelike four-vector $K$ ($K^2=2kk'>0$), they are themselves spacelike (indeed, in a frame where $\mathbf K=0$, the relation $KP=0$ gives $P_0=0$, and therefore
+\SourcePage{310}{315}
+$P^2<0$). Normalizing $P$ and $N$, that is, forming
+\begin{equation}
+e^{(1)\lambda}=\frac{N^\lambda}{\sqrt{-N^2}},
+\qquad
+e^{(2)\lambda}=\frac{P^\lambda}{\sqrt{-P^2}},
+\tag{70.8}
+\end{equation}
+gives a pair of four-vectors with all the required properties. Notice that $e^{(2)}$ is a true vector, whereas $e^{(1)}$ is a pseudovector. Write the photon scattering amplitude as
+\begin{equation}
+M_{fi}=F^{\lambda\mu}e_\lambda^{\prime *}e_\mu,
+\tag{70.9}
+\end{equation}
+with the polarization four-vectors $e$ and $e'$ of the initial and final photons displayed explicitly.
+
+Photon helicity takes only two values ($\pm1$). Hence, for the scattering of a photon by a spin-0 particle, the number of independent helicity amplitudes is the same as for the mutual scattering of particles of spin 0 and $1/2$, namely 2. The tensor $F^{\lambda\mu}$ in (70.9) must be constructed only from the particle four-momenta. It can be written as
+\begin{equation}
+F^{\lambda\mu}
+=f_1e^{(1)\lambda}e^{(1)\mu}
++f_2e^{(2)\lambda}e^{(2)\mu},
+\tag{70.10}
+\end{equation}
+where $f_1$, $f_2$ are invariant amplitudes. Note that $F^{\lambda\mu}$ cannot contain a term involving the product $e^{(1)\lambda}e^{(2)\mu}$, because this product is a pseudotensor and would give a pseudoscalar upon substitution into (70.9).
+
+Finally, consider the scattering of a photon by a spin-$1/2$ particle. To count the independent helicity amplitudes, note that the total number of elements of the matrix $S^J$ is 16 in this case (the helicity of each of the two initial and two final particles takes two values). The requirement of $P$ invariance reduces this number to 8, and the requirement of $T$ invariance then reduces it to 6.
+
+In this case, write the tensor $F_{\lambda\mu}$ as
+\begin{equation}
+\begin{aligned}
+F_{\lambda\mu}={}&G_0\bigl(e_\lambda^{(1)}e_\mu^{(1)}
++e_\lambda^{(2)}e_\mu^{(2)}\bigr)
++G_1\bigl(e_\lambda^{(1)}e_\mu^{(2)}
++e_\lambda^{(2)}e_\mu^{(1)}\bigr)+\\
+&+G_2\bigl(e_\lambda^{(1)}e_\mu^{(2)}
+-e_\lambda^{(2)}e_\mu^{(1)}\bigr)
++G_3\bigl(e_\lambda^{(1)}e_\mu^{(1)}
+-e_\lambda^{(2)}e_\mu^{(2)}\bigr),
+\end{aligned}
+\tag{70.11}
+\end{equation}
+where $G_0$, $G_3$ are true scalars, while $G_1$, $G_2$ are pseudoscalars. Both kinds are bilinear in the fermion bispinor amplitudes $\bar u(p')$ and $u(p)$, that is, they have the form
+\begin{equation}
+G_n=\bar u(p')Q_nu(p).
+\tag{70.12}
+\end{equation}
+The general form of the matrices (in bispinor indices) $Q_n$ is
+\begin{equation}
+\begin{aligned}
+Q_0&=f_1+f_2(\gamma K),
+&Q_1&=\gamma^5\bigl[f_3+f_4(\gamma K)\bigr],\\
+Q_2&=\gamma^5\bigl[f_5+f_6(\gamma K)\bigr],
+&Q_3&=f_7+f_8(\gamma K),
+\end{aligned}
+\tag{70.13}
+\end{equation}
+where $K=k+k'$. The coefficients $f_1$, \ldots, $f_8$ are invariant amplitudes, whose number here is 8 (instead of the required 6) because the requirement of $T$ invariance has not yet been imposed.
+\SourcePage{311}{316}
+
+Time reversal interchanges the initial and final particle four-momenta and also changes the signs of their spatial components:
+\begin{equation}
+(k_0,\mathbf k)\leftrightarrow(k_0',-\mathbf k'),
+\qquad
+(p_0,\mathbf p)\leftrightarrow(p_0',-\mathbf p');
+\tag{70.14}
+\end{equation}
+the photon polarization four-vectors transform according to
+\begin{equation}
+(e_0,\mathbf e)\leftrightarrow(e_0^{\prime *},-\mathbf e^{\prime *})
+\tag{70.15}
+\end{equation}
+(cf. (8.11a)), so that
+\[
+(e_0^{\prime *}e_0,e_i^{\prime *}e_0,
+e_i^{\prime *}e_k)\to
+(e_0^{\prime *}e_0,-e_0^{\prime *}e_i,
+e_k^{\prime *}e_i).
+\]
+By this last transformation, the condition that the scattering amplitude (70.9) be invariant is equivalent to the requirement
+\[
+(F_{00},F_{i0},F_{ik})\to(F_{00},-F_{0i},F_{ki}).
+\]
+On the other hand, the substitutions (70.14) give
+\[
+(K_0,\mathbf K)\to(K_0,-\mathbf K),
+\qquad(q_0,\mathbf q)\to(-q_0,\mathbf q),
+\]
+\[
+(P_0,\mathbf P)\to(P_0,-\mathbf P),
+\qquad(N_0,\mathbf N)\to(N_0,-\mathbf N),
+\]
+and hence
+\begin{equation}
+(e_0^{(1,2)},\mathbf e^{(1,2)})
+\to(e_0^{(1,2)},-\mathbf e^{(1,2)}).
+\tag{70.16}
+\end{equation}
+It follows from (70.11) that
+\[
+G_{0,1,3}\to G_{0,1,3},\qquad G_2\to-G_2.
+\]
+But under time reversal
+\[
+\bar u'\gamma^5u\to-\bar u'\gamma^5u,
+\qquad
+\bar u'\gamma^5(\gamma K)u\to
+\bar u'\gamma^5(\gamma K)u,
+\]
+as follows from the transformation laws for the pseudoscalar and pseudovector bilinear forms in (28.6). It is therefore evident from (70.12) and (70.13) that $T$ invariance of the scattering amplitude requires
+\begin{equation}
+f_3=f_6=0.
+\tag{70.17}
+\end{equation}

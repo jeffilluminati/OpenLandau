@@ -1,0 +1,183 @@
+\SourcePage{327}{332}
+\section{Feynman diagrams for photon scattering}
+
+Consider another second-order effect, the scattering of a photon by an electron (the \emph{Compton effect}). Let the photon and electron have 4-momenta $k_1$ and $p_1$ in the initial state and $k_2$ and $p_2$ in the final state (with specified polarizations as well, which we omit for brevity).
+
+The photon matrix element is
+\begin{equation}
+\langle2|\mathop{\mathrm T}\hat A_\mu(x)\hat A_\nu(x')|1\rangle
+=\langle0|\hat c_2\mathop{\mathrm T}\hat A_\mu(x)\hat A_\nu(x')\hat c_1^+|0\rangle,
+\tag{74.1}
+\end{equation}
+where
+\[
+\hat A=\sum_{\mathbf k}\bigl(\hat c_{\mathbf k}A_{\mathbf k}+\hat c_{\mathbf k}^+A_{\mathbf k}^*\bigr).
+\]
+Contracting the external and internal operators gives
+\newcommand{\SecLXXIVNode}[2]{\tikz[baseline=(#1.base),remember picture]{\node[inner sep=0pt](#1){$#2$};}}
+\begin{equation}
+\begin{aligned}
+(74.1)={}&\SecLXXIVNode{ac2}{\hat c_2}\SecLXXIVNode{aAm}{A_\mu}
+\SecLXXIVNode{aAn}{A_\nu'}\SecLXXIVNode{ac1}{\hat c_1^+}
++\SecLXXIVNode{bc2}{\hat c_2}\SecLXXIVNode{bAm}{A_\mu}
+\SecLXXIVNode{bAn}{A_\nu'}\SecLXXIVNode{bc1}{\hat c_1^+}\\
+={}&A_{2\mu}^*A_{1\nu}'+A_{1\mu}A_{2\nu}^{\prime *}.
+\end{aligned}
+\begin{tikzpicture}[remember picture,overlay,line width=.45pt]
+\draw (ac2.south) .. controls +(0,-.22) and +(0,-.22) .. (aAm.south);
+\draw (aAn.south) .. controls +(0,-.22) and +(0,-.22) .. (ac1.south);
+\draw (bc2.south) .. controls +(0,-.38) and +(0,-.38) .. (bAn.south);
+\draw (bAm.south) .. controls +(0,-.38) and +(0,-.38) .. (bc1.south);
+\end{tikzpicture}
+\tag{74.2}
+\end{equation}
+(here the commutativity of $\hat c_1$ and $\hat c_2^+$ has been used; for the same reason the symbol $\mathrm T$ may be omitted in this case). The electron matrix element is
+\begin{equation}
+\langle2|\mathop{\mathrm T}\hat j^\mu(x)\hat j^\nu(x')|1\rangle
+=\langle0|\hat a_2\mathop{\mathrm T}(\widehat{\bar\psi}\gamma^\mu\hat\psi)
+(\widehat{\bar\psi'}\gamma^\nu\hat\psi')\hat a_1^+|0\rangle.
+\tag{74.3}
+\end{equation}
+
+\SourcePage{328}{333}
+Four $\psi$-operators occur in it. Only two are used to annihilate electron 1 and create electron 2; that is, they are contracted with $\hat a_1^+$ and $\hat a_2$. These may be $\widehat{\bar\psi'}$, $\hat\psi$, or $\hat\psi'$, $\widehat{\bar\psi}$ (but not $\widehat{\bar\psi}$, $\hat\psi$, or $\widehat{\bar\psi'}$, $\hat\psi'$: the creation and annihilation at the same point $x$ or $x'$ of two real electrons together with one real photon gives zero). Performing the contraction in the two possible ways produces two terms in the matrix element (74.3). Write them first under the assumption $t>t'$:
+\begin{equation}
+\begin{aligned}
+(74.3)={}&\SecLXXIVNode{da2}{\hat a_2}
+(\SecLXXIVNode{dab}{\widehat{\bar\psi}}\gamma^\mu\hat\psi)
+(\widehat{\bar\psi'}\gamma^\nu\SecLXXIVNode{dapp}{\hat\psi'})
+\SecLXXIVNode{da1}{\hat a_1^+}\\
+&+\SecLXXIVNode{ea2}{\hat a_2}
+(\widehat{\bar\psi}\gamma^\mu\SecLXXIVNode{eap}{\hat\psi})
+(\SecLXXIVNode{eabp}{\widehat{\bar\psi'}}\gamma^\nu\hat\psi')
+\SecLXXIVNode{ea1}{\hat a_1^+}.
+\end{aligned}
+\begin{tikzpicture}[remember picture,overlay,line width=.45pt]
+\draw (da2.south) .. controls +(0,-.24) and +(0,-.24) .. (dab.south);
+\draw (dapp.north) .. controls +(0,.24) and +(0,.24) .. (da1.north);
+\draw (ea2.south) .. controls +(0,-.42) and +(0,-.42) .. (eabp.south);
+\draw (eap.north) .. controls +(0,.42) and +(0,.42) .. (ea1.north);
+\end{tikzpicture}
+\tag{74.4}
+\end{equation}
+The operators contracted in the first term give
+\[
+\hat a_2\widehat{\bar\psi}\to\hat a_2\hat a_2^+\bar\psi_2,
+\qquad
+\hat\psi'\hat a_1^+\to\hat a_1\hat a_1^+\psi_1'.
+\]
+Since the operators $\hat a_2\hat a_2^+$ and $\hat a_1\hat a_1^+$ are diagonal and stand at the ends of the product, they are replaced by their vacuum mean values, namely unity. To make the analogous transformation in the second term of (74.4), one must first move $\hat a_2^+$ to the left and $\hat a_1$ to the right. This is done with the commutation rules for $\hat a_{\mathbf p}$ and $\hat a_{\mathbf p}^+$, which imply
+\begin{equation}
+\begin{gathered}
+\{\hat a_{\mathbf p},\hat\psi\}_+=\{\hat a_{\mathbf p}^+,\widehat{\bar\psi}\}_+=0,\\
+\{\hat a_{\mathbf p},\widehat{\bar\psi}\}_+=\bar\psi_{\mathbf p},
+\qquad
+\{\hat a_{\mathbf p}^+,\hat\psi\}_+=\psi_{\mathbf p}.
+\end{gathered}
+\tag{74.5}
+\end{equation}
+Consequently, (74.4) becomes
+\begin{equation}
+\langle0|\bigl(\bar\psi_2\gamma^\mu\hat\psi\bigr)
+\bigl(\widehat{\bar\psi'}\gamma^\nu\psi_1'\bigr)
+-\bigl(\widehat{\bar\psi}\gamma^\mu\psi_1\bigr)
+\bigl(\bar\psi_2'\gamma^\nu\hat\psi'\bigr)|0\rangle,
+\qquad t>t'
+\tag{74.6}
+\end{equation}
+(only the operator factors, of course, are averaged). Similarly, for $t<t'$ we obtain an expression differing by the interchange of the prime and the indices $\mu$, $\nu$:
+\begin{equation}
+\langle0|-\bigl(\widehat{\bar\psi'}\gamma^\nu\psi_1'\bigr)
+\bigl(\bar\psi_2\gamma^\mu\hat\psi\bigr)
++\bigl(\bar\psi_2'\gamma^\nu\hat\psi'\bigr)
+\bigl(\widehat{\bar\psi}\gamma^\mu\psi_1\bigr)|0\rangle,
+\qquad t<t'.
+\tag{74.7}
+\end{equation}
+The two expressions can be written in a single form by introducing the chronological product of $\psi$-operators through the definition
+\begin{equation}
+\mathop{\mathrm T}\hat\psi_i(x)\widehat{\bar\psi}_k(x')=
+\begin{cases}
+\hat\psi_i(x)\widehat{\bar\psi}_k(x'),&t'<t,\\
+-\widehat{\bar\psi}_k(x')\hat\psi_i(x),&t'>t
+\end{cases}
+\tag{74.8}
+\end{equation}
+($i$ and $k$ are bispinor indices). The first and second terms of (74.6) and (74.7) can then be written together as
+\begin{equation}
+\bar\psi_2\gamma^\mu\langle0|\mathop{\mathrm T}\hat\psi\cdot\widehat{\bar\psi'}|0\rangle\gamma^\nu\psi_1'
++\bar\psi_2'\gamma^\nu\langle0|\mathop{\mathrm T}\hat\psi'\cdot\widehat{\bar\psi}|0\rangle\gamma^\mu\psi_1
+\tag{74.9}
+\end{equation}
+(here $\psi\cdot\bar\psi$ denotes the matrix $\psi_i\bar\psi_k$).
+
+\SourcePage{329}{334}
+Notice that in the definition (74.8), which arose naturally here, the operator products for $t<t'$ and $t>t'$ carry different signs. This distinguishes it from the definition of the $\mathrm T$-product used for the operators $\hat A$ and $\hat j$. The difference arises because the fermion operators $\hat\psi$ and $\widehat{\bar\psi}$ anticommute outside the light cone (unlike the commuting boson operators $\hat A$ and the bilinear operators $\hat j=\widehat{\bar\psi}\gamma\hat\psi$)\footnote{Recall that the $\psi$-operators themselves do not correspond to any measurable physical quantities and therefore need not commute outside the light cone.}. This ensures the relativistic invariance of the definition (74.8) (a formal proof of the commutation rules for the $\psi$-operators will be given in \S~75)\footnote{The $\mathrm T$-product of any number of $\psi$-operators can be defined similarly. It is the product of all these operators arranged from right to left in order of increasing time, with a sign determined by the parity of the permutation required to obtain this order from the order displayed under the $\mathrm T$-product. With this definition, the sign of the $\mathrm T$-product changes when any two $\psi$-operators are interchanged; for example,
+\[
+\mathop{\mathrm T}\hat\psi_i(x)\widehat{\bar\psi}_k(x')
+=-\mathop{\mathrm T}\widehat{\bar\psi}_k(x')\hat\psi_i(x).
+\] }.
+
+Define the \emph{electron propagation function}, or \emph{electron propagator}, to be the second-rank bispinor $G_{ik}(x-x')$ given by
+\begin{equation}
+G_{ik}(x-x')=-i\langle0|\mathop{\mathrm T}\hat\psi_i(x)\widehat{\bar\psi}_k(x')|0\rangle.
+\tag{74.10}
+\end{equation}
+The electron matrix element then takes the form
+\begin{equation}
+\langle2|\mathop{\mathrm T}\hat j^\mu(x)\hat j^\nu(x')|1\rangle
+=i\bar\psi_2\gamma^\mu G\gamma^\nu\psi_1'
++i\bar\psi_2'\gamma^\nu G\gamma^\mu\psi_1.
+\tag{74.11}
+\end{equation}
+After multiplication by the photon matrix element (74.1) and integration over $d^4x\,d^4x'$, the two terms in (74.11) give identical results, yielding
+\begin{equation}
+\begin{aligned}
+S_{fi}={}&-ie^2\iint d^4x\,d^4x'\,
+\bar\psi_2(x)\gamma^\mu G(x-x')\gamma^\nu\psi_1(x')\times\\
+&\times\bigl\{A_{2\mu}^*(x)A_{1\nu}(x')+A_{2\nu}^*(x')A_{1\mu}(x)\bigr\}.
+\end{aligned}
+\tag{74.12}
+\end{equation}
+Substituting the plane waves (64.8), (64.9) for the electron and photon wave functions and extracting the delta function as for (73.10), we finally obtain the scattering amplitude
+\begin{equation}
+M_{fi}=-4\pi e^2\bar u_2\bigl\{(\gamma e_2^*)G(p_1+k_1)(\gamma e_1)
++(\gamma e_1)G(p_1-k_2)(\gamma e_2^*)\bigr\}u_1,
+\tag{74.13}
+\end{equation}
+\SourcePage{330}{335}
+where $e_1$ and $e_2$ are the photon polarization 4-vectors, and $G(p)$ is the electron propagator in the momentum representation.
+
+The two terms in this expression are represented by the following Feynman diagrams:
+\begin{equation}
+\begin{gathered}
+4\pi e^2\bar u_2(\gamma e_2^*)G(f)(\gamma e_1)u_1=
+\begin{tikzpicture}[baseline=-.45ex,x=.72cm,y=.72cm,>=Stealth,line width=.6pt,font=\small]
+\coordinate (l) at (-.90,0); \coordinate (r) at (.90,0);
+\draw[->] (1.55,-.98) node[right] {$p_1$} -- (r);
+\draw[->] (l) -- (-1.55,-.98) node[left] {$p_2$};
+\draw[dashed,->] (1.35,1.12) node[right] {$k_1$} -- (r);
+\draw[dashed,->] (l) -- (-1.35,1.12) node[left] {$k_2$};
+\draw[->] (r)--(l);
+\node[below=2pt] at (0,0) {$f=p_1+k_1$};
+\end{tikzpicture}\\[1.2ex]
+4\pi e^2\bar u_2(\gamma e_1)G(f')(\gamma e_2^*)u_1=
+\begin{tikzpicture}[baseline=-.45ex,x=.72cm,y=.72cm,>=Stealth,line width=.6pt,font=\small]
+\coordinate (u) at (0,.72); \coordinate (d) at (0,-.72);
+\draw[->] (u) -- (-1.35,1.25) node[left] {$p_2$};
+\draw[->] (1.35,-1.25) node[right] {$p_1$} -- (d);
+\draw[dashed,->] (1.25,1.15) node[right] {$k_1$} -- (u);
+\draw[dashed,->] (d) -- (-1.25,-1.15) node[left] {$k_2$};
+\draw[->] (d)--(u);
+\node[right=2pt] at (0,0) {$f'=p_1-k_2$};
+\end{tikzpicture}
+\end{gathered}
+\tag{74.14}
+\end{equation}
+The dashed free ends of the diagrams represent real photons. An incoming line (the initial photon) supplies a factor $\sqrt{4\pi}e$, and an outgoing line (the final photon) a factor $\sqrt{4\pi}e^*$, where $e$ is the polarization 4-vector. In the first diagram the initial photon is absorbed together with the initial electron, while the final photon is emitted together with the final electron. In the second diagram, emission of the final photon occurs together with annihilation of the initial electron, and absorption of the initial photon with creation of the final electron.
+
+The internal solid line joining the two vertices represents a virtual electron, whose 4-momentum is determined by 4-momentum conservation at the vertices. This line supplies a factor $iG(f)$. Unlike the 4-momentum of a real particle, the square of a virtual electron's 4-momentum is not $m^2$. Considering the invariant $f^2$, for example in the electron rest frame, readily gives
+\begin{equation}
+f^2=(p_1+k_1)^2>m^2,\qquad f'^2=(p_1-k_2)^2<m^2.
+\tag{74.15}
+\end{equation}

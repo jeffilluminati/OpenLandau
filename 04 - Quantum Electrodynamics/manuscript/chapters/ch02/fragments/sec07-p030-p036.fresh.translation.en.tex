@@ -1,0 +1,284 @@
+\SourcePage{30}{35}
+\section{Spherical photon waves}
+
+Having determined the possible values of photon angular momentum, we must now find the corresponding wave functions.\footnote{This question was first considered by Heitler (W.~Heitler, 1936). The form of the solution presented here is due to V.~B.~Berestetskii (1947).}
+
+First consider the formal problem of finding vector functions that are eigenfunctions of the operators $\widehat{\mathbf j}^{\,2}$ and $\widehat j_z$. At this stage we neither decide which of these functions enter the photon wave functions of interest nor impose transversality.
+
+We seek the functions in the momentum representation. The coordinate operator in this representation is $\widehat{\mathbf r}=i\partial/\partial\mathbf k$ (see III, (15.12)). The orbital-angular-momentum operator is
+\[
+\widehat{\mathbf l}=\widehat{\mathbf r}\times\mathbf k
+=-i\left(\mathbf k\times\frac{\partial}{\partial\mathbf k}\right),
+\]
+and thus differs from the angular-momentum operator in the coordinate representation only by replacing $\mathbf r$ with $\mathbf k$. The formal solution of the problem is therefore the same in both representations.
+
+Denote the required eigenfunctions by $\mathbf Y_{jm}$ and call them vector spherical harmonics. They must obey
+\begin{equation}
+\widehat{\mathbf j}^{\,2}\mathbf Y_{jm}=j(j+1)\mathbf Y_{jm},
+\qquad
+\widehat j_z\mathbf Y_{jm}=m\mathbf Y_{jm}
+\tag{7.1}
+\end{equation}
+(the $z$ axis is a specified direction in space). We shall show that every function of the form $\mathbf aY_{jm}$ has this property, where $\mathbf a$ is any vector constructed from the unit vector $\mathbf n=\mathbf k/\omega$, and $Y_{jm}$ is an ordinary scalar spherical function. We use throughout the definition from III, \S~28:
+\begin{equation}
+Y_{lm}(\mathbf n)=(-1)^{(m+|m|)/2}i^l
+\sqrt{\frac{(2l+1)(l-|m|)!}{4\pi(l+|m|)!}}\,
+P_l^{|m|}(\cos\theta)e^{im\varphi}
+\tag{7.2}
+\end{equation}
+\SourcePage{31}{36}
+\noindent
+($\theta$ and $\varphi$ are the spherical angles specifying the direction $\mathbf n$).\footnote{For later reference, we record the value at $\theta=0$, when $\mathbf n$ lies along the $z$ axis:
+\begin{equation}
+Y_{lm}(\mathbf n_z)=i^l\sqrt{\frac{2l+1}{4\pi}}\,\delta_{m0}.
+\tag{7.2a}
+\end{equation}}
+Recall the commutation rule III, (29.4):
+\[
+\{\widehat l_i,a_k\}_{-}=ie_{ikl}a_l.
+\]
+The right-hand side can be written $(-\widehat s_i a_k)$, where $\widehat{\mathbf s}$ is the spin-1 operator; its action on a vector function is precisely defined by $\widehat s_i a_k=-ie_{ikl}a_l$ (see III, \S~57, problem~2). Hence
+\[
+\widehat l_i a_k-a_k\widehat l_i=-\widehat s_i a_k.
+\]
+Using this equality, we find
+\[
+\widehat j_i a_k=(\widehat l_i+\widehat s_i)a_k=a_k\widehat l_i.
+\]
+Consequently,
+\[
+\widehat{\mathbf j}^{\,2}(\mathbf aY_{jm})
+=\mathbf a\widehat{\mathbf l}^{\,2}Y_{jm},
+\qquad
+\widehat j_z(\mathbf aY_{jm})=\mathbf a\widehat l_zY_{jm}.
+\]
+But $Y_{jm}$ is an eigenfunction of $\widehat{\mathbf l}^{\,2}$ and $\widehat l_z$ with eigenvalues $j(j+1)$ and $m$, respectively, and equations~(7.1) follow.
+
+Three essentially different types of vector spherical harmonic result from choosing $\mathbf a$ to be one of the following vectors:\footnote{The operator $\boldsymbol\nabla_{\mathbf n}=|\mathbf k|\boldsymbol\nabla_{\mathbf k}$ acts on functions that depend only on the direction $\mathbf n$. In spherical coordinates it has only two components:
+\[
+\boldsymbol\nabla_{\mathbf n}=\left(\frac{\partial}{\partial\theta},
+\frac{1}{\sin\theta}\frac{\partial}{\partial\varphi}\right).
+\]
+The operator denoted below by $\Delta_{\mathbf n}$ is the angular part of the Laplacian:
+\[
+\Delta_{\mathbf n}=\frac{1}{\sin\theta}\frac{\partial}{\partial\theta}
+\sin\theta\frac{\partial}{\partial\theta}
++\frac{1}{\sin^2\theta}\frac{\partial^2}{\partial\varphi^2}.
+\]}
+\begin{equation}
+\frac{\boldsymbol\nabla_{\mathbf n}}{\sqrt{j(j+1)}},
+\qquad
+\frac{\mathbf n\times\boldsymbol\nabla_{\mathbf n}}{\sqrt{j(j+1)}},
+\qquad
+\mathbf n.
+\tag{7.3}
+\end{equation}
+We therefore define the vector spherical harmonics by
+\begin{equation}
+\begin{aligned}
+\mathbf Y^{(\text{e})}_{jm}
+&=\frac{1}{\sqrt{j(j+1)}}\boldsymbol\nabla_{\mathbf n}Y_{jm},
+&P&=(-1)^j,\\
+\mathbf Y^{(\text{m})}_{jm}
+&=\mathbf n\times\mathbf Y^{(\text{e})}_{jm},
+&P&=(-1)^{j+1},\\
+\mathbf Y^{(\text{l})}_{jm}
+&=\mathbf nY_{jm},
+&P&=(-1)^j.
+\end{aligned}
+\tag{7.4}
+\end{equation}
+
+\SourcePage{32}{37}
+The parity $P$ is shown alongside each vector. The three types are mutually orthogonal; $\mathbf Y^{(\text{l})}_{jm}$ is longitudinal, while $\mathbf Y^{(\text{e})}_{jm}$ and $\mathbf Y^{(\text{m})}_{jm}$ are transverse to $\mathbf n$.
+
+The vector spherical harmonics can be expressed through scalar spherical functions. The harmonics $\mathbf Y^{(\text{m})}_{jm}$ contain spherical functions of only one order, $l=j$, whereas $\mathbf Y^{(\text{e})}_{jm}$ and $\mathbf Y^{(\text{l})}_{jm}$ contain orders $l=j\pm1$. This is evident on comparing their parities in~(7.4) with the parity $(-1)^{l+1}$ of a vector field expressed through spherical functions of order $l$.
+
+Within each type, the vector spherical harmonics are mutually orthogonal and normalized by
+\begin{equation}
+\int \mathbf Y_{jm}\mathbf Y^*_{j'm'}\,do
+=\delta_{jj'}\delta_{mm'}.
+\tag{7.5}
+\end{equation}
+For $\mathbf Y^{(\text{l})}_{jm}$, this follows immediately from the normalization of $Y_{jm}$. For $\mathbf Y^{(\text{e})}_{jm}$, the normalization integral is
+\[
+\frac{1}{\sqrt{j(j+1)j'(j'+1)}}
+\!\int \boldsymbol\nabla_{\mathbf n}Y_{jm}
+\boldsymbol\nabla_{\mathbf n}Y^*_{j'm'}\,do
+=-\frac{1}{\sqrt{j(j+1)j'(j'+1)}}
+\!\int Y^*_{j'm'}\Delta_{\mathbf n}Y_{jm}\,do,
+\]
+and since $\Delta_{\mathbf n}Y_{jm}=-j(j+1)Y_{jm}$, equation~(7.5) follows. The normalization of $\mathbf Y^{(\text{m})}_{jm}$ reduces to the same integral.
+
+The harmonics~(7.4) could also have been obtained without the direct verification of~(7.1), solely from general transformation arguments. In the preceding section, such arguments showed that a vector function $\mathbf n\varphi$ has an angular momentum $j$ equal to the order of the spherical functions entering $\varphi$. Taking $\varphi=Y_{jm}$ also fixes the projection $m$, giving $\mathbf Y^{(\text{l})}_{jm}$ immediately. The transformation argument of \S~6 is unchanged if $\mathbf n$ in $\mathbf n\varphi$ is replaced by $\boldsymbol\nabla_{\mathbf n}$ or $\mathbf n\times\boldsymbol\nabla_{\mathbf n}$, producing the other two types.
+
+We now return to photon wave functions. For an electric-type photon ($E_j$), the vector $\mathbf A(\mathbf k)$ must have parity $(-1)^j$. Both $\mathbf Y^{(\text{e})}_{jm}$ and $\mathbf Y^{(\text{l})}_{jm}$ have this parity, but only the former satisfies transversality. For a magnetic-type photon ($M_j$), $\mathbf A(\mathbf k)$ must have
+\SourcePage{33}{38}
+parity $(-1)^{j+1}$, which belongs only to $\mathbf Y^{(\text{m})}_{jm}$. Thus the wave functions of a photon with specified angular momentum $j$, projection $m$, and energy $\omega$ are
+\begin{equation}
+\mathbf A_{\omega jm}(\mathbf k)
+=\frac{4\pi^2}{\omega^{3/2}}\delta(|\mathbf k|-\omega)
+\mathbf Y_{jm}(\mathbf n),
+\tag{7.6}
+\end{equation}
+where $\mathbf Y_{jm}$ is $\mathbf Y^{(\text{e})}_{jm}$ for an electric-type photon and $\mathbf Y^{(\text{m})}_{jm}$ for a magnetic-type photon. The factor $\delta(|\mathbf k|-\omega)$ imposes the specified energy. The normalization is
+\begin{equation}
+\frac{1}{(2\pi)^4}\int \omega\omega'
+\mathbf A^*_{\omega'j'm'}(\mathbf k)
+\mathbf A_{\omega jm}(\mathbf k)\,d^3k
+=\omega\delta(\omega'-\omega)\delta_{jj'}\delta_{mm'}.
+\tag{7.7}
+\end{equation}
+
+For coordinate-representation wave functions, condition~(7.7) is equivalent to\footnote{This condition is of the same type as~(2.22). The factor $\delta(\omega'-\omega)$ occurs on the right because the field, a spherical wave, is considered throughout infinite space rather than in a finite volume $V=1$.}
+\begin{equation}
+\begin{aligned}
+\frac{1}{4\pi}\int\{&\mathbf E^*_{\omega'j'm'}(\mathbf r)
+\mathbf E_{\omega jm}(\mathbf r)
++\mathbf H^*_{\omega'j'm'}(\mathbf r)
+\mathbf H_{\omega jm}(\mathbf r)\}\,d^3x\\
+&=\omega\delta(\omega'-\omega)\delta_{jj'}\delta_{mm'}.
+\end{aligned}
+\tag{7.8}
+\end{equation}
+Indeed, expressed through the potentials, the integral on the left is
+\[
+\frac{1}{2\pi}\int \mathbf A^*_{\omega'j'm'}(\mathbf r)
+\mathbf A_{\omega jm}(\mathbf r)\,\omega'\omega\,d^3x.
+\]
+Substitute
+\begin{equation}
+\begin{aligned}
+\mathbf A_{\omega jm}(\mathbf r)
+&=\int \mathbf A_{\omega jm}(\mathbf k)e^{i\mathbf k\mathbf r}
+\frac{d^3k}{(2\pi)^3},\\
+\mathbf A^*_{\omega'j'm'}(\mathbf r)
+&=\int \mathbf A^*_{\omega'j'm'}(\mathbf k')e^{-i\mathbf k'\mathbf r}
+\frac{d^3k'}{(2\pi)^3}.
+\end{aligned}
+\tag{7.9}
+\end{equation}
+Integration over $d^3x$ then gives $(2\pi)^3\delta(\mathbf k'-\mathbf k)$, which is removed by the $d^3k'$ integration, reducing the integral to~(7.7).
+
+Up to this point we have assumed a transverse gauge, in which the scalar potential is $\Phi=0$. Other gauges for a spherical wave may, however, be more convenient in some applications.
+
+\SourcePage{34}{39}
+An admissible transformation of the potentials in momentum space is
+\[
+\mathbf A\to\mathbf A+\mathbf nf(\mathbf k),
+\qquad
+\Phi\to\Phi+f(\mathbf k),
+\]
+where $f(\mathbf k)$ is arbitrary. Here choose it so that the new potentials are expressed through the same spherical functions and retain a definite parity. For an electric-type photon, these requirements restrict the potentials to
+\begin{equation}
+\begin{aligned}
+\mathbf A^{(\text{e})}_{\omega jm}(\mathbf k)
+&=\frac{4\pi^2}{\omega^{3/2}}\delta(|\mathbf k|-\omega)
+\left(\mathbf Y^{(\text{e})}_{jm}+C\mathbf nY_{jm}\right),\\
+\Phi^{(\text{e})}_{\omega jm}(\mathbf k)
+&=\frac{4\pi^2}{\omega^{3/2}}\delta(|\mathbf k|-\omega)CY_{jm},
+\end{aligned}
+\tag{7.10}
+\end{equation}
+where $C$ is arbitrary. For a magnetic-type photon, adding such a term to $\mathbf A^{(\text{m})}_{\omega jm}(\mathbf k)$ would destroy definite parity; under the same requirements, the choice~(7.6) is therefore unique.
+
+By~(3.5) and~(7.6), the probability that a photon of definite angular momentum and parity will be detected moving in direction $\mathbf n$ within the solid-angle element $do$ is
+\begin{equation}
+w(\mathbf n)\,do=|\mathbf Y^{(\text{e})}_{jm}|^2\,do.
+\tag{7.11}
+\end{equation}
+This expression was written for an $E$-type photon. Since $|\mathbf Y^{(\text{m})}_{jm}|^2=|\mathbf Y^{(\text{e})}_{jm}|^2$, however, the distributions $w(\mathbf n)$ are identical for both types.
+
+The modulus squared $|\mathbf Y^{(\text{e})}_{jm}|^2$ is independent of the azimuth $\varphi$, because the factors $e^{\pm im\varphi}$ in the spherical functions cancel. Thus $w(\mathbf n)$ is symmetric about the $z$ axis. Moreover, each vector spherical harmonic has a definite parity, so its modulus squared is even under inversion, or under $\theta\to\pi-\theta$. Hence the expansion of $w(\theta)$ in Legendre polynomials contains only even orders. Determining its coefficients reduces to evaluating integrals of products of three spherical functions and then summing over components. Formulas from III, \S\S~107--108 perform both operations and give
+\SourcePage{35}{40}
+\begin{equation}
+\begin{aligned}
+w(\theta)={}&(-1)^{m+1}\frac{(2j+1)^2}{4\pi}
+\sum_{n=0}^{\infty}(4n+1)
+\begin{pmatrix}j&j&2n\\0&0&0\end{pmatrix}
+\begin{pmatrix}j&j&2n\\m&-m&0\end{pmatrix}\\
+&\times
+\begin{Bmatrix}j&j&1\\j&j&2n\end{Bmatrix}
+P_{2n}(\cos\theta).
+\end{aligned}
+\tag{7.12}
+\end{equation}
+
+Finally, we give the components of the vector spherical harmonics as expansions in scalar spherical functions. We use the ``spherical components'' of a vector defined in III, \S~107. For a vector $\mathbf f$, they are
+\begin{equation}
+f_0=if_z,
+\qquad
+f_{+1}=-\frac{i}{\sqrt2}(f_x+if_y),
+\qquad
+f_{-1}=\frac{i}{\sqrt2}(f_x-if_y).
+\tag{7.13}
+\end{equation}
+Introduce the ``circular unit vectors''
+\begin{equation}
+\mathbf e^{(0)}=i\mathbf e^{(z)},
+\qquad
+\mathbf e^{(+1)}=-\frac{i}{\sqrt2}(\mathbf e^{(x)}+i\mathbf e^{(y)}),
+\qquad
+\mathbf e^{(-1)}=\frac{i}{\sqrt2}(\mathbf e^{(x)}-i\mathbf e^{(y)})
+\tag{7.14}
+\end{equation}
+($\mathbf e^{(x,y,z)}$ are unit vectors along the $x$, $y$, and $z$ axes). Then
+\begin{equation}
+\mathbf f=\sum_\lambda(-1)^{1-\lambda}f_{-\lambda}\mathbf e^{(\lambda)},
+\qquad
+f_\lambda=(-1)^{1-\lambda}\mathbf f\mathbf e^{(-\lambda)*}
+=\mathbf f\mathbf e^{(\lambda)}.
+\tag{7.15}
+\end{equation}
+The spherical components of the vector spherical harmonics are expressed through spherical functions by means of $3j$ symbols:
+\begin{equation}
+\begin{aligned}
+(-1)^{j+m+\lambda+1}(\mathbf Y^{(\text{e})}_{jm})_\lambda
+={}&-\sqrt j
+\begin{pmatrix}j+1&1&j\\m+\lambda&-\lambda&-m\end{pmatrix}
+Y_{j+1,m+\lambda}\\
+&+\sqrt{j+1}
+\begin{pmatrix}j-1&1&j\\m+\lambda&-\lambda&-m\end{pmatrix}
+Y_{j-1,m+\lambda},\\
+(-1)^{j+m+\lambda+1}(\mathbf Y^{(\text{m})}_{jm})_\lambda
+={}&-\sqrt{2j+1}
+\begin{pmatrix}j&1&j\\m+\lambda&-\lambda&-m\end{pmatrix}
+Y_{j,m+\lambda},\\
+(-1)^{j+m+\lambda+1}(\mathbf Y^{(\text{l})}_{jm})_\lambda
+={}&\sqrt{j+1}
+\begin{pmatrix}j+1&1&j\\m+\lambda&-\lambda&-m\end{pmatrix}
+Y_{j+1,m+\lambda}\\
+&+\sqrt j
+\begin{pmatrix}j-1&1&j\\m+\lambda&-\lambda&-m\end{pmatrix}
+Y_{j-1,m+\lambda}.
+\end{aligned}
+\tag{7.16}
+\end{equation}
+
+These formulas are derived as follows. Each of the three vector spherical harmonics has the form $\mathbf Y_{jm}=\mathbf aY_{jm}$, where $\mathbf a$ is one of the vectors in~(7.3). Therefore
+\[
+\mathbf Y_{jm}=\sum_{lm'}\langle lm'|\mathbf a|jm\rangle Y_{lm'},
+\]
+and the problem reduces to finding matrix elements of $\mathbf a$ between eigenfunctions of orbital angular momentum. According to~(107.6) (see III),
+\[
+\langle lm'|a_\lambda|jm\rangle
+=i(-1)^{j_{\max}-m'}
+\begin{pmatrix}l&1&j\\-m'&\lambda&m\end{pmatrix}
+\langle l\|\mathbf a\|j\rangle,
+\]
+\SourcePage{36}{41}
+\noindent
+where $j_{\max}$ is the greater of $l$ and $j$. It is therefore enough to know the nonzero reduced matrix elements $\langle l\|\mathbf a\|j\rangle$. They are
+\begin{equation}
+\begin{aligned}
+\langle l-1\|\mathbf n\|l\rangle
+&=\langle l\|\mathbf n\|l-1\rangle^*=i\sqrt l,\\
+\langle l\|\boldsymbol\nabla_{\mathbf n}\|l-1\rangle
+&=i(l-1)\sqrt l,\\
+\langle l-1\|\boldsymbol\nabla_{\mathbf n}\|l\rangle
+&=i(l+1)\sqrt l,\\
+\langle l\|\mathbf n\times\boldsymbol\nabla_{\mathbf n}\|l\rangle
+&=i\sqrt{l(l+1)(2l+1)}.
+\end{aligned}
+\tag{7.17}
+\end{equation}

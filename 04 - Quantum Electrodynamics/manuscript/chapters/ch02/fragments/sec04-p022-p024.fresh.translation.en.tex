@@ -1,0 +1,54 @@
+\SourcePage{22}{27}
+\section{Gauge invariance}
+
+As is well known, the choice of field potentials in classical electrodynamics is not unique: the components of the 4-potential $A_\mu$ may undergo an arbitrary \emph{gauge} (or \emph{gradient}) transformation of the form
+\begin{equation}
+A_\mu \to A_\mu + \partial_\mu\chi,
+\tag{4.1}
+\end{equation}
+where $\chi$ is an arbitrary function of the coordinates and time (see II, \S~18).
+
+\SourcePage{23}{28}
+For a plane wave, if we restrict ourselves to transformations that leave the form of the potential unchanged (its proportionality to the factor $\exp(-ik_\mu x^\mu)$), the ambiguity reduces to the freedom to add to the wave amplitude any 4-vector proportional to $k^\mu$.
+
+The nonuniqueness of the potential is of course retained in quantum theory, whether applied to field operators or to photon wave functions. Without specifying a choice of potentials in advance, one must replace~(2.17) by the analogous expansion of the operator 4-potential
+\begin{equation}
+\widehat A^\mu = \sum_{\mathbf{k}\alpha}\bigl(\widehat c_{\mathbf{k}\alpha}A^\mu_{\mathbf{k}\alpha} + \widehat c^+_{\mathbf{k}\alpha}A^{\mu*}_{\mathbf{k}\alpha}\bigr),
+\tag{4.2}
+\end{equation}
+where the wave functions $A^\mu_{\mathbf{k}\alpha}$ are 4-vectors of the form
+\[
+A^\mu_{\mathbf{k}} = \sqrt{4\pi}\,\frac{e^\mu}{\sqrt{2\omega}}e^{-ik_\nu x^\nu},
+\qquad e_\mu e^{\mu*} = -1,
+\]
+or, in abbreviated notation with the four-dimensional vector indices suppressed,
+\begin{equation}
+A_{\mathbf{k}} = \sqrt{4\pi}\,\frac{e}{\sqrt{2\omega}}e^{-ikx},
+\qquad ee^* = -1.
+\tag{4.3}
+\end{equation}
+Here $k_\mu = (\omega,\mathbf{k})$ is the 4-momentum (so that $kx = \omega t - \mathbf{kr}$), and $e$ is a unit polarization 4-vector\,\footnote{Expression~(4.3) is not fully relativistically covariant in its 4-vector form. This is connected with the noninvariant character of the normalization to a finite volume $V = 1$ adopted here. The point is not fundamental, however, and is amply offset by the convenience of this normalization. We shall see that it leads simply and automatically to real physical quantities in the required invariant form.}.
+
+If the gauge transformations are restricted to those that do not alter the coordinate and time dependence of~(4.3), they consist in the replacement
+\begin{equation}
+e_\mu \to e_\mu + \chi k_\mu,
+\tag{4.4}
+\end{equation}
+where $\chi = \chi(k^\mu)$ is arbitrary. Transverse polarization means that a gauge can always be chosen in which the 4-vector $e$ has the form
+\begin{equation}
+e^\mu = (0,\mathbf{e}),\qquad \mathbf{ek} = 0
+\tag{4.5}
+\end{equation}
+(we shall call this a \emph{three-dimensionally transverse} gauge). In invariant four-dimensional form, the requirement is the condition of \emph{four-dimensional transversality}
+\begin{equation}
+ek = 0.
+\tag{4.6}
+\end{equation}
+
+Notice that this condition, like the normalization $ee^* = -1$, is unaffected by transformation~(4.4) \SourcePage{24}{29}because $k^2 = 0$. Conversely, the vanishing square of a particle's 4-momentum means that its mass vanishes. This reveals the connection between gauge invariance and the zero photon mass (other aspects of this connection will be discussed in \S~14).
+
+No measurable physical quantity may change under a gauge transformation of the photon wave functions participating in a process. This requirement of \emph{gauge invariance} has an even greater role in quantum electrodynamics than in classical theory. Numerous examples will show that, alongside relativistic invariance, it is a powerful heuristic principle.
+
+Gauge invariance of the theory is in turn closely related to conservation of electric charge; this aspect will be considered in \S~43.
+
+We already mentioned in the preceding section that the coordinate-space wave function of a photon cannot be interpreted as the probability amplitude for its spatial localization. Mathematically, this is expressed by the impossibility of constructing from the wave function a quantity that could play the role of a probability density even by its formal properties alone. Such a quantity would have to be an essentially positive bilinear combination of the wave function $A_\mu$ and its complex conjugate. It would also have to satisfy definite requirements of relativistic covariance: it would have to be the time component of a 4-vector. Indeed, the continuity equation expressing conservation of particle number has the four-dimensional form of a vanishing divergence of the 4-current, whose time component in the present case is the probability density for localizing the particle (see II, \S~29). On the other hand, gauge invariance would allow the 4-vector $A_\mu$ to enter the current only through the antisymmetric tensor $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu = -i(k_\mu A_\nu - k_\nu A_\mu)$. The 4-current would therefore have to be constructed bilinearly from $F_{\mu\nu}$ and $F^*_{\mu\nu}$, together with components of $k_\mu$. But no such 4-vector can be constructed at all: every expression satisfying these conditions, for example $k^\lambda F^*_{\mu\nu}F_\lambda{}^\nu$, vanishes by transversality, $k^\lambda F_{\nu\lambda} = 0$. Moreover, such an expression would not be essentially positive, since it contains odd powers of the components of $k_\mu$.

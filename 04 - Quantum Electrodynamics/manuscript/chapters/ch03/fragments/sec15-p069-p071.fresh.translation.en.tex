@@ -1,0 +1,84 @@
+\SourcePage{69}{74}
+
+\section{The wave equation for particles of higher integral spin}
+
+The wave equations (14.3, 14.4) follow directly once the particle's mass and spin are specified. In practice, therefore, the Lagrangian is useful less for deriving these equations than for constructing expressions for the field energy, momentum, and charge.
+
+For this purpose, as already noted, (14.7) may be used in place of (14.5), and it can be transformed further. Using (14.1), rewrite (14.7) as
+\[
+\begin{split}
+L={}&-(\partial_\mu\psi_\nu^*)(\partial^\mu\psi^\nu)
++(\partial_\nu\psi_\mu^*)(\partial^\mu\psi^\nu)
++m^2\psi_\mu\psi^{\mu*}={}\\
+={}&-(\partial_\mu\psi_\nu^*)(\partial^\mu\psi^\nu)
++m^2\psi_\mu^*\psi^\mu
++\partial_\nu(\psi_\mu^*\partial^\mu\psi^\nu)
+-\psi_\mu^*\partial^\mu\partial_\nu\psi^\nu.
+\end{split}
+\]
+The final term vanishes by (14.3), while the preceding term is a total derivative. Omitting it leaves the Lagrangian
+\begin{equation}
+L'=-(\partial_\mu\psi_\nu^*)(\partial^\mu\psi^\nu)
++m^2\psi_\mu^*\psi^\mu.
+\tag{15.1}
+\end{equation}
+Its structure is the same as that of the spin-zero Lagrangian (10.9), except that the scalar $\psi$ has been replaced by the 4-vector $\psi_\mu$ and the overall sign has changed. The sign change occurs because $\psi_\mu$ is a spacelike vector, so that $\psi_\mu\psi^{\mu*}<0$, whereas $\psi\psi^*>0$ for a scalar particle.
+
+Constructing the energy-momentum 4-tensor and the current 4-vector from (15.1) gives expressions with the same form as (10.12) and (10.18) for a scalar field:
+\begin{align}
+T_{\mu\nu}
+&=-\partial_\mu\psi^{\lambda*}\cdot\partial_\nu\psi_\lambda
+-\partial_\nu\psi^{\lambda*}\cdot\partial_\mu\psi_\lambda
+-L'g_{\mu\nu},
+\tag{15.2}\\
+j_\mu
+&=-i\left[\psi_\lambda^*\partial_\mu\psi^\lambda
+-(\partial_\mu\psi_\lambda^*)\psi^\lambda\right].
+\tag{15.3}
+\end{align}
+Their differences from (14.8) and (14.10) likewise reduce to total derivatives. But, as\SourcePage{70}{75} stressed earlier, the local values of these quantities have no deep physical significance. Only the volume integrals $P_\mu$ (10.15) and $Q$ (10.19) matter; they are identical for the two choices of $T_{\mu\nu}$ and $j_\mu$.
+
+This description extends directly to particles of arbitrary integral spin. The wave function of a spin-$s$ particle is an irreducible 4-tensor of rank $s$: it is symmetric in all indices and has zero contraction over any pair,
+\begin{equation}
+\psi_{\ldots\mu\ldots\nu\ldots}
+=\psi_{\ldots\nu\ldots\mu\ldots},
+\qquad
+\psi_{\ldots\mu\ldots}^{\phantom{\ldots\mu}\mu\ldots}=0.
+\tag{15.4}
+\end{equation}
+This tensor must also satisfy the 4-transversality condition
+\begin{equation}
+\widehat p^\mu\psi_{\mu\ldots}=0,
+\tag{15.5}
+\end{equation}
+and each of its components must obey the second-order equation
+\begin{equation}
+(\widehat p^2-m^2)\psi_{\ldots}=0.
+\tag{15.6}
+\end{equation}
+
+In the rest frame, (15.5) makes every component of the 4-tensor with a zero among its indices vanish. In other words, in the rest frame---that is, in the nonrelativistic limit---the wave function reduces, as expected, to an irreducible 3-tensor of rank $s$, having $2s+1$ independent components.
+
+For a field of spin-$s$ particles, the Lagrangian, energy-momentum tensor, and current vector differ from (15.1)--(15.3) only by replacing $\psi_\lambda$ with $\psi_{\lambda\mu\ldots}$.
+
+A normalized plane wave is
+\begin{equation}
+\psi^{\mu\nu\ldots}
+=\frac{1}{\sqrt{2\varepsilon}}u^{\mu\nu\ldots}e^{-ipx},
+\qquad
+u^*_{\mu\nu\ldots}u^{\mu\nu\ldots}=-1,
+\tag{15.7}
+\end{equation}
+and its amplitude satisfies
+\begin{equation}
+u^{\mu\nu\ldots}p_\mu=0.
+\tag{15.8}
+\end{equation}
+There are $2s+1$ independent polarization states.
+
+The field is quantized by the evident generalization of the spin-zero or spin-one cases.
+
+The construction just given is entirely adequate for its purpose: describing a field of free particles. The situation is different if one asks for a description of the interaction between the particles and an electromagnetic field. That interaction would have to enter a Lagrangian from which every equation could be derived without separately imposing supplementary conditions. In fact, such a description of the interaction proves applicable only to electrons, which have spin $1/2$ (see \S~32). For other spins, the question would therefore be of methodological interest only.
+
+\SourcePage{71}{76}
+For every integral or half-integral spin $s>1$, it is impossible to formulate a variational principle using only a single tensor or spinor function whose rank corresponds to the given spin. Lower-rank tensor or spinor quantities must also be introduced as auxiliaries. The Lagrangian is then chosen so that the field equations for free particles following from the variational principle make these auxiliary quantities vanish automatically\footnote{See \emph{Fierz M., Pauli W.}//Proc. Roy. Soc.~--- 1939.~--- V.~A~173.~--- P.~211. The program described here was carried out in that paper for particles of spin $3/2$ and~2.}.

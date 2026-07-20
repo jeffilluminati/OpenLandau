@@ -1,0 +1,84 @@
+\SourcePage{42}{47}
+
+\section{A system of two photons}
+
+Reasoning analogous to that used in \S~6 also permits the number of possible states to be counted in the more complicated case of a two-photon system (\emph{L.~Landau}, 1948).
+
+We consider the photons in their center-of-momentum frame; their momenta are $\mathbf{k}_1=-\mathbf{k}_2\equiv\mathbf{k}$.\footnote{Such a reference frame always exists except when the two photons travel parallel to one another in the same direction. For those photons, the total momentum $\mathbf{k}_1+\mathbf{k}_2$ and total energy $\omega_1+\omega_2$ obey the same relation as for a single photon, and hence there is no frame in which $\mathbf{k}_1+\mathbf{k}_2=0$.} In the momentum representation, the wave function of the two-photon system may be written as a three-dimensional second-rank tensor $A_{ik}(\mathbf{n})$, formed bilinearly from the components of the vector wave functions of the two photons; each tensor index belongs to one photon ($\mathbf{n}$ is the unit vector along $\mathbf{k}$). The transversality of each photon is expressed by the orthogonality of $A_{ik}$ to $\mathbf{n}$:
+\begin{equation}
+A_{il}n_l=0,
+\qquad
+A_{lk}n_l=0.
+\tag{9.1}
+\end{equation}
+
+Interchanging the photons means interchanging the indices of $A_{ik}$ while simultaneously reversing $\mathbf{n}$. Since photons obey Bose statistics,
+\begin{equation}
+A_{ik}(-\mathbf{n})=A_{ki}(\mathbf{n}).
+\tag{9.2}
+\end{equation}
+
+In general, the tensor $A_{ik}$ is not symmetric in its indices. Separate it into symmetric ($s_{ik}$) and antisymmetric ($a_{ik}$) parts: $A_{ik}=s_{ik}+a_{ik}$. Each part must separately satisfy (9.2), as well as the orthogonality conditions (9.1). It follows that
+\begin{align}
+s_{ik}(-\mathbf{n})&=s_{ik}(\mathbf{n}),
+\tag{9.3}\\
+a_{ik}(-\mathbf{n})&=-a_{ik}(\mathbf{n}).
+\tag{9.4}
+\end{align}
+
+Inversion of the coordinate system does not itself change the signs of the components of a second-rank tensor, but it does reverse $\mathbf{n}$. Equation (9.3) therefore shows that the wave function $s_{ik}$ is invariant under inversion and thus describes even-parity states of the photon system; the wave function $a_{ik}$ describes odd-parity states.
+
+An antisymmetric second-rank tensor is equivalent (dual) to an axial vector $\mathbf{a}$ whose components are related to those of the tensor by $a_i=\tfrac{1}{2}e_{ikl}a_{kl}$, where $e_{ikl}$ is the antisymmetric unit tensor (see II, \S~6). Orthogonality of $a_{kl}$ to $\mathbf{n}$ means that $\mathbf{a}$ and\SourcePage{43}{48} $\mathbf{n}$ are parallel.\footnote{Indeed, $a_{ik}=e_{ikl}a_l$, and the orthogonality condition gives
+\[
+a_{ik}n_k=e_{ikl}a_l n_k=(\mathbf{n}\times\mathbf{a})_i=0.
+\]} Hence we may write $\mathbf{a}=\mathbf{n}\varphi(\mathbf{n})$, where $\varphi$ is a scalar. According to (9.4), $\mathbf{a}(-\mathbf{n})=-\mathbf{a}(\mathbf{n})$; consequently,
+\[
+\varphi(-\mathbf{n})=\varphi(\mathbf{n}).
+\]
+
+This equality means that the scalar $\varphi$ can be constructed linearly only from spherical functions of even order $L$, including order zero.
+
+Thus, with respect to rotations, the antisymmetric tensor $a_{ik}$ transforms like a single scalar (cf. the note on p.~34). Assigning ``spin''~0 to this scalar, we find that the angular momentum of the state is $J=L$. The tensor $a_{ik}$ therefore gives odd-parity two-photon states with even $J$.
+
+We now turn to the symmetric tensor $s_{ik}$. Since it is even under reversal of $\mathbf{n}$, it describes even-parity states of the photon system. The same fact implies that all components $s_{ik}$ are expressed through spherical functions of even order $L$, including $L=0$. As is well known, an arbitrary symmetric second-rank tensor $s_{ik}$ decomposes into a scalar ($s_{ii}$) and a traceless symmetric tensor ($s'_{ik}$), with $s'_{ii}=0$.
+
+The scalar $s_{ii}$ is associated with ``spin''~0, so the angular momentum of its states is $J=L$ and is therefore even. The tensor $s'_{ik}$ is associated with ``spin''~2 (see III, \S~57). Combining this ``spin'' with the even ``orbital angular momentum'' $L$ by the angular-momentum addition rule, we find three states for each specified even $J\ne0$ (with $L=J\pm2,J$), and two states for each odd $J\ne1$ (with $L=J\pm1$). The exceptions are $J=0$, with one state ($L=2$), and $J=1$, likewise with one state ($L=2$).
+
+These counts do not yet incorporate the condition that $s_{ik}$ be orthogonal to $\mathbf{n}$. We must therefore subtract the number of states corresponding to a symmetric second-rank tensor ``parallel'' to $\mathbf{n}$. Such a tensor, denoted by $s''_{ik}$, may be written
+\[
+s''_{ik}=n_i b_k+n_k b_i,
+\]
+where $\mathbf{b}$ is a vector. Equation (9.3) requires this vector to obey $\mathbf{b}(-\mathbf{n})=-\mathbf{b}(\mathbf{n})$. Thus the tensor $s''_{ik}$ responsible for the ``extra'' states is equivalent to an odd vector. That vector must consequently be expressed only through spherical functions of odd orders $L$. Noting\SourcePage{44}{49} also that a vector is associated with ``spin''~1, we find two states for every even $J\ne0$ (with $L=J\pm1$), and one state for every odd $J$ (with $L=J$); the special case $J=0$ has one state ($L=1$). Combining these results gives the following table, which lists the numbers of possible even- and odd-parity states of a two-photon system (with zero total momentum) for the different values of the total angular momentum $J$:
+\begin{equation}
+\begin{array}{c|c|c}
+J & \text{Even} & \text{Odd}\\ \hline
+0 & 1 & 1\\
+1 & \text{---} & \text{---}\\
+2k & 2 & 1\\
+2k+1 & 1 & \text{---}
+\end{array}
+\tag{9.5}
+\end{equation}
+($k$ is a nonzero positive integer). We see that odd-parity states are absent for odd $J$, while $J=1$ is altogether impossible.\footnote{For another derivation of these results, see problem~1 to \S~69.}
+
+The two-photon wave function $A_{ik}$ determines the correlation between their polarizations. The probability that the two photons simultaneously have specified polarizations $\mathbf{e}_1$ and $\mathbf{e}_2$ is proportional to
+\[
+A_{ik}e^*_{1i}e^*_{2k}.
+\]
+In other words, when the polarization $\mathbf{e}_1$ of one photon is specified, the polarization $\mathbf{e}_2$ of the other is proportional to
+\begin{equation}
+e_{2k}\propto A_{ik}e^*_{1i}.
+\tag{9.6}
+\end{equation}
+
+In odd-parity states of the system, $A_{ik}$ coincides with the antisymmetric tensor $a_{ik}$. Then
+\[
+\mathbf{e}_2\mathbf{e}_1^*\propto a_{ik}e^*_{1i}e^*_{1k}=0,
+\]
+so the polarizations of the two photons are mutually orthogonal. For linear polarization this means that their directions are perpendicular; for circular polarizations, their senses of rotation are opposite.
+
+The even-parity state with $J=0$ is described by a symmetric tensor reducible to the scalar form
+\[
+s_{ik}=\mathrm{const}\cdot(\delta_{ik}-n_i n_k).
+\]
+It follows from (9.6) that $\mathbf{e}_1=\mathbf{e}_2^*$. For linear polarization their directions are therefore parallel; for circular polarizations their senses of rotation are again opposite. The latter fact is evident: when $J=0$, the sum of the projections of the photon angular momenta on the same direction $\mathbf{k}$ must in any event vanish (their projections on the opposite directions $\mathbf{k}_1$ and $\mathbf{k}_2$, that is, their helicities, are then equal).

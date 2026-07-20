@@ -1,0 +1,82 @@
+\SourcePage{276}{281}
+\section{Resonance fluorescence}
+
+Allowance for the finite width of levels in the problem of light scattering is essential when the frequency $\omega$ of the incident light is close to one of the ``intermediate'' frequencies $\omega_{n1}$ or $\omega_{2n}$---the phenomenon known as \emph{resonance fluorescence} ($V$.~Weisskopf, 1931).
+
+Consider unshifted scattering by a system (an atom, for example) in its ground state, so that the initial and final levels coincide and are strictly discrete. Let the light frequency be close to some frequency $\omega_{n1}$, with $n$ an excited and therefore quasidiscrete level.
+
+This question could be solved by the method set out in the preceding section. That is unnecessary, however, because the problem is entirely analogous to the problem of nonrelativistic resonance scattering through a quasidiscrete level considered in Vol.~III, \S~134. According to the result obtained there, the scattering amplitude must contain the pole factor
+\[
+\left[\omega-\left(E_n-\frac i2\text{\foreignlanguage{russian}{Г}}_n-E_1\right)\right]^{-1}.
+\]
+On the other hand, when $|\omega-\omega_{n1}|\gg\text{\foreignlanguage{russian}{Г}}_n$, the formula must reduce to the nonresonant formula (59.5). It follows that the required scattering cross section is obtained simply by replacing $E_n$ with $E_n-i\text{\foreignlanguage{russian}{Г}}_n/2$ in (59.5), while retaining only the resonant terms in the sum over $n$:
+\begin{equation}
+d\sigma=\frac{\left|
+\sum_{M_n}(\mathbf d_{2n}\mathbf e'^*)(\mathbf d_{n1}\mathbf e)
+\right|^2}
+{(\omega_{n1}-\omega)^2+\text{\foreignlanguage{russian}{Г}}_n^2/4}\,\omega^4do'.
+\tag{63.1}
+\end{equation}
+The sum extends over all states (with different angular-momentum projections $M_n$) belonging to the resonant level $E_n$; states 1 and 2 belong to the same (ground) level but may have different values of $M_1$ and $M_2$.
+
+The cross section (63.1) is largest at $\omega=\omega_{n1}$. In order of magnitude, its value at the maximum is $\sigma_{\max}\sim\omega^4d^4/\text{\foreignlanguage{russian}{Г}}_n^2$. Since the probability of the spontaneous transition $n\to1$, and hence the width $\text{\foreignlanguage{russian}{Г}}_n$, is of order $\omega^3d^2$, this value is
+\begin{equation}
+\sigma_{\max}\sim\omega^{-2}\sim\lambda^2,
+\tag{63.2}
+\end{equation}
+that is, of the order of the square of the light wavelength and independent of the fine-structure constant, in place of the typical values $\sim r_e^2$ outside the resonance region.
+
+We emphasize that, because the atom is in a strictly discrete (ground) level both before and after scattering, the frequencies of the primary and secondary photons coincide exactly. Therefore, under
+\SourcePage{277}{282}
+irradiation by monochromatic light, the scattered light is monochromatic as well. If instead the incident light has a spectral intensity distribution $I(\omega)$ and $I(\omega)$ varies little over the width $\text{\foreignlanguage{russian}{Г}}_n$, the intensity of the scattered light is proportional to
+\begin{equation}
+\frac{I(\omega_{n1})d\omega}
+{(\omega-\omega_{n1})^2+\text{\foreignlanguage{russian}{Г}}_n^2/4}.
+\tag{63.3}
+\end{equation}
+In other words, the scattering line has the same shape as the natural line shape for spontaneous emission from the level $E_n$.
+
+The scattering tensor corresponding to the cross section (63.1) is
+\begin{equation}
+(c_{ik})_{21}=
+\frac{\sum_{M_n}(d_i)_{2n}(d_k)_{n1}}
+{\omega_{n1}-\omega-i\text{\foreignlanguage{russian}{Г}}_n/2}.
+\tag{63.4}
+\end{equation}
+In particular, the polarizability tensor is
+\begin{equation}
+\alpha_{ik}=(c_{ik})_{11}=
+\frac{\sum_{M_n}(d_i)_{1n}(d_k)_{n1}}
+{\omega_{n1}-\omega-i\text{\foreignlanguage{russian}{Г}}_n/2}.
+\tag{63.5}
+\end{equation}
+Let us note at once that adding an imaginary part to the energy levels of the intermediate excited states makes the polarizability tensor non-Hermitian even at frequencies below the ionization threshold. The tensor acquires an imaginary part directly connected with the absorption of light.
+
+After absorbing a quantum, the atom will sooner or later return to the ground state by emitting one or more photons. From this viewpoint, therefore, the absorption cross section is simply the total cross section $\sigma_t$ for all possible scattering processes\footnote{We emphasize that this concerns absorption by a system in a stable ground state. Since the duration of an experiment is finite, the formulation of the question for an excited state would be different.}. On the other hand, according to formula (59.25), which expresses the optical theorem, this cross section is determined by the anti-Hermitian part of the polarizability tensor.
+
+Substitution of the tensor $\alpha_{ik}$ from (63.5) into (59.25) gives the following formula for the absorption cross section of a photon whose frequency $\omega$ is close to $\omega_{n1}$:
+\begin{equation}
+\sigma^{(\mathrm{abs})}=4\pi^2\sum_{M_n}|\mathbf d_{n1}\mathbf e|^2\omega
+\frac{\text{\foreignlanguage{russian}{Г}}_n/2}
+{\pi[(\omega-\omega_{n1})^2+\text{\foreignlanguage{russian}{Г}}_n^2/4]}.
+\tag{63.6}
+\end{equation}
+In the limit $\text{\foreignlanguage{russian}{Г}}_n\to0$, the last factor in this formula tends to the delta function $\delta(\omega-\omega_{n1})$, in agreement with the fact that in this case only a photon of a precisely specified frequency can be absorbed. Let light with spectral and angular
+\SourcePage{278}{283}
+energy-flux density $I_{\mathbf k\mathbf e}$ fall on the atom (cf. (44.7)). The number flux density of photons is then $I_{\mathbf k\mathbf e}d\omega do/\omega$, and the absorption probability is
+\begin{equation}
+dw^{(\mathrm{abs})}=\sigma^{(\mathrm{abs})}
+\frac{I_{\mathbf k\mathbf e}}\omega d\omega do.
+\tag{63.7}
+\end{equation}
+If $I_{\mathbf k\mathbf e}(\omega)$ varies little over the width $\text{\foreignlanguage{russian}{Г}}_n$, integration over frequencies gives
+\[
+dw^{(\mathrm{abs})}=4\pi^2\sum_{M_n}|\mathbf d_{n1}\mathbf e|^2
+I_{\mathbf k\mathbf e}(\omega_{n1})d\omega do.
+\]
+On the other hand, noting that, according to (45.5),
+\[
+dw^{(\mathrm{sp})}=\frac{\omega^3}{2\pi}\sum_{M_n}|\mathbf d_{1n}\mathbf e^*|^2do
+=\frac{\omega^3}{2\pi}\sum_{M_n}|\mathbf d_{n1}\mathbf e|^2do
+\]
+is the probability of spontaneous emission of a photon with frequency $\omega_{n1}$, we recover formula (44.9).

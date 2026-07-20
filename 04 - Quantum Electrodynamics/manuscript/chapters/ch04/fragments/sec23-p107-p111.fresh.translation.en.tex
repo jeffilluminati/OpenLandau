@@ -1,0 +1,154 @@
+\SourcePage{102}{107}
+\section{Plane waves}
+
+The state of a free particle with definite momentum and energy is described by a plane wave, which we write as
+\begin{equation}
+\psi_p = \frac{1}{\sqrt{2\varepsilon}}\,u_p\,e^{-ipx}.
+\tag{23.1}
+\end{equation}
+The index $p$ specifies the value of the 4-momentum; the wave amplitude $u_p$ is a bispinor with a particular normalization.
+
+When we subsequently carry out second quantization, we shall need, in addition to the wave functions~(23.1), functions of ``negative frequency.'' As explained in \S\,11, these arise in relativistic theory from the two-valued root $\pm\sqrt{\mathbf{p}^2 + m^2}$. As in \S\,11, $\varepsilon$ will everywhere mean the positive quantity $\varepsilon = +\sqrt{\mathbf{p}^2 + m^2}$, so that the ``negative frequency'' is $-\varepsilon$. Reversing the sign of $\mathbf{p}$ as well gives a function naturally denoted by $\psi_{-p}$:
+\begin{equation}
+\psi_{-p} = \frac{1}{\sqrt{2\varepsilon}}\,u_{-p}\,e^{ipx}.
+\tag{23.2}
+\end{equation}
+The meaning of these functions will become clear in \S\,26. Below, formulas for $\psi_p$ and $\psi_{-p}$ will be written in parallel.
+
+The components of the bispinor amplitudes $u_p$ and $u_{-p}$ satisfy the systems of algebraic equations
+\begin{equation}
+(\gamma p - m)u_p = 0,\qquad (\gamma p + m)u_{-p} = 0,
+\tag{23.3}
+\end{equation}
+obtained by substituting~(23.1), (23.2) into the Dirac equation
+\SourcePage{103}{108}
+(which amounts to replacing the operator $\widehat p$ in that equation by $\pm p$)\footnote{We also note the analogous systems obtained from the Dirac equation~(21.9) for the complex-conjugate function:
+\begin{equation}
+\bar u_p(\gamma p - m) = 0,\qquad \bar u_{-p}(\gamma p + m) = 0.
+\tag{23.3\,a}
+\end{equation}}. The relation $p^2 = m^2$ is the compatibility condition for each system. We shall always normalize the bispinor amplitudes by the invariant conditions
+\begin{equation}
+\bar u_p u_p = 2m,\qquad \bar u_{-p}u_{-p} = -2m
+\tag{23.4}
+\end{equation}
+(the bar over a letter denotes, as everywhere, Dirac conjugation: $\bar u = u^*\gamma^0$). Multiplying equations~(23.3) on the left by $\bar u_{\pm p}$ gives $(\bar u_{\pm p}\gamma u_{\pm p})p = 2m^2 = 2p^2$, and therefore
+\begin{equation}
+\bar u_p\gamma u_p = \bar u_{-p}\gamma u_{-p} = 2p
+\tag{23.5}
+\end{equation}
+
+Notice that formulas for $u_{-p}$ are obtained from those for $u_p$ by changing the sign of $m$.
+
+The 4-vector of current density is
+\begin{equation}
+j = \bar\psi_{\pm p}\gamma\psi_{\pm p} = \frac{1}{2\varepsilon}\bar u_{\pm p}\gamma u_{\pm p} = \frac{p}{\varepsilon},
+\tag{23.6}
+\end{equation}
+that is, $j^\mu = (1, \mathbf{v})$, where $\mathbf{v} = \mathbf{p}/\varepsilon$ is the particle velocity. Hence the functions $\psi_p$ are normalized to ``one particle in a volume $V = 1$''.
+
+By virtue of equations~(23.3), the components of the wave amplitude obey certain relations whose explicit form naturally depends on the chosen representation of $\psi$. Let us determine them in the standard representation.
+
+For a plane wave, equations~(21.19) give
+\begin{equation}
+(\varepsilon - m)\varphi - \mathbf{p}\boldsymbol{\sigma}\chi = 0,\qquad (\varepsilon + m)\chi - \mathbf{p}\boldsymbol{\sigma}\varphi = 0.
+\tag{23.7}
+\end{equation}
+These equalities give the relation between $\varphi$ and $\chi$ in two equivalent forms:
+\begin{equation}
+\varphi = \frac{\mathbf{p}\boldsymbol{\sigma}}{\varepsilon - m}\chi,\qquad \chi = \frac{\mathbf{p}\boldsymbol{\sigma}}{\varepsilon + m}\varphi
+\tag{23.8}
+\end{equation}
+(their equivalence is immediate: multiply the first on the left by $\mathbf{p}\boldsymbol{\sigma}/(\varepsilon + m)$ and use $(\mathbf{p}\boldsymbol{\sigma})^2 = \mathbf{p}^2$ and $\varepsilon^2 - m^2 = \mathbf{p}^2$ to obtain the second). The common factor in $\varphi$ and $\chi$ is chosen to satisfy the normalization condition~(23.4). We then obtain the following expressions for $u_p$ (and similarly for $u_{-p}$):
+\begin{equation}
+u_p = \begin{pmatrix} \sqrt{\varepsilon + m}\,w\\ \sqrt{\varepsilon - m}(\mathbf{n}\boldsymbol{\sigma})w \end{pmatrix},\qquad u_{-p} = \begin{pmatrix} \sqrt{\varepsilon - m}(\mathbf{n}\boldsymbol{\sigma})w'\\ \sqrt{\varepsilon + m}\,w' \end{pmatrix}
+\tag{23.9}
+\end{equation}
+\SourcePage{104}{109}
+(the second formula follows from the first by changing the sign before $m$ and relabeling $w \to (\mathbf{n}\boldsymbol{\sigma})w'$). Here $\mathbf{n}$ is the unit vector along $\mathbf{p}$, while $w$ is an arbitrary two-component quantity subject only to the normalization condition
+\begin{equation}
+w^*w = 1.
+\tag{23.10}
+\end{equation}
+
+For $\bar u = u^*\gamma^0$ (with $\gamma^0$ from~(21.20)), we have
+\begin{equation}
+\begin{aligned}
+\bar u_p &= \bigl(\sqrt{\varepsilon + m}\;w^*,\; -\sqrt{\varepsilon - m}\;w^*(\mathbf{n}\boldsymbol{\sigma})\bigr),\\
+\bar u_{-p} &= \bigl(\sqrt{\varepsilon - m}\;w'^*(\mathbf{n}\boldsymbol{\sigma}),\; -\sqrt{\varepsilon + m}\;w'^*\bigr)
+\end{aligned}
+\tag{23.11}
+\end{equation}
+and multiplication confirms that $\bar u_{\pm p}u_{\pm p} = \pm 2m$.
+
+In the rest frame, where $\varepsilon = m$, we have
+\begin{equation}
+u_p = \sqrt{2m}\binom{w}{0},\qquad u_{-p} = \sqrt{2m}\binom{0}{w'},
+\tag{23.12}
+\end{equation}
+so $w$ is the 3-spinor to which the amplitude of each wave reduces in the nonrelativistic limit. Note that in the rest frame it is the first two components of the bispinor $u_{-p}$, rather than the second two, that vanish. This property of solutions of the Dirac equation with ``negative frequencies'' is evident: setting $\mathbf{p} = 0$ in~(23.7) and replacing $\varepsilon$ by $-m$ gives $\varphi = 0$\footnote{In the spinor representation one instead has $\xi = -\eta$, in place of the relation $\xi = \eta$ that holds in the rest frame for solutions of ``positive frequency.''}.
+
+The amplitude of a plane wave contains one arbitrary two-component quantity. In other words, for a specified momentum there are two distinct independent states, corresponding to the two possible values of the spin projection. The projection of the spin on an arbitrary axis $z$, however, cannot have a definite value. Indeed, the Hamiltonian of a particle with specified $\mathbf{p}$ (the matrix $H = \boldsymbol{\alpha}\mathbf{p} + \beta m$) does not commute with $\Sigma_z = -i\alpha_x\alpha_y$. Nevertheless, in accordance with the general statements made in \S\,16, the helicity $\lambda$ is conserved: this is the spin projection along $\mathbf{p}$, and the Hamiltonian commutes with the matrix $\mathbf{n}\boldsymbol{\Sigma}$.
+
+Helicity states correspond to plane waves for which the 3-spinor $w = w^{(\lambda)}(\mathbf{n})$ is an eigenfunction of the operator $\mathbf{n}\boldsymbol{\sigma}$:
+\begin{equation}
+\frac{1}{2}(\mathbf{n}\boldsymbol{\sigma})w^{(\lambda)} = \lambda w^{(\lambda)}.
+\tag{23.13}
+\end{equation}
+
+These spinors are explicitly
+\begin{equation}
+w^{(\lambda = 1/2)} = \begin{pmatrix} e^{-i\varphi/2}\cos\frac{\theta}{2}\\ e^{i\varphi/2}\sin\frac{\theta}{2} \end{pmatrix},\qquad w^{(\lambda = -1/2)} = \begin{pmatrix} -e^{-i\varphi/2}\sin\frac{\theta}{2}\\ e^{i\varphi/2}\cos\frac{\theta}{2} \end{pmatrix},
+\tag{23.14}
+\end{equation}
+\SourcePage{105}{110}
+where $\theta$ and $\varphi$ are the polar and azimuthal angles of the direction $\mathbf{n}$ relative to fixed axes $xyz$\footnote{The solution of equations~(23.13) may be multiplied by an arbitrary phase factor; this freedom is associated with an arbitrary rotation about the direction $\mathbf{n}$.}.
+
+Another possible choice of two independent states for a free particle with specified $\mathbf{p}$, simpler though less transparent, corresponds to the two values of the $z$-projection of spin in the rest frame; denote it by $\sigma$. The corresponding spinors are
+\begin{equation}
+w^{(\sigma = 1/2)} = \binom{1}{0},\qquad w^{(\sigma = -1/2)} = \binom{0}{1}.
+\tag{23.15}
+\end{equation}
+
+As the two linearly independent solutions of ``negative frequency,'' we choose plane waves in which the 3-spinors are
+\begin{equation}
+w^{(\sigma)\prime} = -\sigma_y w^{(-\sigma)} = 2\sigma i w^{(\sigma)}
+\tag{23.16}
+\end{equation}
+(the significance of this choice will become clear in \S\,26).
+
+One can find a representation of a plane wave in which, in every reference frame and not only in the rest frame, it has only two components corresponding to definite values of the same physical characteristic, the rest-frame spin projection (\emph{L.~Foldy, S.\,A.~Wouthuysen}, 1950).
+
+Starting from the amplitude $u_p$ in the standard representation~(23.9), seek a unitary transformation to such a representation in the form
+\[
+u'_p = Uu_p,\qquad U = e^{W\boldsymbol{\gamma}\mathbf{n}},
+\]
+where $W$ is real. Since $\boldsymbol{\gamma}^+ = -\boldsymbol{\gamma}$, this automatically gives $U^+ = U^{-1}$. Expanding in a series and using $(\boldsymbol{\gamma}\mathbf{n})^2 = -1$, write $U$ as
+\[
+U = \cos W + \boldsymbol{\gamma}\mathbf{n}\sin W
+\]
+(compare the transition from~(18.13) to~(18.14)). The condition that the second two components of the transformed amplitude $u'_p$ vanish gives
+\[
+\tan W = \frac{|\mathbf{p}|}{m + \varepsilon},
+\]
+and hence
+\[
+U = \frac{m + \varepsilon + (\boldsymbol{\gamma}\mathbf{n})|\mathbf{p}|}{\sqrt{2\varepsilon(\varepsilon + m)}}.
+\]
+
+In the new representation,
+\begin{equation}
+u'_p = \sqrt{2\varepsilon}\binom{w}{0}.
+\tag{23.17}
+\end{equation}
+
+\SourcePage{106}{111}
+The particle Hamiltonian in this representation is
+\begin{equation}
+\widehat H' = U(\boldsymbol{\alpha}\mathbf{p} + \beta m)U^{-1} = \beta\varepsilon
+\tag{23.18}
+\end{equation}
+(all the matrices $\beta$, $\boldsymbol{\alpha}$, and $\boldsymbol{\gamma}$ are in the standard representation). This Hamiltonian commutes with the matrix
+\[
+\boldsymbol{\Sigma} = -\boldsymbol{\alpha}\gamma^5 = \begin{pmatrix} \boldsymbol{\sigma} & 0\\ 0 & \boldsymbol{\sigma} \end{pmatrix},
+\]
+which in the new representation is the operator of the conserved quantity, the spin in the rest frame.

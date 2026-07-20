@@ -1,0 +1,77 @@
+\SourcePage{118}{123}
+\section{Intrinsic symmetry of particles and antiparticles}
+
+In its rest frame, the wave function of a spin-$1/2$ particle reduces to a single 3-spinor (which we denote by $\Phi^\alpha$). The concept of a particle's intrinsic parity is associated with the behavior of this spinor under inversion. However, as already noted in \S\,19, although the two possible transformation laws for 3-spinors ($\Phi^\alpha \to \pm i\Phi^\alpha$) are not equivalent to each other, assigning a definite parity to a spinor has no absolute meaning. It is therefore likewise meaningless to speak of the intrinsic parity of a spin-$1/2$ particle by itself. One may, however, speak of the relative intrinsic parity of two such particles.
+
+From two three-dimensional spinors $\Phi^{(\text{e})}$ and $\Phi^{(\text{p})}$ one can form the scalar $\Phi_\alpha^{(\text{e})}\Phi^{(\text{p})\alpha}$. If this is a true scalar, the particles described by these spinors are said to have the same parity; if it is a pseudoscalar, the particles are said to have opposite intrinsic parities.
+
+We shall show that the intrinsic parities of a particle and its antiparticle (of spin $1/2$) are opposite (\emph{V.\,B.~Berestetskii}, 1948).
+
+\SourcePage{119}{124}
+To this end, observe that applying the operation $C$ from~(26.7) to both sides of the $P$ transformation~(19.5), which in the spinor representation is
+\begin{equation}
+P:\quad \xi^\alpha \to i\eta_{\dot\alpha},\qquad \eta_{\dot\alpha} \to i\xi^\alpha,
+\tag{27.1}
+\end{equation}
+gives
+\[
+\eta^{c\dot\alpha*} \to i\xi^{c*}_{\alpha},\qquad \xi^{c*}_\alpha \to i\eta^{c\dot\alpha*},
+\]
+where the superscript $c$ marks the components of the bispinor $\psi^C = \binom{\xi^c}{\eta^c}$ that is charge-conjugate to the bispinor $\psi = \binom{\xi}{\eta}$. Taking the complex conjugate and raising or lowering the indices as required, we find
+\begin{equation}
+P:\quad \eta^c_{\dot\alpha} \to i\xi^{c\alpha},\qquad \xi^{c\alpha} \to i\eta^c_{\dot\alpha}.
+\tag{27.2}
+\end{equation}
+Thus charge-conjugate bispinors transform under inversion according to the same law.
+
+Let $\psi^{(\text{e})}$ be the wave function of the particle (the electron), and let $\psi^{(\text{p})}$ be the wave function of the antiparticle (the positron). The latter is the bispinor charge-conjugate to some negative-frequency solution of the Dirac equation. In the rest frame, each of them reduces to a certain 3-spinor:
+\[
+\xi^{(\text{e})\alpha} = \eta^{(\text{e})}_{\dot\alpha} = \Phi^{(\text{e})\alpha},\qquad \xi^{(\text{p})\alpha} = \eta^{(\text{p})}_{\dot\alpha} = \Phi^{(\text{p})\alpha}.
+\]
+According to~(27.1) and~(27.2), these spinors transform under inversion by the rule
+\begin{equation}
+\Phi^\alpha \to i\Phi^\alpha,
+\tag{27.3}
+\end{equation}
+which is the same for $\Phi^{(\text{e})}$ and $\Phi^{(\text{p})}$. Their product $\Phi^{(\text{e})}\Phi^{(\text{p})}$, however, changes sign, proving the assertion.
+
+A particle that coincides with its antiparticle is called genuinely neutral (see~\S\,12). The field operator $\widehat\psi$ for such particles satisfies
+\[
+\widehat\psi(t,\mathbf{r}) = \widehat\psi^C(t,\mathbf{r}).
+\]
+For spin-$1/2$ particles, this gives the following conditions in the spinor representation\,\footnote{In the Majorana representation, genuine neutrality simply means that the operator $\widehat\psi'$ is Hermitian (see the problem in \S\,26).}:
+\begin{equation}
+\widehat\xi^\alpha = -i\widehat{\bar\eta}^{\dot\alpha+},\qquad \widehat\eta_{\dot\alpha} = -i\widehat\xi^+_\alpha.
+\tag{27.4}
+\end{equation}
+Like any relations expressing physical properties, these conditions are invariant under the $CPT$ transformation\,\footnote{More precisely, in this case the $CPT$ transformation must be defined so as to leave relations of the type~(27.4) invariant. This is achieved by the corresponding choice of phase factor in the definition of the matrix $U_T$ (see the note on p.~121).}. It is readily verified that they are in fact invariant not only under $CPT$, but under each of the three transformations separately.
+
+\SourcePage{120}{125}
+In \S\,19 we agreed to define spinor inversion as the transformation for which $\widehat P^2 = -1$, and we have used that definition up to this point. It is easy to see that the result obtained above for the relative parity of particles and antiparticles is independent, as it must be, of how inversion is defined.
+
+If inversion is defined by the condition $\widehat P^2 = 1$, then~(27.1) is replaced by
+\begin{equation}
+P:\quad \xi^\alpha \to \eta_{\dot\alpha},\qquad \eta_{\dot\alpha} \to \xi^\alpha.
+\tag{27.5}
+\end{equation}
+
+The charge-conjugate function then transforms according to
+\[
+\xi^{c\alpha} \to -\eta^c_{\dot\alpha},\qquad \eta^c_{\dot\alpha} \to -\xi^{c\alpha},
+\]
+which differs from~(27.5) by a sign. Accordingly, the three-dimensional spinors $\Phi$ transform as
+\[
+\Phi^{(\text{e})\alpha} \to \Phi^{(\text{e})\alpha},\qquad \Phi^{(\text{p})\alpha} \to -\Phi^{(\text{p})\alpha},
+\]
+so that the product $\Phi^{(\text{e})}\Phi^{(\text{p})}$ remains a pseudoscalar.
+
+The only possible difference between the physical consequences of the two definitions of inversion is that, with definition~(27.5), the condition of genuine neutrality of the field would not be invariant under this transformation (or under $CP$): it would change the relative sign of the two sides of the equalities~(27.4). No genuinely neutral spin-$1/2$ particles are known, and at present one cannot say whether this distinction between the two definitions of inversion has any real physical meaning\,\footnote{The incomplete equivalence of the two definitions of inversion was noted by \emph{Racah} (\emph{G.~Racah}, 1937).}.
+
+\ProblemHeading
+Find the charge parity of positronium (the hydrogen-like system consisting of an electron and a positron).
+
+\SolutionHeading The wave function of two fermions must be antisymmetric under the simultaneous interchange of their coordinates, spins, and charge variables (compare the problem in \S\,13). Interchanging the first multiplies the function by $(-1)^l$, interchanging the second by $(-1)^{1+S}$ (where $S = 0$ or $1$ is the total spin of the system), and interchanging the third by the required quantity $C$. The condition $(-1)^l(-1)^{1+S}C = -1$ therefore gives
+\[
+C = (-1)^{l+S}.
+\]
+Since the intrinsic parities of the electron and positron are opposite, the spatial parity of the system is $P = (-1)^{l+1}$. Its combined parity is $CP = (-1)^{S+1}$.

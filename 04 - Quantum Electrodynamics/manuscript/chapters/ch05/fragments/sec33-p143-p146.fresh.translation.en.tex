@@ -1,0 +1,209 @@
+\SourcePage{143}{148}
+
+\section{Expansion in powers of \texorpdfstring{$1/c$}{1/c}}\footnote{Conventional units are used throughout this section.}
+
+We saw in \S~21 that, in the nonrelativistic limit ($v\to0$), two components ($\chi$) of the bispinor
+$\psi=\begin{pmatrix}\varphi\\ \chi\end{pmatrix}$ vanish. Thus $\chi\ll\varphi$ when the electron velocity is small. This allows an approximate equation involving only the two-component quantity $\varphi$ to be obtained by formally expanding the wave function in powers of $1/c$.
+
+We begin with the Dirac equation for an electron in an external field, written as
+\begin{equation}
+i\hbar\frac{\partial\psi}{\partial t}
+=\left\{c\boldsymbol{\alpha}\left(\widehat{\mathbf p}-\frac ec\mathbf A\right)
++\beta mc^2+e\Phi\right\}\psi.
+\tag{33.1}
+\end{equation}
+The relativistic energy of the particle includes its rest energy $mc^2$. To pass to the nonrelativistic approximation, we remove this term by replacing $\psi$ with a function $\psi'$ defined by
+\[
+\psi=\psi'e^{-imc^2t/\hbar}.
+\]
+It then follows that
+\[
+\left(i\hbar\frac{\partial}{\partial t}+mc^2\right)\psi'
+=\left\{c\boldsymbol{\alpha}\left(\widehat{\mathbf p}-\frac ec\mathbf A\right)
++\beta mc^2+e\Phi\right\}\psi'.
+\]
+Writing $\psi'$ as
+$\psi'=\begin{pmatrix}\varphi'\\ \chi'\end{pmatrix}$ gives the pair of equations
+\begin{equation}
+\left(i\hbar\frac{\partial}{\partial t}-e\Phi\right)\varphi'
+=c\boldsymbol{\sigma}\left(\widehat{\mathbf p}-\frac ec\mathbf A\right)\chi',
+\tag{33.2}
+\end{equation}
+\begin{equation}
+\left(i\hbar\frac{\partial}{\partial t}-e\Phi+2mc^2\right)\chi'
+=c\boldsymbol{\sigma}\left(\widehat{\mathbf p}-\frac ec\mathbf A\right)\varphi'
+\tag{33.3}
+\end{equation}
+(below, the primes on $\varphi$ and $\chi$ will be omitted; this cannot cause confusion because only the transformed function $\psi'$ is used in this section).
+
+At first order we retain only $2mc^2\chi$ on the left side of (33.3), obtaining
+\begin{equation}
+\chi=\frac1{2mc}\boldsymbol{\sigma}
+\left(\widehat{\mathbf p}-\frac ec\mathbf A\right)\varphi
+\tag{33.4}
+\end{equation}
+(notice that $\chi\sim\varphi/c$). Substitution in (33.2) yields
+\[
+\left(i\hbar\frac{\partial}{\partial t}-e\Phi\right)\varphi
+=\frac1{2m}\left(\boldsymbol{\sigma}
+\left(\widehat{\mathbf p}-\frac ec\mathbf A\right)\right)^2\varphi.
+\]
+
+The Pauli matrices obey
+\begin{equation}
+(\boldsymbol{\sigma}\mathbf a)(\boldsymbol{\sigma}\mathbf b)
+=\mathbf a\cdot\mathbf b+i\boldsymbol{\sigma}(\mathbf a\times\mathbf b),
+\tag{33.5}
+\end{equation}
+
+\SourcePage{144}{149}
+where $\mathbf a$ and $\mathbf b$ are arbitrary vectors (see (20.9)). Here
+$\mathbf a=\mathbf b=\widehat{\mathbf p}-\dfrac ec\mathbf A$, but the cross product does not vanish because $\widehat{\mathbf p}$ and $\mathbf A$ do not commute:
+\[
+\left[\left(\widehat{\mathbf p}-\frac ec\mathbf A\right)
+\times\left(\widehat{\mathbf p}-\frac ec\mathbf A\right)\right]\varphi
+=i\frac{e\hbar}{c}\{\mathbf A\times\boldsymbol\nabla
++\boldsymbol\nabla\times\mathbf A\}\varphi
+=i\frac{e\hbar}{c}\,\Curl{\mathbf A}\,\varphi.
+\]
+Consequently,
+\begin{equation}
+\left(\boldsymbol{\sigma}\left(\widehat{\mathbf p}-\frac ec\mathbf A\right)\right)^2
+=\left(\widehat{\mathbf p}-\frac ec\mathbf A\right)^2
+-\frac{e\hbar}{c}\boldsymbol{\sigma}\mathbf H
+\tag{33.6}
+\end{equation}
+(where $\mathbf H=\Curl{\mathbf A}$ is the magnetic field), and the equation for $\varphi$ becomes
+\begin{equation}
+i\hbar\frac{\partial\varphi}{\partial t}=\widehat H\varphi
+=\left[\frac1{2m}\left(\widehat{\mathbf p}-\frac ec\mathbf A\right)^2
++e\Phi-\frac{e\hbar}{2mc}\boldsymbol{\sigma}\mathbf H\right]\varphi.
+\tag{33.7}
+\end{equation}
+This is the \emph{Pauli equation}. It differs from the nonrelativistic Schrödinger equation through the last term in the Hamiltonian, which has the form of the potential energy of a magnetic dipole in an external field (compare III, \S~111). Hence, to first order in $1/c$, the electron behaves as a particle carrying, in addition to its charge, a magnetic moment
+\begin{equation}
+\boldsymbol{\mu}=\frac e{mc}\hbar\mathbf s.
+\tag{33.8}
+\end{equation}
+The gyromagnetic ratio $e/mc$ is twice the value that a magnetic moment associated with orbital motion would have\footnote{Dirac obtained this remarkable result in 1928. Pauli had introduced the two-component wave function satisfying (33.7) in 1927, before Dirac discovered his equation.}.
+
+The density is $\rho=\psi^*\psi=\varphi^*\varphi+\chi^*\chi$. In the first approximation the second term must be omitted, leaving $\rho=|\varphi|^2$, as required for the Schrödinger equation.
+
+The current density, on the other hand, is
+\[
+\mathbf j=c\psi^*\boldsymbol{\alpha}\psi
+=c(\varphi^*\boldsymbol{\sigma}\chi+\chi^*\boldsymbol{\sigma}\varphi).
+\]
+Using (33.4), we substitute
+\[
+\chi=\frac1{2mc}\boldsymbol{\sigma}
+\left(-i\hbar\boldsymbol\nabla-\frac ec\mathbf A\right)\varphi,
+\qquad
+\chi^*=\frac1{2mc}\left(i\hbar\boldsymbol\nabla-\frac ec\mathbf A\right)\varphi^*\boldsymbol{\sigma},
+\]
+and transform the products containing two factors $\boldsymbol{\sigma}$ by using (33.5) in the form
+\begin{equation}
+(\boldsymbol{\sigma}\mathbf a)\boldsymbol{\sigma}
+=\mathbf a+i(\boldsymbol{\sigma}\times\mathbf a),
+\qquad
+\boldsymbol{\sigma}(\boldsymbol{\sigma}\mathbf a)
+=\mathbf a+i(\mathbf a\times\boldsymbol{\sigma}).
+\tag{33.9}
+\end{equation}
+
+\SourcePage{145}{150}
+The result is
+\begin{equation}
+\mathbf j=\frac{i\hbar}{2m}(\varphi\boldsymbol\nabla\varphi^*-\varphi^*\boldsymbol\nabla\varphi)
+-\frac e{mc}\mathbf A\varphi^*\varphi
++\frac\hbar{2m}\Curl{(\varphi^*\boldsymbol{\sigma}\varphi)},
+\tag{33.10}
+\end{equation}
+in agreement with the expression (115.4) (see III) from nonrelativistic theory.
+
+We now obtain the second approximation by extending the expansion through terms of order $1/c^2$\footnote{The method followed below is due to V.~B.~Berestetskii and L.~D.~Landau (1949).}. We assume that the external field is purely electric ($\mathbf A=0$).
+
+First observe that, when terms of order $1/c^2$ are retained, the density is
+\[
+\rho=|\varphi|^2+|\chi|^2
+=|\varphi|^2+\frac{\hbar^2}{4m^2c^2}|\boldsymbol{\sigma}\boldsymbol\nabla\varphi|^2.
+\]
+This is not the Schrödinger expression. To obtain, in the second approximation, a wave equation analogous to the Schrödinger equation, we must replace $\varphi$ by another two-component function $\varphi_{\mathrm{Sch}}$ for which the time-independent integral has the form $\int|\varphi_{\mathrm{Sch}}|^2d^3x$, as a Schrödinger equation requires.
+
+To find the necessary transformation, write
+\[
+\int\varphi_{\mathrm{Sch}}^*\varphi_{\mathrm{Sch}}d^3x
+=\int\left\{\varphi^*\varphi
++\frac{\hbar^2}{4m^2c^2}(\boldsymbol\nabla\varphi^*\cdot\boldsymbol{\sigma})
+(\boldsymbol{\sigma}\boldsymbol\nabla\varphi)\right\}d^3x
+\]
+and integrate by parts:
+\[
+\int(\boldsymbol\nabla\varphi^*\cdot\boldsymbol{\sigma})(\boldsymbol{\sigma}\boldsymbol\nabla\varphi)d^3x
+=-\int\varphi^*(\boldsymbol{\sigma}\boldsymbol\nabla)(\boldsymbol{\sigma}\boldsymbol\nabla)\varphi\,d^3x
+=-\int\varphi^*\Delta\varphi\,d^3x
+\]
+(or equivalently with $\varphi$ and $\varphi^*$ interchanged). It follows that
+\[
+\int\varphi_{\mathrm{Sch}}^*\varphi_{\mathrm{Sch}}d^3x
+=\int\left\{\varphi^*\varphi
+-\frac{\hbar^2}{8m^2c^2}(\varphi^*\Delta\varphi+\varphi\Delta\varphi^*)\right\}d^3x,
+\]
+and hence
+\begin{equation}
+\varphi_{\mathrm{Sch}}=\left(1+\frac{\widehat{\mathbf p}^{2}}{8m^2c^2}\right)\varphi,
+\qquad
+\varphi=\left(1-\frac{\widehat{\mathbf p}^{2}}{8m^2c^2}\right)\varphi_{\mathrm{Sch}}.
+\tag{33.11}
+\end{equation}
+
+For compactness, take the state to be stationary and replace the operator $i\hbar\partial/\partial t$ by the energy $\varepsilon$ (with the rest energy subtracted). At the next order beyond (33.4), equation (33.3) gives
+\[
+\chi=\frac1{2mc}\left(1-\frac{\varepsilon-e\Phi}{2mc^2}\right)
+(\boldsymbol{\sigma}\widehat{\mathbf p})\varphi.
+\]
+This expression is to be inserted in (33.2), after which $\varphi$ is replaced by $\varphi_{\mathrm{Sch}}$ according to (33.11), with terms beyond order $1/c^2$ discarded throughout. A direct calculation then gives
+\SourcePage{146}{151}
+the equation $\varepsilon\varphi_{\mathrm{Sch}}=\widehat H\varphi_{\mathrm{Sch}}$, with Hamiltonian
+\[
+\widehat H=\frac{\widehat{\mathbf p}^{2}}{2m}+e\Phi
+-\frac{\widehat{\mathbf p}^{4}}{8m^3c^2}
++\frac e{4m^2c^2}\left\{(\boldsymbol{\sigma}\widehat{\mathbf p})\Phi
+(\boldsymbol{\sigma}\widehat{\mathbf p})
+-\frac12(\widehat{\mathbf p}^{2}\Phi+\Phi\widehat{\mathbf p}^{2})\right\}.
+\]
+The expression in braces is transformed with the identities
+\[
+(\boldsymbol{\sigma}\widehat{\mathbf p})\Phi
+(\boldsymbol{\sigma}\widehat{\mathbf p})
+=\Phi\widehat{\mathbf p}^{2}
++(\boldsymbol{\sigma}\widehat{\mathbf p}\Phi)(\boldsymbol{\sigma}\widehat{\mathbf p})
+=\Phi\widehat{\mathbf p}^{2}
++i\hbar(\boldsymbol{\sigma}\mathbf E)(\boldsymbol{\sigma}\widehat{\mathbf p}),
+\]
+\[
+\widehat{\mathbf p}^{2}\Phi-\Phi\widehat{\mathbf p}^{2}
+=-\hbar^2\Delta\Phi+2i\hbar\mathbf E\widehat{\mathbf p},
+\]
+where $\mathbf E=-\boldsymbol\nabla\Phi$ is the electric field. The final Hamiltonian is
+\begin{equation}
+\widehat H=\frac{\widehat{\mathbf p}^{2}}{2m}+e\Phi
+-\frac{\widehat{\mathbf p}^{4}}{8m^3c^2}
+-\frac{e\hbar}{4m^2c^2}\boldsymbol{\sigma}(\mathbf E\times\widehat{\mathbf p})
+-\frac{e\hbar^2}{8m^2c^2}\Div{\mathbf E}.
+\tag{33.12}
+\end{equation}
+The last three terms are the required corrections of order $1/c^2$. The first comes from the relativistic momentum dependence of the kinetic energy, as follows by expanding $c\sqrt{p^2+m^2c^2}-mc^2$. The second may be called the energy of the \emph{spin--orbit interaction}; it is the interaction energy of a moving magnetic moment with an electric field\footnote{Introducing the magnetic moment (33.8) and the velocity $\mathbf v=\mathbf p/m$, this energy takes the form $-\dfrac1{2c}\boldsymbol{\mu}\cdot(\mathbf E\times\mathbf v)$. At first sight the result may seem unnatural: in the frame moving with the particle, a magnetic field $\mathbf H=\dfrac1c(\mathbf E\times\mathbf v)$ appears, in which the magnetic moment should have the energy $-\boldsymbol{\mu}\mathbf H$. The factor $1/2$ (the ``Thomas half,'' L.~Thomas, 1926) actually follows from the general requirements of relativistic invariance together with the distinctive properties of the electron as a spinor particle, including its particular gyromagnetic ratio (see \S~41).}. The final term is nonzero only at points occupied by the charges producing the external field; for the Coulomb field of a point charge $Ze$, for example, $\Delta\Phi=-4\pi Ze\delta(\mathbf r)$ (C.~G.~Darwin, 1928).
+
+If the electric field is centrally symmetric, then
+\[
+\mathbf E=-\frac{\mathbf r}{r}\frac{d\Phi}{dr},
+\]
+and the spin--orbit interaction operator can be written
+\begin{equation}
+\frac{e\hbar}{4m^2c^2r}\boldsymbol{\sigma}(\mathbf r\times\widehat{\mathbf p})
+\frac{d\Phi}{dr}
+=\frac{\hbar^2}{2m^2c^2r}\frac{dU}{dr}\widehat{\mathbf l}\widehat{\mathbf s}.
+\tag{33.13}
+\end{equation}
+Here $\widehat{\mathbf l}$ is the orbital-angular-momentum operator, $\widehat{\mathbf s}=\tfrac12\boldsymbol{\sigma}$ is the electron spin operator, and $U=e\Phi$ is the electron's potential energy in the field.

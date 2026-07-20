@@ -1,0 +1,168 @@
+\SourcePage{170}{175}
+\section{An electron in the field of a plane electromagnetic wave}
+
+For an electron moving in the field of a plane electromagnetic wave, the Dirac equation admits an exact solution (D.~M.~Volkov, 1937).
+
+The field of a plane wave with wave 4-vector $k$ ($k^2=0$) depends on the 4-coordinates only through the combination $\varphi=kx$. Thus the 4-potential is
+\begin{equation}
+A^\mu=A^\mu(\varphi),
+\tag{40.1}
+\end{equation}
+and obeys the Lorenz gauge condition
+\[
+\partial_\mu A^\mu=k_\mu A^{\mu\prime}=0
+\]
+(the prime denotes differentiation with respect to $\varphi$). A constant term in $A$ is immaterial, so the prime may be dropped in this condition, giving
+\begin{equation}
+kA=0.
+\tag{40.2}
+\end{equation}
+
+We start from the second-order equation (32.6), for which the field tensor is
+\begin{equation}
+F_{\mu\nu}=k_\mu A'_\nu-k_\nu A'_\mu.
+\tag{40.3}
+\end{equation}
+On expanding the square $(i\partial-eA)^2$, one must also use (40.2), by which $\partial_\mu(A^\mu\psi)=A^\mu\partial_\mu\psi$. This gives
+\begin{equation}
+[-\partial^2-2ie(A\partial)+e^2A^2-m^2-ie(\gamma k)(\gamma A')]\psi=0
+\tag{40.4}
+\end{equation}
+($\partial^2=\partial_\mu\partial^\mu$).
+
+We seek a solution in the form
+\begin{equation}
+\psi=e^{-ipx}F(\varphi),
+\tag{40.5}
+\end{equation}
+\SourcePage{171}{176}
+where $p$ is a constant 4-vector. Adding to $p$ any vector of the form $\operatorname{const}\cdot k$ leaves the form of $\psi$ unchanged (only a corresponding redefinition of $F(\varphi)$ is needed). We may therefore impose one further condition on $p$ without loss of generality. Let
+\begin{equation}
+p^2=m^2.
+\tag{40.6}
+\end{equation}
+
+When the field is removed, the quantum numbers $p^\mu$ then become the components of the free particle's 4-momentum. In the presence of the field, the meaning of the components of $p$ is clearest in a special reference frame chosen so that $A_0=0$. In this frame let $\mathbf A$ point along the $x^1$ axis and $\mathbf k$ along the $x^3$ axis (the wave's electric field is then directed along $x^1$, its magnetic field along $x^2$, and its direction of propagation along $x^3$). Equation (40.5) is then an eigenfunction of the operators
+\[
+\widehat p_1=i\frac\partial{\partial x^1},
+\qquad
+\widehat p_2=i\frac\partial{\partial x^2},
+\qquad
+\widehat p_0-\widehat p_3=i\left(\frac\partial{\partial x^0}-\frac\partial{\partial x^3}\right)
+\]
+with eigenvalues $p_1$, $p_2$, and $p_0-p_3$ (as is readily seen, these operators commute with the Hamiltonian of the Dirac equation). Thus, in this frame, $p^1$ and $p^2$ are the components of the generalized momentum along the $x^1$ and $x^2$ axes, while $p^0-p^3$ is the difference between the total energy and the generalized-momentum component along the $x^3$ axis.
+
+Upon substituting (40.5) into (40.4), we note that
+\[
+\partial^\mu F=k^\mu F',
+\qquad
+\partial_\mu\partial^\mu F=k^2F''=0,
+\]
+and obtain the following equation for $F(\varphi)$:
+\[
+2i(kp)F'+[-2e(pA)+e^2A^2-ie(\gamma k)(\gamma A')]F=0.
+\]
+Its formal solution is
+\[
+F=\exp\left\{-i\int_0^{kx}\left[\frac e{(kp)}(pA)-\frac{e^2}{2(kp)}A^2\right]d\varphi
++\frac{e(\gamma k)(\gamma A)}{2(kp)}\right\}\frac u{\sqrt{2p_0}},
+\]
+where $u/\sqrt{2p_0}$ is an arbitrary constant bispinor (its explicit form is discussed below).
+
+Every power of $(\gamma k)(\gamma A)$ above the first vanishes, since
+\[
+\begin{aligned}
+(\gamma k)(\gamma A)(\gamma k)(\gamma A)
+&=-(\gamma k)(\gamma k)(\gamma A)(\gamma A)
++2(kA)(\gamma k)(\gamma A)\\
+&=-k^2A^2=0.
+\end{aligned}
+\]
+Hence we may replace
+\[
+\exp\frac{e(\gamma k)(\gamma A)}{2(kp)}
+=1+\frac e{2(kp)}(\gamma k)(\gamma A),
+\]
+\SourcePage{172}{177}
+and $\psi$ takes the form
+\begin{equation}
+\psi_p=\left[1+\frac e{2(kp)}(\gamma k)(\gamma A)\right]
+\frac u{\sqrt{2p_0}}e^{iS},
+\tag{40.7}
+\end{equation}
+where\footnote{The expression for $S$ is the classical action for a particle moving in the wave field (compare II, \S~47, problem 2).}
+\begin{equation}
+S=-px-\int_0^{kx}\frac e{(kp)}\left[(pA)-\frac e2A^2\right]d\varphi.
+\tag{40.8}
+\end{equation}
+
+To determine the conditions on the constant bispinor $u$, suppose that the wave is switched on infinitely slowly from $t=-\infty$. Then $A\to0$ as $kx\to-\infty$, and $\psi$ must tend to a solution of the free Dirac equation. This requires $u=u(p)$ to obey
+\begin{equation}
+(\gamma p-m)u=0.
+\tag{40.9}
+\end{equation}
+This condition eliminates the extraneous solutions of the second-order equation. Since $u$ is time-independent, the condition continues to hold at finite $kx$. Thus $u(p)$ is the bispinor amplitude of a free plane wave; we shall assume that it is normalized by the same condition (23.4), $\bar uu=2m$.
+
+The preceding argument also determines the normalization of the wave functions (40.7) directly. Switching the field on infinitely slowly leaves the normalization integral unchanged. Consequently, the functions (40.7) satisfy the same normalization condition as free plane waves:
+\begin{equation}
+\int\psi_{p'}^*\psi_p\,d^3x
+=\int\overline{\psi}_{p'}\gamma^0\psi_p\,d^3x
+=(2\pi)^3\delta(\mathbf p'-\mathbf p).
+\tag{40.10}
+\end{equation}
+
+We now find the current density associated with the functions (40.7). Using
+\[
+\overline{\psi}_p=\frac{\bar u}{\sqrt{2p_0}}
+\left[1+\frac e{2(kp)}(\gamma A)(\gamma k)\right]e^{-iS},
+\]
+direct multiplication gives
+\begin{equation}
+j^\mu=\overline{\psi}_p\gamma^\mu\psi_p
+=\frac1{p_0}\left\{p^\mu-eA^\mu+k^\mu
+\left(\frac{e(pA)}{(kp)}-\frac{e^2A^2}{2(kp)}\right)\right\}.
+\tag{40.11}
+\end{equation}
+If $A^\mu(\varphi)$ are periodic functions whose time average vanishes, the mean current density is
+\begin{equation}
+\overline{j^\mu}=\frac1{p_0}
+\left(p^\mu-\frac{e^2}{2(kp)}\overline{A^2}k^\mu\right).
+\tag{40.12}
+\end{equation}
+
+\SourcePage{173}{178}
+We also calculate the kinetic-momentum density in the state $\psi_p$. The kinetic-momentum operator is the difference $\widehat p-eA=i\partial-eA$. A direct calculation yields
+\begin{equation}
+\begin{aligned}
+\psi_p^*(\widehat p^\mu-eA^\mu)\psi_p
+&=\overline{\psi}_p\gamma^0(\widehat p^\mu-eA^\mu)\psi_p={}\\
+&=p^\mu-eA^\mu+k^\mu\left(\frac{e(pA)}{(kp)}-\frac{e^2A^2}{2(kp)}\right)
++k^\mu\frac{ie}{8(kp)p_0}F_{\lambda\nu}(u^*\sigma^{\lambda\nu}u).
+\end{aligned}
+\tag{40.13}
+\end{equation}
+Its time average, denoted by $q^\mu$, is
+\begin{equation}
+q^\mu=p^\mu-\frac{e^2\overline{A^2}}{2(kp)}k^\mu.
+\tag{40.14}
+\end{equation}
+Its square is
+\begin{equation}
+q^2=m_*^2,
+\qquad
+m_*=m\sqrt{1-\frac{e^2}{m^2}\overline{A^2}};
+\tag{40.15}
+\end{equation}
+$m_*$ plays the role of the electron's ``effective mass'' in the field. Comparing (40.14) and (40.12), we find
+\begin{equation}
+\overline{j^\mu}=q^\mu/p_0.
+\tag{40.16}
+\end{equation}
+
+Finally, when the normalization condition (40.10) is expressed in terms of the vector $\mathbf q$, it becomes
+\begin{equation}
+\int\psi_{p'}^*\psi_p\,d^3x
+=(2\pi)^3\frac{q_0}{p_0}\delta(\mathbf q'-\mathbf q)
+\tag{40.17}
+\end{equation}
+(the passage from (40.10) to (40.17) is most easily made in the special reference frame specified above).

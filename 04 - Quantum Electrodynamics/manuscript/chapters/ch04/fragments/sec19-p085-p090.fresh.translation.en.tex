@@ -1,0 +1,193 @@
+\SourcePage{85}{90}
+\section{Inversion of spinors}
+
+In presenting the three-dimensional theory of spinors in Volume~III, we did not examine how they behave under spatial inversion, since in nonrelativistic theory this would yield no new physical results. We now consider the question in order to clarify the subsequent discussion of inversion properties of 4-spinors.
+
+Inversion does not reverse an axial vector such as the spin vector. Its projection $s_z$ is therefore unchanged. It follows that inversion can transform each component of a spinor $\psi^\alpha$ only into itself; hence
+\begin{equation}
+\psi^\alpha\to P\psi^\alpha,
+\tag{19.1}
+\end{equation}
+where $P$ is a constant coefficient. Applying inversion twice returns the coordinate frame to its initial position. For spinors, however, this return can be understood in two different ways: as a rotation through $0^\circ$ or through $360^\circ$. These alternatives are not equivalent for spinors, since $\psi^\alpha$ changes sign under a $360^\circ$ rotation. There are consequently two possible conceptions of inversion. In one,
+\begin{equation}
+P^2=1,\qquad P=\pm1,
+\tag{19.2}
+\end{equation}
+whereas in the other,
+\begin{equation}
+P^2=-1,\qquad P=\pm i.
+\tag{19.3}
+\end{equation}
+
+\SourcePage{86}{91}
+It is essential that inversion be defined in the same way for every spinor. Different spinors cannot be allowed to behave differently under inversion, according to (19.2) or (19.3), because then a scalar or pseudoscalar could not be formed from every pair of spinors. If $\psi^\alpha$ transformed according to (19.2) and $\varphi^\alpha$ according to (19.3), inversion would multiply $\psi^\alpha\varphi_\alpha$ by $\pm i$ rather than leaving it unchanged or merely reversing its sign.
+
+It should also be stressed that, under either definition of inversion, assigning a particular parity $P$ to a spinor has no absolute meaning. Spinors change sign under a rotation through $2\pi$, which can always be performed together with inversion. The ``relative parity'' of two spinors does have an absolute meaning: it is defined as the parity of the scalar $\psi^\alpha\varphi_\alpha$ formed from them. Since a $2\pi$ rotation reverses all spinors simultaneously, the associated ambiguity does not affect the parity of this scalar.
+
+We turn now to four-dimensional spinors.
+
+First observe that inversion reverses only three coordinates, $(x,y,z)$, out of the four $(t,x,y,z)$. It therefore commutes with spatial rotations but not with transformations that rotate the $t$ axis. If $\widehat L$ is the Lorentz transformation to a frame moving with velocity $\mathbf V$, then $\widehat P\widehat L=\widehat L'\widehat P$, where $\widehat L'$ is the transformation to the frame moving with velocity $-\mathbf V$.
+
+It follows that under inversion the components of a 4-spinor $\xi^\alpha$ cannot transform among themselves. If inversion of $\xi^\alpha$ were still given by (19.1), and thus represented by a matrix proportional to the identity, it would commute with every Lorentz transformation. This is certainly impossible, since $\widehat L$ and $\widehat L'$ certainly do not act identically on $\xi^\alpha$.
+
+Thus inversion must transform the components of $\xi^\alpha$ into other quantities. The only possibilities are the components of another spinor $\eta^{\dot\alpha}$ whose transformation properties differ from those of $\xi^\alpha$. Since inversion leaves the $z$ projection of spin unchanged, as noted above, $\xi^1$ and $\xi^2$ can transform only into $\eta_{\dot1}$ and $\eta_{\dot2}$, which correspond to the same values $s_z=1/2$ and $s_z=-1/2$. If inversion is understood as an operation whose square is~1, its action may be defined by
+\begin{equation}
+\xi^\alpha\to\eta_{\dot\alpha},\qquad
+\eta_{\dot\alpha}\to\xi^\alpha.
+\tag{19.4}
+\end{equation}
+
+\SourcePage{87}{92}
+For the covariant components $\xi_\alpha$ and contravariant components $\eta^{\dot\alpha}$ these transformations carry the opposite sign:
+\begin{equation}
+\xi_\alpha\to-\eta^{\dot\alpha},\qquad
+\eta^{\dot\alpha}\to-\xi_\alpha,
+\tag{19.4a}
+\end{equation}
+because lowering and raising the same index introduce opposite signs; see (17.5) and (17.9)\footnote{Definition (19.4) is of course conventional in a certain sense, because $\xi^\alpha$ and $\eta_{\dot\alpha}$ are independent quantities. For example, introduce in place of $\eta_{\dot\alpha}$ a new spinor $\eta'_{\dot\alpha}=e^{i\delta}\eta_{\dot\alpha}$. The equivalent definition replacing (19.4) is then
+\[
+\xi^\alpha\to e^{-i\delta}\eta'_{\dot\alpha},\qquad
+\eta'_{\dot\alpha}\to e^{i\delta}\xi^\alpha.
+\]}. If inversion is instead understood so that $P^2=-1$, its action is defined by
+\begin{equation}
+\xi^\alpha\to i\eta_{\dot\alpha},\qquad
+\eta_{\dot\alpha}\to i\xi^\alpha
+\tag{19.5}
+\end{equation}
+or, equivalently,
+\begin{equation}
+\xi_\alpha\to-i\eta^{\dot\alpha},\qquad
+\eta^{\dot\alpha}\to-i\xi_\alpha.
+\tag{19.5a}
+\end{equation}
+
+The two definitions of inversion differ in one respect. With the second definition, the complex-conjugate spinors transform by the same rule: if $\Xi_\alpha=\eta_{\dot\alpha}^*$ and $H^{\dot\alpha}=\xi^{\alpha*}$, then (19.5) gives $\Xi_\alpha\to-iH^{\dot\alpha}$ and $H^{\dot\alpha}\to-i\Xi_\alpha$, the same rule as for $\xi_\alpha$ and $\eta^{\dot\alpha}$. Definition (19.4), by contrast, would give $\Xi_\alpha\to H^{\dot\alpha}$ and $H^{\dot\alpha}\to\Xi_\alpha$, with the sign opposite to the transformation of $\xi_\alpha$ and $\eta^{\dot\alpha}$. We shall return in \S~27 to possible physical aspects of this distinction.
+
+Below, for definiteness, we shall always mean definition (19.5).
+
+Under the rotation subgroup, $\xi^\alpha$ and $\eta_{\dot\alpha}$ transform alike, as we know. Forming the combinations
+\begin{equation}
+\xi^\alpha\pm\eta_{\dot\alpha},
+\tag{19.6}
+\end{equation}
+would give quantities transforming under inversion according to (19.1), with $P=\pm i$. These combinations, however, do not behave as spinors under every transformation of the Lorentz group.
+
+Thus, including inversion in the symmetry group requires the pair $(\xi^\alpha,\eta_{\dot\alpha})$ to be considered together; such a pair is called a first-rank \emph{bispinor}. Its four components realize one irreducible representation of the extended Lorentz group.
+
+\SourcePage{88}{93}
+The scalar product of two bispinors $(\xi^\alpha,\eta_{\dot\alpha})$ and $(\Xi^\alpha,H_{\dot\alpha})$ can be formed in two ways. The quantity
+\begin{equation}
+\xi^\alpha\Xi_\alpha+\eta_{\dot\alpha}H^{\dot\alpha}
+\tag{19.7}
+\end{equation}
+is wholly unchanged by inversion and is therefore a true scalar. The quantity
+\begin{equation}
+\xi^\alpha\Xi_\alpha-\eta_{\dot\alpha}H^{\dot\alpha}
+\tag{19.8}
+\end{equation}
+is likewise invariant under rotations of the 4-dimensional coordinate frame, but reverses sign under inversion; it is therefore a pseudoscalar.
+
+A second-rank spinor $\zeta^{\alpha\dot\beta}$ can also be defined in two ways. Defining it by
+\begin{equation}
+\zeta^{\alpha\dot\beta}\sim\xi^\alpha H^{\dot\beta}+\Xi^\alpha\eta^{\dot\beta},
+\tag{19.9}
+\end{equation}
+gives quantities that transform under inversion according to
+\begin{equation}
+\zeta^{\alpha\dot\beta}\to\zeta_{\dot\alpha\beta}.
+\tag{19.10}
+\end{equation}
+The equivalent 4-vector $a^\mu$ then transforms, in accordance with (18.1), as $(a^0,\mathbf a)\to(a^0,-\mathbf a)$. Thus it is a true 4-vector, while the three-dimensional vector $\mathbf a$ is polar.
+
+Alternatively, $\zeta^{\alpha\dot\beta}$ may be defined by
+\begin{equation}
+\zeta^{\alpha\dot\beta}\sim\xi^\alpha H^{\dot\beta}-\Xi^\alpha\eta^{\dot\beta}.
+\tag{19.11}
+\end{equation}
+Then\footnote{We emphasize that the transformation laws (19.10) and (19.12), which differ by the sign on the right, are by no means equivalent, because both sides of each contain components of the same spinor (compare the note on p.~92).}
+\begin{equation}
+\zeta^{\alpha\dot\beta}\to-\zeta_{\dot\alpha\beta}.
+\tag{19.12}
+\end{equation}
+The corresponding 4-vector transforms under inversion as $(a^0,\mathbf a)\to(-a^0,\mathbf a)$ and is therefore a 4-pseudovector; its three-dimensional vector $\mathbf a$ is axial.
+
+Symmetric second-rank spinors with indices of the same type are defined by
+\begin{equation}
+\xi^{\alpha\beta}\sim\xi^\alpha\Xi^\beta+\xi^\beta\Xi^\alpha,
+\qquad
+\eta_{\dot\alpha\dot\beta}\sim\eta_{\dot\alpha}H_{\dot\beta}+\eta_{\dot\beta}H_{\dot\alpha}.
+\tag{19.13}
+\end{equation}
+Under inversion they turn into one another:
+\begin{equation}
+\xi^{\alpha\beta}\to-\eta_{\dot\alpha\dot\beta}.
+\tag{19.14}
+\end{equation}
+
+\SourcePage{89}{94}
+The pair $(\xi^{\alpha\beta},\eta_{\dot\alpha\dot\beta})$ is a second-rank bispinor. It has $3+3=6$ independent components. An antisymmetric second-rank 4-tensor $a^{\mu\nu}$ has the same number. A definite correspondence must therefore exist between the two; they realize equivalent irreducible representations of the extended Lorentz group.
+
+Under the proper Lorentz group, $\xi^{\alpha\beta}$ and $\eta_{\dot\alpha\dot\beta}$ transform independently. The components of $a^{\mu\nu}$ can accordingly be divided into two sets of quantities, each of which transforms only within itself under every rotation of the 4-dimensional coordinate frame. This division is made as follows.
+
+Introduce a three-dimensional polar vector $\mathbf p$ and a three-dimensional axial vector $\mathbf a$, related to the components of $a^{\mu\nu}$ by
+\begin{equation}
+a^{\mu\nu}=
+\begin{pmatrix}
+0 & p_x & p_y & p_z\\
+-p_x & 0 & -a_z & a_y\\
+-p_y & a_z & 0 & -a_x\\
+-p_z & -a_y & a_x & 0
+\end{pmatrix}
+\equiv(\mathbf p,\mathbf a)
+\tag{19.15}
+\end{equation}
+(we shall use $(\mathbf p,\mathbf a)$ as a concise notation for listing the components of such a tensor). Then $a_{\mu\nu}=(-\mathbf p,\mathbf a)$, and of the two quantities
+\[
+\mathbf a^2-\mathbf p^2=\frac12a_{\mu\nu}a^{\mu\nu},
+\qquad
+\mathbf a\mathbf p=\frac18e_{\mu\nu\rho\sigma}a^{\mu\nu}a^{\rho\sigma}
+\]
+the first is a scalar and the second a pseudoscalar; both are equally invariant under the proper Lorentz group. The squares of the three-dimensional vectors $\mathbf f^\pm=\mathbf p\pm i\mathbf a$ are invariant along with them. Thus every rotation in 4-space acts on $\mathbf f^\pm$ like a ``rotation'' in three-dimensional space, generally through complex angles: the six rotation angles in 4-space correspond to three complex ``rotation angles'' of the three-dimensional frame. Spatial inversion reverses $\mathbf p$ but not $\mathbf a$, and consequently interchanges $\mathbf f^+$ and $-\mathbf f^-$. The components of these vectors constitute the required two sets formed from the components of $a^{\mu\nu}$.
+
+The correspondence between the components of $a^{\mu\nu}$ and those of $\xi^{\alpha\beta}$ and $\eta_{\dot\alpha\dot\beta}$ is now also evident. Since spatial rotations form a subgroup of the Lorentz group, the relations between the spinor compo\SourcePageJoin{90}{95}nents and those of the three-dimensional vector must be the same as for three-dimensional spinors:
+\begin{equation}
+\begin{aligned}
+f_x^+&=\frac12(\xi^{22}-\xi^{11}),&
+f_y^+&=\frac{i}{2}(\xi^{22}+\xi^{11}),&
+f_z^+&=\xi^{12};\\
+f_x^-&=\frac12(\eta_{\dot2\dot2}-\eta_{\dot1\dot1}),&
+f_y^-&=\frac{i}{2}(\eta_{\dot2\dot2}+\eta_{\dot1\dot1}),&
+f_z^-&=\eta_{\dot1\dot2}.
+\end{aligned}
+\tag{19.16}
+\end{equation}
+
+\ProblemHeading
+
+Establish the general correspondence between spinors of even rank and 4-tensors.
+
+\SolutionHeading All spinors with even $k+l$ realize single-valued irreducible representations of the extended Lorentz group and are therefore equivalent to 4-tensors realizing the same representations\footnote{Spinors of odd rank realize double-valued representations of the group: a spatial rotation through $360^\circ$ reverses their sign, so every group element corresponds to two matrices of opposite sign.}.
+
+A spinor of rank $(k,k)$ transforms under inversion according to
+\begin{equation}
+\zeta^{\alpha\beta\ldots\dot\gamma\dot\delta\ldots}
+\to\pm\zeta_{\dot\alpha\dot\beta\ldots\gamma\delta\ldots}.
+\tag{1}
+\end{equation}
+Such a spinor is equivalent to a symmetric irreducible 4-tensor of rank $k$, which is a true tensor or pseudotensor according to the sign in (1).
+
+Spinors of ranks $(k,l)$ and $(l,k)$, which together form a bispinor, transform under inversion as
+\begin{equation}
+\overbrace{\zeta^{\alpha\beta\ldots}}^{k}
+\overbrace{{}^{\dot\gamma\dot\delta\ldots}}^{l}
+\to(-1)^{(k-l)/2}
+\underbrace{\chi_{\dot\alpha\dot\beta\ldots}}_{k}
+\underbrace{{}_{\gamma\delta\ldots}}_{l}.
+\tag{2}
+\end{equation}
+
+For $l=k+2$, the bispinor is equivalent to an irreducible 4-tensor $a_{[\mu\nu]\rho\sigma\ldots}$ of rank $k+2$, antisymmetric in the indices $[\mu\nu]$ and symmetric in all its other indices. Irreducibility means that contraction over any pair of indices gives zero and that forming the dual over any three indices gives zero, that is, $e^{\lambda\mu\nu\sigma}a_{[\mu\nu]\rho\sigma\ldots}=0$. The latter condition says that the cyclic sum over three indices---$\mu\nu$ and any one of the others---vanishes.
+
+For $l=k+4$, the bispinor is equivalent to an irreducible 4-tensor $a_{[\lambda\mu][\nu\rho]\sigma\tau\ldots}$ of rank $k+4$ with the following properties: it is antisymmetric in each pair $[\lambda\mu]$ and $[\nu\rho]$, symmetric in all remaining indices, symmetric under interchange of the pair $[\lambda\mu]$ with $[\nu\rho]$, zero upon contraction over any pair of indices, and zero upon forming the dual over any three indices.
+
+In general, for $l=k+2n$, the bispinor is equivalent to an irreducible 4-tensor of rank $k+2n$, antisymmetric in $n$ pairs of indices and symmetric in the remaining $k$ indices. Tensors antisymmetric in larger sets of indices---triples, quadruples, and so forth---do not occur in this classification for an evident reason. A third-rank antisymmetric tensor is equivalent (dual) to a pseudovector, while a fourth-rank antisymmetric tensor reduces to a scalar, being proportional to the unit pseudotensor $e^{\lambda\mu\nu\rho}$. Antisymmetry in still more indices is impossible in 4-space.

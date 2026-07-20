@@ -1,0 +1,192 @@
+\SourcePage{355}{360}
+\section{Electron scattering in an external field}
+
+Elastic scattering of an electron in a constant external field is the simplest process that already occurs in first-order perturbation theory (the first Born approximation). It is represented by a diagram with one vertex,
+\begin{equation}
+\begin{tikzpicture}[baseline=-.45ex,x=.72cm,y=.72cm,>=Stealth,line width=.65pt,font=\small]
+\coordinate (v) at (0,0);
+\draw[->] (1.15,-.82) node[below right] {$p$} -- (v);
+\draw[->] (v) -- (-1.15,-.82) node[below left] {$p'$};
+\draw[->] (0,1.05) -- (v) node[midway,right=2pt] {$k$};
+\end{tikzpicture}
+\tag{80.1}
+\end{equation}
+where $p$ and $p'$ are the initial and final electron four-momenta, and $q=p'-p$. Since the electron energy is conserved in scattering by a constant field ($\varepsilon=\varepsilon'$), $q=(0,\mathbf q)$\footnote{In the case of an external field, such a diagram is of course not forbidden by four-momentum conservation (as was diagram (73.19) with a real photon): unlike the square of the four-momentum of a real photon, $q^2$ need not vanish; the component with the required $q$ is selected automatically from the Fourier integral representing the external field.}.
+
+The corresponding scattering amplitude is
+\begin{equation}
+M_{fi}=-e\bar u(p')[\gamma A^{(e)}(\mathbf q)]u(p),
+\tag{80.2}
+\end{equation}
+where $A^{(e)}(\mathbf q)$ is the spatial Fourier component of the external field. According to (64.26), the scattering cross section is
+\begin{equation}
+d\sigma=\frac{1}{16\pi^2}|M_{fi}|^2\,do'.
+\tag{80.3}
+\end{equation}
+
+For an electrostatic field $A^{(e)}=(A_0^{(e)},0)$, and hence
+\begin{equation}
+M_{fi}=-e\bar u(p')\gamma^0u(p)A_0^{(e)}(\mathbf q)
+=-eu^*(p')u(p)A_0^{(e)}(\mathbf q).
+\tag{80.4}
+\end{equation}
+In the nonrelativistic case, the plane-wave bispinor amplitudes $u(p)$ reduce to nonrelativistic (two-component) amplitudes. For scattering without a change of polarization, this is a quantity independent of $\mathbf p$; under our normalization convention, $u^*u=2m$. Taking this into account gives
+\[
+d\sigma=\left|\frac{m}{2\pi}U(\mathbf q)\right|^2do',
+\]
+
+\SourcePage{356}{361}
+where $U(\mathbf q)=eA_0^{(e)}(\mathbf q)$ is the Fourier component of the electron's potential energy in the field; this expression agrees with the familiar Born formula (Vol.~III, (126.7)).
+
+In the general relativistic case, the scattering cross section for unpolarized electrons is obtained by averaging $|M_{fi}|^2$ over the initial polarizations and summing over the final ones, that is, by forming
+\[
+\frac{1}{2}\sum_{\text{pol}}|M_{fi}|^2,
+\]
+where the sum is over the spin directions of the initial and final electrons; the factor $1/2$ converts one of these summations into an average. The rules set out in \S~65 give
+\[
+\begin{aligned}
+\frac{1}{2}\sum_{\text{pol}}|M_{fi}|^2
+&=2\Tr\rho'(\gamma A_0^{(e)})\rho(\gamma A_0^{(e)*})=\\
+&=\frac{1}{2}|A_0^{(e)}(\mathbf q)|^2
+\Tr(m+\gamma p')\gamma^0(m+\gamma p)\gamma^0.
+\end{aligned}
+\]
+To evaluate the trace, note that $\gamma^0(\gamma p)\gamma^0=\gamma\widetilde p$, where $\widetilde p=(\varepsilon,-\mathbf p)$, and therefore
+\[
+\begin{aligned}
+\frac{1}{4}\Tr(m+\gamma p')\gamma^0(m+\gamma p)\gamma^0
+&=\frac{1}{4}\Tr(m+\gamma p')(m+\gamma\widetilde p)=\\
+&=m^2+p'\widetilde p=\varepsilon^2+m^2+\mathbf p\mathbf p'
+=2\varepsilon^2-\mathbf q^2/2.
+\end{aligned}
+\]
+It follows that the cross section is
+\begin{equation}
+d\sigma=\frac{e^2|A_0^{(e)}(\mathbf q)|^2}{4\pi^2}\,
+\varepsilon^2\left(1-\frac{\mathbf q^2}{4\varepsilon^2}\right)do'.
+\tag{80.5}
+\end{equation}
+
+For the field produced by a static charge distribution of density $\rho(\mathbf r)$, we have
+\begin{equation}
+A_0^{(e)}(\mathbf q)=\frac{4\pi\rho(\mathbf q)}{\mathbf q^2},
+\tag{80.6}
+\end{equation}
+where $\rho(\mathbf q)$ is the Fourier transform of the distribution $\rho(\mathbf r)$ (the form factor). In particular, for the Coulomb field of a point charge $Ze$, $\rho(\mathbf q)=Ze$. The scattering cross section is then
+\begin{equation}
+d\sigma=do'\frac{4(Ze^2)^2\varepsilon^2}{\mathbf q^4}
+\left(1-\frac{\mathbf q^2}{4\varepsilon^2}\right)
+\tag{80.7}
+\end{equation}
+(\emph{N.~F.~Mott}, 1929). The square
+\[
+\mathbf q^2=4\mathbf p^2\sin^2(\theta/2),
+\]
+
+\SourcePage{357}{362}
+where $\theta$ is the scattering angle. The expression preceding the parentheses may therefore be called, from its angular dependence, the Rutherford cross section:
+\begin{equation}
+d\sigma_{\mathrm R}=do'\frac{4(Ze^2)^2\varepsilon^2}{\mathbf q^4}
+=do'\frac{4(Ze^2)^2\varepsilon^2}{4\mathbf p^4}\sin^{-4}\frac{\theta}{2}
+\tag{80.8}
+\end{equation}
+(in the nonrelativistic limit, the factor $\varepsilon^2/\mathbf p^4\to1/(m^2v^4)$). Thus\footnote{The difference between $d\sigma$ and $d\sigma_{\mathrm R}$ expressed by this formula is specific to particles of spin $1/2$. For the scattering of spin-0 particles (if their motion in an electromagnetic field were described by a wave equation), one would obtain $d\sigma=d\sigma_{\mathrm R}$. At first sight it may seem strange that the factor expressing this purely quantum effect contains no $\hbar$. It must be remembered, however, that the condition for applicability of the Born approximation ($e^2/(\hbar v)\ll1$) is opposite to the condition for quasiclassical motion in a Coulomb field; consequently, the classical limit cannot be taken in formula (80.9).},
+\begin{equation}
+d\sigma=d\sigma_{\mathrm R}\left(1-v^2\sin^2\frac{\theta}{2}\right).
+\tag{80.9}
+\end{equation}
+Notice that in the ultrarelativistic case the angular distribution differs from the nonrelativistic one by a strong suppression of backward scattering (as $\theta\to\pi$: $d\sigma/d\sigma_{\mathrm R}\to m^2/\varepsilon^2$).
+
+For small-angle scattering in the ultrarelativistic case, (80.7) gives
+\begin{equation}
+d\sigma=\frac{4(Ze^2)^2}{\varepsilon^4\theta^4}\,do'.
+\tag{80.10}
+\end{equation}
+Although this formula was obtained in the Born approximation (that is, under the assumption $Ze^2\ll1$), it remains valid (for angles $\theta\lesssim m/\varepsilon$) also when $Ze^2\sim1$. This can be verified using the ultrarelativistic wave function $\psi_{\mathbf p}^{(+)}$ (39.10), which is exact in $Ze^2$. This solution, valid in the region (39.2), naturally remains valid in the asymptotic region at arbitrarily large $r$. There,
+\[
+F\propto1+\text{const}\cdot e^{i(pr-\mathbf p\mathbf r)},
+\qquad
+\frac{\alpha\nabla F}{\varepsilon}\sim1-\cos\theta\sim\theta^2\ll1,
+\]
+so the correction term remains small, as expected. The wave function of the form $e^{ipr}F$, being identical in form to the nonrelativistic function (with the evident change of parameters), has the same asymptotic form; the Rutherford expression therefore results for the cross section as well.
+
+The cross section for scattering of electrons with arbitrary polarization could be calculated by the general rules using the density matrix (29.13). In the present case, however,
+
+\SourcePage{358}{363}
+the result can be obtained less laboriously by writing the bispinor amplitudes $u(p')$ and $u(p)$ in the form (23.9); multiplication gives
+\[
+u^*(p')u(p)=w'^*\{\varepsilon+m+(\varepsilon-m)
+(\mathbf n'\boldsymbol\sigma)(\mathbf n\boldsymbol\sigma)\}w,
+\]
+or, using formula (33.5),
+\begin{equation}
+u^*(p')u(p)=w'^*\widehat f w,
+\tag{80.11}
+\end{equation}
+where\footnote{The definitions of $\widehat f$ here and in \S~37, \S~38 differ by an overall factor.}
+\begin{equation}
+\begin{gathered}
+\widehat f=A+B\boldsymbol\nu\boldsymbol\sigma,\\
+A=(\varepsilon+m)+(\varepsilon-m)\cos\theta,
+\qquad B=-i(\varepsilon-m)\sin\theta,\\
+\boldsymbol\nu=\frac{\mathbf n\times\mathbf n'}{\sin\theta}.
+\end{gathered}
+\tag{80.12}
+\end{equation}
+The two-component quantity (three-spinor) $w$ is the nonrelativistic spin wave function of the electron. Partially polarized states are therefore introduced by replacing the products $w_\alpha w_\beta^*$ ($\alpha$, $\beta$ are spinor indices) by the nonrelativistic two-by-two density matrix $\rho_{\alpha\beta}$. Thus one must replace
+\[
+|M_{fi}|^2\to e^2|A_0^{(e)}(\mathbf q)|^2
+\Tr\rho(A-B\boldsymbol\nu\boldsymbol\sigma)
+\rho'(A+B\boldsymbol\nu\boldsymbol\sigma),
+\]
+where
+\[
+\rho=\frac{1}{2}(1+\boldsymbol\sigma\boldsymbol\zeta),
+\qquad
+\rho'=\frac{1}{2}(1+\boldsymbol\sigma\boldsymbol\zeta'),
+\]
+and $\boldsymbol\zeta$ and $\boldsymbol\zeta'$ are the initial polarization vector and the final polarization vector selected by the detector. Evaluation of the trace gives
+\begin{equation}
+d\sigma=d\sigma_0\left\{1+
+\frac{(A^2-|B|^2)(\boldsymbol\zeta\boldsymbol\zeta')
++2|B|^2(\boldsymbol\nu\boldsymbol\zeta)(\boldsymbol\nu\boldsymbol\zeta')
++2A|B|\boldsymbol\nu(\boldsymbol\zeta\times\boldsymbol\zeta')}
+{A^2+|B|^2}\right\},
+\tag{80.13}
+\end{equation}
+where $d\sigma_0$ is the cross section for scattering of unpolarized electrons.
+
+Writing the expression in braces in (80.13) as $\{1+\boldsymbol\zeta^{(f)}\boldsymbol\zeta'\}$, we find the polarization of the final electron itself (as distinct from the detected polarization $\boldsymbol\zeta'$; see \S~65)\footnote{Formula (80.14) corresponds to the formula found in Problem 1 (see Vol.~III, \S~140) and follows from it when $A$ is real and $B$ imaginary.}:
+\begin{equation}
+\boldsymbol\zeta^{(f)}
+=\frac{(A^2-|B|^2)\boldsymbol\zeta
++2|B|^2(\boldsymbol\nu\boldsymbol\zeta)\boldsymbol\nu
++2A|B|(\boldsymbol\nu\times\boldsymbol\zeta)}
+{A^2+|B|^2}.
+\tag{80.14}
+\end{equation}
+We see that the scattered electrons are polarized only if the incident electrons are polarized. This is a general property of the first Born approximation (cf. Vol.~III, \S~140).
+
+\SourcePage{359}{364}
+In the nonrelativistic case ($\varepsilon\to m$), (80.14) gives $\boldsymbol\zeta^{(f)}=\boldsymbol\zeta$, that is, the electron retains its polarization upon scattering (a natural consequence of neglecting the spin--orbit interaction).
+
+In the opposite, ultrarelativistic case, we have
+\[
+A=\varepsilon(1+\cos\theta),
+\qquad
+B=-i\varepsilon\sin\theta
+\]
+(in agreement with the general formula (38.2)).
+
+If the incident electron then has a definite helicity ($\boldsymbol\zeta=2\lambda\mathbf n$, $\lambda=\pm1/2$), straightforward simplification of (80.14) gives
+\[
+\boldsymbol\zeta^{(f)}=2\lambda\mathbf n'.
+\]
+In other words, after scattering the electron remains in a helicity state and retains its previous helicity value $\lambda$.
+
+As already explained in \S~38, this property is connected with the fact that, when the mass is neglected, the Dirac equation in the spinor representation separates into two independent equations for the functions $\xi$ and $\eta$. The result has a more general significance as well, because the current
+\[
+\widehat j=(\xi^*\xi+\eta^*\eta,\,
+\xi^*\boldsymbol\sigma\xi-\eta^*\boldsymbol\sigma\eta),
+\]
+and hence the electromagnetic perturbation operator $\widehat V=e\widehat j\widehat A$, contain no terms mixing $\xi$ and $\eta$ and therefore have no matrix elements for transitions between $\xi$ and $\eta$ states. It follows that if an ultrarelativistic electron has a definite helicity (that is, either $\xi$ or $\eta$ is nonzero), then this helicity is conserved in interaction processes in the approximation in which the electron mass is neglected completely.

@@ -1,0 +1,109 @@
+\SourcePage{316}{321}
+\section{The chronological product}
+
+The probabilities of processes in collisions of particles whose interaction may be regarded as small are calculated by perturbation theory. In its usual form for nonrelativistic quantum mechanics, however, this formalism has the disadvantage that relativistic invariance is not explicit. Although its application to relativistic problems ultimately gives invariant results, the noninvariant form of the intermediate formulas greatly complicates the calculations. This chapter develops a consistently relativistic perturbation theory free of this defect; it was constructed by Feynman ($R.~P.~Feynman$, 1948--1949).
+
+With a second-quantized description in mind, denote by $\Phi$ the wave function of the system in the representation of occupation numbers for the various free-particle states. The Hamiltonian is $\hat H=\hat H_0+\hat V$, where $\hat V$ is the interaction operator. Let $\Phi_n$ be eigenfunctions of the unperturbed Hamiltonian, each corresponding to specified values of all occupation numbers. An arbitrary $\Phi$ is expanded as $\Phi=\sum C_n\Phi_n$. The exact wave equation
+\begin{equation}
+i\frac{\partial\Phi}{\partial t}=(\hat H_0+\hat V)\Phi
+\tag{72.1}
+\end{equation}
+then becomes a system of equations for $C_n$:
+\begin{equation}
+i\dot C_n=\sum_m V_{nm}\exp\bigl[i(E_n-E_m)t\bigr]C_m,
+\tag{72.2}
+\end{equation}
+where $V_{nm}$ are the time-independent matrix elements of $\hat V$, and $E_n$ are the energy levels of the unperturbed system (cf. vol.~III, \S~40).
+
+By definition, $\hat V$ has no explicit time dependence. The quantities
+\begin{equation}
+V_{nm}(t)=V_{nm}\exp\bigl[i(E_n-E_m)t\bigr]
+\tag{72.3}
+\end{equation}
+
+\SourcePage{317}{322}
+may be regarded as matrix elements of the time-dependent operator
+\begin{equation}
+\hat V(t)=\exp(i\hat H_0t)\hat V\exp(-i\hat H_0t).
+\tag{72.4}
+\end{equation}
+This is the operator in the \emph{interaction representation}, as distinct from the original time-independent Schrödinger operator $\hat V$.\footnote{Notice that the definition (72.4) contains the unperturbed Hamiltonian $\hat H_0$. It therefore differs from the \emph{Heisenberg representation}, in which
+\[
+\hat V^H(t)=\exp(i\hat Ht)\hat V\exp(-i\hat Ht)
+\]
+(see vol.~III, \S~13, and \S~102 below).} Denoting the wave function in this new representation again by $\Phi$, equations (72.2) take the symbolic form
+\begin{equation}
+i\dot\Phi=\hat V(t)\Phi.
+\tag{72.5}
+\end{equation}
+In this representation, the wave function changes only through the perturbation, and therefore describes processes caused by the particle interaction.
+
+If $\Phi(t),\Phi(t+\delta t)$ are its values at two infinitesimally close times, (72.5) gives
+\[
+\Phi(t+\delta t)=\bigl[1-i\delta t\hat V(t)\bigr]\Phi(t)
+=\exp\bigl[-i\delta t\cdot\hat V(t)\bigr]\Phi(t).
+\]
+Thus its value at an arbitrary time $t_f$ is related to that at an initial time $t_i<t_f$ by
+\begin{equation}
+\Phi(t_f)=\left\{\prod_i^f\exp\bigl[-i\delta t_\alpha\cdot\hat V(t_\alpha)\bigr]\right\}\Phi(t_i),
+\tag{72.6}
+\end{equation}
+where $\prod$ denotes the limiting product over all infinitesimal intervals $\delta t_\alpha$ between $t_i,t_f$. If $V(t)$ were an ordinary function, the limit would reduce to
+\[
+\exp\left\{-i\int_{t_i}^{t_f}V(t)\,dt\right\}.
+\]
+This reduction depends on commutativity of factors belonging to different times when the product in (72.6) is replaced by a sum in the exponential. The operators $\hat V(t)$ do not in general commute, so no reduction to an ordinary integral is possible.
+
+\SourcePage{318}{323}
+Write (72.6) symbolically as
+\begin{equation}
+\Phi(t_f)=\mathop{\mathrm T}\exp\left\{-i\int_{t_i}^{t_f}\hat V(t)\,dt\right\}\Phi(t_i),
+\tag{72.7}
+\end{equation}
+where $\mathrm T$ is the symbol of \emph{chronological ordering}, specifying the chronological sequence of the times in the successive factors of (72.6). In particular, taking $t_i\to-\infty$, $t_f\to+\infty$ gives
+\begin{equation}
+\Phi(+\infty)=\hat S\Phi(-\infty),
+\label{eq:72.8}
+\tag{72.8}
+\end{equation}
+where
+\begin{equation}
+\hat S=\mathop{\mathrm T}\exp\left\{-i\int_{-\infty}^{\infty}\hat V(t)\,dt\right\}.
+\tag{72.9}
+\end{equation}
+
+The usefulness of (72.7)--(72.9), a formally exact solution of the wave equation, is that it immediately gives the perturbation expansion
+\begin{equation}
+\hat S=\sum_{k=0}^{\infty}\frac{(-i)^k}{k!}
+\int_{-\infty}^{\infty}dt_1\int_{-\infty}^{\infty}dt_2\ldots
+\int_{-\infty}^{\infty}dt_k\cdot
+\mathop{\mathrm T}\bigl\{\hat V(t_1)\hat V(t_2)\ldots\hat V(t_k)\bigr\}.
+\label{eq:72.10}
+\tag{72.10}
+\end{equation}
+Here the $k$th power of the integral is written as a $k$-fold integral, and $\mathrm T$ directs that, in every region of values of $t_1,t_2,\ldots,t_k$, the operators be placed chronologically from right to left in order of increasing $t$.\footnote{The derivation of the rules of relativistic perturbation theory from (72.10) is due to Dayson ($F.~Dayson$, 1949).}
+
+It follows from (72.8) that if the system was in state $\Phi_i$, a particular collection of free particles, before the collision, then the probability amplitude for transition to state $\Phi_f$, another collection of free particles, is $S_{fi}$. These elements constitute the $S$-matrix.
+
+The electromagnetic interaction operator was given in \S~43:
+\begin{equation}
+\hat V=e\int(\hat j\hat A)\,d^3x.
+\tag{72.11}
+\end{equation}
+Substitution in (72.9) gives
+\begin{equation}
+\hat S=\mathop{\mathrm T}\exp\left\{-ie\int(\hat j\hat A)\,d^4x\right\}.
+\tag{72.12}
+\end{equation}
+
+\SourcePage{319}{324}
+The operator (72.12) is relativistically invariant. This follows from the scalar character of the integrand, the invariant integration over $d^4x$, and the invariance of chronological ordering. The last point requires explanation.
+
+The order of two times $t_1,t_2$, that is, the sign of $t_2-t_1$, is frame-independent if the corresponding world points $x_1,x_2$ are separated by a timelike interval, $(x_2-x_1)^2>0$. Chronological ordering is then automatically invariant. If $(x_2-x_1)^2<0$, a spacelike interval, different frames may have either $t_2>t_1$ or $t_2<t_1$.\footnote{Instead of timelike and spacelike intervals, one often speaks briefly of regions inside and outside the light cone: all points $x$ separated from $x'$ by $(x-x')^2>0$ lie inside the double cone with vertex $x'$, while points separated by $(x-x')^2<0$ lie outside it.} But no causal relation can exist between events at such points. The operators of two physical quantities referring to them therefore cannot fail to commute: noncommutativity physically means that the quantities cannot be measured jointly, which presupposes a physical connection between the measurements. Chronological ordering remains invariant in this case as well. A Lorentz transformation may reverse the time order, but commutativity allows the factors to be restored to chronological order.\footnote{For the product $\hat V(t_1)\hat V(t_2)\ldots$, this statement requires qualification. Since $\hat V$ itself is not gauge invariant (it changes with $\hat A_\mu$), factors $\hat V(t_1),\hat V(t_2),\ldots$ that commute in one gauge may not commute in another. The statement must therefore be understood as the possibility of choosing a gauge in which $\hat V(t_1),\hat V(t_2)$ commute outside the light cone. This qualification does not affect the invariance of the $S$-matrix: scattering amplitudes are physical quantities and cannot depend on the gauge. Formally, this follows from the gauge invariance of the action integral noted in \S~43.}
+
+The definition of the $S$-matrix given here automatically satisfies unitarity. Write $\hat S$ as the chronological product in (72.6). Since $\hat V$ is Hermitian, $\hat S^+$ is the product of the same factors $\exp\bigl(i\delta t_\alpha\cdot\hat V(t_\alpha)\bigr)$
+
+\SourcePage{320}{325}
+in reverse chronological order, with the opposite sign in the exponent. In multiplying $\hat S$ by $\hat S^+$, all factors cancel in pairs.
+
+Thus unitarity of $\hat S$ is ensured here by Hermiticity of the Hamiltonian. The requirement of unitarity is actually more general than the assumptions underlying this theory: it must also hold in a quantum-mechanical description that does not use the concepts of a Hamiltonian and wave functions.

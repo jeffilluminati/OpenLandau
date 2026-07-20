@@ -1,0 +1,226 @@
+\SourcePage{240}{245}
+\section{Photoelectric effect. Relativistic case}
+
+We turn to the case
+\begin{equation}
+\omega\gg I.
+\tag{57.1}
+\end{equation}
+Here also $\varepsilon=\omega-I\gg I$, and the effect of the nuclear Coulomb field on the photoelectron wave function ($\psi'$) can therefore be treated by perturbation theory. Write $\psi'$ as
+\begin{equation}
+\psi'=\frac1{\sqrt{2\varepsilon}}
+\left(u'e^{i\mathbf p\mathbf r}+\psi^{(1)}\right).
+\tag{57.2}
+\end{equation}
+The photoelectron may be relativistic; for this reason the unperturbed function in (57.2) is written as the relativistic plane wave (23.1).
+
+Although the electron is nonrelativistic in the initial state, its wave function $\psi$ must nevertheless include a relativistic correction ($\sim Ze^2$), for reasons that will become clear below. This function is given by (see the problem to \S~39)
+\begin{equation}
+\psi=\left(1-\frac i{2m}\gamma^0\boldsymbol\gamma\nabla\right)
+\frac u{\sqrt{2m}}\psi_{\text{nr}},
+\tag{57.3}
+\end{equation}
+where $\psi_{\text{nr}}$ is the nonrelativistic bound-state function (56.6), and $u$ is the bispinor amplitude of an electron at rest, normalized by our convention $\bar uu=2m$.
+
+\SourcePage{241}{246}
+Substitute the functions (57.2), (57.3) into the matrix element (56.2)\footnote{The function (57.3) was obtained for distances $r\sim1/(mZe^2)$, at which its correction term is of relative order $Ze^2$. For the ground state (and indeed for all $s$-states), however, formula (57.3) is valid at every $r$, since the derivative of the purely exponential function (56.6), and therefore also the correction term in (57.3), is always proportional to $Ze^2$. This makes it possible to use (57.3) in the present problem, where small $r$ are important. (When $v\sim1$, the important distances are $r\sim1/m$.)}:
+\begin{equation}
+\begin{aligned}
+M_{fi}=\frac1{2\sqrt{m\varepsilon}}\int
+\Bigl\{&
+\bar u'(\boldsymbol\gamma\mathbf e)
+\left[\left(1-\frac i{2m}\gamma^0\boldsymbol\gamma\nabla\right)
+u\psi_{\text{nr}}\right]e^{-i(\mathbf p-\mathbf k)\mathbf r}+{}\\
+&+\bar\psi^{(1)}(\boldsymbol\gamma\mathbf e)
+e^{i\mathbf k\mathbf r}u\psi_{\text{nr}}\Bigr\}\,d^3x.
+\end{aligned}
+\tag{57.4}
+\end{equation}
+Since we seek the first term in the expansion of this quantity in $Ze^2$, in the second term within the braces we may replace $\psi_{\text{nr}}$ simply by the constant $(Ze^2m)^{3/2}/\sqrt\pi$. The first term would vanish under the same replacement (when $\mathbf p-\mathbf k\ne0$). This is precisely why the first relativistic correction, proportional to $Ze^2$, must also be retained in $\psi$: when $v\sim1$, this correction contributes to the cross section in the same order as the next term in the expansion of $\psi_{\text{nr}}$ in $Ze^2$.
+
+In the first term of (57.4), integrate by parts so that the operator $\nabla$ acts on the exponential factor rather than on $\psi_{\text{nr}}$. The result is
+\begin{equation}
+\begin{aligned}
+M_{fi}
+=\frac{(Ze^2m)^{3/2}}{2(\pi m\varepsilon)^{1/2}}
+\Biggl\{&
+\bar u'(\boldsymbol\gamma\mathbf e)
+\left[1+\frac1{2m}\gamma^0\boldsymbol\gamma
+(\mathbf p-\mathbf k)\right]u
+\left(e^{-Ze^2mr}\right)_{\mathbf p-\mathbf k}+{}\\
+&+\bar\psi_{-\mathbf k}^{(1)}
+(\boldsymbol\gamma\mathbf e)u\Biggr\},
+\end{aligned}
+\tag{57.5}
+\end{equation}
+where a vector subscript denotes a spatial Fourier component. To accuracy through the term $\sim Ze^2$\footnote{Taking the Fourier component of both sides of
+\[
+(\Delta-\lambda^2)\frac{e^{-\lambda r}}r=-4\pi\delta(\mathbf r),
+\]
+we obtain
+\begin{equation}
+\left(\frac{e^{-\lambda r}}r\right)_{\mathbf q}
+=\frac{4\pi}{\mathbf q^2+\lambda^2}.
+\tag{57.6a}
+\end{equation}
+Differentiation of this expression with respect to the parameter $\lambda$ gives
+\begin{equation}
+\left(e^{-\lambda r}\right)_{\mathbf q}
+=\frac{8\pi\lambda}{(\mathbf q^2+\lambda^2)^2}.
+\tag{57.6b}
+\end{equation}}
+\begin{equation}
+\left(e^{-Ze^2mr}\right)_{\mathbf p-\mathbf k}
+=\frac{8\pi Ze^2m}{(\mathbf p-\mathbf k)^4}.
+\tag{57.6}
+\end{equation}
+
+\SourcePage{242}{247}
+To calculate the Fourier component $\psi_{\mathbf k}^{(1)}$, write the equation satisfied by $\psi^{(1)}$:
+\[
+(\gamma^0\varepsilon+i\boldsymbol\gamma\nabla-m)\psi^{(1)}
+=e(\gamma^\mu A_\mu)u'e^{i\mathbf p\mathbf r}
+=-\frac{Ze^2}r\gamma^0u'e^{i\mathbf p\mathbf r}
+\]
+(it follows by substituting (57.2) into (32.1)). Apply the operator $(\gamma^0\varepsilon+i\boldsymbol\gamma\nabla+m)$ to both sides of this equation. We obtain
+\[
+(\Delta+\mathbf p^2)\psi^{(1)}
+=-Ze^2(\gamma^0\varepsilon+i\boldsymbol\gamma\nabla+m)
+(\gamma^0u')\frac1r e^{i\mathbf p\mathbf r}.
+\]
+Multiply this equation by $e^{-i\mathbf k\mathbf r}$ and integrate over $d^3x$, performing the usual integrations by parts in the terms containing $\Delta$ and $\nabla$:
+\[
+\begin{aligned}
+(\mathbf p^2-\mathbf k^2)\psi_{\mathbf k}^{(1)}
+&=-Ze^2(\gamma^0\varepsilon-\boldsymbol\gamma\mathbf k+m)
+(\gamma^0u')\left(\frac1r\right)_{\mathbf k-\mathbf p}={}\\
+&=-Ze^2(2\varepsilon\gamma^0-\boldsymbol\gamma(\mathbf k-\mathbf p))
+(\gamma^0u')\frac{4\pi}{(\mathbf k-\mathbf p)^2}.
+\end{aligned}
+\]
+In the last line we have used the equation obeyed by the amplitude $u'$:
+\[
+(\varepsilon\gamma^0-\mathbf p\boldsymbol\gamma-m)u'=0,
+\qquad\text{or}\qquad
+(\varepsilon\gamma^0+\mathbf p\boldsymbol\gamma-m)\gamma^0u'=0.
+\]
+It follows that
+\begin{equation}
+\bar\psi_{-\mathbf k}^{(1)}
+=\psi_{\mathbf k}^{(1)*}\gamma^0
+=4\pi Ze^2\bar u'
+\frac{2\varepsilon\gamma^0+\boldsymbol\gamma(\mathbf k-\mathbf p)}
+{(\mathbf k^2-\mathbf p^2)(\mathbf k-\mathbf p)^2}\gamma^0.
+\tag{57.7}
+\end{equation}
+Substituting (57.6), (57.7) into the matrix element (57.5), we put it in the form
+\[
+M_{fi}=\frac{4\pi^{1/2}(Ze^2m)^{5/2}}
+{(\varepsilon m)^{1/2}(\mathbf k-\mathbf p)^2}\bar u'Au,
+\]
+where
+\[
+A=a(\boldsymbol\gamma\mathbf e)
++(\boldsymbol\gamma\mathbf e)\gamma^0(\boldsymbol\gamma\mathbf b)
++(\boldsymbol\gamma\mathbf c)\gamma^0(\boldsymbol\gamma\mathbf e),
+\]
+\[
+a=\frac1{(\mathbf k-\mathbf p)^2}
++\frac\varepsilon m\frac1{\mathbf k^2-\mathbf p^2},
+\qquad
+\mathbf b=-\frac{\mathbf k-\mathbf p}{2m(\mathbf k-\mathbf p)^2},
+\qquad
+\mathbf c=\frac{\mathbf k-\mathbf p}{2m(\mathbf k^2-\mathbf p^2)}.
+\]
+The cross section is
+\[
+d\sigma=\frac{8e^2(Ze^2m)^5|\mathbf p|}
+{\omega(\mathbf k-\mathbf p)^4m}
+(\bar u'Au)(\bar u\overline A u')\,do,
+\]
+where $\overline A=\gamma^0A^+\gamma^0$ (see \S~65). This expression must still be summed over the final spin directions and averaged over the initial ones. These operations are carried out by the rules described below in \S~65, using the polarization density matrices of the initial and final states:
+\[
+\rho=\frac m2(\gamma^0+1),\qquad
+\rho'=\frac12(\gamma^0\varepsilon-\boldsymbol\gamma\mathbf p+m)
+\]
+\SourcePage{243}{248}
+(in the initial state $\mathbf p=0$, $\varepsilon=m$). They give
+\[
+d\sigma=\frac{16e^2(Ze^2m)^5|\mathbf p|}
+{m\omega(\mathbf k-\mathbf p)^4}
+\Tr(\rho'A\rho\overline A)\,do.
+\]
+Evaluation of the trace (using formulas (22.22)) is a purely algebraic operation and gives
+\[
+\begin{aligned}
+\Tr(\rho'A\rho\overline A)
+=\frac m{\varepsilon+m}\Bigl[
+&a\mathbf p-(\mathbf b-\mathbf c)(\varepsilon+m)\Bigr]^2+{}\\
+&+4m(\mathbf b\mathbf e)
+\bigl[(\varepsilon+m)(\mathbf c\mathbf e)
++a(\mathbf p\mathbf e)\bigr]
+\end{aligned}
+\]
+(the vector $\mathbf e$ is assumed real, corresponding to linear photon polarization).
+
+Put the photoelectric cross-section formula into its final form by introducing the polar angle $\theta$ and azimuth $\varphi$ of the direction of $\mathbf p$. The direction of $\mathbf k$ is chosen as the $z$ axis, and the plane of $\mathbf k$ and $\mathbf e$ as the $xz$ plane (so that $\mathbf p\mathbf e=|\mathbf p|\cos\varphi\sin\theta$). When $\omega\gg I$, energy conservation can be written as $\varepsilon-m=\omega$ (rather than $\varepsilon-m=\omega-I$). It is readily verified that
+\[
+\mathbf k^2-\mathbf p^2=-2m(\varepsilon-m),\qquad
+(\mathbf k-\mathbf p)^2=2\varepsilon(\varepsilon-m)
+(1-v\cos\theta),
+\]
+where $v=p/\varepsilon$ is the photoelectron velocity. Simple transformations then give
+\begin{equation}
+\begin{aligned}
+d\sigma={}&Z^5\alpha^4r_e^2
+\frac{v^3(1-v^2)^3\sin^2\theta}
+{(1-\sqrt{1-v^2})^5(1-v\cos\theta)^4}\mathbin{\times}\\
+&{}\mathbin{\times}\Biggl\{
+\frac{(1-\sqrt{1-v^2})^2}{2(1-v^2)^{3/2}}
+(1-v\cos\theta)+{}\\
+&\qquad+\left[
+2-\frac{(1-\sqrt{1-v^2})(1-v\cos\theta)}{1-v^2}
+\right]\cos^2\varphi\Biggr\}\,do,
+\end{aligned}
+\tag{57.8}
+\end{equation}
+where $r_e=e^2/m$.
+
+In the ultrarelativistic case ($\varepsilon\gg m$), the photoelectric cross section has a sharp maximum at small angles ($\theta\sim\sqrt{1-v^2}$); thus the electrons are emitted mainly in the direction of the incident photon. Near the maximum, write
+\[
+1-v\cos\theta\approx\frac12[(1-v^2)+\theta^2].
+\]
+The leading terms in (57.8) then give
+\begin{equation}
+d\sigma\approx4Z^5\alpha^4r_e^2
+\frac{(1-v^2)^{3/2}}{(1-v^2+\theta^2)^3}
+\,d\theta\,d\varphi.
+\tag{57.9}
+\end{equation}
+An elementary, though fairly lengthy, integration of (57.8) over the angles yields the following formula for the
+\SourcePage{244}{249}
+total cross section (\emph{F. Sauter}, 1931):
+\begin{equation}
+\begin{aligned}
+\sigma={}&2\pi Z^5\alpha^4r_e^2
+\frac{(\gamma^2-1)^{3/2}}{(\gamma-1)^5}\mathbin{\times}\\
+&{}\mathbin{\times}\left\{
+\frac34+\frac{\gamma(\gamma-2)}{\gamma+1}
+\left(1-\frac1{2\gamma\sqrt{\gamma^2-1}}
+\ln\frac{\gamma+\sqrt{\gamma^2-1}}
+{\gamma-\sqrt{\gamma^2-1}}\right)\right\},
+\end{aligned}
+\tag{57.10}
+\end{equation}
+where, for brevity, the ``Lorentz factor'' has been introduced:
+\begin{equation}
+\gamma=\frac1{\sqrt{1-v^2}}=\frac\varepsilon m
+\approx\frac{m+\omega}m.
+\tag{57.11}
+\end{equation}
+In the ultrarelativistic case this formula reduces to the simple expression
+\begin{equation}
+\sigma=2\pi Z^5\alpha^4r_e^2/\gamma.
+\tag{57.12}
+\end{equation}
+In the case $I\ll\omega\ll m$, on the other hand, taking the limit of small $\gamma-1$ in (57.10) gives the result (56.14), already obtained above.

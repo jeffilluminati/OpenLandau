@@ -1,0 +1,250 @@
+\SourcePage{340}{345}
+\section{General rules of the diagrammatic method}
+
+The calculations of scattering-matrix elements carried out in \S~73 and 74 for several simple cases contain all the essential features of the general method. Their appropriate generalization readily gives rules for calculating matrix elements at an arbitrary order of perturbation theory.
+
+As noted above, the matrix element of the scattering operator $\hat S$ between any initial and final states equals the vacuum average of the operator obtained by multiplying $\hat S$ on the right by the creation operators for all initial particles and on the left by the annihilation operators for all final particles.
+
+After this reduction, the $S$-matrix element at order $n$ of perturbation theory takes the form
+\begin{align}
+\langle f|S^{(n)}|i\rangle
+={}&\frac{1}{n!}\langle0|\ldots b_{2f}b_{1f}\ldots a_{1f}\ldots c_{1f}\times\notag\\
+&\quad\times\int d^4x_1\ldots d^4x_n\,
+T\!\left\{\bigl(\bar{\hat\psi}_1(-ie\gamma\hat A_1)\hat\psi_1\bigr)\ldots
+\bigl(\bar{\hat\psi}_n(-ie\gamma\hat A_n)\hat\psi_n\bigr)\right\}\times\notag\\
+&\quad\times c^+_{1i}\ldots a^+_{1i}\ldots b^+_{1i}\ldots|0\rangle .
+\tag{77.1}
+\label{eq:77.1}
+\end{align}
+(The indices $1i$, $2i$,~\ldots enumerate the initial particles, separately for positrons, electrons, and photons; $1f$, $2f$,~\ldots enumerate the final particles. The indices $1$, $2$,~\ldots on $\hat\psi$ and $\hat A$ mean that $\hat\psi_1=\hat\psi(x_1)$,~\ldots.) The operators $\hat\psi$ and $\hat A$ appearing here are
+
+\SourcePage{341}{346}
+linear combinations of creation and annihilation operators for the corresponding particles in different states. Hence the matrix elements become vacuum averages of products of particle creation and annihilation operators and of their linear combinations. Such averages are evaluated by the following statements, which constitute \emph{Wick's theorem} (G.~C.~Wick, 1950).
+
+1. The vacuum average of a product containing any number of bosonic operators $\hat c^+$ and $\hat c$ is the sum of the products of every possible set of pairwise averages (contractions) of these operators. Within each pair, the factors must retain their order in the original product.
+
+2. For fermionic operators $\hat a^+$, $\hat a$, $\hat b^+$, and $\hat b$ (whether for like or unlike particles), the sole change is that each term enters the sum with a plus or minus sign according as the number of interchanges of fermionic operators needed to place all contracted pairs next to one another is even or odd.
+
+Clearly, an average can be nonzero only when every factor $\hat a$, $\hat b$, or $\hat c$ in the product is accompanied by a factor $\hat a^+$, $\hat b^+$, or $\hat c^+$, respectively. Moreover, only operator pairs $(\hat a,\hat a^+)$,~\ldots belonging to the same state are to be contracted, and only when $\hat a^+$,~\ldots stands to the right of $\hat a$,~\ldots: the particle is first created and is then annihilated (whereas $\langle0|\hat a^+\hat a|0\rangle=0$,~\ldots).
+
+When every pair $(\hat a,\hat a^+)$,~\ldots occurs in the product only once, Wick's theorem is immediate: the average reduces to a single product of pair averages. It is equally immediate when all annihilation operators stand to the right of the creation operators in the product (a product of this kind is called \emph{normal}); its average vanishes. These facts make it easy to prove Wick's theorem by complete induction in the general case where the same operator pair occurs several times, say $k$ times, in the product.
+
+Consider an average $\langle0|\ldots\hat c\hat c^+\ldots|0\rangle$ in which a pair of bosonic operators occurs $k$ times (the subsequent reasoning for fermionic operators is entirely analogous). Interchanging the factors $\hat c$ and $\hat c^+$ in one pair and using their commutation rule gives
+\begin{equation}
+\langle0|\ldots\hat c\hat c^+\ldots|0\rangle
+=\langle0|\ldots\hat c^+\hat c\ldots|0\rangle+\langle0|\ldots1\ldots|0\rangle.
+\tag{77.2}
+\end{equation}
+The average $\langle0|\ldots1\ldots|0\rangle$ contains $k-1$ pairs, so Wick's theorem is assumed to hold for it. On the other hand,
+
+\SourcePage{342}{347}
+expanding $\langle0|\ldots\hat c\hat c^+\ldots|0\rangle$ by Wick's theorem makes it differ from the corresponding expansion of $\langle0|\ldots\hat c^+\hat c\ldots|0\rangle$ precisely by the term
+\[
+\langle0|\ldots1\ldots|0\rangle\langle0|\hat c\hat c^+|0\rangle
+=\langle0|\ldots1\ldots|0\rangle
+\]
+(the analogous term in the expansion of $\langle0|\ldots\hat c^+\hat c\ldots|0\rangle$ is $\langle0|\ldots1\ldots|0\rangle\times\langle0|\hat c^+\hat c|0\rangle=0$). Equation~(77.2) therefore shows that, if Wick's theorem holds for the matrix element $\langle0|\ldots\hat c^+\hat c\ldots|0\rangle$, it continues to hold after $\hat c$ and $\hat c^+$ are interchanged. Since the theorem certainly holds for one particular ordering of the factors, namely normal ordering, it follows that it holds for every ordering.
+
+Since Wick's theorem holds for products of $\hat a$, $\hat b$,~\ldots, it also holds for arbitrary products containing their linear combinations $\hat\psi$, $\bar{\hat\psi}$, and $\hat A$ alongside $\hat a$, $\hat b$,~\ldots themselves. Applying the theorem to the matrix element~(77.1) expresses it as a sum of terms, each a product of certain pairwise averages. Some of these are contractions of $\hat\psi$, $\bar{\hat\psi}$, and $\hat A$ with ``external'' operators---the creation operators of initial particles or the annihilation operators of final particles. They are related to the wave functions of the initial and final particles by
+\begin{align}
+\langle0|\hat A\hat c^+_{\mathbf p}|0\rangle&=A_p,
+&\langle0|\hat c_{\mathbf p}\hat A|0\rangle&=A_p^*,\notag\\
+\langle0|\hat\psi\hat a^+_{\mathbf p}|0\rangle&=\psi_p,
+&\langle0|\hat a_{\mathbf p}\bar{\hat\psi}|0\rangle&=\bar\psi_p^*,\notag\\
+\langle0|\hat b_{\mathbf p}\hat\psi|0\rangle&=\psi_{-p},
+&\langle0|\bar{\hat\psi}\hat b^+_{\mathbf p}|0\rangle&=\bar\psi_{-p}.
+\tag{77.3}
+\end{align}
+Here $A_p$ and $\psi_p$ are the photon and electron wave functions with momenta $\mathbf p$ (as in \S~73 and 74, polarization indices have been suppressed for brevity). There are also contractions of the ``internal'' operators under the $T$-product signs. Because application of Wick's theorem preserves the sequence of the factors within every contracted pair, these contractions preserve the chronological ordering of the operators and may therefore be replaced by the corresponding propagators\footnote{The last statement requires the following qualification. In proving Wick's theorem we used the commutation rules for $\hat c$ and $\hat c^+$, which are meaningful only for real (``transverse'') photons. The ``external'' operators $\hat c_i^+$ and $\hat c_f$ do, of course, represent precisely such initial and final photons. As stated in \S~76, however, the operators $\hat A$ under the $T$-product signs describe more than transverse
+
+\SourcePage{343}{348}
+photons. The situation is the same as in the calculation of $D_{\mu\nu}$ in \S~76. Relativistic and gauge invariance make it sufficient to prove the theorem for those products---that is, for those components of the tensor $\langle0|TA_\mu A_\nu\ldots|0\rangle$---which are determined by the transverse parts of the potentials. This proves it for arbitrary products as well.}.
+
+Every term in the sum obtained by expanding the matrix element according to Wick's theorem is represented by a particular Feynman diagram. A diagram of order $n$ has $n$ vertices, each associated with one integration variable, namely one of the 4-vectors $x_1$, $x_2$,~\ldots. Three rays meet at every vertex: two solid (electron) rays and one dashed (photon) ray. They correspond to the electron operators $\hat\psi$, $\bar{\hat\psi}$ and the photon operator $\hat A$, all evaluated at the same variable $x$. The operator $\hat\psi$ corresponds to a line entering the vertex, while $\bar{\hat\psi}$ corresponds to one leaving it.
+
+For illustration, consider several examples of the correspondence between terms in a third-order matrix element and diagrams. Omitting the integral sign, the operator and $T$ signs, and the factors $-ie\gamma$, and suppressing the arguments of the operators, we write these terms symbolically as
+\begin{equation}
+\begin{aligned}
+\text{a}\quad&
+\begin{tikzpicture}[baseline=(g1.base),x=1cm,y=1cm,>=Stealth,line width=.5pt]
+\node (g1) at (0,0) {$ (\bar\psi A\psi) $};
+\node (g2) at (1.55,0) {$ (\bar\psi A\psi) $};
+\node (g3) at (3.10,0) {$ (\bar\psi A\psi) $};
+\draw (g2.south west) .. controls +(0,-.38) and +(0,-.38) .. node[midway,below=-2pt] {$\scriptstyle\leftarrow$} (g1.south east);
+\draw (g3.south west) .. controls +(0,-.38) and +(0,-.38) .. node[midway,below=-2pt] {$\scriptstyle\leftarrow$} (g2.south east);
+\draw[dashed] (g1.north) .. controls +(0,.42) and +(0,.42) .. (g3.north);
+\end{tikzpicture}
+&&=\quad
+\begin{tikzpicture}[baseline=-.55ex,x=.43cm,y=.43cm,>=Stealth,line width=.55pt]
+\coordinate (t) at (1.5,1.25); \coordinate (l) at (.65,.25); \coordinate (r) at (2.35,.25);
+\draw[<-] (-.05,.25)--(l); \draw[<-] (l)--(t); \draw[<-] (t)--(r); \draw[<-] (r)--(3.05,.25);
+\draw[dashed] (t)--(1.5,1.9); \draw[dashed] (l)--(r);
+\end{tikzpicture}
+\notag\\[1.5ex]
+\text{b}\quad&
+\begin{tikzpicture}[baseline=(g1.base),x=1cm,y=1cm,>=Stealth,line width=.5pt]
+\node (g1) at (0,0) {$ (\bar\psi A\psi) $};
+\node (g2) at (1.55,0) {$ (\bar\psi A\psi) $};
+\node (g3) at (3.10,0) {$ (\bar\psi A\psi) $};
+\draw (g2.south west) .. controls +(0,-.38) and +(0,-.38) .. node[midway,below=-2pt] {$\scriptstyle\leftarrow$} (g1.south east);
+\draw[dashed] (g2.north) .. controls +(0,.35) and +(0,.35) .. (g3.north);
+\end{tikzpicture}
+&&=\quad
+\begin{tikzpicture}[baseline=-.55ex,x=.43cm,y=.43cm,>=Stealth,line width=.55pt]
+\draw[<-] (-.1,.75)--(.55,.75); \draw[<-] (.55,.75)--(1.85,.75); \draw[<-] (1.85,.75)--(2.65,.75);
+\draw[dashed] (.55,.75)--(.55,1.45); \draw[dashed] (1.85,.75)--(1.85,-.05);
+\draw[<-] (.65,-.05)--(1.85,-.05); \draw[<-] (1.85,-.05)--(2.7,-.05);
+\end{tikzpicture}
+\notag\\[1.5ex]
+\text{c}\quad&
+\begin{tikzpicture}[baseline=(g1.base),x=1cm,y=1cm,>=Stealth,line width=.5pt]
+\node (g1) at (0,0) {$ (\bar\psi A\psi) $};
+\node (g2) at (1.55,0) {$ (\bar\psi A\psi) $};
+\node (g3) at (3.10,0) {$ (\bar\psi A\psi) $};
+\draw (g2.south west) .. controls +(0,-.38) and +(0,-.38) .. node[midway,below=-2pt] {$\scriptstyle\leftarrow$} (g1.south east);
+\draw (g3.south west) .. controls +(0,-.38) and +(0,-.38) .. node[midway,below=-2pt] {$\scriptstyle\leftarrow$} (g2.south east);
+\end{tikzpicture}
+&&=\quad
+\begin{tikzpicture}[baseline=-.55ex,x=.43cm,y=.43cm,>=Stealth,line width=.55pt]
+\draw[<-] (-.1,.25)--(3,.25);
+\draw[dashed] (.65,.25)--(.65,1.05); \draw[dashed] (1.5,.25)--(1.5,1.05); \draw[dashed] (2.35,.25)--(2.35,1.05);
+\end{tikzpicture}
+\notag\\[1.5ex]
+\text{d}\quad&
+\begin{tikzpicture}[baseline=(g1.base),x=1cm,y=1cm,>=Stealth,line width=.5pt]
+\node (g1) at (0,0) {$ (\bar\psi A\psi) $};
+\node (g2) at (1.55,0) {$ (\bar\psi A\psi) $};
+\node (g3) at (3.10,0) {$ (\bar\psi A\psi) $};
+\draw (g2.south west) .. controls +(0,-.38) and +(0,-.38) .. node[midway,below=-2pt] {$\scriptstyle\leftarrow$} (g1.south east);
+\draw (g3.south west) .. controls +(0,-.38) and +(0,-.38) .. node[midway,below=-2pt] {$\scriptstyle\leftarrow$} (g2.south east);
+\draw[dashed] (g1.north) .. controls +(0,.35) and +(0,.35) .. (g2.north);
+\end{tikzpicture}
+&&=\quad
+\begin{tikzpicture}[baseline=-.55ex,x=.43cm,y=.43cm,>=Stealth,line width=.55pt]
+\coordinate (l) at (.45,.25); \coordinate (m) at (1.45,.25); \coordinate (r) at (2.35,.25);
+\draw[<-] (-.15,.25)--(l);
+\draw[<-] (l) arc[start angle=180,end angle=360,x radius=.5,y radius=.42];
+\draw[<-] (m)--(r); \draw[<-] (r)--(2.95,.25);
+\draw[dashed] (l) arc[start angle=180,end angle=0,x radius=.5,y radius=.42];
+\draw[dashed] (r)--(2.35,1.05);
+\end{tikzpicture}
+\end{aligned}
+\tag{77.4}
+\end{equation}
+For clarity, electron and photon contractions have been drawn as solid and dashed arcs, respectively, just as in the diagram. The arrows on the electron contractions point from $\bar{\hat\psi}$ to $\hat\psi$, in agreement with their direction in the diagrams. Direction has no significance for internal photon contractions; this is also expressed by the evenness of the photon propagator as a function of $x-x'$.
+
+Among the terms obtained in this way are equivalent ones that differ solely in a permutation of vertex numbers---the assignment of the variables $x_1,x_2,\ldots$ to the vertices, which amounts merely to renaming integration variables. There are $n!$ such permutations. This number cancels the factor $1/n!$
+
+\SourcePage{344}{349}
+in~(77.1), after which diagrams differing by a vertex permutation need no longer be included. We already encountered this in \S~73 and 74. For example, the following two second-order diagrams are equivalent:
+\begin{equation}
+\begin{aligned}
+\begin{tikzpicture}[baseline=(g1.base),x=1cm,y=1cm,>=Stealth,line width=.5pt]
+\node (g1) at (0,0) {$ (\bar\psi A\psi) $};
+\node (g2) at (1.55,0) {$ (\bar\psi A\psi) $};
+\draw (g2.north west) .. controls +(0,.35) and +(0,.35) .. node[midway,above=-2pt] {$\scriptstyle\leftarrow$} (g1.north east);
+\end{tikzpicture}&=\\[1.5ex]
+\begin{tikzpicture}[baseline=(g1.base),x=1cm,y=1cm,>=Stealth,line width=.5pt]
+\node (g1) at (0,0) {$ (\bar\psi A\psi) $};
+\node (g2) at (1.55,0) {$ (\bar\psi A\psi) $};
+\draw (g1.south east) .. controls +(0,-.35) and +(0,-.35) .. node[midway,below=-2pt] {$\scriptstyle\rightarrow$} (g2.south west);
+\end{tikzpicture}&=
+\end{aligned}
+\quad\left\{\quad
+\begin{tikzpicture}[baseline=-.55ex,x=.45cm,y=.45cm,>=Stealth,line width=.55pt]
+\coordinate (l) at (0,0); \coordinate (r) at (1.25,0);
+\draw[<-] (l)--(r);
+\draw[<-] (l)--(-.48,-.8); \draw[<-] (r)--(1.73,-.8);
+\draw[dashed] (l)--(-.48,.8); \draw[dashed] (r)--(1.73,.8);
+\end{tikzpicture}\right. .
+\tag{77.5}
+\end{equation}
+
+Only the internal contractions are shown in~(77.4) and~(77.5); these correspond to the internal lines of the diagrams, representing virtual electrons and photons. The operators left free are contracted with particular external operators, thereby assigning particular initial and final particles to the free ends of the diagrams. Thus $\bar{\hat\psi}$, contracted with $\hat a_f$ or $\hat b_i^+$, gives the line of a final electron or an initial positron; $\hat\psi$, contracted with $\hat a_i^+$ or $\hat b_f$, gives the line of an initial electron or a final positron. A free operator $\hat A$, contracted with $\hat c_i^+$ or $\hat c_f$, may represent either an initial or a final photon. Consequently, several diagrams of the same topology---with the same number of lines in the same arrangement---are obtained, differing only by permutations of the initial and final particles among the incoming and outgoing free ends.
+
+Each such permutation is plainly equivalent to a particular permutation of the external operators $\hat a$, $\hat b$,~\ldots in~(77.1). It follows that, if identical fermions occur among the initial or among the final particles, diagrams whose free ends differ by an odd number of permutations must have opposite relative signs.
+
+An uninterrupted succession of solid lines in a diagram forms an electron line, and the arrows preserve one continuous direction along it. Such a line may either have two free ends or form a closed loop. For example, the diagram
+\[
+(\bar\psi A\psi)(\bar\psi A\psi)=\quad
+\begin{tikzpicture}[baseline=-.45ex,x=.46cm,y=.46cm,>=Stealth,line width=.55pt]
+\draw[dashed] (-.75,0)--(0,0); \draw[dashed] (1.5,0)--(2.25,0);
+\draw[<-] (0,0) arc[start angle=180,end angle=0,x radius=.75,y radius=.45];
+\draw[<-] (1.5,0) arc[start angle=0,end angle=-180,x radius=.75,y radius=.45];
+\end{tikzpicture}
+\]
+has a two-vertex loop. Constancy of the direction along an electron line is the graphical form of charge conservation: the charge ``entering'' each vertex equals the charge ``leaving'' it.
+
+The ordering of bispinor indices along a continuous electron line corresponds to writing matrices from left to ri\SourcePageJoin{345}{350}ght while moving against the arrows. Bispinor indices from different electron lines never become interwoven. Along an open line, the sequence of indices terminates at the free ends on electron (or positron) wave functions. On a closed loop the index sequence also closes, so that the loop corresponds to the trace of the product of matrices arranged along it. It is readily seen that this trace must carry a minus sign.
+
+Indeed, a loop with $k$ vertices corresponds to a set of $k$ contractions
+\[
+\begin{tikzpicture}[baseline=(g1.base),x=1cm,y=1cm,>=Stealth,line width=.55pt]
+\node (g1) at (0,0) {$ (\bar\psi A\psi) $};
+\node (g2) at (1.55,0) {$ (\bar\psi A\psi) $};
+\node (dots) at (2.65,0) {$\ldots$};
+\node (gk) at (3.75,0) {$ (\bar\psi A\psi) $};
+\draw (g2.south west) .. controls +(0,-.38) and +(0,-.38) .. node[midway,below=-2pt] {$\scriptstyle\leftarrow$} (g1.south east);
+\draw (gk.south west) .. controls +(0,-.38) and +(0,-.38) .. node[midway,below=-2pt] {$\scriptstyle\leftarrow$} (dots.south east);
+\draw (g1.north west) .. controls +(0,.42) and +(0,.42) .. node[midway,above=-2pt] {$\scriptstyle\rightarrow$} (gk.north east);
+\end{tikzpicture}
+\]
+(or to an equivalent set differing by a permutation of vertices). In $k-1$ of the contractions, the operators $\hat\psi$ and $\bar{\hat\psi}$ already stand next to each other in the order required in the electron propagator, with $\bar{\hat\psi}$ to the right of $\hat\psi$. The operators at the two ends are brought together by an even number of interchanges with other $\psi$ operators, after which their order is $\bar{\hat\psi}\hat\psi$. Since
+\[
+\langle0|T\bar{\hat\psi}\hat\psi|0\rangle
+=-\langle0|T\hat\psi\bar{\hat\psi}|0\rangle
+\]
+(compare the note on p.~334), replacing this contraction by the corresponding propagator changes the overall sign of the entire expression.
+
+The passage to momentum representation in the general case proceeds just as in \S~73 and 74. Besides overall conservation of 4-momentum, conservation ``laws'' must hold at every vertex. These laws may nevertheless be insufficient to determine all internal-line momenta uniquely. One then retains integrations over every internal momentum left undetermined, with measure $d^4p/(2\pi)^4$ over the whole of $p$-space (including $p_0$ from $-\infty$ to $+\infty$).
+
+The preceding discussion assumed that the perturbation is the interaction among the particles that participate ``actively'' in the reaction, meaning those whose state changes in the process. The case where an external electromagnetic field occurs in the problem is handled similarly; this is the field produced by ``passive'' particles whose state is unchanged by the process under consideration.
+
+Let $A^{(e)}(x)$ be the 4-potential of the external field. It enters the interaction Lagrangian together with the photon operator $\hat A$ as the
+
+\SourcePage{346}{351}
+sum $\hat A+A^{(e)}$, which multiplies the current operator $\hat j$. Since $A^{(e)}$ contains no operators, it cannot form contractions with other operators. In other words, an external field is represented in Feynman diagrams only by external lines.
+
+Write $A^{(e)}$ as a Fourier integral:
+\begin{align}
+A^{(e)}(x)&=\int A^{(e)}(q)e^{-iqx}\,\frac{d^4q}{(2\pi)^4},\notag\\
+A^{(e)}(q)&=\int A^{(e)}(x)e^{iqx}\,d^4x.
+\tag{77.6}
+\end{align}
+In momentum-space expressions for matrix elements, the 4-vector $q$ occurs alongside the 4-momenta of the other external lines, which represent real particles. Every external-field line supplies a factor $A^{(e)}(q)$ and is to be regarded as ``incoming'', in accordance with the sign of the exponent in $e^{-iqx}$ with which $A^{(e)}(q)$ enters the Fourier integral. (An ``outgoing'' line would instead supply $A^{(e)*}(q)$.) If 4-momentum conservation does not uniquely fix the 4-momenta of all external-field lines when the 4-momenta of every real particle are specified, the remaining ``free'' values of $q$ are integrated over with measure $d^4q/(2\pi)^4$, just like all other line 4-momenta not fixed by the diagram.
+
+If the external field is time independent, then
+\begin{equation}
+A^{(e)}(q)=2\pi\delta(q^0)A^{(e)}(\mathbf q),
+\tag{77.7}
+\end{equation}
+where $A^{(e)}(\mathbf q)$ is the three-dimensional Fourier component:
+\begin{equation}
+A^{(e)}(\mathbf q)=\int A^{(e)}(\mathbf r)e^{-i\mathbf q\mathbf r}\,d^3x.
+\tag{77.8}
+\end{equation}
+In this case an external line supplies the factor $A^{(e)}(\mathbf q)$ and is assigned the 4-momentum $q^\mu=(0,\mathbf q)$. Conservation then makes the energies of the electron lines meeting it and the field line at the vertex equal. Every three-dimensional momentum $\mathbf p$ of an internal line that remains undetermined is integrated with measure $d^3p/(2\pi)^3$. The amplitude $M_{fi}$ calculated in this manner determines, for example, the scattering cross section~(64.25).
+
+We now summarize the final rules of the \emph{diagrammatic method} for constructing the momentum-space expression for a scattering amplitude, or more precisely for $iM_{fi}$.
+
+\SourcePage{347}{352}
+1. Order $n$ in perturbation theory is represented by diagrams with $n$ vertices. At each vertex meet one incoming and one outgoing electron (solid) line and one photon (dashed) line. The amplitude for a scattering process contains every diagram whose number of free ends (external lines) equals the total number of initial and final particles.
+
+2. Every external incoming solid line supplies the amplitude $u(p)$ of an initial electron or $u(-p)$ of a final positron, where $p$ is the particle's 4-momentum. Every outgoing solid line supplies the amplitude $\bar u(p)$ of a final electron or $\bar u(-p)$ of an initial positron.
+
+3. Every vertex supplies the 4-vector $-ie\gamma^\mu$.
+
+4. Every external incoming dashed line supplies the initial-photon amplitude $\sqrt{4\pi}e_\mu$, and every outgoing dashed line supplies the final-photon amplitude $\sqrt{4\pi}e_\mu^*$, where $e$ is the polarization 4-vector. The vector index $\mu$ is the same as the index of $\gamma^\mu$ at the corresponding vertex, producing the scalar product $\gamma e$ or $\gamma e^*$.
+
+5. Every internal solid line supplies a factor $iG(p)$, while every internal dashed line supplies $-iD_{\mu\nu}(p)$. The tensor indices $\mu\nu$ agree with those of the matrices $\gamma^\mu$ and $\gamma^\nu$ at the vertices joined by the dashed line.
+
+6. The arrows retain one direction along every continuous succession of electron lines. The bispinor-index order along these lines corresponds to writing the matrices from left to right while moving opposite to the arrows. A closed electron loop corresponds to the trace of the product of matrices encountered along it.
+
+7. At every vertex, the 4-momenta of the lines meeting there obey conservation: the sum of the momenta on incoming lines equals the sum on outgoing lines. The momenta at free ends are prescribed quantities satisfying overall conservation, and a positron line is assigned momentum $-p$. Integrate over the internal-line momenta that remain unfixed after applying conservation at every vertex, with measure $d^4p/(2\pi)^4$.
+
+8. An incoming free end representing an external field supplies a factor $A^{(e)}(q)$; the 4-vector $q$ is connected to the 4-momenta of the other lines by momentum conservation at the vertex. For a time-independent field, the free end supplies $A^{(e)}(\mathbf q)$, and every three-dimensional internal-line momentum left unfixed is integrated with measure $d^3p/(2\pi)^3$.
+
+\SourcePage{348}{353}
+9. Every closed electron loop in a diagram contributes an additional factor $-1$ to the expression for $iM_{fi}$. The same factor is contributed by every pair of external positron ends when they are the beginning and the end of a single continuous sequence of solid lines. If several electrons or positrons occur among either the initial or the final particles, diagrams differing by an odd permutation of pairs of identical particles---and hence of their corresponding external ends---must have opposite relative signs.
+
+To make the last rule more precise, diagrams having the same solid lines must in any event have the same signs; that is, they would become identical after all photon lines were removed. Recall also that, in the presence of identical fermions, the overall sign of the amplitude is conventional.

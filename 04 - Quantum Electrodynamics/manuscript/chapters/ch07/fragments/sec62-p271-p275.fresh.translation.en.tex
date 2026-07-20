@@ -1,0 +1,157 @@
+\SourcePage{271}{276}
+\section{Natural width of spectral lines}
+
+Until now, in studying the emission and scattering of light, we have treated all levels of the system (an atom, for example) as strictly discrete. An excited level, however, has a finite lifetime because it can radiatively decay. By the general principles of quantum mechanics, the level consequently becomes quasidiscrete and acquires a finite (small) width (see III, \S~134); it is written as $E-i\Gamma/2$, where $\text{\foreignlanguage{russian}{Г}}(=\Gamma/\hbar)$ is the total probability per second of all possible \lq\lq decay\rq\rq\ processes of the state.
+
+Let us examine how this circumstance affects emission ($V$.~Weisskopf, $E$.~Wigner, 1930). It is clear in advance that the finite level width prevents the emitted light from being strictly monochromatic: its frequencies are spread over an interval $\Delta\omega\sim\text{\foreignlanguage{russian}{Г}}(=\Gamma/\hbar)$. Since the initial state of the emitting system has a finite lifetime, it is more natural here to seek the total probability of emitting a photon of a specified frequency than the probability per unit time. We first calculate this probability for a transition of an atom from an excited level
+\[
+E_1-\frac i2\Gamma_1
+\]
+to a ground level $E_2$ having an infinite lifetime and therefore remaining strictly discrete.
+
+\SourcePage{272}{277}
+Let $\Psi$ be the wavefunction of the atom and the photon field, and let $\widehat H=\widehat H^{(0)}+\widehat V$ be the Hamiltonian of this system, with $\widehat V$ the interaction operator between the atom and the photon field. We seek a solution of the Schrödinger equation
+\begin{equation}
+i\frac{\partial\Psi}{\partial t}
+=(\widehat H^{(0)}+\widehat V)\Psi
+\tag{62.1}
+\end{equation}
+as an expansion in the wavefunctions of the unperturbed states:
+\begin{equation}
+\Psi=\sum_\nu a_\nu(t)\Psi_\nu^{(0)}
+=\sum_\nu a_\nu(t)e^{-i\mathcal E_\nu t}\psi_\nu^{(0)}.
+\tag{62.2}
+\end{equation}
+The coefficients $a_\nu(t)$ then satisfy
+\begin{equation}
+i\frac{\partial a_\nu}{\partial t}
+=\sum_{\nu'}\langle\nu|V|\nu'\rangle a_{\nu'}
+\exp\{i(\mathcal E_\nu-\mathcal E_{\nu'})t\}.
+\tag{62.3}
+\end{equation}
+
+Let $|\nu\rangle$ be a state of energy $\mathcal E_\nu=E_2+\omega$ in which the atom is in its ground level $E_2$ and there is one quantum of specified frequency $\omega$; denote this state by $|\omega2\rangle$. At the initial instant, the system is in the state $|1\rangle$, with the atom excited to level $E_1$ and no photons present. Thus at $t=0$,
+\begin{equation}
+a_1=1,\quad a_{\nu'}=0\quad\text{for }|\nu'\rangle\ne|1\rangle.
+\tag{62.4}
+\end{equation}
+With this initial condition, the solution of (62.3), for suitably normalized wavefunctions, gives the probability by time $t$ for the atomic transition $1\to2$ accompanied by emission of a photon in the frequency interval $d\omega$:
+\[
+|a_{\omega2}(t)|^2d\omega.
+\]
+We require the probability as $t\to\infty$:
+\begin{equation}
+dw=|a_{\omega2}(\infty)|^2d\omega.
+\tag{62.5}
+\end{equation}
+
+To clarify this formulation, recall how the usual emission probability per second for a transition $1\to2$ is found when the level width is neglected. Equation (62.3) is solved by replacing, in the first approximation, every $a_{\nu'}(t)$ on its right-hand side by the values (62.4). The resulting solution is then considered at large $t$ (compare III, \S~42). We can now make the meaning of this procedure more precise: it applies to times short in
+\SourcePage{273}{278}
+comparison with the lifetime of the excited level. Here large $t$ means a time large compared with the period $1/(E_1-E_2)$, but still small compared with $1/\text{\foreignlanguage{russian}{Г}}_1$.
+
+In the present problem, where times comparable with $1/\text{\foreignlanguage{russian}{Г}}_1$ are considered, the function $a_1(t)$ decreases as
+\begin{equation}
+a_1(t)=e^{-\text{\foreignlanguage{russian}{Г}}_1t/2}.
+\tag{62.6}
+\end{equation}
+The functions $a_{\nu'}(t)$ for states $|\nu'\rangle$ that can be produced when the atom radiates increase with time. If the level $E_1$ can radiate to several atomic levels besides $E_2$, there are many increasing functions $a_{\nu'}(t)$; each corresponds to a state in which the atom occupies one of its levels and one photon of the appropriate energy is present. Even so, only one term remains on the right-hand side of (62.3), namely the term with $|\nu'\rangle=|1\rangle$. Indeed, matrix elements can be nonzero only for transitions in which the number of photons of one particular energy changes by one; they therefore vanish identically between states each containing one photon, but of different energies.
+
+We consequently have the following equation for $a_{\omega2}(t)$:
+\begin{equation}
+\begin{aligned}
+i\frac{da_{\omega2}}{dt}
+&=\langle\omega2|V|1\rangle e^{i(E_2+\omega-E_1)t}a_1={}\\
+&=\langle\omega2|V|1\rangle
+\exp\left\{i(\omega-\omega_{12})t-\frac{\text{\foreignlanguage{russian}{Г}}_1}{2}t\right\},
+\end{aligned}
+\tag{62.7}
+\end{equation}
+where $\omega_{12}=E_1-E_2$. Integrating with $a_{\omega2}(0)=0$ gives
+\begin{equation}
+a_{\omega2}=\langle\omega2|V|1\rangle
+\frac{1-\exp\{i(\omega-\omega_{12})t-\text{\foreignlanguage{russian}{Г}}_1t/2\}}
+{\omega-\omega_{12}+i\text{\foreignlanguage{russian}{Г}}_1/2}.
+\tag{62.8}
+\end{equation}
+It follows that the probability $dw$ in (62.5) is
+\[
+dw=|\langle\omega2|V|1\rangle|^2
+\frac{d\omega}{(\omega-\omega_{12})^2+\text{\foreignlanguage{russian}{Г}}_1^2/4}.
+\]
+
+Since the width $\text{\foreignlanguage{russian}{Г}}_1\ll\omega_{12}$, one may put $\omega=\omega_{12}$ in the factor $|\langle\omega2|V|1\rangle|^2$. Then $2\pi|\langle\omega2|V|1\rangle|^2$ is the usual probability per second for emission of a photon of frequency $\omega_{12}$ and of the other characteristics besides frequency (direction of motion and polarization), which have so far been suppressed for simplicity. The dependence of the probability on these characteristics is completely determined by the factor $|\langle\omega2|V|1\rangle|^2$. Thus allowing for the level width does not change the polarization properties or the angular distribution of the radiation.
+
+\SourcePage{274}{279}
+The sum
+\begin{equation}
+\text{\foreignlanguage{russian}{Г}}_{1\to2}=2\pi\sum|\langle\omega2|V|1\rangle|^2,
+\tag{62.9}
+\end{equation}
+taken over photon polarizations and directions of motion, is the total usual emission probability. At the same time, it is the part of the width of level $E_1$ (the partial width) associated with the transition $1\to2$, as distinct from the total width $\text{\foreignlanguage{russian}{Г}}_1$, which is composed of contributions from every possible mode of \lq\lq decay\rq\rq\ of this quasistationary state\footnote{Formulas (62.6) and (62.9) can of course also be obtained by solving for $a_1(t)$ an equation analogous to (62.7).
+
+Transitions to continuous-spectrum states that produce a finite level width need not involve photon emission. Highly excited (x-ray) levels may decay by emitting an electron and leaving a positive ion in its ground state (the Auger effect).}.
+
+Summing the probability $dw$ in the same way gives the final expression for the frequency distribution of the emitted light:
+\begin{equation}
+dw=w_t\frac{\text{\foreignlanguage{russian}{Г}}_1}{2\pi}
+\frac{d\omega}{(\omega_{12}-\omega)^2+\text{\foreignlanguage{russian}{Г}}_1^2/4},
+\tag{62.10}
+\end{equation}
+where $w_t=\text{\foreignlanguage{russian}{Г}}_{1\to2}/\text{\foreignlanguage{russian}{Г}}_1$ is the total relative probability of the transition $1\to2$. This is a dispersion-type distribution. The spectral-line shape described by (62.10) belongs to an isolated atom at rest and is called \emph{natural}\footnote{This is to be distinguished from broadening caused by interactions of the atom with other atoms (collision broadening), or by the presence in the source of atoms moving at different velocities (Doppler broadening).}.
+
+Now let the atomic level $E_2$ also be excited, with a finite width $\text{\foreignlanguage{russian}{Г}}_2$. For simplicity, suppose that this width is associated with a transition of the atom to the ground state $E_0$ with emission of one photon (the final result, formula (62.12), does not depend on this assumption). The decay of state 1 can then be regarded as a two-photon emission process of the kind studied in \S~59. Before the finite lifetime of state 2 is included, the matrix element of this process is
+\begin{equation}
+\langle\omega\omega'0|V^{(2)}|1\rangle
+=\frac{\langle\omega\omega'0|V|\omega2\rangle
+\langle\omega2|V|1\rangle}
+{E_0-E_2+\omega'+i0}
+\tag{62.11}
+\end{equation}
+(in (59.2), the label of state 2 has been changed to 0, and the sum over $n$ retains only the term corresponding to the atom being in state 2, which is resonantly large when $\omega'$ is close to $E_2-E_0$). If the finite lifetime
+\SourcePage{275}{280}
+of state 2 is now included, the only change in (62.11) is the replacement $E_2\to E_2-i\text{\foreignlanguage{russian}{Г}}_2/2$, so that
+\[
+\langle\omega\omega'0|V^{(2)}|1\rangle
+=\frac{\langle\omega\omega'0|V|\omega2\rangle
+\langle\omega2|V|1\rangle}
+{E_0-E_2+\omega'+i\text{\foreignlanguage{russian}{Г}}_2/2}.
+\]
+
+Substitution of this matrix element in the equation for $a_{\omega\omega'0}(t)$ (which differs from (62.7) only in its notation) gives, by a derivation entirely analogous to that of (62.8),
+\[
+a_{\omega\omega'0}(\infty)=
+\frac{\langle\omega\omega'0|V|\omega2\rangle
+\langle\omega2|V|1\rangle}
+{(\omega'-\omega_{20}+i\text{\foreignlanguage{russian}{Г}}_2/2)
+(\omega+\omega'-\omega_{10}+i\text{\foreignlanguage{russian}{Г}}_1/2)}.
+\]
+The probability of emitting photons $\omega$ and $\omega'$ is
+\begin{equation}
+\begin{aligned}
+dw&=|a_{\omega\omega'0}(\infty)|^2d\omega d\omega'={}\\
+&=\frac{\text{\foreignlanguage{russian}{Г}}_{1\to2}}{2\pi}\frac{\text{\foreignlanguage{russian}{Г}}_{2\to0}}{2\pi}
+\frac{d\omega d\omega'}
+{[(\omega'-\omega_{20})^2+\text{\foreignlanguage{russian}{Г}}_2^2/4]
+[(\omega+\omega'-\omega_{10})^2+\text{\foreignlanguage{russian}{Г}}_1^2/4]}.
+\end{aligned}
+\tag{62.12}
+\end{equation}
+As expected, this expression has sharp maxima at $\omega'\approx\omega_{20}$ and $\omega\approx\omega_{12}$.
+
+The required line shape for the transition $1\to2$ follows by integrating (62.12) over $d\omega'$; the integration may be extended from $-\infty$ to $+\infty$. The simplest evaluation closes the integration path by an infinitely distant semicircle in the upper half-plane of the complex variable $\omega'$. The result is determined by the sum of the residues of the integrand at the poles
+\[
+\omega'=\omega_{20}+i\text{\foreignlanguage{russian}{Г}}_2/2
+\quad\text{and}\quad
+\omega'=\omega_{10}-\omega+i\text{\foreignlanguage{russian}{Г}}_1/2.
+\]
+We thereby obtain
+\begin{equation}
+dw=w_t\frac{\text{\foreignlanguage{russian}{Г}}_1+\text{\foreignlanguage{russian}{Г}}_2}{2\pi}
+\frac{d\omega}{(\omega-\omega_{12})^2+(\text{\foreignlanguage{russian}{Г}}_1+\text{\foreignlanguage{russian}{Г}}_2)^2/4},
+\tag{62.13}
+\end{equation}
+where $w_t=\text{\foreignlanguage{russian}{Г}}_{1\to2}\text{\foreignlanguage{russian}{Г}}_{2\to0}/(\text{\foreignlanguage{russian}{Г}}_1\text{\foreignlanguage{russian}{Г}}_2)$ is the total probability of the double transition $1\to2\to0$\footnote{In more complicated cases, $w_t$ is the total probability of all cascades that begin with the transition $1\to2$ and terminate at level 0.}.
+
+The line shape (62.13) differs from (62.10) only by the replacement of $\text{\foreignlanguage{russian}{Г}}_1$ with $\text{\foreignlanguage{russian}{Г}}_1+\text{\foreignlanguage{russian}{Г}}_2$: the line width is the sum of the widths of the initial and final states.
+
+In general, the line width is not equal to the probability $\text{\foreignlanguage{russian}{Г}}_{1\to2}$ of the transition $1\to2$ itself, and hence is not proportional to the line intensity (as it would be in classical theory). Since $\text{\foreignlanguage{russian}{Г}}_1+\text{\foreignlanguage{russian}{Г}}_2>\text{\foreignlanguage{russian}{Г}}_{1\to2}$, a line can have a large width while its intensity is comparatively small.

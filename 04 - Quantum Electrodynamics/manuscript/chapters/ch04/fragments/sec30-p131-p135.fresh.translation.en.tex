@@ -1,0 +1,157 @@
+\SourcePage{131}{136}
+
+\section{Two-component fermions}
+
+We saw in \S~20 that the need to describe a spin-$1/2$ particle by two spinors, $\xi$ and $\eta$, is connected with the particle's mass. This reason disappears when the mass is zero. The wave equation for such a particle can be constructed with only one spinor, say the dotted spinor $\eta$:
+\begin{equation}
+\widehat p^{\alpha\dot\beta}\eta_{\dot\beta}=0,
+\tag{30.1}
+\end{equation}
+or, equivalently,
+\begin{equation}
+(\widehat p_0+\widehat{\mathbf p}\boldsymbol\sigma)\eta=0.
+\tag{30.2}
+\end{equation}
+It was also noted in \S~20 that a wave equation containing a mass $m$ is automatically symmetric under inversion, with transformation (20.4). This symmetry is lost when the particle is described by a single spinor. It is not required, however, since inversion symmetry is not a universal property of nature.
+
+For a particle with $m=0$, energy and momentum are related by $\varepsilon=|\mathbf p|$. Hence, for a plane wave $\eta_p\propto e^{-ipx}$, (30.2) gives
+\begin{equation}
+(\mathbf n\boldsymbol\sigma)\eta_p=-\eta_p,
+\tag{30.3}
+\end{equation}
+where $\mathbf n$ is the unit vector along $\mathbf p$. The same equation,
+\begin{equation}
+(\mathbf n\boldsymbol\sigma)\eta_{-p}=-\eta_{-p}
+\tag{30.4}
+\end{equation}
+\SourcePage{132}{137}
+holds for the wave of ``negative frequency,'' $\eta_{-p}\propto e^{ipx}$. The second-quantized $\psi$ operator is
+\begin{equation}
+\widehat\eta=\sum_{\mathbf p}\bigl(\eta_p\widehat a_{\mathbf p}+\eta_{-p}\widehat b_{\mathbf p}^+\bigr),
+\qquad
+\widehat\eta^+=\sum_{\mathbf p}\bigl(\eta_p^*\widehat a_{\mathbf p}^++\eta_{-p}^*\widehat b_{\mathbf p}\bigr).
+\tag{30.5}
+\end{equation}
+It follows in the usual way that $\eta_{-p}^*$ are the wave functions of the antiparticle.
+
+The definition of the operators $\widehat p^{\dot\alpha\beta}$ in (20.1) shows that $\widehat p^{\alpha\dot\beta*}=-\widehat p^{\dot\alpha\beta}$. The complex-conjugate spinor $\eta^*$ therefore satisfies $\widehat p^{\alpha\dot\beta}\eta_{\dot\beta}^*=0$, or equivalently
+\[
+\widehat p_{\dot\alpha\beta}\eta^{\dot\beta*}=0.
+\]
+Write $\eta^{\dot\beta*}=\xi^\beta$, thereby expressing the fact that complex conjugation changes a dotted spinor into an undotted one. The antiparticle wave functions thus satisfy
+\begin{equation}
+\widehat p_{\dot\alpha\beta}\xi^\beta=0,
+\tag{30.6}
+\end{equation}
+or
+\begin{equation}
+(\widehat p_0-\widehat{\mathbf p}\boldsymbol\sigma)\xi=0.
+\tag{30.7}
+\end{equation}
+For a plane wave this gives
+\begin{equation}
+(\mathbf n\boldsymbol\sigma)\xi_p=\xi_p.
+\tag{30.8}
+\end{equation}
+
+But $1/2\,(\mathbf n\boldsymbol\sigma)$ is the operator for the projection of spin on the direction of motion. Equations (30.3) and (30.8) therefore mean that a particle state of definite momentum is automatically a helicity state: the spin projection along the direction of motion has a definite value. If the particle's spin is opposite to its momentum, giving helicity $-1/2$, the antiparticle's spin is directed along its momentum, giving helicity $+1/2$.
+
+Neutrinos occurring in nature may be particles with these properties. By convention, the particle of helicity $-1/2$ is called a neutrino and that of helicity $+1/2$ an antineutrino\footnote{The existence of the neutrino was predicted theoretically by Pauli to explain the properties of $\beta$ decay (1931). Equation (30.1) was first considered by Weyl (H.~Weyl, 1929). A neutrino theory based on these equations was formulated in 1957 by L.~D.~Landau, and by Lee, Yang, and Salam (T.~D.~Lee, C.~N.~Yang, A.~Salam).
+
+Experiment has not yet settled conclusively whether the neutrino mass is zero. Below, we shall use the term ``neutrino'' conventionally for a particle described by (30.3).}.
+
+\SourcePage{133}{138}
+In connection with the absence of spin-direction degeneracy for neutrino states, recall the observation in \S~8 that a particle of zero mass has only axial symmetry about the direction of its momentum. For a genuinely neutral particle, the photon, this symmetry includes both rotations about the axis and reflections in planes through it. For the neutrino there is no reflection symmetry; only the group of rotations about the axis remains, preserving the projection of angular momentum on the axis without reversing its sign. Reflection symmetry exists only if particle and antiparticle are interchanged at the same time.
+
+It should also be noted that compulsory longitudinal polarization means that for a neutrino the spin cannot be separated at all from the orbital angular momentum, just as for a photon the fields are necessarily transverse; see \S~6.
+
+Only four bilinear combinations can be formed from a single spinor $\eta$, or $\xi$; together they make up the 4-vector
+\begin{equation}
+j^\mu=(\eta^*\eta,\eta^*\boldsymbol\sigma\eta).
+\tag{30.9}
+\end{equation}
+It is readily checked from the equations
+\[
+(\widehat p_0+\widehat{\mathbf p}\boldsymbol\sigma)\eta=0,
+\qquad
+\eta^*(\widehat p_0-\widehat{\mathbf p}\boldsymbol\sigma)=0
+\]
+that the continuity equation $\partial_\mu j^\mu=0$ holds. Thus $j^\mu$ serves as the particle-current density 4-vector.
+
+It is convenient to normalize plane neutrino waves in a manner analogous to that used in \S~23 for massive particles:
+\begin{equation}
+\eta_p=\frac{1}{\sqrt{2\varepsilon}}u_p e^{-ipx},
+\qquad
+\eta_{-p}=\frac{1}{\sqrt{2\varepsilon}}u_{-p}e^{ipx},
+\tag{30.10}
+\end{equation}
+where the spinor amplitudes obey the invariant normalization
+\begin{equation}
+u_{\pm p}^*(1,\boldsymbol\sigma)u_{\pm p}=2(\varepsilon,\mathbf p).
+\tag{30.11}
+\end{equation}
+The particle density and its current density are then $j^0=1$ and $\mathbf j=\mathbf p/\varepsilon=\mathbf n$.
+
+Since a free neutrino of specified momentum is always fully polarized, there is no notion of a spin-mixed state in this case. It can nevertheless be convenient to introduce a two-row polarization ``density matrix,'' defined simply as the second-rank spinor
+\begin{equation}
+\rho_{\dot\alpha\beta}=u_{\dot\alpha}u_\beta^*
+\tag{30.12}
+\end{equation}
+(with $\Tr\rho=2\varepsilon$). Its expression follows by observing that it must satisfy
+\[
+(\varepsilon+\mathbf p\boldsymbol\sigma)\rho
+=\rho(\varepsilon+\mathbf p\boldsymbol\sigma)=0.
+\]
+
+\SourcePage{134}{139}
+It follows that
+\begin{equation}
+\rho=\varepsilon-\mathbf p\boldsymbol\sigma.
+\tag{30.13}
+\end{equation}
+
+In studying various interaction processes, neutrinos may occur together with other, massive particles of spin $1/2$, which are consequently described by four-component wave functions. It is then convenient to keep the notation uniform by formally introducing a ``bispinor'' wave function for the neutrino as well, although two of its components vanish: $\psi=\binom{0}{\eta}$. In general, however, this form of $\psi$ is not preserved on passing to another, nonspinor representation. The difficulty can be avoided by noting that in the spinor representation the identities
+\[
+\frac{1+\gamma^5}{2}\binom{\xi}{\eta}=\binom{0}{\eta},
+\qquad
+(\eta^*\ \xi^*)\frac{1-\gamma^5}{2}=(\eta^*\ 0),
+\]
+hold, where $\xi$ is an arbitrary ``ballast'' spinor that drops out of the result; the matrix $\gamma^5$ is given in (22.18). The neutrino's genuinely ``two-component'' character is therefore maintained when it is described by a four-component $\psi$ in any representation, provided $\psi$ is understood to be a solution of the Dirac equation with $m=0$,
+\begin{equation}
+(\gamma p)\psi=0,
+\tag{30.14}
+\end{equation}
+subject to the supplementary condition $1/2\,(1+\gamma^5)\psi=\psi$, or
+\begin{equation}
+\gamma^5\psi=\psi.
+\tag{30.15}
+\end{equation}
+
+This condition can be incorporated by agreeing to make the following replacement in every formula containing $\psi$ and $\bar\psi$:
+\begin{equation}
+\psi\to\frac{1+\gamma^5}{2}\psi,
+\qquad
+\bar\psi\to\bar\psi\frac{1-\gamma^5}{2}.
+\tag{30.16}
+\end{equation}
+For example, the current-density 4-vector becomes, upon making (30.16) in $\bar\psi\gamma^\mu\psi$,
+\begin{equation}
+j^\mu=\frac14\bar\psi(1-\gamma^5)\gamma^\mu(1+\gamma^5)\psi
+=\frac12\bar\psi\gamma^\mu(1+\gamma^5)\psi.
+\tag{30.17}
+\end{equation}
+By the same rule, the four-row neutrino density matrix must be written
+\begin{equation}
+\rho=\frac14(1+\gamma^5)(\gamma p)(1-\gamma^5)
+=\frac12(1+\gamma^5)(\gamma p).
+\tag{30.18}
+\end{equation}
+In the spinor representation it reduces, as it should, to the two-row matrix (30.13):
+\[
+\rho=\begin{pmatrix}0&0\\ \varepsilon-\boldsymbol\sigma\mathbf p&0\end{pmatrix}.
+\]
+
+\SourcePage{135}{140}
+The analogous formulas for the antineutrino differ from those above by reversing the sign before $\gamma^5$.
+
+The neutrino is electrically neutral. A neutrino with the properties described above is not, however, genuinely neutral. In this connection, note that the ``neutrino field'' described by a two-component spinor is equivalent, in the number of particle states available to it, though certainly not in its other physical properties, to a genuinely neutral field described by a four-component bispinor. In place of particle and antiparticle states with definite helicities, there would be the same number of states of one particle with the two possible helicities, and inversion symmetry would hold automatically. The vanishing mass of such a ``four-component'' neutrino would, however, have an ``accidental'' character, so to speak, since it would not follow from the symmetry properties of its wave equation, which also permits a nonzero mass. Including the various interactions of such a particle would therefore automatically generate a rest mass that might be small but would not be exactly zero.

@@ -1,0 +1,204 @@
+\SourcePage{149}{154}
+
+\section{Motion in a spherically symmetric field}
+
+Consider the motion of an electron in a spherically symmetric electric field.
+
+Angular momentum and parity, relative to the center of the field chosen as the coordinate origin, are conserved during motion in a central field. Everything said in \S~24 about the angular dependence of free-particle spherical waves therefore applies here as well; only the radial functions change. Accordingly, we seek the stationary-state wave function, in the standard representation, in the form
+\begin{equation}
+\psi=\begin{pmatrix}\varphi\\ \chi\end{pmatrix}
+=\begin{pmatrix}
+f(r)\Omega_{jlm}\\
+(-1)^{\frac{1+l-l'}2}g(r)\Omega_{jl'm}
+\end{pmatrix},
+\tag{35.1}
+\end{equation}
+where $l=j\pm1/2$, $l'=2j-l$. The power of $-1$ has been introduced to simplify the subsequent formulas.
+
+In the standard representation, the Dirac equation gives the following system for $\varphi$ and $\chi$:
+\begin{equation}
+(\varepsilon-m-U)\varphi=(\boldsymbol\sigma\widehat{\mathbf p})\chi,
+\qquad
+(\varepsilon+m-U)\chi=(\boldsymbol\sigma\widehat{\mathbf p})\varphi,
+\tag{35.2}
+\end{equation}
+where $U(r)=e\Phi(r)$ is the potential energy of the electron in the field. Substituting (35.1) into these equations reduces the calculation to evaluation of their right-hand sides.
+
+Expressing the spherical spinor $\Omega_{jl'm}$ in terms of $\Omega_{jlm}$ according to
+\[
+\Omega_{jl'm}=i^{l-l'}\left(\boldsymbol\sigma\frac{\mathbf r}{r}\right)\Omega_{jlm}
+\]
+(see (24.8)), we write
+\[
+(\boldsymbol\sigma\widehat{\mathbf p})\chi
+=-i(\boldsymbol\sigma\widehat{\mathbf p})(\boldsymbol\sigma\mathbf r)
+\frac gr\Omega_{jlm}.
+\]
+
+\SourcePage{150}{155}
+Transforming the product $(\boldsymbol\sigma\widehat{\mathbf p})(\boldsymbol\sigma\mathbf r)$ by means of (33.5), and then carrying out the vector operations, gives
+\[
+\begin{aligned}
+(\boldsymbol\sigma\widehat{\mathbf p})\chi
+&=-i\{\widehat{\mathbf p}\mathbf r
++i\boldsymbol\sigma(\widehat{\mathbf p}\times\mathbf r)\}
+\frac gr\Omega_{jlm}={}\\
+&=\{-\Div{\mathbf r}-(\mathbf r\boldsymbol\nabla)
+-\boldsymbol\sigma(\mathbf r\times\widehat{\mathbf p})\}
+\frac gr\Omega_{jlm}
+=-\left\{g'+\frac2r g+\frac gr\boldsymbol\sigma\widehat{\mathbf l}\right\}\Omega_{jlm},
+\end{aligned}
+\]
+where $\widehat{\mathbf l}=\mathbf r\times\widehat{\mathbf p}$ is the orbital-angular-momentum operator, and a prime denotes differentiation with respect to $r$. The eigenvalues of the product $\boldsymbol\sigma\widehat{\mathbf l}=2\widehat{\mathbf l}\widehat{\mathbf s}$ are
+\[
+2\widehat{\mathbf l}\widehat{\mathbf s}
+=\widehat{\mathbf j}^{2}-\widehat{\mathbf l}^{2}-\widehat{\mathbf s}^{2}
+=j(j+1)-l(l+1)-\frac34
+=\begin{cases}
+j-1/2,&l=j-1/2,\\
+-j-3/2,&l=j+1/2.
+\end{cases}
+\]
+
+It is convenient to introduce a common notation for both cases $l=j\pm1/2$:
+\begin{equation}
+\varkappa=\begin{cases}
+-(j+1/2)=-(l+1),&j=l+1/2,\\
++(j+1/2)=l,&j=l-1/2.
+\end{cases}
+\tag{35.3}
+\end{equation}
+The number $\varkappa$ assumes every integral value except zero; positive values correspond to $j=l-1/2$, and negative values to $j=l+1/2$. We then have $\widehat{\mathbf l}\boldsymbol\sigma=-(1+\varkappa)$, and hence
+\[
+(\boldsymbol\sigma\widehat{\mathbf p})\chi
+=-\left(g'+\frac{1-\varkappa}{r}g\right)\Omega_{jlm}.
+\]
+
+Upon substitution of this expression into the first equation (35.2), the spherical spinor $\Omega_{jlm}$ cancels from both sides. Treating the second equation in the same way, we obtain the following system for the radial functions:
+\begin{equation}
+\begin{aligned}
+f'+\frac{1+\varkappa}{r}f-(\varepsilon+m-U)g&=0,\\
+g'+\frac{1-\varkappa}{r}g+(\varepsilon-m-U)f&=0,
+\end{aligned}
+\tag{35.4}
+\end{equation}
+or
+\begin{equation}
+\begin{aligned}
+(fr)'+\frac\varkappa r(fr)-(\varepsilon+m-U)gr&=0,\\
+(gr)'-\frac\varkappa r(gr)+(\varepsilon-m-U)fr&=0.
+\end{aligned}
+\tag{35.5}
+\end{equation}
+
+Let us examine the behavior of $f$ and $g$ at small distances, assuming that $U(r)$ increases faster than $1/r$ as $r\to0$. In the small-$r$ region, equations (35.4) become
+\[
+f'+Ug=0,
+\qquad
+g'-Uf=0.
+\]
+
+\SourcePage{151}{156}
+They have real solutions of the form
+\begin{equation}
+f=\operatorname{const}\cdot\sin\left(\int U\,dr+\delta\right),
+\qquad
+g=\operatorname{const}\cdot\cos\left(\int U\,dr+\delta\right),
+\tag{35.6}
+\end{equation}
+where $\delta$ is an arbitrary constant. As $r\to0$, these functions oscillate without tending to any limit. It is readily seen that this situation corresponds to the particle's ``fall'' to the center in nonrelativistic theory.
+
+First note that in this case the small-distance region imposes no restriction on the choice of solution: an oscillatory function has no boundary condition at $r=0$, and the constant $\delta$ remains arbitrary. Correct behavior of the wave function at large $r$ can be obtained at any $\varepsilon$ by a suitable choice of $\delta$. This ambiguity can be removed by regarding the potential singular at $r=0$ as the $r_0\to0$ limit of a potential ``cut off'' at some $r_0$, that is, one equal to $U(r)$ for $r>r_0$ and to $U(r_0)$ for $r<r_0$. For finite $r_0$ there is, of course, a definite system of energy levels. The ground-state energy, however, tends to $-\infty$ as $r_0\to0$.
+
+In nonrelativistic theory this is precisely what is meant by ``fall'' to the center, since a particle on a deep level is localized in a small region around $r=0$. In relativistic theory such a situation is altogether inadmissible because it signifies instability of the system against spontaneous creation of electron--positron pairs. Indeed, whereas creation of such a pair in vacuum requires energy greater than $2m$, less energy suffices in a field. If there is a bound electron state of energy $\varepsilon<m$, a pair can be created at an energy cost of only $\varepsilon+m<2m$, producing a free positron and an electron in the bound state. If the bound-state level has energy $\varepsilon<-m$, the field can create positrons, of energy $-\varepsilon>m$, spontaneously and without receiving energy from an external source. In the field under consideration, as $r_0\to0$ there are infinitely many such ``anomalous'' levels with $\varepsilon<-m$. Potentials $\Phi(r)$ that increase faster than $1/r$ as $r\to0$ therefore cannot be considered at all in Dirac theory. We emphasize that this statement applies to potentials of either sign. ``Fall'' occurs, of course, only for attraction, but the sign of $U=e\Phi$ also depends on the sign of the charge. Electron levels behave anomalously for one sign and positron levels for the other; in the latter case the field creates free electrons.
+
+We next consider the large-distance behavior of the wave functions. If $U(r)$ decreases sufficiently rapidly as $r\to\infty$, the field may be neglected entirely in the equations when the asymptotic form of the wave
+
+\SourcePage{152}{157}
+functions at large distances is determined. For $\varepsilon>m$, in the continuous-spectrum region, we then recover the equation of free motion. The asymptotic form of the wave functions, which are spherical waves, differs from that of a free particle only through the appearance of additional ``phase shifts'' whose values are determined by the field at short distances\footnote{Cf. III, \S~33. As in nonrelativistic theory, $U(r)$ must decrease faster than $1/r$. The case $U\sim1/r$ will be considered separately in \S~36.}. These shifts depend on $j$ and $l$, or equivalently on the number $\varkappa$ introduced above, and also, of course, on the energy $\varepsilon$. Denoting them by $\delta_\varkappa$ and using the free spherical wave (24.7), we can write the required asymptotic formula immediately:
+\begin{equation}
+\psi\approx\frac2r\frac1{\sqrt{2\varepsilon}}
+\begin{pmatrix}
+\sqrt{\varepsilon+m}\,\Omega_{jlm}\sin\left(pr-\dfrac{\pi l}{2}+\delta_\varkappa\right)\\
+-\sqrt{\varepsilon-m}\,\Omega_{jl'm}\sin\left(pr-\dfrac{\pi l'}{2}+\delta_\varkappa\right)
+\end{pmatrix},
+\tag{35.7}
+\end{equation}
+or, taking account of definition (35.1),
+\begin{equation}
+\begin{aligned}
+f&=\frac{\sqrt2}{r}\sqrt{\frac{\varepsilon+m}{\varepsilon}}
+\sin\left(pr-\frac{\pi l}{2}+\delta_\varkappa\right),\\
+g&=\frac{\sqrt2}{r}\sqrt{\frac{\varepsilon-m}{\varepsilon}}
+\cos\left(pr-\frac{\pi l}{2}+\delta_\varkappa\right),
+\end{aligned}
+\tag{35.8}
+\end{equation}
+where $p=\sqrt{\varepsilon^2-m^2}$. The overall coefficient here corresponds to normalization of the radial functions according to (24.5).
+
+The wave functions of the discrete spectrum ($\varepsilon<m$), on the other hand, decay exponentially as $r\to\infty$ according to
+\begin{equation}
+f=-\sqrt{\frac{m+\varepsilon}{m-\varepsilon}}g
+=\frac{A_0}{r}\exp\left(-r\sqrt{m^2-\varepsilon^2}\right),
+\tag{35.9}
+\end{equation}
+where $A_0$ is a constant.
+
+As in nonrelativistic theory, the phase shifts $\delta_\varkappa$, or more precisely the quantities $e^{2i\delta_\varkappa}-1$, determine the scattering amplitude in the given field; this will be discussed in more detail in \S~37. We shall not investigate the analytic properties of these quantities here (cf. III, \S~128). We note only that, as a function of energy, $e^{2i\delta_\varkappa}$ still has poles at points corresponding to the particle's bound-state levels. The residue of $e^{2i\delta_\varkappa}$ at such a pole is related in a definite way to the coefficient in the asymptotic expression for the corresponding discrete-spectrum wave function. We shall find this relation, which generalizes the nonrelativistic formula (128.17) (see III). The required calculation is entirely analogous to that carried out in III, \S~128.
+
+\SourcePage{153}{158}
+Differentiate equations (35.5) with respect to the energy:
+\[
+\begin{aligned}
+\left(\frac{\partial rf}{\partial\varepsilon}\right)'
++\frac\varkappa r\frac{\partial rf}{\partial\varepsilon}
+-(\varepsilon+m-U)\frac{\partial rg}{\partial\varepsilon}&=rg,\\
+\left(\frac{\partial rg}{\partial\varepsilon}\right)'
+-\frac\varkappa r\frac{\partial rg}{\partial\varepsilon}
++(\varepsilon-m-U)\frac{\partial rf}{\partial\varepsilon}&=-rf.
+\end{aligned}
+\]
+Multiply these two equations respectively by $rg$ and $-rf$, and the two equations (35.5) respectively by $-rg$ and $rf$; then add all four equations term by term. After cancellation, this gives
+\[
+\frac\partial{\partial r}\left[r^2\left(g\frac{\partial f}{\partial\varepsilon}
+-f\frac{\partial g}{\partial\varepsilon}\right)\right]
+=r^2(f^2+g^2).
+\]
+Integrating this equality over $r$, we obtain
+\[
+r^2\left(g\frac{\partial f}{\partial\varepsilon}
+-f\frac{\partial g}{\partial\varepsilon}\right)
+=\int_0^r(f^2+g^2)r^2\,dr,
+\]
+and then pass to the limit $r\to\infty$. By the normalization condition, the integral on the right tends to unity. On the left we use the relation between $f$ and $g$ in the asymptotic region,
+\[
+rg=\frac{(rf)'}{\varepsilon+m},
+\]
+which follows from (35.5) when the terms containing $U$ and $1/r$ are neglected. The result is
+\begin{equation}
+\frac1{\varepsilon+m}\left[(rf)'\frac{\partial rf}{\partial\varepsilon}
+-rf\left(\frac{\partial rf}{\partial\varepsilon}\right)'\right]=1.
+\tag{35.10}
+\end{equation}
+
+This formula differs from its nonrelativistic analogue, for the function $\chi$, only in the coefficient $\varepsilon+m$ in place of $2m$. There is therefore no need to repeat the subsequent calculation, and we give at once the final expression valid near $\varepsilon=\varepsilon_0$, where $\varepsilon_0$ is an energy level:
+\begin{equation}
+e^{2i\delta_\varkappa}=(-1)^l\frac{2A_0^2}{\varepsilon-\varepsilon_0}
+\sqrt{\frac{m-\varepsilon_0}{m+\varepsilon_0}},
+\tag{35.11}
+\end{equation}
+where $A_0$ is the coefficient in the asymptotic expression (35.9).
+
+\ProblemHeading
+
+Find the limiting form of the wave function at small $r$ in a field $U\sim r^{-s}$, $s<1$.
+
+\SolutionHeading For a free particle at small $r$, $f\sim r^l$ and $g\sim r^{l'}$. Thus $f\gg g$ when $l<l'$, while $f\ll g$ when $l>l'$. We assume
+\SourcePage{154}{159}
+(as the result will confirm) that the same relation holds in the field under consideration. For $l<l'$, that is, $l=j-1/2$ and $\varkappa=l+1$, the term containing $g$ can be omitted from the first equation (35.4), and hence $f\sim r^l$ as before. The second equation then gives $g\sim rfU$, that is, $g\sim r^{l+1-s}=r^{l'-s}$. The case $l>l'$ is treated similarly. We finally obtain
+\[
+\begin{aligned}
+\text{for }l<l':&\quad f\sim r^l,\qquad g\sim r^{l'-s};\\
+\text{for }l>l':&\quad f\sim r^{l-s},\qquad g\sim r^{l'}.
+\end{aligned}
+\]

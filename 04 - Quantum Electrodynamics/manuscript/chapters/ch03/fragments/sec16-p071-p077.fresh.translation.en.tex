@@ -1,0 +1,251 @@
+\SourcePage{71}{76}
+
+\section{Helicity states of a particle}
+\footnote{The contents of this section apply to particles of any spin, whether integral or half-integral.}
+
+In relativistic theory, the orbital angular momentum $\mathbf l$ and spin $\mathbf s$ of a moving particle are not conserved separately. Only the total angular momentum $\mathbf j=\mathbf l+\mathbf s$ is conserved. The projection of the spin on any prescribed direction (the $z$ axis) is therefore not conserved either, so this quantity cannot be used to enumerate the polarization (spin) states of a moving particle.
+
+The projection of the spin on the momentum direction is conserved, however: since $\mathbf l=\mathbf r\times\mathbf p$, the product $\mathbf s\mathbf n$ coincides with the conserved product $\mathbf j\mathbf n$ ($\mathbf n=\mathbf p/|\mathbf p|$). This quantity is called \emph{helicity}\footnote{In the English-language literature: helicity.} (we already considered it for the photon in \S~8). We denote its eigenvalues by $\lambda$ ($\lambda=-s,\ldots,+s$), and call particle states with definite $\lambda$ helicity states. Let $\psi_{\mathbf p\lambda}$ be the wave function (a plane wave) describing a state with definite $\mathbf p$ and $\lambda$, and let $u^{(\lambda)}(\mathbf p)$ be its amplitude; to keep the notation brief, we suppress the component indices of this function (for integral spin these are 4-tensor indices).
+
+We saw in the preceding sections that a relativistic description of particles with nonzero integral spin requires a wave function with more than $2s+1$ components. The number of independent components nevertheless remains $2s+1$; the ``extra'' components are removed by imposing supplementary conditions under which these\SourcePage{72}{77} components vanish in the rest frame (in the next chapter we shall see the same for half-integral $s$).
+
+According to the transformation formulas for angular momentum (see II, \S~14), helicity is invariant under Lorentz transformations that leave unchanged the direction $\mathbf p$ on which the angular momentum is projected. The number $\lambda$ thus retains its meaning as a quantum number under such transformations. To study the symmetry properties of helicity states, we may therefore use a reference frame in which $|\mathbf p|\ll m$ (in the limit, the rest frame). Then $\psi_{\mathbf p\lambda}$ reduces to a nonrelativistic $(2s+1)$-component wave function. Denote its amplitude by $w^{(\lambda)}(\mathbf n)$, writing as its argument the direction $\mathbf n=\mathbf p/|\mathbf p|$ along which the angular momentum is quantized. The amplitude $w^{(\lambda)}$ is an eigenfunction of the operator $\mathbf n\widehat{\mathbf s}$:
+\begin{equation}
+\mathbf n\widehat{\mathbf s}\,w^{(\lambda)}(\mathbf n)
+=\lambda w^{(\lambda)}(\mathbf n).
+\tag{16.1}
+\end{equation}
+
+In the spinor representation, $w^{(\lambda)}$ is a contravariant symmetric spinor of rank $2s$; by the correspondence formulas~(57.2) (see III), its components may also be indexed by the associated values of the spin projection $\sigma$ on a fixed $z$ axis.\footnote{This reasoning (as well as the enumeration of the possible values of $\lambda$) applies to particles of nonzero mass. A massless particle has no rest frame, and its helicity can take only the two values $\lambda=\pm s$. This is connected with the circumstance already mentioned in \S~8: the states of such a particle are classified by their behavior under the axial-symmetry group, which permits only twofold degeneracy of the levels. In terms of the wave equation, this means that in the limit $m\to0$ the system of equations for a particle of spin $s$ separates into independent equations corresponding to massless particles of spins $s,s-1,\ldots$. Thus, for the photon $\lambda=\pm1$, and the corresponding $w^{(\lambda)}$ are the three-dimensional vectors $\mathbf e^{(\pm1)}$ of~(8.2).}
+
+In the momentum representation, the wave functions of the states under consideration essentially coincide with the amplitudes $u^{(\lambda)}(\mathbf p)$. More precisely,
+\begin{equation}
+\psi_{\mathbf p\lambda}(\mathbf k)
+=u^{(\lambda)}(\mathbf k)\delta^{(2)}(\boldsymbol\nu-\mathbf n)
+=u^{(\lambda)}(\mathbf p)\delta^{(2)}(\boldsymbol\nu-\mathbf n),
+\tag{16.2}
+\end{equation}
+where the momentum as an independent variable is denoted by $\mathbf k$, as distinct from its eigenvalue $\mathbf p$, and $\boldsymbol\nu=\mathbf k/|\mathbf k|$, as distinct from $\mathbf n=\mathbf p/|\mathbf p|$.\footnote{Here the delta function $\delta^{(2)}$ is defined so that $\int\delta^{(2)}(\boldsymbol\nu-\mathbf n)\,do_\nu=1$. In~(16.2), and in the analogous case below (see~(16.4)), the delta function fixing the prescribed energy has been omitted.} In the nonrelativistic limit,
+\begin{equation}
+\psi_{\mathbf n\lambda}(\boldsymbol\nu)
+=w^{(\lambda)}(\boldsymbol\nu)\delta^{(2)}(\boldsymbol\nu-\mathbf n)
+=w^{(\lambda)}(\mathbf n)\delta^{(2)}(\boldsymbol\nu-\mathbf n).
+\tag{16.3}
+\end{equation}
+
+\SourcePage{73}{78}
+Written more fully, this expression would be
+\[
+\psi_{\mathbf n\lambda}(\boldsymbol\nu,\sigma)
+=w^{(\lambda)}_\sigma(\boldsymbol\nu)
+\delta^{(2)}(\boldsymbol\nu-\mathbf n),
+\]
+where the discrete independent variable $\sigma$ has also been displayed explicitly.
+
+The helicity operator $\widehat{\mathbf s}\mathbf n$ commutes with $\widehat j_z$ and $\widehat{\mathbf j}^{\,2}$. Indeed, the angular-momentum operator is associated with an infinitesimal rotation of the coordinate system, while the scalar product of two vectors is invariant under every rotation. There consequently exist stationary states in which the particle has definite values of the angular momentum $j$, its projection $j_z=m$, and the helicity $\lambda$ simultaneously. We shall call these \emph{spherical helicity states}.
+
+Let us determine the wave functions of these states in the momentum representation. This may be done directly by analogy with the formulas obtained in III, \S~103 for the wave functions of a symmetric top. Those formulas were derived there from the transformation of wave functions under finite rotations (see III, \S~58). The latter formulas, in turn, depend only on rotational symmetry and therefore apply to momentum-space functions just as they do to coordinate-space functions.
+
+Alongside the space-fixed coordinate system $xyz$ (relative to which the functions $\psi_{jm\lambda}$ are written), introduce a ``moving'' system $\xi\eta\zeta$ whose $\zeta$ axis lies along $\boldsymbol\nu$. Without repeating the corresponding reasoning (cf. the derivation of formula~(103.8) in III), we write
+\[
+\psi_{jm\lambda}(\mathbf k)
+=\psi^{(0)}_{j\lambda}D^{(j)}_{\lambda m}(\boldsymbol\nu),
+\]
+where $\psi^{(0)}_{j\lambda}$ is the wave function in the ``moving'' coordinate system and describes a state with a definite $\zeta$ projection of the angular momentum, $j_\zeta=\lambda$; in the momentum representation this function plainly coincides with the amplitude $u^{(\lambda)}$. The normalized wave function (see below) is
+\begin{equation}
+\psi_{jm\lambda}(\mathbf k)
+=\sqrt{\frac{2j+1}{4\pi}}D^{(j)}_{\lambda m}(\boldsymbol\nu)
+u^{(\lambda)}(\mathbf k).
+\tag{16.4}
+\end{equation}
+
+There remains, however, a phase-choice question associated with the following ambiguity. A rotation of the coordinate system $\xi\eta\zeta$ relative to $xyz$ is specified by three Euler angles $\alpha$, $\beta$, and $\gamma$, whereas the direction $\boldsymbol\nu$, on which alone the particle wave function can depend, is specified by only two spherical angles, $\alpha\equiv\varphi$ and $\beta\equiv\theta$. A convention must therefore be adopted for $\gamma$. We put $\gamma=0$, thereby defining $D^{(j)}_{\lambda m}(\boldsymbol\nu)$ by
+\begin{equation}
+D^{(j)}_{\lambda m}(\boldsymbol\nu)
+=D^{(j)}_{\lambda m}(\varphi,\theta,0)
+=e^{im\varphi}d^{(j)}_{\lambda m}(\theta).
+\tag{16.5}
+\end{equation}
+
+\SourcePage{74}{79}
+By~(58.21) (see III), the functions~(16.5) satisfy the orthogonality and normalization conditions
+\begin{equation}
+\int D^{(j_1)*}_{\lambda_1m_1}(\boldsymbol\nu)
+D^{(j_2)}_{\lambda_2m_2}(\boldsymbol\nu)\frac{do_\nu}{4\pi}
+=\frac{1}{2j_1+1}\delta_{j_1j_2}\delta_{m_1m_2}
+\tag{16.6}
+\end{equation}
+($do_\nu=\sin\theta\,d\theta\,d\varphi$). Orthogonality of the functions $\psi_{jm\lambda}$ with respect to $\lambda$ is supplied by the factor $u^{(\lambda)}$. Thus the functions $\psi_{jm\lambda}$ are orthogonal, as required, in all the indices $jm\lambda$, and with the coefficient chosen in~(16.4) they obey the normalization
+\begin{equation}
+\int|\psi_{jm\lambda}|^2\,do_\nu=1.
+\tag{16.7}
+\end{equation}
+Here the amplitudes $u^{(\lambda)}$ are assumed to be normalized to unity: $u^{(\lambda)}u^{(\lambda)*}=1$.
+
+Consider the behavior of the helicity-state wave functions under coordinate inversion. The scalar product of the polar vector $\boldsymbol\nu$ and the axial vector $\mathbf j$ is a pseudoscalar. It is therefore clear that inversion carries a state of helicity $\lambda$ into one of helicity $-\lambda$; only the phase factors in these transformations remain to be found.
+
+Under inversion, $\boldsymbol\nu\to-\boldsymbol\nu$. The vector $\boldsymbol\nu$ is specified by the two angles $\varphi$ and $\theta$, and $\boldsymbol\nu\to-\boldsymbol\nu$ is effected by $\varphi\to\varphi+\pi$, $\theta\to\pi-\theta$. This fixes the $\zeta$ axis, but leaves undetermined the positions of the $\xi$ and $\eta$ axes, which also depend on the third Euler angle $\gamma$; transforming only $\theta$ and $\varphi$ does not in this sense distinguish inversion of the coordinate system from a rotation of the $\zeta$ axis. In terms of all three Euler angles, inversion is the transformation
+\begin{equation}
+\alpha\equiv\varphi\to\varphi+\pi,
+\qquad
+\beta\equiv\theta\to\pi-\theta,
+\qquad
+\gamma\to\pi-\gamma.
+\tag{16.8}
+\end{equation}
+Consequently, if $D^{(j)}_{\lambda m}(\boldsymbol\nu)$ is defined by~(16.5) (that is, with $\gamma=0$), and $\boldsymbol\nu\to-\boldsymbol\nu$ is understood as the result of inversion, then
+\begin{equation}
+D^{(j)}_{\lambda m}(-\boldsymbol\nu)
+=D^{(j)}_{\lambda m}(\varphi+\pi,\pi-\theta,\pi).
+\tag{16.9}
+\end{equation}
+Using formulas~(58.9), (58.16), and~(58.18) (see III), we therefore find
+\[
+\begin{aligned}
+D^{(j)}_{\lambda m}(-\boldsymbol\nu)
+&=e^{i\lambda\pi}d^{(j)}_{\lambda m}(\pi-\theta)e^{im(\varphi+\pi)}={}\\
+&=(-1)^{j-\lambda}e^{im\varphi}d^{(j)}_{-\lambda,m}(\theta)
+=(-1)^{j-\lambda}D^{(j)}_{-\lambda,m}(\varphi,\theta,0),
+\end{aligned}
+\]
+or
+\begin{equation}
+D^{(j)}_{\lambda m}(-\boldsymbol\nu)
+=(-1)^{j-\lambda}D^{(j)}_{-\lambda,m}(\boldsymbol\nu)
+\tag{16.10}
+\end{equation}
+($j-\lambda$ is an integer).
+
+An analogous formula for the spinor $w^{(\lambda)}$ may be obtained by noting that its components $w^{(\lambda)}_\sigma$ coincide, apart from a\SourcePage{75}{80} factor, with the functions
+\begin{equation}
+w^{(\lambda)}_\sigma(\boldsymbol\nu)
+\propto D^{(s)}_{\lambda\sigma}(\boldsymbol\nu)^*.
+\tag{16.11}
+\end{equation}
+Indeed, apply the transformation formula~(58.7) (see III) to the spin eigenfunctions and require its $\zeta$ projection to have the definite value $\lambda$ (that is, replace $\psi_{jm'}$ on the right-hand side of~(58.7) by $\delta_{m'\lambda}$). We then find that $D^{(s)}_{\lambda\sigma}(\boldsymbol\nu)$ are the spin wave functions corresponding to the definite values $\sigma$ and $\lambda$ of the spin's $z$ and $\zeta$ projections. The set of these functions ($\sigma=-s,\ldots,+s$) forms, by the correspondence formulas~(57.6) (see III), a covariant spinor of rank $2s$. The components of the contravariant spinor (to which the components $w^{(\lambda)}_\sigma$ correspond by formulas~(57.2) in III) transform as the complex conjugates of the components of a covariant spinor of the same rank. From~(16.10) and~(16.11),
+\begin{equation}
+w^{(\lambda)}(-\boldsymbol\nu)
+=(-1)^{s-\lambda}w^{(-\lambda)}(\boldsymbol\nu)
+\tag{16.12}
+\end{equation}
+($s-\lambda$ is an integer). Applied to $w^{(\lambda)}$, however, inversion consists not only in replacing $\boldsymbol\nu$ by $-\boldsymbol\nu$, but also in multiplying by an overall phase factor (the particle's ``intrinsic parity''), which we denote by $\eta$:
+\begin{equation}
+\widehat P w^{(\lambda)}(\boldsymbol\nu)
+=\eta w^{(\lambda)}(-\boldsymbol\nu)
+=\eta(-1)^{s-\lambda}w^{(-\lambda)}(\boldsymbol\nu).
+\tag{16.13}
+\end{equation}
+For the relativistic amplitude $u^{(\lambda)}(\mathbf k)$ this transformation reads
+\begin{equation}
+\widehat P u^{(\lambda)}(\mathbf k)
+=\eta\beta u^{(\lambda)}(-\mathbf k)
+=\eta(-1)^{s-\lambda}u^{(-\lambda)}(\mathbf k),
+\tag{16.14}
+\end{equation}
+where $\beta$ is a matrix that is the identity on those components of $u^{(\lambda)}$ which remain in the limit $|\mathbf p|\to0$. What matters is that this matrix does not depend on the quantum numbers of the state; in this sense the difference between~(16.13) and~(16.14) is inessential.\footnote{For $s=1$, for example, the amplitudes $u^{(\lambda)}$ are the 4-vectors~(16.22); $\beta$ is then the complete identity matrix in the 4-vector indices: $\beta_{\mu\nu}=\delta_{\mu\nu}$. For $s=1/2$ (as we shall see in the next chapter), $u^{(\lambda)}$ is a bispinor; the phase factor is then $\eta=i$, while $\beta$ is the Dirac matrix $\gamma^0$ (see~(21.10)).}
+
+Applying~(16.14) to~(16.2), we obtain the transformation law for the wave functions of the states $|\mathbf n\lambda\rangle$:
+\begin{equation}
+\widehat P\psi_{\mathbf n\lambda}(\boldsymbol\nu)
+=\eta(-1)^{s-\lambda}\psi_{-\mathbf n,-\lambda}(\boldsymbol\nu).
+\tag{16.15}
+\end{equation}
+For the spherical helicity states, use of~(16.10) and~(16.12) gives the transformation law
+\begin{equation}
+\widehat P\psi_{jm\lambda}(\boldsymbol\nu)
+=\eta(-1)^{j-s}\psi_{jm,-\lambda}(\boldsymbol\nu).
+\tag{16.16}
+\end{equation}
+
+\SourcePage{76}{81}
+The states $\psi_{jm0}$ transform into themselves according to~(16.16), and thus have definite parity. If $\lambda\ne0$, only superpositions of states with opposite helicities have definite parity:
+\begin{equation}
+\psi^{(\pm)}_{jm|\lambda|}
+=\frac{1}{\sqrt2}\left(\psi_{jm\lambda}\pm\psi_{jm,-\lambda}\right).
+\tag{16.17}
+\end{equation}
+Under inversion they transform into themselves according to
+\begin{equation}
+\widehat P\psi^{(\pm)}_{jm|\lambda|}(\boldsymbol\nu)
+=\pm\eta(-1)^{j-s}\psi^{(\pm)}_{jm|\lambda|}(\boldsymbol\nu).
+\tag{16.18}
+\end{equation}
+
+Notice that in this section we have classified the states of a free particle with prescribed angular momentum by using only conserved quantities and without invoking orbital angular momentum (used, for example, in \S~6 and~7 to classify photon states).
+
+As an example, consider spin~1. In the rest frame the amplitudes $u^{(\lambda)}$ (4-vectors) reduce to the three-dimensional vectors $\mathbf e^{(\lambda)}$, which here serve as the amplitudes $w^{(\lambda)}$. The action of the spin-1 operator on a vector function $\mathbf e$ is given by
+\begin{equation}
+(\widehat s_i e)_k=-ie_{ikl}e_l
+\tag{16.19}
+\end{equation}
+(see III, \S~57, problem~2). Equation~(16.1) therefore becomes
+\begin{equation}
+i\mathbf n\times\mathbf e^{(\lambda)}=\lambda\mathbf e^{(\lambda)}.
+\tag{16.20}
+\end{equation}
+Its solutions (in the coordinate system $\xi\eta\zeta$, with the $\zeta$ axis along $\mathbf n$) coincide with the circular unit vectors~(7.14)\footnote{The choice of phase factors is fixed by requiring that the matrix elements of the spin operators calculated with the eigenfunctions~(16.21) agree with the general definitions in III, \S~27 and~107.}:
+\begin{equation}
+\mathbf e^{(0)}=i(0,0,1),
+\qquad
+\mathbf e^{(\pm1)}=\mp\frac{i}{\sqrt2}(1,\pm i,0).
+\tag{16.21}
+\end{equation}
+In a reference frame in which the particle has momentum $\mathbf p$, the amplitudes of the helicity states are the 4-vectors
+\begin{equation}
+u^{(0)\mu}=\left(\frac{|\mathbf p|}{m},\frac{\varepsilon}{m}\mathbf e^{(0)}\right),
+\qquad
+u^{(\pm1)\mu}=(0,\mathbf e^{(\pm1)}).
+\tag{16.22}
+\end{equation}
+If $\mathbf e$ is a polar vector, then $\eta=-1$. The functions~(16.17) (which for $s=1$ are three-dimensional vectors) then have the parities
+\[
+\begin{aligned}
+\psi^{(+)}_{jm|\lambda|}&:\quad P=(-1)^j,\\
+\psi^{(-)}_{jm|\lambda|}&:\quad P=(-1)^{j+1},\\
+\psi_{jm0}&:\quad P=(-1)^j.
+\end{aligned}
+\]
+
+\SourcePage{77}{82}
+Comparison with the definition of the vector spherical harmonics~(7.4) shows that these functions are identical, up to phase factors, respectively to $\mathbf Y^{(\text{e})}_{jm}$, $\mathbf Y^{(\text{m})}_{jm}$, and $\mathbf Y^{(\text{l})}_{jm}$. Determining the phase factors (for example, by comparing the values at $\theta=0$), we obtain
+\begin{equation}
+\begin{aligned}
+\mathbf Y^{(\text{e})}_{jm}
+&=i^{j-1}\sqrt{\frac{2j+1}{8\pi}}
+\left(\mathbf e^{(1)}D^{(j)}_{1m}
++\mathbf e^{(-1)}D^{(j)}_{-1m}\right),\\
+\mathbf Y^{(\text{m})}_{jm}
+&=i^{j-1}\sqrt{\frac{2j+1}{8\pi}}
+\left(\mathbf e^{(1)'}D^{(j)}_{1m}
++\mathbf e^{(-1)'}D^{(j)}_{-1m}\right),\\
+\mathbf Y^{(\text{l})}_{jm}
+&=i^{j-1}\sqrt{\frac{2j+1}{4\pi}}
+\mathbf e^{(0)}D^{(j)}_{0m}.
+\end{aligned}
+\tag{16.23}
+\end{equation}
+($j$ is an integer!); $\mathbf e^{(\lambda)'}=\mathbf n\times\mathbf e^{(\lambda)}$ are the circular unit vectors along the axes $\xi'\eta'\zeta$, obtained by rotating $\xi\eta\zeta$ through $90^\circ$ about the $\zeta$ axis.
+
+The last of formulas~(16.23) is equivalent to expression~(58.23) (see III) for $d^{(j)}_{0m}(\theta)$. The first (or second) formula gives a simple expression for $d^{(j)}_{\pm1m}$. We have
+\[
+i^{j-1}\sqrt{\frac{2j+1}{8\pi}}D^{(j)}_{\pm1m}
+=\mathbf Y^{(\text{e})}_{jm}\mathbf e^{(\pm1)*}
+=\frac{1}{\sqrt{j(j+1)}}\mathbf e^{(\pm1)*}
+\boldsymbol\nabla Y_{jm}.
+\]
+The scalar product on the right is expanded in the $\xi\eta\zeta$ system, where
+\[
+\left(\frac{\partial}{\partial\xi},\frac{\partial}{\partial\eta}\right)
+\to
+\left(\frac{\partial}{\partial\theta},
+\frac{1}{\sin\theta}\frac{\partial}{\partial\varphi}\right).
+\]
+Recalling the definition~(7.2) of $Y_{jm}$ and definition~(16.5), we finally obtain
+\begin{equation}
+d^{(j)}_{\pm1m}(\theta)
+=(-1)^{m+1}\sqrt{\frac{(j-m)!}{(j+m)!j(j+1)}}
+\left(\pm\frac{\partial}{\partial\theta}
++\frac{m}{\sin\theta}\right)P_j^m(\cos\theta),
+\qquad m\geq0.
+\tag{16.24}
+\end{equation}

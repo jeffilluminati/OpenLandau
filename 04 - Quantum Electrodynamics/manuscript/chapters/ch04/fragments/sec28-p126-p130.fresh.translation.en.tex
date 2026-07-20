@@ -1,0 +1,200 @@
+\SourcePage{121}{126}
+\section{Bilinear forms}
+
+Consider the transformation properties of the various bilinear forms that can be constructed from the components of the functions $\psi$ and $\psi^*$. Such forms are of broad importance in quantum mechanics; the four-vector of current density~(21.11) is one example.
+
+Since $\psi$ and $\psi^*$ each have four components, they can be used to construct $4 \cdot 4 = 16$ independent bilinear combinations. Their classification according to transformation properties follows directly from the ways of multiplying two arbitrary bispinors listed in \S\,19 (here the two bispinors are $\psi$ and $\psi^*$). Specifically, one can form a scalar (denoted by $S$), a pseudoscalar ($P$), a mixed spinor of rank two equivalent to a true four-vector $V^\mu$ (four independent quantities), a mixed spinor of rank two equivalent to an axial four-vector $A^\mu$ (four quantities), and a rank-two bispinor equivalent to an antisymmetric four-tensor $T^{\mu\nu}$ (six quantities).
+
+In symmetric form, valid in any representation of $\psi$, these combinations are
+\begin{equation}
+\begin{gathered}
+S = \bar\psi\psi,\qquad P = i\bar\psi\gamma^5\psi,\\
+V^\mu = \bar\psi\gamma^\mu\psi,\qquad A^\mu = \bar\psi\gamma^\mu\gamma^5\psi,\qquad T^{\mu\nu} = i\bar\psi\sigma^{\mu\nu}\psi.
+\end{gathered}
+\tag{28.1}
+\end{equation}
+Here
+\begin{equation}
+\sigma^{\mu\nu} = \frac{1}{2}(\gamma^\mu\gamma^\nu - \gamma^\nu\gamma^\mu) = (\boldsymbol{\alpha},i\boldsymbol{\Sigma})
+\tag{28.2}
+\end{equation}
+(the components in~(28.2) are ordered as in~(19.15))\,\footnote{Under a unitary transformation of $\psi$ (a change of representation),
+\[
+\psi \to U\psi,\qquad \gamma \to U\gamma U^{-1},\qquad \bar\psi \to \bar\psi U^{-1},
+\]
+and the invariance of the bilinear forms under such transformations is evident.}. All the expressions written above are real.
+
+That $S$ and $P$ are respectively a scalar and a pseudoscalar follows immediately from their spinor-representation forms:
+\[
+S = \xi^*\eta + \eta^*\xi,\qquad P = i(\xi^*\eta - \eta^*\xi),
+\]
+which are precisely of the forms~(19.7) and~(19.8). The vector character of $V^\mu$ then follows from the Dirac equation. Multiplying $\widehat p_\mu\gamma^\mu\psi = m\psi$ on the left by $\bar\psi$ gives
+\[
+(\bar\psi\widehat p_\mu\gamma^\mu\psi) = m\bar\psi\psi;
+\]
+since the right-hand side is a scalar, the expression on the left must also be a scalar.
+
+The rule for constructing the quantities~(28.1) is clear: they are formed as though the matrices $\gamma^\mu$ constituted a four-vector, $\gamma^5$
+
+\SourcePage{122}{127}
+were a pseudoscalar, and the factors $\bar\psi$ and $\psi$ on either side together formed a scalar\,\footnote{The ``pseudoscalar character'' of $\gamma^5$ itself conforms to these rules, since
+\[
+\gamma^5 = \frac{i}{24}e_{\lambda\mu\nu\rho}\gamma^\lambda\gamma^\mu\gamma^\nu\gamma^\rho.
+\]}. The absence of bilinear forms having the character of a symmetric four-tensor, which is evident in the spinor representation, also follows from this rule: because the symmetric combination $\gamma^\mu\gamma^\nu + \gamma^\nu\gamma^\mu = 2g^{\mu\nu}$, any such form would reduce to a scalar.
+
+Second-quantized bilinear forms are obtained by replacing the $\psi$ functions in~(28.1) with $\psi$ operators. For greater generality, suppose that the two $\psi$ operators refer to fields of different particles, distinguished by the indices $a$ and $b$. We determine how these operator forms transform under charge conjugation. Noting that\,\footnote{To obtain the second equality from the first, write
+\[
+\widehat{\bar\psi}^C = \bigl[U_C^*(\widehat\psi\gamma^{0*})\bigr]\gamma^0 = \widetilde\gamma^0U_C^*\gamma^0\widehat\psi = -\widetilde\gamma^0U_C^+\gamma^0\widehat\psi = \widetilde\gamma^0\gamma^{0*}U_C^+\widehat\psi = U_C^+\widehat\psi
+\]
+(we used~(26.3), (26.21), and the Hermiticity of $\gamma^0$).}
+\begin{equation}
+\widehat\psi^C = U_C\widetilde{\widehat{\bar\psi}},\qquad \widehat{\bar\psi}^C = U_C^+\widehat\psi,
+\tag{28.3}
+\end{equation}
+and using~(26.3) and~(26.21), we have
+\[
+\widehat{\bar\psi}^C_a\widehat\psi^C_b = \widehat\psi_a U_C^* U_C\widetilde{\widehat{\bar\psi}}_b = -\widehat\psi_a U_C^+ U_C\widehat{\bar\psi}_b = -\widehat\psi_a\widehat{\bar\psi}_b,
+\]
+\[
+\widehat{\bar\psi}^C_a\gamma^\mu\widehat\psi^C_b = \widehat\psi_a U_C^*\gamma^\mu U_C\widetilde{\widehat{\bar\psi}}_b = -\widehat\psi_a U_C^+\gamma^\mu U_C\widehat{\bar\psi}_b = \widehat\psi_a\widetilde\gamma^\mu\widehat{\bar\psi}_b.
+\]
+
+When the operators are returned to their original order ($\widehat{\bar\psi}$ to the left of $\widehat\psi$), the sign of the product changes by the Fermi commutation rules~(25.4). In addition, terms independent of the state of the field appear; these are omitted, as in the analogous derivations in \S\,13. We thus obtain
+\[
+\widehat{\bar\psi}^C_a\widehat\psi^C_b = \widehat{\bar\psi}_b\widehat\psi_a,\qquad \widehat{\bar\psi}^C_a\gamma^\mu\widehat\psi^C_b = -\widehat{\bar\psi}_b\gamma^\mu\widehat\psi_a.
+\]
+Transforming the remaining forms in the same way, we find that under charge conjugation\,\footnote{Notice that for bilinear forms constructed from $\psi$ functions rather than $\psi$ operators, transformations~(28.4) would have the opposite sign, since restoring the original order of the factors $\bar\psi$ and $\psi$ would not be accompanied by a sign change.}
+\begin{equation}
+\begin{aligned}
+C:\quad &\widehat S_{ab} \to \widehat S_{ba},\qquad \widehat P_{ab} \to \widehat P_{ba},\qquad \widehat V^\mu_{ab} \to -\widehat V^\mu_{ba},\\
+&\widehat A^\mu_{ab} \to \widehat A^\mu_{ba},\qquad \widehat T^{\mu\nu}_{ab} \to -\widehat T^{\mu\nu}_{ba}.
+\end{aligned}
+\tag{28.4}
+\end{equation}
+
+\SourcePage{123}{128}
+The behavior of the same forms under time reversal is found similarly. Here one must remember (see \S\,13) that this operation entails a reversal of operator order, so that, for example,
+\[
+\bigl(\widehat{\bar\psi}_a\widehat\psi_b\bigr)^T = \widehat\psi^T_b\widehat{\bar\psi}^T_a.
+\]
+Substitution of
+\begin{equation}
+\widehat\psi^T = U_T\widetilde{\widehat{\bar\psi}},\qquad \widehat{\bar\psi}^T = -U_T^+\widehat\psi
+\tag{28.5}
+\end{equation}
+gives
+\[
+\bigl(\widehat{\bar\psi}_a\widehat\psi_b\bigr)^T = -\widehat{\bar\psi}_b\widetilde U_TU_T^+\widehat\psi_a = \widehat{\bar\psi}_bU_TU_T^+\widehat\psi_a = \widehat{\bar\psi}_b\widehat\psi_a.
+\]
+Treating the other forms in the same manner, we obtain
+\begin{equation}
+\begin{aligned}
+T:\quad &\widehat S_{ab} \to \widehat S_{ba},\quad \widehat P_{ab} \to -\widehat P_{ba},\quad (\widehat V^0,\widehat{\mathbf{V}})_{ab} \to (\widehat V^0,-\widehat{\mathbf{V}})_{ba},\\
+&(\widehat A^0,\widehat{\mathbf{A}})_{ab} \to (\widehat A^0,-\widehat{\mathbf{A}})_{ba},\quad \widehat T^{\mu\nu}_{ab} = (\widehat{\mathbf{p}},\widehat{\mathbf{a}})_{ab} \to (\widehat{\mathbf{p}},-\widehat{\mathbf{a}})_{ba}
+\end{aligned}
+\tag{28.6}
+\end{equation}
+($\widehat{\mathbf{p}}$ and $\widehat{\mathbf{a}}$ are the three-dimensional vectors equivalent to the components of $\widehat T^{\mu\nu}$ according to~(19.15)).
+
+Under spatial inversion, on the other hand, the tensor character of the quantities gives\,\footnote{To avoid misunderstanding, recall that the transformations $T$ and $P$ also require a change of the function arguments. If the left-hand sides are functions of $x = (t,\mathbf{r})$, the right-hand sides (the transformed forms in~(28.6) and~(28.7)) are respectively functions of
+\[
+x^T = (-t,\mathbf{r}),\qquad x^P = (t,-\mathbf{r}).
+\]}
+\begin{equation}
+\begin{aligned}
+P:\quad &\widehat S_{ab} \to \widehat S_{ab},\quad \widehat P_{ab} \to -\widehat P_{ab},\quad (\widehat V^0,\widehat{\mathbf{V}})_{ab} \to (\widehat V^0,-\widehat{\mathbf{V}})_{ab},\\
+&(\widehat A^0,\widehat{\mathbf{A}})_{ab} \to (-\widehat A^0,\widehat{\mathbf{A}})_{ab},\quad \widehat T^{\mu\nu}_{ab} = (\widehat{\mathbf{p}},\widehat{\mathbf{a}})_{ab} \to (-\widehat{\mathbf{p}},\widehat{\mathbf{a}})_{ab}.
+\end{aligned}
+\tag{28.7}
+\end{equation}
+
+Finally, applying all three operations together leaves every $\widehat S_{ab}$, $\widehat P_{ab}$, and $\widehat T^{\mu\nu}_{ab}$ unchanged and reverses the sign of every $\widehat V^\mu_{ab}$ and $\widehat A^\mu_{ab}$. This agrees precisely with the meaning of the transformation as four-dimensional inversion: since four-dimensional inversion is equivalent to a rotation of the four-dimensional coordinate system, it makes no distinction between true tensors and pseudotensors of any rank.
+
+Consider pairwise products of bilinear forms made from four different functions $\psi^a$, $\psi^b$, $\psi^c$, and $\psi^d$. Different results arise depending on which functions are paired. Nevertheless, any such product can be reduced to products of bilinear forms having fixed pairs of factors (\emph{W.~Pauli, M.~Fierz}, 1936). We derive the relation underlying this reduction.
+
+\SourcePage{124}{129}
+Consider the set of four-by-four matrices
+\begin{equation}
+1,\quad \gamma^5,\quad \gamma^\mu,\quad i\gamma^\mu\gamma^5,\quad i\sigma^{\mu\nu}
+\tag{28.8}
+\end{equation}
+($1$ denotes the identity matrix). Number these $16$ ($= 1 + 1 + 4 + 4 + 6$) matrices in some definite order and denote them by $\gamma^A$ ($A = 1,\ldots,16$); denote the same matrices with lowered four-tensor indices ($\mu$, $\nu$) by $\gamma_A$. They have the properties
+\begin{equation}
+\Tr\gamma^A = 0\quad (\gamma^A \neq 1),\qquad \gamma^A\gamma_A = 1,\qquad \frac{1}{4}\Tr\gamma^A\gamma_B = \delta^A_B.
+\tag{28.9}
+\end{equation}
+
+The last of these properties shows that the matrices $\gamma^A$ are linearly independent. Their number equals the number ($4 \cdot 4$) of elements of a four-by-four matrix, so the $\gamma^A$ form a complete system in which an arbitrary four-by-four matrix $\Gamma$ can be expanded:
+\begin{equation}
+\Gamma = \sum_A c_A\gamma^A,\qquad c_A = \frac{1}{4}\Tr\gamma_A\Gamma,
+\tag{28.10}
+\end{equation}
+or, explicitly displaying the matrix indices ($i, k = 1, 2, 3, 4$),
+\[
+\Gamma_{ik} = \frac{1}{4}\sum_A\Gamma_{lm}\gamma^A_{ml}\gamma_{Aik}.
+\]
+
+Taking, in particular, a matrix $\Gamma$ with only one nonzero element ($\Gamma_{lm}$), we obtain the required relation, the ``completeness condition'':
+\begin{equation}
+\delta_{il}\delta_{km} = \frac{1}{4}\sum_A\gamma_{Aik}\gamma^A_{ml}.
+\tag{28.11}
+\end{equation}
+
+Multiplying both sides of this equality by $\bar\psi^a_i\psi^b_k\bar\psi^c_m\psi^d_l$, we have
+\begin{equation}
+(\bar\psi^a\psi^d)(\bar\psi^c\psi^b) = \frac{1}{4}\sum_A(\bar\psi^a\gamma_A\psi^b)(\bar\psi^c\gamma^A\psi^d).
+\tag{28.12}
+\end{equation}
+
+This is one equality of the type described above: it reduces a product of two scalar bilinear forms to products of forms constructed from other pairs of factors\,\footnote{To avoid misunderstanding, recall that the forms here are constructed from $\psi$ functions. For forms constructed from anticommuting $\psi$ operators, the sign of the transformation would be reversed.}.
+
+Other equalities of this type can be obtained from~(28.12) by making the replacements
+\[
+\psi^d \to \gamma^B\psi^d,\qquad \psi^b \to \gamma^C\psi^b
+\]
+
+\SourcePage{125}{130}
+and using the expansion (see the problem)
+\[
+\gamma^A\gamma^B = \sum_R c_R\gamma^R,\qquad c_R = \frac{1}{4}\Tr\gamma^A\gamma^B\gamma_R.
+\]
+
+For later reference, we also give the analogue of~(28.11) for two-by-two matrices. A complete system of linearly independent two-by-two matrices $\sigma^A$ ($A = 1,\ldots,4$) is
+\begin{equation}
+1,\quad \sigma_x,\quad \sigma_y,\quad \sigma_z.
+\tag{28.13}
+\end{equation}
+For these matrices,
+\begin{equation}
+\Tr\sigma^A = 0\quad (\sigma^A \neq 1),\qquad \frac{1}{2}\Tr\sigma^A\sigma^B = \delta_{AB}.
+\tag{28.14}
+\end{equation}
+The completeness condition is
+\begin{equation}
+\delta_{\alpha\gamma}\delta_{\beta\delta} = (1/2)\sum_A\sigma^A_{\alpha\beta}\sigma^A_{\delta\gamma} = (1/2)\boldsymbol\sigma_{\alpha\beta}\boldsymbol\sigma_{\delta\gamma} + (1/2)\delta_{\alpha\beta}\delta_{\delta\gamma}
+\tag{28.15}
+\end{equation}
+($\alpha$, $\beta, \ldots = 1, 2$), or equivalently,
+\begin{equation}
+\boldsymbol\sigma_{\alpha\beta}\boldsymbol\sigma_{\delta\gamma} = -(1/2)\boldsymbol\sigma_{\alpha\gamma}\boldsymbol\sigma_{\delta\beta} + (3/2)\delta_{\alpha\gamma}\delta_{\delta\beta}.
+\tag{28.16}
+\end{equation}
+
+\ProblemHeading
+Derive formulae analogous to~(28.12) for scalar products of two bilinear forms $P$, $V$, $A$, and $T$.
+
+\SolutionHeading Introduce the notation
+\begin{align*}
+J_S &= (\bar\psi^a\psi^b)(\bar\psi^c\psi^d), & J_P &= (\bar\psi^a\gamma^5\psi^b)(\bar\psi^c\gamma^5\psi^d),\\
+J_V &= (\bar\psi^a\gamma^\mu\psi^b)(\bar\psi^c\gamma_\mu\psi^d), & J_A &= (\bar\psi^a i\gamma^\mu\gamma^5\psi^b)(\bar\psi^c i\gamma_\mu\gamma^5\psi^d),\\
+J_T &= (\bar\psi^a i\sigma^{\mu\nu}\psi^b)(\bar\psi^c i\sigma_{\mu\nu}\psi^d).
+\end{align*}
+Use the same letters with primes for the corresponding products in which $\psi^b$ and $\psi^d$ have been interchanged. The procedure described in the text gives
+\begin{align*}
+4J'_S &= J_S + J_V + J_T + J_A + J_P,\\
+4J'_V &= 4J_S - 2J_V + 2J_A - 4J_P,\\
+4J'_T &= 6J_S - 2J_T + 6J_P,\\
+4J'_A &= 4J_S + 2J_V - 2J_A - 4J_P,\\
+4J'_P &= J_S - J_V + J_T - J_A + J_P
+\end{align*}
+(the first line follows from~(28.12)).

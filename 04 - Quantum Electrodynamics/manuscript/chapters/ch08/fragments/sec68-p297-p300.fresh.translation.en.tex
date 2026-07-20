@@ -1,0 +1,170 @@
+\SourcePage{297}{302}
+\section{Expansion in partial-wave amplitudes}
+
+An essential step in the analysis of a reaction of the form
+\begin{equation}
+a+b\to c+d
+\tag{68.1}
+\end{equation}
+is the expansion of the scattering amplitude in partial-wave amplitudes, each corresponding (at a specified total energy $\varepsilon$) to a definite value of the total angular momentum $J$ of the particles in their center-of-momentum frame\footnote{Most of the results presented in \S~68 and 69 are due to Jacob and Wick (\emph{M. Jacob, G. C. Wick}, 1959).}.
+
+In other words, these partial-wave amplitudes are elements of the $S$-matrix in the angular-momentum representation:
+\[
+\langle\varepsilon J'M'|S|\varepsilon JM\rangle.
+\]
+Since the angular momentum $J$ and its projection $M$ on a specified $z$ axis are conserved, the $S$-matrix is diagonal in these quantum numbers (as it is in the energy $\varepsilon$). By spatial isotropy, moreover, the diagonal elements are independent of the value of $M$. At specified $J$, $M$, and $\varepsilon$, the scattering matrix remains a matrix with respect to the spin quantum numbers; we write its elements more briefly as
+\begin{equation}
+\langle\varepsilon JM\lambda'|S|\varepsilon JM\lambda\rangle
+\equiv\langle\lambda'|S^J(\varepsilon)|\lambda\rangle,
+\tag{68.2}
+\end{equation}
+where $\lambda$ and $\lambda'$ denote sets of spin quantum numbers. The natural choice for these numbers here is the particle helicities. Recall that helicity (unlike the projection of spin on an arbitrary spatial axis) is conserved for a free particle and also commutes with both its momentum and its angular momentum (see \S~16). Helicity may therefore be used in both the momentum and the angular-momentum representations of the scattering matrix.
+
+We shall call the elements of the $S$-matrix with helicity indices \emph{helicity scattering amplitudes}; thus $\lambda$ and $\lambda'$ will denote the sets of helicities of the initial and final particles: $\lambda=(\lambda_a,\lambda_b)$, $\lambda'=(\lambda_c,\lambda_d)$.
+
+In the momentum representation, the scattering-matrix elements are defined with respect to the states $|\varepsilon\mathbf n\lambda\rangle$ ($\mathbf n=\mathbf p/|\mathbf p|$ is the direction of the relative-motion momentum in the center-of-momentum frame), and in the angular-momentum representation with respect to the states $|\varepsilon JM\lambda\rangle$. The two are related by the expansions
+\begin{equation}
+|JM\lambda\rangle=\int|\mathbf n\lambda\rangle
+\langle\mathbf n\lambda|JM\lambda\rangle\,do_{\mathbf n},
+\tag{68.3}
+\end{equation}
+\SourcePage{298}{303}
+where the integration is over the directions $\mathbf n$ (for brevity, the energy $\varepsilon$ will be omitted from the state symbols). Since this transformation is unitary (see Vol.~III, \S~12), the coefficients of the inverse transformation are
+\begin{equation}
+\langle JM\lambda|\mathbf n\lambda\rangle
+=\langle\mathbf n\lambda|JM\lambda\rangle^*.
+\tag{68.4}
+\end{equation}
+By the general rule for matrix transformations, the same coefficients determine the relation between the $S$-matrix elements in the two representations:
+\begin{equation}
+\langle\mathbf n'\lambda'|S|\mathbf n\lambda\rangle
+=\sum_{JM}\langle\mathbf n'\lambda'|JM\lambda'\rangle
+\langle JM\lambda'|S|JM\lambda\rangle
+\langle JM\lambda|\mathbf n\lambda\rangle.
+\tag{68.5}
+\end{equation}
+
+The expansion coefficients in (68.3) are readily found from the results of \S~16.
+
+Let the wave functions of all the states be expressed in the momentum representation, that is, as functions of the momentum direction (at a specified energy). To distinguish this direction as an independent variable from the direction $\mathbf n$ serving as a quantum number of the state, denote it by $\boldsymbol\nu$. In this representation the wave function has the form (16.2)
+\begin{equation}
+\psi_{\mathbf n\lambda}(\boldsymbol\nu)
+=u^{(\lambda)}\delta^{(2)}(\boldsymbol\nu-\mathbf n).
+\tag{68.6}
+\end{equation}
+Upon substitution of (68.6), the expansion (68.3) reduces to a single term:
+\begin{equation}
+\psi_{JM\lambda}=\langle\boldsymbol\nu\lambda|JM\lambda\rangle
+u^{(\lambda)}.
+\tag{68.7}
+\end{equation}
+
+The helicity $\lambda_a$ or $\lambda_b$ of each of the two particles is defined as the projection of its spin on the direction of its own momentum. If the particle momenta are $\mathbf p_a\equiv\mathbf p$, $\mathbf p_b=-\mathbf p$, this direction is $\mathbf n$ for the first particle and $-\mathbf n$ for the second. If the system is now regarded as a single particle with helicity $\Lambda$ in the direction $\mathbf n$, then $\Lambda=\lambda_a-\lambda_b$. According to (16.4), its wave function (in the momentum representation) can be written as
+\begin{equation}
+\psi_{JM\lambda}(\boldsymbol\nu)
+=u^{(\lambda)}D_{\Lambda M}^{(J)}(\boldsymbol\nu)
+\sqrt{\frac{2J+1}{4\pi}}.
+\tag{68.8}
+\end{equation}
+Comparison of (68.7) and (68.8), followed by changing the name of the variable $\boldsymbol\nu$ to $\mathbf n$, gives the required coefficients:
+\begin{equation}
+\langle\mathbf n\lambda|JM\lambda\rangle
+=\sqrt{\frac{2J+1}{4\pi}}D_{\Lambda M}^{(J)}(\mathbf n).
+\tag{68.9}
+\end{equation}
+Substitution of these coefficients into (68.5) gives
+\begin{equation}
+\langle\mathbf n'\lambda'|S|\mathbf n\lambda\rangle
+=\sum_{JM}\frac{2J+1}{4\pi}
+D_{\Lambda'M}^{(J)}(\mathbf n')D_{\Lambda M}^{(J)*}(\mathbf n)
+\langle\lambda'|S^J|\lambda\rangle,
+\tag{68.10}
+\end{equation}
+\[
+\Lambda=\lambda_a-\lambda_b,\qquad
+\Lambda'=\lambda_c-\lambda_d,
+\]
+\SourcePage{299}{304}
+where the abbreviated notation (68.2) has been used. Choose the direction $\mathbf n$ as the $z$ axis; then
+\[
+D_{\Lambda M}^{(J)}(\mathbf n)=\delta_{\Lambda M}
+\]
+and (68.10) becomes
+\begin{equation}
+\langle\mathbf n'\lambda'|S|\mathbf n\lambda\rangle
+=\sum_J\frac{2J+1}{4\pi}D_{\Lambda'\Lambda}^{(J)}(\mathbf n')
+\langle\lambda'|S^J|\lambda\rangle.
+\tag{68.11}
+\end{equation}
+
+We see that the expansion in partial-wave amplitudes has the functions $D_{\Lambda'\Lambda}^{(J)}$ as its coefficients. For a reaction of the form (68.1), it is convenient to define the scattering amplitude $f$ so that the cross section (in the center-of-momentum frame) is
+\begin{equation}
+d\sigma=|\langle\mathbf n'\lambda'|f|\mathbf n\lambda\rangle|^2do'
+\tag{68.12}
+\end{equation}
+(comparison with (64.19) relates this amplitude to the matrix element $M_{fi}$). We write its expansion in partial-wave amplitudes as
+\begin{equation}
+\langle\mathbf n'\lambda'|f|\mathbf n\lambda\rangle
+=\sum_{JM}(2J+1)D_{\Lambda'M}^{(J)}(\mathbf n')
+D_{\Lambda M}^{(J)*}(\mathbf n)
+\langle\lambda'|f^J|\lambda\rangle,
+\tag{68.13}
+\end{equation}
+or, choosing the $z$ axis along $\mathbf n$,
+\begin{equation}
+\langle\mathbf n'\lambda'|f|\mathbf n\lambda\rangle
+=\sum_J(2J+1)D_{\Lambda'\Lambda}^{(J)}(\mathbf n')
+\langle\lambda'|f^J|\lambda\rangle.
+\tag{68.14}
+\end{equation}
+This formula generalizes the usual partial-wave expansion for the scattering of spinless particles (see Vol.~III, (123.14)). Since $D_{00}^{(L)}=P_L(\cos\theta)$, when all spins vanish, (68.14) reduces to the expansion in Legendre polynomials
+\[
+f(\theta)=\sum_L(2L+1)f_LP_L(\cos\theta).
+\]
+
+The cross section (68.12) applies when every particle has a definite helicity. If the particles are in mixed polarization states, the cross section is obtained by averaging the product
+\[
+\langle\lambda_c\lambda_d|f|\lambda_a\lambda_b\rangle
+\langle\lambda_c'\lambda_d'|f|\lambda_a'\lambda_b'\rangle^*
+\]
+with the polarization density matrices of the particles,
+\[
+\langle\lambda_a|\rho^{(a)}|\lambda_a'\rangle
+\langle\lambda_b|\rho^{(b)}|\lambda_b'\rangle
+\langle\lambda_c'|\rho^{(c)}|\lambda_c\rangle
+\langle\lambda_d'|\rho^{(d)}|\lambda_d\rangle
+\]
+(see the note on p.~204). Thus, for a reaction between unpolarized particles $a$, $b$ producing likewise unpolarized
+\SourcePage{300}{305}
+particles $c$, $d$, we obtain
+\begin{equation}
+\begin{aligned}
+d\sigma=\frac{do}{(2s_a+1)(2s_b+1)}
+\sum_{(\lambda)}\sum_{JJ'}&(2J+1)(2J'+1)
+\langle\lambda_c\lambda_d|f^J|\lambda_a\lambda_b\rangle\times\\
+&{}\times
+\langle\lambda_c\lambda_d|f^{J'}|\lambda_a\lambda_b\rangle^*
+D_{\Lambda'\Lambda}^{(J)}(\mathbf n')
+D_{\Lambda'\Lambda}^{(J')*}(\mathbf n')
+\end{aligned}
+\tag{68.15}
+\end{equation}
+(the $z$ axis is directed along $\mathbf n$, and $\sum_{(\lambda)}$ denotes summation over $\lambda_a\lambda_b\lambda_c\lambda_d$). Replacing the function $D_{\Lambda'\Lambda}^{(J')*}$ by means of formula (58.19) (see Vol.~III) and then using the expansion (110.2) (see Vol.~III), we finally obtain
+\begin{equation}
+\begin{aligned}
+d\sigma=\frac{do}{(2s_a+1)(2s_b+1)}
+\sum_{(\lambda)JJ'}&(-1)^{\Lambda-\Lambda'}(2J+1)(2J'+1)\times\\
+&{}\times
+\langle\lambda_c\lambda_d|f^J|\lambda_a\lambda_b\rangle
+\langle\lambda_c\lambda_d|f^{J'}|\lambda_a\lambda_b\rangle^*
+\sum_L(2L+1)\times\\
+&{}\times
+\begin{pmatrix}J&J'&L\\ \Lambda&-\Lambda&0\end{pmatrix}
+\begin{pmatrix}J&J'&L\\ \Lambda'&-\Lambda'&0\end{pmatrix}
+P_L(\cos\theta)
+\end{aligned}
+\tag{68.16}
+\end{equation}
+($\theta$ is the angle between $\mathbf n'$ and the $z$ axis); the sum over $L$ extends over all integer values arising from the vector addition of $J$ and $J'$.
+
+The expansion of the scattering amplitude in partial-wave amplitudes fully accounts for all properties of the angular distribution of scattering that follow from symmetry under spatial rotations. It does not, however, explicitly incorporate the properties associated with symmetry under spatial inversion. $P$ invariance (when possessed by the interaction) leads to definite relations among the various helicity amplitudes (see \S~69 below).

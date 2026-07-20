@@ -3,6 +3,13 @@
 
 \LoadClass[10pt,twoside,openright]{book}
 
+% Unaudited fragments remain inert in focused/release wrappers.  The complete
+% working proof explicitly enables them and labels itself provisional.
+\newif\ifOpenLandauFullDraft
+\OpenLandauFullDraftfalse
+\newcommand{\ProvisionalInput}[1]{%
+  \ifOpenLandauFullDraft\InputIfFileExists{#1}{}{}\fi}
+
 \RequirePackage[
   paperwidth=155mm,
   paperheight=235mm,
@@ -72,6 +79,11 @@
 
 \RequirePackage{tcolorbox}
 \tcbuselibrary{theorems,breakable,skins}
+
+% The volume has no landscape pages.  Reset the low-level PDF page rotation
+% attribute at every shipout so a stale or package-local attribute cannot turn
+% an otherwise portrait chapter-opening page upside down.
+\AddToHook{shipout/before}{\pdfpageattr{/Rotate 0}}
 
 \newtcbtheorem[number within=section]{theorem}{Theorem}{%
   enhanced,

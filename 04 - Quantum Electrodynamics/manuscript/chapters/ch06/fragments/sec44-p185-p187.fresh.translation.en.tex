@@ -1,0 +1,104 @@
+\SourcePage{185}{190}
+\section{Emission and absorption}
+
+In first-order perturbation theory, the probability of a transition produced by the perturbation $\widehat V$ is given by the standard formulas (III, \S~42). Let the initial and final states of the radiating system belong to the discrete spectrum\footnote{This assumption entails, in particular, neglect of recoil: the radiator remains at rest as a whole.}. The probability per unit time of the transition $i\to f$ accompanied by photon emission is then
+\begin{equation}
+dw=2\pi|V_{fi}|^2\delta(E_i-E_f-\omega)d\nu,
+\tag{44.1}
+\end{equation}
+where $\nu$ denotes, symbolically, the collection of quantities characterizing the photon state and ranging continuously over their values (the photon wave function is here understood to be normalized to a delta function on the $\nu$ scale).
+
+If the emitted photon has a specified angular momentum, the frequency $\omega$ is the only continuous variable. Integrating (44.1) over $d\nu=d\omega$ removes the delta function (fixing $\omega$ at $\omega=E_i-E_f$), and the transition probability becomes
+\begin{equation}
+w=2\pi|V_{fi}|^2.
+\tag{44.2}
+\end{equation}
+
+If instead photon emission with a prescribed momentum $\mathbf k$ is considered, then $d\nu=d^3k/(2\pi)^3=\omega^2d\omega do/(2\pi)^3$. The photon wave function (a plane wave) is assumed to be normalized to one photon in the volume $V=1$, as it is throughout this book; $d\nu$ is the number of states contained in the phase-space volume $Vd^3k$. Hence the probability of emitting a photon with a prescribed momentum is
+\begin{equation}
+dw=2\pi|V_{fi}|^2\delta(E_i-E_f-\omega)\frac{d^3k}{(2\pi)^3},
+\tag{44.3}
+\end{equation}
+or, after integration over $d\omega$,
+\begin{equation}
+dw=\frac{1}{4\pi^2}|V_{fi}|^2\omega^2do.
+\tag{44.4}
+\end{equation}
+
+The matrix element $V_{fi}$ from (43.10) must be substituted here.
+
+In the sections that follow, these formulas will be used to calculate emission probabilities in various specific cases. Here we consider several general relations between different kinds of radiative processes.
+
+\SourcePage{186}{191}
+If the initial field state already contains a nonzero number $N_n$ of the photons in question, the transition matrix element acquires the additional factor
+\begin{equation}
+\langle N_n+1|c_n^+|N_n\rangle=\sqrt{N_n+1},
+\tag{44.5}
+\end{equation}
+so that the transition probability is multiplied by $N_n+1$. The unity in this factor accounts for spontaneous emission, which also occurs at $N_n=0$. The term $N_n$, by contrast, produces \emph{stimulated} (or \emph{induced}) emission: the presence of photons in the initial field state stimulates the emission of further photons of the same kind.
+
+For the reverse change of state of the system ($f\to i$), the matrix element $V_{if}$ differs from $V_{fi}$ by replacing (44.5) with
+\[
+\langle N_n-1|c_n|N_n\rangle=\sqrt{N_n}
+\]
+(and by replacing the other quantities with their complex conjugates). This reverse transition is the absorption of a photon by a system that passes from the level $E_f$ to the level $E_i$. The emission and absorption probabilities for a given pair of states $i$, $f$ therefore obey the important relation\footnote{For the remainder of this section we use conventional units.}
+\begin{equation}
+\frac{w^{(\text{em})}}{w^{(\text{abs})}}=\frac{N_n+1}{N_n}
+\tag{44.6}
+\end{equation}
+(first given by \emph{A.~Einstein} in 1916).
+
+We now relate the photon number to the intensity of radiation incident on the system from outside. Let
+\begin{equation}
+I_{\mathbf k\mathbf e}d\omega do
+\tag{44.7}
+\end{equation}
+be the radiation energy incident per unit time on unit area, with polarization $\mathbf e$, frequency in the interval $d\omega$, and wave-vector direction in the solid-angle element $do$. These intervals correspond to $k^2dkdo/(2\pi)^3$ field oscillators, each containing $N_{\mathbf k\mathbf e}$ photons of the specified polarization. The same energy (44.7) is therefore obtained from the product
+\[
+c\frac{k^2dkdo}{(2\pi)^3}N_{\mathbf k\mathbf e}\hbar\omega
+=\frac{\hbar\omega^3}{8\pi^3c^2}N_{\mathbf k\mathbf e}d\omega do.
+\]
+This gives the required relation:
+\begin{equation}
+N_{\mathbf k\mathbf e}=\frac{8\pi^3c^2}{\hbar\omega^3}I_{\mathbf k\mathbf e}.
+\tag{44.8}
+\end{equation}
+
+Let $dw_{\mathbf k\mathbf e}^{(\text{sp})}$ denote the probability of spontaneous emission of a photon of polarization $\mathbf e$ into the solid angle $do$; the labels (ind) and (abs)
+\SourcePage{187}{192}
+will denote the corresponding probabilities of induced emission and absorption. Equations (44.6) and (44.8) give the following relations among them:
+\begin{equation}
+dw_{\mathbf k\mathbf e}^{(\text{abs})}
+=dw_{\mathbf k\mathbf e}^{(\text{ind})}
+=dw_{\mathbf k\mathbf e}^{(\text{sp})}
+\frac{8\pi^3c^2}{\hbar\omega^3}I_{\mathbf k\mathbf e}.
+\tag{44.9}
+\end{equation}
+
+For isotropic, unpolarized incident radiation ($I_{\mathbf k\mathbf e}$ is independent of the directions of $\mathbf k$ and $\mathbf e$), integration of (44.9) over $do$ and summation over $\mathbf e$ yield analogous relations between the total probabilities of radiative transitions for the specified pair of system states $i$ and $f$:
+\begin{equation}
+w^{(\text{abs})}=w^{(\text{ind})}=w^{(\text{sp})}
+\frac{\pi^2c^2}{\hbar\omega^3}I,
+\tag{44.10}
+\end{equation}
+where $I=2\cdot4\pi I_{\mathbf k\mathbf e}$ is the total spectral intensity of the incident radiation.
+
+If the states $i$ and $f$ of the emitting (or absorbing) system are degenerate, the total probability for emission (or absorption) of these photons is found by summing over all mutually degenerate final states and averaging over every possible initial state. Denote the degeneracies (statistical weights) of states $i$ and $f$ by $g_i$ and $g_f$. The initial states are the states $i$ for spontaneous and induced emission, and the states $f$ for absorption. If all $g_i$ or $g_f$ initial states are taken to be equiprobable in each case, then (44.10) is replaced by
+\begin{equation}
+g_fw^{(\text{abs})}=g_iw^{(\text{ind})}=g_iw^{(\text{sp})}
+\frac{\pi^2c^2}{\hbar\omega^3}I.
+\tag{44.11}
+\end{equation}
+
+The quantities known as the \emph{Einstein coefficients} are often used in the literature; they are defined by
+\begin{equation}
+A_{if}=w^{(\text{sp})},\qquad
+B_{if}=w^{(\text{ind})}\frac cI,\qquad
+B_{fi}=w^{(\text{abs})}\frac cI
+\tag{44.12}
+\end{equation}
+($I/c$ is the spatial spectral density of the radiation energy). They are related by
+\begin{equation}
+g_fB_{fi}=g_iB_{if}=g_iA_{if}\frac{\pi^2c^3}{\hbar\omega^3}.
+\tag{44.13}
+\end{equation}
