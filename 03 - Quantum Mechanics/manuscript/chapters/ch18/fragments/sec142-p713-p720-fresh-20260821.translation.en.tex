@@ -1,0 +1,186 @@
+\SourcePage{713}{716}
+\section{Elastic scattering in the presence of inelastic processes}
+
+Collisions accompanied by a change in the internal state of the colliding particles are called inelastic. Here such changes are understood in the broadest sense; in particular, even the kinds of particles may change. Examples include the excitation or ionization of atoms and the excitation or decay of nuclei. When a collision, such as a nuclear reaction, can involve different physical processes, these are said to constitute different \emph{reaction channels}.
+
+The presence of inelastic channels also affects the properties of elastic scattering.
+
+In the general case of several reaction channels, the asymptotic wave function of the colliding-particle system is a sum with one term for every possible channel. Among these is a term describing the particles in their initial, unchanged state, called the \emph{entrance channel}. It is the product of the particles' internal-state wave functions and a function describing their relative motion, in a coordinate system where their center of mass is at rest. It is this last function that concerns us here; denote it by $\psi$ and determine its asymptotic form.
+
+In the entrance channel, $\psi$ consists of an incident plane wave and an outgoing spherical wave corresponding to elastic scattering. It can also be represented as a sum of converging and outgoing waves, as in §~123. The difference is that the asymptotic expression for the radial functions $R_l(r)$ can no longer be taken as a standing wave. A standing wave is the sum of converging and outgoing waves with equal amplitudes. This accords with the physical meaning of purely elastic scattering, but when inelastic channels are present, the amplitude of the outgoing wave must be smaller than that of the converging wave. The asymptotic expression for $\psi$ is therefore given by (123.9),
+
+\SourcePage{714}{717}
+\begin{equation}
+ \psi=\frac1{2ikr}\sum_{l=0}^{\infty}(2l+1)P_l(\cos\theta)
+ \left[(-1)^{l+1}e^{-ikr}+S_le^{ikr}\right]
+ \tag{142.1}
+\end{equation}
+except that the $S_l$ are no longer defined by (123.10), but are quantities, generally complex, whose moduli are less than unity. The elastic-scattering amplitude is expressed through them by (123.11):
+\begin{equation}
+ f(\theta)=\frac1{2ik}\sum_{l=0}^{\infty}(2l+1)(S_l-1)P_l(\cos\theta).
+ \tag{142.2}
+\end{equation}
+In place of (123.12), the total elastic-scattering cross section $\sigma_e$ is
+\begin{equation}
+ \sigma_e=\frac{\pi}{k^2}\sum_{l=0}^{\infty}(2l+1)|1-S_l|^2.
+ \tag{142.3}
+\end{equation}
+
+The total inelastic-scattering cross section, also called the \emph{reaction cross section} $\sigma_r$, summed over all possible channels, can likewise be expressed through the $S_l$. For each $l$, the intensity of the outgoing wave is reduced relative to that of the converging wave by the factor $|S_l|^2$. This reduction must be attributed entirely to inelastic scattering. Hence
+\begin{equation}
+ \sigma_r=\frac{\pi}{k^2}\sum_{l=0}^{\infty}(2l+1)(1-|S_l|^2),
+ \tag{142.4}
+\end{equation}
+and the total cross section is
+\begin{equation}
+ \sigma_t=\sigma_e+\sigma_r=\frac{2\pi}{k^2}\sum_{l=0}^{\infty}(2l+1)(1-\Re S_l).
+ \tag{142.5}
+\end{equation}
+
+The partial amplitude for elastic scattering with angular momentum $l$, defined as in (123.15), is
+\begin{equation}
+ f_l=\frac{S_l-1}{2ik},
+ \tag{142.6}
+\end{equation}
+
+\SourcePage{715}{718}
+while each term of the sums in (142.3) and (142.4) is the partial cross section for elastic and inelastic scattering, respectively, of particles with angular momentum $l$:
+\begin{equation}
+ \begin{aligned}
+ \sigma_e^{(l)}&=\frac{\pi}{k^2}(2l+1)|1-S_l|^2,\\
+ \sigma_r^{(l)}&=\frac{\pi}{k^2}(2l+1)(1-|S_l|^2),\\
+ \sigma_t^{(l)}&=\frac{2\pi}{k^2}(2l+1)(1-\Re S_l).
+ \end{aligned}
+ \tag{142.7}
+\end{equation}
+
+The value $S_l=1$ means that scattering with that $l$ is entirely absent. The case $S_l=0$ corresponds to complete ``absorption'' of particles with angular momentum $l$: the partial outgoing wave with this value of $l$ is absent from (142.1). The elastic and inelastic cross sections are then equal:
+\begin{equation}
+ \sigma_e^{(l)}=\sigma_r^{(l)}=\frac{\pi}{k^2}(2l+1).
+ \tag{142.8}
+\end{equation}
+Notice also that elastic scattering can occur without inelastic scattering, when $|S_l|=1$, but the converse is impossible: inelastic scattering necessarily entails elastic scattering as well. For a specified $\sigma_r^{(l)}$, the partial elastic-scattering cross section must lie in the interval
+\begin{equation}
+ \sqrt{\sigma_0}-\sqrt{\sigma_0-\sigma_r^{(l)}}\leq
+ \sqrt{\sigma_e^{(l)}}\leq
+ \sqrt{\sigma_0}+\sqrt{\sigma_0-\sigma_r^{(l)}},
+ \tag{142.9}
+\end{equation}
+where $\sigma_0=(2l+1)\pi/k^2$.
+
+Taking $f(\theta)$ from (142.2) at $\theta=0$ and comparing it with (142.5), we obtain
+\begin{equation}
+ \Im f(0)=\frac{k}{4\pi}\sigma_t,
+ \tag{142.10}
+\end{equation}
+which generalizes the optical theorem (125.9). Here $f(0)$ is still the zero-angle elastic-scattering amplitude, but the total cross section $\sigma_t$ includes the inelastic part as well.
+
+The imaginary parts of the partial amplitudes $f_l$ are related to the partial cross sections $\sigma_t^{(l)}$ by
+\begin{equation}
+ \Im f_l=\frac{k}{4\pi}\frac{\sigma_t^{(l)}}{2l+1},
+ \tag{142.11}
+\end{equation}
+which follows directly from (142.6) and (142.7).
+
+\SourcePage{716}{719}
+The fact that the coefficients $S_l$ in the asymptotic wave function do not have unit modulus does not alter the conclusions of §~128 concerning singular points of the elastic-scattering amplitude as a function of complex $E$; those conclusions remain valid when inelastic processes are present. The analytic properties of the amplitude do change in one respect: it is now nonreal on the negative real semiaxis, $E<0$, and its values on the upper and lower rims of the cut for $E>0$ are not complex conjugates. Correspondingly, its values at points of the upper and lower half-planes symmetric about the real axis are not in general complex conjugates either.
+
+When one passes from the upper rim of the cut to the lower by making a complete circuit around $E=0$, the root $\sqrt E$ changes sign, and hence the quantity $k$, real for $E>0$, also changes sign. The converging and outgoing waves in (142.1) then exchange roles, so the new coefficient corresponding to $S_l$ is its reciprocal $1/S_l$, which is by no means the same as $S_l^*$. It is natural to denote the values of the amplitudes $f_l$ on the upper and lower rims by $f_l(k)$ and $f_l(-k)$, respectively; of course, only $f_l(k)$ is the physical amplitude. From (142.6),
+\[
+ f_l(k)=\frac{S_l-1}{2ik},\qquad
+ f_l(-k)=-\frac{1/S_l-1}{2ik}.
+\]
+Eliminating $S_l$ from these equations gives
+\begin{equation}
+ f_l(k)-f_l(-k)=2ikf_l(k)f_l(-k)
+ \tag{142.12}
+\end{equation}
+(without inelastic processes, $f(-k)=f^*(k)$, and (142.12) and (142.11) would coincide).
+
+Rewriting (142.12) as
+\[
+ \frac1{f_l(k)}-\frac1{f_l(-k)}=-2ik,
+\]
+we see that the sum $1/f_l(k)+ik$ must be an even function of $k$. Denoting this function by $g_l(k^2)$, we have
+\begin{equation}
+ f_l(k)=\frac1{g_l(k^2)-ik}.
+ \tag{142.13}
+\end{equation}
+
+\SourcePage{717}{720}
+The even function $g_l(k^2)$ is no longer real, however, as it was in (125.15)\footnote{The argument just given, and with it the conclusion that $g_l$ is even, presupposes that the interaction decreases sufficiently rapidly as $r\to\infty$ to ensure that there are no cuts in the left half of the $E$ plane, thereby permitting a complete circuit around $E=0$.}.
+
+When a beam of particles passes through a scattering medium composed of many scattering centers, it gradually weakens as particles undergoing various collision processes leave it. This attenuation is completely determined by the zero-angle elastic-scattering amplitude and, under certain conditions specified below, can be described by the following formal method\footnote{The treatment below applies, in particular, to scattering of fast neutrons, with energies of order hundreds of MeV, by nuclei. Their wavelength is so short that a nucleus may be regarded as an inhomogeneous macroscopic medium for them.}.
+
+Let $f(0,E)$ be the zero-angle scattering amplitude for each individual particle of the medium. Suppose that $f$ is small compared with the mean spacing $d\sim(V/N)^{1/3}$ between the particles; scattering by each of them may then be considered separately. Introduce as an auxiliary quantity an effective field $U_{\text{eff}}$ of a fixed center, defined so that the zero-angle Born scattering amplitude calculated from it is exactly equal to the true amplitude $f(0,E)$. This by no means implies that the Born approximation can be used to calculate $f(0,E)$ from the actual interaction between the particles. By definition, therefore (see (126.4)),
+\begin{equation}
+ \int U_{\text{eff}}\,dV=-\frac{2\pi\hbar^2}{m}f(0,E),
+ \tag{142.14}
+\end{equation}
+where $m$ is the mass of the scattered particle. Since $f$ is complex, the field so defined is complex as well. An estimate of the two sides of (142.14) relates its range $a$ to the magnitude of $U_{\text{eff}}$:
+\begin{equation}
+ a^3U_{\text{eff}}\sim\hbar^2f/m.
+ \tag{142.15}
+\end{equation}
+Definition (142.14) is of course not unique. Impose the additional requirement that $U_{\text{eff}}$ satisfy the condition for applicability of perturbation theory:
+\begin{equation}
+ |U_{\text{eff}}|\ll\hbar^2/ma^2
+ \tag{142.16}
+\end{equation}
+
+\SourcePage{718}{721}
+(and hence $|f|\ll a$). It is readily seen that the attenuation of the scattered beam can then be described as the propagation of a plane wave through a homogeneous medium in which the particle has the constant potential energy
+\begin{equation}
+ \overline{U}_{\text{eff}}=\frac NV\int U_{\text{eff}}\,dV
+ =-\frac NV\frac{2\pi\hbar^2}{m}f(0,E),
+ \tag{142.17}
+\end{equation}
+obtained by averaging over the volume $V$ of the medium the effective fields of all its $N$ particles. To see this, first consider scattering by a region of the medium that already contains many scattering centers but in which the scattering effect is still small; condition (142.16) ensures that such regions can be selected. The attenuation of the beam on passing through such a region is determined by the zero-angle scattering amplitude. In the Born approximation, that amplitude is in turn determined by the integral of the scattering field over the entire volume of the region. This means precisely that the scattering properties of interest are completely determined by the volume-averaged field (142.17).
+
+Thus a beam passing through the medium can be described by a plane wave $\sim e^{ikz}$ with wave vector
+\[
+ k=\frac1\hbar\sqrt{2m(E-\overline{U}_{\text{eff}})}.
+\]
+Introduce the wave vector $k_0=\sqrt{2mE}/\hbar$ of the incident particles and write $k=nk_0$. The quantity
+\begin{equation}
+ n=\sqrt{1-\frac{\overline{U}_{\text{eff}}}{E}}
+ =\sqrt{1+\frac NV\frac{2\pi\hbar^2}{mE}f(0,E)}
+ \tag{142.18}
+\end{equation}
+acts as the \emph{refractive index} of the medium for the particle beam passing through it. It is generally complex, since the amplitude is complex, and its imaginary part determines the attenuation of the beam intensity. If $E\gg|\overline{U}_{\text{eff}}|$, (142.18) gives, as expected,
+\[
+ \Im n=\frac NV\frac{\pi\hbar^2}{mE}\Im f(0,E)=\frac NV\frac{\sigma_t}{2k},
+\]
+where $\sigma_t$ is the total scattering cross section; the optical theorem (142.10) has been used here. This expression gives the evident result that the wave intensity decreases according to
+\[
+ |e^{ikz}|^2\sim\exp\left(-\frac NV\sigma_tz\right).
+\]
+
+\SourcePage{719}{722}
+Besides absorption, the complex refractive index (142.18), through its real part, also determines the refraction law for the beam on entering and leaving the scattering medium\footnote{An interesting application of (142.17) is the shift of the higher levels of an alkali-metal atom immersed in a foreign gas. In a highly excited state, the valence electron has a mean distance $r$ from the atomic center that is large compared with the dimensions $a$ both of the ionic core and of the foreign neutral atoms. The foreign atoms lying within a sphere of radius $\sim r$ act as scattering centers for the valence electron and shift its energy level by the amount (142.17). Since the de Broglie wavelength of the excited valence electron is also large compared with $a$, the amplitude is $f(0,E)\approx-a$, where $a$ is the scattering length (cf. (132.9)). The level shift is consequently the constant amount $2\pi\hbar^2a\nu/m$, where $m$ is the electron mass and $\nu$ is the number density of the foreign gas (E.~Fermi, 1934).}.
+
+\ProblemHeading
+
+Neutrons are scattered by a heavy nucleus, and their wavelength is small compared with the nuclear radius $a$ ($ka\gg1$). Assume that every neutron incident with orbital angular momentum $l<ka\equiv l_0$, or impact parameter $\rho=\hbar l/mv=l/k<a$, is absorbed by the nucleus, while those with $l>l_0$ do not interact with it at all. Determine the small-angle elastic-scattering cross section.
+
+\SolutionHeading
+Under these conditions the neutron motion is predominantly semiclassical, while the elastic scattering results from a small deflection entirely analogous to Fraunhofer diffraction of light by a black sphere. The required cross section can therefore be written down directly from the known solution of the diffraction problem\footnote{See Vol.~II, §~61, Problem~3. The problem of diffraction by a black sphere is equivalent to diffraction by a circular aperture cut in an opaque screen. The scattering cross section is obtained by dividing the intensity of the diffracted waves by the incident flux density.}:
+\[
+ d\sigma_e=\pi a^2\frac{J_1^2(ka\theta)}{\pi\theta^2}\,d\mathit{o}.
+\]
+The same result follows from (142.3). The assumptions of the problem give $S_l=0$ for $l<l_0$ and $S_l=1$ for $l>l_0$. The elastic-scattering amplitude is consequently
+\[
+ f(\theta)=-\frac1{2ik}\sum_{l=0}^{l_0}(2l+1)P_l(\cos\theta).
+\]
+The terms with large $l$ make the main contribution to the sum. We accordingly replace $2l+1$ by $2l$, use the approximation (49.6) for $P_l(\cos\theta)$ at small $\theta$, and replace summation by integration:
+\[
+ f(\theta)=\frac{i}{k}\int_0^{l_0}lJ_0(\theta l)\,dl
+ =\frac{i}{k\theta}l_0J_1(\theta l_0)=\frac{ia}{\theta}J_1(ka\theta),
+\]
+
+\SourcePage{720}{723}
+as required\footnote{The problem of diffraction scattering of fast charged particles by a ``black'' nucleus can be treated similarly. The limiting value $l_0$ must then be determined by requiring that the shortest distance between the nucleus and a particle moving along a classical trajectory in the Coulomb field equal the nuclear radius. One should again set $S_l=0$ for $l<l_0$, while for $l>l_0$, $S_l=e^{2i\delta_l}$, where the $\delta_l$ are the Coulomb phases from (135.11). See A.~I.~Akhiezer and I.~Ya.~Pomeranchuk, \emph{Some Problems of Nuclear Theory} (Moscow: Gostekhizdat, 1950), §~22; J. Physics USSR, 1945, vol.~9, p.~471.}. The total elastic-scattering cross section is
+\[
+ \sigma_e=\pi a^2\int_0^\infty\frac{J_1^2(ka\theta)}{\pi\theta^2}\,2\pi\theta\,d\theta=\pi a^2
+\]
+(the rapid convergence permits the upper limit to be extended to $\infty$). As expected under the stated conditions (cf. (142.8)), it is equal to the absorption cross section, which is simply the geometrical cross-sectional area of the sphere. The total cross section is $\sigma_t=2\pi a^2$.

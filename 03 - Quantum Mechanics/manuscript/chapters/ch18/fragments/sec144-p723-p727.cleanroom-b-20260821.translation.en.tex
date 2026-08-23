@@ -1,0 +1,132 @@
+\SourcePage{723}{726}
+\section{The scattering matrix in the presence of reactions}
+
+The cross-section $\sigma_r$ considered in \S\S~142 and 143 was the total over every possible inelastic scattering channel. We now show how to construct a general theory of inelastic collisions in which each channel can be treated separately.
+
+Suppose that a collision of two particles again produces two particles, whether the same or different ones. Enumerate all reaction channels possible at a specified energy, and label quantities belonging to them by corresponding indices.
+
+Let channel $i$ be the entrance channel. In the centre-of-mass frame, the wave function for relative motion of the colliding particles in this channel is the familiar sum of an incident plane wave and an elastically scattered outgoing wave:
+\begin{equation}
+ \psi_i=\exp(ik_i z)+f_{ii}(\theta)\frac{\exp(ik_i r)}r.
+ \tag{144.1}
+\end{equation}
+The squared amplitude $|f_{ii}|^2$ gives the elastic-scattering cross-section in channel $i$:
+\begin{equation}
+ d\sigma_{ii}=|f_{ii}|^2d\mathit{o}.
+ \tag{144.2}
+\end{equation}
+
+In the other channels, denoted by $f$, the wave functions for relative motion are outgoing waves. For a reason that will become clear below, it is convenient to write them as\footnote{As before (compare the note on p.~187), the initial state is denoted by $i$ and the final state by $f$. In a scattering amplitude, the final-state index stands to the left of the initial-state index, in accordance with the order of matrix-element indices. For uniformity, cross-section indices will be written in the same order.}
+\begin{equation}
+ \psi_f=f_{fi}(\theta)\sqrt{m_f/m_i}\,\frac{\exp(ik_f r)}r,
+ \tag{144.3}
+\end{equation}
+\SourcePage{724}{727}
+where $\mathbf{k}_f$ is the wave vector for relative motion of the reaction products in channel $f$, $\theta$ is its angle with the $z$ axis, and $m_i,m_f$ are the reduced masses of the two initial and two final particles. The scattered flux into solid angle $d\mathit{o}_f$ is obtained by multiplying $|\psi_f|^2$ by $v_fr^2d\mathit{o}_f$, and the cross-section of the corresponding reaction by dividing this flux by the incident current density $v_i$:
+\begin{equation}
+ d\sigma_{fi}=|f_{fi}|^2\frac{p_f}{p_i}d\mathit{o}_f,
+ \tag{144.4}
+\end{equation}
+where $p_i=m_iv_i$ and $p_f=m_fv_f$.
+
+In \S~125 the scattering operator $\widehat S$ was introduced as the operator carrying an incoming wave into an outgoing one. With several channels, this operator has matrix elements for transitions between distinct channels. Its channel-diagonal elements correspond to elastic scattering and the off-diagonal elements to the various inelastic processes; all these elements remain operators with respect to the other variables. They are defined as follows.
+
+As in \S~125, introduce operators $\widehat f_{ii}$ and $\widehat f_{fi}$ associated with the amplitudes $f_{ii}$ and $f_{fi}$ by
+\begin{equation}
+ \widehat S_{fi}=\delta_{fi}+2i\sqrt{k_ik_f}\,\widehat f_{fi}.
+ \tag{144.5}
+\end{equation}
+
+This definition can readily be seen to give an $S$ matrix that must satisfy unitarity. Indeed, write the entrance-channel wave function as a combination of incoming and outgoing waves, in the form used in \S~125:
+\begin{align}
+ \psi_i&=F(-\mathbf n')\frac{\exp(-ik_i r)}{r\sqrt{v_i}}
+ -(1+2ik_i\widehat f_{ii})F(\mathbf n')\frac{\exp(ik_i r)}{r\sqrt{v_i}}\notag\\
+ &=F(-\mathbf n')\frac{\exp(-ik_i r)}{r\sqrt{v_i}}
+ -\widehat S_{ii}F(\mathbf n')\frac{\exp(ik_i r)}{r\sqrt{v_i}}.
+ \tag{144.6}
+\end{align}
+For convenience, an extra factor $v_i^{-1/2}$ has been introduced here relative to (125.3). With our notation for amplitudes, the wave function in channel $f$ is then
+\begin{equation}
+ \psi_f=2ik_i\sqrt{m_f/m_i}\,\widehat f_{fi}F(\mathbf n')
+ \frac{\exp(ik_f r)}{r\sqrt{v_i}}
+ =\widehat S_{fi}F(\mathbf n')\frac{\exp(ik_f r)}{r\sqrt{v_f}}.
+ \tag{144.7}
+\end{equation}
+
+The flux in the incoming waves must equal the sum of the fluxes in the outgoing waves of every channel. This expresses the evident condition that the total probability of all\SourcePage{725}{728} possible elastic and inelastic processes arising in the collision is unity. Owing to the factors $\sqrt v$ introduced in the denominators of the spherical waves, the velocity cancels from their current densities. The condition therefore reduces simply to equality between the normalization of the incoming wave and that of the collection of outgoing waves. Thus it is still expressed by unitarity of the scattering operator, now understood also as a matrix in the channel labels. For the operators $\widehat f_{fi}$ this condition is
+\begin{equation}
+ \widehat f_{fi}-\widehat f_{if}^{+}
+ =2i\sum_n k_n\widehat f_{fn}\widehat f_{in}^{+},
+ \tag{144.8}
+\end{equation}
+analogously to (125.7). Here the superscript $+$ denotes complex conjugation and transposition with respect to all matrix indices other than the channel label.
+
+The $S$ matrix is diagonal in states of definite orbital-angular-momentum magnitude $l$; distinguish the corresponding matrix elements by a superscript $(l)$. Acting with $\widehat f_{ii}$ and $\widehat f_{fi}$ on (125.17), we obtain the elastic and inelastic amplitudes
+\begin{align}
+ f_{ii}&=\frac1{2ik_i}\sum_{l=0}^{\infty}(2l+1)(S_{ii}^{(l)}-1)P_l(\cos\theta),\notag\\
+ f_{fi}&=\frac1{2i\sqrt{k_ik_f}}\sum_{l=0}^{\infty}(2l+1)S_{fi}^{(l)}P_l(\cos\theta).
+ \tag{144.9}
+\end{align}
+The corresponding integrated cross-sections are
+\begin{equation}
+ \sigma_{ii}=\frac\pi{k_i^2}\sum_{l=0}^{\infty}(2l+1)|1-S_{ii}^{(l)}|^2,
+ \qquad
+ \sigma_{fi}=\frac\pi{k_i^2}\sum_{l=0}^{\infty}(2l+1)|S_{fi}^{(l)}|^2.
+ \tag{144.10}
+\end{equation}
+The first expression agrees with (142.3). The total reaction cross-section $\sigma_r$ from entrance channel $i$ is $\sigma_r=\sum_f'\sigma_{fi}$, summed over all $f\ne i$. Unitarity of the $S$ matrix gives $\sum_f'|S_{fi}|^2=1-|S_{ii}|^2$, returning us to (142.4) for $\sigma_r$.
+
+Symmetry of the scattering process under time reversal, the reciprocity theorem, is expressed by
+\begin{equation}
+ \widehat S_{fi}=\widehat S_{i^*f^*},
+ \tag{144.11}
+\end{equation}
+or equivalently by
+\begin{equation}
+ \widehat f_{fi}=\widehat f_{i^*f^*}.
+ \tag{144.12}
+\end{equation}
+
+\SourcePage{726}{729}
+Here $i^*$ and $f^*$ denote states obtained from $i$ and $f$ by reversing the signs of the particle momenta and spin projections\footnote{For a composite particle, such as an atom or atomic nucleus, ``spin'' here means the total intrinsic angular momentum formed from both the spins and the orbital angular momenta of the internal motions of its constituents.}; they are said to be \emph{time-reversed} relative to $i$ and $f$. Relations (144.11) and (144.12) generalize (125.11) and (125.12) for elastic scattering\footnote{We disregard here a factor $-1$ that may arise in collisions of particles possessing spin (compare (140.11)). It naturally has no effect on the cross-section relation (144.13).}.
+
+Equation (144.12) yields the reaction-cross-section relation
+\begin{equation}
+ \frac{d\sigma_{fi}}{p_f^2d\mathit{o}_f}
+ =\frac{d\sigma_{i^*f^*}}{p_i^2d\mathit{o}_{i^*}}.
+ \tag{144.13}
+\end{equation}
+This expresses the \emph{principle of detailed balance}.
+
+As noted in \S~126, when first-order perturbation theory applies there is, besides reciprocity, an additional relation between the amplitudes for the direct and reverse processes in the literal sense, $i\to f$ and $f\to i$. The property $f_{fi}=f_{if}^*$ holds in the same approximation for inelastic processes as well. The cross-sections are then related by
+\begin{equation}
+ \frac{d\sigma_{fi}}{p_f^2d\mathit{o}_f}
+ =\frac{d\sigma_{if}}{p_i^2d\mathit{o}_i}.
+ \tag{144.14}
+\end{equation}
+
+The distinction between $i\to f$ and $i^*\to f^*$ disappears for integrated cross-sections that are integrated over every direction of $\mathbf p_f$, summed over the final-particle spin directions $s_{1f},s_{2f}$, and averaged over the directions of the initial momentum $\mathbf p_i$ and initial-particle spins $s_{1i},s_{2i}$. Denote this cross-section by $\overline\sigma_{fi}$:
+\[
+ \overline\sigma_{fi}=\frac1{4\pi(2s_{1i}+1)(2s_{2i}+1)}
+ \sum_{(m_s)}\int d\sigma_{fi}\,d\mathit{o}_i.
+\]
+The sum is over the spin projections of all particles. The factor preceding the sums and integral occurs because quantities belonging to the initial particles are averaged rather than summed. Writing (144.13) as
+\[
+ p_i^2d\sigma_{fi}\,d\mathit{o}_{i^*}
+ =p_f^2d\sigma_{i^*f^*}\,d\mathit{o}_f
+\]
+and performing these operations gives
+\begin{equation}
+ g_ip_i^2\overline\sigma_{fi}=g_fp_f^2\overline\sigma_{if};
+ \tag{144.15}
+\end{equation}
+\SourcePage{727}{730}
+where
+\begin{equation}
+ g_i=(2s_{1i}+1)(2s_{2i}+1),\qquad
+ g_f=(2s_{1f}+1)(2s_{2f}+1)
+ \tag{144.16}
+\end{equation}
+are the numbers of possible spin orientations for the initial and final particle pairs. These numbers are called the \emph{statistical weights} of states $i$ and $f$.
+
+Finally, note the following property of $f_{fi}$. We saw in the preceding section that as $p_i\to0$ the reaction cross-section varies as $\sigma_{fi}\sim1/p_i$, provided the long-distance interaction decreases sufficiently rapidly. By (144.4), this means that $f_{fi}\to\mathrm{const}$ as $p_i\to0$. Symmetry (144.12) then implies that $f_{fi}$ also tends to a constant limit as $p_f\to0$. We shall return to this property in \S~147.

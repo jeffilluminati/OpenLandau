@@ -195,6 +195,7 @@
 \renewcommand{\cftchappagefont}{\sffamily\bfseries}
 \renewcommand{\cftsecfont}{\normalfont}
 \renewcommand{\cftsecpagefont}{\sffamily\small}
+\setlength{\cftchapnumwidth}{2.6em}
 \setlength{\cftbeforechapskip}{0.8em}
 \setlength{\cftbeforesecskip}{0.15em}
 

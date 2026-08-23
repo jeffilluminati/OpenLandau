@@ -1,0 +1,226 @@
+\SourcePage{663}{666}
+\section{Resonance scattering at low energies}
+
+The scattering of slow particles, $ka\ll1$, by an attractive field requires separate consideration when the discrete spectrum of negative energies contains an $s$ state whose energy is small compared with the magnitude of the field $U$ within its range $a$. Denote this level by $\varepsilon$, with $\varepsilon<0$. The small energy $E$ of the scattered particle is close to $\varepsilon$, or nearly in resonance with it. As we shall see, this causes a substantial increase in the scattering cross-section.
+
+A shallow level can be included in scattering theory by a formal method based on the following observations.
+
+The exact Schrödinger equation for $\chi=rR_0(r)$ at $l=0$ is
+\[
+ \chi''+\frac{2m}{\hbar^2}[E-U(r)]\chi=0.
+\]
+In the ``inner'' region of the field, $r\sim a$, $E$ may be neglected in comparison with $U$:
+\begin{equation}
+ \chi''-\frac{2m}{\hbar^2}U(r)\chi=0,\qquad r\sim a.
+ \tag{133.1}
+\end{equation}
+Conversely, in the ``outer'' region, $r\gg a$, the field $U$ may be neglected:
+\begin{equation}
+ \chi''+\frac{2m}{\hbar^2}E\chi=0,\qquad r\gg a.
+ \tag{133.2}
+\end{equation}
+At some $r_1$ satisfying $1/k\gg r_1\gg a$, the solution of (133.2) would have to be matched to the solution of (133.1) satisfying $\chi(0)=0$. Matching requires continuity of the ratio $\chi'/\chi$, which is independent of the overall normalization of the wave function.
+
+Instead of treating the motion explicitly in the region $r\sim a$, we impose on the outer solution a suitably chosen boundary condition on $\chi'/\chi$ at small $r$. Since the outer solution varies slowly as $r\to0$, this condition may formally be assigned to $r=0$. Equation\SourcePage{664}{667} (133.1) in the region $r\sim a$ contains no $E$, so the boundary condition replacing it must likewise be independent of the particle energy. It must therefore have the form
+\begin{equation}
+ \left.\frac{\chi'}\chi\right|_{r\to0}=-\varkappa,
+ \tag{133.3}
+\end{equation}
+where $\varkappa$ is a constant. Since $\varkappa$ is independent of $E$, the same condition (133.3) must also apply to the Schrödinger-equation solution at the small negative energy $E=-|\varepsilon|$, namely to the stationary-state wave function. For $E=-|\varepsilon|$, equation (133.2) gives
+\begin{equation}
+ \chi=A_0\exp\left(-\frac{\sqrt{2m|\varepsilon|}}\hbar r\right)
+ \tag{133.4}
+\end{equation}
+with constant $A_0$. Substitution in (133.3) shows that $\varkappa$ is positive and equal to
+\begin{equation}
+ \varkappa=\frac{\sqrt{2m|\varepsilon|}}\hbar.
+ \tag{133.5}
+\end{equation}
+
+Apply condition (133.3) now to the free-motion wave function
+\[
+ \chi=\mathrm{const}\cdot\sin(kr+\delta_0),
+\]
+which is the exact general solution of (133.2) for $E>0$. For the required phase $\delta_0$ this gives
+\begin{equation}
+ \cot\delta_0=-\frac{\varkappa}{k}=-\sqrt{\frac{|\varepsilon|}{E}}.
+ \tag{133.6}
+\end{equation}
+Here $E$ is restricted only by $ak\ll1$ and need not be small relative to $|\varepsilon|$. Thus $\delta_0$, and with it the $s$-wave scattering amplitude, need not be small.
+
+The phases $\delta_l$ for $l>0$, and hence their partial amplitudes, remain small. The total amplitude may therefore still be identified with the $s$-wave amplitude,
+\[
+ f=\frac1{2ik}(e^{2i\delta_0}-1)=\frac1{k(\cot\delta_0-i)}.
+\]
+Using (133.6), we obtain
+\begin{equation}
+ f=-\frac1{\varkappa+ik}.
+ \tag{133.7}
+\end{equation}
+\SourcePage{665}{668}
+The total scattering cross-section is consequently
+\begin{equation}
+ \sigma=4\pi|f|^2=\frac{4\pi}{k^2+\varkappa^2}
+ =\frac{2\pi\hbar^2/m}{E+|\varepsilon|}.
+ \tag{133.8}
+\end{equation}
+The scattering remains isotropic, but its cross-section depends on energy and, in the resonance region $E\sim|\varepsilon|$, is large compared with the squared field range $a^2$, since $1/k\gg a$. Notice that the form of (133.8) is independent of the details of the short-distance interaction and is fixed entirely by the resonant level\footnote{Equation (133.8) was first obtained by Wigner (E.~Wigner, 1933); the idea of the derivation given here is due to Bethe and Peierls (H.~A.~Bethe, R.~Peierls, 1935).}.
+
+The result has somewhat greater generality than the assumption used in deriving it. Suppose $U(r)$ is altered slightly; the constant $\varkappa$ in boundary condition (133.3) changes as well. A suitable change in $U(r)$ can make $\varkappa$ vanish and then become a small negative quantity. Equations (133.7) and (133.8) for the amplitude and cross-section retain the same form. In (133.8), however, $|\varepsilon|=\hbar^2\varkappa^2/2m$ is then merely a constant characteristic of $U(r)$ and is not an energy level of that field. One then says that the field has a \emph{virtual level}: although no level actually lies near zero, a small change in the field would suffice to produce one.
+
+Under analytic continuation of (133.7) in the complex $E$ plane to the negative real semiaxis, $ik$ becomes $-\sqrt{-2mE}/\hbar$ (see \S~128). The scattering amplitude then has a pole at $E=-|\varepsilon|$, in accordance with the general conclusions of \S~128. A virtual level, on the other hand, produces no singularity of the amplitude on the physical sheet, as expected; its pole at $E=-|\varepsilon|$ lies on the unphysical sheet (see the note on p.~637).
+
+Formally, (133.7) corresponds to a case in which the first term in the expansion of $g_0(k)$ in (125.15),
+\[
+ f_0=\frac1{g_0(k)-ik},
+\]
+is negative and anomalously small. A refinement includes the next\SourcePage{666}{669} term of the expansion and writes
+\begin{equation}
+ f_0=\frac1{-\varkappa_0+(1/2)r_0k^2-ik}
+ \tag{133.9}
+\end{equation}
+(L.~D.~Landau, Ya.~A.~Smorodinsky, 1944). Recall that when the field decreases sufficiently rapidly, the functions $g_l(k)$ expand in even powers of $k$; see \S~132. Here $-\varkappa_0$ denotes $g_0(0)$, while $\varkappa$ is retained for (133.5), the quantity associated with the energy level $\varepsilon$. As explained above, $\varkappa$ is the value $-ik=\varkappa$ that makes the denominator of (133.9) vanish. It is therefore a root of
+\begin{equation}
+ \varkappa=\varkappa_0+(1/2)r_0\varkappa^2.
+ \tag{133.10}
+\end{equation}
+The correction $r_0k^2/2$ in the denominator of (133.9) is small compared with $\varkappa_0$ because $k$ is assumed small, but its order of magnitude is itself ``normal'': $r_0\sim a$, and this coefficient is always positive (see Problem 1). Including it is still a legitimate refinement of the scattering-amplitude formula in which contributions from $l\ne0$ have been neglected. It supplies a relative correction of order $ak$ to $f$, whereas the $l=1$ scattering contribution has relative order $(ak)^3$.
+
+As $k\to0$, $f_0\to-1/\varkappa_0$; hence $1/\varkappa_0$ equals the scattering length $a$ introduced in the preceding section. The coefficient $r_0$ in
+\begin{equation}
+ g_0(k)=k\cot\delta_0=-1/a+(1/2)r_0k^2
+ \tag{133.11}
+\end{equation}
+is called the \emph{effective range of the interaction}\footnote{We give values of $a$ and $r_0$ for the important case of two interacting nucleons. For a neutron and proton with parallel spins, an isotopic state with $T=0$, $a=5{.}4\cdot10^{-13}$ and $r_0=1{.}7\cdot10^{-13}$ cm. These values correspond to a true level of energy $|\varepsilon|=2{.}23$ MeV, the deuteron ground state. For a neutron and proton with antiparallel spins, an isotopic state with $T=1$, $a=-24\cdot10^{-13}$ and $r_0=2{.}7\cdot10^{-13}$ cm. These values correspond to a virtual level $|\varepsilon|=0{.}067$ MeV. By isotopic invariance, the latter values also apply to two neutrons with antiparallel spins; Pauli's principle altogether forbids parallel spins for an $nn$ system in an $s$ state.}.
+
+Equation (133.9) gives the scattering cross-section
+\[
+ \sigma=\frac{4\pi}{[\varkappa_0-(1/2)r_0k^2]^2+k^2}.
+\]
+If the term of order $k^4$ in the denominator is neglected, although retaining it would also be legitimate, this expression can be written, with allowance for\SourcePage{667}{670} (133.10), as
+\begin{equation}
+ \sigma=\frac{4\pi(1+r_0\varkappa)}{k^2+\varkappa_0^2}
+ =\frac{2\pi\hbar^2}{m}\frac{1+r_0\varkappa}{E+|\varepsilon|}.
+ \tag{133.12}
+\end{equation}
+
+Return to (133.4), the bound-state wave function in the ``outer'' region, and relate its normalization coefficient to the parameters introduced above. Evaluating the residue of (133.9) at its pole $E=\varepsilon$ and comparing with (128.11), we find
+\begin{equation}
+ A_0^2=\frac{2\varkappa}{1-r_0\varkappa}\approx2\varkappa(1+r_0\varkappa).
+ \tag{133.13}
+\end{equation}
+The second term is a small correction to the first, since $\varkappa r_0\sim\varkappa_0a\ll1$. Without it, $A_0^2=2\varkappa$, and therefore
+\begin{equation}
+ \chi=\sqrt{2\varkappa}\,e^{-\varkappa r},\qquad
+ \psi=\sqrt{\frac{\varkappa}{2\pi}}\frac{e^{-\varkappa r}}r,
+ \tag{133.14}
+\end{equation}
+which is the normalization that would result if (133.14) were valid throughout space.
+
+We briefly consider resonance in scattering with nonzero orbital angular momentum.
+
+The expansion of $g_l(k)$ begins with a term proportional to $k^{-2l}$. Retaining the first two terms, write the partial scattering amplitude as
+\begin{equation}
+ f_l=\frac1{-bk^{-2l}(\varepsilon-E)+ik},
+ \tag{133.15}
+\end{equation}
+where $b$ and $\varepsilon$ are constants and $b>0$ (see below). Resonance corresponds to an anomalously small coefficient of $k^{-2l}$, that is, to anomalously small $\varepsilon$. Despite the smallness of $E$, the term $b\varepsilon E^{-l}$ can nevertheless be large compared with $k$.
+
+If $\varepsilon<0$, the denominator of (133.15) has a real root $E\approx-|\varepsilon|$, so $\varepsilon$ is a discrete energy level with angular momentum $l$\footnote{For $\varepsilon<0$ and $E$ close to $|\varepsilon|$, one has $f_l\approx(-1)^{l+1}|\varepsilon|^l/[b(E+|\varepsilon|)]$. Comparison with (128.17) shows that $b>0$.}. Unlike the resonance in $s$-wave scattering, however, the amplitude (133.15) never becomes large compared with $a$: the resonant amplitude with angular momentum $l+1$ is only of the same order as the nonresonant amplitude with angular momentum $l$.
+
+\SourcePage{668}{671}
+If $\varepsilon>0$, amplitude (133.15) reaches order $1/k$ in the region $E\sim\varepsilon$ and is therefore large compared with $a$. The relative width of this region is small, $\Delta E/E\sim(ak)^{2l-1}$, so the resonance is sharply expressed. This form of resonance scattering occurs because a positive level with $l\ne0$, though not a true discrete level, is quasidiscrete. The centrifugal potential barrier makes the probability that a low-energy particle escapes from this state to infinity small, and the state's ``lifetime'' is correspondingly long (see \S~134). This accounts for the difference between resonance scattering at $l\ne0$ and resonance in an $s$ state, where no centrifugal barrier is present.
+
+For $\varepsilon>0$, the denominator in (133.15) vanishes at $E=E_0-i\Gamma/2$, where
+\begin{equation}
+ E_0\approx\varepsilon,\qquad \Gamma=\frac{2\sqrt{2m}}{b\hbar}E^{l+1/2}.
+ \tag{133.16}
+\end{equation}
+This pole of the scattering amplitude lies on the ``unphysical'' sheet. The small quantity $\Gamma$ is the width of the quasidiscrete level (see \S~134).
+
+Finally, we note an interesting property of the phases $\delta_l$ that follows readily from the preceding results.
+
+Regard the phases $\delta_l(E)$ as continuous functions of energy, without reducing them to the interval between 0 and $\pi$ (compare the note on p.~144). We shall show that
+\begin{equation}
+ \delta_l(0)-\delta_l(\infty)=n_l\pi,
+ \tag{133.17}
+\end{equation}
+where $n_l$ is the number of discrete levels of angular momentum $l$ in the attractive field $U(r)$ (N.~Levinson, 1949).
+
+For a field satisfying $|U|\ll\hbar^2/ma^2$, the Born approximation applies at every energy and $\delta_l(E)\ll1$ throughout. Here $\delta_l(\infty)=0$, because the scattering amplitude tends to zero as $E\to\infty$, while $\delta_l(0)=0$ by the general results of \S~132. Such a field has no discrete levels (see \S~45), so $n_l=0$. Now follow the change in $\delta_l(\Lambda)-\delta_l(\infty)$, where $\Lambda$ is a specified small quantity, as the potential well $U(r)$ is gradually deepened. As its depth grows, the first, second, and subsequent levels appear successively at the upper edge of the well. Each appearance increases\SourcePage{669}{672} $\delta_l(\Lambda)$ by $\pi$\footnote{In (133.6), this corresponds to a change of $\delta_0$ from 0 to $\pi$ when, at fixed small $k$, $\varkappa$ changes from a negative value $-\varkappa\gg k$ to a positive value $\varkappa\gg k$. For $l\ne0$, the same result follows from $k\cot\delta_l=-bE^{-l}(E-\varepsilon)$ when, at fixed $E=\Lambda$, $\varepsilon$ changes from $\varepsilon\gg\Lambda$ to $-\varepsilon\gg\Lambda$.}. On reaching the specified $U(r)$ and then taking $\Lambda\to0$, we obtain (133.17).
+
+\subsection*{Problems}
+
+\ProblemHeading 1. Express the effective range $r_0$ in terms of the bound-state wave function, $E=\varepsilon$, in the ``inner'' region $r\sim a$ (Ya.~A.~Smorodinsky, 1948).
+
+\SolutionHeading Let $\chi_0$ be the wave function in the region $r\sim a$, normalized by $\chi_0\to1$ as $r\to\infty$. The square of the wave function throughout space can then be written
+\[
+ \chi^2=A_0^2(e^{-2\varkappa r}+\chi_0^2-1).
+\]
+This becomes $A_0^2e^{-2\varkappa r}$ when $\varkappa r\gg1$ and $A_0^2\chi_0^2$ when $\varkappa r\ll1$.
+
+Its normalization condition is
+\[
+ \int_0^\infty\chi^2dr=A_0^2\left[\frac1{2\varkappa}-\int_0^\infty(1-\chi_0^2)dr\right]=1.
+\]
+Comparison with (133.13) gives
+\[
+ r_0=2\int_0^\infty(1-\chi_0^2)dr.
+\]
+Equation (133.1), with $U(r)<0$, is obeyed by $\chi_0$ and implies $\chi_0(r)<\chi_0(\infty)=1$. Hence $r_0>0$ always.
+
+\ProblemHeading 2. Determine the change in the phases $\delta_l$ under a variation of the field $U(r)$.
+
+\SolutionHeading Varying $U(r)$ in the Schrödinger equation
+\[
+ \chi_l''+\frac{2m}{\hbar^2}\left[E-\frac{\hbar^2l(l+1)}{2mr^2}-U\right]\chi_l=0
+\]
+gives the corresponding equation for $\delta\chi_l$. Multiply the first equation by $\delta\chi_l$, the second by $\chi_l$, subtract them term by term, and integrate over $dr$. The result is
+\[
+ (\chi_l'\delta\chi_l-\chi_l\delta\chi_l')|_{r\to\infty}
+ =\frac{2m}{\hbar^2}\int_0^\infty\chi_l^2\delta U\,dr.
+\]
+Substitution on the left of the asymptotic expressions
+\[
+ \chi_l=\sin(kr-l\pi/2+\delta_l),\qquad
+ \delta\chi_l=\delta(\delta_l)\cos(kr-l\pi/2+\delta_l)
+\]
+gives
+\[
+ \delta(\delta_l)=-\frac{2m}{\hbar^2k}\int_0^\infty\chi_l^2\delta U\,dr.
+\]
+
+\SourcePage{670}{673}
+This formula yields definite conclusions about the signs of the phases $\delta_l$ when they are treated as continuous functions of energy. To remove the ambiguity in defining them, namely an additive integral multiple of $\pi$, normalize them by $\delta_l(\infty)=0$.
+
+Starting from $U=0$, where every $\delta_l=0$, and gradually increasing $|U|$, we find that all $\delta_l<0$ in a repulsive field, $U>0$, while $\delta_l>0$ in an attractive field, $U<0$. In a repulsive field $\delta_l(0)=0$, so the phases are small at low energies and the scattering amplitude is negative: $f\approx\delta_0/k<0$. In an attractive field, the analogous conclusion that $f$ is positive can be drawn only when no levels are present. Otherwise, at small $E$, $\delta_l$ is close not to zero but to $n_l\pi$; see (133.17), and no conclusion about the sign of $f$ is possible.
+
+\ProblemHeading 3. Find the scattering length $a$ and effective range $r_0$ for a spherical rectangular potential well of radius $a$ and depth $U_0$ containing a single discrete level close to zero energy.
+
+\SolutionHeading Proceed as in Problem 1 of \S~132, except that inside the well the particle energy $E=\hbar^2k^2/2m$ is not neglected in comparison with $U_0$. The equation determining $\delta_0$ is
+\[
+ k\cot(\delta_0+ak)=K\cot aK,\qquad K=\frac1\hbar\sqrt{2m(U_0+E)}.
+\]
+For the well to contain only one level, close to zero, it is necessary that
+\[
+ U_0=\frac{\pi^2\hbar^2}{8ma^2}(1+\Lambda)
+\]
+with $\Lambda\ll1$ (see Problem 1 of \S~33). Expanding the equation above in powers of $ka$ and $\Lambda$, we obtain
+\[
+ k\cot\delta_0\approx-(\pi^2/8a)\Lambda+ak^2/2,
+\]
+and therefore $a=1/\varkappa_0=8a/\pi^2\Lambda$ and $r_0=a$. As expected, $\varkappa_0$ coincides with $\sqrt{2m|E_1|}/\hbar$, where $E_1$ is the energy level in the well (see Problem 1 of \S~33).
+
+\ProblemHeading 4. Express the integral $\int_0^a\chi^2dr$ of the squared $s$-state wave function in terms of the phase $\delta_0(k)$ for a field $U(r)$ that is nonzero only inside a sphere of radius $a$ (O.~Lüders, 1955).
+
+\SolutionHeading By (128.10),
+\[
+ \int_0^a\chi^2dr=\frac1{2k}\left[\chi'\frac{\partial\chi}{\partial k}
+ -\chi\left(\frac{\partial\chi}{\partial k}\right)'\right]_{r=a},
+\]
+where the prime denotes differentiation with respect to $r$, while the derivatives with respect to $E$ in (128.10) have been replaced by derivatives with respect to $k=\sqrt{2mE}/\hbar$. At $r=a$ the field has already vanished, so the free-motion wave function $\chi=2\sin(kr+\delta_0)$ may be used on the right-hand side, with the normalization of\SourcePage{671}{674} (33.20). This gives
+\[
+ \int_0^a\chi^2dr=2\left(a+\frac{d\delta_0}{dk}\right)-\frac1k\sin[2(ka+\delta_0)]>0.
+\]
+
+Since the integral of $\chi^2$ is necessarily positive, the expression on the right must likewise be positive\footnote{This inequality was obtained earlier by another method by Wigner (1955).}.

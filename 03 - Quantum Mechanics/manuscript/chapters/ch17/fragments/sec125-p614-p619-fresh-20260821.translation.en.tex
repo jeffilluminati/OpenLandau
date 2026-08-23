@@ -1,0 +1,162 @@
+\SourcePage{614}{617}
+\section{Unitarity condition for scattering}
+
+The scattering amplitude in an arbitrary field, not necessarily a central one, obeys certain relations that follow from general physical requirements.
+
+At large distances, the asymptotic form of the wave function for elastic scattering in an arbitrary field is
+\begin{equation}
+ \psi\approx e^{ikr\mathbf n\mathbf n'}+\frac1r
+ f(\mathbf n,\mathbf n')e^{ikr}.
+ \tag{125.1}
+\end{equation}
+This notation differs from (123.3) in that the scattering amplitude here depends on the directions of two unit vectors---$\mathbf n$ along the incident direction and $\mathbf n'$ along the scattering direction---rather than only on the angle between them.
+
+Every linear combination of functions of the form (125.1) having different incident directions $\mathbf n$ also describes a possible scattering process. Multiplying the functions (125.1) by arbitrary coefficients $F(\mathbf n)$ and integrating over all directions $\mathbf n$, with solid-angle element $do$, we can write such a linear combination as
+\begin{equation}
+ \int F(\mathbf n)e^{ikr\mathbf n\mathbf n'}do
+ +\frac{e^{ikr}}r\int F(\mathbf n)f(\mathbf n,\mathbf n')do.
+ \tag{125.2}
+\end{equation}
+
+\SourcePage{615}{618}
+Because $r$ is arbitrarily large, the factor $e^{ikr\mathbf n\mathbf n'}$ in the first integral oscillates rapidly as a function of the direction of the variable vector $\mathbf n$. The integral is therefore determined mainly by regions near those values of $\mathbf n$ at which the exponent is extremal, namely $\mathbf n=\pm\mathbf n'$. Within each region, the factor $F(\mathbf n)\approx F(\pm\mathbf n')$ may be taken outside the integral, after which integration gives\footnote{To evaluate the integral, deform the integration path for $\mu=\cos\theta$, where $\theta$ is the angle between $\mathbf n$ and $\mathbf n'$, in the complex $\mu$ plane so that it bows into the upper half-plane while remaining fixed at its endpoints $\mu=\pm1$. The function $e^{ikr\mu}$ then decays rapidly on moving away from either endpoint.}
+\[
+ \frac{2\pi i}{kr}F(-\mathbf n')e^{-ikr}
+ -\frac{2\pi i}{kr}F(\mathbf n')e^{ikr}
+ +\frac{e^{ikr}}r\int f(\mathbf n,\mathbf n')F(\mathbf n)do.
+\]
+Dropping the common factor $2\pi i/k$, rewrite this expression in the compact operator form
+\begin{equation}
+ \frac{e^{-ikr}}rF(-\mathbf n')-\frac{e^{ikr}}r\hat S F(\mathbf n'),
+ \tag{125.3}
+\end{equation}
+where
+\begin{equation}
+ \hat S=1+2ik\hat f,
+ \tag{125.4}
+\end{equation}
+and $\hat f$ is the integral operator
+\begin{equation}
+ \hat fF(\mathbf n')=\frac1{4\pi}\int
+ f(\mathbf n,\mathbf n')F(\mathbf n)do.
+ \tag{125.5}
+\end{equation}
+The operator $\hat S$ is called the scattering operator, or \emph{scattering matrix}, and more briefly the $S$-matrix; it was introduced by \emph{W.~Heisenberg} in 1943.
+
+The first term in (125.3) is a wave converging toward the center, while the second is a wave diverging from it. Conservation of particle number in elastic scattering means that the total particle fluxes in the converging and diverging waves are equal. In other words, the two waves must have the same normalization. For this to hold, the scattering operator must be unitary (see §~12), so that
+\begin{equation}
+ \hat S\hat S^+=1,
+ \tag{125.6}
+\end{equation}
+or, on substituting (125.4) and multiplying,
+\begin{equation}
+ \hat f-\hat f^+=2ik\hat f\hat f^+.
+ \tag{125.7}
+\end{equation}
+
+\SourcePage{616}{619}
+Finally, using definition (125.5), the \emph{unitarity} condition for scattering can be written as
+\begin{equation}
+ f(\mathbf n,\mathbf n')-f^*(\mathbf n',\mathbf n)
+ =\frac{ik}{2\pi}\int f(\mathbf n,\mathbf n'')
+ f^*(\mathbf n',\mathbf n'')do''.
+ \tag{125.8}
+\end{equation}
+When $\mathbf n=\mathbf n'$, the integral on the right is precisely the total scattering cross section
+\[
+ \sigma=\int|f(\mathbf n,\mathbf n'')|^2do''.
+\]
+In this case, the difference on the left reduces to the imaginary part of the amplitude $f(\mathbf n,\mathbf n)$. We thus obtain the following general relation between the total elastic-scattering cross section and the imaginary part of the zero-angle scattering amplitude:
+\begin{equation}
+ \operatorname{Im}f(\mathbf n,\mathbf n)=\frac{k}{4\pi}\sigma
+ \tag{125.9}
+\end{equation}
+(the so-called \emph{optical theorem} for scattering).
+
+Another general property of the scattering amplitude follows from the requirement of time-reversal symmetry. In quantum mechanics, this symmetry means that if $\psi$ describes a possible state, then the complex-conjugate function $\psi^*$ also corresponds to a possible state (see §~18). Hence the wave function
+\[
+ -\frac{e^{-ikr}}rF^*(-\mathbf n')
+ -\frac{e^{ikr}}r\hat S^*F^*(\mathbf n'),
+\]
+which is complex-conjugate to (125.3), also describes a possible scattering process. Introduce a new arbitrary function by $-\hat S^*F^*(\mathbf n')=\Phi(-\mathbf n')$. From the unitarity of $\hat S$ we have
+\[
+ F^*(\mathbf n')=-\hat S^{*-1}\Phi(-\mathbf n')=-\widetilde{\hat S}
+ \Phi(-\mathbf n');
+\]
+introducing the coordinate-inversion operator $\hat P$, which reverses the signs of the vectors $\mathbf n$ and $\mathbf n'$, we may write
+\[
+ F^*(-\mathbf n')=-\hat P\widetilde{\hat S}\hat P\Phi(\mathbf n').
+\]
+The time-reversed wave function therefore takes the form
+\[
+ \frac{e^{-ikr}}r\Phi(-\mathbf n')
+ -\frac{e^{ikr}}r\hat P\widetilde{\hat S}\hat P\Phi(\mathbf n').
+\]
+
+\SourcePage{617}{620}
+It must in substance coincide with the original wave function (125.3). Comparison shows that this requires
+\begin{equation}
+ \hat P\widetilde{\hat S}\hat P=\hat S,
+ \tag{125.10}
+\end{equation}
+after which the two functions differ only in the notation used for the arbitrary function.
+
+The corresponding relation for the scattering amplitude is obtained by passing from the operator equation (125.10) to its matrix form. Transposition interchanges the initial and final vectors $\mathbf n$ and $\mathbf n'$, while inversion reverses their signs. Thus
+\begin{equation}
+ S(\mathbf n,\mathbf n')=S(-\mathbf n',-\mathbf n),
+ \tag{125.11}
+\end{equation}
+or, equivalently,
+\begin{equation}
+ f(\mathbf n,\mathbf n')=f(-\mathbf n',-\mathbf n).
+ \tag{125.12}
+\end{equation}
+This relation, the so-called \emph{reciprocity theorem}, expresses the natural result that two scattering processes related to each other by time reversal have equal amplitudes. Time reversal interchanges the initial and final states and reverses the directions in which the particles move in those states.
+
+For scattering in a central field, these general relations simplify. The amplitude $f(\mathbf n,\mathbf n')$ then depends only on the angle $\theta$ between $\mathbf n$ and $\mathbf n'$, so (125.12) becomes an identity. The unitarity condition (125.8) becomes
+\begin{equation}
+ \operatorname{Im}f(\theta)=\frac{k}{4\pi}
+ \int f(\gamma)f^*(\gamma')do'',
+ \tag{125.13}
+\end{equation}
+where $\gamma$ and $\gamma'$ are the angles made by $\mathbf n$ and $\mathbf n'$, respectively, with some direction $\mathbf n''$ in space. Expanding $f(\theta)$ as in (123.14) and using the addition theorem for spherical functions (p.~10), relation (125.13) gives the following equation for the partial amplitudes:
+\begin{equation}
+ \operatorname{Im}f_l=k|f_l|^2.
+ \tag{125.14}
+\end{equation}
+The same formula follows directly from (123.15), according to which $|2ikf_l+1|^2=1$. For scattering in a central field, the optical theorem (125.9) can likewise be obtained directly from (123.11) and (123.12).
+
+\SourcePage{618}{621}
+Writing (125.14) as $\operatorname{Im}(1/f_l)=-k$, we see that $f_l$ must have the form
+\begin{equation}
+ f_l=\frac1{g_l-ik},
+ \tag{125.15}
+\end{equation}
+where $g_l=g_l(k)$ is real; it is related to the phase $\delta_l$ by
+\begin{equation}
+ g_l=k\cot\delta_l.
+ \tag{125.16}
+\end{equation}
+This representation of the amplitude will be used repeatedly below.
+
+For scattering in a central field, let us now trace the connection between the scattering operator introduced above and the quantities occurring in the theory developed in §~123.
+
+Because orbital angular momentum is conserved in a central field, the scattering operator commutes with the angular-momentum operator. In other words, the $S$-matrix is diagonal in the $l$-representation. Moreover, since $\hat S$ is unitary, its eigenvalues must have unit modulus and therefore take the form $\exp(2i\delta_l)$ with real $\delta_l$. These quantities are readily seen to coincide with the phase shifts of the wave functions. Thus the eigenvalues of the $S$-matrix coincide with the quantities $S_l$ introduced in §~123, equation (123.10), while the eigenvalues of the operator $\hat f=(\hat S-1)/(2ik)$ correspondingly coincide with the partial amplitudes (123.15). Indeed, choose $P_l(\cos\theta)$ as the function $F(\mathbf n)$; then $F(-\mathbf n)=P_l(-\cos\theta)=(-1)^lP_l(\cos\theta)$. The wave function (125.3) must coincide with the solution of the Schrödinger equation represented by the corresponding single term in the sum (123.9), which is precisely the statement that
+\[
+ \hat SP_l(\cos\theta)=S_lP_l(\cos\theta).
+\]
+
+For a plane wave incident along the $z$ axis, the function $F(\mathbf n)$ in (125.3) is the delta-function $F=4\delta(1-\cos\theta)$, where $\theta$ is the angle between $\mathbf n$ and the $z$ axis. Here the delta-function is defined as specified in the note on p.~616, and its coefficient is chosen so that substitution into the right-hand side of definition (125.5) gives simply $f(\theta)$, where $\theta$ now denotes the angle between $\mathbf n'$ and the $z$ axis. Expanding the delta-function as in (124.3),
+\begin{equation}
+ F=4\delta(1-\cos\theta)=\sum_{l=0}^{\infty}(2l+1)P_l(\cos\theta),
+ \tag{125.17}
+\end{equation}
+and applying $\hat f$ to it, we obtain the scattering amplitude in the form (123.14), as required.
+
+\SourcePage{619}{622}
+One final observation may be made. Mathematically, the unitarity condition (125.8) shows that an arbitrarily prescribed function $f(\mathbf n,\mathbf n')$ cannot in general serve as the scattering amplitude for some field. In particular, an arbitrary function $f(\theta)$ cannot in general be the scattering amplitude for a central field. Equation (125.13) requires a definite relation between its real and imaginary parts. If $f(\theta)=|f|e^{i\alpha}$ is written, then specifying the modulus $|f|$ at every angle turns (125.13) into an integral equation from which the unknown phase $\alpha(\theta)$ can, in principle, be found. In other words, knowledge of the scattering cross section, the square $|f|^2$, at every angle is in principle enough to reconstruct the amplitude. The reconstruction is not completely unique, however, but determines the amplitude only up to the replacement
+\begin{equation}
+ f(\theta)\to-f^*(\theta),
+ \tag{125.18}
+\end{equation}
+which leaves (125.13) invariant and of course does not change the cross section $|f|^2$. Transformation (125.18) is equivalent to simultaneously reversing the signs of all phases $\delta_l$ in (123.11). This ambiguity is removed, however, if the scattering amplitude is considered as a function not only of angle but also of energy. We shall see below (§§~128 and 129) that the analytic properties of the amplitude as a function of energy are not invariant under transformation (125.18).

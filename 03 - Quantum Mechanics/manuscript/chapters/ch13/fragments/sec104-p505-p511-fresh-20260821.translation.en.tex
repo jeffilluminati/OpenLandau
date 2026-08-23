@@ -1,0 +1,126 @@
+\SourcePage{505}{508}
+\section{Interaction between molecular vibration and rotation}
+
+So far, rotation and vibration have been treated as independent motions of a molecule. In fact, when both occur simultaneously, a distinctive interaction arises between them (E.~Teller, L.~Tisza, O.~Placzek, 1932--1933).
+
+\SourcePage{506}{509}
+We begin with linear polyatomic molecules. A linear molecule can vibrate in two ways (see the end of §~100): longitudinally, with nondegenerate frequencies, and transversely, with twofold-degenerate frequencies. It is the latter that concern us here.
+
+A molecule undergoing transverse vibrations generally has some angular momentum. This follows at once from elementary mechanical considerations\footnote{For example, two mutually perpendicular transverse vibrations whose phases differ by $\pi/2$ may be regarded as pure rotation of the bent molecule about its longitudinal axis.}; it can also be demonstrated quantum mechanically. The quantum-mechanical treatment additionally determines the allowed values of this angular momentum in a specified vibrational state.
+
+Suppose that one twofold-degenerate frequency $\omega_\alpha$ is excited in the molecule. The energy level with vibrational quantum number $v_\alpha$ has degeneracy $v_\alpha+1$. It is represented by $v_\alpha+1$ wave functions
+\[
+ \psi_{v_{\alpha1}v_{\alpha2}}=\operatorname{const}\cdot
+ \exp\left[-\frac12c_\alpha^2(Q_{\alpha1}^2+Q_{\alpha2}^2)\right]
+ H_{v_{\alpha1}}(c_\alpha Q_{\alpha1})H_{v_{\alpha2}}(c_\alpha Q_{\alpha2})
+\]
+(where $v_{\alpha1}+v_{\alpha2}=v_\alpha$), or by any independent linear combinations of them. In each of these functions, the total degree (in $Q_{\alpha1}$ and $Q_{\alpha2}$) of the highest-degree part of the polynomial multiplying the exponential is the same, namely $v_\alpha$. Evidently, linear combinations of the functions $\psi_{v_{\alpha1}v_{\alpha2}}$ can always be selected as basis functions in the form
+\begin{equation}
+ \begin{split}
+ \psi_{v_\alpha l_\alpha}={}&\operatorname{const}\cdot
+ \exp\left[-\frac12c_\alpha^2(Q_{\alpha1}^2+Q_{\alpha2}^2)\right]\times\\
+ &\times\left[(Q_{\alpha1}+iQ_{\alpha2})^{(v_\alpha+l_\alpha)/2}
+ (Q_{\alpha1}-iQ_{\alpha2})^{(v_\alpha-l_\alpha)/2}+\ldots\right].
+ \end{split}
+ \tag{104.1}
+\end{equation}
+The square brackets contain a definite polynomial, of which only the highest-degree term has been displayed; $l_\alpha$ is an integer with the $v_\alpha+1$ possible values $l_\alpha=v_\alpha$, $v_\alpha-2$, $v_\alpha-4,\ldots,-v_\alpha$.
+
+The normal coordinates $Q_{\alpha1}$ and $Q_{\alpha2}$ of a transverse vibration describe two mutually perpendicular displacements from the molecular axis. Under a rotation through an angle $\varphi$ about this axis, the highest-degree polynomial term, and hence the entire function $\psi_{v_\alpha l_\alpha}$, is multiplied by
+\[
+ \exp\left\{i\varphi\left(\frac{v_\alpha+l_\alpha}{2}\right)
+ -i\varphi\left(\frac{v_\alpha-l_\alpha}{2}\right)\right\}
+ =\exp(il_\alpha\varphi).
+\]
+
+\SourcePage{507}{510}
+It follows that the function (104.1) describes a state whose angular momentum about the axis is $l_\alpha$.
+
+We thus find that when a twofold-degenerate frequency $\omega_\alpha$ is excited with quantum number $v_\alpha$, the molecule has an angular momentum about its axis that takes the values
+\begin{equation}
+ l_\alpha=v_\alpha,v_\alpha-2,v_\alpha-4,\ldots,-v_\alpha.
+ \tag{104.2}
+\end{equation}
+This is called the molecule's \emph{vibrational angular momentum}. If several transverse vibrations are excited simultaneously, the total vibrational angular momentum is $\sum l_\alpha$. Combining it with the electronic orbital angular momentum gives the molecule's total angular momentum $l$ about its axis.
+
+As for a diatomic molecule, the molecule's total angular momentum $J$ cannot be smaller than its angular momentum about the axis; thus $J$ takes the values
+\[
+ J=|l|,|l|+1,\ldots
+\]
+In other words, no states with $J=0,1,\ldots,|l|-1$ exist.
+
+For harmonic vibrations the energy depends only on the numbers $v_\alpha$, not on $l_\alpha$. Anharmonicity removes the degeneracy of the vibrational levels with respect to the values of $l_\alpha$. The removal is incomplete, however: each level remains doubly degenerate, with equal energies for states related by simultaneous reversal of the signs of every $l_\alpha$ and of $l$. In the next approximation beyond the harmonic one, the energy acquires a term quadratic in the angular momenta $l_\alpha$, of the form
+\[
+ \sum_{\alpha,\beta}g_{\alpha\beta}l_\alpha l_\beta
+\]
+(the $g_{\alpha\beta}$ are constants). The remaining twofold degeneracy is removed by an effect analogous to $\Lambda$-doubling in diatomic molecules.
+
+Before turning to nonlinear molecules, a purely mechanical point must be made. For an arbitrary nonlinear system of particles, how is vibrational motion to be separated from rotation---or, equivalently, what is meant by a ``nonrotating system''? At first sight, vanishing angular momentum might appear to provide the criterion for the absence of rotation:
+\begin{equation}
+ \sum m(\mathbf r\times\mathbf v)=0.
+ \tag{104.3}
+\end{equation}
+
+\SourcePage{508}{511}
+(The sum is over the particles of the system.) The expression on the left, however, is not the complete time derivative of any function of the coordinates. Consequently, this equation cannot be integrated in time and recast as the vanishing of some coordinate function. Yet such a formulation is precisely what is needed for a meaningful definition of ``pure vibration'' and ``pure rotation.''
+
+The absence of rotation must therefore be defined by the condition
+\begin{equation}
+ \sum m(\mathbf r_0\times\mathbf v)=0,
+ \tag{104.4}
+\end{equation}
+where $\mathbf r_0$ is the radius vector of a particle's equilibrium position. Write $\mathbf r=\mathbf r_0+\mathbf u$, where $\mathbf u$ is its displacement in a small vibration; then $\mathbf v=\dot{\mathbf r}=\dot{\mathbf u}$. Integrating (104.4) in time gives
+\begin{equation}
+ \sum m(\mathbf r_0\times\mathbf u)=0.
+ \tag{104.5}
+\end{equation}
+We shall regard the motion of the molecule as the combination of a purely vibrational motion satisfying (104.5) and a rotation of the molecule as a whole\footnote{Translational motion is assumed to have been separated from the outset by choosing a coordinate system in which the molecule's center of mass is at rest.}. Expressing the angular momentum as
+\[
+ \sum m(\mathbf r\times\mathbf v)=\sum m(\mathbf r_0\times\mathbf v)+\sum m(\mathbf u\times\mathbf v),
+\]
+we see that, under definition (104.4) of no rotation, the sum $\sum m(\mathbf u\times\mathbf v)$ is to be understood as the vibrational angular momentum. It must be remembered, however, that this quantity is only one part of the system's total angular momentum and is by no means conserved on its own. A vibrational state can therefore be assigned only a mean value of the vibrational angular momentum.
+
+Molecules having no symmetry axis of order greater than two are asymmetric tops. All their vibrational frequencies are nondegenerate (their symmetry groups have only one-dimensional irreducible representations), so none of their vibrational levels is degenerate. The mean angular momentum vanishes in every nondegenerate state, however (see §~26). Thus an asymmetric-top molecule has zero mean vibrational angular momentum in every state.
+
+\SourcePage{509}{512}
+A molecule whose symmetry elements include one axis of order greater than two is a symmetric top. Such a molecule has both nondegenerate and twofold-degenerate vibrational frequencies. The mean vibrational angular momentum again vanishes for the former. For a twofold-degenerate frequency, however, the mean value of the projection of the angular momentum on the molecular axis is nonzero.
+
+The rotational energy of a symmetric-top molecule can readily be found with the vibrational angular momentum included. Its operator is obtained from (103.5) by replacing the top's rotational angular momentum with the difference between the molecule's total, conserved angular momentum $\mathbf J$ and its vibrational angular momentum $\mathbf J^{(v)}$:
+\begin{equation}
+ \widehat H_{\text{rot}}=\frac{\hbar^2}{2I_A}(\widehat{\mathbf J}-\widehat{\mathbf J}^{(v)})^2
+ +\frac{\hbar^2}{2}\left(\frac1{I_C}-\frac1{I_A}\right)
+ (\widehat J_\zeta-\widehat J_\zeta^{(v)})^2.
+ \tag{104.6}
+\end{equation}
+The required energy is the mean value $\overline{H}_{\text{rot}}$. Terms in (104.6) containing squares of the components of $\mathbf J$ yield the purely rotational energy (103.6). Those containing squares of components of $\mathbf J^{(v)}$ give constants independent of the rotational quantum numbers and may be dropped. The terms containing products of components of $\mathbf J$ and $\mathbf J^{(v)}$ describe the interaction between molecular vibration and rotation that concerns us here. This is called the \emph{Coriolis interaction}, because it corresponds to the Coriolis forces of classical mechanics. In averaging these terms, the mean values of the transverse ($\xi,\eta$) components of the vibrational angular momentum must be set equal to zero. The mean energy of the Coriolis interaction is consequently
+\begin{equation}
+ E_{\text{Cor}}=-\frac{\hbar^2}{I_C}kk_v,
+ \tag{104.7}
+\end{equation}
+where, as in §~103, the integer $k$ is the projection of the total angular momentum on the molecular axis, while $k_v=\overline{J_\zeta^{(v)}}$ is the mean projection of the vibrational angular momentum and characterizes the vibrational state in question. Unlike $k$, $k_v$ need not be an integer.
+
+Finally, consider spherical-top molecules, which are molecules possessing the symmetry of one of the cubic groups. Such molecules have nondegenerate, twofold-degenerate, and threefold-degenerate frequencies, corresponding to the presence of one-, two-, and three-dimensional irreducible representations among those of the cubic groups. As always, anharmonicity partially removes the degeneracy of the vibrational levels;
+
+\SourcePage{510}{513}
+after these effects are included, only twofold- and threefold-degenerate levels remain in addition to the nondegenerate ones. It is these levels, already split by anharmonicity, that we now consider.
+
+For a spherical-top molecule, the mean vibrational angular momentum clearly vanishes not only in nondegenerate vibrational states but also in twofold-degenerate ones. This already follows from elementary symmetry arguments. Indeed, the mean-angular-momentum vectors in the two states belonging to the same degenerate energy level would have to transform into each other under every symmetry operation of the molecule. But no cubic symmetry group permits a pair of directions that transform only into each other: the smallest mutually transformed sets contain three directions.
+
+The same argument shows that the mean vibrational angular momentum is nonzero in states belonging to threefold-degenerate vibrational levels. Once averaged over the vibrational state, this angular momentum is an operator represented by a matrix whose elements correspond to transitions among the three mutually degenerate states. Since there are three such states, the operator must have the form $\zeta\widehat{\mathbf I}$, where $\widehat{\mathbf I}$ is the operator of an angular momentum equal to unity (so that $2I+1=3$), and $\zeta$ is a constant characteristic of the vibrational level concerned. After this averaging, the Hamiltonian of the molecule's rotational motion,
+\[
+ \widehat H_{\text{rot}}=\frac{\hbar^2}{2I}(\widehat{\mathbf J}-\widehat{\mathbf J}^{(v)})^2,
+\]
+becomes
+\begin{equation}
+ \widehat H_{\text{rot}}=\frac{\hbar^2}{2I}\widehat{\mathbf J}^{\,2}
+ +\frac{\hbar^2}{2I}\overline{\widehat{\mathbf J}^{(v)2}}
+ -\frac{\hbar^2}{I}\zeta\widehat{\mathbf J}\widehat{\mathbf I}.
+ \tag{104.8}
+\end{equation}
+The eigenvalues of the first term are the usual rotational energies (103.4), while the second gives an inessential constant independent of the rotational quantum number. The final term in (104.8) gives the desired energy of the Coriolis splitting of the vibrational level. The eigenvalues of $\mathbf J\mathbf I$ are evaluated in the usual way. For a specified $J$, it can have three distinct values, corresponding to values $J+1$, $J-1$, and $J$ of the vector $\mathbf I+\mathbf J$:
+\begin{equation}
+ E_{\text{Cor}}^{(J+1)}=-\frac{\hbar^2}{I}\zeta J,\qquad
+ E_{\text{Cor}}^{(J-1)}=\frac{\hbar^2}{I}\zeta(J+1),\qquad
+ E_{\text{Cor}}^{(J)}=\frac{\hbar^2}{I}\zeta.
+ \tag{104.9}
+\end{equation}

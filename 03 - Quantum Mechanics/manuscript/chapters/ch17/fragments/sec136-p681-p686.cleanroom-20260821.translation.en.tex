@@ -1,0 +1,139 @@
+\SourcePage{681}{684}
+\section{A System of Continuous-Spectrum Wave Functions}
+
+In studying motion in a centrally symmetric field in Chapter~V, we considered stationary states in which a particle has, in addition to a definite energy, definite values of the orbital angular momentum $l$ and its projection $m$. The wave functions of these states in the discrete spectrum ($\psi_{nlm}$) and the continuous spectrum ($\psi_{klm}$, with energy $\hbar^2k^2/2m$) together form a complete system in which the wave function of an arbitrary state may be expanded. Such a system is not, however, suited to the formulation of scattering problems. Another system is convenient here, one in which the continuous-spectrum wave functions have specified asymptotic behavior: at infinity there is a plane wave $\exp(i\mathbf{kr})$ accompanied by an outgoing spherical wave. In these states the particle has a definite energy, but neither the angular momentum nor its projection is definite.
+
+\SourcePage{682}{685}
+According to (123.6) and (123.7), these wave functions (which we denote here by $\psi_{\mathbf k}^{(+)}$) are
+\begin{equation}
+ \psi_{\mathbf k}^{(+)}=\frac1{2k}\sum_{l=0}^{\infty}i^l(2l+1)e^{i\delta_l}R_{kl}(r)
+ P_l\left(\frac{\mathbf{kr}}{kr}\right).
+ \tag{136.1}
+\end{equation}
+The argument of the Legendre polynomials is written here as $\cos\theta=\mathbf{kr}/kr$, so that this expression is no longer tied to any particular choice of coordinate axes (as it was in (123.6), where the $z$ axis coincided with the direction of propagation of the plane wave). By allowing the vector $\mathbf k$ to take all possible values, we obtain a set of wave functions that, as will now be shown, are mutually orthogonal and normalized by the rule usual for the continuous spectrum:
+\begin{equation}
+ \int\psi_{\mathbf k'}^{(+)*}\psi_{\mathbf k}^{(+)}dV=(2\pi)^3\delta(\mathbf k'-\mathbf k).
+ \tag{136.2}
+\end{equation}
+
+For the proof\footnote{Strictly speaking, a special proof is required only for the mutual orthogonality of the functions $\psi_{\mathbf k}^{(+)}$. Their normalization could be established directly from their asymptotic form (cf. \S~21). In this sense, (136.2) is already evident from the fact that, as $r\to\infty$, the sole nondecaying term in these functions is $\psi_{\mathbf k}^{(+)}\approx e^{i\mathbf{kr}}$.}, observe that the product $\psi_{\mathbf k'}^{(+)*}\psi_{\mathbf k}^{(+)}$ is expressed as a double sum over $l$ and $l'$ of terms containing the products
+\[
+ P_l\left(\frac{\mathbf{kr}}{kr}\right)P_{l'}\left(\frac{\mathbf{k'r}}{k'r}\right).
+\]
+Integration over the directions of $\mathbf r$ is performed using
+\begin{equation}
+ \int P_l\left(\frac{\mathbf{kr}}{kr}\right)P_{l'}\left(\frac{\mathbf{k'r}}{k'r}\right)d o
+ =\delta_{ll'}\frac{4\pi}{2l+1}P_l\left(\frac{\mathbf{kk'}}{kk'}\right)
+ \tag{136.3}
+\end{equation}
+(cf. formula (c.12) in the Mathematical Supplements), after which there remains
+\begin{align*}
+ \int\psi_{\mathbf k'}^{(+)*}\psi_{\mathbf k}^{(+)}dV
+ ={}&\frac{\pi}{kk'}\sum_{l=0}^{\infty}(2l+1)
+ \exp[i\delta_l(k)-i\delta_l(k')]P_l(\cos\gamma)\\
+ &\times\int_0^\infty R_{k'l}R_{kl}r^2dr,
+\end{align*}
+
+\SourcePage{683}{686}
+where $\gamma$ is the angle between $\mathbf k$ and $\mathbf k'$. The radial functions $R_{kl}$, however, are orthogonal and normalized according to
+\[
+ \int_0^\infty R_{k'l}R_{kl}r^2dr=2\pi\delta(k'-k).
+\]
+We may therefore set $k=k'$ in the coefficients before the integrals; also using (124.3), we have
+\begin{align*}
+ \int\psi_{\mathbf k'}^{(+)*}\psi_{\mathbf k}^{(+)}dV
+ &=\frac{2\pi^2}{k^2}\delta(k'-k)
+ \sum_{l=0}^{\infty}(2l+1)P_l(\cos\gamma)\\
+ &=\frac{8\pi^2}{k^2}\delta(k'-k)\delta(1-\cos\gamma).
+\end{align*}
+The expression on the right vanishes for every $\mathbf k\ne\mathbf k'$, while multiplication by $2\pi k^2\sin\gamma\,d\gamma\,dk/(2\pi)^3$ and integration over all $\mathbf k$-space gives 1, proving (136.2).
+
+Alongside the system of functions $\psi_{\mathbf k}^{(+)}$, we may also introduce a system corresponding to states in which a plane wave at infinity is accompanied by an incoming spherical wave. These functions, denoted by $\psi_{\mathbf k}^{(-)}$, are obtained from $\psi_{\mathbf k}^{(+)}$ by
+\begin{equation}
+ \psi_{\mathbf k}^{(-)}=\psi_{-\mathbf k}^{(+)*}.
+ \tag{136.4}
+\end{equation}
+Indeed, complex conjugation changes the outgoing wave ($e^{ikr}/r$) into an incoming one ($e^{-ikr}/r$), while the plane wave becomes $e^{-i\mathbf{kr}}$. To retain the former definition of $\mathbf k$ (a plane wave $e^{i\mathbf{kr}}$), we must also replace $\mathbf k$ by $-\mathbf k$, as has been done in (136.4). Noting that $P_l(-\cos\theta)=(-1)^lP_l(\cos\theta)$, we obtain from (136.1)
+\begin{equation}
+ \psi_{\mathbf k}^{(-)}=\frac1{2k}\sum_{l=0}^{\infty}i^l(2l+1)e^{-i\delta_l}R_{kl}(r)
+ P_l\left(\frac{\mathbf{kr}}{kr}\right).
+ \tag{136.5}
+\end{equation}
+
+The Coulomb field is a particularly important case. Here $\psi_{\mathbf k}^{(+)}$ (and $\psi_{\mathbf k}^{(-)}$) can be written in closed form, directly from (135.7). We express the parabolic coordinates by
+\[
+ \frac{k}{2}(\xi-\eta)=kz=\mathbf{kr},\qquad
+ k\eta=k(r-z)=kr-\mathbf{kr}.
+\]
+
+\SourcePage{684}{687}
+Thus, for a repulsive Coulomb field we obtain\footnote{Coulomb units are used.}
+\begin{align}
+ \psi_{\mathbf k}^{(+)}&=e^{-\pi/2k}\Gamma\left(1+\frac{i}{k}\right)e^{i\mathbf{kr}}
+ F\left(-\frac{i}{k},1,i(kr-\mathbf{kr})\right), \tag{136.6}\\
+ \psi_{\mathbf k}^{(-)}&=e^{-\pi/2k}\Gamma\left(1-\frac{i}{k}\right)e^{i\mathbf{kr}}
+ F\left(\frac{i}{k},1,-i(kr+\mathbf{kr})\right). \tag{136.7}
+\end{align}
+The wave functions for an attractive Coulomb field follow by changing the signs of $k$ and $r$ simultaneously:
+\begin{align}
+ \psi_{\mathbf k}^{(+)}&=e^{\pi/2k}\Gamma\left(1-\frac{i}{k}\right)e^{i\mathbf{kr}}
+ F\left(\frac{i}{k},1,i(kr-\mathbf{kr})\right), \tag{136.8}\\
+ \psi_{\mathbf k}^{(-)}&=e^{\pi/2k}\Gamma\left(1+\frac{i}{k}\right)e^{i\mathbf{kr}}
+ F\left(-\frac{i}{k},1,-i(kr+\mathbf{kr})\right). \tag{136.9}
+\end{align}
+
+The effect of the Coulomb field on the particle's motion near the origin may be characterized by the ratio of the squared modulus of $\psi_{\mathbf k}^{(+)}$ or $\psi_{\mathbf k}^{(-)}$ at $r=0$ to the squared modulus of the free-motion wave function $\psi_{\mathbf k}=e^{i\mathbf{kr}}$. Using
+\[
+ \Gamma\left(1+\frac{i}{k}\right)\Gamma\left(1-\frac{i}{k}\right)
+ =\frac{i}{k}\Gamma\left(\frac{i}{k}\right)\Gamma\left(1-\frac{i}{k}\right)
+ =\frac{\pi}{k\sinh(\pi/k)}
+\]
+we readily find, for a repulsive field,
+\begin{equation}
+ \frac{|\psi_{\mathbf k}^{(+)}(0)|^2}{|\psi_{\mathbf k}|^2}
+ =\frac{|\psi_{\mathbf k}^{(-)}(0)|^2}{|\psi_{\mathbf k}|^2}
+ =\frac{2\pi}{k(e^{2\pi/k}-1)}
+ \tag{136.10}
+\end{equation}
+and, for an attractive field,
+\begin{equation}
+ \frac{|\psi_{\mathbf k}^{(+)}(0)|^2}{|\psi_{\mathbf k}|^2}
+ =\frac{|\psi_{\mathbf k}^{(-)}(0)|^2}{|\psi_{\mathbf k}|^2}
+ =\frac{2\pi}{k(1-e^{-2\pi/k})}.
+ \tag{136.11}
+\end{equation}
+
+The functions $\psi_{\mathbf k}^{(+)}$ and $\psi_{\mathbf k}^{(-)}$ play an essential role in problems involving applications of perturbation theory in the continuous spectrum. Suppose that some perturbation $\hat V$ causes a particle to make a transition between continuous-spectrum states. The transition probability is determined by the matrix element
+\begin{equation}
+ \int\psi_f^*\hat V\psi_i\,dV.
+ \tag{136.12}
+\end{equation}
+The question arises: which particular solutions of the wave equation should be chosen as the initial ($\psi_i$) and final ($\psi_f$)
+
+\SourcePage{685}{688}
+wave functions in order to obtain the amplitude for a particle to pass from a state with momentum $\hbar\mathbf k$ to one with momentum $\hbar\mathbf k'$ at infinity?\footnote{An example of such a process is an electron that collides with a fixed heavy nucleus and emits a photon, changing both its energy and direction of motion. The perturbation $\hat V$ is the interaction of the electron with the radiation field, while the Coulomb field of the nucleus is the field $U$ for which $\psi_{\mathbf k}^{(+)}$ and $\psi_{\mathbf k}^{(-)}$ are defined (see IV, \S~92, 96). Another example is the collision of an electron with an atom, accompanied by ionization of the latter (see Problem~4 of \S~148).} We shall show that the required choice is
+\begin{equation}
+ \psi_i=\psi_{\mathbf k}^{(+)},\qquad\psi_f=\psi_{\mathbf k'}^{(-)}
+ \tag{136.13}
+\end{equation}
+(A.~Sommerfeld, 1931).
+
+This becomes clear if we consider how the question would be solved by perturbation theory applied not only to the perturbation $\hat V$, but also to the field $U(r)$ in which the particle moves. To zeroth order in $U$, the matrix element (136.12) is
+\[
+ V_{\mathbf k'\mathbf k}=\int e^{-i\mathbf{k'r}}\hat V e^{i\mathbf{kr}}dV.
+\]
+At subsequent orders in $U$, this integral is replaced by a series in which every term is expressed by an integral of the form
+\[
+ \int\frac{V_{\mathbf k'\mathbf k_1}U_{\mathbf k_1\mathbf k_2}\ldots U_{\mathbf k_n\mathbf k}}
+ {(E_{\mathbf k}-E_{\mathbf k_1}+i0)\ldots(E_{\mathbf k}-E_{\mathbf k_n}+i0)}
+ \,d^3k_1\ldots d^3k_n
+\]
+(cf. \S~43, 130). The numerators contain matrix elements, arranged in various sequences, with respect to the unperturbed plane waves, and all poles are bypassed according to one and the same specified prescription in the integrations. On the other hand, this series may be obtained as the matrix element (136.12), with $\psi_i$ and $\psi_f$ represented as perturbation series in the field $U$. The fact that the result must be a sum of integrals in which every pole is bypassed by the same prescription means that the poles in the terms of the series representing $\psi_i$ and $\psi_f^*$ are bypassed by this prescription as well. But solving the wave equation by perturbation theory with this prescription automatically produces a solution whose asymptotic form contains an outgoing wave in addition to the plane wave. In other words, the wave functions which, to zeroth order in $U$, had the form
+\[
+ \psi_i=e^{i\mathbf{kr}},\qquad\psi_f^*=e^{-i\mathbf{k'r}},
+\]
+
+\SourcePage{686}{689}
+must be replaced by the exact solutions of the wave equation $\psi_{\mathbf k}^{(+)}$ and $\psi_{-\mathbf k'}^{(+)}=(\psi_{\mathbf k'}^{(-)})^*$, respectively; this proves the rule ((136.13)).
+
+The choice of $\psi_{\mathbf k'}^{(-)}$ as the final wave function applies also to transitions from a discrete-spectrum state to a continuous-spectrum state (the question of how to choose $\psi_i$ naturally does not arise in this case).

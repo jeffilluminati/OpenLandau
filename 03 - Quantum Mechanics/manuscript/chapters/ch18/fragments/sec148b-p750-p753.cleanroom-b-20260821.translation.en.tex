@@ -1,0 +1,112 @@
+\SourcePage{750}{753}
+(the first term under the radical in (148.10) may be neglected relative to the second). Thus, in this angular region, $q$ is independent of the amount of energy transferred. When $\vartheta\ll1$, $q$ may be either large or small compared with $1/a_0$, where $a_0$ is of the order of an atomic dimension. Under the same assumption concerning the transferred energy,
+\begin{equation}
+ qa_0\sim1\quad\text{when}\quad\vartheta\sim v_0/v.
+ \tag{148.13}
+\end{equation}
+
+Return now to the general expression (148.9) and consider small $q$, with $qa_0\ll1$, or $\vartheta\ll v_0/v$.
+
+In this case the exponential factors may be expanded in powers of $\mathbf q$:
+$e^{-i\mathbf q\mathbf r_a}\approx1-i\mathbf q\mathbf r_a=1-iqx_a$, where the $x$ axis is directed along $\mathbf q$. On substituting this expansion in (148.9), the terms containing 1 vanish because $\psi_0$ and $\psi_n$ are orthogonal, and we obtain
+\begin{equation}
+ d\sigma_n=8\pi\left(\frac{e}{\hbar v}\right)^2\frac{dq}{q}|\langle n|d_x|0\rangle|^2
+ =\left(\frac{2e}{\hbar v}\right)^2|\langle n|d_x|0\rangle|^2\frac{do}{\vartheta^2},
+ \tag{148.14}
+\end{equation}
+where $d_x=e\sum_a x_a$ is the $x$ component of the atomic dipole moment. Thus, at small $q$, the scattering cross-section is determined by the squared modulus of the dipole-moment matrix element for the transition that changes the atomic state\footnote{The quantity of physical interest is usually $d\sigma_n$ summed over all directions of the atomic angular momentum in the final state and averaged over its directions in the initial state. After this summation and averaging, $|\langle n|d_x|0\rangle|^2$ no longer depends on the direction chosen for the $x$ axis.}.
+
+For a given transition, however, selection rules may make the dipole-moment matrix element vanish identically; this is a forbidden transition. The expansion of $\exp(-i\mathbf q\mathbf r_a)$ must then be carried to the next term, giving
+\begin{equation}
+ d\sigma_n=2\pi\left(\frac{e^2}{\hbar v}\right)^2
+ \left|\left\langle n\left|\sum_a x_a^2\right|0\right\rangle\right|^2q\,dq.
+ \tag{148.15}
+\end{equation}
+
+Consider now the opposite limiting case of large $q$, $qa_0\gg1$. A large $q$ means that the atom receives momentum large compared with the initial intrinsic momentum of its electrons. It is physically evident in advance that the atomic electrons may then be regarded as free, and the collision with the atom as an elastic collision of the incident electron with atomic electrons initially at rest. The same conclusion follows from (148.9). At large $q$, the integrand in the matrix element contains rapidly oscillating factors $\exp(-i\mathbf q\mathbf r_a)$, so the integral is not close to zero only if $\psi_n$ contains an identical factor.
+
+\SourcePage{751}{754}
+Such a function $\psi_n$ describes an ionized atom from which an electron has emerged with momentum $-\hbar\mathbf q=\mathbf p-\mathbf p'$, fixed simply by momentum conservation, just as in a collision between two free electrons.
+
+When the momentum transfer is large, the incident and atomic electrons can emerge from the collision with comparable speeds. Exchange effects arising from the identity of the colliding particles, and omitted from the general expression (148.9), then become important. Formula (137.9) gives the scattering cross-section of fast electrons including exchange; it is written in the frame where one electron was initially at rest. For fast electrons, the cosine in the final term of (137.9) may be replaced by unity. Multiplication by the number $Z$ of atomic electrons then gives the electron--atom collision cross-section
+\begin{equation}
+ d\sigma=4Z\left(\frac{e^2}{mv^2}\right)^2
+ \left(\frac1{\sin^4\vartheta}+\frac1{\cos^4\vartheta}
+ -\frac1{\sin^2\vartheta\cos^2\vartheta}\right)\cos\vartheta\,do.
+ \tag{148.16}
+\end{equation}
+
+It is useful to replace the scattering angle in this formula by the energies acquired by the electrons after the collision. A particle of energy $E=mv^2/2$ colliding with a stationary particle of the same mass leaves the two particles with energies $\varepsilon=E\sin^2\vartheta$ and $E-\varepsilon=E\cos^2\vartheta$. To obtain the cross-section for an interval $d\varepsilon$, express $do$ in terms of $d\varepsilon$ by
+$\cos\vartheta\,do=2\pi\cos\vartheta\sin\vartheta\,d\vartheta=(\pi/E)d\varepsilon$. Substitution in (148.16) gives
+\begin{equation}
+ d\sigma_\varepsilon=\pi Ze^4\left[\frac1{\varepsilon^2}+\frac1{(E-\varepsilon)^2}
+ -\frac1{\varepsilon(E-\varepsilon)}\right]\frac{d\varepsilon}{E}.
+ \tag{148.17}
+\end{equation}
+If either $\varepsilon$ or $E-\varepsilon$ is small compared with the other, only one of the three terms, the first or second, is significant. The large disparity between the electron energies then makes exchange unimportant, and the ordinary Rutherford formula must be recovered\footnote{For a positron colliding with an atom there is no exchange effect at all, and the Rutherford formula $d\sigma_\varepsilon=(\pi Ze^4/E)d\varepsilon/\varepsilon^2$ applies for every $q\gg1/a_0$.}.
+
+Integrating the differential cross-section over all angles, or equivalently over $dq$, gives the total cross-section $\sigma_n$ for a collision exciting the specified atomic state. The dependence of $\sigma_n$ on the incident-electron speed is essentially determined by whether the relevant atomic dipole-moment matrix element is present. Suppose first that
+
+\SourcePage{752}{755}
+this element is nonzero. At small $q$, $d\sigma_n$ is then given by (148.14), and its $dq$ integral diverges logarithmically as $q$ decreases. At large $q$, for a fixed energy transfer $E_n-E_0$, the cross-section falls exponentially as $q$ increases; the integrand of the matrix element in (148.9) contains the rapidly oscillating factor already noted. The small-$q$ region therefore makes the main contribution to the $dq$ integral, and it is sufficient to integrate from the minimum $q_{\min}$ in (148.11) to a value of order $1/a_0$. The result is
+\begin{equation}
+ \sigma_n=8\pi\left(\frac{e}{\hbar v}\right)^2|\langle n|d_x|0\rangle|^2
+ \ln\left(\beta_n\frac{v\hbar}{e^2}\right),
+ \tag{148.18}
+\end{equation}
+where $\beta_n$ is a dimensionless constant that cannot be calculated in general\footnote{We assume $E_n-E_0$ to be of the order of the atomic-electron energy $\varepsilon_0$. For large energy transfers, $E_n-E_0\sim E\gg\varepsilon_0$, equations (148.14) and (148.18) are inapplicable in any event: the dipole-moment matrix element becomes very small, and retaining only the first term in the $q$ expansion is insufficient.}.
+
+If the dipole-moment matrix element vanishes for the transition, the $dq$ integral converges rapidly at both small $q$, as follows from (148.15), and large $q$. Its principal region is then $q\sim1/a_0$. No general quantitative formula can be obtained, and one concludes that $\sigma_n$ is inversely proportional to the squared speed:
+\begin{equation}
+ \sigma_n=\frac{\mathrm{const}}{v^2}.
+ \tag{148.19}
+\end{equation}
+This also follows directly from (148.9), according to which $d\sigma_n$ at $q\sim1/a_0$ is proportional to $v^{-2}$.
+
+Define $d\sigma_r$ as the cross-section for inelastic scattering into a specified solid-angle element, irrespective of the final atomic state. This requires summing (148.9) over all $n\ne0$, that is, over every atomic state in both the discrete and continuous spectra except the normal state. Exclude both large and extremely small angles, taking $(v_0/v)^2\ll\vartheta\ll1$. By (148.12), $q$ is then independent of the transferred energy\footnote{The sum in (148.9) also includes states with $E_n-E_0\gg\varepsilon_0$, for which (148.12) does not hold. Transitions with a large energy transfer, however, have comparatively small cross-sections and contribute little to the sum. The condition $\vartheta\ll1$ permits exchange effects to be neglected.}.
+
+\SourcePage{753}{756}
+This fact makes the total inelastic-collision cross-section, namely the following sum, easy to evaluate:
+\begin{equation}
+\begin{split}
+ d\sigma_r&=\sum_{n\ne0}d\sigma_n
+ =8\pi\left(\frac{e^2}{\hbar v}\right)^2\sum_{n\ne0}
+ \left|\left\langle n\left|\sum_a e^{-i\mathbf q\mathbf r_a}\right|0\right\rangle\right|^2\frac{dq}{q^3}\\
+ &=\left(\frac{2e^2}{mv^2}\right)^2\sum_{n\ne0}
+ \left|\left\langle n\left|\sum_a e^{-i\mathbf q\mathbf r_a}\right|0\right\rangle\right|^2\frac{do}{\vartheta^4}.
+\end{split}
+ \tag{148.20}
+\end{equation}
+
+For any quantity $f$, matrix multiplication gives
+\[
+ \sum_n|f_{0n}|^2=\sum_nf_{0n}(f_{0n})^*=\sum_nf_{0n}(f^+)_{n0}=(ff^+)_{00}.
+\]
+The sum here includes every $n$, including $n=0$. Hence
+\begin{equation}
+ \sum_{n\ne0}|f_{0n}|^2=\sum_n|f_{0n}|^2-|f_{00}|^2=(ff^+)_{00}-|f_{00}|^2.
+ \tag{148.21}
+\end{equation}
+
+Applying this relation to $f=\sum_a e^{-i\mathbf q\mathbf r_a}$ yields
+\begin{equation}
+ d\sigma_r=\left(\frac{2e^2}{mv^2}\right)^2
+ \left\{\left\langle\left|\sum_a e^{-i\mathbf q\mathbf r_a}\right|^2\right\rangle
+ -\left|\left\langle\sum_a e^{-i\mathbf q\mathbf r_a}\right\rangle\right|^2\right\}
+ \frac{do}{\vartheta^4},
+ \tag{148.22}
+\end{equation}
+where $\langle\ldots\rangle$ denotes averaging over the normal atomic state, or taking the diagonal matrix element 00. By definition, the mean $\left\langle\sum e^{-i\mathbf q\mathbf r_a}\right\rangle$ is the atomic factor $F(q)$ of the atom in its normal state. In the first term inside the braces one may write
+\[
+ \left|\sum_{a=1}^Z e^{-i\mathbf q\mathbf r_a}\right|^2
+ =Z+\sum_{a\ne b}e^{i\mathbf q(\mathbf r_a-\mathbf r_b)}.
+\]
+Thus the general formula is
+\begin{equation}
+ d\sigma_r=\left(\frac{2e^2}{mv^2}\right)^2
+ \left\{Z-F^2(q)+\left\langle\sum_{a\ne b}e^{i\mathbf q(\mathbf r_a-\mathbf r_b)}\right\rangle\right\}
+ \frac{do}{\vartheta^4}.
+ \tag{148.23}
+\end{equation}
+
+For small $q$, this formula simplifies greatly by expansion in powers of $q$; the range $v_0/v\ll qa_0\ll1$ corresponds to angles $(v_0/v)^2\ll\vartheta\ll v_0/v$. Rather than carrying out the expansion in (148.23), it is more convenient to%

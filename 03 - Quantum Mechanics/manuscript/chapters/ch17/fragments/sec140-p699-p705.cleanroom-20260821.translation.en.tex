@@ -1,0 +1,137 @@
+\SourcePage{699}{702}
+\section{Scattering with Spin-Orbit Interaction}
+
+So far we have considered only collisions of particles whose interaction does not depend on their spins. Under these conditions the spins either have no effect at all on the scattering process or have an indirect effect associated with exchange phenomena (\S~137).
+
+We now generalize the scattering theory developed in \S~123 to the case in which the interaction between the particles depends essentially on their spins, as occurs in collisions of nuclear particles.
+
+We shall examine in detail the simplest case, in which one of the colliding particles (taken for definiteness to be the incident-beam particle) has spin $1/2$, while the other (the target particle) has spin 0.
+
+For a specified half-integer total angular momentum $j$ of the system, the orbital angular momentum can have only the two values $l=j\pm1/2$, which correspond to states of different parity. Conservation of $j$ and parity therefore also entails conservation of the magnitude of the orbital angular momentum in this case.
+
+The operator $\hat f$ (see \S~125) now acts not only on the orbital variables but also on the spin variables of the system's wave function. It must commute with the operator $\hat{\mathbf l}^{,2}$ of the conserved quantity. The most general form of such an operator is
+\begin{equation}\hat f=\hat a+\hat b\,\hat{\mathbf l}\hat{\mathbf s},\tag{140.1}\end{equation}
+where $\hat a$, $\hat b$ are orbital operators depending only on $\hat{\mathbf l}^{,2}$.
+
+The $S$-matrix, and hence the matrix of $\hat f$, is diagonal with respect to the wave functions of states having definite values of the conserved quantities $l$ and $j$ (and of the projection $m$ of the total angular momentum); its diagonal elements are expressed in terms of the phases $\delta$ of the wave functions by (123.15). For specified $l$ and total angular momenta $j=l+1/2$ and $j=l-1/2$, the eigenvalues of $\hat{\mathbf l}\hat{\mathbf s}$ are respectively $l/2$ and $-(l+1)/2$ (see (118.5)). Thus, to determine the diagonal matrix elements of $\hat a$ and $\hat b$ (denoted by $a_l$ and $b_l$), we have
+\begin{equation}
+ a_l+\frac l2b_l=\frac1{2ik}(e^{2i\delta_l^+}-1),\qquad
+ a_l-\frac{l+1}{2}b_l=\frac1{2ik}(e^{2i\delta_l^-}-1),
+ \tag{140.2}
+\end{equation}
+where the phases $\delta_l^+$ and $\delta_l^-$ correspond to the states $j=l+1/2$ and $j=l-1/2$.
+
+We are interested, however, not in the diagonal elements of $\hat f$ themselves with respect to states of specified $l$
+
+\SourcePage{700}{703}
+and $j$, but in the scattering amplitude as a function of the directions of the incident and scattered waves. This amplitude is still an operator, but now only with respect to the spin variables; it is not diagonal in the spin projection $\sigma$. In the rest of this section, $\hat f$ will denote precisely this operator.
+
+To find it, the operator (140.1) must be applied to the function (125.17), which corresponds to a plane wave incident along the $z$ axis. Thus,
+\begin{equation}\hat f=\sum_{l=0}^{\infty}(2l+1)(a_l+b_l\hat{\mathbf l}\hat{\mathbf s})P_l(\cos\theta).\tag{140.3}\end{equation}
+It remains to evaluate the action of $\hat{\mathbf l}\hat{\mathbf s}$ on $P_l(\cos\theta)$. This can be done by writing
+\[
+ \hat{\mathbf l}\hat{\mathbf s}=\frac12(\hat l_+\hat s_-+\hat l_-\hat s_+)+\hat l_z\hat s_z
+\]
+(see (29.11)) and using (27.12) for the matrix elements of $l_\pm$; it is still simpler to use the operator expressions (26.14), (26.15) directly. A straightforward calculation gives
+\[
+ \hat{\mathbf l}\hat{\mathbf s}P_l(\cos\theta)=i\mathbf v\hat{\mathbf s}P_l^1(\cos\theta),
+\]
+where $P_l^1$ is an associated Legendre polynomial, and $\mathbf v$ is the unit vector in the direction of $\mathbf n\times\mathbf n'$, perpendicular to the scattering plane ($\mathbf n$ is the incident direction along the $z$ axis, and $\mathbf n'$ is the scattering direction specified by the spherical angles $\theta$, $\varphi$).
+
+Determining $a_l$, $b_l$ from (140.2) and substituting them in (140.3), we finally obtain
+\begin{equation}\hat f=A+2B\mathbf v\hat{\mathbf s},\tag{140.4}\end{equation}
+\begin{align}
+ A&=\frac1{2ik}\sum_{l=0}^{\infty}[(l+1)(e^{2i\delta_l^+}-1)+l(e^{2i\delta_l^-}-1)]P_l(\cos\theta),\notag\\
+ B&=\frac1{2k}\sum_{l=1}^{\infty}(e^{2i\delta_l^+}-e^{2i\delta_l^-})P_l^1(\cos\theta).
+ \tag{140.5}
+\end{align}
+The matrix elements of this operator give the scattering amplitude for specified values of the spin projection in the initial ($\sigma$) and final ($\sigma'$) states. Consider the cross section summed over all possible values of $\sigma'$ and averaged over the probabilities of the different values of $\sigma$ in the initial state (in the
+
+\SourcePage{701}{704}
+incident particle beam). This cross section is calculated as
+\begin{equation}d\sigma=(\hat f^+\hat f)_{\sigma\sigma}d o;\tag{140.6}\end{equation}
+taking the diagonal matrix elements of $\hat f^+\hat f$ performs the sum over the final states, while the bar denotes averaging over the initial state\footnote{If the squared modulus $|f_{0n}|^2$ of a matrix element of some operator for a transition $0\to n$ is summed over final states $n$, then
+\[
+ \sum_n|f_{0n}|^2=\sum_nf_{0n}(f_{0n})^*=\sum_nf_{0n}(f^+)_{n0}=(ff^+)_{00}.
+\]
+To avoid misunderstanding, we emphasize that the conjugation sign $+$ in (140.6) and everywhere below refers to $\hat f$ as a spin operator and, in particular, does not imply interchanging $\mathbf n$ and $\mathbf n'$.}. If all spin directions are equally probable in the initial state, this averaging reduces to taking the trace of the matrix (divided by the number of possible values of the spin projection $\sigma$):
+\begin{equation}d\sigma=\frac12\Tr(\hat f^+\hat f)d o.\tag{140.7}\end{equation}
+
+On substituting (140.4) into (140.6), the mean value of the square $(\mathbf v\mathbf s)^2$ is calculated as $v^2s^2/3=s(s+1)/3=1/4$. The result is
+\begin{equation}\frac{d\sigma}{d o}=|A|^2+|B|^2+2\Re(AB^*)\mathbf v\mathbf P,\tag{140.8}\end{equation}
+where $\mathbf P=2\bar{\mathbf s}$ is the initial polarization of the beam, defined as the ratio of the mean spin in the initial state to its greatest possible value ($1/2$). Recall that for spin $1/2$, the vector $\bar{\mathbf s}$ completely specifies the spin state (\S~59).
+
+Notice that polarization of the incident beam produces an azimuthal asymmetry in the scattering: owing to the factor $\mathbf v\mathbf P$ in the last term, the cross section (140.8) depends not only on the polar angle $\theta$ but also on the azimuth $\varphi$ of $\mathbf n'$ relative to $\mathbf n$, provided the polarization is not perpendicular to $\mathbf v$, so that $\mathbf v\mathbf P\ne0$.
+
+The polarization of the scattered particles can be calculated from
+\begin{equation}\mathbf P'=2\frac{(\hat f^+\mathbf s\hat f)_{\sigma\sigma}}{(\hat f^+\hat f)_{\sigma\sigma}}.\tag{140.9}\end{equation}
+For example, if the initial state is unpolarized ($\mathbf P=0$), a straightforward calculation gives
+\begin{equation}\mathbf P'=\frac{2\Re(AB^*)\mathbf v}{|A|^2+|B|^2}.\tag{140.10}\end{equation}
+
+\SourcePage{702}{705}
+Thus, scattering generally produces polarization perpendicular to the scattering plane. This effect is absent, however, in the Born approximation: if all the phases $\delta$ are small, then to first order in them $A$ is real and $B$ purely imaginary, so that $\Re(AB^*)=0$.
+
+The direction of the polarization $\mathbf P'$ in (140.10) along $\mathbf v$ is evident in advance: $\mathbf P'$ is an axial vector, while $\mathbf v$ is the only axial vector that can be constructed from the available polar vectors $\mathbf n$ and $\mathbf n'$. Evidently, the same property is possessed by the polarization arising when an unpolarized beam of spin-$1/2$ particles is scattered by an unpolarized target of nuclei with any spin, not only zero\footnote{Here we mean a target composed of nuclei whose spin directions are distributed completely at random. Recall that when $s>1/2$, the mean spin vector does not completely specify the spin state, and its vanishing does not yet imply a complete absence of spin ordering.}.
+
+In formulating the reciprocity theorem for scattering in the presence of spins, account must be taken of the fact that time reversal changes the signs not only of momenta but also of angular momenta. The symmetry of scattering under time reversal must therefore be expressed in this case by equality of the amplitudes of processes differing not only by interchange of the initial and final states and reversal of the directions of motion, but also by reversal of the signs of the spin projections of the particles in both states. The signs of these amplitudes may nevertheless differ because, according to (60.3), time reversal introduces the factor $(-1)^{s-\sigma}$ into a spin wave function. Consequently, the reciprocity theorem must be formulated as follows\footnote{The derivation of this relation is analogous to that of (125.12). Spin factors must be introduced in the amplitudes of the incoming and outgoing waves in the wave function; in place of (125.10), this gives the condition $\hat K^{-1}\hat S\hat K=\hat S$, where $\hat K$ is an operator that not only performs inversion but also transforms the spin state according to (60.3).}:
+\begin{align}
+ &f(\sigma_1,\sigma_2,\mathbf n;\sigma_1',\sigma_2',\mathbf n')\notag\\
+ &\quad=(-1)^{\sum(s-\sigma)}f(-\sigma_1',-\sigma_2',-\mathbf n';-\sigma_1,-\sigma_2,-\mathbf n).
+ \tag{140.11}
+\end{align}
+Here $f(\sigma_1,\sigma_2,\mathbf n;\sigma_1',\sigma_2',\mathbf n')$ is the scattering amplitude in which the spin projections of the colliding particles change from $\sigma_1$, $\sigma_2$ to $\sigma_1'$, $\sigma_2'$; the sum in the exponent is taken over both particles before and after scattering.
+
+\SourcePage{703}{706}
+In the Born approximation, scattering has an additional symmetry: the probabilities are equal for processes that differ by interchange of the initial and final states without reversing the signs of the particle momenta and spin projections, as under time reversal (see \S~126). Combining this property with the reciprocity theorem, we find that scattering is symmetric under reversal of the signs of all momenta and spin projections without interchanging them. It follows that, in the Born approximation, polarization cannot arise when any unpolarized beam is scattered by an unpolarized target. Indeed, under this transformation the polarization vector $\mathbf P$ changes sign, while the sole vector $\mathbf k\times\mathbf k'$ along which $\mathbf P$ can be directed remains unchanged. Thus, the property noted above for scattering of spin-$1/2$ particles by spin-0 particles is in fact general.
+
+For colliding particles of arbitrary spins, the general formulas for the angular distributions are very cumbersome, and we shall not derive them here. We shall only count the parameters by which these distributions must be specified.
+
+The case considered above, involving particles of spins $1/2$ and 0, is distinguished in particular by the fact that specified values of $J$ and parity correspond to only one state of the two-particle system (apart from the inessential orientation of the total angular momentum in space). Each such state contributes one real parameter, the phase $\delta$, to the scattering amplitude. For other spins, there are generally several different states with the same total angular momentum $J$ and parity; these states differ in the total particle spin $S$ and the orbital angular momentum $l$ of their relative motion. Let the number of such states be $n$. It is easy to see that each such group of states contributes $n(n+1)/2$ independent real parameters to the scattering amplitude.
+
+Indeed, with respect to these states, the $S$-matrix is a unitary symmetric matrix, by the reciprocity theorem, with $n\cdot n$ complex elements. The number of independent quantities in this matrix is conveniently counted by observing that, if $\hat S$ is represented as $\hat S=\exp(i\hat R)$, the unitarity condition is satisfied automatically when $\hat R$ is any Hermitian operator (see (12.13)). If the matrix $S$ is symmetric, the matrix $R$ is symmetric too; being Hermitian, it is real. A real symmetric matrix
+
+\SourcePage{704}{707}
+has $n(n+1)/2$ independent components.
+
+As an example, for two particles of spin $1/2$, the number is $n=2$. Indeed, for specified $J$ there are only four states: two states with $l=J$ and total spin $S=0$ or 1, and two states with $l=J\pm1$, $S=1$. Clearly, two of them have even parity (even $l$) and two have odd parity (odd $l$).
+
+The general form of the scattering amplitude for particles of spin $1/2$, as an operator on the spin variables of both particles, is readily written from the required invariance conditions: it must be a scalar invariant under time reversal. To form this expression we have at our disposal the two axial vectors $\mathbf s_1$ and $\mathbf s_2$, the particle spins, and the two ordinary polar vectors $\mathbf n$ and $\mathbf n'$. Each of the operators $\mathbf s_1$ and $\mathbf s_2$ must enter the amplitude linearly, since any function of a spin-$1/2$ operator reduces to a linear function. The most general operator satisfying these conditions can be written as
+\begin{align}
+ \hat f={}&A+B(\mathbf s_1\boldsymbol\lambda)(\mathbf s_2\boldsymbol\lambda)+C(\mathbf s_1\boldsymbol\mu)(\mathbf s_2\boldsymbol\mu)+D(\mathbf s_1\boldsymbol\nu)(\mathbf s_2\boldsymbol\nu)\notag\\
+ &+E(\mathbf s_1+\mathbf s_2,\boldsymbol\nu)+F(\mathbf s_1-\mathbf s_2,\boldsymbol\nu).
+ \tag{140.12}
+\end{align}
+The coefficients $A$, $B$, \ldots{} are scalars that may depend only on the scalar $\mathbf n\mathbf n'$, that is, on the scattering angle $\theta$ (and on the energy); $\boldsymbol\lambda$, $\boldsymbol\mu$, $\boldsymbol\nu$ are three mutually perpendicular unit vectors directed respectively along $\mathbf n+\mathbf n'$, $\mathbf n-\mathbf n'$, and $\mathbf n\times\mathbf n'$. Time reversal corresponds to the substitution
+\[
+ \mathbf s_1\to-\mathbf s_1,\quad\mathbf s_2\to-\mathbf s_2,\quad
+ \mathbf n\to-\mathbf n',\quad\mathbf n'\to-\mathbf n.
+\]
+Under it, $\boldsymbol\lambda\to-\boldsymbol\lambda$, $\boldsymbol\mu\to\boldsymbol\mu$, and $\boldsymbol\nu\to-\boldsymbol\nu$, so the invariance of (140.12) is evident.
+
+For mutual scattering of nucleons (protons and neutrons), the last term in (140.12) is absent. This follows already from the fact that the nuclear forces acting between nucleons conserve the magnitude of the total spin $S$ of the system, whereas the operator $\mathbf s_1-\mathbf s_2$ does not commute with $S^2$ (according to (117.4), the other terms in (140.12) are expressed through the total-spin operator $\mathbf S$ and therefore commute with $S^2$). For scattering of identical nucleons ($pp$ or $nn$), the coefficients $A$, $B$, \ldots{} as functions of the scattering angle also satisfy certain symmetry relations that follow from the identity of the two particles (see Problem~2).
+
+\SourcePage{705}{708}
+\subsection*{Problems}
+
+\ProblemHeading{1.} For scattering of spin-$1/2$ particles by spin-0 particles, determine the polarization after scattering if it was also nonzero before scattering.
+
+\SolutionHeading Calculation from (140.9) is conveniently carried out in components, choosing the $z$ axis along $\mathbf v$. The result is
+\[
+ \mathbf P'=\frac{(|A|^2-|B|^2)\mathbf P+2|B|^2\mathbf v(\mathbf v\mathbf P)+2\Im(AB^*)(\mathbf v\times\mathbf P)+2\mathbf v\Re(AB^*)}{|A|^2+|B|^2+2\Re(AB^*)\mathbf v\mathbf P}.
+\]
+
+\ProblemHeading{2.} Find the symmetry conditions satisfied, as functions of the angle $\theta$, by the coefficients in the scattering amplitude of two identical nucleons (R.~Oehme, 1955).
+
+\SolutionHeading Rearrange the terms in (140.12) so that each is nonzero only for singlet ($S=0$) or triplet ($S=1$) states of the nucleon system:
+\begin{align}
+ f={}&a(\mathbf s_1\mathbf s_2-1/4)+b(\mathbf s_1\mathbf s_2+3/4)+c[1/4+(\mathbf s_1\boldsymbol\nu)(\mathbf s_2\boldsymbol\nu)]\notag\\
+ &+d[(\mathbf s_1\mathbf n)(\mathbf s_2\mathbf n')+(\mathbf s_1\mathbf n')(\mathbf s_2\mathbf n)]+e(\mathbf s_1+\mathbf s_2,\boldsymbol\nu).
+ \tag{1}
+\end{align}
+Using (117.4), it is readily verified that the first term is nonzero only for $S=0$, while all the others are nonzero for $S=1$. Because the particles are identical, the scattering amplitude must be symmetric under interchange of the particle coordinates for $S=0$ and antisymmetric for $S=1$. This transformation means replacing $\theta$ by $\pi-\theta$, or equivalently reversing one of the vectors $\mathbf n$ and $\mathbf n'$ (cf. \S~137). These conditions give
+\begin{gather}
+ a(\pi-\theta)=a(\theta),\quad b(\pi-\theta)=-b(\theta),\quad c(\pi-\theta)=-c(\theta),\notag\\
+ d(\pi-\theta)=d(\theta),\qquad e(\pi-\theta)=e(\theta).
+ \tag{2}
+\end{gather}
+By isotopic invariance, the scattering amplitude is the same for $nn$ and $pp$ scattering and for $np$ scattering in the isotopic state with $T=1$. The $np$ system may, however, also have a state with $T=0$; consequently, the $np$ scattering amplitude is characterized by different coefficients $a$, $b$, \ldots{} in (1), which do not possess the symmetry properties (2).

@@ -1,0 +1,172 @@
+\SourcePage{632}{635}
+\section{Analytic properties of the scattering amplitude}
+
+A number of important properties of the scattering amplitude can be established by studying it as a function of the energy $E$ of the scattered particle, with $E$ formally regarded as a complex variable.
+
+Consider a particle moving in a field $U(r)$ that tends sufficiently rapidly to zero at infinity; the required rate of decrease will be specified below. To simplify the argument initially, suppose that the particle's orbital angular momentum is $l=0$. Write the asymptotic form
+
+\SourcePage{633}{636}
+of the wave function, a solution of the Schrödinger equation with $l=0$ for an arbitrarily specified $E$, as
+\begin{equation}
+ \chi=r\psi=A(E)\exp\left(-\frac{\sqrt{-2mE}}{\hbar}r\right)
+ +B(E)\exp\left(\frac{\sqrt{-2mE}}{\hbar}r\right),
+ \tag{128.1}
+\end{equation}
+and regard $E$ as a complex variable. We define $\sqrt{-E}$ to be positive for real negative $E$. The wave function is assumed to have been normalized by some definite condition, for example $\psi(0)=1$.
+
+On the left-hand part of the real axis, where $E<0$, the exponential factors in the first and second terms of (128.1) are real; as $r\to\infty$, one decreases and the other increases. Since $\chi$ is real, the functions $A(E)$ and $B(E)$ are real for $E<0$. It follows in turn that their values at any two points symmetric about the real axis are complex conjugates:
+\begin{equation}
+ A(E^*)=A^*(E),\qquad B(E^*)=B^*(E).
+ \tag{128.2}
+\end{equation}
+
+Passing from the negative real semiaxis to the positive one through the upper half-plane gives, for $E>0$, the asymptotic expression
+\begin{equation}
+ \chi=A(E)e^{ikr}+B(E)e^{-ikr},\qquad k=\frac{\sqrt{2mE}}{\hbar}.
+ \tag{128.3}
+\end{equation}
+Passage through the lower half-plane would instead give
+\[
+ \chi=A^*(E)e^{-ikr}+B^*(E)e^{ikr}.
+\]
+Because $\chi$ must be a single-valued function of $E$, this means that
+\begin{equation}
+ A(E)=B^*(E)\quad\text{for }E>0
+ \tag{128.4}
+\end{equation}
+(the same relation also follows directly from the reality of $\chi$ for $E>0$). The ambiguity of the root $\sqrt{-E}$ in (128.1), however, makes the coefficients $A(E)$ and $B(E)$ themselves multivalued. To remove this ambiguity, cut the complex plane along the positive real semiaxis. The cut makes $\sqrt{-E}$ single-valued and thereby gives unambiguous definitions of $A(E)$ and $B(E)$. Their values on the upper and lower rims of the cut are complex conjugates; in (128.3), $A(E)$ and $B(E)$ are taken on its upper rim.
+
+\SourcePage{634}{637}
+The complex plane cut in this way will be called the \emph{physical sheet} of the Riemann surface. With the definition adopted above, throughout this sheet
+\begin{equation}
+ \mathop{\rm Re}\sqrt{-E}>0.
+ \tag{128.5}
+\end{equation}
+In particular, on the upper rim of the cut, $\sqrt{-E}$ defined in this manner becomes $-i\sqrt E$.
+
+In (128.3), the factors $e^{ikr}$ and $e^{-ikr}$, and hence the two terms in $\chi$, are of the same order of magnitude, so an asymptotic expression of the form (128.3) is always valid. Everywhere else on the physical sheet, the first term in (128.1) decreases exponentially while the second increases as $r\to\infty$, by (128.5). The two terms of (128.1) are therefore of different orders, and this expression may cease to be a legitimate asymptotic form of the wave function: against the large term, the small one may lie beyond the permissible accuracy. For (128.1) to remain valid, the ratio of the small term to the large one must not be smaller than the relative order of the potential energy, $U/E$, which is neglected in the Schrödinger equation on entering the asymptotic region. In other words, the field $U(r)$ must satisfy the condition that, as $r\to\infty$, it decreases faster than
+\begin{equation}
+ \exp\left(-\frac{2\sqrt{2m}}{\hbar}r\mathop{\rm Re}\sqrt{-E}\right).
+ \tag{128.6}
+\end{equation}
+If this condition holds for every $\mathop{\rm Re}\sqrt{-E}>0$, that is, if $U(r)$ decreases faster than
+\begin{equation}
+ e^{-cr}
+ \tag{128.6a}
+\end{equation}
+for every positive constant $c$, an asymptotic expression of the form (128.1) is valid over the entire physical sheet. As the solution of an equation with finite coefficients, it has no singularities in $E$. Thus $A(E)$ and $B(E)$ are regular throughout the physical sheet except at $E=0$; being the endpoint of the cut, this point is a branch point of the two functions.\footnote{Everywhere below in this section, the properties of the scattering amplitude are studied on the physical sheet. Later, however, it will sometimes be necessary to consider the second, \emph{unphysical} sheet of the Riemann surface as well (see §~134). On this sheet
+\begin{equation}
+ \mathop{\rm Re}\sqrt{-E}<0.
+ \tag{128.5a}
+\end{equation}
+The unphysical sheet is reached from the positive semiaxis by passing directly downward through the cut.}
+
+\SourcePage{635}{638}
+Bound states of a particle in the field $U(r)$ correspond to wave functions that vanish as $r\to\infty$. The second term in (128.1) must consequently be absent, so the discrete energy levels correspond to zeros of $B(E)$. Since the Schrödinger equation has only real eigenvalues, every zero of $B(E)$ on the physical sheet is real and lies on the negative part of the real axis.
+
+For $E>0$, the functions $A(E)$ and $B(E)$ are directly related to the scattering amplitude in the field $U(r)$. Indeed, comparison of (128.3) with the asymptotic expression for $\chi$ written in the form (33.20),
+\begin{equation}
+ \chi=\mathrm{const}\cdot[e^{i(kr+\delta_0)}-e^{-i(kr+\delta_0)}],
+ \tag{128.7}
+\end{equation}
+shows that
+\begin{equation}
+ -\frac{A(E)}{B(E)}=e^{2i\delta_0(E)}.
+ \tag{128.8}
+\end{equation}
+According to (123.15), the scattering amplitude with $l=0$ is
+\begin{equation}
+ \hbar f_0=\frac1{2ik}(e^{2i\delta_0}-1)
+ =\frac{\hbar}{2\sqrt{-2mE}}\left(\frac AB+1\right);
+ \tag{128.9}
+\end{equation}
+here $A$ and $B$ are taken on the upper rim of the cut.
+
+Now considering the scattering amplitude as a function of $E$ throughout the physical sheet, we see that the discrete energy levels are its simple poles. If the field $U(r)$ satisfies (128.6a), the preceding argument shows that the scattering amplitude has no other singular points\footnote{The point $E=0$ is excepted, since it is singular because of the property of $A(E)$ and $B(E)$ noted above. The scattering amplitude nevertheless remains finite as $E\to0$ (see §~132). For brevity, this qualification will not be repeated below.}.
+
+We calculate the residue of the scattering amplitude at its pole at some discrete level $E=E_0<0$. For this purpose, write the equations satisfied by $\chi$ and by its energy derivative:
+\[
+ \chi''+\frac{2m}{\hbar^2}(E-U)\chi=0,\qquad
+ \left(\frac{\partial\chi}{\partial E}\right)''
+ +\frac{2m}{\hbar^2}(E-U)\frac{\partial\chi}{\partial E}
+ =-\frac{2m}{\hbar^2}\chi.
+\]
+Multiply the first by $\partial\chi/\partial E$, the second by $\chi$, subtract the equations term by term, and integrate with respect to $dr$. This gives
+\begin{equation}
+ \chi'\frac{\partial\chi}{\partial E}-\chi\left(\frac{\partial\chi}{\partial E}\right)'
+ =\frac{2m}{\hbar^2}\int_0^r\chi^2dr.
+ \tag{128.10}
+\end{equation}
+
+\SourcePage{636}{639}
+Apply this relation at $E=E_0$ and let $r\to\infty$. The integral on the right tends to unity when the bound-state wave function is normalized by the usual condition $\int\chi^2dr=1$. Into the left-hand side substitute $\chi$ from (128.1), observing that near $E=E_0$
+\[
+ A(E)\approx A(E_0)=A_0,\qquad
+ B(E)\approx(E+|E_0|)\left.\frac{dB}{dE}\right|_{E=E_0}=\beta(E+|E_0|).
+\]
+The result is $\beta=-1/(A_0\hbar\sqrt{2m|E_0|})$.
+
+Using these expressions, the leading term of the scattering amplitude near $E=E_0$, which is the same as the amplitude for $l=0$, is found to be
+\begin{equation}
+ f=\frac{\hbar^2A_0^2}{2m}\frac1{E+|E_0|}.
+ \tag{128.11}
+\end{equation}
+Thus the residue of the scattering amplitude at a discrete level is determined by the coefficient $A_0$ in the asymptotic expression
+\begin{equation}
+ \chi=A_0\exp\left(-\frac{\sqrt{2m|E_0|}}{\hbar}r\right)
+ \tag{128.12}
+\end{equation}
+for the normalized wave function of the corresponding stationary state.
+
+Returning to the analytic properties of the scattering amplitude, consider fields for which condition (128.6a) is not satisfied. In such fields, only the increasing term of (128.1) is a valid part of the solution's asymptotic form over the whole physical sheet. Accordingly, it may still be asserted that $B(E)$ has no singularities.
+
+Under these conditions, $A(E)$ can be defined in the complex plane only by analytic continuation of the function that is the coefficient in the asymptotic expression for $\chi$ on the positive real semiaxis, where both terms in $\chi$ are valid. Such continuation now generally gives different results according as it is carried out from the upper or lower side of the cut.
+
+To obtain a single-valued definition, we agree to define $A(E)$ in the upper and lower half-planes by analytic continuation from the upper and lower sides of the positive semiaxis, respectively. The cut must then, in general,
+
+\SourcePage{637}{640}
+be extended along the entire real axis. The function defined in this way still has the property $A(E^*)=A^*(E)$ but is generally real on neither the positive nor the negative part of the real axis. It may also, in principle, have singularities.
+
+We shall show, nevertheless, that there is a class of fields for which $A(E)$ has no singularities inside the physical sheet even though (128.6a) is not satisfied.
+
+For this purpose, regard $\chi$ as a function of complex $r$ at a specified complex value of $E$. It is enough to restrict consideration to $E$ in the upper half-plane, since the values of $A(E)$ in the two half-planes are complex conjugates. At those values of $r$ for which $Er^2$ is real and positive, the two terms in (128.1) are of the same order. We thus return to the situation that holds for $E>0$ and real $r$, where both terms of the asymptotic expression for $\chi$ are valid for every field $U(r)$ that tends to zero at infinity. It follows that $A(E)$ cannot have singular points at values of $E$ for which $U(r)\to0$ as $r$ tends to infinity along the ray on which $Er^2>0$. As $E$ ranges over the upper half-plane, the condition $Er^2>0$ selects the lower-right quadrant of the complex $r$ plane. We therefore conclude that $A(E)$ also has no singularities within the physical sheet when $U(r)$ satisfies\footnote{Since $U(r)$ is real on the real axis, $U(r^*)=U^*(r)$. Thus satisfaction of (128.13) in the lower-right quadrant automatically implies its satisfaction throughout the right half-plane.}
+\begin{equation}
+ U(r)\to0,\quad\text{when }r\to\infty\text{ in the right half-plane}
+ \tag{128.13}
+\end{equation}
+(L.~D.~Landau, 1961).
+
+Conditions (128.6a) and (128.13) cover a very broad class of fields. The scattering amplitude may therefore be said, as a rule, to have no singularities inside either half-plane. On the negative real semiaxis itself, which forms part of the physical sheet when no cut is present there, the scattering amplitude has poles corresponding to bound-state energies; if a cut is present, other singularities may also occur there.
+
+\SourcePage{638}{641}
+The latter situation occurs, in particular, for fields of the form
+\begin{equation}
+ U=\mathrm{const}\cdot r^n e^{-r/a}
+ \tag{128.14}
+\end{equation}
+for arbitrary $n$. On the segment $0<-E<\hbar^2/(8ma^2)$ of the negative semiaxis, condition (128.6) is satisfied, so there should be no cut on this segment and the scattering amplitude has only the poles corresponding to bound states. The remaining part of the negative semiaxis may also contain \emph{extraneous} poles and other singularities (S.~T.~Ma, 1946). They arise because the function (128.14) ceases to approach zero as $r\to\infty$ along the ray on which $Er^2>0$ as soon as $E$ passes beneath the negative semiaxis; that ray then enters the region to the left of the imaginary axis in the complex $r$ plane.
+
+Next consider the analytic properties of the scattering amplitude as $|E|\to\infty$. When $E\to+\infty$ along the real axis, the Born approximation applies and the scattering amplitude tends to zero. From the preceding argument, the same situation holds when $E$ tends to infinity in the complex plane along any line $\arg E=\mathrm{const}$, provided complex values of $r$ for which $Er^2>0$ are considered. If $U\to0$ as $r\to\infty$ along the line $\arg r=-(1/2)\arg E$ and $U(r)$ has no singular points on this line, the condition for validity of the Born approximation is met and the scattering amplitude again tends to zero. As $\arg E$ runs from $0$ to $\pi$, $\arg r$ runs from $0$ to $-\pi/2$.
+
+We conclude that the scattering amplitude tends to zero at infinity in every direction in the $E$ plane if $U(r)$ has no singular points in the right half of the $r$ plane and tends to zero at infinity there.
+
+Although the preceding discussion concerned scattering with $l=0$, all the stated results in fact hold for partial scattering amplitudes of any nonzero angular momentum as well. The only difference in the derivation is that the factors $e^{\pm ikr}$ in the asymptotic expressions for $\chi$ must be replaced by the exact radial wave functions for free motion (33.16)\footnote{The limiting forms (33.17) of these functions may be used only for $E>0$. Elsewhere in the $E$ plane, where the two terms in $\chi$ have different orders of magnitude, using those limiting expressions would generally introduce into $\chi$ an error greater than the error associated with neglecting $U$ in the Schrödinger equation.}.
+
+\SourcePage{639}{642}
+For $l\ne0$, some changes must be made in (128.9) and (128.11). Instead of (128.7), we now have
+\begin{equation}
+ \chi_l=rR_l=\mathrm{const}\cdot\left\{\exp\left[i\left(kr-\frac{l\pi}2+\delta_l\right)\right]
+ -\exp\left[-i\left(kr-\frac{l\pi}2+\delta_l\right)\right]\right\}
+ \tag{128.15}
+\end{equation}
+and for the partial amplitude $f_l$, defined according to (123.15), we obtain
+\begin{equation}
+ f_l=\frac{\hbar}{2\sqrt{-2mE}}\left[(-1)^l\frac AB+1\right].
+ \tag{128.16}
+\end{equation}
+In place of (128.11), the leading term of the scattering amplitude near the level $E=E_0$ with angular momentum $l$ is
+\begin{equation}
+ f\approx(2l+1)f_lP_l(\cos\theta)=(-1)^{l+1}\frac{\hbar^2A_0^2}{2m}
+ \frac1{E+|E_0|}(2l+1)P_l(\cos\theta).
+ \tag{128.17}
+\end{equation}
